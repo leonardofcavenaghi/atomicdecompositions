@@ -271,6 +271,17 @@ This section houses an expanding catalog of explicit geometric examples computed
     - **Eigenvalues:** -4*I*sqrt(-11/2 + 5*sqrt(5)/2) (mult: 1), 4*I*sqrt(-11/2 + 5*sqrt(5)/2) (mult: 1), -13.321 (mult: 1), 13.321 (mult: 1), 0.0 (mult: 2)
 
 
+-   __Case #25: Fl(1,3,4) / O(1,1)__
+
+    ---
+    
+    - **Ambient Space:** `A3`
+    - **Dimension:** 4
+    - **Fano Index:** 2
+    - **Basis Rank:** 12
+    - **Eigenvalues:** 8.0 (mult: 1), -8.0 (mult: 1), -4*I (mult: 2), 4*I (mult: 2), 0.0 (mult: 3)
+
+
 </div>
 
 ***
