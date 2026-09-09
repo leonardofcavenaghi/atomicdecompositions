@@ -381,6 +381,26 @@ This section houses an expanding catalog of explicit geometric examples computed
     - **Eigenvalues:** -11.314 (mult: 1), 11.314 (mult: 1), -0.601 (mult: 2), -2*sqrt(-5*sqrt(5)/2 - 11/2) (mult: 2), 0.601 (mult: 2), 2*sqrt(-5*sqrt(5)/2 - 11/2) (mult: 2), 0.0 (mult: 2)
 
 
+-   __Case #4: P4 / O(4)  quartic 3-fold__
+
+    ---
+    
+    - **Ambient Space:** `A4`
+    - **Dimension:** 3
+    - **Fano Index:** 1
+    - **Basis Rank:** 5
+    - **Eigenvalues:** 232.0 (mult: 1), -24.0 (mult: 3)
+    - **Hodge Diamond ($h^{p,q}$):**
+        $$
+        \begin{pmatrix}
+        1 & 0 & 0 & 0 \\
+        0 & 1 & 30 & 0 \\
+        0 & 30 & 1 & 0 \\
+        0 & 0 & 0 & 1 \\
+        \end{pmatrix}
+        $$
+
+
 </div>
 
 ***
