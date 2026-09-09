@@ -21,6 +21,7 @@ The accompanying software, `gwflags`, provides:
 
 - [**About**](about.md): Learn about the team behind this project.
 - [**Installation**](installation.md): Clean, step-by-step instructions for getting Python, SageMath, and `gwflags` running on Windows, macOS, and Linux.
+- [**How to Use**](how-to-use.md): Practical code examples demonstrating how to use the software to compute the theoretical spaces described in the paper.
 - [**Methodology**](methodology.md): An explanation of how the software implements the localization formalism.
 - [**Theoretical Basis**](theory.md): A summary of the main theorems (Theorems A, B, C, and D) related to the spectral irrationality criteria.
 
