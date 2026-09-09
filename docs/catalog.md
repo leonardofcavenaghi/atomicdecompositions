@@ -401,6 +401,17 @@ This section houses an expanding catalog of explicit geometric examples computed
         $$
 
 
+-   __Case #7: Gr(2,4) / O(3)__
+
+    ---
+    
+    - **Ambient Space:** `A3`
+    - **Dimension:** 3
+    - **Fano Index:** 1
+    - **Basis Rank:** 6
+    - **Eigenvalues:** 96.0 (mult: 1), -12.0 (mult: 3)
+
+
 </div>
 
 ***
