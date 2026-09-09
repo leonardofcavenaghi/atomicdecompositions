@@ -64,15 +64,15 @@ This section houses an expanding catalog of explicit geometric examples computed
 
     The eigenvalues of the small quantum multiplication matrix $c_1(TX)\star$ evaluated at $y=1$, along with their algebraic multiplicities. These values govern the spectrum of the quantum connection.
 
--   __Case #22: G2/P1  quadric 5-fold__
+-   __Case #18: Gr(2,5) / O(1)^3  del Pezzo 3-fold V5__
 
     ---
     
-    - **Ambient Space:** `G2`
-    - **Dimension:** 5
-    - **Fano Index:** 5
-    - **Basis Rank:** 6
-    - **Eigenvalues:** 6.598 (mult: 1), -5*2**(2/5)*sqrt(5)/4 - 5*2**(2/5)/4 - 5*2**(2/5)*I*sqrt(5/8 - sqrt(5)/8) (mult: 1), -5*2**(2/5)*sqrt(5)/4 - 5*2**(2/5)/4 + 5*2**(2/5)*I*sqrt(5/8 - sqrt(5)/8) (mult: 1), -5*2**(2/5)/4 + 5*2**(2/5)*sqrt(5)/4 - 5*2**(2/5)*I*sqrt(sqrt(5)/8 + 5/8) (mult: 1), -5*2**(2/5)/4 + 5*2**(2/5)*sqrt(5)/4 + 5*2**(2/5)*I*sqrt(sqrt(5)/8 + 5/8) (mult: 1), 0.0 (mult: 1)
+    - **Ambient Space:** `A4`
+    - **Dimension:** 3
+    - **Fano Index:** 2
+    - **Basis Rank:** 10
+    - **Eigenvalues:** -2*I*sqrt(-11/2 + 5*sqrt(5)/2) (mult: 1), 2*I*sqrt(-11/2 + 5*sqrt(5)/2) (mult: 1), -6.66 (mult: 1), 6.66 (mult: 1)
 
 
 </div>
