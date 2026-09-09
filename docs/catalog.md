@@ -260,6 +260,17 @@ This section houses an expanding catalog of explicit geometric examples computed
     - **Eigenvalues:** -2*I*sqrt(-11/2 + 5*sqrt(5)/2) (mult: 1), 2*I*sqrt(-11/2 + 5*sqrt(5)/2) (mult: 1), -6.66 (mult: 1), 6.66 (mult: 1)
 
 
+-   __Case #17: Gr(2,5) / O(1)+O(2)  Gushel-Mukai 4-fold__
+
+    ---
+    
+    - **Ambient Space:** `A4`
+    - **Dimension:** 4
+    - **Fano Index:** 2
+    - **Basis Rank:** 10
+    - **Eigenvalues:** -4*I*sqrt(-11/2 + 5*sqrt(5)/2) (mult: 1), 4*I*sqrt(-11/2 + 5*sqrt(5)/2) (mult: 1), -13.321 (mult: 1), 13.321 (mult: 1), 0.0 (mult: 2)
+
+
 </div>
 
 ***
