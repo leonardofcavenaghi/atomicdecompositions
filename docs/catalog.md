@@ -60,6 +60,17 @@ This section houses an expanding catalog of explicit geometric examples computed
     - **Eigenvalues:** -8.0 (mult: 1), 8.0 (mult: 1), 0.0 (mult: 2)
 
 
+-   __Case #13: Gr(2,5) / O(1)  del Pezzo 5-fold V5__
+
+    ---
+    
+    - **Ambient Space:** `A4`
+    - **Dimension:** 5
+    - **Fano Index:** 4
+    - **Basis Rank:** 10
+    - **Eigenvalues:** -2*2**(1/4)*(-11 + 5*sqrt(5))**(1/4) + 2*2**(1/4)*I*(-11 + 5*sqrt(5))**(1/4) (mult: 1), 2*2**(1/4)*(-11 + 5*sqrt(5))**(1/4) - 2*2**(1/4)*I*(-11 + 5*sqrt(5))**(1/4) (mult: 1), -2*2**(1/4)*(-11 + 5*sqrt(5))**(1/4) - 2*2**(1/4)*I*(-11 + 5*sqrt(5))**(1/4) (mult: 1), 2*2**(1/4)*(-11 + 5*sqrt(5))**(1/4) + 2*2**(1/4)*I*(-11 + 5*sqrt(5))**(1/4) (mult: 1), -2*2**(3/4)*I*(11 + 5*sqrt(5))**(1/4) (mult: 1), 2*2**(3/4)*I*(11 + 5*sqrt(5))**(1/4) (mult: 1), -7.3 (mult: 1), 7.3 (mult: 1)
+
+
 </div>
 
 ***
