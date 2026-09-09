@@ -8,7 +8,7 @@ The `gwflags` library computes the **small quantum multiplication by the first C
 
 Specifically, for a complete intersection defined by a homogeneous vector bundle $\mathcal{E}$ on an ambient flag variety $F = G/P$, the software evaluates the equivariant Gromov-Witten invariants and constructs the small quantum multiplication matrix projected onto the flag-ambient cohomology $H^*_{\text{amb}}(X)$.
 
-**Reference:** **On the Atomic Decomposition of Complete Intersection in Flag Varieties (Cavenaghi et al.)**
+
 
 ## 2. Atiyah-Bott Equivariant Localization
 
@@ -68,4 +68,4 @@ In classical cohomology, the cup product $\alpha \cup \beta$ simply intersects t
 ### Why `gwflags` Computes $c_1(TX) \star (-)$
 The software specializes in computing the quantum multiplication by a very specific class: the first Chern class of the tangent bundle, $c_1(TX)$. 
 
-The matrix representing the linear operator $c_1(TX) \star (-)$ is called the **Small Quantum Multiplication Matrix**. The eigenvalues of this matrix directly control the asymptotic behavior of the solutions to the quantum differential equation (the quantum connection). By extracting these eigenvalues, researchers can test profound conjectures relating the spectrum of $c_1(TX) \star (-)$ to the rationality of the geometric space $X$ (e.g., Fano fourfolds).
+The matrix representing the linear operator $c_1(TX) \star (-)$ is called the **Small Quantum Multiplication Matrix**. The eigenvalues of this matrix directly control the asymptotic behavior of the solutions to the quantum differential equation (the quantum connection). By extracting these eigenvalues, researchers can test rationality criteria relating the spectrum of $c_1(TX) \star (-)$ to the geometric space $X$.

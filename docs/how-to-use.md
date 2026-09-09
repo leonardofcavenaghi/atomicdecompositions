@@ -16,7 +16,7 @@ This will start a local server. Open your web browser to the provided `localhost
 
 ## Task 1: Testing Quantum Rationality Criteria (Fano Fourfolds)
 
-The primary application of this software is testing rationality conjectures (e.g., Conjecture $\mathcal{O}$) for Fano fourfolds by computing the small quantum multiplication operator by the first Chern class.
+The primary application of this software is testing rationality criteria for Fano fourfolds by computing the small quantum multiplication operator by the first Chern class.
 
 **Important Note on Eigenvalues:** When computing the spectrum of the quantum connection, the software sets the **Novikov parameters ($y_i$ or $q_i$) to $1$**.
 
