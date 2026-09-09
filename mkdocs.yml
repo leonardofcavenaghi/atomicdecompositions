@@ -76,4 +76,5 @@ nav:
   - Catalog: catalog.md
   - Methodology:
       - Core Theory: methodology.md
+      - API Reference: api-reference.md
       - Lie Algebras Guide: lie-algebras.md
