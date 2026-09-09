@@ -1,4 +1,4 @@
-site_name: Quantum Geometry
+site_name: GEOATOMS
 repo_url: https://github.com/leonardofcavenaghi/atomicdecompositions
 theme:
   name: material
