@@ -43,3 +43,29 @@ To replicate a result found in our [Catalog](catalog.md):
 4. Evaluate the resulting symbolic matrix by setting all $y_i = 1$ to find the roots of the quantum connection (eigenvalues).
 
 All eigenvalues, dimensions, and algebraic multiplicities are exact algebraic consequences of these Lie-theoretic constraints.
+
+## 5. Gromov-Witten Invariants: Theory and Examples
+
+To fully understand the output of `gwflags`, one must understand the underlying objects being computed: **Gromov-Witten (GW) Invariants**.
+
+At a macroscopic level, Gromov-Witten invariants are rational numbers that count the "virtual" number of complex curves of a given genus $g$ and degree $\beta$ that intersect a specified collection of subvarieties inside a target space $X$. 
+
+### Intuitive Exemplification
+In classical enumerative geometry, a foundational question is: *"How many lines pass through two generic points in the projective plane $\mathbb{P}^2$?"* 
+The classical answer is exactly **1**. 
+
+In the language of Gromov-Witten theory, a line has degree $d=1$ and genus $g=0$. A point represents a specific cohomology class in $H^*(\mathbb{P}^2)$. The fact that exactly one line passes through two points is encoded as a 2-point Gromov-Witten invariant:
+$$ \langle \text{point}, \text{point} \rangle_{0, 1} = 1 $$
+
+Another classic example: *"How many rational curves of degree $d$ pass through $3d-1$ general points in $\mathbb{P}^2$?"* 
+For $d=1$, we get 1 line through 2 points. For $d=2$, we get 1 conic through 5 points. For $d=3$, we get 12 nodal cubics through 8 points. These values ($1, 1, 12, \dots$) are all Gromov-Witten invariants.
+
+### Quantum Cohomology
+Gromov-Witten invariants allow us to "deform" the classical cohomology ring $H^*(X)$ into the **Quantum Cohomology Ring** $QH^*(X)$.
+
+In classical cohomology, the cup product $\alpha \cup \beta$ simply intersects two subvarieties. In quantum cohomology, the **quantum cup product** $\alpha \star \beta$ introduces quantum corrections that count rational curves (genus $g=0$) intersecting $\alpha$, $\beta$, and a third class $\gamma$. The 3-point Gromov-Witten invariants $\langle \alpha, \beta, \gamma \rangle_{0, \beta}$ act precisely as the structure constants for this new quantum multiplication.
+
+### Why `gwflags` Computes $c_1(TX) \star (-)$
+The software specializes in computing the quantum multiplication by a very specific class: the first Chern class of the tangent bundle, $c_1(TX)$. 
+
+The matrix representing the linear operator $c_1(TX) \star (-)$ is called the **Small Quantum Multiplication Matrix**. The eigenvalues of this matrix directly control the asymptotic behavior of the solutions to the quantum differential equation (the quantum connection). By extracting these eigenvalues, researchers can test profound conjectures relating the spectrum of $c_1(TX) \star (-)$ to the rationality of the geometric space $X$ (e.g., Fano fourfolds).
