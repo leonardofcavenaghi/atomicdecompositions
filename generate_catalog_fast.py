@@ -63,7 +63,7 @@ def hodge_matrix_str(h, dim):
 
 
 SCRAPED_HODGE = {
-    "Gr(2,5) / O(2)  Gushel-Mukai 5-fold": r"""    - **Hodge Diamond:**
+    "Gr(2,5) / O(2)  Gushel-Mukai 5-fold": r"""    ??? note "Hodge Diamond"
         $$
         \begin{matrix}
         & & & & & 1 & & & & & \\
@@ -79,7 +79,7 @@ SCRAPED_HODGE = {
         & & & & & 1 & & & & & \\
         \end{matrix}
         $$""",
-    "Gr(2,5) / O(1)+O(2)  Gushel-Mukai 4-fold": r"""    - **Hodge Diamond:**
+    "Gr(2,5) / O(1)+O(2)  Gushel-Mukai 4-fold": r"""    ??? note "Hodge Diamond"
         $$
         \begin{matrix}
         & & & & 1 & & & & \\
@@ -140,19 +140,19 @@ def process_case(args):
     - **Dimension:** ${dim}$
     - **Fano Index:** ${fano}$
     - **Basis Rank:** ${rank}$
-    - **Quantum Matrix ($y=1$):**
+    - **Eigenvalues:** {", ".join(eigen_strs)}
+    ??? note "Quantum Matrix ($y=1$)"
         $$
 {matrix_tex}
         $$
-    - **Eigenvalues:** {", ".join(eigen_strs)}
 """
         if label in SCRAPED_HODGE:
             card += f"""\n{SCRAPED_HODGE[label]}\n"""
         elif is_pn and K_multidegs:
             h, hdim = compute_hodge_pn(n, degrees)
-            card += f"""    - **Hodge Diamond ($h^{{p,q}}$):**
+            card += f"""    ??? note "Hodge Diamond ($h^{{p,q}}$)"
         $$
-        {hodge_matrix_str(h, hdim)}
+{hodge_matrix_str(h, hdim)}
         $$
 """
         return (idx, card)
@@ -163,7 +163,7 @@ def process_case(args):
 
 def init_catalog():
     with open("docs/catalog.md", "w") as f:
-        f.write("""# Quantum Geometry Catalog
+        f.write(r"""# Quantum Geometry Catalog
 
 Welcome to the automated catalog. Below you will find geometric and quantum properties computed for various complete intersections.
 
@@ -173,7 +173,7 @@ Welcome to the automated catalog. Below you will find geometric and quantum prop
 - **Dimension**: The complex dimension of the resulting geometric space $X$. Computed by subtracting the rank of the intersecting bundle from the dimension of the ambient space.
 - **Fano Index**: The greatest integer $I_X$ dividing the anticanonical class $-K_X$. It dictates the powers of the Novikov parameters in quantum multiplication.
 - **Basis Rank**: The number of dimensions in the projected flag-ambient cohomology ring $H_{amb}^*(X)$. This equals the size of the square quantum multiplication matrix.
-- **Quantum Matrix ($y=1$)**: The small quantum multiplication matrix $c_1(TX)\\star$ projected onto the flag-ambient cohomology ring, evaluated at Novikov parameters $y=1$.
+- **Quantum Matrix ($y=1$)**: The small quantum multiplication matrix $c_1(TX)\star$ projected onto the flag-ambient cohomology ring, evaluated at Novikov parameters $y=1$.
 - **Eigenvalues**: The eigenvalues of the small quantum multiplication matrix $c_1(TX)\star$ evaluated at $y=1$, along with their algebraic multiplicities. These values govern the spectrum of the quantum connection.
 - **Hodge Diamond**: The geometric $h^{p,q}$ Hodge numbers of the space.
 
