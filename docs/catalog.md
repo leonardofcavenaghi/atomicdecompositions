@@ -249,6 +249,17 @@ This section houses an expanding catalog of explicit geometric examples computed
         $$
 
 
+-   __Case #18: Gr(2,5) / O(1)^3  del Pezzo 3-fold V5__
+
+    ---
+    
+    - **Ambient Space:** `A4`
+    - **Dimension:** 3
+    - **Fano Index:** 2
+    - **Basis Rank:** 10
+    - **Eigenvalues:** -2*I*sqrt(-11/2 + 5*sqrt(5)/2) (mult: 1), 2*I*sqrt(-11/2 + 5*sqrt(5)/2) (mult: 1), -6.66 (mult: 1), 6.66 (mult: 1)
+
+
 </div>
 
 ***
