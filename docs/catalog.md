@@ -282,6 +282,17 @@ This section houses an expanding catalog of explicit geometric examples computed
     - **Eigenvalues:** 8.0 (mult: 1), -8.0 (mult: 1), -4*I (mult: 2), 4*I (mult: 2), 0.0 (mult: 3)
 
 
+-   __Case #27: OG(3,7) / O(2)__
+
+    ---
+    
+    - **Ambient Space:** `B3`
+    - **Dimension:** 5
+    - **Fano Index:** 4
+    - **Basis Rank:** 8
+    - **Eigenvalues:** -8.0 (mult: 1), 8.0 (mult: 1), -8*I (mult: 1), 8*I (mult: 1), 0.0 (mult: 2)
+
+
 </div>
 
 ***
