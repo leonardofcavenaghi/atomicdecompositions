@@ -48,6 +48,14 @@ This section houses an expanding catalog of explicit geometric examples computed
     - **Eigenvalues:** -5.657 (mult: 1), 5.657 (mult: 1), -4*sqrt(2)*I (mult: 1), 4*sqrt(2)*I (mult: 1), 0.0 (mult: 2)
 
 
+??? example "Case #6: Gr(2,4) / O(2)  del Pezzo"
+    - **Ambient Space:** `A3`
+    - **Dimension:** 3
+    - **Fano Index:** 2
+    - **Basis Rank:** 6
+    - **Eigenvalues:** -8.0 (mult: 1), 8.0 (mult: 1), 0.0 (mult: 2)
+
+
 </div>
 
 ***
