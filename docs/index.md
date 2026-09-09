@@ -6,24 +6,23 @@
 
 Welcome to the documentation and software repository for the **Quantum Geometry** mathematical research group. 
 
-While serving as a companion to the paper **"On the Atomic Decomposition of Complete Intersection in Flag Varieties,"** this website is an independent, growing catalog and computational resource for algebraic geometry, representation theory, and enumerative geometry.
+This website serves as an independent catalog and computational resource for algebraic geometry, representation theory, and enumerative geometry, specifically focusing on complete intersections in flag varieties.
 
 ## The Software: `gwflags`
 
-The accompanying software, `gwflags`, provides:
+The accompanying software, `gwflags`, provides a computational framework to evaluate geometric invariants using the localization technique:
 
-1. **Root-Theoretic Localization Formalism**: Computes genus-zero Gromov-Witten invariants of flag varieties and smooth zero loci of globally generated homogeneous vector bundles using Bott localization via **Billey's formula**.
-2. **Twisted Invariants**: Computes twisted invariants for complete intersections with the Euler class.
-3. **Connections to the Theory of Quantum Structures**: Bridging explicit combinatorial geometry with theoretical criteria for the rationality of Fano fourfolds (e.g., cubic fourfolds, ordinary Gushel-Mukai fourfolds, and Küchle fourfolds).
-4. **Quantum Features**: The small quantum multiplication matrix \( c_1(TX)\star \), grading operators, and eigenvalues (to test Conjecture \(\mathcal{O}\) / Gamma-conjecture asymptotics).
+- **Atiyah-Bott Localization**: Computes genus-zero Gromov-Witten invariants of flag varieties and the smooth zero loci of globally generated homogeneous vector bundles.
+- **Quantum Multiplication**: Computes the small quantum multiplication matrix, its grading operators, and its eigenvalues for complete intersections.
+- **Geometric Invariants**: Automatically calculates the Fano index, ambient dimension, and basis rank natively using the geometry of flag varieties.
 
 ## Navigate the Documentation
 
 - [**About**](about.md): Learn about the team behind this project.
 - [**Installation**](installation.md): Clean, step-by-step instructions for getting Python, SageMath, and `gwflags` running on Windows, macOS, and Linux.
-- [**How to Use**](how-to-use.md): Practical code examples demonstrating how to use the software to compute the theoretical spaces described in the paper.
-- [**Methodology**](methodology.md): An explanation of how the software implements the localization formalism.
-- [**Theoretical Basis**](methodology.md): A summary of the main theorems (Theorems A, B, C, and D) related to the spectral irrationality criteria.
+- [**How to Use**](how-to-use.md): Practical code examples demonstrating how to use the software to compute these spaces.
+- [**Methodology**](methodology.md): A concise explanation of how the software implements the localization formalism and reproduces the catalog.
+- [**Catalog**](catalog.md): The expanding database of pre-computed examples and geometric invariants.
 
 ## Download
 
