@@ -157,6 +157,24 @@ This section houses an expanding catalog of explicit geometric examples computed
     - **Eigenvalues:** 6.598 (mult: 1), -5*2**(2/5)*sqrt(5)/4 - 5*2**(2/5)/4 - 5*2**(2/5)*I*sqrt(5/8 - sqrt(5)/8) (mult: 1), -5*2**(2/5)*sqrt(5)/4 - 5*2**(2/5)/4 + 5*2**(2/5)*I*sqrt(5/8 - sqrt(5)/8) (mult: 1), -5*2**(2/5)/4 + 5*2**(2/5)*sqrt(5)/4 - 5*2**(2/5)*I*sqrt(sqrt(5)/8 + 5/8) (mult: 1), -5*2**(2/5)/4 + 5*2**(2/5)*sqrt(5)/4 + 5*2**(2/5)*I*sqrt(sqrt(5)/8 + 5/8) (mult: 1), 0.0 (mult: 1)
 
 
+??? example "Case #10: P5 / O(4)  quartic 4-fold"
+    - **Ambient Space:** `A5`
+    - **Dimension:** 4
+    - **Fano Index:** 2
+    - **Basis Rank:** 6
+    - **Eigenvalues:** -32.0 (mult: 1), 32.0 (mult: 1), 0.0 (mult: 3)
+    - **Hodge Diamond ($h^{p,q}$):**
+        $$
+        \begin{pmatrix}
+        1 & 0 & 0 & 0 & 0 \\
+        0 & 1 & 0 & 21 & 0 \\
+        0 & 0 & 142 & 0 & 0 \\
+        0 & 21 & 0 & 1 & 0 \\
+        0 & 0 & 0 & 0 & 1 \\
+        \end{pmatrix}
+        $$
+
+
 </div>
 
 ***
