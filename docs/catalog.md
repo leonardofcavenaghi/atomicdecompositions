@@ -293,6 +293,17 @@ This section houses an expanding catalog of explicit geometric examples computed
     - **Eigenvalues:** -8.0 (mult: 1), 8.0 (mult: 1), -8*I (mult: 1), 8*I (mult: 1), 0.0 (mult: 2)
 
 
+-   __Case #31: LG(3,6) / O(1)__
+
+    ---
+    
+    - **Ambient Space:** `C3`
+    - **Dimension:** 5
+    - **Fano Index:** 3
+    - **Basis Rank:** 8
+    - **Eigenvalues:** 2.646 (mult: 1), -3*(12 - 8*sqrt(2))**(1/3)/2 - 3*sqrt(3)*I*(12 - 8*sqrt(2))**(1/3)/2 (mult: 1), -3*(12 - 8*sqrt(2))**(1/3)/2 + 3*sqrt(3)*I*(12 - 8*sqrt(2))**(1/3)/2 (mult: 1), 8.57 (mult: 1), -3*(8*sqrt(2) + 12)**(1/3)/2 - 3*sqrt(3)*I*(8*sqrt(2) + 12)**(1/3)/2 (mult: 1), -3*(8*sqrt(2) + 12)**(1/3)/2 + 3*sqrt(3)*I*(8*sqrt(2) + 12)**(1/3)/2 (mult: 1)
+
+
 </div>
 
 ***
