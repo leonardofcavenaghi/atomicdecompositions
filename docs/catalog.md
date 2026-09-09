@@ -38,9 +38,8 @@ This section houses an expanding catalog of explicit geometric examples computed
 
 <div class="grid cards" markdown>
 
-
 </div>
 
 ***
 
-*Note: This catalog is automatically generated from the reference cases list.*
+*Note: This catalog is automatically generated.*
