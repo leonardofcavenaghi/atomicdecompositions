@@ -64,15 +64,15 @@ This section houses an expanding catalog of explicit geometric examples computed
 
     The eigenvalues of the small quantum multiplication matrix $c_1(TX)\star$ evaluated at $y=1$, along with their algebraic multiplicities. These values govern the spectrum of the quantum connection.
 
--   __Case #13: Gr(2,5) / O(1)  del Pezzo 5-fold V5__
+-   __Case #16: Gr(2,5) / O(1)+O(1)  del Pezzo 4-fold__
 
     ---
     
     - **Ambient Space:** `A4`
-    - **Dimension:** 5
-    - **Fano Index:** 4
+    - **Dimension:** 4
+    - **Fano Index:** 3
     - **Basis Rank:** 10
-    - **Eigenvalues:** -2*2**(1/4)*(-11 + 5*sqrt(5))**(1/4) + 2*2**(1/4)*I*(-11 + 5*sqrt(5))**(1/4) (mult: 1), 2*2**(1/4)*(-11 + 5*sqrt(5))**(1/4) - 2*2**(1/4)*I*(-11 + 5*sqrt(5))**(1/4) (mult: 1), -2*2**(1/4)*(-11 + 5*sqrt(5))**(1/4) - 2*2**(1/4)*I*(-11 + 5*sqrt(5))**(1/4) (mult: 1), 2*2**(1/4)*(-11 + 5*sqrt(5))**(1/4) + 2*2**(1/4)*I*(-11 + 5*sqrt(5))**(1/4) (mult: 1), -2*2**(3/4)*I*(11 + 5*sqrt(5))**(1/4) (mult: 1), 2*2**(3/4)*I*(11 + 5*sqrt(5))**(1/4) (mult: 1), -7.3 (mult: 1), 7.3 (mult: 1)
+    - **Eigenvalues:** -1.345 (mult: 1), 3*(-11/2 + 5*sqrt(5)/2)**(1/3)/2 - 3*sqrt(3)*I*(-11/2 + 5*sqrt(5)/2)**(1/3)/2 (mult: 1), 3*(-11/2 + 5*sqrt(5)/2)**(1/3)/2 + 3*sqrt(3)*I*(-11/2 + 5*sqrt(5)/2)**(1/3)/2 (mult: 1), 6.69 (mult: 1), -3*(11/2 + 5*sqrt(5)/2)**(1/3)/2 - 3*sqrt(3)*I*(11/2 + 5*sqrt(5)/2)**(1/3)/2 (mult: 1), -3*(11/2 + 5*sqrt(5)/2)**(1/3)/2 + 3*sqrt(3)*I*(11/2 + 5*sqrt(5)/2)**(1/3)/2 (mult: 1)
 
 
 </div>
