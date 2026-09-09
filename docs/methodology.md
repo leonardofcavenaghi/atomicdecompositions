@@ -1,32 +1,45 @@
-# Methodology of the Software
+# Mathematical Methodology and Replication
 
-The `gwflags` package algorithmically implements the **root-theoretic localization formalism** detailed in the accompanying paper for genus-zero Gromov-Witten invariants of flag varieties.
+This document explains the mathematical foundations underpinning the `gwflags` software and how the computed invariants of complete intersections in flag varieties are calculated.
 
-## Mathematical Translation
+## 1. Goal of the Software
 
-Computing Gromov-Witten invariants of a complex projective variety is classically difficult. However, by leveraging **Kontsevich's localization method** on varieties carrying torus actions (like flag varieties \(G/P\)), the integrations can be reduced to a purely combinatorial problem over decorated trees. 
+The `gwflags` library computes the **small quantum multiplication by the first Chern class**, $c_1(TX) \star (-)$, for complete intersections $X$ in flag varieties. This operator is crucial in understanding the spectral properties of the quantum connection and irrationality obstructions.
 
-### Bott Localization & Decorated Trees
+Specifically, for a complete intersection defined by a homogeneous vector bundle $\mathcal{E}$ on an ambient flag variety $F = G/P$, the software evaluates the equivariant Gromov-Witten invariants and constructs the small quantum multiplication matrix projected onto the flag-ambient cohomology $H^*_{\text{amb}}(X)$.
 
-The software reduces the computations to sums over fixed loci of stable maps—represented as decorated trees.
+**Reference:** [On the Atomic Decomposition of Complete Intersection in Flag Varieties (Cavenaghi et al.)](https://arxiv.org/abs/2405.01358)
 
-1. **Roots and Weights**: The geometry of flag varieties is entirely controlled by root systems and Weyl groups. Tangent weights at every fixed point satisfy the GKM independence condition. The software holds all Weyl and root data as integer-normalized exact tuples.
-2. **Billey's Formula**: Evaluates equivariant Schubert classes restricted to fixed points.
-3. **Graph Enumeration**: The software Canonicalizes trees by AHU hashing from the center, bypassing the need for computationally heavy permutation sweeps. The generation of edge decorations operates via a pruned per-edge Depth-First Search (DFS).
+## 2. Atiyah-Bott Equivariant Localization
 
-## Fast Numerical Evaluations
+Directly integrating Gromov-Witten classes over the moduli space of stable maps is generally computationally infeasible. Instead, `gwflags` relies on the algebraic torus action $T \subset G$ acting on the flag variety $F = G/P$ and the corresponding induced action on the moduli space of maps.
 
-One of the significant methodological contributions of this software compared to earlier computational iterations (like the original Mathematica `V3.nb` implementation) is its transition from heavy symbolic manipulation to swift numerical evaluation.
+By applying the **Atiyah-Bott Localization Theorem**, the integrals are reduced to finite sums over the $T$-fixed loci of the moduli space. The fixed loci correspond to decorated trees (or graphs) where:
+- Vertices map to fixed points of $F$ (which are in bijection with the Weyl group quotient $W/W_P$).
+- Edges correspond to invariant curves connecting these fixed points.
 
-- **Dimension Axiom Gating**: Every invariant is gated by the dimension axiom. If the dimensions do not match the expected degrees, the software returns `0` instantly.
-- **Exact Rational Evaluations**: Instead of carrying symbolic rational functions through all steps and taking limits at the end, the software evaluates the gated localization sum **exactly at two independent random rational points** of the equivariant torus. 
-- Because the gated sum must evaluate to a constant (the invariant), this numeric substitution *is* the invariant itself. Checking against two points securely guards against accidental poles.
-- **Caching**: Class-independent data (decorations, edge factors, Billey restrictions) are aggressively cached to ensure that loops over the quantum matrix pairs are optimized.
+The software recursively generates these graphs for a given curve degree $\beta$, calculates the equivariant Euler classes of the normal bundles (using the roots of $G$ and weights of $\mathcal{E}$), and computes the intersection numbers programmatically. 
 
-## Quantum Cohomology & Functoriality
+**Reference:** [The Moment Map and Equivariant Cohomology (Atiyah & Bott, 1984)](https://doi.org/10.1016/0040-9383(84)90021-1)
 
-The software extends the computations from the ambient flag variety to smooth zero loci of globally generated homogeneous vector bundles (complete intersections).
+## 3. Borel-Weil-Bott and Flag Ambient Cohomology
 
-Using the **Kim-Kresch-Pantev** functoriality theorem, the Gromov-Witten invariants of a complete intersection \( X \subset F \) are pulled back to integrals over the moduli stack of the ambient flag variety \( F \). 
+For the ambient space $F$, the cohomology basis consists of Schubert classes $\sigma_w$. When intersecting with the zero locus of $\mathcal{E}$, not all Schubert classes survive.
 
-Ultimately, the software extracts the **flag-ambient matrix of small quantum multiplication by the first Chern class**, \( c_1(TX)\star \), and computes its characteristic polynomial and eigenvalues. These outputs are precisely the ingredients required by the theoretical non-rationality criteria described in the paper.
+The dimension and basis rank are derived using Lie theory. 
+- The dimension is exactly $|R^+ \setminus R^+_P| - \text{rank}(\mathcal{E})$.
+- The flag-ambient cohomology $H^*_{\text{amb}}(X)$ is exactly the image of the restriction map $i^*: H^*(F, \mathbb{Q}) \to H^*(X, \mathbb{Q})$.
+
+**Reference:** [Homogeneous Vector Bundles (Bott, 1957)](https://doi.org/10.2307/1970105)
+
+## 4. Replicating the Computations
+
+Because `gwflags` explicitly computes the exact localization graphs, all geometric values (Fano index, dimension, basis rank, and the quantum multiplication matrix $A^{\text{alg}}(1)$) can be natively replicated by a researcher on their local machine.
+
+To replicate a result found in our [Catalog](catalog.md):
+1. Install `gwflags` (see [Installation](installation.md)).
+2. Instantiate the flag variety using `X = FlagVariety(algebra, roots_that_stay)`.
+3. Invoke `X.small_quantum_multiplication(K)` where $K$ specifies the multidegrees of the vector bundle.
+4. Evaluate the resulting symbolic matrix by setting all $y_i = 1$ to find the roots of the quantum connection (eigenvalues).
+
+All eigenvalues, dimensions, and algebraic multiplicities are exact algebraic consequences of these Lie-theoretic constraints.

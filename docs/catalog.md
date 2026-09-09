@@ -6,27 +6,27 @@ This section houses an expanding catalog of explicit geometric examples computed
 
 <div class="grid cards" markdown>
 
--   __[Fano Index](theory.md#2-fano-index-for-complete-intersections-in-flag-varieties)__
+-   __[Fano Index](methodology.md#2-fano-index-for-complete-intersections-in-flag-varieties)__
 
     ---
     
     The Fano index $I_X$ is the greatest integer dividing the anticanonical class $-K_X$. It dictates the powers of the Novikov parameters in quantum multiplication. 
     **Computation:** For a complete intersection of multidegrees $d_i$ in a flag variety $F$, the index is $I_F - \sum d_i$.
 
--   __[Dimension](theory.md#4-dimension-and-basis-rank)__
+-   __[Dimension](methodology.md#4-dimension-and-basis-rank)__
 
     ---
 
     The complex dimension of the resulting geometric space. 
     **Computation:** If the ambient flag variety $F$ has dimension $N$, and we intersect $k$ line bundles (or a rank-$k$ vector bundle), the complete intersection dimension is $N - k$.
 
--   __[Basis Rank](theory.md#4-dimension-and-basis-rank)__
+-   __[Basis Rank](methodology.md#4-dimension-and-basis-rank)__
 
     ---
 
     The number of dimensions in the projected flag-ambient cohomology ring $H_{amb}^*(X)$. This equals the size of the square quantum multiplication matrix.
 
--   __[Eigenvalues & Multiplicities](theory.md#3-eigenvalues-and-multiplicities)__
+-   __[Eigenvalues & Multiplicities](methodology.md#3-eigenvalues-and-multiplicities)__
 
     ---
 
