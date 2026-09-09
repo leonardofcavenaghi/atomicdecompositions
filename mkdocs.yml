@@ -1,22 +1,49 @@
 site_name: GEOATOMS
+repo_name: leonardofcavenaghi/atomicdecompositions
 repo_url: https://github.com/leonardofcavenaghi/atomicdecompositions
+edit_uri: edit/main/docs/
+
 theme:
   name: material
   logo: assets/logo.jpg
   favicon: assets/logo.jpg
-  palette:
-    scheme: default
-    primary: blue grey
-    accent: light blue
+  icon:
+    repo: fontawesome/brands/github
+  font:
+    text: Inter
+    code: JetBrains Mono
   features:
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
     - navigation.top
+    - navigation.expand
+    - navigation.path
+    - navigation.instant
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
     - toc.integrate
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
 
 markdown_extensions:
   - attr_list
   - md_in_html
+  - footnotes
   - pymdownx.details
   - pymdownx.arithmatex:
       generic: true
@@ -29,11 +56,17 @@ markdown_extensions:
   - pymdownx.superfences
   - toc:
       permalink: true
+      toc_depth: 3
+
+plugins:
+  - search
 
 extra_javascript:
-  - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-svg.js
+
+extra_css:
+  - stylesheets/extra.css
 
 nav:
   - Home: index.md
