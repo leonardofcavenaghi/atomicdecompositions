@@ -38,6 +38,10 @@ def compute_hodge_pn(n, degrees):
                 hodge[(p,q)] = base_h
     return hodge, dimX
 
+def indent_latex(latex_str, spaces=8):
+    indentation = " " * spaces
+    return "\n".join(indentation + line for line in latex_str.split("\n"))
+
 def hodge_matrix_str(h, dim):
     out = "        \\begin{matrix}\n"
     for k in range(2*dim + 1): 
@@ -111,15 +115,13 @@ def process_case(args):
         c1TX = sympy.Matrix(X.small_quantum_multiplication(K_multidegs)[0])
         ns = {f'y{i}': 1 for i in range(1, 10)}
         matrix_1 = c1TX.subs(ns)
+        matrix_tex = indent_latex(sympy.latex(matrix_1), 8)
         
         eigenvals = matrix_1.eigenvals()
         eigen_strs = []
         for ev, mult in eigenvals.items():
-            try:
-                ev_float = round(float(ev.evalf()), 3)
-                eigen_strs.append(f"{ev_float} (mult: {mult})")
-            except:
-                eigen_strs.append(f"{ev} (mult: {mult})")
+            ev_tex = sympy.latex(ev)
+            eigen_strs.append(f"${ev_tex}$ (mult: {mult})")
             
         dim = X.dimension
         if K_multidegs:
@@ -134,10 +136,14 @@ def process_case(args):
         rank = len(X.classes)
         
         card = f"""??? example "Case #{idx+1}: {label}"
-    - **Ambient Space:** `{alg}`
-    - **Dimension:** {dim}
-    - **Fano Index:** {fano}
-    - **Basis Rank:** {rank}
+    - **Ambient Space:** `${alg}$`
+    - **Dimension:** ${dim}$
+    - **Fano Index:** ${fano}$
+    - **Basis Rank:** ${rank}$
+    - **Quantum Matrix ($y=1$):**
+        $$
+{matrix_tex}
+        $$
     - **Eigenvalues:** {", ".join(eigen_strs)}
 """
         if label in SCRAPED_HODGE:
@@ -167,6 +173,7 @@ Welcome to the automated catalog. Below you will find geometric and quantum prop
 - **Dimension**: The complex dimension of the resulting geometric space $X$. Computed by subtracting the rank of the intersecting bundle from the dimension of the ambient space.
 - **Fano Index**: The greatest integer $I_X$ dividing the anticanonical class $-K_X$. It dictates the powers of the Novikov parameters in quantum multiplication.
 - **Basis Rank**: The number of dimensions in the projected flag-ambient cohomology ring $H_{amb}^*(X)$. This equals the size of the square quantum multiplication matrix.
+- **Quantum Matrix ($y=1$)**: The small quantum multiplication matrix $c_1(TX)\\star$ projected onto the flag-ambient cohomology ring, evaluated at Novikov parameters $y=1$.
 - **Eigenvalues**: The eigenvalues of the small quantum multiplication matrix $c_1(TX)\star$ evaluated at $y=1$, along with their algebraic multiplicities. These values govern the spectrum of the quantum connection.
 - **Hodge Diamond**: The geometric $h^{p,q}$ Hodge numbers of the space.
 
