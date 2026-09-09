@@ -64,15 +64,15 @@ This section houses an expanding catalog of explicit geometric examples computed
 
     The eigenvalues of the small quantum multiplication matrix $c_1(TX)\star$ evaluated at $y=1$, along with their algebraic multiplicities. These values govern the spectrum of the quantum connection.
 
--   __Case #14: Gr(2,5) / O(2)  Gushel-Mukai 5-fold__
+-   __Case #13: Gr(2,5) / O(1)  del Pezzo 5-fold V5__
 
     ---
     
     - **Ambient Space:** `A4`
     - **Dimension:** 5
-    - **Fano Index:** 3
+    - **Fano Index:** 4
     - **Basis Rank:** 10
-    - **Eigenvalues:** -2.135 (mult: 1), 3*(-22 + 10*sqrt(5))**(1/3)/2 - 3*sqrt(3)*I*(-22 + 10*sqrt(5))**(1/3)/2 (mult: 1), 3*(-22 + 10*sqrt(5))**(1/3)/2 + 3*sqrt(3)*I*(-22 + 10*sqrt(5))**(1/3)/2 (mult: 1), 10.62 (mult: 1), -3*(22 + 10*sqrt(5))**(1/3)/2 - 3*sqrt(3)*I*(22 + 10*sqrt(5))**(1/3)/2 (mult: 1), -3*(22 + 10*sqrt(5))**(1/3)/2 + 3*sqrt(3)*I*(22 + 10*sqrt(5))**(1/3)/2 (mult: 1), 0.0 (mult: 2)
+    - **Eigenvalues:** -2*2**(1/4)*(-11 + 5*sqrt(5))**(1/4) + 2*2**(1/4)*I*(-11 + 5*sqrt(5))**(1/4) (mult: 1), 2*2**(1/4)*(-11 + 5*sqrt(5))**(1/4) - 2*2**(1/4)*I*(-11 + 5*sqrt(5))**(1/4) (mult: 1), -2*2**(1/4)*(-11 + 5*sqrt(5))**(1/4) - 2*2**(1/4)*I*(-11 + 5*sqrt(5))**(1/4) (mult: 1), 2*2**(1/4)*(-11 + 5*sqrt(5))**(1/4) + 2*2**(1/4)*I*(-11 + 5*sqrt(5))**(1/4) (mult: 1), -2*2**(3/4)*I*(11 + 5*sqrt(5))**(1/4) (mult: 1), 2*2**(3/4)*I*(11 + 5*sqrt(5))**(1/4) (mult: 1), -7.3 (mult: 1), 7.3 (mult: 1)
 
 
 </div>
