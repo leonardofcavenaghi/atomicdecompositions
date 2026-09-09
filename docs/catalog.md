@@ -64,15 +64,24 @@ This section houses an expanding catalog of explicit geometric examples computed
 
     The eigenvalues of the small quantum multiplication matrix $c_1(TX)\star$ evaluated at $y=1$, along with their algebraic multiplicities. These values govern the spectrum of the quantum connection.
 
--   __Case #6: Gr(2,4) / O(2)  del Pezzo__
+-   __Case #2: P4 / O(2)  quadric 3-fold__
 
     ---
     
-    - **Ambient Space:** `A3`
+    - **Ambient Space:** `A4`
     - **Dimension:** 3
-    - **Fano Index:** 2
-    - **Basis Rank:** 6
-    - **Eigenvalues:** -8.0 (mult: 1), 8.0 (mult: 1), 0.0 (mult: 2)
+    - **Fano Index:** 3
+    - **Basis Rank:** 5
+    - **Eigenvalues:** 4.762 (mult: 1), -3*2**(2/3)/2 - 3*2**(2/3)*sqrt(3)*I/2 (mult: 1), -3*2**(2/3)/2 + 3*2**(2/3)*sqrt(3)*I/2 (mult: 1), 0.0 (mult: 1)
+    - **Hodge Diamond ($h^{p,q}$):**
+        $$
+        \begin{pmatrix}
+        1 & 0 & 0 & 0 \\
+        0 & 1 & 0 & 0 \\
+        0 & 0 & 1 & 0 \\
+        0 & 0 & 0 & 1 \\
+        \end{pmatrix}
+        $$
 
 
 </div>
