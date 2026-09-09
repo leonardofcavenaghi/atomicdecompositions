@@ -15,6 +15,16 @@ This section houses an expanding catalog of explicit geometric examples computed
     - **Basis Rank:** 4
     - **Leading Eigenvalue:** $4.762$
 
+    ??? abstract "Maximize Full Matrix"
+        $$
+        c_1(TX)\star = \begin{pmatrix}
+        0 & 0 & 6 & 0 \\
+        3 & 0 & 0 & 6 \\
+        0 & 3 & 0 & 0 \\
+        0 & 0 & 3 & 0 
+        \end{pmatrix}
+        $$
+
 -   __Case #2: $\mathbb{P}^4$ with $\mathcal{O}(3)$__
 
     ---
