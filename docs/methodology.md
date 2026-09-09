@@ -8,7 +8,7 @@ The `gwflags` library computes the **small quantum multiplication by the first C
 
 Specifically, for a complete intersection defined by a homogeneous vector bundle $\mathcal{E}$ on an ambient flag variety $F = G/P$, the software evaluates the equivariant Gromov-Witten invariants and constructs the small quantum multiplication matrix projected onto the flag-ambient cohomology $H^*_{\text{amb}}(X)$.
 
-**Reference:** [On the Atomic Decomposition of Complete Intersection in Flag Varieties (Cavenaghi et al.)](https://arxiv.org/abs/2405.01358)
+**Reference:** **On the Atomic Decomposition of Complete Intersection in Flag Varieties (Cavenaghi et al.)**
 
 ## 2. Atiyah-Bott Equivariant Localization
 
@@ -18,7 +18,7 @@ By applying the **Atiyah-Bott Localization Theorem**, the integrals are reduced 
 - Vertices map to fixed points of $F$ (which are in bijection with the Weyl group quotient $W/W_P$).
 - Edges correspond to invariant curves connecting these fixed points.
 
-The software recursively generates these graphs for a given curve degree $\beta$, calculates the equivariant Euler classes of the normal bundles (using the roots of $G$ and weights of $\mathcal{E}$), and computes the intersection numbers programmatically. 
+The software recursively generates these graphs for a given curve degree $\beta$, calculates the equivariant Euler classes of the virtual normal bundles (using the roots of $G$ and weights of $\mathcal{E}$), and computes the intersection numbers programmatically. 
 
 **Reference:** [The Moment Map and Equivariant Cohomology (Atiyah & Bott, 1984)](https://doi.org/10.1016/0040-9383(84)90021-1)
 

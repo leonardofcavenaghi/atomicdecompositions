@@ -68,7 +68,7 @@ While the quantum matrices calculate the aggregate structural invariants, you ca
 
 ## 1. Cubic Fourfolds
 **Theory:** $X = \mathcal{Z}(\mathbb{P}^5, \mathcal{O}_{\mathbb{P}^5}(3))$. 
-The small quantum multiplication by $c_1(TX)$ yields an eigenvalue 0 with algebraic multiplicity 2 and geometric multiplicity 1 (Jordan defect 1). This proves the irrationality of Hodge-general cubic fourfolds and recovers uniform K3-center constraints.
+The small quantum multiplication by $c_1(TX)$ yields an eigenvalue 0 with algebraic multiplicity 2 and geometric multiplicity 1 (Jordan defect 1). This is related to the rationality problem of Hodge-general cubic fourfolds and recovers uniform K3-center constraints.
 
 **In the GUI:**
 - **Algebra:** `A5` (representing $\mathbb{P}^5$)
