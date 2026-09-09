@@ -40,7 +40,31 @@ While the quantum matrices calculate the aggregate structural invariants, you ca
 
 Below, we showcase how to input several prominent geometric spaces from the paper into the GUI to compute the projected flag-ambient part of small quantum multiplication by the first Chern class.
 
+## The Novikov Parameters
+
+**Important Note on Eigenvalues:** When the software outputs eigenvalues or the full quantum multiplication matrix, it automatically sets the **Novikov parameters ($y_i$ or $q_i$) to $1$**. This complies with the standard conventions required to test Conjecture $\mathcal{O}$ and calculate the asymptotic spectrum of the quantum connection without bloating the output with large symbolic rings.
+
 ---
+
+## Computing Individual Gromov-Witten Invariants
+
+While the quantum matrices calculate the aggregate structural invariants, you can also use `gwflags` to compute single Gromov-Witten invariants directly.
+
+**Example:** Computing the 2-point invariant $\langle pt, pt \rangle_{d=1} = 1$ on $\mathbb{P}^2$.
+
+**In the GUI:**
+1. Switch the operation mode from "Quantum Multiplication" to **"Single GW Invariant"**
+2. **Algebra:** `A2` (representing $\mathbb{P}^2$)
+3. **Keep Nodes:** `1`
+4. **Beta (Curve Class):** `1, 0`
+5. **Insertions:** `pt | pt`
+6. Click **Compute GW Invariant**.
+
+*(Alternatively, from the CLI: `python3 -m gwflags.cli A2 --keep 1 gw --beta "1,0" --classes "pt|pt"`)*
+
+---
+
+## Small Quantum Multiplication Examples
 
 ## 1. Cubic Fourfolds
 **Theory:** $X = \mathcal{Z}(\mathbb{P}^5, \mathcal{O}_{\mathbb{P}^5}(3))$. 

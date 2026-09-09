@@ -1,6 +1,40 @@
 # The Computed Catalog
 
-This section houses an expanding catalog of explicit geometric examples computed by `gwflags`. Each entry acts as a "flash card" displaying the fundamental invariants, the corresponding Fano index, and eventually, the associated Hodge diamond.
+This section houses an expanding catalog of explicit geometric examples computed by `gwflags`. Each entry acts as a "flash card" displaying the fundamental invariants.
+
+## Glossary of Terms
+
+<div class="grid cards" markdown>
+
+-   __Fano Index__
+
+    ---
+    
+    The Fano index $I_X$ is the greatest integer dividing the anticanonical class $-K_X$. It dictates the powers of the Novikov parameters in quantum multiplication. 
+    **Computation:** For a complete intersection of multidegrees $d_i$ in a flag variety $F$, the index is $I_F - \sum d_i$.
+
+-   __Dimension__
+
+    ---
+
+    The complex dimension of the resulting geometric space. 
+    **Computation:** If the ambient flag variety $F$ has dimension $N$, and we intersect $k$ line bundles (or a rank-$k$ vector bundle), the complete intersection dimension is $N - k$.
+
+-   __Basis Rank__
+
+    ---
+
+    The number of dimensions in the projected flag-ambient cohomology ring $H_{amb}^*(X)$. This equals the size of the square quantum multiplication matrix.
+
+-   __Leading Eigenvalue__
+
+    ---
+
+    The eigenvalue of the small quantum multiplication matrix $c_1(TX)\star$ with the largest absolute value. According to **Conjecture $\mathcal{O}$**, this eigenvalue dictates the dominant asymptotic behavior of the quantum connection.
+
+</div>
+
+## Geometry Catalog
 
 <div class="grid cards" markdown>
 
