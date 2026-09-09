@@ -1,4 +1,4 @@
-site_name: Theory of Atoms
+site_name: Quantum Geometry
 repo_url: https://github.com/leonardofcavenaghi/atomicdecompositions
 theme:
   name: material
@@ -41,5 +41,6 @@ nav:
   - Installation: installation.md
   - How to Use: how-to-use.md
   - Catalog: catalog.md
+    - Theory: theory.md
   - Methodology: methodology.md
   - Theoretical Basis: theory.md
