@@ -116,6 +116,14 @@ This section houses an expanding catalog of explicit geometric examples computed
     - **Eigenvalues:** -2*2**(1/4)*(-11 + 5*sqrt(5))**(1/4) + 2*2**(1/4)*I*(-11 + 5*sqrt(5))**(1/4) (mult: 1), 2*2**(1/4)*(-11 + 5*sqrt(5))**(1/4) - 2*2**(1/4)*I*(-11 + 5*sqrt(5))**(1/4) (mult: 1), -2*2**(1/4)*(-11 + 5*sqrt(5))**(1/4) - 2*2**(1/4)*I*(-11 + 5*sqrt(5))**(1/4) (mult: 1), 2*2**(1/4)*(-11 + 5*sqrt(5))**(1/4) + 2*2**(1/4)*I*(-11 + 5*sqrt(5))**(1/4) (mult: 1), -2*2**(3/4)*I*(11 + 5*sqrt(5))**(1/4) (mult: 1), 2*2**(3/4)*I*(11 + 5*sqrt(5))**(1/4) (mult: 1), -7.3 (mult: 1), 7.3 (mult: 1)
 
 
+??? example "Case #14: Gr(2,5) / O(2)  Gushel-Mukai 5-fold"
+    - **Ambient Space:** `A4`
+    - **Dimension:** 5
+    - **Fano Index:** 3
+    - **Basis Rank:** 10
+    - **Eigenvalues:** -2.135 (mult: 1), 3*(-22 + 10*sqrt(5))**(1/3)/2 - 3*sqrt(3)*I*(-22 + 10*sqrt(5))**(1/3)/2 (mult: 1), 3*(-22 + 10*sqrt(5))**(1/3)/2 + 3*sqrt(3)*I*(-22 + 10*sqrt(5))**(1/3)/2 (mult: 1), 10.62 (mult: 1), -3*(22 + 10*sqrt(5))**(1/3)/2 - 3*sqrt(3)*I*(22 + 10*sqrt(5))**(1/3)/2 (mult: 1), -3*(22 + 10*sqrt(5))**(1/3)/2 + 3*sqrt(3)*I*(22 + 10*sqrt(5))**(1/3)/2 (mult: 1), 0.0 (mult: 2)
+
+
 </div>
 
 ***
