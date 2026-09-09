@@ -1,22 +1,17 @@
 # About the Team
 
-This project is an effort of the **Theory of Atoms** mathematical research group, led by **Dr. Ludmil Katzarkov**.
+This project is an effort of the **Theory of Atoms** mathematical research group.
 
-## Authors & Contributors
+## The Team
 
-**Lead Investigator:**
-- Dr. Ludmil Katzarkov
-
-**Authors:**
+- Dr. Ludmil Katzarkov (Lead Investigator)
+- Boris Alexeev
 - Leonardo F. Cavenaghi
 - Giovane Galindo
 - Bogdan Georgiev
 - Maxim Kontsevich
 - Pedro Antonio Muniz Martins
 
-**Other Contributors:**
-- Boris Alexeev
-
 ---
 
-The software and formalisms developed here arise from the paper **"On the Atomic Decomposition of Complete Intersection in Flag Varieties."**
+While serving as a companion to the paper **"On the Atomic Decomposition of Complete Intersection in Flag Varieties,"** this project and software are independent tools designed to function as an expanding catalog and computational resource for algebraic and enumerative geometry.
