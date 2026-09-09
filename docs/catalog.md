@@ -56,6 +56,23 @@ This section houses an expanding catalog of explicit geometric examples computed
     - **Eigenvalues:** -8.0 (mult: 1), 8.0 (mult: 1), 0.0 (mult: 2)
 
 
+??? example "Case #3: P4 / O(3)  cubic 3-fold"
+    - **Ambient Space:** `A4`
+    - **Dimension:** 3
+    - **Fano Index:** 2
+    - **Basis Rank:** 5
+    - **Eigenvalues:** -10.392 (mult: 1), 10.392 (mult: 1), 0.0 (mult: 2)
+    - **Hodge Diamond ($h^{p,q}$):**
+        $$
+        \begin{pmatrix}
+        1 & 0 & 0 & 0 \\
+        0 & 1 & 5 & 0 \\
+        0 & 5 & 1 & 0 \\
+        0 & 0 & 0 & 1 \\
+        \end{pmatrix}
+        $$
+
+
 </div>
 
 ***
