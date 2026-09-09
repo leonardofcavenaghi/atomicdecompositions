@@ -326,6 +326,17 @@ This section houses an expanding catalog of explicit geometric examples computed
     - **Eigenvalues:** -16.0 (mult: 1), 16.0 (mult: 1), 0.0 (mult: 3)
 
 
+-   __Case #32: LG(3,6) / O(1)+O(1)__
+
+    ---
+    
+    - **Ambient Space:** `C3`
+    - **Dimension:** 4
+    - **Fano Index:** 2
+    - **Basis Rank:** 8
+    - **Eigenvalues:** -1.657 (mult: 1), 9.657 (mult: 1), -9.657 (mult: 1), 1.657 (mult: 1), 0.0 (mult: 1)
+
+
 </div>
 
 ***
