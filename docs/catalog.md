@@ -111,6 +111,27 @@ This section houses an expanding catalog of explicit geometric examples computed
         $$
 
 
+-   __Case #8: P5 / O(2)  quadric 4-fold__
+
+    ---
+    
+    - **Ambient Space:** `A5`
+    - **Dimension:** 4
+    - **Fano Index:** 4
+    - **Basis Rank:** 6
+    - **Eigenvalues:** -5.657 (mult: 1), 5.657 (mult: 1), -4*sqrt(2)*I (mult: 1), 4*sqrt(2)*I (mult: 1), 0.0 (mult: 1)
+    - **Hodge Diamond ($h^{p,q}$):**
+        $$
+        \begin{pmatrix}
+        1 & 0 & 0 & 0 & 0 \\
+        0 & 1 & 0 & 0 & 0 \\
+        0 & 0 & 2 & 0 & 0 \\
+        0 & 0 & 0 & 1 & 0 \\
+        0 & 0 & 0 & 0 & 1 \\
+        \end{pmatrix}
+        $$
+
+
 </div>
 
 ***
