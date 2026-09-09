@@ -1000,6 +1000,19 @@ This section houses an expanding catalog of explicit geometric examples computed
         The eigenvalues of the small quantum multiplication matrix $c_1(TX)\star$ evaluated at $y=1$, along with their algebraic multiplicities. These values govern the spectrum of the quantum connection.
 
 
+??? example "Case #1: Fl(1,2,5) / O(0,1)+O(0,2)+O(1,0)  [GM-20 4-fold]"
+    ??? note "Ambient Space: `A4`"
+        The ambient flag variety in which the complete intersection is embedded.
+    ??? note "Dimension: 4"
+        The complex dimension of the resulting geometric space. Computed by subtracting the rank of the intersecting bundle from the dimension of the ambient space.
+    ??? note "Fano Index: 1"
+        The Fano index $I_X$ is the greatest integer dividing the anticanonical class $-K_X$. It dictates the powers of the Novikov parameters in quantum multiplication.
+    ??? note "Basis Rank: 20"
+        The number of dimensions in the projected flag-ambient cohomology ring $H_{amb}^*(X)$. This equals the size of the square quantum multiplication matrix.
+    ??? note "Eigenvalues: -3.0 (mult: 2), -2.0 (mult: 2), 22.597 (mult: 1), CRootOf(x**5 - 5*x**4 - 192*x**3 - 3848*x**2 - 17040*x - 22928, 1) (mult: 1), CRootOf(x**5 - 5*x**4 - 192*x**3 - 3848*x**2 - 17040*x - 22928, 2) (mult: 1), CRootOf(x**5 - 5*x**4 - 192*x**3 - 3848*x**2 - 17040*x - 22928, 3) (mult: 1), CRootOf(x**5 - 5*x**4 - 192*x**3 - 3848*x**2 - 17040*x - 22928, 4) (mult: 1)"
+        The eigenvalues of the small quantum multiplication matrix $c_1(TX)\star$ evaluated at $y=1$, along with their algebraic multiplicities. These values govern the spectrum of the quantum connection.
+
+
 </div>
 
 ***
