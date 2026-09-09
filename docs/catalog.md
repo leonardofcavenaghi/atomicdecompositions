@@ -64,15 +64,15 @@ This section houses an expanding catalog of explicit geometric examples computed
 
     The eigenvalues of the small quantum multiplication matrix $c_1(TX)\star$ evaluated at $y=1$, along with their algebraic multiplicities. These values govern the spectrum of the quantum connection.
 
--   __Case #25: Fl(1,3,4) / O(1,1)__
+-   __Case #31: LG(3,6) / O(1)__
 
     ---
     
-    - **Ambient Space:** `A3`
-    - **Dimension:** 4
-    - **Fano Index:** 2
-    - **Basis Rank:** 12
-    - **Eigenvalues:** 8.0 (mult: 1), -8.0 (mult: 1), -4*I (mult: 2), 4*I (mult: 2), 0.0 (mult: 3)
+    - **Ambient Space:** `C3`
+    - **Dimension:** 5
+    - **Fano Index:** 3
+    - **Basis Rank:** 8
+    - **Eigenvalues:** 2.646 (mult: 1), -3*(12 - 8*sqrt(2))**(1/3)/2 - 3*sqrt(3)*I*(12 - 8*sqrt(2))**(1/3)/2 (mult: 1), -3*(12 - 8*sqrt(2))**(1/3)/2 + 3*sqrt(3)*I*(12 - 8*sqrt(2))**(1/3)/2 (mult: 1), 8.57 (mult: 1), -3*(8*sqrt(2) + 12)**(1/3)/2 - 3*sqrt(3)*I*(8*sqrt(2) + 12)**(1/3)/2 (mult: 1), -3*(8*sqrt(2) + 12)**(1/3)/2 + 3*sqrt(3)*I*(8*sqrt(2) + 12)**(1/3)/2 (mult: 1)
 
 
 </div>
