@@ -1,7 +1,9 @@
-site_name: Atomic Decompositions of Complete Intersections
+site_name: Theory of Atoms
 repo_url: https://github.com/leonardofcavenaghi/atomicdecompositions
 theme:
   name: material
+  logo: assets/logo.jpg
+  favicon: assets/logo.jpg
   palette:
     scheme: default
     primary: indigo

@@ -1,6 +1,29 @@
-# Atomic Decompositions of Complete Intersections in Flag Varieties
+# Theory of Atoms
 
-Welcome to the documentation and software repository for the project **"On the Atomic Decomposition of Complete Intersection in Flag Varieties"** by Leonardo F. Cavenaghi, Giovane Galindo, Bogdan Georgiev, Ludmil Katzarkov, Maxim Kontsevich, and Pedro Antonio Muniz Martins.
+<div align="center">
+  <img src="assets/logo.jpg" alt="Theory of Atoms Logo" width="200"/>
+</div>
+
+Welcome to the documentation and software repository for **"On the Atomic Decomposition of Complete Intersection in Flag Varieties."** 
+
+This project is an effort of the **Theory of Atoms** mathematical research group, led by **Dr. Ludmil Katzarkov**.
+
+## Authors & Contributors
+
+**Lead Investigator:**
+- Dr. Ludmil Katzarkov
+
+**Authors:**
+- Leonardo F. Cavenaghi
+- Giovane Galindo
+- Bogdan Georgiev
+- Maxim Kontsevich
+- Pedro Antonio Muniz Martins
+
+**Other Contributors:**
+- Boris Alexeev
+
+---
 
 ## About the Project
 
@@ -8,7 +31,7 @@ This project lies at the intersection of algebraic geometry, representation theo
 
 1. **Root-Theoretic Localization Formalism**: For genus-zero Gromov-Witten invariants of flag varieties and smooth zero loci of globally generated homogeneous vector bundles.
 2. **Software Implementation**: An algorithmic implementation in Python / SageMath that computes these invariants explicitly over decorated trees, utilizing the roots of the ambient flag variety.
-3. **Connections to the Theory of Hodge Atoms**: Bridging explicit combinatorial geometry with theoretical criteria (spectral and numerical) for the rationality of Fano fourfolds (e.g. cubic fourfolds, ordinary Gushel-Mukai fourfolds, and Küchle fourfolds).
+3. **Connections to the Theory of Hodge Atoms**: Bridging explicit combinatorial geometry with theoretical criteria (spectral and numerical) for the rationality of Fano fourfolds (e.g., cubic fourfolds, ordinary Gushel-Mukai fourfolds, and Küchle fourfolds).
 
 ## The Software: `gwflags`
 
