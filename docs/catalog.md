@@ -73,6 +73,23 @@ This section houses an expanding catalog of explicit geometric examples computed
         $$
 
 
+??? example "Case #2: P4 / O(2)  quadric 3-fold"
+    - **Ambient Space:** `A4`
+    - **Dimension:** 3
+    - **Fano Index:** 3
+    - **Basis Rank:** 5
+    - **Eigenvalues:** 4.762 (mult: 1), -3*2**(2/3)/2 - 3*2**(2/3)*sqrt(3)*I/2 (mult: 1), -3*2**(2/3)/2 + 3*2**(2/3)*sqrt(3)*I/2 (mult: 1), 0.0 (mult: 1)
+    - **Hodge Diamond ($h^{p,q}$):**
+        $$
+        \begin{pmatrix}
+        1 & 0 & 0 & 0 \\
+        0 & 1 & 0 & 0 \\
+        0 & 0 & 1 & 0 \\
+        0 & 0 & 0 & 1 \\
+        \end{pmatrix}
+        $$
+
+
 </div>
 
 ***
