@@ -64,15 +64,15 @@ This section houses an expanding catalog of explicit geometric examples computed
 
     The eigenvalues of the small quantum multiplication matrix $c_1(TX)\star$ evaluated at $y=1$, along with their algebraic multiplicities. These values govern the spectrum of the quantum connection.
 
--   __Case #32: LG(3,6) / O(1)+O(1)__
+-   __Case #21: B2/B / O(1,1)__
 
     ---
     
-    - **Ambient Space:** `C3`
-    - **Dimension:** 4
-    - **Fano Index:** 2
+    - **Ambient Space:** `B2`
+    - **Dimension:** 3
+    - **Fano Index:** 1
     - **Basis Rank:** 8
-    - **Eigenvalues:** -1.657 (mult: 1), 9.657 (mult: 1), -9.657 (mult: 1), 1.657 (mult: 1), 0.0 (mult: 1)
+    - **Eigenvalues:** -2.0 (mult: 2), -sqrt(568/(3*(1591*sqrt(129)/9 + 2209)**(1/3)) + 2*(1591*sqrt(129)/9 + 2209)**(1/3) + 60)/2 + sqrt(-856/sqrt(568/(3*(1591*sqrt(129)/9 + 2209)**(1/3)) + 2*(1591*sqrt(129)/9 + 2209)**(1/3) + 60) - 2*(1591*sqrt(129)/9 + 2209)**(1/3) - 568/(3*(1591*sqrt(129)/9 + 2209)**(1/3)) + 120)/2 (mult: 1), -sqrt(568/(3*(1591*sqrt(129)/9 + 2209)**(1/3)) + 2*(1591*sqrt(129)/9 + 2209)**(1/3) + 60)/2 - sqrt(-856/sqrt(568/(3*(1591*sqrt(129)/9 + 2209)**(1/3)) + 2*(1591*sqrt(129)/9 + 2209)**(1/3) + 60) - 2*(1591*sqrt(129)/9 + 2209)**(1/3) - 568/(3*(1591*sqrt(129)/9 + 2209)**(1/3)) + 120)/2 (mult: 1), 11.422 (mult: 1), -1.223 (mult: 1)
 
 
 </div>
