@@ -412,6 +412,17 @@ This section houses an expanding catalog of explicit geometric examples computed
     - **Eigenvalues:** 96.0 (mult: 1), -12.0 (mult: 3)
 
 
+-   __Case #12: Gr(2,6) / O(1)+O(1)+O(2)__
+
+    ---
+    
+    - **Ambient Space:** `A5`
+    - **Dimension:** 5
+    - **Fano Index:** 2
+    - **Basis Rank:** 15
+    - **Eigenvalues:** -20.785 (mult: 1), 20.785 (mult: 1), -4*I (mult: 1), 4*I (mult: 1), 0.0 (mult: 4)
+
+
 </div>
 
 ***
