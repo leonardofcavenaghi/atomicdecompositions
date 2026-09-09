@@ -149,6 +149,14 @@ This section houses an expanding catalog of explicit geometric examples computed
         $$
 
 
+??? example "Case #22: G2/P1  quadric 5-fold"
+    - **Ambient Space:** `G2`
+    - **Dimension:** 5
+    - **Fano Index:** 5
+    - **Basis Rank:** 6
+    - **Eigenvalues:** 6.598 (mult: 1), -5*2**(2/5)*sqrt(5)/4 - 5*2**(2/5)/4 - 5*2**(2/5)*I*sqrt(5/8 - sqrt(5)/8) (mult: 1), -5*2**(2/5)*sqrt(5)/4 - 5*2**(2/5)/4 + 5*2**(2/5)*I*sqrt(5/8 - sqrt(5)/8) (mult: 1), -5*2**(2/5)/4 + 5*2**(2/5)*sqrt(5)/4 - 5*2**(2/5)*I*sqrt(sqrt(5)/8 + 5/8) (mult: 1), -5*2**(2/5)/4 + 5*2**(2/5)*sqrt(5)/4 + 5*2**(2/5)*I*sqrt(sqrt(5)/8 + 5/8) (mult: 1), 0.0 (mult: 1)
+
+
 </div>
 
 ***
