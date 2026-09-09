@@ -1,29 +1,10 @@
 # Theory of Atoms
 
 <div align="center">
-  <img src="assets/logo.jpg" alt="Theory of Atoms Logo" width="200"/>
+  <img src="assets/logo.jpg" alt="Theory of Atoms Logo" width="400"/>
 </div>
 
 Welcome to the documentation and software repository for **"On the Atomic Decomposition of Complete Intersection in Flag Varieties."** 
-
-This project is an effort of the **Theory of Atoms** mathematical research group, led by **Dr. Ludmil Katzarkov**.
-
-## Authors & Contributors
-
-**Lead Investigator:**
-- Dr. Ludmil Katzarkov
-
-**Authors:**
-- Leonardo F. Cavenaghi
-- Giovane Galindo
-- Bogdan Georgiev
-- Maxim Kontsevich
-- Pedro Antonio Muniz Martins
-
-**Other Contributors:**
-- Boris Alexeev
-
----
 
 ## About the Project
 
@@ -42,6 +23,7 @@ The accompanying software, `gwflags`, computes:
 
 ## Navigate the Documentation
 
+- [**About**](about.md): Learn about the team behind this project.
 - [**Installation**](installation.md): Clean, step-by-step instructions for getting Python, SageMath, and `gwflags` running on Windows, macOS, and Linux.
 - [**Methodology**](methodology.md): An explanation of how the software implements the localization formalism described in the paper.
 - [**Theoretical Basis**](theory.md): A summary of the main theorems (Theorems A, B, C, and D) and how the software relates to the spectral irrationality criteria.
