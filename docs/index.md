@@ -25,5 +25,5 @@ The accompanying software, `gwflags`, computes:
 
 ## Download
 
-The code is hosted on GitHub. You can explore the source code directly:
-- [GitHub Repository](https://github.com/plby/gromov_witten)
+The code is hosted directly on this repository. You can explore the source code here:
+- [GitHub Repository](https://github.com/leonardofcavenaghi/atomicdecompositions)

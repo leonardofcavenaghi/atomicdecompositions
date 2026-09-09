@@ -1,6 +1,6 @@
 # Installation Instructions
 
-The `gwflags` software is written to be flexible and fast. It evaluates Gromov-Witten invariants for flag varieties and complete intersections exactly, avoiding slow symbolic computer algebra system (CAS) loops. 
+The `gwflags` software is hosted directly within this repository. It evaluates Gromov-Witten invariants for flag varieties and complete intersections exactly, avoiding slow symbolic computer algebra system (CAS) loops. 
 
 It can run on **plain Python** or from within **SageMath**.
 
@@ -39,7 +39,7 @@ You need Python 3.9 or newer.
 
 === "Linux (Ubuntu/Debian)"
     1. Open your terminal.
-    2. Update your package list and install Python 3 and `pip`:
+    2. Update your package list and install Python 3 and `venv`:
        ```bash
        sudo apt update
        sudo apt install python3 python3-pip python3-venv
@@ -57,17 +57,29 @@ If you have SageMath installed, the package auto-detects it and uses its symboli
 
 ## 2. Installing the Software
 
-Once your Python environment is ready, you can download the code and install its dependencies.
+The software is hosted directly in this project. We will use a **virtual environment** (`venv`) to install its dependencies securely.
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/plby/gromov_witten.git
-   cd gromov_witten
+   git clone https://github.com/leonardofcavenaghi/atomicdecompositions.git
+   cd atomicdecompositions
    ```
 
-2. **Install the single Python dependency (`sympy`):**
+2. **Create and activate a virtual environment:**
+   === "Windows"
+       ```cmd
+       python -m venv venv
+       venv\Scripts\activate
+       ```
+   === "macOS and Linux"
+       ```bash
+       python3 -m venv venv
+       source venv/bin/activate
+       ```
+
+3. **Install the single Python dependency (`sympy`):**
    ```bash
-   pip install sympy
+   pip install sympy mpmath
    ```
    *(If you are using SageMath, you do not need to install `sympy` as it is included).*
 
@@ -75,7 +87,7 @@ Once your Python environment is ready, you can download the code and install its
 
 ## 3. Quick Start & Verification
 
-To verify that the installation is successful and independently known values from Schubert calculus match exactly, run the test suite:
+To verify that the installation is successful and independently known values from Schubert calculus match exactly, run the test suite from the repository root:
 
 ```bash
 python3 tests/test_gwflags.py

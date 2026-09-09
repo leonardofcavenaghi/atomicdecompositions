@@ -1,0 +1,1873 @@
+\documentclass[11pt]{amsart}
+\usepackage{geometry}
+\geometry{paperwidth=210mm,paperheight=297mm,top=35mm,bottom=35mm,left=25mm,right=25mm}
+\usepackage[colorlinks,pagebackref,hypertexnames=false]{hyperref}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{amstext}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{latexsym}
+\usepackage[T1]{fontenc}
+\usepackage[all]{xy}
+\usepackage{tikz-cd}
+\usepackage{hhline}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage[nameinlink,noabbrev]{cleveref}
+\usepackage{autonum}
+\usepackage{dsfont}
+\usepackage{booktabs} % For professional tables
+\usepackage{caption} % Required for \captionof
+\usepackage{thmtools}
+\allowdisplaybreaks%%%% maybe will help
+
+% Hyperref setup (you can keep or adjust colors)
+\hypersetup{
+	colorlinks=true,
+	linkcolor=red,
+	citecolor=blue,
+	filecolor=blue,
+	urlcolor=blue
+}
+
+\newenvironment{blueenv}
+{\color{blue}} % Start coloring text blue
+{}              % The color automatically ends with the environment
+
+
+\newcommand{\vtx}[1]{*+[o][F-]{\scriptscriptstyle #1}} %the command to draw a vertex
+\vfuzz2pt % Don't report over-full v-boxes if over-edge is small
+\hfuzz2pt % Don't report over-full h-boxes if over-edge is small
+\mathsurround=0pt \textwidth=15true cm \tolerance=1500%
+
+\newcounter{num}[section] %
+\renewcommand{\thenum}{\thesection.\arabic{num}} %
+
+
+\newtheorem{mainthm}{Theorem}
+\renewcommand{\themainthm}{\Alph{mainthm}}
+\newtheorem{maincor}[mainthm]{Corollary}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{Mtheorem}{Theorem}
+\renewcommand*{\theMtheorem}{\Alph{Mtheorem}}
+\newtheorem{Ctheorem}[Mtheorem]{(Theorem)}
+\renewcommand*{\theCtheorem}{\Alph{Ctheorem}}
+
+
+% --- THEOREMS, PROPOSITIONS, COROLLARIES, LEMMAS ---
+\newenvironment{theo}
+{\refstepcounter{num}%
+	\bigskip\noindent{\bf Theorem~\arabic{section}.\arabic{num}.}\quad\itshape}
+{\par\bigskip}
+
+\newenvironment{prop}
+{\refstepcounter{num}%
+	\bigskip\noindent{\bf Proposition~\arabic{section}.\arabic{num}.}\quad\itshape}
+{\par\bigskip}
+
+\newenvironment{cor}
+{\refstepcounter{num}%
+	\bigskip\noindent{\bf Corollary~\arabic{section}.\arabic{num}.}\quad\itshape}
+{\par\bigskip}
+
+\newenvironment{lemma}
+{\refstepcounter{num}%
+	\bigskip\noindent{\bf Lemma~\arabic{section}.\arabic{num}.}\quad\itshape}
+{\par\bigskip}
+
+% --- EXAMPLES, REMARKS, CONJECTURES ---
+\newenvironment{example}
+{\refstepcounter{num}%
+	\bigskip\noindent{\bf Example~\arabic{section}.\arabic{num}.}\quad}
+{\par\bigskip} 
+
+\newenvironment{remark}
+{\refstepcounter{num}%
+	\bigskip\noindent{\bf Remark~\arabic{section}.\arabic{num}.}\quad}
+{\par\bigskip}
+
+\newenvironment{conj}
+{\refstepcounter{num}%
+	\bigskip\noindent{\bf Conjecture~\arabic{section}.\arabic{num}.}\quad\itshape}
+{\par\bigskip}
+
+% --- DEFINITIONS ---
+\newenvironment{definition}[1]
+{\refstepcounter{num}%
+	\bigskip\noindent{\bf Definition~\arabic{section}.\arabic{num}}~(\emph{#1}).\quad}
+{\par\bigskip}
+
+\newenvironment{defin}
+{\refstepcounter{num}%
+	\bigskip\noindent{\bf Definition~\arabic{section}.\arabic{num}.}\quad}
+{\par\bigskip}
+
+% --- NAMED ENVIRONMENTS ---
+\newenvironment{prop_with_name}[1]
+{\refstepcounter{num}%
+	\bigskip\noindent{\bf Proposition~\arabic{section}.\arabic{num}} (#1).\quad\itshape}
+{\par\bigskip}
+
+\newenvironment{theo_with_name}[1]
+{\refstepcounter{num}%
+	\bigskip\noindent{\bf Theorem~\arabic{section}.\arabic{num}} (#1).\quad\itshape}
+{\par\bigskip}
+
+\newenvironment{remark_with_name}[1]
+{\refstepcounter{num}%
+	\bigskip\noindent{\bf Remark~\arabic{section}.\arabic{num}} (#1).\quad\itshape}
+{\par\bigskip}
+
+\newenvironment{lemma_with_name}[1]
+{\refstepcounter{num}%
+	\bigskip\noindent{\bf Lemma~\arabic{section}.\arabic{num}} (#1).\quad\itshape}
+{\par\bigskip}
+
+%\newenvironment{proof}{\noindent\emph{Proof. }}
+%{$\Box$ \bigskip}
+\newenvironment{proof_of}[1]{\noindent\emph{Proof #1}}
+{$\Box$ \bigskip}
+\newenvironment{eq}{\begin{equation}}{\end{equation}}
+
+\renewcommand{\Ref}[1]{(\ref{#1})}
+
+\newcommand{\si}{\sigma}
+\newcommand{\al}{\alpha}
+\newcommand{\be}{\beta}
+\newcommand{\ga}{\gamma}
+\newcommand{\la}{\lambda}
+%\newcommand{\La}{\wedge}
+\newcommand{\de}{\delta}
+\newcommand{\De}{\Delta}
+\newcommand{\La}{\Lambda}
+\newcommand{\Ga}{\Gamma}
+
+\newcommand{\LA}{\langle}
+\newcommand{\RA}{\rangle}
+\newcommand{\ov}[1]{\overline{#1}}
+\newcommand{\un}[1]{{\underline{#1}} }
+\newcommand{\id}[1]{{{\rm id}\{{#1}\}}}
+\newcommand{\lin}{\mathop{\rm lin}}
+\newcommand{\tr}{\mathop{\rm tr}}
+\newcommand{\Ind}{\mathop{\rm Ind}}
+%\newcommand{\sys}{{\mathcal{S}} }
+%\newcommand{\projlim}{\mathop{\rm{projlim }}}
+%\newcommand{\alg}{\mathop{\rm alg}}
+\newcommand{\mdeg}{\mathop{\rm mdeg}}
+\newcommand{\hterm}{\mathop{\rm ht}}   % the highest term 
+\newcommand{\Skew}{\mathop{\rm skew}}   
+\newcommand{\diag}{\mathop{\rm diag}}
+%\newcommand{\mydiag}{\mathop{\rm d}}
+\newcommand{\Char}{\mathop{\rm char}}
+\newcommand{\image}{\mathop{\rm Im}}
+\newcommand{\sign}{\mathop{\rm{sgn }}}
+%\newcommand{\sgn}{\mathop{\rm{sgn }}}
+\newcommand{\rank}{\mathop{\rm{rank }}}
+%\newcommand{\Spec}{\mathop{\rm{Spec }}}
+\newcommand{\trdeg}{\mathop{\rm{tr.deg }}}
+%\newcommand{\St}{\mathop{\rm{St }}}
+%\newcommand{\Orb}{\mathop{\rm{O }}}
+\newcommand{\Hom}{{\mathop{\rm{Hom }}}}
+\newcommand{\End}{{\mathop{\rm{End }}}}
+\newcommand{\Ker}{{\mathop{\rm{Ker }}}}
+\newcommand{\Balpha}{{\boldsymbol{\alpha}}}
+\renewcommand{\d}{\mathrm{d}}
+\newcommand{\dL}{\d^{\Lambda}}
+\newcommand{\Om}{\Omega}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\X}{\breve{X}}
+\DeclareMathOperator{\im}{Im}
+\DeclareMathOperator{\gr}{gr}
+% The two key operators
+\newcommand{\dduL}{(\d + u\dL)}
+\newcommand{\ddL}{(\d\dL)}
+
+
+
+
+\newcommand{\Sym}{{\mathcal S}}
+\newcommand{\wz}{\mathop{\rm wz}}
+\newcommand{\upto}{,\ldots ,}
+\newcommand{\st}{\,|\,}
+
+%\DeclareMathOperator{\GL}{GL}
+%\DeclareMathOperator{\SL}{SL}
+
+
+
+
+\newcommand{\algA}{\mathcal{A}}    %algebra A
+\newcommand{\algB}{\mathcal{B}}    %algebra B
+\newcommand{\hsp}{Q}               % h.s.p.
+%\newcommand{\X}{\LA X\RA}          % h.s.p.
+\newcommand{\GL}{{\rm GL}}         % GL
+\newcommand{\SL}{{\rm SL}}         % SL
+\renewcommand{\O}{{\rm O}}         % GL
+\newcommand{\SO}{{\rm SO}}         % SO
+\newcommand{\Sp}{{\rm Sp}}         % Sp
+\newcommand{\Op}{{\rm O}_2^{+}}    % O_2^+
+%\newcommand{\Om}{{\rm O}_2^{-}}    % O_2^-
+
+%\newcommand{\W}{\mathcal{W}} % the set of monomials in the generic matrices 
+%\newcommand{\N}{\mathcal{N}} 
+%\newcommand{\M}{\mathcal{M}}
+%\newcommand{\T}{{\mathcal T}} % a tableau
+%\renewcommand{\P}{{\mathcal P}} % 
+
+\newcommand{\calV}{{\mathcal{V}}}
+\newcommand{\calN}{{\mathcal{N}}}
+\newcommand{\calU}{{\mathcal{U}}}
+\newcommand{\calB}{{\mathcal{B}}}
+\newcommand{\calD}{{\mathcal{D}}}
+\newcommand{\calT}{{\mathcal{T}}}
+\newcommand{\Hdr}{H_{dR}}
+\newcommand{\Hdl}{H_{\dL}}
+\newcommand{\Hharm}{\mathcal{H}} % Harmonic forms
+\newcommand{\Lop}{L} % Lefschetz operator
+\newcommand{\Lam}{\Lambda} % Adjoint
+
+
+
+
+
+
+\newcommand{\FF}{{\mathbb{F}}}   % base field
+\newcommand{\KK}{{\mathbb{K}}}   % some field
+\newcommand{\CC}{{\mathbb{C}}}   % base field
+\newcommand{\NN}{{\mathbb{N}}}
+\newcommand{\ZZ}{{\mathbb{Z}}}   % integers
+\newcommand{\QQ}{{\mathbb{Q}}}
+\newcommand{\RR}{{\mathbb{R}}}
+
+\renewcommand{\k}{\kappa}
+
+
+
+\newcommand{\ii}{{\mathbb{I}}}   % (-1)^{1/2}
+
+\newcommand{\Pf}{{\mathop{\rm{pf }}}}
+\newcommand{\DP}{{\rm DP} }
+%\newcommand{\F}{{\mathop{\rm{bpf }}}}
+\newcommand{\bpf}{{\mathop{\rm{bpf }}}}
+
+%\newcommand{\ovphi}[1]{\varphi(#1)}  
+
+\newcommand{\QS}{\mathfrak{Q}} %Mixed quiver setting
+
+\newcommand{\Q}{\mathcal{Q}}    %Quiver
+\newcommand{\G}{\mathcal{G}}    %Quiver
+\newcommand{\n}{\boldsymbol{n}} %dimension vector
+\newcommand{\g}{\boldsymbol{g}} %for groups
+\newcommand{\h}{\boldsymbol{h}} %for homomorphisms
+\renewcommand{\i}{\boldsymbol{i}} %involution
+
+\newcommand{\I}{\mathbb{I}} % i^2=-1
+
+\newcommand{\matr}[4]{\left(
+	\begin{array}{cc}
+		#1 & #2 \\ 
+		#3 & #4 \\ 
+	\end{array}
+	\right)}
+
+\newcommand{\vect}[2]{
+	\begin{pmatrix} #1\\ #2 \end{pmatrix}}
+
+\newcommand{\besep}{\be_{\rm sep}}
+\newcommand{\sisep}{\si_{\rm sep}}
+
+\newcommand{\stabp}{\mathrm{Stab}^{+}\!}
+
+%\newcommand{\e}{\mathfrak{e}}
+\newcommand{\e}{\mathsf{e}}
+%\newcommand{\e}{e}
+\newcommand\restr[2]{{% we make the whole thing an ordinary symbol
+		\left.\kern-\nulldelimiterspace % automatically resize the bar with \right
+		#1 % the function
+		\littletaller % pretend it's a little taller at normal size
+		\right|_{#2} % this is the delimiter
+}}
+
+\newcommand{\littletaller}{\mathchoice{\vphantom{\big|}}{}{}{}}
+
+
+
+%=========================================
+%=========================================
+%---For editing!!!!------------------------
+%\newcommand{\mylabel}[1]{[#1]}
+\newcommand{\mylabel}[1]{}
+
+%\newcommand{\err}{{\bf !!!} \marginpar{\textcolor{red}{!!!}}}
+%\newcommand{\err}{}
+
+%\newcommand{\mycomment}[2]{ $\bf{\copyright_{#1}}$ \marginpar{\textcolor{red}{Comment 1:} #2}}
+\newcommand{\mycomment}[1]{\marginpar{\addtolength{\baselineskip}{-2pt}{\footnotesize {\color{blue}  #1}}}}
+%\newcommand{\mycomment}[1]{ {\textcolor{red}{Comment: #1}}}
+%========================================
+%========================================
+
+% 1. Coloque esta linha no seu preâmbulo (antes do \begin{document}) 
+% ou logo antes de abrir a sua matriz:
+\setcounter{MaxMatrixCols}{25}
+
+\title{Quantum multiplication matrices}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\section{Complete intersections in $Fl(1,2,5)$}
+
+\begin{enumerate}
+    \item [1)]The Algebra is $A_4$, of $Sl_5$. We then exclude the last two simple roots and $\Pi_M = \{\alpha_1 , \alpha_2\}$. Therefore there are two generators in $H_2$, $\sigma_{1}, \sigma_2$.
+    \item[2)] The first Chern class in this basis is $(2,4)$, i.e. $c_1 (M) = 2 \sigma_1 +4\sigma_2$.
+    \item[3)]The Hodge diamond is
+    \[
+        \begin{array}{c}
+             1  \\
+             2\\
+             3\\
+             4\\
+             4\\
+            3\\
+            2\\
+            1
+        \end{array}
+    \]
+\end{enumerate}
+
+
+\subsection{Line bundle $\mathcal{O}(0,1) \oplus \mathcal{O}(0,2) \oplus \mathcal{O}(1,0)$}
+
+\begin{enumerate}
+    \item [1)] This the GM-20 in the Fano 4-fold of $K3$ type paper
+    \item[2)]Birational to a general Gushei-Mukai fourfold
+    \item[3)] Rationality not known according to the paper
+    \item[4)] Hodge diamond is 
+    \[
+        \begin{array}{ccc}
+             &1&  \\
+             &2&\\
+           1&3+25&1\\
+            &2&\\
+            &1&
+        \end{array}
+    \]
+    Where 3+25 means $3$ ambient classes and $25$ primitive. 
+\item[5)] First Chern class given by the coordinates $(1,1)$ and Fano index $1$. 
+
+    \item[6)]
+
+    \[
+    \resizebox{\textwidth}{!}{$
+\begin{pmatrix}
+0 & 12y(1)y(2) & 4y(2)^2+12y(1)y(2) & 96y(1)y(2)^2 & 84y(1)y(2)^2 & 156y(1)y(2)^2 & 96y_{1}^{2}y_{2}^{2} +416 y(1) y(2)^3& 48y_{1}^{2}y_{2}^{2} +128 y(1) y(2)^3& 0 \\
+1 & -y(1) & 6y(2) & 4y(2)^2 & 0 & 8y(2)^2 & 72y(1)y(2)^2 & 36y(1)y(2)^2 & 160 y(1) y(2)^3\\
+1 & y(1) & 0 & 12y(1)y(2) & 20y(1)y(2) & 20y(1)y(2) & 132y(1)y(2)^2 & 48y(1)y(2)^2 & 48y_{1}^{2}y_{2}^{2} +128 y(1) y(2)^3\\
+0 & 1 & 2 & 0 & 0 & 4y(2) & 8y(1)y(2) & 4y(1)y(2) & 36y(1)y(2)^2 \\
+0 & 2 & 1 & 6y(2) & -y(1) & 10y(2) & 4y(2)^2 & 0 & 36y(1)y(2)^2 \\
+0 & 0 & 1 & 0 & y(1) & -2y(2) & 16y(1)y(2) & 8y(1)y(2) & 24y(1)y(2)^2 \\
+0 & 0 & 0 & 3 & 1 & 5 & y(1) & y(1) & 12y(1)y(2) \\
+0 & 0 & 0 & -2 & 2 & -4 & 6y(2)-2y(1) & -2y(1) & 4y(2)^2-12y(1)y(2) \\
+0 & 0 & 0 & 0 & 0 & 0 & 3 & 1 & 0
+\end{pmatrix}
+$}
+\]
+
+Let $y_1 = y_2 =1$
+$$ 
+\begin{pmatrix}
+0 & 12 & 16 & 96 & 84 & 156 & 512 & 176 & 0 \\
+1 & -1 & 6 & 4 & 0 & 8 & 72 & 36 & 160 \\
+1 & 1 & 0 & 12 & 20 & 20 & 132 & 48 & 176 \\
+0 & 1 & 2 & 0 & 0 & 4 & 8 & 4 & 36 \\
+0 & 2 & 1 & 6 & -1 & 10 & 4 & 0 & 36 \\
+0 & 0 & 1 & 0 & 1 & -2 & 16 & 8 & 24 \\
+0 & 0 & 0 & 3 & 1 & 5 & 1 & 1 & 12 \\
+0 & 0 & 0 & -2 & 2 & -4 & 4 & -2 & -8 \\
+0 & 0 & 0 & 0 & 0 & 0 & 3 & 1 & 0
+\end{pmatrix}
+$$
+\end{enumerate}
+
+\section{Complete intersection in $\mathbb{P}^4$}
+
+\subsection{Quadric 3-fold}
+
+\begin{enumerate}
+   
+\item[1)] The hodge diamond is
+\[
+    \begin{array}{ccc}
+         &1&  \\
+          &1&  \\
+           &1&  \\
+            &1&  \\
+    \end{array}
+\]
+\item[2)] The quantum multiplication table is
+\[
+    \begin{pmatrix}
+        0& 0 &6y_1 &0\\
+        3&0 &0 &6y_1\\
+        0& 3 &0&0\\
+        0&0&3&0
+    \end{pmatrix}
+\]
+The eigenvalues are $\{0,3\sqrt{2y_1},3\sqrt{2y_1}\xi^{1/3},3\sqrt{2y_1}\xi^{2/3}$
+\end{enumerate}
+
+
+\subsection{Cubic 3-fold}
+\begin{enumerate}
+   
+
+\item[1)] The hodge diamond is
+\[
+    \begin{array}{ccc}
+         &1&  \\
+          &1&  \\
+          5&&5\\
+           &1&  \\
+            &1&  \\
+    \end{array}
+\]
+\item[2)] The quantum multiplication table is
+\[
+    \begin{pmatrix}
+        0& 12y_1 &0 &72y_{1}^{2}\\
+        2&0 &30y_1 &0\\
+        0& 2 &0&12y_1\\
+        0&0&2&0
+    \end{pmatrix}
+\]
+The eigenvalues are $\{0,0,6\sqrt{3y_1},-6\sqrt{3y_1}\}$
+\end{enumerate}
+\subsection{Quartic 3-fold}
+\begin{enumerate}
+ 
+\item[1)] The Hodge diamond is 
+\[
+    \begin{array}{ccc}
+         &1&  \\
+         &1&\\
+         30&&30\\
+         &1&\\
+         &1&
+    \end{array}
+\]
+
+\item[2)] The quantum multiplication matrix is
+\[
+    \begin{pmatrix}
+        0& 3888y_{1}^{2} &504576y_{1}^{3} &18323712y_{1}^{4}\\
+        1&80y_1 &13600y_{1}^{2} &504576y_{1}^{3}\\
+        0& 1 &80y_1&3888y_{1}^{2}\\
+        0&0&1&0
+    \end{pmatrix}
+ \]
+ The eigenvalues are $-24y_1,-24y_1,-24y_1,232y_1$
+ \item[3)] Irational. 
+\end{enumerate}
+
+\section{Complete intersection in Gr(2,4)}
+
+\begin{enumerate}
+    \item [1)]The Hodge diamond is
+    \[
+            \begin{array}{c}
+             1  \\
+             1\\
+           2\\
+            1\\
+            1
+        \end{array}
+    \]
+
+    \item[2)] The quantum multiplication table is 
+    \[
+    \begin{pmatrix}
+        0 & 0 & 0 & 0 & 4y_2 & 0 \\
+        4 & 0 & 0 & 0 & 0 & 4y_2 \\
+        0 & 4 & 0 & 0 & 0 & 0 \\
+        0 & 4 & 0 & 0 & 0 & 0 \\
+        0 & 0 & 4 & 4 & 0 & 0 \\
+        0 & 0 & 0 & 0 & 4 & 0
+    \end{pmatrix}
+    \]
+There are $4$ roots of the unit and $0$ with multiplicity $2$.
+
+\item[3)]There is a $\mathbb{Z}_2$ action that swaps the $2$ hodge classes of $H^4$ and leave $5$ invariants Hodge classes and the atomic decomposition is the one given by the small quantum multiplication. 
+    
+\end{enumerate}
+
+
+
+\subsection{Complete intersection by the Line bundle $\mathcal{O}(1)$}
+
+\begin{enumerate}
+    \item [1)] This is the quadric $3$-fold because $Gr(2,4)$ is the quardic $4$-fold
+\end{enumerate}
+
+\subsection{Complete intersection by the Line bundle $\mathcal{O}(2)$}
+
+\begin{enumerate}
+    \item [1)] This is the del Pezzo $3$-4fold of degree $4$ and has Fano index 2. It is an intersection of two quadrics and is rational.
+
+    \item[2)] The Hodge diamond is
+    \[
+    \begin{array}{ccc}
+         &1&  \\
+         &1&\\
+         2&&2\\
+         &1&\\
+         &1&
+    \end{array}
+    \]
+    \item[3)] The quantum multiplication matrix is
+    \[
+    \begin{pmatrix}
+        0 & 8y_2 & 0 & 16y_2^2 \\
+        2 & 0 & 8y_2 & 0 \\
+        0 & 4 & 0 & 8y_2 \\
+        0 & 0 & 2 & 0
+    \end{pmatrix}
+    \]
+The eigenvalues are $\{0,0,8\sqrt{y_2},-8\sqrt{y_2}\}$
+\end{enumerate}
+
+\subsection{Complete intersection by the Line bundle $\mathcal{O}(3)$}
+\begin{enumerate}
+   
+
+\item[1)] This is the complete intersection of a quadric and a cubic. Its suposed to be non-rational. It has Fano index 1
+\item[2)] The Hodge diamond is 
+\[
+    \begin{array}{ccc}
+         &1&  \\
+         &1&\\
+         20&&20\\
+         &1&\\
+         &1&
+    \end{array}
+\]
+\item[3)] The quantum multiplication table is
+\[
+\begin{pmatrix}
+0 & 792y_2^{2} & 21816y_2^{3} & 396576y_2^{4} \\
+1 & 30y_2 & 1170y_2^{2} & 21816y_2^{3} \\
+0 & 2 & 30y_2 & 792y_2^{2} \\
+0 & 0 & 1 & 0
+\end{pmatrix}
+\]
+The eigenvalues are $\{-12y_2 , -12y_2 , -12y_2, 96y_2\}$.
+\end{enumerate}
+\section{Complete intersection in $\mathbb{P}^5$}
+
+
+\subsection{Quadric 4-fold}
+
+\begin{enumerate}
+    \item [1)] The quadric 4-fold is the $Gr(2,4)$
+
+\item[2)] The Hodge diamond is
+\[
+    \begin{array}{c}
+         1  \\
+          1\\
+          2\\
+          1\\
+          1
+    \end{array}
+\]
+    
+    \item[3)] The quantum multiplication matrix is
+    \[
+    \begin{pmatrix}
+        0 & 0 & 0 & 8y_1 & 0 \\
+        4 & 0 & 0 & 0 & 8y_1 \\
+        0 & 4 & 0 & 0 & 0 \\
+        0 & 0 & 4 & 0 & 0 \\
+        0 & 0 & 0 & 4 & 0
+    \end{pmatrix}
+    \]
+The eigenvalues are $\{0,\pm 4 \sqrt{2}y_{1}^{1/4} ,\pm 4i \sqrt{2}y_{1}^{1/4} \}$
+\end{enumerate}
+
+
+\subsection{Cubic 4-fold}
+
+\begin{enumerate}
+    \item [1)] The Hodge diamond is
+    \[
+        \begin{array}{ccccc}
+             &1&  \\
+             &1&\\
+             1&21&1\\
+             &1&\\
+             &1&
+        \end{array}
+    \]
+
+    \item[2)] This is non-rational
+
+    \item[3)] The quantum multiplication matrix is 
+
+
+
+\[
+\begin{pmatrix}
+0 & 0 & 18 y_1 & 0 & 0 \\
+3 & 0 & 0 & 45 y_1 & 0 \\
+0 & 3 & 0 & 0 & 18 y_1 \\
+0 & 0 & 3 & 0 & 0 \\
+0 & 0 & 0 & 3 & 0
+\end{pmatrix}
+\]
+Eigenvalues $0,0,9\xi y_1^{1/3}, 9 \xi^{1/3} y_1^{1/3},
+ 9\xi^{2/3} y_1^{1/3}$
+ \end{enumerate}
+
+\subsection{Quartic 4-fold}
+\begin{enumerate}
+
+\item[1)]The Hodge diamond is
+\[
+    \begin{array}{ccc}
+         &1&  \\
+         &1&\\
+         21 &1+141 &21\\
+         &1&\\
+         &1&
+    \end{array}
+\]
+where $1+141$ means $1$ class is in the ambient cohomology and $141$ in the primitive.
+\item[2)] The quantum multiplication matrix is 
+\[
+\begin{pmatrix}
+0 & 48 y_1 & 0 & 5568 y_1^2 & 0 \\
+2 & 0 & 208 y_1 & 0 & 5568 y_1^2 \\
+0 & 2 & 0 & 208 y_1 & 0 \\
+0 & 0 & 2 & 0 & 48 y_1 \\
+0 & 0 & 0 & 2 & 0
+\end{pmatrix}
+\]
+
+Eigenvalues are $0,0,0,-32\sqrt{y_1},32\sqrt{y_1}$
+\end{enumerate}
+
+
+
+\subsection{Intersection of two quadrics $\mathcal{O}(2) \oplus \mathcal{O}(2)$}
+
+\begin{itemize}
+\item[1)] The Hodge diamond is
+\[
+    \begin{array}{ccc}
+         &1  \\
+         &1\\
+         2&&2\\
+         &1\\
+         &1
+    \end{array}
+\]
+
+
+\item[2)] The quantum multiplication table is
+
+\[
+\begin{pmatrix}
+0 & 8y_1 & 0 & 32y_1^2 \\
+2 & 0 & 16y_1 & 0 \\
+0 & 2 & 0 & 8y_1 \\
+0 & 0 & 2 & 0
+\end{pmatrix}
+\]
+
+The eigenvalues are $\{0,0,8\sqrt{y(1)},-8\sqrt{y_1}\}$
+
+
+\end{itemize}
+
+\section{$Gr(2,6)$}
+
+\subsection{$\mathcal{O}(1)\oplus \mathcal{O}(1) \oplus \mathcal{O}(2)$}
+\[
+\begin{array}{ccccccccccc}
+&&&&&1&&&&&\\
+&&&&0&&0&&&&\\
+&&&0&&1&&0&&&\\
+&&0&&0&&0&&0&&\\
+&0&&0&&2&&0&&0&\\
+0&&1&&67&&67&&1&&0\\
+&0&&0&&2&&0&&0&\\
+&&0&&0&&0&&0&&\\
+&&&0&&1&&0&&&\\
+&&&&0&&0&&&&\\
+&&&&&1&&&&&
+\end{array}
+\]
+\[
+\begin{pmatrix}
+0 & 16y_{2} & 0 & 0 & 336y_{2}^{2} & 288y_{2}^{2} & 0 & 768y_{2}^{3} \\
+2 & 0 & 16y_{2} & 36y_{2} & 0 & 0 & 480y_{2}^{2} & 0 \\
+0 & 2 & 0 & 0 & 12y_{2} & 12y_{2} & 0 & 48y_{2}^{2} \\
+0 & 2 & 0 & 0 & 32y_{2} & 28y_{2} & 0 & 80y_{2}^{2} \\
+0 & 0 & 2 & 2 & 0 & 0 & 12y_{2} & 0 \\
+0 & 0 & 0 & 2 & 0 & 0 & 24y_{2} & 0 \\
+0 & 0 & 0 & 0 & \frac{10}{3} & \frac{8}{3} & 0 & \frac{16y_{2}}{3} \\
+0 & 0 & 0 & 0 & 0 & 0 & 6 & 0
+\end{pmatrix}
+\]
+\[
+\left(
+0,\,
+0,\,
+0,\,
+0,\,
+-4i\sqrt{y_{2}},\,
+4i\sqrt{y_{2}},\,
+-12\sqrt{3}\sqrt{y_{2}},\,
+12\sqrt{3}\sqrt{y_{2}}
+\right)
+\]
+
+\section{Complete intersection in $Gr(2,5)$}
+
+
+
+\subsection{Line bundle $\mathcal{O}(1)$, A linear section}
+\begin{enumerate}
+
+\item[1)]The Hodge diamond is 
+\[
+    \begin{array}{c}
+         1  \\
+          1\\
+          2\\
+          2\\
+          1\\
+          1
+    \end{array}
+\]
+
+\item[2)]  The quantum multiplication table is
+\[
+M=
+\begin{pmatrix}
+0&0&0&0&4y_1&4y_1&0&0\\
+4&0&0&0&0&0&4y_1&0\\
+0&4&0&0&0&0&0&0\\
+0&4&0&0&0&0&0&4y_1\\
+0&0&4&4&0&0&0&0\\
+0&0&0&4&0&0&0&0\\
+0&0&0&0&8&4&0&0\\
+0&0&0&0&0&0&4&0
+\end{pmatrix}.
+\]
+The eigenvalues are
+\[
+\lambda \in 
+\left\{
+\zeta_4^k\sqrt[4]{128y_1\bigl(11+5\sqrt5\bigr)},
+\;
+\zeta_4^k\sqrt[4]{128y_1\bigl(11-5\sqrt5\bigr)}
+\;\middle|\;
+k=0,1,2,3
+\right\},
+\qquad \zeta_4=i.
+\]
+\item[3)] This is a del-Pezzo $5$-fold $V_5$. It is rational. 
+\end{enumerate}
+\subsection{Line bundle $\mathcal{O}(2)$ Gushel-Mukai 5-fold}
+
+\begin{enumerate}
+    
+\item[1)] The Hodge diamond is
+\[
+\begin{array}{cccccccccccccc}
+&& && && 1 && && && \\
+&& && & 0 && 0 & && && \\
+&& && 0 && 1 && 0 && && \\
+&& & 0 && 0 && 0 && 0 && & \\
+&& 0 && 0 && 2 && 0 && 0 && \\
+& 0 && 0 && 10 && 10 && 0 && 0  \\
+&& 0 && 0 && 2 && 0 && 0 && \\
+&& & 0 && 0 && 0 && 0 && & \\
+&& && 0 && 1 && 0 && && \\
+&& && & 0 && 0 & && && \\
+&& && && 1 && && && \\
+\end{array}
+\]
+\item[2)]
+\[
+M=
+\begin{pmatrix}
+0&0&6y_1&12y_1&0&0&0&24y_1^2\\
+3&0&0&0&18y_1&12y_1&0&0\\
+0&3&0&0&0&0&6y_1&0\\
+0&3&0&0&0&0&12y_1&0\\
+0&0&3&3&0&0&0&6y_1\\
+0&0&0&3&0&0&0&6y_1\\
+0&0&0&0&6&3&0&0\\
+0&0&0&0&0&0&3&0
+\end{pmatrix}.
+\]
+The eigenvalues are
+\[
+\left\{
+0,0,
+\omega^k\sqrt[3]{54y_1(11+5\sqrt5)},
+\omega^k\sqrt[3]{54y_1(11-5\sqrt5)}
+\;:\; k=0,1,2
+\right\}.
+\]
+\item[3)] A quadric section in $Gr(2,5)$, It is the Gushel-Mukai 5-fold. It is rational. 
+\end{enumerate}
+
+\subsection{Line bundle $\mathcal{O}(3)$}
+\begin{enumerate}
+    \item [1)] The Hodge diamond is
+    \[
+\begin{array}{ccccccccccc}
+ &&&&&1&&&&&\\
+ &&&&0&&0&&&&\\
+ &&&0&&1&&0&&&\\
+ &&0&&0&&0&&0&&\\
+ &0&&0&&2&&0&&0&\\
+0&&10&&300&&300&&10&&0\\
+ &0&&0&&2&&0&&0&\\
+ &&0&&0&&0&&0&&\\
+ &&&0&&1&&0&&&\\
+ &&&&0&&0&&&&\\
+ &&&&&1&&&&&
+\end{array}
+\]
+
+\item[2)] The quantum multiplication table is 
+\[
+\begin{pmatrix}
+0 & 36y(2) & 0 & 0 & 2232y(2)^2 & 1224y(2)^2 & 0 & 26568y(2)^3 \\
+2 & 0 & 54y(2) & 96y(2) & 0 & 0 & 2988y(2)^2 & 0 \\
+0 & 2 & 0 & 0 & 72y(2) & 42y(2) & 0 & 1008y(2)^2 \\
+0 & 2 & 0 & 0 & 96y(2) & 54y(2) & 0 & 1224y(2)^2 \\
+0 & 0 & 2 & 2 & 0 & 0 & 54y(2) & 0 \\
+0 & 0 & 0 & 2 & 0 & 0 & 42y(2) & 0 \\
+0 & 0 & 0 & 0 & 4 & 2 & 0 & 36y(2) \\
+0 & 0 & 0 & 0 & 0 & 0 & 2 & 0
+\end{pmatrix}
+\]
+The characteristic polynomial is
+\[
+\chi(\lambda)=\lambda^8-1188\,y(2)\,\lambda^6-11664\,y(2)^2\,\lambda^4
+=\lambda^4\Bigl(\lambda^4-1188\,y(2)\,\lambda^2-11664\,y(2)^2\Bigr).
+\]
+
+Hence the eigenvalues are
+\[
+0 \quad (\text{with multiplicity }4),
+\]
+and
+\[
+\lambda=\pm \sqrt{54\,y(2)\,\bigl(11+5\sqrt5\bigr)},\qquad
+\lambda=\pm \sqrt{54\,y(2)\,\bigl(11-5\sqrt5\bigr)}.
+\]
+\end{enumerate}
+\subsection{Line bundle $\mathcal{O}(1) \oplus \mathcal{O}(1)$}
+
+\begin{enumerate}
+    \item [1)]
+    \[
+    \begin{array}{c}
+         1  \\
+          1\\
+          2\\
+          1\\
+          1
+    \end{array}
+    \]
+
+\item [2)]  The small quantum multiplication table is
+\[
+M=
+\begin{pmatrix}
+0&0&3y_1&6y_1&0&0\\
+3&0&0&0&6y_1&0\\
+0&3&0&0&0&0\\
+0&3&0&0&0&3y_1\\
+0&0&3&\frac92&0&0\\
+0&0&0&0&6&0
+\end{pmatrix}.
+\]
+The eigenvalues are
+\[
+\lambda=\omega^k\sqrt[3]{\frac{y_1}{2}\left(297+135\sqrt5\right)}
+\quad\text{and}\quad
+\lambda=\omega^k\sqrt[3]{\frac{y_1}{2}\left(297-135\sqrt5\right)},
+\qquad k=0,1,2,
+\]
+where
+\[
+\omega=e^{2\pi i/3}.
+\]
+
+\item[3)] This is a del-Pezzo $4$-fold. It is rational
+\end{enumerate}
+
+\subsection{Line bundle $\mathcal{O}(1) \oplus \mathcal{O}(2)$ Gushel-Mukai 4-fold}
+
+\begin{enumerate}
+\item[1)] This is the Gushel-Mukai 4-fold. The very general is known to be non-rational.
+    \item [2)]The Hodge diamond is
+    \[
+        \begin{array}{ccc}
+             &1&  \\
+             &1&\\
+             1&22&1\\
+             &1&\\
+             &1&
+        \end{array}
+    \]
+
+    \item[3)] The matrix of the quantum multiplication is
+
+    \[
+M=
+\begin{pmatrix}
+0&12y_1&0&0&96y_1^2&0\\
+2&0&12y_1&20y_1&0&48y_1^2\\
+0&2&0&0&8y_1&0\\
+0&2&0&0&16y_1&0\\
+0&0&2&3&0&6y_1\\
+0&0&0&0&4&0
+\end{pmatrix}.
+\]
+\begin{align}
+&\lambda = 0, \ 0, \ \pm 2\sqrt{2y_1(11 + 5\sqrt{5})}, \ \pm 2\sqrt{2y_1(11 - 5\sqrt{5})}
+\end{align}
+% Compact simplified form
+
+\end{enumerate}
+
+\subsection{Line bundle $\mathcal{O}(1) \oplus \mathcal{O}(1) \oplus \mathcal{O}(1)$}
+
+\begin{enumerate}
+    \item [1)]The Hodge diamond is
+    \[
+        \begin{array}{c}
+             1  \\
+             1\\
+             1\\
+             1
+        \end{array}
+    \]
+
+\[
+M=
+\begin{pmatrix}
+0&6y_1&0&8y_1^2\\
+2&0&4y_1&0\\
+0&5&0&6y_1\\
+0&0&2&0
+\end{pmatrix}.
+\]
+The eigenvalues are
+\[
+    \lambda = \pm \sqrt{2y_1(11 + 5\sqrt{5})}, \ \pm \sqrt{2y_1(11 - 5\sqrt{5})}
+\]
+\item[3)] This is the del-Pezzo 3-fold $V_5$. It is rational 
+\end{enumerate}
+
+\section{Complete intersection in $\mathbb{P}^6$}
+
+\subsection{Quadric 5-fold}
+
+\begin{enumerate}
+    \item [1)]The hodge diamond is
+    \[
+        \begin{array}{c}
+            1   \\
+             1\\
+             1\\
+             1\\
+             1\\
+             1
+        \end{array}
+    \]
+
+    \item[2)] The quantum multiplication table is
+    \[
+A=
+\begin{pmatrix}
+0 & 0 & 0 & 0 & 10y_1 & 0 \\
+5 & 0 & 0 & 0 & 0 & 10y_1 \\
+0 & 5 & 0 & 0 & 0 & 0 \\
+0 & 0 & 5 & 0 & 0 & 0 \\
+0 & 0 & 0 & 5 & 0 & 0 \\
+0 & 0 & 0 & 0 & 5 & 0
+\end{pmatrix}.
+\]
+And the eigenvalues
+\[
+\lambda_0=0,
+\qquad
+\lambda_k=\sqrt[5]{12500\,y_1}\,\zeta_5^k
+\quad (k=0,1,2,3,4),
+\]
+\end{enumerate}
+
+\subsection{Cubic 5-fold}
+
+\begin{enumerate}
+  \item [1)]The hodge diamond is
+    \[
+        \begin{array}{ccc}
+            &1&   \\
+             &1&\\
+             &1&\\
+             21&&21\\
+             &1&\\
+             &1&\\
+             &1&
+        \end{array}
+    \]
+    \item[] The quantum multiplication table is
+
+    \[
+A=
+\begin{pmatrix}
+0 & 0 & 0 & 24y_1 & 0 & 0 \\
+4 & 0 & 0 & 0 & 60y_1 & 0 \\
+0 & 4 & 0 & 0 & 0 & 24y_1 \\
+0 & 0 & 4 & 0 & 0 & 0 \\
+0 & 0 & 0 & 4 & 0 & 0 \\
+0 & 0 & 0 & 0 & 4 & 0
+\end{pmatrix}.
+\]
+
+And the eigenvalues are
+\[
+\lambda_1=\lambda_2=0,
+\]
+\[
+\lambda_k
+=
+\sqrt[4]{6912\,y_1}\,i^{\,k},
+\qquad k=0,1,2,3.
+\]
+\end{enumerate}
+
+\subsection{Quartic 5-fold}
+The Hodge diamond is 
+\[
+    \begin{array}{ccccc}
+         &&1&&  \\
+         &&1&&\\
+         &&1&&\\
+         7&266&&266&7\\
+            &&1&&  \\
+         &&1&&\\
+         &&1&&
+    \end{array}
+\]
+\[
+\begin{pmatrix}
+0 & 0 & 72\, y_1 & 0 & 0 & 1728\, y_1^2 \\
+3 & 0 & 0 & 312\, y_1 & 0 & 0 \\
+0 & 3 & 0 & 0 & 312\, y_1 & 0 \\
+0 & 0 & 3 & 0 & 0 & 72\, y_1 \\
+0 & 0 & 0 & 3 & 0 & 0 \\
+0 & 0 & 0 & 0 & 3 & 0
+\end{pmatrix}
+\]
+Eigenvalues are $\{0,0,0,12(-2)^{2/3}\, y_1^{1/3}, \quad
+12 \cdot 2^{2/3}\, y_1^{1/3}, \quad
+-12(-1)^{1/3} 2^{2/3}\, y_1^{1/3}\}$\\
+It is irational
+\subsection{Quintic 5-fold}
+
+The Hodge diamond is 
+\[
+    \begin{array}{ccccc}
+         &&1&&  \\
+         &&1&&\\
+         &&1&&\\
+         84&1554&&1554&84\\
+            &&1&&  \\
+         &&1&&\\
+         &&1&&
+    \end{array}
+\]
+\[
+\begin{pmatrix}
+0 & 240 y_1 & 0 & 422400 y_1^2 & 0 & 62640000 y_1^3 \\
+2 & 0 & 1540 y_1 & 0 & 1385000 y_1^2 & 0 \\
+0 & 2 & 0 & 2690 y_1 & 0 & 422400 y_1^2 \\
+0 & 0 & 2 & 0 & 1540 y_1 & 0 \\
+0 & 0 & 0 & 2 & 0 & 240 y_1 \\
+0 & 0 & 0 & 0 & 2 & 0
+\end{pmatrix}
+\]
+Eigenvalues $0,0,0,0,-50\sqrt{5y_1} ,50\sqrt{5y_1}$\\
+It is irrational.
+\subsection{Intersection of quadric and cubic}
+
+\begin{enumerate}
+    \item [1)] The Hodge diamond is
+    \[
+\begin{array}{ccc}
+     &1&  \\
+     &1&\\
+     8&70&8\\
+          &1&  \\
+     &1&
+\end{array}
+    \]
+    \item[2)]  The quantum multiplication table is
+    \[
+\begin{pmatrix}
+0 & 24y(1) & 0 & 1152y(1)^2 & 0 \\
+2 & 0 & 84y(1) & 0 & 1152y(1)^2 \\
+0 & 2 & 0 & 84y(1) & 0 \\
+0 & 0 & 2 & 0 & 24y(1) \\
+0 & 0 & 0 & 2 & 0
+\end{pmatrix}
+\]
+The eigenvalues are $\{0,0,0,12\sqrt{3}y_1 , -12\sqrt{3}y_1\}$
+\end{enumerate}
+
+
+\section{Complete intersection in $Fl(1,4,5)$}
+
+\begin{enumerate}
+\item[1)] This should be a complete intersection of $\mathbb{P}^4 \times \mathbb{P}^4$ by the line bundle $\mathcal{O}(1,1)$.
+    \item [2)] The Hodge diamond is 
+    \[
+\begin{array}{c}
+1\\
+2\\
+3\\
+4\\
+4\\
+3\\
+2\\
+1
+\end{array}
+\]
+    \item[3)] The quantum multiplication matrix is
+
+% \[
+% {\begin{pmatrix}
+% 0&0&0&0&0&0&0&0&4y_2&4y_1&0&0&0&0&0&0&0&0&0&8y_1 y_2\\
+% 4&0&0&0&0&0&0&0&0&0&4y_2&0&0&0&0&0&0&0&0&0\\
+% 4&0&0&0&0&0&0&0&0&0&0&0&0&4y_1&0&0&0&0&0&0\\
+% 0&4&4&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0\\
+% 0&4&0&0&0&0&0&0&0&0&0&0&0&0&4y_2&0&0&0&0&0\\
+% 0&0&4&0&0&0&0&0&0&0&0&0&0&0&0&0&4y_1&0&0&0\\
+% 0&0&0&4&0&4&0&0&0&0&0&0&0&0&0&0&0&0&0&0\\
+% 0&0&0&4&4&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0\\
+% 0&0&0&0&0&4&0&0&0&0&0&0&0&0&0&0&0&0&4y_1&0\\
+% 0&0&0&0&4&0&0&0&0&0&0&0&0&0&0&0&0&4y_2&0&0\\
+% 0&0&0&0&0&0&4&0&8&0&0&0&0&0&0&0&0&0&0&4y_1\\
+% 0&0&0&0&0&0&8&4&4&0&0&0&0&0&0&0&0&0&0&0\\
+% 0&0&0&0&0&0&4&8&0&4&0&0&0&0&0&0&0&0&0&0\\
+% 0&0&0&0&0&0&0&4&0&8&0&0&0&0&0&0&0&0&0&4y_2\\
+% 0&0&0&0&0&0&0&0&0&0&4&4&0&0&0&0&0&0&0&0\\
+% 0&0&0&0&0&0&0&0&0&0&0&4&4&0&0&0&0&0&0&0\\
+% 0&0&0&0&0&0&0&0&0&0&0&0&4&4&0&0&0&0&0&0\\
+% 0&0&0&0&0&0&0&0&0&0&0&0&0&0&4&4&0&0&0&0\\
+% 0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&4&4&0&0&0\\
+% 0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&4&4&0
+% \end{pmatrix}}
+% \]
+
+
+% 2. Agora o LaTeX vai aceitar as 20 colunas sem quebrar nada:
+\[
+\begin{pmatrix}
+0&0&0&0&0&0&0&0&4y_2&4y_1&0&0&0&0&0&0&0&0&0&8y_1 y_2\\
+4&0&0&0&0&0&0&0&0&0&4y_2&0&0&0&0&0&0&0&0&0\\
+4&0&0&0&0&0&0&0&0&0&0&0&0&4y_1&0&0&0&0&0&0\\
+0&4&4&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0\\
+0&4&0&0&0&0&0&0&0&0&0&0&0&0&4y_2&0&0&0&0&0\\
+0&0&4&0&0&0&0&0&0&0&0&0&0&0&0&0&4y_1&0&0&0\\
+0&0&0&4&0&4&0&0&0&0&0&0&0&0&0&0&0&0&0&0\\
+0&0&0&4&4&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0\\
+0&0&0&0&0&4&0&0&0&0&0&0&0&0&0&0&0&0&4y_1&0\\
+0&0&0&0&4&0&0&0&0&0&0&0&0&0&0&0&0&4y_2&0&0\\
+0&0&0&0&0&0&4&0&8&0&0&0&0&0&0&0&0&0&0&4y_1\\
+0&0&0&0&0&0&8&4&4&0&0&0&0&0&0&0&0&0&0&0\\
+0&0&0&0&0&0&4&8&0&4&0&0&0&0&0&0&0&0&0&0\\
+0&0&0&0&0&0&0&4&0&8&0&0&0&0&0&0&0&0&0&4y_2\\
+0&0&0&0&0&0&0&0&0&0&4&4&0&0&0&0&0&0&0&0\\
+0&0&0&0&0&0&0&0&0&0&0&4&4&0&0&0&0&0&0&0\\
+0&0&0&0&0&0&0&0&0&0&0&0&4&4&0&0&0&0&0&0\\
+0&0&0&0&0&0&0&0&0&0&0&0&0&0&4&4&0&0&0&0\\
+0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&4&4&0&0&0\\
+0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&4&4&0
+\end{pmatrix}
+\]
+
+The eigenvalues are
+\[
+a:=y(1),\qquad b:=y(4),\qquad \omega:=i.
+\]
+
+\noindent\textbf{Case \(y_1\neq y_2\).}
+Let \(z=\lambda^4\). Then the characteristic polynomial is
+\[
+Q(z)=z^5-1280(y_1+y_2)z^4+\bigl(655360(y_1^2+y_2^2)-39649280ab\bigr)z^3
+\]
+\[
+\hspace{2.2cm}
+-\bigl(167772160(y_1^3+y_2^3)+31960596480y_1 y_2(y_1+y_2)\bigr)z^2
+\]
+\[
+\hspace{2.2cm}
++\bigl(21474836480(y_1^4+y_2^4)-2598455214080y_1 y_2(y_1^2+y_2^2)+8181912698880y_1^2y_2^2\bigr)z
+\]
+\[
+\hspace{2.2cm}
+-1099511627776(y_1^5+y_2^5)-5497558138880(y_1^4 y_2+y_1 y_2^4)-10995116277760(y_1^3 y_2^2 + y_1^2 y_2^3).
+\]
+If \(z_1,\dots,z_5\) are the roots of \(Q(z)\), then the eigenvalues are
+\[
+\lambda=\omega^k z_j^{1/4},\qquad j=1,\dots,5,\quad k=0,1,2,3.
+\]
+
+\medskip
+
+\noindent\textbf{Case \(y_1=y_2=t\).}
+Then
+\[
+\chi_M(\lambda)
+=
+(\lambda^4-8192t)\,\bigl(\lambda^8+2816t\,\lambda^4-65536t^2\bigr)^2.
+\]
+Equivalently,
+\[
+\lambda^4=8192t,
+\]
+or
+\[
+\lambda^4=128t(5\sqrt5-11),
+\qquad
+\lambda^4=-128t(11+5\sqrt5).
+\]
+Hence the eigenvalues are
+\[
+\lambda=\omega^k(8192t)^{1/4},\qquad k=0,1,2,3,
+\]
+\[
+\lambda=\omega^k\bigl(128t(5\sqrt5-11)\bigr)^{1/4},\qquad k=0,1,2,3,
+\]
+\[
+\lambda=\omega^k\bigl(-128t(11+5\sqrt5)\bigr)^{1/4},\qquad k=0,1,2,3.
+\]
+
+
+\item[3)] We have 20 different eigenvalues if $y_1 \neq y_2$ and 12 if $y_1=y_2$. Again this happens because we have a $Z_2$ action in $Fl(1,4,5)$ that has $12$ invariant Hodge classes. 
+\end{enumerate}
+
+
+\subsection{Line bundle $\mathcal{O}(1,1) \oplus \mathcal{O}(1,1)$}
+\begin{enumerate}
+    \item [1)] The Hodge diamond is
+    \[
+        \begin{array}{ccc}
+             &1&  \\
+             &2&\\
+             &3&\\
+             6&&6\\
+             &3&\\
+             &2&\\
+             &1&
+        \end{array}
+    \]
+\item[2)] The quantum multiplication atrix is
+\[
+a:=y(1),\qquad b:=y(4),
+\]
+\[
+\begin{pmatrix}
+0&2y_1&2y_2&0&0&0&28y_1 y_2&28y_1 y_2&16y_1 y_2&0&0&6y_2 y_1^2+6y_2^2 y_1\\
+2&0&0&2y_2&0&6y_2&0&0&0&4y_1 y_2&16y_1 y_2&0\\
+2&0&0&2y_1&6y_1&0&0&0&0&8y_1 y_2&20y_1 y_2&0\\
+0&2&2&0&0&0&0&0&0&0&0&4y_1 y_2\\
+0&2&0&0&0&0&6 y_2&2y_2&6y_2&0&0&4y_1 y_2\\
+0&0&2&0&0&0&2 y_1&6 y_1&0&0&0&4y_1 y_2\\
+0&0&0&2&-3&2&0&0&0&-3y_2&-6y_2&0\\
+0&0&0&2&5&0&0&0&0&3y_2&6y_2&0\\
+0&0&0&0&2&2&0&0&0&2y_2&2y_1+4y_2&0\\
+0&0&0&0&0&0&-4&-16&4&0&0&2y_1-4y_2\\
+0&0&0&0&0&0&8&12&2&0&0&2y_2\\
+0&0&0&0&0&0&0&0&0&2&6&0
+\end{pmatrix}.
+\]
+
+The characteristic polynomial is
+\[
+\chi_M(\lambda)=\lambda^2\,Q(\lambda^2),
+\]
+where
+\[
+\begin{aligned}
+Q(z)=\;&z^5-20sz^4+\bigl(160s^2-10000p\bigr)z^3
+-\bigl(640s^3+120000sp\bigr)z^2\\
+&+\bigl(1280s^4-160000s^2p+800000p^2\bigr)z-1024s^5.
+\end{aligned}
+\]
+
+Hence the eigenvalues are:
+\[
+\lambda=0 \quad (\text{with multiplicity }2),
+\]
+and, if \(z_1,\dots,z_5\) are the roots of \(Q(z)\),
+\[
+\lambda=\pm \sqrt{z_1},\ \pm \sqrt{z_2},\ \pm \sqrt{z_3},\ \pm \sqrt{z_4},\ \pm \sqrt{z_5}.
+\]
+\[
+a:=y(1),\qquad b:=y(4),\qquad s:=a+b,\qquad p:=ab,\qquad z:=\lambda^2.
+\]
+\[
+a:=y(1),\qquad b:=y(4),\qquad s:=a+b,\qquad p:=ab,\qquad z:=\lambda^2.
+\]
+If $a=b$ we have
+\[
+\chi_M(\lambda)=\lambda^2\bigl(\lambda^2-128t\bigr)\bigl(\lambda^4+44t\,\lambda^2-16t^2\bigr)^2,
+\]
+
+
+\end{enumerate}
+
+
+\section{Complete intersection in $B_2$}
+
+\subsection{Line bundle $\mathcal{O}(1,1)$}
+
+
+\begin{enumerate}
+    \item ]1) The Hodge diamond is
+\[
+        \begin{array}{ccc}
+             &1&  \\
+             &2&\\
+             1&&1\\
+             &2&\\
+             &1&
+        \end{array}
+  \]
+\item[2)]  \[
+  \resizebox{\textwidth}{!}{$
+\begin{pmatrix}
+0 & 10y(1)y(2) & 10y(1)y(2) & 15y(2)y(1)^2+9y(2)^2y(1) & 15y(2)y(1)^2+3y(2)^2y(1) & 4y(2)y(1)^3+20y(2)^2y(1)^2 \\
+1 & -y(1) & 2y(2) & 8y(1)y(2) & 6y(1)y(2) & 3y(2)y(1)^2+3y(2)^2y(1) \\
+1 & 3y(1) & -y(2) & 6y(1)y(2) & 2y(1)y(2) & 6y(2)y(1)^2 \\
+0 & 1 & 2 & -y(2) & 2y(1) & 2y(1)y(2) \\
+0 & 3 & 1 & 3y(2) & -y(1) & 4y(1)y(2) \\
+0 & 0 & 0 & 4 & 3 & 0
+\end{pmatrix}
+$}
+\]
+
+\[
+\chi_M(\lambda)
+=
+-(\lambda+y(1)+y(2))^2
+\Bigl(
+-\lambda^4
++90\,\lambda^2 y(1)y(2)
++320\,\lambda\, y(1)^2y(2)
++108\,\lambda\, y(1)y(2)^2
++256\,y(1)^3y(2)
++135\,y(1)^2y(2)^2
+\Bigr).
+\]
+
+Hence the eigenvalues are
+\[
+\lambda=-y(1)-y(2)
+\quad\text{with multiplicity }2,
+\]
+and the remaining four eigenvalues are the roots of
+\[
+-\lambda^4
++90\,\lambda^2 y(1)y(2)
++320\,\lambda\, y(1)^2y(2)
++108\,\lambda\, y(1)y(2)^2
++256\,y(1)^3y(2)
++135\,y(1)^2y(2)^2
+=0.
+\]
+\end{enumerate}
+
+
+\section{$G_2/P_1$ the quadric 5-fold}
+
+
+\begin{enumerate}
+    \item [1)]The hodge diamond is
+    \[
+        \begin{array}{c}
+            1   \\
+             1\\
+             1\\
+             1\\
+             1\\
+             1
+        \end{array}
+    \]
+
+    \item[2)] The quantum multiplication table is
+    \[
+A=
+\begin{pmatrix}
+0 & 0 & 0 & 0 & 5y_1 & 0 \\
+5 & 0 & 0 & 0 & 0 & 5y_1 \\
+0 & 5 & 0 & 0 & 0 & 0 \\
+0 & 0 & 10 & 0 & 0 & 0 \\
+0 & 0 & 0 & 5 & 0 & 0 \\
+0 & 0 & 0 & 0 & 5 & 0
+\end{pmatrix}.
+\]
+And the eigenvalues
+\[
+\lambda_0=0,
+\qquad
+\lambda_k=\sqrt[5]{12500\,y_1}\,\zeta_5^k
+\quad (k=0,1,2,3,4),
+\]
+\end{enumerate}
+
+\section{Complete intersection in $G_2/P_2$}
+The hodge diamond is
+    \[
+        \begin{array}{c}
+            1   \\
+             1\\
+             1\\
+             1\\
+             1\\
+             1
+        \end{array}
+    \]
+
+\[
+A=
+\begin{pmatrix}
+0 & 0 & 3y(2) & 0 & 0 & 6y(2)^2\\
+3 & 0 & 0 & 3y(2) & 0 & 0\\
+0 & 9 & 0 & 0 & 3y(2) & 0\\
+0 & 0 & 6 & 0 & 0 & 3y(2)\\
+0 & 0 & 0 & 9 & 0 & 0\\
+0 & 0 & 0 & 0 & 3 & 0
+\end{pmatrix}.
+\]
+
+The characteristic polynomial is
+\[
+\chi_A(\lambda)=\lambda^6-486\,y(2)\lambda^3-19683\,y(2)^2
+=
+\bigl(\lambda^3-81(3+2\sqrt3)\,y(2)\bigr)
+\bigl(\lambda^3-81(3-2\sqrt3)\,y(2)\bigr).
+\]
+
+Hence the eigenvalues are the six cube roots of the two numbers
+\(81(3\pm 2\sqrt3)\,y(2)\). Equivalently,
+\[
+\lambda=\omega^k \sqrt[3]{81(3+2\sqrt3)\,y(2)}
+\quad\text{and}\quad
+\lambda=\omega^k \sqrt[3]{81(3-2\sqrt3)\,y(2)},
+\qquad k=0,1,2,
+\]
+where \(\omega=e^{2\pi i/3}\).
+
+If you want them written in the same Mathematica style as in your screenshot, you can write:
+\[
+\left\{
+-3\sqrt[3]{-3}\sqrt[3]{(3-2\sqrt3)\,y(2)},\;
+3\sqrt[3]{3}\sqrt[3]{(3-2\sqrt3)\,y(2)},\;
+3(-1)^{2/3}\sqrt[3]{3}\sqrt[3]{(3-2\sqrt3)\,y(2)},
+\right.
+\]
+\[
+\left.
+-3\sqrt[3]{-3}\sqrt[3]{(3+2\sqrt3)\,y(2)},\;
+3\sqrt[3]{3}\sqrt[3]{(3+2\sqrt3)\,y(2)},\;
+3(-1)^{2/3}\sqrt[3]{3}\sqrt[3]{(3+2\sqrt3)\,y(2)}
+\right\}.
+\]
+
+
+
+\subsection{Line bundle $\mathcal{O}(1)$}
+
+The hodge diamond is
+    \[
+        \begin{array}{c}
+            1   \\
+             1\\
+             1\\
+             1\\
+             1
+        \end{array}
+    \]
+
+\[
+A=
+\begin{pmatrix}
+0 & 6y\left(2\right) & 0 & 12y\left(2\right)^2 & 0 \\
+2 & 0 & 4y(2) & 0 & 4y(2)^2 \\
+0 & 6 & 0 & 6y(2) & 0 \\
+0 & 0 & 4 & 0 & 2y(2) \\
+0 & 0 & 0 & 6 & 0
+\end{pmatrix}.
+\]
+
+Its eigenvalues are
+\[
+\left\{
+0,\,
+-2\sqrt3\,\sqrt{\,3y(2)-2\sqrt3\,y(2)\,},
+\,
+2\sqrt3\,\sqrt{\,3y(2)-2\sqrt3\,y(2)\,},
+\,
+-2\sqrt3\,\sqrt{\,2\sqrt3\,y(2)+3y(2)\,},
+\,
+2\sqrt3\,\sqrt{\,2\sqrt3\,y(2)+3y(2)\,}
+\right\}.
+\]
+
+Equivalently, the characteristic polynomial is
+\[
+\chi_A(\lambda)
+=
+\lambda^5-72\,y(2)\lambda^3-432\,y(2)^2\lambda
+=
+\lambda\bigl(\lambda^2-12(3-2\sqrt3)\,y(2)\bigr)
+\bigl(\lambda^2-12(3+2\sqrt3)\,y(2)\bigr).
+\]
+
+
+\section{Complete intersection in $Fl(1,3,4)$}
+This variety is $\mathbb{P}^3 \times \mathbb{P}^3$ cut out by the line bundle $\mathcal{O}(1,1)$.
+\subsection{Line bundle $\mathcal{O}(1,1)$}
+
+The hodge diamond is
+\[
+    \begin{array}{c}
+         1  \\
+          2\\
+          6\\
+          2\\
+          1
+    \end{array}
+\]
+where $3$ out of the $6$ are ambient
+\[
+  \resizebox{\textwidth}{!}{$
+\begin{pmatrix}
+0 & 2y(1) & 2y(3) & 0 & 0 & 0 & 4y(1)y(3) & 4y(1)y(3) & 0 \\
+2 & 0 & 0 & 2y(3) & 0 & 4y(3) & 0 & 0 & 4y(1)y(3) \\
+2 & 0 & 0 & 2y(1) & 4y(1) & 0 & 0 & 0 & 4y(1)y(3) \\
+0 & 2 & 2 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 2 & 0 & 0 & 0 & 0 & 2y(3) & 0 & 0 \\
+0 & 0 & 2 & 0 & 0 & 0 & 0 & 2y(1) & 0 \\
+0 & 0 & 0 & 6 & 2 & 6 & 0 & 0 & 2y(1) \\
+0 & 0 & 0 & 6 & 6 & 2 & 0 & 0 & 2y(3) \\
+0 & 0 & 0 & 0 & 0 & 0 & 2 & 2 & 0
+\end{pmatrix}
+$}
+\]
+
+
+
+\[
+\chi_M(\lambda)
+=
+\lambda\Bigl(
+\lambda^8
+-16\bigl(y(1)+y(3)\bigr)\lambda^6
++\bigl(96y(1)^2-1984y(1)y(3)+96y(3)^2\bigr)\lambda^4
+\]
+\[
+\hspace{3.5cm}
+-\bigl(256y(1)^3+7936y(1)^2y(3)+7936y(1)y(3)^2+256y(3)^3\bigr)\lambda^2
++256\bigl(y(1)-y(3)\bigr)^4
+\Bigr).
+\]
+
+Equivalently, setting \(t=\lambda^2\), the nonzero eigenvalues are obtained from
+\[
+t^4
+-16\bigl(y(1)+y(3)\bigr)t^3
++\bigl(96y(1)^2-1984y(1)y(3)+96y(3)^2\bigr)t^2
+\]
+\[
+\hspace{2.5cm}
+-\bigl(256y(1)^3+7936y(1)^2y(3)+7936y(1)y(3)^2+256y(3)^3\bigr)t
++256\bigl(y(1)-y(3)\bigr)^4=0.
+\]
+
+So the eigenvalues are
+\[
+\lambda=0,
+\qquad
+\lambda=\pm\sqrt{t_1},\ \pm\sqrt{t_2},\ \pm\sqrt{t_3},\ \pm\sqrt{t_4},
+\]
+where \(t_1,t_2,t_3,t_4\) are the roots of the quartic above.
+
+
+\subsection{$\mathcal{O}(1,1) \oplus \mathcal{O}(1,1)$}
+The hodge diamond is
+\[
+    \begin{array}{ccc}
+         &1&  \\
+         &2&\\
+         3&&3\\
+         &2&\\
+         &1&
+    \end{array}
+\]
+% Prevent paragraph break confusion
+
+\[
+  \resizebox{\textwidth}{!}{$
+\begin{pmatrix}
+0 & 14y(1)y(3) & 14y(1)y(3) & 36y(1)^2y(3)+36y(1)y(3)^2 & 18y(1)^2y(3)+30y(1)y(3)^2 & 4y(1)^3y(3)+48y(1)^2y(3)^2+4y(1)y(3)^3 \\
+1 & -y(1) & 3y(3) & 18y(1)y(3) & 10y(1)y(3) & 3y(1)^2y(3)+9y(1)y(3)^2 \\
+1 & 3y(1) & -y(3) & 18y(1)y(3) & 14y(1)y(3) & 9y(1)^2y(3)+3y(1)y(3)^2 \\
+0 & \tfrac{7}{3} & 1 & 3y(3)-y(1) & 4y(3) & \tfrac{14}{3}y(1)y(3) \\
+0 & -1 & 1 & 3y(1)-3y(3) & -4y(3) & 0 \\
+0 & 0 & 0 & 6 & 4 & 0
+\end{pmatrix}
+$}
+\]
+
+
+\[
+\chi_M(\lambda)
+=
+(\lambda+y(1)+y(3))^2
+\Bigl(
+\lambda^4
+-136\,y(1)y(3)\,\lambda^2
+-384\,y(1)y(3)\bigl(y(1)+y(3)\bigr)\lambda
+-16\,y(1)y(3)\bigl(16y(1)^2+31y(1)y(3)+16y(3)^2\bigr)
+\Bigr).
+\]
+
+Hence the eigenvalues are
+\[
+\lambda_1=\lambda_2=-(y(1)+y(3)),
+\]
+and the remaining four eigenvalues are the roots of
+\[
+\lambda^4
+-136\,y(1)y(3)\,\lambda^2
+-384\,y(1)y(3)\bigl(y(1)+y(3)\bigr)\lambda
+-16\,y(1)y(3)\bigl(16y(1)^2+31y(1)y(3)+16y(3)^2\bigr)=0.
+\]
+\subsection{$\mathcal{O}(2,2)$}
+
+The Hoge diamond is
+\[
+\begin{array}{ccc}
+     &1&  \\
+     &2&\\
+     16&114&16\\
+     &2&\\
+     &1&
+\end{array}
+\]
+where $3$ out of the $114$ are ambient classes.
+
+
+\section{OG(3,7)}
+
+This is the quadric in $\mathbb{P}^7$.
+
+
+\subsection{$\mathcal{O}(2)$}
+Intersection of two quadrics is $\mathbb{P}^7$
+\[
+\begin{array}{ccc}
+     &1&  \\
+     &1&\\
+     &1&\\
+     3&&3\\
+     &1&\\
+     &1&\\
+     &1&
+\end{array}
+\]
+\[
+\begin{pmatrix}
+0 & 0 & 0 & 8y_{3} & 0 & 0 \\
+4 & 0 & 0 & 0 & 16y_{3} & 0 \\
+0 & 4 & 0 & 0 & 0 & 8y_{3} \\
+0 & 0 & 8 & 0 & 0 & 0 \\
+0 & 0 & 0 & 4 & 0 & 0 \\
+0 & 0 & 0 & 0 & 4 & 0
+\end{pmatrix}
+\]
+
+\[
+\left\{
+0,\,
+0,\,
+-8\sqrt[4]{y_{3}},\,
+-8i\sqrt[4]{y_{3}},\,
+8i\sqrt[4]{y_{3}},\,
+8\sqrt[4]{y_{3}}
+\right\}.
+\]
+
+\subsection{$\mathcal{O}(3)$}
+Intersection of quadric and cubic in $\mathbb{P}^7$
+\[
+\begin{array}{ccccc}
+     &&1&&  \\
+     &&1&&\\
+     &&1&&\\
+     1&83&&83&1\\
+        &&1&&  \\
+     &&1&&\\
+     &&1&&
+\end{array}
+\]
+\[
+\begin{pmatrix}
+0 & 0 & 36y_{3} & 0 & 0 & 216y_{3}^{2} \\
+3 & 0 & 0 & 63y_{3} & 0 & 0 \\
+0 & 3 & 0 & 0 & 63y_{3} & 0 \\
+0 & 0 & 6 & 0 & 0 & 36y_{3} \\
+0 & 0 & 0 & 3 & 0 & 0 \\
+0 & 0 & 0 & 0 & 3 & 0
+\end{pmatrix}
+\]
+Eigenvalues $0,0,0,9 \cdot 2^{2/3}\xi^{1/3} , 9\cdot 2^{2/3}\xi^{2/3} , 9\cdot 2^{2/3}\xi$. Where $\xi$ is the 3-root of unity.
+
+
+\subsection{$\mathcal{O}(4)$}
+Intersection of quadric and quartic in $\mathbb{P}^7$
+\[
+\begin{array}{ccccc}
+     &&1&&  \\
+     &&1&&\\
+     &&1&&\\
+     36&783&&783&36\\
+        &&1&&  \\
+     &&1&&\\
+     &&1&&
+\end{array}
+\]
+\[
+\begin{pmatrix}
+0 & 96y_{3} & 0 & 26688y_{3}^{2} & 0 & 1603584y_{3}^{3} \\
+2 & 0 & 512y_{3} & 0 & 78976y_{3}^{2} & 0 \\
+0 & 2 & 0 & 416y_{3} & 0 & 26688y_{3}^{2} \\
+0 & 0 & 4 & 0 & 512y_{3} & 0 \\
+0 & 0 & 0 & 2 & 0 & 96y_{3} \\
+0 & 0 & 0 & 0 & 2 & 0
+\end{pmatrix}
+\]
+Eigenvalue
+\[
+\left\{
+0,\,
+0,\,
+0,\,
+0,\,
+-64\sqrt{y_{3}},\,
+64\sqrt{y_{3}}
+\right\}.
+\]
+\subsection{$\mathcal{O}(2)\oplus \mathcal{O}(2)$}
+Intersections of 3 quadrics in $\mathbb{P}^7$
+\[
+\begin{array}{ccc}
+     &1&  \\
+     &1&\\
+     3&1+37&3\\
+     &1&\\
+     &1&
+\end{array}
+\]
+
+\[
+\begin{pmatrix}
+0 & 16y_{3} & 0 & 224y_{3}^{2} & 0 \\
+2 & 0 & 48y_{3} & 0 & 224y_{3}^{2} \\
+0 & 2 & 0 & 24y_{3} & 0 \\
+0 & 0 & 4 & 0 & 16y_{3} \\
+0 & 0 & 0 & 2 & 0
+\end{pmatrix}
+\]
+
+\[
+\left\{
+0,\,
+0,\,
+0,\,
+-16\sqrt{y_{3}},\,
+16\sqrt{y_{3}}
+\right\}.
+\]
+
+
+\section{$LG(3,6)$}
+
+\subsection{$\mathcal{O}(1)$}
+\[
+\begin{pmatrix}
+0 & 0 & 6y_{3} & 0 & 0 & 0 \\
+3 & 0 & 0 & 3y_{3} & 0 & 0 \\
+0 & 6 & 0 & 0 & 6y_{3} & 0 \\
+0 & 0 & 12 & 0 & 0 & 6y_{3} \\
+0 & 0 & 0 & 3 & 0 & 0 \\
+0 & 0 & 0 & 0 & 6 & 0
+\end{pmatrix}
+\]
+\[
+\left\{
+3(-2)^{2/3}\big((3-2\sqrt{2})y_{3}\big)^{1/3},\,
+3\cdot 2^{2/3}\big((3-2\sqrt{2})y_{3}\big)^{1/3},\,
+-3(-1)^{1/3}2^{2/3}\big((3-2\sqrt{2})y_{3}\big)^{1/3},\right.
+\]
+\[
+\left.
+3(-2)^{2/3}\big((3+2\sqrt{2})y_{3}\big)^{1/3},\,
+3\cdot 2^{2/3}\big((3+2\sqrt{2})y_{3}\big)^{1/3},\,
+-3(-1)^{1/3}2^{2/3}\big((3+2\sqrt{2})y_{3}\big)^{1/3}
+\right\}.
+\]
+
+\subsection{$\mathcal{O}(1)\oplus \mathcal{O}(1)$}
+\[
+\begin{pmatrix}
+0 & 8y_{3} & 0 & 8y_{3}^{2} & 0 \\
+2 & 0 & 8y_{3} & 0 & 8y_{3}^{2} \\
+0 & 4 & 0 & 4y_{3} & 0 \\
+0 & 0 & 8 & 0 & 8y_{3} \\
+0 & 0 & 0 & 2 & 0
+\end{pmatrix}
+\]
+\[
+\left\{
+0,\,
+-4\sqrt{(3-2\sqrt{2})y_{3}},\,
+4\sqrt{(3-2\sqrt{2})y_{3}},\,
+-4\sqrt{(3+2\sqrt{2})y_{3}},\,
+4\sqrt{(3+2\sqrt{2})y_{3}}
+\right\}.
+\]
+
+
+\end{document}
