@@ -1,10 +1,10 @@
-# Theory of Atoms
+# Quantum Geometry
 
 <div align="center">
-  <img src="assets/logo.jpg" alt="Theory of Atoms Logo" width="400"/>
+  <img src="assets/logo.jpg" alt="Quantum Geometry Logo" width="400"/>
 </div>
 
-Welcome to the documentation and software repository for the **Theory of Atoms** mathematical research group. 
+Welcome to the documentation and software repository for the **Quantum Geometry** mathematical research group. 
 
 While serving as a companion to the paper **"On the Atomic Decomposition of Complete Intersection in Flag Varieties,"** this website is an independent, growing catalog and computational resource for algebraic geometry, representation theory, and enumerative geometry.
 
@@ -14,7 +14,7 @@ The accompanying software, `gwflags`, provides:
 
 1. **Root-Theoretic Localization Formalism**: Computes genus-zero Gromov-Witten invariants of flag varieties and smooth zero loci of globally generated homogeneous vector bundles using Bott localization via **Billey's formula**.
 2. **Twisted Invariants**: Computes twisted invariants for complete intersections with the Euler class.
-3. **Connections to the Theory of Hodge Atoms**: Bridging explicit combinatorial geometry with theoretical criteria for the rationality of Fano fourfolds (e.g., cubic fourfolds, ordinary Gushel-Mukai fourfolds, and Küchle fourfolds).
+3. **Connections to the Theory of Quantum Structures**: Bridging explicit combinatorial geometry with theoretical criteria for the rationality of Fano fourfolds (e.g., cubic fourfolds, ordinary Gushel-Mukai fourfolds, and Küchle fourfolds).
 4. **Quantum Features**: The small quantum multiplication matrix \( c_1(TX)\star \), grading operators, and eigenvalues (to test Conjecture \(\mathcal{O}\) / Gamma-conjecture asymptotics).
 
 ## Navigate the Documentation

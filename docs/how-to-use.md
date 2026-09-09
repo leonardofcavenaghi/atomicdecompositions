@@ -1,6 +1,6 @@
 # How to Use `gwflags`
 
-This guide bridges the theoretical framework of the Atomic Decomposition of Complete Intersections in Flag Varieties with practical computation using the `gwflags` package. 
+This guide bridges the theoretical framework of the Quantum Cohomology of Complete Intersections in Flag Varieties with practical computation using the `gwflags` package. 
 
 Because the software includes a built-in Graphical User Interface (GUI), you do not need to write Python code to compute these invariants. You can simply launch the local web app and use the interactive dashboard.
 
@@ -42,7 +42,7 @@ Below, we showcase how to input several prominent geometric spaces from the pape
 
 ## The Novikov Parameters
 
-**Important Note on Eigenvalues:** When the software outputs eigenvalues or the full quantum multiplication matrix, it automatically sets the **Novikov parameters ($y_i$ or $q_i$) to $1$**. This complies with the standard conventions required to test Conjecture $\mathcal{O}$ and calculate the asymptotic spectrum of the quantum connection without bloating the output with large symbolic rings.
+**Important Note on Eigenvalues:** When the software outputs eigenvalues or the full quantum multiplication matrix, it automatically sets the **Novikov parameters ($y_i$ or $q_i$) to $1$**. This complies with the standard conventions required to calculate the spectrum of the quantum connection without bloating the output with large symbolic rings.
 
 ---
 

@@ -1,44 +1,43 @@
-# Theoretical Basis
+# Mathematical Background
 
-The theoretical foundation of this software is built upon the paper **"On the Atomic Decomposition of Complete Intersection in Flag Varieties."** It merges explicit combinatorial geometry with the **Theory of Hodge Atoms** developed by Katzarkov-Kontsevich-Pantev-Yu.
+This document provides a theoretical overview of the geometry and quantum cohomology of complete intersections in flag varieties.
 
-## Main Results
+## 1. The Projected Flag-Ambient Small Quantum Multiplication
 
-The paper derives four primary theorems:
+For a complete intersection $X = \mathcal{Z}(F, \mathcal{E})$ defined by a homogeneous vector bundle $\mathcal{E}$ on an ambient flag variety $F = G/P$, computing the full quantum cohomology is generally extremely difficult. However, equivariant localization naturally yields the quantum invariants for classes inherited from the ambient space.
 
-### Theorem A: Explicit Localization Formula
-Let \(\mathcal{E}\) be a globally generated homogeneous bundle on the flag variety \(F = G/P\), and let \(Z = \mathscr{Z}(F, \mathcal{E})\) be the smooth zero locus of a regular section. The theorem provides an explicit localization formula for genus-zero primary Gromov-Witten invariants of \(Z\) with Schubert insertions restricted from the ambient flag variety. The sum is finite over decorated trees and completely determined by root-theoretic data.
+Let $\iota: X \hookrightarrow F$ be the inclusion. The *flag-ambient cohomology* of $X$ is defined as the image of the restriction map:
+$$H^*_{\text{amb}}(X) := \text{im}\left( \iota^* : H^*(F, \mathbb{Q}) \to H^*(X, \mathbb{Q}) \right)$$
 
-*This theorem serves as the strict blueprint for the `gwflags` software logic.*
+Because the restriction of the Poincaré pairing to $H^*_{\text{amb}}(X)$ is typically nondegenerate, there exists a well-defined orthogonal projection $\text{pr}_F : H^*(X, \mathbb{Q}) \to H^*_{\text{amb}}(X)$. The *projected flag-ambient small quantum product* of two ambient classes $\alpha, \eta \in H^*_{\text{amb}}(X)$ is given by:
+$$\alpha \star_F \eta := \text{pr}_F(\alpha \star \eta)$$
 
-### Theorem B: Spectral Irrationality Criterion (Hodge-General)
-Let \(X\) be a Fano fourfold with \(h^{3,1}(X) = 1\) arising as a hyperplane section of a suitable Fano fivefold. Suppose \(X\) is Hodge general.
+The `gwflags` software explicitly computes the matrix representation of the operator $c_1(TX) \star_F (-)$. When the flag-ambient cohomology coincides entirely with the monodromy-fixed part of the cohomology of $X$, this projected matrix captures the necessary data to study the spectral properties of the quantum connection.
 
-If every eigenvalue of the algebraic specialization of the small quantum multiplication matrix \(B^{\text{alg}}(1)\) has **algebraic multiplicity at most two**, then \(X\) is **irrational**.
+## 2. Fano Index for Complete Intersections in Flag Varieties
 
-*The software provides exactly the eigenvalues of this matrix.*
+The Fano index of a variety is the largest integer $q$ such that the anticanonical bundle $K^{-1}$ is the $q$-th tensor power of some ample line bundle $L$. 
 
-### Theorem C: Spectral Constraint for Rationality
-Unlike Theorem B, this theorem does not require Hodge generality. 
-If every eigenvalue of \(B^{\text{alg}}(1)\) has a **Jordan defect at most one** and \(X\) is rational, then every weak factorization contains a smooth surface center whose minimal model is a projective K3 surface.
+For a flag variety $F = G/P$, the tangent bundle $TF$ is globally generated and its first Chern class is completely determined by the sum of the positive roots indexing the tangent directions. When taking a smooth complete intersection $X = \mathcal{Z}(F, \mathcal{E})$, the adjunction formula relates the canonical bundles:
+$$K_X = (K_F \otimes \det \mathcal{E})|_X$$
 
-### Theorem D: Numerical Irrationality Criterion
-Under the same geometric assumptions as Theorem B, the paper also recovers a numerical criterion derived from the work of Benedetti-Fay-Guéré-Manivel-Perrin.
+Correspondingly, the anticanonical class used for small quantum multiplication is given by restricting the difference of the Chern classes:
+$$c_1(TX) = \iota^*(c_1(TF) - c_1(\mathcal{E}))$$
 
-If \(b_4(Y) \leq h^{2,2}(X) - 20\), then \(X\) is irrational.
+If $X$ is a Fano variety, $c_1(TX)$ is ample. The Fano index is exactly the greatest common divisor of the coefficients when $c_1(TX)$ is expressed in the basis of fundamental weights.
 
-## The Theory of Coarse Hodge Atoms
+## 3. Eigenvalues and Multiplicities
 
-The rationality criteria are deeply rooted in the concept of **Coarse Hodge Atoms**. The Fano fourfold \(X\) possesses a cohomology that decomposes into a monodromy-fixed part and a middle vanishing cohomology.
+The spectral properties of the small quantum multiplication operator by $c_1(TX)$ yield important structural invariants. By specializing the Novikov variables algebraically (setting $y_i = 1$), we obtain a finite matrix $A^{\text{alg}}(1)$.
 
-At the "small points" (points where all non-Novikov coordinates vanish), quantum multiplication by the first Chern class preserves this decomposition and acts purely by a scalar on the vanishing summand.
+The decomposition of this matrix is characterized by its eigenvalues $\lambda$, their algebraic multiplicities $m_a(\lambda)$, and their geometric multiplicities $m_g(\lambda)$. 
 
-The algorithm developed here targets the flag-ambient subspace of the cohomology. When the flag-ambient subspace aligns with the full monodromy-fixed part (known as "ambient-complete in the middle degree"), the criteria from Theorem B and C can be read directly from the localization matrix calculated by the `gwflags` software.
+These spectral data dictate the structure of the quantum connection:
+*   **Semisimplicity:** A semisimple eigenvalue implies that the generalized eigenspace does not contain a non-trivial Jordan block, which differentiates the deformation behavior of the structure and imposes distinct cohomological constraints.
 
-## Examples Evaluated
+## 4. Dimension and Basis Rank
 
-The paper and software cross-validate these theorems on multiple Fano fourfolds:
+The geometric dimensions and the rank of the cohomology rings for these spaces are deeply tied to the representation theory of the underlying Lie group $G$.
 
-- **Cubic Fourfolds**: The ambient and monodromy-fixed subspaces coincide. The zero eigenvalue of the quantum matrix has algebraic multiplicity two and geometric multiplicity one. The theorems successfully recover their irrationality.
-- **Ordinary Gushel-Mukai Fourfolds**: Ambient completeness holds. The multiplicity bounds are satisfied, yielding irrationality and K3-center constraints.
-- **Küchle Fourfolds of type (c5)**: Ambient-completeness fails, meaning the flag-ambient matrix misses two monodromy-fixed classes. Consequently, the numerical criterion (Theorem D) is heavily utilized over the spectral ones.
+*   **Dimension:** The dimension of the ambient flag variety $F$ is strictly the number of roots in $R^+_F = R^+ \setminus R^+_P$ (positive roots not in the parabolic subsystem). If $\mathcal{E}$ is a vector bundle of rank $r$, the complete intersection $X$ has dimension $\dim X = \dim F - r$.
+*   **Basis Rank:** The cohomology $H^*(F, \mathbb{Q})$ has a canonical homogeneous basis given by Schubert classes $\sigma_w$, which are indexed by the minimal-length representatives $W_F$ of the Weyl group quotient $W/W_P$. The rank of the flag-ambient cohomology $H^*_{\text{amb}}(X)$ is the number of such Schubert classes that do not vanish upon restriction to $X$.
