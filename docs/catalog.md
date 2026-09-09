@@ -434,6 +434,17 @@ This section houses an expanding catalog of explicit geometric examples computed
     - **Eigenvalues:** -9.514 (mult: 1), -2.192 (mult: 2), 2.192 (mult: 2), 9.514 (mult: 1), -8*2**(1/4)*I (mult: 1), 8*2**(1/4)*I (mult: 1), 4*CRootOf(x**8 + 11*x**4 - 1, 2) (mult: 2), 4*CRootOf(x**8 + 11*x**4 - 1, 3) (mult: 2), 4*CRootOf(x**8 + 11*x**4 - 1, 4) (mult: 2), 4*CRootOf(x**8 + 11*x**4 - 1, 5) (mult: 2), 4*CRootOf(x**8 + 11*x**4 - 1, 6) (mult: 2), 4*CRootOf(x**8 + 11*x**4 - 1, 7) (mult: 2)
 
 
+-   __Case #26: Fl(1,3,4) / O(1,1)+O(1,1)__
+
+    ---
+    
+    - **Ambient Space:** `A3`
+    - **Dimension:** 3
+    - **Fano Index:** 1
+    - **Basis Rank:** 12
+    - **Eigenvalues:** 14.0 (mult: 1), -6.0 (mult: 2), -2.0 (mult: 3)
+
+
 </div>
 
 ***
