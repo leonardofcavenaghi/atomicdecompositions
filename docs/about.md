@@ -1,6 +1,6 @@
 # About the Team
 
-This project is an effort of the **Quantum Geometry** mathematical research group.
+This project is an effort of the **GEOATOMS** mathematical research group.
 
 ## The Team
 

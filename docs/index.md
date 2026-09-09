@@ -1,10 +1,10 @@
-# Quantum Geometry
+# GEOATOMS
 
 <div align="center">
-  <img src="assets/logo.jpg" alt="Quantum Geometry Logo" width="400"/>
+  <img src="assets/logo.jpg" alt="GEOATOMS Logo" width="400"/>
 </div>
 
-Welcome to the documentation and software repository for the **Quantum Geometry** mathematical research group. 
+Welcome to the documentation and software repository for the **GEOATOMS** mathematical research group. 
 
 This website serves as an independent catalog and computational resource for algebraic geometry, representation theory, and enumerative geometry, specifically focusing on complete intersections in flag varieties.
 
