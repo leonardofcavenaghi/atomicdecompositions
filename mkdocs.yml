@@ -6,8 +6,8 @@ theme:
   favicon: assets/logo.jpg
   palette:
     scheme: default
-    primary: indigo
-    accent: deep purple
+    primary: blue grey
+    accent: light blue
   features:
     - navigation.tabs
     - navigation.sections
@@ -34,6 +34,7 @@ extra_javascript:
 
 nav:
   - Home: index.md
+  - About: about.md
   - Installation: installation.md
   - Methodology: methodology.md
   - Theoretical Basis: theory.md
