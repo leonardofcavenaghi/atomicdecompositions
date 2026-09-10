@@ -22,7 +22,7 @@ The accompanying software, `gwflags`, provides a computational framework to eval
 - [**Installation**](installation.md): Clean, step-by-step instructions for getting Python, SageMath, and `gwflags` running on Windows, macOS, and Linux.
 - [**How to Use**](how-to-use.md): Practical code examples demonstrating how to use the software to compute these spaces.
 - [**Methodology**](methodology.md): A concise explanation of how the software implements the localization formalism and reproduces the catalog.
-- [**Catalog**](catalog.md): The expanding database of pre-computed examples and geometric invariants.
+- [**Catalog**](catalog/index.md): The expanding database of pre-computed examples and geometric invariants.
 
 ## Download
 
