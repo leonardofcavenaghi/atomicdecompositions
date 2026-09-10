@@ -2,14 +2,14 @@
 
 This project is an effort of the **GEOATOMS** mathematical research group.
 
-## Project Leader
+## Project Leaders
 
 - **Dr. Maxim Kontsevich**
+- **Dr. Ludmil Katzarkov**
 
 ## Contributors
 
 The following members contributed to the mathematical supervision, design, and research that form the foundation of this catalog:
-- Dr. Ludmil Katzarkov
 - Boris Alexeev
 - Leonardo F. Cavenaghi
 - Giovane Galindo
