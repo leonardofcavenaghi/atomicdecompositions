@@ -54,6 +54,7 @@ This section contains complete intersections inside this geometric family, syste
 |---|---|---|
 | [Gr(2,5)](#gr25) | 5 | 10 |
 | [Gr(3,5)](#gr35) | 5 | 10 |
+| [Gr(2,6) / O(1)+O(1)](#gr26o1o1) | 4 | 10 |
 
 ---
 
@@ -84,6 +85,21 @@ This section contains complete intersections inside this geometric family, syste
     $$
     \left[\begin{matrix}0 & 0 & 0 & 0 & 0 & 0 & 5 & 0 & 0 & 0\\5 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 5 & 0\\0 & 5 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 5\\0 & 5 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 5 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 5 & 5 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 5 & 5 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 5 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 5 & 5 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 5 & 0\end{matrix}\right]
     $$
+
+---
+
+<span id="gr26o1o1"></span>
+- **Ambient Space:** `$A5$`
+- **Dimension:** $6$
+- **Fano Index:** $4$
+- **Basis Rank:** $10$
+- **Eigenvalues:** $- 4 \cdot 3^{\frac{3}{4}}$ (mult: 1), $4 \cdot 3^{\frac{3}{4}}$ (mult: 1), $- 4 \cdot 3^{\frac{3}{4}} i$ (mult: 1), $4 \cdot 3^{\frac{3}{4}} i$ (mult: 1), $- 2 \sqrt{2} - 2 \sqrt{2} i$ (mult: 1), $- 2 \sqrt{2} + 2 \sqrt{2} i$ (mult: 1), $2 \sqrt{2} - 2 \sqrt{2} i$ (mult: 1), $2 \sqrt{2} + 2 \sqrt{2} i$ (mult: 1), $0$ (mult: 2)
+
+??? note "Quantum Matrix ($y=1$)"
+    $$
+        \left[\begin{matrix}0 & 0 & 0 & 0 & 4 & 8 & 0 & 0 & 0 & 0\\4 & 0 & 0 & 0 & 0 & 0 & 8 & 4 & 0 & 0\\0 & 4 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 4 & 0 & 0 & 0 & 0 & 0 & 0 & 4 & 0\\0 & 0 & 4 & 4 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 4 & 0 & 0 & 0 & 0 & 0 & 4\\0 & 0 & 0 & 0 & 4 & 8 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 4 & -4 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 12 & 8 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 4 & 0\end{matrix}\right]
+    $$
+
 
 ---
 
