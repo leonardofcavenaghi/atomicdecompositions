@@ -114,6 +114,7 @@ This section contains complete intersections inside this geometric family, syste
 | [Gr(2,6) / O(1)+O(1)+O(1)](#gr26o1o1o1) | 3 | 8 |
 | [Gr(2,5) / O(3)](#gr25o3) | 2 | 10 |
 | [Gr(3,5) / O(3)](#gr35o3) | 2 | 10 |
+| [Gr(2,6) / O(1)+O(1)+O(2)](#gr26o1o1o2) | 2 | 8 |
 
 ---
 
@@ -225,6 +226,21 @@ This section contains complete intersections inside this geometric family, syste
 
 ***
 *Note: This catalog is automatically generated.*
+
+---
+
+<span id="gr26o1o1o2"></span>
+- **Ambient Space:** `$A5$`
+- **Dimension:** $5$
+- **Fano Index:** $2$
+- **Basis Rank:** $8$
+- **Eigenvalues:** $- 12 \sqrt{3}$ (mult: 1), $12 \sqrt{3}$ (mult: 1), $- 4 i$ (mult: 1), $4 i$ (mult: 1), $0$ (mult: 4)
+
+??? note "Quantum Matrix ($y=1$)"
+    $$
+        \left[\begin{matrix}0 & 16 & 0 & 0 & 336 & 288 & 0 & 768\\2 & 0 & 16 & 36 & 0 & 0 & 480 & 0\\0 & 2 & 0 & 0 & 12 & 12 & 0 & 48\\0 & 2 & 0 & 0 & 32 & 28 & 0 & 80\\0 & 0 & 2 & 2 & 0 & 0 & 12 & 0\\0 & 0 & 0 & 2 & 0 & 0 & 24 & 0\\0 & 0 & 0 & 0 & \frac{10}{3} & \frac{8}{3} & 0 & \frac{16}{3}\\0 & 0 & 0 & 0 & 0 & 0 & 6 & 0\end{matrix}\right]
+    $$
+
 
 ---
 
