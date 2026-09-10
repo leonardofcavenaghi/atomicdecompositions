@@ -721,6 +721,15 @@
       "rank": "4",
       "category": "grassmannians",
       "text": "- **Ambient Space:** `$A4$`\n- **Dimension:** $3$\n- **Fano Index:** $4$\n- **Basis Rank:** $4$\n- **Eigenvalues:** $-4$ (mult: 1), $4$ (mult: 1), $- 4 i$ (mult: 1), $4 i$ (mult: 1)\n\n??? note \"Quantum Matrix ($y=1$)\"\n    $$\n        \\left[\\begin{matrix}0 & 0 & 0 & 4\\\\4 & 0 & 0 & 0\\\\0 & 4 & 0 & 0\\\\0 & 0 & 4 & 0\\end{matrix}\\right]\n    $$\n"
+    },
+    {
+      "id": "104",
+      "label": "Gr(4,5) / O(1)+O(1)",
+      "dim": "2",
+      "fano": "3",
+      "rank": "3",
+      "category": "grassmannians",
+      "text": "- **Ambient Space:** `$A4$`\n- **Dimension:** $2$\n- **Fano Index:** $3$\n- **Basis Rank:** $3$\n- **Eigenvalues:** $3$ (mult: 1), $- \\frac{3}{2} - \\frac{3 \\sqrt{3} i}{2}$ (mult: 1), $- \\frac{3}{2} + \\frac{3 \\sqrt{3} i}{2}$ (mult: 1)\n\n??? note \"Quantum Matrix ($y=1$)\"\n    $$\n        \\left[\\begin{matrix}0 & 0 & 3\\\\3 & 0 & 0\\\\0 & 3 & 0\\end{matrix}\\right]\n    $$\n"
     }
   ],
   "fanography_text": ""
