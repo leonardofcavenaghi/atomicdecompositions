@@ -316,6 +316,7 @@ This section contains complete intersections inside this geometric family, syste
 | [Gr(2,4) / O(3)](#gr24o3) | 1 | 6 |
 | [Gr(2,5) / O(1)+O(1)+O(2)](#gr25o1o1o2) | 1 | 10 |
 | [Gr(3,5) / O(1)+O(1)+O(2)](#gr35o1o1o2) | 1 | 10 |
+| [Gr(4,5) / O(4)](#gr45o4) | 1 | 4 |
 
 ---
 
@@ -481,6 +482,21 @@ This section contains complete intersections inside this geometric family, syste
     $$
     \left[\begin{matrix}0 & 156 & 2160 & 6624\\1 & 10 & 228 & 720\\0 & \frac{5}{3} & 10 & 52\\0 & 0 & 3 & 0\end{matrix}\right]
     $$
+
+---
+
+<span id="gr45o4"></span>
+- **Ambient Space:** `$A4$`
+- **Dimension:** $3$
+- **Fano Index:** $1$
+- **Basis Rank:** $4$
+- **Eigenvalues:** $232$ (mult: 1), $-24$ (mult: 3)
+
+??? note "Quantum Matrix ($y=1$)"
+    $$
+        \left[\begin{matrix}0 & 3888 & 504576 & 18323712\\1 & 80 & 13600 & 504576\\0 & 1 & 80 & 3888\\0 & 0 & 1 & 0\end{matrix}\right]
+    $$
+
 
 ---
 
