@@ -11,6 +11,7 @@ This section contains complete intersections inside this geometric family, syste
 ---
 
 <span id="gr26"></span>
+### Gr(2,6)
 - **Ambient Space:** `$A5$`
 - **Dimension:** $8$
 - **Fano Index:** $6$
@@ -34,6 +35,7 @@ This section contains complete intersections inside this geometric family, syste
 ---
 
 <span id="gr26o1"></span>
+### Gr(2,6) / O(1)
 - **Ambient Space:** `$A5$`
 - **Dimension:** $7$
 - **Fano Index:** $5$
@@ -89,6 +91,7 @@ This section contains complete intersections inside this geometric family, syste
 ---
 
 <span id="gr26o1o1"></span>
+### Gr(2,6) / O(1)+O(1)
 - **Ambient Space:** `$A5$`
 - **Dimension:** $6$
 - **Fano Index:** $4$
@@ -179,6 +182,7 @@ This section contains complete intersections inside this geometric family, syste
 ---
 
 <span id="gr26o1o1o1"></span>
+### Gr(2,6) / O(1)+O(1)+O(1)
 - **Ambient Space:** `$A5$`
 - **Dimension:** $5$
 - **Fano Index:** $3$
@@ -230,6 +234,7 @@ This section contains complete intersections inside this geometric family, syste
 ---
 
 <span id="gr26o1o1o2"></span>
+### Gr(2,6) / O(1)+O(1)+O(2)
 - **Ambient Space:** `$A5$`
 - **Dimension:** $5$
 - **Fano Index:** $2$
@@ -261,6 +266,7 @@ This section contains complete intersections inside this geometric family, syste
 ---
 
 <span id="gr45"></span>
+### Gr(4,5)
 - **Ambient Space:** `$A4$`
 - **Dimension:** $4$
 - **Fano Index:** $5$
@@ -430,6 +436,7 @@ This section contains complete intersections inside this geometric family, syste
 ---
 
 <span id="gr45o1"></span>
+### Gr(4,5) / O(1)
 - **Ambient Space:** `$A4$`
 - **Dimension:** $3$
 - **Fano Index:** $4$
@@ -460,6 +467,7 @@ This section contains complete intersections inside this geometric family, syste
 ---
 
 <span id="gr45o2"></span>
+### Gr(4,5) / O(2)
 - **Ambient Space:** `$A4$`
 - **Dimension:** $3$
 - **Fano Index:** $3$
@@ -520,6 +528,7 @@ This section contains complete intersections inside this geometric family, syste
 ---
 
 <span id="gr45o3"></span>
+### Gr(4,5) / O(3)
 - **Ambient Space:** `$A4$`
 - **Dimension:** $3$
 - **Fano Index:** $2$
@@ -580,6 +589,7 @@ This section contains complete intersections inside this geometric family, syste
 ---
 
 <span id="gr45o4"></span>
+### Gr(4,5) / O(4)
 - **Ambient Space:** `$A4$`
 - **Dimension:** $3$
 - **Fano Index:** $1$
@@ -626,6 +636,7 @@ This section contains complete intersections inside this geometric family, syste
 ---
 
 <span id="gr45o1o1"></span>
+### Gr(4,5) / O(1)+O(1)
 - **Ambient Space:** `$A4$`
 - **Dimension:** $2$
 - **Fano Index:** $3$
@@ -671,6 +682,7 @@ This section contains complete intersections inside this geometric family, syste
 ---
 
 <span id="gr45o1o2"></span>
+### Gr(4,5) / O(1)+O(2)
 - **Ambient Space:** `$A4$`
 - **Dimension:** $2$
 - **Fano Index:** $2$
@@ -716,6 +728,7 @@ This section contains complete intersections inside this geometric family, syste
 ---
 
 <span id="gr45o1o3"></span>
+### Gr(4,5) / O(1)+O(3)
 - **Ambient Space:** `$A4$`
 - **Dimension:** $2$
 - **Fano Index:** $1$
@@ -731,6 +744,7 @@ This section contains complete intersections inside this geometric family, syste
 ---
 
 <span id="gr45o2o2"></span>
+### Gr(4,5) / O(2)+O(2)
 - **Ambient Space:** `$A4$`
 - **Dimension:** $2$
 - **Fano Index:** $1$
@@ -773,6 +787,7 @@ This section contains complete intersections inside this geometric family, syste
 ---
 
 <span id="gr45o1o1o1"></span>
+### Gr(4,5) / O(1)+O(1)+O(1)
 - **Ambient Space:** `$A4$`
 - **Dimension:** $1$
 - **Fano Index:** $2$
@@ -818,6 +833,7 @@ This section contains complete intersections inside this geometric family, syste
 ---
 
 <span id="gr45o1o1o2"></span>
+### Gr(4,5) / O(1)+O(1)+O(2)
 - **Ambient Space:** `$A4$`
 - **Dimension:** $1$
 - **Fano Index:** $1$
