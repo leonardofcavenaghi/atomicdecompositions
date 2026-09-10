@@ -457,6 +457,7 @@ This section contains complete intersections inside this geometric family, syste
 | Geometry | Fano Index | Basis Rank |
 |---|---|---|
 | [Gr(3,4) / O(1)](#gr34o1) | 3 | 4 |
+| [Gr(4,5) / O(1)+O(1)](#gr45o1o1) | 3 | 3 |
 | [Gr(2,4) / O(1)+O(1)](#gr24o1o1) | 2 | 6 |
 | [Gr(3,4) / O(2)](#gr34o2) | 2 | 4 |
 | [Gr(2,4) / O(1)+O(2)](#gr24o1o2) | 1 | 6 |
@@ -476,6 +477,21 @@ This section contains complete intersections inside this geometric family, syste
     $$
     \left[\begin{matrix}0 & 0 & 3\\3 & 0 & 0\\0 & 3 & 0\end{matrix}\right]
     $$
+
+---
+
+<span id="gr45o1o1"></span>
+- **Ambient Space:** `$A4$`
+- **Dimension:** $2$
+- **Fano Index:** $3$
+- **Basis Rank:** $3$
+- **Eigenvalues:** $3$ (mult: 1), $- \frac{3}{2} - \frac{3 \sqrt{3} i}{2}$ (mult: 1), $- \frac{3}{2} + \frac{3 \sqrt{3} i}{2}$ (mult: 1)
+
+??? note "Quantum Matrix ($y=1$)"
+    $$
+        \left[\begin{matrix}0 & 0 & 3\\3 & 0 & 0\\0 & 3 & 0\end{matrix}\right]
+    $$
+
 
 ---
 
