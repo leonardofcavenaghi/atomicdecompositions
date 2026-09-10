@@ -766,6 +766,15 @@
       "rank": "3",
       "category": "grassmannians",
       "text": "- **Ambient Space:** `$A4$`\n- **Dimension:** $2$\n- **Fano Index:** $1$\n- **Basis Rank:** $3$\n- **Eigenvalues:** $21$ (mult: 1), $-6$ (mult: 2)\n\n??? note \"Quantum Matrix ($y=1$)\"\n    $$\n        \\left[\\begin{matrix}0 & 108 & 756\\\\1 & 9 & 108\\\\0 & 1 & 0\\end{matrix}\\right]\n    $$\n"
+    },
+    {
+      "id": "109",
+      "label": "Gr(4,5) / O(2)",
+      "dim": "3",
+      "fano": "3",
+      "rank": "4",
+      "category": "grassmannians",
+      "text": "- **Ambient Space:** `$A4$`\n- **Dimension:** $3$\n- **Fano Index:** $3$\n- **Basis Rank:** $4$\n- **Eigenvalues:** $3 \\cdot 2^{\\frac{2}{3}}$ (mult: 1), $- \\frac{3 \\cdot 2^{\\frac{2}{3}}}{2} - \\frac{3 \\cdot 2^{\\frac{2}{3}} \\sqrt{3} i}{2}$ (mult: 1), $- \\frac{3 \\cdot 2^{\\frac{2}{3}}}{2} + \\frac{3 \\cdot 2^{\\frac{2}{3}} \\sqrt{3} i}{2}$ (mult: 1), $0$ (mult: 1)\n\n??? note \"Quantum Matrix ($y=1$)\"\n    $$\n        \\left[\\begin{matrix}0 & 0 & 6 & 0\\\\3 & 0 & 0 & 6\\\\0 & 3 & 0 & 0\\\\0 & 0 & 3 & 0\\end{matrix}\\right]\n    $$\n"
     }
   ],
   "fanography_text": ""
