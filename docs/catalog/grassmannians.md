@@ -20,7 +20,7 @@ This section contains complete intersections inside this geometric family, syste
 
 ??? note "Quantum Matrix ($y=1$)"
     $$
-        \left[\begin{array}{ccccccccccccccc}0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 6 & 0 & 0 & 0 & 0 & 0\\6 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 6 & 0 & 0 & 0\\0 & 6 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 6 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 6 & 0\\0 & 0 & 6 & 6 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 6 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 6\\0 & 0 & 0 & 0 & 6 & 6 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 6 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 6 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 6 & 0 & 6 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 6 & 6 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 6 & 6 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 6 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 6 & 6 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 6 & 0\end{array}\right]
+    \left[\begin{array}{ccccccccccccccc}0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 6 & 0 & 0 & 0 & 0 & 0\\6 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 6 & 0 & 0 & 0\\0 & 6 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 6 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 6 & 0\\0 & 0 & 6 & 6 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 6 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 6\\0 & 0 & 0 & 0 & 6 & 6 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 6 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 6 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 6 & 0 & 6 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 6 & 6 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 6 & 6 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 6 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 6 & 6 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 6 & 0\end{array}\right]
     $$
 
 
@@ -44,7 +44,7 @@ This section contains complete intersections inside this geometric family, syste
 
 ??? note "Quantum Matrix ($y=1$)"
     $$
-        \left[\begin{array}{cccccccccccc}0 & 0 & 0 & 0 & 0 & 0 & 5 & 0 & 0 & 0 & 0 & 0\\5 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 5 & 5 & 0 & 0\\0 & 5 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 5 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 5 & 0\\0 & 0 & 5 & 5 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 5 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 5\\0 & 0 & 0 & 0 & 5 & 10 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 5 & -5 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 5 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 5 & 5 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 5 & 10 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 5 & 0\end{array}\right]
+    \left[\begin{array}{cccccccccccc}0 & 0 & 0 & 0 & 0 & 0 & 5 & 0 & 0 & 0 & 0 & 0\\5 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 5 & 5 & 0 & 0\\0 & 5 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 5 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 5 & 0\\0 & 0 & 5 & 5 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 5 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 5\\0 & 0 & 0 & 0 & 5 & 10 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 5 & -5 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 5 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 5 & 5 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 5 & 10 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 5 & 0\end{array}\right]
     $$
 
 
@@ -101,7 +101,7 @@ This section contains complete intersections inside this geometric family, syste
 
 ??? note "Quantum Matrix ($y=1$)"
     $$
-        \left[\begin{matrix}0 & 0 & 0 & 0 & 4 & 8 & 0 & 0 & 0 & 0\\4 & 0 & 0 & 0 & 0 & 0 & 8 & 4 & 0 & 0\\0 & 4 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 4 & 0 & 0 & 0 & 0 & 0 & 0 & 4 & 0\\0 & 0 & 4 & 4 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 4 & 0 & 0 & 0 & 0 & 0 & 4\\0 & 0 & 0 & 0 & 4 & 8 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 4 & -4 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 12 & 8 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 4 & 0\end{matrix}\right]
+    \left[\begin{matrix}0 & 0 & 0 & 0 & 4 & 8 & 0 & 0 & 0 & 0\\4 & 0 & 0 & 0 & 0 & 0 & 8 & 4 & 0 & 0\\0 & 4 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 4 & 0 & 0 & 0 & 0 & 0 & 0 & 4 & 0\\0 & 0 & 4 & 4 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 4 & 0 & 0 & 0 & 0 & 0 & 4\\0 & 0 & 0 & 0 & 4 & 8 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 4 & -4 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 12 & 8 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 4 & 0\end{matrix}\right]
     $$
 
 
@@ -117,7 +117,7 @@ This section contains complete intersections inside this geometric family, syste
 
 ??? note "Quantum Matrix ($y=1$)"
     $$
-        \left[\begin{matrix}0 & 0 & 6 & 18 & 0 & 0 & 0 & 0 & 72 & 0\\3 & 0 & 0 & 0 & 24 & 30 & 0 & 0 & 0 & 72\\0 & 3 & 0 & 0 & 0 & 0 & 12 & 6 & 0 & 0\\0 & 3 & 0 & 0 & 0 & 0 & 30 & 18 & 0 & 0\\0 & 0 & 3 & 3 & 0 & 0 & 0 & 0 & 6 & 0\\0 & 0 & 0 & 3 & 0 & 0 & 0 & 0 & 12 & 0\\0 & 0 & 0 & 0 & 3 & 6 & 0 & 0 & 0 & 12\\0 & 0 & 0 & 0 & 3 & -3 & 0 & 0 & 0 & -6\\0 & 0 & 0 & 0 & 0 & 0 & 9 & 6 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 3 & 0\end{matrix}\right]
+    \left[\begin{matrix}0 & 0 & 6 & 18 & 0 & 0 & 0 & 0 & 72 & 0\\3 & 0 & 0 & 0 & 24 & 30 & 0 & 0 & 0 & 72\\0 & 3 & 0 & 0 & 0 & 0 & 12 & 6 & 0 & 0\\0 & 3 & 0 & 0 & 0 & 0 & 30 & 18 & 0 & 0\\0 & 0 & 3 & 3 & 0 & 0 & 0 & 0 & 6 & 0\\0 & 0 & 0 & 3 & 0 & 0 & 0 & 0 & 12 & 0\\0 & 0 & 0 & 0 & 3 & 6 & 0 & 0 & 0 & 12\\0 & 0 & 0 & 0 & 3 & -3 & 0 & 0 & 0 & -6\\0 & 0 & 0 & 0 & 0 & 0 & 9 & 6 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 3 & 0\end{matrix}\right]
     $$
 
 
@@ -208,7 +208,7 @@ This section contains complete intersections inside this geometric family, syste
 
 ??? note "Quantum Matrix ($y=1$)"
     $$
-        \left[\begin{matrix}0 & 0 & 3 & 9 & 0 & 0 & 0 & 6\\3 & 0 & 0 & 0 & 9 & 9 & 0 & 0\\0 & 3 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 3 & 0 & 0 & 0 & 0 & 9 & 0\\0 & 0 & 3 & 3 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 3 & 0 & 0 & 0 & 3\\0 & 0 & 0 & 0 & 5 & 4 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 9 & 0\end{matrix}\right]
+    \left[\begin{matrix}0 & 0 & 3 & 9 & 0 & 0 & 0 & 6\\3 & 0 & 0 & 0 & 9 & 9 & 0 & 0\\0 & 3 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 3 & 0 & 0 & 0 & 0 & 9 & 0\\0 & 0 & 3 & 3 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 3 & 0 & 0 & 0 & 3\\0 & 0 & 0 & 0 & 5 & 4 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 9 & 0\end{matrix}\right]
     $$
 
 
@@ -260,7 +260,7 @@ This section contains complete intersections inside this geometric family, syste
 
 ??? note "Quantum Matrix ($y=1$)"
     $$
-        \left[\begin{matrix}0 & 16 & 0 & 0 & 336 & 288 & 0 & 768\\2 & 0 & 16 & 36 & 0 & 0 & 480 & 0\\0 & 2 & 0 & 0 & 12 & 12 & 0 & 48\\0 & 2 & 0 & 0 & 32 & 28 & 0 & 80\\0 & 0 & 2 & 2 & 0 & 0 & 12 & 0\\0 & 0 & 0 & 2 & 0 & 0 & 24 & 0\\0 & 0 & 0 & 0 & \frac{10}{3} & \frac{8}{3} & 0 & \frac{16}{3}\\0 & 0 & 0 & 0 & 0 & 0 & 6 & 0\end{matrix}\right]
+    \left[\begin{matrix}0 & 16 & 0 & 0 & 336 & 288 & 0 & 768\\2 & 0 & 16 & 36 & 0 & 0 & 480 & 0\\0 & 2 & 0 & 0 & 12 & 12 & 0 & 48\\0 & 2 & 0 & 0 & 32 & 28 & 0 & 80\\0 & 0 & 2 & 2 & 0 & 0 & 12 & 0\\0 & 0 & 0 & 2 & 0 & 0 & 24 & 0\\0 & 0 & 0 & 0 & \frac{10}{3} & \frac{8}{3} & 0 & \frac{16}{3}\\0 & 0 & 0 & 0 & 0 & 0 & 6 & 0\end{matrix}\right]
     $$
 
 
@@ -293,7 +293,7 @@ This section contains complete intersections inside this geometric family, syste
 
 ??? note "Quantum Matrix ($y=1$)"
     $$
-        \left[\begin{matrix}0 & 0 & 0 & 0 & 5\\5 & 0 & 0 & 0 & 0\\0 & 5 & 0 & 0 & 0\\0 & 0 & 5 & 0 & 0\\0 & 0 & 0 & 5 & 0\end{matrix}\right]
+    \left[\begin{matrix}0 & 0 & 0 & 0 & 5\\5 & 0 & 0 & 0 & 0\\0 & 5 & 0 & 0 & 0\\0 & 0 & 5 & 0 & 0\\0 & 0 & 0 & 5 & 0\end{matrix}\right]
     $$
 
 
@@ -429,7 +429,7 @@ This section contains complete intersections inside this geometric family, syste
 
 ??? note "Quantum Matrix ($y=1$)"
     $$
-        \left[\begin{matrix}0 & 1080 & 71424 & 46080 & 1650816 & 39398400\\1 & 32 & 2872 & 1848 & 67776 & 1650816\\0 & 1 & 32 & 28 & 1024 & 25344\\0 & 1 & 32 & 8 & 824 & 20736\\0 & 0 & 3 & 2 & 32 & 1080\\0 & 0 & 0 & 0 & 1 & 0\end{matrix}\right]
+    \left[\begin{matrix}0 & 1080 & 71424 & 46080 & 1650816 & 39398400\\1 & 32 & 2872 & 1848 & 67776 & 1650816\\0 & 1 & 32 & 28 & 1024 & 25344\\0 & 1 & 32 & 8 & 824 & 20736\\0 & 0 & 3 & 2 & 32 & 1080\\0 & 0 & 0 & 0 & 1 & 0\end{matrix}\right]
     $$
 
 
@@ -479,7 +479,7 @@ This section contains complete intersections inside this geometric family, syste
 
 ??? note "Quantum Matrix ($y=1$)"
     $$
-        \left[\begin{matrix}0 & 0 & 0 & 4\\4 & 0 & 0 & 0\\0 & 4 & 0 & 0\\0 & 0 & 4 & 0\end{matrix}\right]
+    \left[\begin{matrix}0 & 0 & 0 & 4\\4 & 0 & 0 & 0\\0 & 4 & 0 & 0\\0 & 0 & 4 & 0\end{matrix}\right]
     $$
 
 
@@ -510,7 +510,7 @@ This section contains complete intersections inside this geometric family, syste
 
 ??? note "Quantum Matrix ($y=1$)"
     $$
-        \left[\begin{matrix}0 & 0 & 6 & 0\\3 & 0 & 0 & 6\\0 & 3 & 0 & 0\\0 & 0 & 3 & 0\end{matrix}\right]
+    \left[\begin{matrix}0 & 0 & 6 & 0\\3 & 0 & 0 & 6\\0 & 3 & 0 & 0\\0 & 0 & 3 & 0\end{matrix}\right]
     $$
 
 
@@ -571,7 +571,7 @@ This section contains complete intersections inside this geometric family, syste
 
 ??? note "Quantum Matrix ($y=1$)"
     $$
-        \left[\begin{matrix}0 & 12 & 0 & 72\\2 & 0 & 30 & 0\\0 & 2 & 0 & 12\\0 & 0 & 2 & 0\end{matrix}\right]
+    \left[\begin{matrix}0 & 12 & 0 & 72\\2 & 0 & 30 & 0\\0 & 2 & 0 & 12\\0 & 0 & 2 & 0\end{matrix}\right]
     $$
 
 
@@ -632,7 +632,7 @@ This section contains complete intersections inside this geometric family, syste
 
 ??? note "Quantum Matrix ($y=1$)"
     $$
-        \left[\begin{matrix}0 & 3888 & 504576 & 18323712\\1 & 80 & 13600 & 504576\\0 & 1 & 80 & 3888\\0 & 0 & 1 & 0\end{matrix}\right]
+    \left[\begin{matrix}0 & 3888 & 504576 & 18323712\\1 & 80 & 13600 & 504576\\0 & 1 & 80 & 3888\\0 & 0 & 1 & 0\end{matrix}\right]
     $$
 
 
@@ -679,7 +679,7 @@ This section contains complete intersections inside this geometric family, syste
 
 ??? note "Quantum Matrix ($y=1$)"
     $$
-        \left[\begin{matrix}0 & 0 & 3\\3 & 0 & 0\\0 & 3 & 0\end{matrix}\right]
+    \left[\begin{matrix}0 & 0 & 3\\3 & 0 & 0\\0 & 3 & 0\end{matrix}\right]
     $$
 
 
@@ -725,7 +725,7 @@ This section contains complete intersections inside this geometric family, syste
 
 ??? note "Quantum Matrix ($y=1$)"
     $$
-        \left[\begin{matrix}0 & 4 & 0\\2 & 0 & 4\\0 & 2 & 0\end{matrix}\right]
+    \left[\begin{matrix}0 & 4 & 0\\2 & 0 & 4\\0 & 2 & 0\end{matrix}\right]
     $$
 
 
@@ -771,7 +771,7 @@ This section contains complete intersections inside this geometric family, syste
 
 ??? note "Quantum Matrix ($y=1$)"
     $$
-        \left[\begin{matrix}0 & 108 & 756\\1 & 9 & 108\\0 & 1 & 0\end{matrix}\right]
+    \left[\begin{matrix}0 & 108 & 756\\1 & 9 & 108\\0 & 1 & 0\end{matrix}\right]
     $$
 
 
@@ -787,7 +787,7 @@ This section contains complete intersections inside this geometric family, syste
 
 ??? note "Quantum Matrix ($y=1$)"
     $$
-        \left[\begin{matrix}0 & 40 & 192\\1 & 4 & 40\\0 & 1 & 0\end{matrix}\right]
+    \left[\begin{matrix}0 & 40 & 192\\1 & 4 & 40\\0 & 1 & 0\end{matrix}\right]
     $$
 
 
@@ -830,7 +830,7 @@ This section contains complete intersections inside this geometric family, syste
 
 ??? note "Quantum Matrix ($y=1$)"
     $$
-        \left[\begin{matrix}0 & 2\\2 & 0\end{matrix}\right]
+    \left[\begin{matrix}0 & 2\\2 & 0\end{matrix}\right]
     $$
 
 
@@ -876,7 +876,7 @@ This section contains complete intersections inside this geometric family, syste
 
 ??? note "Quantum Matrix ($y=1$)"
     $$
-        \left[\begin{matrix}0 & 4\\1 & 0\end{matrix}\right]
+    \left[\begin{matrix}0 & 4\\1 & 0\end{matrix}\right]
     $$
 
 

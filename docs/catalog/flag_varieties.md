@@ -20,7 +20,7 @@ This section contains complete intersections inside this geometric family, syste
 
 ??? note "Quantum Matrix ($y=1$)"
     $$
-        \left[\begin{matrix}0 & 2 & 2 & 0 & 0 & 4\\2 & 0 & 0 & 2 & 0 & 0\\2 & 0 & 0 & 0 & 2 & 0\\0 & 2 & 4 & 0 & 0 & 2\\0 & 4 & 2 & 0 & 0 & 2\\0 & 0 & 0 & 2 & 2 & 0\end{matrix}\right]
+    \left[\begin{matrix}0 & 2 & 2 & 0 & 0 & 4\\2 & 0 & 0 & 2 & 0 & 0\\2 & 0 & 0 & 0 & 2 & 0\\0 & 2 & 4 & 0 & 0 & 2\\0 & 4 & 2 & 0 & 0 & 2\\0 & 0 & 0 & 2 & 2 & 0\end{matrix}\right]
     $$
 
 
