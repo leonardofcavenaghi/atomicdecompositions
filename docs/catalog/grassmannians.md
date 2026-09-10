@@ -312,6 +312,7 @@ This section contains complete intersections inside this geometric family, syste
 | [Gr(2,4) / O(2)](#gr24o2) | 2 | 6 |
 | [Gr(2,5) / O(1)+O(1)+O(1)](#gr25o1o1o1) | 2 | 10 |
 | [Gr(3,5) / O(1)+O(1)+O(1)](#gr35o1o1o1) | 2 | 10 |
+| [Gr(4,5) / O(3)](#gr45o3) | 2 | 4 |
 | [Gr(2,4) / O(3)](#gr24o3) | 1 | 6 |
 | [Gr(2,5) / O(1)+O(1)+O(2)](#gr25o1o1o2) | 1 | 10 |
 | [Gr(3,5) / O(1)+O(1)+O(2)](#gr35o1o1o2) | 1 | 10 |
@@ -420,6 +421,21 @@ This section contains complete intersections inside this geometric family, syste
     $$
     \left[\begin{matrix}0 & 6 & 0 & 4\\2 & 0 & 6 & 0\\0 & \frac{10}{3} & 0 & 2\\0 & 0 & 6 & 0\end{matrix}\right]
     $$
+
+---
+
+<span id="gr45o3"></span>
+- **Ambient Space:** `$A4$`
+- **Dimension:** $3$
+- **Fano Index:** $2$
+- **Basis Rank:** $4$
+- **Eigenvalues:** $- 6 \sqrt{3}$ (mult: 1), $6 \sqrt{3}$ (mult: 1), $0$ (mult: 2)
+
+??? note "Quantum Matrix ($y=1$)"
+    $$
+        \left[\begin{matrix}0 & 12 & 0 & 72\\2 & 0 & 30 & 0\\0 & 2 & 0 & 12\\0 & 0 & 2 & 0\end{matrix}\right]
+    $$
+
 
 ---
 
