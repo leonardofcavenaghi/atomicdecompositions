@@ -712,6 +712,15 @@
       "rank": "5",
       "category": "grassmannians",
       "text": "- **Ambient Space:** `$A4$`\n- **Dimension:** $4$\n- **Fano Index:** $5$\n- **Basis Rank:** $5$\n- **Eigenvalues:** $5$ (mult: 1), $- \\frac{5 \\sqrt{5}}{4} - \\frac{5}{4} - 5 i \\sqrt{\\frac{5}{8} - \\frac{\\sqrt{5}}{8}}$ (mult: 1), $- \\frac{5 \\sqrt{5}}{4} - \\frac{5}{4} + 5 i \\sqrt{\\frac{5}{8} - \\frac{\\sqrt{5}}{8}}$ (mult: 1), $- \\frac{5}{4} + \\frac{5 \\sqrt{5}}{4} - 5 i \\sqrt{\\frac{\\sqrt{5}}{8} + \\frac{5}{8}}$ (mult: 1), $- \\frac{5}{4} + \\frac{5 \\sqrt{5}}{4} + 5 i \\sqrt{\\frac{\\sqrt{5}}{8} + \\frac{5}{8}}$ (mult: 1)\n\n??? note \"Quantum Matrix ($y=1$)\"\n    $$\n        \\left[\\begin{matrix}0 & 0 & 0 & 0 & 5\\\\5 & 0 & 0 & 0 & 0\\\\0 & 5 & 0 & 0 & 0\\\\0 & 0 & 5 & 0 & 0\\\\0 & 0 & 0 & 5 & 0\\end{matrix}\\right]\n    $$\n"
+    },
+    {
+      "id": "103",
+      "label": "Gr(4,5) / O(1)",
+      "dim": "3",
+      "fano": "4",
+      "rank": "4",
+      "category": "grassmannians",
+      "text": "- **Ambient Space:** `$A4$`\n- **Dimension:** $3$\n- **Fano Index:** $4$\n- **Basis Rank:** $4$\n- **Eigenvalues:** $-4$ (mult: 1), $4$ (mult: 1), $- 4 i$ (mult: 1), $4 i$ (mult: 1)\n\n??? note \"Quantum Matrix ($y=1$)\"\n    $$\n        \\left[\\begin{matrix}0 & 0 & 0 & 4\\\\4 & 0 & 0 & 0\\\\0 & 4 & 0 & 0\\\\0 & 0 & 4 & 0\\end{matrix}\\right]\n    $$\n"
     }
   ],
   "fanography_text": ""
