@@ -860,6 +860,32 @@ Welcome to the automated catalog. Below you will find geometric and quantum prop
         $$
 
 
+??? example "Case #18: P5 / O(5)"
+    - **Ambient Space:** `$A5$`
+    - **Dimension:** $4$
+    - **Fano Index:** $1$
+    - **Basis Rank:** $6$
+    - **Eigenvalues:** $3005$ (mult: 1), $-120$ (mult: 4)
+    ??? note "Quantum Matrix ($y=1$)"
+        $$
+        \left[\begin{matrix}0 & 198000 & 395550000 & 423858600000 & 109236016800000\\1 & 650 & 1487500 & 1620307500 & 423858600000\\0 & 1 & 1225 & 1487500 & 395550000\\0 & 0 & 1 & 650 & 198000\\0 & 0 & 0 & 1 & 0\end{matrix}\right]
+        $$
+    ??? note "Hodge Diamond ($h^{p,q}$)"
+        $$
+        \begin{matrix}
+         &  &  &  & 1 &  &  &  &  \\
+         &  &  & 0 &  & 0 &  &  &  \\
+         &  & 0 &  & 1 &  & 0 &  &  \\
+         & 0 &  & 0 &  & 0 &  & 0 &  \\
+        0 &  & 120 &  & 581 &  & 120 &  & 0 \\
+         & 0 &  & 0 &  & 0 &  & 0 &  \\
+         &  & 0 &  & 1 &  & 0 &  &  \\
+         &  &  & 0 &  & 0 &  &  &  \\
+         &  &  &  & 1 &  &  &  &  \\
+        \end{matrix}
+        $$
+
+
 </div>
 
 ***
