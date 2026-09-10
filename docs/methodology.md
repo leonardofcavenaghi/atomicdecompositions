@@ -36,7 +36,7 @@ The dimension and basis rank are derived using Lie theory.
 
 Because `gwflags` explicitly computes the exact localization graphs, all geometric values (Fano index, dimension, basis rank, and the quantum multiplication matrix $A^{\text{alg}}(1)$) can be natively replicated by a researcher on their local machine.
 
-To replicate a result found in our [Catalog](catalog.md):
+To replicate a result found in our [Catalog](catalog/index.md):
 1. Install `gwflags` (see [Installation](installation.md)).
 2. Instantiate the flag variety using `X = FlagVariety(algebra, roots_that_stay)`.
 3. Invoke `X.small_quantum_multiplication(K)` where $K$ specifies the multidegrees of the vector bundle.
