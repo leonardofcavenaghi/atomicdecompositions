@@ -111,6 +111,7 @@ This section contains complete intersections inside this geometric family, syste
 | [Gr(3,5) / O(1)](#gr35o1) | 4 | 10 |
 | [Gr(2,5) / O(2)](#gr25o2) | 3 | 10 |
 | [Gr(3,5) / O(2)](#gr35o2) | 3 | 10 |
+| [Gr(2,6) / O(1)+O(1)+O(1)](#gr26o1o1o1) | 3 | 8 |
 | [Gr(2,5) / O(3)](#gr25o3) | 2 | 10 |
 | [Gr(3,5) / O(3)](#gr35o3) | 2 | 10 |
 
@@ -173,6 +174,21 @@ This section contains complete intersections inside this geometric family, syste
     $$
     \left[\begin{matrix}0 & 0 & 12 & 6 & 0 & 0 & 0 & 24\\3 & 0 & 0 & 0 & 12 & 18 & 0 & 0\\0 & 3 & 0 & 0 & 0 & 0 & 12 & 0\\0 & 3 & 0 & 0 & 0 & 0 & 6 & 0\\0 & 0 & 3 & 0 & 0 & 0 & 0 & 6\\0 & 0 & 3 & 3 & 0 & 0 & 0 & 6\\0 & 0 & 0 & 0 & 3 & 6 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 3 & 0\end{matrix}\right]
     $$
+
+---
+
+<span id="gr26o1o1o1"></span>
+- **Ambient Space:** `$A5$`
+- **Dimension:** $5$
+- **Fano Index:** $3$
+- **Basis Rank:** $8$
+- **Eigenvalues:** $9$ (mult: 1), $-3$ (mult: 1), $\frac{3}{2} - \frac{3 \sqrt{3} i}{2}$ (mult: 1), $\frac{3}{2} + \frac{3 \sqrt{3} i}{2}$ (mult: 1), $- \frac{9}{2} - \frac{9 \sqrt{3} i}{2}$ (mult: 1), $- \frac{9}{2} + \frac{9 \sqrt{3} i}{2}$ (mult: 1), $0$ (mult: 2)
+
+??? note "Quantum Matrix ($y=1$)"
+    $$
+        \left[\begin{matrix}0 & 0 & 3 & 9 & 0 & 0 & 0 & 6\\3 & 0 & 0 & 0 & 9 & 9 & 0 & 0\\0 & 3 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 3 & 0 & 0 & 0 & 0 & 9 & 0\\0 & 0 & 3 & 3 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 3 & 0 & 0 & 0 & 3\\0 & 0 & 0 & 0 & 5 & 4 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 9 & 0\end{matrix}\right]
+    $$
+
 
 ---
 
