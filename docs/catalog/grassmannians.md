@@ -2,6 +2,29 @@
 
 This section contains complete intersections inside this geometric family, systematically organized by dimension and Fano index.
 
+## 8-folds
+
+| Geometry | Fano Index | Basis Rank |
+|---|---|---|
+| [Gr(2,6)](#gr26) | 6 | 15 |
+
+---
+
+<span id="gr26"></span>
+- **Ambient Space:** `$A5$`
+- **Dimension:** $8$
+- **Fano Index:** $6$
+- **Basis Rank:** $15$
+- **Eigenvalues:** $- 6 \sqrt{3}$ (mult: 1), $6 \sqrt{3}$ (mult: 1), $- 6 i$ (mult: 1), $6 i$ (mult: 1), $- 3 \sqrt{3} - 3 i$ (mult: 1), $- 3 \sqrt{3} + 3 i$ (mult: 1), $3 \sqrt{3} - 3 i$ (mult: 1), $3 \sqrt{3} + 3 i$ (mult: 1), $- 6 \sqrt{- \frac{3}{2} - \frac{3 \sqrt{3} i}{2}}$ (mult: 1), $- 6 \sqrt{- \frac{3}{2} + \frac{3 \sqrt{3} i}{2}}$ (mult: 1), $6 \sqrt{- \frac{3}{2} - \frac{3 \sqrt{3} i}{2}}$ (mult: 1), $6 \sqrt{- \frac{3}{2} + \frac{3 \sqrt{3} i}{2}}$ (mult: 1), $0$ (mult: 3)
+
+??? note "Quantum Matrix ($y=1$)"
+    $$
+        \left[\begin{array}{ccccccccccccccc}0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 6 & 0 & 0 & 0 & 0 & 0\\6 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 6 & 0 & 0 & 0\\0 & 6 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 6 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 6 & 0\\0 & 0 & 6 & 6 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 6 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 6\\0 & 0 & 0 & 0 & 6 & 6 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 6 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 6 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 6 & 0 & 6 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 6 & 6 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 6 & 6 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 6 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 6 & 6 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 6 & 0\end{array}\right]
+    $$
+
+
+---
+
 ## 6-folds
 
 | Geometry | Fano Index | Basis Rank |
