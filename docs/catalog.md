@@ -886,6 +886,136 @@ Welcome to the automated catalog. Below you will find geometric and quantum prop
         $$
 
 
+??? example "Case #46: P8 / O(2)"
+    - **Ambient Space:** `$A8$`
+    - **Dimension:** $7$
+    - **Fano Index:** $7$
+    - **Basis Rank:** $9$
+    - **Eigenvalues:** $7 \cdot 2^{\frac{2}{7}}$ (mult: 1), $- 7 \cdot 2^{\frac{2}{7}} \cos{\left(\frac{\pi}{7} \right)} - 7 \cdot 2^{\frac{2}{7}} i \sin{\left(\frac{\pi}{7} \right)}$ (mult: 1), $- 7 \cdot 2^{\frac{2}{7}} \cos{\left(\frac{\pi}{7} \right)} + 7 \cdot 2^{\frac{2}{7}} i \sin{\left(\frac{\pi}{7} \right)}$ (mult: 1), $- 7 \cdot 2^{\frac{2}{7}} \cos{\left(\frac{3 \pi}{7} \right)} - 7 \cdot 2^{\frac{2}{7}} i \sin{\left(\frac{3 \pi}{7} \right)}$ (mult: 1), $- 7 \cdot 2^{\frac{2}{7}} \cos{\left(\frac{3 \pi}{7} \right)} + 7 \cdot 2^{\frac{2}{7}} i \sin{\left(\frac{3 \pi}{7} \right)}$ (mult: 1), $7 \cdot 2^{\frac{2}{7}} \cos{\left(\frac{2 \pi}{7} \right)} - 7 \cdot 2^{\frac{2}{7}} i \sin{\left(\frac{2 \pi}{7} \right)}$ (mult: 1), $7 \cdot 2^{\frac{2}{7}} \cos{\left(\frac{2 \pi}{7} \right)} + 7 \cdot 2^{\frac{2}{7}} i \sin{\left(\frac{2 \pi}{7} \right)}$ (mult: 1), $0$ (mult: 1)
+    ??? note "Quantum Matrix ($y=1$)"
+        $$
+        \left[\begin{matrix}0 & 0 & 0 & 0 & 0 & 0 & 14 & 0\\7 & 0 & 0 & 0 & 0 & 0 & 0 & 14\\0 & 7 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 7 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 7 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 7 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 7 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 7 & 0\end{matrix}\right]
+        $$
+    ??? note "Hodge Diamond ($h^{p,q}$)"
+        $$
+        \begin{matrix}
+         &  &  &  &  &  &  & 1 &  &  &  &  &  &  &  \\
+         &  &  &  &  &  & 0 &  & 0 &  &  &  &  &  &  \\
+         &  &  &  &  & 0 &  & 1 &  & 0 &  &  &  &  &  \\
+         &  &  &  & 0 &  & 0 &  & 0 &  & 0 &  &  &  &  \\
+         &  &  & 0 &  & 0 &  & 1 &  & 0 &  & 0 &  &  &  \\
+         &  & 0 &  & 0 &  & 0 &  & 0 &  & 0 &  & 0 &  &  \\
+         & 0 &  & 0 &  & 0 &  & 1 &  & 0 &  & 0 &  & 0 &  \\
+        0 &  & 0 &  & 0 &  & 0 &  & 0 &  & 0 &  & 0 &  & 0 \\
+         & 0 &  & 0 &  & 0 &  & 1 &  & 0 &  & 0 &  & 0 &  \\
+         &  & 0 &  & 0 &  & 0 &  & 0 &  & 0 &  & 0 &  &  \\
+         &  &  & 0 &  & 0 &  & 1 &  & 0 &  & 0 &  &  &  \\
+         &  &  &  & 0 &  & 0 &  & 0 &  & 0 &  &  &  &  \\
+         &  &  &  &  & 0 &  & 1 &  & 0 &  &  &  &  &  \\
+         &  &  &  &  &  & 0 &  & 0 &  &  &  &  &  &  \\
+         &  &  &  &  &  &  & 1 &  &  &  &  &  &  &  \\
+        \end{matrix}
+        $$
+
+
+??? example "Case #45: P8  Fano index 9"
+    - **Ambient Space:** `$A8$`
+    - **Dimension:** $8$
+    - **Fano Index:** $9$
+    - **Basis Rank:** $9$
+    - **Eigenvalues:** $9$ (mult: 1), $- 9 \cos{\left(\frac{\pi}{9} \right)} - 9 i \sin{\left(\frac{\pi}{9} \right)}$ (mult: 1), $- 9 \cos{\left(\frac{\pi}{9} \right)} + 9 i \sin{\left(\frac{\pi}{9} \right)}$ (mult: 1), $- \frac{9}{2} - \frac{9 \sqrt{3} i}{2}$ (mult: 1), $- \frac{9}{2} + \frac{9 \sqrt{3} i}{2}$ (mult: 1), $9 \cos{\left(\frac{4 \pi}{9} \right)} - 9 i \sin{\left(\frac{4 \pi}{9} \right)}$ (mult: 1), $9 \cos{\left(\frac{4 \pi}{9} \right)} + 9 i \sin{\left(\frac{4 \pi}{9} \right)}$ (mult: 1), $9 \cos{\left(\frac{2 \pi}{9} \right)} - 9 i \sin{\left(\frac{2 \pi}{9} \right)}$ (mult: 1), $9 \cos{\left(\frac{2 \pi}{9} \right)} + 9 i \sin{\left(\frac{2 \pi}{9} \right)}$ (mult: 1)
+    ??? note "Quantum Matrix ($y=1$)"
+        $$
+        \left[\begin{matrix}0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 9\\9 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 9 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 9 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 9 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 9 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 9 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 9 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 0 & 9 & 0\end{matrix}\right]
+        $$
+
+
+??? example "Case #48: P8 / O(2)+O(2)+O(2)"
+    - **Ambient Space:** `$A8$`
+    - **Dimension:** $5$
+    - **Fano Index:** $3$
+    - **Basis Rank:** $9$
+    - **Eigenvalues:** $12$ (mult: 1), $-6 - 6 \sqrt{3} i$ (mult: 1), $-6 + 6 \sqrt{3} i$ (mult: 1), $0$ (mult: 3)
+    ??? note "Quantum Matrix ($y=1$)"
+        $$
+        \left[\begin{matrix}0 & 0 & 24 & 0 & 0 & 192\\3 & 0 & 0 & 72 & 0 & 0\\0 & 3 & 0 & 0 & 72 & 0\\0 & 0 & 3 & 0 & 0 & 24\\0 & 0 & 0 & 3 & 0 & 0\\0 & 0 & 0 & 0 & 3 & 0\end{matrix}\right]
+        $$
+    ??? note "Hodge Diamond ($h^{p,q}$)"
+        $$
+        \begin{matrix}
+         &  &  &  &  & 1 &  &  &  &  &  \\
+         &  &  &  & 0 &  & 0 &  &  &  &  \\
+         &  &  & 0 &  & 1 &  & 0 &  &  &  \\
+         &  & 0 &  & 0 &  & 0 &  & 0 &  &  \\
+         & 0 &  & 0 &  & 1 &  & 0 &  & 0 &  \\
+        0 &  & 0 &  & 27 &  & 27 &  & 0 &  & 0 \\
+         & 0 &  & 0 &  & 1 &  & 0 &  & 0 &  \\
+         &  & 0 &  & 0 &  & 0 &  & 0 &  &  \\
+         &  &  & 0 &  & 1 &  & 0 &  &  &  \\
+         &  &  &  & 0 &  & 0 &  &  &  &  \\
+         &  &  &  &  & 1 &  &  &  &  &  \\
+        \end{matrix}
+        $$
+
+
+??? example "Case #47: P8 / O(2)+O(2)"
+    - **Ambient Space:** `$A8$`
+    - **Dimension:** $6$
+    - **Fano Index:** $5$
+    - **Basis Rank:** $9$
+    - **Eigenvalues:** $5 \cdot 2^{\frac{4}{5}}$ (mult: 1), $- \frac{5 \cdot 2^{\frac{4}{5}} \sqrt{5}}{4} - \frac{5 \cdot 2^{\frac{4}{5}}}{4} - 5 \cdot 2^{\frac{4}{5}} i \sqrt{\frac{5}{8} - \frac{\sqrt{5}}{8}}$ (mult: 1), $- \frac{5 \cdot 2^{\frac{4}{5}} \sqrt{5}}{4} - \frac{5 \cdot 2^{\frac{4}{5}}}{4} + 5 \cdot 2^{\frac{4}{5}} i \sqrt{\frac{5}{8} - \frac{\sqrt{5}}{8}}$ (mult: 1), $- \frac{5 \cdot 2^{\frac{4}{5}}}{4} + \frac{5 \cdot 2^{\frac{4}{5}} \sqrt{5}}{4} - 5 \cdot 2^{\frac{4}{5}} i \sqrt{\frac{\sqrt{5}}{8} + \frac{5}{8}}$ (mult: 1), $- \frac{5 \cdot 2^{\frac{4}{5}}}{4} + \frac{5 \cdot 2^{\frac{4}{5}} \sqrt{5}}{4} + 5 \cdot 2^{\frac{4}{5}} i \sqrt{\frac{\sqrt{5}}{8} + \frac{5}{8}}$ (mult: 1), $0$ (mult: 2)
+    ??? note "Quantum Matrix ($y=1$)"
+        $$
+        \left[\begin{matrix}0 & 0 & 0 & 0 & 20 & 0 & 0\\5 & 0 & 0 & 0 & 0 & 40 & 0\\0 & 5 & 0 & 0 & 0 & 0 & 20\\0 & 0 & 5 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 5 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 5 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 5 & 0\end{matrix}\right]
+        $$
+    ??? note "Hodge Diamond ($h^{p,q}$)"
+        $$
+        \begin{matrix}
+         &  &  &  &  &  & 1 &  &  &  &  &  &  \\
+         &  &  &  &  & 0 &  & 0 &  &  &  &  &  \\
+         &  &  &  & 0 &  & 1 &  & 0 &  &  &  &  \\
+         &  &  & 0 &  & 0 &  & 0 &  & 0 &  &  &  \\
+         &  & 0 &  & 0 &  & 1 &  & 0 &  & 0 &  &  \\
+         & 0 &  & 0 &  & 0 &  & 0 &  & 0 &  & 0 &  \\
+        0 &  & 0 &  & 0 &  & 10 &  & 0 &  & 0 &  & 0 \\
+         & 0 &  & 0 &  & 0 &  & 0 &  & 0 &  & 0 &  \\
+         &  & 0 &  & 0 &  & 1 &  & 0 &  & 0 &  &  \\
+         &  &  & 0 &  & 0 &  & 0 &  & 0 &  &  &  \\
+         &  &  &  & 0 &  & 1 &  & 0 &  &  &  &  \\
+         &  &  &  &  & 0 &  & 0 &  &  &  &  &  \\
+         &  &  &  &  &  & 1 &  &  &  &  &  &  \\
+        \end{matrix}
+        $$
+
+
+??? example "Case #49: P8 / O(2)+O(2)+O(3)"
+    - **Ambient Space:** `$A8$`
+    - **Dimension:** $5$
+    - **Fano Index:** $2$
+    - **Basis Rank:** $9$
+    - **Eigenvalues:** $- 24 \sqrt{3}$ (mult: 1), $24 \sqrt{3}$ (mult: 1), $0$ (mult: 4)
+    ??? note "Quantum Matrix ($y=1$)"
+        $$
+        \left[\begin{matrix}0 & 48 & 0 & 10944 & 0 & 331776\\2 & 0 & 216 & 0 & 29088 & 0\\0 & 2 & 0 & 336 & 0 & 10944\\0 & 0 & 2 & 0 & 216 & 0\\0 & 0 & 0 & 2 & 0 & 48\\0 & 0 & 0 & 0 & 2 & 0\end{matrix}\right]
+        $$
+    ??? note "Hodge Diamond ($h^{p,q}$)"
+        $$
+        \begin{matrix}
+         &  &  &  &  & 1 &  &  &  &  &  \\
+         &  &  &  & 0 &  & 0 &  &  &  &  \\
+         &  &  & 0 &  & 1 &  & 0 &  &  &  \\
+         &  & 0 &  & 0 &  & 0 &  & 0 &  &  \\
+         & 0 &  & 0 &  & 1 &  & 0 &  & 0 &  \\
+        0 &  & 11 &  & 316 &  & 316 &  & 11 &  & 0 \\
+         & 0 &  & 0 &  & 1 &  & 0 &  & 0 &  \\
+         &  & 0 &  & 0 &  & 0 &  & 0 &  &  \\
+         &  &  & 0 &  & 1 &  & 0 &  &  &  \\
+         &  &  &  & 0 &  & 0 &  &  &  &  \\
+         &  &  &  &  & 1 &  &  &  &  &  \\
+        \end{matrix}
+        $$
+
+
 </div>
 
 ***

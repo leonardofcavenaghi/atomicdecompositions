@@ -4,8 +4,8 @@ This project is an effort of the **GEOATOMS** mathematical research group.
 
 ## Project Leaders
 
-- **Dr. Maxim Kontsevich**
 - **Dr. Ludmil Katzarkov**
+- **Dr. Maxim Kontsevich**
 
 ## Contributors
 
