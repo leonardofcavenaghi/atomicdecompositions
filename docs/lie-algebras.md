@@ -53,4 +53,4 @@ For rigorous foundations of Lie algebras, root systems, Dynkin diagrams, and the
 
 1. Fulton, W., & Harris, J. (1991). *Representation Theory: A First Course*. Springer. (Specifically, Part III and IV for Lie algebras and their representations).
 2. Humphreys, J. E. (1972). *Introduction to Lie Algebras and Representation Theory*. Springer. (Specifically, Chapter III on root systems and Chapter VI on Chevalley groups).
-3. Baston, R. J., & Eastwood, M. G. (1989). *The Penrose Transform: Its Interaction with Representation Theory*. Oxford University Press. (Excellent reference for parabolic geometries and generalized flag varieties).
+
