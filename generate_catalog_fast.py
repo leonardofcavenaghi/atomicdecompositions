@@ -6,7 +6,7 @@ import multiprocessing as mp
 
 sys.path.insert(0, os.path.abspath('.'))
 from gwflags import FlagVariety
-from tests.reference_cases import CASES
+from generated_fano_cases import CASES_100 as CASES
 
 def compute_hodge_pn(n, degrees):
     x, y = sympy.symbols('x y')
