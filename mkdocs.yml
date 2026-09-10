@@ -73,7 +73,11 @@ nav:
   - About: about.md
   - Installation: installation.md
   - How to Use: how-to-use.md
-  - Catalog: catalog.md
+  - Catalog:
+      - Overview: catalog/index.md
+      - Projective Spaces: catalog/projective.md
+      - Grassmannians: catalog/grassmannians.md
+      - Fanography: catalog/fanography.md
   - Methodology:
       - Core Theory: methodology.md
       - API Reference: api-reference.md
