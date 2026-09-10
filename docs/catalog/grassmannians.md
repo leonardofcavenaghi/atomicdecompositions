@@ -308,6 +308,7 @@ This section contains complete intersections inside this geometric family, syste
 | [Gr(3,4)](#gr34) | 4 | 4 |
 | [Gr(4,5) / O(1)](#gr45o1) | 4 | 4 |
 | [Gr(2,4) / O(1)](#gr24o1) | 3 | 6 |
+| [Gr(4,5) / O(2)](#gr45o2) | 3 | 4 |
 | [Gr(2,4) / O(2)](#gr24o2) | 2 | 6 |
 | [Gr(2,5) / O(1)+O(1)+O(1)](#gr25o1o1o1) | 2 | 10 |
 | [Gr(3,5) / O(1)+O(1)+O(1)](#gr35o1o1o1) | 2 | 10 |
@@ -359,6 +360,21 @@ This section contains complete intersections inside this geometric family, syste
     $$
     \left[\begin{matrix}0 & 0 & 3 & 0\\3 & 0 & 0 & 3\\0 & 6 & 0 & 0\\0 & 0 & 3 & 0\end{matrix}\right]
     $$
+
+---
+
+<span id="gr45o2"></span>
+- **Ambient Space:** `$A4$`
+- **Dimension:** $3$
+- **Fano Index:** $3$
+- **Basis Rank:** $4$
+- **Eigenvalues:** $3 \cdot 2^{\frac{2}{3}}$ (mult: 1), $- \frac{3 \cdot 2^{\frac{2}{3}}}{2} - \frac{3 \cdot 2^{\frac{2}{3}} \sqrt{3} i}{2}$ (mult: 1), $- \frac{3 \cdot 2^{\frac{2}{3}}}{2} + \frac{3 \cdot 2^{\frac{2}{3}} \sqrt{3} i}{2}$ (mult: 1), $0$ (mult: 1)
+
+??? note "Quantum Matrix ($y=1$)"
+    $$
+        \left[\begin{matrix}0 & 0 & 6 & 0\\3 & 0 & 0 & 6\\0 & 3 & 0 & 0\\0 & 0 & 3 & 0\end{matrix}\right]
+    $$
+
 
 ---
 
