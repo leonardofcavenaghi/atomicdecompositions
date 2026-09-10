@@ -25,6 +25,29 @@ This section contains complete intersections inside this geometric family, syste
 
 ---
 
+## 7-folds
+
+| Geometry | Fano Index | Basis Rank |
+|---|---|---|
+| [Gr(2,6) / O(1)](#gr26o1) | 5 | 12 |
+
+---
+
+<span id="gr26o1"></span>
+- **Ambient Space:** `$A5$`
+- **Dimension:** $7$
+- **Fano Index:** $5$
+- **Basis Rank:** $12$
+- **Eigenvalues:** $-5$ (mult: 1), $- \frac{5 \sqrt{5}}{4} + \frac{5}{4} - 5 i \sqrt{\frac{\sqrt{5}}{8} + \frac{5}{8}}$ (mult: 1), $- \frac{5 \sqrt{5}}{4} + \frac{5}{4} + 5 i \sqrt{\frac{\sqrt{5}}{8} + \frac{5}{8}}$ (mult: 1), $\frac{5}{4} + \frac{5 \sqrt{5}}{4} - 5 i \sqrt{\frac{5}{8} - \frac{\sqrt{5}}{8}}$ (mult: 1), $\frac{5}{4} + \frac{5 \sqrt{5}}{4} + 5 i \sqrt{\frac{5}{8} - \frac{\sqrt{5}}{8}}$ (mult: 1), $5 \cdot 3^{\frac{3}{5}}$ (mult: 1), $- \frac{5 \cdot 3^{\frac{3}{5}} \sqrt{5}}{4} - \frac{5 \cdot 3^{\frac{3}{5}}}{4} - 5 \cdot 3^{\frac{3}{5}} i \sqrt{\frac{5}{8} - \frac{\sqrt{5}}{8}}$ (mult: 1), $- \frac{5 \cdot 3^{\frac{3}{5}} \sqrt{5}}{4} - \frac{5 \cdot 3^{\frac{3}{5}}}{4} + 5 \cdot 3^{\frac{3}{5}} i \sqrt{\frac{5}{8} - \frac{\sqrt{5}}{8}}$ (mult: 1), $- \frac{5 \cdot 3^{\frac{3}{5}}}{4} + \frac{5 \cdot 3^{\frac{3}{5}} \sqrt{5}}{4} - 5 \cdot 3^{\frac{3}{5}} i \sqrt{\frac{\sqrt{5}}{8} + \frac{5}{8}}$ (mult: 1), $- \frac{5 \cdot 3^{\frac{3}{5}}}{4} + \frac{5 \cdot 3^{\frac{3}{5}} \sqrt{5}}{4} + 5 \cdot 3^{\frac{3}{5}} i \sqrt{\frac{\sqrt{5}}{8} + \frac{5}{8}}$ (mult: 1), $0$ (mult: 2)
+
+??? note "Quantum Matrix ($y=1$)"
+    $$
+        \left[\begin{array}{cccccccccccc}0 & 0 & 0 & 0 & 0 & 0 & 5 & 0 & 0 & 0 & 0 & 0\\5 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 5 & 5 & 0 & 0\\0 & 5 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 5 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 5 & 0\\0 & 0 & 5 & 5 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 5 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 5\\0 & 0 & 0 & 0 & 5 & 10 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 5 & -5 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 5 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 5 & 5 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 5 & 10 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 5 & 0\end{array}\right]
+    $$
+
+
+---
+
 ## 6-folds
 
 | Geometry | Fano Index | Basis Rank |
