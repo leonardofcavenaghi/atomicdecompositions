@@ -62,18 +62,58 @@ print(f"3-point GW invariant on Gr(2,4): {val}")
 ```
 
 ## Example 3: Small Quantum Multiplication Matrix
-If you want to compute the entire spectrum of the quantum connection at once, you can extract the full small quantum multiplication matrix.
+If you want to compute the entire spectrum of the quantum connection at once, you can extract the full $c_1(TX) \star (-)$ small quantum multiplication matrix. Note that these calculations use `sympy` to handle the symbolic Novikov parameters $y_i$.
+
+### Quantum Matrix for $\mathbb{P}^2$
+```python
+from gwflags import FlagVariety
+
+X = FlagVariety('A2', [1])
+M, Gr, basis = X.small_quantum_multiplication()
+
+for row in M:
+    print([str(sym) for sym in row])
+    
+# Output:
+# ['0', '0', '3*y1']
+# ['3', '0', '0']
+# ['0', '3', '0']
+```
+
+### Quantum Matrix for $Gr(2,4)$
+```python
+from gwflags import FlagVariety
+
+X = FlagVariety('A3', [2])
+M, Gr, basis = X.small_quantum_multiplication()
+
+for row in M:
+    print([str(sym) for sym in row])
+    
+# Output:
+# ['0', '0', '0', '0', '4*y2', '0']
+# ['4', '0', '0', '0', '0', '4*y2']
+# ['0', '4', '0', '0', '0', '0']
+# ['0', '4', '0', '0', '0', '0']
+# ['0', '0', '4', '4', '0', '0']
+# ['0', '0', '0', '0', '4', '0']
+```
+
+## Example 4: Eigenvalues of the Quantum Connection
+Once you have the quantum matrix, you can instantly ask `gwflags` to compute its eigenvalues (the spectrum of the quantum connection) to verify if the geometry is semisimple (i.e. has a full set of distinct eigenvalues).
 
 ```python
 from gwflags import FlagVariety
 
-# Define P^2
 X = FlagVariety('A2', [1])
-
-# Compute the matrix (returns the matrix, the grading operator, and the basis)
 M, Gr, basis = X.small_quantum_multiplication()
 
-print(M)
+# Compute the eigenvalues
+eigs = X.eigenvalues(M)
+print(eigs)
+
+# Output:
+# [3*y1**(1/3), 3*y1**(1/3)*(-1 - sqrt(3)*I)/2, 3*y1**(1/3)*(-1 + sqrt(3)*I)/2]
 ```
 
 ## Using the Graphical User Interface (GUI)
