@@ -15,28 +15,28 @@ Below is the explicit mapping from classical geometric spaces to their correspon
 ### Projective Spaces $\mathbb{P}^n$
 The complex projective space $\mathbb{P}^n$ is the space of 1-dimensional subspaces in $\mathbb{C}^{n+1}$.
 - **Group:** $G = SL(n+1)$
-- **Cartan Type:** `A_n`
+- **Cartan Type:** `$A_n$`
 - **Keep Nodes:** `1` (or `n` for the dual projective space $\mathbb{P}^{n\ast}$)
 - **Example:** To construct $\mathbb{P}^4$, use `Algebra = A4, Keep Nodes = 1`.
 
 ### Grassmannians $Gr(k, n)$
 The Grassmannian $Gr(k, n)$ is the space of $k$-dimensional subspaces in $\mathbb{C}^n$.
 - **Group:** $G = SL(n)$
-- **Cartan Type:** `A_{n-1}`
+- **Cartan Type:** `$A_{n-1}$`
 - **Keep Nodes:** `k`
 - **Example:** To construct $Gr(2, 5)$, use `Algebra = A4, Keep Nodes = 2`.
 
 ### Lagrangian Grassmannians $LG(n, 2n)$
 The Lagrangian Grassmannian $LG(n, 2n)$ parameterizes $n$-dimensional isotropic subspaces of a $2n$-dimensional symplectic vector space.
 - **Group:** $G = Sp(2n)$
-- **Cartan Type:** `C_n`
+- **Cartan Type:** `$C_n$`
 - **Keep Nodes:** `n`
 - **Example:** To construct $LG(3, 6)$, use `Algebra = C3, Keep Nodes = 3`.
 
 ### Odd Orthogonal Grassmannians $OG(n, 2n+1)$
 This space parameterizes $n$-dimensional isotropic subspaces of a $(2n+1)$-dimensional orthogonal vector space.
 - **Group:** $G = SO(2n+1)$
-- **Cartan Type:** `B_n`
+- **Cartan Type:** `$B_n$`
 - **Keep Nodes:** `n`
 - **Example:** To construct $OG(3, 7)$, use `Algebra = B3, Keep Nodes = 3`.
 
