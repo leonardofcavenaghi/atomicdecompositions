@@ -661,6 +661,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#example-5-non-trivial-bundles-quotient-and-tautological-subbundles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 5: Non-Trivial Bundles (Quotient and Tautological Subbundles)
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1158,6 +1169,31 @@ Once you click <strong>Compute SQM</strong> for any space, the interface will au
 </span></code></pre></div></p>
 <h3 id="evaluating-quantum-matrices-and-characteristic-polynomials">Evaluating Quantum Matrices and Characteristic Polynomials<a class="headerlink" href="#evaluating-quantum-matrices-and-characteristic-polynomials" title="Permanent link">&para;</a></h3>
 <p>The GUI now supports <strong>custom evaluation of Novikov variables</strong>. If you want to compute the matrix at specific values (instead of keeping it purely symbolic), you can type <code>y1=2, y2=-1</code> into the new <strong>"Evaluate y"</strong> box. The system will automatically substitute these values into the matrix and dynamically compute the corresponding <strong>Characteristic Polynomial</strong> for you to inspect!</p>
+<h2 id="example-5-non-trivial-bundles-quotient-and-tautological-subbundles">Example 5: Non-Trivial Bundles (Quotient and Tautological Subbundles)<a class="headerlink" href="#example-5-non-trivial-bundles-quotient-and-tautological-subbundles" title="Permanent link">&para;</a></h2>
+<p>The <code>gwflags</code> GUI and CLI parser now natively supports the evaluation of complex Homogeneous Bundles beyond simple sums of line bundles.
+For example, you can take a complete intersection cut out by a section of the <strong>Tautological Quotient Bundle</strong> <span class="arithmatex">\(\mathcal{Q}\)</span>.</p>
+<p>A famous mathematical identity states that the zero-locus of a regular section of <span class="arithmatex">\(\mathcal{Q}\)</span> on <span class="arithmatex">\(Gr(2,5)\)</span> is isomorphic to <span class="arithmatex">\(\mathbb{P}^3\)</span>.
+We can verify this isomorphism natively by passing the bundle explicitly:</p>
+<p><strong>In the Graphical Interface:</strong>
+- <strong>Mode:</strong> Quantum Multiplication
+- <strong>Algebra:</strong> <code>A4</code>
+- <strong>Keep Nodes:</strong> <code>2</code>
+- <strong>Twisting Bundle K:</strong> <code>taut_quot(X, 2)</code>
+- <strong>Click:</strong> Compute SQM
+<em>(Output: You will instantly get a <span class="arithmatex">\(4 \times 4\)</span> quantum matrix identical to <span class="arithmatex">\(\mathbb{P}^3\)</span>, with characteristic polynomial <span class="arithmatex">\(\lambda^4 - 256 = 0\)</span>!)</em></p>
+<p><strong>In Python:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">gwflags</span><span class="w"> </span><span class="kn">import</span> <span class="n">FlagVariety</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">gwflags.bundles</span><span class="w"> </span><span class="kn">import</span> <span class="n">taut_quot</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="n">X</span> <span class="o">=</span> <span class="n">FlagVariety</span><span class="p">(</span><span class="s1">'A4'</span><span class="p">,</span> <span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="c1"># Pass the quotient bundle as K</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="n">Q</span> <span class="o">=</span> <span class="n">taut_quot</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="n">M</span><span class="p">,</span> <span class="n">Gr</span><span class="p">,</span> <span class="n">basis</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">small_quantum_multiplication</span><span class="p">(</span><span class="n">K</span><span class="o">=</span><span class="n">Q</span><span class="p">)</span>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">M</span><span class="p">:</span>
+</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>    <span class="nb">print</span><span class="p">([</span><span class="nb">str</span><span class="p">(</span><span class="n">sym</span><span class="p">)</span> <span class="k">for</span> <span class="n">row</span><span class="p">])</span>
+</span></code></pre></div>
+You can also freely use <code>taut_sub</code>, <code>dual</code>, <code>sym</code>, <code>wedge</code>, <code>osum</code>, and <code>tensor</code> in the Twist Bundle input field.</p>
 
 
 
