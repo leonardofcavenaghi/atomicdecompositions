@@ -142,3 +142,33 @@ print(eigs)
 
 ### Evaluating Quantum Matrices and Characteristic Polynomials
 The GUI now supports **custom evaluation of Novikov variables**. If you want to compute the matrix at specific values (instead of keeping it purely symbolic), you can type `y1=2, y2=-1` into the new **"Evaluate y"** box. The system will automatically substitute these values into the matrix and dynamically compute the corresponding **Characteristic Polynomial** for you to inspect!
+
+## Example 5: Non-Trivial Bundles (Quotient and Tautological Subbundles)
+The `gwflags` GUI and CLI parser now natively supports the evaluation of complex Homogeneous Bundles beyond simple sums of line bundles.
+For example, you can take a complete intersection cut out by a section of the **Tautological Quotient Bundle** $\mathcal{Q}$.
+
+A famous mathematical identity states that the zero-locus of a regular section of $\mathcal{Q}$ on $Gr(2,5)$ is isomorphic to $\mathbb{P}^3$.
+We can verify this isomorphism natively by passing the bundle explicitly:
+
+**In the Graphical Interface:**
+- **Mode:** Quantum Multiplication
+- **Algebra:** `A4`
+- **Keep Nodes:** `2`
+- **Twisting Bundle K:** `taut_quot(X, 2)`
+- **Click:** Compute SQM
+*(Output: You will instantly get a $4 \times 4$ quantum matrix identical to $\mathbb{P}^3$, with characteristic polynomial $\lambda^4 - 256 = 0$!)*
+
+**In Python:**
+```python
+from gwflags import FlagVariety
+from gwflags.bundles import taut_quot
+
+X = FlagVariety('A4', [2])
+# Pass the quotient bundle as K
+Q = taut_quot(X, 2)
+M, Gr, basis = X.small_quantum_multiplication(K=Q)
+
+for row in M:
+    print([str(sym) for row])
+```
+You can also freely use `taut_sub`, `dual`, `sym`, `wedge`, `osum`, and `tensor` in the Twist Bundle input field.
