@@ -139,3 +139,6 @@ M, Gr, basis = X.small_quantum_multiplication()
 eigs = X.eigenvalues(M)
 print(eigs)
 ```
+
+### Evaluating Quantum Matrices and Characteristic Polynomials
+The GUI now supports **custom evaluation of Novikov variables**. If you want to compute the matrix at specific values (instead of keeping it purely symbolic), you can type `y1=2, y2=-1` into the new **"Evaluate y"** box. The system will automatically substitute these values into the matrix and dynamically compute the corresponding **Characteristic Polynomial** for you to inspect!
