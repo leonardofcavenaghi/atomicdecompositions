@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#quantum-geometry-catalog" class="md-skip">
+        <a href="#catalog-master-search" class="md-skip">
           Skip to content
         </a>
       
@@ -914,24 +914,775 @@
   
 
 
-<h1 id="quantum-geometry-catalog">Quantum Geometry Catalog<a class="headerlink" href="#quantum-geometry-catalog" title="Permanent link">&para;</a></h1>
-<p>Welcome to the automated catalog. We have structured our computations by their ambient geometric spaces for easier navigation.</p>
-<h2 id="browse-by-family">Browse by Family<a class="headerlink" href="#browse-by-family" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="projective/"><strong>Projective Spaces</strong></a>: Hypersurfaces and complete intersections in <span class="arithmatex">\(\mathbb{P}^n\)</span>.</li>
-<li><a href="grassmannians/"><strong>Grassmannians</strong></a>: Complete intersections in <span class="arithmatex">\(Gr(k, n)\)</span>.</li>
-<li><a href="fanography/"><strong>Fanography Database</strong></a>: The explicitly verified list of Fano 3-folds from fanography.info.</li>
-</ul>
-<h2 id="glossary">Glossary<a class="headerlink" href="#glossary" title="Permanent link">&para;</a></h2>
-<ul>
-<li><strong>Ambient Space</strong>: The ambient flag variety <span class="arithmatex">\(G/P\)</span> in which the complete intersection <span class="arithmatex">\(X\)</span> is embedded.</li>
-<li><strong>Dimension</strong>: The complex dimension of the resulting geometric space <span class="arithmatex">\(X\)</span>.</li>
-<li><strong>Fano Index</strong>: The greatest integer <span class="arithmatex">\(I_X\)</span> dividing the anticanonical class <span class="arithmatex">\(-K_X\)</span>.</li>
-<li><strong>Basis Rank</strong>: The number of dimensions in the projected flag-ambient cohomology ring <span class="arithmatex">\(H_{amb}^*(X)\)</span>.</li>
-<li><strong>Quantum Matrix (<span class="arithmatex">\(y=1\)</span>)</strong>: The small quantum multiplication matrix <span class="arithmatex">\(c_1(TX)\star\)</span>.</li>
-<li><strong>Eigenvalues</strong>: The eigenvalues of the quantum matrix.</li>
-<li><strong>Hodge Diamond</strong>: The geometric <span class="arithmatex">\(h^{p,q}\)</span> Hodge numbers of the space.</li>
-</ul>
+<h1 id="catalog-master-search">Catalog Master Search<a class="headerlink" href="#catalog-master-search" title="Permanent link">&para;</a></h1>
+<p>Welcome to the <strong>Master Search Database</strong>. Use the search bar in the top right of this table to instantly filter through all computed geometric spaces, or sort by dimension, Fano index, and rank. You can type freely (e.g., "Gr", "Fano Index 2", "15") to find exactly what you are looking for.</p>
+<p><link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css"></p>
+<script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js"></script>
+<script>
+$(document).ready( function () {
+    $('table').DataTable({
+        "pageLength": 25,
+        "order": [[ 2, "desc" ]]
+    });
+} );
+</script>
+
+<table>
+<thead>
+<tr>
+<th>Geometry</th>
+<th>Ambient Space</th>
+<th>Dimension</th>
+<th>Fano Index</th>
+<th>Basis Rank</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="flag_varieties/#p3fanoindex4">P3  Fano index 4</a></td>
+<td>A3</td>
+<td>3</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="flag_varieties/#p2fanoindex3">P2 Fano index 3</a></td>
+<td>A2</td>
+<td>2</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="flag_varieties/#p2fanoindex3">P2  Fano index 3</a></td>
+<td>A2</td>
+<td>2</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="flag_varieties/#p2o2">P2 / O(2)</a></td>
+<td>A2</td>
+<td>1</td>
+<td>1</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="flag_varieties/#p4fanoindex5">P4  Fano index 5</a></td>
+<td>A4</td>
+<td>4</td>
+<td>5</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="flag_varieties/#p3o2">P3 / O(2)</a></td>
+<td>A3</td>
+<td>2</td>
+<td>2</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="flag_varieties/#p4o2">P4 / O(2)</a></td>
+<td>A4</td>
+<td>3</td>
+<td>3</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="flag_varieties/#p4o3">P4 / O(3)</a></td>
+<td>A4</td>
+<td>3</td>
+<td>2</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="flag_varieties/#p5fanoindex6">P5  Fano index 6</a></td>
+<td>A5</td>
+<td>5</td>
+<td>6</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="flag_varieties/#p5o2">P5 / O(2)</a></td>
+<td>A5</td>
+<td>4</td>
+<td>4</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="flag_varieties/#p5o2o2">P5 / O(2)+O(2)</a></td>
+<td>A5</td>
+<td>3</td>
+<td>2</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="flag_varieties/#p3o3">P3 / O(3)</a></td>
+<td>A3</td>
+<td>2</td>
+<td>1</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="flag_varieties/#p5o3">P5 / O(3)</a></td>
+<td>A5</td>
+<td>4</td>
+<td>3</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="flag_varieties/#p5o4">P5 / O(4)</a></td>
+<td>A5</td>
+<td>4</td>
+<td>2</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="flag_varieties/#p4o2o2">P4 / O(2)+O(2)</a></td>
+<td>A4</td>
+<td>2</td>
+<td>1</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="flag_varieties/#p6o2o2">P6 / O(2)+O(2)</a></td>
+<td>A6</td>
+<td>4</td>
+<td>3</td>
+<td>7</td>
+</tr>
+<tr>
+<td><a href="flag_varieties/#p6fanoindex7">P6  Fano index 7</a></td>
+<td>A6</td>
+<td>6</td>
+<td>7</td>
+<td>7</td>
+</tr>
+<tr>
+<td><a href="flag_varieties/#p6o2o3">P6 / O(2)+O(3)</a></td>
+<td>A6</td>
+<td>4</td>
+<td>2</td>
+<td>7</td>
+</tr>
+<tr>
+<td><a href="flag_varieties/#p6o2">P6 / O(2)</a></td>
+<td>A6</td>
+<td>5</td>
+<td>5</td>
+<td>7</td>
+</tr>
+<tr>
+<td><a href="flag_varieties/#p6o4">P6 / O(4)</a></td>
+<td>A6</td>
+<td>5</td>
+<td>3</td>
+<td>7</td>
+</tr>
+<tr>
+<td><a href="flag_varieties/#p6o3">P6 / O(3)</a></td>
+<td>A6</td>
+<td>5</td>
+<td>4</td>
+<td>7</td>
+</tr>
+<tr>
+<td><a href="flag_varieties/#p6o5">P6 / O(5)</a></td>
+<td>A6</td>
+<td>5</td>
+<td>2</td>
+<td>7</td>
+</tr>
+<tr>
+<td><a href="flag_varieties/#p4o4">P4 / O(4)</a></td>
+<td>A4</td>
+<td>3</td>
+<td>1</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="flag_varieties/#p5o2o3">P5 / O(2)+O(3)</a></td>
+<td>A5</td>
+<td>3</td>
+<td>1</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="flag_varieties/#p7o2">P7 / O(2)</a></td>
+<td>A7</td>
+<td>6</td>
+<td>6</td>
+<td>8</td>
+</tr>
+<tr>
+<td><a href="flag_varieties/#p7o2o2">P7 / O(2)+O(2)</a></td>
+<td>A7</td>
+<td>5</td>
+<td>4</td>
+<td>8</td>
+</tr>
+<tr>
+<td><a href="flag_varieties/#p7o2o2o2">P7 / O(2)+O(2)+O(2)</a></td>
+<td>A7</td>
+<td>4</td>
+<td>2</td>
+<td>8</td>
+</tr>
+<tr>
+<td><a href="flag_varieties/#p7o2o3">P7 / O(2)+O(3)</a></td>
+<td>A7</td>
+<td>5</td>
+<td>3</td>
+<td>8</td>
+</tr>
+<tr>
+<td><a href="flag_varieties/#p7fanoindex8">P7  Fano index 8</a></td>
+<td>A7</td>
+<td>7</td>
+<td>8</td>
+<td>8</td>
+</tr>
+<tr>
+<td><a href="flag_varieties/#p7o2o4">P7 / O(2)+O(4)</a></td>
+<td>A7</td>
+<td>5</td>
+<td>2</td>
+<td>8</td>
+</tr>
+<tr>
+<td><a href="flag_varieties/#p7o3">P7 / O(3)</a></td>
+<td>A7</td>
+<td>6</td>
+<td>5</td>
+<td>8</td>
+</tr>
+<tr>
+<td><a href="flag_varieties/#p7o5">P7 / O(5)</a></td>
+<td>A7</td>
+<td>6</td>
+<td>3</td>
+<td>8</td>
+</tr>
+<tr>
+<td><a href="flag_varieties/#p7o4">P7 / O(4)</a></td>
+<td>A7</td>
+<td>6</td>
+<td>4</td>
+<td>8</td>
+</tr>
+<tr>
+<td><a href="flag_varieties/#p7o3o3">P7 / O(3)+O(3)</a></td>
+<td>A7</td>
+<td>5</td>
+<td>2</td>
+<td>8</td>
+</tr>
+<tr>
+<td><a href="flag_varieties/#p7o6">P7 / O(6)</a></td>
+<td>A7</td>
+<td>6</td>
+<td>2</td>
+<td>8</td>
+</tr>
+<tr>
+<td><a href="flag_varieties/#p6o2o2o2">P6 / O(2)+O(2)+O(2)</a></td>
+<td>A6</td>
+<td>3</td>
+<td>1</td>
+<td>7</td>
+</tr>
+<tr>
+<td><a href="flag_varieties/#p5o5">P5 / O(5)</a></td>
+<td>A5</td>
+<td>4</td>
+<td>1</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="flag_varieties/#p8o2">P8 / O(2)</a></td>
+<td>A8</td>
+<td>7</td>
+<td>7</td>
+<td>9</td>
+</tr>
+<tr>
+<td><a href="flag_varieties/#p8fanoindex9">P8  Fano index 9</a></td>
+<td>A8</td>
+<td>8</td>
+<td>9</td>
+<td>9</td>
+</tr>
+<tr>
+<td><a href="flag_varieties/#p8o2o2o2">P8 / O(2)+O(2)+O(2)</a></td>
+<td>A8</td>
+<td>5</td>
+<td>3</td>
+<td>9</td>
+</tr>
+<tr>
+<td><a href="flag_varieties/#p8o2o2">P8 / O(2)+O(2)</a></td>
+<td>A8</td>
+<td>6</td>
+<td>5</td>
+<td>9</td>
+</tr>
+<tr>
+<td><a href="flag_varieties/#p8o2o2o3">P8 / O(2)+O(2)+O(3)</a></td>
+<td>A8</td>
+<td>5</td>
+<td>2</td>
+<td>9</td>
+</tr>
+<tr>
+<td><a href="flag_varieties/#p8o2o3">P8 / O(2)+O(3)</a></td>
+<td>A8</td>
+<td>6</td>
+<td>4</td>
+<td>9</td>
+</tr>
+<tr>
+<td><a href="flag_varieties/#p8o2o4">P8 / O(2)+O(4)</a></td>
+<td>A8</td>
+<td>6</td>
+<td>3</td>
+<td>9</td>
+</tr>
+<tr>
+<td><a href="flag_varieties/#p8o2o5">P8 / O(2)+O(5)</a></td>
+<td>A8</td>
+<td>6</td>
+<td>2</td>
+<td>9</td>
+</tr>
+<tr>
+<td><a href="flag_varieties/#p6o3o3">P6 / O(3)+O(3)</a></td>
+<td>A6</td>
+<td>4</td>
+<td>1</td>
+<td>7</td>
+</tr>
+<tr>
+<td><a href="flag_varieties/#p6o2o4">P6 / O(2)+O(4)</a></td>
+<td>A6</td>
+<td>4</td>
+<td>1</td>
+<td>7</td>
+</tr>
+<tr>
+<td><a href="flag_varieties/#p8o3">P8 / O(3)</a></td>
+<td>A8</td>
+<td>7</td>
+<td>6</td>
+<td>9</td>
+</tr>
+<tr>
+<td><a href="flag_varieties/#p8o3o3">P8 / O(3)+O(3)</a></td>
+<td>A8</td>
+<td>6</td>
+<td>3</td>
+<td>9</td>
+</tr>
+<tr>
+<td><a href="flag_varieties/#p8o4">P8 / O(4)</a></td>
+<td>A8</td>
+<td>7</td>
+<td>5</td>
+<td>9</td>
+</tr>
+<tr>
+<td><a href="flag_varieties/#p8o3o4">P8 / O(3)+O(4)</a></td>
+<td>A8</td>
+<td>6</td>
+<td>2</td>
+<td>9</td>
+</tr>
+<tr>
+<td><a href="flag_varieties/#p8o5">P8 / O(5)</a></td>
+<td>A8</td>
+<td>7</td>
+<td>4</td>
+<td>9</td>
+</tr>
+<tr>
+<td><a href="flag_varieties/#p8o6">P8 / O(6)</a></td>
+<td>A8</td>
+<td>7</td>
+<td>3</td>
+<td>9</td>
+</tr>
+<tr>
+<td><a href="grassmannians/#gr24">Gr(2,4)</a></td>
+<td>A3</td>
+<td>4</td>
+<td>4</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="grassmannians/#gr24o1">Gr(2,4) / O(1)</a></td>
+<td>A3</td>
+<td>3</td>
+<td>3</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="grassmannians/#gr24o1o1">Gr(2,4) / O(1)+O(1)</a></td>
+<td>A3</td>
+<td>2</td>
+<td>2</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="grassmannians/#gr24o1o1o1">Gr(2,4) / O(1)+O(1)+O(1)</a></td>
+<td>A3</td>
+<td>1</td>
+<td>1</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="grassmannians/#gr24o1o2">Gr(2,4) / O(1)+O(2)</a></td>
+<td>A3</td>
+<td>2</td>
+<td>1</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="grassmannians/#gr24o2">Gr(2,4) / O(2)</a></td>
+<td>A3</td>
+<td>3</td>
+<td>2</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="grassmannians/#gr24o3">Gr(2,4) / O(3)</a></td>
+<td>A3</td>
+<td>3</td>
+<td>1</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="grassmannians/#gr34">Gr(3,4)</a></td>
+<td>A3</td>
+<td>3</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="grassmannians/#gr34o1">Gr(3,4) / O(1)</a></td>
+<td>A3</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="grassmannians/#gr34o1o1">Gr(3,4) / O(1)+O(1)</a></td>
+<td>A3</td>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="grassmannians/#gr34o1o1o1">Gr(3,4) / O(1)+O(1)+O(1)</a></td>
+<td>A3</td>
+<td>0</td>
+<td>1</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="grassmannians/#gr34o1o2">Gr(3,4) / O(1)+O(2)</a></td>
+<td>A3</td>
+<td>1</td>
+<td>1</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="grassmannians/#gr34o2">Gr(3,4) / O(2)</a></td>
+<td>A3</td>
+<td>2</td>
+<td>2</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="grassmannians/#gr34o3">Gr(3,4) / O(3)</a></td>
+<td>A3</td>
+<td>2</td>
+<td>1</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="grassmannians/#gr25">Gr(2,5)</a></td>
+<td>A4</td>
+<td>6</td>
+<td>5</td>
+<td>10</td>
+</tr>
+<tr>
+<td><a href="grassmannians/#gr25o1">Gr(2,5) / O(1)</a></td>
+<td>A4</td>
+<td>5</td>
+<td>4</td>
+<td>10</td>
+</tr>
+<tr>
+<td><a href="grassmannians/#gr25o1o1">Gr(2,5) / O(1)+O(1)</a></td>
+<td>A4</td>
+<td>4</td>
+<td>3</td>
+<td>10</td>
+</tr>
+<tr>
+<td><a href="grassmannians/#gr25o1o1o1">Gr(2,5) / O(1)+O(1)+O(1)</a></td>
+<td>A4</td>
+<td>3</td>
+<td>2</td>
+<td>10</td>
+</tr>
+<tr>
+<td><a href="grassmannians/#gr25o1o1o2">Gr(2,5) / O(1)+O(1)+O(2)</a></td>
+<td>A4</td>
+<td>3</td>
+<td>1</td>
+<td>10</td>
+</tr>
+<tr>
+<td><a href="grassmannians/#gr25o1o2">Gr(2,5) / O(1)+O(2)</a></td>
+<td>A4</td>
+<td>4</td>
+<td>2</td>
+<td>10</td>
+</tr>
+<tr>
+<td><a href="flag_varieties/#p8o7">P8 / O(7)</a></td>
+<td>A8</td>
+<td>7</td>
+<td>2</td>
+<td>9</td>
+</tr>
+<tr>
+<td><a href="grassmannians/#gr25o2">Gr(2,5) / O(2)</a></td>
+<td>A4</td>
+<td>5</td>
+<td>3</td>
+<td>10</td>
+</tr>
+<tr>
+<td><a href="grassmannians/#gr25o1o3">Gr(2,5) / O(1)+O(3)</a></td>
+<td>A4</td>
+<td>4</td>
+<td>1</td>
+<td>10</td>
+</tr>
+<tr>
+<td><a href="grassmannians/#gr25o3">Gr(2,5) / O(3)</a></td>
+<td>A4</td>
+<td>5</td>
+<td>2</td>
+<td>10</td>
+</tr>
+<tr>
+<td><a href="grassmannians/#gr25o2o2">Gr(2,5) / O(2)+O(2)</a></td>
+<td>A4</td>
+<td>4</td>
+<td>1</td>
+<td>10</td>
+</tr>
+<tr>
+<td><a href="grassmannians/#gr35">Gr(3,5)</a></td>
+<td>A4</td>
+<td>6</td>
+<td>5</td>
+<td>10</td>
+</tr>
+<tr>
+<td><a href="grassmannians/#gr35o1">Gr(3,5) / O(1)</a></td>
+<td>A4</td>
+<td>5</td>
+<td>4</td>
+<td>10</td>
+</tr>
+<tr>
+<td><a href="grassmannians/#gr35o1o1">Gr(3,5) / O(1)+O(1)</a></td>
+<td>A4</td>
+<td>4</td>
+<td>3</td>
+<td>10</td>
+</tr>
+<tr>
+<td><a href="grassmannians/#gr35o1o1o1">Gr(3,5) / O(1)+O(1)+O(1)</a></td>
+<td>A4</td>
+<td>3</td>
+<td>2</td>
+<td>10</td>
+</tr>
+<tr>
+<td><a href="grassmannians/#gr35o1o1o2">Gr(3,5) / O(1)+O(1)+O(2)</a></td>
+<td>A4</td>
+<td>3</td>
+<td>1</td>
+<td>10</td>
+</tr>
+<tr>
+<td><a href="grassmannians/#gr35o1o2">Gr(3,5) / O(1)+O(2)</a></td>
+<td>A4</td>
+<td>4</td>
+<td>2</td>
+<td>10</td>
+</tr>
+<tr>
+<td><a href="flag_varieties/#p7o2o2o3">P7 / O(2)+O(2)+O(3)</a></td>
+<td>A7</td>
+<td>4</td>
+<td>1</td>
+<td>8</td>
+</tr>
+<tr>
+<td><a href="grassmannians/#gr35o2">Gr(3,5) / O(2)</a></td>
+<td>A4</td>
+<td>5</td>
+<td>3</td>
+<td>10</td>
+</tr>
+<tr>
+<td><a href="grassmannians/#gr35o1o3">Gr(3,5) / O(1)+O(3)</a></td>
+<td>A4</td>
+<td>4</td>
+<td>1</td>
+<td>10</td>
+</tr>
+<tr>
+<td><a href="grassmannians/#gr35o3">Gr(3,5) / O(3)</a></td>
+<td>A4</td>
+<td>5</td>
+<td>2</td>
+<td>10</td>
+</tr>
+<tr>
+<td><a href="grassmannians/#gr45">Gr(4,5)</a></td>
+<td>A4</td>
+<td>4</td>
+<td>5</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="grassmannians/#gr45o1">Gr(4,5) / O(1)</a></td>
+<td>A4</td>
+<td>3</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="grassmannians/#gr45o1o1">Gr(4,5) / O(1)+O(1)</a></td>
+<td>A4</td>
+<td>2</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="grassmannians/#gr45o1o1o1">Gr(4,5) / O(1)+O(1)+O(1)</a></td>
+<td>A4</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="grassmannians/#gr45o1o1o2">Gr(4,5) / O(1)+O(1)+O(2)</a></td>
+<td>A4</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="grassmannians/#gr45o1o2">Gr(4,5) / O(1)+O(2)</a></td>
+<td>A4</td>
+<td>2</td>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="grassmannians/#gr45o1o3">Gr(4,5) / O(1)+O(3)</a></td>
+<td>A4</td>
+<td>2</td>
+<td>1</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="grassmannians/#gr45o2">Gr(4,5) / O(2)</a></td>
+<td>A4</td>
+<td>3</td>
+<td>3</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="grassmannians/#gr45o2o2">Gr(4,5) / O(2)+O(2)</a></td>
+<td>A4</td>
+<td>2</td>
+<td>1</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="grassmannians/#gr45o3">Gr(4,5) / O(3)</a></td>
+<td>A4</td>
+<td>3</td>
+<td>2</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="grassmannians/#gr45o4">Gr(4,5) / O(4)</a></td>
+<td>A4</td>
+<td>3</td>
+<td>1</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="grassmannians/#gr26">Gr(2,6)</a></td>
+<td>A5</td>
+<td>8</td>
+<td>6</td>
+<td>15</td>
+</tr>
+<tr>
+<td><a href="grassmannians/#gr26o1">Gr(2,6) / O(1)</a></td>
+<td>A5</td>
+<td>7</td>
+<td>5</td>
+<td>12</td>
+</tr>
+<tr>
+<td><a href="grassmannians/#gr26o1o1">Gr(2,6) / O(1)+O(1)</a></td>
+<td>A5</td>
+<td>6</td>
+<td>4</td>
+<td>10</td>
+</tr>
+<tr>
+<td><a href="grassmannians/#gr26o1o1o1">Gr(2,6) / O(1)+O(1)+O(1)</a></td>
+<td>A5</td>
+<td>5</td>
+<td>3</td>
+<td>8</td>
+</tr>
+<tr>
+<td><a href="grassmannians/#gr26o1o1o2">Gr(2,6) / O(1)+O(1)+O(2)</a></td>
+<td>A5</td>
+<td>5</td>
+<td>2</td>
+<td>8</td>
+</tr>
+<tr>
+<td><a href="grassmannians/#gr35o2o2">Gr(3,5) / O(2)+O(2)</a></td>
+<td>A4</td>
+<td>4</td>
+<td>1</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="grassmannians/#gr26o1o2">Gr(2,6) / O(1)+O(2)</a></td>
+<td>A5</td>
+<td>6</td>
+<td>3</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
 
 
 
