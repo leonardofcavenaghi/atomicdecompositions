@@ -1016,7 +1016,7 @@
    ```
 4. Verify:
    ```bash
-   python3 --version
+   python --version
    git --version
    ```
 </code></pre></div>
@@ -1025,11 +1025,11 @@
 2. Update your package list and install Python 3, Git, and `venv`:
    ```bash
    sudo apt update
-   sudo apt install git python3 python3-pip python3-venv
+   sudo apt install git python python3-pip python3-venv
    ```
 3. Verify:
    ```bash
-   python3 --version
+   python --version
    git --version
    ```
 </code></pre></div>
@@ -1070,7 +1070,7 @@ cd atomicdecompositions
 
 **Step 4: Create and Activate the Virtual Environment**
 ```bash
-python3 -m venv venv
+python -m venv venv
 source venv/bin/activate
 ```
 
@@ -1081,8 +1081,8 @@ pip install sympy mpmath
 </code></pre></div>
 <hr />
 <h2 id="3-quick-start-verification">3. Quick Start &amp; Verification<a class="headerlink" href="#3-quick-start-verification" title="Permanent link">&para;</a></h2>
-<p>To verify that the installation is successful and independently known values from Schubert calculus match exactly, you must run the test suite. </p>
-<p><strong>Note on Python commands:</strong> The commands below use <code>python</code> for Windows and <code>python3</code> for macOS/Linux, based on standard installation mappings.</p>
+<p>To verify that the installation is successful and that independently known values from Schubert calculus match exactly, you must run the test suite. </p>
+<p><strong>Note on Python commands:</strong> Note: Since you are operating inside an activated virtual environment, the <code>python</code> command is standard across all operating systems.</p>
 <p>=== "Windows"
     Run the test suite:
     <div class="language-text highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>python tests/test_gwflags.py
@@ -1099,16 +1099,16 @@ python -m gwflags.gui
 </code></pre></div>
 <p>=== "macOS and Linux"
     Run the test suite:
-    <div class="language-bash highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>python3<span class="w"> </span>tests/test_gwflags.py
+    <div class="language-bash highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>python<span class="w"> </span>tests/test_gwflags.py
 </span></code></pre></div></p>
 <div class="language-text highlight"><pre><span></span><code>To use the Command Line Interface (CLI):
 ```bash
-python3 -m gwflags.cli A2 --keep 1 sqm
+python -m gwflags.cli A2 --keep 1 sqm
 ```
 
 To start the Graphical User Interface (GUI):
 ```bash
-python3 -m gwflags.gui
+python -m gwflags.gui
 ```
 </code></pre></div>
 
