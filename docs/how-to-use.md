@@ -1,65 +1,84 @@
 # How to Use `gwflags`
 
-This guide bridges the theoretical framework of Quantum Cohomology with practical computation using the `gwflags` package. 
+This guide bridges the theoretical framework of Quantum Cohomology with practical computation using the `gwflags` Python library. You can run these computations directly in a Python script or Jupyter Notebook.
 
-You can run these computations either directly through the Command Line Interface (CLI) or by launching the Graphical User Interface (GUI).
+## Example 1: Classic Enumerative Geometry
+The `gwflags` library allows you to natively compute Gromov-Witten invariants for complete intersections using Atiyah-Bott localization. Let's compute two famous results in algebraic geometry: the 27 lines on a cubic surface, and the 2875 lines on a quintic threefold.
 
-## Launching the Interface
+### The 27 Lines on a Cubic Surface
+A cubic surface is a complete intersection in $\mathbb{P}^3$ defined by the vanishing of a degree-3 polynomial (the bundle $\mathcal{O}(3)$). 
 
-To start the interface, open your terminal (inside the `atomicdecompositions` folder) and run:
+```python
+from gwflags import FlagVariety
+
+# Define the ambient space P^3 (Cartan type A3, keeping node 1)
+X = FlagVariety('A3', [1])
+
+# Compute the 0-point Gromov-Witten invariant for degree 1 curves
+# K=[[3]] specifies the twisting bundle O(3)
+lines = X.gw([], beta=(1, 0, 0), K=[[3]])
+
+print(f"Number of lines on a cubic surface: {lines}")
+# Output: 27
+```
+
+### The 2875 Lines on a Quintic Threefold
+A quintic threefold is a Calabi-Yau manifold in $\mathbb{P}^4$ defined by $\mathcal{O}(5)$.
+
+```python
+from gwflags import FlagVariety
+
+# Define the ambient space P^4
+X = FlagVariety('A4', [1])
+
+# Compute the 0-point Gromov-Witten invariant for degree 1 curves
+lines = X.gw([], beta=(1, 0, 0, 0), K=[[5]])
+
+print(f"Number of lines on a quintic threefold: {lines}")
+# Output: 2875
+```
+
+## Example 2: Intersection Theory on Grassmannians
+You can compute Gromov-Witten invariants on more complex flag varieties. Here, we compute a 3-point invariant on $Gr(2,4)$ using specific Schubert classes.
+
+```python
+from gwflags import FlagVariety
+
+# Define the ambient space Gr(2,4) (Cartan type A3, keeping node 2)
+X = FlagVariety('A3', [2])
+
+# Retrieve the Schubert classes (elements of the Weyl group)
+classes = X.classes
+
+# classes[5] is the point class (codimension 4)
+# classes[2] and classes[3] are classes of codimension 2
+# Expected dimension for 3 points on degree 1 curve is 4 + 4(1) + 3 - 3 = 8
+# The sum of codimensions (4 + 2 + 2 = 8) satisfies the dimension axiom.
+
+val = X.gw([classes[5], classes[2], classes[3]], beta=(0, 1, 0))
+
+print(f"3-point GW invariant on Gr(2,4): {val}")
+# Output: 1
+```
+
+## Example 3: Small Quantum Multiplication Matrix
+If you want to compute the entire spectrum of the quantum connection at once, you can extract the full small quantum multiplication matrix.
+
+```python
+from gwflags import FlagVariety
+
+# Define P^2
+X = FlagVariety('A2', [1])
+
+# Compute the matrix (returns the matrix, the grading operator, and the basis)
+M, Gr, basis = X.small_quantum_multiplication()
+
+print(M)
+```
+
+## Using the Graphical User Interface (GUI)
+If you prefer a visual interface rather than writing Python code, you can start the local server:
 ```bash
 python3 -m gwflags.gui
 ```
-This will start a local server. Open your web browser to the provided `localhost` URL (usually `http://127.0.0.1:8000`).
-
----
-
-## Task 1: Testing Quantum Rationality Criteria (Fano Fourfolds)
-
-The primary application of this software is testing rationality criteria for Fano fourfolds by computing the small quantum multiplication operator by the first Chern class.
-
-**Important Note on Eigenvalues:** When computing the spectrum of the quantum connection, the software sets the **Novikov parameters ($y_i$ or $q_i$) to $1$**.
-
-### Case A: Cubic Fourfolds
-**Goal:** Verify the Jordan defect constraint for a cubic fourfold in $\mathbb{P}^5$.
-- **Algebra:** `A5`
-- **Keep Nodes:** `1`
-- **Bundle:** `O(3)`
-- **GUI:** Select "Quantum Multiplication", input parameters, and click **Compute SQM**.
-
-### Case B: Ordinary Gushel–Mukai Fourfolds
-**Goal:** Investigate the semisimple spectrum of Gushel-Mukai fourfolds in $Gr(2,5)$.
-- **Algebra:** `A4`
-- **Keep Nodes:** `2`
-- **Bundle:** `osum(O(1), O(2))`
-
----
-
-## Task 2: Computing Individual Gromov-Witten Invariants
-
-While the quantum matrices calculate the aggregate structural invariants, you can also use `gwflags` to compute single genus-zero Gromov-Witten invariants directly using Atiyah-Bott localization.
-
-**Example:** Computing the 2-point invariant $\langle pt, pt \rangle_{d=1} = 1$ on $\mathbb{P}^2$.
-
-**In the GUI:**
-1. Switch the operation mode from "Quantum Multiplication" to **"Single GW Invariant"**
-2. **Algebra:** `A2`
-3. **Keep Nodes:** `1`
-4. **Beta (Curve Class):** `1, 0`
-5. **Insertions:** `pt | pt`
-6. Click **Compute GW Invariant**.
-
-*(Alternatively, from the CLI: `python3 -m gwflags.cli A2 --keep 1 gw --beta "1,0" --classes "pt|pt"`)*
-
----
-
-## Task 3: Exploring Exceptional Groups and Spinors
-
-The software fully supports exceptional groups ($G_2$, $F_4$, $E_6$, etc.) and Orthogonal/Symplectic groups.
-
-**Example:** The flag variety $G_2/P_2$
-- **Algebra:** `G2`
-- **Keep Nodes:** `2`
-- **Bundle:** Leave empty (for the flag variety itself) or specify `O(1)` for a hypersuface.
-
-*(For a full guide on mapping these Lie algebra strings to standard geometric spaces, read our [Lie Algebras Guide](lie-algebras.md)).*
+This will start a local server at `http://127.0.0.1:8000`. You can input the Cartan Type, Keep Nodes, and Vector Bundles directly into the web interface and click **Compute SQM** or **Compute GW Invariant**.
