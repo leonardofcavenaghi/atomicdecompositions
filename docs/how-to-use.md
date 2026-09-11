@@ -18,13 +18,12 @@ The `gwflags` library natively computes Gromov-Witten invariants for complete in
 A cubic surface is a complete intersection in $\mathbb{P}^3$ defined by the vanishing of a degree-3 polynomial (the bundle $\mathcal{O}(3)$). 
 
 **In the Graphical Interface:**
-- **Mode:** Single GW Invariant
-- **Algebra:** `A3`
-- **Keep Nodes:** `1`
-- **Twisting Bundle K:** `[[3]]`
-- **Curve Class (Beta):** `1, 0, 0`
-- **Insertions:** *(Leave empty)*
-- **Click:** Compute GW Invariant (Output: `27`)
+- **Card 1 (Space Definition)** -> **Algebra:** `A3`
+- **Card 1** -> **Keep Simple Roots:** `1`
+- **Card 1** -> **Twisting Bundle K:** `[[3]]`
+- **Card 3 (GW Invariants)** -> **Curve Class &beta;:** `1, 0, 0`
+- **Card 3** -> **Insertions:** *(Leave empty)*
+- **Card 3** -> **Click:** Compute Invariant (Output: `27`)
 
 **In Python:**
 ```python
@@ -39,13 +38,12 @@ print(f"Number of lines on a cubic surface: {lines}")
 A quintic threefold is a Calabi-Yau manifold in $\mathbb{P}^4$ defined by $\mathcal{O}(5)$.
 
 **In the Graphical Interface:**
-- **Mode:** Single GW Invariant
-- **Algebra:** `A4`
-- **Keep Nodes:** `1`
-- **Twisting Bundle K:** `[[5]]`
-- **Curve Class (Beta):** `1, 0, 0, 0`
-- **Insertions:** *(Leave empty)*
-- **Click:** Compute GW Invariant (Output: `2875`)
+- **Card 1 (Space Definition)** -> **Algebra:** `A4`
+- **Card 1** -> **Keep Simple Roots:** `1`
+- **Card 1** -> **Twisting Bundle K:** `[[5]]`
+- **Card 3 (GW Invariants)** -> **Curve Class &beta;:** `1, 0, 0, 0`
+- **Card 3** -> **Insertions:** *(Leave empty)*
+- **Card 3** -> **Click:** Compute Invariant (Output: `2875`)
 
 **In Python:**
 ```python
@@ -63,13 +61,12 @@ You can compute Gromov-Witten invariants on more complex flag varieties. Here, w
 *Note: The GUI requires entering the explicit Weyl group elements for insertions, separated by a pipe `|`.*
 
 **In the Graphical Interface:**
-- **Mode:** Single GW Invariant
-- **Algebra:** `A3`
-- **Keep Nodes:** `2`
-- **Twisting Bundle K:** *(Leave empty)*
-- **Curve Class (Beta):** `0, 1, 0`
-- **Insertions:** `((0, 0, 1, 0), (0, 0, 0, 1), (1, 0, 0, 0), (0, 1, 0, 0)) | ((0, 0, 1, 0), (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 0, 1)) | ((1, 0, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1), (0, 1, 0, 0))`
-- **Click:** Compute GW Invariant (Output: `1`)
+- **Card 1 (Space Definition)** -> **Algebra:** `A3`
+- **Card 1** -> **Keep Simple Roots:** `2`
+- **Card 1** -> **Twisting Bundle K:** *(Leave empty)*
+- **Card 3 (GW Invariants)** -> **Curve Class &beta;:** `0, 1, 0`
+- **Card 3** -> **Insertions:** `((0, 0, 1, 0), (0, 0, 0, 1), (1, 0, 0, 0), (0, 1, 0, 0)) | ((0, 0, 1, 0), (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 0, 1)) | ((1, 0, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1), (0, 1, 0, 0))`
+- **Card 3** -> **Click:** Compute Invariant (Output: `1`)
 
 **In Python:**
 ```python
@@ -88,11 +85,10 @@ If you want to compute the entire spectrum of the quantum connection at once, yo
 
 ### Quantum Matrix for $\mathbb{P}^2$
 **In the Graphical Interface:**
-- **Mode:** Quantum Multiplication
-- **Algebra:** `A2`
-- **Keep Nodes:** `1`
-- **Twisting Bundle K:** *(Leave empty)*
-- **Click:** Compute SQM
+- **Card 1 (Space Definition)** -> **Algebra:** `A2`
+- **Card 1** -> **Keep Simple Roots:** `1`
+- **Card 1** -> **Twisting Bundle K:** *(Leave empty)*
+- **Card 2 (Execution Options)** -> **Click:** Compute c₁(TX)⋆ Matrix
 
 **In Python:**
 ```python
@@ -106,11 +102,10 @@ for row in M:
 
 ### Quantum Matrix for $Gr(2,4)$
 **In the Graphical Interface:**
-- **Mode:** Quantum Multiplication
-- **Algebra:** `A3`
-- **Keep Nodes:** `2`
-- **Twisting Bundle K:** *(Leave empty)*
-- **Click:** Compute SQM
+- **Card 1 (Space Definition)** -> **Algebra:** `A3`
+- **Card 1** -> **Keep Simple Roots:** `2`
+- **Card 1** -> **Twisting Bundle K:** *(Leave empty)*
+- **Card 2 (Execution Options)** -> **Click:** Compute c₁(TX)⋆ Matrix
 
 **In Python:**
 ```python
@@ -128,7 +123,7 @@ for row in M:
 To verify if a geometry is semisimple, you extract the eigenvalues of the matrix generated in Example 3.
 
 **In the Graphical Interface:**
-Once you click **Compute SQM** for any space, the interface will automatically compute the characteristic polynomial and display the exact symbolic eigenvalues (e.g. roots of unity for $\mathbb{P}^2$) at the bottom of the result panel!
+Once you click **Compute c₁(TX)⋆ Matrix** for any space, the interface will automatically compute the characteristic polynomial and display the exact symbolic eigenvalues (e.g. roots of unity for $\mathbb{P}^2$) at the bottom of the result panel!
 
 **In Python:**
 ```python
@@ -151,11 +146,10 @@ A famous mathematical identity states that the zero-locus of a regular section o
 We can verify this isomorphism natively by passing the bundle explicitly:
 
 **In the Graphical Interface:**
-- **Mode:** Quantum Multiplication
-- **Algebra:** `A4`
-- **Keep Nodes:** `2`
-- **Twisting Bundle K:** `taut_quot(X, 2)`
-- **Click:** Compute SQM
+- **Card 1 (Space Definition)** -> **Algebra:** `A4`
+- **Card 1** -> **Keep Simple Roots:** `2`
+- **Card 1** -> **Twisting Bundle K:** `taut_quot(X, 2)`
+- **Card 2 (Execution Options)** -> **Click:** Compute c₁(TX)⋆ Matrix
 *(Output: You will instantly get a $4 \times 4$ quantum matrix identical to $\mathbb{P}^3$, with characteristic polynomial $\lambda^4 - 256 = 0$!)*
 
 **In Python:**
