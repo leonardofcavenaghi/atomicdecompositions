@@ -32,3 +32,15 @@ This module implements localization twisted by the Euler class of a bundle $E$, 
 - **`h_complete_intersection(gw, K, w, root_idx, d)`**: Computes the edge factor $e(H^0(f^*E))$ for an edge leaving $w$. Concave summands (where the splitting degree $b < 0$) are rejected, as the twisted genus-0 theory requires curve-wise global generation.
 - **`gw_complete_intersection(gw, coh_classes, beta, K)`**: Executes the twisted localization sum by injecting the appropriate multiplicative twists into `GWCalculator.gw_invariant`.
 
+
+## 4. Main Interface (`gwflags/__init__.py`)
+
+The main entrypoint for the library is the `FlagVariety` class, which wraps the underlying Lie algebra structures and localization calculators into a unified, high-level interface.
+
+### `FlagVariety`
+Represents a specific complex flag variety $G/P$ or a complete intersection inside it.
+
+- **`__init__(self, algebra, roots_that_stay, backend=None)`**: Initializes the geometry. `algebra` is the Cartan type (e.g. `"A4"`), and `roots_that_stay` defines the parabolic subgroup $P$ by specifying which nodes of the Dynkin diagram are kept (1-indexed).
+- **`gw(self, coh_classes, beta, K=None)`**: Computes the Gromov-Witten invariant $\langle \sigma_{u_1}, \dots, \sigma_{u_k} \rangle_{0, k, \beta}$ exactly as a rational fraction. If a vector bundle `K` is provided, computes the twisted invariant for the complete intersection.
+- **`fano_index_and_betas(self, K=None)`**: Computes the Fano index $I_X$ of the geometry (or complete intersection) and returns a list of curve degrees $\beta$ required for the small quantum multiplication matrix.
+- **`small_quantum_multiplication(self, K=None)`**: Computes the full $c_1(TX) \star (-)$ small quantum multiplication matrix projected onto the flag-ambient basis.

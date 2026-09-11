@@ -14,8 +14,9 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 3888 & 504576 & 18323712\\1 & 80 & 13600 & 504576\\0 & 1 & 80 & 3888\\0 & 0 & 1 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 3888 & 504576 & 18323712\\1 & 80 & 13600 & 504576\\0 & 1 & 80 & 3888\\0 & 0 & 1 & 0\end{bmatrix}
         $$
+
 
 
 **Description:** hypersurface of degree 4 in $\mathbb{P}^4$ double cover of 1-16 with branch locus a divisor of degree 8
@@ -28,8 +29,9 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 792 & 43632 & 793152\\1 & 30 & 2340 & 43632\\0 & 1 & 30 & 792\\0 & 0 & 1 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 792 & 43632 & 793152\\1 & 30 & 2340 & 43632\\0 & 1 & 30 & 792\\0 & 0 & 1 & 0\end{bmatrix}
         $$
+
 
 
 **Description:** complete intersection of quadric and cubic in $\mathbb{P}^5$
@@ -42,8 +44,9 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 304 & 9984 & 121088\\1 & 16 & 800 & 9984\\0 & 1 & 16 & 304\\0 & 0 & 1 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 304 & 9984 & 121088\\1 & 16 & 800 & 9984\\0 & 1 & 16 & 304\\0 & 0 & 1 & 0\end{bmatrix}
         $$
+
 
 
 **Description:** complete intersection of 3 quadrics in $\mathbb{P}^6$
@@ -56,8 +59,9 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 156 & 1440 & 13248\\1 & 10 & 152 & 1440\\0 & \frac{5}{2} & 10 & 156\\0 & 0 & 1 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 156 & 1440 & 13248\\1 & 10 & 152 & 1440\\0 & \frac{5}{2} & 10 & 156\\0 & 0 & 1 & 0\end{bmatrix}
         $$
+
 
 
 **Description:** Gushel–Mukai 3-fold section of Plücker embedding of $\mathrm{Gr}(2,5)$ by codimension 2 subspace and a quadric double cover of 1-15 with branch locus an anticanonical divisor
@@ -70,8 +74,9 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 96 & 1692 & 7476\\1 & 7 & 216 & 987\\0 & 1 & 7 & 56\\0 & 0 & \frac{12}{7} & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 96 & 1692 & 7476\\1 & 7 & 216 & 987\\0 & 1 & 7 & 56\\0 & 0 & \frac{12}{7} & 0\end{bmatrix}
         $$
+
 
 
 **Description:** section of half-spinor embedding of a connected component of $\mathrm{OGr}_+(5,10)$ by codimension 7 subspace
@@ -84,8 +89,9 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 64 & 330 & 2120\\1 & 5 & 50 & 330\\0 & \frac{14}{5} & 5 & 64\\0 & 0 & 1 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 64 & 330 & 2120\\1 & 5 & 50 & 330\\0 & \frac{14}{5} & 5 & 64\\0 & 0 & 1 & 0\end{bmatrix}
         $$
+
 
 
 **Description:** section of Plücker embedding of $\mathrm{Gr}(2,6)$ by codimension 5 subspace
@@ -98,8 +104,9 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 48 & 288 & 416\\1 & 4 & 48 & 72\\0 & 2 & 4 & 12\\0 & 0 & 4 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 48 & 288 & 416\\1 & 4 & 48 & 72\\0 & 2 & 4 & 12\\0 & 0 & 4 & 0\end{bmatrix}
         $$
+
 
 
 **Description:** section of Plücker embedding of $\mathrm{SGr}(3,6)$ by codimension 3 subspace
@@ -112,8 +119,9 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 36 & 126 & 324\\1 & 3 & 24 & 63\\0 & 3 & 3 & 18\\0 & 0 & 2 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 36 & 126 & 324\\1 & 3 & 24 & 63\\0 & 3 & 3 & 18\\0 & 0 & 2 & 0\end{bmatrix}
         $$
+
 
 
 **Description:** section of the adjoint $\mathrm{G}_2$-Grassmannian $\mathrm{G}_2\mathrm{Gr}(2,7)$ by codimension 2 subspace
@@ -138,8 +146,9 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 12 & 0 & 72\\2 & 0 & 30 & 0\\0 & 2 & 0 & 12\\0 & 0 & 2 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 12 & 0 & 72\\2 & 0 & 30 & 0\\0 & 2 & 0 & 12\\0 & 0 & 2 & 0\end{bmatrix}
         $$
+
 
 
 **Description:** hypersurface of degree 3 in $\mathbb{P}^4$
@@ -152,8 +161,9 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 8 & 0 & 32\\2 & 0 & 16 & 0\\0 & 2 & 0 & 8\\0 & 0 & 2 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 8 & 0 & 32\\2 & 0 & 16 & 0\\0 & 2 & 0 & 8\\0 & 0 & 2 & 0\end{bmatrix}
         $$
+
 
 
 **Description:** complete intersection of 2 quadrics in $\mathbb{P}^5$
@@ -166,8 +176,9 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 6 & 0 & 8\\2 & 0 & 4 & 0\\0 & 5 & 0 & 6\\0 & 0 & 2 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 6 & 0 & 8\\2 & 0 & 4 & 0\\0 & 5 & 0 & 6\\0 & 0 & 2 & 0\end{bmatrix}
         $$
+
 
 
 **Description:** quintic del Pezzo threefold section of Plücker embedding of $\mathrm{Gr}(2,5)$ by codimension 3 subspace
@@ -180,8 +191,9 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 0 & 6 & 0\\3 & 0 & 0 & 6\\0 & 3 & 0 & 0\\0 & 0 & 3 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 0 & 6 & 0\\3 & 0 & 0 & 6\\0 & 3 & 0 & 0\\0 & 0 & 3 & 0\end{bmatrix}
         $$
+
 
 
 **Description:** hypersurface of degree 2 in $\mathbb{P}^4$
@@ -194,8 +206,9 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 0 & 0 & 4\\4 & 0 & 0 & 0\\0 & 4 & 0 & 0\\0 & 0 & 4 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 0 & 0 & 4\\4 & 0 & 0 & 0\\0 & 4 & 0 & 0\\0 & 0 & 4 & 0\end{bmatrix}
         $$
+
 
 
 **Description:** projective space $\mathbb{P}^3$
@@ -300,8 +313,9 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 2 & 2 & 0 & 0 & 4\\2 & 0 & 0 & 2 & 0 & 0\\2 & 0 & 0 & 0 & 2 & 0\\0 & 2 & 4 & 0 & 0 & 2\\0 & 4 & 2 & 0 & 0 & 2\\0 & 0 & 0 & 2 & 2 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 2 & 2 & 0 & 0 & 4\\2 & 0 & 0 & 2 & 0 & 0\\2 & 0 & 0 & 0 & 2 & 0\\0 & 2 & 4 & 0 & 0 & 2\\0 & 4 & 2 & 0 & 0 & 2\\0 & 0 & 0 & 2 & 2 & 0\end{bmatrix}
         $$
+
 
 
 **Description:** *
@@ -354,8 +368,9 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 2 & 0 & 0 & 3 & 0\\2 & 0 & 0 & 0 & 0 & 3\\3 & 0 & 0 & 2 & 0 & 0\\0 & 3 & 2 & 0 & 0 & 0\\0 & 0 & 3 & 0 & 0 & 2\\0 & 0 & 0 & 3 & 2 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 2 & 0 & 0 & 3 & 0\\2 & 0 & 0 & 0 & 0 & 3\\3 & 0 & 0 & 2 & 0 & 0\\0 & 3 & 2 & 0 & 0 & 0\\0 & 0 & 3 & 0 & 0 & 2\\0 & 0 & 0 & 3 & 2 & 0\end{bmatrix}
         $$
+
 
 
 **Description:** *
@@ -476,8 +491,9 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 2 & 2 & 2 & 0 & 0 & 0 & 0\\2 & 0 & 0 & 0 & 2 & 2 & 0 & 0\\2 & 0 & 0 & 0 & 2 & 0 & 2 & 0\\2 & 0 & 0 & 0 & 0 & 2 & 2 & 0\\0 & 2 & 2 & 0 & 0 & 0 & 0 & 2\\0 & 2 & 0 & 2 & 0 & 0 & 0 & 2\\0 & 0 & 2 & 2 & 0 & 0 & 0 & 2\\0 & 0 & 0 & 0 & 2 & 2 & 2 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 2 & 2 & 2 & 0 & 0 & 0 & 0\\2 & 0 & 0 & 0 & 2 & 2 & 0 & 0\\2 & 0 & 0 & 0 & 2 & 0 & 2 & 0\\2 & 0 & 0 & 0 & 0 & 2 & 2 & 0\\0 & 2 & 2 & 0 & 0 & 0 & 0 & 2\\0 & 2 & 0 & 2 & 0 & 0 & 0 & 2\\0 & 0 & 2 & 2 & 0 & 0 & 0 & 2\\0 & 0 & 0 & 0 & 2 & 2 & 2 & 0\end{bmatrix}
         $$
+
 
 
 **Description:** *

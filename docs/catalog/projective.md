@@ -20,8 +20,9 @@ This section contains complete intersections inside this geometric family, syste
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 9\\9 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 9 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 9 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 9 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 9 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 9 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 9 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 0 & 9 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 9\\9 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 9 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 9 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 9 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 9 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 9 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 9 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 0 & 9 & 0\end{bmatrix}
         $$
+
 
 ---
 
@@ -49,8 +50,9 @@ This section contains complete intersections inside this geometric family, syste
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 0 & 0 & 0 & 0 & 0 & 0 & 8\\8 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 8 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 8 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 8 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 8 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 8 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 8 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 0 & 0 & 0 & 0 & 0 & 0 & 8\\8 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 8 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 8 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 8 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 8 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 8 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 8 & 0\end{bmatrix}
         $$
+
 
 ---
 
@@ -64,8 +66,9 @@ This section contains complete intersections inside this geometric family, syste
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 0 & 0 & 0 & 0 & 0 & 14 & 0\\7 & 0 & 0 & 0 & 0 & 0 & 0 & 14\\0 & 7 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 7 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 7 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 7 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 7 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 7 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 0 & 0 & 0 & 0 & 0 & 14 & 0\\7 & 0 & 0 & 0 & 0 & 0 & 0 & 14\\0 & 7 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 7 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 7 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 7 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 7 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 7 & 0\end{bmatrix}
         $$
+
 
     ??? note "Hodge Diamond ($h^{p,q}$)"
         $$
@@ -88,6 +91,7 @@ This section contains complete intersections inside this geometric family, syste
         \end{matrix}
         $$
 
+
 ---
 
 <span id="p8o3"></span>
@@ -100,8 +104,9 @@ This section contains complete intersections inside this geometric family, syste
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 0 & 0 & 0 & 0 & 36 & 0 & 0\\6 & 0 & 0 & 0 & 0 & 0 & 90 & 0\\0 & 6 & 0 & 0 & 0 & 0 & 0 & 36\\0 & 0 & 6 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 6 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 6 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 6 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 6 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 0 & 0 & 0 & 0 & 36 & 0 & 0\\6 & 0 & 0 & 0 & 0 & 0 & 90 & 0\\0 & 6 & 0 & 0 & 0 & 0 & 0 & 36\\0 & 0 & 6 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 6 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 6 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 6 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 6 & 0\end{bmatrix}
         $$
+
 
     ??? note "Hodge Diamond ($h^{p,q}$)"
         $$
@@ -124,6 +129,7 @@ This section contains complete intersections inside this geometric family, syste
         \end{matrix}
         $$
 
+
 ---
 
 <span id="p8o4"></span>
@@ -136,8 +142,9 @@ This section contains complete intersections inside this geometric family, syste
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 0 & 0 & 0 & 120 & 0 & 0 & 0\\5 & 0 & 0 & 0 & 0 & 520 & 0 & 0\\0 & 5 & 0 & 0 & 0 & 0 & 520 & 0\\0 & 0 & 5 & 0 & 0 & 0 & 0 & 120\\0 & 0 & 0 & 5 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 5 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 5 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 5 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 0 & 0 & 0 & 120 & 0 & 0 & 0\\5 & 0 & 0 & 0 & 0 & 520 & 0 & 0\\0 & 5 & 0 & 0 & 0 & 0 & 520 & 0\\0 & 0 & 5 & 0 & 0 & 0 & 0 & 120\\0 & 0 & 0 & 5 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 5 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 5 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 5 & 0\end{bmatrix}
         $$
+
 
     ??? note "Hodge Diamond ($h^{p,q}$)"
         $$
@@ -160,6 +167,7 @@ This section contains complete intersections inside this geometric family, syste
         \end{matrix}
         $$
 
+
 ---
 
 <span id="p8o5"></span>
@@ -172,8 +180,9 @@ This section contains complete intersections inside this geometric family, syste
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 0 & 0 & 480 & 0 & 0 & 0 & 57600\\4 & 0 & 0 & 0 & 3080 & 0 & 0 & 0\\0 & 4 & 0 & 0 & 0 & 5380 & 0 & 0\\0 & 0 & 4 & 0 & 0 & 0 & 3080 & 0\\0 & 0 & 0 & 4 & 0 & 0 & 0 & 480\\0 & 0 & 0 & 0 & 4 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 4 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 4 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 0 & 0 & 480 & 0 & 0 & 0 & 57600\\4 & 0 & 0 & 0 & 3080 & 0 & 0 & 0\\0 & 4 & 0 & 0 & 0 & 5380 & 0 & 0\\0 & 0 & 4 & 0 & 0 & 0 & 3080 & 0\\0 & 0 & 0 & 4 & 0 & 0 & 0 & 480\\0 & 0 & 0 & 0 & 4 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 4 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 4 & 0\end{bmatrix}
         $$
+
 
     ??? note "Hodge Diamond ($h^{p,q}$)"
         $$
@@ -196,6 +205,7 @@ This section contains complete intersections inside this geometric family, syste
         \end{matrix}
         $$
 
+
 ---
 
 <span id="p8o6"></span>
@@ -208,8 +218,9 @@ This section contains complete intersections inside this geometric family, syste
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 0 & 2160 & 0 & 0 & 42456960 & 0 & 0\\3 & 0 & 0 & 18792 & 0 & 0 & 132020928 & 0\\0 & 3 & 0 & 0 & 49032 & 0 & 0 & 42456960\\0 & 0 & 3 & 0 & 0 & 49032 & 0 & 0\\0 & 0 & 0 & 3 & 0 & 0 & 18792 & 0\\0 & 0 & 0 & 0 & 3 & 0 & 0 & 2160\\0 & 0 & 0 & 0 & 0 & 3 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 3 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 0 & 2160 & 0 & 0 & 42456960 & 0 & 0\\3 & 0 & 0 & 18792 & 0 & 0 & 132020928 & 0\\0 & 3 & 0 & 0 & 49032 & 0 & 0 & 42456960\\0 & 0 & 3 & 0 & 0 & 49032 & 0 & 0\\0 & 0 & 0 & 3 & 0 & 0 & 18792 & 0\\0 & 0 & 0 & 0 & 3 & 0 & 0 & 2160\\0 & 0 & 0 & 0 & 0 & 3 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 3 & 0\end{bmatrix}
         $$
+
 
     ??? note "Hodge Diamond ($h^{p,q}$)"
         $$
@@ -232,6 +243,7 @@ This section contains complete intersections inside this geometric family, syste
         \end{matrix}
         $$
 
+
 ---
 
 <span id="p8o7"></span>
@@ -244,8 +256,9 @@ This section contains complete intersections inside this geometric family, syste
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 10080 & 0 & 4112519040 & 0 & 1068310404604800 & 0 & 10225965588972134400\\2 & 0 & 112392 & 0 & 49399013664 & 0 & 3840731271980064 & 0\\0 & 2 & 0 & 400904 & 0 & 107503371248 & 0 & 1068310404604800\\0 & 0 & 2 & 0 & 600334 & 0 & 49399013664 & 0\\0 & 0 & 0 & 2 & 0 & 400904 & 0 & 4112519040\\0 & 0 & 0 & 0 & 2 & 0 & 112392 & 0\\0 & 0 & 0 & 0 & 0 & 2 & 0 & 10080\\0 & 0 & 0 & 0 & 0 & 0 & 2 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 10080 & 0 & 4112519040 & 0 & 1068310404604800 & 0 & 10225965588972134400\\2 & 0 & 112392 & 0 & 49399013664 & 0 & 3840731271980064 & 0\\0 & 2 & 0 & 400904 & 0 & 107503371248 & 0 & 1068310404604800\\0 & 0 & 2 & 0 & 600334 & 0 & 49399013664 & 0\\0 & 0 & 0 & 2 & 0 & 400904 & 0 & 4112519040\\0 & 0 & 0 & 0 & 2 & 0 & 112392 & 0\\0 & 0 & 0 & 0 & 0 & 2 & 0 & 10080\\0 & 0 & 0 & 0 & 0 & 0 & 2 & 0\end{bmatrix}
         $$
+
 
     ??? note "Hodge Diamond ($h^{p,q}$)"
         $$
@@ -267,6 +280,7 @@ This section contains complete intersections inside this geometric family, syste
          &  &  &  &  &  &  & 1 &  &  &  &  &  &  &  \\
         \end{matrix}
         $$
+
 
 ---
 
@@ -299,8 +313,9 @@ This section contains complete intersections inside this geometric family, syste
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 0 & 0 & 0 & 0 & 0 & 7\\7 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 7 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 7 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 7 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 7 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 7 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 0 & 0 & 0 & 0 & 0 & 7\\7 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 7 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 7 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 7 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 7 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 7 & 0\end{bmatrix}
         $$
+
 
 ---
 
@@ -314,8 +329,9 @@ This section contains complete intersections inside this geometric family, syste
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 0 & 0 & 0 & 0 & 12 & 0\\6 & 0 & 0 & 0 & 0 & 0 & 12\\0 & 6 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 6 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 6 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 6 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 6 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 0 & 0 & 0 & 0 & 12 & 0\\6 & 0 & 0 & 0 & 0 & 0 & 12\\0 & 6 & 0 & 0 & 0 & 0 & 0\\0 & 0 & 6 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 6 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 6 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 6 & 0\end{bmatrix}
         $$
+
 
     ??? note "Hodge Diamond ($h^{p,q}$)"
         $$
@@ -336,6 +352,7 @@ This section contains complete intersections inside this geometric family, syste
         \end{matrix}
         $$
 
+
 ---
 
 <span id="p7o3"></span>
@@ -348,8 +365,9 @@ This section contains complete intersections inside this geometric family, syste
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 0 & 0 & 0 & 30 & 0 & 0\\5 & 0 & 0 & 0 & 0 & 75 & 0\\0 & 5 & 0 & 0 & 0 & 0 & 30\\0 & 0 & 5 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 5 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 5 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 5 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 0 & 0 & 0 & 30 & 0 & 0\\5 & 0 & 0 & 0 & 0 & 75 & 0\\0 & 5 & 0 & 0 & 0 & 0 & 30\\0 & 0 & 5 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 5 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 5 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 5 & 0\end{bmatrix}
         $$
+
 
     ??? note "Hodge Diamond ($h^{p,q}$)"
         $$
@@ -370,6 +388,7 @@ This section contains complete intersections inside this geometric family, syste
         \end{matrix}
         $$
 
+
 ---
 
 <span id="p8o2o2"></span>
@@ -382,8 +401,9 @@ This section contains complete intersections inside this geometric family, syste
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 0 & 0 & 0 & 20 & 0 & 0\\5 & 0 & 0 & 0 & 0 & 40 & 0\\0 & 5 & 0 & 0 & 0 & 0 & 20\\0 & 0 & 5 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 5 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 5 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 5 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 0 & 0 & 0 & 20 & 0 & 0\\5 & 0 & 0 & 0 & 0 & 40 & 0\\0 & 5 & 0 & 0 & 0 & 0 & 20\\0 & 0 & 5 & 0 & 0 & 0 & 0\\0 & 0 & 0 & 5 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 5 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 5 & 0\end{bmatrix}
         $$
+
 
     ??? note "Hodge Diamond ($h^{p,q}$)"
         $$
@@ -404,6 +424,7 @@ This section contains complete intersections inside this geometric family, syste
         \end{matrix}
         $$
 
+
 ---
 
 <span id="p7o4"></span>
@@ -416,8 +437,9 @@ This section contains complete intersections inside this geometric family, syste
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 0 & 0 & 96 & 0 & 0 & 0\\4 & 0 & 0 & 0 & 416 & 0 & 0\\0 & 4 & 0 & 0 & 0 & 416 & 0\\0 & 0 & 4 & 0 & 0 & 0 & 96\\0 & 0 & 0 & 4 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 4 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 4 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 0 & 0 & 96 & 0 & 0 & 0\\4 & 0 & 0 & 0 & 416 & 0 & 0\\0 & 4 & 0 & 0 & 0 & 416 & 0\\0 & 0 & 4 & 0 & 0 & 0 & 96\\0 & 0 & 0 & 4 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 4 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 4 & 0\end{bmatrix}
         $$
+
 
     ??? note "Hodge Diamond ($h^{p,q}$)"
         $$
@@ -438,6 +460,7 @@ This section contains complete intersections inside this geometric family, syste
         \end{matrix}
         $$
 
+
 ---
 
 <span id="p8o2o3"></span>
@@ -450,8 +473,9 @@ This section contains complete intersections inside this geometric family, syste
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 0 & 0 & 48 & 0 & 0 & 0\\4 & 0 & 0 & 0 & 168 & 0 & 0\\0 & 4 & 0 & 0 & 0 & 168 & 0\\0 & 0 & 4 & 0 & 0 & 0 & 48\\0 & 0 & 0 & 4 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 4 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 4 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 0 & 0 & 48 & 0 & 0 & 0\\4 & 0 & 0 & 0 & 168 & 0 & 0\\0 & 4 & 0 & 0 & 0 & 168 & 0\\0 & 0 & 4 & 0 & 0 & 0 & 48\\0 & 0 & 0 & 4 & 0 & 0 & 0\\0 & 0 & 0 & 0 & 4 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 4 & 0\end{bmatrix}
         $$
+
 
     ??? note "Hodge Diamond ($h^{p,q}$)"
         $$
@@ -472,6 +496,7 @@ This section contains complete intersections inside this geometric family, syste
         \end{matrix}
         $$
 
+
 ---
 
 <span id="p7o5"></span>
@@ -484,8 +509,9 @@ This section contains complete intersections inside this geometric family, syste
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 0 & 360 & 0 & 0 & 298800 & 0\\3 & 0 & 0 & 2310 & 0 & 0 & 298800\\0 & 3 & 0 & 0 & 4035 & 0 & 0\\0 & 0 & 3 & 0 & 0 & 2310 & 0\\0 & 0 & 0 & 3 & 0 & 0 & 360\\0 & 0 & 0 & 0 & 3 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 3 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 0 & 360 & 0 & 0 & 298800 & 0\\3 & 0 & 0 & 2310 & 0 & 0 & 298800\\0 & 3 & 0 & 0 & 4035 & 0 & 0\\0 & 0 & 3 & 0 & 0 & 2310 & 0\\0 & 0 & 0 & 3 & 0 & 0 & 360\\0 & 0 & 0 & 0 & 3 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 3 & 0\end{bmatrix}
         $$
+
 
     ??? note "Hodge Diamond ($h^{p,q}$)"
         $$
@@ -506,6 +532,7 @@ This section contains complete intersections inside this geometric family, syste
         \end{matrix}
         $$
 
+
 ---
 
 <span id="p8o2o4"></span>
@@ -518,8 +545,9 @@ This section contains complete intersections inside this geometric family, syste
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 0 & 144 & 0 & 0 & 40320 & 0\\3 & 0 & 0 & 768 & 0 & 0 & 40320\\0 & 3 & 0 & 0 & 1248 & 0 & 0\\0 & 0 & 3 & 0 & 0 & 768 & 0\\0 & 0 & 0 & 3 & 0 & 0 & 144\\0 & 0 & 0 & 0 & 3 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 3 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 0 & 144 & 0 & 0 & 40320 & 0\\3 & 0 & 0 & 768 & 0 & 0 & 40320\\0 & 3 & 0 & 0 & 1248 & 0 & 0\\0 & 0 & 3 & 0 & 0 & 768 & 0\\0 & 0 & 0 & 3 & 0 & 0 & 144\\0 & 0 & 0 & 0 & 3 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 3 & 0\end{bmatrix}
         $$
+
 
     ??? note "Hodge Diamond ($h^{p,q}$)"
         $$
@@ -540,6 +568,7 @@ This section contains complete intersections inside this geometric family, syste
         \end{matrix}
         $$
 
+
 ---
 
 <span id="p8o3o3"></span>
@@ -552,8 +581,9 @@ This section contains complete intersections inside this geometric family, syste
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 0 & 108 & 0 & 0 & 21384 & 0\\3 & 0 & 0 & 540 & 0 & 0 & 21384\\0 & 3 & 0 & 0 & 891 & 0 & 0\\0 & 0 & 3 & 0 & 0 & 540 & 0\\0 & 0 & 0 & 3 & 0 & 0 & 108\\0 & 0 & 0 & 0 & 3 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 3 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 0 & 108 & 0 & 0 & 21384 & 0\\3 & 0 & 0 & 540 & 0 & 0 & 21384\\0 & 3 & 0 & 0 & 891 & 0 & 0\\0 & 0 & 3 & 0 & 0 & 540 & 0\\0 & 0 & 0 & 3 & 0 & 0 & 108\\0 & 0 & 0 & 0 & 3 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 3 & 0\end{bmatrix}
         $$
+
 
     ??? note "Hodge Diamond ($h^{p,q}$)"
         $$
@@ -574,6 +604,7 @@ This section contains complete intersections inside this geometric family, syste
         \end{matrix}
         $$
 
+
 ---
 
 <span id="p7o6"></span>
@@ -586,8 +617,9 @@ This section contains complete intersections inside this geometric family, syste
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 1440 & 0 & 37687680 & 0 & 288139991040 & 0\\2 & 0 & 12528 & 0 & 262916928 & 0 & 288139991040\\0 & 2 & 0 & 32688 & 0 & 262916928 & 0\\0 & 0 & 2 & 0 & 32688 & 0 & 37687680\\0 & 0 & 0 & 2 & 0 & 12528 & 0\\0 & 0 & 0 & 0 & 2 & 0 & 1440\\0 & 0 & 0 & 0 & 0 & 2 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 1440 & 0 & 37687680 & 0 & 288139991040 & 0\\2 & 0 & 12528 & 0 & 262916928 & 0 & 288139991040\\0 & 2 & 0 & 32688 & 0 & 262916928 & 0\\0 & 0 & 2 & 0 & 32688 & 0 & 37687680\\0 & 0 & 0 & 2 & 0 & 12528 & 0\\0 & 0 & 0 & 0 & 2 & 0 & 1440\\0 & 0 & 0 & 0 & 0 & 2 & 0\end{bmatrix}
         $$
+
 
     ??? note "Hodge Diamond ($h^{p,q}$)"
         $$
@@ -608,6 +640,7 @@ This section contains complete intersections inside this geometric family, syste
         \end{matrix}
         $$
 
+
 ---
 
 <span id="p8o2o5"></span>
@@ -620,8 +653,9 @@ This section contains complete intersections inside this geometric family, syste
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 480 & 0 & 3273600 & 0 & 7293600000 & 0\\2 & 0 & 3560 & 0 & 19926400 & 0 & 7293600000\\0 & 2 & 0 & 8460 & 0 & 19926400 & 0\\0 & 0 & 2 & 0 & 8460 & 0 & 3273600\\0 & 0 & 0 & 2 & 0 & 3560 & 0\\0 & 0 & 0 & 0 & 2 & 0 & 480\\0 & 0 & 0 & 0 & 0 & 2 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 480 & 0 & 3273600 & 0 & 7293600000 & 0\\2 & 0 & 3560 & 0 & 19926400 & 0 & 7293600000\\0 & 2 & 0 & 8460 & 0 & 19926400 & 0\\0 & 0 & 2 & 0 & 8460 & 0 & 3273600\\0 & 0 & 0 & 2 & 0 & 3560 & 0\\0 & 0 & 0 & 0 & 2 & 0 & 480\\0 & 0 & 0 & 0 & 0 & 2 & 0\end{bmatrix}
         $$
+
 
     ??? note "Hodge Diamond ($h^{p,q}$)"
         $$
@@ -642,6 +676,7 @@ This section contains complete intersections inside this geometric family, syste
         \end{matrix}
         $$
 
+
 ---
 
 <span id="p8o3o4"></span>
@@ -654,8 +689,9 @@ This section contains complete intersections inside this geometric family, syste
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 288 & 0 & 1081728 & 0 & 1344190464 & 0\\2 & 0 & 1968 & 0 & 6113088 & 0 & 1344190464\\0 & 2 & 0 & 4656 & 0 & 6113088 & 0\\0 & 0 & 2 & 0 & 4656 & 0 & 1081728\\0 & 0 & 0 & 2 & 0 & 1968 & 0\\0 & 0 & 0 & 0 & 2 & 0 & 288\\0 & 0 & 0 & 0 & 0 & 2 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 288 & 0 & 1081728 & 0 & 1344190464 & 0\\2 & 0 & 1968 & 0 & 6113088 & 0 & 1344190464\\0 & 2 & 0 & 4656 & 0 & 6113088 & 0\\0 & 0 & 2 & 0 & 4656 & 0 & 1081728\\0 & 0 & 0 & 2 & 0 & 1968 & 0\\0 & 0 & 0 & 0 & 2 & 0 & 288\\0 & 0 & 0 & 0 & 0 & 2 & 0\end{bmatrix}
         $$
+
 
     ??? note "Hodge Diamond ($h^{p,q}$)"
         $$
@@ -675,6 +711,7 @@ This section contains complete intersections inside this geometric family, syste
          &  &  &  &  &  & 1 &  &  &  &  &  &  \\
         \end{matrix}
         $$
+
 
 ---
 
@@ -706,8 +743,9 @@ This section contains complete intersections inside this geometric family, syste
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 0 & 0 & 0 & 0 & 6\\6 & 0 & 0 & 0 & 0 & 0\\0 & 6 & 0 & 0 & 0 & 0\\0 & 0 & 6 & 0 & 0 & 0\\0 & 0 & 0 & 6 & 0 & 0\\0 & 0 & 0 & 0 & 6 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 0 & 0 & 0 & 0 & 6\\6 & 0 & 0 & 0 & 0 & 0\\0 & 6 & 0 & 0 & 0 & 0\\0 & 0 & 6 & 0 & 0 & 0\\0 & 0 & 0 & 6 & 0 & 0\\0 & 0 & 0 & 0 & 6 & 0\end{bmatrix}
         $$
+
 
 ---
 
@@ -721,8 +759,9 @@ This section contains complete intersections inside this geometric family, syste
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 0 & 0 & 0 & 10 & 0\\5 & 0 & 0 & 0 & 0 & 10\\0 & 5 & 0 & 0 & 0 & 0\\0 & 0 & 5 & 0 & 0 & 0\\0 & 0 & 0 & 5 & 0 & 0\\0 & 0 & 0 & 0 & 5 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 0 & 0 & 0 & 10 & 0\\5 & 0 & 0 & 0 & 0 & 10\\0 & 5 & 0 & 0 & 0 & 0\\0 & 0 & 5 & 0 & 0 & 0\\0 & 0 & 0 & 5 & 0 & 0\\0 & 0 & 0 & 0 & 5 & 0\end{bmatrix}
         $$
+
 
     ??? note "Hodge Diamond ($h^{p,q}$)"
         $$
@@ -741,6 +780,7 @@ This section contains complete intersections inside this geometric family, syste
         \end{matrix}
         $$
 
+
 ---
 
 <span id="p6o3"></span>
@@ -753,8 +793,9 @@ This section contains complete intersections inside this geometric family, syste
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 0 & 0 & 24 & 0 & 0\\4 & 0 & 0 & 0 & 60 & 0\\0 & 4 & 0 & 0 & 0 & 24\\0 & 0 & 4 & 0 & 0 & 0\\0 & 0 & 0 & 4 & 0 & 0\\0 & 0 & 0 & 0 & 4 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 0 & 0 & 24 & 0 & 0\\4 & 0 & 0 & 0 & 60 & 0\\0 & 4 & 0 & 0 & 0 & 24\\0 & 0 & 4 & 0 & 0 & 0\\0 & 0 & 0 & 4 & 0 & 0\\0 & 0 & 0 & 0 & 4 & 0\end{bmatrix}
         $$
+
 
     ??? note "Hodge Diamond ($h^{p,q}$)"
         $$
@@ -773,6 +814,7 @@ This section contains complete intersections inside this geometric family, syste
         \end{matrix}
         $$
 
+
 ---
 
 <span id="p7o2o2"></span>
@@ -785,8 +827,9 @@ This section contains complete intersections inside this geometric family, syste
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 0 & 0 & 16 & 0 & 0\\4 & 0 & 0 & 0 & 32 & 0\\0 & 4 & 0 & 0 & 0 & 16\\0 & 0 & 4 & 0 & 0 & 0\\0 & 0 & 0 & 4 & 0 & 0\\0 & 0 & 0 & 0 & 4 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 0 & 0 & 16 & 0 & 0\\4 & 0 & 0 & 0 & 32 & 0\\0 & 4 & 0 & 0 & 0 & 16\\0 & 0 & 4 & 0 & 0 & 0\\0 & 0 & 0 & 4 & 0 & 0\\0 & 0 & 0 & 0 & 4 & 0\end{bmatrix}
         $$
+
 
     ??? note "Hodge Diamond ($h^{p,q}$)"
         $$
@@ -805,6 +848,7 @@ This section contains complete intersections inside this geometric family, syste
         \end{matrix}
         $$
 
+
 ---
 
 <span id="p6o4"></span>
@@ -817,8 +861,9 @@ This section contains complete intersections inside this geometric family, syste
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 0 & 72 & 0 & 0 & 1728\\3 & 0 & 0 & 312 & 0 & 0\\0 & 3 & 0 & 0 & 312 & 0\\0 & 0 & 3 & 0 & 0 & 72\\0 & 0 & 0 & 3 & 0 & 0\\0 & 0 & 0 & 0 & 3 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 0 & 72 & 0 & 0 & 1728\\3 & 0 & 0 & 312 & 0 & 0\\0 & 3 & 0 & 0 & 312 & 0\\0 & 0 & 3 & 0 & 0 & 72\\0 & 0 & 0 & 3 & 0 & 0\\0 & 0 & 0 & 0 & 3 & 0\end{bmatrix}
         $$
+
 
     ??? note "Hodge Diamond ($h^{p,q}$)"
         $$
@@ -837,6 +882,7 @@ This section contains complete intersections inside this geometric family, syste
         \end{matrix}
         $$
 
+
 ---
 
 <span id="p7o2o3"></span>
@@ -849,8 +895,9 @@ This section contains complete intersections inside this geometric family, syste
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 0 & 36 & 0 & 0 & 432\\3 & 0 & 0 & 126 & 0 & 0\\0 & 3 & 0 & 0 & 126 & 0\\0 & 0 & 3 & 0 & 0 & 36\\0 & 0 & 0 & 3 & 0 & 0\\0 & 0 & 0 & 0 & 3 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 0 & 36 & 0 & 0 & 432\\3 & 0 & 0 & 126 & 0 & 0\\0 & 3 & 0 & 0 & 126 & 0\\0 & 0 & 3 & 0 & 0 & 36\\0 & 0 & 0 & 3 & 0 & 0\\0 & 0 & 0 & 0 & 3 & 0\end{bmatrix}
         $$
+
 
     ??? note "Hodge Diamond ($h^{p,q}$)"
         $$
@@ -869,6 +916,7 @@ This section contains complete intersections inside this geometric family, syste
         \end{matrix}
         $$
 
+
 ---
 
 <span id="p8o2o2o2"></span>
@@ -881,8 +929,9 @@ This section contains complete intersections inside this geometric family, syste
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 0 & 24 & 0 & 0 & 192\\3 & 0 & 0 & 72 & 0 & 0\\0 & 3 & 0 & 0 & 72 & 0\\0 & 0 & 3 & 0 & 0 & 24\\0 & 0 & 0 & 3 & 0 & 0\\0 & 0 & 0 & 0 & 3 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 0 & 24 & 0 & 0 & 192\\3 & 0 & 0 & 72 & 0 & 0\\0 & 3 & 0 & 0 & 72 & 0\\0 & 0 & 3 & 0 & 0 & 24\\0 & 0 & 0 & 3 & 0 & 0\\0 & 0 & 0 & 0 & 3 & 0\end{bmatrix}
         $$
+
 
     ??? note "Hodge Diamond ($h^{p,q}$)"
         $$
@@ -901,6 +950,7 @@ This section contains complete intersections inside this geometric family, syste
         \end{matrix}
         $$
 
+
 ---
 
 <span id="p6o5"></span>
@@ -913,8 +963,9 @@ This section contains complete intersections inside this geometric family, syste
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 240 & 0 & 422400 & 0 & 62640000\\2 & 0 & 1540 & 0 & 1385000 & 0\\0 & 2 & 0 & 2690 & 0 & 422400\\0 & 0 & 2 & 0 & 1540 & 0\\0 & 0 & 0 & 2 & 0 & 240\\0 & 0 & 0 & 0 & 2 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 240 & 0 & 422400 & 0 & 62640000\\2 & 0 & 1540 & 0 & 1385000 & 0\\0 & 2 & 0 & 2690 & 0 & 422400\\0 & 0 & 2 & 0 & 1540 & 0\\0 & 0 & 0 & 2 & 0 & 240\\0 & 0 & 0 & 0 & 2 & 0\end{bmatrix}
         $$
+
 
     ??? note "Hodge Diamond ($h^{p,q}$)"
         $$
@@ -933,6 +984,7 @@ This section contains complete intersections inside this geometric family, syste
         \end{matrix}
         $$
 
+
 ---
 
 <span id="p7o2o4"></span>
@@ -945,8 +997,9 @@ This section contains complete intersections inside this geometric family, syste
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 96 & 0 & 53376 & 0 & 3207168\\2 & 0 & 512 & 0 & 157952 & 0\\0 & 2 & 0 & 832 & 0 & 53376\\0 & 0 & 2 & 0 & 512 & 0\\0 & 0 & 0 & 2 & 0 & 96\\0 & 0 & 0 & 0 & 2 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 96 & 0 & 53376 & 0 & 3207168\\2 & 0 & 512 & 0 & 157952 & 0\\0 & 2 & 0 & 832 & 0 & 53376\\0 & 0 & 2 & 0 & 512 & 0\\0 & 0 & 0 & 2 & 0 & 96\\0 & 0 & 0 & 0 & 2 & 0\end{bmatrix}
         $$
+
 
     ??? note "Hodge Diamond ($h^{p,q}$)"
         $$
@@ -965,6 +1018,7 @@ This section contains complete intersections inside this geometric family, syste
         \end{matrix}
         $$
 
+
 ---
 
 <span id="p7o3o3"></span>
@@ -977,8 +1031,9 @@ This section contains complete intersections inside this geometric family, syste
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 72 & 0 & 28512 & 0 & 1283040\\2 & 0 & 360 & 0 & 79056 & 0\\0 & 2 & 0 & 594 & 0 & 28512\\0 & 0 & 2 & 0 & 360 & 0\\0 & 0 & 0 & 2 & 0 & 72\\0 & 0 & 0 & 0 & 2 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 72 & 0 & 28512 & 0 & 1283040\\2 & 0 & 360 & 0 & 79056 & 0\\0 & 2 & 0 & 594 & 0 & 28512\\0 & 0 & 2 & 0 & 360 & 0\\0 & 0 & 0 & 2 & 0 & 72\\0 & 0 & 0 & 0 & 2 & 0\end{bmatrix}
         $$
+
 
     ??? note "Hodge Diamond ($h^{p,q}$)"
         $$
@@ -997,6 +1052,7 @@ This section contains complete intersections inside this geometric family, syste
         \end{matrix}
         $$
 
+
 ---
 
 <span id="p8o2o2o3"></span>
@@ -1009,8 +1065,9 @@ This section contains complete intersections inside this geometric family, syste
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 48 & 0 & 10944 & 0 & 331776\\2 & 0 & 216 & 0 & 29088 & 0\\0 & 2 & 0 & 336 & 0 & 10944\\0 & 0 & 2 & 0 & 216 & 0\\0 & 0 & 0 & 2 & 0 & 48\\0 & 0 & 0 & 0 & 2 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 48 & 0 & 10944 & 0 & 331776\\2 & 0 & 216 & 0 & 29088 & 0\\0 & 2 & 0 & 336 & 0 & 10944\\0 & 0 & 2 & 0 & 216 & 0\\0 & 0 & 0 & 2 & 0 & 48\\0 & 0 & 0 & 0 & 2 & 0\end{bmatrix}
         $$
+
 
     ??? note "Hodge Diamond ($h^{p,q}$)"
         $$
@@ -1028,6 +1085,7 @@ This section contains complete intersections inside this geometric family, syste
          &  &  &  &  & 1 &  &  &  &  &  \\
         \end{matrix}
         $$
+
 
 ---
 
@@ -1059,8 +1117,9 @@ This section contains complete intersections inside this geometric family, syste
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 0 & 0 & 0 & 5\\5 & 0 & 0 & 0 & 0\\0 & 5 & 0 & 0 & 0\\0 & 0 & 5 & 0 & 0\\0 & 0 & 0 & 5 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 0 & 0 & 0 & 5\\5 & 0 & 0 & 0 & 0\\0 & 5 & 0 & 0 & 0\\0 & 0 & 5 & 0 & 0\\0 & 0 & 0 & 5 & 0\end{bmatrix}
         $$
+
 
 ---
 
@@ -1074,8 +1133,9 @@ This section contains complete intersections inside this geometric family, syste
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 0 & 0 & 8 & 0\\4 & 0 & 0 & 0 & 8\\0 & 4 & 0 & 0 & 0\\0 & 0 & 4 & 0 & 0\\0 & 0 & 0 & 4 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 0 & 0 & 8 & 0\\4 & 0 & 0 & 0 & 8\\0 & 4 & 0 & 0 & 0\\0 & 0 & 4 & 0 & 0\\0 & 0 & 0 & 4 & 0\end{bmatrix}
         $$
+
 
     ??? note "Hodge Diamond ($h^{p,q}$)"
         $$
@@ -1092,6 +1152,7 @@ This section contains complete intersections inside this geometric family, syste
         \end{matrix}
         $$
 
+
 ---
 
 <span id="p5o3"></span>
@@ -1104,8 +1165,9 @@ This section contains complete intersections inside this geometric family, syste
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 0 & 18 & 0 & 0\\3 & 0 & 0 & 45 & 0\\0 & 3 & 0 & 0 & 18\\0 & 0 & 3 & 0 & 0\\0 & 0 & 0 & 3 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 0 & 18 & 0 & 0\\3 & 0 & 0 & 45 & 0\\0 & 3 & 0 & 0 & 18\\0 & 0 & 3 & 0 & 0\\0 & 0 & 0 & 3 & 0\end{bmatrix}
         $$
+
 
     ??? note "Hodge Diamond ($h^{p,q}$)"
         $$
@@ -1122,6 +1184,7 @@ This section contains complete intersections inside this geometric family, syste
         \end{matrix}
         $$
 
+
 ---
 
 <span id="p6o2o2"></span>
@@ -1134,8 +1197,9 @@ This section contains complete intersections inside this geometric family, syste
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 0 & 12 & 0 & 0\\3 & 0 & 0 & 24 & 0\\0 & 3 & 0 & 0 & 12\\0 & 0 & 3 & 0 & 0\\0 & 0 & 0 & 3 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 0 & 12 & 0 & 0\\3 & 0 & 0 & 24 & 0\\0 & 3 & 0 & 0 & 12\\0 & 0 & 3 & 0 & 0\\0 & 0 & 0 & 3 & 0\end{bmatrix}
         $$
+
 
     ??? note "Hodge Diamond ($h^{p,q}$)"
         $$
@@ -1152,6 +1216,7 @@ This section contains complete intersections inside this geometric family, syste
         \end{matrix}
         $$
 
+
 ---
 
 <span id="p5o4"></span>
@@ -1164,8 +1229,9 @@ This section contains complete intersections inside this geometric family, syste
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 48 & 0 & 5568 & 0\\2 & 0 & 208 & 0 & 5568\\0 & 2 & 0 & 208 & 0\\0 & 0 & 2 & 0 & 48\\0 & 0 & 0 & 2 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 48 & 0 & 5568 & 0\\2 & 0 & 208 & 0 & 5568\\0 & 2 & 0 & 208 & 0\\0 & 0 & 2 & 0 & 48\\0 & 0 & 0 & 2 & 0\end{bmatrix}
         $$
+
 
     ??? note "Hodge Diamond ($h^{p,q}$)"
         $$
@@ -1182,6 +1248,7 @@ This section contains complete intersections inside this geometric family, syste
         \end{matrix}
         $$
 
+
 ---
 
 <span id="p6o2o3"></span>
@@ -1194,8 +1261,9 @@ This section contains complete intersections inside this geometric family, syste
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 24 & 0 & 1152 & 0\\2 & 0 & 84 & 0 & 1152\\0 & 2 & 0 & 84 & 0\\0 & 0 & 2 & 0 & 24\\0 & 0 & 0 & 2 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 24 & 0 & 1152 & 0\\2 & 0 & 84 & 0 & 1152\\0 & 2 & 0 & 84 & 0\\0 & 0 & 2 & 0 & 24\\0 & 0 & 0 & 2 & 0\end{bmatrix}
         $$
+
 
     ??? note "Hodge Diamond ($h^{p,q}$)"
         $$
@@ -1212,6 +1280,7 @@ This section contains complete intersections inside this geometric family, syste
         \end{matrix}
         $$
 
+
 ---
 
 <span id="p7o2o2o2"></span>
@@ -1224,8 +1293,9 @@ This section contains complete intersections inside this geometric family, syste
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 16 & 0 & 448 & 0\\2 & 0 & 48 & 0 & 448\\0 & 2 & 0 & 48 & 0\\0 & 0 & 2 & 0 & 16\\0 & 0 & 0 & 2 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 16 & 0 & 448 & 0\\2 & 0 & 48 & 0 & 448\\0 & 2 & 0 & 48 & 0\\0 & 0 & 2 & 0 & 16\\0 & 0 & 0 & 2 & 0\end{bmatrix}
         $$
+
 
     ??? note "Hodge Diamond ($h^{p,q}$)"
         $$
@@ -1242,6 +1312,7 @@ This section contains complete intersections inside this geometric family, syste
         \end{matrix}
         $$
 
+
 ---
 
 <span id="p5o5"></span>
@@ -1254,8 +1325,9 @@ This section contains complete intersections inside this geometric family, syste
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 198000 & 395550000 & 423858600000 & 109236016800000\\1 & 650 & 1487500 & 1620307500 & 423858600000\\0 & 1 & 1225 & 1487500 & 395550000\\0 & 0 & 1 & 650 & 198000\\0 & 0 & 0 & 1 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 198000 & 395550000 & 423858600000 & 109236016800000\\1 & 650 & 1487500 & 1620307500 & 423858600000\\0 & 1 & 1225 & 1487500 & 395550000\\0 & 0 & 1 & 650 & 198000\\0 & 0 & 0 & 1 & 0\end{bmatrix}
         $$
+
 
     ??? note "Hodge Diamond ($h^{p,q}$)"
         $$
@@ -1272,6 +1344,7 @@ This section contains complete intersections inside this geometric family, syste
         \end{matrix}
         $$
 
+
 ---
 
 <span id="p6o3o3"></span>
@@ -1284,8 +1357,9 @@ This section contains complete intersections inside this geometric family, syste
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 13608 & 6244776 & 1637648928 & 122790427200\\1 & 144 & 80352 & 21464352 & 1637648928\\0 & 1 & 261 & 80352 & 6244776\\0 & 0 & 1 & 144 & 13608\\0 & 0 & 0 & 1 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 13608 & 6244776 & 1637648928 & 122790427200\\1 & 144 & 80352 & 21464352 & 1637648928\\0 & 1 & 261 & 80352 & 6244776\\0 & 0 & 1 & 144 & 13608\\0 & 0 & 0 & 1 & 0\end{bmatrix}
         $$
+
 
     ??? note "Hodge Diamond ($h^{p,q}$)"
         $$
@@ -1302,6 +1376,7 @@ This section contains complete intersections inside this geometric family, syste
         \end{matrix}
         $$
 
+
 ---
 
 <span id="p6o2o4"></span>
@@ -1314,8 +1389,9 @@ This section contains complete intersections inside this geometric family, syste
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 25632 & 16464384 & 6088232448 & 607435407360\\1 & 208 & 159328 & 60008448 & 6088232448\\0 & 1 & 368 & 159328 & 16464384\\0 & 0 & 1 & 208 & 25632\\0 & 0 & 0 & 1 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 25632 & 16464384 & 6088232448 & 607435407360\\1 & 208 & 159328 & 60008448 & 6088232448\\0 & 1 & 368 & 159328 & 16464384\\0 & 0 & 1 & 208 & 25632\\0 & 0 & 0 & 1 & 0\end{bmatrix}
         $$
+
 
     ??? note "Hodge Diamond ($h^{p,q}$)"
         $$
@@ -1332,6 +1408,7 @@ This section contains complete intersections inside this geometric family, syste
         \end{matrix}
         $$
 
+
 ---
 
 <span id="p7o2o2o3"></span>
@@ -1344,8 +1421,9 @@ This section contains complete intersections inside this geometric family, syste
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 5328 & 1427328 & 230750208 & 11257159680\\1 & 84 & 28152 & 4643136 & 230750208\\0 & 1 & 144 & 28152 & 1427328\\0 & 0 & 1 & 84 & 5328\\0 & 0 & 0 & 1 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 5328 & 1427328 & 230750208 & 11257159680\\1 & 84 & 28152 & 4643136 & 230750208\\0 & 1 & 144 & 28152 & 1427328\\0 & 0 & 1 & 84 & 5328\\0 & 0 & 0 & 1 & 0\end{bmatrix}
         $$
+
 
     ??? note "Hodge Diamond ($h^{p,q}$)"
         $$
@@ -1361,6 +1439,7 @@ This section contains complete intersections inside this geometric family, syste
          &  &  &  & 1 &  &  &  &  \\
         \end{matrix}
         $$
+
 
 ---
 
@@ -1388,8 +1467,9 @@ This section contains complete intersections inside this geometric family, syste
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 0 & 0 & 4\\4 & 0 & 0 & 0\\0 & 4 & 0 & 0\\0 & 0 & 4 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 0 & 0 & 4\\4 & 0 & 0 & 0\\0 & 4 & 0 & 0\\0 & 0 & 4 & 0\end{bmatrix}
         $$
+
 
 ---
 
@@ -1403,8 +1483,9 @@ This section contains complete intersections inside this geometric family, syste
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 0 & 6 & 0\\3 & 0 & 0 & 6\\0 & 3 & 0 & 0\\0 & 0 & 3 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 0 & 6 & 0\\3 & 0 & 0 & 6\\0 & 3 & 0 & 0\\0 & 0 & 3 & 0\end{bmatrix}
         $$
+
 
     ??? note "Hodge Diamond ($h^{p,q}$)"
         $$
@@ -1419,6 +1500,7 @@ This section contains complete intersections inside this geometric family, syste
         \end{matrix}
         $$
 
+
 ---
 
 <span id="p4o3"></span>
@@ -1431,8 +1513,9 @@ This section contains complete intersections inside this geometric family, syste
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 12 & 0 & 72\\2 & 0 & 30 & 0\\0 & 2 & 0 & 12\\0 & 0 & 2 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 12 & 0 & 72\\2 & 0 & 30 & 0\\0 & 2 & 0 & 12\\0 & 0 & 2 & 0\end{bmatrix}
         $$
+
 
     ??? note "Hodge Diamond ($h^{p,q}$)"
         $$
@@ -1447,6 +1530,7 @@ This section contains complete intersections inside this geometric family, syste
         \end{matrix}
         $$
 
+
 ---
 
 <span id="p5o2o2"></span>
@@ -1459,8 +1543,9 @@ This section contains complete intersections inside this geometric family, syste
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 8 & 0 & 32\\2 & 0 & 16 & 0\\0 & 2 & 0 & 8\\0 & 0 & 2 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 8 & 0 & 32\\2 & 0 & 16 & 0\\0 & 2 & 0 & 8\\0 & 0 & 2 & 0\end{bmatrix}
         $$
+
 
     ??? note "Hodge Diamond ($h^{p,q}$)"
         $$
@@ -1475,6 +1560,7 @@ This section contains complete intersections inside this geometric family, syste
         \end{matrix}
         $$
 
+
 ---
 
 <span id="p4o4"></span>
@@ -1487,8 +1573,9 @@ This section contains complete intersections inside this geometric family, syste
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 3888 & 504576 & 18323712\\1 & 80 & 13600 & 504576\\0 & 1 & 80 & 3888\\0 & 0 & 1 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 3888 & 504576 & 18323712\\1 & 80 & 13600 & 504576\\0 & 1 & 80 & 3888\\0 & 0 & 1 & 0\end{bmatrix}
         $$
+
 
     ??? note "Hodge Diamond ($h^{p,q}$)"
         $$
@@ -1503,6 +1590,7 @@ This section contains complete intersections inside this geometric family, syste
         \end{matrix}
         $$
 
+
 ---
 
 <span id="p5o2o3"></span>
@@ -1515,8 +1603,9 @@ This section contains complete intersections inside this geometric family, syste
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 792 & 43632 & 793152\\1 & 30 & 2340 & 43632\\0 & 1 & 30 & 792\\0 & 0 & 1 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 792 & 43632 & 793152\\1 & 30 & 2340 & 43632\\0 & 1 & 30 & 792\\0 & 0 & 1 & 0\end{bmatrix}
         $$
+
 
     ??? note "Hodge Diamond ($h^{p,q}$)"
         $$
@@ -1531,6 +1620,7 @@ This section contains complete intersections inside this geometric family, syste
         \end{matrix}
         $$
 
+
 ---
 
 <span id="p6o2o2o2"></span>
@@ -1543,8 +1633,9 @@ This section contains complete intersections inside this geometric family, syste
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 304 & 9984 & 121088\\1 & 16 & 800 & 9984\\0 & 1 & 16 & 304\\0 & 0 & 1 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 304 & 9984 & 121088\\1 & 16 & 800 & 9984\\0 & 1 & 16 & 304\\0 & 0 & 1 & 0\end{bmatrix}
         $$
+
 
     ??? note "Hodge Diamond ($h^{p,q}$)"
         $$
@@ -1558,6 +1649,7 @@ This section contains complete intersections inside this geometric family, syste
          &  &  & 1 &  &  &  \\
         \end{matrix}
         $$
+
 
 ---
 
@@ -1583,8 +1675,9 @@ This section contains complete intersections inside this geometric family, syste
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 0 & 3\\3 & 0 & 0\\0 & 3 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 0 & 3\\3 & 0 & 0\\0 & 3 & 0\end{bmatrix}
         $$
+
 
 ---
 
@@ -1598,8 +1691,9 @@ This section contains complete intersections inside this geometric family, syste
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 0 & 3\\3 & 0 & 0\\0 & 3 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 0 & 3\\3 & 0 & 0\\0 & 3 & 0\end{bmatrix}
         $$
+
 
 ---
 
@@ -1613,8 +1707,9 @@ This section contains complete intersections inside this geometric family, syste
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 4 & 0\\2 & 0 & 4\\0 & 2 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 4 & 0\\2 & 0 & 4\\0 & 2 & 0\end{bmatrix}
         $$
+
 
     ??? note "Hodge Diamond ($h^{p,q}$)"
         $$
@@ -1626,6 +1721,7 @@ This section contains complete intersections inside this geometric family, syste
          &  & 1 &  &  \\
         \end{matrix}
         $$
+
 
 ---
 
@@ -1639,8 +1735,9 @@ This section contains complete intersections inside this geometric family, syste
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 108 & 756\\1 & 9 & 108\\0 & 1 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 108 & 756\\1 & 9 & 108\\0 & 1 & 0\end{bmatrix}
         $$
+
 
     ??? note "Hodge Diamond ($h^{p,q}$)"
         $$
@@ -1652,6 +1749,7 @@ This section contains complete intersections inside this geometric family, syste
          &  & 1 &  &  \\
         \end{matrix}
         $$
+
 
 ---
 
@@ -1665,8 +1763,9 @@ This section contains complete intersections inside this geometric family, syste
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 40 & 192\\1 & 4 & 40\\0 & 1 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 40 & 192\\1 & 4 & 40\\0 & 1 & 0\end{bmatrix}
         $$
+
 
     ??? note "Hodge Diamond ($h^{p,q}$)"
         $$
@@ -1678,6 +1777,7 @@ This section contains complete intersections inside this geometric family, syste
          &  & 1 &  &  \\
         \end{matrix}
         $$
+
 
 ---
 
@@ -1699,8 +1799,9 @@ This section contains complete intersections inside this geometric family, syste
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \left[\begin{matrix}0 & 4\\1 & 0\end{matrix}\right]
+        \begin{bmatrix}0 & 4\\1 & 0\end{bmatrix}
         $$
+
 
     ??? note "Hodge Diamond ($h^{p,q}$)"
         $$
@@ -1710,6 +1811,7 @@ This section contains complete intersections inside this geometric family, syste
          & 1 &  \\
         \end{matrix}
         $$
+
 
 ---
 
