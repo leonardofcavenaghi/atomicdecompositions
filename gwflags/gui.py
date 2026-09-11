@@ -311,9 +311,7 @@ button:hover { background: var(--acc-hover); transform: translateY(-1px); }
 button.secondary { background: var(--panel); border: 1px solid var(--edge); color: var(--fg); box-shadow: none; }
 button.secondary:hover { background: #27272a; }
 button:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
-#gwbox { 
-  border-top: 1px solid var(--edge); margin-top: 24px; padding-top: 8px; 
-}
+#gwbox { margin-top: 0; padding-top: 20px; }
 #log { 
   margin-top: 24px; padding: 12px 16px; background: #000;
   border: 1px solid var(--edge); border-radius: var(--radius); max-height: 250px;
@@ -349,32 +347,50 @@ sup { font-size: 10px; font-weight: 600; }
 varieties — G/P and complete intersections</span></header>
 <main>
 <div id="controls">
-  <label>Preset</label>
-  <select id="preset"><option value="">— choose an example —</option></select>
-  <label>Algebra</label>
-  <input id="algebra" value="A2" placeholder="A2, B3, A3xA3, G2 ...">
-  <div class="row">
-    <div><label>Kept simple roots</label>
-      <input id="keep" value="1" placeholder="e.g. 1,2"></div>
-    <div><label>Bundle K (rows ; entries ,)</label>
-      <input id="K" placeholder="e.g. 1,1;2,2"></div>
+  <div class="control-card">
+    <div class="card-header">1. Space Definition</div>
+    <label>Preset Library</label>
+    <select id="preset"><option value="">— choose a pre-configured example —</option></select>
+    <label>Lie Algebra</label>
+    <input id="algebra" value="A2" placeholder="e.g., A2, B3, A3xA3, G2">
+    <div class="row">
+      <div>
+        <label>Kept Simple Roots</label>
+        <input id="keep" value="1" placeholder="e.g., 1,2">
+      </div>
+      <div>
+        <label>Twisting Bundle K</label>
+        <input id="K" placeholder="e.g., taut_quot(X, 2) or 1,1;2,2">
+      </div>
+    </div>
   </div>
-  <div class="row">
-    <div><label>Evaluate y (e.g. y1=2)</label>
-      <input id="eval_y" placeholder="y1=2, y2=-1"></div>
-    <div><label>Workers</label>
-      <input id="workers" value="8"></div><div></div>
+
+  <div class="control-card">
+    <div class="card-header">2. Execution Options</div>
+    <div class="row">
+      <div>
+        <label>Evaluate y (Novikov)</label>
+        <input id="eval_y" placeholder="e.g., y1=2, y2=-1">
+      </div>
+      <div>
+        <label>Parallel Workers</label>
+        <input id="workers" value="8">
+      </div>
+    </div>
+    <button id="bsqm" class="primary-btn">Compute c&#8321;(TX)&#8902; Matrix</button>
+    <button id="binfo" class="secondary">View Space Info</button>
   </div>
-  <button id="bsqm">c&#8321;(TX)&#8902; matrix</button>
-  <button id="binfo" class="secondary">Info</button>
-  <div id="gwbox">
-    <label>GW invariant — curve class &beta;</label>
-    <input id="beta" placeholder="one integer per simple root, e.g. 1,0">
-    <label>Insertions (words | pt | id, separated by |)</label>
-    <input id="classes" placeholder="pt|pt   or   2|1 3 2|pt">
-    <button id="bgw" class="secondary">Compute invariant</button>
+
+  <div class="control-card" id="gwbox">
+    <div class="card-header">3. GW Invariants (Advanced)</div>
+    <label>Curve Class &beta;</label>
+    <input id="beta" placeholder="one integer per root, e.g., 1,0">
+    <label>Insertions (separated by |)</label>
+    <input id="classes" placeholder="e.g., pt | id | 2,1,3">
+    <button id="bgw" class="secondary" style="width:100%; margin-top:12px;">Compute Invariant</button>
   </div>
-  <div id="log">ready.</div>
+  
+  <div id="log">System ready. Waiting for input...</div>
 </div>
 <div id="results"><h2>Results</h2>
 <div id="out" style="color:var(--dim)">Pick a preset (or describe a flag
