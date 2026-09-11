@@ -10,11 +10,11 @@ Specifically, for a complete intersection defined by a homogeneous vector bundle
 
 
 
-## 2. Atiyah-Bott Equivariant Localization
+## 2. Virtual Localization (Graber-Pandharipande)
 
 Directly integrating Gromov-Witten classes over the moduli space of stable maps is generally computationally infeasible. Instead, `gwflags` relies on the algebraic torus action $T \subset G$ acting on the flag variety $F = G/P$ and the corresponding induced action on the moduli space of maps.
 
-By applying the **Atiyah-Bott Localization Theorem**, the integrals are reduced to finite sums over the $T$-fixed loci of the moduli space. The fixed loci correspond to decorated trees (or graphs) where:
+By applying the **Graber-Pandharipande Virtual Localization Theorem**, the integrals are reduced to finite sums over the $T$-fixed loci of the moduli space. The fixed loci correspond to decorated trees (or graphs) where:
 - Vertices map to fixed points of $F$ (which are in bijection with the Weyl group quotient $W/W_P$).
 - Edges correspond to invariant curves connecting these fixed points.
 
@@ -63,9 +63,9 @@ For $d=1$, we get 1 line through 2 points. For $d=2$, we get 1 conic through 5 p
 ### Quantum Cohomology
 Gromov-Witten invariants allow us to "deform" the classical cohomology ring $H^*(X)$ into the **Quantum Cohomology Ring** $QH^*(X)$.
 
-In classical cohomology, the cup product $\alpha \cup \beta$ simply intersects two subvarieties. In quantum cohomology, the **quantum cup product** $\alpha \star \beta$ introduces quantum corrections that count rational curves (genus $g=0$) intersecting $\alpha$, $\beta$, and a third class $\gamma$. The 3-point Gromov-Witten invariants $\langle \alpha, \beta, \gamma \rangle_{0, \beta}$ act precisely as the structure constants for this new quantum multiplication.
+In classical cohomology, the cup product $\alpha \cup \beta$ simply intersects two subvarieties. In quantum cohomology, the **quantum cup product** $\alpha \star \beta$ introduces quantum corrections that count rational curves (genus $g=0$) intersecting $\alpha$, $\delta$, and a third class $\gamma$. The 3-point Gromov-Witten invariants $\langle \alpha, \delta, \gamma \rangle_{0, \beta}$ act precisely as the structure constants for this new quantum multiplication.
 
 ### Why `gwflags` Computes $c_1(TX) \star (-)$
 The software specializes in computing the quantum multiplication by a very specific class: the first Chern class of the tangent bundle, $c_1(TX)$. 
 
-The matrix representing the linear operator $c_1(TX) \star (-)$ is called the **Small Quantum Multiplication Matrix**. The eigenvalues of this matrix directly control the asymptotic behavior of the solutions to the quantum differential equation (the quantum connection). By extracting these eigenvalues, researchers can test rationality criteria relating the spectrum of $c_1(TX) \star (-)$ to the geometric space $X$.
+The matrix representing the linear operator $c_1(TX) \star (-)$ is known as the **Principal Quantum Multiplication Matrix**. The eigenvalues of this matrix directly control the asymptotic behavior of the solutions to the quantum differential equation (the quantum connection). By extracting these eigenvalues, researchers can test rationality criteria relating the spectrum of $c_1(TX) \star (-)$ to the geometric space $X$.
