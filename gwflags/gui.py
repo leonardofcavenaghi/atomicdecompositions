@@ -470,7 +470,7 @@ function render(action,res){
             fmt(Math.abs(im))+'i'):'');
           h+='<td class="'+(i===0?'dom':'')+'">'+s+'</td>'; });
         h+='</tr></table><div style="color:var(--dim);font-size:12px">'+
-           'first entry = spectral radius (Conjecture O: real &amp; simple).'+
+           'first entry = spectral radius (real &amp; simple).'+
            '</div>';
     }
   }

@@ -241,7 +241,7 @@ class FlagVariety:
 
     def eigenvalues(self, mat, at_one=False):
         """Eigenvalues of a quantum-multiplication matrix; with at_one=True
-        the quantum variables y_i are set to 1 first (Conjecture O)."""
+        the quantum variables y_i are set to 1 first."""
         if at_one:
             subs = {}
             for row in mat:
