@@ -833,10 +833,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-atiyah-bott-equivariant-localization" class="md-nav__link">
+  <a href="#2-virtual-localization-graber-pandharipande" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Atiyah-Bott Equivariant Localization
+        2. Virtual Localization (Graber-Pandharipande)
       
     </span>
   </a>
@@ -1060,9 +1060,9 @@
 <h2 id="1-goal-of-the-software">1. Goal of the Software<a class="headerlink" href="#1-goal-of-the-software" title="Permanent link">&para;</a></h2>
 <p>The <code>gwflags</code> library computes the <strong>small quantum multiplication by the first Chern class</strong>, <span class="arithmatex">\(c_1(TX) \star (-)\)</span>, for complete intersections <span class="arithmatex">\(X\)</span> in flag varieties. This operator is crucial in understanding the spectral properties of the quantum connection and irrationality obstructions.</p>
 <p>Specifically, for a complete intersection defined by a homogeneous vector bundle <span class="arithmatex">\(\mathcal{E}\)</span> on an ambient flag variety <span class="arithmatex">\(F = G/P\)</span>, the software evaluates the equivariant Gromov-Witten invariants and constructs the small quantum multiplication matrix projected onto the flag-ambient cohomology <span class="arithmatex">\(H^*_{\text{amb}}(X)\)</span>.</p>
-<h2 id="2-atiyah-bott-equivariant-localization">2. Atiyah-Bott Equivariant Localization<a class="headerlink" href="#2-atiyah-bott-equivariant-localization" title="Permanent link">&para;</a></h2>
+<h2 id="2-virtual-localization-graber-pandharipande">2. Virtual Localization (Graber-Pandharipande)<a class="headerlink" href="#2-virtual-localization-graber-pandharipande" title="Permanent link">&para;</a></h2>
 <p>Directly integrating Gromov-Witten classes over the moduli space of stable maps is generally computationally infeasible. Instead, <code>gwflags</code> relies on the algebraic torus action <span class="arithmatex">\(T \subset G\)</span> acting on the flag variety <span class="arithmatex">\(F = G/P\)</span> and the corresponding induced action on the moduli space of maps.</p>
-<p>By applying the <strong>Atiyah-Bott Localization Theorem</strong>, the integrals are reduced to finite sums over the <span class="arithmatex">\(T\)</span>-fixed loci of the moduli space. The fixed loci correspond to decorated trees (or graphs) where:
+<p>By applying the <strong>Graber-Pandharipande Virtual Localization Theorem</strong>, the integrals are reduced to finite sums over the <span class="arithmatex">\(T\)</span>-fixed loci of the moduli space. The fixed loci correspond to decorated trees (or graphs) where:
 - Vertices map to fixed points of <span class="arithmatex">\(F\)</span> (which are in bijection with the Weyl group quotient <span class="arithmatex">\(W/W_P\)</span>).
 - Edges correspond to invariant curves connecting these fixed points.</p>
 <p>The software recursively generates these graphs for a given curve degree <span class="arithmatex">\(\beta\)</span>, calculates the equivariant Euler classes of the virtual normal bundles (using the roots of <span class="arithmatex">\(G\)</span> and weights of <span class="arithmatex">\(\mathcal{E}\)</span>), and computes the intersection numbers programmatically. </p>
@@ -1093,10 +1093,10 @@ $$ \langle \text{point}, \text{point} \rangle_{0, 1} = 1 $$</p>
 For <span class="arithmatex">\(d=1\)</span>, we get 1 line through 2 points. For <span class="arithmatex">\(d=2\)</span>, we get 1 conic through 5 points. For <span class="arithmatex">\(d=3\)</span>, we get 12 nodal cubics through 8 points. These values (<span class="arithmatex">\(1, 1, 12, \dots\)</span>) are all Gromov-Witten invariants.</p>
 <h3 id="quantum-cohomology">Quantum Cohomology<a class="headerlink" href="#quantum-cohomology" title="Permanent link">&para;</a></h3>
 <p>Gromov-Witten invariants allow us to "deform" the classical cohomology ring <span class="arithmatex">\(H^*(X)\)</span> into the <strong>Quantum Cohomology Ring</strong> <span class="arithmatex">\(QH^*(X)\)</span>.</p>
-<p>In classical cohomology, the cup product <span class="arithmatex">\(\alpha \cup \beta\)</span> simply intersects two subvarieties. In quantum cohomology, the <strong>quantum cup product</strong> <span class="arithmatex">\(\alpha \star \beta\)</span> introduces quantum corrections that count rational curves (genus <span class="arithmatex">\(g=0\)</span>) intersecting <span class="arithmatex">\(\alpha\)</span>, <span class="arithmatex">\(\beta\)</span>, and a third class <span class="arithmatex">\(\gamma\)</span>. The 3-point Gromov-Witten invariants <span class="arithmatex">\(\langle \alpha, \beta, \gamma \rangle_{0, \beta}\)</span> act precisely as the structure constants for this new quantum multiplication.</p>
+<p>In classical cohomology, the cup product <span class="arithmatex">\(\alpha \cup \beta\)</span> simply intersects two subvarieties. In quantum cohomology, the <strong>quantum cup product</strong> <span class="arithmatex">\(\alpha \star \beta\)</span> introduces quantum corrections that count rational curves (genus <span class="arithmatex">\(g=0\)</span>) intersecting <span class="arithmatex">\(\alpha\)</span>, <span class="arithmatex">\(\delta\)</span>, and a third class <span class="arithmatex">\(\gamma\)</span>. The 3-point Gromov-Witten invariants <span class="arithmatex">\(\langle \alpha, \delta, \gamma \rangle_{0, \beta}\)</span> act precisely as the structure constants for this new quantum multiplication.</p>
 <h3 id="why-gwflags-computes-c_1tx-star-">Why <code>gwflags</code> Computes <span class="arithmatex">\(c_1(TX) \star (-)\)</span><a class="headerlink" href="#why-gwflags-computes-c_1tx-star-" title="Permanent link">&para;</a></h3>
 <p>The software specializes in computing the quantum multiplication by a very specific class: the first Chern class of the tangent bundle, <span class="arithmatex">\(c_1(TX)\)</span>. </p>
-<p>The matrix representing the linear operator <span class="arithmatex">\(c_1(TX) \star (-)\)</span> is called the <strong>Small Quantum Multiplication Matrix</strong>. The eigenvalues of this matrix directly control the asymptotic behavior of the solutions to the quantum differential equation (the quantum connection). By extracting these eigenvalues, researchers can test rationality criteria relating the spectrum of <span class="arithmatex">\(c_1(TX) \star (-)\)</span> to the geometric space <span class="arithmatex">\(X\)</span>.</p>
+<p>The matrix representing the linear operator <span class="arithmatex">\(c_1(TX) \star (-)\)</span> is known as the <strong>Principal Quantum Multiplication Matrix</strong>. The eigenvalues of this matrix directly control the asymptotic behavior of the solutions to the quantum differential equation (the quantum connection). By extracting these eigenvalues, researchers can test rationality criteria relating the spectrum of <span class="arithmatex">\(c_1(TX) \star (-)\)</span> to the geometric space <span class="arithmatex">\(X\)</span>.</p>
 
 
 

@@ -1063,14 +1063,14 @@
 <h3 id="rootsystemdata"><code>RootSystemData</code><a class="headerlink" href="#rootsystemdata" title="Permanent link">&para;</a></h3>
 <p>A class that encapsulates all Lie-algebra data, computing exactly with rational fractions (<code>fractions.Fraction</code>):
 - <strong>Simple and Positive Roots</strong>: Generates the orthogonal realizations (Bourbaki numbering) and computes positive roots in both the <span class="arithmatex">\(\alpha\)</span>-basis and orthogonal coordinates.
-- <strong>Cartan Matrix &amp; Reflection Matrices</strong>: Computes the Cartan matrix <span class="arithmatex">\(A_{ij} = 2 (\alpha_i, \alpha_j) / (\alpha_j, \alpha_j)\)</span> and its inverse (used for fundamental weights), as well as reflection matrices for simple roots.
-- <strong>Coroots</strong>: Calculates the integer coordinates of coroots <span class="arithmatex">\(\beta^\vee\)</span>.</p>
+- <strong>Cartan Matrix &amp; Reflection Matrices</strong>: Computes the Cartan matrix <span class="arithmatex">\(A_{ij} = 2 (\alpha_i, \alpha_j) / (\alpha_j, \alpha_j)\)</span> (note this strictly follows the Humphreys convention) and its inverse (used for fundamental weights), as well as reflection matrices for simple roots.
+- <strong>Coroots</strong>: Calculates the coordinates of coroots <span class="arithmatex">\(\beta^\vee\)</span> in the basis of simple roots (these are fractional for non-simply-laced algebras).</p>
 <h2 id="2-bott-localization-core-gwflagslocalizationpy">2. Bott Localization Core (<code>gwflags/localization.py</code>)<a class="headerlink" href="#2-bott-localization-core-gwflagslocalizationpy" title="Permanent link">&para;</a></h2>
 <p>The localization module translates the <code>V3.nb</code> Mathematica notebook's localization algorithms (such as Billey's formula and the graph sum) into Python.</p>
 <h3 id="gwcalculator"><code>GWCalculator</code><a class="headerlink" href="#gwcalculator" title="Permanent link">&para;</a></h3>
 <p>The main class orchestrating the computation of Gromov-Witten invariants for a given Lie algebra <span class="arithmatex">\(G\)</span> and parabolic subgroup <span class="arithmatex">\(P\)</span>.
 - <strong><code>rfactor(w)</code></strong>: Computes the local Euler factor <span class="arithmatex">\(R(w) = \prod_{\beta \in R^+ \setminus R^+_P} (-x_{w.\beta})\)</span>.
-- <strong><code>billey(shubert, vertex)</code></strong>: Computes the restriction of the equivariant Schubert class <span class="arithmatex">\(\sigma_{\text{shubert}}\)</span> to a fixed point <code>vertex</code> using Billey's formula.
+- <strong><code>billey(schubert, vertex)</code></strong>: Computes the restriction of the equivariant Schubert class <span class="arithmatex">\(\sigma_{\text{schubert}}\)</span> to a fixed point <code>vertex</code> using Billey's formula.
 - <strong><code>omega_lie(w, root_idx, d)</code></strong>: Computes the edge factor <span class="arithmatex">\(h\)</span>-function of an edge leaving vertex <span class="arithmatex">\(w\)</span> with a specific root and degree.
 - <strong><code>kappa_gamma(dt)</code> &amp; <code>i_vertex(dt, v)</code></strong>: Compute the edge/vertex weights of a given decorated tree.
 - <strong><code>gw_invariant(coh_classes, beta)</code></strong>: Computes the final equivariant localization sum by summing over all valid decorated trees.</p>
@@ -1078,7 +1078,7 @@
 <p>This module implements localization twisted by the Euler class of a bundle <span class="arithmatex">\(E\)</span>, representing the complete-intersection sector. </p>
 <ul>
 <li><strong><code>euler_complete_intersection(gw, K, w)</code></strong>: Computes the Euler class <span class="arithmatex">\(e(E)\)</span> at the fixed point <span class="arithmatex">\(w\)</span>.</li>
-<li><strong><code>h_complete_intersection(gw, K, w, root_idx, d)</code></strong>: Computes the edge factor <span class="arithmatex">\(e(H^0(f^*E))\)</span> for an edge leaving <span class="arithmatex">\(w\)</span>. Concave summands (where the splitting degree <span class="arithmatex">\(b &lt; 0\)</span>) are rejected, as the twisted genus-0 theory requires curve-wise global generation.</li>
+<li><strong><code>h_complete_intersection(gw, K, w, root_idx, d)</code></strong>: Computes the edge factor <span class="arithmatex">\(e(H^0(\mathbb{P}^1, f^*E \otimes \mathcal{O}(-2))) (the moving part of the virtual bundle)\)</span> for an edge leaving <span class="arithmatex">\(w\)</span>. Concave summands (where the splitting degree <span class="arithmatex">\(b &lt; 0\)</span>) are rejected, as the twisted genus-0 theory requires curve-wise global generation.</li>
 <li><strong><code>gw_complete_intersection(gw, coh_classes, beta, K)</code></strong>: Executes the twisted localization sum by injecting the appropriate multiplicative twists into <code>GWCalculator.gw_invariant</code>.</li>
 </ul>
 <h2 id="4-main-interface-gwflags__init__py">4. Main Interface (<code>gwflags/__init__.py</code>)<a class="headerlink" href="#4-main-interface-gwflags__init__py" title="Permanent link">&para;</a></h2>
