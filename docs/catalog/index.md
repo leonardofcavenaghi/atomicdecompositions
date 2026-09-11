@@ -18,7 +18,6 @@ $(document).ready( function () {
 |---|---|---|---|---|
 | [P3  Fano index 4](projective.md#p3fanoindex4) | A3 | 3 | 4 | 4 |
 | [P2 Fano index 3](projective.md#p2fanoindex3) | A2 | 2 | 3 | 3 |
-| [P2  Fano index 3](projective.md#p2fanoindex3) | A2 | 2 | 3 | 3 |
 | [P2 / O(2)](projective.md#p2o2) | A2 | 1 | 1 | 3 |
 | [P4  Fano index 5](projective.md#p4fanoindex5) | A4 | 4 | 5 | 5 |
 | [P3 / O(2)](projective.md#p3o2) | A3 | 2 | 2 | 4 |
