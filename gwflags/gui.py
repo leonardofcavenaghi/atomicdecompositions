@@ -123,21 +123,48 @@ def run_job(job, kind, params):
             result['beta'] = list(beta)
 
         elif kind == 'sqm':
+            import sympy
             workers = int(params.get('workers') or 0)
             fano, betas = X.fano_index_and_betas(K or None)
             log(f'Fano index {fano}; {len(betas)} curve classes '
                 f'(max degree {max(sum(b) for b in betas)})')
             M, Gr, idx = X.small_quantum_multiplication(
                 K or None, betas, progress=log, workers=workers)
-            log(f'matrix assembled in {time.time() - t0:.1f}s; '
-                'extracting spectrum at y=1 ...')
-            ev = spectrum_at_one(M)
+            
+            eval_y = params.get('eval_y', '').strip()
+            eval_dict = {}
+            if eval_y:
+                for pair in eval_y.split(','):
+                    if '=' in pair:
+                        k, v = pair.split('=')
+                        eval_dict[sympy.Symbol(k.strip())] = sympy.sympify(v.strip())
+            
+            if eval_dict:
+                log(f'matrix assembled in {time.time() - t0:.1f}s; evaluating at {eval_y} ...')
+                M = [[sympy.sympify(val).subs(eval_dict) if hasattr(val, 'free_symbols') or isinstance(val, str) else val for val in row] for row in M]
+            else:
+                log(f'matrix assembled in {time.time() - t0:.1f}s; keeping symbolic variables ...')
+            
+            # Compute Characteristic Polynomial
+            log('computing characteristic polynomial ...')
+            lam = sympy.Symbol('lambda')
+            sympy_M = sympy.Matrix(M)
+            char_poly = sympy_M.charpoly(lam).as_expr()
+            
             result['fano'] = fano
             result['n_betas'] = len(betas)
             result['basis_indices'] = idx
             result['matrix'] = [[str(v) for v in row] for row in M]
             result['grading'] = [str(Gr[a][a]) for a in range(len(Gr))]
-            result['eigenvalues'] = [[z.real, z.imag] for z in ev]
+            result['char_poly'] = str(char_poly)
+            
+            # Only compute eigenvalues if not evaluated custom (to avoid complex root finding hangups)
+            try:
+                ev = spectrum_at_one(M) if not eval_dict else []
+            except Exception as e:
+                log(f"could not compute eigenvalues: {e}")
+                ev = []
+            result['eigenvalues'] = [[z.real, z.imag] for z in ev] if ev else []
         else:
             raise ValueError(f'unknown action {kind!r}')
 
@@ -273,6 +300,8 @@ varieties — G/P and complete intersections</span></header>
       <input id="K" placeholder="e.g. 1,1;2,2"></div>
   </div>
   <div class="row">
+    <div><label>Evaluate y (e.g. y1=2)</label>
+      <input id="eval_y" placeholder="y1=2, y2=-1"></div>
     <div><label>Workers</label>
       <input id="workers" value="8"></div><div></div>
   </div>
@@ -307,7 +336,7 @@ $('preset').onchange = ()=>{ const p=window._presets[$('preset').value];
 let timer=null;
 function run(action){
   const params={action, algebra:$('algebra').value, keep:$('keep').value,
-    K:$('K').value, workers:$('workers').value,
+    K:$('K').value, eval_y:$('eval_y').value, workers:$('workers').value,
     beta:$('beta').value, classes:$('classes').value};
   ['bsqm','binfo','bgw'].forEach(b=>$(b).disabled=true);
   $('log').textContent='starting...';
@@ -353,16 +382,21 @@ function render(action,res){
       row.forEach(v=>h+='<td>'+pretty(v)+'</td>'); h+='</tr>'; });
     h+='</table>';
     h+='<h2>Grading</h2><div>diag('+res.grading.join(', ')+')</div>';
-    h+='<h2>Eigenvalues at y = 1</h2><table><tr>';
-    res.eigenvalues.forEach(([re,im],i)=>{
-      const fmt=x=>{ let t=x.toFixed(4).replace(/\.?0+$/,'');
-        return (t===''||t==='-0')?'0':t; };
-      const s=fmt(re)+(Math.abs(im)>1e-6?((im>0?' + ':' − ')+
-        fmt(Math.abs(im))+'i'):'');
-      h+='<td class="'+(i===0?'dom':'')+'">'+s+'</td>'; });
-    h+='</tr></table><div style="color:var(--dim);font-size:12px">'+
-       'first entry = spectral radius (Conjecture O: real &amp; simple).'+
-       '</div>';
+    if (res.char_poly) {
+        h+='<h2>Characteristic Polynomial</h2><div style="padding: 10px; background: var(--panel); border: 1px solid var(--edge); font:13px ui-monospace,Menlo,monospace;">'+pretty(res.char_poly)+'</div>';
+    }
+    if (res.eigenvalues && res.eigenvalues.length > 0) {
+        h+='<h2>Eigenvalues</h2><table><tr>';
+        res.eigenvalues.forEach(([re,im],i)=>{
+          const fmt=x=>{ let t=x.toFixed(4).replace(/\.?0+$/,'');
+            return (t===''||t==='-0')?'0':t; };
+          const s=fmt(re)+(Math.abs(im)>1e-6?((im>0?' + ':' − ')+
+            fmt(Math.abs(im))+'i'):'');
+          h+='<td class="'+(i===0?'dom':'')+'">'+s+'</td>'; });
+        h+='</tr></table><div style="color:var(--dim);font-size:12px">'+
+           'first entry = spectral radius (Conjecture O: real &amp; simple).'+
+           '</div>';
+    }
   }
   $('out').innerHTML=h;
 }
