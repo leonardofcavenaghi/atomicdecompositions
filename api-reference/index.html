@@ -916,6 +916,34 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#4-main-interface-gwflags__init__py" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Main Interface (gwflags/__init__.py)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Main Interface (gwflags/__init__.py)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#flagvariety" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FlagVariety
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1053,6 +1081,16 @@
 <li><strong><code>h_complete_intersection(gw, K, w, root_idx, d)</code></strong>: Computes the edge factor <span class="arithmatex">\(e(H^0(f^*E))\)</span> for an edge leaving <span class="arithmatex">\(w\)</span>. Concave summands (where the splitting degree <span class="arithmatex">\(b &lt; 0\)</span>) are rejected, as the twisted genus-0 theory requires curve-wise global generation.</li>
 <li><strong><code>gw_complete_intersection(gw, coh_classes, beta, K)</code></strong>: Executes the twisted localization sum by injecting the appropriate multiplicative twists into <code>GWCalculator.gw_invariant</code>.</li>
 </ul>
+<h2 id="4-main-interface-gwflags__init__py">4. Main Interface (<code>gwflags/__init__.py</code>)<a class="headerlink" href="#4-main-interface-gwflags__init__py" title="Permanent link">&para;</a></h2>
+<p>The main entrypoint for the library is the <code>FlagVariety</code> class, which wraps the underlying Lie algebra structures and localization calculators into a unified, high-level interface.</p>
+<h3 id="flagvariety"><code>FlagVariety</code><a class="headerlink" href="#flagvariety" title="Permanent link">&para;</a></h3>
+<p>Represents a specific complex flag variety <span class="arithmatex">\(G/P\)</span> or a complete intersection inside it.</p>
+<ul>
+<li><strong><code>__init__(self, algebra, roots_that_stay, backend=None)</code></strong>: Initializes the geometry. <code>algebra</code> is the Cartan type (e.g. <code>"A4"</code>), and <code>roots_that_stay</code> defines the parabolic subgroup <span class="arithmatex">\(P\)</span> by specifying which nodes of the Dynkin diagram are kept (1-indexed).</li>
+<li><strong><code>gw(self, coh_classes, beta, K=None)</code></strong>: Computes the Gromov-Witten invariant <span class="arithmatex">\(\langle \sigma_{u_1}, \dots, \sigma_{u_k} \rangle_{0, k, \beta}\)</span> exactly as a rational fraction. If a vector bundle <code>K</code> is provided, computes the twisted invariant for the complete intersection.</li>
+<li><strong><code>fano_index_and_betas(self, K=None)</code></strong>: Computes the Fano index <span class="arithmatex">\(I_X\)</span> of the geometry (or complete intersection) and returns a list of curve degrees <span class="arithmatex">\(\beta\)</span> required for the small quantum multiplication matrix.</li>
+<li><strong><code>small_quantum_multiplication(self, K=None)</code></strong>: Computes the full <span class="arithmatex">\(c_1(TX) \star (-)\)</span> small quantum multiplication matrix projected onto the flag-ambient basis.</li>
+</ul>
 
 
 
@@ -1115,7 +1153,7 @@
       
         <script src="../javascripts/mathjax.js"></script>
       
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-svg.js"></script>
       
     
   </body>
