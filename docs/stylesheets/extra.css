@@ -16,3 +16,10 @@
   margin-top: 2em;
   margin-bottom: 1em;
 }
+
+.md-typeset .arithmatex {
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+  padding-bottom: 0.5em;
+}
