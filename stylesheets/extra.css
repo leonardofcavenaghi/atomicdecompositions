@@ -1,0 +1,25 @@
+:root {
+  --md-typeset-font-size: 17px; 
+  --md-typeset-line-height: 1.7;
+}
+
+.md-typeset p {
+  margin-bottom: 1.2em;
+}
+
+.md-typeset .arithmatex,
+.md-typeset pre {
+  margin: 1.5em 0;
+}
+
+.md-typeset h2 {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.md-typeset .arithmatex {
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+  padding-bottom: 0.5em;
+}
