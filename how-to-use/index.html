@@ -1070,13 +1070,12 @@ This will start a local server at <code>http://127.0.0.1:8000</code>. You can in
 <h3 id="the-27-lines-on-a-cubic-surface">The 27 Lines on a Cubic Surface<a class="headerlink" href="#the-27-lines-on-a-cubic-surface" title="Permanent link">&para;</a></h3>
 <p>A cubic surface is a complete intersection in <span class="arithmatex">\(\mathbb{P}^3\)</span> defined by the vanishing of a degree-3 polynomial (the bundle <span class="arithmatex">\(\mathcal{O}(3)\)</span>). </p>
 <p><strong>In the Graphical Interface:</strong>
-- <strong>Mode:</strong> Single GW Invariant
-- <strong>Algebra:</strong> <code>A3</code>
-- <strong>Keep Nodes:</strong> <code>1</code>
-- <strong>Twisting Bundle K:</strong> <code>[[3]]</code>
-- <strong>Curve Class (Beta):</strong> <code>1, 0, 0</code>
-- <strong>Insertions:</strong> <em>(Leave empty)</em>
-- <strong>Click:</strong> Compute GW Invariant (Output: <code>27</code>)</p>
+- <strong>Card 1 (Space Definition)</strong> -&gt; <strong>Algebra:</strong> <code>A3</code>
+- <strong>Card 1</strong> -&gt; <strong>Keep Simple Roots:</strong> <code>1</code>
+- <strong>Card 1</strong> -&gt; <strong>Twisting Bundle K:</strong> <code>[[3]]</code>
+- <strong>Card 3 (GW Invariants)</strong> -&gt; <strong>Curve Class &beta;:</strong> <code>1, 0, 0</code>
+- <strong>Card 3</strong> -&gt; <strong>Insertions:</strong> <em>(Leave empty)</em>
+- <strong>Card 3</strong> -&gt; <strong>Click:</strong> Compute Invariant (Output: <code>27</code>)</p>
 <p><strong>In Python:</strong>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">gwflags</span><span class="w"> </span><span class="kn">import</span> <span class="n">FlagVariety</span>
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
@@ -1087,13 +1086,12 @@ This will start a local server at <code>http://127.0.0.1:8000</code>. You can in
 <h3 id="the-2875-lines-on-a-quintic-threefold">The 2875 Lines on a Quintic Threefold<a class="headerlink" href="#the-2875-lines-on-a-quintic-threefold" title="Permanent link">&para;</a></h3>
 <p>A quintic threefold is a Calabi-Yau manifold in <span class="arithmatex">\(\mathbb{P}^4\)</span> defined by <span class="arithmatex">\(\mathcal{O}(5)\)</span>.</p>
 <p><strong>In the Graphical Interface:</strong>
-- <strong>Mode:</strong> Single GW Invariant
-- <strong>Algebra:</strong> <code>A4</code>
-- <strong>Keep Nodes:</strong> <code>1</code>
-- <strong>Twisting Bundle K:</strong> <code>[[5]]</code>
-- <strong>Curve Class (Beta):</strong> <code>1, 0, 0, 0</code>
-- <strong>Insertions:</strong> <em>(Leave empty)</em>
-- <strong>Click:</strong> Compute GW Invariant (Output: <code>2875</code>)</p>
+- <strong>Card 1 (Space Definition)</strong> -&gt; <strong>Algebra:</strong> <code>A4</code>
+- <strong>Card 1</strong> -&gt; <strong>Keep Simple Roots:</strong> <code>1</code>
+- <strong>Card 1</strong> -&gt; <strong>Twisting Bundle K:</strong> <code>[[5]]</code>
+- <strong>Card 3 (GW Invariants)</strong> -&gt; <strong>Curve Class &beta;:</strong> <code>1, 0, 0, 0</code>
+- <strong>Card 3</strong> -&gt; <strong>Insertions:</strong> <em>(Leave empty)</em>
+- <strong>Card 3</strong> -&gt; <strong>Click:</strong> Compute Invariant (Output: <code>2875</code>)</p>
 <p><strong>In Python:</strong>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">gwflags</span><span class="w"> </span><span class="kn">import</span> <span class="n">FlagVariety</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
@@ -1106,13 +1104,12 @@ This will start a local server at <code>http://127.0.0.1:8000</code>. You can in
 <p>You can compute Gromov-Witten invariants on more complex flag varieties. Here, we compute a 3-point invariant on <span class="arithmatex">\(Gr(2,4)\)</span> using specific Schubert classes. 
 <em>Note: The GUI requires entering the explicit Weyl group elements for insertions, separated by a pipe <code>|</code>.</em></p>
 <p><strong>In the Graphical Interface:</strong>
-- <strong>Mode:</strong> Single GW Invariant
-- <strong>Algebra:</strong> <code>A3</code>
-- <strong>Keep Nodes:</strong> <code>2</code>
-- <strong>Twisting Bundle K:</strong> <em>(Leave empty)</em>
-- <strong>Curve Class (Beta):</strong> <code>0, 1, 0</code>
-- <strong>Insertions:</strong> <code>((0, 0, 1, 0), (0, 0, 0, 1), (1, 0, 0, 0), (0, 1, 0, 0)) | ((0, 0, 1, 0), (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 0, 1)) | ((1, 0, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1), (0, 1, 0, 0))</code>
-- <strong>Click:</strong> Compute GW Invariant (Output: <code>1</code>)</p>
+- <strong>Card 1 (Space Definition)</strong> -&gt; <strong>Algebra:</strong> <code>A3</code>
+- <strong>Card 1</strong> -&gt; <strong>Keep Simple Roots:</strong> <code>2</code>
+- <strong>Card 1</strong> -&gt; <strong>Twisting Bundle K:</strong> <em>(Leave empty)</em>
+- <strong>Card 3 (GW Invariants)</strong> -&gt; <strong>Curve Class &beta;:</strong> <code>0, 1, 0</code>
+- <strong>Card 3</strong> -&gt; <strong>Insertions:</strong> <code>((0, 0, 1, 0), (0, 0, 0, 1), (1, 0, 0, 0), (0, 1, 0, 0)) | ((0, 0, 1, 0), (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 0, 1)) | ((1, 0, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1), (0, 1, 0, 0))</code>
+- <strong>Card 3</strong> -&gt; <strong>Click:</strong> Compute Invariant (Output: <code>1</code>)</p>
 <p><strong>In Python:</strong>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">gwflags</span><span class="w"> </span><span class="kn">import</span> <span class="n">FlagVariety</span>
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
@@ -1126,11 +1123,10 @@ This will start a local server at <code>http://127.0.0.1:8000</code>. You can in
 <p>If you want to compute the entire spectrum of the quantum connection at once, you can extract the full <span class="arithmatex">\(c_1(TX) \star (-)\)</span> small quantum multiplication matrix.</p>
 <h3 id="quantum-matrix-for-mathbbp2">Quantum Matrix for <span class="arithmatex">\(\mathbb{P}^2\)</span><a class="headerlink" href="#quantum-matrix-for-mathbbp2" title="Permanent link">&para;</a></h3>
 <p><strong>In the Graphical Interface:</strong>
-- <strong>Mode:</strong> Quantum Multiplication
-- <strong>Algebra:</strong> <code>A2</code>
-- <strong>Keep Nodes:</strong> <code>1</code>
-- <strong>Twisting Bundle K:</strong> <em>(Leave empty)</em>
-- <strong>Click:</strong> Compute SQM</p>
+- <strong>Card 1 (Space Definition)</strong> -&gt; <strong>Algebra:</strong> <code>A2</code>
+- <strong>Card 1</strong> -&gt; <strong>Keep Simple Roots:</strong> <code>1</code>
+- <strong>Card 1</strong> -&gt; <strong>Twisting Bundle K:</strong> <em>(Leave empty)</em>
+- <strong>Card 2 (Execution Options)</strong> -&gt; <strong>Click:</strong> Compute c₁(TX)⋆ Matrix</p>
 <p><strong>In Python:</strong>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">gwflags</span><span class="w"> </span><span class="kn">import</span> <span class="n">FlagVariety</span>
 </span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
@@ -1141,11 +1137,10 @@ This will start a local server at <code>http://127.0.0.1:8000</code>. You can in
 </span></code></pre></div></p>
 <h3 id="quantum-matrix-for-gr24">Quantum Matrix for <span class="arithmatex">\(Gr(2,4)\)</span><a class="headerlink" href="#quantum-matrix-for-gr24" title="Permanent link">&para;</a></h3>
 <p><strong>In the Graphical Interface:</strong>
-- <strong>Mode:</strong> Quantum Multiplication
-- <strong>Algebra:</strong> <code>A3</code>
-- <strong>Keep Nodes:</strong> <code>2</code>
-- <strong>Twisting Bundle K:</strong> <em>(Leave empty)</em>
-- <strong>Click:</strong> Compute SQM</p>
+- <strong>Card 1 (Space Definition)</strong> -&gt; <strong>Algebra:</strong> <code>A3</code>
+- <strong>Card 1</strong> -&gt; <strong>Keep Simple Roots:</strong> <code>2</code>
+- <strong>Card 1</strong> -&gt; <strong>Twisting Bundle K:</strong> <em>(Leave empty)</em>
+- <strong>Card 2 (Execution Options)</strong> -&gt; <strong>Click:</strong> Compute c₁(TX)⋆ Matrix</p>
 <p><strong>In Python:</strong>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">gwflags</span><span class="w"> </span><span class="kn">import</span> <span class="n">FlagVariety</span>
 </span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
@@ -1158,7 +1153,7 @@ This will start a local server at <code>http://127.0.0.1:8000</code>. You can in
 <h2 id="example-4-eigenvalues-of-the-quantum-connection">Example 4: Eigenvalues of the Quantum Connection<a class="headerlink" href="#example-4-eigenvalues-of-the-quantum-connection" title="Permanent link">&para;</a></h2>
 <p>To verify if a geometry is semisimple, you extract the eigenvalues of the matrix generated in Example 3.</p>
 <p><strong>In the Graphical Interface:</strong>
-Once you click <strong>Compute SQM</strong> for any space, the interface will automatically compute the characteristic polynomial and display the exact symbolic eigenvalues (e.g. roots of unity for <span class="arithmatex">\(\mathbb{P}^2\)</span>) at the bottom of the result panel!</p>
+Once you click <strong>Compute c₁(TX)⋆ Matrix</strong> for any space, the interface will automatically compute the characteristic polynomial and display the exact symbolic eigenvalues (e.g. roots of unity for <span class="arithmatex">\(\mathbb{P}^2\)</span>) at the bottom of the result panel!</p>
 <p><strong>In Python:</strong>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">gwflags</span><span class="w"> </span><span class="kn">import</span> <span class="n">FlagVariety</span>
 </span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
@@ -1175,11 +1170,10 @@ For example, you can take a complete intersection cut out by a section of the <s
 <p>A famous mathematical identity states that the zero-locus of a regular section of <span class="arithmatex">\(\mathcal{Q}\)</span> on <span class="arithmatex">\(Gr(2,5)\)</span> is isomorphic to <span class="arithmatex">\(\mathbb{P}^3\)</span>.
 We can verify this isomorphism natively by passing the bundle explicitly:</p>
 <p><strong>In the Graphical Interface:</strong>
-- <strong>Mode:</strong> Quantum Multiplication
-- <strong>Algebra:</strong> <code>A4</code>
-- <strong>Keep Nodes:</strong> <code>2</code>
-- <strong>Twisting Bundle K:</strong> <code>taut_quot(X, 2)</code>
-- <strong>Click:</strong> Compute SQM
+- <strong>Card 1 (Space Definition)</strong> -&gt; <strong>Algebra:</strong> <code>A4</code>
+- <strong>Card 1</strong> -&gt; <strong>Keep Simple Roots:</strong> <code>2</code>
+- <strong>Card 1</strong> -&gt; <strong>Twisting Bundle K:</strong> <code>taut_quot(X, 2)</code>
+- <strong>Card 2 (Execution Options)</strong> -&gt; <strong>Click:</strong> Compute c₁(TX)⋆ Matrix
 <em>(Output: You will instantly get a <span class="arithmatex">\(4 \times 4\)</span> quantum matrix identical to <span class="arithmatex">\(\mathbb{P}^3\)</span>, with characteristic polynomial <span class="arithmatex">\(\lambda^4 - 256 = 0\)</span>!)</em></p>
 <p><strong>In Python:</strong>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">gwflags</span><span class="w"> </span><span class="kn">import</span> <span class="n">FlagVariety</span>
