@@ -44,7 +44,7 @@ You need Python 3.9 or newer.
        ```
     4. Verify:
        ```bash
-       python3 --version
+       python --version
        git --version
        ```
 
@@ -54,11 +54,11 @@ You need Python 3.9 or newer.
     2. Update your package list and install Python 3, Git, and `venv`:
        ```bash
        sudo apt update
-       sudo apt install git python3 python3-pip python3-venv
+       sudo apt install git python python3-pip python3-venv
        ```
     3. Verify:
        ```bash
-       python3 --version
+       python --version
        git --version
        ```
 
@@ -107,7 +107,7 @@ We will use a **virtual environment** (`venv`) to isolate the project dependenci
 
     **Step 4: Create and Activate the Virtual Environment**
     ```bash
-    python3 -m venv venv
+    python -m venv venv
     source venv/bin/activate
     ```
 
@@ -120,9 +120,9 @@ We will use a **virtual environment** (`venv`) to isolate the project dependenci
 
 ## 3. Quick Start & Verification
 
-To verify that the installation is successful and independently known values from Schubert calculus match exactly, you must run the test suite. 
+To verify that the installation is successful and that independently known values from Schubert calculus match exactly, you must run the test suite. 
 
-**Note on Python commands:** The commands below use `python` for Windows and `python3` for macOS/Linux, based on standard installation mappings.
+**Note on Python commands:** Note: Since you are operating inside an activated virtual environment, the `python` command is standard across all operating systems.
 
 === "Windows"
     Run the test suite:
@@ -143,15 +143,15 @@ To verify that the installation is successful and independently known values fro
 === "macOS and Linux"
     Run the test suite:
     ```bash
-    python3 tests/test_gwflags.py
+    python tests/test_gwflags.py
     ```
 
     To use the Command Line Interface (CLI):
     ```bash
-    python3 -m gwflags.cli A2 --keep 1 sqm
+    python -m gwflags.cli A2 --keep 1 sqm
     ```
 
     To start the Graphical User Interface (GUI):
     ```bash
-    python3 -m gwflags.gui
+    python -m gwflags.gui
     ```

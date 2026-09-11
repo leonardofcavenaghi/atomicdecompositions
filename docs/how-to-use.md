@@ -163,6 +163,6 @@ Q = taut_quot(X, 2)
 M, Gr, basis = X.small_quantum_multiplication(K=Q)
 
 for row in M:
-    print([str(sym) for row])
+    print([str(sym) for sym in row])
 ```
 You can also freely use `taut_sub`, `dual`, `sym`, `wedge`, `osum`, and `tensor` in the Twist Bundle input field.

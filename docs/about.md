@@ -20,7 +20,7 @@ The following members contributed to the mathematical supervision, design, and r
 
 ## AI Usage Disclaimer, Methodology, and Sources
 
-This website, its source code catalog generation scripts, and its documentation have been fully generated using **Google Antigravity (AGY)**, an advanced autonomous AI coding assistant. 
+This website, its source code, catalog generation scripts, and its documentation have been fully generated using **Google Antigravity (AGY)**, an advanced autonomous AI coding assistant. 
 
 ### Methodology & Data Authenticity
 The process by which this catalog is constructed is completely automated and generated through precise AI instruction:
@@ -39,4 +39,4 @@ While the automation, scripting, web development, and data extraction were execu
 
 ---
 
-While serving as a companion to the paper **"On the Atomic Decomposition of Complete Intersection in Flag Varieties,"** this project and software are independent tools designed to function as an expanding catalog and computational resource for algebraic and enumerative geometry.
+While serving as a companion to the paper **"On the Atomic Decomposition of Complete Intersections in Flag Varieties,"** this project and software are independent tools designed to function as an expanding catalog and computational resource for algebraic and enumerative geometry.

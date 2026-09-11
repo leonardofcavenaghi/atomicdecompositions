@@ -2355,6 +2355,53 @@ Welcome to the automated catalog. Below you will find geometric and quantum prop
     </details>
 
 
+??? example "Case #29: P6 / O(6)"
+    - **Ambient Space:** `$A6$`
+    - **Dimension:** $5$
+    - **Fano Index:** $1$
+    - **Basis Rank:** $7$
+    - **Eigenvalues:** $45936$ (mult: 1), $-720$ (mult: 5)
+    <details><summary>Quantum Matrix ($y=1$)</summary>
+        $$
+        \left[\begin{matrix}0 & 13932000 & 432265248000 & 10524957538752000 & 110441973189864960000 & 261960335825727283200000\\1 & 5544 & 177529968 & 4331668617216 & 46081933709444352 & 110441973189864960000\\0 & 1 & 15624 & 398584800 & 4331668617216 & 10524957538752000\\0 & 0 & 1 & 15624 & 177529968 & 432265248000\\0 & 0 & 0 & 1 & 5544 & 13932000\\0 & 0 & 0 & 0 & 1 & 0\end{matrix}\right]
+        $$
+
+    </details>
+    <details><summary>Hodge Diamond ($h^{p,q}$)</summary>
+
+        $$
+        \begin{matrix}
+         &  &  &  &  & 1 &  &  &  &  &  \\
+         &  &  &  & 0 &  & 0 &  &  &  &  \\
+         &  &  & 0 &  & 1 &  & 0 &  &  &  \\
+         &  & 0 &  & 0 &  & 0 &  & 0 &  &  \\
+         & 0 &  & 0 &  & 1 &  & 0 &  & 0 &  \\
+        0 &  & 455 &  & 6055 &  & 6055 &  & 455 &  & 0 \\
+         & 0 &  & 0 &  & 1 &  & 0 &  & 0 &  \\
+         &  & 0 &  & 0 &  & 0 &  & 0 &  &  \\
+         &  &  & 0 &  & 1 &  & 0 &  &  &  \\
+         &  &  &  & 0 &  & 0 &  &  &  &  \\
+         &  &  &  &  & 1 &  &  &  &  &  \\
+        \end{matrix}
+        $$
+
+    </details>
+
+
+??? example "Case #119: Gr(2,6) / O(1)+O(2)"
+    - **Ambient Space:** `$A5$`
+    - **Dimension:** $6$
+    - **Fano Index:** $3$
+    - **Basis Rank:** $15$
+    - **Eigenvalues:** $9 \cdot 2^{\frac{2}{3}}$ (mult: 1), $- \frac{9 \cdot 2^{\frac{2}{3}}}{2} - \frac{9 \cdot 2^{\frac{2}{3}} \sqrt{3} i}{2}$ (mult: 1), $- \frac{9 \cdot 2^{\frac{2}{3}}}{2} + \frac{9 \cdot 2^{\frac{2}{3}} \sqrt{3} i}{2}$ (mult: 1), $- 3 \cdot 2^{\frac{2}{3}}$ (mult: 1), $\frac{3 \cdot 2^{\frac{2}{3}}}{2} - \frac{3 \cdot 2^{\frac{2}{3}} \sqrt{3} i}{2}$ (mult: 1), $\frac{3 \cdot 2^{\frac{2}{3}}}{2} + \frac{3 \cdot 2^{\frac{2}{3}} \sqrt{3} i}{2}$ (mult: 1), $0$ (mult: 4)
+    <details><summary>Quantum Matrix ($y=1$)</summary>
+        $$
+        \left[\begin{matrix}0 & 0 & 6 & 18 & 0 & 0 & 0 & 0 & 72 & 0\\3 & 0 & 0 & 0 & 24 & 30 & 0 & 0 & 0 & 72\\0 & 3 & 0 & 0 & 0 & 0 & 12 & 6 & 0 & 0\\0 & 3 & 0 & 0 & 0 & 0 & 30 & 18 & 0 & 0\\0 & 0 & 3 & 3 & 0 & 0 & 0 & 0 & 6 & 0\\0 & 0 & 0 & 3 & 0 & 0 & 0 & 0 & 12 & 0\\0 & 0 & 0 & 0 & 3 & 6 & 0 & 0 & 0 & 12\\0 & 0 & 0 & 0 & 3 & -3 & 0 & 0 & 0 & -6\\0 & 0 & 0 & 0 & 0 & 0 & 9 & 6 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 3 & 0\end{matrix}\right]
+        $$
+
+    </details>
+
+
 </div>
 
 ***
