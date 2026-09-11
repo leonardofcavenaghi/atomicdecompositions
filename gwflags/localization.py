@@ -95,18 +95,18 @@ class GWCalculator:
         return self._rfactor_cache[w]
 
     # ------------------------------------------------------ Billey's formula
-    def billey(self, shubert, vertex):
-        """Restriction of the equivariant Schubert class sigma_shubert to
+    def billey(self, schubert, vertex):
+        """Restriction of the equivariant Schubert class sigma_schubert to
         the fixed point `vertex` (both are Weyl matrices)."""
-        key = (shubert, vertex)
+        key = (schubert, vertex)
         if key in self._billey_cache:
             return self._billey_cache[key]
         wd, rs = self.wd, self.rs
-        if shubert == wd.group[0]:
+        if schubert == wd.group[0]:
             res = 1
         else:
             vword = wd.word_of[vertex]
-            sword = wd.word_of[shubert]
+            sword = wd.word_of[schubert]
             if len(vword) < len(sword):
                 res = 0
             else:
@@ -126,7 +126,7 @@ class GWCalculator:
                     for i in sub:
                         prod_m = matmul(prod_m,
                                         rs.reflection_matrices[vword[i] - 1])
-                    if prod_m == shubert:
+                    if prod_m == schubert:
                         term = 1
                         for i in sub:
                             term = term * betas[i]
