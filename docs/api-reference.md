@@ -12,7 +12,7 @@ A class that encapsulates all Lie-algebra data, computing exactly with rational 
 - **Cartan Matrix & Reflection Matrices**: Computes the Cartan matrix $A_{ij} = 2 (\alpha_i, \alpha_j) / (\alpha_j, \alpha_j)$ (note this strictly follows the Humphreys convention) and its inverse (used for fundamental weights), as well as reflection matrices for simple roots.
 - **Coroots**: Calculates the coordinates of coroots $\beta^\vee$ in the basis of simple roots (these are fractional for non-simply-laced algebras).
 
-## 2. Bott Localization Core (`gwflags/localization.py`)
+## 2. Virtual Localization Core (`gwflags/localization.py`)
 
 The localization module translates the `V3.nb` Mathematica notebook's localization algorithms (such as Billey's formula and the graph sum) into Python.
 
