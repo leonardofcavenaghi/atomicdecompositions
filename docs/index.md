@@ -12,7 +12,7 @@ This website serves as an independent catalog and computational resource for alg
 
 The accompanying software, `gwflags`, provides a computational framework to evaluate geometric invariants using the localization technique:
 
-- **Atiyah-Bott Localization**: Computes genus-zero Gromov-Witten invariants of flag varieties and the smooth zero loci of globally generated homogeneous vector bundles.
+- **Virtual Localization**: Computes genus-zero Gromov-Witten invariants of flag varieties and the smooth zero loci of globally generated homogeneous vector bundles, using the Graber-Pandharipande virtual localization theorem.
 - **Quantum Multiplication**: Computes the small quantum multiplication matrix, its grading operators, and its eigenvalues for complete intersections.
 - **Geometric Invariants**: Automatically calculates the Fano index, ambient dimension, and basis rank natively using the geometry of flag varieties.
 

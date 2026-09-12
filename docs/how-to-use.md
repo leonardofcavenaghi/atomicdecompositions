@@ -12,7 +12,7 @@ This will start a local server at `http://127.0.0.1:8000`. You can input paramet
 ---
 
 ## Example 1: Classic Enumerative Geometry
-The `gwflags` library natively computes Gromov-Witten invariants for complete intersections using Atiyah-Bott localization. Let's compute two famous results in algebraic geometry: the 27 lines on a cubic surface, and the 2875 lines on a quintic threefold.
+The `gwflags` library natively computes Gromov-Witten invariants for complete intersections using virtual localization (Graber-Pandharipande). Let's compute two famous results in algebraic geometry: the 27 lines on a cubic surface, and the 2875 lines on a quintic threefold.
 
 ### The 27 Lines on a Cubic Surface
 A cubic surface is a complete intersection in $\mathbb{P}^3$ defined by the vanishing of a degree-3 polynomial (the bundle $\mathcal{O}(3)$). 
