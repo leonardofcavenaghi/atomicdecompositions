@@ -128,6 +128,102 @@ def test_constructor_algebra():
     assert Sd.c1_coordinates() == [1]
 
 
+def test_taut_sub_and_quot_gr36():
+    """taut_sub and taut_quot on Gr(3,6): rank, convexity, and c1."""
+    X = grassmannian(3, 6)
+    S = taut_sub(X, 3)
+    Q = taut_quot(X, 3)
+    # rank checks: S = k=3 planes, Q = n-k=3 complement
+    assert S.rank == 3
+    assert Q.rank == 3
+    # S is NOT globally generated (negative splitting degrees on some curves)
+    assert not S.is_curvewise_convex()
+    # S* and Q are convex
+    assert dual(S).is_curvewise_convex()
+    assert Q.is_curvewise_convex()
+    # det S* = det Q = O(1): both c1 coords equal [1] on the Picard-rank-1 space
+    assert dual(S).c1_coordinates() == [1]
+    assert Q.c1_coordinates() == [1]
+    # taut_sub should be rejected by small_quantum_multiplication
+    try:
+        X.small_quantum_multiplication(S)
+        assert False, 'S on Gr(3,6) not rejected'
+    except ValueError as e:
+        assert 'S*' in str(e)
+
+
+def test_gr36_quot_basic():
+    """Z(Gr(3,6), Q): verify basic properties of the quotient bundle section."""
+    X = grassmannian(3, 6)
+    Q = taut_quot(X, 3)
+    assert Q.rank == 3
+    fano, betas = X.fano_index_and_betas(Q)
+    assert fano == 5
+    # The SQM should produce a square matrix
+    M = sqm(X, Q)
+    assert len(M) > 0 and all(len(row) == len(M) for row in M)
+
+
+def test_eval_at_y_p1():
+    """Evaluate-at-y: P^1 SQM with y1=4 gives concrete integer matrix."""
+    X = projective_space(1)
+    M, Gr, idx = X.small_quantum_multiplication()
+    y1 = X.bk.y(1)
+    # M = [[0, 2y1], [2, 0]]; at y1=4 -> [[0, 8], [2, 0]]
+    M_at4 = canon(M, {y1: 4})
+    assert M_at4 == [[0, 8], [2, 0]]
+    # eigenvalues at y1=4 should be ±4
+    ev4 = sorted(str(e) for e in X.eigenvalues(M_at4))
+    assert set(ev4) == {'-4', '4'}, ev4
+
+
+def test_eval_at_y_p2():
+    """Evaluate-at-y: P^2 SQM with y1=1 recovers the classical (q=1) matrix."""
+    X = projective_space(2)
+    M, Gr, idx = X.small_quantum_multiplication()
+    y1 = X.bk.y(1)
+    # M = [[0, 0, 3y1], [3, 0, 0], [0, 3, 0]]; at y1=1 -> classical q=1 form
+    M_at1 = canon(M, {y1: 1})
+    assert M_at1 == [[0, 0, 3], [3, 0, 0], [0, 3, 0]]
+    # characteristic polynomial of c1* at q=1 is lambda^3 - 27 = 0
+    import sympy as sp
+    mat = sp.Matrix(M_at1)
+    lam = sp.Symbol('lambda')
+    charpoly = mat.charpoly(lam)
+    assert sp.expand(charpoly.as_expr()) == sp.expand(lam**3 - 27)
+
+
+def test_billey_schubert_rename_regression():
+    """Direct regression: billey() parameter was renamed shubert->schubert.
+    The rename was purely cosmetic; verify the formula still gives correct
+    restrictions on Gr(2,4) (values fixed by the Bertram presentation)."""
+    from gwflags.localization import GWCalculator
+    from gwflags.symbolic import NumericBackend
+    G = grassmannian(2, 4)
+    calc = GWCalculator(G.rs, None, NumericBackend(seed=42), wd=G.wd)
+    bylen = {}
+    for m in G.classes:
+        bylen.setdefault(G.wd.length(m), []).append(m)
+    # sigma_1 restricted to the point class (longest element) must be nonzero
+    s1 = bylen[1][0]
+    pt = bylen[4][0]
+    val = calc.billey(s1, pt)
+    assert val != 0, 'billey(sigma_1, pt) should be nonzero'
+    # sigma_0 (identity class) restricted to any vertex must be 1
+    s0 = G.wd.group[0]
+    for v in G.classes:
+        assert calc.billey(s0, v) == 1, f'billey(id, {v}) != 1'
+    # Cross-check: GW invariant agrees between both engines
+    from gwflags.gkm import gkm_gw
+    bk = NumericBackend(seed=43)
+    calc2 = GWCalculator(G.rs, None, bk, wd=G.wd)
+    s21 = bylen[3][0]
+    beta = (0, 1, 0)
+    ours = calc2.gw_invariant([s1, s21, pt], beta)
+    theirs = gkm_gw(G, [s1, s21, pt], list(beta), backend=bk)
+    assert ours == theirs == 1, (ours, theirs)
+
+
 if __name__ == '__main__':
     import time
     for name, fn in sorted(globals().items()):

@@ -109,6 +109,29 @@ def test_battery_exact_equality():
               f'both = {ours}')
 
 
+def test_battery_extended_multi_node():
+    """Extend the exact-equality battery to include A3 with two kept nodes
+    [1,3] = Fl(1,3 in C^4), which exercises the 'schubert' rename path in
+    billey() with a non-maximal parabolic (|W_P| = 2, 12 Schubert classes)."""
+    X = FlagVariety('A3', [1, 3])
+    bl = bylen(X)
+    # Build a few invariant inputs at admissible degrees
+    # Beta must have length = rank of A3 = 3
+    # AND nonzero entries must be on kept nodes (1 and 3)
+    extra_cases = [
+        (X, [X.pt, X.pt], (1, 0, 0)),   # degree on node 1 only
+        (X, [X.pt, X.pt], (0, 0, 1)),   # degree on node 3 only
+    ]
+    for i, (V, classes, beta) in enumerate(extra_cases):
+        ours, theirs = both_engines(V, classes, beta, seed=300 + i)
+        assert ours == theirs, \
+            (V.rs.name, [V.wd.length(c) for c in classes], beta,
+             ours, theirs)
+        print(f'  {V.rs.name} keep {V.wd.roots_that_stay} '
+              f'lens {[V.wd.length(c) for c in classes]} beta {beta}: '
+              f'both = {ours}')
+
+
 if __name__ == '__main__':
     import time
     for name, fn in sorted(globals().items()):
