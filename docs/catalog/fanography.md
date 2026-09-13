@@ -11,141 +11,150 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
 ??? example "1-2"
 
     - **Ambient Space:** `$A4$`
+    - **Keep Nodes:** `1`
+    - **Bundle K:** `4`
     - **Fano Index:** `1`
+    - **Dimension:** `3`
     - **Basis Rank:** `4`
+    - **Description:** Hypersurface of degree 4 in $\mathbb{P}^4$; double cover of 1-16 with branch locus a divisor of degree 8.
 
     ??? note "Quantum Matrix ($y=1$)"
-            $$
+        $$
         \begin{bmatrix}0 & 3888 & 504576 & 18323712\\1 & 80 & 13600 & 504576\\0 & 1 & 80 & 3888\\0 & 0 & 1 & 0\end{bmatrix}
-            $$
-
-
-
-    **Description:** hypersurface of degree 4 in $\mathbb{P}^4$ double cover of 1-16 with branch locus a divisor of degree 8
+        $$
 
 
 ### Fano Variety 1-3
 ??? example "1-3"
 
     - **Ambient Space:** `$A5$`
+    - **Keep Nodes:** `1`
+    - **Bundle K:** `2;3`
     - **Fano Index:** `1`
+    - **Dimension:** `3`
     - **Basis Rank:** `4`
+    - **Description:** Complete intersection of a quadric and a cubic in $\mathbb{P}^5$.
 
     ??? note "Quantum Matrix ($y=1$)"
-            $$
+        $$
         \begin{bmatrix}0 & 792 & 43632 & 793152\\1 & 30 & 2340 & 43632\\0 & 1 & 30 & 792\\0 & 0 & 1 & 0\end{bmatrix}
-            $$
-
-
-
-    **Description:** complete intersection of quadric and cubic in $\mathbb{P}^5$
+        $$
 
 
 ### Fano Variety 1-4
 ??? example "1-4"
 
     - **Ambient Space:** `$A6$`
+    - **Keep Nodes:** `1`
+    - **Bundle K:** `2;2;2`
     - **Fano Index:** `1`
+    - **Dimension:** `3`
     - **Basis Rank:** `4`
+    - **Description:** Complete intersection of three quadrics in $\mathbb{P}^6$.
 
     ??? note "Quantum Matrix ($y=1$)"
-            $$
+        $$
         \begin{bmatrix}0 & 304 & 9984 & 121088\\1 & 16 & 800 & 9984\\0 & 1 & 16 & 304\\0 & 0 & 1 & 0\end{bmatrix}
-            $$
-
-
-
-    **Description:** complete intersection of 3 quadrics in $\mathbb{P}^6$
+        $$
 
 
 ### Fano Variety 1-5
 ??? example "1-5"
 
     - **Ambient Space:** `$A4$`
+    - **Keep Nodes:** `2`
+    - **Bundle K:** `2`
     - **Fano Index:** `1`
+    - **Dimension:** `3`
     - **Basis Rank:** `4`
+    - **Description:** Gushel–Mukai 3-fold; section of Plücker embedding of $\mathrm{Gr}(2,5)$ by codimension 2 subspace and a quadric; double cover of 1-15 with branch locus an anticanonical divisor.
 
     ??? note "Quantum Matrix ($y=1$)"
-            $$
+        $$
         \begin{bmatrix}0 & 156 & 1440 & 13248\\1 & 10 & 152 & 1440\\0 & \frac{5}{2} & 10 & 156\\0 & 0 & 1 & 0\end{bmatrix}
-            $$
-
-
-
-    **Description:** Gushel–Mukai 3-fold section of Plücker embedding of $\mathrm{Gr}(2,5)$ by codimension 2 subspace and a quadric double cover of 1-15 with branch locus an anticanonical divisor
+        $$
 
 
 ### Fano Variety 1-6
 ??? example "1-6"
 
     - **Ambient Space:** `$D5$`
+    - **Keep Nodes:** `1`
+    - **Bundle K:** `2;5`
     - **Fano Index:** `1`
+    - **Dimension:** `3`
     - **Basis Rank:** `4`
+    - **Description:** Section of half-spinor embedding of a connected component of $\mathrm{OGr}_+(5,10)$ by codimension 7 subspace.
 
     ??? note "Quantum Matrix ($y=1$)"
-            $$
+        $$
         \begin{bmatrix}0 & 96 & 1692 & 7476\\1 & 7 & 216 & 987\\0 & 1 & 7 & 56\\0 & 0 & \frac{12}{7} & 0\end{bmatrix}
-            $$
-
-
-
-    **Description:** section of half-spinor embedding of a connected component of $\mathrm{OGr}_+(5,10)$ by codimension 7 subspace
+        $$
 
 
 ### Fano Variety 1-7
 ??? example "1-7"
 
     - **Ambient Space:** `$A5$`
+    - **Keep Nodes:** `1`
+    - **Bundle K:** `2;2;4`
     - **Fano Index:** `1`
+    - **Dimension:** `3`
     - **Basis Rank:** `4`
+    - **Description:** Section of Plücker embedding of $\mathrm{Gr}(2,6)$ by codimension 5 subspace.
 
     ??? note "Quantum Matrix ($y=1$)"
-            $$
+        $$
         \begin{bmatrix}0 & 64 & 330 & 2120\\1 & 5 & 50 & 330\\0 & \frac{14}{5} & 5 & 64\\0 & 0 & 1 & 0\end{bmatrix}
-            $$
-
-
-
-    **Description:** section of Plücker embedding of $\mathrm{Gr}(2,6)$ by codimension 5 subspace
+        $$
 
 
 ### Fano Variety 1-8
 ??? example "1-8"
 
     - **Ambient Space:** `$C3$`
+    - **Keep Nodes:** `1`
+    - **Bundle K:** `3;4`
     - **Fano Index:** `1`
+    - **Dimension:** `3`
     - **Basis Rank:** `4`
+    - **Description:** Section of Plücker embedding of $\mathrm{SGr}(3,6)$ by codimension 3 subspace.
 
     ??? note "Quantum Matrix ($y=1$)"
-            $$
+        $$
         \begin{bmatrix}0 & 48 & 288 & 416\\1 & 4 & 48 & 72\\0 & 2 & 4 & 12\\0 & 0 & 4 & 0\end{bmatrix}
-            $$
-
-
-
-    **Description:** section of Plücker embedding of $\mathrm{SGr}(3,6)$ by codimension 3 subspace
+        $$
 
 
 ### Fano Variety 1-9
 ??? example "1-9"
 
     - **Ambient Space:** `$G2$`
+    - **Keep Nodes:** `1`
+    - **Bundle K:** `3;5`
     - **Fano Index:** `1`
+    - **Dimension:** `3`
     - **Basis Rank:** `4`
+    - **Description:** Section of the adjoint $\mathrm{G}_2$-Grassmannian $\mathrm{G}_2\mathrm{Gr}(2,7)$ by codimension 2 subspace.
 
     ??? note "Quantum Matrix ($y=1$)"
-            $$
+        $$
         \begin{bmatrix}0 & 36 & 126 & 324\\1 & 3 & 24 & 63\\0 & 3 & 3 & 18\\0 & 0 & 2 & 0\end{bmatrix}
-            $$
-
-
-
-    **Description:** section of the adjoint $\mathrm{G}_2$-Grassmannian $\mathrm{G}_2\mathrm{Gr}(2,7)$ by codimension 2 subspace
+        $$
 
 
 ### Fano Variety 1-10
 ??? example "1-10"
-    **Description:** zero locus of $(\bigwedge^2\mathcal{U}^\vee)^{\oplus 3}$ on $\mathrm{Gr}(3,7)$
+
+    - **Ambient Space:** `$A4$`
+    - **Keep Nodes:** `2`
+    - **Bundle K:** `1;1;1`
+    - **Fano Index:** `1`
+    - **Dimension:** `3`
+    - **Basis Rank:** `4`
+    - **Description:** Zero locus of $(\bigwedge^2\mathcal{U}^\vee)^{\oplus 3}$ on $\mathrm{Gr}(3,7)$.
+
+
 
 
 ### Fano Variety 1-11
@@ -162,85 +171,85 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
 ??? example "1-13"
 
     - **Ambient Space:** `$A4$`
+    - **Keep Nodes:** `1`
+    - **Bundle K:** `3`
     - **Fano Index:** `2`
+    - **Dimension:** `3`
     - **Basis Rank:** `4`
+    - **Description:** Hypersurface of degree 3 in $\mathbb{P}^4$ (smooth cubic threefold).
 
     ??? note "Quantum Matrix ($y=1$)"
-            $$
+        $$
         \begin{bmatrix}0 & 12 & 0 & 72\\2 & 0 & 30 & 0\\0 & 2 & 0 & 12\\0 & 0 & 2 & 0\end{bmatrix}
-            $$
-
-
-
-    **Description:** hypersurface of degree 3 in $\mathbb{P}^4$
+        $$
 
 
 ### Fano Variety 1-14
 ??? example "1-14"
 
     - **Ambient Space:** `$A5$`
+    - **Keep Nodes:** `1`
+    - **Bundle K:** `4`
     - **Fano Index:** `2`
+    - **Dimension:** `3`
     - **Basis Rank:** `4`
+    - **Description:** Complete intersection of two quadrics in $\mathbb{P}^5$.
 
     ??? note "Quantum Matrix ($y=1$)"
-            $$
+        $$
         \begin{bmatrix}0 & 8 & 0 & 32\\2 & 0 & 16 & 0\\0 & 2 & 0 & 8\\0 & 0 & 2 & 0\end{bmatrix}
-            $$
-
-
-
-    **Description:** complete intersection of 2 quadrics in $\mathbb{P}^5$
+        $$
 
 
 ### Fano Variety 1-15
 ??? example "1-15"
 
     - **Ambient Space:** `$A4$`
+    - **Keep Nodes:** `2`
+    - **Bundle K:** `5`
     - **Fano Index:** `2`
+    - **Dimension:** `3`
     - **Basis Rank:** `4`
+    - **Description:** Quintic del Pezzo threefold; section of Plücker embedding of $\mathrm{Gr}(2,5)$ by codimension 3 subspace.
 
     ??? note "Quantum Matrix ($y=1$)"
-            $$
+        $$
         \begin{bmatrix}0 & 6 & 0 & 8\\2 & 0 & 4 & 0\\0 & 5 & 0 & 6\\0 & 0 & 2 & 0\end{bmatrix}
-            $$
-
-
-
-    **Description:** quintic del Pezzo threefold section of Plücker embedding of $\mathrm{Gr}(2,5)$ by codimension 3 subspace
+        $$
 
 
 ### Fano Variety 1-16
 ??? example "1-16"
 
     - **Ambient Space:** `$A4$`
+    - **Keep Nodes:** `1`
+    - **Bundle K:** `2`
     - **Fano Index:** `3`
+    - **Dimension:** `3`
     - **Basis Rank:** `4`
+    - **Description:** Hypersurface of degree 2 in $\mathbb{P}^4$ (smooth quadric threefold).
 
     ??? note "Quantum Matrix ($y=1$)"
-            $$
+        $$
         \begin{bmatrix}0 & 0 & 6 & 0\\3 & 0 & 0 & 6\\0 & 3 & 0 & 0\\0 & 0 & 3 & 0\end{bmatrix}
-            $$
-
-
-
-    **Description:** hypersurface of degree 2 in $\mathbb{P}^4$
+        $$
 
 
 ### Fano Variety 1-17
 ??? example "1-17"
 
     - **Ambient Space:** `$A3$`
+    - **Keep Nodes:** `1`
+    - **Bundle K:** *(none — projective space itself)*
     - **Fano Index:** `4`
+    - **Dimension:** `3`
     - **Basis Rank:** `4`
+    - **Description:** Projective space $\mathbb{P}^3$.
 
     ??? note "Quantum Matrix ($y=1$)"
-            $$
+        $$
         \begin{bmatrix}0 & 0 & 0 & 4\\4 & 0 & 0 & 0\\0 & 4 & 0 & 0\\0 & 0 & 4 & 0\end{bmatrix}
-            $$
-
-
-
-    **Description:** projective space $\mathbb{P}^3$
+        $$
 
 
 ### Fano Variety 2-1
