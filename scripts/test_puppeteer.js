@@ -1,46 +1,37 @@
 const puppeteer = require('puppeteer');
+const http = require('http');
+const handler = require('serve-handler');
 
-(async () => {
-  const browser = await puppeteer.launch({ headless: 'new', defaultViewport: { width: 1280, height: 800 } });
+const server = http.createServer((request, response) => {
+  return handler(request, response, {
+    public: '../site'
+  });
+});
+
+server.listen(3000, async () => {
+  console.log('Server running at http://localhost:3000');
+  
+  const browser = await puppeteer.launch({
+    args: ['--no-sandbox', '--disable-setuid-sandbox']
+  });
   const page = await browser.newPage();
-  await page.goto('https://ahuchala.com/hodge/', { waitUntil: 'networkidle2' });
+  await page.setViewport({ width: 1200, height: 1000 });
   
+  await page.goto('http://localhost:3000/catalog/grassmannians/#gr26', {waitUntil: 'networkidle0'});
+  
+  // Wait 5 seconds for MathJax
+  await new Promise(r => setTimeout(r, 5000));
+  
+  // Open the flashcards
   await page.evaluate(() => {
-    // Find the button containing 'Gr(k, n)'
-    const buttons = document.querySelectorAll('button');
-    for (const btn of buttons) {
-      if (btn.innerText.includes('Gr(k, n)')) {
-        btn.click();
-      }
-    }
+    const details = document.querySelectorAll('details');
+    details.forEach(d => d.setAttribute('open', 'true'));
   });
-
+  
   await new Promise(r => setTimeout(r, 1000));
-
-  await page.evaluate(() => {
-    document.getElementById('k-value-grassmannian').value = 2;
-    document.getElementById('k-value-grassmannian').dispatchEvent(new Event('input', { bubbles: true }));
-    document.getElementById('n-value-grassmannian').value = 5;
-    document.getElementById('n-value-grassmannian').dispatchEvent(new Event('input', { bubbles: true }));
-    document.getElementById('r-value-grassmannian').value = 1;
-    document.getElementById('r-value-grassmannian').dispatchEvent(new Event('input', { bubbles: true }));
-    document.getElementById('dims-input').value = '2';
-    document.getElementById('dims-input').dispatchEvent(new Event('input', { bubbles: true }));
-  });
-
-  await new Promise(r => setTimeout(r, 2000));
   
-  await page.screenshot({ path: 'screenshot.png', fullPage: true });
-
-  const diamond = await page.evaluate(() => {
-    const d = document.getElementById('hodge-diamond');
-    if (!d) return "no #hodge-diamond found";
-    const rows = d.querySelectorAll('.diamond-row');
-    if (rows.length === 0) return "no rows found in #hodge-diamond";
-    return Array.from(rows).map(row => row.innerText.trim());
-  });
-  
-  console.log("Diamond HTML:\n" + diamond);
+  await page.screenshot({path: '../screenshot3.png', fullPage: true});
   
   await browser.close();
-})();
+  server.close();
+});

@@ -11,5 +11,12 @@ Whenever drafting methodology, README files, or theoretical guides for the `GEOA
 ## Rule 3: MkDocs Material Math Block Indentation
 Whenever generating MkDocs Material collapsible blocks (`??? note`, `??? example`) that contain multi-line LaTeX math blocks (`$$ \begin{matrix} ... \end{matrix} $$`), you must adhere to the following strict indentation:
 1. The `??? note "Title"` block must be indented by exactly 4 spaces if it is nested inside another block.
-2. The `$$` delimiters must be indented by exactly 8 spaces.
-3. The internal LaTeX content (e.g., `\left[\begin{matrix}...`) MUST be uniformly indented by exactly 8 spaces on every line. Failure to do this will cause the parser to break and the matrices to render as raw text.
+2. The `$$` delimiters must be indented by exactly 4 spaces (or 8 spaces if nested).
+3. The internal LaTeX content (e.g., `\left[\begin{matrix}...`) MUST be uniformly indented by exactly the same number of spaces as the `$$` delimiters. Failure to do this will cause the parser to break and the matrices to render as raw text.
+
+## Rule 4: Fast Fano Index Combinatorial Filtering
+Whenever writing loops to programmatically search, discover, or filter hundreds of Fano varieties (especially Complete Intersections in Grassmannians or Projective spaces), you **DO NOT** instantiate `gwflags.FlagVariety` objects inside the loop to check the Fano index. The intersection ring computations are computationally prohibitive. Instead, use direct combinatorial index formulas to filter candidates:
+- Projective Space $\mathbb{P}^n$: `index = (n + 1) - sum(degrees)`
+- Grassmannian $Gr(k, n)$: `index = n - sum(degrees)`
+- Quadrics $Q^n$: `index = n - sum(degrees)`
+Only instantiate `FlagVariety` objects for cases where the theoretical index is strictly positive (`index > 0`).

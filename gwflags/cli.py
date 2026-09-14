@@ -38,9 +38,16 @@ def parse_classes(spec, X):
     return out
 
 
-def parse_k(spec):
+def parse_k(spec, X=None):
+    spec = spec.strip()
     if not spec:
         return []
+    if any(c.isalpha() for c in spec):
+        from gwflags.bundles import O, taut_sub, taut_quot, dual, osum, tensor, sym, wedge
+        try:
+            return eval(spec, {"X": X, "O": O, "taut_sub": taut_sub, "taut_quot": taut_quot, "dual": dual, "osum": osum, "tensor": tensor, "sym": sym, "wedge": wedge})
+        except Exception as e:
+            raise ValueError(f"Invalid bundle expression: {e}")
     return [[int(v) for v in row.split(',')] for row in spec.split(';')]
 
 
@@ -74,7 +81,7 @@ def main(argv=None):
     keep = [int(v) for v in args.keep.split(',')]
     try:
         X = FlagVariety(args.algebra, keep)
-        K = X._check_K(parse_k(args.K))
+        K = X._check_K(parse_k(args.K, X))
     except ValueError as exc:
         ap.error(str(exc))
 

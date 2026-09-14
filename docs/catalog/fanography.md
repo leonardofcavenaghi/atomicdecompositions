@@ -369,20 +369,18 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
 
 ### Fano Variety 2-24
 ??? example "2-24"
-
-    - **Ambient Space:** `$A2$`
-    - **Fano Index:** `2`
-    - **Basis Rank:** `6`
+    - **Ambient Space:** `A4`
+    - **Keep Nodes:** `1`
+    - **Bundle K:** `[[2],[2]]`
+    - **Fano Index:** `1`
+    - **Dimension:** `3`
+    - **Basis Rank:** `3`
+    - **Description:** Complete intersection of two quadrics in $\mathbb{P}^4$; a del Pezzo threefold of degree 4.
 
     ??? note "Quantum Matrix ($y=1$)"
-            $$
-        \begin{bmatrix}0 & 2 & 2 & 0 & 0 & 4\\2 & 0 & 0 & 2 & 0 & 0\\2 & 0 & 0 & 0 & 2 & 0\\0 & 2 & 4 & 0 & 0 & 2\\0 & 4 & 2 & 0 & 0 & 2\\0 & 0 & 0 & 2 & 2 & 0\end{bmatrix}
-            $$
-
-
-
-    **Description:** *
-
+        $$
+        \begin{bmatrix}0 & 40 & 192\\1 & 4 & 40\\0 & 1 & 0\end{bmatrix}
+        $$
 
 ### Fano Variety 2-25
 ??? example "2-25"
@@ -421,18 +419,48 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
 
 ### Fano Variety 2-32
 ??? example "2-32"
-    **Description:** *
+    - **Ambient Space:** `A2`
+    - **Keep Nodes:** `1,2`
+    - **Bundle K:** `—`
+    - **Fano Index:** `2`
+    - **Dimension:** `3`
+    - **Basis Rank:** `6`
+    - **Description:** Full flag variety $Fl(1,2;\mathbb{C}^3)$; divisor of bidegree $(1,1)$ in $\mathbb{P}^2 \times \mathbb{P}^2$.
 
+    ??? note "Quantum Matrix ($y=1$)"
+        $$
+        \begin{bmatrix}0 & 2*y1 & 2*y2 & 0 & 0 & 4*y1*y2\\2 & 0 & 0 & 2*y2 & 0 & 0\\2 & 0 & 0 & 0 & 2*y1 & 0\\0 & 2 & 4 & 0 & 0 & 2*y1\\0 & 4 & 2 & 0 & 0 & 2*y2\\0 & 0 & 0 & 2 & 2 & 0\end{bmatrix}
+        $$
 
 ### Fano Variety 2-33
 ??? example "2-33"
-    **Description:** *
+    - **Ambient Space:** `A1xA2`
+    - **Keep Nodes:** `1,2`
+    - **Bundle K:** `—`
+    - **Fano Index:** `1`
+    - **Dimension:** `3`
+    - **Basis Rank:** `6`
+    - **Description:** $\mathbb{P}^1 \times \mathbb{P}^2$.
 
+    ??? note "Quantum Matrix ($y=1$)"
+        $$
+        \begin{bmatrix}0 & 2 & 0 & 0 & 3 & 0\\2 & 0 & 0 & 0 & 0 & 3\\3 & 0 & 0 & 2 & 0 & 0\\0 & 3 & 2 & 0 & 0 & 0\\0 & 0 & 3 & 0 & 0 & 2\\0 & 0 & 0 & 3 & 2 & 0\end{bmatrix}
+        $$
 
 ### Fano Variety 2-34
 ??? example "2-34"
-    **Description:** *
+    - **Ambient Space:** `A1xA1xA1`
+    - **Keep Nodes:** `1,2,3`
+    - **Bundle K:** `—`
+    - **Fano Index:** `2`
+    - **Dimension:** `3`
+    - **Basis Rank:** `8`
+    - **Description:** $\mathbb{P}^1 \times \mathbb{P}^1 \times \mathbb{P}^1$; deformation of 2-33.
 
+    ??? note "Quantum Matrix ($y=1$)"
+        $$
+        \begin{bmatrix}0 & 2 & 2 & 2 & 0 & 0 & 0 & 0\\2 & 0 & 0 & 0 & 2 & 2 & 0 & 0\\2 & 0 & 0 & 0 & 2 & 0 & 2 & 0\\2 & 0 & 0 & 0 & 0 & 2 & 2 & 0\\0 & 2 & 2 & 0 & 0 & 0 & 0 & 2\\0 & 2 & 0 & 2 & 0 & 0 & 0 & 2\\0 & 0 & 2 & 2 & 0 & 0 & 0 & 2\\0 & 0 & 0 & 0 & 2 & 2 & 2 & 0\end{bmatrix}
+        $$
 
 ### Fano Variety 2-35
 ??? example "2-35"
@@ -508,8 +536,18 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
 
 ### Fano Variety 3-11
 ??? example "3-11"
-    **Description:**
+    - **Ambient Space:** `A1xA1xA2`
+    - **Keep Nodes:** `1,2,3`
+    - **Bundle K:** `[[1,1,1]]`
+    - **Fano Index:** `1`
+    - **Dimension:** `3`
+    - **Basis Rank:** `8`
+    - **Description:** Divisor of tridegree $(1,1,1)$ in $\mathbb{P}^1 \times \mathbb{P}^1 \times \mathbb{P}^2$; a blow-up of the quadric $Q^3$ along a conic.
 
+    ??? note "Quantum Matrix ($y=1$)"
+        $$
+        \begin{bmatrix}0 & 2 & 2 & 2 & 0 & 3 & 3 & 8\\1 & -1 & 1 & 0 & 0 & 2 & 0 & 3\\1 & 1 & -1 & 0 & 0 & 0 & 2 & 3\\2 & 1 & 1 & 0 & 2 & 2 & 2 & 0\\0 & 1 & 1 & -4 & -2 & -2 & -2 & -2\\0 & 2 & 0 & 3 & 1 & 0 & 2 & 2\\0 & 0 & 2 & 3 & 1 & 2 & 0 & 2\\0 & 0 & 0 & 0 & 2 & 3 & 3 & 0\end{bmatrix}
+        $$
 
 ### Fano Variety 3-12
 ??? example "3-12"
@@ -578,8 +616,18 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
 
 ### Fano Variety 3-25
 ??? example "3-25"
-    **Description:** *
+    - **Ambient Space:** `A1xA1xA1`
+    - **Keep Nodes:** `1,2,3`
+    - **Bundle K:** `—`
+    - **Fano Index:** `2`
+    - **Dimension:** `3`
+    - **Basis Rank:** `8`
+    - **Description:** $\mathbb{P}^1 \times \mathbb{P}^1 \times \mathbb{P}^1$ (same as 2-34 under different numbering).
 
+    ??? note "Quantum Matrix ($y=1$)"
+        $$
+        \begin{bmatrix}0 & 2 & 2 & 2 & 0 & 0 & 0 & 0\\2 & 0 & 0 & 0 & 2 & 2 & 0 & 0\\2 & 0 & 0 & 0 & 2 & 0 & 2 & 0\\2 & 0 & 0 & 0 & 0 & 2 & 2 & 0\\0 & 2 & 2 & 0 & 0 & 0 & 0 & 2\\0 & 2 & 0 & 2 & 0 & 0 & 0 & 2\\0 & 0 & 2 & 2 & 0 & 0 & 0 & 2\\0 & 0 & 0 & 0 & 2 & 2 & 2 & 0\end{bmatrix}
+        $$
 
 ### Fano Variety 3-26
 ??? example "3-26"
@@ -625,8 +673,18 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
 
 ### Fano Variety 4-1
 ??? example "4-1"
-    **Description:** 3-27
+    - **Ambient Space:** `A1xA1xA1xA1`
+    - **Keep Nodes:** `1,2,3,4`
+    - **Bundle K:** `—`
+    - **Fano Index:** `2`
+    - **Dimension:** `3`
+    - **Basis Rank:** `16`
+    - **Description:** $\mathbb{P}^1 \times \mathbb{P}^1 \times \mathbb{P}^1 \times \mathbb{P}^1$ (product of four $\mathbb{P}^1$).
 
+    ??? note "Quantum Matrix ($y=1$)"
+        $$
+        \begin{bmatrix}0 & 2 & 2 & 2 & 2 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\2 & 0 & 0 & 0 & 0 & 2 & 2 & 2 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\2 & 0 & 0 & 0 & 0 & 2 & 0 & 0 & 2 & 2 & 0 & 0 & 0 & 0 & 0 & 0\\2 & 0 & 0 & 0 & 0 & 0 & 2 & 0 & 2 & 0 & 2 & 0 & 0 & 0 & 0 & 0\\2 & 0 & 0 & 0 & 0 & 0 & 0 & 2 & 0 & 2 & 2 & 0 & 0 & 0 & 0 & 0\\0 & 2 & 2 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 2 & 2 & 0 & 0 & 0\\0 & 2 & 0 & 2 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 2 & 0 & 2 & 0 & 0\\0 & 2 & 0 & 0 & 2 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 2 & 2 & 0 & 0\\0 & 0 & 2 & 2 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 2 & 0 & 0 & 2 & 0\\0 & 0 & 2 & 0 & 2 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 2 & 0 & 2 & 0\\0 & 0 & 0 & 2 & 2 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 2 & 2 & 0\\0 & 0 & 0 & 0 & 0 & 2 & 2 & 0 & 2 & 0 & 0 & 0 & 0 & 0 & 0 & 2\\0 & 0 & 0 & 0 & 0 & 2 & 0 & 2 & 0 & 2 & 0 & 0 & 0 & 0 & 0 & 2\\0 & 0 & 0 & 0 & 0 & 0 & 2 & 2 & 0 & 0 & 2 & 0 & 0 & 0 & 0 & 2\\0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 2 & 2 & 2 & 0 & 0 & 0 & 0 & 2\\0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 2 & 2 & 2 & 2 & 0\end{bmatrix}
+        $$
 
 ### Fano Variety 4-2
 ??? example "4-2"
