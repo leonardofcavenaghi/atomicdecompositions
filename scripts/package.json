@@ -10,6 +10,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "puppeteer": "^24.43.1"
+    "puppeteer": "^24.43.1",
+    "serve-handler": "^6.1.7"
   }
 }

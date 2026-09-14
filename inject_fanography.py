@@ -30,16 +30,17 @@ def generate_markdown(alg, keep, K):
     
     subs_dict = {sympy.Symbol(f'y{i}'): 1 for i in range(1, 10)}
     M_subs = [[sympy.sympify(elem).subs(subs_dict) for elem in row] for row in M]
-    matrix_latex = sympy.latex(sympy.Matrix(M_subs))
+    matrix_latex = "\n".join("        " + line for line in sympy.latex(sympy.Matrix(M_subs)).split("\n"))
     
-    md = f"""- **Ambient Space:** `${alg}$`
-- **Fano Index:** `{fano}`
-- **Basis Rank:** `{len(idx)}`
+    md = f"""??? example "{var_id}"
+    - **Ambient Space:** `${alg}$`
+    - **Fano Index:** `{fano}`
+    - **Basis Rank:** `{len(idx)}`
 
-??? note "Quantum Matrix ($y=1$)"
-    $$
-    {matrix_latex}
-    $$
+    ??? note "Quantum Matrix ($y=1$)"
+        $$
+{matrix_latex}
+        $$
 """
     return md
 

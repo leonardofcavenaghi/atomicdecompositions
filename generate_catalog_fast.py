@@ -151,6 +151,7 @@ def process_case(args):
         elif is_pn and K_multidegs:
             h, hdim = compute_hodge_pn(n, degrees)
             card += f"""    ??? note "Hodge Diamond ($h^{{p,q}}$)"
+
         $$
 {hodge_matrix_str(h, hdim)}
         $$

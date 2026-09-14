@@ -119,7 +119,7 @@ def process_case(args):
         # We don't have symbols in numeric, but just in case:
         ns = {f'y{i}': 1 for i in range(1, 10)}
         matrix_1 = c1TX.subs(ns)
-        matrix_tex = indent_latex(sympy.latex(matrix_1), 4)
+        matrix_tex = indent_latex(sympy.latex(matrix_1), 8)
         
         # Calculate eigenvalues if small enough
         try:
@@ -144,28 +144,30 @@ def process_case(args):
                 
         rank = matrix_1.shape[0]
 
-        card = f"""### {label}\n- **Ambient Space:** `${alg}$`
-- **Dimension:** ${dim}$
-- **Fano Index:** ${fano_idx}$
-- **Basis Rank:** ${rank}$
-- **Eigenvalues:** {eigenvals_str}
+        card = f"""??? example "{label}"
+    - **Ambient Space:** `${alg}$`
+    - **Dimension:** ${dim}$
+    - **Fano Index:** ${fano_idx}$
+    - **Basis Rank:** ${rank}$
+    - **Eigenvalues:** {eigenvals_str}
 
-??? note "Quantum Matrix ($y=1$)"
-    $$
+    ??? note "Quantum Matrix ($y=1$)"
+        $$
 {matrix_tex}
-    $$
+        $$
 """
         if label in SCRAPED_HODGE:
-            card += "\n" + SCRAPED_HODGE[label] + "\n"
+            hodge_content = indent_latex(SCRAPED_HODGE[label], 4)
+            card += "\n" + hodge_content + "\n"
         elif is_pn and dim <= 8:
             try:
                 h, _ = compute_hodge_pn(n, degrees)
-                mat_str = hodge_matrix_str(h, dim)
+                mat_str = indent_latex(hodge_matrix_str(h, dim), 8)
                 card += f"""
-??? note "Hodge Diamond ($h^{{p,q}}$)"
-    $$
+    ??? note "Hodge Diamond ($h^{{p,q}}$)"
+        $$
 {mat_str}
-    $$
+        $$
 """
             except Exception:
                 pass
