@@ -20,3 +20,15 @@ Whenever writing loops to programmatically search, discover, or filter hundreds 
 - Grassmannian $Gr(k, n)$: `index = n - sum(degrees)`
 - Quadrics $Q^n$: `index = n - sum(degrees)`
 Only instantiate `FlagVariety` objects for cases where the theoretical index is strictly positive (`index > 0`).
+
+## Rule 5: Always Use gwflags via Miniconda Runtime
+You MUST always use the `gwflags` library for computations. All `gwflags` library executions (CLI, GUI, tests, scripts) MUST use the miniconda Python interpreter at `/home/leonardofcavenaghi/miniconda/bin/python3` with `BypassSandbox: true`. Do NOT use system Python, venv Python, or sandbox Python — they lack required dependencies (`sympy`, `mpmath`). Git push operations also require `BypassSandbox: true` for DNS resolution.
+
+## Rule 6: Mathematical Assertions in Tests
+When writing new test cases for `gwflags`, you MUST NOT assume mathematical values (Fano indices, dimensions, GW invariants, eigenvalues). Instead:
+1. First run the computation with `gwflags` to obtain the ACTUAL value.
+2. Only then write the assertion using the computed value.
+3. For product algebras (e.g., `A1xA2`), beta vectors must have length equal to the root system rank, and for GKM engine tests, nonzero beta entries must correspond to kept nodes only.
+
+## Rule 7: Localization Theorem Attribution
+The localization technique used by `gwflags` on the moduli space of stable maps is the **Graber-Pandharipande Virtual Localization Theorem**, NOT the Atiyah-Bott Localization Theorem (which applies only to smooth manifolds). All documentation, comments, and generated text must use "virtual localization" or "Graber-Pandharipande" when referring to this technique.
