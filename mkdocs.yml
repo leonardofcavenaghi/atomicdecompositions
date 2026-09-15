@@ -82,6 +82,9 @@ nav:
       - Grassmannians: catalog/grassmannians.md
       - Flag Varieties: catalog/flag_varieties.md
       - Fanography: catalog/fanography.md
+  - Review and Changes:
+      - Change log: change-log.md
+      - Website Usage Audit: audits/website-usage-review.md
   - Methodology:
       - Core Theory: methodology.md
       - API Reference: api-reference.md

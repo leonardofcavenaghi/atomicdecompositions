@@ -21,32 +21,18 @@ import webbrowser
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
 PRESETS = [
-    # label, algebra, keep, K
-    ('(a)  Fl(1,2,3)', 'A2', '1,2', ''),
-    ('(b)  P2xP2 / O(1,1)', 'A2xA2', '1,3', '1,1'),
-    ('(c)  P4 / O(4)  quartic 3-fold', 'A4', '1', '4'),
-    ('(d1) P3xP3 / O(1,1)+O(1,1)', 'A3xA3', '1,4', '1,1;1,1'),
-    ('(d2) Fl(1,3,4) / O(1,1)', 'A3', '1,3', '1,1'),
-    ('(e)  SO(5)/B / O(1,1)', 'B2', '1,2', '1,1'),
-    ('(f)  P3xP3 / O(1,1)^3', 'A3xA3', '1,4', '1,1;1,1;1,1'),
-    ('(g)  Gr(2,5) / O(1)+O(1)+O(2)', 'A4', '2', '1;1;2'),
-    ('(h)  P3xP3 / O(1,1)+O(2,2)  [slow]', 'A3xA3', '1,4', '1,1;2,2'),
-    ('(i)  Fl(1,2,5) / O(0,1)+O(0,2)+O(1,0)  GM-20', 'A4', '1,2',
-     '0,1;0,2;1,0'),
-    ('(j)  P1xP5 / O(1,1)+O(0,3)', 'A1xA5', '1,2', '1,1;0,3'),
-    ('(k)  P1xP1xP4 / O(1,1,1)+O(0,0,3)  [slow]', 'A1xA1xA4', '1,2,3',
-     '1,1,1;0,0,3'),
-    ('quadric 3-fold Q3 in P4', 'A4', '1', '2'),
-    ('cubic 3-fold in P4', 'A4', '1', '3'),
-    ('V8 = (2,2,2) in P6', 'A6', '1', '2;2;2'),
-    ('Gr(2,4)', 'A3', '2', ''),
-    ('Gr(2,5) / O(2)  Gushel-Mukai 5-fold', 'A4', '2', '2'),
-    ('Fl(1,4,5) / O(1,1)+O(1,1)', 'A4', '1,4', '1,1;1,1'),
-    ('G2/P1  quadric 5-fold', 'G2', '1', ''),
-    ('G2/P2', 'G2', '2', ''),
-    ('OG(3,7) / O(2)', 'B3', '3', '2'),
-    ('LG(3,6) / O(1)', 'C3', '3', '1'),
+    # label, algebra, keep, K, action, beta, classes, eval_y, expected
+    ('(a) Fl(1,2,3)', 'A2', '1,2', '', 'info', '', '', '', 'full flag variety'),
+    ('(b) P2xP2 / O(1,1)', 'A2xA2', '1,3', '1,1', 'info', '', '', '', 'dimension 3'),
+    ('(c) quartic threefold', 'A4', '1', '4', 'gw', '1,0,0,0', '', '', '2875-style setup'),
+    ('(d) Gr(2,4)', 'A3', '2', '', 'gw', '0,1,0', '2 1 3 2|1 2|3 2', '', 'invariant 1'),
+    ('(e) cubic surface', 'A3', '1', '3', 'gw', '1,0,0', '', '', '27'),
+    ('(f) quintic threefold', 'A4', '1', '5', 'gw', '1,0,0,0', '', '', '2875'),
+    ('(g) quotient bundle on Gr(2,5)', 'A4', '2', 'taut_quot(X, 2)', 'info', '', '', '', 'dimension 3'),
+    ('(h) P3xP3 / O(1,1)+O(2,2) [slow]', 'A3xA3', '1,4', '1,1;2,2', 'info', '', '', '', 'dimension 3'),
+    ('(i) quantum matrix for P2', 'A2', '1', '', 'sqm', '', '', '', '3x3 matrix'),
 ]
+
 
 JOBS = {}
 JOBS_LOCK = threading.Lock()
@@ -194,6 +180,7 @@ def run_job(job, kind, params):
         else:
             raise ValueError(f'unknown action {kind!r}')
 
+        result['input'] = {'algebra': algebra, 'keep': keep, 'K': params.get('K', '').strip(), 'action': kind}
         result['seconds'] = round(time.time() - t0, 2)
         job['result'] = result
         job['state'] = 'done'
@@ -226,8 +213,10 @@ class Handler(BaseHTTPRequestHandler):
             self.end_headers()
             self.wfile.write(data)
         elif self.path == '/api/presets':
-            self._json([{'label': l, 'algebra': a, 'keep': k, 'K': kk}
-                        for l, a, k, kk in PRESETS])
+            self._json([{'label': l, 'algebra': a, 'keep': k, 'K': kk, 'action': action,
+                         'beta': beta, 'classes': classes, 'eval_y': eval_y,
+                         'expected': expected}
+                        for l, a, k, kk, action, beta, classes, eval_y, expected in PRESETS])
         elif self.path.startswith('/api/status'):
             jid = self.path.split('id=')[-1]
             with JOBS_LOCK:
@@ -361,6 +350,12 @@ tr:hover td { background: rgba(255,255,255,0.02); }
 .dom { color: var(--ok); font-weight: 700; background: rgba(52, 211, 153, 0.1) !important; }
 .err { color: var(--err); }
 sup { font-size: 10px; font-weight: 600; }
+.help { color:var(--dim); font-size:12px; margin-top:4px; }
+fieldset { border:1px solid var(--edge); border-radius:var(--radius); padding:10px 12px; margin-top:14px; }
+legend { color:var(--dim); font-size:12px; padding:0 5px; }
+.invalid { border-color:var(--err) !important; }
+#status { min-height:1.5em; color:var(--dim); }
+@media (max-width: 850px) { main { display:block; } #controls { border-right:0; border-bottom:1px solid var(--edge); } #results { padding:20px; } }
 </style></head><body>
 <header><h1>gwflags</h1>
 <span>Gromov&ndash;Witten invariants &amp; quantum multiplication for flag
@@ -371,16 +366,19 @@ varieties — G/P and complete intersections</span></header>
     <div class="card-header">1. Space Definition</div>
     <label>Preset Library</label>
     <select id="preset"><option value="">— choose a pre-configured example —</option></select>
-    <label>Lie Algebra</label>
-    <input id="algebra" value="A2" placeholder="e.g., A2, B3, A3xA3, G2">
+    <label for="algebra">Lie algebra</label>
+    <input id="algebra" value="A2" aria-describedby="algebra-help" placeholder="A3 or A3xA3">
+    <div id="algebra-help" class="help">Use A, B, C, D, G2, or products such as A3xA3.</div>
     <div class="row">
       <div>
-        <label>Kept Simple Roots</label>
-        <input id="keep" value="1" placeholder="e.g., 1,2">
+        <label for="keep">Kept simple roots</label>
+        <input id="keep" value="1" aria-describedby="keep-help" placeholder="1 or 1,2">
+        <div id="keep-help" class="help">Comma-separated Bourbaki node numbers; order matters.</div>
       </div>
       <div>
-        <label>Twisting Bundle K</label>
-        <input id="K" placeholder="e.g., taut_quot(X, 2) or 1,1;2,2">
+        <label for="K">Bundle K (optional)</label>
+        <input id="K" aria-describedby="K-help" placeholder="3 or 1,1;2,2">
+        <div id="K-help" class="help">Use 3 for O(3), rows with commas for summands, or taut_quot(X, 2). Python [[3]] syntax is not accepted here.</div>
       </div>
     </div>
   </div>
@@ -389,28 +387,32 @@ varieties — G/P and complete intersections</span></header>
     <div class="card-header">2. Execution Options</div>
     <div class="row">
       <div>
-        <label>Evaluate y (Novikov)</label>
-        <input id="eval_y" placeholder="e.g., y1=2, y2=-1">
+        <label for="eval_y">Evaluate y (optional)</label>
+        <input id="eval_y" aria-describedby="eval-help" placeholder="y1=1, y2=1">
+        <div id="eval-help" class="help">Leave blank for symbolic variables; assignments are only used by the matrix action.</div>
       </div>
       <div>
-        <label>Parallel Workers</label>
-        <input id="workers" value="8">
+        <label for="workers">Parallel workers</label>
+        <input id="workers" value="8" aria-describedby="workers-help">
+        <div id="workers-help" class="help">Use 0 for automatic; 4–8 is a good default.</div>
       </div>
     </div>
-    <button id="bsqm" class="primary-btn">Compute c&#8321;(TX)&#8902; Matrix</button>
-    <button id="binfo" class="secondary">View Space Info</button>
+    <button id="bsqm" class="primary-btn">Compute quantum matrix</button>
+    <button id="binfo" class="secondary">Describe this space</button>
   </div>
 
   <div class="control-card" id="gwbox">
     <div class="card-header">3. GW Invariants (Advanced)</div>
-    <label>Curve Class &beta;</label>
-    <input id="beta" placeholder="one integer per root, e.g., 1,0">
-    <label>Insertions (separated by |)</label>
-    <input id="classes" placeholder="e.g., pt | id | 2,1,3">
-    <button id="bgw" class="secondary" style="width:100%; margin-top:12px;">Compute Invariant</button>
+    <label for="beta">Curve class &beta;</label>
+    <input id="beta" aria-describedby="beta-help" placeholder="one integer per root, e.g. 1,0,0">
+    <div id="beta-help" class="help">Enter one nonnegative integer per ambient simple root.</div>
+    <label for="classes">Insertions (separated by |)</label>
+    <input id="classes" aria-describedby="classes-help" placeholder="pt | id | 2 1 3 2">
+    <div id="classes-help" class="help">Use pt, id, or a space-separated reduced word copied from Space Info.</div>
+    <button id="bgw" class="secondary" style="width:100%; margin-top:12px;">Compute one GW invariant</button>
   </div>
   
-  <div id="log">System ready. Waiting for input...</div>
+  <div id="status" aria-live="polite">Ready. Choose an example or enter a variety.</div><div id="log" aria-live="polite">System ready. Waiting for input...</div>
 </div>
 <div id="results"><h2>Results</h2>
 <div id="out" style="color:var(--dim)">Pick a preset (or describe a flag
@@ -427,15 +429,26 @@ fetch('/api/presets').then(r=>r.json()).then(ps=>{
     o.value=i; o.textContent=p.label; $('preset').appendChild(o); });
   window._presets=ps; });
 $('preset').onchange = ()=>{ const p=window._presets[$('preset').value];
-  if(p){ $('algebra').value=p.algebra; $('keep').value=p.keep;
-         $('K').value=p.K; } };
+  if(p){ $('algebra').value=p.algebra; $('keep').value=p.keep; $('K').value=p.K;
+    $('beta').value=p.beta||''; $('classes').value=p.classes||''; $('eval_y').value=p.eval_y||'';
+    $('status').textContent='Loaded '+p.label+'. Recommended action: '+p.action+'. Expected: '+p.expected+'.';
+    window._recommended=p.action; } };
+function validate(action){
+  let ok=true; ['algebra','keep','K','beta','classes','eval_y'].forEach(id=>$(id).classList.remove('invalid'));
+  if(!/^[A-Za-z0-9]+(?:x[A-Za-z0-9]+)*$/.test($('algebra').value.trim())) { $('algebra').classList.add('invalid'); ok=false; }
+  if(!/^\d+(?:,\d+)*$/.test($('keep').value.trim())) { $('keep').classList.add('invalid'); ok=false; }
+  if(action==='gw' && $('beta').value.trim() && !/^\d+(?:,\d+)*$/.test($('beta').value.trim())) { $('beta').classList.add('invalid'); ok=false; }
+  if(!ok) $('status').textContent='Please correct the highlighted fields.';
+  return ok;
+}
 let timer=null;
 function run(action){
+  if(!validate(action)) return;
   const params={action, algebra:$('algebra').value, keep:$('keep').value,
     K:$('K').value, eval_y:$('eval_y').value, workers:$('workers').value,
     beta:$('beta').value, classes:$('classes').value};
   ['bsqm','binfo','bgw'].forEach(b=>$(b).disabled=true);
-  $('log').textContent='starting...';
+  $('log').textContent='starting...'; $('status').textContent='Computing '+action+'…';
   const fail = msg => { clearInterval(timer);
     ['bsqm','binfo','bgw'].forEach(b=>$(b).disabled=false);
     $('out').innerHTML='<span class="err">'+msg+'</span>'; };
@@ -456,15 +469,16 @@ function run(action){
 }
 function render(action,res){
   let h='';
+  if(res.input) h+='<div class="help">Input used: '+res.input.algebra+'; kept roots '+res.input.keep.join(',')+'; K='+((res.input.K||'empty'))+'</div>';
   if(action==='info'){
     h+='<span class="badge">dim '+res.dim+'</span>'+
        '<span class="badge">Fano index '+res.fano+'</span>'+
        '<span class="badge">c&#8321; = ['+res.c1+']</span>'+
        '<span class="badge">'+res.n_betas+' curve classes</span>';
     h+='<h2>Schubert basis</h2><table><tr><th>&sigma;</th><th>word</th>'+
-       '<th>degree</th></tr>';
+       '<th>degree</th><th>use</th></tr>';
     res.basis.forEach(b=>h+='<tr><td>&sigma;<sub>'+b.index+'</sub></td><td>'+
-       b.word+'</td><td>'+b.degree+'</td></tr>');
+       b.word+'</td><td>'+b.degree+'</td><td><button class=\"secondary\" style=\"margin:0;padding:4px 8px\" data-word=\"'+b.word+'\" onclick=\"addInsertion(this.dataset.word)\">Add</button></td></tr>');
     h+='</table>';
   } else if(action==='gw'){
     h+='<h2>&lang;'+res.insertions.join(', ')+'&rang;<sub>&beta;=['+
@@ -494,6 +508,7 @@ function render(action,res){
   }
   $('out').innerHTML=h;
 }
+function addInsertion(word){ const f=$('classes'); if(word==='e') word='id'; f.value=f.value?f.value+'|'+word:word; $('status').textContent='Added '+word+' to insertions.'; }
 $('bsqm').onclick=()=>run('sqm');
 $('binfo').onclick=()=>run('info');
 $('bgw').onclick=()=>run('gw');
