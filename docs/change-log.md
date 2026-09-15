@@ -21,3 +21,5 @@
 
 - Audited all canonical catalog pages and corrected duplicate projective entries, 74 matrix-rank metadata mismatches, and a symbolic Fanography matrix label.
 - Added a catalog organization review and marked the legacy aggregate page as historical.
+
+- Recomputed supported pending Fanography matrices for 1-5, 1-14, 2-24, 2-34, and 4-1; updated the corrected 4-1 basis rank.

@@ -39,8 +39,27 @@ JOBS_LOCK = threading.Lock()
 
 
 # ------------------------------------------------------------- computations
+def _int_vector(raw, label, *, expected=None, nonnegative=True):
+    """Parse a comma-separated integer vector for the web form."""
+    text = str(raw or '').strip()
+    if not text:
+        raise ValueError(f'{label} is required; enter comma-separated integers')
+    parts = [part.strip() for part in text.split(',')]
+    if any(not part for part in parts):
+        raise ValueError(f'{label} must be comma-separated integers (for example 1,0,0)')
+    try:
+        values = [int(part) for part in parts]
+    except ValueError as exc:
+        raise ValueError(f'{label} must contain integers only (for example 1,0,0)') from exc
+    if nonnegative and any(value < 0 for value in values):
+        raise ValueError(f'{label} must contain nonnegative integers')
+    if expected is not None and len(values) != expected:
+        raise ValueError(f'{label} needs exactly {expected} entries for this algebra; got {len(values)}')
+    return values
+
+
 def parse_k(spec, X=None):
-    spec = spec.strip()
+    spec = str(spec or '').strip()
     if not spec:
         return []
     if any(c.isalpha() for c in spec):
@@ -58,7 +77,16 @@ def parse_k(spec, X=None):
             return eval(compile(tree, '<bundle>', 'eval'), {'__builtins__': {}}, allowed)
         except Exception as e:
             raise ValueError(f"Invalid bundle expression: {e}")
-    return [[int(v) for v in row.split(',')] for row in spec.split(';')]
+    try:
+        rows = []
+        for raw_row in spec.split(';'):
+            if not raw_row.strip():
+                raise ValueError('empty bundle row')
+            values = _int_vector(raw_row, 'Bundle K')
+            rows.append(values)
+        return rows
+    except ValueError as e:
+        raise ValueError(f'Invalid Bundle K: {e}. Use 3 or 1,1;2,2.') from e
 
 
 def parse_classes(spec, X):
@@ -75,8 +103,20 @@ def parse_classes(spec, X):
             out.append(X.wd.group[0])
             names.append('id')
         else:
-            word = tuple(int(c) for c in token.replace(',', ' ').split())
-            out.append(X.schubert(word))
+            try:
+                pieces = token.replace(',', ' ').split()
+                if not pieces:
+                    raise ValueError('empty reduced word')
+                word = tuple(int(c) for c in pieces)
+            except ValueError as e:
+                raise ValueError(
+                    f'Insertion {token!r} is not a valid reduced word; '
+                    'use spaces, for example 2 1 3 2') from e
+            try:
+                out.append(X.schubert(word))
+            except Exception as e:
+                raise ValueError(
+                    f'Insertion {token!r} is not valid for this variety: {e}') from e
             names.append('s' + ''.join(map(str, word)))
     return out, names
 
@@ -95,9 +135,18 @@ def run_job(job, kind, params):
     try:
         t0 = time.time()
         algebra = params['algebra'].strip()
-        keep = [int(v) for v in params['keep'].split(',') if v.strip()]
-        X = FlagVariety(algebra, keep)
-        K = X._check_K(parse_k(params.get('K', ''), X))
+        try:
+            keep = _int_vector(params.get('keep', ''), 'Kept simple roots')
+        except ValueError as e:
+            raise ValueError(f'Cannot describe the variety: {e}') from e
+        try:
+            X = FlagVariety(algebra, keep)
+        except ValueError as e:
+            raise ValueError(f'Cannot describe the variety: {e}') from e
+        try:
+            K = X._check_K(parse_k(params.get('K', ''), X))
+        except ValueError as e:
+            raise ValueError(f'Cannot use Bundle K: {e}') from e
         log(f'{algebra}, kept roots {keep}'
             + (f', bundle {K}' if K else '')
             + f': |W| = {len(X.wd.group)}, {len(X.classes)} Schubert classes,'
@@ -118,10 +167,17 @@ def run_job(job, kind, params):
             result['dim'] = X.dimension - (K.rank if hasattr(K, 'rank') else len(K))
 
         elif kind == 'gw':
-            beta = tuple(int(v) for v in params['beta'].split(','))
-            classes, names = parse_classes(params['classes'], X)
+            if not str(params.get('beta', '')).strip():
+                raise ValueError('Curve class beta is required; enter one nonnegative integer per simple root')
+            beta = tuple(_int_vector(params['beta'], 'Curve class beta', expected=X.rs.rank))
+            classes, names = parse_classes(params.get('classes', ''), X)
             log(f'computing <{", ".join(names)}>_beta={list(beta)} ...')
-            val = X.gw(classes, beta, K or None, progress=log)
+            try:
+                val = X.gw(classes, beta, K or None, progress=log)
+            except ValueError as e:
+                raise ValueError(
+                    f'Cannot compute this invariant: {e}. Check beta length, '
+                    'insertion degrees, and bundle convexity.') from e
             result['value'] = str(val)
             result['insertions'] = names
             result['beta'] = list(beta)
@@ -145,7 +201,12 @@ def run_job(job, kind, params):
                     k = k.strip()
                     if not k.startswith('y') or not k[1:].isdigit():
                         raise ValueError(f'invalid Novikov variable {k!r}')
-                    eval_dict[sympy.Symbol(k)] = sympy.sympify(v.strip())
+                    if not v.strip():
+                        raise ValueError(f'Novikov assignment {k}= is missing a value')
+                    try:
+                        eval_dict[sympy.Symbol(k)] = sympy.sympify(v.strip())
+                    except Exception as e:
+                        raise ValueError(f'Novikov value {v.strip()!r} is not a valid number or expression') from e
                 symbols = set().union(*(sympy.sympify(v).free_symbols for row in M for v in row))
                 unknown = set(eval_dict) - symbols
                 if unknown:
