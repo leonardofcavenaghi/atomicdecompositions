@@ -75,26 +75,25 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
     - **Dimension:** `3`
     - **Basis Rank:** `4`
     - **Description:** Gushel–Mukai threefold: section of Gr(2,5) by two hyperplanes and a quadric.
-    - **Realization type:** Homogeneous-bundle zero locus (the current numeric model records the corresponding Chern-root data).
+    - **Realization type:** Line-bundle complete intersection.
 
-
-        ??? note "Quantum Matrix ($y=1$)"
-            $$
-            \begin{bmatrix}0 & 156 & 1440 & 13248\\1 & 10 & 152 & 1440\\0 & 5/2 & 10 & 156\\0 & 0 & 1 & 0\end{bmatrix}
-            $$
+    ??? note "Quantum Matrix ($y=1$)"
+        $$
+        \begin{bmatrix}0 & 156 & 1440 & 13248\\1 & 10 & 152 & 1440\\0 & 5/2 & 10 & 156\\0 & 0 & 1 & 0\end{bmatrix}
+        $$
 
 
 ### Fano Variety 1-6
 ??? example "1-6"
 
     - **Ambient Space:** `$D5$`
-    - **Keep Nodes:** `1`
-    - **Bundle K:** `2;5`
+    - **Keep Nodes:** `5`
+    - **Bundle K:** `1;1;1;1;1;1;1`
     - **Fano Index:** `1`
     - **Dimension:** `3`
     - **Basis Rank:** `4`
-    - **Description:** Section of half-spinor embedding of a connected component of $\mathrm{OGr}_+(5,10)$ by codimension 7 subspace.
-    - **Realization type:** Homogeneous-bundle zero locus.
+    - **Description:** Section of the half-spinor embedding of a connected component of $\mathrm{OGr}_+(5,10)$ by codimension 7 subspace.
+    - **Realization type:** Line-bundle complete intersection.
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
@@ -106,13 +105,13 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
 ??? example "1-7"
 
     - **Ambient Space:** `$A5$`
-    - **Keep Nodes:** `1`
-    - **Bundle K:** `2;2;4`
+    - **Keep Nodes:** `2`
+    - **Bundle K:** `1;1;1;1;1`
     - **Fano Index:** `1`
     - **Dimension:** `3`
     - **Basis Rank:** `4`
-    - **Description:** Section of Plücker embedding of $\mathrm{Gr}(2,6)$ by codimension 5 subspace.
-    - **Realization type:** Homogeneous-bundle zero locus.
+    - **Description:** Section of the Plücker embedding of $\mathrm{Gr}(2,6)$ by codimension 5 subspace.
+    - **Realization type:** Line-bundle complete intersection.
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
@@ -124,13 +123,13 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
 ??? example "1-8"
 
     - **Ambient Space:** `$C3$`
-    - **Keep Nodes:** `1`
-    - **Bundle K:** `3;4`
+    - **Keep Nodes:** `3`
+    - **Bundle K:** `1;1;1`
     - **Fano Index:** `1`
     - **Dimension:** `3`
     - **Basis Rank:** `4`
-    - **Description:** Section of Plücker embedding of $\mathrm{SGr}(3,6)$ by codimension 3 subspace.
-    - **Realization type:** Homogeneous-bundle zero locus.
+    - **Description:** Section of the Plücker embedding of $\mathrm{SGr}(3,6)$ by codimension 3 subspace.
+    - **Realization type:** Line-bundle complete intersection.
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
@@ -142,12 +141,13 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
 ??? example "1-9"
 
     - **Ambient Space:** `$G2$`
-    - **Keep Nodes:** `1`
-    - **Bundle K:** `3;5`
+    - **Keep Nodes:** `2`
+    - **Bundle K:** `1;1`
     - **Fano Index:** `1`
     - **Dimension:** `3`
     - **Basis Rank:** `4`
     - **Description:** Section of the adjoint $\mathrm{G}_2$-Grassmannian $\mathrm{G}_2\mathrm{Gr}(2,7)$ by codimension 2 subspace.
+    - **Realization type:** Line-bundle complete intersection.
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
@@ -158,14 +158,15 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
 ### Fano Variety 1-10
 ??? example "1-10"
 
-    - **Ambient Space:** `$A4$`
-    - **Keep Nodes:** `2`
-    - **Bundle K:** `1;1;1`
+    - **Ambient Space:** `$A6$`
+    - **Keep Nodes:** `3`
+    - **Bundle K:** `osum(wedge(2, dual(taut_sub(X, 3))), wedge(2, dual(taut_sub(X, 3))), wedge(2, dual(taut_sub(X, 3))))`
     - **Fano Index:** `1`
     - **Dimension:** `3`
     - **Basis Rank:** `4`
     - **Description:** Zero locus of $(\bigwedge^2\mathcal{U}^\vee)^{\oplus 3}$ on $\mathrm{Gr}(3,7)$.
-    - **Realization type:** Homogeneous-bundle zero locus.
+    - **Realization type:** Homogeneous-bundle zero locus; the input is supported, but the quantum matrix remains pending an independent recomputation.
+    - **Matrix status:** Not published until the homogeneous-bundle matrix has been independently recomputed.
 
 
 
@@ -453,7 +454,7 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
     - **Description:** Full flag variety $Fl(1,2;\mathbb{C}^3)$; divisor of bidegree $(1,1)$ in $\mathbb{P}^2 \times \mathbb{P}^2$.
     - **Realization type:** Direct flag variety (also a divisor in the product embedding).
 
-    ??? note "Quantum Matrix ($y=1$)"
+    ??? note "Quantum Matrix (symbolic in y1, y2)"
         $$
         \begin{bmatrix}0 & 2*y1 & 2*y2 & 0 & 0 & 4*y1*y2\\2 & 0 & 0 & 2*y2 & 0 & 0\\2 & 0 & 0 & 0 & 2*y1 & 0\\0 & 2 & 4 & 0 & 0 & 2*y1\\0 & 4 & 2 & 0 & 0 & 2*y2\\0 & 0 & 0 & 2 & 2 & 0\end{bmatrix}
         $$
@@ -689,7 +690,7 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
-        \begin{bmatrix}0 & 6 & 6 & 6 & 6 & 12 & 12 & 12 & 12 & 24\\1 & -1 & 1 & 1 & 1 & 4 & 4 & 4 & 4 & 6\\1 & 1 & -1 & 1 & 1 & 4 & 2 & 2 & 4 & 6\\1 & 1 & 1 & -1 & 1 & 2 & 4 & 2 & 4 & 6\\1 & 1 & 1 & 1 & -1 & 2 & 2 & 4 & 2 & 6\\0 & 1 & 1 & -1 & -1 & -2 & 0 & 0 & 0 & -2\\0 & 1 & -1 & 1 & -1 & 0 & -2 & 0 & 0 & 0\\0 & 1 & 1 & 1 & 3 & 2 & 2 & 0 & 2 & 6\\0 & 0 & 2 & 2 & 2 & 2 & 2 & 2 & 0 & 6\\0 & 0 & 0 & 0 & 0 & 2 & 2 & 2 & 2 & 0\end{bmatrix}
+        \begin{bmatrix}0 & 6 & 6 & 6 & 6 & 12 & 12 & 12 & 12 & 24\\1 & -1 & 1 & 1 & 1 & 4 & 4 & 4 & 2 & 6\\1 & 1 & -1 & 1 & 1 & 4 & 2 & 2 & 4 & 6\\1 & 1 & 1 & -1 & 1 & 2 & 4 & 2 & 4 & 6\\1 & 1 & 1 & 1 & -1 & 2 & 2 & 4 & 2 & 6\\0 & 1 & 1 & -1 & -1 & -2 & 0 & 0 & 0 & -2\\0 & 1 & -1 & 1 & -1 & 0 & -2 & 0 & 0 & 0\\0 & 1 & 1 & 1 & 3 & 2 & 2 & 0 & 2 & 6\\0 & 0 & 2 & 2 & 2 & 2 & 2 & 2 & 0 & 6\\0 & 0 & 0 & 0 & 0 & 2 & 2 & 2 & 2 & 0\end{bmatrix}
         $$
 ### Fano Variety 4-2
 ??? example "4-2"

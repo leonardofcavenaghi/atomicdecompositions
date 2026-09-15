@@ -1,7 +1,7 @@
 """gwflags — Python/SageMath translation of V3.nb.
 
 Gromov–Witten invariants of flag varieties G/P (including semisimple
-products like 'A3xA3' for P^3 x P^3) via Bott localization, complete
+products like 'A3xA3' for P^3 x P^3) via Graber–Pandharipande virtual localization, complete
 intersections therein, and the small quantum multiplication matrix
 c1(TX)* with its eigenvalues.
 

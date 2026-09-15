@@ -23,3 +23,17 @@
 - Added a catalog organization review and marked the legacy aggregate page as historical.
 
 - Recomputed supported pending Fanography matrices for 1-5, 1-14, 2-24, 2-34, and 4-1; updated the corrected 4-1 basis rank.
+- Replaced legacy duplicate catalog pages with pointers to the validated canonical catalog.
+
+## 2026-09-15 — independent mathematics and software audit
+
+- Corrected Fanography 1-5 through 1-9 so each displayed ambient space, kept
+  node, and Bundle K matches its stated geometry; recorded the supported
+  homogeneous-bundle input for 1-10 and marked its matrix pending independent
+  recomputation.
+- Corrected Fanography 4-1 row 2, column 9 and labelled the variable-dependent
+  2-32 matrix symbolic.
+- Added catalog input validation, parser and bundle-constructor regression tests,
+  and the independent [mathematics and software audit](audits/math-software-review.md).
+- Final audit run: catalog validation passed, strict MkDocs build passed, and
+  57 Python tests passed.

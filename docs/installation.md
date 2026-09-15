@@ -4,7 +4,7 @@ Choose the path that matches your background. You do not need SageMath to use th
 
 ## New to Python (recommended path)
 
-1. Install Python 3.10 or newer from [python.org](https://www.python.org/downloads/). On Windows, select **Add Python to PATH**.
+1. Install Python 3.9 or newer (Python 3.10+ is recommended) from [python.org](https://www.python.org/downloads/). On Windows, select **Add Python to PATH**.
 2. Install Git from [git-scm.com](https://git-scm.com/downloads), or download the repository as a ZIP.
 3. Open a terminal and obtain the source:
 
@@ -52,7 +52,13 @@ From a checkout, activate your existing environment and run `python -m pip insta
 python -c "from gwflags import FlagVariety; print(FlagVariety('A2',[1]).dimension)"
 ```
 
-Run the full tests with:
+To run the tests, install the optional test dependency first:
+
+```bash
+python -m pip install pytest
+```
+
+Then run the full tests with:
 
 ```bash
 python -m pytest tests/ -q

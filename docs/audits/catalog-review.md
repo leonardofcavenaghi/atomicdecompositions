@@ -8,7 +8,10 @@ This review covers the maintained catalog pages and the Fanography reference pag
 - Reconciled every displayed **Basis Rank** in the Projective and Grassmannian pages with the dimension of its square quantum matrix (46 and 28 card-level corrections respectively), and synchronized the category tables and master index.
 - Relabelled Fanography 2-32 as a symbolic matrix because it contains `y1` and `y2` variables.
 - Added explicit realization metadata to Fanography cards and kept unsupported weighted, double-cover, and blow-up examples catalog-only.
-- Added a historical-page notice to the old `docs/catalog.md` page, pointing readers to the maintained split catalog.
+- Replaced the old `docs/catalog.md` page with a historical pointer, pointing readers to the maintained split catalog.
+- Corrected Fanography 1-5 through 1-9 input metadata, corrected 4-1 row 2 column 9,
+  and marked 1-10's supported bundle input as matrix-pending until an independent
+  recomputation is available.
 
 ## Organization contract
 
@@ -29,4 +32,5 @@ The master index links the canonical pages. Category pages group entries by dime
 
 - No duplicate `p2fanoindex3` anchor remains.
 - All Projective and Grassmannian cards containing matrices have matching Basis Rank values.
+- The checked-in catalog validator covers corrected Fanography inputs and audited matrix cells.
 - MkDocs strict build passes.

@@ -17,7 +17,7 @@ Open <http://127.0.0.1:8642>. Use `--port 9000` if that port is occupied.
 
 ### If Python is new to you
 
-Install Python 3.10 or newer, open a terminal in the downloaded repository, and run the same two commands above. The GUI uses only the Python standard library plus the packages declared by the project. If `python3` is unavailable on Windows, use `py -m pip` and `py -m gwflags.gui --no-browser`.
+Install Python 3.9 or newer (Python 3.10+ is recommended), open a terminal in the downloaded repository, and run the same two commands above. The GUI uses only the Python standard library plus the packages declared by the project. If `python3` is unavailable on Windows, use `py -m pip` and `py -m gwflags.gui --no-browser`.
 
 The server is local to your computer (`127.0.0.1`). Stop it with `Ctrl-C` in the terminal.
 
@@ -30,7 +30,7 @@ The server is local to your computer (`127.0.0.1`). Stop it with `Ctrl-C` in the
 
 The preset fills every dependent field, so an old β or insertion cannot accidentally remain in a new example.
 
-## The four inputs
+## The five core inputs
 
 - **Lie algebra**: `A3`, `B2`, `C3`, `D5`, `G2`, or a product such as `A3xA3`.
 - **Kept simple roots**: comma-separated Bourbaki node numbers, for example `1` for projective space or `2` for `Gr(2,4)` in type `A3`.
@@ -159,21 +159,22 @@ may be rejected when its curve splitting degrees are negative.
 ### 3. Direct sum of bundles
 
 Use `osum` to combine summands. This example combines the rank-3 quotient with
-a line bundle `O(1,1)`:
+a line bundle `O(1)` on this Picard-rank-one Grassmannian:
 
 ```text
-osum(taut_quot(X, 2), O(X, 1, 1))
+osum(taut_quot(X, 2), O(X, 1))
 ```
 
-The commas in `O(X, 1, 1)` correspond to the two entries required by the
-kept-node convention of the constructor; `O(1,1)` in the compact GUI syntax
-is the separate line-bundle shorthand.
+On `Gr(2,5)` there is one kept node, so `O(X, 1)` takes one degree. A
+two-entry constructor such as `O(X, 1, 1)` belongs on a two-generator product
+(for example `A2xA2`, kept roots `1,3`). In the compact GUI syntax, separate
+summands are written as rows such as `1;2`.
 
 Python:
 
 ```python
 from gwflags.bundles import O, osum, taut_quot
-K = osum(taut_quot(X, 2), O(X, 1, 1))
+K = osum(taut_quot(X, 2), O(X, 1))
 print(K.rank)  # 4
 ```
 
@@ -182,14 +183,14 @@ print(K.rank)  # 4
 `tensor` forms all pairwise sums of fiber weights:
 
 ```text
-tensor(taut_quot(X, 2), O(X, 1, 1))
+tensor(taut_quot(X, 2), O(X, 1))
 ```
 
 Python:
 
 ```python
 from gwflags.bundles import O, tensor, taut_quot
-K = tensor(taut_quot(X, 2), O(X, 1, 1))
+K = tensor(taut_quot(X, 2), O(X, 1))
 print(K.rank)  # 3
 ```
 
@@ -218,7 +219,7 @@ Expressions can be nested, provided every component is built on the same
 
 ```text
 osum(
-  tensor(taut_quot(X, 2), O(X, 1, 1)),
+  tensor(taut_quot(X, 2), O(X, 1)),
   wedge(2, dual(taut_sub(X, 2)))
 )
 ```

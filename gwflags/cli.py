@@ -53,8 +53,8 @@ def parse_k(spec, X=None):
                     raise ValueError(f'unknown name {node.id!r}')
                 if isinstance(node, ast.Call) and not (isinstance(node.func, ast.Name) and node.func.id in allowed):
                     raise ValueError('only supported bundle constructors may be called')
-                if isinstance(node, ast.Attribute) and not (isinstance(node.value, ast.Name) and node.value.id == 'X'):
-                    raise ValueError('attribute access is not supported')
+                if isinstance(node, ast.Attribute):
+                    raise ValueError('attribute access is not supported; use X only as a constructor argument')
             return eval(compile(tree, '<bundle>', 'eval'), {'__builtins__': {}}, allowed)
         except Exception as e:
             raise ValueError(f"Invalid bundle expression: {e}")

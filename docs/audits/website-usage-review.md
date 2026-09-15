@@ -33,7 +33,7 @@ such as `[[3]]`. Python code uses the separate API form `K=[[3]]`.
 
 ## Documentation changes
 
-`docs/how-to-use.md` now documents the four fields, compact versus Python
+`docs/how-to-use.md` now documents the five core inputs, compact versus Python
 bundle syntax, insertion parsing, copyable examples, quotient bundles,
 command-line equivalents, and troubleshooting. The guide describes the
 current local server URL and the actual result panels.

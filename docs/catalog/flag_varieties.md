@@ -2,6 +2,12 @@
 
 This section contains complete intersections inside this geometric family, systematically organized by dimension and Fano index.
 
+## Reproduce an entry in the software
+
+The full flag card is `A2` with kept roots `1,2` and an empty Bundle K field.
+Use the **Space Info** action first; it prints the reduced Schubert words that
+can be copied into a GW-invariant request.
+
 ## 3-folds
 
 | Geometry | Fano Index | Basis Rank |

@@ -2,6 +2,16 @@
 
 This section contains complete intersections inside this geometric family, systematically organized by dimension and Fano index.
 
+## Reproduce an entry in the software
+
+For a Grassmannian `Gr(k,n)`, run `A(n-1)` with **Kept simple roots** `k`.
+Each displayed `/ O(d)` is one row in **Bundle K**: enter `d`, or enter
+`d1;d2;...` for several summands. For example, `Gr(2,6) / O(1)+O(2)` is
+`A5`, kept roots `2`, and Bundle K `1;2` (or `[[1],[2]]` in Python). The
+card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
+`n - sum(d)`. This convention also covers the dual presentation
+`Gr(n-k,n)` shown in the catalog.
+
 ## 8-folds
 
 | Geometry | Fano Index | Basis Rank |
