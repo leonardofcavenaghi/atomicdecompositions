@@ -7,7 +7,7 @@ To start the interface, open your terminal (inside the folder) and run:
 ```bash
 python3 -m gwflags.gui
 ```
-This will start a local server at `http://127.0.0.1:8000`. You can input parameters directly into the web interface.
+This will start a local server at `http://127.0.0.1:8642`. You can input parameters directly into the web interface.
 
 ---
 
@@ -20,9 +20,9 @@ A cubic surface is a complete intersection in $\mathbb{P}^3$ defined by the vani
 **In the Graphical Interface:**
 - **Card 1 (Space Definition)** -> **Algebra:** `A3`
 - **Card 1** -> **Keep Simple Roots:** `1`
-- **Card 1** -> **Twisting Bundle K:** `[[3]]`
+- **Card 1** -> **Twisting Bundle K:** `3`
 - **Card 3 (GW Invariants)** -> **Curve Class &beta;:** `1, 0, 0`
-- **Card 3** -> **Insertions:** *(Leave empty)*
+- **Card 3** -> **Insertions:** *(leave empty; do not enter `id`)*
 - **Card 3** -> **Click:** Compute Invariant (Output: `27`)
 
 **In Python:**
@@ -40,9 +40,9 @@ A quintic threefold is a Calabi-Yau manifold in $\mathbb{P}^4$ defined by $\math
 **In the Graphical Interface:**
 - **Card 1 (Space Definition)** -> **Algebra:** `A4`
 - **Card 1** -> **Keep Simple Roots:** `1`
-- **Card 1** -> **Twisting Bundle K:** `[[5]]`
+- **Card 1** -> **Twisting Bundle K:** `5`
 - **Card 3 (GW Invariants)** -> **Curve Class &beta;:** `1, 0, 0, 0`
-- **Card 3** -> **Insertions:** *(Leave empty)*
+- **Card 3** -> **Insertions:** *(leave empty; do not enter `id`)*
 - **Card 3** -> **Click:** Compute Invariant (Output: `2875`)
 
 **In Python:**
@@ -65,7 +65,7 @@ You can compute Gromov-Witten invariants on more complex flag varieties. Here, w
 - **Card 1** -> **Keep Simple Roots:** `2`
 - **Card 1** -> **Twisting Bundle K:** *(Leave empty)*
 - **Card 3 (GW Invariants)** -> **Curve Class &beta;:** `0, 1, 0`
-- **Card 3** -> **Insertions:** `((0, 0, 1, 0), (0, 0, 0, 1), (1, 0, 0, 0), (0, 1, 0, 0)) | ((0, 0, 1, 0), (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 0, 1)) | ((1, 0, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1), (0, 1, 0, 0))`
+- **Card 3** -> **Insertions:** `5|2|3`
 - **Card 3** -> **Click:** Compute Invariant (Output: `1`)
 
 **In Python:**
@@ -123,7 +123,7 @@ for row in M:
 To verify if a geometry is semisimple, you extract the eigenvalues of the matrix generated in Example 3.
 
 **In the Graphical Interface:**
-Once you click **Compute c₁(TX)⋆ Matrix** for any space, the interface will automatically compute the characteristic polynomial and display the exact symbolic eigenvalues (e.g. roots of unity for $\mathbb{P}^2$) at the bottom of the result panel!
+Once you click **Compute c₁(TX)⋆ Matrix** for any space, the interface will automatically compute the characteristic polynomial and display numerical eigenvalues after setting all Novikov variables to 1 (e.g. roots of unity for $\mathbb{P}^2$) at the bottom of the result panel!
 
 **In Python:**
 ```python
@@ -139,7 +139,7 @@ print(eigs)
 The GUI now supports **custom evaluation of Novikov variables**. If you want to compute the matrix at specific values (instead of keeping it purely symbolic), you can type `y1=2, y2=-1` into the new **"Evaluate y"** box. The system will automatically substitute these values into the matrix and dynamically compute the corresponding **Characteristic Polynomial** for you to inspect!
 
 ## Example 5: Non-Trivial Bundles (Quotient and Tautological Subbundles)
-The `gwflags` GUI and CLI parser now natively supports the evaluation of complex Homogeneous Bundles beyond simple sums of line bundles.
+The GUI and CLI accept compact bundle input: `3` means `O(3)`, while semicolon-separated rows represent separate summands (for example `1,1;2,2`). Python API examples use nested lists such as `K=[[3]]`. The `gwflags` GUI and CLI parser now natively supports the evaluation of complex Homogeneous Bundles beyond simple sums of line bundles.
 For example, you can take a complete intersection cut out by a section of the **Tautological Quotient Bundle** $\mathcal{Q}$.
 
 A famous mathematical identity states that the zero-locus of a regular section of $\mathcal{Q}$ on $Gr(2,5)$ is isomorphic to $\mathbb{P}^3$.

@@ -11,7 +11,7 @@ GW invariant (classes given as reduced words, comma-separated;
 Small quantum multiplication (c1(TX)*, its eigenvalues, grading):
 
     python3 -m gwflags.cli A2 --keep 1 sqm
-    python3 -m gwflags.cli A3 --keep 1 sqm -K 2        # quadric in P^3
+    python3 -m gwflags.cli A3 --keep 1 -K 2 sqm        # quadric in P^3
 
 Complete intersections: -K takes semicolon-separated rows, e.g. two
 bundle summands O(1,2) + O(1,1) on a two-generator Picard group:
@@ -19,6 +19,7 @@ bundle summands O(1,2) + O(1,1) on a two-generator Picard group:
 """
 
 import argparse
+import ast
 import sys
 
 from . import FlagVariety
@@ -45,7 +46,16 @@ def parse_k(spec, X=None):
     if any(c.isalpha() for c in spec):
         from gwflags.bundles import O, taut_sub, taut_quot, dual, osum, tensor, sym, wedge
         try:
-            return eval(spec, {"X": X, "O": O, "taut_sub": taut_sub, "taut_quot": taut_quot, "dual": dual, "osum": osum, "tensor": tensor, "sym": sym, "wedge": wedge})
+            tree = ast.parse(spec, mode='eval')
+            allowed = {"X": X, "O": O, "taut_sub": taut_sub, "taut_quot": taut_quot, "dual": dual, "osum": osum, "tensor": tensor, "sym": sym, "wedge": wedge}
+            for node in ast.walk(tree):
+                if isinstance(node, ast.Name) and node.id not in allowed:
+                    raise ValueError(f'unknown name {node.id!r}')
+                if isinstance(node, ast.Call) and not (isinstance(node.func, ast.Name) and node.func.id in allowed):
+                    raise ValueError('only supported bundle constructors may be called')
+                if isinstance(node, ast.Attribute) and not (isinstance(node.value, ast.Name) and node.value.id == 'X'):
+                    raise ValueError('attribute access is not supported')
+            return eval(compile(tree, '<bundle>', 'eval'), {'__builtins__': {}}, allowed)
         except Exception as e:
             raise ValueError(f"Invalid bundle expression: {e}")
     return [[int(v) for v in row.split(',')] for row in spec.split(';')]

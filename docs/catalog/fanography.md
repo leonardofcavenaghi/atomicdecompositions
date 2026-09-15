@@ -63,16 +63,14 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
 
     - **Ambient Space:** `$A4$`
     - **Keep Nodes:** `2`
-    - **Bundle K:** `2`
+    - **Bundle K:** `1;1;2`
     - **Fano Index:** `1`
     - **Dimension:** `3`
     - **Basis Rank:** `4`
-    - **Description:** Gushel–Mukai 3-fold; section of Plücker embedding of $\mathrm{Gr}(2,5)$ by codimension 2 subspace and a quadric; double cover of 1-15 with branch locus an anticanonical divisor.
+    - **Description:** Gushel–Mukai threefold: section of Gr(2,5) by two hyperplanes and a quadric.
 
-    ??? note "Quantum Matrix ($y=1$)"
-        $$
-        \begin{bmatrix}0 & 156 & 1440 & 13248\\1 & 10 & 152 & 1440\\0 & \frac{5}{2} & 10 & 156\\0 & 0 & 1 & 0\end{bmatrix}
-        $$
+
+    **Quantum matrix:** pending recomputation for the corrected geometry.
 
 
 ### Fano Variety 1-6
@@ -189,16 +187,14 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
 
     - **Ambient Space:** `$A5$`
     - **Keep Nodes:** `1`
-    - **Bundle K:** `4`
+    - **Bundle K:** `2;2`
     - **Fano Index:** `2`
     - **Dimension:** `3`
     - **Basis Rank:** `4`
-    - **Description:** Complete intersection of two quadrics in $\mathbb{P}^5$.
+    - **Description:** Complete intersection of two quadrics in P⁵.
 
-    ??? note "Quantum Matrix ($y=1$)"
-        $$
-        \begin{bmatrix}0 & 8 & 0 & 32\\2 & 0 & 16 & 0\\0 & 2 & 0 & 8\\0 & 0 & 2 & 0\end{bmatrix}
-        $$
+
+    **Quantum matrix:** pending recomputation for the corrected geometry.
 
 
 ### Fano Variety 1-15
@@ -369,19 +365,16 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
 
 ### Fano Variety 2-24
 ??? example "2-24"
-    - **Ambient Space:** `A4`
-    - **Keep Nodes:** `1`
-    - **Bundle K:** `[[2],[2]]`
+    - **Ambient Space:** `A2xA2`
+    - **Keep Nodes:** `1,3`
+    - **Bundle K:** `1,2`
     - **Fano Index:** `1`
     - **Dimension:** `3`
-    - **Basis Rank:** `3`
-    - **Description:** Complete intersection of two quadrics in $\mathbb{P}^4$; a del Pezzo threefold of degree 4.
+    - **Basis Rank:** `6`
+    - **Description:** Divisor of type (1,2) in P² × P².
 
-    ??? note "Quantum Matrix ($y=1$)"
-        $$
-        \begin{bmatrix}0 & 40 & 192\\1 & 4 & 40\\0 & 1 & 0\end{bmatrix}
-        $$
 
+    **Quantum matrix:** pending recomputation for the corrected geometry.
 ### Fano Variety 2-25
 ??? example "2-25"
     **Description:** *
@@ -449,19 +442,16 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
 
 ### Fano Variety 2-34
 ??? example "2-34"
-    - **Ambient Space:** `A1xA1xA1`
-    - **Keep Nodes:** `1,2,3`
+    - **Ambient Space:** `A1xA2`
+    - **Keep Nodes:** `1,2`
     - **Bundle K:** `—`
-    - **Fano Index:** `2`
+    - **Fano Index:** `1`
     - **Dimension:** `3`
-    - **Basis Rank:** `8`
-    - **Description:** $\mathbb{P}^1 \times \mathbb{P}^1 \times \mathbb{P}^1$; deformation of 2-33.
+    - **Basis Rank:** `6`
+    - **Description:** P¹ × P².
 
-    ??? note "Quantum Matrix ($y=1$)"
-        $$
-        \begin{bmatrix}0 & 2 & 2 & 2 & 0 & 0 & 0 & 0\\2 & 0 & 0 & 0 & 2 & 2 & 0 & 0\\2 & 0 & 0 & 0 & 2 & 0 & 2 & 0\\2 & 0 & 0 & 0 & 0 & 2 & 2 & 0\\0 & 2 & 2 & 0 & 0 & 0 & 0 & 2\\0 & 2 & 0 & 2 & 0 & 0 & 0 & 2\\0 & 0 & 2 & 2 & 0 & 0 & 0 & 2\\0 & 0 & 0 & 0 & 2 & 2 & 2 & 0\end{bmatrix}
-        $$
 
+    **Quantum matrix:** pending recomputation for the corrected geometry.
 ### Fano Variety 2-35
 ??? example "2-35"
 
@@ -538,7 +528,7 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
 ??? example "3-11"
     - **Ambient Space:** `A1xA1xA2`
     - **Keep Nodes:** `1,2,3`
-    - **Bundle K:** `[[1,1,1]]`
+    - **Bundle K:** `1,1,1`
     - **Fano Index:** `1`
     - **Dimension:** `3`
     - **Basis Rank:** `8`
@@ -675,17 +665,14 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
 ??? example "4-1"
     - **Ambient Space:** `A1xA1xA1xA1`
     - **Keep Nodes:** `1,2,3,4`
-    - **Bundle K:** `—`
-    - **Fano Index:** `2`
+    - **Bundle K:** `1,1,1,1`
+    - **Fano Index:** `1`
     - **Dimension:** `3`
     - **Basis Rank:** `16`
-    - **Description:** $\mathbb{P}^1 \times \mathbb{P}^1 \times \mathbb{P}^1 \times \mathbb{P}^1$ (product of four $\mathbb{P}^1$).
+    - **Description:** Anticanonical (1,1,1,1) hypersurface in (P¹)⁴.
 
-    ??? note "Quantum Matrix ($y=1$)"
-        $$
-        \begin{bmatrix}0 & 2 & 2 & 2 & 2 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\2 & 0 & 0 & 0 & 0 & 2 & 2 & 2 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\2 & 0 & 0 & 0 & 0 & 2 & 0 & 0 & 2 & 2 & 0 & 0 & 0 & 0 & 0 & 0\\2 & 0 & 0 & 0 & 0 & 0 & 2 & 0 & 2 & 0 & 2 & 0 & 0 & 0 & 0 & 0\\2 & 0 & 0 & 0 & 0 & 0 & 0 & 2 & 0 & 2 & 2 & 0 & 0 & 0 & 0 & 0\\0 & 2 & 2 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 2 & 2 & 0 & 0 & 0\\0 & 2 & 0 & 2 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 2 & 0 & 2 & 0 & 0\\0 & 2 & 0 & 0 & 2 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 2 & 2 & 0 & 0\\0 & 0 & 2 & 2 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 2 & 0 & 0 & 2 & 0\\0 & 0 & 2 & 0 & 2 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 2 & 0 & 2 & 0\\0 & 0 & 0 & 2 & 2 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 2 & 2 & 0\\0 & 0 & 0 & 0 & 0 & 2 & 2 & 0 & 2 & 0 & 0 & 0 & 0 & 0 & 0 & 2\\0 & 0 & 0 & 0 & 0 & 2 & 0 & 2 & 0 & 2 & 0 & 0 & 0 & 0 & 0 & 2\\0 & 0 & 0 & 0 & 0 & 0 & 2 & 2 & 0 & 0 & 2 & 0 & 0 & 0 & 0 & 2\\0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 2 & 2 & 2 & 0 & 0 & 0 & 0 & 2\\0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 2 & 2 & 2 & 2 & 0\end{bmatrix}
-        $$
 
+    **Quantum matrix:** pending recomputation for the corrected geometry.
 ### Fano Variety 4-2
 ??? example "4-2"
     **Description:** 3-31
