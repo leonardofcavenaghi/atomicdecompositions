@@ -2,9 +2,13 @@
 
 This section contains the 3-dimensional Fano varieties rigorously mapped and computed from fanography.info.
 
+**Realization types.** Entries labelled direct flag variety or complete intersection can be entered in gwflags. Homogeneous-bundle entries require the corresponding bundle constructor. Catalog-only entries are recorded for reference and are not runnable with the current input model.
+
 ### Fano Variety 1-1
 ??? example "1-1"
-    **Description:** double cover of $\mathbb{P}^3$ with branch locus a divisor of degree 6 alternative hypersurface of degree 6 in $\mathbb{P}(1,1,1,1,3)$
+
+    **Description:** Double cover / weighted degree-6 hypersurface (Fanography).
+    **Realization type:** Catalog only — not represented by the current gwflags flag-variety/ordinary complete-intersection input model.
 
 
 ### Fano Variety 1-2
@@ -17,6 +21,7 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
     - **Dimension:** `3`
     - **Basis Rank:** `4`
     - **Description:** Hypersurface of degree 4 in $\mathbb{P}^4$; double cover of 1-16 with branch locus a divisor of degree 8.
+    - **Realization type:** Line-bundle complete intersection.
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
@@ -34,6 +39,7 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
     - **Dimension:** `3`
     - **Basis Rank:** `4`
     - **Description:** Complete intersection of a quadric and a cubic in $\mathbb{P}^5$.
+    - **Realization type:** Line-bundle complete intersection.
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
@@ -51,6 +57,7 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
     - **Dimension:** `3`
     - **Basis Rank:** `4`
     - **Description:** Complete intersection of three quadrics in $\mathbb{P}^6$.
+    - **Realization type:** Line-bundle complete intersection.
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
@@ -68,6 +75,7 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
     - **Dimension:** `3`
     - **Basis Rank:** `4`
     - **Description:** Gushel–Mukai threefold: section of Gr(2,5) by two hyperplanes and a quadric.
+    - **Realization type:** Homogeneous-bundle zero locus (the current numeric model records the corresponding Chern-root data).
 
 
     **Quantum matrix:** pending recomputation for the corrected geometry.
@@ -83,6 +91,7 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
     - **Dimension:** `3`
     - **Basis Rank:** `4`
     - **Description:** Section of half-spinor embedding of a connected component of $\mathrm{OGr}_+(5,10)$ by codimension 7 subspace.
+    - **Realization type:** Homogeneous-bundle zero locus.
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
@@ -100,6 +109,7 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
     - **Dimension:** `3`
     - **Basis Rank:** `4`
     - **Description:** Section of Plücker embedding of $\mathrm{Gr}(2,6)$ by codimension 5 subspace.
+    - **Realization type:** Homogeneous-bundle zero locus.
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
@@ -117,6 +127,7 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
     - **Dimension:** `3`
     - **Basis Rank:** `4`
     - **Description:** Section of Plücker embedding of $\mathrm{SGr}(3,6)$ by codimension 3 subspace.
+    - **Realization type:** Homogeneous-bundle zero locus.
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
@@ -151,18 +162,23 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
     - **Dimension:** `3`
     - **Basis Rank:** `4`
     - **Description:** Zero locus of $(\bigwedge^2\mathcal{U}^\vee)^{\oplus 3}$ on $\mathrm{Gr}(3,7)$.
+    - **Realization type:** Homogeneous-bundle zero locus.
 
 
 
 
 ### Fano Variety 1-11
 ??? example "1-11"
-    **Description:** double Veronese cone hypersurface of degree 6 in $\mathbb{P}(1,1,1,2,3)$
+
+    **Description:** Double Veronese cone / weighted degree-6 hypersurface (Fanography).
+    **Realization type:** Catalog only — not represented by the current gwflags flag-variety/ordinary complete-intersection input model.
 
 
 ### Fano Variety 1-12
 ??? example "1-12"
-    **Description:** quartic double solid double cover of $\mathbb{P}^3$ with branch locus a smooth quartic surface alternative hypersurface of degree 4 in $\mathbb{P}(1,1,1,1,2)$
+
+    **Description:** Quartic double solid / weighted degree-4 hypersurface (Fanography).
+    **Realization type:** Catalog only — not represented by the current gwflags flag-variety/ordinary complete-intersection input model.
 
 
 ### Fano Variety 1-13
@@ -175,6 +191,7 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
     - **Dimension:** `3`
     - **Basis Rank:** `4`
     - **Description:** Hypersurface of degree 3 in $\mathbb{P}^4$ (smooth cubic threefold).
+    - **Realization type:** Line-bundle complete intersection.
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
@@ -192,6 +209,7 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
     - **Dimension:** `3`
     - **Basis Rank:** `4`
     - **Description:** Complete intersection of two quadrics in P⁵.
+    - **Realization type:** Line-bundle complete intersection.
 
 
     **Quantum matrix:** pending recomputation for the corrected geometry.
@@ -207,6 +225,7 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
     - **Dimension:** `3`
     - **Basis Rank:** `4`
     - **Description:** Quintic del Pezzo threefold; section of Plücker embedding of $\mathrm{Gr}(2,5)$ by codimension 3 subspace.
+    - **Realization type:** Homogeneous-bundle zero locus.
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
@@ -224,6 +243,7 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
     - **Dimension:** `3`
     - **Basis Rank:** `4`
     - **Description:** Hypersurface of degree 2 in $\mathbb{P}^4$ (smooth quadric threefold).
+    - **Realization type:** Line-bundle complete intersection.
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
@@ -241,6 +261,7 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
     - **Dimension:** `3`
     - **Basis Rank:** `4`
     - **Description:** Projective space $\mathbb{P}^3$.
+    - **Realization type:** Direct flag variety.
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
@@ -372,6 +393,7 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
     - **Dimension:** `3`
     - **Basis Rank:** `6`
     - **Description:** Divisor of type (1,2) in P² × P².
+    - **Realization type:** Line-bundle complete intersection.
 
 
     **Quantum matrix:** pending recomputation for the corrected geometry.
@@ -419,6 +441,7 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
     - **Dimension:** `3`
     - **Basis Rank:** `6`
     - **Description:** Full flag variety $Fl(1,2;\mathbb{C}^3)$; divisor of bidegree $(1,1)$ in $\mathbb{P}^2 \times \mathbb{P}^2$.
+    - **Realization type:** Direct flag variety (also a divisor in the product embedding).
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
@@ -427,18 +450,10 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
 
 ### Fano Variety 2-33
 ??? example "2-33"
-    - **Ambient Space:** `A1xA2`
-    - **Keep Nodes:** `1,2`
-    - **Bundle K:** `—`
-    - **Fano Index:** `1`
-    - **Dimension:** `3`
-    - **Basis Rank:** `6`
-    - **Description:** $\mathbb{P}^1 \times \mathbb{P}^2$.
 
-    ??? note "Quantum Matrix ($y=1$)"
-        $$
-        \begin{bmatrix}0 & 2 & 0 & 0 & 3 & 0\\2 & 0 & 0 & 0 & 0 & 3\\3 & 0 & 0 & 2 & 0 & 0\\0 & 3 & 2 & 0 & 0 & 0\\0 & 0 & 3 & 0 & 0 & 2\\0 & 0 & 0 & 3 & 2 & 0\end{bmatrix}
-        $$
+    **Description:** Blow-up of P³ along a line (Fanography; outside the current flag/ordinary-CI input model).
+    **Realization type:** Catalog only — not represented by the current gwflags flag-variety/ordinary complete-intersection input model.
+
 
 ### Fano Variety 2-34
 ??? example "2-34"
@@ -449,24 +464,15 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
     - **Dimension:** `3`
     - **Basis Rank:** `6`
     - **Description:** P¹ × P².
+    - **Realization type:** Direct product of flag varieties.
 
 
     **Quantum matrix:** pending recomputation for the corrected geometry.
 ### Fano Variety 2-35
 ??? example "2-35"
 
-    - **Ambient Space:** `$A1xA2$`
-    - **Fano Index:** `1`
-    - **Basis Rank:** `6`
-
-    ??? note "Quantum Matrix ($y=1$)"
-            $$
-        \begin{bmatrix}0 & 2 & 0 & 0 & 3 & 0\\2 & 0 & 0 & 0 & 0 & 3\\3 & 0 & 0 & 2 & 0 & 0\\0 & 3 & 2 & 0 & 0 & 0\\0 & 0 & 3 & 0 & 0 & 2\\0 & 0 & 0 & 3 & 2 & 0\end{bmatrix}
-            $$
-
-
-
-    **Description:** *
+    **Description:** Blow-up of P³ at a point (Fanography; outside the current flag/ordinary-CI input model).
+    **Realization type:** Catalog only — not represented by the current gwflags flag-variety/ordinary complete-intersection input model.
 
 
 ### Fano Variety 2-36
@@ -533,6 +539,7 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
     - **Dimension:** `3`
     - **Basis Rank:** `8`
     - **Description:** Divisor of tridegree $(1,1,1)$ in $\mathbb{P}^1 \times \mathbb{P}^1 \times \mathbb{P}^2$; a blow-up of the quadric $Q^3$ along a conic.
+    - **Realization type:** Line-bundle complete intersection.
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
@@ -606,18 +613,10 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
 
 ### Fano Variety 3-25
 ??? example "3-25"
-    - **Ambient Space:** `A1xA1xA1`
-    - **Keep Nodes:** `1,2,3`
-    - **Bundle K:** `—`
-    - **Fano Index:** `2`
-    - **Dimension:** `3`
-    - **Basis Rank:** `8`
-    - **Description:** $\mathbb{P}^1 \times \mathbb{P}^1 \times \mathbb{P}^1$ (same as 2-34 under different numbering).
 
-    ??? note "Quantum Matrix ($y=1$)"
-        $$
-        \begin{bmatrix}0 & 2 & 2 & 2 & 0 & 0 & 0 & 0\\2 & 0 & 0 & 0 & 2 & 2 & 0 & 0\\2 & 0 & 0 & 0 & 2 & 0 & 2 & 0\\2 & 0 & 0 & 0 & 0 & 2 & 2 & 0\\0 & 2 & 2 & 0 & 0 & 0 & 0 & 2\\0 & 2 & 0 & 2 & 0 & 0 & 0 & 2\\0 & 0 & 2 & 2 & 0 & 0 & 0 & 2\\0 & 0 & 0 & 0 & 2 & 2 & 2 & 0\end{bmatrix}
-        $$
+    **Description:** Blow-up of P³ along two lines (Fanography; outside the current flag/ordinary-CI input model).
+    **Realization type:** Catalog only — not represented by the current gwflags flag-variety/ordinary complete-intersection input model.
+
 
 ### Fano Variety 3-26
 ??? example "3-26"
@@ -627,19 +626,19 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
 ### Fano Variety 3-27
 ??? example "3-27"
 
-    - **Ambient Space:** `$A1xA1xA1$`
+    - **Ambient Space:** `A1xA1xA1`
+    - **Keep Nodes:** `1,2,3`
+    - **Bundle K:** *(none — product flag variety)*
     - **Fano Index:** `2`
+    - **Dimension:** `3`
     - **Basis Rank:** `8`
+    - **Description:** Product $(\mathbb{P}^1)^3$.
+    - **Realization type:** Direct product of flag varieties.
 
     ??? note "Quantum Matrix ($y=1$)"
-            $$
+        $$
         \begin{bmatrix}0 & 2 & 2 & 2 & 0 & 0 & 0 & 0\\2 & 0 & 0 & 0 & 2 & 2 & 0 & 0\\2 & 0 & 0 & 0 & 2 & 0 & 2 & 0\\2 & 0 & 0 & 0 & 0 & 2 & 2 & 0\\0 & 2 & 2 & 0 & 0 & 0 & 0 & 2\\0 & 2 & 0 & 2 & 0 & 0 & 0 & 2\\0 & 0 & 2 & 2 & 0 & 0 & 0 & 2\\0 & 0 & 0 & 0 & 2 & 2 & 2 & 0\end{bmatrix}
-            $$
-
-
-
-    **Description:** *
-
+        $$
 
 ### Fano Variety 3-28
 ??? example "3-28"
@@ -670,6 +669,7 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
     - **Dimension:** `3`
     - **Basis Rank:** `16`
     - **Description:** Anticanonical (1,1,1,1) hypersurface in (P¹)⁴.
+    - **Realization type:** Line-bundle complete intersection on a product of flag varieties.
 
 
     **Quantum matrix:** pending recomputation for the corrected geometry.

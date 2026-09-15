@@ -1,169 +1,106 @@
-# How to Use `gwflags`
+# How to use `gwflags`
 
-This guide bridges the theoretical framework of Quantum Cohomology with practical computation using the `gwflags` software. You can run these computations either via the **Graphical User Interface (GUI)** or directly via **Python Scripts**.
+`gwflags` computes Gromov–Witten invariants and small quantum multiplication for flag varieties `G/P` and supported complete intersections. The browser interface is the easiest starting point; the Python and CLI interfaces are documented later.
 
-## Launching the Interface
-To start the interface, open your terminal (inside the folder) and run:
+## Install and launch
+
+### If you already use Python
+
+From the repository root:
+
 ```bash
-python3 -m gwflags.gui
+python3 -m pip install -e .
+python3 -m gwflags.gui --no-browser
 ```
-This will start a local server at `http://127.0.0.1:8642`. You can input parameters directly into the web interface.
 
----
+Open <http://127.0.0.1:8642>. Use `--port 9000` if that port is occupied.
 
-## Example 1: Classic Enumerative Geometry
-The `gwflags` library natively computes Gromov-Witten invariants for complete intersections using virtual localization (Graber-Pandharipande). Let's compute two famous results in algebraic geometry: the 27 lines on a cubic surface, and the 2875 lines on a quintic threefold.
+### If Python is new to you
 
-### The 27 Lines on a Cubic Surface
-A cubic surface is a complete intersection in $\mathbb{P}^3$ defined by the vanishing of a degree-3 polynomial (the bundle $\mathcal{O}(3)$). 
+Install Python 3.10 or newer, open a terminal in the downloaded repository, and run the same two commands above. The GUI uses only the Python standard library plus the packages declared by the project. If `python3` is unavailable on Windows, use `py -m pip` and `py -m gwflags.gui --no-browser`.
 
-**In the Graphical Interface:**
-- **Card 1 (Space Definition)** -> **Algebra:** `A3`
-- **Card 1** -> **Keep Simple Roots:** `1`
-- **Card 1** -> **Twisting Bundle K:** `3`
-- **Card 3 (GW Invariants)** -> **Curve Class &beta;:** `1, 0, 0`
-- **Card 3** -> **Insertions:** *(leave empty; do not enter `id`)*
-- **Card 3** -> **Click:** Compute Invariant (Output: `27`)
+The server is local to your computer (`127.0.0.1`). Stop it with `Ctrl-C` in the terminal.
 
-**In Python:**
+## Fastest path: load an example
+
+1. Choose an item from **Preset library**.
+2. Read the recommended action and expected result shown below the selector.
+3. Click **Describe this space**, **Compute quantum matrix**, or **Compute one GW invariant** as recommended.
+4. Follow progress in the status and log areas. Large index-1 examples can take several minutes.
+
+The preset fills every dependent field, so an old β or insertion cannot accidentally remain in a new example.
+
+## The four inputs
+
+- **Lie algebra**: `A3`, `B2`, `C3`, `D5`, `G2`, or a product such as `A3xA3`.
+- **Kept simple roots**: comma-separated Bourbaki node numbers, for example `1` for projective space or `2` for `Gr(2,4)` in type `A3`.
+- **Bundle K** (optional): leave blank for `G/P`; enter `3` for `O(3)`, `1,1;2,2` for two line-bundle summands, or `taut_quot(X, 2)` for a quotient bundle. The GUI uses compact text: Python API notation such as `[[3]]` is not valid in this field.
+- **Curve class β**: one nonnegative integer per ambient simple root, such as `1,0,0` for lines on the cubic surface.
+- **Insertions**: `pt`, `id`, or space-separated reduced Weyl words separated by `|`. You can click **Add** beside a basis word in Space Info instead of typing it.
+
+`Evaluate y` is optional and applies to quantum matrices only. Leave it blank for symbolic Novikov variables, or enter assignments such as `y1=1,y2=1`.
+
+## Copyable examples
+
+### Beginner path: direct flags and products
+
+For an untwisted direct flag, leave `K` blank. For example, `A2` with
+kept roots `1` is `P²`; choose **Describe this space** first, then choose
+**Compute quantum matrix**. A product flag can be entered in the same form:
+`A1xA1`, kept roots `1,2`, and blank `K` describes `(P¹)²`.
+
+### Advanced path: bundle expressions and GW insertions
+
+After **Space Info** displays the Schubert basis, use its **Add** controls to
+build a valid insertion list. This avoids having to know reduced Weyl words in
+advance. For a homogeneous bundle, first describe the space with the bundle
+expression, then run the desired matrix or invariant action.
+`taut_quot(X, 2)` is directly convex on `A4`, kept roots `2`. The parser also
+accepts `taut_sub(X, 2)`, but its negative splitting degrees make the
+untwisted genus-0 theory reject that direct computation; use
+`dual(taut_sub(X, 2))` for the convex dual bundle.
+
+| Goal | Algebra | Kept roots | K | β / insertions |
+|---|---|---|---|---|
+| `P²` matrix | `A2` | `1` | *(blank)* | matrix action |
+| evaluated `P²` matrix | `A2` | `1` | *(blank)* | matrix action with `Evaluate y: y1=2` |
+| product flag info | `A1xA1` | `1,2` | *(blank)* | info action |
+| 27 lines on a cubic surface | `A3` | `1` | `3` | β `1,0,0`, insertions blank |
+| 2875 lines on a quintic | `A4` | `1` | `5` | β `1,0,0,0`, insertions blank |
+| `Gr(2,4)` invariant | `A3` | `2` | *(blank)* | β `0,1,0`; `2 1 3 2|1 2|3 2` |
+| quotient bundle | `A4` | `2` | `taut_quot(X, 2)` | describe or matrix action |
+| convex dual subbundle | `A4` | `2` | `dual(taut_sub(X, 2))` | describe action |
+
+## Reading results
+
+**Space Info** reports dimension, Fano index, first Chern class, number of curve classes, and the Schubert basis. Use the **Add** buttons to build insertion lists.
+
+**Quantum matrix** reports the matrix, grading, characteristic polynomial, and numerical eigenvalues only when all Novikov variables are specialized to one. A custom `Evaluate y` value is reported separately and does not claim to be the `y=1` spectrum.
+
+**GW invariant** reports the insertion list, β, and the computed number.
+
+## Advanced bundle syntax
+
+Supported constructors include `taut_quot(X, k)`, `taut_sub(X, k)`, `dual(...)`, `osum(...)`, `tensor(...)`, `sym(...)`, and `wedge(...)`. Use the GUI help text for compact line-bundle rows. Nested lists such as `[[3]]` belong to the Python API only.
+
+## Troubleshooting
+
+- Check that kept roots are valid, distinct node numbers in the algebra and in the intended order.
+- β must have one entry per ambient simple root.
+- Insertion words must contain integers separated by spaces; separate multiple insertions with `|`.
+- A catalog entry marked **Catalog only** is not represented by the current flag-variety/complete-intersection input model.
+- If a computation is slow, lower the worker count or start with a preset of lower degree.
+
+## Python and CLI
+
 ```python
 from gwflags import FlagVariety
-
 X = FlagVariety('A3', [1])
-lines = X.gw([], beta=(1, 0, 0), K=[[3]])
-print(f"Number of lines on a cubic surface: {lines}")
+print(X.gw([], beta=(1, 0, 0), K=[[3]]))  # 27
 ```
 
-### The 2875 Lines on a Quintic Threefold
-A quintic threefold is a Calabi-Yau manifold in $\mathbb{P}^4$ defined by $\mathcal{O}(5)$.
+For the CLI, put bundle options before the subcommand:
 
-**In the Graphical Interface:**
-- **Card 1 (Space Definition)** -> **Algebra:** `A4`
-- **Card 1** -> **Keep Simple Roots:** `1`
-- **Card 1** -> **Twisting Bundle K:** `5`
-- **Card 3 (GW Invariants)** -> **Curve Class &beta;:** `1, 0, 0, 0`
-- **Card 3** -> **Insertions:** *(leave empty; do not enter `id`)*
-- **Card 3** -> **Click:** Compute Invariant (Output: `2875`)
-
-**In Python:**
-```python
-from gwflags import FlagVariety
-
-X = FlagVariety('A4', [1])
-lines = X.gw([], beta=(1, 0, 0, 0), K=[[5]])
-print(f"Number of lines on a quintic threefold: {lines}")
+```bash
+python3 -m gwflags.cli A3 --keep 1 -K 3 sqm
 ```
-
----
-
-## Example 2: Intersection Theory on Grassmannians
-You can compute Gromov-Witten invariants on more complex flag varieties. Here, we compute a 3-point invariant on $Gr(2,4)$ using specific Schubert classes. 
-*Note: The GUI requires entering the explicit Weyl group elements for insertions, separated by a pipe `|`.*
-
-**In the Graphical Interface:**
-- **Card 1 (Space Definition)** -> **Algebra:** `A3`
-- **Card 1** -> **Keep Simple Roots:** `2`
-- **Card 1** -> **Twisting Bundle K:** *(Leave empty)*
-- **Card 3 (GW Invariants)** -> **Curve Class &beta;:** `0, 1, 0`
-- **Card 3** -> **Insertions:** `2 1 3 2|1 2|3 2`
-- **Card 3** -> **Click:** Compute Invariant (Output: `1`)
-
-**In Python:**
-```python
-from gwflags import FlagVariety
-
-X = FlagVariety('A3', [2])
-classes = X.classes
-val = X.gw([classes[5], classes[2], classes[3]], beta=(0, 1, 0))
-print(f"3-point GW invariant on Gr(2,4): {val}")
-```
-
----
-
-## Example 3: Small Quantum Multiplication Matrix
-If you want to compute the entire spectrum of the quantum connection at once, you can extract the full $c_1(TX) \star (-)$ small quantum multiplication matrix.
-
-### Quantum Matrix for $\mathbb{P}^2$
-**In the Graphical Interface:**
-- **Card 1 (Space Definition)** -> **Algebra:** `A2`
-- **Card 1** -> **Keep Simple Roots:** `1`
-- **Card 1** -> **Twisting Bundle K:** *(Leave empty)*
-- **Card 2 (Execution Options)** -> **Click:** Compute c₁(TX)⋆ Matrix
-
-**In Python:**
-```python
-from gwflags import FlagVariety
-
-X = FlagVariety('A2', [1])
-M, Gr, basis = X.small_quantum_multiplication()
-for row in M:
-    print([str(sym) for sym in row])
-```
-
-### Quantum Matrix for $Gr(2,4)$
-**In the Graphical Interface:**
-- **Card 1 (Space Definition)** -> **Algebra:** `A3`
-- **Card 1** -> **Keep Simple Roots:** `2`
-- **Card 1** -> **Twisting Bundle K:** *(Leave empty)*
-- **Card 2 (Execution Options)** -> **Click:** Compute c₁(TX)⋆ Matrix
-
-**In Python:**
-```python
-from gwflags import FlagVariety
-
-X = FlagVariety('A3', [2])
-M, Gr, basis = X.small_quantum_multiplication()
-for row in M:
-    print([str(sym) for sym in row])
-```
-
----
-
-## Example 4: Eigenvalues of the Quantum Connection
-To verify if a geometry is semisimple, you extract the eigenvalues of the matrix generated in Example 3.
-
-**In the Graphical Interface:**
-Once you click **Compute c₁(TX)⋆ Matrix** for any space, the interface will automatically compute the characteristic polynomial and display numerical eigenvalues after setting all Novikov variables to 1 (e.g. roots of unity for $\mathbb{P}^2$) at the bottom of the result panel!
-
-**In Python:**
-```python
-from gwflags import FlagVariety
-
-X = FlagVariety('A2', [1])
-M, Gr, basis = X.small_quantum_multiplication()
-eigs = X.eigenvalues(M)
-print(eigs)
-```
-
-### Evaluating Quantum Matrices and Characteristic Polynomials
-The GUI now supports **custom evaluation of Novikov variables**. If you want to compute the matrix at specific values (instead of keeping it purely symbolic), you can type `y1=2, y2=-1` into the new **"Evaluate y"** box. The system will automatically substitute these values into the matrix and dynamically compute the corresponding **Characteristic Polynomial** for you to inspect!
-
-## Example 5: Non-Trivial Bundles (Quotient and Tautological Subbundles)
-The GUI and CLI accept compact bundle input: `3` means `O(3)`, while semicolon-separated rows represent separate summands (for example `1,1;2,2`). Python API examples use nested lists such as `K=[[3]]`. The `gwflags` GUI and CLI parser now natively supports the evaluation of complex Homogeneous Bundles beyond simple sums of line bundles.
-For example, you can take a complete intersection cut out by a section of the **Tautological Quotient Bundle** $\mathcal{Q}$.
-
-A famous mathematical identity states that the zero-locus of a regular section of $\mathcal{Q}$ on $Gr(2,5)$ is isomorphic to $\mathbb{P}^3$.
-We can verify this isomorphism natively by passing the bundle explicitly:
-
-**In the Graphical Interface:**
-- **Card 1 (Space Definition)** -> **Algebra:** `A4`
-- **Card 1** -> **Keep Simple Roots:** `2`
-- **Card 1** -> **Twisting Bundle K:** `taut_quot(X, 2)`
-- **Card 2 (Execution Options)** -> **Evaluate y:** `y2=1`
-- **Card 2 (Execution Options)** -> **Click:** Compute c₁(TX)⋆ Matrix
-*(Output: a $4 \times 4$ matrix for the corrected specialization, with characteristic polynomial $\lambda^4 - 256$.)*
-
-**In Python:**
-```python
-from gwflags import FlagVariety
-from gwflags.bundles import taut_quot
-
-X = FlagVariety('A4', [2])
-# Pass the quotient bundle as K
-Q = taut_quot(X, 2)
-M, Gr, basis = X.small_quantum_multiplication(K=Q)
-
-for row in M:
-    print([str(sym) for sym in row])
-```
-You can also freely use `taut_sub`, `dual`, `sym`, `wedge`, `osum`, and `tensor` in the Twist Bundle input field.
