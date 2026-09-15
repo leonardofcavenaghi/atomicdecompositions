@@ -4,6 +4,7 @@ with open("catalog_cache.json", "r") as f:
     cache = json.load(f)
 
 table_rows = []
+seen = set()
 for case in cache["cases"]:
     text = case["text"]
     label = case["label"]
@@ -27,6 +28,9 @@ for case in cache["cases"]:
             
     anchor = "".join([char for char in label.lower() if char.isalnum() or char == '-'])
     link = f"{category}.md#{anchor}"
+    if (category, anchor) in seen:
+        continue
+    seen.add((category, anchor))
         
     table_rows.append(f"| [{label}]({link}) | {ambient} | {dim} | {fano} | {rank} |")
 

@@ -12,7 +12,12 @@ def get_dimension_name(dim_str):
     return f"{d}-folds"
 
 def write_category_page(title, filename, cases):
-    cases.sort(key=lambda x: (int(x['dim']) if x['dim'].isdigit() else 0, int(x['fano']) if x['fano'].isdigit() else 0), reverse=True)
+    # Stable, duplicate-safe ordering: dimension, index, then label.
+    unique = {}
+    for case in cases:
+        anchor = ''.join(ch for ch in case['label'].lower() if ch.isalnum() or ch == '-')
+        unique.setdefault(anchor, case)
+    cases = sorted(unique.values(), key=lambda x: (int(x['dim']) if x['dim'].isdigit() else -1, int(x['fano']) if x['fano'].isdigit() else -1, x['label'].lower()), reverse=True)
     
     grouped = {}
     for c in cases:
@@ -60,11 +65,16 @@ def main():
     if flag_cases:
         write_category_page("Flag Varieties", "flag_varieties.md", flag_cases)
     
-    with open("docs/catalog/fanography.md", "w") as f:
-        f.write("# Fanography 3-Folds\n\n")
-        f.write("This section contains the 3-dimensional Fano varieties rigorously mapped and computed from fanography.info.\n\n")
-        cleaned_fano = fanography_text.replace("### Fanography ID:", "### Fano 3-fold:")
-        f.write(cleaned_fano)
+    # Fanography is manually reviewed and contains realization classifications;
+    # never overwrite it during ordinary category regeneration.
+    if os.environ.get('GWF_FLAGS_REGENERATE_FANOGRAPHY') == '1':
+        with open("docs/catalog/fanography.md", "w") as f:
+            f.write("# Fanography 3-Folds\n\n")
+            f.write("This generated copy requires manual review before publication.\n\n")
+            cleaned_fano = fanography_text.replace("### Fanography ID:", "### Fano 3-fold:")
+            f.write(cleaned_fano)
+    else:
+        print('Preserving manually reviewed docs/catalog/fanography.md (set GWF_FLAGS_REGENERATE_FANOGRAPHY=1 to replace)')
         
 if __name__ == "__main__":
     main()

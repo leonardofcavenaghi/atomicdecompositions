@@ -78,7 +78,10 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
     - **Realization type:** Homogeneous-bundle zero locus (the current numeric model records the corresponding Chern-root data).
 
 
-    **Quantum matrix:** pending recomputation for the corrected geometry.
+        ??? note "Quantum Matrix ($y=1$)"
+            $$
+            \begin{bmatrix}0 & 156 & 1440 & 13248\\1 & 10 & 152 & 1440\\0 & 5/2 & 10 & 156\\0 & 0 & 1 & 0\end{bmatrix}
+            $$
 
 
 ### Fano Variety 1-6
@@ -212,7 +215,10 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
     - **Realization type:** Line-bundle complete intersection.
 
 
-    **Quantum matrix:** pending recomputation for the corrected geometry.
+        ??? note "Quantum Matrix ($y=1$)"
+            $$
+            \begin{bmatrix}0 & 8 & 0 & 32\\2 & 0 & 16 & 0\\0 & 2 & 0 & 8\\0 & 0 & 2 & 0\end{bmatrix}
+            $$
 
 
 ### Fano Variety 1-15
@@ -396,7 +402,11 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
     - **Realization type:** Line-bundle complete intersection.
 
 
-    **Quantum matrix:** pending recomputation for the corrected geometry.
+
+    ??? note "Quantum Matrix ($y=1$)"
+        $$
+        \begin{bmatrix}0 & 2 & 4 & 12 & 12 & 16\\2 & 0 & 3 & 4 & 0 & 3\\1 & 0 & 0 & 2 & 4 & 6\\0 & 1 & 5/2 & 0 & 0 & 1\\0 & 2 & -1/4 & 3 & 0 & 3/2\\0 & 0 & 0 & 5 & 2 & 0\end{bmatrix}
+        $$
 ### Fano Variety 2-25
 ??? example "2-25"
     **Description:** *
@@ -467,7 +477,11 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
     - **Realization type:** Direct product of flag varieties.
 
 
-    **Quantum matrix:** pending recomputation for the corrected geometry.
+
+    ??? note "Quantum Matrix ($y=1$)"
+        $$
+        \begin{bmatrix}0 & 2 & 0 & 0 & 3 & 0\\2 & 0 & 0 & 0 & 0 & 3\\3 & 0 & 0 & 2 & 0 & 0\\0 & 3 & 2 & 0 & 0 & 0\\0 & 0 & 3 & 0 & 0 & 2\\0 & 0 & 0 & 3 & 2 & 0\end{bmatrix}
+        $$
 ### Fano Variety 2-35
 ??? example "2-35"
 
@@ -667,12 +681,16 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
     - **Bundle K:** `1,1,1,1`
     - **Fano Index:** `1`
     - **Dimension:** `3`
-    - **Basis Rank:** `16`
+    - **Basis Rank:** `10`
     - **Description:** Anticanonical (1,1,1,1) hypersurface in (P¹)⁴.
     - **Realization type:** Line-bundle complete intersection on a product of flag varieties.
 
 
-    **Quantum matrix:** pending recomputation for the corrected geometry.
+
+    ??? note "Quantum Matrix ($y=1$)"
+        $$
+        \begin{bmatrix}0 & 6 & 6 & 6 & 6 & 12 & 12 & 12 & 12 & 24\\1 & -1 & 1 & 1 & 1 & 4 & 4 & 4 & 4 & 6\\1 & 1 & -1 & 1 & 1 & 4 & 2 & 2 & 4 & 6\\1 & 1 & 1 & -1 & 1 & 2 & 4 & 2 & 4 & 6\\1 & 1 & 1 & 1 & -1 & 2 & 2 & 4 & 2 & 6\\0 & 1 & 1 & -1 & -1 & -2 & 0 & 0 & 0 & -2\\0 & 1 & -1 & 1 & -1 & 0 & -2 & 0 & 0 & 0\\0 & 1 & 1 & 1 & 3 & 2 & 2 & 0 & 2 & 6\\0 & 0 & 2 & 2 & 2 & 2 & 2 & 2 & 0 & 6\\0 & 0 & 0 & 0 & 0 & 2 & 2 & 2 & 2 & 0\end{bmatrix}
+        $$
 ### Fano Variety 4-2
 ??? example "4-2"
     **Description:** 3-31
