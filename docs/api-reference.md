@@ -1,6 +1,6 @@
 # GWFlags API Reference
 
-This document provides a mathematical and technical overview of the core modules in the `gwflags` codebase, responsible for Gromov-Witten invariant computations via Bott localization.
+This document provides a mathematical and technical overview of the core modules in the `gwflags` codebase, responsible for Gromov-Witten invariant computations via Graber–Pandharipande virtual localization.
 
 ## 1. Root Systems (`gwflags/rootsystem.py`)
 
@@ -29,7 +29,7 @@ The main class orchestrating the computation of Gromov-Witten invariants for a g
 This module implements localization twisted by the Euler class of a bundle $E$, representing the complete-intersection sector. 
 
 - **`euler_complete_intersection(gw, K, w)`**: Computes the Euler class $e(E)$ at the fixed point $w$.
-- **`h_complete_intersection(gw, K, w, root_idx, d)`**: Computes the edge factor $e(H^0(\mathbb{P}^1, f^*E \otimes \mathcal{O}(-2))) (the moving part of the virtual bundle)$ for an edge leaving $w$. Concave summands (where the splitting degree $b < 0$) are rejected, as the twisted genus-0 theory requires curve-wise global generation.
+- **`h_complete_intersection(gw, K, w, root_idx, d)`**: Computes the edge factor $e(H^0(\mathbb{P}^1, f^*E)) (the convex twisting contribution on an edge)$ for an edge leaving $w$. Concave summands (where the splitting degree $b < 0$) are rejected, as the twisted genus-0 theory requires curve-wise global generation.
 - **`gw_complete_intersection(gw, coh_classes, beta, K)`**: Executes the twisted localization sum by injecting the appropriate multiplicative twists into `GWCalculator.gw_invariant`.
 
 

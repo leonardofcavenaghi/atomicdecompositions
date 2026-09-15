@@ -20,7 +20,7 @@ By applying the **Graber-Pandharipande Virtual Localization Theorem**, the integ
 
 The software recursively generates these graphs for a given curve degree $\beta$, calculates the equivariant Euler classes of the virtual normal bundles (using the roots of $G$ and weights of $\mathcal{E}$), and computes the intersection numbers programmatically. 
 
-**Reference:** [The Moment Map and Equivariant Cohomology (Atiyah & Bott, 1984)](https://doi.org/10.1016/0040-9383(84)90021-1)
+**Background:** [The Moment Map and Equivariant Cohomology (Atiyah & Bott, 1984)](https://doi.org/10.1016/0040-9383(84)90021-1). The fixed-locus formula used here is the Graber–Pandharipande virtual localization theorem.
 
 ## 3. Borel-Weil-Bott and Flag Ambient Cohomology
 

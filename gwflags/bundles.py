@@ -158,9 +158,9 @@ def _eps(X, off, i, n_amb):
 
 
 def taut_sub(X, node, name=None):
-    """Tautological subbundle S_k at the kept node (k = node -
-    factor_start + 1 steps): fiber weights eps_1..eps_k.  NOT globally
-    generated — use dual(taut_sub(...)) = S* for twists."""
+    """Tautological subbundle S_k at a kept type-A node."""
+    if node not in X.wd.roots_that_stay:
+        raise ValueError(f'node {node} is not kept by this flag variety')
     start, n_amb, off = _type_a_factor(X, node)
     k = node - start + 1
     ws = [_eps(X, off, i, n_amb) for i in range(1, k + 1)]
@@ -168,8 +168,9 @@ def taut_sub(X, node, name=None):
 
 
 def taut_quot(X, node, name=None):
-    """Tautological quotient Q_k at the kept node: fiber weights
-    eps_{k+1}..eps_n.  Globally generated."""
+    """Tautological quotient Q_k at a kept type-A node."""
+    if node not in X.wd.roots_that_stay:
+        raise ValueError(f'node {node} is not kept by this flag variety')
     start, n_amb, off = _type_a_factor(X, node)
     k = node - start + 1
     ws = [_eps(X, off, i, n_amb) for i in range(k + 1, n_amb + 1)]
@@ -183,21 +184,28 @@ def dual(E, name=None):
 
 
 def osum(*Es, name=None):
+    if not Es:
+        raise ValueError('osum needs at least one bundle')
     X = Es[0].X
+    if any(E.X is not X for E in Es[1:]):
+        raise ValueError('all bundles in osum must belong to the same FlagVariety')
     ws = [w for E in Es for w in E.weights]
     return HomogeneousBundle(X, ws,
                              name or '+'.join(E.name for E in Es))
 
 
 def tensor(E1, E2, name=None):
-    """Tensor product; for bundles pulled back from different factors of
-    a product this is the box product."""
+    """Tensor product of bundles on the same FlagVariety."""
+    if E1.X is not E2.X:
+        raise ValueError('tensor factors must belong to the same FlagVariety')
     ws = [vadd(w1, w2) for w1 in E1.weights for w2 in E2.weights]
     return HomogeneousBundle(E1.X, ws,
                              name or f'{E1.name}(x){E2.name}')
 
 
 def sym(p, E, name=None):
+    if not isinstance(p, int) or p < 0:
+        raise ValueError('symmetric-power degree p must be a nonnegative integer')
     ws = []
     for comb in combinations_with_replacement(range(E.rank), p):
         v = tuple(Fraction(0) for _ in range(E.X.rs.dim_ort))
@@ -208,6 +216,8 @@ def sym(p, E, name=None):
 
 
 def wedge(p, E, name=None):
+    if not isinstance(p, int) or p < 0 or p > E.rank:
+        raise ValueError(f'exterior-power degree p must satisfy 0 <= p <= rank ({E.rank})')
     ws = []
     for comb in combinations(range(E.rank), p):
         v = tuple(Fraction(0) for _ in range(E.X.rs.dim_ort))

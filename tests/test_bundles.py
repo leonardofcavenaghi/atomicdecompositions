@@ -78,6 +78,26 @@ def test_convexity_gate():
     assert taut_quot(X, 2).is_curvewise_convex()
 
 
+def test_constructor_validation_guards():
+    X = grassmannian(2, 4)
+    Y = grassmannian(2, 5)
+    Qx = taut_quot(X, 2)
+    Qy = taut_quot(Y, 2)
+    for thunk, fragment in [
+        (lambda: osum(), 'at least one'),
+        (lambda: osum(Qx, Qy), 'same FlagVariety'),
+        (lambda: tensor(Qx, Qy), 'same FlagVariety'),
+        (lambda: wedge(Qx.rank + 1, Qx), '0 <= p'),
+        (lambda: sym(-1, Qx), 'nonnegative integer'),
+        (lambda: taut_quot(FlagVariety('A3', [1]), 2), 'not kept'),
+    ]:
+        try:
+            thunk()
+            assert False, f'expected ValueError containing {fragment!r}'
+        except ValueError as exc:
+            assert fragment in str(exc), str(exc)
+
+
 def test_z_gr24_quot_is_p2():
     X = grassmannian(2, 4)
     Q = taut_quot(X, 2)

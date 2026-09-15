@@ -23,6 +23,24 @@ FIELD_RE = {
 }
 MATRIX_RE = re.compile(r"\\begin\{bmatrix\}(.*?)\\end\{bmatrix\}", re.DOTALL)
 LINK_RE = re.compile(r'\]\(([^)#]+)?#([^ )]+)\)')
+FANOGRAPHY_INPUTS = {
+    # These cards have executable legacy line-bundle inputs. Keep this map
+    # synchronized with the descriptions and with the generation helpers.
+    '1-5': ('A4', '2', '1;1;2'),
+    '1-6': ('D5', '5', '1;1;1;1;1;1;1'),
+    '1-7': ('A5', '2', '1;1;1;1;1'),
+    '1-8': ('C3', '3', '1;1;1'),
+    '1-9': ('G2', '2', '1;1'),
+    # 1-10 uses the supported homogeneous-bundle expression; its matrix is
+    # deliberately not published until it has an independent recomputation.
+    '1-10': ('A6', '3', 'osum(wedge(2, dual(taut_sub(X, 3))), wedge(2, dual(taut_sub(X, 3))), wedge(2, dual(taut_sub(X, 3))))'),
+    '2-24': ('A2xA2', '1,3', '1,2'),
+}
+FIELD_TEXT_RE = {
+    'ambient': re.compile(r'^\s*- \*\*Ambient Space:\*\*\s*`\$?([^`$\n]+)\$?`', re.MULTILINE),
+    'keep': re.compile(r'^\s*- \*\*Keep Nodes:\*\*\s*`([^`]*)`', re.MULTILINE),
+    'bundle': re.compile(r'^\s*- \*\*Bundle K:\*\*\s*`([^`]*)`', re.MULTILINE),
+}
 
 @dataclass
 class Card:
@@ -96,6 +114,25 @@ def validate() -> list[str]:
                 errors.append(f'{prefix}: empty realization type')
             if 'Catalog only' in card.text and 'Ambient Space:' in card.text:
                 errors.append(f'{prefix}: catalog-only entry must not advertise an ambient space')
+            if card.title in FANOGRAPHY_INPUTS:
+                expected = FANOGRAPHY_INPUTS[card.title]
+                actual = []
+                for field in ('ambient', 'keep', 'bundle'):
+                    match = FIELD_TEXT_RE[field].search(card.text)
+                    actual.append(match.group(1).strip() if match else None)
+                if tuple(actual) != expected:
+                    errors.append(f'{prefix}: executable input {tuple(actual)!r} disagrees with expected {expected!r}')
+            if card.title == '2-32' and ('y1' in card.text or 'y2' in card.text):
+                if 'Quantum Matrix (symbolic' not in card.text:
+                    errors.append(f'{prefix}: matrix containing y1/y2 must be labelled symbolic')
+            if card.title == '4-1':
+                matrix = MATRIX_RE.search(card.text)
+                if matrix:
+                    rows = [r.strip() for r in re.split(r'\\\\', matrix.group(1)) if r.strip()]
+                    if len(rows) > 1:
+                        entries = [c.strip() for c in rows[1].split('&')]
+                        if len(entries) > 8 and entries[8] != '2':
+                            errors.append(f'{prefix}: audited row 2, column 9 must equal 2')
         # Category pages use explicit anchors; Fanography uses stable variety
         # headings without anchors and is checked separately by its source links.
         if card.path.name != 'fanography.md':

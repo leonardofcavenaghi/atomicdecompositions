@@ -2,6 +2,17 @@
 
 This section contains complete intersections inside this geometric family, systematically organized by dimension and Fano index.
 
+## Reproduce an entry in the software
+
+Every card below is a complete intersection in projective space. For the
+ambient space `$P^n$`, run `A(n)` with **Kept simple roots** `1`. Each
+displayed summand `/ O(d)` is one row in **Bundle K**: enter `d` for one
+summand, or `d1;d2;...` for several summands. For example, the card
+`P8 / O(2)+O(3)` is reproduced with `A8`, kept roots `1`, and Bundle K
+`2;3` (or `[[2],[3]]` in Python). The card's dimension is `n` minus the
+number of rows, and its Fano index is `n+1 - sum(d)`; these provide quick
+checks that the input matches the card.
+
 ## 8-folds
 
 | Geometry | Fano Index | Basis Rank |

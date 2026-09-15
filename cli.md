@@ -10,7 +10,7 @@ If you prefer not to type commands at all:
     python3 -m gwflags.gui          # from the repository root
 
 opens a local web page (http://127.0.0.1:8642, served only on your
-machine) with a preset menu covering all benchmark and reference examples,
+machine) with a curated preset menu for common benchmark examples,
 forms for arbitrary flags/bundles, and three buttons: the c₁(TX)⋆ matrix
 (with grading and eigenvalues at y=1), variety info (Schubert basis, c₁,
 Fano index), and single GW invariants. Long computations stream their
@@ -19,17 +19,16 @@ after `pip install -e .` the launcher is just `gwflags-gui`.
 
 ## Running the CLI
 
-From the repository:
+From the repository root:
 
 ```bash
-cd /Users/bogdan/projects/gw_asymptotics
 python3 -m gwflags.cli <algebra> --keep <nodes> [-K "<rows>"] <subcommand> [...]
 ```
 
 Or install once (editable, picks up code changes automatically):
 
 ```bash
-pip3 install --user -e /Users/bogdan/projects/gw_asymptotics
+pip3 install --user -e .
 gwflags <algebra> --keep <nodes> [-K "<rows>"] <subcommand> [...]
 ```
 
@@ -111,33 +110,18 @@ and the eigenvalues. `--workers N` distributes the per-β blocks over N
 processes — recommended for index-1 Fano cases, which need curve degrees
 up to dim+1.
 
-## The benchmark examples as commands
+## Reproducible validation
+
+The executable validation campaign is kept in `tests/` rather than a separate
+benchmark package. Run the complete suite with:
 
 ```bash
-python3 -m gwflags.cli A2     --keep 1,2                     sqm            # (a)  Fl(1,2,3)
-python3 -m gwflags.cli A2xA2  --keep 1,3 -K "1,1"            sqm            # (b)
-python3 -m gwflags.cli A4     --keep 1   -K 4                sqm            # (c)  P4 ∩ O(4)
-python3 -m gwflags.cli A3xA3  --keep 1,4 -K "1,1;1,1"        sqm            # (d1)
-python3 -m gwflags.cli A3     --keep 1,3 -K "1,1"            sqm            # (d2)
-python3 -m gwflags.cli B2     --keep 1,2 -K "1,1"            sqm            # (e)
-python3 -m gwflags.cli A3xA3  --keep 1,4 -K "1,1;1,1;1,1"    sqm --workers 8  # (f)
-python3 -m gwflags.cli A4     --keep 2   -K "1;1;2"          sqm --workers 8  # (g)
-python3 -m gwflags.cli A3xA3  --keep 1,4 -K "1,1;2,2"        sqm --workers 8  # (h)  ~10 min
-python3 -m gwflags.cli A4     --keep 1,2 -K "0,1;0,2;1,0"    sqm --workers 8  # (i)
-python3 -m gwflags.cli A1xA5  --keep 1,2 -K "1,1;0,3"        sqm            # (j)
-python3 -m gwflags.cli A1xA1xA4 --keep 1,2,3 -K "1,1,1;0,0,3" sqm --workers 8 # (k)  ~15 min
+python3 -m pytest tests/ -q
 ```
 
-Or run the whole suite with timings, JSON output and eigenvalues at y=1:
-
-```bash
-python3 -u benchmarks/run_benchmarks.py --workers 8          # all, ~25 min
-python3 -u benchmarks/run_benchmarks.py a b d1 d2            # a selection
-```
-
-Results land in `benchmarks/results.json`; regenerate the PDF report
-tables with `python3 reports/make_tables.py && python3
-reports/make_symbolic.py` (see `reports/README.md`).
+`tests/test_reference_list.py` checks the transcribed external reference
+matrices. `tests/test_gwflags.py` covers known enumerative values, and
+`tests/test_bundles.py` covers quotient bundles and bundle combinations.
 
 ## Tests
 
@@ -153,9 +137,9 @@ python3 tests/test_gwflags.py        # 20 checks, ~10 s
   give Fano index 0 and the zero operator; ordinary genus-0 GW theory is
   trivial there, and primary invariants with an identity insertion vanish
   by the string equation.
-- Runtime scales with the maximal curve degree = ⌊(dim+1)/min c₁
-  coefficient⌋: index-2+ examples run in seconds; index-1 threefolds in
-  minutes.
+- Runtime scales with the curve classes satisfying ⟨c₁(TX),β⟩ ≤ dim+1.
+  Directions with zero c₁ coefficient are capped separately; index-2+ examples
+  usually run in seconds, while index-1 examples can take minutes.
 - Everything the CLI prints is also available programmatically
   (`from gwflags import FlagVariety`; see README.md) — the Python API
   additionally exposes custom β lists, raw symbolic localization sums

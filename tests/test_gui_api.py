@@ -44,6 +44,17 @@ def test_gui_reports_beta_length_and_preserves_empty_insertion_contract():
     # the documented cubic-surface and quintic-line examples).
 
 
+def test_gui_bundle_expression_rejects_attribute_access():
+    X = FlagVariety('A3', [1])
+    with pytest.raises(ValueError, match='attribute access'):
+        parse_k('X.__class__', X)
+    with pytest.raises(ValueError, match='attribute access'):
+        parse_k('X.rs', X)
+    from gwflags.cli import parse_k as cli_parse_k
+    with pytest.raises(ValueError, match='attribute access'):
+        cli_parse_k('X.__class__', X)
+
+
 def test_gui_rejects_bad_reduced_word_and_nonconvex_bundle():
     X = FlagVariety('A3', [1])
     with pytest.raises(ValueError, match='valid reduced word'):

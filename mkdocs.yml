@@ -86,7 +86,11 @@ nav:
       - Change log: change-log.md
       - Website Usage Audit: audits/website-usage-review.md
       - Catalog Review: audits/catalog-review.md
+      - Mathematics and Software Audit: audits/math-software-review.md
+      - Reference Discrepancies: discrepancy.md
   - Releases: releases.md
+  - Archive:
+      - Legacy catalog: catalog.md
   - Methodology:
       - Core Theory: methodology.md
       - API Reference: api-reference.md
