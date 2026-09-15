@@ -12,7 +12,7 @@
         <link rel="prev" href="../website-usage-review/">
       
       
-        <link rel="next" href="../../releases/">
+        <link rel="next" href="../math-software-review/">
       
       
         
@@ -350,6 +350,28 @@
 
       </a>
     </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../catalog/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Archive
+
+        </a>
+      </li>
+    
   
 
       
@@ -748,6 +770,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -971,6 +997,62 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../math-software-review/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mathematics and Software Audit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../discrepancy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference Discrepancies
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1016,10 +1098,6 @@
       
         
       
-        
-      
-        
-      
     
     
     
@@ -1045,7 +1123,7 @@
   <span class="md-ellipsis">
     
   
-    Methodology
+    Archive
   
 
     
@@ -1058,6 +1136,103 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Archive
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../catalog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Legacy catalog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Methodology
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1234,7 +1409,10 @@
 <li>Reconciled every displayed <strong>Basis Rank</strong> in the Projective and Grassmannian pages with the dimension of its square quantum matrix (46 and 28 card-level corrections respectively), and synchronized the category tables and master index.</li>
 <li>Relabelled Fanography 2-32 as a symbolic matrix because it contains <code>y1</code> and <code>y2</code> variables.</li>
 <li>Added explicit realization metadata to Fanography cards and kept unsupported weighted, double-cover, and blow-up examples catalog-only.</li>
-<li>Added a historical-page notice to the old <code>docs/catalog.md</code> page, pointing readers to the maintained split catalog.</li>
+<li>Replaced the old <code>docs/catalog.md</code> page with a historical pointer, pointing readers to the maintained split catalog.</li>
+<li>Corrected Fanography 1-5 through 1-9 input metadata, corrected 4-1 row 2 column 9,
+  and marked 1-10's supported bundle input as matrix-pending until an independent
+  recomputation is available.</li>
 </ul>
 <h2 id="organization-contract">Organization contract<a class="headerlink" href="#organization-contract" title="Permanent link">&para;</a></h2>
 <p>The public catalog is organized as:</p>
@@ -1251,6 +1429,7 @@
 <ul>
 <li>No duplicate <code>p2fanoindex3</code> anchor remains.</li>
 <li>All Projective and Grassmannian cards containing matrices have matching Basis Rank values.</li>
+<li>The checked-in catalog validator covers corrected Fanography inputs and audited matrix cells.</li>
 <li>MkDocs strict build passes.</li>
 </ul>
 

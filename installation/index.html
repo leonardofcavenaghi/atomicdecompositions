@@ -361,6 +361,28 @@
     
     
       <li class="md-tabs__item">
+        <a href="../catalog/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Archive
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
         <a href="../methodology/" class="md-tabs__link">
           
   
@@ -837,6 +859,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -968,6 +994,62 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../audits/math-software-review/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mathematics and Software Audit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../discrepancy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference Discrepancies
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1013,10 +1095,6 @@
       
         
       
-        
-      
-        
-      
     
     
     
@@ -1042,7 +1120,7 @@
   <span class="md-ellipsis">
     
   
-    Methodology
+    Archive
   
 
     
@@ -1055,6 +1133,103 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Archive
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../catalog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Legacy catalog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Methodology
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1187,7 +1362,7 @@
 <p>Choose the path that matches your background. You do not need SageMath to use the browser interface or the core Python API.</p>
 <h2 id="new-to-python-recommended-path">New to Python (recommended path)<a class="headerlink" href="#new-to-python-recommended-path" title="Permanent link">&para;</a></h2>
 <ol>
-<li>Install Python 3.10 or newer from <a href="https://www.python.org/downloads/">python.org</a>. On Windows, select <strong>Add Python to PATH</strong>.</li>
+<li>Install Python 3.9 or newer (Python 3.10+ is recommended) from <a href="https://www.python.org/downloads/">python.org</a>. On Windows, select <strong>Add Python to PATH</strong>.</li>
 <li>Install Git from <a href="https://git-scm.com/downloads">git-scm.com</a>, or download the repository as a ZIP.</li>
 <li>Open a terminal and obtain the source:</li>
 </ol>
@@ -1224,14 +1399,17 @@
 <p>From a checkout, activate your existing environment and run <code>python -m pip install -e .</code>. Then use the GUI, CLI, or import <code>FlagVariety</code> in a script. Run a quick smoke test:</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>python<span class="w"> </span>-c<span class="w"> </span><span class="s2">"from gwflags import FlagVariety; print(FlagVariety('A2',[1]).dimension)"</span>
 </span></code></pre></div>
-<p>Run the full tests with:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>python<span class="w"> </span>-m<span class="w"> </span>pytest<span class="w"> </span>tests/<span class="w"> </span>-q
+<p>To run the tests, install the optional test dependency first:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>pytest
+</span></code></pre></div>
+<p>Then run the full tests with:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>python<span class="w"> </span>-m<span class="w"> </span>pytest<span class="w"> </span>tests/<span class="w"> </span>-q
 </span></code></pre></div>
 <h2 id="sagemath-users">SageMath users<a class="headerlink" href="#sagemath-users" title="Permanent link">&para;</a></h2>
 <p>SageMath is optional. If it is installed, <code>gwflags</code> can use it for symbolic work; the plain Python installation above remains the supported baseline. On Windows, use WSL for SageMath and follow the Linux commands there.</p>
 <h2 id="command-line-and-browser-entry-points">Command-line and browser entry points<a class="headerlink" href="#command-line-and-browser-entry-points" title="Permanent link">&para;</a></h2>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>python<span class="w"> </span>-m<span class="w"> </span>gwflags.cli<span class="w"> </span>A2<span class="w"> </span>--keep<span class="w"> </span><span class="m">1</span><span class="w"> </span>sqm
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>python<span class="w"> </span>-m<span class="w"> </span>gwflags.gui<span class="w"> </span>--port<span class="w"> </span><span class="m">9000</span><span class="w"> </span>--no-browser
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>python<span class="w"> </span>-m<span class="w"> </span>gwflags.cli<span class="w"> </span>A2<span class="w"> </span>--keep<span class="w"> </span><span class="m">1</span><span class="w"> </span>sqm
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>python<span class="w"> </span>-m<span class="w"> </span>gwflags.gui<span class="w"> </span>--port<span class="w"> </span><span class="m">9000</span><span class="w"> </span>--no-browser
 </span></code></pre></div>
 <p>For complete examples and input syntax, see <a href="../how-to-use/">How to Use</a>. In the GUI, compact bundles use <code>3</code> or <code>1,1;2,2</code>; Python code may use <code>K=[[3]]</code>.</p>
 
