@@ -11,6 +11,7 @@ y = 1).  Binds to 127.0.0.1 only.
 """
 
 import argparse
+import ast
 import json
 import threading
 import time
@@ -59,7 +60,16 @@ def parse_k(spec, X=None):
     if any(c.isalpha() for c in spec):
         from gwflags.bundles import O, taut_sub, taut_quot, dual, osum, tensor, sym, wedge
         try:
-            return eval(spec, {"X": X, "O": O, "taut_sub": taut_sub, "taut_quot": taut_quot, "dual": dual, "osum": osum, "tensor": tensor, "sym": sym, "wedge": wedge})
+            tree = ast.parse(spec, mode='eval')
+            allowed = {"X": X, "O": O, "taut_sub": taut_sub, "taut_quot": taut_quot, "dual": dual, "osum": osum, "tensor": tensor, "sym": sym, "wedge": wedge}
+            for node in ast.walk(tree):
+                if isinstance(node, ast.Name) and node.id not in allowed:
+                    raise ValueError(f'unknown name {node.id!r}')
+                if isinstance(node, ast.Call) and not (isinstance(node.func, ast.Name) and node.func.id in allowed):
+                    raise ValueError('only supported bundle constructors may be called')
+                if isinstance(node, ast.Attribute) and not (isinstance(node.value, ast.Name) and node.value.id == 'X'):
+                    raise ValueError('attribute access is not supported')
+            return eval(compile(tree, '<bundle>', 'eval'), {'__builtins__': {}}, allowed)
         except Exception as e:
             raise ValueError(f"Invalid bundle expression: {e}")
     return [[int(v) for v in row.split(',')] for row in spec.split(';')]
@@ -67,6 +77,8 @@ def parse_k(spec, X=None):
 
 def parse_classes(spec, X):
     out, names = [], []
+    if not spec.strip():
+        return out, names
     tokens = spec.split('|') if '|' in spec else spec.split(',')
     for token in tokens:
         token = token.strip()
@@ -117,7 +129,7 @@ def run_job(job, kind, params):
             result['c1'] = c
             result['fano'] = fano
             result['n_betas'] = len(betas)
-            result['dim'] = X.dimension - len(K)
+            result['dim'] = X.dimension - (K.rank if hasattr(K, 'rank') else len(K))
 
         elif kind == 'gw':
             beta = tuple(int(v) for v in params['beta'].split(','))
@@ -141,9 +153,17 @@ def run_job(job, kind, params):
             eval_dict = {}
             if eval_y:
                 for pair in eval_y.split(','):
-                    if '=' in pair:
-                        k, v = pair.split('=')
-                        eval_dict[sympy.Symbol(k.strip())] = sympy.sympify(v.strip())
+                    if '=' not in pair or pair.count('=') != 1:
+                        raise ValueError('Evaluate y must contain assignments such as y1=2,y2=-1')
+                    k, v = pair.split('=', 1)
+                    k = k.strip()
+                    if not k.startswith('y') or not k[1:].isdigit():
+                        raise ValueError(f'invalid Novikov variable {k!r}')
+                    eval_dict[sympy.Symbol(k)] = sympy.sympify(v.strip())
+                symbols = set().union(*(sympy.sympify(v).free_symbols for row in M for v in row))
+                unknown = set(eval_dict) - symbols
+                if unknown:
+                    raise ValueError(f'unknown Novikov variable(s): {", ".join(map(str, unknown))}')
             
             if eval_dict:
                 log(f'matrix assembled in {time.time() - t0:.1f}s; evaluating at {eval_y} ...')
@@ -462,16 +482,14 @@ function render(action,res){
         h+='<h2>Characteristic Polynomial</h2><div style="padding: 10px; background: var(--panel); border: 1px solid var(--edge); font:13px ui-monospace,Menlo,monospace;">'+pretty(res.char_poly)+'</div>';
     }
     if (res.eigenvalues && res.eigenvalues.length > 0) {
-        h+='<h2>Eigenvalues</h2><table><tr>';
+        h+='<h2>Eigenvalues at y = 1</h2><table><tr>';
         res.eigenvalues.forEach(([re,im],i)=>{
           const fmt=x=>{ let t=x.toFixed(4).replace(/\.?0+$/,'');
             return (t===''||t==='-0')?'0':t; };
           const s=fmt(re)+(Math.abs(im)>1e-6?((im>0?' + ':' − ')+
             fmt(Math.abs(im))+'i'):'');
-          h+='<td class="'+(i===0?'dom':'')+'">'+s+'</td>'; });
-        h+='</tr></table><div style="color:var(--dim);font-size:12px">'+
-           'first entry = spectral radius (real &amp; simple).'+
-           '</div>';
+          h+='<td>'+s+'</td>'; });
+        h+='</tr></table><div style="color:var(--dim);font-size:12px">Numerical spectrum after setting all Novikov variables to 1.</div>';
     }
   }
   $('out').innerHTML=h;

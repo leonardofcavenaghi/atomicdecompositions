@@ -61,7 +61,7 @@ This section contains complete intersections inside this geometric family, syste
     - **Ambient Space:** `$A8$`
     - **Dimension:** $7$
     - **Fano Index:** $7$
-    - **Basis Rank:** $9$
+    - **Basis Rank:** $8$
     - **Eigenvalues:** $7 \cdot 2^{\frac{2}{7}}$ (mult: 1), $- 7 \cdot 2^{\frac{2}{7}} \cos{\left(\frac{\pi}{7} \right)} - 7 \cdot 2^{\frac{2}{7}} i \sin{\left(\frac{\pi}{7} \right)}$ (mult: 1), $- 7 \cdot 2^{\frac{2}{7}} \cos{\left(\frac{\pi}{7} \right)} + 7 \cdot 2^{\frac{2}{7}} i \sin{\left(\frac{\pi}{7} \right)}$ (mult: 1), $- 7 \cdot 2^{\frac{2}{7}} \cos{\left(\frac{3 \pi}{7} \right)} - 7 \cdot 2^{\frac{2}{7}} i \sin{\left(\frac{3 \pi}{7} \right)}$ (mult: 1), $- 7 \cdot 2^{\frac{2}{7}} \cos{\left(\frac{3 \pi}{7} \right)} + 7 \cdot 2^{\frac{2}{7}} i \sin{\left(\frac{3 \pi}{7} \right)}$ (mult: 1), $7 \cdot 2^{\frac{2}{7}} \cos{\left(\frac{2 \pi}{7} \right)} - 7 \cdot 2^{\frac{2}{7}} i \sin{\left(\frac{2 \pi}{7} \right)}$ (mult: 1), $7 \cdot 2^{\frac{2}{7}} \cos{\left(\frac{2 \pi}{7} \right)} + 7 \cdot 2^{\frac{2}{7}} i \sin{\left(\frac{2 \pi}{7} \right)}$ (mult: 1), $0$ (mult: 1)
 
     ??? note "Quantum Matrix ($y=1$)"

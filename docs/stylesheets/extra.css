@@ -15,7 +15,7 @@
   max-width: 100% !important;
   overflow-x: auto !important;
   box-sizing: border-box !important;
-  display: block !important;
+  display: inline-block !important;
 }
 
 /* Force mjx-container to allow scrolling */

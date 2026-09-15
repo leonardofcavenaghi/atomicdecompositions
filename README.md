@@ -87,7 +87,7 @@ python3 -m gwflags.cli A2 --keep 1 info
 python3 -m gwflags.cli A2 --keep 1 gw --beta 1,0 --classes pt,pt
 python3 -m gwflags.cli A3 --keep 2 gw --beta 0,1,0 --classes "2|1 2 3|pt"
 python3 -m gwflags.cli A2 --keep 1 sqm
-python3 -m gwflags.cli A3 --keep 1 sqm -K 2          # quadric in P^3
+python3 -m gwflags.cli A3 --keep 1 -K 2 sqm          # quadric in P^3
 ```
 
 `--keep` is the notebook's `m` (RootsThatStay): the 1-based simple roots

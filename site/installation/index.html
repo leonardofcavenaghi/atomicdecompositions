@@ -986,131 +986,114 @@
 <p>Before installing the software, you must ensure the underlying tools are available on your system.</p>
 <h3 id="option-a-plain-python-recommended-for-most-users">Option A: Plain Python (Recommended for most users)<a class="headerlink" href="#option-a-plain-python-recommended-for-most-users" title="Permanent link">&para;</a></h3>
 <p>You need Python 3.9 or newer.</p>
-<p>=== "Windows"</p>
-<div class="language-text highlight"><pre><span></span><code>**Step 1: Install Python**
-1. Download the Python installer from the official [Python website](https://www.python.org/downloads/windows/).
-2. Run the installer. Before clicking "Install Now", you **must** check the box labeled **"Add Python to PATH"**.
-3. Open the Command Prompt (`cmd`) and verify the installation by typing:
-   ```cmd
-   python --version
-   ```
-
-**Step 2: Install Git**
-1. Download the Git for Windows installer from the official git-scm website ([https://gitforwindows.org/](https://gitforwindows.org/)).
+<div class="tabbed-set" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Windows</label><div class="tabbed-content">
+<p><strong>Step 1: Install Python</strong>
+1. Download the Python installer from the official <a href="https://www.python.org/downloads/windows/">Python website</a>.
+2. Run the installer. Before clicking "Install Now", you <strong>must</strong> check the box labeled <strong>"Add Python to PATH"</strong>.
+3. Open the Command Prompt (<code>cmd</code>) and verify the installation by typing:
+   <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>python --version
+</span></code></pre></div></p>
+<p><strong>Step 2: Install Git</strong>
+1. Download the Git for Windows installer from the official git-scm website (<a href="https://gitforwindows.org/">https://gitforwindows.org/</a>).
 2. Run the installer and proceed with the default options.
 3. Restart your Command Prompt to ensure the system recognizes the new path variables, then verify by typing:
-   ```cmd
-   git --version
-   ```
-*(Note: If you wish to avoid installing Git, you must manually download the repository as a ZIP file from GitHub, extract it, and use the Command Prompt to navigate into the extracted directory.)*
-</code></pre></div>
-<p>=== "macOS"</p>
-<div class="language-text highlight"><pre><span></span><code>1. macOS comes with a version of Python, but it is recommended to use [Homebrew](https://brew.sh/).
-2. Open your Terminal and install Homebrew if you haven't already:
-   ```bash
-   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-   ```
-3. Install Python and Git:
-   ```bash
-   brew install python git
-   ```
-4. Verify:
-   ```bash
-   python --version
-   git --version
-   ```
-</code></pre></div>
-<p>=== "Linux (Ubuntu/Debian)"</p>
-<div class="language-text highlight"><pre><span></span><code>1. Open your terminal.
-2. Update your package list and install Python 3, Git, and `venv`:
-   ```bash
-   sudo apt update
-   sudo apt install git python python3-pip python3-venv
-   ```
-3. Verify:
-   ```bash
-   python --version
-   git --version
-   ```
-</code></pre></div>
+   <div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>git --version
+</span></code></pre></div>
+<em>(Note: If you wish to avoid installing Git, you must manually download the repository as a ZIP file from GitHub, extract it, and use the Command Prompt to navigate into the extracted directory.)</em></p>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">macOS</label><div class="tabbed-content">
+<ol>
+<li>macOS comes with a version of Python, but it is recommended to use <a href="https://brew.sh/">Homebrew</a>.</li>
+<li>Open your Terminal and install Homebrew if you haven't already:
+   <div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>/bin/bash<span class="w"> </span>-c<span class="w"> </span><span class="s2">"</span><span class="k">$(</span>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="k">)</span><span class="s2">"</span>
+</span></code></pre></div></li>
+<li>Install Python and Git:
+   <div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>brew<span class="w"> </span>install<span class="w"> </span>python<span class="w"> </span>git
+</span></code></pre></div></li>
+<li>Verify:
+   <div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>python<span class="w"> </span>--version
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>git<span class="w"> </span>--version
+</span></code></pre></div></li>
+</ol>
+</div>
+<input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><label for="__tabbed_1_3">Linux (Ubuntu/Debian)</label><div class="tabbed-content">
+<ol>
+<li>Open your terminal.</li>
+<li>Update your package list and install Python 3, Git, and <code>venv</code>:
+   <div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>git<span class="w"> </span>python<span class="w"> </span>python3-pip<span class="w"> </span>python3-venv
+</span></code></pre></div></li>
+<li>Verify:
+   <div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>python<span class="w"> </span>--version
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>git<span class="w"> </span>--version
+</span></code></pre></div></li>
+</ol>
+</div>
+</div>
 <h3 id="option-b-sagemath-recommended-for-algebraicsymbolic-speed">Option B: SageMath (Recommended for algebraic/symbolic speed)<a class="headerlink" href="#option-b-sagemath-recommended-for-algebraicsymbolic-speed" title="Permanent link">&para;</a></h3>
 <p>If you have SageMath installed, the package auto-detects it and uses its symbolic ring for faster final matrix assembly. </p>
 <p><strong>Important Note for Windows Users:</strong> Running SageMath on Windows natively is historically problematic. It currently requires the Windows Subsystem for Linux (WSL). A standard Windows user cannot simply download an executable and expect it to interface seamlessly with a Windows-based command prompt virtual environment. If you are on Windows, we strongly recommend Option A (Plain Python).</p>
 <hr />
 <h2 id="2-installing-the-software">2. Installing the Software<a class="headerlink" href="#2-installing-the-software" title="Permanent link">&para;</a></h2>
 <p>We will use a <strong>virtual environment</strong> (<code>venv</code>) to isolate the project dependencies.</p>
-<p>=== "Windows"</p>
-<div class="language-text highlight"><pre><span></span><code>**Step 3: Clone the Repository**
+<div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Windows</label><div class="tabbed-content">
+<p><strong>Step 3: Clone the Repository</strong>
 In the Command Prompt, navigate to the directory where you want to store the software, then execute:
-```cmd
-git clone https://github.com/leonardofcavenaghi/atomicdecompositions.git
-cd atomicdecompositions
-```
-
-**Step 4: Create and Activate the Virtual Environment**
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>git clone https://github.com/leonardofcavenaghi/atomicdecompositions.git
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>cd atomicdecompositions
+</span></code></pre></div></p>
+<p><strong>Step 4: Create and Activate the Virtual Environment</strong>
 Execute the following commands:
-```cmd
-python -m venv venv
-venv\Scripts\activate
-```
-You will know this step is successful when `(venv)` appears at the beginning of your command prompt line.
-
-**Step 5: Install Dependencies**
-With the virtual environment active, install the required packages using `pip`:
-```cmd
-pip install sympy mpmath
-```
-</code></pre></div>
-<p>=== "macOS and Linux"</p>
-<div class="language-text highlight"><pre><span></span><code>**Step 3: Clone the Repository**
-```bash
-git clone https://github.com/leonardofcavenaghi/atomicdecompositions.git
-cd atomicdecompositions
-```
-
-**Step 4: Create and Activate the Virtual Environment**
-```bash
-python -m venv venv
-source venv/bin/activate
-```
-
-**Step 5: Install Dependencies**
-```bash
-pip install sympy mpmath
-```
-</code></pre></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>python -m venv venv
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>venv\Scripts\activate
+</span></code></pre></div>
+You will know this step is successful when <code>(venv)</code> appears at the beginning of your command prompt line.</p>
+<p><strong>Step 5: Install Dependencies</strong>
+With the virtual environment active, install the required packages using <code>pip</code>:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>pip install sympy mpmath
+</span></code></pre></div></p>
+</div>
+<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">macOS and Linux</label><div class="tabbed-content">
+<p><strong>Step 3: Clone the Repository</strong>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/leonardofcavenaghi/atomicdecompositions.git
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="nb">cd</span><span class="w"> </span>atomicdecompositions
+</span></code></pre></div></p>
+<p><strong>Step 4: Create and Activate the Virtual Environment</strong>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>venv
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="nb">source</span><span class="w"> </span>venv/bin/activate
+</span></code></pre></div></p>
+<p><strong>Step 5: Install Dependencies</strong>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>pip<span class="w"> </span>install<span class="w"> </span>sympy<span class="w"> </span>mpmath
+</span></code></pre></div></p>
+</div>
+</div>
 <hr />
 <h2 id="3-quick-start-verification">3. Quick Start &amp; Verification<a class="headerlink" href="#3-quick-start-verification" title="Permanent link">&para;</a></h2>
 <p>To verify that the installation is successful and that independently known values from Schubert calculus match exactly, you must run the test suite. </p>
 <p><strong>Note on Python commands:</strong> Note: Since you are operating inside an activated virtual environment, the <code>python</code> command is standard across all operating systems.</p>
-<p>=== "Windows"
-    Run the test suite:
-    <div class="language-text highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>python tests/test_gwflags.py
+<div class="tabbed-set" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">Windows</label><div class="tabbed-content">
+<p>Run the test suite:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>python tests/test_gwflags.py
 </span></code></pre></div></p>
-<div class="language-text highlight"><pre><span></span><code>To use the Command Line Interface (CLI):
-```cmd
-python -m gwflags.cli A2 --keep 1 sqm
-```
-
-To start the Graphical User Interface (GUI):
-```cmd
-python -m gwflags.gui
-```
-</code></pre></div>
-<p>=== "macOS and Linux"
-    Run the test suite:
-    <div class="language-bash highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>python<span class="w"> </span>tests/test_gwflags.py
+<p>To use the Command Line Interface (CLI):
+<div class="language-text highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>python -m gwflags.cli A2 --keep 1 sqm
 </span></code></pre></div></p>
-<div class="language-text highlight"><pre><span></span><code>To use the Command Line Interface (CLI):
-```bash
-python -m gwflags.cli A2 --keep 1 sqm
-```
-
-To start the Graphical User Interface (GUI):
-```bash
-python -m gwflags.gui
-```
-</code></pre></div>
+<p>To start the Graphical User Interface (GUI):
+<div class="language-text highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>python -m gwflags.gui
+</span></code></pre></div></p>
+</div>
+<input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><label for="__tabbed_3_2">macOS and Linux</label><div class="tabbed-content">
+<p>Run the test suite:
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>python<span class="w"> </span>tests/test_gwflags.py
+</span></code></pre></div></p>
+<p>To use the Command Line Interface (CLI):
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>python<span class="w"> </span>-m<span class="w"> </span>gwflags.cli<span class="w"> </span>A2<span class="w"> </span>--keep<span class="w"> </span><span class="m">1</span><span class="w"> </span>sqm
+</span></code></pre></div></p>
+<p>To start the Graphical User Interface (GUI):
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>python<span class="w"> </span>-m<span class="w"> </span>gwflags.gui
+</span></code></pre></div></p>
+</div>
+</div>
 
 
 

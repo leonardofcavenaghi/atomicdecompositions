@@ -149,7 +149,7 @@ This section contains complete intersections inside this geometric family, syste
     - **Ambient Space:** `$A4$`
     - **Dimension:** $5$
     - **Fano Index:** $4$
-    - **Basis Rank:** $10$
+    - **Basis Rank:** $8$
     - **Eigenvalues:** $- 2 \sqrt[4]{2} \sqrt[4]{-11 + 5 \sqrt{5}} + 2 \sqrt[4]{2} i \sqrt[4]{-11 + 5 \sqrt{5}}$ (mult: 1), $2 \sqrt[4]{2} \sqrt[4]{-11 + 5 \sqrt{5}} - 2 \sqrt[4]{2} i \sqrt[4]{-11 + 5 \sqrt{5}}$ (mult: 1), $- 2 \sqrt[4]{2} \sqrt[4]{-11 + 5 \sqrt{5}} - 2 \sqrt[4]{2} i \sqrt[4]{-11 + 5 \sqrt{5}}$ (mult: 1), $2 \sqrt[4]{2} \sqrt[4]{-11 + 5 \sqrt{5}} + 2 \sqrt[4]{2} i \sqrt[4]{-11 + 5 \sqrt{5}}$ (mult: 1), $- 2 \cdot 2^{\frac{3}{4}} i \sqrt[4]{11 + 5 \sqrt{5}}$ (mult: 1), $2 \cdot 2^{\frac{3}{4}} i \sqrt[4]{11 + 5 \sqrt{5}}$ (mult: 1), $- 2 \cdot 2^{\frac{3}{4}} \sqrt[4]{11 + 5 \sqrt{5}}$ (mult: 1), $2 \cdot 2^{\frac{3}{4}} \sqrt[4]{11 + 5 \sqrt{5}}$ (mult: 1)
 
     ??? note "Quantum Matrix ($y=1$)"

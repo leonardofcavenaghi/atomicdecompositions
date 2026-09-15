@@ -1063,18 +1063,18 @@
 <p>To start the interface, open your terminal (inside the folder) and run:
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>python3<span class="w"> </span>-m<span class="w"> </span>gwflags.gui
 </span></code></pre></div>
-This will start a local server at <code>http://127.0.0.1:8000</code>. You can input parameters directly into the web interface.</p>
+This will start a local server at <code>http://127.0.0.1:8642</code>. You can input parameters directly into the web interface.</p>
 <hr />
 <h2 id="example-1-classic-enumerative-geometry">Example 1: Classic Enumerative Geometry<a class="headerlink" href="#example-1-classic-enumerative-geometry" title="Permanent link">&para;</a></h2>
-<p>The <code>gwflags</code> library natively computes Gromov-Witten invariants for complete intersections using Atiyah-Bott localization. Let's compute two famous results in algebraic geometry: the 27 lines on a cubic surface, and the 2875 lines on a quintic threefold.</p>
+<p>The <code>gwflags</code> library natively computes Gromov-Witten invariants for complete intersections using virtual localization (Graber-Pandharipande). Let's compute two famous results in algebraic geometry: the 27 lines on a cubic surface, and the 2875 lines on a quintic threefold.</p>
 <h3 id="the-27-lines-on-a-cubic-surface">The 27 Lines on a Cubic Surface<a class="headerlink" href="#the-27-lines-on-a-cubic-surface" title="Permanent link">&para;</a></h3>
 <p>A cubic surface is a complete intersection in <span class="arithmatex">\(\mathbb{P}^3\)</span> defined by the vanishing of a degree-3 polynomial (the bundle <span class="arithmatex">\(\mathcal{O}(3)\)</span>). </p>
 <p><strong>In the Graphical Interface:</strong>
 - <strong>Card 1 (Space Definition)</strong> -&gt; <strong>Algebra:</strong> <code>A3</code>
 - <strong>Card 1</strong> -&gt; <strong>Keep Simple Roots:</strong> <code>1</code>
-- <strong>Card 1</strong> -&gt; <strong>Twisting Bundle K:</strong> <code>[[3]]</code>
+- <strong>Card 1</strong> -&gt; <strong>Twisting Bundle K:</strong> <code>3</code>
 - <strong>Card 3 (GW Invariants)</strong> -&gt; <strong>Curve Class &beta;:</strong> <code>1, 0, 0</code>
-- <strong>Card 3</strong> -&gt; <strong>Insertions:</strong> <em>(Leave empty)</em>
+- <strong>Card 3</strong> -&gt; <strong>Insertions:</strong> <em>(leave empty; do not enter <code>id</code>)</em>
 - <strong>Card 3</strong> -&gt; <strong>Click:</strong> Compute Invariant (Output: <code>27</code>)</p>
 <p><strong>In Python:</strong>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">gwflags</span><span class="w"> </span><span class="kn">import</span> <span class="n">FlagVariety</span>
@@ -1088,9 +1088,9 @@ This will start a local server at <code>http://127.0.0.1:8000</code>. You can in
 <p><strong>In the Graphical Interface:</strong>
 - <strong>Card 1 (Space Definition)</strong> -&gt; <strong>Algebra:</strong> <code>A4</code>
 - <strong>Card 1</strong> -&gt; <strong>Keep Simple Roots:</strong> <code>1</code>
-- <strong>Card 1</strong> -&gt; <strong>Twisting Bundle K:</strong> <code>[[5]]</code>
+- <strong>Card 1</strong> -&gt; <strong>Twisting Bundle K:</strong> <code>5</code>
 - <strong>Card 3 (GW Invariants)</strong> -&gt; <strong>Curve Class &beta;:</strong> <code>1, 0, 0, 0</code>
-- <strong>Card 3</strong> -&gt; <strong>Insertions:</strong> <em>(Leave empty)</em>
+- <strong>Card 3</strong> -&gt; <strong>Insertions:</strong> <em>(leave empty; do not enter <code>id</code>)</em>
 - <strong>Card 3</strong> -&gt; <strong>Click:</strong> Compute Invariant (Output: <code>2875</code>)</p>
 <p><strong>In Python:</strong>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">gwflags</span><span class="w"> </span><span class="kn">import</span> <span class="n">FlagVariety</span>
@@ -1108,7 +1108,7 @@ This will start a local server at <code>http://127.0.0.1:8000</code>. You can in
 - <strong>Card 1</strong> -&gt; <strong>Keep Simple Roots:</strong> <code>2</code>
 - <strong>Card 1</strong> -&gt; <strong>Twisting Bundle K:</strong> <em>(Leave empty)</em>
 - <strong>Card 3 (GW Invariants)</strong> -&gt; <strong>Curve Class &beta;:</strong> <code>0, 1, 0</code>
-- <strong>Card 3</strong> -&gt; <strong>Insertions:</strong> <code>((0, 0, 1, 0), (0, 0, 0, 1), (1, 0, 0, 0), (0, 1, 0, 0)) | ((0, 0, 1, 0), (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 0, 1)) | ((1, 0, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1), (0, 1, 0, 0))</code>
+- <strong>Card 3</strong> -&gt; <strong>Insertions:</strong> <code>5|2|3</code>
 - <strong>Card 3</strong> -&gt; <strong>Click:</strong> Compute Invariant (Output: <code>1</code>)</p>
 <p><strong>In Python:</strong>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">gwflags</span><span class="w"> </span><span class="kn">import</span> <span class="n">FlagVariety</span>
@@ -1153,7 +1153,7 @@ This will start a local server at <code>http://127.0.0.1:8000</code>. You can in
 <h2 id="example-4-eigenvalues-of-the-quantum-connection">Example 4: Eigenvalues of the Quantum Connection<a class="headerlink" href="#example-4-eigenvalues-of-the-quantum-connection" title="Permanent link">&para;</a></h2>
 <p>To verify if a geometry is semisimple, you extract the eigenvalues of the matrix generated in Example 3.</p>
 <p><strong>In the Graphical Interface:</strong>
-Once you click <strong>Compute c₁(TX)⋆ Matrix</strong> for any space, the interface will automatically compute the characteristic polynomial and display the exact symbolic eigenvalues (e.g. roots of unity for <span class="arithmatex">\(\mathbb{P}^2\)</span>) at the bottom of the result panel!</p>
+Once you click <strong>Compute c₁(TX)⋆ Matrix</strong> for any space, the interface will automatically compute the characteristic polynomial and display numerical eigenvalues after setting all Novikov variables to 1 (e.g. roots of unity for <span class="arithmatex">\(\mathbb{P}^2\)</span>) at the bottom of the result panel!</p>
 <p><strong>In Python:</strong>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">gwflags</span><span class="w"> </span><span class="kn">import</span> <span class="n">FlagVariety</span>
 </span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
@@ -1165,7 +1165,7 @@ Once you click <strong>Compute c₁(TX)⋆ Matrix</strong> for any space, the in
 <h3 id="evaluating-quantum-matrices-and-characteristic-polynomials">Evaluating Quantum Matrices and Characteristic Polynomials<a class="headerlink" href="#evaluating-quantum-matrices-and-characteristic-polynomials" title="Permanent link">&para;</a></h3>
 <p>The GUI now supports <strong>custom evaluation of Novikov variables</strong>. If you want to compute the matrix at specific values (instead of keeping it purely symbolic), you can type <code>y1=2, y2=-1</code> into the new <strong>"Evaluate y"</strong> box. The system will automatically substitute these values into the matrix and dynamically compute the corresponding <strong>Characteristic Polynomial</strong> for you to inspect!</p>
 <h2 id="example-5-non-trivial-bundles-quotient-and-tautological-subbundles">Example 5: Non-Trivial Bundles (Quotient and Tautological Subbundles)<a class="headerlink" href="#example-5-non-trivial-bundles-quotient-and-tautological-subbundles" title="Permanent link">&para;</a></h2>
-<p>The <code>gwflags</code> GUI and CLI parser now natively supports the evaluation of complex Homogeneous Bundles beyond simple sums of line bundles.
+<p>The GUI and CLI accept compact bundle input: <code>3</code> means <code>O(3)</code>, while semicolon-separated rows represent separate summands (for example <code>1,1;2,2</code>). Python API examples use nested lists such as <code>K=[[3]]</code>. The <code>gwflags</code> GUI and CLI parser now natively supports the evaluation of complex Homogeneous Bundles beyond simple sums of line bundles.
 For example, you can take a complete intersection cut out by a section of the <strong>Tautological Quotient Bundle</strong> <span class="arithmatex">\(\mathcal{Q}\)</span>.</p>
 <p>A famous mathematical identity states that the zero-locus of a regular section of <span class="arithmatex">\(\mathcal{Q}\)</span> on <span class="arithmatex">\(Gr(2,5)\)</span> is isomorphic to <span class="arithmatex">\(\mathbb{P}^3\)</span>.
 We can verify this isomorphism natively by passing the bundle explicitly:</p>
