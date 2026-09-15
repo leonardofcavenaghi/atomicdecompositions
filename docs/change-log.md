@@ -16,3 +16,8 @@
 2. Build the MkDocs site with `--strict`.
 3. Smoke-test `/api/presets`, Space Info, quantum matrix, GW invariant, compact bundles, and quotient bundles.
 4. Review this file and the catalog for unresolved “pending” matrices or catalog-only entries.
+
+## 2026-09-15 — catalog audit
+
+- Audited all canonical catalog pages and corrected duplicate projective entries, 74 matrix-rank metadata mismatches, and a symbolic Fanography matrix label.
+- Added a catalog organization review and marked the legacy aggregate page as historical.

@@ -133,13 +133,13 @@ This section contains complete intersections inside this geometric family, syste
 
 | Geometry | Fano Index | Basis Rank |
 |---|---|---|
-| [Gr(2,5) / O(1)](#gr25o1) | 4 | 10 |
-| [Gr(3,5) / O(1)](#gr35o1) | 4 | 10 |
-| [Gr(2,5) / O(2)](#gr25o2) | 3 | 10 |
-| [Gr(3,5) / O(2)](#gr35o2) | 3 | 10 |
+| [Gr(2,5) / O(1)](#gr25o1) | 4 | 8 |
+| [Gr(3,5) / O(1)](#gr35o1) | 4 | 8 |
+| [Gr(2,5) / O(2)](#gr25o2) | 3 | 8 |
+| [Gr(3,5) / O(2)](#gr35o2) | 3 | 8 |
 | [Gr(2,6) / O(1)+O(1)+O(1)](#gr26o1o1o1) | 3 | 8 |
-| [Gr(2,5) / O(3)](#gr25o3) | 2 | 10 |
-| [Gr(3,5) / O(3)](#gr35o3) | 2 | 10 |
+| [Gr(2,5) / O(3)](#gr25o3) | 2 | 8 |
+| [Gr(3,5) / O(3)](#gr35o3) | 2 | 8 |
 | [Gr(2,6) / O(1)+O(1)+O(2)](#gr26o1o1o2) | 2 | 8 |
 
 ---
@@ -165,7 +165,7 @@ This section contains complete intersections inside this geometric family, syste
     - **Ambient Space:** `$A4$`
     - **Dimension:** $5$
     - **Fano Index:** $4$
-    - **Basis Rank:** $10$
+    - **Basis Rank:** $8$
     - **Eigenvalues:** $- 2 \sqrt[4]{2} \sqrt[4]{-11 + 5 \sqrt{5}} + 2 \sqrt[4]{2} i \sqrt[4]{-11 + 5 \sqrt{5}}$ (mult: 1), $2 \sqrt[4]{2} \sqrt[4]{-11 + 5 \sqrt{5}} - 2 \sqrt[4]{2} i \sqrt[4]{-11 + 5 \sqrt{5}}$ (mult: 1), $- 2 \sqrt[4]{2} \sqrt[4]{-11 + 5 \sqrt{5}} - 2 \sqrt[4]{2} i \sqrt[4]{-11 + 5 \sqrt{5}}$ (mult: 1), $2 \sqrt[4]{2} \sqrt[4]{-11 + 5 \sqrt{5}} + 2 \sqrt[4]{2} i \sqrt[4]{-11 + 5 \sqrt{5}}$ (mult: 1), $- 2 \cdot 2^{\frac{3}{4}} i \sqrt[4]{11 + 5 \sqrt{5}}$ (mult: 1), $2 \cdot 2^{\frac{3}{4}} i \sqrt[4]{11 + 5 \sqrt{5}}$ (mult: 1), $- 2 \cdot 2^{\frac{3}{4}} \sqrt[4]{11 + 5 \sqrt{5}}$ (mult: 1), $2 \cdot 2^{\frac{3}{4}} \sqrt[4]{11 + 5 \sqrt{5}}$ (mult: 1)
 
     ??? note "Quantum Matrix ($y=1$)"
@@ -181,7 +181,7 @@ This section contains complete intersections inside this geometric family, syste
     - **Ambient Space:** `$A4$`
     - **Dimension:** $5$
     - **Fano Index:** $3$
-    - **Basis Rank:** $10$
+    - **Basis Rank:** $8$
     - **Eigenvalues:** $- 3 \sqrt[3]{-22 + 10 \sqrt{5}}$ (mult: 1), $\frac{3 \sqrt[3]{-22 + 10 \sqrt{5}}}{2} - \frac{3 \sqrt{3} i \sqrt[3]{-22 + 10 \sqrt{5}}}{2}$ (mult: 1), $\frac{3 \sqrt[3]{-22 + 10 \sqrt{5}}}{2} + \frac{3 \sqrt{3} i \sqrt[3]{-22 + 10 \sqrt{5}}}{2}$ (mult: 1), $3 \sqrt[3]{22 + 10 \sqrt{5}}$ (mult: 1), $- \frac{3 \sqrt[3]{22 + 10 \sqrt{5}}}{2} - \frac{3 \sqrt{3} i \sqrt[3]{22 + 10 \sqrt{5}}}{2}$ (mult: 1), $- \frac{3 \sqrt[3]{22 + 10 \sqrt{5}}}{2} + \frac{3 \sqrt{3} i \sqrt[3]{22 + 10 \sqrt{5}}}{2}$ (mult: 1), $0$ (mult: 2)
 
     ??? note "Quantum Matrix ($y=1$)"
@@ -197,7 +197,7 @@ This section contains complete intersections inside this geometric family, syste
     - **Ambient Space:** `$A4$`
     - **Dimension:** $5$
     - **Fano Index:** $3$
-    - **Basis Rank:** $10$
+    - **Basis Rank:** $8$
     - **Eigenvalues:** $- 3 \sqrt[3]{-22 + 10 \sqrt{5}}$ (mult: 1), $\frac{3 \sqrt[3]{-22 + 10 \sqrt{5}}}{2} - \frac{3 \sqrt{3} i \sqrt[3]{-22 + 10 \sqrt{5}}}{2}$ (mult: 1), $\frac{3 \sqrt[3]{-22 + 10 \sqrt{5}}}{2} + \frac{3 \sqrt{3} i \sqrt[3]{-22 + 10 \sqrt{5}}}{2}$ (mult: 1), $3 \sqrt[3]{22 + 10 \sqrt{5}}$ (mult: 1), $- \frac{3 \sqrt[3]{22 + 10 \sqrt{5}}}{2} - \frac{3 \sqrt{3} i \sqrt[3]{22 + 10 \sqrt{5}}}{2}$ (mult: 1), $- \frac{3 \sqrt[3]{22 + 10 \sqrt{5}}}{2} + \frac{3 \sqrt{3} i \sqrt[3]{22 + 10 \sqrt{5}}}{2}$ (mult: 1), $0$ (mult: 2)
 
     ??? note "Quantum Matrix ($y=1$)"
@@ -230,7 +230,7 @@ This section contains complete intersections inside this geometric family, syste
     - **Ambient Space:** `$A4$`
     - **Dimension:** $5$
     - **Fano Index:** $2$
-    - **Basis Rank:** $10$
+    - **Basis Rank:** $8$
     - **Eigenvalues:** $- 6 i \sqrt{- \frac{33}{2} + \frac{15 \sqrt{5}}{2}}$ (mult: 1), $6 i \sqrt{- \frac{33}{2} + \frac{15 \sqrt{5}}{2}}$ (mult: 1), $- 6 \sqrt{\frac{33}{2} + \frac{15 \sqrt{5}}{2}}$ (mult: 1), $6 \sqrt{\frac{33}{2} + \frac{15 \sqrt{5}}{2}}$ (mult: 1), $0$ (mult: 4)
 
     ??? note "Quantum Matrix ($y=1$)"
@@ -246,7 +246,7 @@ This section contains complete intersections inside this geometric family, syste
     - **Ambient Space:** `$A4$`
     - **Dimension:** $5$
     - **Fano Index:** $2$
-    - **Basis Rank:** $10$
+    - **Basis Rank:** $8$
     - **Eigenvalues:** $- 6 i \sqrt{- \frac{33}{2} + \frac{15 \sqrt{5}}{2}}$ (mult: 1), $6 i \sqrt{- \frac{33}{2} + \frac{15 \sqrt{5}}{2}}$ (mult: 1), $- 6 \sqrt{\frac{33}{2} + \frac{15 \sqrt{5}}{2}}$ (mult: 1), $6 \sqrt{\frac{33}{2} + \frac{15 \sqrt{5}}{2}}$ (mult: 1), $0$ (mult: 4)
 
     ??? note "Quantum Matrix ($y=1$)"
@@ -286,13 +286,13 @@ This section contains complete intersections inside this geometric family, syste
 |---|---|---|
 | [Gr(4,5)](#gr45) | 5 | 5 |
 | [Gr(2,4)](#gr24) | 4 | 6 |
-| [Gr(2,5) / O(1)+O(1)](#gr25o1o1) | 3 | 10 |
-| [Gr(3,5) / O(1)+O(1)](#gr35o1o1) | 3 | 10 |
-| [Gr(2,5) / O(1)+O(2)](#gr25o1o2) | 2 | 10 |
-| [Gr(3,5) / O(1)+O(2)](#gr35o1o2) | 2 | 10 |
-| [Gr(2,5) / O(1)+O(3)](#gr25o1o3) | 1 | 10 |
-| [Gr(2,5) / O(2)+O(2)](#gr25o2o2) | 1 | 10 |
-| [Gr(3,5) / O(1)+O(3)](#gr35o1o3) | 1 | 10 |
+| [Gr(2,5) / O(1)+O(1)](#gr25o1o1) | 3 | 6 |
+| [Gr(3,5) / O(1)+O(1)](#gr35o1o1) | 3 | 6 |
+| [Gr(2,5) / O(1)+O(2)](#gr25o1o2) | 2 | 6 |
+| [Gr(3,5) / O(1)+O(2)](#gr35o1o2) | 2 | 6 |
+| [Gr(2,5) / O(1)+O(3)](#gr25o1o3) | 1 | 6 |
+| [Gr(2,5) / O(2)+O(2)](#gr25o2o2) | 1 | 6 |
+| [Gr(3,5) / O(1)+O(3)](#gr35o1o3) | 1 | 6 |
 | [Gr(3,5) / O(2)+O(2)](#gr35o2o2) | 1 | 6 |
 
 ---
@@ -335,7 +335,7 @@ This section contains complete intersections inside this geometric family, syste
     - **Ambient Space:** `$A4$`
     - **Dimension:** $4$
     - **Fano Index:** $3$
-    - **Basis Rank:** $10$
+    - **Basis Rank:** $6$
     - **Eigenvalues:** $- 3 \sqrt[3]{- \frac{11}{2} + \frac{5 \sqrt{5}}{2}}$ (mult: 1), $\frac{3 \sqrt[3]{- \frac{11}{2} + \frac{5 \sqrt{5}}{2}}}{2} - \frac{3 \sqrt{3} i \sqrt[3]{- \frac{11}{2} + \frac{5 \sqrt{5}}{2}}}{2}$ (mult: 1), $\frac{3 \sqrt[3]{- \frac{11}{2} + \frac{5 \sqrt{5}}{2}}}{2} + \frac{3 \sqrt{3} i \sqrt[3]{- \frac{11}{2} + \frac{5 \sqrt{5}}{2}}}{2}$ (mult: 1), $3 \sqrt[3]{\frac{11}{2} + \frac{5 \sqrt{5}}{2}}$ (mult: 1), $- \frac{3 \sqrt[3]{\frac{11}{2} + \frac{5 \sqrt{5}}{2}}}{2} - \frac{3 \sqrt{3} i \sqrt[3]{\frac{11}{2} + \frac{5 \sqrt{5}}{2}}}{2}$ (mult: 1), $- \frac{3 \sqrt[3]{\frac{11}{2} + \frac{5 \sqrt{5}}{2}}}{2} + \frac{3 \sqrt{3} i \sqrt[3]{\frac{11}{2} + \frac{5 \sqrt{5}}{2}}}{2}$ (mult: 1)
 
     ??? note "Quantum Matrix ($y=1$)"
@@ -351,7 +351,7 @@ This section contains complete intersections inside this geometric family, syste
     - **Ambient Space:** `$A4$`
     - **Dimension:** $4$
     - **Fano Index:** $3$
-    - **Basis Rank:** $10$
+    - **Basis Rank:** $6$
     - **Eigenvalues:** $- 3 \sqrt[3]{- \frac{11}{2} + \frac{5 \sqrt{5}}{2}}$ (mult: 1), $\frac{3 \sqrt[3]{- \frac{11}{2} + \frac{5 \sqrt{5}}{2}}}{2} - \frac{3 \sqrt{3} i \sqrt[3]{- \frac{11}{2} + \frac{5 \sqrt{5}}{2}}}{2}$ (mult: 1), $\frac{3 \sqrt[3]{- \frac{11}{2} + \frac{5 \sqrt{5}}{2}}}{2} + \frac{3 \sqrt{3} i \sqrt[3]{- \frac{11}{2} + \frac{5 \sqrt{5}}{2}}}{2}$ (mult: 1), $3 \sqrt[3]{\frac{11}{2} + \frac{5 \sqrt{5}}{2}}$ (mult: 1), $- \frac{3 \sqrt[3]{\frac{11}{2} + \frac{5 \sqrt{5}}{2}}}{2} - \frac{3 \sqrt{3} i \sqrt[3]{\frac{11}{2} + \frac{5 \sqrt{5}}{2}}}{2}$ (mult: 1), $- \frac{3 \sqrt[3]{\frac{11}{2} + \frac{5 \sqrt{5}}{2}}}{2} + \frac{3 \sqrt{3} i \sqrt[3]{\frac{11}{2} + \frac{5 \sqrt{5}}{2}}}{2}$ (mult: 1)
 
     ??? note "Quantum Matrix ($y=1$)"
@@ -367,7 +367,7 @@ This section contains complete intersections inside this geometric family, syste
     - **Ambient Space:** `$A4$`
     - **Dimension:** $4$
     - **Fano Index:** $2$
-    - **Basis Rank:** $10$
+    - **Basis Rank:** $6$
     - **Eigenvalues:** $- 4 i \sqrt{- \frac{11}{2} + \frac{5 \sqrt{5}}{2}}$ (mult: 1), $4 i \sqrt{- \frac{11}{2} + \frac{5 \sqrt{5}}{2}}$ (mult: 1), $- 4 \sqrt{\frac{11}{2} + \frac{5 \sqrt{5}}{2}}$ (mult: 1), $4 \sqrt{\frac{11}{2} + \frac{5 \sqrt{5}}{2}}$ (mult: 1), $0$ (mult: 2)
 
     ??? note "Quantum Matrix ($y=1$)"
@@ -383,7 +383,7 @@ This section contains complete intersections inside this geometric family, syste
     - **Ambient Space:** `$A4$`
     - **Dimension:** $4$
     - **Fano Index:** $2$
-    - **Basis Rank:** $10$
+    - **Basis Rank:** $6$
     - **Eigenvalues:** $- 4 i \sqrt{- \frac{11}{2} + \frac{5 \sqrt{5}}{2}}$ (mult: 1), $4 i \sqrt{- \frac{11}{2} + \frac{5 \sqrt{5}}{2}}$ (mult: 1), $- 4 \sqrt{\frac{11}{2} + \frac{5 \sqrt{5}}{2}}$ (mult: 1), $4 \sqrt{\frac{11}{2} + \frac{5 \sqrt{5}}{2}}$ (mult: 1), $0$ (mult: 2)
 
     ??? note "Quantum Matrix ($y=1$)"
@@ -399,7 +399,7 @@ This section contains complete intersections inside this geometric family, syste
     - **Ambient Space:** `$A4$`
     - **Dimension:** $4$
     - **Fano Index:** $1$
-    - **Basis Rank:** $10$
+    - **Basis Rank:** $6$
     - **Eigenvalues:** $-18$ (mult: 4), $\frac{261}{2} - \frac{135 \sqrt{5}}{2}$ (mult: 1), $\frac{261}{2} + \frac{135 \sqrt{5}}{2}$ (mult: 1)
 
     ??? note "Quantum Matrix ($y=1$)"
@@ -415,7 +415,7 @@ This section contains complete intersections inside this geometric family, syste
     - **Ambient Space:** `$A4$`
     - **Dimension:** $4$
     - **Fano Index:** $1$
-    - **Basis Rank:** $10$
+    - **Basis Rank:** $6$
     - **Eigenvalues:** $-12$ (mult: 4), $76 - 40 \sqrt{5}$ (mult: 1), $76 + 40 \sqrt{5}$ (mult: 1)
 
     ??? note "Quantum Matrix ($y=1$)"
@@ -431,7 +431,7 @@ This section contains complete intersections inside this geometric family, syste
     - **Ambient Space:** `$A4$`
     - **Dimension:** $4$
     - **Fano Index:** $1$
-    - **Basis Rank:** $10$
+    - **Basis Rank:** $6$
     - **Eigenvalues:** $-18$ (mult: 4), $\frac{261}{2} - \frac{135 \sqrt{5}}{2}$ (mult: 1), $\frac{261}{2} + \frac{135 \sqrt{5}}{2}$ (mult: 1)
 
     ??? note "Quantum Matrix ($y=1$)"
@@ -465,15 +465,15 @@ This section contains complete intersections inside this geometric family, syste
 |---|---|---|
 | [Gr(3,4)](#gr34) | 4 | 4 |
 | [Gr(4,5) / O(1)](#gr45o1) | 4 | 4 |
-| [Gr(2,4) / O(1)](#gr24o1) | 3 | 6 |
+| [Gr(2,4) / O(1)](#gr24o1) | 3 | 4 |
 | [Gr(4,5) / O(2)](#gr45o2) | 3 | 4 |
-| [Gr(2,4) / O(2)](#gr24o2) | 2 | 6 |
-| [Gr(2,5) / O(1)+O(1)+O(1)](#gr25o1o1o1) | 2 | 10 |
-| [Gr(3,5) / O(1)+O(1)+O(1)](#gr35o1o1o1) | 2 | 10 |
+| [Gr(2,4) / O(2)](#gr24o2) | 2 | 4 |
+| [Gr(2,5) / O(1)+O(1)+O(1)](#gr25o1o1o1) | 2 | 4 |
+| [Gr(3,5) / O(1)+O(1)+O(1)](#gr35o1o1o1) | 2 | 4 |
 | [Gr(4,5) / O(3)](#gr45o3) | 2 | 4 |
-| [Gr(2,4) / O(3)](#gr24o3) | 1 | 6 |
-| [Gr(2,5) / O(1)+O(1)+O(2)](#gr25o1o1o2) | 1 | 10 |
-| [Gr(3,5) / O(1)+O(1)+O(2)](#gr35o1o1o2) | 1 | 10 |
+| [Gr(2,4) / O(3)](#gr24o3) | 1 | 4 |
+| [Gr(2,5) / O(1)+O(1)+O(2)](#gr25o1o1o2) | 1 | 4 |
+| [Gr(3,5) / O(1)+O(1)+O(2)](#gr35o1o1o2) | 1 | 4 |
 | [Gr(4,5) / O(4)](#gr45o4) | 1 | 4 |
 
 ---
@@ -516,7 +516,7 @@ This section contains complete intersections inside this geometric family, syste
     - **Ambient Space:** `$A3$`
     - **Dimension:** $3$
     - **Fano Index:** $3$
-    - **Basis Rank:** $6$
+    - **Basis Rank:** $4$
     - **Eigenvalues:** $3 \cdot 2^{\frac{2}{3}}$ (mult: 1), $- \frac{3 \cdot 2^{\frac{2}{3}}}{2} - \frac{3 \cdot 2^{\frac{2}{3}} \sqrt{3} i}{2}$ (mult: 1), $- \frac{3 \cdot 2^{\frac{2}{3}}}{2} + \frac{3 \cdot 2^{\frac{2}{3}} \sqrt{3} i}{2}$ (mult: 1), $0$ (mult: 1)
 
     ??? note "Quantum Matrix ($y=1$)"
@@ -549,7 +549,7 @@ This section contains complete intersections inside this geometric family, syste
     - **Ambient Space:** `$A3$`
     - **Dimension:** $3$
     - **Fano Index:** $2$
-    - **Basis Rank:** $6$
+    - **Basis Rank:** $4$
     - **Eigenvalues:** $-8$ (mult: 1), $8$ (mult: 1), $0$ (mult: 2)
 
     ??? note "Quantum Matrix ($y=1$)"
@@ -565,7 +565,7 @@ This section contains complete intersections inside this geometric family, syste
     - **Ambient Space:** `$A4$`
     - **Dimension:** $3$
     - **Fano Index:** $2$
-    - **Basis Rank:** $10$
+    - **Basis Rank:** $4$
     - **Eigenvalues:** $- 2 i \sqrt{- \frac{11}{2} + \frac{5 \sqrt{5}}{2}}$ (mult: 1), $2 i \sqrt{- \frac{11}{2} + \frac{5 \sqrt{5}}{2}}$ (mult: 1), $- 2 \sqrt{\frac{11}{2} + \frac{5 \sqrt{5}}{2}}$ (mult: 1), $2 \sqrt{\frac{11}{2} + \frac{5 \sqrt{5}}{2}}$ (mult: 1)
 
     ??? note "Quantum Matrix ($y=1$)"
@@ -581,7 +581,7 @@ This section contains complete intersections inside this geometric family, syste
     - **Ambient Space:** `$A4$`
     - **Dimension:** $3$
     - **Fano Index:** $2$
-    - **Basis Rank:** $10$
+    - **Basis Rank:** $4$
     - **Eigenvalues:** $- 2 i \sqrt{- \frac{11}{2} + \frac{5 \sqrt{5}}{2}}$ (mult: 1), $2 i \sqrt{- \frac{11}{2} + \frac{5 \sqrt{5}}{2}}$ (mult: 1), $- 2 \sqrt{\frac{11}{2} + \frac{5 \sqrt{5}}{2}}$ (mult: 1), $2 \sqrt{\frac{11}{2} + \frac{5 \sqrt{5}}{2}}$ (mult: 1)
 
     ??? note "Quantum Matrix ($y=1$)"
@@ -614,7 +614,7 @@ This section contains complete intersections inside this geometric family, syste
     - **Ambient Space:** `$A3$`
     - **Dimension:** $3$
     - **Fano Index:** $1$
-    - **Basis Rank:** $6$
+    - **Basis Rank:** $4$
     - **Eigenvalues:** $96$ (mult: 1), $-12$ (mult: 3)
 
     ??? note "Quantum Matrix ($y=1$)"
@@ -630,7 +630,7 @@ This section contains complete intersections inside this geometric family, syste
     - **Ambient Space:** `$A4$`
     - **Dimension:** $3$
     - **Fano Index:** $1$
-    - **Basis Rank:** $10$
+    - **Basis Rank:** $4$
     - **Eigenvalues:** $-6$ (mult: 2), $16 - 10 \sqrt{5}$ (mult: 1), $16 + 10 \sqrt{5}$ (mult: 1)
 
     ??? note "Quantum Matrix ($y=1$)"
@@ -646,7 +646,7 @@ This section contains complete intersections inside this geometric family, syste
     - **Ambient Space:** `$A4$`
     - **Dimension:** $3$
     - **Fano Index:** $1$
-    - **Basis Rank:** $10$
+    - **Basis Rank:** $4$
     - **Eigenvalues:** $-6$ (mult: 2), $16 - 10 \sqrt{5}$ (mult: 1), $16 + 10 \sqrt{5}$ (mult: 1)
 
     ??? note "Quantum Matrix ($y=1$)"
@@ -678,13 +678,13 @@ This section contains complete intersections inside this geometric family, syste
 
 | Geometry | Fano Index | Basis Rank |
 |---|---|---|
-| [Gr(3,4) / O(1)](#gr34o1) | 3 | 4 |
+| [Gr(3,4) / O(1)](#gr34o1) | 3 | 3 |
 | [Gr(4,5) / O(1)+O(1)](#gr45o1o1) | 3 | 3 |
-| [Gr(2,4) / O(1)+O(1)](#gr24o1o1) | 2 | 6 |
-| [Gr(3,4) / O(2)](#gr34o2) | 2 | 4 |
+| [Gr(2,4) / O(1)+O(1)](#gr24o1o1) | 2 | 3 |
+| [Gr(3,4) / O(2)](#gr34o2) | 2 | 3 |
 | [Gr(4,5) / O(1)+O(2)](#gr45o1o2) | 2 | 3 |
-| [Gr(2,4) / O(1)+O(2)](#gr24o1o2) | 1 | 6 |
-| [Gr(3,4) / O(3)](#gr34o3) | 1 | 4 |
+| [Gr(2,4) / O(1)+O(2)](#gr24o1o2) | 1 | 3 |
+| [Gr(3,4) / O(3)](#gr34o3) | 1 | 3 |
 | [Gr(4,5) / O(1)+O(3)](#gr45o1o3) | 1 | 3 |
 | [Gr(4,5) / O(2)+O(2)](#gr45o2o2) | 1 | 3 |
 
@@ -695,7 +695,7 @@ This section contains complete intersections inside this geometric family, syste
     - **Ambient Space:** `$A3$`
     - **Dimension:** $2$
     - **Fano Index:** $3$
-    - **Basis Rank:** $4$
+    - **Basis Rank:** $3$
     - **Eigenvalues:** $3$ (mult: 1), $- \frac{3}{2} - \frac{3 \sqrt{3} i}{2}$ (mult: 1), $- \frac{3}{2} + \frac{3 \sqrt{3} i}{2}$ (mult: 1)
 
     ??? note "Quantum Matrix ($y=1$)"
@@ -728,7 +728,7 @@ This section contains complete intersections inside this geometric family, syste
     - **Ambient Space:** `$A3$`
     - **Dimension:** $2$
     - **Fano Index:** $2$
-    - **Basis Rank:** $6$
+    - **Basis Rank:** $3$
     - **Eigenvalues:** $-4$ (mult: 1), $4$ (mult: 1), $0$ (mult: 1)
 
     ??? note "Quantum Matrix ($y=1$)"
@@ -744,7 +744,7 @@ This section contains complete intersections inside this geometric family, syste
     - **Ambient Space:** `$A3$`
     - **Dimension:** $2$
     - **Fano Index:** $2$
-    - **Basis Rank:** $4$
+    - **Basis Rank:** $3$
     - **Eigenvalues:** $-4$ (mult: 1), $4$ (mult: 1), $0$ (mult: 1)
 
     ??? note "Quantum Matrix ($y=1$)"
@@ -777,7 +777,7 @@ This section contains complete intersections inside this geometric family, syste
     - **Ambient Space:** `$A3$`
     - **Dimension:** $2$
     - **Fano Index:** $1$
-    - **Basis Rank:** $6$
+    - **Basis Rank:** $3$
     - **Eigenvalues:** $12$ (mult: 1), $-4$ (mult: 2)
 
     ??? note "Quantum Matrix ($y=1$)"
@@ -793,7 +793,7 @@ This section contains complete intersections inside this geometric family, syste
     - **Ambient Space:** `$A3$`
     - **Dimension:** $2$
     - **Fano Index:** $1$
-    - **Basis Rank:** $4$
+    - **Basis Rank:** $3$
     - **Eigenvalues:** $21$ (mult: 1), $-6$ (mult: 2)
 
     ??? note "Quantum Matrix ($y=1$)"
@@ -842,10 +842,10 @@ This section contains complete intersections inside this geometric family, syste
 
 | Geometry | Fano Index | Basis Rank |
 |---|---|---|
-| [Gr(3,4) / O(1)+O(1)](#gr34o1o1) | 2 | 4 |
+| [Gr(3,4) / O(1)+O(1)](#gr34o1o1) | 2 | 2 |
 | [Gr(4,5) / O(1)+O(1)+O(1)](#gr45o1o1o1) | 2 | 2 |
-| [Gr(2,4) / O(1)+O(1)+O(1)](#gr24o1o1o1) | 1 | 6 |
-| [Gr(3,4) / O(1)+O(2)](#gr34o1o2) | 1 | 4 |
+| [Gr(2,4) / O(1)+O(1)+O(1)](#gr24o1o1o1) | 1 | 2 |
+| [Gr(3,4) / O(1)+O(2)](#gr34o1o2) | 1 | 2 |
 | [Gr(4,5) / O(1)+O(1)+O(2)](#gr45o1o1o2) | 1 | 2 |
 
 ---
@@ -855,7 +855,7 @@ This section contains complete intersections inside this geometric family, syste
     - **Ambient Space:** `$A3$`
     - **Dimension:** $1$
     - **Fano Index:** $2$
-    - **Basis Rank:** $4$
+    - **Basis Rank:** $2$
     - **Eigenvalues:** $-2$ (mult: 1), $2$ (mult: 1)
 
     ??? note "Quantum Matrix ($y=1$)"
@@ -888,7 +888,7 @@ This section contains complete intersections inside this geometric family, syste
     - **Ambient Space:** `$A3$`
     - **Dimension:** $1$
     - **Fano Index:** $1$
-    - **Basis Rank:** $6$
+    - **Basis Rank:** $2$
     - **Eigenvalues:** $-2$ (mult: 1), $2$ (mult: 1)
 
     ??? note "Quantum Matrix ($y=1$)"
@@ -904,7 +904,7 @@ This section contains complete intersections inside this geometric family, syste
     - **Ambient Space:** `$A3$`
     - **Dimension:** $1$
     - **Fano Index:** $1$
-    - **Basis Rank:** $4$
+    - **Basis Rank:** $2$
     - **Eigenvalues:** $-2$ (mult: 1), $2$ (mult: 1)
 
     ??? note "Quantum Matrix ($y=1$)"
@@ -936,7 +936,7 @@ This section contains complete intersections inside this geometric family, syste
 
 | Geometry | Fano Index | Basis Rank |
 |---|---|---|
-| [Gr(3,4) / O(1)+O(1)+O(1)](#gr34o1o1o1) | 1 | 4 |
+| [Gr(3,4) / O(1)+O(1)+O(1)](#gr34o1o1o1) | 1 | 1 |
 
 ---
 
@@ -945,7 +945,7 @@ This section contains complete intersections inside this geometric family, syste
     - **Ambient Space:** `$A3$`
     - **Dimension:** $0$
     - **Fano Index:** $1$
-    - **Basis Rank:** $4$
+    - **Basis Rank:** $1$
     - **Eigenvalues:** $0$ (mult: 1)
 
     ??? note "Quantum Matrix ($y=1$)"

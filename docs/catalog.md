@@ -1,5 +1,7 @@
 # Quantum Geometry Catalog
 
+> **Historical page.** The maintained catalog is now split into [Projective Spaces](catalog/projective.md), [Grassmannians](catalog/grassmannians.md), [Flag Varieties](catalog/flag_varieties.md), and [Fanography](catalog/fanography.md). Use those pages for corrected metadata and realization status.
+
 Welcome to the automated catalog. Below you will find geometric and quantum properties computed for various complete intersections.
 
 ## Glossary
