@@ -65,7 +65,7 @@ You can compute Gromov-Witten invariants on more complex flag varieties. Here, w
 - **Card 1** -> **Keep Simple Roots:** `2`
 - **Card 1** -> **Twisting Bundle K:** *(Leave empty)*
 - **Card 3 (GW Invariants)** -> **Curve Class &beta;:** `0, 1, 0`
-- **Card 3** -> **Insertions:** `5|2|3`
+- **Card 3** -> **Insertions:** `2 1 3 2|1 2|3 2`
 - **Card 3** -> **Click:** Compute Invariant (Output: `1`)
 
 **In Python:**
@@ -149,8 +149,9 @@ We can verify this isomorphism natively by passing the bundle explicitly:
 - **Card 1 (Space Definition)** -> **Algebra:** `A4`
 - **Card 1** -> **Keep Simple Roots:** `2`
 - **Card 1** -> **Twisting Bundle K:** `taut_quot(X, 2)`
+- **Card 2 (Execution Options)** -> **Evaluate y:** `y2=1`
 - **Card 2 (Execution Options)** -> **Click:** Compute c₁(TX)⋆ Matrix
-*(Output: You will instantly get a $4 \times 4$ quantum matrix identical to $\mathbb{P}^3$, with characteristic polynomial $\lambda^4 - 256 = 0$!)*
+*(Output: a $4 \times 4$ matrix for the corrected specialization, with characteristic polynomial $\lambda^4 - 256$.)*
 
 **In Python:**
 ```python
