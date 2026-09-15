@@ -361,6 +361,28 @@
     
     
       <li class="md-tabs__item">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Archive
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
         <a href="../../methodology/" class="md-tabs__link">
           
   
@@ -710,6 +732,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#reproduce-an-entry-in-the-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reproduce an entry in the software
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#8-folds" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -895,6 +928,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1026,6 +1063,62 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../audits/math-software-review/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mathematics and Software Audit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../discrepancy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference Discrepancies
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1071,10 +1164,6 @@
       
         
       
-        
-      
-        
-      
     
     
     
@@ -1100,7 +1189,7 @@
   <span class="md-ellipsis">
     
   
-    Methodology
+    Archive
   
 
     
@@ -1113,6 +1202,103 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Archive
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Legacy catalog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Methodology
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1283,6 +1469,14 @@
 
 <h1 id="grassmannians">Grassmannians<a class="headerlink" href="#grassmannians" title="Permanent link">&para;</a></h1>
 <p>This section contains complete intersections inside this geometric family, systematically organized by dimension and Fano index.</p>
+<h2 id="reproduce-an-entry-in-the-software">Reproduce an entry in the software<a class="headerlink" href="#reproduce-an-entry-in-the-software" title="Permanent link">&para;</a></h2>
+<p>For a Grassmannian <code>Gr(k,n)</code>, run <code>A(n-1)</code> with <strong>Kept simple roots</strong> <code>k</code>.
+Each displayed <code>/ O(d)</code> is one row in <strong>Bundle K</strong>: enter <code>d</code>, or enter
+<code>d1;d2;...</code> for several summands. For example, <code>Gr(2,6) / O(1)+O(2)</code> is
+<code>A5</code>, kept roots <code>2</code>, and Bundle K <code>1;2</code> (or <code>[[1],[2]]</code> in Python). The
+card's dimension is <code>k(n-k)</code> minus the number of rows, and its Fano index is
+<code>n - sum(d)</code>. This convention also covers the dual presentation
+<code>Gr(n-k,n)</code> shown in the catalog.</p>
 <h2 id="8-folds">8-folds<a class="headerlink" href="#8-folds" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
