@@ -104,3 +104,134 @@ For the CLI, put bundle options before the subcommand:
 ```bash
 python3 -m gwflags.cli A3 --keep 1 -K 3 sqm
 ```
+
+## Bundle combinations: detailed walkthroughs
+
+All bundle examples below use the same ambient variety:
+`X = Gr(2,5)`, entered as algebra `A4` with kept roots `2`. Begin with
+**Describe this space** to confirm the basis and dimension. Then enter one of
+the following expressions in **Bundle K** and choose **Compute quantum matrix**
+or **Describe this space**.
+
+### 1. Quotient bundle
+
+GUI input:
+
+```text
+taut_quot(X, 2)
+```
+
+This is the rank-3 tautological quotient bundle. Leave `Evaluate y` blank for
+symbolic variables, or use `y2=1` for specialization. The result summary shows
+`K=taut_quot(X, 2)` and the matrix is computed using the quotient-bundle twist.
+
+Equivalent Python:
+
+```python
+from gwflags import FlagVariety
+from gwflags.bundles import taut_quot
+
+X = FlagVariety('A4', [2])
+Q = taut_quot(X, 2)
+M, grading, basis = X.small_quantum_multiplication(K=Q)
+```
+
+### 2. Dual of the tautological subbundle
+
+The subbundle itself is generally not convex for the twisted genus-0 theory.
+Use its dual instead:
+
+```text
+dual(taut_sub(X, 2))
+```
+
+Equivalent Python:
+
+```python
+from gwflags.bundles import taut_sub, dual
+K = dual(taut_sub(X, 2))
+M, grading, basis = X.small_quantum_multiplication(K=K)
+```
+
+The GUI accepts the expression, while a direct `taut_sub(X, 2)` computation
+may be rejected when its curve splitting degrees are negative.
+
+### 3. Direct sum of bundles
+
+Use `osum` to combine summands. This example combines the rank-3 quotient with
+a line bundle `O(1,1)`:
+
+```text
+osum(taut_quot(X, 2), O(X, 1, 1))
+```
+
+The commas in `O(X, 1, 1)` correspond to the two entries required by the
+kept-node convention of the constructor; `O(1,1)` in the compact GUI syntax
+is the separate line-bundle shorthand.
+
+Python:
+
+```python
+from gwflags.bundles import O, osum, taut_quot
+K = osum(taut_quot(X, 2), O(X, 1, 1))
+print(K.rank)  # 4
+```
+
+### 4. Tensor product
+
+`tensor` forms all pairwise sums of fiber weights:
+
+```text
+tensor(taut_quot(X, 2), O(X, 1, 1))
+```
+
+Python:
+
+```python
+from gwflags.bundles import O, tensor, taut_quot
+K = tensor(taut_quot(X, 2), O(X, 1, 1))
+print(K.rank)  # 3
+```
+
+### 5. Symmetric and exterior powers
+
+These constructors derive new bundles from a homogeneous bundle:
+
+```text
+sym(2, taut_quot(X, 2))
+wedge(2, taut_quot(X, 2))
+```
+
+The first has rank 6 and the second rank 3. In Python:
+
+```python
+from gwflags.bundles import taut_quot, sym, wedge
+Q = taut_quot(X, 2)
+print(sym(2, Q).rank)    # 6
+print(wedge(2, Q).rank)  # 3
+```
+
+### Combining several operations
+
+Expressions can be nested, provided every component is built on the same
+`X`:
+
+```text
+osum(
+  tensor(taut_quot(X, 2), O(X, 1, 1)),
+  wedge(2, dual(taut_sub(X, 2)))
+)
+```
+
+For long expressions, Python is easier to read and debug. The GUI parser only
+allows the documented constructors and rejects arbitrary Python code.
+
+### What to check before computing
+
+1. Confirm that every component uses the same algebra and kept nodes.
+2. Use **Describe this space** first; it reports the resulting bundle rank.
+3. Ensure the combined bundle is curvewise convex for the requested twisted
+   computation. A non-convex bundle is reported as an error rather than being
+   silently accepted.
+4. Start with symbolic `y` variables. Specialize with `Evaluate y` only after
+the symbolic matrix has been assembled.
