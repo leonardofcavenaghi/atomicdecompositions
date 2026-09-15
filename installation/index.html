@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#installation-instructions" class="md-skip">
+        <a href="#installation" class="md-skip">
           Skip to content
         </a>
       
@@ -320,6 +320,28 @@
     
     
       <li class="md-tabs__item">
+        <a href="../change-log/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Review and Changes
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
         <a href="../methodology/" class="md-tabs__link">
           
   
@@ -507,49 +529,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-prerequisites" class="md-nav__link">
+  <a href="#new-to-python-recommended-path" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Prerequisites
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="1. Prerequisites">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#option-a-plain-python-recommended-for-most-users" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Option A: Plain Python (Recommended for most users)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#option-b-sagemath-recommended-for-algebraicsymbolic-speed" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Option B: SageMath (Recommended for algebraic/symbolic speed)
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-installing-the-software" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Installing the Software
+        New to Python (recommended path)
       
     </span>
   </a>
@@ -557,10 +540,32 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-quick-start-verification" class="md-nav__link">
+  <a href="#comfortable-with-python" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Quick Start &amp; Verification
+        Comfortable with Python
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sagemath-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SageMath users
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#command-line-and-browser-entry-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Command-line and browser entry points
       
     </span>
   </a>
@@ -811,8 +816,6 @@
       
         
       
-        
-      
     
     
     
@@ -838,7 +841,7 @@
   <span class="md-ellipsis">
     
   
-    Methodology
+    Review and Changes
   
 
     
@@ -851,6 +854,131 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Review and Changes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../change-log/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Change log
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../audits/website-usage-review/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Website Usage Audit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Methodology
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -979,138 +1107,57 @@
   
 
 
-<h1 id="installation-instructions">Installation Instructions<a class="headerlink" href="#installation-instructions" title="Permanent link">&para;</a></h1>
-<p>The <code>gwflags</code> software evaluates Gromov-Witten invariants for flag varieties and complete intersections natively using the geometry of flag varieties. It can run on <strong>plain Python</strong> or from within <strong>SageMath</strong>.</p>
-<hr />
-<h2 id="1-prerequisites">1. Prerequisites<a class="headerlink" href="#1-prerequisites" title="Permanent link">&para;</a></h2>
-<p>Before installing the software, you must ensure the underlying tools are available on your system.</p>
-<h3 id="option-a-plain-python-recommended-for-most-users">Option A: Plain Python (Recommended for most users)<a class="headerlink" href="#option-a-plain-python-recommended-for-most-users" title="Permanent link">&para;</a></h3>
-<p>You need Python 3.9 or newer.</p>
-<p>=== "Windows"</p>
-<div class="language-text highlight"><pre><span></span><code>**Step 1: Install Python**
-1. Download the Python installer from the official [Python website](https://www.python.org/downloads/windows/).
-2. Run the installer. Before clicking "Install Now", you **must** check the box labeled **"Add Python to PATH"**.
-3. Open the Command Prompt (`cmd`) and verify the installation by typing:
-   ```cmd
-   python --version
-   ```
-
-**Step 2: Install Git**
-1. Download the Git for Windows installer from the official git-scm website ([https://gitforwindows.org/](https://gitforwindows.org/)).
-2. Run the installer and proceed with the default options.
-3. Restart your Command Prompt to ensure the system recognizes the new path variables, then verify by typing:
-   ```cmd
-   git --version
-   ```
-*(Note: If you wish to avoid installing Git, you must manually download the repository as a ZIP file from GitHub, extract it, and use the Command Prompt to navigate into the extracted directory.)*
-</code></pre></div>
-<p>=== "macOS"</p>
-<div class="language-text highlight"><pre><span></span><code>1. macOS comes with a version of Python, but it is recommended to use [Homebrew](https://brew.sh/).
-2. Open your Terminal and install Homebrew if you haven't already:
-   ```bash
-   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-   ```
-3. Install Python and Git:
-   ```bash
-   brew install python git
-   ```
-4. Verify:
-   ```bash
-   python3 --version
-   git --version
-   ```
-</code></pre></div>
-<p>=== "Linux (Ubuntu/Debian)"</p>
-<div class="language-text highlight"><pre><span></span><code>1. Open your terminal.
-2. Update your package list and install Python 3, Git, and `venv`:
-   ```bash
-   sudo apt update
-   sudo apt install git python3 python3-pip python3-venv
-   ```
-3. Verify:
-   ```bash
-   python3 --version
-   git --version
-   ```
-</code></pre></div>
-<h3 id="option-b-sagemath-recommended-for-algebraicsymbolic-speed">Option B: SageMath (Recommended for algebraic/symbolic speed)<a class="headerlink" href="#option-b-sagemath-recommended-for-algebraicsymbolic-speed" title="Permanent link">&para;</a></h3>
-<p>If you have SageMath installed, the package auto-detects it and uses its symbolic ring for faster final matrix assembly. </p>
-<p><strong>Important Note for Windows Users:</strong> Running SageMath on Windows natively is historically problematic. It currently requires the Windows Subsystem for Linux (WSL). A standard Windows user cannot simply download an executable and expect it to interface seamlessly with a Windows-based command prompt virtual environment. If you are on Windows, we strongly recommend Option A (Plain Python).</p>
-<hr />
-<h2 id="2-installing-the-software">2. Installing the Software<a class="headerlink" href="#2-installing-the-software" title="Permanent link">&para;</a></h2>
-<p>We will use a <strong>virtual environment</strong> (<code>venv</code>) to isolate the project dependencies.</p>
-<p>=== "Windows"</p>
-<div class="language-text highlight"><pre><span></span><code>**Step 3: Clone the Repository**
-In the Command Prompt, navigate to the directory where you want to store the software, then execute:
-```cmd
-git clone https://github.com/leonardofcavenaghi/atomicdecompositions.git
-cd atomicdecompositions
-```
-
-**Step 4: Create and Activate the Virtual Environment**
-Execute the following commands:
-```cmd
-python -m venv venv
-venv\Scripts\activate
-```
-You will know this step is successful when `(venv)` appears at the beginning of your command prompt line.
-
-**Step 5: Install Dependencies**
-With the virtual environment active, install the required packages using `pip`:
-```cmd
-pip install sympy mpmath
-```
-</code></pre></div>
-<p>=== "macOS and Linux"</p>
-<div class="language-text highlight"><pre><span></span><code>**Step 3: Clone the Repository**
-```bash
-git clone https://github.com/leonardofcavenaghi/atomicdecompositions.git
-cd atomicdecompositions
-```
-
-**Step 4: Create and Activate the Virtual Environment**
-```bash
-python3 -m venv venv
-source venv/bin/activate
-```
-
-**Step 5: Install Dependencies**
-```bash
-pip install sympy mpmath
-```
-</code></pre></div>
-<hr />
-<h2 id="3-quick-start-verification">3. Quick Start &amp; Verification<a class="headerlink" href="#3-quick-start-verification" title="Permanent link">&para;</a></h2>
-<p>To verify that the installation is successful and independently known values from Schubert calculus match exactly, you must run the test suite. </p>
-<p><strong>Note on Python commands:</strong> The commands below use <code>python</code> for Windows and <code>python3</code> for macOS/Linux, based on standard installation mappings.</p>
-<p>=== "Windows"
-    Run the test suite:
-    <div class="language-text highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>python tests/test_gwflags.py
-</span></code></pre></div></p>
-<div class="language-text highlight"><pre><span></span><code>To use the Command Line Interface (CLI):
-```cmd
-python -m gwflags.cli A2 --keep 1 sqm
-```
-
-To start the Graphical User Interface (GUI):
-```cmd
-python -m gwflags.gui
-```
-</code></pre></div>
-<p>=== "macOS and Linux"
-    Run the test suite:
-    <div class="language-bash highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>python3<span class="w"> </span>tests/test_gwflags.py
-</span></code></pre></div></p>
-<div class="language-text highlight"><pre><span></span><code>To use the Command Line Interface (CLI):
-```bash
-python3 -m gwflags.cli A2 --keep 1 sqm
-```
-
-To start the Graphical User Interface (GUI):
-```bash
-python3 -m gwflags.gui
-```
-</code></pre></div>
+<h1 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h1>
+<p>Choose the path that matches your background. You do not need SageMath to use the browser interface or the core Python API.</p>
+<h2 id="new-to-python-recommended-path">New to Python (recommended path)<a class="headerlink" href="#new-to-python-recommended-path" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Install Python 3.10 or newer from <a href="https://www.python.org/downloads/">python.org</a>. On Windows, select <strong>Add Python to PATH</strong>.</li>
+<li>Install Git from <a href="https://git-scm.com/downloads">git-scm.com</a>, or download the repository as a ZIP.</li>
+<li>Open a terminal and obtain the source:</li>
+</ol>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/leonardofcavenaghi/atomicdecompositions.git
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">cd</span><span class="w"> </span>atomicdecompositions
+</span></code></pre></div>
+<ol>
+<li>Create and activate an isolated environment:</li>
+</ol>
+<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Windows</label><div class="tabbed-content">
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">py</span> <span class="n">-m</span> <span class="n">venv</span> <span class="p">.</span><span class="n">venv</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="p">.</span><span class="n">venv</span><span class="p">\</span><span class="n">Scripts</span><span class="p">\</span><span class="n">Activate</span><span class="p">.</span><span class="n">ps1</span>
+</span></code></pre></div>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">macOS/Linux</label><div class="tabbed-content">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>python3<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>.venv
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nb">source</span><span class="w"> </span>.venv/bin/activate
+</span></code></pre></div>
+</div>
+</div>
+<ol>
+<li>Install the project and its declared dependencies:</li>
+</ol>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span>pip
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span>.
+</span></code></pre></div>
+<ol>
+<li>Launch the local website:</li>
+</ol>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>python<span class="w"> </span>-m<span class="w"> </span>gwflags.gui<span class="w"> </span>--no-browser
+</span></code></pre></div>
+<p>Open <a href="http://127.0.0.1:8642">http://127.0.0.1:8642</a>. Stop the server with <code>Ctrl-C</code>.</p>
+<h2 id="comfortable-with-python">Comfortable with Python<a class="headerlink" href="#comfortable-with-python" title="Permanent link">&para;</a></h2>
+<p>From a checkout, activate your existing environment and run <code>python -m pip install -e .</code>. Then use the GUI, CLI, or import <code>FlagVariety</code> in a script. Run a quick smoke test:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>python<span class="w"> </span>-c<span class="w"> </span><span class="s2">"from gwflags import FlagVariety; print(FlagVariety('A2',[1]).dimension)"</span>
+</span></code></pre></div>
+<p>Run the full tests with:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>python<span class="w"> </span>-m<span class="w"> </span>pytest<span class="w"> </span>tests/<span class="w"> </span>-q
+</span></code></pre></div>
+<h2 id="sagemath-users">SageMath users<a class="headerlink" href="#sagemath-users" title="Permanent link">&para;</a></h2>
+<p>SageMath is optional. If it is installed, <code>gwflags</code> can use it for symbolic work; the plain Python installation above remains the supported baseline. On Windows, use WSL for SageMath and follow the Linux commands there.</p>
+<h2 id="command-line-and-browser-entry-points">Command-line and browser entry points<a class="headerlink" href="#command-line-and-browser-entry-points" title="Permanent link">&para;</a></h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>python<span class="w"> </span>-m<span class="w"> </span>gwflags.cli<span class="w"> </span>A2<span class="w"> </span>--keep<span class="w"> </span><span class="m">1</span><span class="w"> </span>sqm
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>python<span class="w"> </span>-m<span class="w"> </span>gwflags.gui<span class="w"> </span>--port<span class="w"> </span><span class="m">9000</span><span class="w"> </span>--no-browser
+</span></code></pre></div>
+<p>For complete examples and input syntax, see <a href="../how-to-use/">How to Use</a>. In the GUI, compact bundles use <code>3</code> or <code>1,1;2,2</code>; Python code may use <code>K=[[3]]</code>.</p>
 
 
 
