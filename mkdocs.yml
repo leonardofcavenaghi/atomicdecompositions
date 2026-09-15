@@ -85,6 +85,7 @@ nav:
   - Review and Changes:
       - Change log: change-log.md
       - Website Usage Audit: audits/website-usage-review.md
+      - Catalog Review: audits/catalog-review.md
   - Methodology:
       - Core Theory: methodology.md
       - API Reference: api-reference.md
