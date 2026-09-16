@@ -7,6 +7,7 @@ python3 tests/test_gwflags.py).
 
 import sys
 import os
+import pytest
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 
@@ -67,6 +68,34 @@ def test_gr24():
     s1, s21, pt = bylen[1][0], bylen[3][0], bylen[4][0]
     # sigma_1 * sigma_21 = sigma_22 + q   (Bertram)
     assert G.gw([s1, s21, pt], (0, 1, 0)) == 1
+
+
+def test_paper_beta_basis_and_removed_root_guard():
+    # Gr(2,4) is A3/P2.  The paper's one-coordinate beta=(1) is embedded
+    # at ambient node 2, while a nonzero removed-root coordinate is rejected.
+    G = grassmannian(2, 4)
+    assert G._check_beta((1,)) == (0, 1, 0)
+    assert G._check_beta((0, 1, 0)) == (0, 1, 0)
+    with pytest.raises(ValueError, match='only at kept simple roots'):
+        G._check_beta((1, 0, 0))
+
+    bylen = {}
+    for m in G.classes:
+        bylen.setdefault(G.wd.length(m), []).append(m)
+    s1, s21, pt = bylen[1][0], bylen[3][0], bylen[4][0]
+    assert G.gw([s1, s21, pt], (1,)) == 1
+    assert G.gw([s1, s21, pt], (0, 1, 0)) == 1
+
+
+def test_unsorted_full_flag_beta_follows_declared_keep_order():
+    X = FlagVariety('A2', [2, 1])
+    assert X._check_beta((1, 2)) == (2, 1)
+
+
+def test_negative_c1_requires_explicit_sqm_betas():
+    X = projective_space(2)
+    with pytest.raises(ValueError, match='nonnegative c1'):
+        X.fano_index_and_betas([[4]])
 
 
 def test_sqm_p1():

@@ -41,7 +41,7 @@ PATH (it's `$(python3 -m site --user-base)/bin`).
 |---|---|---|
 | `<algebra>` | simple Lie algebra or a product (`x`-separated) | `A2`, `B3`, `A3xA3`, `A1xA1xA4` |
 | `--keep` | 1-based simple roots **kept out of** the parabolic (the notebook's `m` / RootsThatStay), comma-separated; nodes are numbered consecutively across product factors (Bourbaki order) | `1` for Pⁿ, `2` for Gr(2,·), `1,2` for a full A2 flag, `1,4` for P³×P³ |
-| `-K` | complete-intersection multidegrees: one row per line-bundle summand, rows separated by `;`, entries by `,` — one entry per kept node, **in `--keep` order**; entries must be ≥ 0 | `-K 2` = O(2); `-K "1,1;2,2"` = O(1,1)⊕O(2,2) |
+| `-K` | complete-intersection multidegrees: one row per line-bundle summand, rows separated by `;`, entries by `,` — one entry per kept node, **in `--keep` order**; entries must be ≥ 0. The expression forms `O(...)`, `S(node)`, `Q(node)`, `osum(...)`, `tensor(...)`, `sym(...)`, and `wedge(...)` are also accepted. | `-K 2` = O(2); `-K "1,1;2,2"` = O(1,1)⊕O(2,2) |
 
 Common varieties:
 
@@ -74,24 +74,23 @@ Calabi–Yau (then `sqm` is the zero operator by design).
 
 ```bash
 # P^2: one line through two points                                   -> 1
-python3 -m gwflags.cli A2 --keep 1 gw --beta 1,0 --classes pt,pt
+python3 -m gwflags.cli A2 --keep 1 gw --beta 1 --classes pt,pt
 # Gr(2,4): <sigma_1, sigma_21, pt> in degree 1 (Bertram)             -> 1
-python3 -m gwflags.cli A3 --keep 2 gw --beta 0,1,0 --classes "2|1 3 2|pt"
+python3 -m gwflags.cli A3 --keep 2 gw --beta 1 --classes "2|1 3 2|pt"
 # quadric threefold in P^4: a degree-1 twisted invariant             -> 4
-python3 -m gwflags.cli A4 --keep 1 -K 2 gw --beta 1,0,0,0 --classes "2 1|3 2 1"
+python3 -m gwflags.cli A4 --keep 1 -K 2 gw --beta 1 --classes "2 1|3 2 1"
 ```
 
-- `--beta`: the curve class, one integer per simple root (of the ambient
-  algebra, product factors concatenated). Only kept-node entries can be
-  nonzero.
+- `--beta`: the curve class, normally entered in kept-root order (the paper
+  convention). A zero-padded vector with one entry per ambient simple root is
+  also accepted; entries at removed roots are rejected. For example, a line on
+  `A3 --keep 2` is `--beta 1` or `--beta 0,1,0`. The printed result uses the
+  canonical ambient node order.
 - `--classes`: the insertions, separated by `|` (or `,` when no `|` is
   used). Each token is `pt` (point class), `id`/`e` (fundamental class),
-  or a reduced word in the simple reflections with spaces between letters
-  (`"3 2 1"` = s₃s₂s₁). Words are projected to their minimal coset
-  representative automatically — note this means a word that is *not*
-  minimal lands in a possibly shorter class (e.g. on Gr(2,4), `"1 2 3"`
-  projects into the length-2 cell, not the length-3 one). Safest is to
-  copy the words printed by `info`.
+  or a reduced word for a minimal parabolic-coset representative, with spaces
+  between letters (`"3 2 1"` = s₃s₂s₁). The CLI rejects nonreduced or
+  nonminimal words; copy the words printed by `info`.
 
 The value printed is exact (a rational number; the dimension axiom makes
 mismatched insertions 0 instantly).
@@ -104,11 +103,13 @@ python3 -m gwflags.cli A6 --keep 1 -K "2;2;2" sqm --workers 8
 ```
 
 Prints the Fano index, the enumerated curve classes, the matrix of
-c₁(TX)⋆ in the (reduced) Schubert basis with quantum variables `y1, y2,
-…` (one per kept node, in `--keep` order), the grading operator diagonal,
-and the eigenvalues. `--workers N` distributes the per-β blocks over N
-processes — recommended for index-1 Fano cases, which need curve degrees
-up to dim+1.
+c₁(TX)⋆ in the (reduced) Schubert basis, with quantum variables `y<node>`
+labelled by ambient node number (zero off kept nodes), the grading operator
+and the eigenvalues. Automatic enumeration requires nonnegative c₁ pairings
+in every kept direction; pass explicit Python `betas` for a formal/truncated
+non-nef calculation. `--workers N` distributes the per-β blocks over N
+processes — recommended for index-1 Fano cases, which need curve degrees up to
+dim+1.
 
 ## Reproducible validation
 
@@ -132,11 +133,17 @@ python3 tests/test_gwflags.py        # 20 checks, ~10 s
 ## Notes and limits
 
 - Bundle entries in `-K` must be ≥ 0 (convexity — the mathematics of both
-  this package and the original notebook requires it).
+  this package and the original notebook requires it). Bundle expressions also
+  accept the paper aliases `O(1)`, `S(node)`, and `Q(node)`; explicit Python
+  forms such as `O(X,1)` and `taut_quot(X,1)` remain valid.
 - Calabi–Yau intersections (c₁ = 0, e.g. `A5 --keep 1 -K "2;2;2"`, a K3)
-  give Fano index 0 and the zero operator; ordinary genus-0 GW theory is
-  trivial there, and primary invariants with an identity insertion vanish
-  by the string equation.
+  give Fano index 0 and the zero operator. The degree-zero `gw` convenience
+  path returns classical cup integrals; the paper's primary degree-zero GW
+  potential keeps only three-point terms and omits unstable cases.
+- Automatic `sqm` beta enumeration is intended for Fano or nef c₁ data. If a
+  kept c₁ coordinate is negative, the routine asks for an explicit `betas`
+  list so that a formal/truncated calculation is not mistaken for a finite
+  Fano matrix.
 - Runtime scales with the curve classes satisfying ⟨c₁(TX),β⟩ ≤ dim+1.
   Directions with zero c₁ coefficient are capped separately; index-2+ examples
   usually run in seconds, while index-1 examples can take minutes.

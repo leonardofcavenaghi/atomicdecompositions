@@ -1,46 +1,155 @@
 # GWFlags API Reference
 
-This document provides a mathematical and technical overview of the core modules in the `gwflags` codebase, responsible for Gromov-Witten invariant computations via Graber–Pandharipande virtual localization.
+`gwflags` translates the decorated-tree formulas in the supplied paper into
+exact Python/Sage computations. The default numerical path evaluates the
+localization sum at two rational torus points; the symbolic path remains
+available through `gw_raw`.
 
-## 1. Root Systems (`gwflags/rootsystem.py`)
+## 1. Root systems (`gwflags/rootsystem.py`)
 
-The `rootsystem.py` module computes exact Lie-algebra data needed for the equivariant localization pipeline. It supports semisimple products (e.g., $A_3 \times A_3$).
+`RootSystemData` stores Bourbaki-numbered simple and positive roots, Cartan and
+reflection matrices, coroots, and fundamental weights. All root and weight
+arithmetic is exact (`fractions.Fraction`) and semisimple products such as
+`A2xA2` are supported.
 
-### `RootSystemData`
-A class that encapsulates all Lie-algebra data, computing exactly with rational fractions (`fractions.Fraction`):
-- **Simple and Positive Roots**: Generates the orthogonal realizations (Bourbaki numbering) and computes positive roots in both the $\alpha$-basis and orthogonal coordinates.
-- **Cartan Matrix & Reflection Matrices**: Computes the Cartan matrix $A_{ij} = 2 (\alpha_i, \alpha_j) / (\alpha_j, \alpha_j)$ (note this strictly follows the Humphreys convention) and its inverse (used for fundamental weights), as well as reflection matrices for simple roots.
-- **Coroots**: Calculates the coordinates of coroots $\beta^\vee$ in the basis of simple roots (these are fractional for non-simply-laced algebras).
+## 2. Virtual localization (`gwflags/localization.py`)
 
-## 2. Virtual Localization Core (`gwflags/localization.py`)
+`GWCalculator` implements Graber--Pandharipande genus-zero virtual
+localization on decorated trees:
 
-The localization module translates the `V3.nb` Mathematica notebook's localization algorithms (such as Billey's formula and the graph sum) into Python.
+- `rfactor(w)` evaluates the fixed-point Euler factor;
+- `billey(schubert, vertex)` evaluates a Schubert restriction by Billey's
+  formula;
+- `omega_lie(w, root_idx, d)` evaluates the invariant-curve edge factor;
+- `kappa_gamma(dt)` and `i_vertex(dt, v)` evaluate tree edge/vertex factors;
+- `gw_invariant(coh_classes, beta)` sums all valid decorated trees.
 
-### `GWCalculator`
-The main class orchestrating the computation of Gromov-Witten invariants for a given Lie algebra $G$ and parabolic subgroup $P$.
-- **`rfactor(w)`**: Computes the local Euler factor $R(w) = \prod_{\beta \in R^+ \setminus R^+_P} (-x_{w.\beta})$.
-- **`billey(schubert, vertex)`**: Computes the restriction of the equivariant Schubert class $\sigma_{\text{schubert}}$ to a fixed point `vertex` using Billey's formula.
-- **`omega_lie(w, root_idx, d)`**: Computes the edge factor $h$-function of an edge leaving vertex $w$ with a specific root and degree.
-- **`kappa_gamma(dt)` & `i_vertex(dt, v)`**: Compute the edge/vertex weights of a given decorated tree.
-- **`gw_invariant(coh_classes, beta)`**: Computes the final equivariant localization sum by summing over all valid decorated trees.
+The low-level calculator uses an ambient vector indexed by all simple roots.
+The public `FlagVariety` methods normalize the paper's kept-root coordinates
+before calling it.
 
-## 3. Complete Intersection Sector (`gwflags/cintersection.py`)
+## 3. Complete-intersection twists (`gwflags/cintersection.py`)
 
-This module implements localization twisted by the Euler class of a bundle $E$, representing the complete-intersection sector. 
+A homogeneous bundle is represented by its multiset of torus weights. The
+module implements the Euler-twisted factors from Theorem 3.28:
 
-- **`euler_complete_intersection(gw, K, w)`**: Computes the Euler class $e(E)$ at the fixed point $w$.
-- **`h_complete_intersection(gw, K, w, root_idx, d)`**: Computes the edge factor $e(H^0(\mathbb{P}^1, f^*E)) (the convex twisting contribution on an edge)$ for an edge leaving $w$. Concave summands (where the splitting degree $b < 0$) are rejected, as the twisted genus-0 theory requires curve-wise global generation.
-- **`gw_complete_intersection(gw, coh_classes, beta, K)`**: Executes the twisted localization sum by injecting the appropriate multiplicative twists into `GWCalculator.gw_invariant`.
+- `euler_complete_intersection(gw, K, w)` gives the fixed-point Euler class;
+- `h_complete_intersection(gw, K, w, root_idx, d)` gives the convex edge
+  contribution;
+- `gw_complete_intersection(gw, coh_classes, beta, K)` performs the twisted
+  localization sum.
 
+Every invariant-curve splitting degree must be nonnegative. This is the
+curve-wise convexity condition used by the genus-zero twisted theory. A smooth
+zero-locus interpretation additionally needs global generation and smoothness
+of the expected codimension.
 
-## 4. Main Interface (`gwflags/__init__.py`)
+Bundles can be constructed with `O(X, a1, ...)`, `taut_sub(X, node)`,
+`taut_quot(X, node)`, `dual`, `osum`, `tensor`, `sym`, and `wedge`. The GUI and
+CLI also accept the paper aliases `O(a1,...)`, `S(node)`, and `Q(node)` with
+`X` bound to the current flag. A legacy split bundle is a list of rows, for
+example `[[1], [2]]` for `O(1) + O(2)` on a one-generator space.
 
-The main entrypoint for the library is the `FlagVariety` class, which wraps the underlying Lie algebra structures and localization calculators into a unified, high-level interface.
+## 4. Main interface (`gwflags/__init__.py`)
 
-### `FlagVariety`
-Represents a specific complex flag variety $G/P$ or a complete intersection inside it.
+### `FlagVariety(algebra, roots_that_stay, backend=None)`
 
-- **`__init__(self, algebra, roots_that_stay, backend=None)`**: Initializes the geometry. `algebra` is the Cartan type (e.g. `"A4"`), and `roots_that_stay` defines the parabolic subgroup $P$ by specifying which nodes of the Dynkin diagram are kept (1-indexed).
-- **`gw(self, coh_classes, beta, K=None)`**: Computes the Gromov-Witten invariant $\langle \sigma_{u_1}, \dots, \sigma_{u_k} \rangle_{0, k, \beta}$ exactly as a rational fraction. If a vector bundle `K` is provided, computes the twisted invariant for the complete intersection.
-- **`fano_index_and_betas(self, K=None)`**: Computes the Fano index $I_X$ of the geometry (or complete intersection) and returns a list of curve degrees $\beta$ required for the small quantum multiplication matrix.
-- **`small_quantum_multiplication(self, K=None)`**: Computes the full $c_1(TX) \star (-)$ small quantum multiplication matrix projected onto the flag-ambient basis.
+`roots_that_stay` is a distinct list of 1-based simple-root nodes not in the
+parabolic, in the order used for Picard and paper coordinates. For example,
+`FlagVariety("A4", [2])` is `Gr(2,5)`, while `[1,3]` describes the two-factor
+product convention when the algebra is a product.
+
+### Curve classes (`beta`)
+
+The paper writes
+\[
+  \beta=(b_{i_1},\ldots,b_{i_\rho}),
+  \qquad (i_1,\ldots,i_\rho)=\texttt{roots\_that\_stay},
+\]
+where the entries are nonnegative integers in the kept simple-coroot basis.
+The public methods accept this compact vector and embed it at the ambient
+Bourbaki nodes. A zero-padded ambient vector of length `rank` is also accepted,
+but every removed-node entry must be zero. For `A3 --keep 2`, `(1)` and
+`(0,1,0)` therefore denote the same line class. The returned GW result and
+progress messages use the canonical ambient vector.
+
+### `gw(coh_classes, beta, K=None, progress=None)`
+
+Returns the exact genus-zero invariant
+\(\langle\sigma_{u_1},\ldots,\sigma_{u_n}\rangle_{0,n,\beta}\), optionally
+Euler-twisted by `K`. The dimension axiom is checked before localization; a
+mismatch returns zero. Degree zero uses the classical cup-integral shortcut
+(in particular, the paper's primary potential still keeps its stable
+three-point convention).
+
+### `expected_degree(beta, n_classes, K=None)`
+
+Returns the codimension sum required by the dimension axiom after normalizing
+`beta` and accounting for the bundle rank.
+
+### `fano_index_and_betas(K=None)`
+
+Returns `(I_X, betas)`, where `I_X` is the gcd of the first-Chern
+coordinates and `betas` is the finite list needed for the ambient quantum
+matrix. Automatic enumeration is justified for Fano/nef first-Chern data by
+\(\langle c_1(TX),\beta\rangle\leq\dim X+1\). A zero-Chern Calabi--Yau case
+returns index zero and only the zero class. If a kept Chern coordinate is
+negative, automatic enumeration raises a `ValueError`; supply an explicit
+`betas` list for a deliberately truncated/formal calculation.
+
+### `small_quantum_multiplication(K=None, betas=None, progress=None, workers=0)`
+
+Returns `(M, grading, basis_indices)` for multiplication by `c1(TX)` on the
+flag-ambient Schubert sector. `M` is symbolic in `y<node>`, where `<node>` is
+the ambient Bourbaki label of a kept root (so kept nodes `1,3` use `y1` and
+`y3`). `betas` may be supplied in either accepted beta convention. The matrix
+is the full small quantum-cohomology operator only when the relevant homology
+and ambient-completeness hypotheses hold; otherwise it is the flag-ambient
+block described in Definition 4.6. `workers=N` distributes independent
+per-beta blocks over forked processes.
+
+### Other useful methods
+
+- `classes`, `class_words()`, `schubert(word)`, and `pt` expose the minimal
+  Schubert representatives;
+- `gw_raw(...)` returns the unspecialized symbolic localization sum;
+- `eigenvalues(M, at_one=True)` computes the spectrum after setting all
+  Novikov variables to one.
+
+## 5. Schubert words and interface syntax
+
+`FlagVariety.schubert(word)` projects an arbitrary Weyl word to its minimal
+coset representative for low-level exploratory use. The CLI and browser form
+use the safer published contract: each insertion word must be reduced and
+minimal for the chosen parabolic. Run `info`/**Space Info**, then copy one of
+the printed words (or use the **Add** button). Separate insertions with `|`;
+`pt`, `id`, and `e` are accepted shortcuts.
+
+For the compact GUI/CLI bundle field, use `3` or `1,1;2,2` for line-bundle
+rows; Python list notation such as `[[3]]` belongs to the Python API. In a
+symbolic matrix, variables are named by ambient nodes, while beta input is in
+kept-root order unless zero-padded.
+
+## 6. Minimal reproducible examples
+
+```python
+from gwflags import FlagVariety, grassmannian, projective_space
+from gwflags.bundles import O, taut_quot, dual, taut_sub, osum, wedge
+
+P2 = projective_space(2)
+assert P2.gw([P2.pt, P2.pt], beta=(1,)) == 1
+assert P2.gw([P2.pt, P2.pt], beta=(1, 0)) == 1
+
+G = grassmannian(2, 4)
+s1, s21, pt = G.schubert((2,)), G.schubert((1, 3, 2)), G.pt
+assert G.gw([s1, s21, pt], beta=(1,)) == 1
+
+Q = taut_quot(G, 2)
+K = osum(Q, O(G, 1))
+M, grading, basis = G.small_quantum_multiplication(K=K)
+```
+
+The paper's Küchle (c5) model can be entered as
+`osum(wedge(2,dual(S(3))),wedge(3,Q(3)),O(1))` on `A6`, kept root `3`.
+The full input/output template and copyable TeX are in the
+[theory-alignment addendum](audits/theory-alignment-addendum.md).

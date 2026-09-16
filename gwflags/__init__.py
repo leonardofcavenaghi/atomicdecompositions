@@ -17,7 +17,7 @@ Quick start::
     from gwflags import FlagVariety
 
     X = FlagVariety('A2', [1])          # P^2
-    X.gw([X.pt, X.pt], beta=(1, 0))     # Fraction(1, 1)
+    X.gw([X.pt, X.pt], beta=(1,))       # Fraction(1, 1), paper basis
 
     M, Gr, idx = X.small_quantum_multiplication()
     X.eigenvalues(M)
@@ -103,11 +103,39 @@ class FlagVariety:
 
     def _check_beta(self, beta):
         beta = tuple(beta)
-        if len(beta) != self.rs.rank or \
-                any(not isinstance(v, int) or v < 0 for v in beta):
+        kept = self.wd.roots_that_stay
+        rank = self.rs.rank
+        npic = len(kept)
+        # The paper uses the basis of kept simple-root coroots. Internally
+        # localization uses a vector indexed by ambient Bourbaki nodes.
+        # Interpret a vector of kept length in the declared keep order and
+        # embed it; for a full flag with the usual sorted order this is the
+        # identity map.  A full flag with a deliberately permuted keep order
+        # therefore remains unambiguous: its paper coordinates follow that
+        # declared order.
+        paper_order = len(beta) == npic and (
+            npic < rank or tuple(kept) != tuple(range(1, rank + 1)))
+        if paper_order:
+            values = tuple(beta)
+            embedded = [0] * rank
+            for value, node in zip(values, kept):
+                embedded[node - 1] = value
+            beta = tuple(embedded)
+        elif len(beta) != rank:
             raise ValueError(
-                f'beta must have one nonnegative integer per simple root '
-                f'({self.rs.rank} entries for this algebra); got {beta!r}')
+                f'beta must have either {npic} entries in kept-root order '
+                f'or {rank} ambient entries (zero off kept roots); '
+                f'got {beta!r}')
+        if any(not isinstance(v, int) or v < 0 for v in beta):
+            raise ValueError(
+                f'beta entries must be nonnegative integers; got {beta!r}')
+        removed_values = [(node, beta[node - 1])
+                          for node in range(1, rank + 1)
+                          if node not in kept and beta[node - 1] != 0]
+        if removed_values:
+            raise ValueError(
+                'beta may be nonzero only at kept simple roots '
+                f'{kept}; removed-root entries were {removed_values}')
         return beta
 
     def __getstate__(self):
@@ -177,8 +205,10 @@ class FlagVariety:
     def expected_degree(self, beta, n_classes, K=None):
         """Codimension sum the dimension axiom requires; invariants whose
         insertions don't match it vanish (this replaces the notebook's
-        x -> prime*t, Limit[t -> 0] step)."""
+        x -> prime*t, Limit[t -> 0] step). ``beta`` may be given in the
+        paper's kept-root basis or as a zero-padded ambient-root vector."""
         from .cintersection import ci_rank
+        beta = self._check_beta(beta)
         K = K or []
         dim = len(self.wd.reduced_roots) - ci_rank(K)
         if sum(beta) == 0:
@@ -190,8 +220,9 @@ class FlagVariety:
     # --------------------------------------------------------------- GW
     def gw(self, coh_classes, beta, K=None, progress=None):
         """GW invariant as an exact Fraction.  coh_classes: Weyl matrices
-        (see .classes / .pt / .schubert); beta: tuple over simple roots;
-        K: complete-intersection multidegrees (list of rows) or None."""
+        (see .classes / .pt / .schubert); beta: a tuple in kept-root order,
+        or a zero-padded tuple over ambient simple roots; K: complete-
+        intersection multidegrees (list of rows) or None."""
         K = self._check_K(K or [])
         beta = self._check_beta(beta)
         deg = sum(self.wd.length(c) for c in coh_classes)
@@ -237,6 +268,8 @@ class FlagVariety:
         K = self._check_K(K or [])
         if betas is None:
             _, betas = betas_and_fano_index(self, K)
+        else:
+            betas = [self._check_beta(beta) for beta in betas]
         return small_quantum_multiplication(self, K, betas, progress, workers)
 
     def eigenvalues(self, mat, at_one=False):

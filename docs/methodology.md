@@ -39,10 +39,26 @@ Because `gwflags` explicitly computes the exact localization graphs, all geometr
 To replicate a result found in our [Catalog](catalog/index.md):
 1. Install `gwflags` (see [Installation](installation.md)).
 2. Instantiate the flag variety using `X = FlagVariety(algebra, roots_that_stay)`.
-3. Invoke `X.small_quantum_multiplication(K)` where $K$ specifies the multidegrees of the vector bundle.
-4. Evaluate the resulting symbolic matrix by setting all $y_i = 1$ to find the roots of the quantum connection (eigenvalues).
+3. Invoke `X.small_quantum_multiplication(K)` where $K$ specifies the multidegrees of the vector bundle. The Python API accepts legacy rows such as `[[2]]` or a `HomogeneousBundle`; the browser/CLI accepts compact rows such as `2` and paper aliases such as `Q(2)`.
+4. Evaluate the resulting symbolic matrix by setting all `y<node> = 1` to find the roots of the quantum connection (eigenvalues). The variable label is the ambient Bourbaki node, not the position in an abbreviated kept-root list.
 
 All eigenvalues, dimensions, and algebraic multiplicities are exact algebraic consequences of these Lie-theoretic constraints.
+
+## 4a. Coordinate contract used by the software
+
+The paper's curve degree is a vector in the simple-coroot basis of the kept
+roots `roots_that_stay`, in that declared order. For example, a line on
+`Gr(2,4) = A3/P2` is `beta=(1,)`. Internally it is embedded as the ambient
+vector `(0,1,0)`; both forms are accepted by `FlagVariety.gw` and by the
+website. A full ambient vector is valid only when all removed-root coordinates
+are zero. The dimension gate uses
+\(\sum \ell(u_i)=\dim X+\langle c_1(TX),\beta\rangle+n-3\).
+
+The matrix returned by `small_quantum_multiplication` is the
+flag-ambient operator described in Definition 4.6. It is the full small quantum
+cohomology operator only when the homology and ambient-completeness hypotheses
+are satisfied. Automatic beta enumeration is a finite Fano/nef convenience; a
+negative kept Chern coordinate requires an explicit finite beta list.
 
 ## 5. Gromov-Witten Invariants: Theory and Examples
 

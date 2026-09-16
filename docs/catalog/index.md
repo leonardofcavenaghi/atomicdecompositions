@@ -4,6 +4,11 @@ Welcome to the **Master Search Database**. Use the search bar in the top right o
 
 This index links the canonical catalog pages. **Basis Rank** is the size of the displayed square quantum matrix. Fanography entries additionally state a realization type: runnable flag varieties and complete intersections are separated from catalog-only weighted, double-cover, or blow-up references. Use the category pages for full metadata, matrices, and assumptions.
 
+To reproduce a card, use the [How to Use](../how-to-use.md) guide: enter the
+listed algebra, kept roots, and bundle rows, then use beta in kept-root order (or
+a zero-padded ambient vector). The [theory--software addendum](../audits/theory-alignment-addendum.md)
+contains a paper-ready input/output template and the flag-ambient scope caveat.
+
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css">
 <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js"></script>

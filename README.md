@@ -41,8 +41,8 @@ took `x → prime·t, t → 0` limits at the end.  This package instead:
   (`small_quantum_multiplication(..., workers=N)`, fork-based; verified
   bit-identical to serial).
 
-sympy (or Sage, auto-detected) only assembles the final matrices with the
-quantum variables `y_i` and extracts eigenvalues.  The raw symbolic sums
+sympy (or Sage, auto-detected) only assembles the final matrices with quantum
+variables named `y<ambient node>` and extracts eigenvalues. The raw symbolic sums
 remain available via `FlagVariety.gw_raw` / the `.sym` calculator.
 
 ## Requirements
@@ -57,12 +57,13 @@ remain available via `FlagVariety.gw_raw` / the `.sym` calculator.
 from gwflags import FlagVariety, projective_space, grassmannian, full_flag
 
 X = projective_space(2)               # = FlagVariety('A2', [1])
-X.gw([X.pt, X.pt], beta=(1, 0))       # 1   — one line through two points
-X.gw([X.pt]*5,      beta=(2, 0))      # 1   — one conic through five points
+X.gw([X.pt, X.pt], beta=(1,))         # 1   — paper beta basis
+X.gw([X.pt, X.pt], beta=(1, 0))       # 1   — equivalent ambient form
+X.gw([X.pt]*5,      beta=(2,))         # 1   — one conic through five points
 
 G = grassmannian(2, 4)                # A3 / P_2
 # sigma_1 * sigma_21 = sigma_22 + q  (Bertram):
-G.gw([G.schubert((2,)), G.schubert((1, 3, 2)), G.pt], beta=(0, 1, 0))  # 1
+G.gw([G.schubert((2,)), G.schubert((1, 3, 2)), G.pt], beta=(1,))  # 1
 
 M, Gr, idx = X.small_quantum_multiplication()
 X.eigenvalues(M)                      # [3*y1**(1/3), 3*y1**(1/3)*zeta_3, ...]
@@ -85,23 +86,40 @@ subcommands):
 
 ```bash
 python3 -m gwflags.cli A2 --keep 1 info
-python3 -m gwflags.cli A2 --keep 1 gw --beta 1,0 --classes pt,pt
-python3 -m gwflags.cli A3 --keep 2 gw --beta 0,1,0 --classes "2|1 3 2|pt"
+python3 -m gwflags.cli A2 --keep 1 gw --beta 1 --classes pt,pt
+python3 -m gwflags.cli A3 --keep 2 gw --beta 1 --classes "2|1 3 2|pt"
 python3 -m gwflags.cli A2 --keep 1 sqm
 python3 -m gwflags.cli A3 --keep 1 -K 2 sqm          # quadric in P^3
 ```
 
 `--keep` is the notebook's `m` (RootsThatStay): the 1-based simple roots
-**not** in the parabolic — `1` for Pⁿ, `k` for Gr(k, n). Schubert classes
-are entered as reduced words in the simple reflections (`pt`, `id`
-accepted). `-K` rows are the multidegrees of the bundle summands over the
-Picard generators (the notebook's `{{1,2},{1,1}}` becomes `"1,2;1,1"`).
+**not** in the parabolic — `1` for Pⁿ, `k` for Gr(k, n). A GW `beta` vector
+may be entered in kept-root order (the paper convention) or as a full ambient
+vector with zeros at removed nodes. Schubert classes in the CLI/browser are
+reduced words for minimal coset representatives (`pt`, `id` accepted); copy
+words from `info`. `-K` rows are the multidegrees of the bundle summands over
+the Picard generators (the notebook's `{{1,2},{1,1}}` becomes
+`"1,2;1,1"`). Bundle expressions also accept the paper aliases `O(...)`,
+`S(node)`, and `Q(node)` in the CLI/browser; Python list notation such as
+`[[3]]` is Python-only.
 
 Tests (all values independently known from Schubert calculus):
 
 ```bash
 python3 tests/test_gwflags.py
 ```
+
+## Public input contract
+
+The browser and CLI deliberately use copyable text. Enter compact line-bundle
+rows such as `3` or `1,1;2,2`; enter homogeneous expressions such as
+`Q(2)` or `osum(Q(2),O(1))`; and use `info`/**Space Info** to obtain valid
+Schubert words. The high-level Python API additionally accepts explicit
+constructors and legacy rows (`K=[[3]]`). Automatic `sqm` curve enumeration
+is finite for Fano/nef first Chern data; for a negative kept Chern coordinate,
+supply an explicit `betas` list. The matrix is the flag-ambient operator unless
+the paper's ambient-completeness hypotheses identify it with full small quantum
+cohomology.
 
 ## Where each notebook function lives
 
@@ -117,12 +135,13 @@ python3 tests/test_gwflags.py
 | final `x -> prime * t`, `Limit[t -> 0]` evaluation | `symbolic.get_backend(...).evaluate_gw` |
 
 Conventions: simple roots are numbered as in Bourbaki (for type A this
-matches LieART). Equivariant variables `x_i` correspond to the simple
-roots α_i (a root's polynomial is its expansion in simple roots);
-quantum variables `y_i` track the curve class over the kept simple roots.
-All Weyl-group elements are matrices in the orthogonal realization;
-Schubert classes are minimal coset representatives (`FlagVariety.classes`,
-`.schubert(word)`, `.pt`).
+matches LieART). Equivariant variables `x_i` correspond to the simple roots
+α_i (a root's polynomial is its expansion in simple roots). A paper beta is
+written in `roots_that_stay` order and is embedded at those ambient nodes;
+quantum variables are named `y<ambient node>` (kept nodes `1,3` therefore use
+`y1` and `y3`). All Weyl-group elements are matrices in the orthogonal
+realization; Schubert classes are minimal coset representatives
+(`FlagVariety.classes`, `.schubert(word)`, `.pt`).
 
 ## Translation notes (deliberate differences / notebook quirks)
 

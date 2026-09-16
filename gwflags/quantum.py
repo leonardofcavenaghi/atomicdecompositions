@@ -3,8 +3,9 @@ SmallQuantumMultiplication, BetasAndFanoIndex.
 
 All GW numbers are obtained through FlagVariety.gw_number (degree gate +
 exact two-point numeric evaluation), so the metric and the pair sums are
-exact Fractions; sympy/Sage only enters when the quantum variables y_i are
-attached to the final matrix.  The per-beta pair sums can be distributed
+exact Fractions; sympy/Sage only enters when the quantum variables y<node>
+(named by ambient Bourbaki node) are attached to the final matrix.  The
+per-beta pair sums can be distributed
 over processes with workers=N.
 """
 
@@ -16,7 +17,7 @@ from .trees import nonneg_compositions
 
 
 def spectrum_at_one(M):
-    """Numeric eigenvalues of a quantum matrix with all y_i -> 1, via
+    """Numeric eigenvalues of a quantum matrix with all y<node> -> 1, via
     mpmath's QR-based eig (robust where symbolic eigenvalues fail, e.g.
     multivariate characteristic polynomials).  Sorted by descending
     modulus, so the first entry is the Conjecture-O eigenvalue."""
@@ -130,8 +131,15 @@ def betas_and_fano_index(X, K):
         fano = gcd(fano, abs(v))
     if all(v == 0 for v in c):
         # Calabi-Yau complete intersection: c1 = 0, so c1(TX)* is the zero
-        # operator; only the (vanishing) classical cup term remains
+        # operator; only the (vanishing) classical cup term remains.
         return 0, [tuple([0] * X.rs.rank)]
+    kept_c = [c[r - 1] for r in X.wd.roots_that_stay]
+    if any(v < 0 for v in kept_c):
+        raise ValueError(
+            'automatic beta enumeration for sqm requires a nonnegative '
+            'c1(TX) pairing on every kept curve direction; this geometry '
+            f'has c1 coordinates {kept_c}. Supply an explicit betas list '
+            'for a formal/truncated computation.')
     dim = len(X.wd.reduced_roots) - (ci_rank(K) if K else 0)
     # Enumerate supported beta with <c1, beta> <= dim + 1: the dimension
     # condition l_i + l_j = dim - 1 + <c1, beta> (with l <= dim) makes any
@@ -248,9 +256,9 @@ def _beta_block_fork(beta):
 
 def small_quantum_multiplication(X, K, betas, progress=None, workers=0):
     """SmallQuantumMultiplication: (matrix of c1(TX)*, grading matrix,
-    0-based basis indices into X.classes).  Entries carry the quantum
-    variables y_i.  workers > 0 distributes the per-beta blocks over
-    processes."""
+    0-based basis indices into X.classes). Entries carry variables y<node>,
+    named by ambient Bourbaki labels of kept nodes. workers > 0 distributes
+    the per-beta blocks over processes."""
     bk, wd, rs = X.bk, X.wd, X.rs
     reps = wd.reduced_group
 

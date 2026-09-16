@@ -1,4 +1,4 @@
-"""The Bott-localization core of V3.nb: ChangeToPolynom, Billey's formula
+"""The Graber–Pandharipande virtual-localization core of V3.nb: ChangeToPolynom, Billey's formula
 (`Bylleys`), edge factor (`OmegaLie`), Euler factor (`RFactor`),
 `KappaGamma`, `IVertex` and the graph sum `GWInvariant`.
 
@@ -289,7 +289,9 @@ class GWCalculator:
     # --------------------------------------------------------- GW invariant
     def gw_invariant(self, coh_classes, beta, progress=None, extra=None):
         """GWInvariant: equivariant localization sum.  coh_classes is a list
-        of Weyl matrices (Schubert classes), beta a tuple over simple roots.
+        of Weyl matrices (Schubert classes), beta an ambient simple-root vector
+        normalized by FlagVariety._check_beta before reaching this low-level
+        method.
         With the symbolic backend this returns the raw sum (use
         .bk.evaluate_gw for the number); with the numeric backend it returns
         an exact Fraction (see FlagVariety.gw for the degree gate).

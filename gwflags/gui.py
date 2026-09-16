@@ -24,13 +24,16 @@ PRESETS = [
     # label, algebra, keep, K, action, beta, classes, eval_y, expected
     ('(a) Fl(1,2,3)', 'A2', '1,2', '', 'info', '', '', '', 'full flag variety'),
     ('(b) P2xP2 / O(1,1)', 'A2xA2', '1,3', '1,1', 'info', '', '', '', 'dimension 3'),
-    ('(c) quartic threefold', 'A4', '1', '4', 'gw', '1,0,0,0', '', '', '2875-style setup'),
-    ('(d) Gr(2,4)', 'A3', '2', '', 'gw', '0,1,0', '2 1 3 2|1 2|3 2', '', 'invariant 1'),
-    ('(e) cubic surface', 'A3', '1', '3', 'gw', '1,0,0', '', '', '27'),
-    ('(f) quintic threefold', 'A4', '1', '5', 'gw', '1,0,0,0', '', '', '2875'),
+    ('(c) quartic threefold', 'A4', '1', '4', 'gw', '1', '', '', '2875-style setup'),
+    ('(d) Gr(2,4)', 'A3', '2', '', 'gw', '1', '2 1 3 2|1 2|3 2', '', 'invariant 1'),
+    ('(e) cubic surface', 'A3', '1', '3', 'gw', '1', '', '', '27'),
+    ('(f) quintic threefold', 'A4', '1', '5', 'gw', '1', '', '', '2875'),
     ('(g) quotient bundle on Gr(2,5)', 'A4', '2', 'taut_quot(X, 2)', 'info', '', '', '', 'dimension 3'),
     ('(h) P3xP3 / O(1,1)+O(2,2) [slow]', 'A3xA3', '1,4', '1,1;2,2', 'info', '', '', '', 'dimension 4'),
     ('(i) quantum matrix for P2', 'A2', '1', '', 'sqm', '', '', '', '3x3 matrix'),
+    ('(j) Küchle c5 (paper bundle aliases)', 'A6', '3',
+     'osum(wedge(2,dual(S(3))),wedge(3,Q(3)),O(1))', 'info', '', '', '',
+     'dimension 4, rank 8'),
 ]
 
 
@@ -64,9 +67,33 @@ def parse_k(spec, X=None):
         return []
     if any(c.isalpha() for c in spec):
         from gwflags.bundles import O, taut_sub, taut_quot, dual, osum, tensor, sym, wedge
+
+        # Appendix C of the paper writes bundles without repeating the
+        # ambient variety: O(1), S(3), and Q(3).  The Python API keeps the
+        # explicit X argument, so the interface binds these paper aliases to
+        # the current FlagVariety while retaining O(X, 1) and the explicit
+        # taut_sub/taut_quot spellings for backwards compatibility.
+        def paper_O(*args, **kwargs):
+            if args and args[0] is X:
+                return O(*args, **kwargs)
+            return O(X, *args, **kwargs)
+
+        def paper_S(*args, **kwargs):
+            if args and args[0] is X:
+                args = args[1:]
+            return taut_sub(X, *args, **kwargs)
+
+        def paper_Q(*args, **kwargs):
+            if args and args[0] is X:
+                args = args[1:]
+            return taut_quot(X, *args, **kwargs)
+
         try:
             tree = ast.parse(spec, mode='eval')
-            allowed = {"X": X, "O": O, "taut_sub": taut_sub, "taut_quot": taut_quot, "dual": dual, "osum": osum, "tensor": tensor, "sym": sym, "wedge": wedge}
+            allowed = {"X": X, "O": paper_O, "S": paper_S, "Q": paper_Q,
+                       "taut_sub": taut_sub, "taut_quot": taut_quot,
+                       "dual": dual, "osum": osum, "tensor": tensor,
+                       "sym": sym, "wedge": wedge}
             for node in ast.walk(tree):
                 if isinstance(node, ast.Name) and node.id not in allowed:
                     raise ValueError(f'unknown name {node.id!r}')
@@ -113,7 +140,12 @@ def parse_classes(spec, X):
                     f'Insertion {token!r} is not a valid reduced word; '
                     'use spaces, for example 2 1 3 2') from e
             try:
-                out.append(X.schubert(word))
+                representative = X.wd.project(X.class_of_word(word))
+                if len(word) != X.wd.length(representative):
+                    raise ValueError(
+                        'word must be reduced and minimal for the parabolic; '
+                        'copy a word from Space Info')
+                out.append(representative)
             except Exception as e:
                 raise ValueError(
                     f'Insertion {token!r} is not valid for this variety: {e}') from e
@@ -168,8 +200,10 @@ def run_job(job, kind, params):
 
         elif kind == 'gw':
             if not str(params.get('beta', '')).strip():
-                raise ValueError('Curve class beta is required; enter one nonnegative integer per simple root')
-            beta = tuple(_int_vector(params['beta'], 'Curve class beta', expected=X.rs.rank))
+                raise ValueError('Curve class beta is required; enter kept-root coordinates or a zero-padded ambient vector')
+            beta_input = _int_vector(
+                params['beta'], 'Curve class beta', expected=None)
+            beta = X._check_beta(beta_input)
             classes, names = parse_classes(params.get('classes', ''), X)
             log(f'computing <{", ".join(names)}>_beta={list(beta)} ...')
             try:
@@ -180,6 +214,7 @@ def run_job(job, kind, params):
                     'insertion degrees, and bundle convexity.') from e
             result['value'] = str(val)
             result['insertions'] = names
+            result['beta_input'] = beta_input
             result['beta'] = list(beta)
 
         elif kind == 'sqm':
@@ -439,7 +474,7 @@ varieties — G/P and complete intersections</span></header>
       <div>
         <label for="K">Bundle K (optional)</label>
         <input id="K" aria-describedby="K-help" placeholder="3 or 1,1;2,2">
-        <div id="K-help" class="help">Use 3 for O(3), rows with commas for summands, or taut_quot(X, 2). Python [[3]] syntax is not accepted here.</div>
+        <div id="K-help" class="help">Use 3 or O(3) for a one-generator line bundle. Use O(a,b,...) when several kept roots are present; S(node) and Q(node) name tautological bundles at a kept type-A node. Use semicolons between summands and commas between degree entries; Python [[3]] syntax is not accepted here.</div>
       </div>
     </div>
   </div>
@@ -449,8 +484,8 @@ varieties — G/P and complete intersections</span></header>
     <div class="row">
       <div>
         <label for="eval_y">Evaluate y (optional)</label>
-        <input id="eval_y" aria-describedby="eval-help" placeholder="y1=1, y2=1">
-        <div id="eval-help" class="help">Leave blank for symbolic variables; assignments are only used by the matrix action.</div>
+        <input id="eval_y" aria-describedby="eval-help" placeholder="y1=1">
+        <div id="eval-help" class="help">Leave blank for symbolic variables. Use y&lt;ambient node&gt; labels, for example y1=1,y3=1 when kept roots are 1,3.</div>
       </div>
       <div>
         <label for="workers">Parallel workers</label>
@@ -466,7 +501,7 @@ varieties — G/P and complete intersections</span></header>
     <div class="card-header">3. GW Invariants (Advanced)</div>
     <label for="beta">Curve class &beta;</label>
     <input id="beta" aria-describedby="beta-help" placeholder="one integer per root, e.g. 1,0,0">
-    <div id="beta-help" class="help">Enter one nonnegative integer per ambient simple root.</div>
+    <div id="beta-help" class="help">Enter beta in kept-root order (the paper convention), or use a zero-padded ambient vector; removed-root entries must be zero.</div>
     <label for="classes">Insertions (separated by |)</label>
     <input id="classes" aria-describedby="classes-help" placeholder="pt | id | 2 1 3 2">
     <div id="classes-help" class="help">Use pt, id, or a space-separated reduced word copied from Space Info.</div>
@@ -542,8 +577,9 @@ function render(action,res){
        b.word+'</td><td>'+b.degree+'</td><td><button class=\"secondary\" style=\"margin:0;padding:4px 8px\" data-word=\"'+b.word+'\" onclick=\"addInsertion(this.dataset.word)\">Add</button></td></tr>');
     h+='</table>';
   } else if(action==='gw'){
-    h+='<h2>&lang;'+res.insertions.join(', ')+'&rang;<sub>&beta;=['+
-       res.beta+']</sub> = <b style="font-size:20px">'+res.value+'</b></h2>';
+    const entered = res.beta_input ? ('['+res.beta_input+'] &rarr; ') : '';
+    h+='<h2>&lang;'+res.insertions.join(', ')+'&rang;<sub>&beta;='+entered+
+       '['+res.beta+']</sub> = <b style="font-size:20px">'+res.value+'</b></h2>';
   } else {
     h+='<span class="badge">Fano index '+res.fano+'</span>'+
        '<span class="badge">'+res.n_betas+' curve classes</span>'+

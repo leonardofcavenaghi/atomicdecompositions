@@ -1,5 +1,14 @@
 # Release notes
 
+## 2026-09-16 — Theory-aligned interface
+
+- Published paper-coordinate beta input with canonical ambient output and
+  explicit validation of removed roots.
+- Added paper bundle aliases and strict reduced/minimal Schubert-word checks
+  to both browser and CLI interfaces.
+- Added a paper-ready [TeX/PDF alignment addendum](audits/theory-alignment-addendum.md)
+  and synchronized the API, methodology, and website audit documentation.
+
 ## 2026-09-15 — Catalog and interface maintenance
 
 - Added guided GUI presets, clearer input syntax, bundle-combination walkthroughs, and validation feedback.

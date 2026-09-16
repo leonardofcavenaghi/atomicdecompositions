@@ -5,8 +5,8 @@ Examples
 GW invariant (classes given as reduced words, comma-separated;
 `pt` and `id` are accepted):
 
-    python3 -m gwflags.cli A2 --keep 1 gw --beta 1,0 --classes pt,pt
-    python3 -m gwflags.cli A3 --keep 2 gw --beta 0,1,0 --classes "1|3 2 1|pt"
+    python3 -m gwflags.cli A2 --keep 1 gw --beta 1 --classes pt,pt
+    python3 -m gwflags.cli A3 --keep 2 gw --beta 1 --classes "1|3 2 1|pt"
 
 Small quantum multiplication (c1(TX)*, its eigenvalues, grading):
 
@@ -34,8 +34,21 @@ def parse_classes(spec, X):
         elif token in ('id', 'e', ''):
             out.append(X.wd.group[0])
         else:
-            word = tuple(int(c) for c in token.replace(',', ' ').split())
-            out.append(X.schubert(word))
+            try:
+                word = tuple(int(c) for c in token.replace(',', ' ').split())
+            except ValueError as exc:
+                raise ValueError(
+                    f'invalid Schubert word {token!r}: use integer node labels '
+                    'separated by spaces') from exc
+            try:
+                representative = X.wd.project(X.class_of_word(word))
+                if len(word) != X.wd.length(representative):
+                    raise ValueError(
+                        'word must be reduced and minimal for the parabolic; '
+                        'copy a word printed by the info command')
+                out.append(representative)
+            except (IndexError, KeyError, ValueError) as exc:
+                raise ValueError(f'invalid Schubert word {word!r}: {exc}') from exc
     return out
 
 
@@ -45,9 +58,33 @@ def parse_k(spec, X=None):
         return []
     if any(c.isalpha() for c in spec):
         from gwflags.bundles import O, taut_sub, taut_quot, dual, osum, tensor, sym, wedge
+
+        # Appendix C of the paper writes bundles without repeating the
+        # ambient variety: O(1), S(3), and Q(3).  The Python API keeps the
+        # explicit X argument, so the interface binds these paper aliases to
+        # the current FlagVariety while retaining O(X, 1) and the explicit
+        # taut_sub/taut_quot spellings for backwards compatibility.
+        def paper_O(*args, **kwargs):
+            if args and args[0] is X:
+                return O(*args, **kwargs)
+            return O(X, *args, **kwargs)
+
+        def paper_S(*args, **kwargs):
+            if args and args[0] is X:
+                args = args[1:]
+            return taut_sub(X, *args, **kwargs)
+
+        def paper_Q(*args, **kwargs):
+            if args and args[0] is X:
+                args = args[1:]
+            return taut_quot(X, *args, **kwargs)
+
         try:
             tree = ast.parse(spec, mode='eval')
-            allowed = {"X": X, "O": O, "taut_sub": taut_sub, "taut_quot": taut_quot, "dual": dual, "osum": osum, "tensor": tensor, "sym": sym, "wedge": wedge}
+            allowed = {"X": X, "O": paper_O, "S": paper_S, "Q": paper_Q,
+                       "taut_sub": taut_sub, "taut_quot": taut_quot,
+                       "dual": dual, "osum": osum, "tensor": tensor,
+                       "sym": sym, "wedge": wedge}
             for node in ast.walk(tree):
                 if isinstance(node, ast.Name) and node.id not in allowed:
                     raise ValueError(f'unknown name {node.id!r}')
@@ -77,7 +114,8 @@ def main(argv=None):
 
     gwp = sub.add_parser('gw', help='one GW invariant')
     gwp.add_argument('--beta', required=True,
-                     help='curve class over the simple roots, e.g. 1,0')
+                     help='curve class in kept-root order (or a full ambient '
+                          'vector with zeroes off kept roots), e.g. 1 or 1,0')
     gwp.add_argument('--classes', required=True,
                      help='insertions: reduced words separated by "|" '
                           '(spaces between letters), or pt / id')
@@ -106,11 +144,15 @@ def main(argv=None):
         return
 
     if args.cmd == 'gw':
-        beta = tuple(int(v) for v in args.beta.split(','))
-        classes = parse_classes(args.classes, X)
+        try:
+            beta = X._check_beta(tuple(int(v.strip())
+                                       for v in args.beta.split(',')))
+            classes = parse_classes(args.classes, X)
+        except ValueError as exc:
+            ap.error(str(exc))
         val = X.gw(classes, beta, K or None,
                    progress=lambda s: print('  ', s, file=sys.stderr))
-        print(f'beta = {list(beta)}')
+        print(f'beta = {list(beta)}  # ambient node order')
         print(f'GW invariant = {val}')
         return
 
