@@ -772,6 +772,8 @@
       
         
       
+        
+      
     
     
     
@@ -918,6 +920,34 @@
     
   
     Mathematics and Software Audit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../audits/theory-alignment-addendum/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Theory–software addendum
   
 
     
@@ -1262,6 +1292,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#4a-coordinate-contract-used-by-the-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4a. Coordinate contract used by the software
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#5-gromov-witten-invariants-theory-and-examples" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1474,9 +1515,22 @@
 <p>To replicate a result found in our <a href="../catalog/">Catalog</a>:
 1. Install <code>gwflags</code> (see <a href="../installation/">Installation</a>).
 2. Instantiate the flag variety using <code>X = FlagVariety(algebra, roots_that_stay)</code>.
-3. Invoke <code>X.small_quantum_multiplication(K)</code> where <span class="arithmatex">\(K\)</span> specifies the multidegrees of the vector bundle.
-4. Evaluate the resulting symbolic matrix by setting all <span class="arithmatex">\(y_i = 1\)</span> to find the roots of the quantum connection (eigenvalues).</p>
+3. Invoke <code>X.small_quantum_multiplication(K)</code> where <span class="arithmatex">\(K\)</span> specifies the multidegrees of the vector bundle. The Python API accepts legacy rows such as <code>[[2]]</code> or a <code>HomogeneousBundle</code>; the browser/CLI accepts compact rows such as <code>2</code> and paper aliases such as <code>Q(2)</code>.
+4. Evaluate the resulting symbolic matrix by setting all <code>y&lt;node&gt; = 1</code> to find the roots of the quantum connection (eigenvalues). The variable label is the ambient Bourbaki node, not the position in an abbreviated kept-root list.</p>
 <p>All eigenvalues, dimensions, and algebraic multiplicities are exact algebraic consequences of these Lie-theoretic constraints.</p>
+<h2 id="4a-coordinate-contract-used-by-the-software">4a. Coordinate contract used by the software<a class="headerlink" href="#4a-coordinate-contract-used-by-the-software" title="Permanent link">&para;</a></h2>
+<p>The paper's curve degree is a vector in the simple-coroot basis of the kept
+roots <code>roots_that_stay</code>, in that declared order. For example, a line on
+<code>Gr(2,4) = A3/P2</code> is <code>beta=(1,)</code>. Internally it is embedded as the ambient
+vector <code>(0,1,0)</code>; both forms are accepted by <code>FlagVariety.gw</code> and by the
+website. A full ambient vector is valid only when all removed-root coordinates
+are zero. The dimension gate uses
+<span class="arithmatex">\(\sum \ell(u_i)=\dim X+\langle c_1(TX),\beta\rangle+n-3\)</span>.</p>
+<p>The matrix returned by <code>small_quantum_multiplication</code> is the
+flag-ambient operator described in Definition 4.6. It is the full small quantum
+cohomology operator only when the homology and ambient-completeness hypotheses
+are satisfied. Automatic beta enumeration is a finite Fano/nef convenience; a
+negative kept Chern coordinate requires an explicit finite beta list.</p>
 <h2 id="5-gromov-witten-invariants-theory-and-examples">5. Gromov-Witten Invariants: Theory and Examples<a class="headerlink" href="#5-gromov-witten-invariants-theory-and-examples" title="Permanent link">&para;</a></h2>
 <p>To fully understand the output of <code>gwflags</code>, one must understand the underlying objects being computed: <strong>Gromov-Witten (GW) Invariants</strong>.</p>
 <p>At a macroscopic level, Gromov-Witten invariants are rational numbers that count the "virtual" number of complex curves of a given genus <span class="arithmatex">\(g\)</span> and degree <span class="arithmatex">\(\beta\)</span> that intersect a specified collection of subvarieties inside a target space <span class="arithmatex">\(X\)</span>. </p>
