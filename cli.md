@@ -13,9 +13,10 @@ opens a local web page (http://127.0.0.1:8642, served only on your
 machine) with a curated preset menu for common benchmark examples,
 forms for arbitrary flags/bundles, and three buttons: the c₁(TX)⋆ matrix
 (with grading and eigenvalues at y=1), variety info (Schubert basis, c₁,
-Fano index), and single GW invariants. Long computations stream their
-progress into the log panel. `--port N` and `--no-browser` are available;
-after `pip install -e .` the launcher is just `gwflags-gui`.
+Fano index), and single GW invariants. The Results toolbar copies the exact
+input as JSON and downloads each completed result as JSON. Long computations
+stream their progress into the log panel. `--port N` and `--no-browser` are
+available; after `pip install -e .` the launcher is just `gwflags-gui`.
 
 ## Running the CLI
 

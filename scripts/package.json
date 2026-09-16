@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run test:catalog && npm run test:gui",
+    "test:catalog": "node test_catalog_navigation.js",
+    "test:gui": "node test_gui_controls.js"
   },
   "keywords": [],
   "author": "",

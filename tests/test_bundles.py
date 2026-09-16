@@ -125,6 +125,27 @@ def test_quotient_requires_weight_subset_and_preserves_multiplicity():
         assert 'subbundle' in str(exc)
 
 
+def test_quotient_on_products_and_non_type_a_flags():
+    """The weight-subset check also works beyond a single Grassmannian."""
+    product = FlagVariety('A2xA2', [1, 3])
+    E_product = osum(O(product, 1, 0), O(product, 0, 1), O(product, 2, 0))
+    F_product = osum(O(product, 1, 0), O(product, 0, 1))
+    R_product = quot(E_product, F_product)
+    assert R_product.rank == 1
+    assert R_product.reduced_weights() == O(product, 2, 0).reduced_weights()
+
+    non_type_a = FlagVariety('B2', [1])
+    E_non_type_a = osum(O(non_type_a, 1), O(non_type_a, 2))
+    R_non_type_a = quot(E_non_type_a, O(non_type_a, 1))
+    assert R_non_type_a.rank == 1
+    assert R_non_type_a.reduced_weights() == O(non_type_a, 2).reduced_weights()
+    try:
+        quot(E_non_type_a, O(non_type_a, 3))
+        assert False, 'a non-subweight on a non-type-A flag was accepted'
+    except ValueError as exc:
+        assert 'subbundle' in str(exc)
+
+
 def test_quotient_validation_guards():
     X = grassmannian(2, 5)
     Y = grassmannian(2, 4)

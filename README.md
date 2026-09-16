@@ -79,7 +79,8 @@ from a Sage session with the package on `sys.path`).
 
 GUI (local web app, stdlib-only server — the modern replacement for the
 notebook's dialog screens): `python3 -m gwflags.gui`, with curated presets for
-common benchmark examples.
+common benchmark examples. The Results toolbar copies the exact input JSON and
+downloads completed results as JSON.
 
 Command line (**see [cli.md](cli.md) for the full guide** — setup and all
 subcommands):

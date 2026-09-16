@@ -27,6 +27,9 @@ The server is local to your computer (`127.0.0.1`). Stop it with `Ctrl-C` in the
 2. Read the recommended action and expected result shown below the selector.
 3. Click **Describe this space**, **Compute quantum matrix**, or **Compute one GW invariant** as recommended.
 4. Follow progress in the status and log areas. Large index-1 examples can take several minutes.
+5. After a result appears, use **Copy input JSON** to save the exact form
+   values (including the selected action), or **Download result JSON** to save
+   the input together with the complete result for later analysis.
 
 The preset fills every dependent field, so an old β or insertion cannot accidentally remain in a new example.
 
@@ -96,6 +99,11 @@ untwisted genus-0 theory reject that direct computation; use
 and the computed number. The degree-zero API path is a classical cup-integral
 shortcut; the degree-zero GW potential keeps only stable three-point
 terms and omits unstable cases.
+
+The toolbar above **Results** keeps the interface reproducible: **Copy input
+JSON** copies the current algebra, kept roots, bundle, β, insertions, and
+options; **Download result JSON** saves those inputs together with the exact
+returned matrix, invariant, or space description.
 
 ## Mathematical scope and conventions
 

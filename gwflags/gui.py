@@ -446,6 +446,12 @@ fieldset { border:1px solid var(--edge); border-radius:var(--radius); padding:10
 legend { color:var(--dim); font-size:12px; padding:0 5px; }
 .invalid { border-color:var(--err) !important; }
 #status { min-height:1.5em; color:var(--dim); }
+.result-tools {
+  display:flex; align-items:center; flex-wrap:wrap; gap:8px;
+  margin:0 0 12px;
+}
+.result-tools button { margin:0; }
+#copy-status { color:var(--dim); font-size:12px; }
 @media (max-width: 850px) { main { display:block; } #controls { border-right:0; border-bottom:1px solid var(--edge); } #results { padding:20px; } }
 </style></head><body>
 <header><h1>gwflags</h1>
@@ -505,7 +511,11 @@ varieties — G/P and complete intersections</span></header>
   
   <div id="status" aria-live="polite">Ready. Choose an example or enter a variety.</div><div id="log" aria-live="polite">System ready. Waiting for input...</div>
 </div>
-<div id="results"><h2>Results</h2>
+<div id="results"><div class="result-tools" role="toolbar" aria-label="Result tools">
+<button id="copy-input" class="secondary" type="button">Copy input JSON</button>
+<button id="download-output" class="secondary" type="button" disabled>Download result JSON</button>
+<span id="copy-status" aria-live="polite"></span>
+</div><h2>Results</h2>
 <div id="out" style="color:var(--dim)">Pick a preset (or describe a flag
 variety) and press <b>c&#8321;(TX)&#8902; matrix</b>.  Heavy examples —
 index-1 Fano with degree-4/5 curves — can take minutes; progress streams in
@@ -533,11 +543,54 @@ function validate(action){
   return ok;
 }
 let timer=null;
+let lastRequest=null;
+let lastResult=null;
+function inputSnapshot(action){
+  const chosen = action || (lastRequest && lastRequest.action) ||
+    window._recommended || 'info';
+  return {action:chosen, algebra: $('algebra').value.trim(),
+    keep: $('keep').value.trim(), K: $('K').value.trim(),
+    beta: $('beta').value.trim(), classes: $('classes').value.trim(),
+    eval_y: $('eval_y').value.trim(), workers: $('workers').value.trim()};
+}
+async function copyText(value){
+  if(navigator.clipboard && navigator.clipboard.writeText){
+    try { await navigator.clipboard.writeText(value); return; } catch (_) {}
+  }
+  const area=document.createElement('textarea'); area.value=value;
+  area.setAttribute('readonly',''); area.style.position='fixed';
+  area.style.opacity='0'; document.body.appendChild(area); area.select();
+  const copied=document.execCommand('copy'); area.remove();
+  if(!copied) throw new Error('clipboard access was denied');
+}
+function toolMessage(message, error=false){
+  $('copy-status').textContent=message;
+  $('copy-status').style.color=error?'var(--err)':'var(--dim)';
+}
+$('copy-input').onclick=async()=>{
+  try {
+    await copyText(JSON.stringify(inputSnapshot(), null, 2)+'\n');
+    toolMessage('Input copied.');
+  } catch(e) { toolMessage('Could not copy input: '+e.message, true); }
+};
+$('download-output').onclick=()=>{
+  if(!lastResult || !lastRequest) return;
+  const payload=JSON.stringify({input:lastRequest, result:lastResult}, null, 2)+'\n';
+  const blob=new Blob([payload], {type:'application/json'});
+  const url=URL.createObjectURL(blob); const link=document.createElement('a');
+  const action=(lastRequest.action||'result').toLowerCase();
+  link.href=url; link.download='gwflags-'+action+'-result.json';
+  document.body.appendChild(link); link.click(); link.remove();
+  setTimeout(()=>URL.revokeObjectURL(url), 0);
+  toolMessage('Result downloaded.');
+};
 function run(action){
   if(!validate(action)) return;
   const params={action, algebra:$('algebra').value, keep:$('keep').value,
     K:$('K').value, eval_y:$('eval_y').value, workers:$('workers').value,
     beta:$('beta').value, classes:$('classes').value};
+  lastRequest=params; lastResult=null; $('download-output').disabled=true;
+  toolMessage('');
   ['bsqm','binfo','bgw'].forEach(b=>$(b).disabled=true);
   $('log').textContent='starting...'; $('status').textContent='Computing '+action+'…';
   const fail = msg => { clearInterval(timer);
@@ -554,7 +607,8 @@ function run(action){
             ['bsqm','binfo','bgw'].forEach(b=>$(b).disabled=false);
             if(st.state==='error')
               $('out').innerHTML='<span class="err">'+st.error+'</span>';
-            else render(action, st.result); }
+            else { lastResult=st.result; $('download-output').disabled=false;
+              render(action, st.result); } }
         }).catch(()=>{}),700); })
     .catch(e=>fail('request failed: '+e));
 }

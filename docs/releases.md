@@ -1,5 +1,14 @@
 # Release notes
 
+## v1.0.0 — 2026-09-16
+
+- Stabilized the Python, CLI, and browser interfaces, including quotient
+  bundles and reproducible input/output handling.
+- Added continuous validation for the software suite, catalog source, catalog
+  LaTeX, strict site builds, and browser navigation/GUI controls.
+- Kept release metadata and local working documents separate from the public
+  computational documentation.
+
 ## 2026-09-16 — Quotients and catalog navigation
 
 - Added same-variety quotient bundles through `quot(E,F)` / `Quot(E,F)` with
