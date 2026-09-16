@@ -1576,7 +1576,11 @@
 <ul>
 <li><strong>Lie algebra</strong>: <code>A3</code>, <code>B2</code>, <code>C3</code>, <code>D5</code>, <code>G2</code>, or a product such as <code>A3xA3</code>.</li>
 <li><strong>Kept simple roots</strong>: comma-separated Bourbaki node numbers, for example <code>1</code> for projective space or <code>2</code> for <code>Gr(2,4)</code> in type <code>A3</code>.</li>
-<li><strong>Bundle K</strong> (optional): leave blank for <code>G/P</code>; enter <code>3</code> for <code>O(3)</code>, <code>1,1;2,2</code> for two line-bundle summands, or <code>taut_quot(X, 2)</code> for a quotient bundle. The GUI uses compact text: Python API notation such as <code>[[3]]</code> is not valid in this field.</li>
+<li><strong>Bundle K</strong> (optional): leave blank for <code>G/P</code>; enter <code>3</code> for <code>O(3)</code>, or
+  <code>1,1;2,2</code> for two line-bundle summands when the variety has two kept roots
+  (use <code>1;2</code> on a Picard-rank-one variety). You can also enter
+  <code>taut_quot(X, 2)</code> for a quotient bundle. The GUI uses compact text: Python
+  API notation such as <code>[[3]]</code> is not valid in this field.</li>
 <li><strong>Curve class β</strong>: one nonnegative integer per ambient simple root, such as <code>1,0,0</code> for lines on the cubic surface.</li>
 <li><strong>Insertions</strong>: <code>pt</code>, <code>id</code>, or space-separated reduced Weyl words separated by <code>|</code>. You can click <strong>Add</strong> beside a basis word in Space Info instead of typing it.</li>
 </ul>

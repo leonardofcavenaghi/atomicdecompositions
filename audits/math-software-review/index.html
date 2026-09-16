@@ -1420,7 +1420,9 @@ algorithm changes.</p>
 </ul>
 <p>The catalog also distinguishes entries outside the current flag-variety and
 ordinary complete-intersection model (weighted spaces, double covers, and
-blow-ups) as <strong>Catalog only</strong>.</p>
+blow-ups) as <strong>Catalog only</strong>. The executable Fanography inputs are centralized
+in <a href="https://github.com/leonardofcavenaghi/atomicdecompositions/blob/main/catalog_inputs.json"><code>catalog_inputs.json</code></a>, so the helper scripts and
+Markdown validator use the same records.</p>
 <h2 id="independent-functionality-checks">Independent functionality checks<a class="headerlink" href="#independent-functionality-checks" title="Permanent link">&para;</a></h2>
 <p>The software review exercised the complete test suite, GUI presets, CLI/Python
 examples, quotient bundles, dual/subbundles, direct sums, tensor products,
@@ -1443,6 +1445,15 @@ user-readable errors.</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>python3<span class="w"> </span>scripts/validate_catalog.py
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>python3<span class="w"> </span>-m<span class="w"> </span>pytest<span class="w"> </span>tests/<span class="w"> </span>-q
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>mkdocs<span class="w"> </span>build<span class="w"> </span>--strict
+</span></code></pre></div>
+<p>The lightweight Fanography 1-10 regression runs as part of the full suite. It
+checks the published <span class="arithmatex">\(y=1\)</span> card against the symbolic snapshot and all 21
+regularized quantum-period coefficients from the <a href="https://zenodo.org/records/5708272">smooth-Fano database entry
+for <span class="arithmatex">\(V(3,22)\)</span></a>. The full localization run
+can be repeated with:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>python3<span class="w"> </span>-m<span class="w"> </span>gwflags.cli<span class="w"> </span>A6<span class="w"> </span>--keep<span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span>-K<span class="w"> </span><span class="s1">'osum(wedge(2, dual(taut_sub(X, 3))), wedge(2, dual(taut_sub(X, 3))), wedge(2, dual(taut_sub(X, 3))))'</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span>sqm<span class="w"> </span>--workers<span class="w"> </span><span class="m">8</span>
 </span></code></pre></div>
 <p>The category pages explain how to translate each displayed card into the
 <code>A(n)</code>/kept-root/Bundle-K fields. The <a href="../../how-to-use/">How to use</a> guide
