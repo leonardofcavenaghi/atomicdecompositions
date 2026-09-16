@@ -1,17 +1,11 @@
 from gwflags import FlagVariety
+from catalog_inputs import selected_legacy_specs
 
 specs = [
-    ("1-17", "A3", [1], []),
-    ("1-16", "A4", [1], [[2]]),
-    ("1-15", "A4", [2], [[1], [1], [1]]),
-    ("1-14", "A5", [1], [[2], [2]]),
-    ("1-13", "A4", [1], [[3]]),
-    ("1-7", "A5", [2], [[1], [1], [1], [1], [1]]),
-    ("1-5", "A4", [2], [[1], [1], [2]]),
-    ("1-4", "A6", [1], [[2], [2], [2]]),
-    ("1-3", "A5", [1], [[2], [3]]),
-    ("2-24", "A2xA2", [1, 3], [[1, 2]])
+    (name, alg, keep, K)
+    for name, (alg, keep, K) in selected_legacy_specs("matrix_generation").items()
 ]
+
 
 for name, alg, keep, K in specs:
     print(f"Generating for {name} ({alg} {keep} K={K})")

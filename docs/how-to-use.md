@@ -34,7 +34,11 @@ The preset fills every dependent field, so an old β or insertion cannot acciden
 
 - **Lie algebra**: `A3`, `B2`, `C3`, `D5`, `G2`, or a product such as `A3xA3`.
 - **Kept simple roots**: comma-separated Bourbaki node numbers, for example `1` for projective space or `2` for `Gr(2,4)` in type `A3`.
-- **Bundle K** (optional): leave blank for `G/P`; enter `3` for `O(3)`, `1,1;2,2` for two line-bundle summands, or `taut_quot(X, 2)` for a quotient bundle. The GUI uses compact text: Python API notation such as `[[3]]` is not valid in this field.
+- **Bundle K** (optional): leave blank for `G/P`; enter `3` for `O(3)`, or
+  `1,1;2,2` for two line-bundle summands when the variety has two kept roots
+  (use `1;2` on a Picard-rank-one variety). You can also enter
+  `taut_quot(X, 2)` for a quotient bundle. The GUI uses compact text: Python
+  API notation such as `[[3]]` is not valid in this field.
 - **Curve class β**: one nonnegative integer per ambient simple root, such as `1,0,0` for lines on the cubic surface.
 - **Insertions**: `pt`, `id`, or space-separated reduced Weyl words separated by `|`. You can click **Add** beside a basis word in Space Info instead of typing it.
 

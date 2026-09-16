@@ -30,7 +30,9 @@ algorithm changes.
 
 The catalog also distinguishes entries outside the current flag-variety and
 ordinary complete-intersection model (weighted spaces, double covers, and
-blow-ups) as **Catalog only**.
+blow-ups) as **Catalog only**. The executable Fanography inputs are centralized
+in [`catalog_inputs.json`](https://github.com/leonardofcavenaghi/atomicdecompositions/blob/main/catalog_inputs.json), so the helper scripts and
+Markdown validator use the same records.
 
 ## Independent functionality checks
 
@@ -59,6 +61,18 @@ From the repository root:
 python3 scripts/validate_catalog.py
 python3 -m pytest tests/ -q
 mkdocs build --strict
+```
+
+The lightweight Fanography 1-10 regression runs as part of the full suite. It
+checks the published $y=1$ card against the symbolic snapshot and all 21
+regularized quantum-period coefficients from the [smooth-Fano database entry
+for $V(3,22)$](https://zenodo.org/records/5708272). The full localization run
+can be repeated with:
+
+```bash
+python3 -m gwflags.cli A6 --keep 3 \
+  -K 'osum(wedge(2, dual(taut_sub(X, 3))), wedge(2, dual(taut_sub(X, 3))), wedge(2, dual(taut_sub(X, 3))))' \
+  sqm --workers 8
 ```
 
 The category pages explain how to translate each displayed card into the

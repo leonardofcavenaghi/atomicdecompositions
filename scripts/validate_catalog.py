@@ -14,6 +14,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 CATALOG = ROOT / "docs" / "catalog"
+sys.path.insert(0, str(ROOT))
+from catalog_inputs import compact_bundle, fanography_specs
 CARD_RE = re.compile(r'^\?\?\? example "([^"]+)"', re.MULTILINE)
 ANCHOR_RE = re.compile(r'<span\s+id="([^"]+)"\s*>', re.IGNORECASE)
 FIELD_RE = {
@@ -24,18 +26,14 @@ FIELD_RE = {
 MATRIX_RE = re.compile(r"\\begin\{bmatrix\}(.*?)\\end\{bmatrix\}", re.DOTALL)
 LINK_RE = re.compile(r'\]\(([^)#]+)?#([^ )]+)\)')
 FANOGRAPHY_INPUTS = {
-    # These cards have executable legacy line-bundle inputs. Keep this map
-    # synchronized with the descriptions and with the generation helpers.
-    '1-5': ('A4', '2', '1;1;2'),
-    '1-6': ('D5', '5', '1;1;1;1;1;1;1'),
-    '1-7': ('A5', '2', '1;1;1;1;1'),
-    '1-8': ('C3', '3', '1;1;1'),
-    '1-9': ('G2', '2', '1;1'),
-    # 1-10 uses the supported homogeneous-bundle expression and has a published
-    # matrix checked against an independent regularized-period reference.
-    '1-10': ('A6', '3', 'osum(wedge(2, dual(taut_sub(X, 3))), wedge(2, dual(taut_sub(X, 3))), wedge(2, dual(taut_sub(X, 3))))'),
-    '2-24': ('A2xA2', '1,3', '1,2'),
+    identifier: (
+        str(spec["algebra"]),
+        ",".join(str(node) for node in spec["keep"]),
+        compact_bundle(spec),
+    )
+    for identifier, spec in fanography_specs().items()
 }
+
 FIELD_TEXT_RE = {
     'ambient': re.compile(r'^\s*- \*\*Ambient Space:\*\*\s*`\$?([^`$\n]+)\$?`', re.MULTILINE),
     'keep': re.compile(r'^\s*- \*\*Keep Nodes:\*\*\s*`([^`]*)`', re.MULTILINE),
@@ -120,7 +118,15 @@ def validate() -> list[str]:
                 for field in ('ambient', 'keep', 'bundle'):
                     match = FIELD_TEXT_RE[field].search(card.text)
                     actual.append(match.group(1).strip() if match else None)
-                if tuple(actual) != expected:
+                # Direct flags may omit Bundle K or spell it as a parenthetical
+                # “none” note. Every nonempty bundle spelling must match the
+                # central source exactly.
+                bundle_ok = (
+                    actual[2] == expected[2]
+                    if expected[2]
+                    else actual[2] is None or "none" in actual[2].lower()
+                )
+                if actual[0] != expected[0] or actual[1] != expected[1] or not bundle_ok:
                     errors.append(f'{prefix}: executable input {tuple(actual)!r} disagrees with expected {expected!r}')
             if card.title == '2-32' and ('y1' in card.text or 'y2' in card.text):
                 if 'Quantum Matrix (symbolic' not in card.text:
@@ -135,12 +141,7 @@ def validate() -> list[str]:
                             errors.append(f'{prefix}: audited row 2, column 9 must equal 2')
             if card.title == '1-10':
                 matrix = MATRIX_RE.search(card.text)
-                expected_rows = [
-                    ['0', '24', '90', '80'],
-                    ['1', '2', '20', '18'],
-                    ['0', '11/5', '2', '24/5'],
-                    ['0', '0', '5', '0'],
-                ]
+                expected_rows = fanography_specs()['1-10'].get('matrix_at_one')
                 if matrix is None:
                     errors.append(f'{prefix}: validated homogeneous-bundle matrix is missing')
                 else:
