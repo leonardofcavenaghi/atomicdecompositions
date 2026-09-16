@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "gwflags"
-version = "0.1.0"
+version = "1.0.0"
 description = "Quantum cohomology computations for flag varieties"
 requires-python = ">=3.9"
 dependencies = ["sympy>=1.10", "mpmath>=1.2"]
