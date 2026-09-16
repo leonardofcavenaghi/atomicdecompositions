@@ -151,5 +151,5 @@ M, grading, basis = G.small_quantum_multiplication(K=K)
 
 E = osum(taut_sub(G, 2), Q)
 Kq = quot(E, taut_sub(G, 2))
-assert Kq.rank == 3
+assert Kq.rank == 2
 ```
