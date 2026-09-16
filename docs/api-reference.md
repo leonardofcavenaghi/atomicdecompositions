@@ -1,7 +1,7 @@
 # GWFlags API Reference
 
-`gwflags` translates the decorated-tree formulas in the supplied paper into
-exact Python/Sage computations. The default numerical path evaluates the
+`gwflags` evaluates decorated-tree formulas with exact Python/Sage
+computations. The default numerical path evaluates the
 localization sum at two rational torus points; the symbolic path remains
 available through `gw_raw`.
 
@@ -25,13 +25,13 @@ localization on decorated trees:
 - `gw_invariant(coh_classes, beta)` sums all valid decorated trees.
 
 The low-level calculator uses an ambient vector indexed by all simple roots.
-The public `FlagVariety` methods normalize the paper's kept-root coordinates
-before calling it.
+The public `FlagVariety` methods normalize kept-root coordinates before
+calling it.
 
 ## 3. Complete-intersection twists (`gwflags/cintersection.py`)
 
 A homogeneous bundle is represented by its multiset of torus weights. The
-module implements the Euler-twisted factors from Theorem 3.28:
+module implements the Euler-twisted factors:
 
 - `euler_complete_intersection(gw, K, w)` gives the fixed-point Euler class;
 - `h_complete_intersection(gw, K, w, root_idx, d)` gives the convex edge
@@ -45,9 +45,11 @@ zero-locus interpretation additionally needs global generation and smoothness
 of the expected codimension.
 
 Bundles can be constructed with `O(X, a1, ...)`, `taut_sub(X, node)`,
-`taut_quot(X, node)`, `dual`, `osum`, `tensor`, `sym`, and `wedge`. The GUI and
-CLI also accept the paper aliases `O(a1,...)`, `S(node)`, and `Q(node)` with
-`X` bound to the current flag. A legacy split bundle is a list of rows, for
+`taut_quot(X, node)`, `dual`, `osum`, `tensor`, `sym`, `wedge`, and `quot`. The GUI and
+CLI also accept compact aliases `O(a1,...)`, `S(node)`, and `Q(node)` with
+`X` bound to the current flag. `quot(E, F)` (also `Quot(E, F)`) checks
+that the fiber-weight multiset of `F` is contained in `E` with multiplicity
+before constructing the quotient. A legacy split bundle is a list of rows, for
 example `[[1], [2]]` for `O(1) + O(2)` on a one-generator space.
 
 ## 4. Main interface (`gwflags/__init__.py`)
@@ -55,13 +57,13 @@ example `[[1], [2]]` for `O(1) + O(2)` on a one-generator space.
 ### `FlagVariety(algebra, roots_that_stay, backend=None)`
 
 `roots_that_stay` is a distinct list of 1-based simple-root nodes not in the
-parabolic, in the order used for Picard and paper coordinates. For example,
+parabolic, in the order used for Picard coordinates. For example,
 `FlagVariety("A4", [2])` is `Gr(2,5)`, while `[1,3]` describes the two-factor
 product convention when the algebra is a product.
 
 ### Curve classes (`beta`)
 
-The paper writes
+A curve class is written
 \[
   \beta=(b_{i_1},\ldots,b_{i_\rho}),
   \qquad (i_1,\ldots,i_\rho)=\texttt{roots\_that\_stay},
@@ -79,8 +81,8 @@ Returns the exact genus-zero invariant
 \(\langle\sigma_{u_1},\ldots,\sigma_{u_n}\rangle_{0,n,\beta}\), optionally
 Euler-twisted by `K`. The dimension axiom is checked before localization; a
 mismatch returns zero. Degree zero uses the classical cup-integral shortcut
-(in particular, the paper's primary potential still keeps its stable
-three-point convention).
+(the degree-zero path keeps stable three-point terms and omits unstable
+cases).
 
 ### `expected_degree(beta, n_classes, K=None)`
 
@@ -104,8 +106,7 @@ flag-ambient Schubert sector. `M` is symbolic in `y<node>`, where `<node>` is
 the ambient Bourbaki label of a kept root (so kept nodes `1,3` use `y1` and
 `y3`). `betas` may be supplied in either accepted beta convention. The matrix
 is the full small quantum-cohomology operator only when the relevant homology
-and ambient-completeness hypotheses hold; otherwise it is the flag-ambient
-block described in Definition 4.6. `workers=N` distributes independent
+and ambient-completeness hypotheses hold; otherwise it is the flag-ambient block. `workers=N` distributes independent
 per-beta blocks over forked processes.
 
 ### Other useful methods
@@ -134,7 +135,7 @@ kept-root order unless zero-padded.
 
 ```python
 from gwflags import FlagVariety, grassmannian, projective_space
-from gwflags.bundles import O, taut_quot, dual, taut_sub, osum, wedge
+from gwflags.bundles import O, taut_quot, dual, taut_sub, osum, wedge, quot
 
 P2 = projective_space(2)
 assert P2.gw([P2.pt, P2.pt], beta=(1,)) == 1
@@ -147,9 +148,8 @@ assert G.gw([s1, s21, pt], beta=(1,)) == 1
 Q = taut_quot(G, 2)
 K = osum(Q, O(G, 1))
 M, grading, basis = G.small_quantum_multiplication(K=K)
-```
 
-The paper's Küchle (c5) model can be entered as
-`osum(wedge(2,dual(S(3))),wedge(3,Q(3)),O(1))` on `A6`, kept root `3`.
-The full input/output template and copyable TeX are in the
-[theory-alignment addendum](audits/theory-alignment-addendum.md).
+E = osum(taut_sub(G, 2), Q)
+Kq = quot(E, taut_sub(G, 2))
+assert Kq.rank == 3
+```

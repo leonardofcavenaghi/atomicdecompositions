@@ -72,7 +72,7 @@ old_render = """    h+='<h2>Grading</h2><div>diag('+res.grading.join(', ')+')</d
         fmt(Math.abs(im))+'i'):'');
       h+='<td class="'+(i===0?'dom':'')+'">'+s+'</td>'; });
     h+='</tr></table><div style="color:var(--dim);font-size:12px">'+
-       'first entry = spectral radius (Conjecture O: real &amp; simple).'+
+       'first entry = spectral-radius eigenvalue.'+
        '</div>';"""
 
 new_render = """    h+='<h2>Grading</h2><div>diag('+res.grading.join(', ')+')</div>';
@@ -88,7 +88,7 @@ new_render = """    h+='<h2>Grading</h2><div>diag('+res.grading.join(', ')+')</d
             fmt(Math.abs(im))+'i'):'');
           h+='<td class="'+(i===0?'dom':'')+'">'+s+'</td>'; });
         h+='</tr></table><div style="color:var(--dim);font-size:12px">'+
-           'first entry = spectral radius (Conjecture O: real &amp; simple).'+
+           'first entry = spectral-radius eigenvalue.'+
            '</div>';
     }"""
     

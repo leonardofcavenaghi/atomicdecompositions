@@ -70,8 +70,8 @@ def test_gr24():
     assert G.gw([s1, s21, pt], (0, 1, 0)) == 1
 
 
-def test_paper_beta_basis_and_removed_root_guard():
-    # Gr(2,4) is A3/P2.  The paper's one-coordinate beta=(1) is embedded
+def test_kept_beta_basis_and_removed_root_guard():
+    # Gr(2,4) is A3/P2.  The one-coordinate beta=(1) is embedded
     # at ambient node 2, while a nonzero removed-root coordinate is rejected.
     G = grassmannian(2, 4)
     assert G._check_beta((1,)) == (0, 1, 0)

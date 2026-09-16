@@ -20,7 +20,7 @@ def spectrum_at_one(M):
     """Numeric eigenvalues of a quantum matrix with all y<node> -> 1, via
     mpmath's QR-based eig (robust where symbolic eigenvalues fail, e.g.
     multivariate characteristic polynomials).  Sorted by descending
-    modulus, so the first entry is the Conjecture-O eigenvalue."""
+    modulus, so the first entry is the dominant eigenvalue."""
     import sympy
     from mpmath import mp, matrix as mpmatrix, eig
     subs = {}

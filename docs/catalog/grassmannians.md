@@ -2,7 +2,7 @@
 
 This section contains complete intersections inside this geometric family, systematically organized by dimension and Fano index.
 
-For the paper-coordinate beta convention and copyable browser/CLI syntax, see [How to Use](../how-to-use.md) and the [theory--software addendum](../audits/theory-alignment-addendum.md).
+For the kept-root beta convention and copyable browser/CLI syntax, see [How to Use](../how-to-use.md).
 
 ## Reproduce an entry in the software
 

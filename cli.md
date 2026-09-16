@@ -41,7 +41,7 @@ PATH (it's `$(python3 -m site --user-base)/bin`).
 |---|---|---|
 | `<algebra>` | simple Lie algebra or a product (`x`-separated) | `A2`, `B3`, `A3xA3`, `A1xA1xA4` |
 | `--keep` | 1-based simple roots **kept out of** the parabolic (the notebook's `m` / RootsThatStay), comma-separated; nodes are numbered consecutively across product factors (Bourbaki order) | `1` for Pⁿ, `2` for Gr(2,·), `1,2` for a full A2 flag, `1,4` for P³×P³ |
-| `-K` | complete-intersection multidegrees: one row per line-bundle summand, rows separated by `;`, entries by `,` — one entry per kept node, **in `--keep` order**; entries must be ≥ 0. The expression forms `O(...)`, `S(node)`, `Q(node)`, `osum(...)`, `tensor(...)`, `sym(...)`, and `wedge(...)` are also accepted. | `-K 2` = O(2); `-K "1,1;2,2"` = O(1,1)⊕O(2,2) |
+| `-K` | complete-intersection multidegrees: one row per line-bundle summand, rows separated by `;`, entries by `,` — one entry per kept node, **in `--keep` order**; entries must be ≥ 0. The expression forms `O(...)`, `S(node)`, `Q(node)`, `osum(...)`, `tensor(...)`, `sym(...)`, `wedge(...)`, and `quot(E,F)` (also `Quot(E,F)`) are accepted. | `-K 2` = O(2); `-K "1,1;2,2"` = O(1,1)⊕O(2,2) |
 
 Common varieties:
 
@@ -65,10 +65,12 @@ Common varieties:
 python3 -m gwflags.cli A3 --keep 2 info
 ```
 
-Prints the Schubert basis (reduced words + degrees) and c₁ (of the
-complete intersection when `-K` is given). Use this first: the words shown
-here are what `gw --classes` accepts, and c₁ = 0 tells you the variety is
-Calabi–Yau (then `sqm` is the zero operator by design).
+Prints the Schubert basis (reduced words + degrees), the zero-locus dimension
+(after subtracting the rank of `-K`, with the ambient dimension shown when a
+bundle is present), and c₁ (of the complete intersection when `-K` is given).
+Use this first: the words shown here are what `gw --classes` accepts, and
+c₁ = 0 tells you the variety is Calabi–Yau (then `sqm` is the zero operator by
+design).
 
 ### `gw` — one Gromov–Witten invariant
 
@@ -81,8 +83,7 @@ python3 -m gwflags.cli A3 --keep 2 gw --beta 1 --classes "2|1 3 2|pt"
 python3 -m gwflags.cli A4 --keep 1 -K 2 gw --beta 1 --classes "2 1|3 2 1"
 ```
 
-- `--beta`: the curve class, normally entered in kept-root order (the paper
-  convention). A zero-padded vector with one entry per ambient simple root is
+- `--beta`: the curve class, normally entered in kept-root order. A zero-padded vector with one entry per ambient simple root is
   also accepted; entries at removed roots are rejected. For example, a line on
   `A3 --keep 2` is `--beta 1` or `--beta 0,1,0`. The printed result uses the
   canonical ambient node order.
@@ -134,12 +135,13 @@ python3 tests/test_gwflags.py        # 20 checks, ~10 s
 
 - Bundle entries in `-K` must be ≥ 0 (convexity — the mathematics of both
   this package and the original notebook requires it). Bundle expressions also
-  accept the paper aliases `O(1)`, `S(node)`, and `Q(node)`; explicit Python
+  accept compact aliases `O(1)`, `S(node)`, and `Q(node)`; `quot(E,F)`
+  (or `Quot(E,F)`) checks the subbundle condition; explicit Python
   forms such as `O(X,1)` and `taut_quot(X,1)` remain valid.
 - Calabi–Yau intersections (c₁ = 0, e.g. `A5 --keep 1 -K "2;2;2"`, a K3)
   give Fano index 0 and the zero operator. The degree-zero `gw` convenience
-  path returns classical cup integrals; the paper's primary degree-zero GW
-  potential keeps only three-point terms and omits unstable cases.
+  path returns classical cup integrals; the degree-zero potential keeps only
+  stable three-point terms and omits unstable cases.
 - Automatic `sqm` beta enumeration is intended for Fano or nef c₁ data. If a
   kept c₁ coordinate is negative, the routine asks for an explicit `betas`
   list so that a formal/truncated calculation is not mistaken for a finite

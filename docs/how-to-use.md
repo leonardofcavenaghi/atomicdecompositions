@@ -38,13 +38,14 @@ The preset fills every dependent field, so an old β or insertion cannot acciden
   `1,1;2,2` for two line-bundle summands when the variety has two kept roots
   (use `1;2` on a Picard-rank-one variety). Semicolons separate summands and
   commas separate entries within one multidegree. You can also enter
-  `taut_quot(X, 2)` for a quotient bundle. The paper aliases `O(1)`, `S(2)`,
+  `taut_quot(X, 2)` for a quotient bundle. Use `quot(E,F)` or `Quot(E,F)` for a quotient of two bundle expressions; the second argument must be a
+  subbundle of the first. The compact aliases `O(1)`, `S(2)`,
   and `Q(2)` are also accepted and are bound to the current variety; use the
   number of entries required by the kept roots (for example `O(1,0)` on a
   two-generator flag). The GUI uses compact text: Python API notation such as
   `[[3]]` is not valid in this field.
 - **Curve class β**: enter one nonnegative integer per kept root, in the order
-  shown in **Kept simple roots**, as in the paper. A zero-padded vector with one
+  shown in **Kept simple roots**. A zero-padded vector with one
   entry per ambient root is also accepted; entries at removed roots must be zero.
 - **Insertions**: `pt`, `id`, or reduced minimal Weyl words separated by `|`.
   Copy words printed by **Space Info**, or click **Add** beside a basis word.
@@ -93,44 +94,53 @@ untwisted genus-0 theory reject that direct computation; use
 
 **GW invariant** reports the insertion list, the canonical ambient form of β,
 and the computed number. The degree-zero API path is a classical cup-integral
-shortcut; the paper's primary degree-zero GW potential keeps only three-point
+shortcut; the degree-zero GW potential keeps only stable three-point
 terms and omits unstable cases.
 
 ## Mathematical scope and conventions
 
-The localization formulas are the paper's Theorems 3.26 and 3.28. For a
+The localization formulas use virtual localization on decorated trees. For a
 complete intersection, the software requires curvewise convexity and computes
 the Euler-twisted ambient invariant. A geometric interpretation as a smooth
-zero locus requires the paper's additional hypotheses: global generation and
-smoothness of the expected codimension.
+zero locus additionally requires global generation and smoothness of the
+expected codimension.
 
-The quantum matrix is the flag-ambient operator from Definition 4.6. It is the
+The quantum matrix is the flag-ambient operator described above. It is the
 full small quantum-cohomology operator only when the relevant homology and
-ambient-completeness hypotheses hold. In examples such as Küchle (c5), the
-published matrix is intentionally an ambient block.
+ambient-completeness hypotheses hold. For complete intersections, the published matrix is an ambient block.
 
 ## Advanced bundle syntax
 
 Supported constructors include `O(a,...)`, `S(node)`, `Q(node)`,
 `taut_quot(X, k)`, `taut_sub(X, k)`, `dual(...)`, `osum(...)`, `tensor(...)`,
-`sym(...)`, and `wedge(...)`. The paper aliases omit `X`; the explicit Python
+`sym(...)`, `wedge(...)`, and `quot(E,F)` (also `Quot(E,F)`). The compact aliases omit `X`; the explicit Python
 spellings remain available. Use the GUI help text for compact line-bundle rows.
 Nested lists such as `[[3]]` belong to the Python API only.
 
 ## Troubleshooting
 
 - Check that kept roots are valid, distinct node numbers in the algebra and in the intended order.
-- β is normally entered in kept-root order (the paper convention); a full ambient vector is accepted only when all removed-root entries are zero.
+- β is normally entered in kept-root order; a full ambient vector is accepted only when all removed-root entries are zero.
 - Insertion words must contain integers separated by spaces; separate multiple insertions with `|`.
 - A catalog entry marked **Catalog only** is not represented by the current flag-variety/complete-intersection input model.
 - If a computation is slow, lower the worker count or start with a preset of lower degree.
+- Catalog matrices are rendered by MathJax. If you copy one into a LaTeX
+  document, load `amsmath` and raise the column limit for the wider matrices:
+
+  ```tex
+  \usepackage{amsmath}
+  \setcounter{MaxMatrixCols}{50}
+  ```
+
+  From the repository root, `python3 scripts/validate_catalog_tex.py` compiles
+  all catalog display blocks in a temporary document.
 
 ## Python and CLI
 
 ```python
 from gwflags import FlagVariety
 X = FlagVariety('A3', [1])
-print(X.gw([], beta=(1,), K=[[3]]))       # 27 (paper basis)
+print(X.gw([], beta=(1,), K=[[3]]))       # 27 (kept-root basis)
 print(X.gw([], beta=(1, 0, 0), K=[[3]]))  # same, zero-padded form
 ```
 
@@ -172,7 +182,32 @@ Q = taut_quot(X, 2)
 M, grading, basis = X.small_quantum_multiplication(K=Q)
 ```
 
-### 2. Dual of the tautological subbundle
+### 2. Quotient of two bundle expressions
+
+Use `quot(E,F)` (or the capitalized spelling `Quot(E,F)`) when F is a
+subbundle of E:
+
+```text
+quot(osum(S(2),Q(2)), S(2))
+```
+
+On `Gr(2,5)`, `S(2) + Q(2)` is the trivial rank-5 bundle, so this quotient is
+the rank-3 quotient bundle `Q(2)`. The software checks the fiber-weight
+multisets with multiplicity at every fixed point (equivalent type-A characters
+are compared after removing the torus-trivial trace direction). Different
+varieties or a missing weight produce a clear validation error.
+
+Equivalent Python:
+
+```python
+from gwflags.bundles import osum, quot, taut_sub, taut_quot
+E = osum(taut_sub(X, 2), taut_quot(X, 2))
+F = taut_sub(X, 2)
+K = quot(E, F)
+assert K.rank == 3
+```
+
+### 3. Dual of the tautological subbundle
 
 The subbundle itself is generally not convex for the twisted genus-0 theory.
 Use its dual instead:
@@ -194,7 +229,7 @@ M, grading, basis = X.small_quantum_multiplication(K=K)
 The GUI accepts the expression, while a direct `taut_sub(X, 2)` computation
 may be rejected when its curve splitting degrees are negative.
 
-### 3. Direct sum of bundles
+### 4. Direct sum of bundles
 
 Use `osum` to combine summands. This example combines the rank-3 quotient with
 a line bundle `O(1)` on this Picard-rank-one Grassmannian:
@@ -218,7 +253,7 @@ K = osum(taut_quot(X, 2), O(X, 1))
 print(K.rank)  # 4
 ```
 
-### 4. Tensor product
+### 5. Tensor product
 
 `tensor` forms all pairwise sums of fiber weights:
 
@@ -234,7 +269,7 @@ K = tensor(taut_quot(X, 2), O(X, 1))
 print(K.rank)  # 3
 ```
 
-### 5. Symmetric and exterior powers
+### 6. Symmetric and exterior powers
 
 These constructors derive new bundles from a homogeneous bundle:
 
@@ -266,20 +301,6 @@ osum(
 
 For long expressions, Python is easier to read and debug. The GUI parser only
 allows the documented constructors and rejects arbitrary Python code.
-
-### 6. Küchle (c5) paper expression
-
-The homogeneous-bundle example from the paper is `Gr(3,7)`, entered as
-`A6` with kept root `3`. Paste this expression in **Bundle K**:
-
-```text
-osum(wedge(2,dual(S(3))),wedge(3,Q(3)),O(1))
-```
-
-It has rank 8 and gives a four-dimensional complete intersection with
-`c1(TX) = H`; the matrix uses `y3`. The **Küchle c5 (paper bundle aliases)**
-preset fills these fields automatically. For the complete output template and
-the degree-by-degree beta list, see the [theory--software addendum](audits/theory-alignment-addendum.md).
 
 ### What to check before computing
 
