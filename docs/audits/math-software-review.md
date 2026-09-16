@@ -20,10 +20,13 @@ algorithm changes.
   and 4-1 contains the audited matrix entry in row 2, column 9 equal to `2`.
 - Fanography 2-32 is explicitly labelled symbolic because its matrix contains
   `y1` and `y2`; it is not presented as a matrix evaluated at `y=1`.
-- Fanography 1-10 now records the supported homogeneous-bundle input on
-  `Gr(3,7)`: three copies of `wedge(2, dual(taut_sub(X, 3)))`. Its dimension,
-  index, rank, and convexity were checked, while its quantum matrix is clearly
-  marked pending independent recomputation rather than presented as verified.
+- Fanography 1-10 records the supported homogeneous-bundle input on `Gr(3,7)`:
+  three copies of `wedge(2, dual(taut_sub(X, 3)))`. Its dimension, index, rank,
+  convexity, and quantum matrix were independently checked. The exact `gwflags`
+  run gives
+  `[[0,24,90,80],[1,2,20,18],[0,11/5,2,24/5],[0,0,5,0]]` at `y=1`; its
+  regularized quantum period agrees with all 21 coefficients in the
+  smooth-Fano database entry for `V(3,22)`.
 
 The catalog also distinguishes entries outside the current flag-variety and
 ordinary complete-intersection model (weighted spaces, double covers, and

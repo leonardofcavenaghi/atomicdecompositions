@@ -25,6 +25,13 @@
 - Recomputed supported pending Fanography matrices for 1-5, 1-14, 2-24, 2-34, and 4-1; updated the corrected 4-1 basis rank.
 - Replaced legacy duplicate catalog pages with pointers to the validated canonical catalog.
 
+## 2026-09-16 — Fanography 1-10 matrix
+
+- Published the Fanography 1-10 (`V(3,22)`) quantum multiplication matrix for the
+  three-copy homogeneous bundle on `Gr(3,7)`.
+- Verified the matrix with an exact `gwflags` run and by matching all 21
+  regularized quantum-period coefficients in the smooth-Fano reference data.
+
 ## 2026-09-15 — independent mathematics and software audit
 
 - Corrected Fanography 1-5 through 1-9 so each displayed ambient space, kept

@@ -31,8 +31,8 @@ FANOGRAPHY_INPUTS = {
     '1-7': ('A5', '2', '1;1;1;1;1'),
     '1-8': ('C3', '3', '1;1;1'),
     '1-9': ('G2', '2', '1;1'),
-    # 1-10 uses the supported homogeneous-bundle expression; its matrix is
-    # deliberately not published until it has an independent recomputation.
+    # 1-10 uses the supported homogeneous-bundle expression and has a published
+    # matrix checked against an independent regularized-period reference.
     '1-10': ('A6', '3', 'osum(wedge(2, dual(taut_sub(X, 3))), wedge(2, dual(taut_sub(X, 3))), wedge(2, dual(taut_sub(X, 3))))'),
     '2-24': ('A2xA2', '1,3', '1,2'),
 }
@@ -133,6 +133,20 @@ def validate() -> list[str]:
                         entries = [c.strip() for c in rows[1].split('&')]
                         if len(entries) > 8 and entries[8] != '2':
                             errors.append(f'{prefix}: audited row 2, column 9 must equal 2')
+            if card.title == '1-10':
+                matrix = MATRIX_RE.search(card.text)
+                expected_rows = [
+                    ['0', '24', '90', '80'],
+                    ['1', '2', '20', '18'],
+                    ['0', '11/5', '2', '24/5'],
+                    ['0', '0', '5', '0'],
+                ]
+                if matrix is None:
+                    errors.append(f'{prefix}: validated homogeneous-bundle matrix is missing')
+                else:
+                    rows = [[c.strip() for c in row.strip().split('&')] for row in re.split(r'\\\\', matrix.group(1)) if row.strip()]
+                    if rows != expected_rows:
+                        errors.append(f'{prefix}: published matrix disagrees with the independently recomputed 1-10 matrix')
         # Category pages use explicit anchors; Fanography uses stable variety
         # headings without anchors and is checked separately by its source links.
         if card.path.name != 'fanography.md':
