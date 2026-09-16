@@ -87,6 +87,7 @@ nav:
       - Website Usage Audit: audits/website-usage-review.md
       - Catalog Review: audits/catalog-review.md
       - Mathematics and Software Audit: audits/math-software-review.md
+      - Theory–software addendum: audits/theory-alignment-addendum.md
       - Reference Discrepancies: discrepancy.md
   - Releases: releases.md
   - Archive:

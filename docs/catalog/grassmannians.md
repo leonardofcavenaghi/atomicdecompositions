@@ -2,6 +2,8 @@
 
 This section contains complete intersections inside this geometric family, systematically organized by dimension and Fano index.
 
+For the paper-coordinate beta convention and copyable browser/CLI syntax, see [How to Use](../how-to-use.md) and the [theory--software addendum](../audits/theory-alignment-addendum.md).
+
 ## Reproduce an entry in the software
 
 For a Grassmannian `Gr(k,n)`, run `A(n-1)` with **Kept simple roots** `k`.

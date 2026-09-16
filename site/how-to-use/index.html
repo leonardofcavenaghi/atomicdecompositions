@@ -708,6 +708,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#mathematical-scope-and-conventions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mathematical scope and conventions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#advanced-bundle-syntax" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -812,6 +823,17 @@
     <span class="md-ellipsis">
       
         Combining several operations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-kuchle-c5-paper-expression" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Küchle (c5) paper expression
       
     </span>
   </a>
@@ -1057,6 +1079,8 @@
       
         
       
+        
+      
     
     
     
@@ -1203,6 +1227,34 @@
     
   
     Mathematics and Software Audit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../audits/theory-alignment-addendum/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Theory–software addendum
   
 
     
@@ -1578,13 +1630,23 @@
 <li><strong>Kept simple roots</strong>: comma-separated Bourbaki node numbers, for example <code>1</code> for projective space or <code>2</code> for <code>Gr(2,4)</code> in type <code>A3</code>.</li>
 <li><strong>Bundle K</strong> (optional): leave blank for <code>G/P</code>; enter <code>3</code> for <code>O(3)</code>, or
   <code>1,1;2,2</code> for two line-bundle summands when the variety has two kept roots
-  (use <code>1;2</code> on a Picard-rank-one variety). You can also enter
-  <code>taut_quot(X, 2)</code> for a quotient bundle. The GUI uses compact text: Python
-  API notation such as <code>[[3]]</code> is not valid in this field.</li>
-<li><strong>Curve class β</strong>: one nonnegative integer per ambient simple root, such as <code>1,0,0</code> for lines on the cubic surface.</li>
-<li><strong>Insertions</strong>: <code>pt</code>, <code>id</code>, or space-separated reduced Weyl words separated by <code>|</code>. You can click <strong>Add</strong> beside a basis word in Space Info instead of typing it.</li>
+  (use <code>1;2</code> on a Picard-rank-one variety). Semicolons separate summands and
+  commas separate entries within one multidegree. You can also enter
+  <code>taut_quot(X, 2)</code> for a quotient bundle. The paper aliases <code>O(1)</code>, <code>S(2)</code>,
+  and <code>Q(2)</code> are also accepted and are bound to the current variety; use the
+  number of entries required by the kept roots (for example <code>O(1,0)</code> on a
+  two-generator flag). The GUI uses compact text: Python API notation such as
+  <code>[[3]]</code> is not valid in this field.</li>
+<li><strong>Curve class β</strong>: enter one nonnegative integer per kept root, in the order
+  shown in <strong>Kept simple roots</strong>, as in the paper. A zero-padded vector with one
+  entry per ambient root is also accepted; entries at removed roots must be zero.</li>
+<li><strong>Insertions</strong>: <code>pt</code>, <code>id</code>, or reduced minimal Weyl words separated by <code>|</code>.
+  Copy words printed by <strong>Space Info</strong>, or click <strong>Add</strong> beside a basis word.</li>
 </ul>
-<p><code>Evaluate y</code> is optional and applies to quantum matrices only. Leave it blank for symbolic Novikov variables, or enter assignments such as <code>y1=1,y2=1</code>.</p>
+<p><code>Evaluate y</code> is optional and applies to quantum matrices only. Variables use
+ambient node labels (<code>y1</code>, <code>y3</code>, ...), so a variety with kept roots <code>1,3</code> uses
+<code>y1</code> and <code>y3</code>. Leave it blank for symbolic Novikov variables, or enter
+assignments such as <code>y1=1,y3=1</code>.</p>
 <h2 id="copyable-examples">Copyable examples<a class="headerlink" href="#copyable-examples" title="Permanent link">&para;</a></h2>
 <h3 id="beginner-path-direct-flags-and-products">Beginner path: direct flags and products<a class="headerlink" href="#beginner-path-direct-flags-and-products" title="Permanent link">&para;</a></h3>
 <p>For an untwisted direct flag, leave <code>K</code> blank. For example, <code>A2</code> with
@@ -1637,21 +1699,21 @@ untwisted genus-0 theory reject that direct computation; use
 <td><code>A3</code></td>
 <td><code>1</code></td>
 <td><code>3</code></td>
-<td>β <code>1,0,0</code>, insertions blank</td>
+<td>β <code>1</code> (or <code>1,0,0</code>), insertions blank</td>
 </tr>
 <tr>
 <td>2875 lines on a quintic</td>
 <td><code>A4</code></td>
 <td><code>1</code></td>
 <td><code>5</code></td>
-<td>β <code>1,0,0,0</code>, insertions blank</td>
+<td>β <code>1</code> (or <code>1,0,0,0</code>), insertions blank</td>
 </tr>
 <tr>
 <td><code>Gr(2,4)</code> invariant</td>
 <td><code>A3</code></td>
 <td><code>2</code></td>
 <td><em>(blank)</em></td>
-<td>β <code>0,1,0</code>; <code>2 1 3 2|1 2|3 2</code></td>
+<td>β <code>1</code> (or <code>0,1,0</code>); <code>2 1 3 2|1 2|3 2</code></td>
 </tr>
 <tr>
 <td>quotient bundle</td>
@@ -1672,13 +1734,30 @@ untwisted genus-0 theory reject that direct computation; use
 <h2 id="reading-results">Reading results<a class="headerlink" href="#reading-results" title="Permanent link">&para;</a></h2>
 <p><strong>Space Info</strong> reports dimension, Fano index, first Chern class, number of curve classes, and the Schubert basis. Use the <strong>Add</strong> buttons to build insertion lists.</p>
 <p><strong>Quantum matrix</strong> reports the matrix, grading, characteristic polynomial, and numerical eigenvalues only when all Novikov variables are specialized to one. A custom <code>Evaluate y</code> value is reported separately and does not claim to be the <code>y=1</code> spectrum.</p>
-<p><strong>GW invariant</strong> reports the insertion list, β, and the computed number.</p>
+<p><strong>GW invariant</strong> reports the insertion list, the canonical ambient form of β,
+and the computed number. The degree-zero API path is a classical cup-integral
+shortcut; the paper's primary degree-zero GW potential keeps only three-point
+terms and omits unstable cases.</p>
+<h2 id="mathematical-scope-and-conventions">Mathematical scope and conventions<a class="headerlink" href="#mathematical-scope-and-conventions" title="Permanent link">&para;</a></h2>
+<p>The localization formulas are the paper's Theorems 3.26 and 3.28. For a
+complete intersection, the software requires curvewise convexity and computes
+the Euler-twisted ambient invariant. A geometric interpretation as a smooth
+zero locus requires the paper's additional hypotheses: global generation and
+smoothness of the expected codimension.</p>
+<p>The quantum matrix is the flag-ambient operator from Definition 4.6. It is the
+full small quantum-cohomology operator only when the relevant homology and
+ambient-completeness hypotheses hold. In examples such as Küchle (c5), the
+published matrix is intentionally an ambient block.</p>
 <h2 id="advanced-bundle-syntax">Advanced bundle syntax<a class="headerlink" href="#advanced-bundle-syntax" title="Permanent link">&para;</a></h2>
-<p>Supported constructors include <code>taut_quot(X, k)</code>, <code>taut_sub(X, k)</code>, <code>dual(...)</code>, <code>osum(...)</code>, <code>tensor(...)</code>, <code>sym(...)</code>, and <code>wedge(...)</code>. Use the GUI help text for compact line-bundle rows. Nested lists such as <code>[[3]]</code> belong to the Python API only.</p>
+<p>Supported constructors include <code>O(a,...)</code>, <code>S(node)</code>, <code>Q(node)</code>,
+<code>taut_quot(X, k)</code>, <code>taut_sub(X, k)</code>, <code>dual(...)</code>, <code>osum(...)</code>, <code>tensor(...)</code>,
+<code>sym(...)</code>, and <code>wedge(...)</code>. The paper aliases omit <code>X</code>; the explicit Python
+spellings remain available. Use the GUI help text for compact line-bundle rows.
+Nested lists such as <code>[[3]]</code> belong to the Python API only.</p>
 <h2 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Check that kept roots are valid, distinct node numbers in the algebra and in the intended order.</li>
-<li>β must have one entry per ambient simple root.</li>
+<li>β is normally entered in kept-root order (the paper convention); a full ambient vector is accepted only when all removed-root entries are zero.</li>
 <li>Insertion words must contain integers separated by spaces; separate multiple insertions with <code>|</code>.</li>
 <li>A catalog entry marked <strong>Catalog only</strong> is not represented by the current flag-variety/complete-intersection input model.</li>
 <li>If a computation is slow, lower the worker count or start with a preset of lower degree.</li>
@@ -1686,7 +1765,8 @@ untwisted genus-0 theory reject that direct computation; use
 <h2 id="python-and-cli">Python and CLI<a class="headerlink" href="#python-and-cli" title="Permanent link">&para;</a></h2>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">gwflags</span><span class="w"> </span><span class="kn">import</span> <span class="n">FlagVariety</span>
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">X</span> <span class="o">=</span> <span class="n">FlagVariety</span><span class="p">(</span><span class="s1">'A3'</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">])</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">gw</span><span class="p">([],</span> <span class="n">beta</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">K</span><span class="o">=</span><span class="p">[[</span><span class="mi">3</span><span class="p">]]))</span>  <span class="c1"># 27</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">gw</span><span class="p">([],</span> <span class="n">beta</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,),</span> <span class="n">K</span><span class="o">=</span><span class="p">[[</span><span class="mi">3</span><span class="p">]]))</span>       <span class="c1"># 27 (paper basis)</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">gw</span><span class="p">([],</span> <span class="n">beta</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">K</span><span class="o">=</span><span class="p">[[</span><span class="mi">3</span><span class="p">]]))</span>  <span class="c1"># same, zero-padded form</span>
 </span></code></pre></div>
 <p>For the CLI, put bundle options before the subcommand:</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>python3<span class="w"> </span>-m<span class="w"> </span>gwflags.cli<span class="w"> </span>A3<span class="w"> </span>--keep<span class="w"> </span><span class="m">1</span><span class="w"> </span>-K<span class="w"> </span><span class="m">3</span><span class="w"> </span>sqm
@@ -1698,12 +1778,13 @@ untwisted genus-0 theory reject that direct computation; use
 the following expressions in <strong>Bundle K</strong> and choose <strong>Compute quantum matrix</strong>
 or <strong>Describe this space</strong>.</p>
 <h3 id="1-quotient-bundle">1. Quotient bundle<a class="headerlink" href="#1-quotient-bundle" title="Permanent link">&para;</a></h3>
-<p>GUI input:</p>
+<p>GUI input (both spellings are accepted):</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>taut_quot(X, 2)
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>Q(2)
 </span></code></pre></div>
 <p>This is the rank-3 tautological quotient bundle. Leave <code>Evaluate y</code> blank for
-symbolic variables, or use <code>y2=1</code> for specialization. The result summary shows
-<code>K=taut_quot(X, 2)</code> and the matrix is computed using the quotient-bundle twist.</p>
+symbolic variables, or use <code>y2=1</code> for specialization (the kept node is 2). The result summary records the submitted bundle expression, and the matrix
+is computed using the quotient-bundle twist.</p>
 <p>Equivalent Python:</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">gwflags</span><span class="w"> </span><span class="kn">import</span> <span class="n">FlagVariety</span>
 </span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">gwflags.bundles</span><span class="w"> </span><span class="kn">import</span> <span class="n">taut_quot</span>
@@ -1715,8 +1796,9 @@ symbolic variables, or use <code>y2=1</code> for specialization. The result summ
 <h3 id="2-dual-of-the-tautological-subbundle">2. Dual of the tautological subbundle<a class="headerlink" href="#2-dual-of-the-tautological-subbundle" title="Permanent link">&para;</a></h3>
 <p>The subbundle itself is generally not convex for the twisted genus-0 theory.
 Use its dual instead:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>dual(taut_sub(X, 2))
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>dual(S(2))
 </span></code></pre></div>
+<p>The explicit equivalent <code>dual(taut_sub(X, 2))</code> is also accepted.</p>
 <p>Equivalent Python:</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">gwflags.bundles</span><span class="w"> </span><span class="kn">import</span> <span class="n">taut_sub</span><span class="p">,</span> <span class="n">dual</span>
 </span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="n">K</span> <span class="o">=</span> <span class="n">dual</span><span class="p">(</span><span class="n">taut_sub</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
@@ -1727,8 +1809,9 @@ may be rejected when its curve splitting degrees are negative.</p>
 <h3 id="3-direct-sum-of-bundles">3. Direct sum of bundles<a class="headerlink" href="#3-direct-sum-of-bundles" title="Permanent link">&para;</a></h3>
 <p>Use <code>osum</code> to combine summands. This example combines the rank-3 quotient with
 a line bundle <code>O(1)</code> on this Picard-rank-one Grassmannian:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>osum(taut_quot(X, 2), O(X, 1))
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>osum(Q(2), O(1))
 </span></code></pre></div>
+<p>The explicit equivalent <code>osum(taut_quot(X, 2), O(X, 1))</code> is also accepted.</p>
 <p>On <code>Gr(2,5)</code> there is one kept node, so <code>O(X, 1)</code> takes one degree. A
 two-entry constructor such as <code>O(X, 1, 1)</code> belongs on a two-generator product
 (for example <code>A2xA2</code>, kept roots <code>1,3</code>). In the compact GUI syntax, separate
@@ -1762,12 +1845,21 @@ summands are written as rows such as <code>1;2</code>.</p>
 <p>Expressions can be nested, provided every component is built on the same
 <code>X</code>:</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>osum(
-</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>  tensor(taut_quot(X, 2), O(X, 1)),
-</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>  wedge(2, dual(taut_sub(X, 2)))
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>  tensor(Q(2), O(1)),
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>  wedge(2, dual(S(2)))
 </span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>)
 </span></code></pre></div>
 <p>For long expressions, Python is easier to read and debug. The GUI parser only
 allows the documented constructors and rejects arbitrary Python code.</p>
+<h3 id="6-kuchle-c5-paper-expression">6. Küchle (c5) paper expression<a class="headerlink" href="#6-kuchle-c5-paper-expression" title="Permanent link">&para;</a></h3>
+<p>The homogeneous-bundle example from the paper is <code>Gr(3,7)</code>, entered as
+<code>A6</code> with kept root <code>3</code>. Paste this expression in <strong>Bundle K</strong>:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>osum(wedge(2,dual(S(3))),wedge(3,Q(3)),O(1))
+</span></code></pre></div>
+<p>It has rank 8 and gives a four-dimensional complete intersection with
+<code>c1(TX) = H</code>; the matrix uses <code>y3</code>. The <strong>Küchle c5 (paper bundle aliases)</strong>
+preset fills these fields automatically. For the complete output template and
+the degree-by-degree beta list, see the <a href="../audits/theory-alignment-addendum/">theory--software addendum</a>.</p>
 <h3 id="what-to-check-before-computing">What to check before computing<a class="headerlink" href="#what-to-check-before-computing" title="Permanent link">&para;</a></h3>
 <ol>
 <li>Confirm that every component uses the same algebra and kept nodes.</li>

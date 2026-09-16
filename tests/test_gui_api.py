@@ -35,13 +35,74 @@ def test_gui_describes_invalid_variety_inputs(params, fragment):
     assert fragment in job['error']
 
 
-def test_gui_reports_beta_length_and_preserves_empty_insertion_contract():
-    job = execute('gw', algebra='A2', keep='1', K='', beta='1', classes='pt', eval_y='', workers='0')
-    assert job['state'] == 'error'
-    assert 'beta needs exactly 2 entries' in job['error']
+def test_gui_accepts_paper_beta_and_rejects_malformed_ambient_beta():
+    # A paper-coordinate beta has one entry for each kept root.  The API
+    # reports the canonical ambient vector after embedding it at that node.
+    job = execute('gw', algebra='A2', keep='1', K='', beta='1',
+                  classes='pt|pt', eval_y='', workers='0')
+    assert job['state'] == 'done', job.get('error')
+    assert job['result']['value'] == '1'
+    assert job['result']['beta_input'] == [1]
+    assert job['result']['beta'] == [1, 0]
 
-    # Empty insertions are valid for degree-zero-point counts (for example,
-    # the documented cubic-surface and quintic-line examples).
+    # A vector of the wrong length is rejected with the two accepted shapes.
+    job = execute('gw', algebra='A2', keep='1', K='', beta='1,0,0',
+                  classes='pt|pt', eval_y='', workers='0')
+    assert job['state'] == 'error'
+    assert 'either 1 entries' in job['error']
+
+
+def test_gui_accepts_paper_bundle_aliases_and_nested_operations():
+    X = FlagVariety('A4', [2])  # Gr(2,5), so S(2), Q(2), and O(1) are valid.
+    from gwflags.cli import parse_k as cli_parse_k
+    for spec, rank in [('O(1)', 1), ('S(2)', 2), ('Q(2)', 3)]:
+        for parser in (parse_k, cli_parse_k):
+            K = parser(spec, X)
+            assert K.X is X
+            assert K.rank == rank
+
+    # The Küchle c5 expression from Appendix C can be pasted unchanged.
+    X5 = FlagVariety('A6', [3])
+    K5 = parse_k(
+        'osum(wedge(2,dual(S(3))),wedge(3,Q(3)),O(1))', X5)
+    assert K5.X is X5 and K5.rank == 8 and K5.c1_coordinates() == [6]
+
+    job = execute(
+        'info', algebra='A6', keep='3',
+        K='osum(wedge(2,dual(S(3))),wedge(3,Q(3)),O(1))',
+        beta='', classes='', eval_y='', workers='0')
+    assert job['state'] == 'done', job.get('error')
+    assert job['result']['dim'] == 4
+    assert job['result']['c1'] == [0, 0, 1, 0, 0, 0]
+
+
+def test_gui_and_cli_require_reduced_minimal_words():
+    X = FlagVariety('A3', [2])
+    with pytest.raises(ValueError, match='reduced and minimal'):
+        parse_classes('1 2 3', X)
+    with pytest.raises(ValueError, match='reduced and minimal'):
+        parse_classes('1 1', X)
+
+    from gwflags.cli import parse_classes as cli_parse_classes
+    with pytest.raises(ValueError, match='reduced and minimal'):
+        cli_parse_classes('1 2 3', X)
+    with pytest.raises(ValueError, match='reduced and minimal'):
+        cli_parse_classes('1 1', X)
+
+    # A valid reduced representative remains accepted by both parsers.
+    assert parse_classes('2 1 3 2|1 3 2|pt', X)[0]
+    assert len(cli_parse_classes('2 1 3 2|1 3 2|pt', X)) == 3
+
+
+def test_all_gui_presets_have_parseable_inputs():
+    from gwflags.gui import PRESETS
+    for label, algebra, keep, K, action, beta, classes, eval_y, expected in PRESETS:
+        X = FlagVariety(algebra, [int(v) for v in keep.split(',')])
+        parsed = parse_k(K, X)
+        if classes:
+            parse_classes(classes, X)
+        if parsed and hasattr(parsed, 'X'):
+            assert parsed.X is X
 
 
 def test_gui_bundle_expression_rejects_attribute_access():

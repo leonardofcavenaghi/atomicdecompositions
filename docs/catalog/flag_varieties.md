@@ -2,6 +2,8 @@
 
 This section contains complete intersections inside this geometric family, systematically organized by dimension and Fano index.
 
+For the paper-coordinate beta convention and copyable browser/CLI syntax, see [How to Use](../how-to-use.md) and the [theory--software addendum](../audits/theory-alignment-addendum.md).
+
 ## Reproduce an entry in the software
 
 The full flag card is `A2` with kept roots `1,2` and an empty Bundle K field.

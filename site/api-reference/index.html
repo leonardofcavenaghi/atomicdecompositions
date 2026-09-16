@@ -772,6 +772,8 @@
       
         
       
+        
+      
     
     
     
@@ -918,6 +920,34 @@
     
   
     Mathematics and Software Audit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../audits/theory-alignment-addendum/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Theory–software addendum
   
 
     
@@ -1249,63 +1279,29 @@
   <a href="#1-root-systems-gwflagsrootsystempy" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Root Systems (gwflags/rootsystem.py)
+        1. Root systems (gwflags/rootsystem.py)
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="1. Root Systems (gwflags/rootsystem.py)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#rootsystemdata" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        RootSystemData
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-virtual-localization-core-gwflagslocalizationpy" class="md-nav__link">
+  <a href="#2-virtual-localization-gwflagslocalizationpy" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Virtual Localization Core (gwflags/localization.py)
+        2. Virtual localization (gwflags/localization.py)
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="2. Virtual Localization Core (gwflags/localization.py)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#gwcalculator" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        GWCalculator
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-complete-intersection-sector-gwflagscintersectionpy" class="md-nav__link">
+  <a href="#3-complete-intersection-twists-gwflagscintersectionpy" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Complete Intersection Sector (gwflags/cintersection.py)
+        3. Complete-intersection twists (gwflags/cintersection.py)
       
     </span>
   </a>
@@ -1316,19 +1312,85 @@
   <a href="#4-main-interface-gwflags__init__py" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Main Interface (gwflags/__init__.py)
+        4. Main interface (gwflags/__init__.py)
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="4. Main Interface (gwflags/__init__.py)">
+    <nav class="md-nav" aria-label="4. Main interface (gwflags/__init__.py)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#flagvariety" class="md-nav__link">
+  <a href="#flagvarietyalgebra-roots_that_stay-backendnone" class="md-nav__link">
     <span class="md-ellipsis">
       
-        FlagVariety
+        FlagVariety(algebra, roots_that_stay, backend=None)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#curve-classes-beta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Curve classes (beta)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gwcoh_classes-beta-knone-progressnone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        gw(coh_classes, beta, K=None, progress=None)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expected_degreebeta-n_classes-knone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        expected_degree(beta, n_classes, K=None)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fano_index_and_betasknone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        fano_index_and_betas(K=None)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#small_quantum_multiplicationknone-betasnone-progressnone-workers0" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        small_quantum_multiplication(K=None, betas=None, progress=None, workers=0)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-useful-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Other useful methods
       
     </span>
   </a>
@@ -1337,6 +1399,28 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-schubert-words-and-interface-syntax" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Schubert words and interface syntax
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-minimal-reproducible-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Minimal reproducible examples
+      
+    </span>
+  </a>
   
 </li>
       
@@ -1453,40 +1537,132 @@
 
 
 <h1 id="gwflags-api-reference">GWFlags API Reference<a class="headerlink" href="#gwflags-api-reference" title="Permanent link">&para;</a></h1>
-<p>This document provides a mathematical and technical overview of the core modules in the <code>gwflags</code> codebase, responsible for Gromov-Witten invariant computations via Graber–Pandharipande virtual localization.</p>
-<h2 id="1-root-systems-gwflagsrootsystempy">1. Root Systems (<code>gwflags/rootsystem.py</code>)<a class="headerlink" href="#1-root-systems-gwflagsrootsystempy" title="Permanent link">&para;</a></h2>
-<p>The <code>rootsystem.py</code> module computes exact Lie-algebra data needed for the equivariant localization pipeline. It supports semisimple products (e.g., <span class="arithmatex">\(A_3 \times A_3\)</span>).</p>
-<h3 id="rootsystemdata"><code>RootSystemData</code><a class="headerlink" href="#rootsystemdata" title="Permanent link">&para;</a></h3>
-<p>A class that encapsulates all Lie-algebra data, computing exactly with rational fractions (<code>fractions.Fraction</code>):
-- <strong>Simple and Positive Roots</strong>: Generates the orthogonal realizations (Bourbaki numbering) and computes positive roots in both the <span class="arithmatex">\(\alpha\)</span>-basis and orthogonal coordinates.
-- <strong>Cartan Matrix &amp; Reflection Matrices</strong>: Computes the Cartan matrix <span class="arithmatex">\(A_{ij} = 2 (\alpha_i, \alpha_j) / (\alpha_j, \alpha_j)\)</span> (note this strictly follows the Humphreys convention) and its inverse (used for fundamental weights), as well as reflection matrices for simple roots.
-- <strong>Coroots</strong>: Calculates the coordinates of coroots <span class="arithmatex">\(\beta^\vee\)</span> in the basis of simple roots (these are fractional for non-simply-laced algebras).</p>
-<h2 id="2-virtual-localization-core-gwflagslocalizationpy">2. Virtual Localization Core (<code>gwflags/localization.py</code>)<a class="headerlink" href="#2-virtual-localization-core-gwflagslocalizationpy" title="Permanent link">&para;</a></h2>
-<p>The localization module translates the <code>V3.nb</code> Mathematica notebook's localization algorithms (such as Billey's formula and the graph sum) into Python.</p>
-<h3 id="gwcalculator"><code>GWCalculator</code><a class="headerlink" href="#gwcalculator" title="Permanent link">&para;</a></h3>
-<p>The main class orchestrating the computation of Gromov-Witten invariants for a given Lie algebra <span class="arithmatex">\(G\)</span> and parabolic subgroup <span class="arithmatex">\(P\)</span>.
-- <strong><code>rfactor(w)</code></strong>: Computes the local Euler factor <span class="arithmatex">\(R(w) = \prod_{\beta \in R^+ \setminus R^+_P} (-x_{w.\beta})\)</span>.
-- <strong><code>billey(schubert, vertex)</code></strong>: Computes the restriction of the equivariant Schubert class <span class="arithmatex">\(\sigma_{\text{schubert}}\)</span> to a fixed point <code>vertex</code> using Billey's formula.
-- <strong><code>omega_lie(w, root_idx, d)</code></strong>: Computes the edge factor <span class="arithmatex">\(h\)</span>-function of an edge leaving vertex <span class="arithmatex">\(w\)</span> with a specific root and degree.
-- <strong><code>kappa_gamma(dt)</code> &amp; <code>i_vertex(dt, v)</code></strong>: Compute the edge/vertex weights of a given decorated tree.
-- <strong><code>gw_invariant(coh_classes, beta)</code></strong>: Computes the final equivariant localization sum by summing over all valid decorated trees.</p>
-<h2 id="3-complete-intersection-sector-gwflagscintersectionpy">3. Complete Intersection Sector (<code>gwflags/cintersection.py</code>)<a class="headerlink" href="#3-complete-intersection-sector-gwflagscintersectionpy" title="Permanent link">&para;</a></h2>
-<p>This module implements localization twisted by the Euler class of a bundle <span class="arithmatex">\(E\)</span>, representing the complete-intersection sector. </p>
+<p><code>gwflags</code> translates the decorated-tree formulas in the supplied paper into
+exact Python/Sage computations. The default numerical path evaluates the
+localization sum at two rational torus points; the symbolic path remains
+available through <code>gw_raw</code>.</p>
+<h2 id="1-root-systems-gwflagsrootsystempy">1. Root systems (<code>gwflags/rootsystem.py</code>)<a class="headerlink" href="#1-root-systems-gwflagsrootsystempy" title="Permanent link">&para;</a></h2>
+<p><code>RootSystemData</code> stores Bourbaki-numbered simple and positive roots, Cartan and
+reflection matrices, coroots, and fundamental weights. All root and weight
+arithmetic is exact (<code>fractions.Fraction</code>) and semisimple products such as
+<code>A2xA2</code> are supported.</p>
+<h2 id="2-virtual-localization-gwflagslocalizationpy">2. Virtual localization (<code>gwflags/localization.py</code>)<a class="headerlink" href="#2-virtual-localization-gwflagslocalizationpy" title="Permanent link">&para;</a></h2>
+<p><code>GWCalculator</code> implements Graber--Pandharipande genus-zero virtual
+localization on decorated trees:</p>
 <ul>
-<li><strong><code>euler_complete_intersection(gw, K, w)</code></strong>: Computes the Euler class <span class="arithmatex">\(e(E)\)</span> at the fixed point <span class="arithmatex">\(w\)</span>.</li>
-<li><strong><code>h_complete_intersection(gw, K, w, root_idx, d)</code></strong>: Computes the edge factor <span class="arithmatex">\(e(H^0(\mathbb{P}^1, f^*E)) (the convex twisting contribution on an edge)\)</span> for an edge leaving <span class="arithmatex">\(w\)</span>. Concave summands (where the splitting degree <span class="arithmatex">\(b &lt; 0\)</span>) are rejected, as the twisted genus-0 theory requires curve-wise global generation.</li>
-<li><strong><code>gw_complete_intersection(gw, coh_classes, beta, K)</code></strong>: Executes the twisted localization sum by injecting the appropriate multiplicative twists into <code>GWCalculator.gw_invariant</code>.</li>
+<li><code>rfactor(w)</code> evaluates the fixed-point Euler factor;</li>
+<li><code>billey(schubert, vertex)</code> evaluates a Schubert restriction by Billey's
+  formula;</li>
+<li><code>omega_lie(w, root_idx, d)</code> evaluates the invariant-curve edge factor;</li>
+<li><code>kappa_gamma(dt)</code> and <code>i_vertex(dt, v)</code> evaluate tree edge/vertex factors;</li>
+<li><code>gw_invariant(coh_classes, beta)</code> sums all valid decorated trees.</li>
 </ul>
-<h2 id="4-main-interface-gwflags__init__py">4. Main Interface (<code>gwflags/__init__.py</code>)<a class="headerlink" href="#4-main-interface-gwflags__init__py" title="Permanent link">&para;</a></h2>
-<p>The main entrypoint for the library is the <code>FlagVariety</code> class, which wraps the underlying Lie algebra structures and localization calculators into a unified, high-level interface.</p>
-<h3 id="flagvariety"><code>FlagVariety</code><a class="headerlink" href="#flagvariety" title="Permanent link">&para;</a></h3>
-<p>Represents a specific complex flag variety <span class="arithmatex">\(G/P\)</span> or a complete intersection inside it.</p>
+<p>The low-level calculator uses an ambient vector indexed by all simple roots.
+The public <code>FlagVariety</code> methods normalize the paper's kept-root coordinates
+before calling it.</p>
+<h2 id="3-complete-intersection-twists-gwflagscintersectionpy">3. Complete-intersection twists (<code>gwflags/cintersection.py</code>)<a class="headerlink" href="#3-complete-intersection-twists-gwflagscintersectionpy" title="Permanent link">&para;</a></h2>
+<p>A homogeneous bundle is represented by its multiset of torus weights. The
+module implements the Euler-twisted factors from Theorem 3.28:</p>
 <ul>
-<li><strong><code>__init__(self, algebra, roots_that_stay, backend=None)</code></strong>: Initializes the geometry. <code>algebra</code> is the Cartan type (e.g. <code>"A4"</code>), and <code>roots_that_stay</code> defines the parabolic subgroup <span class="arithmatex">\(P\)</span> by specifying which nodes of the Dynkin diagram are kept (1-indexed).</li>
-<li><strong><code>gw(self, coh_classes, beta, K=None)</code></strong>: Computes the Gromov-Witten invariant <span class="arithmatex">\(\langle \sigma_{u_1}, \dots, \sigma_{u_k} \rangle_{0, k, \beta}\)</span> exactly as a rational fraction. If a vector bundle <code>K</code> is provided, computes the twisted invariant for the complete intersection.</li>
-<li><strong><code>fano_index_and_betas(self, K=None)</code></strong>: Computes the Fano index <span class="arithmatex">\(I_X\)</span> of the geometry (or complete intersection) and returns a list of curve degrees <span class="arithmatex">\(\beta\)</span> required for the small quantum multiplication matrix.</li>
-<li><strong><code>small_quantum_multiplication(self, K=None)</code></strong>: Computes the full <span class="arithmatex">\(c_1(TX) \star (-)\)</span> small quantum multiplication matrix projected onto the flag-ambient basis.</li>
+<li><code>euler_complete_intersection(gw, K, w)</code> gives the fixed-point Euler class;</li>
+<li><code>h_complete_intersection(gw, K, w, root_idx, d)</code> gives the convex edge
+  contribution;</li>
+<li><code>gw_complete_intersection(gw, coh_classes, beta, K)</code> performs the twisted
+  localization sum.</li>
 </ul>
+<p>Every invariant-curve splitting degree must be nonnegative. This is the
+curve-wise convexity condition used by the genus-zero twisted theory. A smooth
+zero-locus interpretation additionally needs global generation and smoothness
+of the expected codimension.</p>
+<p>Bundles can be constructed with <code>O(X, a1, ...)</code>, <code>taut_sub(X, node)</code>,
+<code>taut_quot(X, node)</code>, <code>dual</code>, <code>osum</code>, <code>tensor</code>, <code>sym</code>, and <code>wedge</code>. The GUI and
+CLI also accept the paper aliases <code>O(a1,...)</code>, <code>S(node)</code>, and <code>Q(node)</code> with
+<code>X</code> bound to the current flag. A legacy split bundle is a list of rows, for
+example <code>[[1], [2]]</code> for <code>O(1) + O(2)</code> on a one-generator space.</p>
+<h2 id="4-main-interface-gwflags__init__py">4. Main interface (<code>gwflags/__init__.py</code>)<a class="headerlink" href="#4-main-interface-gwflags__init__py" title="Permanent link">&para;</a></h2>
+<h3 id="flagvarietyalgebra-roots_that_stay-backendnone"><code>FlagVariety(algebra, roots_that_stay, backend=None)</code><a class="headerlink" href="#flagvarietyalgebra-roots_that_stay-backendnone" title="Permanent link">&para;</a></h3>
+<p><code>roots_that_stay</code> is a distinct list of 1-based simple-root nodes not in the
+parabolic, in the order used for Picard and paper coordinates. For example,
+<code>FlagVariety("A4", [2])</code> is <code>Gr(2,5)</code>, while <code>[1,3]</code> describes the two-factor
+product convention when the algebra is a product.</p>
+<h3 id="curve-classes-beta">Curve classes (<code>beta</code>)<a class="headerlink" href="#curve-classes-beta" title="Permanent link">&para;</a></h3>
+<p>The paper writes
+[
+  \beta=(b_{i_1},\ldots,b_{i_\rho}),
+  \qquad (i_1,\ldots,i_\rho)=\texttt{roots_that_stay},
+]
+where the entries are nonnegative integers in the kept simple-coroot basis.
+The public methods accept this compact vector and embed it at the ambient
+Bourbaki nodes. A zero-padded ambient vector of length <code>rank</code> is also accepted,
+but every removed-node entry must be zero. For <code>A3 --keep 2</code>, <code>(1)</code> and
+<code>(0,1,0)</code> therefore denote the same line class. The returned GW result and
+progress messages use the canonical ambient vector.</p>
+<h3 id="gwcoh_classes-beta-knone-progressnone"><code>gw(coh_classes, beta, K=None, progress=None)</code><a class="headerlink" href="#gwcoh_classes-beta-knone-progressnone" title="Permanent link">&para;</a></h3>
+<p>Returns the exact genus-zero invariant
+<span class="arithmatex">\(\langle\sigma_{u_1},\ldots,\sigma_{u_n}\rangle_{0,n,\beta}\)</span>, optionally
+Euler-twisted by <code>K</code>. The dimension axiom is checked before localization; a
+mismatch returns zero. Degree zero uses the classical cup-integral shortcut
+(in particular, the paper's primary potential still keeps its stable
+three-point convention).</p>
+<h3 id="expected_degreebeta-n_classes-knone"><code>expected_degree(beta, n_classes, K=None)</code><a class="headerlink" href="#expected_degreebeta-n_classes-knone" title="Permanent link">&para;</a></h3>
+<p>Returns the codimension sum required by the dimension axiom after normalizing
+<code>beta</code> and accounting for the bundle rank.</p>
+<h3 id="fano_index_and_betasknone"><code>fano_index_and_betas(K=None)</code><a class="headerlink" href="#fano_index_and_betasknone" title="Permanent link">&para;</a></h3>
+<p>Returns <code>(I_X, betas)</code>, where <code>I_X</code> is the gcd of the first-Chern
+coordinates and <code>betas</code> is the finite list needed for the ambient quantum
+matrix. Automatic enumeration is justified for Fano/nef first-Chern data by
+<span class="arithmatex">\(\langle c_1(TX),\beta\rangle\leq\dim X+1\)</span>. A zero-Chern Calabi--Yau case
+returns index zero and only the zero class. If a kept Chern coordinate is
+negative, automatic enumeration raises a <code>ValueError</code>; supply an explicit
+<code>betas</code> list for a deliberately truncated/formal calculation.</p>
+<h3 id="small_quantum_multiplicationknone-betasnone-progressnone-workers0"><code>small_quantum_multiplication(K=None, betas=None, progress=None, workers=0)</code><a class="headerlink" href="#small_quantum_multiplicationknone-betasnone-progressnone-workers0" title="Permanent link">&para;</a></h3>
+<p>Returns <code>(M, grading, basis_indices)</code> for multiplication by <code>c1(TX)</code> on the
+flag-ambient Schubert sector. <code>M</code> is symbolic in <code>y&lt;node&gt;</code>, where <code>&lt;node&gt;</code> is
+the ambient Bourbaki label of a kept root (so kept nodes <code>1,3</code> use <code>y1</code> and
+<code>y3</code>). <code>betas</code> may be supplied in either accepted beta convention. The matrix
+is the full small quantum-cohomology operator only when the relevant homology
+and ambient-completeness hypotheses hold; otherwise it is the flag-ambient
+block described in Definition 4.6. <code>workers=N</code> distributes independent
+per-beta blocks over forked processes.</p>
+<h3 id="other-useful-methods">Other useful methods<a class="headerlink" href="#other-useful-methods" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>classes</code>, <code>class_words()</code>, <code>schubert(word)</code>, and <code>pt</code> expose the minimal
+  Schubert representatives;</li>
+<li><code>gw_raw(...)</code> returns the unspecialized symbolic localization sum;</li>
+<li><code>eigenvalues(M, at_one=True)</code> computes the spectrum after setting all
+  Novikov variables to one.</li>
+</ul>
+<h2 id="5-schubert-words-and-interface-syntax">5. Schubert words and interface syntax<a class="headerlink" href="#5-schubert-words-and-interface-syntax" title="Permanent link">&para;</a></h2>
+<p><code>FlagVariety.schubert(word)</code> projects an arbitrary Weyl word to its minimal
+coset representative for low-level exploratory use. The CLI and browser form
+use the safer published contract: each insertion word must be reduced and
+minimal for the chosen parabolic. Run <code>info</code>/<strong>Space Info</strong>, then copy one of
+the printed words (or use the <strong>Add</strong> button). Separate insertions with <code>|</code>;
+<code>pt</code>, <code>id</code>, and <code>e</code> are accepted shortcuts.</p>
+<p>For the compact GUI/CLI bundle field, use <code>3</code> or <code>1,1;2,2</code> for line-bundle
+rows; Python list notation such as <code>[[3]]</code> belongs to the Python API. In a
+symbolic matrix, variables are named by ambient nodes, while beta input is in
+kept-root order unless zero-padded.</p>
+<h2 id="6-minimal-reproducible-examples">6. Minimal reproducible examples<a class="headerlink" href="#6-minimal-reproducible-examples" title="Permanent link">&para;</a></h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">gwflags</span><span class="w"> </span><span class="kn">import</span> <span class="n">FlagVariety</span><span class="p">,</span> <span class="n">grassmannian</span><span class="p">,</span> <span class="n">projective_space</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">gwflags.bundles</span><span class="w"> </span><span class="kn">import</span> <span class="n">O</span><span class="p">,</span> <span class="n">taut_quot</span><span class="p">,</span> <span class="n">dual</span><span class="p">,</span> <span class="n">taut_sub</span><span class="p">,</span> <span class="n">osum</span><span class="p">,</span> <span class="n">wedge</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">P2</span> <span class="o">=</span> <span class="n">projective_space</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="k">assert</span> <span class="n">P2</span><span class="o">.</span><span class="n">gw</span><span class="p">([</span><span class="n">P2</span><span class="o">.</span><span class="n">pt</span><span class="p">,</span> <span class="n">P2</span><span class="o">.</span><span class="n">pt</span><span class="p">],</span> <span class="n">beta</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,))</span> <span class="o">==</span> <span class="mi">1</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="k">assert</span> <span class="n">P2</span><span class="o">.</span><span class="n">gw</span><span class="p">([</span><span class="n">P2</span><span class="o">.</span><span class="n">pt</span><span class="p">,</span> <span class="n">P2</span><span class="o">.</span><span class="n">pt</span><span class="p">],</span> <span class="n">beta</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span> <span class="o">==</span> <span class="mi">1</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="n">G</span> <span class="o">=</span> <span class="n">grassmannian</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="n">s1</span><span class="p">,</span> <span class="n">s21</span><span class="p">,</span> <span class="n">pt</span> <span class="o">=</span> <span class="n">G</span><span class="o">.</span><span class="n">schubert</span><span class="p">((</span><span class="mi">2</span><span class="p">,)),</span> <span class="n">G</span><span class="o">.</span><span class="n">schubert</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">)),</span> <span class="n">G</span><span class="o">.</span><span class="n">pt</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="k">assert</span> <span class="n">G</span><span class="o">.</span><span class="n">gw</span><span class="p">([</span><span class="n">s1</span><span class="p">,</span> <span class="n">s21</span><span class="p">,</span> <span class="n">pt</span><span class="p">],</span> <span class="n">beta</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,))</span> <span class="o">==</span> <span class="mi">1</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="n">Q</span> <span class="o">=</span> <span class="n">taut_quot</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="n">K</span> <span class="o">=</span> <span class="n">osum</span><span class="p">(</span><span class="n">Q</span><span class="p">,</span> <span class="n">O</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="n">M</span><span class="p">,</span> <span class="n">grading</span><span class="p">,</span> <span class="n">basis</span> <span class="o">=</span> <span class="n">G</span><span class="o">.</span><span class="n">small_quantum_multiplication</span><span class="p">(</span><span class="n">K</span><span class="o">=</span><span class="n">K</span><span class="p">)</span>
+</span></code></pre></div>
+<p>The paper's Küchle (c5) model can be entered as
+<code>osum(wedge(2,dual(S(3))),wedge(3,Q(3)),O(1))</code> on <code>A6</code>, kept root <code>3</code>.
+The full input/output template and copyable TeX are in the
+<a href="../audits/theory-alignment-addendum/">theory-alignment addendum</a>.</p>
 
 
 

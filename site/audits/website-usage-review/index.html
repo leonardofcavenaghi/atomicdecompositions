@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#website-usage-review-15-september-2026" class="md-skip">
+        <a href="#website-usage-review-16-september-2026" class="md-skip">
           Skip to content
         </a>
       
@@ -774,6 +774,8 @@
       
         
       
+        
+      
     
     
     
@@ -939,10 +941,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#documentation-changes" class="md-nav__link">
+  <a href="#documentation-and-rendering" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Documentation changes
+        Documentation and rendering
       
     </span>
   </a>
@@ -1012,6 +1014,34 @@
     
   
     Mathematics and Software Audit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../theory-alignment-addendum/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Theory–software addendum
   
 
     
@@ -1401,10 +1431,10 @@
   
 
 
-<h1 id="website-usage-review-15-september-2026">Website usage review — 15 September 2026<a class="headerlink" href="#website-usage-review-15-september-2026" title="Permanent link">&para;</a></h1>
-<p>This review records the website-facing checks performed during the interface
-and documentation update. It is deliberately kept beside the source so that
-future interface changes can be checked against the same contract.</p>
+<h1 id="website-usage-review-16-september-2026">Website usage review — 16 September 2026<a class="headerlink" href="#website-usage-review-16-september-2026" title="Permanent link">&para;</a></h1>
+<p>This review records the browser-facing input contract and the checks that keep
+it aligned with the Python/CLI interfaces and the supplied paper. The generated
+site is rebuilt from <code>docs/</code>; there is no separate hand-edited website copy.</p>
 <h2 id="input-contract-checked">Input contract checked<a class="headerlink" href="#input-contract-checked" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -1418,22 +1448,27 @@ future interface changes can be checked against the same contract.</p>
 <tr>
 <td>Algebra</td>
 <td><code>A3</code>, <code>A3xA3</code>, <code>G2</code></td>
-<td>Passed through <code>FlagVariety</code></td>
+<td>Validated by <code>FlagVariety</code></td>
 </tr>
 <tr>
 <td>Kept roots</td>
 <td>comma-separated 1-based integers, e.g. <code>1,3</code></td>
-<td>Passed through <code>FlagVariety</code></td>
+<td>Validated in Bourbaki order</td>
 </tr>
 <tr>
 <td>Compact line bundles</td>
 <td><code>3</code>, <code>1,1;2,2</code></td>
-<td>Parsed as rows of integer multidegrees</td>
+<td>Parsed as one row per summand</td>
 </tr>
 <tr>
-<td>Homogeneous bundles</td>
-<td><code>taut_quot(X,2)</code>, <code>taut_sub(X,2)</code></td>
-<td>Restricted constructor parser</td>
+<td>Paper bundle aliases</td>
+<td><code>O(1)</code>, <code>S(2)</code>, <code>Q(2)</code> and nested <code>osum</code>, <code>tensor</code>, <code>sym</code>, <code>wedge</code></td>
+<td>Bound to the current variety by a restricted AST parser</td>
+</tr>
+<tr>
+<td>Explicit bundle constructors</td>
+<td><code>taut_quot(X,2)</code>, <code>dual(taut_sub(X,2))</code></td>
+<td>Same-variety and constructor checks</td>
 </tr>
 <tr>
 <td>Empty K</td>
@@ -1442,47 +1477,57 @@ future interface changes can be checked against the same contract.</p>
 </tr>
 <tr>
 <td>GW insertions</td>
-<td><code>pt</code>, <code>id</code>, or space-separated reduced words joined with <code>\|</code></td>
-<td>Empty input remains <code>[]</code></td>
+<td><code>pt</code>, <code>id</code>, or space-separated reduced minimal words joined with <code>\|</code></td>
+<td><code>Space Info</code> and <strong>Add</strong> buttons provide valid words</td>
 </tr>
 <tr>
 <td>Curve class</td>
-<td>comma-separated integers, e.g. <code>1,0,0</code></td>
-<td>One coordinate per ambient simple root</td>
+<td>one integer per kept root in the paper order, or a zero-padded ambient vector</td>
+<td>Removed-root entries are rejected; output is canonical ambient order</td>
+</tr>
+<tr>
+<td>Novikov assignments</td>
+<td><code>y1=1,y3=1</code></td>
+<td>Names use ambient node labels</td>
 </tr>
 </tbody>
 </table>
-<p>The website deliberately does not accept Mathematica/Python list notation
-such as <code>[[3]]</code>. Python code uses the separate API form <code>K=[[3]]</code>.</p>
+<p>The website deliberately does not accept Mathematica/Python list notation such
+as <code>[[3]]</code>. Python code uses the separate API form <code>K=[[3]]</code>.</p>
 <h2 id="examples-checked">Examples checked<a class="headerlink" href="#examples-checked" title="Permanent link">&para;</a></h2>
 <ul>
-<li><code>A3</code>, <code>keep=1</code>, <code>K=3</code>, <code>beta=1,0,0</code>, empty insertions: cubic surface,
-  invariant <code>27</code>.</li>
-<li><code>A4</code>, <code>keep=1</code>, <code>K=5</code>, <code>beta=1,0,0,0</code>, empty insertions: quintic
-  threefold, invariant <code>2875</code>.</li>
-<li><code>A3</code>, <code>keep=2</code>, no <code>K</code>, <code>beta=0,1,0</code>, insertions
-  <code>2 1 3 2|1 2|3 2</code>: <code>Gr(2,4)</code> invariant <code>1</code>.</li>
-<li><code>A4</code>, <code>keep=2</code>, <code>K=taut_quot(X,2)</code>: quotient bundle expression parses as a
-  <code>HomogeneousBundle</code>.</li>
-<li>Empty insertion syntax returns <code>([], [])</code>; it does not insert the identity.</li>
+<li><code>A2</code>, <code>keep=1</code>, beta <code>1</code>, <code>pt|pt</code>: one line through two points, value <code>1</code>;
+  the equivalent ambient beta <code>1,0</code> gives the same result.</li>
+<li><code>A3</code>, <code>keep=2</code>, beta <code>1</code> or <code>0,1,0</code>, insertions
+  <code>2 1 3 2|1 3 2|pt</code>: the <code>Gr(2,4)</code> benchmark gives <code>1</code>.</li>
+<li><code>A3</code>, <code>keep=1</code>, <code>K=3</code>, beta <code>1</code>, empty insertions: cubic-surface line count
+  <code>27</code>.</li>
+<li><code>A4</code>, <code>keep=1</code>, <code>K=5</code>, beta <code>1</code>, empty insertions: quintic line count
+  <code>2875</code>.</li>
+<li><code>A4</code>, <code>keep=2</code>, <code>K=Q(2)</code> or <code>taut_quot(X,2)</code>: quotient-bundle expression
+  parses and reports rank <code>3</code>.</li>
+<li><code>A6</code>, <code>keep=3</code>,
+  <code>osum(wedge(2,dual(S(3))),wedge(3,Q(3)),O(1))</code>: the paper's Küchle c5
+  bundle expression parses with rank <code>8</code> and first Chern coordinate <code>6</code>.</li>
+<li>Invalid nonreduced/nonminimal words, removed-root beta entries, nonconvex
+  bundles, attribute access, cross-variety bundles, and malformed Novikov
+  assignments produce readable errors.</li>
 </ul>
-<h2 id="documentation-changes">Documentation changes<a class="headerlink" href="#documentation-changes" title="Permanent link">&para;</a></h2>
-<p><code>docs/how-to-use.md</code> now documents the five core inputs, compact versus Python
-bundle syntax, insertion parsing, copyable examples, quotient bundles,
-command-line equivalents, and troubleshooting. The guide describes the
-current local server URL and the actual result panels.</p>
+<h2 id="documentation-and-rendering">Documentation and rendering<a class="headerlink" href="#documentation-and-rendering" title="Permanent link">&para;</a></h2>
+<p><a href="../../how-to-use/"><code>docs/how-to-use.md</code></a> explains beginner and experienced
+installation paths, the five inputs, paper aliases, kept/ambient beta forms,
+copyable examples, bundle combinations, result interpretation, and
+troubleshooting. The <a href="../../api-reference/">API reference</a> gives the exact
+method signatures and mathematical scope. The TeX/PDF paper template is in the
+<a href="../theory-alignment-addendum/">theory-alignment addendum</a>.</p>
 <h2 id="repeatable-checks">Repeatable checks<a class="headerlink" href="#repeatable-checks" title="Permanent link">&para;</a></h2>
 <p>From the repository root:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nv">PYTHONDONTWRITEBYTECODE</span><span class="o">=</span><span class="m">1</span><span class="w"> </span>/home/leonardofcavenaghi/miniconda/bin/python3<span class="w"> </span>-<span class="w"> </span><span class="s">&lt;&lt;'PY'</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="s">from gwflags.gui import parse_k, parse_classes</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="s">from gwflags import FlagVariety</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="s">X = FlagVariety('A4', [2])</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="s">assert parse_k('taut_quot(X,2)', X).rank == 3</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="s">assert parse_classes('', X) == ([], [])</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="s">PY</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>python3<span class="w"> </span>-m<span class="w"> </span>mkdocs<span class="w"> </span>build<span class="w"> </span>--strict<span class="w"> </span>--site-dir<span class="w"> </span>/tmp/gwflags-docs-check
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nv">PYTHONDONTWRITEBYTECODE</span><span class="o">=</span><span class="m">1</span><span class="w"> </span>python3<span class="w"> </span>-m<span class="w"> </span>pytest<span class="w"> </span>tests/test_gui_api.py<span class="w"> </span>-q
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nv">PYTHONDONTWRITEBYTECODE</span><span class="o">=</span><span class="m">1</span><span class="w"> </span>python3<span class="w"> </span>scripts/validate_catalog.py
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>mkdocs<span class="w"> </span>build<span class="w"> </span>--strict<span class="w"> </span>--site-dir<span class="w"> </span>/tmp/gwflags-website-check
 </span></code></pre></div>
-<p>The parser assertions passed and the strict documentation build completed.</p>
+<p>The generated page contains the same field help as <code>gwflags.gui.PAGE</code>; the
+catalog validator and strict build must pass before publishing.</p>
 
 
 

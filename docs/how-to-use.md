@@ -36,13 +36,23 @@ The preset fills every dependent field, so an old β or insertion cannot acciden
 - **Kept simple roots**: comma-separated Bourbaki node numbers, for example `1` for projective space or `2` for `Gr(2,4)` in type `A3`.
 - **Bundle K** (optional): leave blank for `G/P`; enter `3` for `O(3)`, or
   `1,1;2,2` for two line-bundle summands when the variety has two kept roots
-  (use `1;2` on a Picard-rank-one variety). You can also enter
-  `taut_quot(X, 2)` for a quotient bundle. The GUI uses compact text: Python
-  API notation such as `[[3]]` is not valid in this field.
-- **Curve class β**: one nonnegative integer per ambient simple root, such as `1,0,0` for lines on the cubic surface.
-- **Insertions**: `pt`, `id`, or space-separated reduced Weyl words separated by `|`. You can click **Add** beside a basis word in Space Info instead of typing it.
+  (use `1;2` on a Picard-rank-one variety). Semicolons separate summands and
+  commas separate entries within one multidegree. You can also enter
+  `taut_quot(X, 2)` for a quotient bundle. The paper aliases `O(1)`, `S(2)`,
+  and `Q(2)` are also accepted and are bound to the current variety; use the
+  number of entries required by the kept roots (for example `O(1,0)` on a
+  two-generator flag). The GUI uses compact text: Python API notation such as
+  `[[3]]` is not valid in this field.
+- **Curve class β**: enter one nonnegative integer per kept root, in the order
+  shown in **Kept simple roots**, as in the paper. A zero-padded vector with one
+  entry per ambient root is also accepted; entries at removed roots must be zero.
+- **Insertions**: `pt`, `id`, or reduced minimal Weyl words separated by `|`.
+  Copy words printed by **Space Info**, or click **Add** beside a basis word.
 
-`Evaluate y` is optional and applies to quantum matrices only. Leave it blank for symbolic Novikov variables, or enter assignments such as `y1=1,y2=1`.
+`Evaluate y` is optional and applies to quantum matrices only. Variables use
+ambient node labels (`y1`, `y3`, ...), so a variety with kept roots `1,3` uses
+`y1` and `y3`. Leave it blank for symbolic Novikov variables, or enter
+assignments such as `y1=1,y3=1`.
 
 ## Copyable examples
 
@@ -69,9 +79,9 @@ untwisted genus-0 theory reject that direct computation; use
 | `P²` matrix | `A2` | `1` | *(blank)* | matrix action |
 | evaluated `P²` matrix | `A2` | `1` | *(blank)* | matrix action with `Evaluate y: y1=2` |
 | product flag info | `A1xA1` | `1,2` | *(blank)* | info action |
-| 27 lines on a cubic surface | `A3` | `1` | `3` | β `1,0,0`, insertions blank |
-| 2875 lines on a quintic | `A4` | `1` | `5` | β `1,0,0,0`, insertions blank |
-| `Gr(2,4)` invariant | `A3` | `2` | *(blank)* | β `0,1,0`; `2 1 3 2|1 2|3 2` |
+| 27 lines on a cubic surface | `A3` | `1` | `3` | β `1` (or `1,0,0`), insertions blank |
+| 2875 lines on a quintic | `A4` | `1` | `5` | β `1` (or `1,0,0,0`), insertions blank |
+| `Gr(2,4)` invariant | `A3` | `2` | *(blank)* | β `1` (or `0,1,0`); `2 1 3 2|1 2|3 2` |
 | quotient bundle | `A4` | `2` | `taut_quot(X, 2)` | describe or matrix action |
 | convex dual subbundle | `A4` | `2` | `dual(taut_sub(X, 2))` | describe action |
 
@@ -81,16 +91,36 @@ untwisted genus-0 theory reject that direct computation; use
 
 **Quantum matrix** reports the matrix, grading, characteristic polynomial, and numerical eigenvalues only when all Novikov variables are specialized to one. A custom `Evaluate y` value is reported separately and does not claim to be the `y=1` spectrum.
 
-**GW invariant** reports the insertion list, β, and the computed number.
+**GW invariant** reports the insertion list, the canonical ambient form of β,
+and the computed number. The degree-zero API path is a classical cup-integral
+shortcut; the paper's primary degree-zero GW potential keeps only three-point
+terms and omits unstable cases.
+
+## Mathematical scope and conventions
+
+The localization formulas are the paper's Theorems 3.26 and 3.28. For a
+complete intersection, the software requires curvewise convexity and computes
+the Euler-twisted ambient invariant. A geometric interpretation as a smooth
+zero locus requires the paper's additional hypotheses: global generation and
+smoothness of the expected codimension.
+
+The quantum matrix is the flag-ambient operator from Definition 4.6. It is the
+full small quantum-cohomology operator only when the relevant homology and
+ambient-completeness hypotheses hold. In examples such as Küchle (c5), the
+published matrix is intentionally an ambient block.
 
 ## Advanced bundle syntax
 
-Supported constructors include `taut_quot(X, k)`, `taut_sub(X, k)`, `dual(...)`, `osum(...)`, `tensor(...)`, `sym(...)`, and `wedge(...)`. Use the GUI help text for compact line-bundle rows. Nested lists such as `[[3]]` belong to the Python API only.
+Supported constructors include `O(a,...)`, `S(node)`, `Q(node)`,
+`taut_quot(X, k)`, `taut_sub(X, k)`, `dual(...)`, `osum(...)`, `tensor(...)`,
+`sym(...)`, and `wedge(...)`. The paper aliases omit `X`; the explicit Python
+spellings remain available. Use the GUI help text for compact line-bundle rows.
+Nested lists such as `[[3]]` belong to the Python API only.
 
 ## Troubleshooting
 
 - Check that kept roots are valid, distinct node numbers in the algebra and in the intended order.
-- β must have one entry per ambient simple root.
+- β is normally entered in kept-root order (the paper convention); a full ambient vector is accepted only when all removed-root entries are zero.
 - Insertion words must contain integers separated by spaces; separate multiple insertions with `|`.
 - A catalog entry marked **Catalog only** is not represented by the current flag-variety/complete-intersection input model.
 - If a computation is slow, lower the worker count or start with a preset of lower degree.
@@ -100,7 +130,8 @@ Supported constructors include `taut_quot(X, k)`, `taut_sub(X, k)`, `dual(...)`,
 ```python
 from gwflags import FlagVariety
 X = FlagVariety('A3', [1])
-print(X.gw([], beta=(1, 0, 0), K=[[3]]))  # 27
+print(X.gw([], beta=(1,), K=[[3]]))       # 27 (paper basis)
+print(X.gw([], beta=(1, 0, 0), K=[[3]]))  # same, zero-padded form
 ```
 
 For the CLI, put bundle options before the subcommand:
@@ -119,15 +150,16 @@ or **Describe this space**.
 
 ### 1. Quotient bundle
 
-GUI input:
+GUI input (both spellings are accepted):
 
 ```text
 taut_quot(X, 2)
+Q(2)
 ```
 
 This is the rank-3 tautological quotient bundle. Leave `Evaluate y` blank for
-symbolic variables, or use `y2=1` for specialization. The result summary shows
-`K=taut_quot(X, 2)` and the matrix is computed using the quotient-bundle twist.
+symbolic variables, or use `y2=1` for specialization (the kept node is 2). The result summary records the submitted bundle expression, and the matrix
+is computed using the quotient-bundle twist.
 
 Equivalent Python:
 
@@ -146,8 +178,10 @@ The subbundle itself is generally not convex for the twisted genus-0 theory.
 Use its dual instead:
 
 ```text
-dual(taut_sub(X, 2))
+dual(S(2))
 ```
+
+The explicit equivalent `dual(taut_sub(X, 2))` is also accepted.
 
 Equivalent Python:
 
@@ -166,8 +200,10 @@ Use `osum` to combine summands. This example combines the rank-3 quotient with
 a line bundle `O(1)` on this Picard-rank-one Grassmannian:
 
 ```text
-osum(taut_quot(X, 2), O(X, 1))
+osum(Q(2), O(1))
 ```
+
+The explicit equivalent `osum(taut_quot(X, 2), O(X, 1))` is also accepted.
 
 On `Gr(2,5)` there is one kept node, so `O(X, 1)` takes one degree. A
 two-entry constructor such as `O(X, 1, 1)` belongs on a two-generator product
@@ -223,13 +259,27 @@ Expressions can be nested, provided every component is built on the same
 
 ```text
 osum(
-  tensor(taut_quot(X, 2), O(X, 1)),
-  wedge(2, dual(taut_sub(X, 2)))
+  tensor(Q(2), O(1)),
+  wedge(2, dual(S(2)))
 )
 ```
 
 For long expressions, Python is easier to read and debug. The GUI parser only
 allows the documented constructors and rejects arbitrary Python code.
+
+### 6. Küchle (c5) paper expression
+
+The homogeneous-bundle example from the paper is `Gr(3,7)`, entered as
+`A6` with kept root `3`. Paste this expression in **Bundle K**:
+
+```text
+osum(wedge(2,dual(S(3))),wedge(3,Q(3)),O(1))
+```
+
+It has rank 8 and gives a four-dimensional complete intersection with
+`c1(TX) = H`; the matrix uses `y3`. The **Küchle c5 (paper bundle aliases)**
+preset fills these fields automatically. For the complete output template and
+the degree-by-degree beta list, see the [theory--software addendum](audits/theory-alignment-addendum.md).
 
 ### What to check before computing
 
