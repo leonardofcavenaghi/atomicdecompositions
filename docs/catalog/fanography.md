@@ -165,8 +165,13 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
     - **Dimension:** `3`
     - **Basis Rank:** `4`
     - **Description:** Zero locus of $(\bigwedge^2\mathcal{U}^\vee)^{\oplus 3}$ on $\mathrm{Gr}(3,7)$.
-    - **Realization type:** Homogeneous-bundle zero locus; the input is supported, but the quantum matrix remains pending an independent recomputation.
-    - **Matrix status:** Not published until the homogeneous-bundle matrix has been independently recomputed.
+    - **Realization type:** Homogeneous-bundle zero locus; independently recomputed with `gwflags`.
+    - **Matrix status:** Published after an exact software run and an independent regularized-period check against the smooth-Fano database entry for $V(3,22)$.
+
+    ??? note "Quantum Matrix ($y=1$)"
+        $$
+        \begin{bmatrix}0 & 24 & 90 & 80\\1 & 2 & 20 & 18\\0 & 11/5 & 2 & 24/5\\0 & 0 & 5 & 0\end{bmatrix}
+        $$
 
 
 

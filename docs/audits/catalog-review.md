@@ -10,8 +10,7 @@ This review covers the maintained catalog pages and the Fanography reference pag
 - Added explicit realization metadata to Fanography cards and kept unsupported weighted, double-cover, and blow-up examples catalog-only.
 - Replaced the old `docs/catalog.md` page with a historical pointer, pointing readers to the maintained split catalog.
 - Corrected Fanography 1-5 through 1-9 input metadata, corrected 4-1 row 2 column 9,
-  and marked 1-10's supported bundle input as matrix-pending until an independent
-  recomputation is available.
+  and published the independently recomputed 1-10 homogeneous-bundle matrix.
 
 ## Organization contract
 
