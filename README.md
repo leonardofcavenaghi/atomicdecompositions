@@ -10,11 +10,11 @@ product* (`'A3xA3'` for P³×P³-type flags, `'A1xA1xA4'`, …):
   decorated trees (fixed loci of stable maps), equivariant Schubert classes
   restricted to fixed points via **Billey's formula**;
 - the same for **complete intersections** in G/P (twisted invariants with
-  line bundles and curve-wise-convex homogeneous bundles, including quotient/subbundles,
-  duals, direct sums, tensor, symmetric, and exterior powers);
+  line bundles and curve-wise-convex homogeneous bundles, including quotients and subbundles,
+  duals, direct sums, tensor, symmetric and exterior powers);
 - the **small quantum multiplication matrix `c1(TX)⋆`**, its grading
-  operator, and its **eigenvalues** (Conjecture 𝒪 / Gamma-conjecture
-  asymptotics), plus the **Fano index** and the curve classes to sum over.
+  operator, and its **eigenvalues**, plus the **Fano index** and the curve
+  classes to sum over.
 
 ## How it is fast
 
@@ -57,7 +57,7 @@ remain available via `FlagVariety.gw_raw` / the `.sym` calculator.
 from gwflags import FlagVariety, projective_space, grassmannian, full_flag
 
 X = projective_space(2)               # = FlagVariety('A2', [1])
-X.gw([X.pt, X.pt], beta=(1,))         # 1   — paper beta basis
+X.gw([X.pt, X.pt], beta=(1,))         # 1   — kept-root basis
 X.gw([X.pt, X.pt], beta=(1, 0))       # 1   — equivalent ambient form
 X.gw([X.pt]*5,      beta=(2,))         # 1   — one conic through five points
 
@@ -94,12 +94,12 @@ python3 -m gwflags.cli A3 --keep 1 -K 2 sqm          # quadric in P^3
 
 `--keep` is the notebook's `m` (RootsThatStay): the 1-based simple roots
 **not** in the parabolic — `1` for Pⁿ, `k` for Gr(k, n). A GW `beta` vector
-may be entered in kept-root order (the paper convention) or as a full ambient
+may be entered in kept-root order or as a full ambient
 vector with zeros at removed nodes. Schubert classes in the CLI/browser are
 reduced words for minimal coset representatives (`pt`, `id` accepted); copy
 words from `info`. `-K` rows are the multidegrees of the bundle summands over
 the Picard generators (the notebook's `{{1,2},{1,1}}` becomes
-`"1,2;1,1"`). Bundle expressions also accept the paper aliases `O(...)`,
+`"1,2;1,1"`). Bundle expressions also accept compact aliases `O(...)`,
 `S(node)`, and `Q(node)` in the CLI/browser; Python list notation such as
 `[[3]]` is Python-only.
 
@@ -113,12 +113,13 @@ python3 tests/test_gwflags.py
 
 The browser and CLI deliberately use copyable text. Enter compact line-bundle
 rows such as `3` or `1,1;2,2`; enter homogeneous expressions such as
-`Q(2)` or `osum(Q(2),O(1))`; and use `info`/**Space Info** to obtain valid
+`Q(2)`, `quot(osum(S(2),Q(2)),S(2))`, or `osum(Q(2),O(1))`; and use
+`info`/**Space Info** to obtain valid
 Schubert words. The high-level Python API additionally accepts explicit
 constructors and legacy rows (`K=[[3]]`). Automatic `sqm` curve enumeration
 is finite for Fano/nef first Chern data; for a negative kept Chern coordinate,
 supply an explicit `betas` list. The matrix is the flag-ambient operator unless
-the paper's ambient-completeness hypotheses identify it with full small quantum
+the ambient-completeness hypotheses identify it with full small quantum
 cohomology.
 
 ## Where each notebook function lives
@@ -136,7 +137,7 @@ cohomology.
 
 Conventions: simple roots are numbered as in Bourbaki (for type A this
 matches LieART). Equivariant variables `x_i` correspond to the simple roots
-α_i (a root's polynomial is its expansion in simple roots). A paper beta is
+α_i (a root's polynomial is its expansion in simple roots). A kept-root beta is
 written in `roots_that_stay` order and is embedded at those ambient nodes;
 quantum variables are named `y<ambient node>` (kept nodes `1,3` therefore use
 `y1` and `y3`). All Weyl-group elements are matrices in the orthogonal

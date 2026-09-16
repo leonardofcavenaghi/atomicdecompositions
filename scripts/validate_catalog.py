@@ -78,6 +78,27 @@ def normalize_anchor(title: str) -> str:
     return re.sub(r'[^a-z0-9]+', '', title.lower())
 
 
+def _validate_math_source(path: Path, text: str) -> list[str]:
+    """Check delimiters/environments before Markdown is rendered by MathJax."""
+    errors: list[str] = []
+    if text.count('$$') % 2:
+        errors.append(f'{path.relative_to(ROOT)}: unbalanced $$ display delimiters')
+    stack: list[str] = []
+    for match in re.finditer(r'\\(begin|end)\{([^}]+)\}', text):
+        action, environment = match.groups()
+        if action == 'begin':
+            stack.append(environment)
+        elif not stack or stack[-1] != environment:
+            errors.append(
+                f'{path.relative_to(ROOT)}: unmatched \\end{{{environment}}} '
+                'in catalog math')
+        else:
+            stack.pop()
+    for environment in stack:
+        errors.append(f'{path.relative_to(ROOT)}: unmatched \\begin{{{environment}}} in catalog math')
+    return errors
+
+
 def validate() -> list[str]:
     errors: list[str] = []
     files = sorted(CATALOG.glob('*.md'))
@@ -85,6 +106,7 @@ def validate() -> list[str]:
     anchors: dict[str, list[str]] = {}
     for path in files:
         text = path.read_text(encoding='utf-8')
+        errors.extend(_validate_math_source(path, text))
         for match in ANCHOR_RE.finditer(text):
             anchors.setdefault(match.group(1), []).append(str(path.relative_to(ROOT)))
         all_cards.extend(cards(path))

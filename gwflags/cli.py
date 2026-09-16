@@ -57,34 +57,32 @@ def parse_k(spec, X=None):
     if not spec:
         return []
     if any(c.isalpha() for c in spec):
-        from gwflags.bundles import O, taut_sub, taut_quot, dual, osum, tensor, sym, wedge
+        from gwflags.bundles import O, taut_sub, taut_quot, dual, osum, tensor, sym, wedge, quot, Quot
 
-        # Appendix C of the paper writes bundles without repeating the
-        # ambient variety: O(1), S(3), and Q(3).  The Python API keeps the
-        # explicit X argument, so the interface binds these paper aliases to
-        # the current FlagVariety while retaining O(X, 1) and the explicit
-        # taut_sub/taut_quot spellings for backwards compatibility.
-        def paper_O(*args, **kwargs):
+        # Compact bundle aliases omit the ambient variety.  The Python API
+        # keeps the explicit X argument, so the interface binds aliases to
+        # the current FlagVariety while retaining explicit constructors.
+        def compact_O(*args, **kwargs):
             if args and args[0] is X:
                 return O(*args, **kwargs)
             return O(X, *args, **kwargs)
 
-        def paper_S(*args, **kwargs):
+        def compact_S(*args, **kwargs):
             if args and args[0] is X:
                 args = args[1:]
             return taut_sub(X, *args, **kwargs)
 
-        def paper_Q(*args, **kwargs):
+        def compact_Q(*args, **kwargs):
             if args and args[0] is X:
                 args = args[1:]
             return taut_quot(X, *args, **kwargs)
 
         try:
             tree = ast.parse(spec, mode='eval')
-            allowed = {"X": X, "O": paper_O, "S": paper_S, "Q": paper_Q,
+            allowed = {"X": X, "O": compact_O, "S": compact_S, "Q": compact_Q,
                        "taut_sub": taut_sub, "taut_quot": taut_quot,
                        "dual": dual, "osum": osum, "tensor": tensor,
-                       "sym": sym, "wedge": wedge}
+                       "sym": sym, "wedge": wedge, "quot": quot, "Quot": Quot}
             for node in ast.walk(tree):
                 if isinstance(node, ast.Name) and node.id not in allowed:
                     raise ValueError(f'unknown name {node.id!r}')
@@ -135,7 +133,10 @@ def main(argv=None):
 
     if args.cmd == 'info':
         from .quantum import chern_class_vector, chern_class_ci
-        print(f'{args.algebra}/P, kept roots {keep}: dimension {X.dimension},'
+        bundle_rank = K.rank if hasattr(K, 'rank') else len(K)
+        dimension = X.dimension - bundle_rank
+        suffix = f' (ambient dimension {X.dimension})' if K else ''
+        print(f'{args.algebra}/P, kept roots {keep}: dimension {dimension}{suffix},'
               f' {len(X.classes)} Schubert classes')
         for i, w in enumerate(X.class_words()):
             print(f'  sigma_{i}: word {list(w) or "e"}, degree {len(w)}')

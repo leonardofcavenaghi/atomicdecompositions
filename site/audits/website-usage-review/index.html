@@ -774,8 +774,6 @@
       
         
       
-        
-      
     
     
     
@@ -1014,34 +1012,6 @@
     
   
     Mathematics and Software Audit
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../theory-alignment-addendum/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Theory–software addendum
   
 
     
@@ -1433,7 +1403,7 @@
 
 <h1 id="website-usage-review-16-september-2026">Website usage review — 16 September 2026<a class="headerlink" href="#website-usage-review-16-september-2026" title="Permanent link">&para;</a></h1>
 <p>This review records the browser-facing input contract and the checks that keep
-it aligned with the Python/CLI interfaces and the supplied paper. The generated
+it aligned with the Python/CLI interfaces. The generated
 site is rebuilt from <code>docs/</code>; there is no separate hand-edited website copy.</p>
 <h2 id="input-contract-checked">Input contract checked<a class="headerlink" href="#input-contract-checked" title="Permanent link">&para;</a></h2>
 <table>
@@ -1461,9 +1431,9 @@ site is rebuilt from <code>docs/</code>; there is no separate hand-edited websit
 <td>Parsed as one row per summand</td>
 </tr>
 <tr>
-<td>Paper bundle aliases</td>
-<td><code>O(1)</code>, <code>S(2)</code>, <code>Q(2)</code> and nested <code>osum</code>, <code>tensor</code>, <code>sym</code>, <code>wedge</code></td>
-<td>Bound to the current variety by a restricted AST parser</td>
+<td>Compact bundle aliases</td>
+<td><code>O(1)</code>, <code>S(2)</code>, <code>Q(2)</code> and nested <code>osum</code>, <code>tensor</code>, <code>sym</code>, <code>wedge</code>, <code>quot</code>/<code>Quot</code></td>
+<td>Bound to the current variety by a restricted AST parser; quotient checks weight containment with multiplicity</td>
 </tr>
 <tr>
 <td>Explicit bundle constructors</td>
@@ -1482,7 +1452,7 @@ site is rebuilt from <code>docs/</code>; there is no separate hand-edited websit
 </tr>
 <tr>
 <td>Curve class</td>
-<td>one integer per kept root in the paper order, or a zero-padded ambient vector</td>
+<td>one integer per kept root, or a zero-padded ambient vector</td>
 <td>Removed-root entries are rejected; output is canonical ambient order</td>
 </tr>
 <tr>
@@ -1506,28 +1476,29 @@ as <code>[[3]]</code>. Python code uses the separate API form <code>K=[[3]]</cod
   <code>2875</code>.</li>
 <li><code>A4</code>, <code>keep=2</code>, <code>K=Q(2)</code> or <code>taut_quot(X,2)</code>: quotient-bundle expression
   parses and reports rank <code>3</code>.</li>
-<li><code>A6</code>, <code>keep=3</code>,
-  <code>osum(wedge(2,dual(S(3))),wedge(3,Q(3)),O(1))</code>: the paper's Küchle c5
-  bundle expression parses with rank <code>8</code> and first Chern coordinate <code>6</code>.</li>
 <li>Invalid nonreduced/nonminimal words, removed-root beta entries, nonconvex
   bundles, attribute access, cross-variety bundles, and malformed Novikov
   assignments produce readable errors.</li>
 </ul>
 <h2 id="documentation-and-rendering">Documentation and rendering<a class="headerlink" href="#documentation-and-rendering" title="Permanent link">&para;</a></h2>
 <p><a href="../../how-to-use/"><code>docs/how-to-use.md</code></a> explains beginner and experienced
-installation paths, the five inputs, paper aliases, kept/ambient beta forms,
+installation paths, the five inputs, compact aliases, kept/ambient beta forms,
 copyable examples, bundle combinations, result interpretation, and
 troubleshooting. The <a href="../../api-reference/">API reference</a> gives the exact
-method signatures and mathematical scope. The TeX/PDF paper template is in the
-<a href="../theory-alignment-addendum/">theory-alignment addendum</a>.</p>
+method signatures and mathematical scope.</p>
 <h2 id="repeatable-checks">Repeatable checks<a class="headerlink" href="#repeatable-checks" title="Permanent link">&para;</a></h2>
 <p>From the repository root:</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nv">PYTHONDONTWRITEBYTECODE</span><span class="o">=</span><span class="m">1</span><span class="w"> </span>python3<span class="w"> </span>-m<span class="w"> </span>pytest<span class="w"> </span>tests/test_gui_api.py<span class="w"> </span>-q
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nv">PYTHONDONTWRITEBYTECODE</span><span class="o">=</span><span class="m">1</span><span class="w"> </span>python3<span class="w"> </span>scripts/validate_catalog.py
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>mkdocs<span class="w"> </span>build<span class="w"> </span>--strict<span class="w"> </span>--site-dir<span class="w"> </span>/tmp/gwflags-website-check
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>python3<span class="w"> </span>scripts/validate_catalog_tex.py
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>mkdocs<span class="w"> </span>build<span class="w"> </span>--strict<span class="w"> </span>--site-dir<span class="w"> </span>/tmp/gwflags-website-check
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>node<span class="w"> </span>scripts/test_catalog_navigation.js
 </span></code></pre></div>
-<p>The generated page contains the same field help as <code>gwflags.gui.PAGE</code>; the
-catalog validator and strict build must pass before publishing.</p>
+<p>The Node check requires the dependencies in <code>scripts/package.json</code> (run
+<code>npm install</code> in <code>scripts/</code>). The generated page contains the same field help as
+<code>gwflags.gui.PAGE</code>; catalog hash links open their collapsible card, and MathJax is re-run after Material
+instant navigation so matrices and Hodge diamonds do not require a manual
+refresh. The catalog validator and strict build must pass before publishing.</p>
 
 
 

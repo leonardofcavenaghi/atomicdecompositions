@@ -39,4 +39,4 @@ While the automation, scripting, web development, and data extraction were execu
 
 ---
 
-While serving as a companion to the paper **"On the Atomic Decomposition of Complete Intersections in Flag Varieties,"** this project and software are independent tools designed to function as an expanding catalog and computational resource for algebraic and enumerative geometry.
+This project and software are independent tools designed to function as an expanding catalog and computational resource for algebraic and enumerative geometry.

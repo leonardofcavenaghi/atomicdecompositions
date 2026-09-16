@@ -19,7 +19,8 @@ Z(Gr(2,4), Q) = P^2, Z(Gr(2,5), Q) = P^3, Z(Gr(2,5), Sym^2 S*) = OG(2,5)).
 
 Constructors: O(X, *a), taut_sub(X, node), taut_quot(X, node), dual(E),
 osum(E1, E2, ...), tensor(E1, E2) (also box products across factors),
-sym(p, E), wedge(p, E).
+sym(p, E), wedge(p, E), and quot(E, F) (the quotient E/F when F is a
+subbundle of E).
 """
 
 from fractions import Fraction
@@ -77,25 +78,26 @@ class HomogeneousBundle:
             out.append(int(v))
         return out
 
-    def reduced_weights(self):
-        """Canonical form of the weight multiset: each weight projected
-        onto the root span (the torus-trivial W-invariant complement —
-        e.g. the trace direction in type A — carries no character data),
-        sorted.  Two presentations of the same bundle agree here."""
+    def _reduced_weight(self, weight):
+        """Project one weight onto the root span used by the evaluator."""
         rs = self.X.rs
         n = rs.rank
         gram = tuple(tuple(dot(rs.simple_roots_ort[i], rs.simple_roots_ort[j])
                            for j in range(n)) for i in range(n))
         ginv = mat_inverse(gram)
-        out = []
-        for w in self.weights:
-            b = [dot(w, rs.simple_roots_ort[i]) for i in range(n)]
-            c = [sum(ginv[i][j] * b[j] for j in range(n)) for i in range(n)]
-            v = tuple(Fraction(0) for _ in range(rs.dim_ort))
-            for ci, a in zip(c, rs.simple_roots_ort):
-                v = vadd(v, vscale(ci, a))
-            out.append(tuple(Fraction(x) for x in v))
-        return tuple(sorted(out))
+        b = [dot(weight, rs.simple_roots_ort[i]) for i in range(n)]
+        c = [sum(ginv[i][j] * b[j] for j in range(n)) for i in range(n)]
+        v = tuple(Fraction(0) for _ in range(rs.dim_ort))
+        for ci, a in zip(c, rs.simple_roots_ort):
+            v = vadd(v, vscale(ci, a))
+        return tuple(Fraction(x) for x in v)
+
+    def reduced_weights(self):
+        """Canonical form of the weight multiset: each weight projected
+        onto the root span (the torus-trivial W-invariant complement —
+        e.g. the trace direction in type A — carries no character data),
+        sorted.  Two presentations of the same bundle agree here."""
+        return tuple(sorted(self._reduced_weight(w) for w in self.weights))
 
     def is_curvewise_convex(self):
         """True iff f*E is globally generated on every invariant curve
@@ -225,6 +227,52 @@ def wedge(p, E, name=None):
             v = vadd(v, E.weights[i])
         ws.append(v)
     return HomogeneousBundle(E.X, ws, name or f'L^{p}{E.name}')
+
+
+def quot(E, F, name=None):
+    '''Return the homogeneous quotient bundle E/F.
+
+    F is accepted precisely when its fiber-weight multiset is contained
+    in that of E (with multiplicity). The comparison uses the canonical
+    root-span projection used by reduced_weights, so equivalent
+    presentations that differ only by the torus-trivial type-A trace
+    direction are treated as the same character. Weyl transport preserves
+    this containment, hence the check holds at every fixed point.
+    '''
+    if not isinstance(E, HomogeneousBundle) or not isinstance(F, HomogeneousBundle):
+        raise ValueError('quot requires two HomogeneousBundle instances')
+    if E.X is not F.X:
+        raise ValueError('quotient bundles must belong to the same FlagVariety')
+
+    # Keep the original E weights for the quotient, but consume matching
+    # canonical characters one at a time so multiplicities are respected.
+    e_keys = list(E.reduced_weights())
+    f_keys = list(F.reduced_weights())
+    for key in f_keys:
+        try:
+            e_keys.remove(key)
+        except ValueError as exc:
+            raise ValueError(
+                'F must be a subbundle of E: every fiber weight of F must '
+                'occur in E with at least the same multiplicity') from exc
+
+    # Preserve E's raw representatives for all downstream formulas while
+    # consuming matching characters in their original order.
+    remaining_keys = list(f_keys)
+    remaining = []
+    for weight in E.weights:
+        key = E._reduced_weight(weight)
+        if key in remaining_keys:
+            remaining_keys.remove(key)
+        else:
+            remaining.append(weight)
+    return HomogeneousBundle(E.X, remaining,
+                             name or f'Quot({E.name},{F.name})')
+
+
+# The mathematical notation is often written with a capital Q; keep both
+# spellings available while using the lowercase constructor convention.
+Quot = quot
 
 
 # ------------------------------------------------ weight-value evaluation

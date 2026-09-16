@@ -35,8 +35,8 @@ def test_gui_describes_invalid_variety_inputs(params, fragment):
     assert fragment in job['error']
 
 
-def test_gui_accepts_paper_beta_and_rejects_malformed_ambient_beta():
-    # A paper-coordinate beta has one entry for each kept root.  The API
+def test_gui_accepts_kept_beta_and_rejects_malformed_ambient_beta():
+    # A kept-root beta has one entry for each kept root.  The API
     # reports the canonical ambient vector after embedding it at that node.
     job = execute('gw', algebra='A2', keep='1', K='', beta='1',
                   classes='pt|pt', eval_y='', workers='0')
@@ -52,28 +52,29 @@ def test_gui_accepts_paper_beta_and_rejects_malformed_ambient_beta():
     assert 'either 1 entries' in job['error']
 
 
-def test_gui_accepts_paper_bundle_aliases_and_nested_operations():
+def test_cli_info_reports_zero_locus_dimension_for_bundle(capsys):
+    from gwflags.cli import main as cli_main
+    cli_main(['A4', '--keep', '2', '-K', 'quot(osum(S(2),Q(2)),S(2))', 'info'])
+    output = capsys.readouterr().out
+    assert 'dimension 3 (ambient dimension 6)' in output
+
+
+def test_gui_accepts_compact_bundle_aliases_and_nested_operations():
     X = FlagVariety('A4', [2])  # Gr(2,5), so S(2), Q(2), and O(1) are valid.
     from gwflags.cli import parse_k as cli_parse_k
-    for spec, rank in [('O(1)', 1), ('S(2)', 2), ('Q(2)', 3)]:
+    for spec, rank in [('O(1)', 1), ('S(2)', 2), ('Q(2)', 3),
+                       ('quot(osum(S(2),Q(2)),S(2))', 3),
+                       ('Quot(osum(S(2),Q(2)),S(2))', 3)]:
         for parser in (parse_k, cli_parse_k):
             K = parser(spec, X)
             assert K.X is X
             assert K.rank == rank
 
-    # The Küchle c5 expression from Appendix C can be pasted unchanged.
-    X5 = FlagVariety('A6', [3])
-    K5 = parse_k(
-        'osum(wedge(2,dual(S(3))),wedge(3,Q(3)),O(1))', X5)
-    assert K5.X is X5 and K5.rank == 8 and K5.c1_coordinates() == [6]
-
-    job = execute(
-        'info', algebra='A6', keep='3',
-        K='osum(wedge(2,dual(S(3))),wedge(3,Q(3)),O(1))',
-        beta='', classes='', eval_y='', workers='0')
-    assert job['state'] == 'done', job.get('error')
-    assert job['result']['dim'] == 4
-    assert job['result']['c1'] == [0, 0, 1, 0, 0, 0]
+    # Nested constructors remain available for ordinary bundle combinations.
+    K_nested = parse_k('osum(wedge(2,Q(2)),dual(wedge(2,S(2))),O(1))', X)
+    assert K_nested.X is X and K_nested.rank == 5
+    with pytest.raises(ValueError, match='subbundle'):
+        parse_k('quot(Q(2),S(2))', X)
 
 
 def test_gui_and_cli_require_reduced_minimal_words():

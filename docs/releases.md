@@ -1,13 +1,21 @@
 # Release notes
 
-## 2026-09-16 — Theory-aligned interface
+## 2026-09-16 — Quotients and catalog navigation
 
-- Published paper-coordinate beta input with canonical ambient output and
+- Added same-variety quotient bundles through `quot(E,F)` / `Quot(E,F)` with
+  multiplicity-aware fiber-weight validation.
+- Published copyable quotient examples and synchronized Python, CLI, GUI, and
+  API documentation.
+- Catalog example links now open the selected card and re-typeset its formulas
+  after instant navigation.
+
+## 2026-09-16 — Interface alignment
+
+- Published kept-root beta input with canonical ambient output and
   explicit validation of removed roots.
-- Added paper bundle aliases and strict reduced/minimal Schubert-word checks
+- Added compact bundle aliases and strict reduced/minimal Schubert-word checks
   to both browser and CLI interfaces.
-- Added a paper-ready [TeX/PDF alignment addendum](audits/theory-alignment-addendum.md)
-  and synchronized the API, methodology, and website audit documentation.
+- Synchronized the API, methodology, and website audit documentation.
 
 ## 2026-09-15 — Catalog and interface maintenance
 

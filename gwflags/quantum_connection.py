@@ -3,7 +3,7 @@
 Input: the pair (K, G) produced by the quantum-multiplication pipeline —
 K = the matrix of c1(TX)* (quantum variables evaluated, y = 1 by
 default) and G the grading operator.  The object of study is the
-meromorphic connection of Kontsevich's "dimension theory" program:
+meromorphic quantum connection:
 
     nabla = d/du + K/u^2 + G/u ,
 

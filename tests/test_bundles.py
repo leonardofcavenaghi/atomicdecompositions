@@ -22,7 +22,7 @@ import sympy
 
 from gwflags import FlagVariety, projective_space, grassmannian
 from gwflags.bundles import (O, taut_sub, taut_quot, dual, osum, tensor,
-                             sym, wedge)
+                             sym, wedge, quot, Quot)
 from gwflags.quantum import spectrum_at_one
 
 
@@ -90,6 +90,51 @@ def test_constructor_validation_guards():
         (lambda: wedge(Qx.rank + 1, Qx), '0 <= p'),
         (lambda: sym(-1, Qx), 'nonnegative integer'),
         (lambda: taut_quot(FlagVariety('A3', [1]), 2), 'not kept'),
+    ]:
+        try:
+            thunk()
+            assert False, f'expected ValueError containing {fragment!r}'
+        except ValueError as exc:
+            assert fragment in str(exc), str(exc)
+
+
+
+def test_quotient_requires_weight_subset_and_preserves_multiplicity():
+    X = grassmannian(2, 5)
+    S = taut_sub(X, 2)
+    Q = taut_quot(X, 2)
+    E = osum(S, Q)
+
+    R = quot(E, S)
+    assert R.rank == Q.rank
+    assert R.reduced_weights() == Q.reduced_weights()
+    assert Quot(E, S).reduced_weights() == Q.reduced_weights()
+
+    # Equivalent type-A character presentations are accepted after projecting
+    # away the torus-trivial trace direction.
+    E_equiv = osum(wedge(2, dual(S)), Q)
+    assert quot(E_equiv, O(X, 1)).reduced_weights() == Q.reduced_weights()
+
+    # Multiplicity matters: one copy of a weight cannot remove two copies.
+    doubled = osum(S, S)
+    assert quot(doubled, S).rank == S.rank
+    try:
+        quot(S, doubled)
+        assert False, 'a higher-multiplicity subbundle was accepted'
+    except ValueError as exc:
+        assert 'subbundle' in str(exc)
+
+
+def test_quotient_validation_guards():
+    X = grassmannian(2, 5)
+    Y = grassmannian(2, 4)
+    Sx, Qx = taut_sub(X, 2), taut_quot(X, 2)
+    Sy = taut_sub(Y, 2)
+    for thunk, fragment in [
+        (lambda: quot(Qx, Sx), 'subbundle'),
+        (lambda: quot(Qx, Sy), 'same FlagVariety'),
+        (lambda: quot([[1]], Sx), 'HomogeneousBundle'),
+        (lambda: quot(Sx, [[1]]), 'HomogeneousBundle'),
     ]:
         try:
             thunk()

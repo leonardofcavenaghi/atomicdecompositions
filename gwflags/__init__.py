@@ -17,7 +17,7 @@ Quick start::
     from gwflags import FlagVariety
 
     X = FlagVariety('A2', [1])          # P^2
-    X.gw([X.pt, X.pt], beta=(1,))       # Fraction(1, 1), paper basis
+    X.gw([X.pt, X.pt], beta=(1,))       # Fraction(1, 1), kept-root basis
 
     M, Gr, idx = X.small_quantum_multiplication()
     X.eigenvalues(M)
@@ -34,7 +34,7 @@ from .quantum import (metric_matrix, reduce_matrix, betas_and_fano_index,
                       small_quantum_multiplication, chern_class_vector,
                       chern_class_ci)
 from .bundles import (HomogeneousBundle, O, taut_sub, taut_quot, dual,
-                      osum, tensor, sym, wedge)
+                      osum, tensor, sym, wedge, quot, Quot)
 
 
 class FlagVariety:
@@ -106,16 +106,16 @@ class FlagVariety:
         kept = self.wd.roots_that_stay
         rank = self.rs.rank
         npic = len(kept)
-        # The paper uses the basis of kept simple-root coroots. Internally
+        # The public interface uses the basis of kept simple-root coroots. Internally
         # localization uses a vector indexed by ambient Bourbaki nodes.
         # Interpret a vector of kept length in the declared keep order and
         # embed it; for a full flag with the usual sorted order this is the
         # identity map.  A full flag with a deliberately permuted keep order
-        # therefore remains unambiguous: its paper coordinates follow that
+        # therefore remains unambiguous: its kept-root coordinates follow that
         # declared order.
-        paper_order = len(beta) == npic and (
+        kept_order = len(beta) == npic and (
             npic < rank or tuple(kept) != tuple(range(1, rank + 1)))
-        if paper_order:
+        if kept_order:
             values = tuple(beta)
             embedded = [0] * rank
             for value, node in zip(values, kept):
@@ -206,7 +206,7 @@ class FlagVariety:
         """Codimension sum the dimension axiom requires; invariants whose
         insertions don't match it vanish (this replaces the notebook's
         x -> prime*t, Limit[t -> 0] step). ``beta`` may be given in the
-        paper's kept-root basis or as a zero-padded ambient-root vector."""
+        kept-root basis or as a zero-padded ambient-root vector."""
         from .cintersection import ci_rank
         beta = self._check_beta(beta)
         K = K or []

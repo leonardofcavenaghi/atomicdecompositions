@@ -31,9 +31,6 @@ PRESETS = [
     ('(g) quotient bundle on Gr(2,5)', 'A4', '2', 'taut_quot(X, 2)', 'info', '', '', '', 'dimension 3'),
     ('(h) P3xP3 / O(1,1)+O(2,2) [slow]', 'A3xA3', '1,4', '1,1;2,2', 'info', '', '', '', 'dimension 4'),
     ('(i) quantum matrix for P2', 'A2', '1', '', 'sqm', '', '', '', '3x3 matrix'),
-    ('(j) Küchle c5 (paper bundle aliases)', 'A6', '3',
-     'osum(wedge(2,dual(S(3))),wedge(3,Q(3)),O(1))', 'info', '', '', '',
-     'dimension 4, rank 8'),
 ]
 
 
@@ -66,34 +63,32 @@ def parse_k(spec, X=None):
     if not spec:
         return []
     if any(c.isalpha() for c in spec):
-        from gwflags.bundles import O, taut_sub, taut_quot, dual, osum, tensor, sym, wedge
+        from gwflags.bundles import O, taut_sub, taut_quot, dual, osum, tensor, sym, wedge, quot, Quot
 
-        # Appendix C of the paper writes bundles without repeating the
-        # ambient variety: O(1), S(3), and Q(3).  The Python API keeps the
-        # explicit X argument, so the interface binds these paper aliases to
-        # the current FlagVariety while retaining O(X, 1) and the explicit
-        # taut_sub/taut_quot spellings for backwards compatibility.
-        def paper_O(*args, **kwargs):
+        # Compact bundle aliases omit the ambient variety.  The Python API
+        # keeps the explicit X argument, so the interface binds aliases to
+        # the current FlagVariety while retaining explicit constructors.
+        def compact_O(*args, **kwargs):
             if args and args[0] is X:
                 return O(*args, **kwargs)
             return O(X, *args, **kwargs)
 
-        def paper_S(*args, **kwargs):
+        def compact_S(*args, **kwargs):
             if args and args[0] is X:
                 args = args[1:]
             return taut_sub(X, *args, **kwargs)
 
-        def paper_Q(*args, **kwargs):
+        def compact_Q(*args, **kwargs):
             if args and args[0] is X:
                 args = args[1:]
             return taut_quot(X, *args, **kwargs)
 
         try:
             tree = ast.parse(spec, mode='eval')
-            allowed = {"X": X, "O": paper_O, "S": paper_S, "Q": paper_Q,
+            allowed = {"X": X, "O": compact_O, "S": compact_S, "Q": compact_Q,
                        "taut_sub": taut_sub, "taut_quot": taut_quot,
                        "dual": dual, "osum": osum, "tensor": tensor,
-                       "sym": sym, "wedge": wedge}
+                       "sym": sym, "wedge": wedge, "quot": quot, "Quot": Quot}
             for node in ast.walk(tree):
                 if isinstance(node, ast.Name) and node.id not in allowed:
                     raise ValueError(f'unknown name {node.id!r}')
@@ -474,7 +469,7 @@ varieties — G/P and complete intersections</span></header>
       <div>
         <label for="K">Bundle K (optional)</label>
         <input id="K" aria-describedby="K-help" placeholder="3 or 1,1;2,2">
-        <div id="K-help" class="help">Use 3 or O(3) for a one-generator line bundle. Use O(a,b,...) when several kept roots are present; S(node) and Q(node) name tautological bundles at a kept type-A node. Use semicolons between summands and commas between degree entries; Python [[3]] syntax is not accepted here.</div>
+        <div id="K-help" class="help">Use 3 or O(3) for a one-generator line bundle. Use O(a,b,...) when several kept roots are present; S(node) and Q(node) name tautological bundles at a kept type-A node. Use quot(E,F) (or Quot(E,F)) to form a quotient after the parser verifies F is a subbundle of E. Use semicolons between summands and commas between degree entries; Python [[3]] syntax is not accepted here.</div>
       </div>
     </div>
   </div>
@@ -501,7 +496,7 @@ varieties — G/P and complete intersections</span></header>
     <div class="card-header">3. GW Invariants (Advanced)</div>
     <label for="beta">Curve class &beta;</label>
     <input id="beta" aria-describedby="beta-help" placeholder="one integer per root, e.g. 1,0,0">
-    <div id="beta-help" class="help">Enter beta in kept-root order (the paper convention), or use a zero-padded ambient vector; removed-root entries must be zero.</div>
+    <div id="beta-help" class="help">Enter beta in kept-root order, or use a zero-padded ambient vector; removed-root entries must be zero.</div>
     <label for="classes">Insertions (separated by |)</label>
     <input id="classes" aria-describedby="classes-help" placeholder="pt | id | 2 1 3 2">
     <div id="classes-help" class="help">Use pt, id, or a space-separated reduced word copied from Space Info.</div>

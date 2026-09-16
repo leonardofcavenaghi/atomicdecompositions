@@ -1,19 +1,28 @@
 # Change log and review record
 
-## 2026-09-16 — paper/software input alignment
+## 2026-09-16 — Quotient bundles and catalog rendering
 
-- Aligned `beta` input with Appendix C: kept-root vectors are accepted in the
-  paper order, zero-padded ambient vectors remain valid, removed-root entries
+- Added `quot(E, F)` and `Quot(E, F)` to the Python, CLI, and browser bundle
+  interfaces. The operation requires `F` to be a same-variety subbundle of `E`;
+  fiber-weight containment is checked with multiplicity at every fixed point,
+  including equivalent type-A characters modulo the trace direction.
+- Added quotient examples and validation failures to the How-to-Use guide, API
+  reference, GUI help, and regression tests.
+- Fixed catalog hash navigation and MathJax rendering after instant page loads:
+  selecting an individual example now opens its card and renders its matrices
+  without a manual refresh or duplicate formula containers.
+
+## 2026-09-16 — Input alignment
+
+- Documented `beta` input in kept-root order: zero-padded ambient vectors remain
+  valid, removed-root entries
   are rejected, and results report canonical ambient coordinates.
-- Added restricted paper bundle aliases `O(...)`, `S(node)`, and `Q(node)` to
+- Added restricted bundle aliases `O(...)`, `S(node)`, and `Q(node)` to
   the browser and CLI, while retaining explicit Python constructors.
 - Made browser/CLI Schubert insertion parsing require reduced minimal words and
   added canonical Novikov labels `y<ambient node>`.
 - Guarded automatic small-quantum degree enumeration against negative kept
   Chern pairings; formal non-nef calculations now require explicit beta lists.
-- Added the [theory--software alignment addendum](audits/theory-alignment-addendum.md)
-  with TeX/PDF source, the Küchle (c5) worked model, and paper revision
-  suggestions.
 
 ## 2026-09-15 — interface, catalog, and documentation review
 

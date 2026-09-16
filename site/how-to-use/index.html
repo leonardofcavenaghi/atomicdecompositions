@@ -775,10 +775,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-dual-of-the-tautological-subbundle" class="md-nav__link">
+  <a href="#2-quotient-of-two-bundle-expressions" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Dual of the tautological subbundle
+        2. Quotient of two bundle expressions
       
     </span>
   </a>
@@ -786,10 +786,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-direct-sum-of-bundles" class="md-nav__link">
+  <a href="#3-dual-of-the-tautological-subbundle" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Direct sum of bundles
+        3. Dual of the tautological subbundle
       
     </span>
   </a>
@@ -797,10 +797,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#4-tensor-product" class="md-nav__link">
+  <a href="#4-direct-sum-of-bundles" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Tensor product
+        4. Direct sum of bundles
       
     </span>
   </a>
@@ -808,10 +808,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#5-symmetric-and-exterior-powers" class="md-nav__link">
+  <a href="#5-tensor-product" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Symmetric and exterior powers
+        5. Tensor product
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-symmetric-and-exterior-powers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Symmetric and exterior powers
       
     </span>
   </a>
@@ -823,17 +834,6 @@
     <span class="md-ellipsis">
       
         Combining several operations
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6-kuchle-c5-paper-expression" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        6. Küchle (c5) paper expression
       
     </span>
   </a>
@@ -1079,8 +1079,6 @@
       
         
       
-        
-      
     
     
     
@@ -1227,34 +1225,6 @@
     
   
     Mathematics and Software Audit
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../audits/theory-alignment-addendum/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Theory–software addendum
   
 
     
@@ -1632,13 +1602,14 @@
   <code>1,1;2,2</code> for two line-bundle summands when the variety has two kept roots
   (use <code>1;2</code> on a Picard-rank-one variety). Semicolons separate summands and
   commas separate entries within one multidegree. You can also enter
-  <code>taut_quot(X, 2)</code> for a quotient bundle. The paper aliases <code>O(1)</code>, <code>S(2)</code>,
+  <code>taut_quot(X, 2)</code> for a quotient bundle. Use <code>quot(E,F)</code> or <code>Quot(E,F)</code> for a quotient of two bundle expressions; the second argument must be a
+  subbundle of the first. The compact aliases <code>O(1)</code>, <code>S(2)</code>,
   and <code>Q(2)</code> are also accepted and are bound to the current variety; use the
   number of entries required by the kept roots (for example <code>O(1,0)</code> on a
   two-generator flag). The GUI uses compact text: Python API notation such as
   <code>[[3]]</code> is not valid in this field.</li>
 <li><strong>Curve class β</strong>: enter one nonnegative integer per kept root, in the order
-  shown in <strong>Kept simple roots</strong>, as in the paper. A zero-padded vector with one
+  shown in <strong>Kept simple roots</strong>. A zero-padded vector with one
   entry per ambient root is also accepted; entries at removed roots must be zero.</li>
 <li><strong>Insertions</strong>: <code>pt</code>, <code>id</code>, or reduced minimal Weyl words separated by <code>|</code>.
   Copy words printed by <strong>Space Info</strong>, or click <strong>Add</strong> beside a basis word.</li>
@@ -1736,40 +1707,46 @@ untwisted genus-0 theory reject that direct computation; use
 <p><strong>Quantum matrix</strong> reports the matrix, grading, characteristic polynomial, and numerical eigenvalues only when all Novikov variables are specialized to one. A custom <code>Evaluate y</code> value is reported separately and does not claim to be the <code>y=1</code> spectrum.</p>
 <p><strong>GW invariant</strong> reports the insertion list, the canonical ambient form of β,
 and the computed number. The degree-zero API path is a classical cup-integral
-shortcut; the paper's primary degree-zero GW potential keeps only three-point
+shortcut; the degree-zero GW potential keeps only stable three-point
 terms and omits unstable cases.</p>
 <h2 id="mathematical-scope-and-conventions">Mathematical scope and conventions<a class="headerlink" href="#mathematical-scope-and-conventions" title="Permanent link">&para;</a></h2>
-<p>The localization formulas are the paper's Theorems 3.26 and 3.28. For a
+<p>The localization formulas use virtual localization on decorated trees. For a
 complete intersection, the software requires curvewise convexity and computes
 the Euler-twisted ambient invariant. A geometric interpretation as a smooth
-zero locus requires the paper's additional hypotheses: global generation and
-smoothness of the expected codimension.</p>
-<p>The quantum matrix is the flag-ambient operator from Definition 4.6. It is the
+zero locus additionally requires global generation and smoothness of the
+expected codimension.</p>
+<p>The quantum matrix is the flag-ambient operator described above. It is the
 full small quantum-cohomology operator only when the relevant homology and
-ambient-completeness hypotheses hold. In examples such as Küchle (c5), the
-published matrix is intentionally an ambient block.</p>
+ambient-completeness hypotheses hold. For complete intersections, the published matrix is an ambient block.</p>
 <h2 id="advanced-bundle-syntax">Advanced bundle syntax<a class="headerlink" href="#advanced-bundle-syntax" title="Permanent link">&para;</a></h2>
 <p>Supported constructors include <code>O(a,...)</code>, <code>S(node)</code>, <code>Q(node)</code>,
 <code>taut_quot(X, k)</code>, <code>taut_sub(X, k)</code>, <code>dual(...)</code>, <code>osum(...)</code>, <code>tensor(...)</code>,
-<code>sym(...)</code>, and <code>wedge(...)</code>. The paper aliases omit <code>X</code>; the explicit Python
+<code>sym(...)</code>, <code>wedge(...)</code>, and <code>quot(E,F)</code> (also <code>Quot(E,F)</code>). The compact aliases omit <code>X</code>; the explicit Python
 spellings remain available. Use the GUI help text for compact line-bundle rows.
 Nested lists such as <code>[[3]]</code> belong to the Python API only.</p>
 <h2 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Check that kept roots are valid, distinct node numbers in the algebra and in the intended order.</li>
-<li>β is normally entered in kept-root order (the paper convention); a full ambient vector is accepted only when all removed-root entries are zero.</li>
+<li>β is normally entered in kept-root order; a full ambient vector is accepted only when all removed-root entries are zero.</li>
 <li>Insertion words must contain integers separated by spaces; separate multiple insertions with <code>|</code>.</li>
 <li>A catalog entry marked <strong>Catalog only</strong> is not represented by the current flag-variety/complete-intersection input model.</li>
 <li>If a computation is slow, lower the worker count or start with a preset of lower degree.</li>
+<li>Catalog matrices are rendered by MathJax. If you copy one into a LaTeX
+  document, load <code>amsmath</code> and raise the column limit for the wider matrices:</li>
 </ul>
+<div class="language-tex highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">\usepackage</span><span class="nb">{</span>amsmath<span class="nb">}</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="k">\setcounter</span><span class="nb">{</span>MaxMatrixCols<span class="nb">}{</span>50<span class="nb">}</span>
+</span></code></pre></div>
+<p>From the repository root, <code>python3 scripts/validate_catalog_tex.py</code> compiles
+  all catalog display blocks in a temporary document.</p>
 <h2 id="python-and-cli">Python and CLI<a class="headerlink" href="#python-and-cli" title="Permanent link">&para;</a></h2>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">gwflags</span><span class="w"> </span><span class="kn">import</span> <span class="n">FlagVariety</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">X</span> <span class="o">=</span> <span class="n">FlagVariety</span><span class="p">(</span><span class="s1">'A3'</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">])</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">gw</span><span class="p">([],</span> <span class="n">beta</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,),</span> <span class="n">K</span><span class="o">=</span><span class="p">[[</span><span class="mi">3</span><span class="p">]]))</span>       <span class="c1"># 27 (paper basis)</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">gw</span><span class="p">([],</span> <span class="n">beta</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">K</span><span class="o">=</span><span class="p">[[</span><span class="mi">3</span><span class="p">]]))</span>  <span class="c1"># same, zero-padded form</span>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">gwflags</span><span class="w"> </span><span class="kn">import</span> <span class="n">FlagVariety</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">X</span> <span class="o">=</span> <span class="n">FlagVariety</span><span class="p">(</span><span class="s1">'A3'</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">gw</span><span class="p">([],</span> <span class="n">beta</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,),</span> <span class="n">K</span><span class="o">=</span><span class="p">[[</span><span class="mi">3</span><span class="p">]]))</span>       <span class="c1"># 27 (kept-root basis)</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">gw</span><span class="p">([],</span> <span class="n">beta</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">K</span><span class="o">=</span><span class="p">[[</span><span class="mi">3</span><span class="p">]]))</span>  <span class="c1"># same, zero-padded form</span>
 </span></code></pre></div>
 <p>For the CLI, put bundle options before the subcommand:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>python3<span class="w"> </span>-m<span class="w"> </span>gwflags.cli<span class="w"> </span>A3<span class="w"> </span>--keep<span class="w"> </span><span class="m">1</span><span class="w"> </span>-K<span class="w"> </span><span class="m">3</span><span class="w"> </span>sqm
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>python3<span class="w"> </span>-m<span class="w"> </span>gwflags.cli<span class="w"> </span>A3<span class="w"> </span>--keep<span class="w"> </span><span class="m">1</span><span class="w"> </span>-K<span class="w"> </span><span class="m">3</span><span class="w"> </span>sqm
 </span></code></pre></div>
 <h2 id="bundle-combinations-detailed-walkthroughs">Bundle combinations: detailed walkthroughs<a class="headerlink" href="#bundle-combinations-detailed-walkthroughs" title="Permanent link">&para;</a></h2>
 <p>All bundle examples below use the same ambient variety:
@@ -1779,37 +1756,54 @@ the following expressions in <strong>Bundle K</strong> and choose <strong>Comput
 or <strong>Describe this space</strong>.</p>
 <h3 id="1-quotient-bundle">1. Quotient bundle<a class="headerlink" href="#1-quotient-bundle" title="Permanent link">&para;</a></h3>
 <p>GUI input (both spellings are accepted):</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>taut_quot(X, 2)
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>Q(2)
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>taut_quot(X, 2)
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>Q(2)
 </span></code></pre></div>
 <p>This is the rank-3 tautological quotient bundle. Leave <code>Evaluate y</code> blank for
 symbolic variables, or use <code>y2=1</code> for specialization (the kept node is 2). The result summary records the submitted bundle expression, and the matrix
 is computed using the quotient-bundle twist.</p>
 <p>Equivalent Python:</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">gwflags</span><span class="w"> </span><span class="kn">import</span> <span class="n">FlagVariety</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">gwflags.bundles</span><span class="w"> </span><span class="kn">import</span> <span class="n">taut_quot</span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="n">X</span> <span class="o">=</span> <span class="n">FlagVariety</span><span class="p">(</span><span class="s1">'A4'</span><span class="p">,</span> <span class="p">[</span><span class="mi">2</span><span class="p">])</span>
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="n">Q</span> <span class="o">=</span> <span class="n">taut_quot</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
-</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="n">M</span><span class="p">,</span> <span class="n">grading</span><span class="p">,</span> <span class="n">basis</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">small_quantum_multiplication</span><span class="p">(</span><span class="n">K</span><span class="o">=</span><span class="n">Q</span><span class="p">)</span>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">gwflags</span><span class="w"> </span><span class="kn">import</span> <span class="n">FlagVariety</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">gwflags.bundles</span><span class="w"> </span><span class="kn">import</span> <span class="n">taut_quot</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="n">X</span> <span class="o">=</span> <span class="n">FlagVariety</span><span class="p">(</span><span class="s1">'A4'</span><span class="p">,</span> <span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="n">Q</span> <span class="o">=</span> <span class="n">taut_quot</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="n">M</span><span class="p">,</span> <span class="n">grading</span><span class="p">,</span> <span class="n">basis</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">small_quantum_multiplication</span><span class="p">(</span><span class="n">K</span><span class="o">=</span><span class="n">Q</span><span class="p">)</span>
 </span></code></pre></div>
-<h3 id="2-dual-of-the-tautological-subbundle">2. Dual of the tautological subbundle<a class="headerlink" href="#2-dual-of-the-tautological-subbundle" title="Permanent link">&para;</a></h3>
+<h3 id="2-quotient-of-two-bundle-expressions">2. Quotient of two bundle expressions<a class="headerlink" href="#2-quotient-of-two-bundle-expressions" title="Permanent link">&para;</a></h3>
+<p>Use <code>quot(E,F)</code> (or the capitalized spelling <code>Quot(E,F)</code>) when F is a
+subbundle of E:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>quot(osum(S(2),Q(2)), S(2))
+</span></code></pre></div>
+<p>On <code>Gr(2,5)</code>, <code>S(2) + Q(2)</code> is the trivial rank-5 bundle, so this quotient is
+the rank-3 quotient bundle <code>Q(2)</code>. The software checks the fiber-weight
+multisets with multiplicity at every fixed point (equivalent type-A characters
+are compared after removing the torus-trivial trace direction). Different
+varieties or a missing weight produce a clear validation error.</p>
+<p>Equivalent Python:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">gwflags.bundles</span><span class="w"> </span><span class="kn">import</span> <span class="n">osum</span><span class="p">,</span> <span class="n">quot</span><span class="p">,</span> <span class="n">taut_sub</span><span class="p">,</span> <span class="n">taut_quot</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="n">E</span> <span class="o">=</span> <span class="n">osum</span><span class="p">(</span><span class="n">taut_sub</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="n">taut_quot</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="n">F</span> <span class="o">=</span> <span class="n">taut_sub</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="n">K</span> <span class="o">=</span> <span class="n">quot</span><span class="p">(</span><span class="n">E</span><span class="p">,</span> <span class="n">F</span><span class="p">)</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="k">assert</span> <span class="n">K</span><span class="o">.</span><span class="n">rank</span> <span class="o">==</span> <span class="mi">3</span>
+</span></code></pre></div>
+<h3 id="3-dual-of-the-tautological-subbundle">3. Dual of the tautological subbundle<a class="headerlink" href="#3-dual-of-the-tautological-subbundle" title="Permanent link">&para;</a></h3>
 <p>The subbundle itself is generally not convex for the twisted genus-0 theory.
 Use its dual instead:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>dual(S(2))
+<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>dual(S(2))
 </span></code></pre></div>
 <p>The explicit equivalent <code>dual(taut_sub(X, 2))</code> is also accepted.</p>
 <p>Equivalent Python:</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">gwflags.bundles</span><span class="w"> </span><span class="kn">import</span> <span class="n">taut_sub</span><span class="p">,</span> <span class="n">dual</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="n">K</span> <span class="o">=</span> <span class="n">dual</span><span class="p">(</span><span class="n">taut_sub</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="n">M</span><span class="p">,</span> <span class="n">grading</span><span class="p">,</span> <span class="n">basis</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">small_quantum_multiplication</span><span class="p">(</span><span class="n">K</span><span class="o">=</span><span class="n">K</span><span class="p">)</span>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">gwflags.bundles</span><span class="w"> </span><span class="kn">import</span> <span class="n">taut_sub</span><span class="p">,</span> <span class="n">dual</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="n">K</span> <span class="o">=</span> <span class="n">dual</span><span class="p">(</span><span class="n">taut_sub</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="n">M</span><span class="p">,</span> <span class="n">grading</span><span class="p">,</span> <span class="n">basis</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">small_quantum_multiplication</span><span class="p">(</span><span class="n">K</span><span class="o">=</span><span class="n">K</span><span class="p">)</span>
 </span></code></pre></div>
 <p>The GUI accepts the expression, while a direct <code>taut_sub(X, 2)</code> computation
 may be rejected when its curve splitting degrees are negative.</p>
-<h3 id="3-direct-sum-of-bundles">3. Direct sum of bundles<a class="headerlink" href="#3-direct-sum-of-bundles" title="Permanent link">&para;</a></h3>
+<h3 id="4-direct-sum-of-bundles">4. Direct sum of bundles<a class="headerlink" href="#4-direct-sum-of-bundles" title="Permanent link">&para;</a></h3>
 <p>Use <code>osum</code> to combine summands. This example combines the rank-3 quotient with
 a line bundle <code>O(1)</code> on this Picard-rank-one Grassmannian:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>osum(Q(2), O(1))
+<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>osum(Q(2), O(1))
 </span></code></pre></div>
 <p>The explicit equivalent <code>osum(taut_quot(X, 2), O(X, 1))</code> is also accepted.</p>
 <p>On <code>Gr(2,5)</code> there is one kept node, so <code>O(X, 1)</code> takes one degree. A
@@ -1817,49 +1811,40 @@ two-entry constructor such as <code>O(X, 1, 1)</code> belongs on a two-generator
 (for example <code>A2xA2</code>, kept roots <code>1,3</code>). In the compact GUI syntax, separate
 summands are written as rows such as <code>1;2</code>.</p>
 <p>Python:</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">gwflags.bundles</span><span class="w"> </span><span class="kn">import</span> <span class="n">O</span><span class="p">,</span> <span class="n">osum</span><span class="p">,</span> <span class="n">taut_quot</span>
-</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="n">K</span> <span class="o">=</span> <span class="n">osum</span><span class="p">(</span><span class="n">taut_quot</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="n">O</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
-</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">K</span><span class="o">.</span><span class="n">rank</span><span class="p">)</span>  <span class="c1"># 4</span>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">gwflags.bundles</span><span class="w"> </span><span class="kn">import</span> <span class="n">O</span><span class="p">,</span> <span class="n">osum</span><span class="p">,</span> <span class="n">taut_quot</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="n">K</span> <span class="o">=</span> <span class="n">osum</span><span class="p">(</span><span class="n">taut_quot</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="n">O</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">K</span><span class="o">.</span><span class="n">rank</span><span class="p">)</span>  <span class="c1"># 4</span>
 </span></code></pre></div>
-<h3 id="4-tensor-product">4. Tensor product<a class="headerlink" href="#4-tensor-product" title="Permanent link">&para;</a></h3>
+<h3 id="5-tensor-product">5. Tensor product<a class="headerlink" href="#5-tensor-product" title="Permanent link">&para;</a></h3>
 <p><code>tensor</code> forms all pairwise sums of fiber weights:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>tensor(taut_quot(X, 2), O(X, 1))
+<div class="language-text highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>tensor(taut_quot(X, 2), O(X, 1))
 </span></code></pre></div>
 <p>Python:</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">gwflags.bundles</span><span class="w"> </span><span class="kn">import</span> <span class="n">O</span><span class="p">,</span> <span class="n">tensor</span><span class="p">,</span> <span class="n">taut_quot</span>
-</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="n">K</span> <span class="o">=</span> <span class="n">tensor</span><span class="p">(</span><span class="n">taut_quot</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="n">O</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
-</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">K</span><span class="o">.</span><span class="n">rank</span><span class="p">)</span>  <span class="c1"># 3</span>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">gwflags.bundles</span><span class="w"> </span><span class="kn">import</span> <span class="n">O</span><span class="p">,</span> <span class="n">tensor</span><span class="p">,</span> <span class="n">taut_quot</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="n">K</span> <span class="o">=</span> <span class="n">tensor</span><span class="p">(</span><span class="n">taut_quot</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="n">O</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">K</span><span class="o">.</span><span class="n">rank</span><span class="p">)</span>  <span class="c1"># 3</span>
 </span></code></pre></div>
-<h3 id="5-symmetric-and-exterior-powers">5. Symmetric and exterior powers<a class="headerlink" href="#5-symmetric-and-exterior-powers" title="Permanent link">&para;</a></h3>
+<h3 id="6-symmetric-and-exterior-powers">6. Symmetric and exterior powers<a class="headerlink" href="#6-symmetric-and-exterior-powers" title="Permanent link">&para;</a></h3>
 <p>These constructors derive new bundles from a homogeneous bundle:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>sym(2, taut_quot(X, 2))
-</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>wedge(2, taut_quot(X, 2))
+<div class="language-text highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>sym(2, taut_quot(X, 2))
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>wedge(2, taut_quot(X, 2))
 </span></code></pre></div>
 <p>The first has rank 6 and the second rank 3. In Python:</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">gwflags.bundles</span><span class="w"> </span><span class="kn">import</span> <span class="n">taut_quot</span><span class="p">,</span> <span class="n">sym</span><span class="p">,</span> <span class="n">wedge</span>
-</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="n">Q</span> <span class="o">=</span> <span class="n">taut_quot</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
-</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">sym</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">Q</span><span class="p">)</span><span class="o">.</span><span class="n">rank</span><span class="p">)</span>    <span class="c1"># 6</span>
-</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">wedge</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">Q</span><span class="p">)</span><span class="o">.</span><span class="n">rank</span><span class="p">)</span>  <span class="c1"># 3</span>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">gwflags.bundles</span><span class="w"> </span><span class="kn">import</span> <span class="n">taut_quot</span><span class="p">,</span> <span class="n">sym</span><span class="p">,</span> <span class="n">wedge</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="n">Q</span> <span class="o">=</span> <span class="n">taut_quot</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">sym</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">Q</span><span class="p">)</span><span class="o">.</span><span class="n">rank</span><span class="p">)</span>    <span class="c1"># 6</span>
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">wedge</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">Q</span><span class="p">)</span><span class="o">.</span><span class="n">rank</span><span class="p">)</span>  <span class="c1"># 3</span>
 </span></code></pre></div>
 <h3 id="combining-several-operations">Combining several operations<a class="headerlink" href="#combining-several-operations" title="Permanent link">&para;</a></h3>
 <p>Expressions can be nested, provided every component is built on the same
 <code>X</code>:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>osum(
-</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>  tensor(Q(2), O(1)),
-</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>  wedge(2, dual(S(2)))
-</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>)
+<div class="language-text highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>osum(
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>  tensor(Q(2), O(1)),
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>  wedge(2, dual(S(2)))
+</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>)
 </span></code></pre></div>
 <p>For long expressions, Python is easier to read and debug. The GUI parser only
 allows the documented constructors and rejects arbitrary Python code.</p>
-<h3 id="6-kuchle-c5-paper-expression">6. Küchle (c5) paper expression<a class="headerlink" href="#6-kuchle-c5-paper-expression" title="Permanent link">&para;</a></h3>
-<p>The homogeneous-bundle example from the paper is <code>Gr(3,7)</code>, entered as
-<code>A6</code> with kept root <code>3</code>. Paste this expression in <strong>Bundle K</strong>:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>osum(wedge(2,dual(S(3))),wedge(3,Q(3)),O(1))
-</span></code></pre></div>
-<p>It has rank 8 and gives a four-dimensional complete intersection with
-<code>c1(TX) = H</code>; the matrix uses <code>y3</code>. The <strong>Küchle c5 (paper bundle aliases)</strong>
-preset fills these fields automatically. For the complete output template and
-the degree-by-degree beta list, see the <a href="../audits/theory-alignment-addendum/">theory--software addendum</a>.</p>
 <h3 id="what-to-check-before-computing">What to check before computing<a class="headerlink" href="#what-to-check-before-computing" title="Permanent link">&para;</a></h3>
 <ol>
 <li>Confirm that every component uses the same algebra and kept nodes.</li>
