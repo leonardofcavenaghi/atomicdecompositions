@@ -967,10 +967,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#regeneration-warning" class="md-nav__link">
+  <a href="#regeneration-contract" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Regeneration warning
+        Regeneration contract
       
     </span>
   </a>
@@ -1422,8 +1422,13 @@
 <li>Fanography references</li>
 </ol>
 <p>The master index links the canonical pages. Category pages group entries by dimension and include deterministic summary tables. Fanography has sequential identifiers and distinguishes runnable realizations from catalog-only references.</p>
-<h2 id="regeneration-warning">Regeneration warning<a class="headerlink" href="#regeneration-warning" title="Permanent link">&para;</a></h2>
-<p><code>restructure_catalog.py</code> and <code>generate_datatable.py</code> are data-generation utilities, not part of the documentation build. They must not be run over the reviewed pages without preserving realization labels, catalog-only status, corrected matrices, and duplicate filtering. Future catalog generation should use a checked-in source dataset and a duplicate-ID validation step.</p>
+<h2 id="regeneration-contract">Regeneration contract<a class="headerlink" href="#regeneration-contract" title="Permanent link">&para;</a></h2>
+<p><code>catalog_inputs.json</code> is the checked-in source of truth for every executable
+Fanography realization used by the injector, verifier, matrix helper, and catalog
+validator. <code>restructure_catalog.py</code> and <code>generate_datatable.py</code> remain data-generation
+utilities, not part of the documentation build; they must preserve realization
+labels, catalog-only status, corrected matrices, and duplicate filtering. Run
+<code>python3 scripts/validate_catalog.py</code> after any regeneration.</p>
 <h2 id="verification">Verification<a class="headerlink" href="#verification" title="Permanent link">&para;</a></h2>
 <ul>
 <li>No duplicate <code>p2fanoindex3</code> anchor remains.</li>

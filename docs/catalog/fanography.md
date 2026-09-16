@@ -232,12 +232,12 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
 
     - **Ambient Space:** `$A4$`
     - **Keep Nodes:** `2`
-    - **Bundle K:** `5`
+    - **Bundle K:** `1;1;1`
     - **Fano Index:** `2`
     - **Dimension:** `3`
     - **Basis Rank:** `4`
     - **Description:** Quintic del Pezzo threefold; section of Plücker embedding of $\mathrm{Gr}(2,5)$ by codimension 3 subspace.
-    - **Realization type:** Homogeneous-bundle zero locus.
+    - **Realization type:** Line-bundle complete intersection.
 
     ??? note "Quantum Matrix ($y=1$)"
         $$

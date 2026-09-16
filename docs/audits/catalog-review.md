@@ -23,9 +23,14 @@ The public catalog is organized as:
 
 The master index links the canonical pages. Category pages group entries by dimension and include deterministic summary tables. Fanography has sequential identifiers and distinguishes runnable realizations from catalog-only references.
 
-## Regeneration warning
+## Regeneration contract
 
-`restructure_catalog.py` and `generate_datatable.py` are data-generation utilities, not part of the documentation build. They must not be run over the reviewed pages without preserving realization labels, catalog-only status, corrected matrices, and duplicate filtering. Future catalog generation should use a checked-in source dataset and a duplicate-ID validation step.
+`catalog_inputs.json` is the checked-in source of truth for every executable
+Fanography realization used by the injector, verifier, matrix helper, and catalog
+validator. `restructure_catalog.py` and `generate_datatable.py` remain data-generation
+utilities, not part of the documentation build; they must preserve realization
+labels, catalog-only status, corrected matrices, and duplicate filtering. Run
+`python3 scripts/validate_catalog.py` after any regeneration.
 
 ## Verification
 

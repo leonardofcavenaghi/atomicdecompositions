@@ -1,26 +1,12 @@
 import sympy
 from gwflags import FlagVariety
+from catalog_inputs import selected_legacy_specs
 
-specs = {
-    # Picard Rank 1
-    "1-17": ("A3", [1], []),
-    "1-16": ("A4", [1], [[2]]),
-    "1-15": ("A4", [2], [[1], [1], [1]]),
-    "1-14": ("A5", [1], [[2], [2]]),
-    "1-13": ("A4", [1], [[3]]),
-    "1-7":  ("A5", [2], [[1], [1], [1], [1], [1]]),
-    "1-5":  ("A4", [2], [[1], [1], [2]]),
-    "1-4":  ("A6", [1], [[2], [2], [2]]),
-    "1-3":  ("A5", [1], [[2], [3]]),
-    "1-2":  ("A4", [1], [[4]]),
-    "1-6":  ("D5", [5], [[1]] * 7),
-    "1-8":  ("C3", [3], [[1]] * 3),
-    "1-9":  ("G2", [2], [[1]] * 2),
-    # Picard Rank > 1
-    "2-24": ("A2xA2", [1, 3], [[1, 2]]),
-    # 2-35 is Bl_p(P^3), catalog-only and intentionally omitted.
-    "3-27": ("A1xA1xA1", [1, 2, 3], [])
-}
+specs = selected_legacy_specs("inject_verify")
+
+# The records above are loaded from catalog_inputs.json; keep the rest of this
+# legacy injector unchanged.
+
 
 def generate_markdown(alg, keep, K):
     X = FlagVariety(alg, keep)

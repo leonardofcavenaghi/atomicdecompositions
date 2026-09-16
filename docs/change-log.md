@@ -32,6 +32,16 @@
 - Verified the matrix with an exact `gwflags` run and by matching all 21
   regularized quantum-period coefficients in the smooth-Fano reference data.
 
+## 2026-09-16 — catalog source and regression hardening
+
+- Centralized executable Fanography inputs in `catalog_inputs.json`; the
+  injector, verifier, matrix helper, and catalog validator now consume the same
+  records.
+- Added a fast regression fixture for Fanography 1-10 that checks its symbolic
+  matrix, rendered catalog card, and all 21 independent period coefficients.
+- Corrected the 1-15 card to the runnable `A4`, keep `2`, `K=1;1;1`
+  realization described by its Grassmannian linear section.
+
 ## 2026-09-15 — independent mathematics and software audit
 
 - Corrected Fanography 1-5 through 1-9 so each displayed ambient space, kept
