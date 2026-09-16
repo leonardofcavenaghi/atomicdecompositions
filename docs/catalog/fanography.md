@@ -221,10 +221,10 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
     - **Realization type:** Line-bundle complete intersection.
 
 
-        ??? note "Quantum Matrix ($y=1$)"
-            $$
-            \begin{bmatrix}0 & 8 & 0 & 32\\2 & 0 & 16 & 0\\0 & 2 & 0 & 8\\0 & 0 & 2 & 0\end{bmatrix}
-            $$
+    ??? note "Quantum Matrix ($y=1$)"
+        $$
+        \begin{bmatrix}0 & 8 & 0 & 32\\2 & 0 & 16 & 0\\0 & 2 & 0 & 8\\0 & 0 & 2 & 0\end{bmatrix}
+        $$
 
 
 ### Fano Variety 1-15
