@@ -1410,10 +1410,13 @@ algorithm changes.</p>
   and 4-1 contains the audited matrix entry in row 2, column 9 equal to <code>2</code>.</li>
 <li>Fanography 2-32 is explicitly labelled symbolic because its matrix contains
   <code>y1</code> and <code>y2</code>; it is not presented as a matrix evaluated at <code>y=1</code>.</li>
-<li>Fanography 1-10 now records the supported homogeneous-bundle input on
-  <code>Gr(3,7)</code>: three copies of <code>wedge(2, dual(taut_sub(X, 3)))</code>. Its dimension,
-  index, rank, and convexity were checked, while its quantum matrix is clearly
-  marked pending independent recomputation rather than presented as verified.</li>
+<li>Fanography 1-10 records the supported homogeneous-bundle input on <code>Gr(3,7)</code>:
+  three copies of <code>wedge(2, dual(taut_sub(X, 3)))</code>. Its dimension, index, rank,
+  convexity, and quantum matrix were independently checked. The exact <code>gwflags</code>
+  run gives
+  <code>[[0,24,90,80],[1,2,20,18],[0,11/5,2,24/5],[0,0,5,0]]</code> at <code>y=1</code>; its
+  regularized quantum period agrees with all 21 coefficients in the
+  smooth-Fano database entry for <code>V(3,22)</code>.</li>
 </ul>
 <p>The catalog also distinguishes entries outside the current flag-variety and
 ordinary complete-intersection model (weighted spaces, double covers, and
