@@ -51,6 +51,12 @@ remain available via `FlagVariety.gw_raw` / the `.sym` calculator.
 - SageMath (no extra dependencies; the package detects Sage and uses its
   symbolic ring — same code, faster algebra).
 
+For development and the full test suite, install the test extra:
+
+```bash
+python -m pip install -e ".[test]"
+```
+
 ## Usage
 
 ```python
@@ -107,7 +113,7 @@ the Picard generators (the notebook's `{{1,2},{1,1}}` becomes
 Tests (all values independently known from Schubert calculus):
 
 ```bash
-python3 tests/test_gwflags.py
+python3 -m pytest tests/ -q
 ```
 
 ## Public input contract

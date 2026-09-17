@@ -1,5 +1,12 @@
 # Change log and review record
 
+## 2026-09-17 — Release maintenance
+
+- Added the MIT license and complete package metadata, including test extras and project URLs.
+- Added pinned `requirements-docs.txt` and `requirements-test.txt` files.
+- Removed local environments, `node_modules`, and generated MkDocs output from Git tracking while preserving them locally for development.
+- Split CI into Python-version, catalog/LaTeX, and website/browser validation jobs; Pages deployment now runs only after the validation workflow succeeds on `main`.
+
 ## 2026-09-16 — Quotient bundles and catalog rendering
 
 - Added `quot(E, F)` and `Quot(E, F)` to the Python, CLI, and browser bundle
