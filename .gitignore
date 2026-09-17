@@ -1,3 +1,17 @@
 __pycache__/
 *.py[cod]
 .pytest_cache/
+
+# Local Python environments
+.venv/
+venv/
+*_venv/
+*_env/
+
+# Generated documentation and browser-test dependencies
+site/
+node_modules/
+
+# Python build artifacts
+build/
+*.egg-info/

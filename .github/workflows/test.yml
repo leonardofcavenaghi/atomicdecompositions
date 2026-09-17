@@ -9,7 +9,35 @@ permissions:
   contents: read
 
 jobs:
-  test:
+  python:
+    name: Python ${{ matrix.python-version }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.9", "3.10", "3.11", "3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install package and test dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -e .
+          python -m pip install -r requirements-test.txt
+
+      - name: Run Python tests
+        run: PYTHONDONTWRITEBYTECODE=1 python -m pytest tests/ -q
+
+  catalog:
+    name: Catalog and LaTeX validation
+    needs: python
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
@@ -26,19 +54,37 @@ jobs:
           sudo apt-get update
           sudo apt-get install --no-install-recommends -y texlive-latex-base texlive-latex-recommended
 
-      - name: Install Python dependencies
+      - name: Install package and test dependencies
         run: |
           python -m pip install --upgrade pip
-          python -m pip install -e . pytest mkdocs-material mkdocs pymdown-extensions mathjax
-
-      - name: Run Python tests
-        run: PYTHONDONTWRITEBYTECODE=1 python -m pytest tests/ -q
+          python -m pip install -e .
+          python -m pip install -r requirements-test.txt
 
       - name: Validate catalog source
         run: PYTHONDONTWRITEBYTECODE=1 python scripts/validate_catalog.py
 
       - name: Validate catalog LaTeX
         run: PYTHONDONTWRITEBYTECODE=1 python scripts/validate_catalog_tex.py
+
+  website:
+    name: Documentation and browser regressions
+    needs: catalog
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install package and documentation dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -e .
+          python -m pip install -r requirements-docs.txt
 
       - name: Build documentation strictly
         run: mkdocs build --strict

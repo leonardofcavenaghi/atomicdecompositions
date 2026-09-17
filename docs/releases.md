@@ -1,5 +1,12 @@
 # Release notes
 
+## v1.0.1 — 2026-09-17
+
+- Removed local virtual environments, browser dependencies, and generated site output from the source tree; these remain reproducible through CI.
+- Pinned the documentation toolchain and added explicit test/documentation installation paths.
+- Expanded CI across Python 3.9–3.13 and made GitHub Pages deployment wait for the complete validation workflow.
+- Added package metadata, repository URLs, and the MIT license.
+
 ## v1.0.0 — 2026-09-16
 
 - Stabilized the Python, CLI, and browser interfaces, including quotient

@@ -55,7 +55,7 @@ python -c "from gwflags import FlagVariety; print(FlagVariety('A2',[1]).dimensio
 To run the tests, install the optional test dependency first:
 
 ```bash
-python -m pip install pytest
+python -m pip install -e ".[test]"
 ```
 
 Then run the full tests with:
@@ -76,3 +76,9 @@ python -m gwflags.gui --port 9000 --no-browser
 ```
 
 For complete examples and input syntax, see [How to Use](how-to-use.md). In the GUI, compact bundles use `3` or `1,1;2,2`; Python code may use `K=[[3]]`.
+
+To build the documentation locally with the same pinned toolchain used by CI:
+
+```bash
+python -m pip install -r requirements-docs.txt
+mkdocs build --strict
