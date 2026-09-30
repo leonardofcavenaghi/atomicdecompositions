@@ -57,7 +57,8 @@ def parse_k(spec, X=None):
     if not spec:
         return []
     if any(c.isalpha() for c in spec):
-        from gwflags.bundles import O, taut_sub, taut_quot, dual, osum, tensor, sym, wedge, quot, Quot
+        from gwflags.bundles import (O, taut_sub, taut_quot, dual, osum, tensor,
+                                     sym, wedge, quot, Quot, peskine_bundle)
 
         # Compact bundle aliases omit the ambient variety.  The Python API
         # keeps the explicit X argument, so the interface binds aliases to
@@ -77,12 +78,18 @@ def parse_k(spec, X=None):
                 args = args[1:]
             return taut_quot(X, *args, **kwargs)
 
+        def compact_peskine(*args, **kwargs):
+            if args and args[0] is X:
+                args = args[1:]
+            return peskine_bundle(X, *args, **kwargs)
+
         try:
             tree = ast.parse(spec, mode='eval')
             allowed = {"X": X, "O": compact_O, "S": compact_S, "Q": compact_Q,
                        "taut_sub": taut_sub, "taut_quot": taut_quot,
                        "dual": dual, "osum": osum, "tensor": tensor,
-                       "sym": sym, "wedge": wedge, "quot": quot, "Quot": Quot}
+                       "sym": sym, "wedge": wedge, "quot": quot, "Quot": Quot,
+                       "Peskine": compact_peskine, "peskine": compact_peskine}
             for node in ast.walk(tree):
                 if isinstance(node, ast.Name) and node.id not in allowed:
                     raise ValueError(f'unknown name {node.id!r}')

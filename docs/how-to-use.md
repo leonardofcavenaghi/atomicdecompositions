@@ -122,7 +122,10 @@ ambient-completeness hypotheses hold. For complete intersections, the published 
 Supported constructors include `O(a,...)`, `S(node)`, `Q(node)`,
 `taut_quot(X, k)`, `taut_sub(X, k)`, `dual(...)`, `osum(...)`, `tensor(...)`,
 `sym(...)`, `wedge(...)`, and `quot(E,F)` (also `Quot(E,F)`). The compact aliases omit `X`; the explicit Python
-spellings remain available. Use the GUI help text for compact line-bundle rows.
+spellings remain available. `Peskine()` selects the specialized non-split
+bundle on `A9` with kept nodes `1,4`; use the dedicated
+[Peskine guide](peskine.md) before launching computations for that example.
+Use the GUI help text for compact line-bundle rows.
 Nested lists such as `[[3]]` belong to the Python API only.
 
 ## Troubleshooting

@@ -75,14 +75,15 @@ def euler_complete_intersection(gw, K, w):
     """e(E) at the fixed point w (cached)."""
     weights = as_weights(gw, K)
     cache = gw.__dict__.setdefault('_euler_cache', {})
-    hit = cache.get((w, weights))
+    bundle_key = K.key() if isinstance(K, HomogeneousBundle) else weights
+    hit = cache.get((w, bundle_key))
     if hit is not None:
         return hit
     e = 1
     for mu in weights:
         e = e * _wvalue(gw, w, mu)
     e = gw.bk.cancel(e)
-    cache[(w, weights)] = e
+    cache[(w, bundle_key)] = e
     return e
 
 
@@ -99,15 +100,20 @@ def h_complete_intersection(gw, K, w, root_idx, d):
     degree d (cached by content)."""
     weights = as_weights(gw, K)
     cache = gw.__dict__.setdefault('_hci_cache', {})
-    ckey = (w, root_idx, d, weights)
+    bundle_key = K.key() if isinstance(K, HomogeneousBundle) else weights
+    ckey = (w, root_idx, d, bundle_key)
     hit = cache.get(ckey)
     if hit is not None:
         return hit
     bk = gw.bk
     pw = gw.poly_w(w, gw.rs.positive_roots_ort[root_idx])
     result = 1
-    for mu in weights:
-        b = _splitting_degree(gw, mu, root_idx)
+    if isinstance(K, HomogeneousBundle):
+        splitting = K.edge_splitting(root_idx)
+    else:
+        splitting = tuple((mu, _splitting_degree(gw, mu, root_idx))
+                          for mu in weights)
+    for mu, b in splitting:
         if b < 0:
             raise NotImplementedError(
                 f'concave summand (splitting degree {b} < 0) — the '
@@ -141,12 +147,13 @@ def gw_complete_intersection(gw, coh_classes, beta, K, progress=None):
         return gw.gw_invariant(coh_classes, beta, progress,
                                extra=lambda s: euler_complete_intersection(gw, K, s))
     cache = gw.__dict__.setdefault('_ci_twist_cache', {})
+    bundle_key = K.key() if isinstance(K, HomogeneousBundle) else weights
 
     def extra(dt):
-        hit = cache.get((id(dt), weights))
+        hit = cache.get((id(dt), bundle_key))
         if hit is None:
             hit = omega_complete_intersection(gw, K, dt)
-            cache[(id(dt), weights)] = hit
+            cache[(id(dt), bundle_key)] = hit
         return hit
 
     return gw.gw_invariant(coh_classes, beta, progress, extra=extra)

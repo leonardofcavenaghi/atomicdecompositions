@@ -34,7 +34,8 @@ from .quantum import (metric_matrix, reduce_matrix, betas_and_fano_index,
                       small_quantum_multiplication, chern_class_vector,
                       chern_class_ci)
 from .bundles import (HomogeneousBundle, O, taut_sub, taut_quot, dual,
-                      osum, tensor, sym, wedge, quot, Quot)
+                      osum, tensor, sym, wedge, quot, Quot,
+                      peskine_bundle, PeskineBundle)
 
 
 class FlagVariety:

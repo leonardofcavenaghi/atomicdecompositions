@@ -44,13 +44,23 @@ def spectrum_at_one(M):
 def metric_matrix(X, K, indices, progress=None):
     """MetricCompletInter: g[k][j] = <sigma_k, sigma_j, 1>_0 (twisted by
     e(E) when K is nonempty).  Exact Fractions; the notebook's x -> 0
-    limits are subsumed by the degree gate."""
+    limits are subsumed by the degree gate.  The degree-zero dimension axiom
+    makes all non-complementary Schubert-degree pairs vanish, so do not send
+    those pairs through localization."""
     reps = X.wd.reduced_group
     zero = tuple([0] * X.rs.rank)
+    from .cintersection import ci_rank
+    dim = len(X.wd.reduced_roots) - (ci_rank(K) if K else 0)
+    lengths = [X.wd.length(reps[i]) for i in indices]
     mat = []
     for a, k in enumerate(indices):
-        row = [X.gw_number([reps[k], reps[j], reps[0]], zero, K or None)
-               for j in indices]
+        row = []
+        for b, j in enumerate(indices):
+            if lengths[a] + lengths[b] != dim:
+                row.append(0)
+                continue
+            row.append(X.gw_number([reps[k], reps[j], reps[0]], zero,
+                                   K or None))
         mat.append(row)
         if progress:
             progress(f'metric row {a + 1}/{len(indices)}')
@@ -122,6 +132,40 @@ def vectors_with_support(n, positions, emax):
     return out
 
 
+def _effective_curve_betas(X, c, dim, generators):
+    """Enumerate the effective curve semigroup supplied by the geometry."""
+    gens = [tuple(g) for g in generators]
+    if any(len(g) != X.rs.rank or any(v < 0 for v in g) for g in gens):
+        raise ValueError('effective curve generators must be nonnegative '
+                         'ambient degree vectors')
+    pairings = [sum(a * b for a, b in zip(c, g)) for g in gens]
+    if not gens or any(v <= 0 for v in pairings):
+        raise ValueError('effective curve generators must have positive '
+                         'c1 pairing')
+    fano = 0
+    for value in pairings:
+        fano = gcd(fano, abs(value))
+    cap = dim + 1
+    betas = []
+
+    def build(pos, remaining, current):
+        if pos == len(gens):
+            beta = [0] * X.rs.rank
+            for count, gen in zip(current, gens):
+                for i, value in enumerate(gen):
+                    beta[i] += count * value
+            betas.append(tuple(beta))
+            return
+        pairing = pairings[pos]
+        for count in range(remaining // pairing + 1):
+            build(pos + 1, remaining - count * pairing,
+                  current + [count])
+
+    build(0, cap, [])
+    betas.sort(key=lambda v: (sum(v), v))
+    return fano, betas
+
+
 def betas_and_fano_index(X, K):
     """BetasAndFanoIndex: (Fano index, list of curve classes to sum over)."""
     from .cintersection import ci_rank
@@ -133,6 +177,10 @@ def betas_and_fano_index(X, K):
         # Calabi-Yau complete intersection: c1 = 0, so c1(TX)* is the zero
         # operator; only the (vanishing) classical cup term remains.
         return 0, [tuple([0] * X.rs.rank)]
+    effective = getattr(K, 'effective_beta_generators', None)
+    if effective:
+        dim = len(X.wd.reduced_roots) - (ci_rank(K) if K else 0)
+        return _effective_curve_betas(X, c, dim, effective)
     kept_c = [c[r - 1] for r in X.wd.roots_that_stay]
     if any(v < 0 for v in kept_c):
         raise ValueError(
@@ -271,8 +319,13 @@ def small_quantum_multiplication(X, K, betas, progress=None, workers=0):
         cvec = chern_class_ci(X, K)
         from .cintersection import ci_rank
         dim = len(wd.reduced_roots) - ci_rank(K)
-        pre = metric_matrix(X, K, list(range(len(reps))), progress)
-        indices, g = reduce_matrix(X, pre)
+        # Classes above the complete-intersection dimension restrict to zero;
+        # excluding them before row reduction keeps the Peskine metric at its
+        # 64-dimensional ambient sector instead of carrying 776 zero rows.
+        active = [i for i, w in enumerate(reps) if wd.length(w) <= dim]
+        pre = metric_matrix(X, K, active, progress)
+        local_indices, g = reduce_matrix(X, pre)
+        indices = [active[i] for i in local_indices]
     ginv = mat_inverse(tuple(tuple(v for v in row) for row in g))
 
     n = len(indices)

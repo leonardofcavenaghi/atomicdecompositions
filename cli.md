@@ -42,7 +42,7 @@ PATH (it's `$(python3 -m site --user-base)/bin`).
 |---|---|---|
 | `<algebra>` | simple Lie algebra or a product (`x`-separated) | `A2`, `B3`, `A3xA3`, `A1xA1xA4` |
 | `--keep` | 1-based simple roots **kept out of** the parabolic (the notebook's `m` / RootsThatStay), comma-separated; nodes are numbered consecutively across product factors (Bourbaki order) | `1` for Pⁿ, `2` for Gr(2,·), `1,2` for a full A2 flag, `1,4` for P³×P³ |
-| `-K` | complete-intersection multidegrees: one row per line-bundle summand, rows separated by `;`, entries by `,` — one entry per kept node, **in `--keep` order**; entries must be ≥ 0. The expression forms `O(...)`, `S(node)`, `Q(node)`, `osum(...)`, `tensor(...)`, `sym(...)`, `wedge(...)`, and `quot(E,F)` (also `Quot(E,F)`) are accepted. | `-K 2` = O(2); `-K "1,1;2,2"` = O(1,1)⊕O(2,2) |
+| `-K` | complete-intersection multidegrees: one row per line-bundle summand, rows separated by `;`, entries by `,` — one entry per kept node, **in `--keep` order**; entries must be ≥ 0. The expression forms `O(...)`, `S(node)`, `Q(node)`, `osum(...)`, `tensor(...)`, `sym(...)`, `wedge(...)`, and `quot(E,F)` (also `Quot(E,F)`) are accepted. `Peskine()` selects the specialized bundle on `A9 --keep 1,4`. | `-K 2` = O(2); `-K "1,1;2,2"` = O(1,1)⊕O(2,2) |
 
 Common varieties:
 
@@ -72,6 +72,15 @@ bundle is present), and c₁ (of the complete intersection when `-K` is given).
 Use this first: the words shown here are what `gw --classes` accepts, and
 c₁ = 0 tells you the variety is Calabi–Yau (then `sqm` is the zero operator by
 design).
+
+The extension-aware Peskine construction can be inspected with:
+
+```bash
+python3 -m gwflags.cli A9 --keep 1,4 -K "Peskine()" info
+```
+
+Its positive-degree localization path is experimental; the command above is
+the supported starting point for checking the geometry and classical data.
 
 ### `gw` — one Gromov–Witten invariant
 
@@ -138,7 +147,8 @@ python3 tests/test_gwflags.py        # 20 checks, ~10 s
   this package and the original notebook requires it). Bundle expressions also
   accept compact aliases `O(1)`, `S(node)`, and `Q(node)`; `quot(E,F)`
   (or `Quot(E,F)`) checks the subbundle condition; explicit Python
-  forms such as `O(X,1)` and `taut_quot(X,1)` remain valid.
+  forms such as `O(X,1)` and `taut_quot(X,1)` remain valid. `Peskine()` is the
+  named extension-aware input for `A9 --keep 1,4`.
 - Calabi–Yau intersections (c₁ = 0, e.g. `A5 --keep 1 -K "2;2;2"`, a K3)
   give Fano index 0 and the zero operator. The degree-zero `gw` convenience
   path returns classical cup integrals; the degree-zero potential keeps only

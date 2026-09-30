@@ -13,7 +13,7 @@ from math import factorial
 from .rootsystem import matmul, matvec, dot
 from .symbolic import get_backend
 from .trees import all_trees, decorated_trees
-from .weyl import WeylData
+from .weyl import WeylData, _a_matrix_perm
 
 
 class GWCalculator:
@@ -45,6 +45,7 @@ class GWCalculator:
             self._poly_byll[neg] = inv    # InvertVariables branch
         self._rfactor_cache = {}
         self._billey_cache = {}
+        self._a_billey_levels = {}
 
     def __getstate__(self):
         """Drop caches on pickling: id(dt)-keyed entries are meaningless in
@@ -52,7 +53,8 @@ class GWCalculator:
         is cheap to rebuild."""
         state = dict(self.__dict__)
         for key in ('_base_cache', '_polyw_cache', '_rfactor_cache',
-                    '_billey_cache', '_ci_twist_cache', '_euler_cache',
+                    '_billey_cache', '_a_billey_levels', '_ci_twist_cache',
+                    '_euler_cache',
                     '_mu_cache', '_omega_ort_cache', '_bdeg_cache',
                     '_edge_cache'):
             state.pop(key, None)
@@ -64,6 +66,7 @@ class GWCalculator:
         self._polyw_cache = {}
         self._rfactor_cache = {}
         self._billey_cache = {}
+        self._a_billey_levels = {}
         self._edge_cache = {}
 
     # ------------------------------------------------------------ polynomials
@@ -95,6 +98,60 @@ class GWCalculator:
         return self._rfactor_cache[w]
 
     # ------------------------------------------------------ Billey's formula
+    def _billey_type_a(self, schubert, vertex):
+        """Billey restriction using permutation-valued subword states.
+
+        The direct A-type partial-flag backend stores Weyl elements as
+        permutation matrices.  The generic implementation below tests every
+        combination of positions and multiplies 10-by-10 matrices; that is
+        needlessly expensive for the 840 fixed points of A9/P.  Dynamic
+        programming over the selected subword length shares all partial
+        products and uses one-line permutations, while retaining exactly the
+        same subword formula.
+        """
+        wd = self.wd
+        sword = wd.word_of[schubert]
+        degree = len(sword)
+        level = self._a_billey_levels.get(vertex, -1)
+        if level < degree:
+            self._populate_billey_type_a(vertex, degree)
+        return self._billey_cache[(schubert, vertex)]
+
+    def _populate_billey_type_a(self, vertex, max_degree):
+        """Populate all direct-A Billey values through ``max_degree``."""
+        wd, rs = self.wd, self.rs
+        n = rs.rank + 1
+        identity_perm = tuple(range(1, n + 1))
+        states = [{} for _ in range(max_degree + 1)]
+        states[0][identity_perm] = 1
+        prefix = identity_perm
+        for pos, idx in enumerate(wd.word_of[vertex]):
+            # beta_i = (s_1 ... s_{i-1}).alpha_{v_i}; in type A this
+            # simply replaces the two endpoints of e_idx-e_{idx+1} by
+            # their images under the prefix permutation.
+            left, right = prefix[idx - 1], prefix[idx]
+            beta = tuple((1 if j == left - 1 else 0) -
+                         (1 if j == right - 1 else 0)
+                         for j in range(n))
+            factor = self.poly_byll(beta)
+            for selected in range(min(max_degree, pos + 1), 0, -1):
+                for product, value in states[selected - 1].items():
+                    nxt = list(product)
+                    nxt[idx - 1], nxt[idx] = nxt[idx], nxt[idx - 1]
+                    nxt = tuple(nxt)
+                    states[selected][nxt] = (
+                        states[selected].get(nxt, 0) + value * factor)
+            nxt_prefix = list(prefix)
+            nxt_prefix[idx - 1], nxt_prefix[idx] = (
+                nxt_prefix[idx], nxt_prefix[idx - 1])
+            prefix = tuple(nxt_prefix)
+        for target in wd.reduced_group:
+            degree = len(wd.word_of[target])
+            if degree <= max_degree:
+                self._billey_cache[(target, vertex)] = states[degree].get(
+                    _a_matrix_perm(target), 0)
+        self._a_billey_levels[vertex] = max_degree
+
     def billey(self, schubert, vertex):
         """Restriction of the equivariant Schubert class sigma_schubert to
         the fixed point `vertex` (both are Weyl matrices)."""
@@ -102,6 +159,10 @@ class GWCalculator:
         if key in self._billey_cache:
             return self._billey_cache[key]
         wd, rs = self.wd, self.rs
+        if wd._a_block_sizes is not None:
+            res = self._billey_type_a(schubert, vertex)
+            self._billey_cache[key] = res
+            return res
         if schubert == wd.group[0]:
             res = 1
         else:
