@@ -153,23 +153,15 @@ def validate() -> list[str]:
             if card.title == '2-32' and ('y1' in card.text or 'y2' in card.text):
                 if 'Quantum Matrix (symbolic' not in card.text:
                     errors.append(f'{prefix}: matrix containing y1/y2 must be labelled symbolic')
-            if card.title == '4-1':
+            expected_rows = fanography_specs().get(card.title, {}).get('matrix_at_one')
+            if expected_rows is not None:
                 matrix = MATRIX_RE.search(card.text)
-                if matrix:
-                    rows = [r.strip() for r in re.split(r'\\\\', matrix.group(1)) if r.strip()]
-                    if len(rows) > 1:
-                        entries = [c.strip() for c in rows[1].split('&')]
-                        if len(entries) > 8 and entries[8] != '2':
-                            errors.append(f'{prefix}: audited row 2, column 9 must equal 2')
-            if card.title == '1-10':
-                matrix = MATRIX_RE.search(card.text)
-                expected_rows = fanography_specs()['1-10'].get('matrix_at_one')
                 if matrix is None:
-                    errors.append(f'{prefix}: validated homogeneous-bundle matrix is missing')
+                    errors.append(f'{prefix}: validated matrix is missing')
                 else:
                     rows = [[c.strip() for c in row.strip().split('&')] for row in re.split(r'\\\\', matrix.group(1)) if row.strip()]
                     if rows != expected_rows:
-                        errors.append(f'{prefix}: published matrix disagrees with the independently recomputed 1-10 matrix')
+                        errors.append(f'{prefix}: published matrix disagrees with its recomputed snapshot')
         # Category pages use explicit anchors; Fanography uses stable variety
         # headings without anchors and is checked separately by its source links.
         if card.path.name != 'fanography.md':
