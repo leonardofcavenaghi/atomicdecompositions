@@ -1,5 +1,17 @@
 # Change log and review record
 
+## 2026-10-01 — Downloads, verification, and website navigation
+
+- Distinguished the current development package version (`1.0.2.dev0`) from
+  the stable `v1.0.1` source archive, with explicit download links for both.
+- Checked the corrected Fanography 4-1 matrix against fresh exact localization
+  and the stable source archive.
+- Added canonical page URLs, page descriptions, and sitemap validation.
+- Moved the legacy catalogue overview to `/archive/catalog/` to prevent it
+  from sharing a URL with the maintained catalogue overview.
+- Prevented older CI runs from overwriting a newer website build; publication
+  rechecks documentation and download metadata.
+
 ## 2026-09-30 — Fanography 4-1
 
 - Recomputed Fanography 4-1 with `gwflags` and corrected row 6, column 10 at

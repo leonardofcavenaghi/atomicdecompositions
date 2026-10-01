@@ -1,5 +1,29 @@
 # Release notes
 
+## Current development version: 1.0.2.dev0
+
+The website follows the `main` branch. Its installation examples obtain that
+development source, which includes changes after the latest stable tag.
+Development builds now use a distinct version number instead of reporting
+`1.0.1` for both snapshots.
+
+- Corrected the Fanography 4-1 matrix and verified it by exact localization.
+- Added separate stable and development source downloads.
+- Added canonical page URLs, descriptive search metadata, and sitemap validation.
+- Prevented superseded CI runs from overwriting current website documentation.
+
+## Downloads
+
+- [Latest stable source ZIP: v1.0.1](https://github.com/leonardofcavenaghi/atomicdecompositions/archive/refs/tags/v1.0.1.zip)
+- [Current development source ZIP](https://github.com/leonardofcavenaghi/atomicdecompositions/archive/refs/heads/main.zip)
+- [Stable tag source tree](https://github.com/leonardofcavenaghi/atomicdecompositions/tree/v1.0.1)
+
+Stable tags provide reproducible source archives. There are currently no
+published GitHub Release assets; these links download the source directly.
+To reproduce the current website examples, use the development source and
+record its commit. A stable ZIP reproduces the tagged snapshot rather than
+all later website changes.
+
 ## v1.0.1 — 2026-09-17
 
 - Removed local virtual environments, browser dependencies, and generated site output from the source tree; these remain reproducible through CI.
