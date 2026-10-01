@@ -52,12 +52,6 @@ that the fiber-weight multiset of `F` is contained in `E` with multiplicity
 before constructing the quotient. A legacy split bundle is a list of rows, for
 example `[[1], [2]]` for `O(1) + O(2)` on a one-generator space.
 
-`peskine_bundle(X)` (alias `PeskineBundle(X)`) is the specialized
-extension-aware bundle on `FlagVariety('A9', [1, 4])`. Its CLI/browser
-spelling is `Peskine()`. Unlike the ordinary weight constructors, it carries
-the non-split invariant-curve restrictions and the effective curve generator
-of the Peskine zero locus. See the [Peskine guide](peskine.md).
-
 ## 4. Main interface (`gwflags/__init__.py`)
 
 ### `FlagVariety(algebra, roots_that_stay, backend=None)`

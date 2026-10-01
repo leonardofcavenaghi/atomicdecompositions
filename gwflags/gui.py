@@ -31,8 +31,7 @@ PRESETS = [
     ('(g) quotient bundle on Gr(2,5)', 'A4', '2', 'taut_quot(X, 2)', 'info', '', '', '', 'dimension 3'),
     ('(h) P3xP3 / O(1,1)+O(2,2) [slow]', 'A3xA3', '1,4', '1,1;2,2', 'info', '', '', '', 'dimension 4'),
     ('(i) quantum matrix for P2', 'A2', '1', '', 'sqm', '', '', '', '3x3 matrix'),
-    ('(j) Peskine sixfold [classical sector]', 'A9', '1,4', 'Peskine()',
-     'info', '', '', '', 'dimension 6, Fano index 3'),
+
 ]
 
 
@@ -484,7 +483,7 @@ varieties — G/P and complete intersections</span></header>
       <div>
         <label for="K">Bundle K (optional)</label>
         <input id="K" aria-describedby="K-help" placeholder="3 or 1,1;2,2">
-        <div id="K-help" class="help">Use 3 or O(3) for a one-generator line bundle. Use O(a,b,...) when several kept roots are present; S(node) and Q(node) name tautological bundles at a kept type-A node. Use quot(E,F) (or Quot(E,F)) to form a quotient after the parser verifies F is a subbundle of E. Peskine() selects the extension-aware Peskine bundle on A9 with kept nodes 1,4. Use semicolons between summands and commas between degree entries; Python [[3]] syntax is not accepted here.</div>
+        <div id="K-help" class="help">Use 3 or O(3) for a one-generator line bundle. Use O(a,b,...) when several kept roots are present; S(node) and Q(node) name tautological bundles at a kept type-A node. Use quot(E,F) (or Quot(E,F)) to form a quotient after the parser verifies F is a subbundle of E. Use semicolons between summands and commas between degree entries; Python [[3]] syntax is not accepted here.</div>
       </div>
     </div>
   </div>

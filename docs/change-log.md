@@ -1,15 +1,7 @@
 # Change log and review record
 
-## 2026-09-30 — Peskine sixfold and Fanography 4-1
+## 2026-09-30 — Fanography 4-1
 
-- Added the extension-aware Peskine bundle on \(F(1,4;10)\), including the
-  direct large-type-A partial-flag backend, geometric invariant-curve
-  splittings, effective curve generator, Python/CLI/browser constructors, and
-  a dedicated documentation page.
-- Verified the Peskine rank, Chern data, Fano index, curve semigroup, all 840
-  Schubert representatives, and the exact rank-10 degree-zero ambient
-  multiplication operator. Positive-degree Peskine localization remains
-  explicitly experimental.
 - Recomputed Fanography 4-1 with `gwflags` and corrected row 6, column 10 at
   \(y=1\) from \(-2\) to \(0\); the complete 10-by-10 matrix is now checked
   against its executable catalog snapshot.

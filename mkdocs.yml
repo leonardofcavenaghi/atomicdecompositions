@@ -76,7 +76,6 @@ nav:
   - About: about.md
   - Installation: installation.md
   - How to Use: how-to-use.md
-  - Peskine sixfold: peskine.md
   - Catalog:
       - Overview: catalog/index.md
       - Projective Spaces: catalog/projective.md
