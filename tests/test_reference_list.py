@@ -1,4 +1,4 @@
-"""Regression: gwflags vs the reference matrices of full_test_list.tex.
+"""Regression: gwflags vs the saved independent reference matrix collection.
 
 Runs every transcribed case except the GM-20 fourfold, whose comparison is
 adjudicated separately (see discrepancy.md and tests/gm20_forensics.py:

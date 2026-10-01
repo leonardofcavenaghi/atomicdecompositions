@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "gwflags"
-version = "1.0.2.dev0"
+version = "1.0.2"
 description = "Quantum cohomology computations for flag varieties"
 readme = "README.md"
 license = {file = "LICENSE"}

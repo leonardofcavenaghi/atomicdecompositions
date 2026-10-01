@@ -1,16 +1,9 @@
-# Change log and review record
+# Changelog
 
-## 2026-10-01 — Downloads, verification, and website navigation
+## 2026-10-01
 
-- Distinguished the current development package version (`1.0.2.dev0`) from
-  the stable `v1.0.1` source archive, with explicit download links for both.
-- Checked the corrected Fanography 4-1 matrix against fresh exact localization
-  and the stable source archive.
-- Added canonical page URLs, page descriptions, and sitemap validation.
-- Moved the legacy catalogue overview to `/archive/catalog/` to prevent it
-  from sharing a URL with the maintained catalogue overview.
-- Prevented older CI runs from overwriting a newer website build; publication
-  rechecks documentation and download metadata.
+- Published version `1.0.2` with synchronized source downloads and documentation.
+- Clarified descriptions of small quantum multiplication and matrix specialization.
 
 ## 2026-09-30 — Fanography 4-1
 

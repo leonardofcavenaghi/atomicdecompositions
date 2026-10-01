@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Verify gwflags against every reference matrix in full_test_list.tex.
+"""Verify gwflags against the saved independent reference matrix collection.
 
 For each case: compute the c1(TX)* matrix, then
   1. exact symbolic matrix comparison (same basis expected);

@@ -45,7 +45,7 @@ new_card_str = r'''card = f"""??? example "Case #{idx+1}: {label}"
         <details>
           <summary><strong>Eigenvalues:</strong> {", ".join(eigen_strs)}</summary>
           <div style="padding: 5px 10px; margin-top: 5px; background-color: rgba(0,0,0,0.05); border-left: 3px solid #007bff;">
-            The eigenvalues of the small quantum multiplication matrix $c_1(TX)\\star$ evaluated at $y=1$, along with their algebraic multiplicities. These values govern the spectrum of the quantum connection.
+            The eigenvalues of the small quantum multiplication matrix $c_1(TX)\\star$ evaluated at $y=1$, along with their algebraic multiplicities. These are ordinary matrix eigenvalues at the stated specialization.
           </div>
         </details>
       </li>

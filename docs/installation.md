@@ -10,10 +10,10 @@ Choose the path that matches your background. You do not need SageMath to use th
 
 1. Install Python 3.9 or newer (Python 3.10+ is recommended) from [python.org](https://www.python.org/downloads/). On Windows, select **Add Python to PATH**.
 2. Install Git from [git-scm.com](https://git-scm.com/downloads), or download the
-   [current development ZIP](https://github.com/leonardofcavenaghi/atomicdecompositions/archive/refs/heads/main.zip)
-   and extract it. The development source matches this website. The
-   [stable v1.0.1 ZIP](https://github.com/leonardofcavenaghi/atomicdecompositions/archive/refs/tags/v1.0.1.zip)
-   provides the older tagged snapshot; see [Release notes](releases.md).
+   [current main ZIP](https://github.com/leonardofcavenaghi/atomicdecompositions/archive/refs/heads/main.zip)
+   and extract it. The main source follows this website. The
+   [stable v1.0.2 ZIP](https://github.com/leonardofcavenaghi/atomicdecompositions/archive/refs/tags/v1.0.2.zip)
+   provides the versioned snapshot; see [Release notes](releases.md).
 3. Open a terminal and obtain the source:
 
 ```bash

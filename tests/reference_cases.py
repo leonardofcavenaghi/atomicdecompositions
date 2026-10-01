@@ -1,5 +1,5 @@
 """Reference quantum-multiplication matrices transcribed verbatim from
-tests/full_test_list.tex (externally computed).  Each case:
+the independently computed matrix reference collection.  Each case:
 
     (label, algebra, keep, K, matrix)
 

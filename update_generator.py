@@ -19,7 +19,7 @@ Welcome to the automated catalog. Below you will find geometric and quantum prop
 - **Dimension**: The complex dimension of the resulting geometric space $X$. Computed by subtracting the rank of the intersecting bundle from the dimension of the ambient space.
 - **Fano Index**: The greatest integer $I_X$ dividing the anticanonical class $-K_X$. It dictates the powers of the Novikov parameters in quantum multiplication.
 - **Basis Rank**: The number of dimensions in the projected flag-ambient cohomology ring $H_{amb}^*(X)$. This equals the size of the square quantum multiplication matrix.
-- **Eigenvalues**: The eigenvalues of the small quantum multiplication matrix $c_1(TX)\\\\star$ evaluated at $y=1$, along with their algebraic multiplicities. These values govern the spectrum of the quantum connection.
+- **Eigenvalues**: The eigenvalues of the small quantum multiplication matrix $c_1(TX)\\\\star$ evaluated at $y=1$, along with their algebraic multiplicities. These are ordinary matrix eigenvalues at the stated specialization.
 - **Hodge Diamond**: The geometric $h^{p,q}$ Hodge numbers of the space.
 
 ***
