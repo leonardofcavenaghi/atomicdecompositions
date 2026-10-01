@@ -6,17 +6,17 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="GEOATOMS and gwflags: exact virtual localization for genus-zero Gromov-Witten invariants, small quantum multiplication, and a catalogue of Fano varieties and complete intersections in flag varieties.">
+        <meta name="description" content="The virtual-localization and Euler-twisted decorated-tree formulas used by gwflags for genus-zero Gromov-Witten invariants.">
       
       
       
-        <link rel="canonical" href="https://leonardofcavenaghi.github.io/atomicdecompositions/releases/">
+        <link rel="canonical" href="https://leonardofcavenaghi.github.io/atomicdecompositions/methodology/">
       
       
-        <link rel="prev" href="../discrepancy/">
+        <link rel="prev" href="../archive/catalog/">
       
       
-        <link rel="next" href="../archive/catalog/">
+        <link rel="next" href="../api-reference/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Releases - GEOATOMS</title>
+        <title>Core Theory - GEOATOMS</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#release-notes" class="md-skip">
+        <a href="#mathematical-methodology-and-replication" class="md-skip">
           Skip to content
         </a>
       
@@ -115,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Releases
+              Core Theory
             
           </span>
         </div>
@@ -340,11 +340,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../releases/" class="md-tabs__link">
         
   
   
@@ -383,11 +381,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../methodology/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -974,37 +974,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Releases
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../releases/" class="md-nav__link">
         
   
   
@@ -1020,114 +993,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#v102-2026-10-01" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        v1.0.2 — 2026-10-01
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#downloads" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Downloads
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#v101-2026-09-17" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        v1.0.1 — 2026-09-17
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#v100-2026-09-16" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        v1.0.0 — 2026-09-16
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2026-09-16-quotients-and-catalog-navigation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2026-09-16 — Quotients and catalog navigation
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2026-09-16-interface-alignment" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2026-09-16 — Interface alignment
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2026-09-15-catalog-and-interface-maintenance" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2026-09-15 — Catalog and interface maintenance
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#validation-policy" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Validation policy
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1229,8 +1094,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -1244,21 +1111,22 @@
     
     
       
+        
+        
+      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
-        
-          
-          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
             
   
   
@@ -1276,7 +1144,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1291,10 +1159,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../methodology/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Core Theory
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1310,6 +1205,131 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-goal-of-the-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Goal of the Software
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-virtual-localization-graber-pandharipande" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Virtual Localization (Graber-Pandharipande)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-borel-weil-bott-and-flag-ambient-cohomology" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Borel-Weil-Bott and Flag Ambient Cohomology
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-replicating-the-computations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Replicating the Computations
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4a-coordinate-contract-used-by-the-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4a. Coordinate contract used by the software
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-gromov-witten-invariants-theory-and-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Gromov-Witten Invariants: Theory and Examples
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Gromov-Witten Invariants: Theory and Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#intuitive-exemplification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Intuitive Exemplification
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quantum-cohomology" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quantum Cohomology
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-gwflags-computes-c_1tx-star-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why gwflags Computes \(c_1(TX) \star (-)\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1396,6 +1416,46 @@
   
 
 
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href=".." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="./" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Methodology
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
               
               <article class="md-content__inner md-typeset">
                 
@@ -1406,71 +1466,70 @@
   
 
 
-<h1 id="release-notes">Release notes<a class="headerlink" href="#release-notes" title="Permanent link">&para;</a></h1>
-<h2 id="v102-2026-10-01">v1.0.2 — 2026-10-01<a class="headerlink" href="#v102-2026-10-01" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Corrected the Fanography 4-1 matrix and verified it by exact localization.</li>
-<li>Clarified matrix specialization and validation documentation.</li>
-<li>Added canonical page URLs, descriptive search metadata, and sitemap validation.</li>
-<li>Prevented superseded CI runs from overwriting current website documentation.</li>
-</ul>
-<h2 id="downloads">Downloads<a class="headerlink" href="#downloads" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="https://github.com/leonardofcavenaghi/atomicdecompositions/archive/refs/tags/v1.0.2.zip">Stable source ZIP: v1.0.2</a></li>
-<li><a href="https://github.com/leonardofcavenaghi/atomicdecompositions/archive/refs/heads/main.zip">Current main source ZIP</a></li>
-</ul>
-<p>The stable ZIP matches version <code>1.0.2</code>. Record the commit when using main.</p>
-<h2 id="v101-2026-09-17">v1.0.1 — 2026-09-17<a class="headerlink" href="#v101-2026-09-17" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Removed local virtual environments, browser dependencies, and generated site output from the source tree; these remain reproducible through CI.</li>
-<li>Pinned the documentation toolchain and added explicit test/documentation installation paths.</li>
-<li>Expanded CI across Python 3.9–3.13 and made GitHub Pages deployment wait for the complete validation workflow.</li>
-<li>Added package metadata, repository URLs, and the MIT license.</li>
-</ul>
-<h2 id="v100-2026-09-16">v1.0.0 — 2026-09-16<a class="headerlink" href="#v100-2026-09-16" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Stabilized the Python, CLI, and browser interfaces, including quotient
-  bundles and reproducible input/output handling.</li>
-<li>Added continuous validation for the software suite, catalog source, catalog
-  LaTeX, strict site builds, and browser navigation/GUI controls.</li>
-<li>Kept release metadata and local working documents separate from the public
-  computational documentation.</li>
-</ul>
-<h2 id="2026-09-16-quotients-and-catalog-navigation">2026-09-16 — Quotients and catalog navigation<a class="headerlink" href="#2026-09-16-quotients-and-catalog-navigation" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Added same-variety quotient bundles through <code>quot(E,F)</code> / <code>Quot(E,F)</code> with
-  multiplicity-aware fiber-weight validation.</li>
-<li>Published copyable quotient examples and synchronized Python, CLI, GUI, and
-  API documentation.</li>
-<li>Catalog example links now open the selected card and re-typeset its formulas
-  after instant navigation.</li>
-</ul>
-<h2 id="2026-09-16-interface-alignment">2026-09-16 — Interface alignment<a class="headerlink" href="#2026-09-16-interface-alignment" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Published kept-root beta input with canonical ambient output and
-  explicit validation of removed roots.</li>
-<li>Added compact bundle aliases and strict reduced/minimal Schubert-word checks
-  to both browser and CLI interfaces.</li>
-<li>Synchronized the API, methodology, and website audit documentation.</li>
-</ul>
-<h2 id="2026-09-15-catalog-and-interface-maintenance">2026-09-15 — Catalog and interface maintenance<a class="headerlink" href="#2026-09-15-catalog-and-interface-maintenance" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Added guided GUI presets, clearer input syntax, bundle-combination walkthroughs, and validation feedback.</li>
-<li>Corrected catalog duplicate entries and synchronized matrix-rank metadata.</li>
-<li>Classified Fanography records by realization type and marked unsupported constructions as catalog-only.</li>
-<li>Added catalog and website audit reports.</li>
-<li>Added deterministic, duplicate-safe catalog generation that preserves the reviewed Fanography page by default.</li>
-<li>Added automated validation and browser/API regression coverage.</li>
-<li>Recomputed and verified supported Fanography matrices for 1-5, 1-14, 2-24, 2-34, and 4-1.</li>
-</ul>
-<h2 id="validation-policy">Validation policy<a class="headerlink" href="#validation-policy" title="Permanent link">&para;</a></h2>
-<p>Every release must pass the Python test suite, catalog validator, strict MkDocs build, and representative GUI/API smoke tests. Pending catalog computations must be explicitly labelled rather than presented as verified matrices.</p>
+<h1 id="mathematical-methodology-and-replication">Mathematical Methodology and Replication<a class="headerlink" href="#mathematical-methodology-and-replication" title="Permanent link">&para;</a></h1>
+<p>This document explains the mathematical foundations underpinning the <code>gwflags</code> software and how the computed invariants of complete intersections in flag varieties are calculated.</p>
+<h2 id="1-goal-of-the-software">1. Goal of the Software<a class="headerlink" href="#1-goal-of-the-software" title="Permanent link">&para;</a></h2>
+<p>The <code>gwflags</code> library computes the <strong>small quantum multiplication by the first Chern class</strong>, <span class="arithmatex">\(c_1(TX) \star (-)\)</span>, for complete intersections <span class="arithmatex">\(X\)</span> in flag varieties. The software returns its exact matrix together with the grading and basis used in the calculation.</p>
+<p>Specifically, for a complete intersection defined by a homogeneous vector bundle <span class="arithmatex">\(\mathcal{E}\)</span> on an ambient flag variety <span class="arithmatex">\(F = G/P\)</span>, the software evaluates the equivariant Gromov-Witten invariants and constructs the small quantum multiplication matrix projected onto the flag-ambient cohomology <span class="arithmatex">\(H^*_{\text{amb}}(X)\)</span>.</p>
+<h2 id="2-virtual-localization-graber-pandharipande">2. Virtual Localization (Graber-Pandharipande)<a class="headerlink" href="#2-virtual-localization-graber-pandharipande" title="Permanent link">&para;</a></h2>
+<p>Directly integrating Gromov-Witten classes over the moduli space of stable maps is generally computationally infeasible. Instead, <code>gwflags</code> relies on the algebraic torus action <span class="arithmatex">\(T \subset G\)</span> acting on the flag variety <span class="arithmatex">\(F = G/P\)</span> and the corresponding induced action on the moduli space of maps.</p>
+<p>By applying the <strong>Graber-Pandharipande Virtual Localization Theorem</strong>, the integrals are reduced to finite sums over the <span class="arithmatex">\(T\)</span>-fixed loci of the moduli space. The fixed loci correspond to decorated trees (or graphs) where:
+- Vertices map to fixed points of <span class="arithmatex">\(F\)</span> (which are in bijection with the Weyl group quotient <span class="arithmatex">\(W/W_P\)</span>).
+- Edges correspond to invariant curves connecting these fixed points.</p>
+<p>The software recursively generates these graphs for a given curve degree <span class="arithmatex">\(\beta\)</span>, calculates the equivariant Euler classes of the virtual normal bundles (using the roots of <span class="arithmatex">\(G\)</span> and weights of <span class="arithmatex">\(\mathcal{E}\)</span>), and computes the intersection numbers programmatically. </p>
+<p><strong>Background:</strong> <a href="https://doi.org/10.1016/0040-9383(84)90021-1">The Moment Map and Equivariant Cohomology (Atiyah &amp; Bott, 1984)</a>. The fixed-locus formula used here is the Graber–Pandharipande virtual localization theorem.</p>
+<h2 id="3-borel-weil-bott-and-flag-ambient-cohomology">3. Borel-Weil-Bott and Flag Ambient Cohomology<a class="headerlink" href="#3-borel-weil-bott-and-flag-ambient-cohomology" title="Permanent link">&para;</a></h2>
+<p>For the ambient space <span class="arithmatex">\(F\)</span>, the cohomology basis consists of Schubert classes <span class="arithmatex">\(\sigma_w\)</span>. When intersecting with the zero locus of <span class="arithmatex">\(\mathcal{E}\)</span>, not all Schubert classes survive.</p>
+<p>The dimension and basis rank are derived using Lie theory. 
+- The dimension is exactly <span class="arithmatex">\(|R^+ \setminus R^+_P| - \text{rank}(\mathcal{E})\)</span>.
+- The flag-ambient cohomology <span class="arithmatex">\(H^*_{\text{amb}}(X)\)</span> is exactly the image of the restriction map <span class="arithmatex">\(i^*: H^*(F, \mathbb{Q}) \to H^*(X, \mathbb{Q})\)</span>.</p>
+<p><strong>Reference:</strong> <a href="https://doi.org/10.2307/1970105">Homogeneous Vector Bundles (Bott, 1957)</a></p>
+<h2 id="4-replicating-the-computations">4. Replicating the Computations<a class="headerlink" href="#4-replicating-the-computations" title="Permanent link">&para;</a></h2>
+<p>Because <code>gwflags</code> explicitly computes the exact localization graphs, all geometric values (Fano index, dimension, basis rank, and the quantum multiplication matrix <span class="arithmatex">\(A^{\text{alg}}(1)\)</span>) can be natively replicated by a researcher on their local machine.</p>
+<p>To replicate a result found in our <a href="../catalog/">Catalog</a>:
+1. Install <code>gwflags</code> (see <a href="../installation/">Installation</a>).
+2. Instantiate the flag variety using <code>X = FlagVariety(algebra, roots_that_stay)</code>.
+3. Invoke <code>X.small_quantum_multiplication(K)</code> where <span class="arithmatex">\(K\)</span> specifies the multidegrees of the vector bundle. The Python API accepts legacy rows such as <code>[[2]]</code> or a <code>HomogeneousBundle</code>; the browser/CLI accepts compact rows such as <code>2</code> and compact aliases such as <code>Q(2)</code>.
+4. Evaluate the resulting symbolic matrix by setting all <code>y&lt;node&gt; = 1</code> to specialize the small quantum multiplication matrix. The variable label is the ambient Bourbaki node, not the position in an abbreviated kept-root list.</p>
+<p>The saved matrix entries, dimensions, basis and grading can be compared exactly with the software output.</p>
+<h2 id="4a-coordinate-contract-used-by-the-software">4a. Coordinate contract used by the software<a class="headerlink" href="#4a-coordinate-contract-used-by-the-software" title="Permanent link">&para;</a></h2>
+<p>A curve degree is a vector in the simple-coroot basis of the kept
+roots <code>roots_that_stay</code>, in that declared order. For example, a line on
+<code>Gr(2,4) = A3/P2</code> is <code>beta=(1,)</code>. Internally it is embedded as the ambient
+vector <code>(0,1,0)</code>; both forms are accepted by <code>FlagVariety.gw</code> and by the
+website. A full ambient vector is valid only when all removed-root coordinates
+are zero. The dimension gate uses
+<span class="arithmatex">\(\sum \ell(u_i)=\dim X+\langle c_1(TX),\beta\rangle+n-3\)</span>.</p>
+<p>The matrix returned by <code>small_quantum_multiplication</code> is the
+flag-ambient operator described above. It is the full small quantum
+cohomology operator only when the homology and ambient-completeness hypotheses
+are satisfied. Automatic beta enumeration is a finite Fano/nef convenience; a
+negative kept Chern coordinate requires an explicit finite beta list.</p>
+<h2 id="5-gromov-witten-invariants-theory-and-examples">5. Gromov-Witten Invariants: Theory and Examples<a class="headerlink" href="#5-gromov-witten-invariants-theory-and-examples" title="Permanent link">&para;</a></h2>
+<p>To fully understand the output of <code>gwflags</code>, one must understand the underlying objects being computed: <strong>Gromov-Witten (GW) Invariants</strong>.</p>
+<p>At a macroscopic level, Gromov-Witten invariants are rational numbers that count the "virtual" number of complex curves of a given genus <span class="arithmatex">\(g\)</span> and degree <span class="arithmatex">\(\beta\)</span> that intersect a specified collection of subvarieties inside a target space <span class="arithmatex">\(X\)</span>. </p>
+<h3 id="intuitive-exemplification">Intuitive Exemplification<a class="headerlink" href="#intuitive-exemplification" title="Permanent link">&para;</a></h3>
+<p>In classical enumerative geometry, a foundational question is: <em>"How many lines pass through two generic points in the projective plane <span class="arithmatex">\(\mathbb{P}^2\)</span>?"</em> 
+The classical answer is exactly <strong>1</strong>. </p>
+<p>In the language of Gromov-Witten theory, a line has degree <span class="arithmatex">\(d=1\)</span> and genus <span class="arithmatex">\(g=0\)</span>. A point represents a specific cohomology class in <span class="arithmatex">\(H^*(\mathbb{P}^2)\)</span>. The fact that exactly one line passes through two points is encoded as a 2-point Gromov-Witten invariant:
+$$ \langle \text{point}, \text{point} \rangle_{0, 1} = 1 $$</p>
+<p>Another classic example: <em>"How many rational curves of degree <span class="arithmatex">\(d\)</span> pass through <span class="arithmatex">\(3d-1\)</span> general points in <span class="arithmatex">\(\mathbb{P}^2\)</span>?"</em> 
+For <span class="arithmatex">\(d=1\)</span>, we get 1 line through 2 points. For <span class="arithmatex">\(d=2\)</span>, we get 1 conic through 5 points. For <span class="arithmatex">\(d=3\)</span>, we get 12 nodal cubics through 8 points. These values (<span class="arithmatex">\(1, 1, 12, \dots\)</span>) are all Gromov-Witten invariants.</p>
+<h3 id="quantum-cohomology">Quantum Cohomology<a class="headerlink" href="#quantum-cohomology" title="Permanent link">&para;</a></h3>
+<p>Gromov-Witten invariants allow us to "deform" the classical cohomology ring <span class="arithmatex">\(H^*(X)\)</span> into the <strong>Quantum Cohomology Ring</strong> <span class="arithmatex">\(QH^*(X)\)</span>.</p>
+<p>In classical cohomology, the cup product <span class="arithmatex">\(\alpha \cup \beta\)</span> simply intersects two subvarieties. In quantum cohomology, the <strong>quantum cup product</strong> <span class="arithmatex">\(\alpha \star \beta\)</span> introduces quantum corrections that count rational curves (genus <span class="arithmatex">\(g=0\)</span>) intersecting <span class="arithmatex">\(\alpha\)</span>, <span class="arithmatex">\(\delta\)</span>, and a third class <span class="arithmatex">\(\gamma\)</span>. The 3-point Gromov-Witten invariants <span class="arithmatex">\(\langle \alpha, \delta, \gamma \rangle_{0, \beta}\)</span> act precisely as the structure constants for this new quantum multiplication.</p>
+<h3 id="why-gwflags-computes-c_1tx-star-">Why <code>gwflags</code> Computes <span class="arithmatex">\(c_1(TX) \star (-)\)</span><a class="headerlink" href="#why-gwflags-computes-c_1tx-star-" title="Permanent link">&para;</a></h3>
+<p>The software specializes in computing the quantum multiplication by a very specific class: the first Chern class of the tangent bundle, <span class="arithmatex">\(c_1(TX)\)</span>. </p>
+<p>The matrix represents the small quantum multiplication operator <span class="arithmatex">\(c_1(TX) \star (-)\)</span> in the returned basis. Its entries record the classical product and the Gromov–Witten corrections, with Novikov variables keeping track of curve degrees.</p>
 
 
 
 
 
 
+
+  
+  
 
 
 
