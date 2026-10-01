@@ -90,6 +90,7 @@ def test_peskine_gui_and_cli_aliases(peskine_data):
         assert parser('peskine()', X).key() == K.key()
 
 
+@pytest.mark.slow
 def test_peskine_degree_zero_ambient_operator(peskine_data):
     """Exercise the direct A9 backend and the classical twisted metric."""
     X, K = peskine_data

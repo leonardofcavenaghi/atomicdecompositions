@@ -12,6 +12,8 @@ classes, which are certified nonzero by the divisor axiom).
 import os
 import sys
 
+import pytest
+
 sys.path.insert(0, os.path.dirname(__file__))
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 
@@ -21,6 +23,7 @@ from verify_full_list import verify
 DISPUTED = ('GM-20',)
 
 
+@pytest.mark.slow
 def test_reference_matrices():
     failures = []
     for (label, algebra, keep, K, ref) in CASES:

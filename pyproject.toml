@@ -26,3 +26,8 @@ include = ["gwflags*"]
 [project.scripts]
 gwflags = "gwflags.cli:main"
 gwflags-gui = "gwflags.gui:main"
+
+[tool.pytest.ini_options]
+markers = [
+    "slow: exact algebra regressions run once on the newest supported Python",
+]
