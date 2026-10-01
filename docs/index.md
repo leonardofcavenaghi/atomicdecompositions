@@ -31,5 +31,11 @@ The accompanying software, `gwflags`, provides a computational framework to eval
 
 ## Download
 
-The code is hosted directly on this repository. You can explore the source code here:
-- [GitHub Repository](https://github.com/leonardofcavenaghi/atomicdecompositions)
+Download the [current development source ZIP](https://github.com/leonardofcavenaghi/atomicdecompositions/archive/refs/heads/main.zip)
+to use the software corresponding to this website, or the
+[stable v1.0.1 source ZIP](https://github.com/leonardofcavenaghi/atomicdecompositions/archive/refs/tags/v1.0.1.zip)
+for the tagged snapshot. See [Release notes](releases.md) for their differences
+and [Installation](installation.md) for setup.
+
+The [GitHub repository](https://github.com/leonardofcavenaghi/atomicdecompositions)
+contains the source and its commit history.

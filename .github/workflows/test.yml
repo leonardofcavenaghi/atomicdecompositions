@@ -114,6 +114,9 @@ jobs:
       - name: Validate search metadata and withdrawn pages
         run: python scripts/validate_search_metadata.py
 
+      - name: Validate package version and download documentation
+        run: python scripts/validate_release_metadata.py
+
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
