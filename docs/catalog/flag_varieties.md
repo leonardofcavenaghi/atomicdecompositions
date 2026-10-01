@@ -1,3 +1,7 @@
+---
+description: Small quantum multiplication for flag varieties, with exact matrices and reproducible localization inputs.
+---
+
 # Flag Varieties
 
 This section contains complete intersections inside this geometric family, systematically organized by dimension and Fano index.

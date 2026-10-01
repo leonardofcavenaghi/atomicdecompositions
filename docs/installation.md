@@ -1,3 +1,7 @@
+---
+description: Install gwflags on Linux, macOS, or Windows to compute Gromov-Witten invariants and quantum multiplication using exact virtual localization.
+---
+
 # Installation
 
 Choose the path that matches your background. You do not need SageMath to use the browser interface or the core Python API.

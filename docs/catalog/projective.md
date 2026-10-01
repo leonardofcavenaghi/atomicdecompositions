@@ -1,3 +1,7 @@
+---
+description: Quantum multiplication matrices and geometric invariants for Fano complete intersections in projective spaces, computed by virtual localization.
+---
+
 # Projective Spaces
 
 This section contains complete intersections inside this geometric family, systematically organized by dimension and Fano index.

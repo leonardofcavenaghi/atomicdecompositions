@@ -1,3 +1,7 @@
+---
+description: Quantum multiplication matrices for Grassmannians and their Fano complete intersections, with reproducible gwflags inputs.
+---
+
 # Grassmannians
 
 This section contains complete intersections inside this geometric family, systematically organized by dimension and Fano index.

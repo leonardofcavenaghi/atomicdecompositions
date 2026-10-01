@@ -1,4 +1,6 @@
 site_name: GEOATOMS
+site_url: https://leonardofcavenaghi.github.io/atomicdecompositions/
+site_description: 'GEOATOMS and gwflags: exact virtual localization for genus-zero Gromov-Witten invariants, small quantum multiplication, and a catalogue of Fano varieties and complete intersections in flag varieties.'
 repo_name: leonardofcavenaghi/atomicdecompositions
 repo_url: https://github.com/leonardofcavenaghi/atomicdecompositions
 edit_uri: edit/main/docs/
@@ -90,7 +92,7 @@ nav:
       - Reference Discrepancies: discrepancy.md
   - Releases: releases.md
   - Archive:
-      - Legacy catalog: catalog.md
+      - Legacy catalog: archive/catalog.md
   - Methodology:
       - Core Theory: methodology.md
       - API Reference: api-reference.md

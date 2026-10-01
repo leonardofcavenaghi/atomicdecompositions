@@ -1,4 +1,9 @@
-# GEOATOMS
+---
+title: GEOATOMS — Gromov-Witten invariants and quantum cohomology
+description: Compute genus-zero Gromov-Witten invariants and small quantum multiplication by exact virtual localization with gwflags. Explore the Fano variety and flag complete-intersection catalogue.
+---
+
+# GEOATOMS: Gromov-Witten invariants and quantum cohomology
 
 <div align="center">
   <img src="assets/logo.jpg" alt="GEOATOMS Logo" width="400"/>

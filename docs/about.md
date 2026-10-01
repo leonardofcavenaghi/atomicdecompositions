@@ -1,3 +1,7 @@
+---
+description: The GEOATOMS research group, contributors, and sources behind the gwflags software and quantum cohomology catalogue.
+---
+
 # About the Project
 
 This project is an effort of the **GEOATOMS** mathematical research group.

@@ -1,3 +1,7 @@
+---
+description: Explore exact small quantum multiplication matrices, Fano indices, and ambient cohomology for Fano varieties and complete intersections computed with gwflags.
+---
+
 # Catalog Master Search
 
 Welcome to the **Master Search Database**. Use the search bar in the top right of this table to instantly filter through all computed geometric spaces, or sort by dimension, Fano index, and rank. You can type freely (e.g., "Gr", "Fano Index 2", "15") to find exactly what you are looking for.

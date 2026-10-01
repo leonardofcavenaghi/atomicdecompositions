@@ -1,3 +1,7 @@
+---
+description: Run gwflags to compute exact genus-zero Gromov-Witten invariants and small quantum multiplication for flag varieties and complete intersections.
+---
+
 # How to use `gwflags`
 
 `gwflags` computes Gromov–Witten invariants and small quantum multiplication for flag varieties `G/P` and supported complete intersections. The browser interface is the easiest starting point; the Python and CLI interfaces are documented later.

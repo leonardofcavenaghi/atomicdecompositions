@@ -1,3 +1,7 @@
+---
+description: Python API for gwflags: flag varieties, homogeneous bundles, Gromov-Witten invariants, and small quantum multiplication.
+---
+
 # GWFlags API Reference
 
 `gwflags` evaluates decorated-tree formulas with exact Python/Sage
