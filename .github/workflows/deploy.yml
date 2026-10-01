@@ -37,4 +37,15 @@ jobs:
           python -m pip install -r requirements-docs.txt
 
       - name: Deploy to GitHub Pages
-        run: mkdocs gh-deploy --force
+        env:
+          VALIDATED_SHA: ${{ github.event.workflow_run.head_sha }}
+        run: |
+          git fetch origin main
+          if [ "$(git rev-parse origin/main)" != "$VALIDATED_SHA" ]; then
+            echo "Skipping superseded documentation build: $VALIDATED_SHA"
+            exit 0
+          fi
+          mkdocs build --strict
+          python scripts/validate_search_metadata.py
+          python scripts/validate_release_metadata.py
+          mkdocs gh-deploy --force
