@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-02
+
+- Fixed formula rendering during page navigation and rapid page changes; refreshing is no longer required.
+- Verified catalog links, formula rendering and duplicate-free output with browser checks.
+- Corrected the `(1,1,1,1)` hypersurface description.
+
 ## 2026-10-01
 
 - Published version `1.0.2` with synchronized source downloads and documentation.

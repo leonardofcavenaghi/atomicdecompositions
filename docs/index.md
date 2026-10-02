@@ -33,7 +33,7 @@ The accompanying software, `gwflags`, provides a computational framework to eval
 
 Download the [current main source ZIP](https://github.com/leonardofcavenaghi/atomicdecompositions/archive/refs/heads/main.zip)
 to use the software corresponding to this website, or the
-[stable v1.0.2 source ZIP](https://github.com/leonardofcavenaghi/atomicdecompositions/archive/refs/tags/v1.0.2.zip)
+[stable v1.0.3 source ZIP](https://github.com/leonardofcavenaghi/atomicdecompositions/archive/refs/tags/v1.0.3.zip)
 for the tagged snapshot. See [Release notes](releases.md) for version details
 and [Installation](installation.md) for setup.
 

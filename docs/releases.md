@@ -1,5 +1,11 @@
 # Release notes
 
+## v1.0.3 — 2026-10-02
+
+- Formulas render after page navigation without requiring a refresh, including rapid page changes.
+- Catalog links open the selected example while preserving formula rendering.
+- Corrected the description of the smooth `(1,1,1,1)` hypersurface in `(P¹)⁴`.
+
 ## v1.0.2 — 2026-10-01
 
 - Corrected the Fanography 4-1 matrix and verified it by exact localization.
@@ -9,10 +15,10 @@
 
 ## Downloads
 
-- [Stable source ZIP: v1.0.2](https://github.com/leonardofcavenaghi/atomicdecompositions/archive/refs/tags/v1.0.2.zip)
+- [Stable source ZIP: v1.0.3](https://github.com/leonardofcavenaghi/atomicdecompositions/archive/refs/tags/v1.0.3.zip)
 - [Current main source ZIP](https://github.com/leonardofcavenaghi/atomicdecompositions/archive/refs/heads/main.zip)
 
-The stable ZIP matches version `1.0.2`. Record the commit when using main.
+The stable ZIP matches version `1.0.3`. Record the commit when using main.
 
 ## v1.0.1 — 2026-09-17
 

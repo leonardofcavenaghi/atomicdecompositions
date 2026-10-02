@@ -6,7 +6,7 @@ package; runs on plain Python and inside SageMath.
 [Website and catalogue](https://leonardofcavenaghi.github.io/atomicdecompositions/)
 · [Release notes and downloads](https://leonardofcavenaghi.github.io/atomicdecompositions/releases/)
 
-The current package version is `1.0.2`, available as the stable tag `v1.0.2`.
+The current package version is `1.0.3`, available as the stable tag `v1.0.3`.
 Use that tag for a reproducible release snapshot matching the website.
 
 It computes, for a flag variety **G/P** — of any simple type A–G *or a
