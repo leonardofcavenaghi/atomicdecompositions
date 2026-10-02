@@ -692,7 +692,7 @@ This section contains the 3-dimensional Fano varieties rigorously mapped and com
     - **Fano Index:** `1`
     - **Dimension:** `3`
     - **Basis Rank:** `10`
-    - **Description:** Anticanonical (1,1,1,1) hypersurface in (P¹)⁴.
+    - **Description:** Smooth (1,1,1,1) hypersurface in (P¹)⁴.
     - **Realization type:** Line-bundle complete intersection on a product of flag varieties.
 
 
