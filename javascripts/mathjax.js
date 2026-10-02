@@ -16,6 +16,8 @@ window.MathJax = {
 // about those later DOM replacements unless we ask it to typeset the new body.
 (function () {
   var typesetting = false;
+  var requested = false;
+  var previousArticle = null;
 
   function revealHash() {
     var raw = window.location.hash.slice(1);
@@ -44,29 +46,46 @@ window.MathJax = {
 
   function typesetArticle() {
     revealHash();
-    if (!window.MathJax || typeof window.MathJax.typesetPromise !== "function") {
-      return;
-    }
-    var article = document.querySelector('[data-md-component="content"]');
-    if (!article || typesetting) return;
-
-    // Do not run MathJax repeatedly on an already-rendered article.  Repeated
-    // calls append duplicate <mjx-container> nodes, which is especially easy
-    // to trigger when a hard load and an instant navigation finish together.
-    var pending = false;
-    article.querySelectorAll('.arithmatex').forEach(function (node) {
-      if (!node.querySelector('mjx-container')) pending = true;
-    });
-    if (!pending) return;
-
+    requested = true;
+    var math = window.MathJax;
+    if (typesetting || !math || typeof math.typesetPromise !== "function") return;
     typesetting = true;
-    window.MathJax.typesetPromise([article]).catch(function () {
-      // A transient navigation or a malformed third-party fragment must not
-      // break the rest of the site; the next navigation will retry typesetting.
-    }).then(function () {
+
+    // Startup and all later typesets share one queue. A navigation that
+    // arrives during rendering must be processed after the active render.
+    Promise.resolve(math.startup.promise).then(async function () {
+      while (requested) {
+        requested = false;
+        revealHash();
+        var article = document.querySelector('[data-md-component="content"]');
+        if (!article) continue;
+        if (previousArticle && previousArticle !== article) {
+          math.typesetClear([previousArticle]);
+        }
+        previousArticle = article;
+        var pending = Array.from(article.querySelectorAll('.arithmatex')).filter(function (node) {
+          return !node.querySelector('mjx-container');
+        });
+        if (pending.length) await math.typesetPromise(pending);
+        revealHash();
+      }
+    }).catch(function (error) {
+      console.error("Formula rendering failed", error);
+    }).finally(function () {
       typesetting = false;
+      if (requested) typesetArticle();
     });
   }
+
+  // Render through the same queue even if the initial navigation event
+  // arrives before the MathJax runtime has finished loading.
+  window.MathJax.startup = {
+    typeset: false,
+    ready: function () {
+      MathJax.startup.defaultReady();
+      MathJax.startup.promise.then(typesetArticle);
+    }
+  };
 
   // `document$` is supplied by the Material bundle.  The fallback keeps the
   // script usable when a page is opened as a plain static file.
@@ -76,6 +95,9 @@ window.MathJax = {
     document.addEventListener("DOMContentLoaded", typesetArticle);
   } else {
     typesetArticle();
+  }
+  if (typeof location$ !== "undefined" && location$ && location$.subscribe) {
+    location$.subscribe(typesetArticle);
   }
   window.addEventListener("hashchange", function () {
     revealHash();
