@@ -8,7 +8,7 @@ These entries include orthogonal, symplectic, exceptional and partial flag varie
 
 Matrices represent multiplication by $c_1(TY)$ on the returned ambient sector, with every Novikov variable set to $1$. Columns are inputs and rows are outputs. The ordered basis below uses reduced Schubert words; `()` is the unit. Basis indices in the download are zero-based.
 
-[Download all symbolic matrices, bases, gradings and curve classes](../data/localization-results.json) or browse the [complete computed-data index](computed.md). See [How to Use](../how-to-use.md) for input conventions.
+[Download all symbolic matrices, bases, gradings and curve classes](../data/localization-results.json) or browse [Download matrices and inputs](computed.md). See [How to Use](../how-to-use.md) for input conventions.
 
 | Geometry | Dimension | Fano index | Basis rank |
 |---|---|---|---|

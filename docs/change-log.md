@@ -2,6 +2,7 @@
 
 ## 2026-10-12 — Documentation and mathematical boundary review
 
+- Simplified navigation after v1.0.5: removed the obsolete Archive menu and clarified the optional matrix/input download page.
 - Added a visible homepage update and synchronized stable downloads at v1.0.5.
 - Corrected inverse-pairing, ambient-index, degree-zero and bundle conventions;
   fixed the installation code block and copied Grassmannian insertion example.

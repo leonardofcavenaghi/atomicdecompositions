@@ -43,7 +43,7 @@ def additional_page(records):
         'The ordered basis below uses reduced Schubert words; `()` is the unit. '
         'Basis indices in the download are zero-based.', '',
         '[Download all symbolic matrices, bases, gradings and curve classes](../data/localization-results.json) '
-        'or browse the [complete computed-data index](computed.md). '
+        'or browse [Download matrices and inputs](computed.md). '
         'See [How to Use](../how-to-use.md) for input conventions.', '',
         '| Geometry | Dimension | Fano index | Basis rank |',
         '|---|---|---|---|',
@@ -79,7 +79,13 @@ def computed_page(records):
     lines = [
         '---',
         'description: Download exact symbolic quantum multiplication matrices, ordered bases, gradings and supported curve classes for 131 completed localization computations.',
-        '---', '', '# Exact computation data', '',
+        '---', '', '# Download matrices and inputs', '',
+        'This download lets you reuse the matrices displayed in the catalog in Python, '
+        'SageMath or other software, or repeat the computations from their original inputs. '
+        'It includes the basis order and grading needed to interpret each matrix.', '',
+        'You can read the examples directly in the [catalog](index.md); the download is optional. '
+        '**Exact** means that fractions and symbolic expressions are preserved instead of '
+        'rounded decimal approximations.', '',
         f'This collection contains **{len(records)} completed exact localization computations**, '
         f'including **{sum(r["dimension"] == 3 for r in records)} threefold realizations**. '
         'Different realizations are listed separately even when the resulting varieties are isomorphic.', '',

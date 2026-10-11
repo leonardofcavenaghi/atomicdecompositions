@@ -4,7 +4,7 @@ description: Explore exact small quantum multiplication matrices, Fano indices, 
 
 # Catalog Master Search
 
-Browse the [exact computation data](computed.md) for 131 completed localization
+[Download matrices and inputs](computed.md) for 131 completed localization
 results, with downloadable symbolic matrices, ordered bases, gradings and curve
 classes. The [additional flag varieties and sections](additional.md) include
 15 entries beyond the original category pages.

@@ -1,5 +1,13 @@
 # Release notes
 
+## Website updates after v1.0.5
+
+- Removed the obsolete Archive entry from navigation; old links still reach the catalog pointer.
+- Renamed the optional data page to **Download matrices and inputs**, explaining its purpose and what “exact” means.
+
+These navigation changes are on the current website and main branch. The
+stable source download remains the tagged v1.0.5 software snapshot.
+
 ## v1.0.5 — 2026-10-12
 
 - Made the new catalog and its 131 exact results visible on the homepage, and synchronized every stable download link.

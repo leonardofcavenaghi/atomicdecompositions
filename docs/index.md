@@ -24,7 +24,7 @@ The accompanying software, `gwflags`, provides a computational framework to eval
 ## Latest update — 12 October 2026
 
 The catalog now includes [15 additional flag varieties and sections](catalog/additional.md),
-including the full GM-20 matrix. [Exact computation data](catalog/computed.md)
+including the full GM-20 matrix. [Download matrices and inputs](catalog/computed.md)
 provides symbolic matrices, ordered bases, gradings and curve lists for
 **131 completed examples**. The master table is synchronized with these entries.
 

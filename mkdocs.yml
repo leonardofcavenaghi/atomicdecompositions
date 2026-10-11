@@ -84,7 +84,7 @@ nav:
       - Grassmannians: catalog/grassmannians.md
       - Flag Varieties: catalog/flag_varieties.md
       - Additional Flag Varieties and Sections: catalog/additional.md
-      - Exact Computation Data: catalog/computed.md
+      - Download matrices and inputs: catalog/computed.md
       - Fanography: catalog/fanography.md
   - Review and Changes:
       - Change log: change-log.md
@@ -93,8 +93,6 @@ nav:
       - Mathematics and Software Audit: audits/math-software-review.md
       - Reference Discrepancies: discrepancy.md
   - Releases: releases.md
-  - Archive:
-      - Legacy catalog: archive/catalog.md
   - Methodology:
       - Core Theory: methodology.md
       - API Reference: api-reference.md

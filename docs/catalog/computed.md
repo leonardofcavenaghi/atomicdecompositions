@@ -2,7 +2,11 @@
 description: Download exact symbolic quantum multiplication matrices, ordered bases, gradings and supported curve classes for 131 completed localization computations.
 ---
 
-# Exact computation data
+# Download matrices and inputs
+
+This download lets you reuse the matrices displayed in the catalog in Python, SageMath or other software, or repeat the computations from their original inputs. It includes the basis order and grading needed to interpret each matrix.
+
+You can read the examples directly in the [catalog](index.md); the download is optional. **Exact** means that fractions and symbolic expressions are preserved instead of rounded decimal approximations.
 
 This collection contains **131 completed exact localization computations**, including **32 threefold realizations**. Different realizations are listed separately even when the resulting varieties are isomorphic.
 
