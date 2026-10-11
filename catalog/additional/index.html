@@ -1,0 +1,2638 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Exact quantum multiplication matrices and reproducible inputs for additional flag varieties and their complete intersections.">
+      
+      
+      
+        <link rel="canonical" href="https://leonardofcavenaghi.github.io/atomicdecompositions/catalog/additional/">
+      
+      
+        <link rel="prev" href="../flag_varieties/">
+      
+      
+        <link rel="next" href="../computed/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/logo.jpg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Additional Flag Varieties and Sections - GEOATOMS</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#additional-flag-varieties-and-sections" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="GEOATOMS" class="md-header__button md-logo" aria-label="GEOATOMS" data-md-component="logo">
+      
+  <img src="../../assets/logo.jpg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            GEOATOMS
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Additional Flag Varieties and Sections
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="teal"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="cyan"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/leonardofcavenaghi/atomicdecompositions" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    leonardofcavenaghi/atomicdecompositions
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../about/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  About
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../installation/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Installation
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../how-to-use/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  How to Use
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Catalog
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../change-log/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Review and Changes
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../releases/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Releases
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../archive/catalog/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Archive
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../methodology/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Methodology
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="GEOATOMS" class="md-nav__button md-logo" aria-label="GEOATOMS" data-md-component="logo">
+      
+  <img src="../../assets/logo.jpg" alt="logo">
+
+    </a>
+    GEOATOMS
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/leonardofcavenaghi/atomicdecompositions" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    leonardofcavenaghi/atomicdecompositions
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to-use/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    How to Use
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Catalog
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Catalog
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../projective/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projective Spaces
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../grassmannians/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Grassmannians
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../flag_varieties/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Flag Varieties
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Additional Flag Varieties and Sections
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../computed/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exact Computation Data
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fanography/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fanography
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Review and Changes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Review and Changes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../change-log/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Change log
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../audits/website-usage-review/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Website Usage Audit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../audits/catalog-review/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Catalog Review
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../audits/math-software-review/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mathematics and Software Audit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../discrepancy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference Discrepancies
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../releases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Releases
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Archive
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Archive
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archive/catalog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Legacy catalog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Methodology
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Methodology
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methodology/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Core Theory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api-reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API Reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lie-algebras/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lie Algebras Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Catalog
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="additional-flag-varieties-and-sections">Additional flag varieties and sections<a class="headerlink" href="#additional-flag-varieties-and-sections" title="Permanent link">&para;</a></h1>
+<p>These entries include orthogonal, symplectic, exceptional and partial flag varieties, and complete intersections in them. Each displayed matrix comes from exact <code>gwflags</code> virtual localization using the full automatically supported curve list.</p>
+<p>Matrices represent multiplication by <span class="arithmatex">\(c_1(TY)\)</span> on the returned ambient sector, with every Novikov variable set to <span class="arithmatex">\(1\)</span>. Columns are inputs and rows are outputs. The ordered basis below uses reduced Schubert words; <code>()</code> is the unit. Basis indices in the download are zero-based.</p>
+<p><a href="../../data/localization-results.json">Download all symbolic matrices, bases, gradings and curve classes</a> or browse the <a href="../computed/">complete computed-data index</a>. See <a href="../../how-to-use/">How to Use</a> for input conventions.</p>
+<table>
+<thead>
+<tr>
+<th>Geometry</th>
+<th>Dimension</th>
+<th>Fano index</th>
+<th>Basis rank</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#fl145">Fl(1,4,5)</a></td>
+<td>7</td>
+<td>4</td>
+<td>20</td>
+</tr>
+<tr>
+<td><a href="#fl145o11o11">Fl(1,4,5) / O(1,1)+O(1,1)</a></td>
+<td>5</td>
+<td>2</td>
+<td>12</td>
+</tr>
+<tr>
+<td><a href="#g2p1">G2/P1</a></td>
+<td>5</td>
+<td>5</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="#g2p2">G2/P2</a></td>
+<td>5</td>
+<td>3</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="#lg36o1">LG(3,6) / O(1)</a></td>
+<td>5</td>
+<td>3</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="#og37o2">OG(3,7) / O(2)</a></td>
+<td>5</td>
+<td>4</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="#og37o3">OG(3,7) / O(3)</a></td>
+<td>5</td>
+<td>3</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="#og37o4">OG(3,7) / O(4)</a></td>
+<td>5</td>
+<td>2</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="#fl125o01o02o10gm20">Fl(1,2,5) / O(0,1)+O(0,2)+O(1,0) (GM-20)</a></td>
+<td>4</td>
+<td>1</td>
+<td>9</td>
+</tr>
+<tr>
+<td><a href="#fl134o11">Fl(1,3,4) / O(1,1)</a></td>
+<td>4</td>
+<td>2</td>
+<td>9</td>
+</tr>
+<tr>
+<td><a href="#g2p2o1">G2/P2 / O(1)</a></td>
+<td>4</td>
+<td>2</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="#lg36o1o1">LG(3,6) / O(1)+O(1)</a></td>
+<td>4</td>
+<td>2</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="#og37o2o2">OG(3,7) / O(2)+O(2)</a></td>
+<td>4</td>
+<td>2</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="#b2bo11">B2/B / O(1,1)</a></td>
+<td>3</td>
+<td>1</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="#fl134o11o11">Fl(1,3,4) / O(1,1)+O(1,1)</a></td>
+<td>3</td>
+<td>1</td>
+<td>6</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><span id="fl145"></span></p>
+<details class="example">
+<summary>Fl(1,4,5)</summary>
+<ul>
+<li><strong>Ambient Space:</strong> <code>A4</code></li>
+<li><strong>Keep Nodes:</strong> <code>1,4</code></li>
+<li><strong>Bundle K:</strong> empty (the flag variety itself)</li>
+<li><strong>Dimension:</strong> <span class="arithmatex">\(7\)</span></li>
+<li><strong>Fano Index:</strong> <span class="arithmatex">\(4\)</span></li>
+<li><strong>Basis Rank:</strong> <span class="arithmatex">\(20\)</span></li>
+<li><strong>Exact data identifier:</strong> <code>6d625eb08919</code></li>
+</ul>
+<details class="note">
+<summary>Quantum Matrix (<span class="arithmatex">\(y=1\)</span>)</summary>
+<div class="arithmatex">\[
+\begin{bmatrix}0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 4 &amp; 4 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 8\\4 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 4 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\4 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 4 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 4 &amp; 4 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 4 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 4 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 4 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 4 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 4 &amp; 0 &amp; 4 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 4 &amp; 4 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 4 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 4 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 4 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 4 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 4 &amp; 0 &amp; 8 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 4\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 8 &amp; 4 &amp; 4 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 4 &amp; 8 &amp; 0 &amp; 4 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 4 &amp; 0 &amp; 8 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 4\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 4 &amp; 4 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 4 &amp; 4 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 4 &amp; 4 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 4 &amp; 4 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 4 &amp; 4 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 4 &amp; 4 &amp; 0\end{bmatrix}
+\]</div>
+</details>
+<details class="note">
+<summary>Ordered basis and degrees</summary>
+<table>
+<thead>
+<tr>
+<th>Position</th>
+<th>Schubert word</th>
+<th>Complex codimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><code>()</code></td>
+<td>0</td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>(1)</code></td>
+<td>1</td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>(4)</code></td>
+<td>1</td>
+</tr>
+<tr>
+<td>4</td>
+<td><code>(1 4)</code></td>
+<td>2</td>
+</tr>
+<tr>
+<td>5</td>
+<td><code>(2 1)</code></td>
+<td>2</td>
+</tr>
+<tr>
+<td>6</td>
+<td><code>(3 4)</code></td>
+<td>2</td>
+</tr>
+<tr>
+<td>7</td>
+<td><code>(1 3 4)</code></td>
+<td>3</td>
+</tr>
+<tr>
+<td>8</td>
+<td><code>(2 1 4)</code></td>
+<td>3</td>
+</tr>
+<tr>
+<td>9</td>
+<td><code>(2 3 4)</code></td>
+<td>3</td>
+</tr>
+<tr>
+<td>10</td>
+<td><code>(3 2 1)</code></td>
+<td>3</td>
+</tr>
+<tr>
+<td>11</td>
+<td><code>(1 2 3 4)</code></td>
+<td>4</td>
+</tr>
+<tr>
+<td>12</td>
+<td><code>(2 1 3 4)</code></td>
+<td>4</td>
+</tr>
+<tr>
+<td>13</td>
+<td><code>(3 2 1 4)</code></td>
+<td>4</td>
+</tr>
+<tr>
+<td>14</td>
+<td><code>(4 3 2 1)</code></td>
+<td>4</td>
+</tr>
+<tr>
+<td>15</td>
+<td><code>(1 2 1 3 4)</code></td>
+<td>5</td>
+</tr>
+<tr>
+<td>16</td>
+<td><code>(2 3 2 1 4)</code></td>
+<td>5</td>
+</tr>
+<tr>
+<td>17</td>
+<td><code>(3 4 3 2 1)</code></td>
+<td>5</td>
+</tr>
+<tr>
+<td>18</td>
+<td><code>(1 2 3 2 1 4)</code></td>
+<td>6</td>
+</tr>
+<tr>
+<td>19</td>
+<td><code>(2 3 4 3 2 1)</code></td>
+<td>6</td>
+</tr>
+<tr>
+<td>20</td>
+<td><code>(1 2 3 4 3 2 1)</code></td>
+<td>7</td>
+</tr>
+</tbody>
+</table>
+</details>
+</details>
+<hr />
+<p><span id="fl145o11o11"></span></p>
+<details class="example">
+<summary>Fl(1,4,5) / O(1,1)+O(1,1)</summary>
+<ul>
+<li><strong>Ambient Space:</strong> <code>A4</code></li>
+<li><strong>Keep Nodes:</strong> <code>1,4</code></li>
+<li><strong>Bundle K:</strong> <code>1,1;1,1</code></li>
+<li><strong>Dimension:</strong> <span class="arithmatex">\(5\)</span></li>
+<li><strong>Fano Index:</strong> <span class="arithmatex">\(2\)</span></li>
+<li><strong>Basis Rank:</strong> <span class="arithmatex">\(12\)</span></li>
+<li><strong>Exact data identifier:</strong> <code>9cb29c69a3f5</code></li>
+</ul>
+<details class="note">
+<summary>Quantum Matrix (<span class="arithmatex">\(y=1\)</span>)</summary>
+<div class="arithmatex">\[
+\begin{bmatrix}0 &amp; 2 &amp; 2 &amp; 0 &amp; 0 &amp; 0 &amp; 28 &amp; 28 &amp; 16 &amp; 0 &amp; 0 &amp; 12\\2 &amp; 0 &amp; 0 &amp; 2 &amp; 0 &amp; 6 &amp; 0 &amp; 0 &amp; 0 &amp; 4 &amp; 16 &amp; 0\\2 &amp; 0 &amp; 0 &amp; 2 &amp; 6 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 8 &amp; 20 &amp; 0\\0 &amp; 2 &amp; 2 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 4\\0 &amp; 2 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 6 &amp; 2 &amp; 6 &amp; 0 &amp; 0 &amp; 4\\0 &amp; 0 &amp; 2 &amp; 0 &amp; 0 &amp; 0 &amp; 2 &amp; 6 &amp; 0 &amp; 0 &amp; 0 &amp; 4\\0 &amp; 0 &amp; 0 &amp; 2 &amp; -3 &amp; 2 &amp; 0 &amp; 0 &amp; 0 &amp; -3 &amp; -6 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 2 &amp; 5 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 3 &amp; 6 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 2 &amp; 2 &amp; 0 &amp; 0 &amp; 0 &amp; 2 &amp; 6 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; -4 &amp; -16 &amp; 4 &amp; 0 &amp; 0 &amp; -2\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 8 &amp; 12 &amp; 2 &amp; 0 &amp; 0 &amp; 2\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 2 &amp; 6 &amp; 0\end{bmatrix}
+\]</div>
+</details>
+<details class="note">
+<summary>Ordered basis and degrees</summary>
+<table>
+<thead>
+<tr>
+<th>Position</th>
+<th>Schubert word</th>
+<th>Complex codimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><code>()</code></td>
+<td>0</td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>(1)</code></td>
+<td>1</td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>(4)</code></td>
+<td>1</td>
+</tr>
+<tr>
+<td>4</td>
+<td><code>(1 4)</code></td>
+<td>2</td>
+</tr>
+<tr>
+<td>5</td>
+<td><code>(2 1)</code></td>
+<td>2</td>
+</tr>
+<tr>
+<td>6</td>
+<td><code>(3 4)</code></td>
+<td>2</td>
+</tr>
+<tr>
+<td>7</td>
+<td><code>(1 3 4)</code></td>
+<td>3</td>
+</tr>
+<tr>
+<td>8</td>
+<td><code>(2 1 4)</code></td>
+<td>3</td>
+</tr>
+<tr>
+<td>9</td>
+<td><code>(2 3 4)</code></td>
+<td>3</td>
+</tr>
+<tr>
+<td>10</td>
+<td><code>(1 2 3 4)</code></td>
+<td>4</td>
+</tr>
+<tr>
+<td>11</td>
+<td><code>(2 1 3 4)</code></td>
+<td>4</td>
+</tr>
+<tr>
+<td>12</td>
+<td><code>(1 2 1 3 4)</code></td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+</details>
+</details>
+<hr />
+<p><span id="g2p1"></span></p>
+<details class="example">
+<summary>G2/P1</summary>
+<ul>
+<li><strong>Ambient Space:</strong> <code>G2</code></li>
+<li><strong>Keep Nodes:</strong> <code>1</code></li>
+<li><strong>Bundle K:</strong> empty (the flag variety itself)</li>
+<li><strong>Dimension:</strong> <span class="arithmatex">\(5\)</span></li>
+<li><strong>Fano Index:</strong> <span class="arithmatex">\(5\)</span></li>
+<li><strong>Basis Rank:</strong> <span class="arithmatex">\(6\)</span></li>
+<li><strong>Exact data identifier:</strong> <code>fd2bd6eae26b</code></li>
+</ul>
+<details class="note">
+<summary>Quantum Matrix (<span class="arithmatex">\(y=1\)</span>)</summary>
+<div class="arithmatex">\[
+\begin{bmatrix}0 &amp; 0 &amp; 0 &amp; 0 &amp; 5 &amp; 0\\5 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 5\\0 &amp; 5 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 10 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 5 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 5 &amp; 0\end{bmatrix}
+\]</div>
+</details>
+<details class="note">
+<summary>Ordered basis and degrees</summary>
+<table>
+<thead>
+<tr>
+<th>Position</th>
+<th>Schubert word</th>
+<th>Complex codimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><code>()</code></td>
+<td>0</td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>(1)</code></td>
+<td>1</td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>(2 1)</code></td>
+<td>2</td>
+</tr>
+<tr>
+<td>4</td>
+<td><code>(1 2 1)</code></td>
+<td>3</td>
+</tr>
+<tr>
+<td>5</td>
+<td><code>(2 1 2 1)</code></td>
+<td>4</td>
+</tr>
+<tr>
+<td>6</td>
+<td><code>(1 2 1 2 1)</code></td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+</details>
+</details>
+<hr />
+<p><span id="g2p2"></span></p>
+<details class="example">
+<summary>G2/P2</summary>
+<ul>
+<li><strong>Ambient Space:</strong> <code>G2</code></li>
+<li><strong>Keep Nodes:</strong> <code>2</code></li>
+<li><strong>Bundle K:</strong> empty (the flag variety itself)</li>
+<li><strong>Dimension:</strong> <span class="arithmatex">\(5\)</span></li>
+<li><strong>Fano Index:</strong> <span class="arithmatex">\(3\)</span></li>
+<li><strong>Basis Rank:</strong> <span class="arithmatex">\(6\)</span></li>
+<li><strong>Exact data identifier:</strong> <code>834882311808</code></li>
+</ul>
+<details class="note">
+<summary>Quantum Matrix (<span class="arithmatex">\(y=1\)</span>)</summary>
+<div class="arithmatex">\[
+\begin{bmatrix}0 &amp; 0 &amp; 3 &amp; 0 &amp; 0 &amp; 6\\3 &amp; 0 &amp; 0 &amp; 3 &amp; 0 &amp; 0\\0 &amp; 9 &amp; 0 &amp; 0 &amp; 3 &amp; 0\\0 &amp; 0 &amp; 6 &amp; 0 &amp; 0 &amp; 3\\0 &amp; 0 &amp; 0 &amp; 9 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 3 &amp; 0\end{bmatrix}
+\]</div>
+</details>
+<details class="note">
+<summary>Ordered basis and degrees</summary>
+<table>
+<thead>
+<tr>
+<th>Position</th>
+<th>Schubert word</th>
+<th>Complex codimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><code>()</code></td>
+<td>0</td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>(2)</code></td>
+<td>1</td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>(1 2)</code></td>
+<td>2</td>
+</tr>
+<tr>
+<td>4</td>
+<td><code>(2 1 2)</code></td>
+<td>3</td>
+</tr>
+<tr>
+<td>5</td>
+<td><code>(1 2 1 2)</code></td>
+<td>4</td>
+</tr>
+<tr>
+<td>6</td>
+<td><code>(2 1 2 1 2)</code></td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+</details>
+</details>
+<hr />
+<p><span id="lg36o1"></span></p>
+<details class="example">
+<summary>LG(3,6) / O(1)</summary>
+<ul>
+<li><strong>Ambient Space:</strong> <code>C3</code></li>
+<li><strong>Keep Nodes:</strong> <code>3</code></li>
+<li><strong>Bundle K:</strong> <code>1</code></li>
+<li><strong>Dimension:</strong> <span class="arithmatex">\(5\)</span></li>
+<li><strong>Fano Index:</strong> <span class="arithmatex">\(3\)</span></li>
+<li><strong>Basis Rank:</strong> <span class="arithmatex">\(6\)</span></li>
+<li><strong>Exact data identifier:</strong> <code>141c91366f21</code></li>
+</ul>
+<details class="note">
+<summary>Quantum Matrix (<span class="arithmatex">\(y=1\)</span>)</summary>
+<div class="arithmatex">\[
+\begin{bmatrix}0 &amp; 0 &amp; 6 &amp; 0 &amp; 0 &amp; 0\\3 &amp; 0 &amp; 0 &amp; 3 &amp; 0 &amp; 0\\0 &amp; 6 &amp; 0 &amp; 0 &amp; 6 &amp; 0\\0 &amp; 0 &amp; 12 &amp; 0 &amp; 0 &amp; 6\\0 &amp; 0 &amp; 0 &amp; 3 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 6 &amp; 0\end{bmatrix}
+\]</div>
+</details>
+<details class="note">
+<summary>Ordered basis and degrees</summary>
+<table>
+<thead>
+<tr>
+<th>Position</th>
+<th>Schubert word</th>
+<th>Complex codimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><code>()</code></td>
+<td>0</td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>(3)</code></td>
+<td>1</td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>(2 3)</code></td>
+<td>2</td>
+</tr>
+<tr>
+<td>4</td>
+<td><code>(1 2 3)</code></td>
+<td>3</td>
+</tr>
+<tr>
+<td>5</td>
+<td><code>(1 3 2 3)</code></td>
+<td>4</td>
+</tr>
+<tr>
+<td>6</td>
+<td><code>(2 1 3 2 3)</code></td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+</details>
+</details>
+<hr />
+<p><span id="og37o2"></span></p>
+<details class="example">
+<summary>OG(3,7) / O(2)</summary>
+<ul>
+<li><strong>Ambient Space:</strong> <code>B3</code></li>
+<li><strong>Keep Nodes:</strong> <code>3</code></li>
+<li><strong>Bundle K:</strong> <code>2</code></li>
+<li><strong>Dimension:</strong> <span class="arithmatex">\(5\)</span></li>
+<li><strong>Fano Index:</strong> <span class="arithmatex">\(4\)</span></li>
+<li><strong>Basis Rank:</strong> <span class="arithmatex">\(6\)</span></li>
+<li><strong>Exact data identifier:</strong> <code>76928fabba80</code></li>
+</ul>
+<details class="note">
+<summary>Quantum Matrix (<span class="arithmatex">\(y=1\)</span>)</summary>
+<div class="arithmatex">\[
+\begin{bmatrix}0 &amp; 0 &amp; 0 &amp; 8 &amp; 0 &amp; 0\\4 &amp; 0 &amp; 0 &amp; 0 &amp; 16 &amp; 0\\0 &amp; 4 &amp; 0 &amp; 0 &amp; 0 &amp; 8\\0 &amp; 0 &amp; 8 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 4 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 4 &amp; 0\end{bmatrix}
+\]</div>
+</details>
+<details class="note">
+<summary>Ordered basis and degrees</summary>
+<table>
+<thead>
+<tr>
+<th>Position</th>
+<th>Schubert word</th>
+<th>Complex codimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><code>()</code></td>
+<td>0</td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>(3)</code></td>
+<td>1</td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>(2 3)</code></td>
+<td>2</td>
+</tr>
+<tr>
+<td>4</td>
+<td><code>(1 2 3)</code></td>
+<td>3</td>
+</tr>
+<tr>
+<td>5</td>
+<td><code>(1 3 2 3)</code></td>
+<td>4</td>
+</tr>
+<tr>
+<td>6</td>
+<td><code>(2 1 3 2 3)</code></td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+</details>
+</details>
+<hr />
+<p><span id="og37o3"></span></p>
+<details class="example">
+<summary>OG(3,7) / O(3)</summary>
+<ul>
+<li><strong>Ambient Space:</strong> <code>B3</code></li>
+<li><strong>Keep Nodes:</strong> <code>3</code></li>
+<li><strong>Bundle K:</strong> <code>3</code></li>
+<li><strong>Dimension:</strong> <span class="arithmatex">\(5\)</span></li>
+<li><strong>Fano Index:</strong> <span class="arithmatex">\(3\)</span></li>
+<li><strong>Basis Rank:</strong> <span class="arithmatex">\(6\)</span></li>
+<li><strong>Exact data identifier:</strong> <code>29e94da02c49</code></li>
+</ul>
+<details class="note">
+<summary>Quantum Matrix (<span class="arithmatex">\(y=1\)</span>)</summary>
+<div class="arithmatex">\[
+\begin{bmatrix}0 &amp; 0 &amp; 36 &amp; 0 &amp; 0 &amp; 216\\3 &amp; 0 &amp; 0 &amp; 63 &amp; 0 &amp; 0\\0 &amp; 3 &amp; 0 &amp; 0 &amp; 63 &amp; 0\\0 &amp; 0 &amp; 6 &amp; 0 &amp; 0 &amp; 36\\0 &amp; 0 &amp; 0 &amp; 3 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 3 &amp; 0\end{bmatrix}
+\]</div>
+</details>
+<details class="note">
+<summary>Ordered basis and degrees</summary>
+<table>
+<thead>
+<tr>
+<th>Position</th>
+<th>Schubert word</th>
+<th>Complex codimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><code>()</code></td>
+<td>0</td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>(3)</code></td>
+<td>1</td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>(2 3)</code></td>
+<td>2</td>
+</tr>
+<tr>
+<td>4</td>
+<td><code>(1 2 3)</code></td>
+<td>3</td>
+</tr>
+<tr>
+<td>5</td>
+<td><code>(1 3 2 3)</code></td>
+<td>4</td>
+</tr>
+<tr>
+<td>6</td>
+<td><code>(2 1 3 2 3)</code></td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+</details>
+</details>
+<hr />
+<p><span id="og37o4"></span></p>
+<details class="example">
+<summary>OG(3,7) / O(4)</summary>
+<ul>
+<li><strong>Ambient Space:</strong> <code>B3</code></li>
+<li><strong>Keep Nodes:</strong> <code>3</code></li>
+<li><strong>Bundle K:</strong> <code>4</code></li>
+<li><strong>Dimension:</strong> <span class="arithmatex">\(5\)</span></li>
+<li><strong>Fano Index:</strong> <span class="arithmatex">\(2\)</span></li>
+<li><strong>Basis Rank:</strong> <span class="arithmatex">\(6\)</span></li>
+<li><strong>Exact data identifier:</strong> <code>10e047830d24</code></li>
+</ul>
+<details class="note">
+<summary>Quantum Matrix (<span class="arithmatex">\(y=1\)</span>)</summary>
+<div class="arithmatex">\[
+\begin{bmatrix}0 &amp; 96 &amp; 0 &amp; 26688 &amp; 0 &amp; 1603584\\2 &amp; 0 &amp; 512 &amp; 0 &amp; 78976 &amp; 0\\0 &amp; 2 &amp; 0 &amp; 416 &amp; 0 &amp; 26688\\0 &amp; 0 &amp; 4 &amp; 0 &amp; 512 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 2 &amp; 0 &amp; 96\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 2 &amp; 0\end{bmatrix}
+\]</div>
+</details>
+<details class="note">
+<summary>Ordered basis and degrees</summary>
+<table>
+<thead>
+<tr>
+<th>Position</th>
+<th>Schubert word</th>
+<th>Complex codimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><code>()</code></td>
+<td>0</td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>(3)</code></td>
+<td>1</td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>(2 3)</code></td>
+<td>2</td>
+</tr>
+<tr>
+<td>4</td>
+<td><code>(1 2 3)</code></td>
+<td>3</td>
+</tr>
+<tr>
+<td>5</td>
+<td><code>(1 3 2 3)</code></td>
+<td>4</td>
+</tr>
+<tr>
+<td>6</td>
+<td><code>(2 1 3 2 3)</code></td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+</details>
+</details>
+<hr />
+<p><span id="fl125o01o02o10gm20"></span></p>
+<details class="example">
+<summary>Fl(1,2,5) / O(0,1)+O(0,2)+O(1,0) (GM-20)</summary>
+<ul>
+<li><strong>Ambient Space:</strong> <code>A4</code></li>
+<li><strong>Keep Nodes:</strong> <code>1,2</code></li>
+<li><strong>Bundle K:</strong> <code>0,1;0,2;1,0</code></li>
+<li><strong>Dimension:</strong> <span class="arithmatex">\(4\)</span></li>
+<li><strong>Fano Index:</strong> <span class="arithmatex">\(1\)</span></li>
+<li><strong>Basis Rank:</strong> <span class="arithmatex">\(9\)</span></li>
+<li><strong>Exact data identifier:</strong> <code>e1322438fd01</code></li>
+</ul>
+<details class="note">
+<summary>Quantum Matrix (<span class="arithmatex">\(y=1\)</span>)</summary>
+<div class="arithmatex">\[
+\begin{bmatrix}0 &amp; 12 &amp; 16 &amp; 96 &amp; 84 &amp; 156 &amp; 512 &amp; 672 &amp; 880\\1 &amp; -1 &amp; 6 &amp; 4 &amp; 0 &amp; 8 &amp; 72 &amp; 72 &amp; 160\\1 &amp; 1 &amp; 0 &amp; 12 &amp; 20 &amp; 20 &amp; 132 &amp; 168 &amp; 176\\0 &amp; 1 &amp; 2 &amp; 0 &amp; 0 &amp; 4 &amp; 8 &amp; 8 &amp; 36\\0 &amp; 2 &amp; 1 &amp; 6 &amp; -1 &amp; 10 &amp; 4 &amp; 8 &amp; 36\\0 &amp; 0 &amp; 1 &amp; 0 &amp; 1 &amp; -2 &amp; 16 &amp; 16 &amp; 24\\0 &amp; 0 &amp; 0 &amp; 1 &amp; 3 &amp; 1 &amp; 5 &amp; 12 &amp; 4\\0 &amp; 0 &amp; 0 &amp; 1 &amp; -1 &amp; 2 &amp; -2 &amp; -6 &amp; 4\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 3 &amp; 4 &amp; 0\end{bmatrix}
+\]</div>
+</details>
+<details class="note">
+<summary>Ordered basis and degrees</summary>
+<table>
+<thead>
+<tr>
+<th>Position</th>
+<th>Schubert word</th>
+<th>Complex codimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><code>()</code></td>
+<td>0</td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>(1)</code></td>
+<td>1</td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>(2)</code></td>
+<td>1</td>
+</tr>
+<tr>
+<td>4</td>
+<td><code>(1 2)</code></td>
+<td>2</td>
+</tr>
+<tr>
+<td>5</td>
+<td><code>(2 1)</code></td>
+<td>2</td>
+</tr>
+<tr>
+<td>6</td>
+<td><code>(3 2)</code></td>
+<td>2</td>
+</tr>
+<tr>
+<td>7</td>
+<td><code>(1 2 1)</code></td>
+<td>3</td>
+</tr>
+<tr>
+<td>8</td>
+<td><code>(1 3 2)</code></td>
+<td>3</td>
+</tr>
+<tr>
+<td>9</td>
+<td><code>(1 3 2 1)</code></td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+</details>
+<p>This matrix includes the nonzero degree-5 contributions. The earlier reference stopped at degree 4 and used a different basis in degree 3; see <a href="../../discrepancy/">Reference discrepancies</a>.</p>
+</details>
+<hr />
+<p><span id="fl134o11"></span></p>
+<details class="example">
+<summary>Fl(1,3,4) / O(1,1)</summary>
+<ul>
+<li><strong>Ambient Space:</strong> <code>A3</code></li>
+<li><strong>Keep Nodes:</strong> <code>1,3</code></li>
+<li><strong>Bundle K:</strong> <code>1,1</code></li>
+<li><strong>Dimension:</strong> <span class="arithmatex">\(4\)</span></li>
+<li><strong>Fano Index:</strong> <span class="arithmatex">\(2\)</span></li>
+<li><strong>Basis Rank:</strong> <span class="arithmatex">\(9\)</span></li>
+<li><strong>Exact data identifier:</strong> <code>3ed191207b19</code></li>
+</ul>
+<details class="note">
+<summary>Quantum Matrix (<span class="arithmatex">\(y=1\)</span>)</summary>
+<div class="arithmatex">\[
+\begin{bmatrix}0 &amp; 2 &amp; 2 &amp; 0 &amp; 0 &amp; 0 &amp; 4 &amp; 8 &amp; 0\\2 &amp; 0 &amp; 0 &amp; 2 &amp; 0 &amp; 4 &amp; 0 &amp; 0 &amp; 4\\2 &amp; 0 &amp; 0 &amp; 2 &amp; 4 &amp; 0 &amp; 0 &amp; 0 &amp; 4\\0 &amp; 2 &amp; 2 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 2 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 2 &amp; 2 &amp; 0\\0 &amp; 0 &amp; 2 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 2 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 0 &amp; -4 &amp; 4 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 6 &amp; 6 &amp; 2 &amp; 0 &amp; 0 &amp; 2\\0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 2 &amp; 4 &amp; 0\end{bmatrix}
+\]</div>
+</details>
+<details class="note">
+<summary>Ordered basis and degrees</summary>
+<table>
+<thead>
+<tr>
+<th>Position</th>
+<th>Schubert word</th>
+<th>Complex codimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><code>()</code></td>
+<td>0</td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>(1)</code></td>
+<td>1</td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>(3)</code></td>
+<td>1</td>
+</tr>
+<tr>
+<td>4</td>
+<td><code>(1 3)</code></td>
+<td>2</td>
+</tr>
+<tr>
+<td>5</td>
+<td><code>(2 1)</code></td>
+<td>2</td>
+</tr>
+<tr>
+<td>6</td>
+<td><code>(2 3)</code></td>
+<td>2</td>
+</tr>
+<tr>
+<td>7</td>
+<td><code>(1 2 3)</code></td>
+<td>3</td>
+</tr>
+<tr>
+<td>8</td>
+<td><code>(2 1 3)</code></td>
+<td>3</td>
+</tr>
+<tr>
+<td>9</td>
+<td><code>(1 2 1 3)</code></td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+</details>
+</details>
+<hr />
+<p><span id="g2p2o1"></span></p>
+<details class="example">
+<summary>G2/P2 / O(1)</summary>
+<ul>
+<li><strong>Ambient Space:</strong> <code>G2</code></li>
+<li><strong>Keep Nodes:</strong> <code>2</code></li>
+<li><strong>Bundle K:</strong> <code>1</code></li>
+<li><strong>Dimension:</strong> <span class="arithmatex">\(4\)</span></li>
+<li><strong>Fano Index:</strong> <span class="arithmatex">\(2\)</span></li>
+<li><strong>Basis Rank:</strong> <span class="arithmatex">\(5\)</span></li>
+<li><strong>Exact data identifier:</strong> <code>b9a91f8b2a8f</code></li>
+</ul>
+<details class="note">
+<summary>Quantum Matrix (<span class="arithmatex">\(y=1\)</span>)</summary>
+<div class="arithmatex">\[
+\begin{bmatrix}0 &amp; 6 &amp; 0 &amp; 12 &amp; 0\\2 &amp; 0 &amp; 4 &amp; 0 &amp; 4\\0 &amp; 6 &amp; 0 &amp; 6 &amp; 0\\0 &amp; 0 &amp; 4 &amp; 0 &amp; 2\\0 &amp; 0 &amp; 0 &amp; 6 &amp; 0\end{bmatrix}
+\]</div>
+</details>
+<details class="note">
+<summary>Ordered basis and degrees</summary>
+<table>
+<thead>
+<tr>
+<th>Position</th>
+<th>Schubert word</th>
+<th>Complex codimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><code>()</code></td>
+<td>0</td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>(2)</code></td>
+<td>1</td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>(1 2)</code></td>
+<td>2</td>
+</tr>
+<tr>
+<td>4</td>
+<td><code>(2 1 2)</code></td>
+<td>3</td>
+</tr>
+<tr>
+<td>5</td>
+<td><code>(1 2 1 2)</code></td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+</details>
+</details>
+<hr />
+<p><span id="lg36o1o1"></span></p>
+<details class="example">
+<summary>LG(3,6) / O(1)+O(1)</summary>
+<ul>
+<li><strong>Ambient Space:</strong> <code>C3</code></li>
+<li><strong>Keep Nodes:</strong> <code>3</code></li>
+<li><strong>Bundle K:</strong> <code>1;1</code></li>
+<li><strong>Dimension:</strong> <span class="arithmatex">\(4\)</span></li>
+<li><strong>Fano Index:</strong> <span class="arithmatex">\(2\)</span></li>
+<li><strong>Basis Rank:</strong> <span class="arithmatex">\(5\)</span></li>
+<li><strong>Exact data identifier:</strong> <code>5a3d521e7212</code></li>
+</ul>
+<details class="note">
+<summary>Quantum Matrix (<span class="arithmatex">\(y=1\)</span>)</summary>
+<div class="arithmatex">\[
+\begin{bmatrix}0 &amp; 8 &amp; 0 &amp; 8 &amp; 0\\2 &amp; 0 &amp; 8 &amp; 0 &amp; 8\\0 &amp; 4 &amp; 0 &amp; 4 &amp; 0\\0 &amp; 0 &amp; 8 &amp; 0 &amp; 8\\0 &amp; 0 &amp; 0 &amp; 2 &amp; 0\end{bmatrix}
+\]</div>
+</details>
+<details class="note">
+<summary>Ordered basis and degrees</summary>
+<table>
+<thead>
+<tr>
+<th>Position</th>
+<th>Schubert word</th>
+<th>Complex codimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><code>()</code></td>
+<td>0</td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>(3)</code></td>
+<td>1</td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>(2 3)</code></td>
+<td>2</td>
+</tr>
+<tr>
+<td>4</td>
+<td><code>(1 2 3)</code></td>
+<td>3</td>
+</tr>
+<tr>
+<td>5</td>
+<td><code>(1 3 2 3)</code></td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+</details>
+</details>
+<hr />
+<p><span id="og37o2o2"></span></p>
+<details class="example">
+<summary>OG(3,7) / O(2)+O(2)</summary>
+<ul>
+<li><strong>Ambient Space:</strong> <code>B3</code></li>
+<li><strong>Keep Nodes:</strong> <code>3</code></li>
+<li><strong>Bundle K:</strong> <code>2;2</code></li>
+<li><strong>Dimension:</strong> <span class="arithmatex">\(4\)</span></li>
+<li><strong>Fano Index:</strong> <span class="arithmatex">\(2\)</span></li>
+<li><strong>Basis Rank:</strong> <span class="arithmatex">\(5\)</span></li>
+<li><strong>Exact data identifier:</strong> <code>176397975a00</code></li>
+</ul>
+<details class="note">
+<summary>Quantum Matrix (<span class="arithmatex">\(y=1\)</span>)</summary>
+<div class="arithmatex">\[
+\begin{bmatrix}0 &amp; 16 &amp; 0 &amp; 224 &amp; 0\\2 &amp; 0 &amp; 48 &amp; 0 &amp; 224\\0 &amp; 2 &amp; 0 &amp; 24 &amp; 0\\0 &amp; 0 &amp; 4 &amp; 0 &amp; 16\\0 &amp; 0 &amp; 0 &amp; 2 &amp; 0\end{bmatrix}
+\]</div>
+</details>
+<details class="note">
+<summary>Ordered basis and degrees</summary>
+<table>
+<thead>
+<tr>
+<th>Position</th>
+<th>Schubert word</th>
+<th>Complex codimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><code>()</code></td>
+<td>0</td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>(3)</code></td>
+<td>1</td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>(2 3)</code></td>
+<td>2</td>
+</tr>
+<tr>
+<td>4</td>
+<td><code>(1 2 3)</code></td>
+<td>3</td>
+</tr>
+<tr>
+<td>5</td>
+<td><code>(1 3 2 3)</code></td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+</details>
+</details>
+<hr />
+<p><span id="b2bo11"></span></p>
+<details class="example">
+<summary>B2/B / O(1,1)</summary>
+<ul>
+<li><strong>Ambient Space:</strong> <code>B2</code></li>
+<li><strong>Keep Nodes:</strong> <code>1,2</code></li>
+<li><strong>Bundle K:</strong> <code>1,1</code></li>
+<li><strong>Dimension:</strong> <span class="arithmatex">\(3\)</span></li>
+<li><strong>Fano Index:</strong> <span class="arithmatex">\(1\)</span></li>
+<li><strong>Basis Rank:</strong> <span class="arithmatex">\(6\)</span></li>
+<li><strong>Exact data identifier:</strong> <code>34fec398819e</code></li>
+</ul>
+<details class="note">
+<summary>Quantum Matrix (<span class="arithmatex">\(y=1\)</span>)</summary>
+<div class="arithmatex">\[
+\begin{bmatrix}0 &amp; 10 &amp; 10 &amp; 24 &amp; 18 &amp; 24\\1 &amp; -1 &amp; 2 &amp; 8 &amp; 6 &amp; 6\\1 &amp; 3 &amp; -1 &amp; 6 &amp; 2 &amp; 6\\0 &amp; 1 &amp; 2 &amp; -1 &amp; 2 &amp; 2\\0 &amp; 3 &amp; 1 &amp; 3 &amp; -1 &amp; 4\\0 &amp; 0 &amp; 0 &amp; 4 &amp; 3 &amp; 0\end{bmatrix}
+\]</div>
+</details>
+<details class="note">
+<summary>Ordered basis and degrees</summary>
+<table>
+<thead>
+<tr>
+<th>Position</th>
+<th>Schubert word</th>
+<th>Complex codimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><code>()</code></td>
+<td>0</td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>(1)</code></td>
+<td>1</td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>(2)</code></td>
+<td>1</td>
+</tr>
+<tr>
+<td>4</td>
+<td><code>(1 2)</code></td>
+<td>2</td>
+</tr>
+<tr>
+<td>5</td>
+<td><code>(2 1)</code></td>
+<td>2</td>
+</tr>
+<tr>
+<td>6</td>
+<td><code>(1 2 1)</code></td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+</details>
+</details>
+<hr />
+<p><span id="fl134o11o11"></span></p>
+<details class="example">
+<summary>Fl(1,3,4) / O(1,1)+O(1,1)</summary>
+<ul>
+<li><strong>Ambient Space:</strong> <code>A3</code></li>
+<li><strong>Keep Nodes:</strong> <code>1,3</code></li>
+<li><strong>Bundle K:</strong> <code>1,1;1,1</code></li>
+<li><strong>Dimension:</strong> <span class="arithmatex">\(3\)</span></li>
+<li><strong>Fano Index:</strong> <span class="arithmatex">\(1\)</span></li>
+<li><strong>Basis Rank:</strong> <span class="arithmatex">\(6\)</span></li>
+<li><strong>Exact data identifier:</strong> <code>d3154e614ad6</code></li>
+</ul>
+<details class="note">
+<summary>Quantum Matrix (<span class="arithmatex">\(y=1\)</span>)</summary>
+<div class="arithmatex">\[
+\begin{bmatrix}0 &amp; 14 &amp; 14 &amp; 72 &amp; 48 &amp; 56\\1 &amp; -1 &amp; 3 &amp; 18 &amp; 14 &amp; 12\\1 &amp; 3 &amp; -1 &amp; 18 &amp; 10 &amp; 12\\0 &amp; 1 &amp; \frac{7}{3} &amp; 2 &amp; 4 &amp; \frac{14}{3}\\0 &amp; 1 &amp; -1 &amp; 0 &amp; -4 &amp; 0\\0 &amp; 0 &amp; 0 &amp; 6 &amp; 4 &amp; 0\end{bmatrix}
+\]</div>
+</details>
+<details class="note">
+<summary>Ordered basis and degrees</summary>
+<table>
+<thead>
+<tr>
+<th>Position</th>
+<th>Schubert word</th>
+<th>Complex codimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><code>()</code></td>
+<td>0</td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>(1)</code></td>
+<td>1</td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>(3)</code></td>
+<td>1</td>
+</tr>
+<tr>
+<td>4</td>
+<td><code>(1 3)</code></td>
+<td>2</td>
+</tr>
+<tr>
+<td>5</td>
+<td><code>(2 1)</code></td>
+<td>2</td>
+</tr>
+<tr>
+<td>6</td>
+<td><code>(1 2 3)</code></td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+</details>
+</details>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.top", "navigation.expand", "navigation.path", "navigation.instant", "navigation.indexes", "search.suggest", "search.highlight", "toc.integrate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
