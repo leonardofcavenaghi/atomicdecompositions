@@ -188,13 +188,17 @@ def betas_and_fano_index(X, K):
             'c1(TX) pairing on every kept curve direction; this geometry '
             f'has c1 coordinates {kept_c}. Supply an explicit betas list '
             'for a formal/truncated computation.')
+    if any(v == 0 for v in kept_c):
+        raise ValueError(
+            'automatic beta enumeration for sqm requires strictly positive '
+            'c1(TX) pairings: a zero Chern direction is not bounded by the '
+            'dimension axiom. Supply an explicit betas list justified by '
+            'the geometry, or for a formal/truncated computation.')
     dim = len(X.wd.reduced_roots) - (ci_rank(K) if K else 0)
     # Enumerate supported beta with <c1, beta> <= dim + 1: the dimension
     # condition l_i + l_j = dim - 1 + <c1, beta> (with l <= dim) makes any
-    # larger class vanish, so this is exhaustive.  Components where c1
-    # vanishes are capped at dim + 1 each (their invariants carry a factor
-    # <c1, beta> from other components; the notebook's total-degree bound
-    # missed such classes entirely, e.g. a (1,2)-curve in P1xP1).
+    # larger class vanish. Strict positivity bounds each coordinate; nefness
+    # alone does not justify a finite cap in a zero-Chern direction.
     cap = dim + 1
     kept = X.wd.roots_that_stay
     coeffs = [c[r - 1] for r in kept]
@@ -207,7 +211,7 @@ def betas_and_fano_index(X, K):
             betas.append(tuple(v))
             return
         ci = coeffs[pos]
-        bmax = remaining // ci if ci > 0 else cap
+        bmax = remaining // ci
         for b in range(bmax + 1):
             build(pos + 1, remaining - b * ci, current + [b])
     build(0, cap, [])

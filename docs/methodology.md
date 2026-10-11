@@ -24,17 +24,24 @@ By applying the **Graber-Pandharipande Virtual Localization Theorem**, the integ
 
 The software recursively generates these graphs for a given curve degree $\beta$, calculates the equivariant Euler classes of the virtual normal bundles (using the roots of $G$ and weights of $\mathcal{E}$), and computes the intersection numbers programmatically. 
 
-**Background:** [The Moment Map and Equivariant Cohomology (Atiyah & Bott, 1984)](https://doi.org/10.1016/0040-9383(84)90021-1). The fixed-locus formula used here is the Graber–Pandharipande virtual localization theorem.
+**Reference:** Graber and Pandharipande,
+[Localization of virtual classes](https://arxiv.org/abs/alg-geom/9708001).
 
-## 3. Borel-Weil-Bott and Flag Ambient Cohomology
+## 3. Schubert classes and flag-ambient cohomology
 
 For the ambient space $F$, the cohomology basis consists of Schubert classes $\sigma_w$. When intersecting with the zero locus of $\mathcal{E}$, not all Schubert classes survive.
 
-The dimension and basis rank are derived using Lie theory. 
-- The dimension is exactly $|R^+ \setminus R^+_P| - \text{rank}(\mathcal{E})$.
+The expected dimension and ambient pairing come from the flag and bundle data.
+- For a regular section with smooth zero locus, the dimension is $|R^+ \setminus R^+_P| - \text{rank}(\mathcal{E})$.
 - The flag-ambient cohomology $H^*_{\text{amb}}(X)$ is exactly the image of the restriction map $i^*: H^*(F, \mathbb{Q}) \to H^*(X, \mathbb{Q})$.
 
-**Reference:** [Homogeneous Vector Bundles (Bott, 1957)](https://doi.org/10.2307/1970105)
+The software forms the Euler-twisted classical pairing
+\[
+g_{ij}=\int_F\sigma_i\sigma_j e(\mathcal E)
+\]
+and selects a nondegenerate submatrix to obtain its returned ambient basis.
+It does not compute primitive cohomology by this reduction. Identifying this
+sector with all cohomology requires additional geometric hypotheses.
 
 ## 4. Replicating the Computations
 
@@ -61,8 +68,20 @@ are zero. The dimension gate uses
 The matrix returned by `small_quantum_multiplication` is the
 flag-ambient operator described above. It is the full small quantum
 cohomology operator only when the homology and ambient-completeness hypotheses
-are satisfied. Automatic beta enumeration is a finite Fano/nef convenience; a
-negative kept Chern coordinate requires an explicit finite beta list.
+are satisfied. The dimension axiom bounds contributing degrees by
+\(\langle c_1(TX),\beta\rangle\leq\dim X+1\). This gives a finite
+automatic list when every enumerated curve generator has strictly positive
+Chern pairing. A zero pairing in an otherwise nonzero Chern vector is not
+bounded by this inequality; such cases and negative pairings require explicit
+curve lists unless a supported geometric constructor supplies effective
+generators with positive pairings. If the entire Chern vector is zero, the
+operator is zero.
+
+The reported index is computed in the specified ambient curve lattice (or
+from a constructor's effective generators). It equals the geometric Fano
+index only when the relevant integral-lattice identification holds. For
+example, a smooth `(1,2)` curve in `P¹ × P¹` is `P¹` with Fano index 2,
+although the ambient Chern vector `(1,0)` has gcd 1.
 
 ## 5. Gromov-Witten Invariants: Theory and Examples
 
@@ -83,7 +102,17 @@ For $d=1$, we get 1 line through 2 points. For $d=2$, we get 1 conic through 5 p
 ### Quantum Cohomology
 Gromov-Witten invariants allow us to "deform" the classical cohomology ring $H^*(X)$ into the **Quantum Cohomology Ring** $QH^*(X)$.
 
-In classical cohomology, the cup product $\alpha \cup \beta$ simply intersects two subvarieties. In quantum cohomology, the **quantum cup product** $\alpha \star \beta$ introduces quantum corrections that count rational curves (genus $g=0$) intersecting $\alpha$, $\delta$, and a third class $\gamma$. The 3-point Gromov-Witten invariants $\langle \alpha, \delta, \gamma \rangle_{0, \beta}$ act precisely as the structure constants for this new quantum multiplication.
+The small quantum product adds genus-zero, three-point GW invariants to the
+classical cup product. If \(\{\phi_i\}\) is a basis and \(\{\phi^i\}\)
+its Poincaré-dual basis, then
+\[
+\alpha\star\delta
+=\sum_{\beta,i}q^\beta
+\langle\alpha,\delta,\phi_i\rangle_{0,3,\beta}\,\phi^i.
+\]
+Thus a matrix in a general basis uses the **inverse pairing**, not just the
+array of three-point invariants. The degree-zero term is the ordinary cup
+product. The ambient operator uses the reduced twisted pairing above.
 
 ### Why `gwflags` Computes $c_1(TX) \star (-)$
 The software specializes in computing the quantum multiplication by a very specific class: the first Chern class of the tangent bundle, $c_1(TX)$. 

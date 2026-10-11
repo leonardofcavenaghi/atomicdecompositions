@@ -1,5 +1,13 @@
 # Release notes
 
+## v1.0.5 — 2026-10-12
+
+- Made the new catalog and its 131 exact results visible on the homepage, and synchronized every stable download link.
+- Corrected the quantum-product formula, tautological bundle example, degree-zero API convention, orthogonal line-bundle convention, and ambient index/basis explanations.
+- Automatic quantum-matrix enumeration now rejects mixed zero/positive Chern directions: the dimension axiom gives no finite bound there. Explicit, geometrically justified or deliberately truncated curve lists remain supported. All 131 published examples retain their full automatic lists.
+- Fixed the installation code fence and a copied Grassmannian benchmark; strengthened release validation to check homepage and installation links.
+- Added CI checks for all 106 displayed eigenvalue lists and all 47 projective Hodge diamonds, using characteristic-polynomial residuals and exact Riemann–Roch respectively.
+
 ## v1.0.4 — 2026-10-11
 
 - Added 15 completed flag-variety and section entries, including the full GM-20 matrix.
@@ -22,10 +30,10 @@
 
 ## Downloads
 
-- [Stable source ZIP: v1.0.4](https://github.com/leonardofcavenaghi/atomicdecompositions/archive/refs/tags/v1.0.4.zip)
+- [Stable source ZIP: v1.0.5](https://github.com/leonardofcavenaghi/atomicdecompositions/archive/refs/tags/v1.0.5.zip)
 - [Current main source ZIP](https://github.com/leonardofcavenaghi/atomicdecompositions/archive/refs/heads/main.zip)
 
-The stable ZIP matches version `1.0.4`. Record the commit when using main.
+The stable ZIP matches version `1.0.5`. Record the commit when using main.
 
 ## v1.0.1 — 2026-09-17
 
@@ -72,4 +80,6 @@ The stable ZIP matches version `1.0.4`. Record the commit when using main.
 
 ## Validation policy
 
-Every release must pass the Python test suite, catalog validator, strict MkDocs build, and representative GUI/API smoke tests. Pending catalog computations must be explicitly labelled rather than presented as verified matrices.
+Every release must pass the Python test suite, catalog and exact-data validators,
+strict MkDocs build, release-link checks, and representative GUI/API smoke
+tests. Incomplete computations remain outside the published catalog and GUI presets.

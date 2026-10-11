@@ -34,8 +34,10 @@ calling it.
 
 ## 3. Complete-intersection twists (`gwflags/cintersection.py`)
 
-A homogeneous bundle is represented by its multiset of torus weights. The
-module implements the Euler-twisted factors:
+A homogeneous bundle supplies torus weights and invariant-curve restrictions.
+For the standard constructors these restrictions come from their supported
+weight model. Fixed-point weights alone do not determine the splitting of an
+arbitrary non-split bundle along a curve. The module implements:
 
 - `euler_complete_intersection(gw, K, w)` gives the fixed-point Euler class;
 - `h_complete_intersection(gw, K, w, root_idx, d)` gives the convex edge
@@ -53,7 +55,9 @@ Bundles can be constructed with `O(X, a1, ...)`, `taut_sub(X, node)`,
 CLI also accept compact aliases `O(a1,...)`, `S(node)`, and `Q(node)` with
 `X` bound to the current flag. `quot(E, F)` (also `Quot(E, F)`) checks
 that the fiber-weight multiset of `F` is contained in `E` with multiplicity
-before constructing the quotient. A legacy split bundle is a list of rows, for
+before constructing its weight model. This check does not prove that an
+embedding exists or recover arbitrary extension data; the geometric quotient
+and its curve restrictions must be justified separately. A legacy split bundle is a list of rows, for
 example `[[1], [2]]` for `O(1) + O(2)` on a one-generator space.
 
 ## 4. Main interface (`gwflags/__init__.py`)
@@ -62,8 +66,8 @@ example `[[1], [2]]` for `O(1) + O(2)` on a one-generator space.
 
 `roots_that_stay` is a distinct list of 1-based simple-root nodes not in the
 parabolic, in the order used for Picard coordinates. For example,
-`FlagVariety("A4", [2])` is `Gr(2,5)`, while `[1,3]` describes the two-factor
-product convention when the algebra is a product.
+`FlagVariety("A4", [2])` is `Gr(2,5)`, and
+`FlagVariety("A2xA2", [1,3])` is `P² × P²`.
 
 ### Curve classes (`beta`)
 
@@ -84,9 +88,10 @@ progress messages use the canonical ambient vector.
 Returns the exact genus-zero invariant
 \(\langle\sigma_{u_1},\ldots,\sigma_{u_n}\rangle_{0,n,\beta}\), optionally
 Euler-twisted by `K`. The dimension axiom is checked before localization; a
-mismatch returns zero. Degree zero uses the classical cup-integral shortcut
-(the degree-zero path keeps stable three-point terms and omits unstable
-cases).
+mismatch returns zero. At degree zero this API intentionally returns the
+classical cup integral when the insertion codimensions sum to the target
+dimension, even with two insertions. This pairing shortcut is not the
+definition of an unstable degree-zero GW invariant.
 
 ### `expected_degree(beta, n_classes, K=None)`
 
@@ -95,13 +100,21 @@ Returns the codimension sum required by the dimension axiom after normalizing
 
 ### `fano_index_and_betas(K=None)`
 
-Returns `(I_X, betas)`, where `I_X` is the gcd of the first-Chern
-coordinates and `betas` is the finite list needed for the ambient quantum
-matrix. Automatic enumeration is justified for Fano/nef first-Chern data by
-\(\langle c_1(TX),\beta\rangle\leq\dim X+1\). A zero-Chern Calabi--Yau case
-returns index zero and only the zero class. If a kept Chern coordinate is
-negative, automatic enumeration raises a `ValueError`; supply an explicit
-`betas` list for a deliberately truncated/formal calculation.
+Returns `(I_X, betas)`. With the default ambient curve lattice, `I_X` is
+the gcd of the first-Chern coordinates. It is the geometric Fano index when
+the chosen coordinates give the integral Picard lattice of the zero locus;
+that identification can fail for low-dimensional sections. A constructor with
+explicit effective-curve generators instead uses their Chern pairings.
+
+Automatic enumeration uses
+\(\langle c_1(TX),\beta\rangle\leq\dim X+1\). This gives a finite
+complete supported list only with **strictly positive** Chern pairings on all
+enumerated generators. Mixed zero and positive ambient pairings, or a negative
+pairing, raise `ValueError` unless supported effective generators supply a
+positive bound. Supply `small_quantum_multiplication(..., betas=[...])` for a
+geometrically justified finite list or a deliberately truncated computation.
+When the entire Chern vector vanishes, multiplication by it is zero, so the
+method returns index zero and only the zero class.
 
 ### `small_quantum_multiplication(K=None, betas=None, progress=None, workers=0)`
 
@@ -109,7 +122,9 @@ Returns `(M, grading, basis_indices)` for multiplication by `c1(TX)` on the
 flag-ambient Schubert sector. `M` is symbolic in `y<node>`, where `<node>` is
 the ambient Bourbaki label of a kept root (so kept nodes `1,3` use `y1` and
 `y3`). `betas` may be supplied in either accepted beta convention. The matrix
-is the full small quantum-cohomology operator only when the relevant homology
+uses input columns and output rows. The grading is diagonal with entries
+`codimension − dim(X)/2`, and `basis_indices` indexes `X.classes` and
+`X.class_words()` in their returned order. It is the full small quantum-cohomology operator only when the relevant homology
 and ambient-completeness hypotheses hold; otherwise it is the flag-ambient block. `workers=N` distributes independent
 per-beta blocks over forked processes.
 

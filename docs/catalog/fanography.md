@@ -4,7 +4,9 @@ description: Computed small quantum multiplication matrices for Fano threefolds,
 
 # Fanography 3-Folds
 
-This section contains the 3-dimensional Fano varieties rigorously mapped and computed from fanography.info.
+This section records the 105 smooth Fano threefold families from Fanography.
+Entries with supported flag-variety inputs include computed ambient matrices;
+entries marked **Catalog only** have reference descriptions without a computed matrix.
 
 **Realization types.** Entries labelled direct flag variety or complete intersection can be entered in gwflags. Homogeneous-bundle entries require the corresponding bundle constructor. Catalog-only entries are recorded for reference and are not runnable with the current input model.
 

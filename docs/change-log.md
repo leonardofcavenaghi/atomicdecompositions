@@ -1,5 +1,16 @@
 # Changelog
 
+## 2026-10-12 — Documentation and mathematical boundary review
+
+- Added a visible homepage update and synchronized stable downloads at v1.0.5.
+- Corrected inverse-pairing, ambient-index, degree-zero and bundle conventions;
+  fixed the installation code block and copied Grassmannian insertion example.
+- Removed an unjustified automatic cap in zero-Chern directions. Such inputs
+  now require an explicit curve list unless effective generators supply a
+  positive bound. The 131 published computations are unaffected.
+- Expanded release-link validation to cover the homepage and installation guide.
+- Added independent checks of all 106 displayed eigenvalue lists and 47 Hodge diamonds to CI.
+
 ## 2026-10-11
 
 - Published 15 additional exact quantum multiplication examples for flag varieties and their sections.

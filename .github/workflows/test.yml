@@ -91,6 +91,9 @@ jobs:
       - name: Validate catalog LaTeX
         run: PYTHONDONTWRITEBYTECODE=1 python scripts/validate_catalog_tex.py
 
+      - name: Validate displayed spectra and Hodge diamonds
+        run: PYTHONDONTWRITEBYTECODE=1 python scripts/validate_catalog_math.py
+
   website:
     name: Documentation and browser regressions
     needs: catalog

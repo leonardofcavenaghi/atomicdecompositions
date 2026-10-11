@@ -101,8 +101,8 @@ untwisted genus-0 theory reject that direct computation; use
 
 **GW invariant** reports the insertion list, the canonical ambient form of β,
 and the computed number. The degree-zero API path is a classical cup-integral
-shortcut; the degree-zero GW potential keeps only stable three-point
-terms and omits unstable cases.
+shortcut, including two-point pairings; it is not the definition of an
+unstable degree-zero GW invariant.
 
 The toolbar above **Results** keeps the interface reproducible: **Copy input
 JSON** copies the current algebra, kept roots, bundle, β, insertions, and
@@ -120,6 +120,13 @@ expected codimension.
 The quantum matrix is the flag-ambient operator described above. It is the
 full small quantum-cohomology operator only when the relevant homology and
 ambient-completeness hypotheses hold. For complete intersections, the published matrix is an ambient block.
+
+Automatic curve enumeration needs strictly positive first-Chern pairings on
+the enumerated curve generators. Mixed zero/positive or negative pairings
+require an explicit Python `betas` list, unless a supported constructor supplies
+effective generators with a positive bound. The all-zero Chern class gives a
+zero multiplication operator. The reported index uses the specified ambient
+lattice; see the [API conventions](api-reference.md#fano_index_and_betasknone).
 
 ## Advanced bundle syntax
 
@@ -204,11 +211,18 @@ subbundle of E:
 quot(osum(S(2),Q(2)), S(2))
 ```
 
-On `Gr(2,5)`, `S(2) + Q(2)` is the trivial rank-5 bundle, so this quotient is
-the rank-3 quotient bundle `Q(2)`. The software checks the fiber-weight
+Here `E = S(2) ⊕ Q(2)` is a direct sum, and quotienting by its first
+summand gives the rank-3 bundle `Q(2)`. The tautological exact sequence
+`0 → S(2) → O⁵ → Q(2) → 0` gives the same class in K-theory as `O⁵`,
+but does not identify this direct sum with a trivial vector bundle.
+The software checks the fiber-weight
 multisets with multiplicity at every fixed point (equivalent type-A characters
 are compared after removing the torus-trivial trace direction). Different
 varieties or a missing weight produce a clear validation error.
+
+Weight containment is a necessary consistency check; it does not construct
+a subbundle embedding or determine arbitrary extension data. The caller must
+supply a genuine quotient with supported invariant-curve restrictions.
 
 Equivalent Python:
 

@@ -18,8 +18,20 @@ This website serves as an independent catalog and computational resource for alg
 The accompanying software, `gwflags`, provides a computational framework to evaluate geometric invariants using the localization technique:
 
 - **Virtual Localization**: Computes genus-zero Gromov-Witten invariants of flag varieties and the smooth zero loci of globally generated homogeneous vector bundles, using the Graber-Pandharipande virtual localization theorem.
-- **Quantum Multiplication**: Computes the small quantum multiplication matrix, its grading operators, and its eigenvalues for complete intersections.
-- **Geometric Invariants**: Automatically calculates the Fano index, ambient dimension, and basis rank natively using the geometry of flag varieties.
+- **Quantum Multiplication**: Computes multiplication by the first Chern class on the flag-ambient sector, together with its grading and spectrum.
+- **Geometric Invariants**: Calculates expected dimension, ambient basis rank, and the first-Chern gcd in the specified curve lattice; see the [mathematical scope](methodology.md#4a-coordinate-contract-used-by-the-software).
+
+## Latest update — 12 October 2026
+
+The catalog now includes [15 additional flag varieties and sections](catalog/additional.md),
+including the full GM-20 matrix. [Exact computation data](catalog/computed.md)
+provides symbolic matrices, ordered bases, gradings and curve lists for
+**131 completed examples**. The master table is synchronized with these entries.
+
+Release **v1.0.5** corrects mathematical and installation documentation and
+requires explicit curve lists when the dimension bound cannot make automatic
+enumeration finite. See the [release notes](releases.md) and
+[mathematics audit](audits/math-software-review.md).
 
 ## Navigate the Documentation
 
@@ -33,7 +45,7 @@ The accompanying software, `gwflags`, provides a computational framework to eval
 
 Download the [current main source ZIP](https://github.com/leonardofcavenaghi/atomicdecompositions/archive/refs/heads/main.zip)
 to use the software corresponding to this website, or the
-[stable v1.0.3 source ZIP](https://github.com/leonardofcavenaghi/atomicdecompositions/archive/refs/tags/v1.0.3.zip)
+[stable v1.0.5 source ZIP](https://github.com/leonardofcavenaghi/atomicdecompositions/archive/refs/tags/v1.0.5.zip)
 for the tagged snapshot. See [Release notes](releases.md) for version details
 and [Installation](installation.md) for setup.
 

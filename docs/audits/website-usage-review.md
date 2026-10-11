@@ -26,7 +26,7 @@ as `[[3]]`. Python code uses the separate API form `K=[[3]]`.
 - `A2`, `keep=1`, beta `1`, `pt|pt`: one line through two points, value `1`;
   the equivalent ambient beta `1,0` gives the same result.
 - `A3`, `keep=2`, beta `1` or `0,1,0`, insertions
-  `2 1 3 2|1 3 2|pt`: the `Gr(2,4)` benchmark gives `1`.
+  `2|1 3 2|pt`: the `Gr(2,4)` benchmark gives `1`.
 - `A3`, `keep=1`, `K=3`, beta `1`, empty insertions: cubic-surface line count
   `27`.
 - `A4`, `keep=1`, `K=5`, beta `1`, empty insertions: quintic line count

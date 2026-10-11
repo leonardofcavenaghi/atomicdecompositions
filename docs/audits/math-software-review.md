@@ -1,5 +1,37 @@
 # Mathematics and software audit
 
+## Current review — 12 October 2026
+
+The [exact data](../catalog/computed.md) contains 131 completed computations,
+including the [15 additional entries](../catalog/additional.md). The data
+validator checks executable inputs, expected dimensions, Chern indices, full
+automatic curve lists, ordered basis words, gradings, Novikov degree axioms,
+specialization, exact characteristic polynomials and displayed matrices.
+It checks saved outputs and does not rerun all 131 localization sums.
+
+All **106 displayed eigenvalue lists** pass high-precision numerical checks
+against the characteristic polynomials and their multiplicities. All **47
+displayed Hodge diamonds** (the projective complete intersections) agree
+exactly with an independent Hirzebruch–Riemann–Roch calculation combined with
+Lefschetz. These checks run in `scripts/validate_catalog_math.py` and CI.
+The 70-test software suite, all eight Python example blocks in the API and
+usage guides, strict documentation build and browser checks also pass.
+
+This review also corrected the inverse pairing in the quantum-product
+formula, the distinction between a tautological exact sequence and a direct
+sum, degree-zero pairing conventions, orthogonal line-bundle degrees and the
+ambient-lattice meaning of the reported index. Automatic enumeration now
+rejects a zero Chern direction in an otherwise nonzero Chern vector, since
+the dimension axiom alone gives no finite bound there. The existing explicit
+curve-list path is tested on a `(1,2)` curve in `P¹ × P¹`; all 131 published
+examples have strictly positive relevant pairings and retain their results.
+
+The checks below establish specific identities and software regressions;
+they are not a proof of every geometric realization in the reference catalog.
+Catalog-only records remain reference descriptions, not computed examples.
+
+## Earlier catalog review
+
 This report records the independent review of the maintained website catalog,
 its examples, and the `gwflags` implementation. The catalog validator and the
 software tests are intended to be rerun whenever a generated page or core
@@ -59,6 +91,8 @@ From the repository root:
 
 ```bash
 python3 scripts/validate_catalog.py
+python3 scripts/validate_localization_results.py
+python3 scripts/validate_catalog_math.py
 python3 -m pytest tests/ -q
 mkdocs build --strict
 ```

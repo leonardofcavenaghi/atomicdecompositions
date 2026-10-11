@@ -213,13 +213,15 @@ def test_dfs_assoc_matches_fallback():
 def test_ci_curve_in_p1xp1():
     # (1,2)-curve in P1xP1 is a P1; its ambient quantum multiplication by
     # c1 must have eigenvalues +-2 sqrt(y) (at y=1: +-2).  Regression for
-    # the beta-enumeration gap (c1_CI = (1,0) has a zero entry) and for the
-    # K-column / kept-node pairing convention.
+    # c1_CI = (1,0) cannot bound the second ambient curve coordinate.
+    # Geometry supplies the actual line class (2,1); its c1 degree is 2.
     X = FlagVariety('A1xA1', [1, 2])
     K = [[1, 2]]
-    fano, betas = X.fano_index_and_betas(K)
-    assert fano == 1
-    assert (2, 1) in [tuple(b) for b in betas]
+    with pytest.raises(ValueError, match='zero Chern direction'):
+        X.fano_index_and_betas(K)
+    with pytest.raises(ValueError, match='zero Chern direction'):
+        X.small_quantum_multiplication(K)
+    betas = [(0, 0), (2, 1)]
     M, Gr, idx = X.small_quantum_multiplication(K, betas)
     ev = sorted(str(e) for e in X.eigenvalues(M, at_one=True))
     assert ev == ['-2', '2'], ev

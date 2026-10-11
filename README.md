@@ -6,7 +6,7 @@ package; runs on plain Python and inside SageMath.
 [Website and catalogue](https://leonardofcavenaghi.github.io/atomicdecompositions/)
 · [Release notes and downloads](https://leonardofcavenaghi.github.io/atomicdecompositions/releases/)
 
-The current package version is `1.0.4`, available as the stable tag `v1.0.4`.
+The current package version is `1.0.5`, available as the stable tag `v1.0.5`.
 Use that tag for a reproducible release snapshot matching the website.
 
 It computes, for a flag variety **G/P** — of any simple type A–G *or a
@@ -130,8 +130,11 @@ rows such as `3` or `1,1;2,2`; enter homogeneous expressions such as
 `info`/**Space Info** to obtain valid
 Schubert words. The high-level Python API additionally accepts explicit
 constructors and legacy rows (`K=[[3]]`). Automatic `sqm` curve enumeration
-is finite for Fano/nef first Chern data; for a negative kept Chern coordinate,
-supply an explicit `betas` list. The matrix is the flag-ambient operator unless
+is exhaustive when every supported curve generator has strictly positive
+first-Chern pairing. Mixed zero/positive or negative ambient pairings require
+an explicit `betas` list unless a constructor supplies suitable effective
+generators. When the entire Chern vector is zero, the operator is zero.
+The matrix is the flag-ambient operator unless
 the ambient-completeness hypotheses identify it with full small quantum
 cohomology.
 

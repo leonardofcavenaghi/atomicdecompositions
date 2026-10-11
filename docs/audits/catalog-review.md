@@ -14,6 +14,12 @@ This review covers the maintained catalog pages and the Fanography reference pag
 
 ## Organization contract
 
+The October 2026 update adds **Additional Flag Varieties and Sections** and
+**Exact Computation Data** to the four categories below. The master table is
+generated from canonical cards by `scripts/generate_catalog_index.py`;
+`generate_datatable.py` delegates to that generator. The exact JSON dataset and
+its generated pages are checked by `scripts/validate_localization_results.py`.
+
 The public catalog is organized as:
 
 1. Projective Spaces

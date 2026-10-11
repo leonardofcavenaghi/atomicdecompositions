@@ -12,7 +12,7 @@ Choose the path that matches your background. You do not need SageMath to use th
 2. Install Git from [git-scm.com](https://git-scm.com/downloads), or download the
    [current main ZIP](https://github.com/leonardofcavenaghi/atomicdecompositions/archive/refs/heads/main.zip)
    and extract it. The main source follows this website. The
-   [stable v1.0.4 ZIP](https://github.com/leonardofcavenaghi/atomicdecompositions/archive/refs/tags/v1.0.4.zip)
+   [stable v1.0.5 ZIP](https://github.com/leonardofcavenaghi/atomicdecompositions/archive/refs/tags/v1.0.5.zip)
    provides the versioned snapshot; see [Release notes](releases.md).
 3. Open a terminal and obtain the source:
 
@@ -90,3 +90,4 @@ To build the documentation locally with the same pinned toolchain used by CI:
 ```bash
 python -m pip install -r requirements-docs.txt
 mkdocs build --strict
+```

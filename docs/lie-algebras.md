@@ -4,7 +4,12 @@ This guide explains how to construct complex flag varieties $G/P$ using our soft
 
 ## 1. The Lie-Theoretic Setup
 
-Let $G$ be a simply connected complex semisimple Lie group (e.g., $SL(n)$, $SO(n)$, $Sp(2n)$). Its Lie algebra $\mathfrak{g}$ is classified by a **Cartan Type**, which corresponds to a specific Dynkin diagram. The simple roots of $\mathfrak{g}$ correspond to the nodes of this diagram, typically indexed $1, 2, \dots, n$.
+Let $G$ be a complex semisimple Lie group. We use its simply connected form
+to label line bundles by fundamental weights: $SL(n)$, $Spin(n)$, or
+$Sp(2n)$ in the classical cases. The orthogonal descriptions below can also
+be written with $SO(n)$, which has the same flag varieties. Its Lie algebra
+$\mathfrak{g}$ is classified by a **Cartan Type** and a Dynkin diagram;
+simple roots are indexed by Bourbaki node numbers.
 
 A standard parabolic subgroup $P \subset G$ is determined by a subset of the simple roots. In our software, you specify $P$ by providing the **Keep Nodes** (using the `--keep` argument in the CLI or "Keep Nodes" in the GUI). Geometrically, specifying a node $k$ in "Keep Nodes" corresponds to **crossing out** that node $k$ from the Dynkin diagram. This omits the $k$-th simple root from the Levi factor of $P$ (which is equivalent to keeping the $k$-th fundamental weight). Thus, if you specify a single node $k$ in Keep Nodes, node $k$ is crossed out, making $P$ a maximal parabolic subgroup, and $G/P$ is a generalized Grassmannian.
 
@@ -48,6 +53,11 @@ This space has two connected components, each parameterizing one family of $n$-d
 - **Example:** To construct $OG(4, 8)$, use `Algebra = D4, Keep Nodes = 4`.
 
 ## 3. References
+
+On the maximal orthogonal Grassmannians above, `O(1)` denotes the primitive
+spinor generator. The Plücker determinant line bundle is `O(2)`. This matters
+when translating section degrees into Bundle K; the two conventions must not
+be interchanged.
 
 For rigorous foundations of Lie algebras, root systems, Dynkin diagrams, and the construction of homogeneous spaces, please refer to the following standard texts:
 
