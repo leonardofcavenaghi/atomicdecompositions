@@ -365,28 +365,6 @@
     
     
       <li class="md-tabs__item">
-        <a href="../archive/catalog/" class="md-tabs__link">
-          
-  
-  
-    
-  
-  Archive
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
         <a href="../methodology/" class="md-tabs__link">
           
   
@@ -1075,7 +1053,7 @@
   <span class="md-ellipsis">
     
   
-    Exact Computation Data
+    Download matrices and inputs
   
 
     
@@ -1375,6 +1353,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1400,7 +1382,7 @@
   <span class="md-ellipsis">
     
   
-    Archive
+    Methodology
   
 
     
@@ -1413,103 +1395,6 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Archive
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../archive/catalog/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Legacy catalog
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
-        
-          
-          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Methodology
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1774,8 +1659,8 @@ untwisted genus-0 theory reject that direct computation; use
 <p><strong>Quantum matrix</strong> reports the matrix, grading, characteristic polynomial, and numerical eigenvalues only when all Novikov variables are specialized to one. A custom <code>Evaluate y</code> value is reported separately and does not claim to be the <code>y=1</code> spectrum.</p>
 <p><strong>GW invariant</strong> reports the insertion list, the canonical ambient form of β,
 and the computed number. The degree-zero API path is a classical cup-integral
-shortcut; the degree-zero GW potential keeps only stable three-point
-terms and omits unstable cases.</p>
+shortcut, including two-point pairings; it is not the definition of an
+unstable degree-zero GW invariant.</p>
 <p>The toolbar above <strong>Results</strong> keeps the interface reproducible: <strong>Copy input
 JSON</strong> copies the current algebra, kept roots, bundle, β, insertions, and
 options; <strong>Download result JSON</strong> saves those inputs together with the exact
@@ -1789,6 +1674,12 @@ expected codimension.</p>
 <p>The quantum matrix is the flag-ambient operator described above. It is the
 full small quantum-cohomology operator only when the relevant homology and
 ambient-completeness hypotheses hold. For complete intersections, the published matrix is an ambient block.</p>
+<p>Automatic curve enumeration needs strictly positive first-Chern pairings on
+the enumerated curve generators. Mixed zero/positive or negative pairings
+require an explicit Python <code>betas</code> list, unless a supported constructor supplies
+effective generators with a positive bound. The all-zero Chern class gives a
+zero multiplication operator. The reported index uses the specified ambient
+lattice; see the <a href="../api-reference/#fano_index_and_betasknone">API conventions</a>.</p>
 <h2 id="advanced-bundle-syntax">Advanced bundle syntax<a class="headerlink" href="#advanced-bundle-syntax" title="Permanent link">&para;</a></h2>
 <p>Supported constructors include <code>O(a,...)</code>, <code>S(node)</code>, <code>Q(node)</code>,
 <code>taut_quot(X, k)</code>, <code>taut_sub(X, k)</code>, <code>dual(...)</code>, <code>osum(...)</code>, <code>tensor(...)</code>,
@@ -1847,11 +1738,17 @@ is computed using the quotient-bundle twist.</p>
 subbundle of E:</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>quot(osum(S(2),Q(2)), S(2))
 </span></code></pre></div>
-<p>On <code>Gr(2,5)</code>, <code>S(2) + Q(2)</code> is the trivial rank-5 bundle, so this quotient is
-the rank-3 quotient bundle <code>Q(2)</code>. The software checks the fiber-weight
+<p>Here <code>E = S(2) ⊕ Q(2)</code> is a direct sum, and quotienting by its first
+summand gives the rank-3 bundle <code>Q(2)</code>. The tautological exact sequence
+<code>0 → S(2) → O⁵ → Q(2) → 0</code> gives the same class in K-theory as <code>O⁵</code>,
+but does not identify this direct sum with a trivial vector bundle.
+The software checks the fiber-weight
 multisets with multiplicity at every fixed point (equivalent type-A characters
 are compared after removing the torus-trivial trace direction). Different
 varieties or a missing weight produce a clear validation error.</p>
+<p>Weight containment is a necessary consistency check; it does not construct
+a subbundle embedding or determine arbitrary extension data. The caller must
+supply a genuine quotient with supported invariant-curve restrictions.</p>
 <p>Equivalent Python:</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">gwflags.bundles</span><span class="w"> </span><span class="kn">import</span> <span class="n">osum</span><span class="p">,</span> <span class="n">quot</span><span class="p">,</span> <span class="n">taut_sub</span><span class="p">,</span> <span class="n">taut_quot</span>
 </span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="n">E</span> <span class="o">=</span> <span class="n">osum</span><span class="p">(</span><span class="n">taut_sub</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="n">taut_quot</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>

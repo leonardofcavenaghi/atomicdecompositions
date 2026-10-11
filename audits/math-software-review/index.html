@@ -365,28 +365,6 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../archive/catalog/" class="md-tabs__link">
-          
-  
-  
-    
-  
-  Archive
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
         <a href="../../methodology/" class="md-tabs__link">
           
   
@@ -768,7 +746,7 @@
   <span class="md-ellipsis">
     
   
-    Exact Computation Data
+    Download matrices and inputs
   
 
     
@@ -1037,6 +1015,28 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#current-review-12-october-2026" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Current review — 12 October 2026
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#earlier-catalog-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Earlier catalog review
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#mathematical-checks" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1151,6 +1151,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1176,7 +1180,7 @@
   <span class="md-ellipsis">
     
   
-    Archive
+    Methodology
   
 
     
@@ -1189,103 +1193,6 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Archive
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../archive/catalog/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Legacy catalog
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
-        
-          
-          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Methodology
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1455,6 +1362,32 @@
 
 
 <h1 id="mathematics-and-software-audit">Mathematics and software audit<a class="headerlink" href="#mathematics-and-software-audit" title="Permanent link">&para;</a></h1>
+<h2 id="current-review-12-october-2026">Current review — 12 October 2026<a class="headerlink" href="#current-review-12-october-2026" title="Permanent link">&para;</a></h2>
+<p>The <a href="../../catalog/computed/">exact data</a> contains 131 completed computations,
+including the <a href="../../catalog/additional/">15 additional entries</a>. The data
+validator checks executable inputs, expected dimensions, Chern indices, full
+automatic curve lists, ordered basis words, gradings, Novikov degree axioms,
+specialization, exact characteristic polynomials and displayed matrices.
+It checks saved outputs and does not rerun all 131 localization sums.</p>
+<p>All <strong>106 displayed eigenvalue lists</strong> pass high-precision numerical checks
+against the characteristic polynomials and their multiplicities. All <strong>47
+displayed Hodge diamonds</strong> (the projective complete intersections) agree
+exactly with an independent Hirzebruch–Riemann–Roch calculation combined with
+Lefschetz. These checks run in <code>scripts/validate_catalog_math.py</code> and CI.
+The 70-test software suite, all eight Python example blocks in the API and
+usage guides, strict documentation build and browser checks also pass.</p>
+<p>This review also corrected the inverse pairing in the quantum-product
+formula, the distinction between a tautological exact sequence and a direct
+sum, degree-zero pairing conventions, orthogonal line-bundle degrees and the
+ambient-lattice meaning of the reported index. Automatic enumeration now
+rejects a zero Chern direction in an otherwise nonzero Chern vector, since
+the dimension axiom alone gives no finite bound there. The existing explicit
+curve-list path is tested on a <code>(1,2)</code> curve in <code>P¹ × P¹</code>; all 131 published
+examples have strictly positive relevant pairings and retain their results.</p>
+<p>The checks below establish specific identities and software regressions;
+they are not a proof of every geometric realization in the reference catalog.
+Catalog-only records remain reference descriptions, not computed examples.</p>
+<h2 id="earlier-catalog-review">Earlier catalog review<a class="headerlink" href="#earlier-catalog-review" title="Permanent link">&para;</a></h2>
 <p>This report records the independent review of the maintained website catalog,
 its examples, and the <code>gwflags</code> implementation. The catalog validator and the
 software tests are intended to be rerun whenever a generated page or core
@@ -1507,8 +1440,10 @@ user-readable errors.</p>
 <h2 id="reproduce-the-review">Reproduce the review<a class="headerlink" href="#reproduce-the-review" title="Permanent link">&para;</a></h2>
 <p>From the repository root:</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>python3<span class="w"> </span>scripts/validate_catalog.py
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>python3<span class="w"> </span>-m<span class="w"> </span>pytest<span class="w"> </span>tests/<span class="w"> </span>-q
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>mkdocs<span class="w"> </span>build<span class="w"> </span>--strict
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>python3<span class="w"> </span>scripts/validate_localization_results.py
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>python3<span class="w"> </span>scripts/validate_catalog_math.py
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>python3<span class="w"> </span>-m<span class="w"> </span>pytest<span class="w"> </span>tests/<span class="w"> </span>-q
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>mkdocs<span class="w"> </span>build<span class="w"> </span>--strict
 </span></code></pre></div>
 <p>The lightweight Fanography 1-10 regression runs as part of the full suite. It
 checks the published <span class="arithmatex">\(y=1\)</span> card against the symbolic snapshot and all 21

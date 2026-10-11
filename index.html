@@ -363,28 +363,6 @@
     
     
       <li class="md-tabs__item">
-        <a href="archive/catalog/" class="md-tabs__link">
-          
-  
-  
-    
-  
-  Archive
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
         <a href="methodology/" class="md-tabs__link">
           
   
@@ -522,6 +500,17 @@
     <span class="md-ellipsis">
       
         The Software: gwflags
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#latest-update-12-october-2026" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Latest update — 12 October 2026
       
     </span>
   </a>
@@ -846,7 +835,7 @@
   <span class="md-ellipsis">
     
   
-    Exact Computation Data
+    Download matrices and inputs
   
 
     
@@ -1146,6 +1135,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1171,7 +1164,7 @@
   <span class="md-ellipsis">
     
   
-    Archive
+    Methodology
   
 
     
@@ -1184,103 +1177,6 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Archive
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="archive/catalog/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Legacy catalog
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
-        
-          
-          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Methodology
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1420,9 +1316,18 @@
 <p>The accompanying software, <code>gwflags</code>, provides a computational framework to evaluate geometric invariants using the localization technique:</p>
 <ul>
 <li><strong>Virtual Localization</strong>: Computes genus-zero Gromov-Witten invariants of flag varieties and the smooth zero loci of globally generated homogeneous vector bundles, using the Graber-Pandharipande virtual localization theorem.</li>
-<li><strong>Quantum Multiplication</strong>: Computes the small quantum multiplication matrix, its grading operators, and its eigenvalues for complete intersections.</li>
-<li><strong>Geometric Invariants</strong>: Automatically calculates the Fano index, ambient dimension, and basis rank natively using the geometry of flag varieties.</li>
+<li><strong>Quantum Multiplication</strong>: Computes multiplication by the first Chern class on the flag-ambient sector, together with its grading and spectrum.</li>
+<li><strong>Geometric Invariants</strong>: Calculates expected dimension, ambient basis rank, and the first-Chern gcd in the specified curve lattice; see the <a href="methodology/#4a-coordinate-contract-used-by-the-software">mathematical scope</a>.</li>
 </ul>
+<h2 id="latest-update-12-october-2026">Latest update — 12 October 2026<a class="headerlink" href="#latest-update-12-october-2026" title="Permanent link">&para;</a></h2>
+<p>The catalog now includes <a href="catalog/additional/">15 additional flag varieties and sections</a>,
+including the full GM-20 matrix. <a href="catalog/computed/">Download matrices and inputs</a>
+provides symbolic matrices, ordered bases, gradings and curve lists for
+<strong>131 completed examples</strong>. The master table is synchronized with these entries.</p>
+<p>Release <strong>v1.0.5</strong> corrects mathematical and installation documentation and
+requires explicit curve lists when the dimension bound cannot make automatic
+enumeration finite. See the <a href="releases/">release notes</a> and
+<a href="audits/math-software-review/">mathematics audit</a>.</p>
 <h2 id="navigate-the-documentation">Navigate the Documentation<a class="headerlink" href="#navigate-the-documentation" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="about/"><strong>About</strong></a>: Learn about the team behind this project.</li>
@@ -1434,7 +1339,7 @@
 <h2 id="download">Download<a class="headerlink" href="#download" title="Permanent link">&para;</a></h2>
 <p>Download the <a href="https://github.com/leonardofcavenaghi/atomicdecompositions/archive/refs/heads/main.zip">current main source ZIP</a>
 to use the software corresponding to this website, or the
-<a href="https://github.com/leonardofcavenaghi/atomicdecompositions/archive/refs/tags/v1.0.3.zip">stable v1.0.3 source ZIP</a>
+<a href="https://github.com/leonardofcavenaghi/atomicdecompositions/archive/refs/tags/v1.0.5.zip">stable v1.0.5 source ZIP</a>
 for the tagged snapshot. See <a href="releases/">Release notes</a> for version details
 and <a href="installation/">Installation</a> for setup.</p>
 <p>The <a href="https://github.com/leonardofcavenaghi/atomicdecompositions">GitHub repository</a>

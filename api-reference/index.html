@@ -359,28 +359,6 @@
   
   
   
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../archive/catalog/" class="md-tabs__link">
-          
-  
-  
-    
-  
-  Archive
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
     
   
   
@@ -768,7 +746,7 @@
   <span class="md-ellipsis">
     
   
-    Exact Computation Data
+    Download matrices and inputs
   
 
     
@@ -1061,99 +1039,6 @@
       
   
   
-  
-  
-    
-    
-      
-        
-      
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
-        
-          
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Archive
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Archive
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../archive/catalog/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Legacy catalog
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
     
   
   
@@ -1183,10 +1068,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
         
           
-          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
             
   
   
@@ -1204,8 +1089,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_9">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1621,8 +1506,10 @@ localization on decorated trees:</p>
 The public <code>FlagVariety</code> methods normalize kept-root coordinates before
 calling it.</p>
 <h2 id="3-complete-intersection-twists-gwflagscintersectionpy">3. Complete-intersection twists (<code>gwflags/cintersection.py</code>)<a class="headerlink" href="#3-complete-intersection-twists-gwflagscintersectionpy" title="Permanent link">&para;</a></h2>
-<p>A homogeneous bundle is represented by its multiset of torus weights. The
-module implements the Euler-twisted factors:</p>
+<p>A homogeneous bundle supplies torus weights and invariant-curve restrictions.
+For the standard constructors these restrictions come from their supported
+weight model. Fixed-point weights alone do not determine the splitting of an
+arbitrary non-split bundle along a curve. The module implements:</p>
 <ul>
 <li><code>euler_complete_intersection(gw, K, w)</code> gives the fixed-point Euler class;</li>
 <li><code>h_complete_intersection(gw, K, w, root_idx, d)</code> gives the convex edge
@@ -1639,14 +1526,16 @@ of the expected codimension.</p>
 CLI also accept compact aliases <code>O(a1,...)</code>, <code>S(node)</code>, and <code>Q(node)</code> with
 <code>X</code> bound to the current flag. <code>quot(E, F)</code> (also <code>Quot(E, F)</code>) checks
 that the fiber-weight multiset of <code>F</code> is contained in <code>E</code> with multiplicity
-before constructing the quotient. A legacy split bundle is a list of rows, for
+before constructing its weight model. This check does not prove that an
+embedding exists or recover arbitrary extension data; the geometric quotient
+and its curve restrictions must be justified separately. A legacy split bundle is a list of rows, for
 example <code>[[1], [2]]</code> for <code>O(1) + O(2)</code> on a one-generator space.</p>
 <h2 id="4-main-interface-gwflags__init__py">4. Main interface (<code>gwflags/__init__.py</code>)<a class="headerlink" href="#4-main-interface-gwflags__init__py" title="Permanent link">&para;</a></h2>
 <h3 id="flagvarietyalgebra-roots_that_stay-backendnone"><code>FlagVariety(algebra, roots_that_stay, backend=None)</code><a class="headerlink" href="#flagvarietyalgebra-roots_that_stay-backendnone" title="Permanent link">&para;</a></h3>
 <p><code>roots_that_stay</code> is a distinct list of 1-based simple-root nodes not in the
 parabolic, in the order used for Picard coordinates. For example,
-<code>FlagVariety("A4", [2])</code> is <code>Gr(2,5)</code>, while <code>[1,3]</code> describes the two-factor
-product convention when the algebra is a product.</p>
+<code>FlagVariety("A4", [2])</code> is <code>Gr(2,5)</code>, and
+<code>FlagVariety("A2xA2", [1,3])</code> is <code>P² × P²</code>.</p>
 <h3 id="curve-classes-beta">Curve classes (<code>beta</code>)<a class="headerlink" href="#curve-classes-beta" title="Permanent link">&para;</a></h3>
 <p>A curve class is written
 [
@@ -1663,26 +1552,36 @@ progress messages use the canonical ambient vector.</p>
 <p>Returns the exact genus-zero invariant
 <span class="arithmatex">\(\langle\sigma_{u_1},\ldots,\sigma_{u_n}\rangle_{0,n,\beta}\)</span>, optionally
 Euler-twisted by <code>K</code>. The dimension axiom is checked before localization; a
-mismatch returns zero. Degree zero uses the classical cup-integral shortcut
-(the degree-zero path keeps stable three-point terms and omits unstable
-cases).</p>
+mismatch returns zero. At degree zero this API intentionally returns the
+classical cup integral when the insertion codimensions sum to the target
+dimension, even with two insertions. This pairing shortcut is not the
+definition of an unstable degree-zero GW invariant.</p>
 <h3 id="expected_degreebeta-n_classes-knone"><code>expected_degree(beta, n_classes, K=None)</code><a class="headerlink" href="#expected_degreebeta-n_classes-knone" title="Permanent link">&para;</a></h3>
 <p>Returns the codimension sum required by the dimension axiom after normalizing
 <code>beta</code> and accounting for the bundle rank.</p>
 <h3 id="fano_index_and_betasknone"><code>fano_index_and_betas(K=None)</code><a class="headerlink" href="#fano_index_and_betasknone" title="Permanent link">&para;</a></h3>
-<p>Returns <code>(I_X, betas)</code>, where <code>I_X</code> is the gcd of the first-Chern
-coordinates and <code>betas</code> is the finite list needed for the ambient quantum
-matrix. Automatic enumeration is justified for Fano/nef first-Chern data by
-<span class="arithmatex">\(\langle c_1(TX),\beta\rangle\leq\dim X+1\)</span>. A zero-Chern Calabi--Yau case
-returns index zero and only the zero class. If a kept Chern coordinate is
-negative, automatic enumeration raises a <code>ValueError</code>; supply an explicit
-<code>betas</code> list for a deliberately truncated/formal calculation.</p>
+<p>Returns <code>(I_X, betas)</code>. With the default ambient curve lattice, <code>I_X</code> is
+the gcd of the first-Chern coordinates. It is the geometric Fano index when
+the chosen coordinates give the integral Picard lattice of the zero locus;
+that identification can fail for low-dimensional sections. A constructor with
+explicit effective-curve generators instead uses their Chern pairings.</p>
+<p>Automatic enumeration uses
+<span class="arithmatex">\(\langle c_1(TX),\beta\rangle\leq\dim X+1\)</span>. This gives a finite
+complete supported list only with <strong>strictly positive</strong> Chern pairings on all
+enumerated generators. Mixed zero and positive ambient pairings, or a negative
+pairing, raise <code>ValueError</code> unless supported effective generators supply a
+positive bound. Supply <code>small_quantum_multiplication(..., betas=[...])</code> for a
+geometrically justified finite list or a deliberately truncated computation.
+When the entire Chern vector vanishes, multiplication by it is zero, so the
+method returns index zero and only the zero class.</p>
 <h3 id="small_quantum_multiplicationknone-betasnone-progressnone-workers0"><code>small_quantum_multiplication(K=None, betas=None, progress=None, workers=0)</code><a class="headerlink" href="#small_quantum_multiplicationknone-betasnone-progressnone-workers0" title="Permanent link">&para;</a></h3>
 <p>Returns <code>(M, grading, basis_indices)</code> for multiplication by <code>c1(TX)</code> on the
 flag-ambient Schubert sector. <code>M</code> is symbolic in <code>y&lt;node&gt;</code>, where <code>&lt;node&gt;</code> is
 the ambient Bourbaki label of a kept root (so kept nodes <code>1,3</code> use <code>y1</code> and
 <code>y3</code>). <code>betas</code> may be supplied in either accepted beta convention. The matrix
-is the full small quantum-cohomology operator only when the relevant homology
+uses input columns and output rows. The grading is diagonal with entries
+<code>codimension − dim(X)/2</code>, and <code>basis_indices</code> indexes <code>X.classes</code> and
+<code>X.class_words()</code> in their returned order. It is the full small quantum-cohomology operator only when the relevant homology
 and ambient-completeness hypotheses hold; otherwise it is the flag-ambient block. <code>workers=N</code> distributes independent
 per-beta blocks over forked processes.</p>
 <h3 id="other-useful-methods">Other useful methods<a class="headerlink" href="#other-useful-methods" title="Permanent link">&para;</a></h3>
