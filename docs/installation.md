@@ -9,17 +9,15 @@ Choose the path that matches your background. You do not need SageMath to use th
 ## New to Python (recommended path)
 
 1. Install Python 3.9 or newer (Python 3.10+ is recommended) from [python.org](https://www.python.org/downloads/). On Windows, select **Add Python to PATH**.
-2. Install Git from [git-scm.com](https://git-scm.com/downloads), or download the
-   [current main ZIP](https://github.com/leonardofcavenaghi/atomicdecompositions/archive/refs/heads/main.zip)
-   and extract it. The main source follows this website. The
-   [stable v1.0.5 ZIP](https://github.com/leonardofcavenaghi/atomicdecompositions/archive/refs/tags/v1.0.5.zip)
-   provides the versioned snapshot; see [Release notes](releases.md).
-3. Open a terminal and obtain the source:
+2. Download the [stable v1.0.5 ZIP](https://github.com/leonardofcavenaghi/atomicdecompositions/archive/refs/tags/v1.0.5.zip)
+   and extract it. Alternatively, install Git from [git-scm.com](https://git-scm.com/downloads)
+   and obtain that same version with:
 
 ```bash
-git clone https://github.com/leonardofcavenaghi/atomicdecompositions.git
-cd atomicdecompositions
+git clone --branch v1.0.5 --depth 1 https://github.com/leonardofcavenaghi/atomicdecompositions.git
 ```
+
+3. Open a terminal in the extracted or cloned source folder.
 
 4. Create and activate an isolated environment:
 

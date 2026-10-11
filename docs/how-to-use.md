@@ -6,24 +6,16 @@ description: Run gwflags to compute exact genus-zero Gromov-Witten invariants an
 
 `gwflags` computes Gromov–Witten invariants and small quantum multiplication for flag varieties `G/P` and supported complete intersections. The browser interface is the easiest starting point; the Python and CLI interfaces are documented later.
 
-## Install and launch
+## Launch the interface
 
-### If you already use Python
-
-From the repository root:
+Follow [Installation](installation.md) to install the stable software. Then run:
 
 ```bash
-python3 -m pip install -e .
-python3 -m gwflags.gui --no-browser
+python -m gwflags.gui --no-browser
 ```
 
-Open <http://127.0.0.1:8642>. Use `--port 9000` if that port is occupied.
-
-### If Python is new to you
-
-Install Python 3.9 or newer (Python 3.10+ is recommended), open a terminal in the downloaded repository, and run the same two commands above. The GUI uses only the Python standard library plus the packages declared by the project. If `python3` is unavailable on Windows, use `py -m pip` and `py -m gwflags.gui --no-browser`.
-
-The server is local to your computer (`127.0.0.1`). Stop it with `Ctrl-C` in the terminal.
+Open <http://127.0.0.1:8642>. The server runs on your computer; stop it with
+`Ctrl-C`. Use `--port 9000` if the default port is occupied.
 
 ## Fastest path: load an example
 
@@ -79,7 +71,7 @@ advance. For a homogeneous bundle, first describe the space with the bundle
 expression, then run the desired matrix or invariant action.
 `taut_quot(X, 2)` is directly convex on `A4`, kept roots `2`. The parser also
 accepts `taut_sub(X, 2)`, but its negative splitting degrees make the
-untwisted genus-0 theory reject that direct computation; use
+supported convex Euler-twisted computation reject that direct input; use
 `dual(taut_sub(X, 2))` for the convex dual bundle.
 
 | Goal | Algebra | Kept roots | K | β / insertions |
@@ -113,9 +105,8 @@ returned matrix, invariant, or space description.
 
 The localization formulas use virtual localization on decorated trees. For a
 complete intersection, the software requires curvewise convexity and computes
-the Euler-twisted ambient invariant. A geometric interpretation as a smooth
-zero locus additionally requires global generation and smoothness of the
-expected codimension.
+the Euler-twisted ambient invariant. For the standard geometric interpretation, assume global generation and
+a regular section with a smooth zero locus of the expected codimension.
 
 The quantum matrix is the flag-ambient operator described above. It is the
 full small quantum-cohomology operator only when the relevant homology and
@@ -142,7 +133,7 @@ Nested lists such as `[[3]]` belong to the Python API only.
 - Check that kept roots are valid, distinct node numbers in the algebra and in the intended order.
 - β is normally entered in kept-root order; a full ambient vector is accepted only when all removed-root entries are zero.
 - Insertion words must contain integers separated by spaces; separate multiple insertions with `|`.
-- A catalog entry marked **Catalog only** is not represented by the current flag-variety/complete-intersection input model.
+- A catalog entry marked **Catalog only** has no supported input or computed matrix provided on this site.
 - If a computation is slow, lower the worker count or start with a preset of lower degree.
 - Catalog matrices are rendered by MathJax. If you copy one into a LaTeX
   document, load `amsmath` and raise the column limit for the wider matrices:

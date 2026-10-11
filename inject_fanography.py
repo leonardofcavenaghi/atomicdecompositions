@@ -20,7 +20,7 @@ def generate_markdown(alg, keep, K):
     
     md = f"""??? example "{var_id}"
     - **Ambient Space:** `${alg}$`
-    - **Fano Index:** `{fano}`
+    - **Ambient Index:** `{fano}`
     - **Basis Rank:** `{len(idx)}`
 
     ??? note "Quantum Matrix ($y=1$)"

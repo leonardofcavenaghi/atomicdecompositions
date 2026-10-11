@@ -1,53 +1,37 @@
 ---
-title: GEOATOMS — Gromov-Witten invariants and quantum cohomology
-description: Compute genus-zero Gromov-Witten invariants and small quantum multiplication by exact virtual localization with gwflags. Explore the Fano variety and flag complete-intersection catalogue.
+title: GEOATOMS — Quantum cohomology of flag varieties
+description: A catalog of quantum multiplication matrices for flag varieties and their sections, with the gwflags software for exact virtual localization.
 ---
 
-# GEOATOMS: Gromov-Witten invariants and quantum cohomology
+# Quantum cohomology of flag varieties
 
-<div align="center">
-  <img src="assets/logo.jpg" alt="GEOATOMS Logo" width="400"/>
-</div>
+GEOATOMS brings together computed examples and software for genus-zero
+Gromov–Witten theory. The catalog covers flag varieties and their complete
+intersections; the Python package **gwflags** computes their invariants by
+exact virtual localization.
 
-Welcome to the documentation and software repository for the **GEOATOMS** mathematical research group. 
+[Explore the catalog](catalog/index.md){ .md-button .md-button--primary }
+[Use the software](installation.md){ .md-button }
 
-This website serves as an independent catalog and computational resource for algebraic geometry, representation theory, and enumerative geometry, specifically focusing on complete intersections in flag varieties.
+## Explore the examples
 
-## The Software: `gwflags`
+Browse [projective complete intersections](catalog/projective.md),
+[Grassmannians](catalog/grassmannians.md), [flag varieties and their sections](catalog/additional.md),
+or the [Fano threefold reference catalog](catalog/fanography.md).
+Each computed entry includes a multiplication matrix and the information
+needed to interpret it.
 
-The accompanying software, `gwflags`, provides a computational framework to evaluate geometric invariants using the localization technique:
+The collection includes **131 completed computations**. [Download matrices and inputs](catalog/computed.md)
+to reuse the symbolic results, bases and gradings in your own calculations.
 
-- **Virtual Localization**: Computes genus-zero Gromov-Witten invariants of flag varieties and the smooth zero loci of globally generated homogeneous vector bundles, using the Graber-Pandharipande virtual localization theorem.
-- **Quantum Multiplication**: Computes multiplication by the first Chern class on the flag-ambient sector, together with its grading and spectrum.
-- **Geometric Invariants**: Calculates expected dimension, ambient basis rank, and the first-Chern gcd in the specified curve lattice; see the [mathematical scope](methodology.md#4a-coordinate-contract-used-by-the-software).
+## Compute with gwflags
 
-## Latest update — 12 October 2026
+Use the local browser interface, command line or Python API to compute GW
+invariants and multiplication by the first Chern class. For complete
+intersections, the returned matrix acts on the flag-ambient sector;
+[Methods and conventions](methodology.md) explains its scope.
 
-The catalog now includes [15 additional flag varieties and sections](catalog/additional.md),
-including the full GM-20 matrix. [Download matrices and inputs](catalog/computed.md)
-provides symbolic matrices, ordered bases, gradings and curve lists for
-**131 completed examples**. The master table is synchronized with these entries.
-
-Release **v1.0.5** corrects mathematical and installation documentation and
-requires explicit curve lists when the dimension bound cannot make automatic
-enumeration finite. See the [release notes](releases.md) and
-[mathematics audit](audits/math-software-review.md).
-
-## Navigate the Documentation
-
-- [**About**](about.md): Learn about the team behind this project.
-- [**Installation**](installation.md): Clean, step-by-step instructions for getting Python, SageMath, and `gwflags` running on Windows, macOS, and Linux.
-- [**How to Use**](how-to-use.md): Practical code examples demonstrating how to use the software to compute these spaces.
-- [**Methodology**](methodology.md): A concise explanation of how the software implements the localization formalism and reproduces the catalog.
-- [**Catalog**](catalog/index.md): The expanding database of pre-computed examples and geometric invariants.
-
-## Download
-
-Download the [current main source ZIP](https://github.com/leonardofcavenaghi/atomicdecompositions/archive/refs/heads/main.zip)
-to use the software corresponding to this website, or the
-[stable v1.0.5 source ZIP](https://github.com/leonardofcavenaghi/atomicdecompositions/archive/refs/tags/v1.0.5.zip)
-for the tagged snapshot. See [Release notes](releases.md) for version details
-and [Installation](installation.md) for setup.
-
-The [GitHub repository](https://github.com/leonardofcavenaghi/atomicdecompositions)
-contains the source and its commit history.
+The stable software is **v1.0.5**.
+[Download its source ZIP](https://github.com/leonardofcavenaghi/atomicdecompositions/archive/refs/tags/v1.0.5.zip),
+follow the [installation guide](installation.md), or read the
+[release notes](releases.md).

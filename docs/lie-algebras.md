@@ -61,6 +61,6 @@ be interchanged.
 
 For rigorous foundations of Lie algebras, root systems, Dynkin diagrams, and the construction of homogeneous spaces, please refer to the following standard texts:
 
-1. Fulton, W., & Harris, J. (1991). *Representation Theory: A First Course*. Springer. (Specifically, Part III and IV for Lie algebras and their representations).
-2. Humphreys, J. E. (1972). *Introduction to Lie Algebras and Representation Theory*. Springer. (Specifically, Chapter III on root systems and Chapter VI on Chevalley groups).
+1. Fulton, W., & Harris, J. (1991). *Representation Theory: A First Course*. Springer.
+2. Humphreys, J. E. (1972). *Introduction to Lie Algebras and Representation Theory*. Springer.
 

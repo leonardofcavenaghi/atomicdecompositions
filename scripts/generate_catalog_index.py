@@ -10,7 +10,7 @@ sys.path.insert(0, str(ROOT))
 from scripts.catalog_results import load_results
 from scripts.validate_catalog import cards, FIELD_RE, FIELD_TEXT_RE
 
-HEADER = '| Geometry | Ambient Space | Dimension | Fano Index | Basis Rank |'
+HEADER = '| Geometry | Ambient Space | Dimension | Ambient Index | Basis Rank |'
 
 
 def render_index():

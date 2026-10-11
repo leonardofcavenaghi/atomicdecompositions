@@ -35,7 +35,13 @@ async function main() {
   page.on('pageerror', error => errors.push(String(error)));
   try {
     const base = `http://127.0.0.1:${port}`;
-    await page.goto(`${base}/catalog/`, {waitUntil: 'domcontentloaded'});
+    await page.goto(`${base}/`, {waitUntil: 'domcontentloaded'});
+    await page.evaluate(() => {
+      [...document.querySelectorAll('nav a[href]')].find(link =>
+        new URL(link.href).pathname.endsWith('/catalog/')).click();
+    });
+    await page.waitForFunction(() => location.pathname.endsWith('/catalog/') &&
+      window.jQuery && jQuery.fn.dataTable && jQuery.fn.dataTable.isDataTable('table'));
     await pause(1200);
     await page.evaluate(() => {
       const link = document.querySelector('nav a[href*="/catalog/grassmannians/"]');
@@ -79,7 +85,7 @@ async function main() {
         await new Promise(resolve => setTimeout(resolve, 600));
         return original(elements);
       };
-      document.querySelector('nav a[href*="flag_varieties/"]').click();
+      document.querySelector('nav a[href*="additional/"]').click();
     });
     await page.waitForFunction(() => window.pendingTypeset);
     await page.evaluate(() => {
@@ -118,7 +124,7 @@ async function main() {
     await page.evaluate(() => jQuery('table').DataTable().search('P4 / O(3)', false, false).draw());
     const cubicIndex = await page.$eval('tbody tr', row => row.cells[3].textContent.trim());
     if (cubicIndex !== '2' || errors.length) throw new Error(JSON.stringify({cubicIndex, errors}));
-    console.log('Computed catalog passed: 15 new cards, 131 downloadable results, full GM-20 matrix, corrected master-table Fano index.');
+    console.log('Computed catalog passed: 15 new cards, 131 downloadable results, full GM-20 matrix, correct master-table ambient index.');
   } finally {
     await browser.close();
     await new Promise(resolve => server.close(resolve));

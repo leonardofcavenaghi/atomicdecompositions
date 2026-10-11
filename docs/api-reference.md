@@ -46,9 +46,8 @@ arbitrary non-split bundle along a curve. The module implements:
   localization sum.
 
 Every invariant-curve splitting degree must be nonnegative. This is the
-curve-wise convexity condition used by the genus-zero twisted theory. A smooth
-zero-locus interpretation additionally needs global generation and smoothness
-of the expected codimension.
+curve-wise convexity condition used by the genus-zero twisted theory. For the standard smooth-zero-locus interpretation, assume global generation
+and a regular section whose zero locus is smooth of the expected codimension.
 
 Bundles can be constructed with `O(X, a1, ...)`, `taut_sub(X, node)`,
 `taut_quot(X, node)`, `dual`, `osum`, `tensor`, `sym`, `wedge`, and `quot`. The GUI and

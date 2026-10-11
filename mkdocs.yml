@@ -21,7 +21,6 @@ theme:
     - navigation.tabs.sticky
     - navigation.sections
     - navigation.top
-    - navigation.expand
     - navigation.path
     - navigation.instant
     - navigation.indexes
@@ -67,33 +66,31 @@ plugins:
   - search
 
 extra_javascript:
+  - https://code.jquery.com/jquery-3.7.0.min.js
+  - https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js
+  - javascripts/catalog.js
   - javascripts/mathjax.js
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 extra_css:
+  - https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css
   - stylesheets/extra.css
 
 nav:
   - Home: index.md
-  - About: about.md
-  - Installation: installation.md
-  - How to Use: how-to-use.md
   - Catalog:
       - Overview: catalog/index.md
       - Projective Spaces: catalog/projective.md
       - Grassmannians: catalog/grassmannians.md
-      - Flag Varieties: catalog/flag_varieties.md
-      - Additional Flag Varieties and Sections: catalog/additional.md
+      - Flag Varieties and Sections: catalog/additional.md
       - Download matrices and inputs: catalog/computed.md
-      - Fanography: catalog/fanography.md
-  - Review and Changes:
-      - Change log: change-log.md
-      - Website Usage Audit: audits/website-usage-review.md
-      - Catalog Review: audits/catalog-review.md
-      - Mathematics and Software Audit: audits/math-software-review.md
-      - Reference Discrepancies: discrepancy.md
-  - Releases: releases.md
-  - Methodology:
-      - Core Theory: methodology.md
-      - API Reference: api-reference.md
-      - Lie Algebras Guide: lie-algebras.md
+      - Fano Threefolds: catalog/fanography.md
+  - Software:
+      - Installation: installation.md
+      - User Guide: how-to-use.md
+      - Python API: api-reference.md
+      - Releases: releases.md
+  - Mathematics:
+      - Methods and Conventions: methodology.md
+      - Flag Variety Inputs: lie-algebras.md
+  - About: about.md

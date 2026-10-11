@@ -4,7 +4,12 @@ description: Quantum multiplication matrices for Grassmannians and their Fano co
 
 # Grassmannians
 
-This section contains complete intersections inside this geometric family, systematically organized by dimension and Fano index.
+**Index convention:** the displayed **Ambient Index** is the software's ambient
+Chern gcd. A smooth conic has geometric index 2 even when this field is 1;
+the zero-dimensional linear section is a point, for which this gcd does not
+define a geometric Fano index. See the [catalog conventions](index.md).
+
+This section contains complete intersections inside this geometric family, systematically organized by dimension and ambient index.
 
 For the kept-root beta convention and copyable browser/CLI syntax, see [How to Use](../how-to-use.md).
 
@@ -14,13 +19,13 @@ For a Grassmannian `Gr(k,n)`, run `A(n-1)` with **Kept simple roots** `k`.
 Each displayed `/ O(d)` is one row in **Bundle K**: enter `d`, or enter
 `d1;d2;...` for several summands. For example, `Gr(2,6) / O(1)+O(2)` is
 `A5`, kept roots `2`, and Bundle K `1;2` (or `[[1],[2]]` in Python). The
-card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
+card's dimension is `k(n-k)` minus the number of rows, and its ambient index is
 `n - sum(d)`. This convention also covers the dual presentation
 `Gr(n-k,n)` shown in the catalog.
 
 ## 8-folds
 
-| Geometry | Fano Index | Basis Rank |
+| Geometry | Ambient Index | Basis Rank |
 |---|---|---|
 | [Gr(2,6)](#gr26) | 6 | 15 |
 
@@ -30,7 +35,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 ??? example "Gr(2,6)"
     - **Ambient Space:** `$A5$`
     - **Dimension:** $8$
-    - **Fano Index:** $6$
+    - **Ambient Index:** $6$
     - **Basis Rank:** $15$
     - **Eigenvalues:** $- 6 \sqrt{3}$ (mult: 1), $6 \sqrt{3}$ (mult: 1), $- 6 i$ (mult: 1), $6 i$ (mult: 1), $- 3 \sqrt{3} - 3 i$ (mult: 1), $- 3 \sqrt{3} + 3 i$ (mult: 1), $3 \sqrt{3} - 3 i$ (mult: 1), $3 \sqrt{3} + 3 i$ (mult: 1), $- 6 \sqrt{- \frac{3}{2} - \frac{3 \sqrt{3} i}{2}}$ (mult: 1), $- 6 \sqrt{- \frac{3}{2} + \frac{3 \sqrt{3} i}{2}}$ (mult: 1), $6 \sqrt{- \frac{3}{2} - \frac{3 \sqrt{3} i}{2}}$ (mult: 1), $6 \sqrt{- \frac{3}{2} + \frac{3 \sqrt{3} i}{2}}$ (mult: 1), $0$ (mult: 3)
 
@@ -45,7 +50,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 
 ## 7-folds
 
-| Geometry | Fano Index | Basis Rank |
+| Geometry | Ambient Index | Basis Rank |
 |---|---|---|
 | [Gr(2,6) / O(1)](#gr26o1) | 5 | 12 |
 
@@ -55,7 +60,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 ??? example "Gr(2,6) / O(1)"
     - **Ambient Space:** `$A5$`
     - **Dimension:** $7$
-    - **Fano Index:** $5$
+    - **Ambient Index:** $5$
     - **Basis Rank:** $12$
     - **Eigenvalues:** $-5$ (mult: 1), $- \frac{5 \sqrt{5}}{4} + \frac{5}{4} - 5 i \sqrt{\frac{\sqrt{5}}{8} + \frac{5}{8}}$ (mult: 1), $- \frac{5 \sqrt{5}}{4} + \frac{5}{4} + 5 i \sqrt{\frac{\sqrt{5}}{8} + \frac{5}{8}}$ (mult: 1), $\frac{5}{4} + \frac{5 \sqrt{5}}{4} - 5 i \sqrt{\frac{5}{8} - \frac{\sqrt{5}}{8}}$ (mult: 1), $\frac{5}{4} + \frac{5 \sqrt{5}}{4} + 5 i \sqrt{\frac{5}{8} - \frac{\sqrt{5}}{8}}$ (mult: 1), $5 \cdot 3^{\frac{3}{5}}$ (mult: 1), $- \frac{5 \cdot 3^{\frac{3}{5}} \sqrt{5}}{4} - \frac{5 \cdot 3^{\frac{3}{5}}}{4} - 5 \cdot 3^{\frac{3}{5}} i \sqrt{\frac{5}{8} - \frac{\sqrt{5}}{8}}$ (mult: 1), $- \frac{5 \cdot 3^{\frac{3}{5}} \sqrt{5}}{4} - \frac{5 \cdot 3^{\frac{3}{5}}}{4} + 5 \cdot 3^{\frac{3}{5}} i \sqrt{\frac{5}{8} - \frac{\sqrt{5}}{8}}$ (mult: 1), $- \frac{5 \cdot 3^{\frac{3}{5}}}{4} + \frac{5 \cdot 3^{\frac{3}{5}} \sqrt{5}}{4} - 5 \cdot 3^{\frac{3}{5}} i \sqrt{\frac{\sqrt{5}}{8} + \frac{5}{8}}$ (mult: 1), $- \frac{5 \cdot 3^{\frac{3}{5}}}{4} + \frac{5 \cdot 3^{\frac{3}{5}} \sqrt{5}}{4} + 5 \cdot 3^{\frac{3}{5}} i \sqrt{\frac{\sqrt{5}}{8} + \frac{5}{8}}$ (mult: 1), $0$ (mult: 2)
 
@@ -70,7 +75,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 
 ## 6-folds
 
-| Geometry | Fano Index | Basis Rank |
+| Geometry | Ambient Index | Basis Rank |
 |---|---|---|
 | [Gr(2,5)](#gr25) | 5 | 10 |
 | [Gr(3,5)](#gr35) | 5 | 10 |
@@ -83,7 +88,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 ??? example "Gr(2,5)"
     - **Ambient Space:** `$A4$`
     - **Dimension:** $6$
-    - **Fano Index:** $5$
+    - **Ambient Index:** $5$
     - **Basis Rank:** $10$
     - **Eigenvalues:** $\frac{5}{2} - \frac{5 \sqrt{5}}{2}$ (mult: 1), $\frac{5}{2} + \frac{5 \sqrt{5}}{2}$ (mult: 1), $\frac{5}{2} - 5 \sqrt{- \frac{5}{4} - \frac{\sqrt{5}}{2}}$ (mult: 1), $\frac{5}{2} - 5 \sqrt{- \frac{5}{4} + \frac{\sqrt{5}}{2}}$ (mult: 1), $\frac{5}{2} + 5 \sqrt{- \frac{5}{4} - \frac{\sqrt{5}}{2}}$ (mult: 1), $\frac{5}{2} + 5 \sqrt{- \frac{5}{4} + \frac{\sqrt{5}}{2}}$ (mult: 1), $- \frac{15}{4} + \frac{5 \sqrt{5}}{4} - 5 \sqrt{- \frac{5}{8} + \frac{\sqrt{5}}{8}}$ (mult: 1), $- \frac{15}{4} - \frac{5 \sqrt{5}}{4} - 5 \sqrt{- \frac{5}{8} - \frac{\sqrt{5}}{8}}$ (mult: 1), $- \frac{15}{4} - \frac{5 \sqrt{5}}{4} + 5 \sqrt{- \frac{5}{8} - \frac{\sqrt{5}}{8}}$ (mult: 1), $- \frac{15}{4} + \frac{5 \sqrt{5}}{4} + 5 \sqrt{- \frac{5}{8} + \frac{\sqrt{5}}{8}}$ (mult: 1)
 
@@ -99,7 +104,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 ??? example "Gr(3,5)"
     - **Ambient Space:** `$A4$`
     - **Dimension:** $6$
-    - **Fano Index:** $5$
+    - **Ambient Index:** $5$
     - **Basis Rank:** $10$
     - **Eigenvalues:** $\frac{5}{2} - \frac{5 \sqrt{5}}{2}$ (mult: 1), $\frac{5}{2} + \frac{5 \sqrt{5}}{2}$ (mult: 1), $\frac{5}{2} - 5 \sqrt{- \frac{5}{4} - \frac{\sqrt{5}}{2}}$ (mult: 1), $\frac{5}{2} - 5 \sqrt{- \frac{5}{4} + \frac{\sqrt{5}}{2}}$ (mult: 1), $\frac{5}{2} + 5 \sqrt{- \frac{5}{4} - \frac{\sqrt{5}}{2}}$ (mult: 1), $\frac{5}{2} + 5 \sqrt{- \frac{5}{4} + \frac{\sqrt{5}}{2}}$ (mult: 1), $- \frac{15}{4} + \frac{5 \sqrt{5}}{4} - 5 \sqrt{- \frac{5}{8} + \frac{\sqrt{5}}{8}}$ (mult: 1), $- \frac{15}{4} - \frac{5 \sqrt{5}}{4} - 5 \sqrt{- \frac{5}{8} - \frac{\sqrt{5}}{8}}$ (mult: 1), $- \frac{15}{4} - \frac{5 \sqrt{5}}{4} + 5 \sqrt{- \frac{5}{8} - \frac{\sqrt{5}}{8}}$ (mult: 1), $- \frac{15}{4} + \frac{5 \sqrt{5}}{4} + 5 \sqrt{- \frac{5}{8} + \frac{\sqrt{5}}{8}}$ (mult: 1)
 
@@ -115,7 +120,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 ??? example "Gr(2,6) / O(1)+O(1)"
     - **Ambient Space:** `$A5$`
     - **Dimension:** $6$
-    - **Fano Index:** $4$
+    - **Ambient Index:** $4$
     - **Basis Rank:** $10$
     - **Eigenvalues:** $- 4 \cdot 3^{\frac{3}{4}}$ (mult: 1), $4 \cdot 3^{\frac{3}{4}}$ (mult: 1), $- 4 \cdot 3^{\frac{3}{4}} i$ (mult: 1), $4 \cdot 3^{\frac{3}{4}} i$ (mult: 1), $- 2 \sqrt{2} - 2 \sqrt{2} i$ (mult: 1), $- 2 \sqrt{2} + 2 \sqrt{2} i$ (mult: 1), $2 \sqrt{2} - 2 \sqrt{2} i$ (mult: 1), $2 \sqrt{2} + 2 \sqrt{2} i$ (mult: 1), $0$ (mult: 2)
 
@@ -132,7 +137,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 ??? example "Gr(2,6) / O(1)+O(2)"
     - **Ambient Space:** `$A5$`
     - **Dimension:** $6$
-    - **Fano Index:** $3$
+    - **Ambient Index:** $3$
     - **Basis Rank:** $10$
     - **Eigenvalues:** $9 \cdot 2^{\frac{2}{3}}$ (mult: 1), $- \frac{9 \cdot 2^{\frac{2}{3}}}{2} - \frac{9 \cdot 2^{\frac{2}{3}} \sqrt{3} i}{2}$ (mult: 1), $- \frac{9 \cdot 2^{\frac{2}{3}}}{2} + \frac{9 \cdot 2^{\frac{2}{3}} \sqrt{3} i}{2}$ (mult: 1), $- 3 \cdot 2^{\frac{2}{3}}$ (mult: 1), $\frac{3 \cdot 2^{\frac{2}{3}}}{2} - \frac{3 \cdot 2^{\frac{2}{3}} \sqrt{3} i}{2}$ (mult: 1), $\frac{3 \cdot 2^{\frac{2}{3}}}{2} + \frac{3 \cdot 2^{\frac{2}{3}} \sqrt{3} i}{2}$ (mult: 1), $0$ (mult: 4)
 
@@ -147,7 +152,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 
 ## 5-folds
 
-| Geometry | Fano Index | Basis Rank |
+| Geometry | Ambient Index | Basis Rank |
 |---|---|---|
 | [Gr(2,5) / O(1)](#gr25o1) | 4 | 8 |
 | [Gr(3,5) / O(1)](#gr35o1) | 4 | 8 |
@@ -164,7 +169,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 ??? example "Gr(2,5) / O(1)"
     - **Ambient Space:** `$A4$`
     - **Dimension:** $5$
-    - **Fano Index:** $4$
+    - **Ambient Index:** $4$
     - **Basis Rank:** $8$
     - **Eigenvalues:** $- 2 \sqrt[4]{2} \sqrt[4]{-11 + 5 \sqrt{5}} + 2 \sqrt[4]{2} i \sqrt[4]{-11 + 5 \sqrt{5}}$ (mult: 1), $2 \sqrt[4]{2} \sqrt[4]{-11 + 5 \sqrt{5}} - 2 \sqrt[4]{2} i \sqrt[4]{-11 + 5 \sqrt{5}}$ (mult: 1), $- 2 \sqrt[4]{2} \sqrt[4]{-11 + 5 \sqrt{5}} - 2 \sqrt[4]{2} i \sqrt[4]{-11 + 5 \sqrt{5}}$ (mult: 1), $2 \sqrt[4]{2} \sqrt[4]{-11 + 5 \sqrt{5}} + 2 \sqrt[4]{2} i \sqrt[4]{-11 + 5 \sqrt{5}}$ (mult: 1), $- 2 \cdot 2^{\frac{3}{4}} i \sqrt[4]{11 + 5 \sqrt{5}}$ (mult: 1), $2 \cdot 2^{\frac{3}{4}} i \sqrt[4]{11 + 5 \sqrt{5}}$ (mult: 1), $- 2 \cdot 2^{\frac{3}{4}} \sqrt[4]{11 + 5 \sqrt{5}}$ (mult: 1), $2 \cdot 2^{\frac{3}{4}} \sqrt[4]{11 + 5 \sqrt{5}}$ (mult: 1)
 
@@ -180,7 +185,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 ??? example "Gr(3,5) / O(1)"
     - **Ambient Space:** `$A4$`
     - **Dimension:** $5$
-    - **Fano Index:** $4$
+    - **Ambient Index:** $4$
     - **Basis Rank:** $8$
     - **Eigenvalues:** $- 2 \sqrt[4]{2} \sqrt[4]{-11 + 5 \sqrt{5}} + 2 \sqrt[4]{2} i \sqrt[4]{-11 + 5 \sqrt{5}}$ (mult: 1), $2 \sqrt[4]{2} \sqrt[4]{-11 + 5 \sqrt{5}} - 2 \sqrt[4]{2} i \sqrt[4]{-11 + 5 \sqrt{5}}$ (mult: 1), $- 2 \sqrt[4]{2} \sqrt[4]{-11 + 5 \sqrt{5}} - 2 \sqrt[4]{2} i \sqrt[4]{-11 + 5 \sqrt{5}}$ (mult: 1), $2 \sqrt[4]{2} \sqrt[4]{-11 + 5 \sqrt{5}} + 2 \sqrt[4]{2} i \sqrt[4]{-11 + 5 \sqrt{5}}$ (mult: 1), $- 2 \cdot 2^{\frac{3}{4}} i \sqrt[4]{11 + 5 \sqrt{5}}$ (mult: 1), $2 \cdot 2^{\frac{3}{4}} i \sqrt[4]{11 + 5 \sqrt{5}}$ (mult: 1), $- 2 \cdot 2^{\frac{3}{4}} \sqrt[4]{11 + 5 \sqrt{5}}$ (mult: 1), $2 \cdot 2^{\frac{3}{4}} \sqrt[4]{11 + 5 \sqrt{5}}$ (mult: 1)
 
@@ -196,7 +201,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 ??? example "Gr(2,5) / O(2)"
     - **Ambient Space:** `$A4$`
     - **Dimension:** $5$
-    - **Fano Index:** $3$
+    - **Ambient Index:** $3$
     - **Basis Rank:** $8$
     - **Eigenvalues:** $- 3 \sqrt[3]{-22 + 10 \sqrt{5}}$ (mult: 1), $\frac{3 \sqrt[3]{-22 + 10 \sqrt{5}}}{2} - \frac{3 \sqrt{3} i \sqrt[3]{-22 + 10 \sqrt{5}}}{2}$ (mult: 1), $\frac{3 \sqrt[3]{-22 + 10 \sqrt{5}}}{2} + \frac{3 \sqrt{3} i \sqrt[3]{-22 + 10 \sqrt{5}}}{2}$ (mult: 1), $3 \sqrt[3]{22 + 10 \sqrt{5}}$ (mult: 1), $- \frac{3 \sqrt[3]{22 + 10 \sqrt{5}}}{2} - \frac{3 \sqrt{3} i \sqrt[3]{22 + 10 \sqrt{5}}}{2}$ (mult: 1), $- \frac{3 \sqrt[3]{22 + 10 \sqrt{5}}}{2} + \frac{3 \sqrt{3} i \sqrt[3]{22 + 10 \sqrt{5}}}{2}$ (mult: 1), $0$ (mult: 2)
 
@@ -212,7 +217,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 ??? example "Gr(3,5) / O(2)"
     - **Ambient Space:** `$A4$`
     - **Dimension:** $5$
-    - **Fano Index:** $3$
+    - **Ambient Index:** $3$
     - **Basis Rank:** $8$
     - **Eigenvalues:** $- 3 \sqrt[3]{-22 + 10 \sqrt{5}}$ (mult: 1), $\frac{3 \sqrt[3]{-22 + 10 \sqrt{5}}}{2} - \frac{3 \sqrt{3} i \sqrt[3]{-22 + 10 \sqrt{5}}}{2}$ (mult: 1), $\frac{3 \sqrt[3]{-22 + 10 \sqrt{5}}}{2} + \frac{3 \sqrt{3} i \sqrt[3]{-22 + 10 \sqrt{5}}}{2}$ (mult: 1), $3 \sqrt[3]{22 + 10 \sqrt{5}}$ (mult: 1), $- \frac{3 \sqrt[3]{22 + 10 \sqrt{5}}}{2} - \frac{3 \sqrt{3} i \sqrt[3]{22 + 10 \sqrt{5}}}{2}$ (mult: 1), $- \frac{3 \sqrt[3]{22 + 10 \sqrt{5}}}{2} + \frac{3 \sqrt{3} i \sqrt[3]{22 + 10 \sqrt{5}}}{2}$ (mult: 1), $0$ (mult: 2)
 
@@ -228,7 +233,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 ??? example "Gr(2,6) / O(1)+O(1)+O(1)"
     - **Ambient Space:** `$A5$`
     - **Dimension:** $5$
-    - **Fano Index:** $3$
+    - **Ambient Index:** $3$
     - **Basis Rank:** $8$
     - **Eigenvalues:** $9$ (mult: 1), $-3$ (mult: 1), $\frac{3}{2} - \frac{3 \sqrt{3} i}{2}$ (mult: 1), $\frac{3}{2} + \frac{3 \sqrt{3} i}{2}$ (mult: 1), $- \frac{9}{2} - \frac{9 \sqrt{3} i}{2}$ (mult: 1), $- \frac{9}{2} + \frac{9 \sqrt{3} i}{2}$ (mult: 1), $0$ (mult: 2)
 
@@ -245,7 +250,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 ??? example "Gr(2,5) / O(3)"
     - **Ambient Space:** `$A4$`
     - **Dimension:** $5$
-    - **Fano Index:** $2$
+    - **Ambient Index:** $2$
     - **Basis Rank:** $8$
     - **Eigenvalues:** $- 6 i \sqrt{- \frac{33}{2} + \frac{15 \sqrt{5}}{2}}$ (mult: 1), $6 i \sqrt{- \frac{33}{2} + \frac{15 \sqrt{5}}{2}}$ (mult: 1), $- 6 \sqrt{\frac{33}{2} + \frac{15 \sqrt{5}}{2}}$ (mult: 1), $6 \sqrt{\frac{33}{2} + \frac{15 \sqrt{5}}{2}}$ (mult: 1), $0$ (mult: 4)
 
@@ -261,7 +266,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 ??? example "Gr(3,5) / O(3)"
     - **Ambient Space:** `$A4$`
     - **Dimension:** $5$
-    - **Fano Index:** $2$
+    - **Ambient Index:** $2$
     - **Basis Rank:** $8$
     - **Eigenvalues:** $- 6 i \sqrt{- \frac{33}{2} + \frac{15 \sqrt{5}}{2}}$ (mult: 1), $6 i \sqrt{- \frac{33}{2} + \frac{15 \sqrt{5}}{2}}$ (mult: 1), $- 6 \sqrt{\frac{33}{2} + \frac{15 \sqrt{5}}{2}}$ (mult: 1), $6 \sqrt{\frac{33}{2} + \frac{15 \sqrt{5}}{2}}$ (mult: 1), $0$ (mult: 4)
 
@@ -283,7 +288,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 ??? example "Gr(2,6) / O(1)+O(1)+O(2)"
     - **Ambient Space:** `$A5$`
     - **Dimension:** $5$
-    - **Fano Index:** $2$
+    - **Ambient Index:** $2$
     - **Basis Rank:** $8$
     - **Eigenvalues:** $- 12 \sqrt{3}$ (mult: 1), $12 \sqrt{3}$ (mult: 1), $- 4 i$ (mult: 1), $4 i$ (mult: 1), $0$ (mult: 4)
 
@@ -298,7 +303,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 
 ## 4-folds
 
-| Geometry | Fano Index | Basis Rank |
+| Geometry | Ambient Index | Basis Rank |
 |---|---|---|
 | [Gr(4,5)](#gr45) | 5 | 5 |
 | [Gr(2,4)](#gr24) | 4 | 6 |
@@ -317,7 +322,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 ??? example "Gr(4,5)"
     - **Ambient Space:** `$A4$`
     - **Dimension:** $4$
-    - **Fano Index:** $5$
+    - **Ambient Index:** $5$
     - **Basis Rank:** $5$
     - **Eigenvalues:** $5$ (mult: 1), $- \frac{5 \sqrt{5}}{4} - \frac{5}{4} - 5 i \sqrt{\frac{5}{8} - \frac{\sqrt{5}}{8}}$ (mult: 1), $- \frac{5 \sqrt{5}}{4} - \frac{5}{4} + 5 i \sqrt{\frac{5}{8} - \frac{\sqrt{5}}{8}}$ (mult: 1), $- \frac{5}{4} + \frac{5 \sqrt{5}}{4} - 5 i \sqrt{\frac{\sqrt{5}}{8} + \frac{5}{8}}$ (mult: 1), $- \frac{5}{4} + \frac{5 \sqrt{5}}{4} + 5 i \sqrt{\frac{\sqrt{5}}{8} + \frac{5}{8}}$ (mult: 1)
 
@@ -334,7 +339,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 ??? example "Gr(2,4)"
     - **Ambient Space:** `$A3$`
     - **Dimension:** $4$
-    - **Fano Index:** $4$
+    - **Ambient Index:** $4$
     - **Basis Rank:** $6$
     - **Eigenvalues:** $- 4 \sqrt{2}$ (mult: 1), $4 \sqrt{2}$ (mult: 1), $- 4 \sqrt{2} i$ (mult: 1), $4 \sqrt{2} i$ (mult: 1), $0$ (mult: 2)
 
@@ -350,7 +355,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 ??? example "Gr(2,5) / O(1)+O(1)"
     - **Ambient Space:** `$A4$`
     - **Dimension:** $4$
-    - **Fano Index:** $3$
+    - **Ambient Index:** $3$
     - **Basis Rank:** $6$
     - **Eigenvalues:** $- 3 \sqrt[3]{- \frac{11}{2} + \frac{5 \sqrt{5}}{2}}$ (mult: 1), $\frac{3 \sqrt[3]{- \frac{11}{2} + \frac{5 \sqrt{5}}{2}}}{2} - \frac{3 \sqrt{3} i \sqrt[3]{- \frac{11}{2} + \frac{5 \sqrt{5}}{2}}}{2}$ (mult: 1), $\frac{3 \sqrt[3]{- \frac{11}{2} + \frac{5 \sqrt{5}}{2}}}{2} + \frac{3 \sqrt{3} i \sqrt[3]{- \frac{11}{2} + \frac{5 \sqrt{5}}{2}}}{2}$ (mult: 1), $3 \sqrt[3]{\frac{11}{2} + \frac{5 \sqrt{5}}{2}}$ (mult: 1), $- \frac{3 \sqrt[3]{\frac{11}{2} + \frac{5 \sqrt{5}}{2}}}{2} - \frac{3 \sqrt{3} i \sqrt[3]{\frac{11}{2} + \frac{5 \sqrt{5}}{2}}}{2}$ (mult: 1), $- \frac{3 \sqrt[3]{\frac{11}{2} + \frac{5 \sqrt{5}}{2}}}{2} + \frac{3 \sqrt{3} i \sqrt[3]{\frac{11}{2} + \frac{5 \sqrt{5}}{2}}}{2}$ (mult: 1)
 
@@ -366,7 +371,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 ??? example "Gr(3,5) / O(1)+O(1)"
     - **Ambient Space:** `$A4$`
     - **Dimension:** $4$
-    - **Fano Index:** $3$
+    - **Ambient Index:** $3$
     - **Basis Rank:** $6$
     - **Eigenvalues:** $- 3 \sqrt[3]{- \frac{11}{2} + \frac{5 \sqrt{5}}{2}}$ (mult: 1), $\frac{3 \sqrt[3]{- \frac{11}{2} + \frac{5 \sqrt{5}}{2}}}{2} - \frac{3 \sqrt{3} i \sqrt[3]{- \frac{11}{2} + \frac{5 \sqrt{5}}{2}}}{2}$ (mult: 1), $\frac{3 \sqrt[3]{- \frac{11}{2} + \frac{5 \sqrt{5}}{2}}}{2} + \frac{3 \sqrt{3} i \sqrt[3]{- \frac{11}{2} + \frac{5 \sqrt{5}}{2}}}{2}$ (mult: 1), $3 \sqrt[3]{\frac{11}{2} + \frac{5 \sqrt{5}}{2}}$ (mult: 1), $- \frac{3 \sqrt[3]{\frac{11}{2} + \frac{5 \sqrt{5}}{2}}}{2} - \frac{3 \sqrt{3} i \sqrt[3]{\frac{11}{2} + \frac{5 \sqrt{5}}{2}}}{2}$ (mult: 1), $- \frac{3 \sqrt[3]{\frac{11}{2} + \frac{5 \sqrt{5}}{2}}}{2} + \frac{3 \sqrt{3} i \sqrt[3]{\frac{11}{2} + \frac{5 \sqrt{5}}{2}}}{2}$ (mult: 1)
 
@@ -382,7 +387,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 ??? example "Gr(2,5) / O(1)+O(2)"
     - **Ambient Space:** `$A4$`
     - **Dimension:** $4$
-    - **Fano Index:** $2$
+    - **Ambient Index:** $2$
     - **Basis Rank:** $6$
     - **Eigenvalues:** $- 4 i \sqrt{- \frac{11}{2} + \frac{5 \sqrt{5}}{2}}$ (mult: 1), $4 i \sqrt{- \frac{11}{2} + \frac{5 \sqrt{5}}{2}}$ (mult: 1), $- 4 \sqrt{\frac{11}{2} + \frac{5 \sqrt{5}}{2}}$ (mult: 1), $4 \sqrt{\frac{11}{2} + \frac{5 \sqrt{5}}{2}}$ (mult: 1), $0$ (mult: 2)
 
@@ -398,7 +403,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 ??? example "Gr(3,5) / O(1)+O(2)"
     - **Ambient Space:** `$A4$`
     - **Dimension:** $4$
-    - **Fano Index:** $2$
+    - **Ambient Index:** $2$
     - **Basis Rank:** $6$
     - **Eigenvalues:** $- 4 i \sqrt{- \frac{11}{2} + \frac{5 \sqrt{5}}{2}}$ (mult: 1), $4 i \sqrt{- \frac{11}{2} + \frac{5 \sqrt{5}}{2}}$ (mult: 1), $- 4 \sqrt{\frac{11}{2} + \frac{5 \sqrt{5}}{2}}$ (mult: 1), $4 \sqrt{\frac{11}{2} + \frac{5 \sqrt{5}}{2}}$ (mult: 1), $0$ (mult: 2)
 
@@ -414,7 +419,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 ??? example "Gr(2,5) / O(1)+O(3)"
     - **Ambient Space:** `$A4$`
     - **Dimension:** $4$
-    - **Fano Index:** $1$
+    - **Ambient Index:** $1$
     - **Basis Rank:** $6$
     - **Eigenvalues:** $-18$ (mult: 4), $\frac{261}{2} - \frac{135 \sqrt{5}}{2}$ (mult: 1), $\frac{261}{2} + \frac{135 \sqrt{5}}{2}$ (mult: 1)
 
@@ -430,7 +435,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 ??? example "Gr(2,5) / O(2)+O(2)"
     - **Ambient Space:** `$A4$`
     - **Dimension:** $4$
-    - **Fano Index:** $1$
+    - **Ambient Index:** $1$
     - **Basis Rank:** $6$
     - **Eigenvalues:** $-12$ (mult: 4), $76 - 40 \sqrt{5}$ (mult: 1), $76 + 40 \sqrt{5}$ (mult: 1)
 
@@ -446,7 +451,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 ??? example "Gr(3,5) / O(1)+O(3)"
     - **Ambient Space:** `$A4$`
     - **Dimension:** $4$
-    - **Fano Index:** $1$
+    - **Ambient Index:** $1$
     - **Basis Rank:** $6$
     - **Eigenvalues:** $-18$ (mult: 4), $\frac{261}{2} - \frac{135 \sqrt{5}}{2}$ (mult: 1), $\frac{261}{2} + \frac{135 \sqrt{5}}{2}$ (mult: 1)
 
@@ -462,7 +467,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 ??? example "Gr(3,5) / O(2)+O(2)"
     - **Ambient Space:** `$A4$`
     - **Dimension:** $4$
-    - **Fano Index:** $1$
+    - **Ambient Index:** $1$
     - **Basis Rank:** $6$
     - **Eigenvalues:** $-12$ (mult: 4), $76 - 40 \sqrt{5}$ (mult: 1), $76 + 40 \sqrt{5}$ (mult: 1)
 
@@ -477,7 +482,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 
 ## 3-folds
 
-| Geometry | Fano Index | Basis Rank |
+| Geometry | Ambient Index | Basis Rank |
 |---|---|---|
 | [Gr(3,4)](#gr34) | 4 | 4 |
 | [Gr(4,5) / O(1)](#gr45o1) | 4 | 4 |
@@ -498,7 +503,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 ??? example "Gr(3,4)"
     - **Ambient Space:** `$A3$`
     - **Dimension:** $3$
-    - **Fano Index:** $4$
+    - **Ambient Index:** $4$
     - **Basis Rank:** $4$
     - **Eigenvalues:** $-4$ (mult: 1), $4$ (mult: 1), $- 4 i$ (mult: 1), $4 i$ (mult: 1)
 
@@ -514,7 +519,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 ??? example "Gr(4,5) / O(1)"
     - **Ambient Space:** `$A4$`
     - **Dimension:** $3$
-    - **Fano Index:** $4$
+    - **Ambient Index:** $4$
     - **Basis Rank:** $4$
     - **Eigenvalues:** $-4$ (mult: 1), $4$ (mult: 1), $- 4 i$ (mult: 1), $4 i$ (mult: 1)
 
@@ -531,7 +536,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 ??? example "Gr(2,4) / O(1)"
     - **Ambient Space:** `$A3$`
     - **Dimension:** $3$
-    - **Fano Index:** $3$
+    - **Ambient Index:** $3$
     - **Basis Rank:** $4$
     - **Eigenvalues:** $3 \cdot 2^{\frac{2}{3}}$ (mult: 1), $- \frac{3 \cdot 2^{\frac{2}{3}}}{2} - \frac{3 \cdot 2^{\frac{2}{3}} \sqrt{3} i}{2}$ (mult: 1), $- \frac{3 \cdot 2^{\frac{2}{3}}}{2} + \frac{3 \cdot 2^{\frac{2}{3}} \sqrt{3} i}{2}$ (mult: 1), $0$ (mult: 1)
 
@@ -547,7 +552,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 ??? example "Gr(4,5) / O(2)"
     - **Ambient Space:** `$A4$`
     - **Dimension:** $3$
-    - **Fano Index:** $3$
+    - **Ambient Index:** $3$
     - **Basis Rank:** $4$
     - **Eigenvalues:** $3 \cdot 2^{\frac{2}{3}}$ (mult: 1), $- \frac{3 \cdot 2^{\frac{2}{3}}}{2} - \frac{3 \cdot 2^{\frac{2}{3}} \sqrt{3} i}{2}$ (mult: 1), $- \frac{3 \cdot 2^{\frac{2}{3}}}{2} + \frac{3 \cdot 2^{\frac{2}{3}} \sqrt{3} i}{2}$ (mult: 1), $0$ (mult: 1)
 
@@ -564,7 +569,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 ??? example "Gr(2,4) / O(2)"
     - **Ambient Space:** `$A3$`
     - **Dimension:** $3$
-    - **Fano Index:** $2$
+    - **Ambient Index:** $2$
     - **Basis Rank:** $4$
     - **Eigenvalues:** $-8$ (mult: 1), $8$ (mult: 1), $0$ (mult: 2)
 
@@ -580,7 +585,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 ??? example "Gr(2,5) / O(1)+O(1)+O(1)"
     - **Ambient Space:** `$A4$`
     - **Dimension:** $3$
-    - **Fano Index:** $2$
+    - **Ambient Index:** $2$
     - **Basis Rank:** $4$
     - **Eigenvalues:** $- 2 i \sqrt{- \frac{11}{2} + \frac{5 \sqrt{5}}{2}}$ (mult: 1), $2 i \sqrt{- \frac{11}{2} + \frac{5 \sqrt{5}}{2}}$ (mult: 1), $- 2 \sqrt{\frac{11}{2} + \frac{5 \sqrt{5}}{2}}$ (mult: 1), $2 \sqrt{\frac{11}{2} + \frac{5 \sqrt{5}}{2}}$ (mult: 1)
 
@@ -596,7 +601,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 ??? example "Gr(3,5) / O(1)+O(1)+O(1)"
     - **Ambient Space:** `$A4$`
     - **Dimension:** $3$
-    - **Fano Index:** $2$
+    - **Ambient Index:** $2$
     - **Basis Rank:** $4$
     - **Eigenvalues:** $- 2 i \sqrt{- \frac{11}{2} + \frac{5 \sqrt{5}}{2}}$ (mult: 1), $2 i \sqrt{- \frac{11}{2} + \frac{5 \sqrt{5}}{2}}$ (mult: 1), $- 2 \sqrt{\frac{11}{2} + \frac{5 \sqrt{5}}{2}}$ (mult: 1), $2 \sqrt{\frac{11}{2} + \frac{5 \sqrt{5}}{2}}$ (mult: 1)
 
@@ -612,7 +617,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 ??? example "Gr(4,5) / O(3)"
     - **Ambient Space:** `$A4$`
     - **Dimension:** $3$
-    - **Fano Index:** $2$
+    - **Ambient Index:** $2$
     - **Basis Rank:** $4$
     - **Eigenvalues:** $- 6 \sqrt{3}$ (mult: 1), $6 \sqrt{3}$ (mult: 1), $0$ (mult: 2)
 
@@ -629,7 +634,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 ??? example "Gr(2,4) / O(3)"
     - **Ambient Space:** `$A3$`
     - **Dimension:** $3$
-    - **Fano Index:** $1$
+    - **Ambient Index:** $1$
     - **Basis Rank:** $4$
     - **Eigenvalues:** $96$ (mult: 1), $-12$ (mult: 3)
 
@@ -645,7 +650,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 ??? example "Gr(2,5) / O(1)+O(1)+O(2)"
     - **Ambient Space:** `$A4$`
     - **Dimension:** $3$
-    - **Fano Index:** $1$
+    - **Ambient Index:** $1$
     - **Basis Rank:** $4$
     - **Eigenvalues:** $-6$ (mult: 2), $16 - 10 \sqrt{5}$ (mult: 1), $16 + 10 \sqrt{5}$ (mult: 1)
 
@@ -661,7 +666,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 ??? example "Gr(3,5) / O(1)+O(1)+O(2)"
     - **Ambient Space:** `$A4$`
     - **Dimension:** $3$
-    - **Fano Index:** $1$
+    - **Ambient Index:** $1$
     - **Basis Rank:** $4$
     - **Eigenvalues:** $-6$ (mult: 2), $16 - 10 \sqrt{5}$ (mult: 1), $16 + 10 \sqrt{5}$ (mult: 1)
 
@@ -677,7 +682,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 ??? example "Gr(4,5) / O(4)"
     - **Ambient Space:** `$A4$`
     - **Dimension:** $3$
-    - **Fano Index:** $1$
+    - **Ambient Index:** $1$
     - **Basis Rank:** $4$
     - **Eigenvalues:** $232$ (mult: 1), $-24$ (mult: 3)
 
@@ -692,7 +697,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 
 ## Surfaces (2-folds)
 
-| Geometry | Fano Index | Basis Rank |
+| Geometry | Ambient Index | Basis Rank |
 |---|---|---|
 | [Gr(3,4) / O(1)](#gr34o1) | 3 | 3 |
 | [Gr(4,5) / O(1)+O(1)](#gr45o1o1) | 3 | 3 |
@@ -710,7 +715,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 ??? example "Gr(3,4) / O(1)"
     - **Ambient Space:** `$A3$`
     - **Dimension:** $2$
-    - **Fano Index:** $3$
+    - **Ambient Index:** $3$
     - **Basis Rank:** $3$
     - **Eigenvalues:** $3$ (mult: 1), $- \frac{3}{2} - \frac{3 \sqrt{3} i}{2}$ (mult: 1), $- \frac{3}{2} + \frac{3 \sqrt{3} i}{2}$ (mult: 1)
 
@@ -726,7 +731,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 ??? example "Gr(4,5) / O(1)+O(1)"
     - **Ambient Space:** `$A4$`
     - **Dimension:** $2$
-    - **Fano Index:** $3$
+    - **Ambient Index:** $3$
     - **Basis Rank:** $3$
     - **Eigenvalues:** $3$ (mult: 1), $- \frac{3}{2} - \frac{3 \sqrt{3} i}{2}$ (mult: 1), $- \frac{3}{2} + \frac{3 \sqrt{3} i}{2}$ (mult: 1)
 
@@ -743,7 +748,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 ??? example "Gr(2,4) / O(1)+O(1)"
     - **Ambient Space:** `$A3$`
     - **Dimension:** $2$
-    - **Fano Index:** $2$
+    - **Ambient Index:** $2$
     - **Basis Rank:** $3$
     - **Eigenvalues:** $-4$ (mult: 1), $4$ (mult: 1), $0$ (mult: 1)
 
@@ -759,7 +764,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 ??? example "Gr(3,4) / O(2)"
     - **Ambient Space:** `$A3$`
     - **Dimension:** $2$
-    - **Fano Index:** $2$
+    - **Ambient Index:** $2$
     - **Basis Rank:** $3$
     - **Eigenvalues:** $-4$ (mult: 1), $4$ (mult: 1), $0$ (mult: 1)
 
@@ -775,7 +780,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 ??? example "Gr(4,5) / O(1)+O(2)"
     - **Ambient Space:** `$A4$`
     - **Dimension:** $2$
-    - **Fano Index:** $2$
+    - **Ambient Index:** $2$
     - **Basis Rank:** $3$
     - **Eigenvalues:** $-4$ (mult: 1), $4$ (mult: 1), $0$ (mult: 1)
 
@@ -792,7 +797,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 ??? example "Gr(2,4) / O(1)+O(2)"
     - **Ambient Space:** `$A3$`
     - **Dimension:** $2$
-    - **Fano Index:** $1$
+    - **Ambient Index:** $1$
     - **Basis Rank:** $3$
     - **Eigenvalues:** $12$ (mult: 1), $-4$ (mult: 2)
 
@@ -808,7 +813,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 ??? example "Gr(3,4) / O(3)"
     - **Ambient Space:** `$A3$`
     - **Dimension:** $2$
-    - **Fano Index:** $1$
+    - **Ambient Index:** $1$
     - **Basis Rank:** $3$
     - **Eigenvalues:** $21$ (mult: 1), $-6$ (mult: 2)
 
@@ -824,7 +829,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 ??? example "Gr(4,5) / O(1)+O(3)"
     - **Ambient Space:** `$A4$`
     - **Dimension:** $2$
-    - **Fano Index:** $1$
+    - **Ambient Index:** $1$
     - **Basis Rank:** $3$
     - **Eigenvalues:** $21$ (mult: 1), $-6$ (mult: 2)
 
@@ -841,7 +846,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 ??? example "Gr(4,5) / O(2)+O(2)"
     - **Ambient Space:** `$A4$`
     - **Dimension:** $2$
-    - **Fano Index:** $1$
+    - **Ambient Index:** $1$
     - **Basis Rank:** $3$
     - **Eigenvalues:** $12$ (mult: 1), $-4$ (mult: 2)
 
@@ -856,7 +861,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 
 ## Curves (1-folds)
 
-| Geometry | Fano Index | Basis Rank |
+| Geometry | Ambient Index | Basis Rank |
 |---|---|---|
 | [Gr(3,4) / O(1)+O(1)](#gr34o1o1) | 2 | 2 |
 | [Gr(4,5) / O(1)+O(1)+O(1)](#gr45o1o1o1) | 2 | 2 |
@@ -870,7 +875,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 ??? example "Gr(3,4) / O(1)+O(1)"
     - **Ambient Space:** `$A3$`
     - **Dimension:** $1$
-    - **Fano Index:** $2$
+    - **Ambient Index:** $2$
     - **Basis Rank:** $2$
     - **Eigenvalues:** $-2$ (mult: 1), $2$ (mult: 1)
 
@@ -886,7 +891,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 ??? example "Gr(4,5) / O(1)+O(1)+O(1)"
     - **Ambient Space:** `$A4$`
     - **Dimension:** $1$
-    - **Fano Index:** $2$
+    - **Ambient Index:** $2$
     - **Basis Rank:** $2$
     - **Eigenvalues:** $-2$ (mult: 1), $2$ (mult: 1)
 
@@ -903,7 +908,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 ??? example "Gr(2,4) / O(1)+O(1)+O(1)"
     - **Ambient Space:** `$A3$`
     - **Dimension:** $1$
-    - **Fano Index:** $1$
+    - **Ambient Index:** $1$
     - **Basis Rank:** $2$
     - **Eigenvalues:** $-2$ (mult: 1), $2$ (mult: 1)
 
@@ -919,7 +924,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 ??? example "Gr(3,4) / O(1)+O(2)"
     - **Ambient Space:** `$A3$`
     - **Dimension:** $1$
-    - **Fano Index:** $1$
+    - **Ambient Index:** $1$
     - **Basis Rank:** $2$
     - **Eigenvalues:** $-2$ (mult: 1), $2$ (mult: 1)
 
@@ -935,7 +940,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 ??? example "Gr(4,5) / O(1)+O(1)+O(2)"
     - **Ambient Space:** `$A4$`
     - **Dimension:** $1$
-    - **Fano Index:** $1$
+    - **Ambient Index:** $1$
     - **Basis Rank:** $2$
     - **Eigenvalues:** $-2$ (mult: 1), $2$ (mult: 1)
 
@@ -950,7 +955,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 
 ## 0-folds
 
-| Geometry | Fano Index | Basis Rank |
+| Geometry | Ambient Index | Basis Rank |
 |---|---|---|
 | [Gr(3,4) / O(1)+O(1)+O(1)](#gr34o1o1o1) | 1 | 1 |
 
@@ -960,7 +965,7 @@ card's dimension is `k(n-k)` minus the number of rows, and its Fano index is
 ??? example "Gr(3,4) / O(1)+O(1)+O(1)"
     - **Ambient Space:** `$A3$`
     - **Dimension:** $0$
-    - **Fano Index:** $1$
+    - **Ambient Index:** $1$
     - **Basis Rank:** $1$
     - **Eigenvalues:** $0$ (mult: 1)
 

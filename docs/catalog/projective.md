@@ -4,7 +4,12 @@ description: Quantum multiplication matrices and geometric invariants for Fano c
 
 # Projective Spaces
 
-This section contains complete intersections inside this geometric family, systematically organized by dimension and Fano index.
+**Index convention:** the displayed **Ambient Index** is the software's ambient
+Chern gcd. In particular, `P2 / O(2)` has displayed index 1 but is a smooth
+conic, hence `P1`, with geometric Fano index 2. See the
+[catalog conventions](index.md).
+
+This section contains complete intersections inside this geometric family, systematically organized by dimension and ambient index.
 
 For the kept-root beta convention and copyable browser/CLI syntax, see [How to Use](../how-to-use.md).
 
@@ -16,12 +21,12 @@ displayed summand `/ O(d)` is one row in **Bundle K**: enter `d` for one
 summand, or `d1;d2;...` for several summands. For example, the card
 `P8 / O(2)+O(3)` is reproduced with `A8`, kept roots `1`, and Bundle K
 `2;3` (or `[[2],[3]]` in Python). The card's dimension is `n` minus the
-number of rows, and its Fano index is `n+1 - sum(d)`; these provide quick
+number of rows, and its ambient index is `n+1 - sum(d)`; these provide quick
 checks that the input matches the card.
 
 ## 8-folds
 
-| Geometry | Fano Index | Basis Rank |
+| Geometry | Ambient Index | Basis Rank |
 |---|---|---|
 | [P8  Fano index 9](#p8fanoindex9) | 9 | 9 |
 
@@ -31,7 +36,7 @@ checks that the input matches the card.
 ??? example "P8  Fano index 9"
     - **Ambient Space:** `$A8$`
     - **Dimension:** $8$
-    - **Fano Index:** $9$
+    - **Ambient Index:** $9$
     - **Basis Rank:** $9$
     - **Eigenvalues:** $9$ (mult: 1), $- 9 \cos{\left(\frac{\pi}{9} \right)} - 9 i \sin{\left(\frac{\pi}{9} \right)}$ (mult: 1), $- 9 \cos{\left(\frac{\pi}{9} \right)} + 9 i \sin{\left(\frac{\pi}{9} \right)}$ (mult: 1), $- \frac{9}{2} - \frac{9 \sqrt{3} i}{2}$ (mult: 1), $- \frac{9}{2} + \frac{9 \sqrt{3} i}{2}$ (mult: 1), $9 \cos{\left(\frac{4 \pi}{9} \right)} - 9 i \sin{\left(\frac{4 \pi}{9} \right)}$ (mult: 1), $9 \cos{\left(\frac{4 \pi}{9} \right)} + 9 i \sin{\left(\frac{4 \pi}{9} \right)}$ (mult: 1), $9 \cos{\left(\frac{2 \pi}{9} \right)} - 9 i \sin{\left(\frac{2 \pi}{9} \right)}$ (mult: 1), $9 \cos{\left(\frac{2 \pi}{9} \right)} + 9 i \sin{\left(\frac{2 \pi}{9} \right)}$ (mult: 1)
 
@@ -45,7 +50,7 @@ checks that the input matches the card.
 
 ## 7-folds
 
-| Geometry | Fano Index | Basis Rank |
+| Geometry | Ambient Index | Basis Rank |
 |---|---|---|
 | [P7  Fano index 8](#p7fanoindex8) | 8 | 8 |
 | [P8 / O(2)](#p8o2) | 7 | 8 |
@@ -61,7 +66,7 @@ checks that the input matches the card.
 ??? example "P7  Fano index 8"
     - **Ambient Space:** `$A7$`
     - **Dimension:** $7$
-    - **Fano Index:** $8$
+    - **Ambient Index:** $8$
     - **Basis Rank:** $8$
     - **Eigenvalues:** $-8$ (mult: 1), $8$ (mult: 1), $- 4 \sqrt{2} - 4 \sqrt{2} i$ (mult: 1), $- 4 \sqrt{2} + 4 \sqrt{2} i$ (mult: 1), $- 8 i$ (mult: 1), $8 i$ (mult: 1), $4 \sqrt{2} - 4 \sqrt{2} i$ (mult: 1), $4 \sqrt{2} + 4 \sqrt{2} i$ (mult: 1)
 
@@ -77,7 +82,7 @@ checks that the input matches the card.
 ??? example "P8 / O(2)"
     - **Ambient Space:** `$A8$`
     - **Dimension:** $7$
-    - **Fano Index:** $7$
+    - **Ambient Index:** $7$
     - **Basis Rank:** $8$
     - **Eigenvalues:** $7 \cdot 2^{\frac{2}{7}}$ (mult: 1), $- 7 \cdot 2^{\frac{2}{7}} \cos{\left(\frac{\pi}{7} \right)} - 7 \cdot 2^{\frac{2}{7}} i \sin{\left(\frac{\pi}{7} \right)}$ (mult: 1), $- 7 \cdot 2^{\frac{2}{7}} \cos{\left(\frac{\pi}{7} \right)} + 7 \cdot 2^{\frac{2}{7}} i \sin{\left(\frac{\pi}{7} \right)}$ (mult: 1), $- 7 \cdot 2^{\frac{2}{7}} \cos{\left(\frac{3 \pi}{7} \right)} - 7 \cdot 2^{\frac{2}{7}} i \sin{\left(\frac{3 \pi}{7} \right)}$ (mult: 1), $- 7 \cdot 2^{\frac{2}{7}} \cos{\left(\frac{3 \pi}{7} \right)} + 7 \cdot 2^{\frac{2}{7}} i \sin{\left(\frac{3 \pi}{7} \right)}$ (mult: 1), $7 \cdot 2^{\frac{2}{7}} \cos{\left(\frac{2 \pi}{7} \right)} - 7 \cdot 2^{\frac{2}{7}} i \sin{\left(\frac{2 \pi}{7} \right)}$ (mult: 1), $7 \cdot 2^{\frac{2}{7}} \cos{\left(\frac{2 \pi}{7} \right)} + 7 \cdot 2^{\frac{2}{7}} i \sin{\left(\frac{2 \pi}{7} \right)}$ (mult: 1), $0$ (mult: 1)
 
@@ -115,7 +120,7 @@ checks that the input matches the card.
 ??? example "P8 / O(3)"
     - **Ambient Space:** `$A8$`
     - **Dimension:** $7$
-    - **Fano Index:** $6$
+    - **Ambient Index:** $6$
     - **Basis Rank:** $8$
     - **Eigenvalues:** $- 6 \sqrt{3}$ (mult: 1), $6 \sqrt{3}$ (mult: 1), $- 3 \sqrt{3} - 9 i$ (mult: 1), $- 3 \sqrt{3} + 9 i$ (mult: 1), $3 \sqrt{3} - 9 i$ (mult: 1), $3 \sqrt{3} + 9 i$ (mult: 1), $0$ (mult: 2)
 
@@ -153,7 +158,7 @@ checks that the input matches the card.
 ??? example "P8 / O(4)"
     - **Ambient Space:** `$A8$`
     - **Dimension:** $7$
-    - **Fano Index:** $5$
+    - **Ambient Index:** $5$
     - **Basis Rank:** $8$
     - **Eigenvalues:** $10 \cdot 2^{\frac{3}{5}}$ (mult: 1), $- \frac{5 \cdot 2^{\frac{3}{5}} \sqrt{5}}{2} - \frac{5 \cdot 2^{\frac{3}{5}}}{2} - 10 \cdot 2^{\frac{3}{5}} i \sqrt{\frac{5}{8} - \frac{\sqrt{5}}{8}}$ (mult: 1), $- \frac{5 \cdot 2^{\frac{3}{5}} \sqrt{5}}{2} - \frac{5 \cdot 2^{\frac{3}{5}}}{2} + 10 \cdot 2^{\frac{3}{5}} i \sqrt{\frac{5}{8} - \frac{\sqrt{5}}{8}}$ (mult: 1), $- \frac{5 \cdot 2^{\frac{3}{5}}}{2} + \frac{5 \cdot 2^{\frac{3}{5}} \sqrt{5}}{2} - 10 \cdot 2^{\frac{3}{5}} i \sqrt{\frac{\sqrt{5}}{8} + \frac{5}{8}}$ (mult: 1), $- \frac{5 \cdot 2^{\frac{3}{5}}}{2} + \frac{5 \cdot 2^{\frac{3}{5}} \sqrt{5}}{2} + 10 \cdot 2^{\frac{3}{5}} i \sqrt{\frac{\sqrt{5}}{8} + \frac{5}{8}}$ (mult: 1), $0$ (mult: 3)
 
@@ -191,7 +196,7 @@ checks that the input matches the card.
 ??? example "P8 / O(5)"
     - **Ambient Space:** `$A8$`
     - **Dimension:** $7$
-    - **Fano Index:** $4$
+    - **Ambient Index:** $4$
     - **Basis Rank:** $8$
     - **Eigenvalues:** $- 20 \sqrt[4]{5}$ (mult: 1), $20 \sqrt[4]{5}$ (mult: 1), $- 20 \sqrt[4]{5} i$ (mult: 1), $20 \sqrt[4]{5} i$ (mult: 1), $0$ (mult: 4)
 
@@ -229,7 +234,7 @@ checks that the input matches the card.
 ??? example "P8 / O(6)"
     - **Ambient Space:** `$A8$`
     - **Dimension:** $7$
-    - **Fano Index:** $3$
+    - **Ambient Index:** $3$
     - **Basis Rank:** $8$
     - **Eigenvalues:** $108$ (mult: 1), $-54 - 54 \sqrt{3} i$ (mult: 1), $-54 + 54 \sqrt{3} i$ (mult: 1), $0$ (mult: 5)
 
@@ -267,7 +272,7 @@ checks that the input matches the card.
 ??? example "P8 / O(7)"
     - **Ambient Space:** `$A8$`
     - **Dimension:** $7$
-    - **Fano Index:** $2$
+    - **Ambient Index:** $2$
     - **Basis Rank:** $8$
     - **Eigenvalues:** $- 686 \sqrt{7}$ (mult: 1), $686 \sqrt{7}$ (mult: 1), $0$ (mult: 6)
 
@@ -303,7 +308,7 @@ checks that the input matches the card.
 
 ## 6-folds
 
-| Geometry | Fano Index | Basis Rank |
+| Geometry | Ambient Index | Basis Rank |
 |---|---|---|
 | [P6  Fano index 7](#p6fanoindex7) | 7 | 7 |
 | [P7 / O(2)](#p7o2) | 6 | 7 |
@@ -324,7 +329,7 @@ checks that the input matches the card.
 ??? example "P6  Fano index 7"
     - **Ambient Space:** `$A6$`
     - **Dimension:** $6$
-    - **Fano Index:** $7$
+    - **Ambient Index:** $7$
     - **Basis Rank:** $7$
     - **Eigenvalues:** $7$ (mult: 1), $- 7 \cos{\left(\frac{\pi}{7} \right)} - 7 i \sin{\left(\frac{\pi}{7} \right)}$ (mult: 1), $- 7 \cos{\left(\frac{\pi}{7} \right)} + 7 i \sin{\left(\frac{\pi}{7} \right)}$ (mult: 1), $- 7 \cos{\left(\frac{3 \pi}{7} \right)} - 7 i \sin{\left(\frac{3 \pi}{7} \right)}$ (mult: 1), $- 7 \cos{\left(\frac{3 \pi}{7} \right)} + 7 i \sin{\left(\frac{3 \pi}{7} \right)}$ (mult: 1), $7 \cos{\left(\frac{2 \pi}{7} \right)} - 7 i \sin{\left(\frac{2 \pi}{7} \right)}$ (mult: 1), $7 \cos{\left(\frac{2 \pi}{7} \right)} + 7 i \sin{\left(\frac{2 \pi}{7} \right)}$ (mult: 1)
 
@@ -340,7 +345,7 @@ checks that the input matches the card.
 ??? example "P7 / O(2)"
     - **Ambient Space:** `$A7$`
     - **Dimension:** $6$
-    - **Fano Index:** $6$
+    - **Ambient Index:** $6$
     - **Basis Rank:** $7$
     - **Eigenvalues:** $- 6 \sqrt[3]{2}$ (mult: 1), $6 \sqrt[3]{2}$ (mult: 1), $- 3 \sqrt[3]{2} - 3 \sqrt[3]{2} \sqrt{3} i$ (mult: 1), $- 3 \sqrt[3]{2} + 3 \sqrt[3]{2} \sqrt{3} i$ (mult: 1), $3 \sqrt[3]{2} - 3 \sqrt[3]{2} \sqrt{3} i$ (mult: 1), $3 \sqrt[3]{2} + 3 \sqrt[3]{2} \sqrt{3} i$ (mult: 1), $0$ (mult: 1)
 
@@ -376,7 +381,7 @@ checks that the input matches the card.
 ??? example "P7 / O(3)"
     - **Ambient Space:** `$A7$`
     - **Dimension:** $6$
-    - **Fano Index:** $5$
+    - **Ambient Index:** $5$
     - **Basis Rank:** $7$
     - **Eigenvalues:** $5 \cdot 3^{\frac{3}{5}}$ (mult: 1), $- \frac{5 \cdot 3^{\frac{3}{5}} \sqrt{5}}{4} - \frac{5 \cdot 3^{\frac{3}{5}}}{4} - 5 \cdot 3^{\frac{3}{5}} i \sqrt{\frac{5}{8} - \frac{\sqrt{5}}{8}}$ (mult: 1), $- \frac{5 \cdot 3^{\frac{3}{5}} \sqrt{5}}{4} - \frac{5 \cdot 3^{\frac{3}{5}}}{4} + 5 \cdot 3^{\frac{3}{5}} i \sqrt{\frac{5}{8} - \frac{\sqrt{5}}{8}}$ (mult: 1), $- \frac{5 \cdot 3^{\frac{3}{5}}}{4} + \frac{5 \cdot 3^{\frac{3}{5}} \sqrt{5}}{4} - 5 \cdot 3^{\frac{3}{5}} i \sqrt{\frac{\sqrt{5}}{8} + \frac{5}{8}}$ (mult: 1), $- \frac{5 \cdot 3^{\frac{3}{5}}}{4} + \frac{5 \cdot 3^{\frac{3}{5}} \sqrt{5}}{4} + 5 \cdot 3^{\frac{3}{5}} i \sqrt{\frac{\sqrt{5}}{8} + \frac{5}{8}}$ (mult: 1), $0$ (mult: 2)
 
@@ -412,7 +417,7 @@ checks that the input matches the card.
 ??? example "P8 / O(2)+O(2)"
     - **Ambient Space:** `$A8$`
     - **Dimension:** $6$
-    - **Fano Index:** $5$
+    - **Ambient Index:** $5$
     - **Basis Rank:** $7$
     - **Eigenvalues:** $5 \cdot 2^{\frac{4}{5}}$ (mult: 1), $- \frac{5 \cdot 2^{\frac{4}{5}} \sqrt{5}}{4} - \frac{5 \cdot 2^{\frac{4}{5}}}{4} - 5 \cdot 2^{\frac{4}{5}} i \sqrt{\frac{5}{8} - \frac{\sqrt{5}}{8}}$ (mult: 1), $- \frac{5 \cdot 2^{\frac{4}{5}} \sqrt{5}}{4} - \frac{5 \cdot 2^{\frac{4}{5}}}{4} + 5 \cdot 2^{\frac{4}{5}} i \sqrt{\frac{5}{8} - \frac{\sqrt{5}}{8}}$ (mult: 1), $- \frac{5 \cdot 2^{\frac{4}{5}}}{4} + \frac{5 \cdot 2^{\frac{4}{5}} \sqrt{5}}{4} - 5 \cdot 2^{\frac{4}{5}} i \sqrt{\frac{\sqrt{5}}{8} + \frac{5}{8}}$ (mult: 1), $- \frac{5 \cdot 2^{\frac{4}{5}}}{4} + \frac{5 \cdot 2^{\frac{4}{5}} \sqrt{5}}{4} + 5 \cdot 2^{\frac{4}{5}} i \sqrt{\frac{\sqrt{5}}{8} + \frac{5}{8}}$ (mult: 1), $0$ (mult: 2)
 
@@ -448,7 +453,7 @@ checks that the input matches the card.
 ??? example "P7 / O(4)"
     - **Ambient Space:** `$A7$`
     - **Dimension:** $6$
-    - **Fano Index:** $4$
+    - **Ambient Index:** $4$
     - **Basis Rank:** $7$
     - **Eigenvalues:** $-16$ (mult: 1), $16$ (mult: 1), $- 16 i$ (mult: 1), $16 i$ (mult: 1), $0$ (mult: 3)
 
@@ -484,7 +489,7 @@ checks that the input matches the card.
 ??? example "P8 / O(2)+O(3)"
     - **Ambient Space:** `$A8$`
     - **Dimension:** $6$
-    - **Fano Index:** $4$
+    - **Ambient Index:** $4$
     - **Basis Rank:** $7$
     - **Eigenvalues:** $- 4 \sqrt{2} \cdot 3^{\frac{3}{4}}$ (mult: 1), $4 \sqrt{2} \cdot 3^{\frac{3}{4}}$ (mult: 1), $- 4 \sqrt{2} \cdot 3^{\frac{3}{4}} i$ (mult: 1), $4 \sqrt{2} \cdot 3^{\frac{3}{4}} i$ (mult: 1), $0$ (mult: 3)
 
@@ -520,7 +525,7 @@ checks that the input matches the card.
 ??? example "P7 / O(5)"
     - **Ambient Space:** `$A7$`
     - **Dimension:** $6$
-    - **Fano Index:** $3$
+    - **Ambient Index:** $3$
     - **Basis Rank:** $7$
     - **Eigenvalues:** $15 \cdot 5^{\frac{2}{3}}$ (mult: 1), $- \frac{15 \cdot 5^{\frac{2}{3}}}{2} - \frac{15 \sqrt{3} \cdot 5^{\frac{2}{3}} i}{2}$ (mult: 1), $- \frac{15 \cdot 5^{\frac{2}{3}}}{2} + \frac{15 \sqrt{3} \cdot 5^{\frac{2}{3}} i}{2}$ (mult: 1), $0$ (mult: 4)
 
@@ -556,7 +561,7 @@ checks that the input matches the card.
 ??? example "P8 / O(2)+O(4)"
     - **Ambient Space:** `$A8$`
     - **Dimension:** $6$
-    - **Fano Index:** $3$
+    - **Ambient Index:** $3$
     - **Basis Rank:** $7$
     - **Eigenvalues:** $24 \sqrt[3]{2}$ (mult: 1), $- 12 \sqrt[3]{2} - 12 \sqrt[3]{2} \sqrt{3} i$ (mult: 1), $- 12 \sqrt[3]{2} + 12 \sqrt[3]{2} \sqrt{3} i$ (mult: 1), $0$ (mult: 4)
 
@@ -592,7 +597,7 @@ checks that the input matches the card.
 ??? example "P8 / O(3)+O(3)"
     - **Ambient Space:** `$A8$`
     - **Dimension:** $6$
-    - **Fano Index:** $3$
+    - **Ambient Index:** $3$
     - **Basis Rank:** $7$
     - **Eigenvalues:** $27$ (mult: 1), $- \frac{27}{2} - \frac{27 \sqrt{3} i}{2}$ (mult: 1), $- \frac{27}{2} + \frac{27 \sqrt{3} i}{2}$ (mult: 1), $0$ (mult: 4)
 
@@ -628,7 +633,7 @@ checks that the input matches the card.
 ??? example "P7 / O(6)"
     - **Ambient Space:** `$A7$`
     - **Dimension:** $6$
-    - **Fano Index:** $2$
+    - **Ambient Index:** $2$
     - **Basis Rank:** $7$
     - **Eigenvalues:** $-432$ (mult: 1), $432$ (mult: 1), $0$ (mult: 5)
 
@@ -664,7 +669,7 @@ checks that the input matches the card.
 ??? example "P8 / O(2)+O(5)"
     - **Ambient Space:** `$A8$`
     - **Dimension:** $6$
-    - **Fano Index:** $2$
+    - **Ambient Index:** $2$
     - **Basis Rank:** $7$
     - **Eigenvalues:** $- 100 \sqrt{5}$ (mult: 1), $100 \sqrt{5}$ (mult: 1), $0$ (mult: 5)
 
@@ -700,7 +705,7 @@ checks that the input matches the card.
 ??? example "P8 / O(3)+O(4)"
     - **Ambient Space:** `$A8$`
     - **Dimension:** $6$
-    - **Fano Index:** $2$
+    - **Ambient Index:** $2$
     - **Basis Rank:** $7$
     - **Eigenvalues:** $- 96 \sqrt{3}$ (mult: 1), $96 \sqrt{3}$ (mult: 1), $0$ (mult: 5)
 
@@ -734,7 +739,7 @@ checks that the input matches the card.
 
 ## 5-folds
 
-| Geometry | Fano Index | Basis Rank |
+| Geometry | Ambient Index | Basis Rank |
 |---|---|---|
 | [P5  Fano index 6](#p5fanoindex6) | 6 | 6 |
 | [P6 / O(2)](#p6o2) | 5 | 6 |
@@ -754,7 +759,7 @@ checks that the input matches the card.
 ??? example "P5  Fano index 6"
     - **Ambient Space:** `$A5$`
     - **Dimension:** $5$
-    - **Fano Index:** $6$
+    - **Ambient Index:** $6$
     - **Basis Rank:** $6$
     - **Eigenvalues:** $-6$ (mult: 1), $6$ (mult: 1), $-3 - 3 \sqrt{3} i$ (mult: 1), $-3 + 3 \sqrt{3} i$ (mult: 1), $3 - 3 \sqrt{3} i$ (mult: 1), $3 + 3 \sqrt{3} i$ (mult: 1)
 
@@ -770,7 +775,7 @@ checks that the input matches the card.
 ??? example "P6 / O(2)"
     - **Ambient Space:** `$A6$`
     - **Dimension:** $5$
-    - **Fano Index:** $5$
+    - **Ambient Index:** $5$
     - **Basis Rank:** $6$
     - **Eigenvalues:** $5 \cdot 2^{\frac{2}{5}}$ (mult: 1), $- \frac{5 \cdot 2^{\frac{2}{5}} \sqrt{5}}{4} - \frac{5 \cdot 2^{\frac{2}{5}}}{4} - 5 \cdot 2^{\frac{2}{5}} i \sqrt{\frac{5}{8} - \frac{\sqrt{5}}{8}}$ (mult: 1), $- \frac{5 \cdot 2^{\frac{2}{5}} \sqrt{5}}{4} - \frac{5 \cdot 2^{\frac{2}{5}}}{4} + 5 \cdot 2^{\frac{2}{5}} i \sqrt{\frac{5}{8} - \frac{\sqrt{5}}{8}}$ (mult: 1), $- \frac{5 \cdot 2^{\frac{2}{5}}}{4} + \frac{5 \cdot 2^{\frac{2}{5}} \sqrt{5}}{4} - 5 \cdot 2^{\frac{2}{5}} i \sqrt{\frac{\sqrt{5}}{8} + \frac{5}{8}}$ (mult: 1), $- \frac{5 \cdot 2^{\frac{2}{5}}}{4} + \frac{5 \cdot 2^{\frac{2}{5}} \sqrt{5}}{4} + 5 \cdot 2^{\frac{2}{5}} i \sqrt{\frac{\sqrt{5}}{8} + \frac{5}{8}}$ (mult: 1), $0$ (mult: 1)
 
@@ -804,7 +809,7 @@ checks that the input matches the card.
 ??? example "P6 / O(3)"
     - **Ambient Space:** `$A6$`
     - **Dimension:** $5$
-    - **Fano Index:** $4$
+    - **Ambient Index:** $4$
     - **Basis Rank:** $6$
     - **Eigenvalues:** $- 4 \cdot 3^{\frac{3}{4}}$ (mult: 1), $4 \cdot 3^{\frac{3}{4}}$ (mult: 1), $- 4 \cdot 3^{\frac{3}{4}} i$ (mult: 1), $4 \cdot 3^{\frac{3}{4}} i$ (mult: 1), $0$ (mult: 2)
 
@@ -838,7 +843,7 @@ checks that the input matches the card.
 ??? example "P7 / O(2)+O(2)"
     - **Ambient Space:** `$A7$`
     - **Dimension:** $5$
-    - **Fano Index:** $4$
+    - **Ambient Index:** $4$
     - **Basis Rank:** $6$
     - **Eigenvalues:** $-8$ (mult: 1), $8$ (mult: 1), $- 8 i$ (mult: 1), $8 i$ (mult: 1), $0$ (mult: 2)
 
@@ -872,7 +877,7 @@ checks that the input matches the card.
 ??? example "P6 / O(4)"
     - **Ambient Space:** `$A6$`
     - **Dimension:** $5$
-    - **Fano Index:** $3$
+    - **Ambient Index:** $3$
     - **Basis Rank:** $6$
     - **Eigenvalues:** $12 \cdot 2^{\frac{2}{3}}$ (mult: 1), $- 6 \cdot 2^{\frac{2}{3}} - 6 \cdot 2^{\frac{2}{3}} \sqrt{3} i$ (mult: 1), $- 6 \cdot 2^{\frac{2}{3}} + 6 \cdot 2^{\frac{2}{3}} \sqrt{3} i$ (mult: 1), $0$ (mult: 3)
 
@@ -906,7 +911,7 @@ checks that the input matches the card.
 ??? example "P7 / O(2)+O(3)"
     - **Ambient Space:** `$A7$`
     - **Dimension:** $5$
-    - **Fano Index:** $3$
+    - **Ambient Index:** $3$
     - **Basis Rank:** $6$
     - **Eigenvalues:** $9 \cdot 2^{\frac{2}{3}}$ (mult: 1), $- \frac{9 \cdot 2^{\frac{2}{3}}}{2} - \frac{9 \cdot 2^{\frac{2}{3}} \sqrt{3} i}{2}$ (mult: 1), $- \frac{9 \cdot 2^{\frac{2}{3}}}{2} + \frac{9 \cdot 2^{\frac{2}{3}} \sqrt{3} i}{2}$ (mult: 1), $0$ (mult: 3)
 
@@ -940,7 +945,7 @@ checks that the input matches the card.
 ??? example "P8 / O(2)+O(2)+O(2)"
     - **Ambient Space:** `$A8$`
     - **Dimension:** $5$
-    - **Fano Index:** $3$
+    - **Ambient Index:** $3$
     - **Basis Rank:** $6$
     - **Eigenvalues:** $12$ (mult: 1), $-6 - 6 \sqrt{3} i$ (mult: 1), $-6 + 6 \sqrt{3} i$ (mult: 1), $0$ (mult: 3)
 
@@ -974,7 +979,7 @@ checks that the input matches the card.
 ??? example "P6 / O(5)"
     - **Ambient Space:** `$A6$`
     - **Dimension:** $5$
-    - **Fano Index:** $2$
+    - **Ambient Index:** $2$
     - **Basis Rank:** $6$
     - **Eigenvalues:** $- 50 \sqrt{5}$ (mult: 1), $50 \sqrt{5}$ (mult: 1), $0$ (mult: 4)
 
@@ -1008,7 +1013,7 @@ checks that the input matches the card.
 ??? example "P7 / O(2)+O(4)"
     - **Ambient Space:** `$A7$`
     - **Dimension:** $5$
-    - **Fano Index:** $2$
+    - **Ambient Index:** $2$
     - **Basis Rank:** $6$
     - **Eigenvalues:** $-64$ (mult: 1), $64$ (mult: 1), $0$ (mult: 4)
 
@@ -1042,7 +1047,7 @@ checks that the input matches the card.
 ??? example "P7 / O(3)+O(3)"
     - **Ambient Space:** `$A7$`
     - **Dimension:** $5$
-    - **Fano Index:** $2$
+    - **Ambient Index:** $2$
     - **Basis Rank:** $6$
     - **Eigenvalues:** $-54$ (mult: 1), $54$ (mult: 1), $0$ (mult: 4)
 
@@ -1076,7 +1081,7 @@ checks that the input matches the card.
 ??? example "P8 / O(2)+O(2)+O(3)"
     - **Ambient Space:** `$A8$`
     - **Dimension:** $5$
-    - **Fano Index:** $2$
+    - **Ambient Index:** $2$
     - **Basis Rank:** $6$
     - **Eigenvalues:** $- 24 \sqrt{3}$ (mult: 1), $24 \sqrt{3}$ (mult: 1), $0$ (mult: 4)
 
@@ -1108,7 +1113,7 @@ checks that the input matches the card.
 
 ## 4-folds
 
-| Geometry | Fano Index | Basis Rank |
+| Geometry | Ambient Index | Basis Rank |
 |---|---|---|
 | [P4  Fano index 5](#p4fanoindex5) | 5 | 5 |
 | [P5 / O(2)](#p5o2) | 4 | 5 |
@@ -1128,7 +1133,7 @@ checks that the input matches the card.
 ??? example "P4  Fano index 5"
     - **Ambient Space:** `$A4$`
     - **Dimension:** $4$
-    - **Fano Index:** $5$
+    - **Ambient Index:** $5$
     - **Basis Rank:** $5$
     - **Eigenvalues:** $5$ (mult: 1), $- \frac{5 \sqrt{5}}{4} - \frac{5}{4} - 5 i \sqrt{\frac{5}{8} - \frac{\sqrt{5}}{8}}$ (mult: 1), $- \frac{5 \sqrt{5}}{4} - \frac{5}{4} + 5 i \sqrt{\frac{5}{8} - \frac{\sqrt{5}}{8}}$ (mult: 1), $- \frac{5}{4} + \frac{5 \sqrt{5}}{4} - 5 i \sqrt{\frac{\sqrt{5}}{8} + \frac{5}{8}}$ (mult: 1), $- \frac{5}{4} + \frac{5 \sqrt{5}}{4} + 5 i \sqrt{\frac{\sqrt{5}}{8} + \frac{5}{8}}$ (mult: 1)
 
@@ -1144,7 +1149,7 @@ checks that the input matches the card.
 ??? example "P5 / O(2)"
     - **Ambient Space:** `$A5$`
     - **Dimension:** $4$
-    - **Fano Index:** $4$
+    - **Ambient Index:** $4$
     - **Basis Rank:** $5$
     - **Eigenvalues:** $- 4 \sqrt{2}$ (mult: 1), $4 \sqrt{2}$ (mult: 1), $- 4 \sqrt{2} i$ (mult: 1), $4 \sqrt{2} i$ (mult: 1), $0$ (mult: 1)
 
@@ -1176,7 +1181,7 @@ checks that the input matches the card.
 ??? example "P5 / O(3)"
     - **Ambient Space:** `$A5$`
     - **Dimension:** $4$
-    - **Fano Index:** $3$
+    - **Ambient Index:** $3$
     - **Basis Rank:** $5$
     - **Eigenvalues:** $9$ (mult: 1), $- \frac{9}{2} - \frac{9 \sqrt{3} i}{2}$ (mult: 1), $- \frac{9}{2} + \frac{9 \sqrt{3} i}{2}$ (mult: 1), $0$ (mult: 2)
 
@@ -1208,7 +1213,7 @@ checks that the input matches the card.
 ??? example "P6 / O(2)+O(2)"
     - **Ambient Space:** `$A6$`
     - **Dimension:** $4$
-    - **Fano Index:** $3$
+    - **Ambient Index:** $3$
     - **Basis Rank:** $5$
     - **Eigenvalues:** $6 \sqrt[3]{2}$ (mult: 1), $- 3 \sqrt[3]{2} - 3 \sqrt[3]{2} \sqrt{3} i$ (mult: 1), $- 3 \sqrt[3]{2} + 3 \sqrt[3]{2} \sqrt{3} i$ (mult: 1), $0$ (mult: 2)
 
@@ -1240,7 +1245,7 @@ checks that the input matches the card.
 ??? example "P5 / O(4)"
     - **Ambient Space:** `$A5$`
     - **Dimension:** $4$
-    - **Fano Index:** $2$
+    - **Ambient Index:** $2$
     - **Basis Rank:** $5$
     - **Eigenvalues:** $-32$ (mult: 1), $32$ (mult: 1), $0$ (mult: 3)
 
@@ -1272,7 +1277,7 @@ checks that the input matches the card.
 ??? example "P6 / O(2)+O(3)"
     - **Ambient Space:** `$A6$`
     - **Dimension:** $4$
-    - **Fano Index:** $2$
+    - **Ambient Index:** $2$
     - **Basis Rank:** $5$
     - **Eigenvalues:** $- 12 \sqrt{3}$ (mult: 1), $12 \sqrt{3}$ (mult: 1), $0$ (mult: 3)
 
@@ -1304,7 +1309,7 @@ checks that the input matches the card.
 ??? example "P7 / O(2)+O(2)+O(2)"
     - **Ambient Space:** `$A7$`
     - **Dimension:** $4$
-    - **Fano Index:** $2$
+    - **Ambient Index:** $2$
     - **Basis Rank:** $5$
     - **Eigenvalues:** $-16$ (mult: 1), $16$ (mult: 1), $0$ (mult: 3)
 
@@ -1336,7 +1341,7 @@ checks that the input matches the card.
 ??? example "P5 / O(5)"
     - **Ambient Space:** `$A5$`
     - **Dimension:** $4$
-    - **Fano Index:** $1$
+    - **Ambient Index:** $1$
     - **Basis Rank:** $5$
     - **Eigenvalues:** $3005$ (mult: 1), $-120$ (mult: 4)
 
@@ -1368,7 +1373,7 @@ checks that the input matches the card.
 ??? example "P6 / O(3)+O(3)"
     - **Ambient Space:** `$A6$`
     - **Dimension:** $4$
-    - **Fano Index:** $1$
+    - **Ambient Index:** $1$
     - **Basis Rank:** $5$
     - **Eigenvalues:** $693$ (mult: 1), $-36$ (mult: 4)
 
@@ -1400,7 +1405,7 @@ checks that the input matches the card.
 ??? example "P6 / O(2)+O(4)"
     - **Ambient Space:** `$A6$`
     - **Dimension:** $4$
-    - **Fano Index:** $1$
+    - **Ambient Index:** $1$
     - **Basis Rank:** $5$
     - **Eigenvalues:** $976$ (mult: 1), $-48$ (mult: 4)
 
@@ -1432,7 +1437,7 @@ checks that the input matches the card.
 ??? example "P7 / O(2)+O(2)+O(3)"
     - **Ambient Space:** `$A7$`
     - **Dimension:** $4$
-    - **Fano Index:** $1$
+    - **Ambient Index:** $1$
     - **Basis Rank:** $5$
     - **Eigenvalues:** $408$ (mult: 1), $-24$ (mult: 4)
 
@@ -1462,7 +1467,7 @@ checks that the input matches the card.
 
 ## 3-folds
 
-| Geometry | Fano Index | Basis Rank |
+| Geometry | Ambient Index | Basis Rank |
 |---|---|---|
 | [P3  Fano index 4](#p3fanoindex4) | 4 | 4 |
 | [P4 / O(2)](#p4o2) | 3 | 4 |
@@ -1478,7 +1483,7 @@ checks that the input matches the card.
 ??? example "P3  Fano index 4"
     - **Ambient Space:** `$A3$`
     - **Dimension:** $3$
-    - **Fano Index:** $4$
+    - **Ambient Index:** $4$
     - **Basis Rank:** $4$
     - **Eigenvalues:** $-4$ (mult: 1), $4$ (mult: 1), $- 4 i$ (mult: 1), $4 i$ (mult: 1)
 
@@ -1494,7 +1499,7 @@ checks that the input matches the card.
 ??? example "P4 / O(2)"
     - **Ambient Space:** `$A4$`
     - **Dimension:** $3$
-    - **Fano Index:** $3$
+    - **Ambient Index:** $3$
     - **Basis Rank:** $4$
     - **Eigenvalues:** $3 \cdot 2^{\frac{2}{3}}$ (mult: 1), $- \frac{3 \cdot 2^{\frac{2}{3}}}{2} - \frac{3 \cdot 2^{\frac{2}{3}} \sqrt{3} i}{2}$ (mult: 1), $- \frac{3 \cdot 2^{\frac{2}{3}}}{2} + \frac{3 \cdot 2^{\frac{2}{3}} \sqrt{3} i}{2}$ (mult: 1), $0$ (mult: 1)
 
@@ -1524,7 +1529,7 @@ checks that the input matches the card.
 ??? example "P4 / O(3)"
     - **Ambient Space:** `$A4$`
     - **Dimension:** $3$
-    - **Fano Index:** $2$
+    - **Ambient Index:** $2$
     - **Basis Rank:** $4$
     - **Eigenvalues:** $- 6 \sqrt{3}$ (mult: 1), $6 \sqrt{3}$ (mult: 1), $0$ (mult: 2)
 
@@ -1554,7 +1559,7 @@ checks that the input matches the card.
 ??? example "P5 / O(2)+O(2)"
     - **Ambient Space:** `$A5$`
     - **Dimension:** $3$
-    - **Fano Index:** $2$
+    - **Ambient Index:** $2$
     - **Basis Rank:** $4$
     - **Eigenvalues:** $-8$ (mult: 1), $8$ (mult: 1), $0$ (mult: 2)
 
@@ -1584,7 +1589,7 @@ checks that the input matches the card.
 ??? example "P4 / O(4)"
     - **Ambient Space:** `$A4$`
     - **Dimension:** $3$
-    - **Fano Index:** $1$
+    - **Ambient Index:** $1$
     - **Basis Rank:** $4$
     - **Eigenvalues:** $232$ (mult: 1), $-24$ (mult: 3)
 
@@ -1614,7 +1619,7 @@ checks that the input matches the card.
 ??? example "P5 / O(2)+O(3)"
     - **Ambient Space:** `$A5$`
     - **Dimension:** $3$
-    - **Fano Index:** $1$
+    - **Ambient Index:** $1$
     - **Basis Rank:** $4$
     - **Eigenvalues:** $96$ (mult: 1), $-12$ (mult: 3)
 
@@ -1644,7 +1649,7 @@ checks that the input matches the card.
 ??? example "P6 / O(2)+O(2)+O(2)"
     - **Ambient Space:** `$A6$`
     - **Dimension:** $3$
-    - **Fano Index:** $1$
+    - **Ambient Index:** $1$
     - **Basis Rank:** $4$
     - **Eigenvalues:** $56$ (mult: 1), $-8$ (mult: 3)
 
@@ -1672,7 +1677,7 @@ checks that the input matches the card.
 
 ## Surfaces (2-folds)
 
-| Geometry | Fano Index | Basis Rank |
+| Geometry | Ambient Index | Basis Rank |
 |---|---|---|
 | [P2 Fano index 3](#p2fanoindex3) | 3 | 3 |
 | [P3 / O(2)](#p3o2) | 2 | 3 |
@@ -1685,7 +1690,7 @@ checks that the input matches the card.
 ??? example "P2 Fano index 3"
     - **Ambient Space:** `$A2$`
     - **Dimension:** $2$
-    - **Fano Index:** $3$
+    - **Ambient Index:** $3$
     - **Basis Rank:** $3$
     - **Eigenvalues:** $3$ (mult: 1), $- \frac{3}{2} - \frac{3 \sqrt{3} i}{2}$ (mult: 1), $- \frac{3}{2} + \frac{3 \sqrt{3} i}{2}$ (mult: 1)
 
@@ -1704,7 +1709,7 @@ checks that the input matches the card.
 ??? example "P3 / O(2)"
     - **Ambient Space:** `$A3$`
     - **Dimension:** $2$
-    - **Fano Index:** $2$
+    - **Ambient Index:** $2$
     - **Basis Rank:** $3$
     - **Eigenvalues:** $-4$ (mult: 1), $4$ (mult: 1), $0$ (mult: 1)
 
@@ -1732,7 +1737,7 @@ checks that the input matches the card.
 ??? example "P3 / O(3)"
     - **Ambient Space:** `$A3$`
     - **Dimension:** $2$
-    - **Fano Index:** $1$
+    - **Ambient Index:** $1$
     - **Basis Rank:** $3$
     - **Eigenvalues:** $21$ (mult: 1), $-6$ (mult: 2)
 
@@ -1760,7 +1765,7 @@ checks that the input matches the card.
 ??? example "P4 / O(2)+O(2)"
     - **Ambient Space:** `$A4$`
     - **Dimension:** $2$
-    - **Fano Index:** $1$
+    - **Ambient Index:** $1$
     - **Basis Rank:** $3$
     - **Eigenvalues:** $12$ (mult: 1), $-4$ (mult: 2)
 
@@ -1786,7 +1791,7 @@ checks that the input matches the card.
 
 ## Curves (1-folds)
 
-| Geometry | Fano Index | Basis Rank |
+| Geometry | Ambient Index | Basis Rank |
 |---|---|---|
 | [P2 / O(2)](#p2o2) | 1 | 2 |
 
@@ -1796,7 +1801,7 @@ checks that the input matches the card.
 ??? example "P2 / O(2)"
     - **Ambient Space:** `$A2$`
     - **Dimension:** $1$
-    - **Fano Index:** $1$
+    - **Ambient Index:** $1$
     - **Basis Rank:** $2$
     - **Eigenvalues:** $-2$ (mult: 1), $2$ (mult: 1)
 

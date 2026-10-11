@@ -34,7 +34,7 @@ def write_category_page(title, filename, cases):
             dim_title = get_dimension_name(dim)
             f.write(f"## {dim_title}\n\n")
             
-            f.write("| Geometry | Fano Index | Basis Rank |\n")
+            f.write("| Geometry | Ambient Index | Basis Rank |\n")
             f.write("|---|---|---|\n")
             for c in dim_cases:
                 clean_label = "".join([char for char in c['label'].lower() if char.isalnum() or char == '-'])

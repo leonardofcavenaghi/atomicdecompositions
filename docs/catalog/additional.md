@@ -2,15 +2,17 @@
 description: Exact quantum multiplication matrices and reproducible inputs for additional flag varieties and their complete intersections.
 ---
 
-# Additional flag varieties and sections
+# Flag varieties and sections
 
 These entries include orthogonal, symplectic, exceptional and partial flag varieties, and complete intersections in them. Each displayed matrix comes from exact `gwflags` virtual localization using the full automatically supported curve list.
+
+For a worked full-flag example, see [Fl(1,2,3)](flag_varieties.md#afl123).
 
 Matrices represent multiplication by $c_1(TY)$ on the returned ambient sector, with every Novikov variable set to $1$. Columns are inputs and rows are outputs. The ordered basis below uses reduced Schubert words; `()` is the unit. Basis indices in the download are zero-based.
 
 [Download all symbolic matrices, bases, gradings and curve classes](../data/localization-results.json) or browse [Download matrices and inputs](computed.md). See [How to Use](../how-to-use.md) for input conventions.
 
-| Geometry | Dimension | Fano index | Basis rank |
+| Geometry | Dimension | Ambient index | Basis rank |
 |---|---|---|---|
 | [Fl(1,4,5)](#fl145) | 7 | 4 | 20 |
 | [Fl(1,4,5) / O(1,1)+O(1,1)](#fl145o11o11) | 5 | 2 | 12 |
@@ -37,7 +39,7 @@ Matrices represent multiplication by $c_1(TY)$ on the returned ambient sector, w
     - **Keep Nodes:** `1,4`
     - **Bundle K:** empty (the flag variety itself)
     - **Dimension:** $7$
-    - **Fano Index:** $4$
+    - **Ambient Index:** $4$
     - **Basis Rank:** $20$
     - **Exact data identifier:** `6d625eb08919`
 
@@ -80,7 +82,7 @@ Matrices represent multiplication by $c_1(TY)$ on the returned ambient sector, w
     - **Keep Nodes:** `1,4`
     - **Bundle K:** `1,1;1,1`
     - **Dimension:** $5$
-    - **Fano Index:** $2$
+    - **Ambient Index:** $2$
     - **Basis Rank:** $12$
     - **Exact data identifier:** `9cb29c69a3f5`
 
@@ -115,7 +117,7 @@ Matrices represent multiplication by $c_1(TY)$ on the returned ambient sector, w
     - **Keep Nodes:** `1`
     - **Bundle K:** empty (the flag variety itself)
     - **Dimension:** $5$
-    - **Fano Index:** $5$
+    - **Ambient Index:** $5$
     - **Basis Rank:** $6$
     - **Exact data identifier:** `fd2bd6eae26b`
 
@@ -144,7 +146,7 @@ Matrices represent multiplication by $c_1(TY)$ on the returned ambient sector, w
     - **Keep Nodes:** `2`
     - **Bundle K:** empty (the flag variety itself)
     - **Dimension:** $5$
-    - **Fano Index:** $3$
+    - **Ambient Index:** $3$
     - **Basis Rank:** $6$
     - **Exact data identifier:** `834882311808`
 
@@ -173,7 +175,7 @@ Matrices represent multiplication by $c_1(TY)$ on the returned ambient sector, w
     - **Keep Nodes:** `3`
     - **Bundle K:** `1`
     - **Dimension:** $5$
-    - **Fano Index:** $3$
+    - **Ambient Index:** $3$
     - **Basis Rank:** $6$
     - **Exact data identifier:** `141c91366f21`
 
@@ -202,7 +204,7 @@ Matrices represent multiplication by $c_1(TY)$ on the returned ambient sector, w
     - **Keep Nodes:** `3`
     - **Bundle K:** `2`
     - **Dimension:** $5$
-    - **Fano Index:** $4$
+    - **Ambient Index:** $4$
     - **Basis Rank:** $6$
     - **Exact data identifier:** `76928fabba80`
 
@@ -231,7 +233,7 @@ Matrices represent multiplication by $c_1(TY)$ on the returned ambient sector, w
     - **Keep Nodes:** `3`
     - **Bundle K:** `3`
     - **Dimension:** $5$
-    - **Fano Index:** $3$
+    - **Ambient Index:** $3$
     - **Basis Rank:** $6$
     - **Exact data identifier:** `29e94da02c49`
 
@@ -260,7 +262,7 @@ Matrices represent multiplication by $c_1(TY)$ on the returned ambient sector, w
     - **Keep Nodes:** `3`
     - **Bundle K:** `4`
     - **Dimension:** $5$
-    - **Fano Index:** $2$
+    - **Ambient Index:** $2$
     - **Basis Rank:** $6$
     - **Exact data identifier:** `10e047830d24`
 
@@ -289,7 +291,7 @@ Matrices represent multiplication by $c_1(TY)$ on the returned ambient sector, w
     - **Keep Nodes:** `1,2`
     - **Bundle K:** `0,1;0,2;1,0`
     - **Dimension:** $4$
-    - **Fano Index:** $1$
+    - **Ambient Index:** $1$
     - **Basis Rank:** $9$
     - **Exact data identifier:** `e1322438fd01`
 
@@ -312,7 +314,7 @@ Matrices represent multiplication by $c_1(TY)$ on the returned ambient sector, w
         | 8 | `(1 3 2)` | 3 |
         | 9 | `(1 3 2 1)` | 4 |
 
-    This matrix includes the nonzero degree-5 contributions. The earlier reference stopped at degree 4 and used a different basis in degree 3; see [Reference discrepancies](../discrepancy.md).
+    The full matrix includes nonzero contributions from curve classes of anticanonical degree 5.
 
 ---
 
@@ -323,7 +325,7 @@ Matrices represent multiplication by $c_1(TY)$ on the returned ambient sector, w
     - **Keep Nodes:** `1,3`
     - **Bundle K:** `1,1`
     - **Dimension:** $4$
-    - **Fano Index:** $2$
+    - **Ambient Index:** $2$
     - **Basis Rank:** $9$
     - **Exact data identifier:** `3ed191207b19`
 
@@ -355,7 +357,7 @@ Matrices represent multiplication by $c_1(TY)$ on the returned ambient sector, w
     - **Keep Nodes:** `2`
     - **Bundle K:** `1`
     - **Dimension:** $4$
-    - **Fano Index:** $2$
+    - **Ambient Index:** $2$
     - **Basis Rank:** $5$
     - **Exact data identifier:** `b9a91f8b2a8f`
 
@@ -383,7 +385,7 @@ Matrices represent multiplication by $c_1(TY)$ on the returned ambient sector, w
     - **Keep Nodes:** `3`
     - **Bundle K:** `1;1`
     - **Dimension:** $4$
-    - **Fano Index:** $2$
+    - **Ambient Index:** $2$
     - **Basis Rank:** $5$
     - **Exact data identifier:** `5a3d521e7212`
 
@@ -411,7 +413,7 @@ Matrices represent multiplication by $c_1(TY)$ on the returned ambient sector, w
     - **Keep Nodes:** `3`
     - **Bundle K:** `2;2`
     - **Dimension:** $4$
-    - **Fano Index:** $2$
+    - **Ambient Index:** $2$
     - **Basis Rank:** $5$
     - **Exact data identifier:** `176397975a00`
 
@@ -439,7 +441,7 @@ Matrices represent multiplication by $c_1(TY)$ on the returned ambient sector, w
     - **Keep Nodes:** `1,2`
     - **Bundle K:** `1,1`
     - **Dimension:** $3$
-    - **Fano Index:** $1$
+    - **Ambient Index:** $1$
     - **Basis Rank:** $6$
     - **Exact data identifier:** `34fec398819e`
 
@@ -468,7 +470,7 @@ Matrices represent multiplication by $c_1(TY)$ on the returned ambient sector, w
     - **Keep Nodes:** `1,3`
     - **Bundle K:** `1,1;1,1`
     - **Dimension:** $3$
-    - **Fano Index:** $1$
+    - **Ambient Index:** $1$
     - **Basis Rank:** $6$
     - **Exact data identifier:** `d3154e614ad6`
 

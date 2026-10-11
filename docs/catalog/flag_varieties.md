@@ -2,9 +2,10 @@
 description: Small quantum multiplication for flag varieties, with exact matrices and reproducible localization inputs.
 ---
 
-# Flag Varieties
+# Full flag example
 
-This section contains complete intersections inside this geometric family, systematically organized by dimension and Fano index.
+The full flag variety `Fl(1,2;3)` illustrates the untwisted calculation.
+See [Flag varieties and sections](additional.md) for the other computed flag examples.
 
 For the kept-root beta convention and copyable browser/CLI syntax, see [How to Use](../how-to-use.md).
 
@@ -16,7 +17,7 @@ can be copied into a GW-invariant request.
 
 ## 3-folds
 
-| Geometry | Fano Index | Basis Rank |
+| Geometry | Ambient Index | Basis Rank |
 |---|---|---|
 | [(a)  Fl(1,2,3)](#afl123) | 2 | 6 |
 
@@ -26,7 +27,7 @@ can be copied into a GW-invariant request.
 ### (a)  Fl(1,2,3)
 - **Ambient Space:** `$A2$`
 - **Dimension:** $3$
-- **Fano Index:** $2$
+- **Ambient Index:** $2$
 - **Basis Rank:** $6$
 - **Eigenvalues:** $- 4 \sqrt{2}$ (mult: 1), $4 \sqrt{2}$ (mult: 1), $- 2 i$ (mult: 2), $2 i$ (mult: 2)
 

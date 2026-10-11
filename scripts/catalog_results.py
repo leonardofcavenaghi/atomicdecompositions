@@ -34,10 +34,11 @@ def additional_page(records):
     lines = [
         '---',
         'description: Exact quantum multiplication matrices and reproducible inputs for additional flag varieties and their complete intersections.',
-        '---', '', '# Additional flag varieties and sections', '',
+        '---', '', '# Flag varieties and sections', '',
         'These entries include orthogonal, symplectic, exceptional and partial flag varieties, '
         'and complete intersections in them. Each displayed matrix comes from exact '
         '`gwflags` virtual localization using the full automatically supported curve list.', '',
+        'For a worked full-flag example, see [Fl(1,2,3)](flag_varieties.md#afl123).', '',
         'Matrices represent multiplication by $c_1(TY)$ on the returned ambient sector, '
         'with every Novikov variable set to $1$. Columns are inputs and rows are outputs. '
         'The ordered basis below uses reduced Schubert words; `()` is the unit. '
@@ -45,7 +46,7 @@ def additional_page(records):
         '[Download all symbolic matrices, bases, gradings and curve classes](../data/localization-results.json) '
         'or browse [Download matrices and inputs](computed.md). '
         'See [How to Use](../how-to-use.md) for input conventions.', '',
-        '| Geometry | Dimension | Fano index | Basis rank |',
+        '| Geometry | Dimension | Ambient index | Basis rank |',
         '|---|---|---|---|',
     ]
     for r in selected:
@@ -57,7 +58,7 @@ def additional_page(records):
                   f'    - **Keep Nodes:** `{",".join(map(str, r["input"]["keep"]))}`',
                   f'    - **Bundle K:** `{bundle_input(r)}`' if bundle_input(r) else '    - **Bundle K:** empty (the flag variety itself)',
                   f'    - **Dimension:** ${r["dimension"]}$',
-                  f'    - **Fano Index:** ${r["fano_index"]}$',
+                  f'    - **Ambient Index:** ${r["fano_index"]}$',
                   f'    - **Basis Rank:** ${len(r["basis_indices"])}$',
                   f'    - **Exact data identifier:** `{r["id"]}`', '',
                   '    ??? note "Quantum Matrix ($y=1$)"', '        $$',
@@ -69,10 +70,8 @@ def additional_page(records):
             word_text = '(' + ' '.join(map(str, word)) + ')'
             lines.append(f'        | {i + 1} | `{word_text}` | {degree} |')
         if r['id'] == 'e1322438fd01':
-            lines += ['', '    This matrix includes the nonzero degree-5 contributions. '
-                      'The earlier reference stopped at degree 4 and used a different '
-                      'basis in degree 3; see [Reference discrepancies](../discrepancy.md).']
-    return '\n'.join(lines) + '\n'
+            lines += ['', '    The full matrix includes nonzero contributions from curve classes of anticanonical degree 5.']
+    return '\n'.join(lines).rstrip() + '\n'
 
 
 def computed_page(records):
@@ -86,6 +85,10 @@ def computed_page(records):
         'You can read the examples directly in the [catalog](index.md); the download is optional. '
         '**Exact** means that fractions and symbolic expressions are preserved instead of '
         'rounded decimal approximations.', '',
+        'The `fano_index` field uses the software’s ambient Chern-lattice convention; '
+        'it need not be the intrinsic Fano index of a low-dimensional section. '
+        'For example, a conic is `P1` with geometric index 2 even when the ambient gcd is 1. '
+        'See [catalog conventions](index.md).', '',
         f'This collection contains **{len(records)} completed exact localization computations**, '
         f'including **{sum(r["dimension"] == 3 for r in records)} threefold realizations**. '
         'Different realizations are listed separately even when the resulting varieties are isomorphic.', '',
@@ -95,14 +98,8 @@ def computed_page(records):
         '$c_1(TY)$ multiplication matrix, its specialization at all $y_i=1$, the '
         'ordered Schubert basis, and the grading. Rational numbers are stored as exact strings. '
         'The matrix acts on the returned ambient sector, with columns as inputs and rows as outputs.', '',
-        'The [additional flag varieties and sections](additional.md) page presents 15 '
-        'more catalog entries, including the full GM-20 fourfold matrix. Existing '
-        'projective, Grassmannian and Fanography matrices are linked below.', '',
-        'The dataset was assembled from completed runs of the existing `gwflags` '
-        'virtual-localization engine. Validation checks executable geometry, supported '
-        'curve lists, ordered bases, grading, exact specialization, characteristic '
-        'polynomials and agreement with the displayed matrices. The scope of the '
-        'ambient computation is described in [Methodology](../methodology.md).', '',
+        'These are the same results displayed in the [catalog](index.md). '
+        'See [Methods and conventions](../methodology.md) for their mathematical scope.', '',
         '## Use a saved result', '', '```python', 'import json',
         'from pathlib import Path', '',
         'data = json.loads(Path("localization-results.json").read_text())',
@@ -112,12 +109,8 @@ def computed_page(records):
         'To recompute a record, construct `FlagVariety` with its algebra and kept '
         'roots, parse its bundle using the documented input syntax, and call '
         '`small_quantum_multiplication(K)` without restricting the automatic curve list.', '',
-        '| Geometry | Dimension | Fano index | Basis rank | Data identifier |',
-        '|---|---|---|---|---|',
     ]
-    for r in records:
-        lines.append(f"| [{r['title']}]({r['catalog_page']}#{r['catalog_anchor']}) | {r['dimension']} | {r['fano_index']} | {len(r['basis_indices'])} | `{r['id']}` |")
-    return '\n'.join(lines) + '\n'
+    return '\n'.join(lines).rstrip() + '\n'
 
 
 def generated_pages(records):

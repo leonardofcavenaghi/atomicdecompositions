@@ -20,7 +20,7 @@ CARD_RE = re.compile(r'^\?\?\? example "([^"]+)"', re.MULTILINE)
 ANCHOR_RE = re.compile(r'<span\s+id="([^"]+)"\s*>', re.IGNORECASE)
 FIELD_RE = {
     "dimension": re.compile(r'^\s*- \*\*Dimension:\*\*\s*[\$`]?(-?\d+)[\$`]?\s*$', re.MULTILINE),
-    "index": re.compile(r'^\s*- \*\*Fano Index:\*\*\s*[\$`]?(-?\d+)[\$`]?\s*$', re.MULTILINE),
+    "index": re.compile(r'^\s*- \*\*(?:Ambient Index|Fano Index):\*\*\s*[\$`]?(-?\d+)[\$`]?\s*$', re.MULTILINE),
     "rank": re.compile(r'^\s*- \*\*Basis Rank:\*\*\s*[\$`]?(\d+)[\$`]?\s*$', re.MULTILINE),
 }
 MATRIX_RE = re.compile(r"\\begin\{bmatrix\}(.*?)\\end\{bmatrix\}", re.DOTALL)

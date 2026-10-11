@@ -8,7 +8,7 @@ This section records the 105 smooth Fano threefold families from Fanography.
 Entries with supported flag-variety inputs include computed ambient matrices;
 entries marked **Catalog only** have reference descriptions without a computed matrix.
 
-**Realization types.** Entries labelled direct flag variety or complete intersection can be entered in gwflags. Homogeneous-bundle entries require the corresponding bundle constructor. Catalog-only entries are recorded for reference and are not runnable with the current input model.
+**Realization types.** Entries labelled direct flag variety or complete intersection can be entered in gwflags. Homogeneous-bundle entries require the corresponding bundle constructor. Catalog-only entries link to reference information; no executable input or computed matrix is provided here.
 
 ### Fano Variety 1-1
 ??? example "1-1"
@@ -23,7 +23,7 @@ entries marked **Catalog only** have reference descriptions without a computed m
     - **Ambient Space:** `$A4$`
     - **Keep Nodes:** `1`
     - **Bundle K:** `4`
-    - **Fano Index:** `1`
+    - **Ambient Index:** `1`
     - **Dimension:** `3`
     - **Basis Rank:** `4`
     - **Description:** Hypersurface of degree 4 in $\mathbb{P}^4$; double cover of 1-16 with branch locus a divisor of degree 8.
@@ -41,7 +41,7 @@ entries marked **Catalog only** have reference descriptions without a computed m
     - **Ambient Space:** `$A5$`
     - **Keep Nodes:** `1`
     - **Bundle K:** `2;3`
-    - **Fano Index:** `1`
+    - **Ambient Index:** `1`
     - **Dimension:** `3`
     - **Basis Rank:** `4`
     - **Description:** Complete intersection of a quadric and a cubic in $\mathbb{P}^5$.
@@ -59,7 +59,7 @@ entries marked **Catalog only** have reference descriptions without a computed m
     - **Ambient Space:** `$A6$`
     - **Keep Nodes:** `1`
     - **Bundle K:** `2;2;2`
-    - **Fano Index:** `1`
+    - **Ambient Index:** `1`
     - **Dimension:** `3`
     - **Basis Rank:** `4`
     - **Description:** Complete intersection of three quadrics in $\mathbb{P}^6$.
@@ -77,7 +77,7 @@ entries marked **Catalog only** have reference descriptions without a computed m
     - **Ambient Space:** `$A4$`
     - **Keep Nodes:** `2`
     - **Bundle K:** `1;1;2`
-    - **Fano Index:** `1`
+    - **Ambient Index:** `1`
     - **Dimension:** `3`
     - **Basis Rank:** `4`
     - **Description:** Gushel–Mukai threefold: section of Gr(2,5) by two hyperplanes and a quadric.
@@ -95,7 +95,7 @@ entries marked **Catalog only** have reference descriptions without a computed m
     - **Ambient Space:** `$D5$`
     - **Keep Nodes:** `5`
     - **Bundle K:** `1;1;1;1;1;1;1`
-    - **Fano Index:** `1`
+    - **Ambient Index:** `1`
     - **Dimension:** `3`
     - **Basis Rank:** `4`
     - **Description:** Section of the half-spinor embedding of a connected component of $\mathrm{OGr}_+(5,10)$ by codimension 7 subspace.
@@ -113,7 +113,7 @@ entries marked **Catalog only** have reference descriptions without a computed m
     - **Ambient Space:** `$A5$`
     - **Keep Nodes:** `2`
     - **Bundle K:** `1;1;1;1;1`
-    - **Fano Index:** `1`
+    - **Ambient Index:** `1`
     - **Dimension:** `3`
     - **Basis Rank:** `4`
     - **Description:** Section of the Plücker embedding of $\mathrm{Gr}(2,6)$ by codimension 5 subspace.
@@ -131,7 +131,7 @@ entries marked **Catalog only** have reference descriptions without a computed m
     - **Ambient Space:** `$C3$`
     - **Keep Nodes:** `3`
     - **Bundle K:** `1;1;1`
-    - **Fano Index:** `1`
+    - **Ambient Index:** `1`
     - **Dimension:** `3`
     - **Basis Rank:** `4`
     - **Description:** Section of the Plücker embedding of $\mathrm{SGr}(3,6)$ by codimension 3 subspace.
@@ -149,7 +149,7 @@ entries marked **Catalog only** have reference descriptions without a computed m
     - **Ambient Space:** `$G2$`
     - **Keep Nodes:** `2`
     - **Bundle K:** `1;1`
-    - **Fano Index:** `1`
+    - **Ambient Index:** `1`
     - **Dimension:** `3`
     - **Basis Rank:** `4`
     - **Description:** Section of the adjoint $\mathrm{G}_2$-Grassmannian $\mathrm{G}_2\mathrm{Gr}(2,7)$ by codimension 2 subspace.
@@ -167,7 +167,7 @@ entries marked **Catalog only** have reference descriptions without a computed m
     - **Ambient Space:** `$A6$`
     - **Keep Nodes:** `3`
     - **Bundle K:** `osum(wedge(2, dual(taut_sub(X, 3))), wedge(2, dual(taut_sub(X, 3))), wedge(2, dual(taut_sub(X, 3))))`
-    - **Fano Index:** `1`
+    - **Ambient Index:** `1`
     - **Dimension:** `3`
     - **Basis Rank:** `4`
     - **Description:** Zero locus of $(\bigwedge^2\mathcal{U}^\vee)^{\oplus 3}$ on $\mathrm{Gr}(3,7)$.
@@ -202,7 +202,7 @@ entries marked **Catalog only** have reference descriptions without a computed m
     - **Ambient Space:** `$A4$`
     - **Keep Nodes:** `1`
     - **Bundle K:** `3`
-    - **Fano Index:** `2`
+    - **Ambient Index:** `2`
     - **Dimension:** `3`
     - **Basis Rank:** `4`
     - **Description:** Hypersurface of degree 3 in $\mathbb{P}^4$ (smooth cubic threefold).
@@ -220,7 +220,7 @@ entries marked **Catalog only** have reference descriptions without a computed m
     - **Ambient Space:** `$A5$`
     - **Keep Nodes:** `1`
     - **Bundle K:** `2;2`
-    - **Fano Index:** `2`
+    - **Ambient Index:** `2`
     - **Dimension:** `3`
     - **Basis Rank:** `4`
     - **Description:** Complete intersection of two quadrics in P⁵.
@@ -239,7 +239,7 @@ entries marked **Catalog only** have reference descriptions without a computed m
     - **Ambient Space:** `$A4$`
     - **Keep Nodes:** `2`
     - **Bundle K:** `1;1;1`
-    - **Fano Index:** `2`
+    - **Ambient Index:** `2`
     - **Dimension:** `3`
     - **Basis Rank:** `4`
     - **Description:** Quintic del Pezzo threefold; section of Plücker embedding of $\mathrm{Gr}(2,5)$ by codimension 3 subspace.
@@ -257,7 +257,7 @@ entries marked **Catalog only** have reference descriptions without a computed m
     - **Ambient Space:** `$A4$`
     - **Keep Nodes:** `1`
     - **Bundle K:** `2`
-    - **Fano Index:** `3`
+    - **Ambient Index:** `3`
     - **Dimension:** `3`
     - **Basis Rank:** `4`
     - **Description:** Hypersurface of degree 2 in $\mathbb{P}^4$ (smooth quadric threefold).
@@ -275,7 +275,7 @@ entries marked **Catalog only** have reference descriptions without a computed m
     - **Ambient Space:** `$A3$`
     - **Keep Nodes:** `1`
     - **Bundle K:** *(none — projective space itself)*
-    - **Fano Index:** `4`
+    - **Ambient Index:** `4`
     - **Dimension:** `3`
     - **Basis Rank:** `4`
     - **Description:** Projective space $\mathbb{P}^3$.
@@ -289,117 +289,186 @@ entries marked **Catalog only** have reference descriptions without a computed m
 
 ### Fano Variety 2-1
 ??? example "2-1"
-    **Description:**
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 2-1](https://fanography.info/2-1).
 
 
 ### Fano Variety 2-2
 ??? example "2-2"
-    **Description:**
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 2-2](https://fanography.info/2-2).
 
 
 ### Fano Variety 2-3
 ??? example "2-3"
-    **Description:**
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 2-3](https://fanography.info/2-3).
 
 
 ### Fano Variety 2-4
 ??? example "2-4"
-    **Description:**
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 2-4](https://fanography.info/2-4).
 
 
 ### Fano Variety 2-5
 ??? example "2-5"
-    **Description:**
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 2-5](https://fanography.info/2-5).
 
 
 ### Fano Variety 2-6
 ??? example "2-6"
-    **Description:**
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 2-6](https://fanography.info/2-6).
 
 
 ### Fano Variety 2-7
 ??? example "2-7"
-    **Description:**
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 2-7](https://fanography.info/2-7).
 
 
 ### Fano Variety 2-8
 ??? example "2-8"
-    **Description:**
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 2-8](https://fanography.info/2-8).
 
 
 ### Fano Variety 2-9
 ??? example "2-9"
-    **Description:**
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 2-9](https://fanography.info/2-9).
 
 
 ### Fano Variety 2-10
 ??? example "2-10"
-    **Description:**
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 2-10](https://fanography.info/2-10).
 
 
 ### Fano Variety 2-11
 ??? example "2-11"
-    **Description:**
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 2-11](https://fanography.info/2-11).
 
 
 ### Fano Variety 2-12
 ??? example "2-12"
-    **Description:**
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 2-12](https://fanography.info/2-12).
 
 
 ### Fano Variety 2-13
 ??? example "2-13"
-    **Description:**
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 2-13](https://fanography.info/2-13).
 
 
 ### Fano Variety 2-14
 ??? example "2-14"
-    **Description:**
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 2-14](https://fanography.info/2-14).
 
 
 ### Fano Variety 2-15
 ??? example "2-15"
-    **Description:**
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 2-15](https://fanography.info/2-15).
 
 
 ### Fano Variety 2-16
 ??? example "2-16"
-    **Description:**
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 2-16](https://fanography.info/2-16).
 
 
 ### Fano Variety 2-17
 ??? example "2-17"
-    **Description:**
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 2-17](https://fanography.info/2-17).
 
 
 ### Fano Variety 2-18
 ??? example "2-18"
-    **Description:** *
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 2-18](https://fanography.info/2-18).
 
 
 ### Fano Variety 2-19
 ??? example "2-19"
-    **Description:**
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 2-19](https://fanography.info/2-19).
 
 
 ### Fano Variety 2-20
 ??? example "2-20"
-    **Description:**
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 2-20](https://fanography.info/2-20).
 
 
 ### Fano Variety 2-21
 ??? example "2-21"
-    **Description:**
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 2-21](https://fanography.info/2-21).
 
 
 ### Fano Variety 2-22
 ??? example "2-22"
-    **Description:**
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 2-22](https://fanography.info/2-22).
 
 
 ### Fano Variety 2-23
 ??? example "2-23"
-    **Description:**
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 2-23](https://fanography.info/2-23).
 
 
 ### Fano Variety 2-24
@@ -407,7 +476,7 @@ entries marked **Catalog only** have reference descriptions without a computed m
     - **Ambient Space:** `A2xA2`
     - **Keep Nodes:** `1,3`
     - **Bundle K:** `1,2`
-    - **Fano Index:** `1`
+    - **Ambient Index:** `1`
     - **Dimension:** `3`
     - **Basis Rank:** `6`
     - **Description:** Divisor of type (1,2) in P² × P².
@@ -421,37 +490,58 @@ entries marked **Catalog only** have reference descriptions without a computed m
         $$
 ### Fano Variety 2-25
 ??? example "2-25"
-    **Description:** *
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 2-25](https://fanography.info/2-25).
 
 
 ### Fano Variety 2-26
 ??? example "2-26"
-    **Description:**
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 2-26](https://fanography.info/2-26).
 
 
 ### Fano Variety 2-27
 ??? example "2-27"
-    **Description:** *
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 2-27](https://fanography.info/2-27).
 
 
 ### Fano Variety 2-28
 ??? example "2-28"
-    **Description:**
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 2-28](https://fanography.info/2-28).
 
 
 ### Fano Variety 2-29
 ??? example "2-29"
-    **Description:** *
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 2-29](https://fanography.info/2-29).
 
 
 ### Fano Variety 2-30
 ??? example "2-30"
-    **Description:** *
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 2-30](https://fanography.info/2-30).
 
 
 ### Fano Variety 2-31
 ??? example "2-31"
-    **Description:** *
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 2-31](https://fanography.info/2-31).
 
 
 ### Fano Variety 2-32
@@ -459,7 +549,7 @@ entries marked **Catalog only** have reference descriptions without a computed m
     - **Ambient Space:** `A2`
     - **Keep Nodes:** `1,2`
     - **Bundle K:** `—`
-    - **Fano Index:** `2`
+    - **Ambient Index:** `2`
     - **Dimension:** `3`
     - **Basis Rank:** `6`
     - **Description:** Full flag variety $Fl(1,2;\mathbb{C}^3)$; divisor of bidegree $(1,1)$ in $\mathbb{P}^2 \times \mathbb{P}^2$.
@@ -482,7 +572,7 @@ entries marked **Catalog only** have reference descriptions without a computed m
     - **Ambient Space:** `A1xA2`
     - **Keep Nodes:** `1,2`
     - **Bundle K:** `—`
-    - **Fano Index:** `1`
+    - **Ambient Index:** `1`
     - **Dimension:** `3`
     - **Basis Rank:** `6`
     - **Description:** P¹ × P².
@@ -503,57 +593,90 @@ entries marked **Catalog only** have reference descriptions without a computed m
 
 ### Fano Variety 2-36
 ??? example "2-36"
-    **Description:** *
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 2-36](https://fanography.info/2-36).
 
 
 ### Fano Variety 3-1
 ??? example "3-1"
-    **Description:**
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 3-1](https://fanography.info/3-1).
 
 
 ### Fano Variety 3-2
 ??? example "3-2"
-    **Description:**
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 3-2](https://fanography.info/3-2).
 
 
 ### Fano Variety 3-3
 ??? example "3-3"
-    **Description:**
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 3-3](https://fanography.info/3-3).
 
 
 ### Fano Variety 3-4
 ??? example "3-4"
-    **Description:**
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 3-4](https://fanography.info/3-4).
 
 
 ### Fano Variety 3-5
 ??? example "3-5"
-    **Description:**
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 3-5](https://fanography.info/3-5).
 
 
 ### Fano Variety 3-6
 ??? example "3-6"
-    **Description:**
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 3-6](https://fanography.info/3-6).
 
 
 ### Fano Variety 3-7
 ??? example "3-7"
-    **Description:**
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 3-7](https://fanography.info/3-7).
 
 
 ### Fano Variety 3-8
 ??? example "3-8"
-    **Description:**
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 3-8](https://fanography.info/3-8).
 
 
 ### Fano Variety 3-9
 ??? example "3-9"
-    **Description:**
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 3-9](https://fanography.info/3-9).
 
 
 ### Fano Variety 3-10
 ??? example "3-10"
-    **Description:**
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 3-10](https://fanography.info/3-10).
 
 
 ### Fano Variety 3-11
@@ -561,7 +684,7 @@ entries marked **Catalog only** have reference descriptions without a computed m
     - **Ambient Space:** `A1xA1xA2`
     - **Keep Nodes:** `1,2,3`
     - **Bundle K:** `1,1,1`
-    - **Fano Index:** `1`
+    - **Ambient Index:** `1`
     - **Dimension:** `3`
     - **Basis Rank:** `8`
     - **Description:** Divisor of tridegree $(1,1,1)$ in $\mathbb{P}^1 \times \mathbb{P}^1 \times \mathbb{P}^2$; a blow-up of the quadric $Q^3$ along a conic.
@@ -574,67 +697,106 @@ entries marked **Catalog only** have reference descriptions without a computed m
 
 ### Fano Variety 3-12
 ??? example "3-12"
-    **Description:**
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 3-12](https://fanography.info/3-12).
 
 
 ### Fano Variety 3-13
 ??? example "3-13"
-    **Description:**
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 3-13](https://fanography.info/3-13).
 
 
 ### Fano Variety 3-14
 ??? example "3-14"
-    **Description:**
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 3-14](https://fanography.info/3-14).
 
 
 ### Fano Variety 3-15
 ??? example "3-15"
-    **Description:**
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 3-15](https://fanography.info/3-15).
 
 
 ### Fano Variety 3-16
 ??? example "3-16"
-    **Description:**
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 3-16](https://fanography.info/3-16).
 
 
 ### Fano Variety 3-17
 ??? example "3-17"
-    **Description:** *
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 3-17](https://fanography.info/3-17).
 
 
 ### Fano Variety 3-18
 ??? example "3-18"
-    **Description:** *
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 3-18](https://fanography.info/3-18).
 
 
 ### Fano Variety 3-19
 ??? example "3-19"
-    **Description:** *
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 3-19](https://fanography.info/3-19).
 
 
 ### Fano Variety 3-20
 ??? example "3-20"
-    **Description:**
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 3-20](https://fanography.info/3-20).
 
 
 ### Fano Variety 3-21
 ??? example "3-21"
-    **Description:** *
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 3-21](https://fanography.info/3-21).
 
 
 ### Fano Variety 3-22
 ??? example "3-22"
-    **Description:**
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 3-22](https://fanography.info/3-22).
 
 
 ### Fano Variety 3-23
 ??? example "3-23"
-    **Description:**
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 3-23](https://fanography.info/3-23).
 
 
 ### Fano Variety 3-24
 ??? example "3-24"
-    **Description:** *
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 3-24](https://fanography.info/3-24).
 
 
 ### Fano Variety 3-25
@@ -646,7 +808,10 @@ entries marked **Catalog only** have reference descriptions without a computed m
 
 ### Fano Variety 3-26
 ??? example "3-26"
-    **Description:** *
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 3-26](https://fanography.info/3-26).
 
 
 ### Fano Variety 3-27
@@ -655,7 +820,7 @@ entries marked **Catalog only** have reference descriptions without a computed m
     - **Ambient Space:** `A1xA1xA1`
     - **Keep Nodes:** `1,2,3`
     - **Bundle K:** *(none — product flag variety)*
-    - **Fano Index:** `2`
+    - **Ambient Index:** `2`
     - **Dimension:** `3`
     - **Basis Rank:** `8`
     - **Description:** Product $(\mathbb{P}^1)^3$.
@@ -668,22 +833,34 @@ entries marked **Catalog only** have reference descriptions without a computed m
 
 ### Fano Variety 3-28
 ??? example "3-28"
-    **Description:** *
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 3-28](https://fanography.info/3-28).
 
 
 ### Fano Variety 3-29
 ??? example "3-29"
-    **Description:**
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 3-29](https://fanography.info/3-29).
 
 
 ### Fano Variety 3-30
 ??? example "3-30"
-    **Description:** *
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 3-30](https://fanography.info/3-30).
 
 
 ### Fano Variety 3-31
 ??? example "3-31"
-    **Description:** *
+
+    **Realization type:** Catalog only — no computed matrix is provided here.
+
+    **Reference:** [Fanography 3-31](https://fanography.info/3-31).
 
 
 ### Fano Variety 4-1
@@ -691,7 +868,7 @@ entries marked **Catalog only** have reference descriptions without a computed m
     - **Ambient Space:** `A1xA1xA1xA1`
     - **Keep Nodes:** `1,2,3,4`
     - **Bundle K:** `1,1,1,1`
-    - **Fano Index:** `1`
+    - **Ambient Index:** `1`
     - **Dimension:** `3`
     - **Basis Rank:** `10`
     - **Description:** Smooth (1,1,1,1) hypersurface in (P¹)⁴.

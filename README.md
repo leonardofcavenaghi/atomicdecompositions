@@ -19,7 +19,7 @@ product* (`'A3xA3'` for P³×P³-type flags, `'A1xA1xA4'`, …):
   line bundles and curve-wise-convex homogeneous bundles, including quotients and subbundles,
   duals, direct sums, tensor, symmetric and exterior powers);
 - the **small quantum multiplication matrix `c1(TX)⋆`**, its grading
-  operator, and its **eigenvalues**, plus the **Fano index** and the curve
+  operator, and its **eigenvalues**, plus the **ambient Chern index** and the curve
   classes to sum over.
 
 ## How it is fast
@@ -226,7 +226,7 @@ realization; Schubert classes are minimal coset representatives
 | Quadric threefold Q³ in P⁴ (K=[[2]]): Fano index, full SQM matrix, grading, and eigenvalues {0} ∪ 3·2^{2/3}y^{1/3}µ₃ agree **exactly with V3.nb's cached Mathematica output** (the notebook's one completely saved run) | ✓ |
 | **Homogeneous-bundle twists** (`gwflags/bundles.py`, `tests/test_bundles.py`): complete intersections in arbitrary curve-wise-convex homogeneous bundles via fiber-weight multisets — tautological Q and S\*, duals, ⊕/⊗/Sym/Λ, cross-factor box products. Verified by classical isomorphisms: Z(Gr(2,4), Q) = P² and Z(Gr(2,5), Q) = P³ (**twisted SQM equals the native matrix entry-for-entry**), Z(Gr(2,5), Sym²S\*) = OG(2,5) = B₂/P₂ (**cross-Dynkin-type spectral agreement**); legacy split rows reproduce exactly; non-convex bundles (e.g. S) rejected with guidance | ✓ |
 | **Second, formula-independent engine** (`gwflags/gkm.py`, `tests/test_gkm_engine.py`): the Holmes–Muratore GKM localization formula (arXiv:2509.07562, Thm 3.4) implemented from their statement — intrinsic GKM-graph trees, connection-based edge factors, uniform vertex factor — and diffed against the classical engine **at the same random torus point: raw localization sums agree exactly as rational numbers** across P², Fl(3), Gr(2,4), SO(5)/B, P²×P² (incl. degree-2, 5-mark, and non-gated homogeneous sums); h(e,d) flag-independence (their Thm 3.6) verified; no parallel GKM edges in the battery (documents the dedup assumption) | ✓ |
-| **Full reference campaign** (`tests/reference_cases.py` / `test_reference_list.py`): ~30 externally computed quantum matrices — hypersurfaces/CIs in P⁴ and P⁵, Gr(2,4)/Gr(2,5) families (incl. del Pezzo and Gushel–Mukai sections), Gr(2,6)∩O(1,1,2), Fl(1,3,4) (both sections), Fl(1,4,5) (flag 20×20 + double section), B2/B∩O(1,1), **G₂/P₁, G₂/P₂ (±O(1)), OG(3,7)=B₃ (four sections), LG(3,6)=C₃ (two sections)** — all match exactly. Two reference discrepancies adjudicated with independent mathematics (see [discrepancy report](docs/discrepancy.md)): the V₈ corner entry is a genuine factor-2 error in the reference (quantum-period referee: T = 56 exactly); the Fl(1,2,5)/GM-20 reference is **correct at curve degrees ≤ 4 up to an explicit degree-3 basis change** (`tests/gm20_forensics.py` exhibits the conjugation) but misses the degree-5 classes, which are certified nonzero by the divisor axiom | ✓ |
+| **Reference regressions:** stored exact matrices are checked against the localization engine; the full GM-20 calculation includes the supported degree-5 classes. See `tests/test_reference_list.py` and `tests/gm20_forensics.py`. | ✓ |
 | AHU canonicalization + automorphism orders ≡ brute-force n! reference on 4600 random labeled trees; DFS decoration enumeration ≡ compositions/permutations reference | ✓ |
 
 ## Reproducible validation

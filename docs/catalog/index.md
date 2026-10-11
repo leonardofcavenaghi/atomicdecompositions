@@ -1,36 +1,41 @@
 ---
-description: Explore exact small quantum multiplication matrices, Fano indices, and ambient cohomology for Fano varieties and complete intersections computed with gwflags.
+description: Explore exact quantum multiplication matrices, ambient indices and cohomology for flag varieties and complete intersections computed with gwflags.
 ---
 
-# Catalog Master Search
+# Catalog
 
-[Download matrices and inputs](computed.md) for 131 completed localization
-results, with downloadable symbolic matrices, ordered bases, gradings and curve
-classes. The [additional flag varieties and sections](additional.md) include
-15 entries beyond the original category pages.
+Browse quantum multiplication matrices by geometry, or use the table below
+to find an example. The catalog includes projective and Grassmannian complete
+intersections, other flag varieties, and supported Fano threefold realizations.
 
-Welcome to the **Master Search Database**. Use the search bar in the top right of this table to instantly filter through all computed geometric spaces, or sort by dimension, Fano index, and rank. You can type freely (e.g., "Gr", "Fano Index 2", "15") to find exactly what you are looking for.
+<div class="catalog-collections" markdown>
 
-This index links the canonical catalog pages. **Basis Rank** is the size of the displayed square quantum matrix. Fanography entries additionally state a realization type: runnable flag varieties and complete intersections are separated from catalog-only weighted, double-cover, or blow-up references. Use the category pages for full metadata, matrices, and assumptions.
+- [**Projective spaces**](projective.md) — complete intersections in projective space
+- [**Grassmannians**](grassmannians.md) — Grassmannians and their sections
+- [**Flag varieties and sections**](additional.md) — partial, orthogonal, symplectic and exceptional flags
+- [**Fano threefolds**](fanography.md) — reference families with supported computations identified
 
-To reproduce a card, use the [How to Use](../how-to-use.md) guide: enter the
-listed algebra, kept roots, and bundle rows, then use beta in kept-root order (or
-a zero-padded ambient vector). The guide contains the complete input syntax
-and the flag-ambient scope caveat.
+</div>
 
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css">
-<script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js"></script>
-<script>
-$(document).ready( function () {
-    $('table').DataTable({
-        "pageLength": 25,
-        "order": [[ 2, "desc" ]]
-    });
-} );
-</script>
+## Reading an entry
 
-| Geometry | Ambient Space | Dimension | Fano Index | Basis Rank |
+Matrices describe multiplication by the first Chern class on the returned
+ambient sector. **Basis Rank** is the size of the displayed matrix. The
+**Ambient Index** field uses the software’s ambient Chern gcd; a conic can have
+displayed index 1 while its geometric index is 2, and this gcd does not define
+a geometric Fano index for a point. See [Methods and conventions](../methodology.md).
+
+Entries labelled **Catalog only** are reference descriptions without a
+supported computation. To repeat a computed example, use its algebra, kept
+nodes and bundle in the [user guide](../how-to-use.md).
+[Download matrices and inputs](computed.md) provides the symbolic results,
+ordered bases and gradings for all 131 saved computations.
+
+## All computed entries
+
+Filter by a name or number, or select a column heading to sort the table.
+
+| Geometry | Ambient Space | Dimension | Ambient Index | Basis Rank |
 |---|---|---|---|---|
 | [Gr(2,6)](grassmannians.md#gr26) | A5 | 8 | 6 | 15 |
 | [P8  Fano index 9](projective.md#p8fanoindex9) | A8 | 8 | 9 | 9 |
