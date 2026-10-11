@@ -85,6 +85,9 @@ jobs:
       - name: Validate catalog source
         run: PYTHONDONTWRITEBYTECODE=1 python scripts/validate_catalog.py
 
+      - name: Validate exact computation data and catalog index
+        run: PYTHONDONTWRITEBYTECODE=1 python scripts/validate_localization_results.py
+
       - name: Validate catalog LaTeX
         run: PYTHONDONTWRITEBYTECODE=1 python scripts/validate_catalog_tex.py
 

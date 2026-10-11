@@ -83,6 +83,8 @@ nav:
       - Projective Spaces: catalog/projective.md
       - Grassmannians: catalog/grassmannians.md
       - Flag Varieties: catalog/flag_varieties.md
+      - Additional Flag Varieties and Sections: catalog/additional.md
+      - Exact Computation Data: catalog/computed.md
       - Fanography: catalog/fanography.md
   - Review and Changes:
       - Change log: change-log.md

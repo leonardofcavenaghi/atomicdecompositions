@@ -1,5 +1,12 @@
 # Release notes
 
+## v1.0.4 — 2026-10-11
+
+- Added 15 completed flag-variety and section entries, including the full GM-20 matrix.
+- Published exact symbolic matrices, ordered bases, gradings and supported curve lists for 131 completed localization computations.
+- Rebuilt the master catalog table from canonical entries, correcting stale Fano indices and adding the new examples.
+- Added exact data-to-catalog validation and browser coverage for the new entries.
+
 ## v1.0.3 — 2026-10-02
 
 - Formulas render after page navigation without requiring a refresh, including rapid page changes.
@@ -15,10 +22,10 @@
 
 ## Downloads
 
-- [Stable source ZIP: v1.0.3](https://github.com/leonardofcavenaghi/atomicdecompositions/archive/refs/tags/v1.0.3.zip)
+- [Stable source ZIP: v1.0.4](https://github.com/leonardofcavenaghi/atomicdecompositions/archive/refs/tags/v1.0.4.zip)
 - [Current main source ZIP](https://github.com/leonardofcavenaghi/atomicdecompositions/archive/refs/heads/main.zip)
 
-The stable ZIP matches version `1.0.3`. Record the commit when using main.
+The stable ZIP matches version `1.0.4`. Record the commit when using main.
 
 ## v1.0.1 — 2026-09-17
 

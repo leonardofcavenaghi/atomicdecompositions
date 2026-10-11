@@ -196,7 +196,12 @@ def validate() -> list[str]:
             if target_file and not target_file.endswith('.md'):
                 continue
             if anchor not in anchors:
-                errors.append(f'{path.relative_to(ROOT)}: link target #{anchor} has no matching anchor')
+                # Fanography cards use stable Markdown headings.
+                target = path.parent / target_file if target_file else path
+                headings = re.findall(r'^#{1,6}\s+(.+)$', target.read_text(encoding='utf-8'), re.MULTILINE) if target.exists() else []
+                heading_ids = {re.sub(r'[^\w -]', '', heading).lower().replace(' ', '-') for heading in headings}
+                if anchor not in heading_ids:
+                    errors.append(f'{path.relative_to(ROOT)}: link target #{anchor} has no matching anchor')
     return errors
 
 

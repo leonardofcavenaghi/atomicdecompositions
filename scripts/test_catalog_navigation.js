@@ -94,6 +94,31 @@ async function main() {
       .some(node => node.querySelectorAll('mjx-container').length !== 1));
     if (duplicates || errors.length) throw new Error(JSON.stringify({duplicates, errors}));
     console.log(`Catalog navigation passed: ${pageState.formulas} formulas rendered; #gr26 opened; rapid navigation rendered without refresh`);
+    await page.goto(`${base}/catalog/additional/#fl125o01o02o10gm20`, {waitUntil: 'domcontentloaded'});
+    await page.waitForFunction(() => {
+      const card = document.getElementById('fl125o01o02o10gm20').parentElement.nextElementSibling;
+      return card.open && card.querySelector('mjx-container');
+    });
+    await page.waitForFunction(() => [...document.querySelectorAll('.arithmatex')]
+      .every(node => node.querySelectorAll('mjx-container').length === 1));
+    const computed = await page.evaluate(async () => {
+      const response = await fetch('../../data/localization-results.json');
+      if (!response.ok) throw new Error('Exact dataset is not downloadable');
+      const data = await response.json();
+      const gm = data.examples.find(row => row.id === 'e1322438fd01');
+      return {records: data.examples.length, cards: document.querySelectorAll('details.example').length,
+        gmRank: gm.matrix_at_one.length, corner: gm.matrix_at_one[0][8]};
+    });
+    if (computed.records !== 131 || computed.cards !== 15 || computed.gmRank !== 9 || computed.corner !== '880') {
+      throw new Error(JSON.stringify(computed));
+    }
+    if (process.env.CATALOG_SCREENSHOT) await page.screenshot({path: process.env.CATALOG_SCREENSHOT, fullPage: false});
+    await page.goto(`${base}/catalog/`, {waitUntil: 'networkidle0'});
+    await page.waitForFunction(() => window.jQuery && jQuery.fn.dataTable && jQuery.fn.dataTable.isDataTable('table'));
+    await page.evaluate(() => jQuery('table').DataTable().search('P4 / O(3)', false, false).draw());
+    const cubicIndex = await page.$eval('tbody tr', row => row.cells[3].textContent.trim());
+    if (cubicIndex !== '2' || errors.length) throw new Error(JSON.stringify({cubicIndex, errors}));
+    console.log('Computed catalog passed: 15 new cards, 131 downloadable results, full GM-20 matrix, corrected master-table Fano index.');
   } finally {
     await browser.close();
     await new Promise(resolve => server.close(resolve));

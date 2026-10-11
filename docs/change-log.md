@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-11
+
+- Published 15 additional exact quantum multiplication examples for flag varieties and their sections.
+- Added downloadable exact data for 131 completed localization computations, including the symbolic matrices, original ordered bases, grading and full supported curve lists.
+- Corrected stale master-table Fano indices by generating the index from canonical catalog entries.
+- Added validation of exact saved results against executable inputs and displayed matrices; released version `1.0.4`.
+
 ## 2026-10-02
 
 - Fixed formula rendering during page navigation and rapid page changes; refreshing is no longer required.
