@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="The virtual-localization and Euler-twisted decorated-tree formulas used by gwflags for genus-zero Gromov-Witten invariants.">
+        <meta name="description" content="Virtual localization, ambient quantum multiplication, curve degrees and verification conventions used by gwflags.">
       
       
       
@@ -16,7 +16,7 @@
         <link rel="prev" href="../releases/">
       
       
-        <link rel="next" href="../api-reference/">
+        <link rel="next" href="../lie-algebras/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Core Theory - GEOATOMS</title>
+        <title>Methods and Conventions - GEOATOMS</title>
       
     
     
@@ -52,6 +52,8 @@
         <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
       
     
+    
+      <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css">
     
       <link rel="stylesheet" href="../stylesheets/extra.css">
     
@@ -80,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#mathematical-methodology-and-replication" class="md-skip">
+        <a href="#methods-and-conventions" class="md-skip">
           Skip to content
         </a>
       
@@ -115,7 +117,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Core Theory
+              Methods and Conventions
             
           </span>
         </div>
@@ -240,63 +242,6 @@
   
   
   
-    <li class="md-tabs__item">
-      <a href="../about/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  About
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../installation/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  Installation
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../how-to-use/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  How to Use
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
     
     
       <li class="md-tabs__item">
@@ -322,36 +267,17 @@
     
     
       <li class="md-tabs__item">
-        <a href="../change-log/" class="md-tabs__link">
+        <a href="../installation/" class="md-tabs__link">
           
   
   
     
   
-  Review and Changes
+  Software
 
         </a>
       </li>
     
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../releases/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  Releases
-
-      </a>
-    </li>
   
 
       
@@ -371,11 +297,30 @@
   
     
   
-  Methodology
+  Mathematics
 
         </a>
       </li>
     
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../about/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  About
+
+      </a>
+    </li>
   
 
       
@@ -464,94 +409,11 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../about/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    About
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../installation/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Installation
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../how-to-use/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    How to Use
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
     
     
       
         
           
-        
-      
         
       
         
@@ -577,9 +439,7 @@
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           <div class="md-nav__link md-nav__container">
@@ -601,14 +461,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -683,34 +543,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../catalog/flag_varieties/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Flag Varieties
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../catalog/additional/" class="md-nav__link">
         
   
@@ -718,7 +550,7 @@
   <span class="md-ellipsis">
     
   
-    Additional Flag Varieties and Sections
+    Flag Varieties and Sections
   
 
     
@@ -774,7 +606,7 @@
   <span class="md-ellipsis">
     
   
-    Fanography
+    Fano Threefolds
   
 
     
@@ -803,8 +635,6 @@
   
     
     
-      
-        
       
         
       
@@ -827,19 +657,17 @@
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   
   <span class="md-ellipsis">
     
   
-    Review and Changes
+    Software
   
 
     
@@ -850,12 +678,12 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
   
-    Review and Changes
+    Software
   
 
           </label>
@@ -868,14 +696,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../change-log/" class="md-nav__link">
+      <a href="../installation/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Change log
+    Installation
   
 
     
@@ -896,14 +724,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../audits/website-usage-review/" class="md-nav__link">
+      <a href="../how-to-use/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Website Usage Audit
+    User Guide
   
 
     
@@ -924,14 +752,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../audits/catalog-review/" class="md-nav__link">
+      <a href="../api-reference/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Catalog Review
+    Python API
   
 
     
@@ -947,69 +775,6 @@
             
               
                 
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../audits/math-software-review/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Mathematics and Software Audit
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../discrepancy/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Reference Discrepancies
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
   
   
   
@@ -1034,6 +799,14 @@
     </li>
   
 
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
     
       
       
@@ -1045,8 +818,6 @@
   
     
     
-      
-        
       
         
       
@@ -1068,17 +839,17 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
             
   
   
   <span class="md-ellipsis">
     
   
-    Methodology
+    Mathematics
   
 
     
@@ -1089,12 +860,12 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_8">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             
   
-    Methodology
+    Mathematics
   
 
           </label>
@@ -1123,7 +894,7 @@
   <span class="md-ellipsis">
     
   
-    Core Theory
+    Methods and Conventions
   
 
     
@@ -1141,7 +912,7 @@
   <span class="md-ellipsis">
     
   
-    Core Theory
+    Methods and Conventions
   
 
     
@@ -1167,10 +938,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-goal-of-the-software" class="md-nav__link">
+  <a href="#quantum-multiplication" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Goal of the Software
+        Quantum multiplication
       
     </span>
   </a>
@@ -1178,10 +949,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-virtual-localization-graber-pandharipande" class="md-nav__link">
+  <a href="#virtual-localization" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Virtual Localization (Graber-Pandharipande)
+        Virtual localization
       
     </span>
   </a>
@@ -1189,10 +960,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-schubert-classes-and-flag-ambient-cohomology" class="md-nav__link">
+  <a href="#complete-intersections-and-the-ambient-sector" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Schubert classes and flag-ambient cohomology
+        Complete intersections and the ambient sector
       
     </span>
   </a>
@@ -1200,10 +971,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-replicating-the-computations" class="md-nav__link">
+  <a href="#curve-degrees-and-index" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Replicating the Computations
+        Curve degrees and index
       
     </span>
   </a>
@@ -1211,63 +982,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4a-coordinate-contract-used-by-the-software" class="md-nav__link">
+  <a href="#verification" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4a. Coordinate contract used by the software
+        Verification
       
     </span>
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-gromov-witten-invariants-theory-and-examples" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. Gromov-Witten Invariants: Theory and Examples
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="5. Gromov-Witten Invariants: Theory and Examples">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#intuitive-exemplification" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Intuitive Exemplification
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#quantum-cohomology" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Quantum Cohomology
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#why-gwflags-computes-c_1tx-star-" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Why gwflags Computes \(c_1(TX) \star (-)\)
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1287,34 +1008,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../api-reference/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    API Reference
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../lie-algebras/" class="md-nav__link">
         
   
@@ -1322,7 +1015,7 @@
   <span class="md-ellipsis">
     
   
-    Lie Algebras Guide
+    Flag Variety Inputs
   
 
     
@@ -1339,6 +1032,33 @@
           </ul>
         </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -1389,7 +1109,7 @@
         <a href="./" class="md-path__link">
           
   <span class="md-ellipsis">
-    Methodology
+    Mathematics
   </span>
 
         </a>
@@ -1411,89 +1131,101 @@
   
 
 
-<h1 id="mathematical-methodology-and-replication">Mathematical Methodology and Replication<a class="headerlink" href="#mathematical-methodology-and-replication" title="Permanent link">&para;</a></h1>
-<p>This document explains the mathematical foundations underpinning the <code>gwflags</code> software and how the computed invariants of complete intersections in flag varieties are calculated.</p>
-<h2 id="1-goal-of-the-software">1. Goal of the Software<a class="headerlink" href="#1-goal-of-the-software" title="Permanent link">&para;</a></h2>
-<p>The <code>gwflags</code> library computes the <strong>small quantum multiplication by the first Chern class</strong>, <span class="arithmatex">\(c_1(TX) \star (-)\)</span>, for complete intersections <span class="arithmatex">\(X\)</span> in flag varieties. The software returns its exact matrix together with the grading and basis used in the calculation.</p>
-<p>Specifically, for a complete intersection defined by a homogeneous vector bundle <span class="arithmatex">\(\mathcal{E}\)</span> on an ambient flag variety <span class="arithmatex">\(F = G/P\)</span>, the software evaluates the equivariant Gromov-Witten invariants and constructs the small quantum multiplication matrix projected onto the flag-ambient cohomology <span class="arithmatex">\(H^*_{\text{amb}}(X)\)</span>.</p>
-<h2 id="2-virtual-localization-graber-pandharipande">2. Virtual Localization (Graber-Pandharipande)<a class="headerlink" href="#2-virtual-localization-graber-pandharipande" title="Permanent link">&para;</a></h2>
-<p>Directly integrating Gromov-Witten classes over the moduli space of stable maps is generally computationally infeasible. Instead, <code>gwflags</code> relies on the algebraic torus action <span class="arithmatex">\(T \subset G\)</span> acting on the flag variety <span class="arithmatex">\(F = G/P\)</span> and the corresponding induced action on the moduli space of maps.</p>
-<p>By applying the <strong>Graber-Pandharipande Virtual Localization Theorem</strong>, the integrals are reduced to finite sums over the <span class="arithmatex">\(T\)</span>-fixed loci of the moduli space. The fixed loci correspond to decorated trees (or graphs) where:
-- Vertices map to fixed points of <span class="arithmatex">\(F\)</span> (which are in bijection with the Weyl group quotient <span class="arithmatex">\(W/W_P\)</span>).
-- Edges correspond to invariant curves connecting these fixed points.</p>
-<p>The software recursively generates these graphs for a given curve degree <span class="arithmatex">\(\beta\)</span>, calculates the equivariant Euler classes of the virtual normal bundles (using the roots of <span class="arithmatex">\(G\)</span> and weights of <span class="arithmatex">\(\mathcal{E}\)</span>), and computes the intersection numbers programmatically. </p>
-<p><strong>Reference:</strong> Graber and Pandharipande,
-<a href="https://arxiv.org/abs/alg-geom/9708001">Localization of virtual classes</a>.</p>
-<h2 id="3-schubert-classes-and-flag-ambient-cohomology">3. Schubert classes and flag-ambient cohomology<a class="headerlink" href="#3-schubert-classes-and-flag-ambient-cohomology" title="Permanent link">&para;</a></h2>
-<p>For the ambient space <span class="arithmatex">\(F\)</span>, the cohomology basis consists of Schubert classes <span class="arithmatex">\(\sigma_w\)</span>. When intersecting with the zero locus of <span class="arithmatex">\(\mathcal{E}\)</span>, not all Schubert classes survive.</p>
-<p>The expected dimension and ambient pairing come from the flag and bundle data.
-- For a regular section with smooth zero locus, the dimension is <span class="arithmatex">\(|R^+ \setminus R^+_P| - \text{rank}(\mathcal{E})\)</span>.
-- The flag-ambient cohomology <span class="arithmatex">\(H^*_{\text{amb}}(X)\)</span> is exactly the image of the restriction map <span class="arithmatex">\(i^*: H^*(F, \mathbb{Q}) \to H^*(X, \mathbb{Q})\)</span>.</p>
-<p>The software forms the Euler-twisted classical pairing
-[
-g_{ij}=\int_F\sigma_i\sigma_j e(\mathcal E)
-]
-and selects a nondegenerate submatrix to obtain its returned ambient basis.
-It does not compute primitive cohomology by this reduction. Identifying this
-sector with all cohomology requires additional geometric hypotheses.</p>
-<h2 id="4-replicating-the-computations">4. Replicating the Computations<a class="headerlink" href="#4-replicating-the-computations" title="Permanent link">&para;</a></h2>
-<p>Because <code>gwflags</code> explicitly computes the exact localization graphs, all geometric values (Fano index, dimension, basis rank, and the quantum multiplication matrix <span class="arithmatex">\(A^{\text{alg}}(1)\)</span>) can be natively replicated by a researcher on their local machine.</p>
-<p>To replicate a result found in our <a href="../catalog/">Catalog</a>:
-1. Install <code>gwflags</code> (see <a href="../installation/">Installation</a>).
-2. Instantiate the flag variety using <code>X = FlagVariety(algebra, roots_that_stay)</code>.
-3. Invoke <code>X.small_quantum_multiplication(K)</code> where <span class="arithmatex">\(K\)</span> specifies the multidegrees of the vector bundle. The Python API accepts legacy rows such as <code>[[2]]</code> or a <code>HomogeneousBundle</code>; the browser/CLI accepts compact rows such as <code>2</code> and compact aliases such as <code>Q(2)</code>.
-4. Evaluate the resulting symbolic matrix by setting all <code>y&lt;node&gt; = 1</code> to specialize the small quantum multiplication matrix. The variable label is the ambient Bourbaki node, not the position in an abbreviated kept-root list.</p>
-<p>The saved matrix entries, dimensions, basis and grading can be compared exactly with the software output.</p>
-<h2 id="4a-coordinate-contract-used-by-the-software">4a. Coordinate contract used by the software<a class="headerlink" href="#4a-coordinate-contract-used-by-the-software" title="Permanent link">&para;</a></h2>
-<p>A curve degree is a vector in the simple-coroot basis of the kept
-roots <code>roots_that_stay</code>, in that declared order. For example, a line on
-<code>Gr(2,4) = A3/P2</code> is <code>beta=(1,)</code>. Internally it is embedded as the ambient
-vector <code>(0,1,0)</code>; both forms are accepted by <code>FlagVariety.gw</code> and by the
-website. A full ambient vector is valid only when all removed-root coordinates
-are zero. The dimension gate uses
-<span class="arithmatex">\(\sum \ell(u_i)=\dim X+\langle c_1(TX),\beta\rangle+n-3\)</span>.</p>
-<p>The matrix returned by <code>small_quantum_multiplication</code> is the
-flag-ambient operator described above. It is the full small quantum
-cohomology operator only when the homology and ambient-completeness hypotheses
-are satisfied. The dimension axiom bounds contributing degrees by
-<span class="arithmatex">\(\langle c_1(TX),\beta\rangle\leq\dim X+1\)</span>. This gives a finite
-automatic list when every enumerated curve generator has strictly positive
-Chern pairing. A zero pairing in an otherwise nonzero Chern vector is not
-bounded by this inequality; such cases and negative pairings require explicit
-curve lists unless a supported geometric constructor supplies effective
-generators with positive pairings. If the entire Chern vector is zero, the
-operator is zero.</p>
-<p>The reported index is computed in the specified ambient curve lattice (or
-from a constructor's effective generators). It equals the geometric Fano
-index only when the relevant integral-lattice identification holds. For
-example, a smooth <code>(1,2)</code> curve in <code>P¹ × P¹</code> is <code>P¹</code> with Fano index 2,
-although the ambient Chern vector <code>(1,0)</code> has gcd 1.</p>
-<h2 id="5-gromov-witten-invariants-theory-and-examples">5. Gromov-Witten Invariants: Theory and Examples<a class="headerlink" href="#5-gromov-witten-invariants-theory-and-examples" title="Permanent link">&para;</a></h2>
-<p>To fully understand the output of <code>gwflags</code>, one must understand the underlying objects being computed: <strong>Gromov-Witten (GW) Invariants</strong>.</p>
-<p>At a macroscopic level, Gromov-Witten invariants are rational numbers that count the "virtual" number of complex curves of a given genus <span class="arithmatex">\(g\)</span> and degree <span class="arithmatex">\(\beta\)</span> that intersect a specified collection of subvarieties inside a target space <span class="arithmatex">\(X\)</span>. </p>
-<h3 id="intuitive-exemplification">Intuitive Exemplification<a class="headerlink" href="#intuitive-exemplification" title="Permanent link">&para;</a></h3>
-<p>In classical enumerative geometry, a foundational question is: <em>"How many lines pass through two generic points in the projective plane <span class="arithmatex">\(\mathbb{P}^2\)</span>?"</em> 
-The classical answer is exactly <strong>1</strong>. </p>
-<p>In the language of Gromov-Witten theory, a line has degree <span class="arithmatex">\(d=1\)</span> and genus <span class="arithmatex">\(g=0\)</span>. A point represents a specific cohomology class in <span class="arithmatex">\(H^*(\mathbb{P}^2)\)</span>. The fact that exactly one line passes through two points is encoded as a 2-point Gromov-Witten invariant:
-$$ \langle \text{point}, \text{point} \rangle_{0, 1} = 1 $$</p>
-<p>Another classic example: <em>"How many rational curves of degree <span class="arithmatex">\(d\)</span> pass through <span class="arithmatex">\(3d-1\)</span> general points in <span class="arithmatex">\(\mathbb{P}^2\)</span>?"</em> 
-For <span class="arithmatex">\(d=1\)</span>, we get 1 line through 2 points. For <span class="arithmatex">\(d=2\)</span>, we get 1 conic through 5 points. For <span class="arithmatex">\(d=3\)</span>, we get 12 nodal cubics through 8 points. These values (<span class="arithmatex">\(1, 1, 12, \dots\)</span>) are all Gromov-Witten invariants.</p>
-<h3 id="quantum-cohomology">Quantum Cohomology<a class="headerlink" href="#quantum-cohomology" title="Permanent link">&para;</a></h3>
-<p>Gromov-Witten invariants allow us to "deform" the classical cohomology ring <span class="arithmatex">\(H^*(X)\)</span> into the <strong>Quantum Cohomology Ring</strong> <span class="arithmatex">\(QH^*(X)\)</span>.</p>
-<p>The small quantum product adds genus-zero, three-point GW invariants to the
-classical cup product. If <span class="arithmatex">\(\{\phi_i\}\)</span> is a basis and <span class="arithmatex">\(\{\phi^i\}\)</span>
-its Poincaré-dual basis, then
+<h1 id="methods-and-conventions">Methods and conventions<a class="headerlink" href="#methods-and-conventions" title="Permanent link">&para;</a></h1>
+<p><code>gwflags</code> computes genus-zero Gromov–Witten invariants and small quantum
+multiplication by the first Chern class. For a flag variety <span class="arithmatex">\(F=G/P\)</span>, it
+uses Schubert classes. For a complete intersection <span class="arithmatex">\(Y\subset F\)</span>, the
+returned matrix describes the <strong>flag-ambient sector</strong>: the cohomology classes
+obtained by restriction from <span class="arithmatex">\(F\)</span>.</p>
+<h2 id="quantum-multiplication">Quantum multiplication<a class="headerlink" href="#quantum-multiplication" title="Permanent link">&para;</a></h2>
+<p>Let <span class="arithmatex">\(\{\phi_i\}\)</span> be a cohomology basis and <span class="arithmatex">\(\{\phi^i\}\)</span> its dual
+for the Poincaré pairing. The small quantum product is
 [
 \alpha\star\delta
 =\sum_{\beta,i}q^\beta
 \langle\alpha,\delta,\phi_i\rangle_{0,3,\beta}\,\phi^i.
 ]
-Thus a matrix in a general basis uses the <strong>inverse pairing</strong>, not just the
-array of three-point invariants. The degree-zero term is the ordinary cup
-product. The ambient operator uses the reduced twisted pairing above.</p>
-<h3 id="why-gwflags-computes-c_1tx-star-">Why <code>gwflags</code> Computes <span class="arithmatex">\(c_1(TX) \star (-)\)</span><a class="headerlink" href="#why-gwflags-computes-c_1tx-star-" title="Permanent link">&para;</a></h3>
-<p>The software specializes in computing the quantum multiplication by a very specific class: the first Chern class of the tangent bundle, <span class="arithmatex">\(c_1(TX)\)</span>. </p>
-<p>The matrix represents the small quantum multiplication operator <span class="arithmatex">\(c_1(TX) \star (-)\)</span> in the returned basis. Its entries record the classical product and the Gromov–Witten corrections, with Novikov variables keeping track of curve degrees.</p>
+The degree-zero term is the cup product. In a general basis, forming its
+matrix requires the inverse pairing as well as the three-point invariants.
+The software specializes to <span class="arithmatex">\(\alpha=c_1(TY)\)</span>.</p>
+<p>Matrix columns are inputs and rows are outputs. The returned grading is
+diagonal, with entries <span class="arithmatex">\(\operatorname{codim}(\phi_i)-\dim(Y)/2\)</span>.
+Catalog matrices use all Novikov variables <span class="arithmatex">\(y_i=1\)</span> unless explicitly
+labelled symbolic. The <a href="../catalog/computed/">download</a> preserves both forms
+and the ordered basis.</p>
+<h2 id="virtual-localization">Virtual localization<a class="headerlink" href="#virtual-localization" title="Permanent link">&para;</a></h2>
+<p>The torus action on <span class="arithmatex">\(G/P\)</span> induces an action on the moduli space of stable
+maps. Its genus-zero fixed loci are indexed by decorated trees: vertices map
+to torus-fixed points and edges cover invariant curves. The software sums
+their contributions using the virtual-localization formula of Graber and
+Pandharipande, <a href="https://arxiv.org/abs/alg-geom/9708001">Localization of virtual classes</a>.</p>
+<p>Calculations use exact rational arithmetic. The default implementation
+evaluates the localization sum at two rational torus points and compares the
+results; the symbolic path is also available. Agreement is a consistency check,
+not an independent proof of every formula in the implementation.</p>
+<h2 id="complete-intersections-and-the-ambient-sector">Complete intersections and the ambient sector<a class="headerlink" href="#complete-intersections-and-the-ambient-sector" title="Permanent link">&para;</a></h2>
+<p>For a bundle <span class="arithmatex">\(E\)</span> on <span class="arithmatex">\(F\)</span>, the supported Euler-twisted calculation
+requires nonnegative splitting degrees along the relevant invariant curves.
+A standard geometric interpretation assumes a globally generated bundle and a
+regular section with smooth zero locus <span class="arithmatex">\(Y\)</span>. Then
+[
+\dim Y=\dim F-\operatorname{rank}E,\qquad
+c_1(TY)=\bigl(c_1(TF)-c_1(E)\bigr)|_Y.
+]</p>
+<p>The software forms the classical twisted pairing
+[
+g_{ij}=\int_F\sigma_i\sigma_j e(E)
+]
+and selects a nondegenerate submatrix to obtain its ambient basis. Primitive
+cohomology is not supplied by this reduction. Identifying the output with the
+full quantum-cohomology operator requires the corresponding homology and
+ambient-completeness hypotheses.</p>
+<p>Fixed-point weights alone do not determine the curve restrictions of an
+arbitrary non-split bundle. Quotient constructions must come from a genuine
+geometric quotient with supported restriction data; weight containment is a
+consistency check rather than a proof of a bundle embedding.</p>
+<p><span id="4a-coordinate-contract-used-by-the-software"></span></p>
+<h2 id="curve-degrees-and-index">Curve degrees and index<a class="headerlink" href="#curve-degrees-and-index" title="Permanent link">&para;</a></h2>
+<p>For positive degree and <span class="arithmatex">\(n\)</span> primary insertions, the dimension axiom is
+[
+\sum_i\operatorname{codim}(\alpha_i)
+=\dim Y+\langle c_1(TY),\beta\rangle+n-3.
+]
+For multiplication by <span class="arithmatex">\(c_1\)</span>, it bounds contributing degrees by
+<span class="arithmatex">\(\langle c_1(TY),\beta\rangle\leq\dim Y+1\)</span>. This gives a finite
+automatic list when every enumerated curve generator has positive Chern
+pairing. A zero direction in an otherwise nonzero Chern vector is not bounded
+by this inequality. Such cases, and negative pairings, require explicit curve
+lists unless a supported constructor supplies effective generators with a
+positive bound. If the entire Chern class vanishes, its multiplication
+operator is zero.</p>
+<p>The catalog’s <strong>Ambient Index</strong> is the gcd of the Chern pairings in the
+specified ambient curve lattice (or a constructor’s effective generators).
+It agrees with the geometric Fano index when the relevant integral-lattice
+identification holds. A smooth conic illustrates the distinction: it is
+<span class="arithmatex">\(\mathbb P^1\)</span>, with geometric index 2, while its ambient Chern gcd in
+<span class="arithmatex">\(\mathbb P^2\)</span> is 1. This gcd does not define a geometric Fano index for a
+point. The software and JSON retain the field name <code>fano_index</code>.</p>
+<p>The <a href="../api-reference/">Python API</a> specifies kept-root coordinates, basis
+indices and the degree-zero classical-pairing shortcut. The
+<a href="../how-to-use/">user guide</a> gives copyable inputs.</p>
+<h2 id="verification">Verification<a class="headerlink" href="#verification" title="Permanent link">&para;</a></h2>
+<p>The test suite checks known enumerative values, including the line through
+two points of <span class="arithmatex">\(\mathbb P^2\)</span>, 27 lines on a cubic surface and 2875 lines on
+a quintic threefold. Catalog checks compare saved matrices with their inputs,
+bases, gradings, degree constraints and characteristic polynomials. Displayed
+spectra are checked numerically, while projective Hodge diamonds are checked
+by exact Riemann–Roch and Lefschetz calculations.</p>
+<p>These checks are reproducible in the repository:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements-test.txt
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>python<span class="w"> </span>-m<span class="w"> </span>pytest<span class="w"> </span>tests/<span class="w"> </span>-q
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>python<span class="w"> </span>scripts/validate_localization_results.py
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>python<span class="w"> </span>scripts/validate_catalog_math.py
+</span></code></pre></div>
+<p>Checking saved outputs does not rerun all localization sums or prove every
+geometric realization in the reference catalog. To reproduce a matrix, use
+its input with the <a href="../how-to-use/">software</a>; <strong>Catalog only</strong> entries have no
+supported computed matrix.</p>
 
 
 
@@ -1552,10 +1284,16 @@ product. The ambient operator uses the reduced twisted pairing above.</p>
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.top", "navigation.expand", "navigation.path", "navigation.instant", "navigation.indexes", "search.suggest", "search.highlight", "toc.integrate"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.top", "navigation.path", "navigation.instant", "navigation.indexes", "search.suggest", "search.highlight", "toc.integrate"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+      
+        <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js"></script>
+      
+        <script src="../javascripts/catalog.js"></script>
       
         <script src="../javascripts/mathjax.js"></script>
       

@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Compute genus-zero Gromov-Witten invariants and small quantum multiplication by exact virtual localization with gwflags. Explore the Fano variety and flag complete-intersection catalogue.">
+        <meta name="description" content="A catalog of quantum multiplication matrices for flag varieties and their sections, with the gwflags software for exact virtual localization.">
       
       
       
@@ -14,7 +14,7 @@
       
       
       
-        <link rel="next" href="about/">
+        <link rel="next" href="catalog/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>GEOATOMS — Gromov-Witten invariants and quantum cohomology - GEOATOMS</title>
+        <title>GEOATOMS — Quantum cohomology of flag varieties - GEOATOMS</title>
       
     
     
@@ -50,6 +50,8 @@
         <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
       
     
+    
+      <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css">
     
       <link rel="stylesheet" href="stylesheets/extra.css">
     
@@ -78,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#geoatoms-gromov-witten-invariants-and-quantum-cohomology" class="md-skip">
+        <a href="#quantum-cohomology-of-flag-varieties" class="md-skip">
           Skip to content
         </a>
       
@@ -113,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              GEOATOMS — Gromov-Witten invariants and quantum cohomology
+              GEOATOMS — Quantum cohomology of flag varieties
             
           </span>
         </div>
@@ -240,63 +242,6 @@
   
   
   
-    <li class="md-tabs__item">
-      <a href="about/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  About
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="installation/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  Installation
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="how-to-use/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  How to Use
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
     
     
       <li class="md-tabs__item">
@@ -322,36 +267,17 @@
     
     
       <li class="md-tabs__item">
-        <a href="change-log/" class="md-tabs__link">
+        <a href="installation/" class="md-tabs__link">
           
   
   
     
   
-  Review and Changes
+  Software
 
         </a>
       </li>
     
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="releases/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  Releases
-
-      </a>
-    </li>
   
 
       
@@ -369,11 +295,30 @@
   
     
   
-  Methodology
+  Mathematics
 
         </a>
       </li>
     
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="about/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  About
+
+      </a>
+    </li>
   
 
       
@@ -496,10 +441,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#the-software-gwflags" class="md-nav__link">
+  <a href="#explore-the-examples" class="md-nav__link">
     <span class="md-ellipsis">
       
-        The Software: gwflags
+        Explore the examples
       
     </span>
   </a>
@@ -507,32 +452,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#latest-update-12-october-2026" class="md-nav__link">
+  <a href="#compute-with-gwflags" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Latest update — 12 October 2026
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#navigate-the-documentation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Navigate the Documentation
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#download" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Download
+        Compute with gwflags
       
     </span>
   </a>
@@ -553,94 +476,11 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="about/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    About
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="installation/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Installation
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="how-to-use/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    How to Use
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
     
     
       
         
           
-        
-      
         
       
         
@@ -666,9 +506,7 @@
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           <div class="md-nav__link md-nav__container">
@@ -690,14 +528,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -772,34 +610,6 @@
   
   
     <li class="md-nav__item">
-      <a href="catalog/flag_varieties/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Flag Varieties
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="catalog/additional/" class="md-nav__link">
         
   
@@ -807,7 +617,7 @@
   <span class="md-ellipsis">
     
   
-    Additional Flag Varieties and Sections
+    Flag Varieties and Sections
   
 
     
@@ -863,7 +673,7 @@
   <span class="md-ellipsis">
     
   
-    Fanography
+    Fano Threefolds
   
 
     
@@ -901,8 +711,6 @@
       
         
       
-        
-      
     
     
     
@@ -916,19 +724,17 @@
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   
   <span class="md-ellipsis">
     
   
-    Review and Changes
+    Software
   
 
     
@@ -939,12 +745,12 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
   
-    Review and Changes
+    Software
   
 
           </label>
@@ -957,14 +763,14 @@
   
   
     <li class="md-nav__item">
-      <a href="change-log/" class="md-nav__link">
+      <a href="installation/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Change log
+    Installation
   
 
     
@@ -985,222 +791,14 @@
   
   
     <li class="md-nav__item">
-      <a href="audits/website-usage-review/" class="md-nav__link">
+      <a href="how-to-use/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Website Usage Audit
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="audits/catalog-review/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Catalog Review
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="audits/math-software-review/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Mathematics and Software Audit
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="discrepancy/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Reference Discrepancies
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="releases/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Releases
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
-        
-          
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Methodology
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Methodology
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="methodology/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Core Theory
+    User Guide
   
 
     
@@ -1228,7 +826,128 @@
   <span class="md-ellipsis">
     
   
-    API Reference
+    Python API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="releases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Releases
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mathematics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Mathematics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="methodology/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Methods and Conventions
   
 
     
@@ -1256,7 +975,7 @@
   <span class="md-ellipsis">
     
   
-    Lie Algebras Guide
+    Flag Variety Inputs
   
 
     
@@ -1273,6 +992,33 @@
           </ul>
         </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -1305,45 +1051,30 @@
   
 
 
-<h1 id="geoatoms-gromov-witten-invariants-and-quantum-cohomology">GEOATOMS: Gromov-Witten invariants and quantum cohomology<a class="headerlink" href="#geoatoms-gromov-witten-invariants-and-quantum-cohomology" title="Permanent link">&para;</a></h1>
-<div align="center">
-  <img src="assets/logo.jpg" alt="GEOATOMS Logo" width="400"/>
-</div>
-
-<p>Welcome to the documentation and software repository for the <strong>GEOATOMS</strong> mathematical research group. </p>
-<p>This website serves as an independent catalog and computational resource for algebraic geometry, representation theory, and enumerative geometry, specifically focusing on complete intersections in flag varieties.</p>
-<h2 id="the-software-gwflags">The Software: <code>gwflags</code><a class="headerlink" href="#the-software-gwflags" title="Permanent link">&para;</a></h2>
-<p>The accompanying software, <code>gwflags</code>, provides a computational framework to evaluate geometric invariants using the localization technique:</p>
-<ul>
-<li><strong>Virtual Localization</strong>: Computes genus-zero Gromov-Witten invariants of flag varieties and the smooth zero loci of globally generated homogeneous vector bundles, using the Graber-Pandharipande virtual localization theorem.</li>
-<li><strong>Quantum Multiplication</strong>: Computes multiplication by the first Chern class on the flag-ambient sector, together with its grading and spectrum.</li>
-<li><strong>Geometric Invariants</strong>: Calculates expected dimension, ambient basis rank, and the first-Chern gcd in the specified curve lattice; see the <a href="methodology/#4a-coordinate-contract-used-by-the-software">mathematical scope</a>.</li>
-</ul>
-<h2 id="latest-update-12-october-2026">Latest update — 12 October 2026<a class="headerlink" href="#latest-update-12-october-2026" title="Permanent link">&para;</a></h2>
-<p>The catalog now includes <a href="catalog/additional/">15 additional flag varieties and sections</a>,
-including the full GM-20 matrix. <a href="catalog/computed/">Download matrices and inputs</a>
-provides symbolic matrices, ordered bases, gradings and curve lists for
-<strong>131 completed examples</strong>. The master table is synchronized with these entries.</p>
-<p>Release <strong>v1.0.5</strong> corrects mathematical and installation documentation and
-requires explicit curve lists when the dimension bound cannot make automatic
-enumeration finite. See the <a href="releases/">release notes</a> and
-<a href="audits/math-software-review/">mathematics audit</a>.</p>
-<h2 id="navigate-the-documentation">Navigate the Documentation<a class="headerlink" href="#navigate-the-documentation" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="about/"><strong>About</strong></a>: Learn about the team behind this project.</li>
-<li><a href="installation/"><strong>Installation</strong></a>: Clean, step-by-step instructions for getting Python, SageMath, and <code>gwflags</code> running on Windows, macOS, and Linux.</li>
-<li><a href="how-to-use/"><strong>How to Use</strong></a>: Practical code examples demonstrating how to use the software to compute these spaces.</li>
-<li><a href="methodology/"><strong>Methodology</strong></a>: A concise explanation of how the software implements the localization formalism and reproduces the catalog.</li>
-<li><a href="catalog/"><strong>Catalog</strong></a>: The expanding database of pre-computed examples and geometric invariants.</li>
-</ul>
-<h2 id="download">Download<a class="headerlink" href="#download" title="Permanent link">&para;</a></h2>
-<p>Download the <a href="https://github.com/leonardofcavenaghi/atomicdecompositions/archive/refs/heads/main.zip">current main source ZIP</a>
-to use the software corresponding to this website, or the
-<a href="https://github.com/leonardofcavenaghi/atomicdecompositions/archive/refs/tags/v1.0.5.zip">stable v1.0.5 source ZIP</a>
-for the tagged snapshot. See <a href="releases/">Release notes</a> for version details
-and <a href="installation/">Installation</a> for setup.</p>
-<p>The <a href="https://github.com/leonardofcavenaghi/atomicdecompositions">GitHub repository</a>
-contains the source and its commit history.</p>
+<h1 id="quantum-cohomology-of-flag-varieties">Quantum cohomology of flag varieties<a class="headerlink" href="#quantum-cohomology-of-flag-varieties" title="Permanent link">&para;</a></h1>
+<p>GEOATOMS brings together computed examples and software for genus-zero
+Gromov–Witten theory. The catalog covers flag varieties and their complete
+intersections; the Python package <strong>gwflags</strong> computes their invariants by
+exact virtual localization.</p>
+<p><a class="md-button md-button--primary" href="catalog/">Explore the catalog</a>
+<a class="md-button" href="installation/">Use the software</a></p>
+<h2 id="explore-the-examples">Explore the examples<a class="headerlink" href="#explore-the-examples" title="Permanent link">&para;</a></h2>
+<p>Browse <a href="catalog/projective/">projective complete intersections</a>,
+<a href="catalog/grassmannians/">Grassmannians</a>, <a href="catalog/additional/">flag varieties and their sections</a>,
+or the <a href="catalog/fanography/">Fano threefold reference catalog</a>.
+Each computed entry includes a multiplication matrix and the information
+needed to interpret it.</p>
+<p>The collection includes <strong>131 completed computations</strong>. <a href="catalog/computed/">Download matrices and inputs</a>
+to reuse the symbolic results, bases and gradings in your own calculations.</p>
+<h2 id="compute-with-gwflags">Compute with gwflags<a class="headerlink" href="#compute-with-gwflags" title="Permanent link">&para;</a></h2>
+<p>Use the local browser interface, command line or Python API to compute GW
+invariants and multiplication by the first Chern class. For complete
+intersections, the returned matrix acts on the flag-ambient sector;
+<a href="methodology/">Methods and conventions</a> explains its scope.</p>
+<p>The stable software is <strong>v1.0.5</strong>.
+<a href="https://github.com/leonardofcavenaghi/atomicdecompositions/archive/refs/tags/v1.0.5.zip">Download its source ZIP</a>,
+follow the <a href="installation/">installation guide</a>, or read the
+<a href="releases/">release notes</a>.</p>
 
 
 
@@ -1402,10 +1133,16 @@ contains the source and its commit history.</p>
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.top", "navigation.expand", "navigation.path", "navigation.instant", "navigation.indexes", "search.suggest", "search.highlight", "toc.integrate"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.top", "navigation.path", "navigation.instant", "navigation.indexes", "search.suggest", "search.highlight", "toc.integrate"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+      
+        <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js"></script>
+      
+        <script src="javascripts/catalog.js"></script>
       
         <script src="javascripts/mathjax.js"></script>
       

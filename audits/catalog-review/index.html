@@ -6,17 +6,13 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="GEOATOMS and gwflags: exact virtual localization for genus-zero Gromov-Witten invariants, small quantum multiplication, and a catalogue of Fano varieties and complete intersections in flag varieties.">
+        <meta name="description" content="Catalog guide for the GEOATOMS catalog and gwflags software.">
       
       
       
         <link rel="canonical" href="https://leonardofcavenaghi.github.io/atomicdecompositions/audits/catalog-review/">
       
       
-        <link rel="prev" href="../website-usage-review/">
-      
-      
-        <link rel="next" href="../math-software-review/">
       
       
         
@@ -27,7 +23,7 @@
     
     
       
-        <title>Catalog Review - GEOATOMS</title>
+        <title>Catalog guide - GEOATOMS</title>
       
     
     
@@ -52,6 +48,8 @@
         <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
       
     
+    
+      <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css">
     
       <link rel="stylesheet" href="../../stylesheets/extra.css">
     
@@ -80,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#catalog-review-15-september-2026" class="md-skip">
+        <a href="#catalog-guide" class="md-skip">
           Skip to content
         </a>
       
@@ -115,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Catalog Review
+              Catalog guide
             
           </span>
         </div>
@@ -240,63 +238,6 @@
   
   
   
-    <li class="md-tabs__item">
-      <a href="../../about/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  About
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../installation/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  Installation
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../how-to-use/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  How to Use
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
     
     
       <li class="md-tabs__item">
@@ -318,42 +259,21 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../change-log/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../installation/" class="md-tabs__link">
           
   
   
     
   
-  Review and Changes
+  Software
 
         </a>
       </li>
     
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../releases/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  Releases
-
-      </a>
-    </li>
   
 
       
@@ -371,11 +291,30 @@
   
     
   
-  Methodology
+  Mathematics
 
         </a>
       </li>
     
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../about/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  About
+
+      </a>
+    </li>
   
 
       
@@ -464,94 +403,11 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../about/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    About
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../installation/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Installation
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../how-to-use/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    How to Use
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
     
     
       
         
           
-        
-      
         
       
         
@@ -577,9 +433,7 @@
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           <div class="md-nav__link md-nav__container">
@@ -601,14 +455,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -683,34 +537,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../catalog/flag_varieties/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Flag Varieties
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../catalog/additional/" class="md-nav__link">
         
   
@@ -718,7 +544,7 @@
   <span class="md-ellipsis">
     
   
-    Additional Flag Varieties and Sections
+    Flag Varieties and Sections
   
 
     
@@ -774,7 +600,7 @@
   <span class="md-ellipsis">
     
   
-    Fanography
+    Fano Threefolds
   
 
     
@@ -799,344 +625,12 @@
       
   
   
-    
-  
   
   
     
     
       
         
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-        
-        
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Review and Changes
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_6">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Review and Changes
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../change-log/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Change log
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../website-usage-review/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Website Usage Audit
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Catalog Review
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Catalog Review
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#confirmed-corrections" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Confirmed corrections
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#organization-contract" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Organization contract
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#regeneration-contract" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Regeneration contract
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#verification" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Verification
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../math-software-review/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Mathematics and Software Audit
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../discrepancy/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Reference Discrepancies
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../releases/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Releases
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
       
         
       
@@ -1157,19 +651,17 @@
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   
   <span class="md-ellipsis">
     
   
-    Methodology
+    Software
   
 
     
@@ -1180,12 +672,12 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
   
-    Methodology
+    Software
   
 
           </label>
@@ -1198,14 +690,42 @@
   
   
     <li class="md-nav__item">
-      <a href="../../methodology/" class="md-nav__link">
+      <a href="../../installation/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Core Theory
+    Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to-use/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Guide
   
 
     
@@ -1233,7 +753,128 @@
   <span class="md-ellipsis">
     
   
-    API Reference
+    Python API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../releases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Releases
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mathematics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Mathematics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methodology/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Methods and Conventions
   
 
     
@@ -1261,7 +902,7 @@
   <span class="md-ellipsis">
     
   
-    Lie Algebras Guide
+    Flag Variety Inputs
   
 
     
@@ -1278,6 +919,33 @@
           </ul>
         </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -1300,46 +968,6 @@
   
 
 
-  <nav class="md-path" aria-label="Navigation" >
-    <ol class="md-path__list">
-      
-        
-  
-  
-    <li class="md-path__item">
-      <a href="../.." class="md-path__link">
-        
-  <span class="md-ellipsis">
-    Home
-  </span>
-
-      </a>
-    </li>
-  
-
-      
-      
-        
-  
-  
-    
-    
-      <li class="md-path__item">
-        <a href="../../change-log/" class="md-path__link">
-          
-  <span class="md-ellipsis">
-    Review and Changes
-  </span>
-
-        </a>
-      </li>
-    
-  
-
-      
-    </ol>
-  </nav>
-
               
               <article class="md-content__inner md-typeset">
                 
@@ -1350,52 +978,17 @@
   
 
 
-<h1 id="catalog-review-15-september-2026">Catalog review — 15 September 2026<a class="headerlink" href="#catalog-review-15-september-2026" title="Permanent link">&para;</a></h1>
-<p>This review covers the maintained catalog pages and the Fanography reference page.</p>
-<h2 id="confirmed-corrections">Confirmed corrections<a class="headerlink" href="#confirmed-corrections" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Removed the duplicate <code>P2 Fano index 3</code> card and duplicate summary row.</li>
-<li>Reconciled every displayed <strong>Basis Rank</strong> in the Projective and Grassmannian pages with the dimension of its square quantum matrix (46 and 28 card-level corrections respectively), and synchronized the category tables and master index.</li>
-<li>Relabelled Fanography 2-32 as a symbolic matrix because it contains <code>y1</code> and <code>y2</code> variables.</li>
-<li>Added explicit realization metadata to Fanography cards and kept unsupported weighted, double-cover, and blow-up examples catalog-only.</li>
-<li>Replaced the old <code>docs/catalog.md</code> page with a historical pointer, pointing readers to the maintained split catalog.</li>
-<li>Corrected Fanography 1-5 through 1-9 input metadata, corrected 4-1 row 2 column 9,
-  and published the independently recomputed 1-10 homogeneous-bundle matrix.</li>
-</ul>
-<h2 id="organization-contract">Organization contract<a class="headerlink" href="#organization-contract" title="Permanent link">&para;</a></h2>
-<p>The October 2026 update adds <strong>Additional Flag Varieties and Sections</strong> and
-<strong>Download matrices and inputs</strong> to the four categories below. The master table is
-generated from canonical cards by <code>scripts/generate_catalog_index.py</code>;
-<code>generate_datatable.py</code> delegates to that generator. The exact JSON dataset and
-its generated pages are checked by <code>scripts/validate_localization_results.py</code>.</p>
-<p>The public catalog is organized as:</p>
-<ol>
-<li>Projective Spaces</li>
-<li>Grassmannians</li>
-<li>Flag Varieties</li>
-<li>Fanography references</li>
-</ol>
-<p>The master index links the canonical pages. Category pages group entries by dimension and include deterministic summary tables. Fanography has sequential identifiers and distinguishes runnable realizations from catalog-only references.</p>
-<h2 id="regeneration-contract">Regeneration contract<a class="headerlink" href="#regeneration-contract" title="Permanent link">&para;</a></h2>
-<p><code>catalog_inputs.json</code> is the checked-in source of truth for every executable
-Fanography realization used by the injector, verifier, matrix helper, and catalog
-validator. <code>restructure_catalog.py</code> and <code>generate_datatable.py</code> remain data-generation
-utilities, not part of the documentation build; they must preserve realization
-labels, catalog-only status, corrected matrices, and duplicate filtering. Run
-<code>python3 scripts/validate_catalog.py</code> after any regeneration.</p>
-<h2 id="verification">Verification<a class="headerlink" href="#verification" title="Permanent link">&para;</a></h2>
-<ul>
-<li>No duplicate <code>p2fanoindex3</code> anchor remains.</li>
-<li>All Projective and Grassmannian cards containing matrices have matching Basis Rank values.</li>
-<li>The checked-in catalog validator covers corrected Fanography inputs and audited matrix cells.</li>
-<li>MkDocs strict build passes.</li>
-</ul>
+<h1 id="catalog-guide">Catalog guide<a class="headerlink" href="#catalog-guide" title="Permanent link">&para;</a></h1>
+<p>This page has been consolidated into the <a href="../../catalog/">current documentation</a>.</p>
 
 
 
 
 
 
+
+  
+  
 
 
 
@@ -1445,10 +1038,16 @@ labels, catalog-only status, corrected matrices, and duplicate filtering. Run
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.top", "navigation.expand", "navigation.path", "navigation.instant", "navigation.indexes", "search.suggest", "search.highlight", "toc.integrate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.top", "navigation.path", "navigation.instant", "navigation.indexes", "search.suggest", "search.highlight", "toc.integrate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+      
+        <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js"></script>
+      
+        <script src="../../javascripts/catalog.js"></script>
       
         <script src="../../javascripts/mathjax.js"></script>
       

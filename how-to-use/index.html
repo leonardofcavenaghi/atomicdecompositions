@@ -16,7 +16,7 @@
         <link rel="prev" href="../installation/">
       
       
-        <link rel="next" href="../catalog/">
+        <link rel="next" href="../api-reference/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>How to Use - GEOATOMS</title>
+        <title>User Guide - GEOATOMS</title>
       
     
     
@@ -52,6 +52,8 @@
         <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
       
     
+    
+      <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css">
     
       <link rel="stylesheet" href="../stylesheets/extra.css">
     
@@ -115,7 +117,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              How to Use
+              User Guide
             
           </span>
         </div>
@@ -240,65 +242,6 @@
   
   
   
-    <li class="md-tabs__item">
-      <a href="../about/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  About
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../installation/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  Installation
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-    
-  
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
-        
-  
-  
-    
-  
-  How to Use
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
     
     
       <li class="md-tabs__item">
@@ -320,40 +263,23 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../change-log/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../installation/" class="md-tabs__link">
           
   
   
     
   
-  Review and Changes
+  Software
 
         </a>
       </li>
     
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../releases/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  Releases
-
-      </a>
-    </li>
   
 
       
@@ -371,11 +297,30 @@
   
     
   
-  Methodology
+  Mathematics
 
         </a>
       </li>
     
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../about/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  About
+
+      </a>
+    </li>
   
 
       
@@ -464,15 +409,92 @@
   
   
   
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../catalog/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Catalog
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Catalog
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../about/" class="md-nav__link">
+      <a href="../catalog/projective/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    About
+    Projective Spaces
   
 
     
@@ -484,9 +506,196 @@
     </li>
   
 
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../catalog/grassmannians/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Grassmannians
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../catalog/additional/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Flag Varieties and Sections
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../catalog/computed/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Download matrices and inputs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../catalog/fanography/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fano Threefolds
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
     
       
       
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Software
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Software
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
   
   
   
@@ -511,9 +720,10 @@
     </li>
   
 
-    
-      
-      
+              
+            
+              
+                
   
   
     
@@ -535,7 +745,7 @@
   <span class="md-ellipsis">
     
   
-    How to Use
+    User Guide
   
 
     
@@ -553,7 +763,7 @@
   <span class="md-ellipsis">
     
   
-    How to Use
+    User Guide
   
 
     
@@ -579,41 +789,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#install-and-launch" class="md-nav__link">
+  <a href="#launch-the-interface" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Install and launch
+        Launch the interface
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Install and launch">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#if-you-already-use-python" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        If you already use Python
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#if-python-is-new-to-you" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        If Python is new to you
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -845,86 +1027,6 @@
     </li>
   
 
-    
-      
-      
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
-        
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../catalog/" class="md-nav__link ">
-              
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Catalog
-  
-
-    
-  </span>
-  
-  
-
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Catalog
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
               
             
               
@@ -934,14 +1036,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../catalog/projective/" class="md-nav__link">
+      <a href="../api-reference/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Projective Spaces
+    Python API
   
 
     
@@ -957,366 +1059,6 @@
             
               
                 
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../catalog/grassmannians/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Grassmannians
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../catalog/flag_varieties/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Flag Varieties
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../catalog/additional/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Additional Flag Varieties and Sections
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../catalog/computed/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Download matrices and inputs
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../catalog/fanography/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Fanography
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
-        
-          
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Review and Changes
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Review and Changes
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../change-log/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Change log
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../audits/website-usage-review/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Website Usage Audit
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../audits/catalog-review/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Catalog Review
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../audits/math-software-review/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Mathematics and Software Audit
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../discrepancy/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Reference Discrepancies
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
   
   
   
@@ -1341,6 +1083,14 @@
     </li>
   
 
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
     
       
       
@@ -1350,8 +1100,6 @@
   
     
     
-      
-        
       
         
       
@@ -1370,19 +1118,17 @@
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
   
   <span class="md-ellipsis">
     
   
-    Methodology
+    Mathematics
   
 
     
@@ -1393,12 +1139,12 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             
   
-    Methodology
+    Mathematics
   
 
           </label>
@@ -1418,35 +1164,7 @@
   <span class="md-ellipsis">
     
   
-    Core Theory
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../api-reference/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    API Reference
+    Methods and Conventions
   
 
     
@@ -1474,7 +1192,7 @@
   <span class="md-ellipsis">
     
   
-    Lie Algebras Guide
+    Flag Variety Inputs
   
 
     
@@ -1491,6 +1209,33 @@
           </ul>
         </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -1513,6 +1258,46 @@
   
 
 
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href=".." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../installation/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Software
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
               
               <article class="md-content__inner md-typeset">
                 
@@ -1525,16 +1310,12 @@
 
 <h1 id="how-to-use-gwflags">How to use <code>gwflags</code><a class="headerlink" href="#how-to-use-gwflags" title="Permanent link">&para;</a></h1>
 <p><code>gwflags</code> computes Gromov–Witten invariants and small quantum multiplication for flag varieties <code>G/P</code> and supported complete intersections. The browser interface is the easiest starting point; the Python and CLI interfaces are documented later.</p>
-<h2 id="install-and-launch">Install and launch<a class="headerlink" href="#install-and-launch" title="Permanent link">&para;</a></h2>
-<h3 id="if-you-already-use-python">If you already use Python<a class="headerlink" href="#if-you-already-use-python" title="Permanent link">&para;</a></h3>
-<p>From the repository root:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>python3<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span>.
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>python3<span class="w"> </span>-m<span class="w"> </span>gwflags.gui<span class="w"> </span>--no-browser
+<h2 id="launch-the-interface">Launch the interface<a class="headerlink" href="#launch-the-interface" title="Permanent link">&para;</a></h2>
+<p>Follow <a href="../installation/">Installation</a> to install the stable software. Then run:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>python<span class="w"> </span>-m<span class="w"> </span>gwflags.gui<span class="w"> </span>--no-browser
 </span></code></pre></div>
-<p>Open <a href="http://127.0.0.1:8642">http://127.0.0.1:8642</a>. Use <code>--port 9000</code> if that port is occupied.</p>
-<h3 id="if-python-is-new-to-you">If Python is new to you<a class="headerlink" href="#if-python-is-new-to-you" title="Permanent link">&para;</a></h3>
-<p>Install Python 3.9 or newer (Python 3.10+ is recommended), open a terminal in the downloaded repository, and run the same two commands above. The GUI uses only the Python standard library plus the packages declared by the project. If <code>python3</code> is unavailable on Windows, use <code>py -m pip</code> and <code>py -m gwflags.gui --no-browser</code>.</p>
-<p>The server is local to your computer (<code>127.0.0.1</code>). Stop it with <code>Ctrl-C</code> in the terminal.</p>
+<p>Open <a href="http://127.0.0.1:8642">http://127.0.0.1:8642</a>. The server runs on your computer; stop it with
+<code>Ctrl-C</code>. Use <code>--port 9000</code> if the default port is occupied.</p>
 <h2 id="fastest-path-load-an-example">Fastest path: load an example<a class="headerlink" href="#fastest-path-load-an-example" title="Permanent link">&para;</a></h2>
 <ol>
 <li>Choose an item from <strong>Preset library</strong>.</li>
@@ -1583,7 +1364,7 @@ advance. For a homogeneous bundle, first describe the space with the bundle
 expression, then run the desired matrix or invariant action.
 <code>taut_quot(X, 2)</code> is directly convex on <code>A4</code>, kept roots <code>2</code>. The parser also
 accepts <code>taut_sub(X, 2)</code>, but its negative splitting degrees make the
-untwisted genus-0 theory reject that direct computation; use
+supported convex Euler-twisted computation reject that direct input; use
 <code>dual(taut_sub(X, 2))</code> for the convex dual bundle.</p>
 <table>
 <thead>
@@ -1668,9 +1449,8 @@ returned matrix, invariant, or space description.</p>
 <h2 id="mathematical-scope-and-conventions">Mathematical scope and conventions<a class="headerlink" href="#mathematical-scope-and-conventions" title="Permanent link">&para;</a></h2>
 <p>The localization formulas use virtual localization on decorated trees. For a
 complete intersection, the software requires curvewise convexity and computes
-the Euler-twisted ambient invariant. A geometric interpretation as a smooth
-zero locus additionally requires global generation and smoothness of the
-expected codimension.</p>
+the Euler-twisted ambient invariant. For the standard geometric interpretation, assume global generation and
+a regular section with a smooth zero locus of the expected codimension.</p>
 <p>The quantum matrix is the flag-ambient operator described above. It is the
 full small quantum-cohomology operator only when the relevant homology and
 ambient-completeness hypotheses hold. For complete intersections, the published matrix is an ambient block.</p>
@@ -1692,7 +1472,7 @@ Nested lists such as <code>[[3]]</code> belong to the Python API only.</p>
 <li>Check that kept roots are valid, distinct node numbers in the algebra and in the intended order.</li>
 <li>β is normally entered in kept-root order; a full ambient vector is accepted only when all removed-root entries are zero.</li>
 <li>Insertion words must contain integers separated by spaces; separate multiple insertions with <code>|</code>.</li>
-<li>A catalog entry marked <strong>Catalog only</strong> is not represented by the current flag-variety/complete-intersection input model.</li>
+<li>A catalog entry marked <strong>Catalog only</strong> has no supported input or computed matrix provided on this site.</li>
 <li>If a computation is slow, lower the worker count or start with a preset of lower degree.</li>
 <li>Catalog matrices are rendered by MathJax. If you copy one into a LaTeX
   document, load <code>amsmath</code> and raise the column limit for the wider matrices:</li>
@@ -1882,10 +1662,16 @@ the symbolic matrix has been assembled.</li>
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.top", "navigation.expand", "navigation.path", "navigation.instant", "navigation.indexes", "search.suggest", "search.highlight", "toc.integrate"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.top", "navigation.path", "navigation.instant", "navigation.indexes", "search.suggest", "search.highlight", "toc.integrate"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+      
+        <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js"></script>
+      
+        <script src="../javascripts/catalog.js"></script>
       
         <script src="../javascripts/mathjax.js"></script>
       
