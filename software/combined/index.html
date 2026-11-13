@@ -4,7 +4,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Install and launch the combined local application, choose a geometry, and use its separate flag and toric workflows.">
+        <meta name="description" content="Install and launch the combined local application, choose a geometry, and compute on flag and toric varieties in separate interfaces.">
       
       
       
@@ -1107,7 +1107,7 @@ mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
   <span class="md-ellipsis">
     
   
-    Flag localization
+    Localization on flag varieties
   
 
     
@@ -1163,7 +1163,7 @@ mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
   <span class="md-ellipsis">
     
   
-    Toric localization
+    Localization on toric varieties
   
 
     
@@ -1472,10 +1472,10 @@ mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
 </li>
       
         <li class="md-nav__item">
-  <a href="#choose-the-appropriate-input-guide" class="md-nav__link">
+  <a href="#flag-and-toric-inputs" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Choose the appropriate input guide
+        Flag and toric inputs
       
     </span>
   </a>
@@ -1483,10 +1483,10 @@ mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
 </li>
       
         <li class="md-nav__item">
-  <a href="#copyable-first-calculations" class="md-nav__link">
+  <a href="#examples" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Copyable first calculations
+        Examples
       
     </span>
   </a>
@@ -1894,7 +1894,7 @@ mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>python<span class="w"> </span>-m<span class="w"> </span>gwapp<span class="w"> </span>--port<span class="w"> </span><span class="m">8651</span><span class="w"> </span>--workspace<span class="w"> </span>./gw-work-8651<span class="w"> </span>--no-browser
 </span></code></pre></div>
 <p>The installed <code>gw-combined</code> command starts the same server. On Windows, the provided launcher starts the application with its default workspace; the command above gives explicit control of its location.</p>
-<h2 id="choose-the-appropriate-input-guide">Choose the appropriate input guide<a class="headerlink" href="#choose-the-appropriate-input-guide" title="Permanent link">¶</a></h2>
+<h2 id="flag-and-toric-inputs">Flag and toric inputs<a class="headerlink" href="#flag-and-toric-inputs" title="Permanent link">¶</a></h2>
 <table>
 <thead>
 <tr>
@@ -1917,7 +1917,7 @@ mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
 </tbody>
 </table>
 <p>The two workspaces share infrastructure but keep different cohomology and curve-coordinate models. A type A name is not a substitute for a toric fan, and toric ray coordinates are not flag beta coordinates.</p>
-<h2 id="copyable-first-calculations">Copyable first calculations<a class="headerlink" href="#copyable-first-calculations" title="Permanent link">¶</a></h2>
+<h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">¶</a></h2>
 <p>For unmarked cubic-surface lines in the flag workspace:</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Lie algebra:       A3
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>Kept simple roots: 1
@@ -1939,7 +1939,7 @@ mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
 <p>After <strong>Compute quantum matrix</strong> completes, <strong>Update spectrum &amp; exponents</strong> uses the saved symbolic matrix at the selected Novikov values. Omitted values equal one. Naming conventions are included in the matrix-cache identity, so legacy and paper labels do not silently share a completed symbolic matrix.</p>
 <p>The flag <strong>Novikov notation</strong> selector defaults to Paper notation; see <a href="../notation/">Notation</a>.</p>
 <h2 id="toric-computations">Toric computations<a class="headerlink" href="#toric-computations" title="Permanent link">¶</a></h2>
-<p>The toric workspace retains its own fan/product/projective-bundle tabs, curve-list controls, Hodge support, cancellation and spectrum updates. It delegates to the toric engine. Read the reported completeness mode and the <a href="../toric-1.1.0/">toric guide</a>; do not assume all flag persistence controls apply to toric jobs.</p>
+<p>The toric workspace retains its own fan/product/projective-bundle tabs, curve-list controls, Hodge support, cancellation and spectrum updates. Read the reported completeness mode and the <a href="../toric-1.1.0/">toric guide</a>; do not assume all flag persistence controls apply to toric jobs.</p>
 <h2 id="python-interfaces">Python interfaces<a class="headerlink" href="#python-interfaces" title="Permanent link">¶</a></h2>
 <p>The combined installation retains the two Python APIs:</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">gwflags</span><span class="w"> </span><span class="kn">import</span> <span class="n">FlagVariety</span>
@@ -1962,7 +1962,7 @@ mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
 <li>Do not identify exact arithmetic with exhaustive curve enumeration.</li>
 </ul>
 <p>See <a href="../changes/">Changes</a> for the explicit behavior changes.</p>
-<p>For the common conventions and concrete result examples, see <a href="../input-output/">Input/output</a>. The <a href="../launch-2026-11/">release overview</a> explains the differences between the offerings.</p>
+<p>See <a href="../input-output/">Input/output conventions</a> for result formats and <a href="../launch-2026-11/">Version comparison</a> for the differences between distributions.</p>
 
 
 

@@ -100,3 +100,14 @@ mjx-math {
   display: block;
   max-width: 100%;
 }
+
+/* Inline formulas share the text baseline; only display formulas scroll. */
+.md-typeset span.arithmatex {
+  display: inline !important;
+  overflow: visible !important;
+  vertical-align: baseline;
+}
+.md-typeset span.arithmatex > mjx-container {
+  overflow: visible !important;
+  max-width: none !important;
+}

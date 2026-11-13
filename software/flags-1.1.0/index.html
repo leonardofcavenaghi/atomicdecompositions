@@ -1107,7 +1107,7 @@ mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
   <span class="md-ellipsis">
     
   
-    Flag localization
+    Localization on flag varieties
   
 
     
@@ -1163,7 +1163,7 @@ mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
   <span class="md-ellipsis">
     
   
-    Toric localization
+    Localization on toric varieties
   
 
     
@@ -1416,10 +1416,10 @@ mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
 </li>
       
         <li class="md-nav__item">
-  <a href="#fastest-path-load-an-example" class="md-nav__link">
+  <a href="#load-a-preset" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Fastest path: load an example
+        Load a preset
       
     </span>
   </a>
@@ -1427,10 +1427,10 @@ mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
 </li>
       
         <li class="md-nav__item">
-  <a href="#the-core-inputs" class="md-nav__link">
+  <a href="#input-fields" class="md-nav__link">
     <span class="md-ellipsis">
       
-        The core inputs
+        Input fields
       
     </span>
   </a>
@@ -1894,7 +1894,7 @@ mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>python<span class="w"> </span>-m<span class="w"> </span>gwapp<span class="w"> </span>--workspace<span class="w"> </span>./gw-work<span class="w"> </span>--no-browser
 </span></code></pre></div>
 <p>Open <a href="http://127.0.0.1:8650/flag/">http://127.0.0.1:8650/flag/</a>. The <a href="../combined/">combined guide</a> describes the shared launcher.</p>
-<h2 id="fastest-path-load-an-example">Fastest path: load an example<a class="headerlink" href="#fastest-path-load-an-example" title="Permanent link">¶</a></h2>
+<h2 id="load-a-preset">Load a preset<a class="headerlink" href="#load-a-preset" title="Permanent link">¶</a></h2>
 <ol>
 <li>Choose the cubic-surface preset.</li>
 <li>Confirm algebra <code>A3</code>, kept root <code>1</code>, bundle <code>3</code> and curve class <code>1</code>.</li>
@@ -1902,7 +1902,7 @@ mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
 <li>Click <strong>Compute one GW invariant</strong>. The answer is 27.</li>
 <li>Use <strong>Copy input JSON</strong> or <strong>Download result JSON</strong> in the flag workspace to retain the inputs and result.</li>
 </ol>
-<h2 id="the-core-inputs">The core inputs<a class="headerlink" href="#the-core-inputs" title="Permanent link">¶</a></h2>
+<h2 id="input-fields">Input fields<a class="headerlink" href="#input-fields" title="Permanent link">¶</a></h2>
 <p>The flag fields use the same conventions as the <a href="../flags-1.0.6/">original flag guide</a>: algebra names such as <code>A4</code> or <code>A2xA2</code>; 1-based kept nodes; semicolon-separated bundle summands; and beta in kept-root order or zero-padded ambient-root coordinates.</p>
 <p>Examples of <strong>Bundle K</strong> are <code>3</code>, <code>1,1;2,2</code>, <code>Q(2)</code>, <code>dual(S(2))</code> and <code>osum(Q(2),O(1))</code>. The node must be kept, and S/Q constructions require a supported type A factor. Python list notation such as <code>[[3]]</code> belongs to the Python API, not the form.</p>
 <p><strong>Novikov notation</strong> defaults to Paper notation. Type A retains ambient labels; the other families use consecutive kept-root labels. Thus C3/keep 3, G2/keep 2 and D5/keep 4 use <code>y1</code>. Describe the space to see the explicit map. The compatibility choice <strong>Legacy ambient-node labels</strong> restores the previous names without changing beta.</p>
@@ -1995,7 +1995,7 @@ mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
 <p>See <a href="../notation/">Notation and compatibility</a> and <a href="../changes/">Changes</a>.</p>
 <h2 id="checkpoint-format-compatibility">Checkpoint format compatibility<a class="headerlink" href="#checkpoint-format-compatibility" title="Permanent link">¶</a></h2>
 <p>This version includes the 7f167e1 execution update: faster unmarked shape generation preserves the tested legacy ordering, and large partial-sum fractions are saved as exact tagged hexadecimal integers. Once new tagged values have been written, resume with this updated build; older readers do not understand them.</p>
-<p>For the common conventions and concrete result examples, see <a href="../input-output/">Input/output</a>. The <a href="../launch-2026-11/">release overview</a> explains the differences between the offerings.</p>
+<p>See <a href="../input-output/">Input/output conventions</a> for result formats and <a href="../launch-2026-11/">Version comparison</a> for the differences between distributions.</p>
 
 
 

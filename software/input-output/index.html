@@ -1107,7 +1107,7 @@ mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
   <span class="md-ellipsis">
     
   
-    Flag localization
+    Localization on flag varieties
   
 
     
@@ -1163,7 +1163,7 @@ mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
   <span class="md-ellipsis">
     
   
-    Toric localization
+    Localization on toric varieties
   
 
     
@@ -1517,10 +1517,10 @@ mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#1-select-the-input-model" class="md-nav__link">
+  <a href="#1-geometric-inputs" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Select the input model
+        1. Geometric inputs
       
     </span>
   </a>
@@ -1528,10 +1528,10 @@ mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-a-complete-scalar-example-27-cubic-surface-lines" class="md-nav__link">
+  <a href="#2-example-the-27-lines-on-a-cubic-surface" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. A complete scalar example: 27 cubic-surface lines
+        2. Example: the 27 lines on a cubic surface
       
     </span>
   </a>
@@ -1561,10 +1561,10 @@ mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-symbolic-matrices-and-selected-point-analysis" class="md-nav__link">
+  <a href="#5-symbolic-matrices-and-novikov-specializations" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Symbolic matrices and selected-point analysis
+        5. Symbolic matrices and Novikov specializations
       
     </span>
   </a>
@@ -1874,9 +1874,9 @@ mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
 
 <h1 id="input-and-output-conventions">Input and output conventions<a class="headerlink" href="#input-and-output-conventions" title="Permanent link">¶</a></h1>
 <p>This reference covers flag 1.0.6.dev0 and the flag, toric and combined 1.1.0.dev1 distributions. The <a href="../flags-legacy/">preserved v1.0.5 guide</a> describes the archived runtime separately.</p>
-<p>Run the cross-engine Python blocks in the complete combined installation, which contains both APIs. The dedicated flag guide provides flag-only examples for the standalone flag installation.</p>
+<p>Run the examples using both Python APIs in the complete combined installation, which contains both APIs. The dedicated flag guide provides flag-only examples for the standalone flag installation.</p>
 <p>Exact input/output examples are available for <a href="../examples/io-1.0.6.json">flags 1.0.6.dev0</a> and <a href="../examples/io-1.1.0.json">flag, toric and combined 1.1.0.dev1</a>. Runtimes in those records are incidental and can vary.</p>
-<h2 id="1-select-the-input-model">1. Select the input model<a class="headerlink" href="#1-select-the-input-model" title="Permanent link">¶</a></h2>
+<h2 id="1-geometric-inputs">1. Geometric inputs<a class="headerlink" href="#1-geometric-inputs" title="Permanent link">¶</a></h2>
 <table>
 <thead>
 <tr>
@@ -1935,7 +1935,7 @@ mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
 <p>Commas separate entries of a vector. Semicolons separate bundle summands or fan rows. Insertion expressions are separated by <code>|</code>. Flag words use spaces between simple-reflection labels; toric insertions are polynomials such as x0*x1.</p>
 <p>The toric interface also accepts newlines between fan/divisor rows. The toric CLI uses semicolon-separated rows. Python lists and explicit ambient arguments belong to Python; a form field does not accept a nested list such as [[3]].</p>
 <p>For flags, an ambient-root beta vector is also accepted when it is zero off the kept roots. For toric targets, coordinates in the displayed integral H2 basis are an alternative to the full ray relation. These alternatives must be read from the relevant engine, rather than inferred from the number of displayed parameters.</p>
-<h2 id="2-a-complete-scalar-example-27-cubic-surface-lines">2. A complete scalar example: 27 cubic-surface lines<a class="headerlink" href="#2-a-complete-scalar-example-27-cubic-surface-lines" title="Permanent link">¶</a></h2>
+<h2 id="2-example-the-27-lines-on-a-cubic-surface">2. Example: the 27 lines on a cubic surface<a class="headerlink" href="#2-example-the-27-lines-on-a-cubic-surface" title="Permanent link">¶</a></h2>
 <p>Python:</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">fractions</span><span class="w"> </span><span class="kn">import</span> <span class="n">Fraction</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">gwflags</span><span class="w"> </span><span class="kn">import</span> <span class="n">FlagVariety</span>
@@ -1968,7 +1968,7 @@ mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
 </span></code></pre></div>
 <p>In either flag interface, use algebra A3, kept root 1, bundle 3, beta 1 and an empty insertion field. In the toric interface, choose the product P3, set Complete intersection to 3, beta to 1,1,1,1 and leave insertions empty.</p>
 <p>An interface serializes the scalar as a string, "27", preserving exact rational spelling. A nonintegral rational uses a fraction string rather than a rounded decimal. Numerical spectra use numerical fields separately.</p>
-<p>A verified subset of the standalone flag result is:</p>
+<p>The standalone flag result includes:</p>
 <div class="language-json highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="p">{</span>
 </span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">  </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"27"</span><span class="p">,</span>
 </span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">  </span><span class="nt">"insertions"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span>
@@ -1977,8 +1977,8 @@ mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
 </span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">  </span><span class="nt">"bundle_rank"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span>
 </span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="p">}</span>
 </span></code></pre></div>
-<p>The toric result instead contains beta [1,1,1,1], c1_beta 1 and Novikov exponent list [1]. The merged flag worker returns value, insertions, canonical beta, evaluation count and its parameter map; it does not promise every standalone flag field. The full subprocess result adds the submitted input and runtime.</p>
-<p>These are result examples, not a declaration that every launch mode shares one JSON schema.</p>
+<p>The toric result instead contains beta [1,1,1,1], c1_beta 1 and Novikov exponent list [1]. The combined flag worker returns value, insertions, canonical beta, evaluation count and its parameter map; it does not promise every standalone flag field. The full subprocess result adds the submitted input and runtime.</p>
+<p>Result fields depend on the interface and engine.</p>
 <h2 id="3-quantum-matrix-outputs">3. Quantum matrix outputs<a class="headerlink" href="#3-quantum-matrix-outputs" title="Permanent link">¶</a></h2>
 <p>The Python APIs return different third components:</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">P2_flag</span> <span class="o">=</span> <span class="n">FlagVariety</span><span class="p">(</span><span class="s2">"A2"</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">])</span>
@@ -2051,7 +2051,7 @@ mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
 </span></code></pre></div>
 <p>The toric scalar-GW result's novikov field is instead the exponent list of the current beta. Its matrix/info results report the Novikov divisor basis. The same field name therefore does not mean the same data type across the two engines.</p>
 <p>In toric mode, short K rows use the displayed cohomology divisor basis, while quantum monomials use the reported Novikov divisors. These bases can differ. Effective relation vectors can have negative entries; fallback quantum coordinates can produce Laurent monomials.</p>
-<h2 id="5-symbolic-matrices-and-selected-point-analysis">5. Symbolic matrices and selected-point analysis<a class="headerlink" href="#5-symbolic-matrices-and-selected-point-analysis" title="Permanent link">¶</a></h2>
+<h2 id="5-symbolic-matrices-and-novikov-specializations">5. Symbolic matrices and Novikov specializations<a class="headerlink" href="#5-symbolic-matrices-and-novikov-specializations" title="Permanent link">¶</a></h2>
 <table>
 <thead>
 <tr>
@@ -2094,7 +2094,7 @@ mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
 <li>The exact scalar or matrix expressions, with numerical spectra clearly identified as numerical.</li>
 </ul>
 <p>The flag toolbar provides copied input JSON and downloadable result JSON. The toric interface has its own controls; it does not share every flag toolbar action. Its Python API can be used to save a result with the relevant metadata.</p>
-<p>Checkpoints are execution state, not a substitute for a reviewed result export. Newly tagged large-fraction checkpoints require the updated reader.</p>
+<p>Checkpoints store execution state; use a result export for the mathematical output. Newly tagged large-fraction checkpoints require the updated reader.</p>
 <h2 id="7-mathematical-interpretation">7. Mathematical interpretation<a class="headerlink" href="#7-mathematical-interpretation" title="Permanent link">¶</a></h2>
 <p>For complete intersections, the returned matrix is the supported ambient operator; a Hodge diamond does not provide a primitive quantum basis. The curve list may be complete under the stated positivity assumptions, conditional on additional geometry, or truncated at an ample degree.</p>
 <p>The flag degree-zero API deliberately has a classical cup-integral shortcut, including unstable pairing inputs. The toric degree-zero GW entry path returns the classical integral only for three insertions meeting its dimension check; other insertion counts return zero. These conventions should not be described as identical degree-zero GW definitions.</p>

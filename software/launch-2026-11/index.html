@@ -1107,7 +1107,7 @@ mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
   <span class="md-ellipsis">
     
   
-    Flag localization
+    Localization on flag varieties
   
 
     
@@ -1163,7 +1163,7 @@ mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
   <span class="md-ellipsis">
     
   
-    Toric localization
+    Localization on toric varieties
   
 
     
@@ -1489,10 +1489,10 @@ mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#1-the-software-choices" class="md-nav__link">
+  <a href="#1-distributions" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. The software choices
+        1. Distributions
       
     </span>
   </a>
@@ -1500,10 +1500,10 @@ mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-mathematical-and-practical-differences" class="md-nav__link">
+  <a href="#2-supported-geometry-and-computations" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Mathematical and practical differences
+        2. Supported geometry and computations
       
     </span>
   </a>
@@ -1533,10 +1533,10 @@ mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-faster-unmarked-tree-generation" class="md-nav__link">
+  <a href="#5-unmarked-tree-generation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Faster unmarked tree generation
+        5. Unmarked tree generation
       
     </span>
   </a>
@@ -1555,10 +1555,10 @@ mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
 </li>
       
         <li class="md-nav__item">
-  <a href="#7-clearer-interfaces-and-analysis" class="md-nav__link">
+  <a href="#7-interfaces-and-analysis" class="md-nav__link">
     <span class="md-ellipsis">
       
-        7. Clearer interfaces and analysis
+        7. Interfaces and analysis
       
     </span>
   </a>
@@ -1887,13 +1887,13 @@ mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
 <p>Choose an individual flag or toric distribution, or the combined application with separate workspaces. The versions below differ in their geometric inputs, execution tools and analysis capabilities.</p>
 <p>Flag <strong>1.0.6.dev0</strong> and flag, toric and combined <strong>1.1.0.dev1</strong> are development distributions. Stable flag <strong>v1.0.5</strong> remains available for archived calculations.</p>
 <p>See <a href="../input-output/">Input and output conventions</a> for exact formats and <a href="../launch-plan/">Validation and reproducibility</a> for verification scope.</p>
-<h2 id="1-the-software-choices">1. The software choices<a class="headerlink" href="#1-the-software-choices" title="Permanent link">¶</a></h2>
+<h2 id="1-distributions">1. Distributions<a class="headerlink" href="#1-distributions" title="Permanent link">¶</a></h2>
 <table>
 <thead>
 <tr>
-<th>Offering</th>
-<th>Primary use</th>
-<th>Distribution and launch</th>
+<th>Distribution</th>
+<th>Use</th>
+<th>Installation and launch</th>
 </tr>
 </thead>
 <tbody>
@@ -1926,7 +1926,7 @@ mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
 </table>
 <p>Individual 1.1.0.dev1 source distributions include the shared execution infrastructure but omit the combined launcher. The combined distribution includes both engines and the enhanced workspaces.</p>
 <p>The combined application retains separate geometric inputs, curve-coordinate models and computation engines.</p>
-<h2 id="2-mathematical-and-practical-differences">2. Mathematical and practical differences<a class="headerlink" href="#2-mathematical-and-practical-differences" title="Permanent link">¶</a></h2>
+<h2 id="2-supported-geometry-and-computations">2. Supported geometry and computations<a class="headerlink" href="#2-supported-geometry-and-computations" title="Permanent link">¶</a></h2>
 <table>
 <thead>
 <tr>
@@ -1968,14 +1968,14 @@ mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
 <td>Matrix, grading, basis names</td>
 </tr>
 <tr>
-<td>General runtime Hodge module</td>
+<td>Hodge-number computations</td>
 <td>No</td>
-<td>Ambient flags and supported ample line-bundle intersections</td>
-<td>Ambient toric diamonds; supported ample Fano CIs in dimensions 3–5</td>
+<td>Flag varieties and supported ample line-bundle intersections</td>
+<td>Toric Hodge diamonds; supported ample Fano complete intersections in dimensions 3–5</td>
 </tr>
 <tr>
-<td>Durable flag progress</td>
-<td>Original execution path</td>
+<td>Checkpoints</td>
+<td>Direct computation</td>
 <td>Available through the execution wrapper and enhanced workspace</td>
 <td>Separate toric execution/checkpoint infrastructure</td>
 </tr>
@@ -1988,7 +1988,7 @@ mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
 </tbody>
 </table>
 <p>Flag version 1.1.0.dev1 builds directly on the flag 1.0.x implementation. The differences concern execution and analysis as well as the added toric geometry. The exact genus-zero localization framework and existing supported bundle semantics remain the reference for the flag calculations.</p>
-<p>All complete-intersection quantum matrices must be interpreted on their returned ambient sector. Computing a full Hodge diamond does not construct the missing primitive quantum multiplication. Automatic curve lists also have a scope: a conditional Mori search or degree cutoff must not be presented as an unconditional complete quantum operator.</p>
+<p>All complete-intersection quantum matrices must be interpreted on their returned ambient sector. Computing a full Hodge diamond does not construct the missing primitive quantum multiplication. An automatic curve list is complete only under its stated positivity or effective-cone hypotheses. A degree cutoff restricts the calculation to the selected range.</p>
 <h2 id="3-parameter-naming">3. Parameter naming<a class="headerlink" href="#3-parameter-naming" title="Permanent link">¶</a></h2>
 <p>The default flag convention is named <code>paper</code>:</p>
 <ul>
@@ -2008,11 +2008,11 @@ mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
 <p>Toric parameter names are retained. They follow the reported Novikov divisor basis, which can differ from the cohomology divisor basis used by short K rows.</p>
 <h2 id="4-empty-cli-insertions-now-mean-no-insertions">4. Empty CLI insertions now mean no insertions<a class="headerlink" href="#4-empty-cli-insertions-now-mean-no-insertions" title="Permanent link">¶</a></h2>
 <p>A blank insertion list is valid. The unmarked cubic-surface line invariant is 27; it needs no point insertion.</p>
-<p>The Python API and original flag interface already behaved correctly. The old flag CLI interpreted empty text as a unit insertion. Both current flag CLIs now return an empty list for blank text, matching Python and the interface.</p>
+<p>In flag 1.0.6.dev0 and 1.1.0.dev1, blank CLI insertion text gives an empty list, matching Python and the interface. The v1.0.5 CLI interprets blank text as a unit insertion.</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>python<span class="w"> </span>-m<span class="w"> </span>gwflags.cli<span class="w"> </span>A3<span class="w"> </span>--keep<span class="w"> </span><span class="m">1</span><span class="w"> </span>-K<span class="w"> </span><span class="m">3</span><span class="w"> </span>gw<span class="w"> </span>--beta<span class="w"> </span><span class="m">1</span><span class="w"> </span>--classes<span class="w"> </span><span class="s2">""</span>
 </span></code></pre></div>
 <p>The result is 27. The corresponding unmarked quintic call returns 2875. An explicit id/e in flag mode, or one in toric mode, still denotes a unit insertion. The preserved v1.0.5 CLI retains its historical behavior and is identified accordingly in the archived guide.</p>
-<h2 id="5-faster-unmarked-tree-generation">5. Faster unmarked tree generation<a class="headerlink" href="#5-faster-unmarked-tree-generation" title="Permanent link">¶</a></h2>
+<h2 id="5-unmarked-tree-generation">5. Unmarked tree generation<a class="headerlink" href="#5-unmarked-tree-generation" title="Permanent link">¶</a></h2>
 <p>Both current flag versions use the rooted-shape generator from revision <code>7f167e1</code>. It enumerates rooted shapes, groups equivalent free shapes using AHU, and then selects the legacy lexicographic representatives.</p>
 <p>Independent checks established exact representative edges, vertex labels and ordering through six edges. Existing checkpoint tree numbers remain compatible in the tested range. This update improves graph generation while retaining the localization contributions and marking conventions.</p>
 <h2 id="6-exact-large-fraction-checkpoints">6. Exact large-fraction checkpoints<a class="headerlink" href="#6-exact-large-fraction-checkpoints" title="Permanent link">¶</a></h2>
@@ -2020,7 +2020,7 @@ mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
 <p>The new writer stores large values as tagged hexadecimal numerator/denominator integers. Exact signs and rational values are preserved, and ordinary legacy decimal checkpoints remain readable. The interpreter's global conversion limit is left unchanged.</p>
 <p>Newly tagged values require the updated reader; keep the corresponding software version with an active workspace.</p>
 <p>Flag 1.0.x execution path does not use this staged writer. The storage change belongs to version 1.1.0.dev1 enhanced flag/combined execution.</p>
-<h2 id="7-clearer-interfaces-and-analysis">7. Clearer interfaces and analysis<a class="headerlink" href="#7-clearer-interfaces-and-analysis" title="Permanent link">¶</a></h2>
+<h2 id="7-interfaces-and-analysis">7. Interfaces and analysis<a class="headerlink" href="#7-interfaces-and-analysis" title="Permanent link">¶</a></h2>
 <p>The standalone flag interface now exposes the parameter convention and displays bundle rank. Its worker help correctly identifies 0 or 1 as serial; the configured combined flag path uses 0 for automatic allocation, capped at 12. Quotient help distinguishes a fiber-weight consistency check from a justified geometric subbundle embedding.</p>
 <p>The enhanced flag workspace adds Hodge, saved-progress, cancellation and spectrum/exponent controls. Its completed-matrix cache distinguishes parameter conventions. Spectrum analysis works at the selected exact Novikov point while preserving the symbolic matrix; omitted values default to one.</p>
 <p>The standalone flag GUI substitutes a custom Evaluate y assignment into the returned matrix and suppresses its separate numerical y=1 spectrum. The toric and combined analysis workflows retain their symbolic matrices. See the evaluation table in <a href="../input-output/">Input/output conventions</a>.</p>
