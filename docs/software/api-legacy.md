@@ -71,10 +71,14 @@ parabolic, in the order used for Picard coordinates. For example,
 ### Curve classes (`beta`)
 
 A curve class is written
-\[
-  \beta=(b_{i_1},\ldots,b_{i_\rho}),
+
+
+$$
+\beta=(b_{i_1},\ldots,b_{i_\rho}),
   \qquad (i_1,\ldots,i_\rho)=\texttt{roots\_that\_stay},
-\]
+$$
+
+
 where the entries are nonnegative integers in the kept simple-coroot basis.
 The public methods accept this compact vector and embed it at the ambient
 Bourbaki nodes. A zero-padded ambient vector of length `rank` is also accepted,

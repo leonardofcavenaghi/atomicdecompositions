@@ -1,9 +1,13 @@
 ---
-title: PCI5-6 — 5-fold complete intersection
+title: "Degree-6 fivefold in P⁶ — PCI5-6"
 description: Exact fan inputs, ordered ambient basis, symbolic quantum multiplication and saved computation notes for PCI5-6.
 ---
 
-# PCI5-6
+# Degree-6 fivefold in \(\mathbb P^{6}\)
+
+**Geometric presentation.** Ambient variety: \(\mathbb P^{6}\). Defining multidegrees in this factor order: `[[6]]`.
+
+Source identifier: **PCI5-6**; see [CKP and HLM terminology](../sources.md). The presentation is verified by the [fan and divisor certificate](../../data/geometric-presentations.json).
 
 **Construction:** Projective complete intersection. **Dimension:** 5. **Index in source:** 1. **h(1,1):** 1.
 
@@ -20,7 +24,13 @@ Adjunction gives $-K_X=1H$.
 ### Invariants and full Hodge diamond
 
 $\dim X=5$, $h^{1,1}=1$, index $1$, $(-K_X)^5=6$, $e(X)=-13014$.
-\[\begin{array}{ccccccccccc}&&&&&1&&&&&\\&&&&0&&0&&&&\\&&&0&&1&&0&&&\\&&0&&0&&0&&0&&\\&0&&0&&1&&0&&0&\\0&&455&&6055&&6055&&455&&0\\&0&&0&&1&&0&&0&\\&&0&&0&&0&&0&&\\&&&0&&1&&0&&&\\&&&&0&&0&&&&\\&&&&&1&&&&&\end{array}\]
+
+
+$$
+\begin{array}{ccccccccccc}&&&&&1&&&&&\\&&&&0&&0&&&&\\&&&0&&1&&0&&&\\&&0&&0&&0&&0&&\\&0&&0&&1&&0&&0&\\0&&455&&6055&&6055&&455&&0\\&0&&0&&1&&0&&0&\\&&0&&0&&0&&0&&\\&&&0&&1&&0&&&\\&&&&0&&0&&&&\\&&&&&1&&&&&\end{array}
+$$
+
+
 $h^{4,1}=455$, $h^{3,2}=6055$; even rank 6; odd rank 13020.
 Independent K-theory check: $(\chi(\mathcal O_X),\chi(\Omega_X^1),\chi(\Omega_X^2))=(1, 454, -6054)$.
 
@@ -63,7 +73,13 @@ Write $M=c_1(X)\star$ and use the ordered basis $e_0,\ldots,e_{5}$ below. Column
 basis = ['1', 'x0', 'x0^2', 'x0^3', 'x0^4', 'x0^5']
 ```
 
-\[\mathrm{Gr}=\operatorname{diag}\!\left(- \frac{5}{2},- \frac{3}{2},- \frac{1}{2},\frac{1}{2},\frac{3}{2},\frac{5}{2}\right).\]
+
+
+$$
+\mathrm{Gr}=\operatorname{diag}\!\left(- \frac{5}{2},- \frac{3}{2},- \frac{1}{2},\frac{1}{2},\frac{3}{2},\frac{5}{2}\right).
+$$
+
+
 **Exact matrix:**  every nonzero entry is listed below; all omitted entries are zero. Indices are zero based. No Novikov specialization has been made in this table.
 
 | Row $i$ | Column $j$ | $M_{ij}$ |
@@ -103,9 +119,27 @@ Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 
 ### Exact characteristic polynomial of $K^F$
 
-\[\det(xI-K^F)=p_{1}(x)^{5}\,p_{2}(x).\]
-\[\begin{aligned}p_{1}(x)&=x - 1440.\end{aligned}\]
-\[\begin{aligned}p_{2}(x)&=x + 91872.\end{aligned}\]
+
+
+$$
+\det(xI-K^F)=p_{1}(x)^{5}\,p_{2}(x).
+$$
+
+
+
+
+$$
+\begin{aligned}p_{1}(x)&=x - 1440.\end{aligned}
+$$
+
+
+
+
+$$
+\begin{aligned}p_{2}(x)&=x + 91872.\end{aligned}
+$$
+
+
 Cyclic determinant: $\Delta=-1$. The specialized operator is cyclic.
 
 ### Numerical eigenvalues of $c_1\star$
@@ -128,4 +162,4 @@ Values are rounded to eight significant digits; repeated eigenvalues are retaine
 Powers and residue classes are multisets for each eigenvalue in the indicated factor, not paired lists. A simple-factor power applies at every root of that factor.
 Recursion obstruction for $p_{1}$: $\frac{\left(s + 2\right) \left(3 s + 5\right) \left(3 s + 7\right) \left(6 s + 11\right) \left(6 s + 13\right)}{252844002938880000}$.
 
-**Search aliases:** PCI5-6; dimension 5; fivefold; Projective complete intersection; Fano; quantum cohomology; Gromov-Witten; Hodge diamond; quantum multiplication; connection exponents.
+**Search aliases:** PCI5-6; dimension 5; fivefold; Projective complete intersection; Fano; quantum cohomology; Gromov-Witten; Hodge diamond; quantum multiplication; connection exponents; Degree-6 fivefold in P⁶; projective space.

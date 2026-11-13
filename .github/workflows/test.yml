@@ -91,6 +91,9 @@ jobs:
       - name: Validate exact saved toric records
         run: python scripts/validate_toric_results.py
 
+      - name: Verify explicit projective and bundle presentations
+        run: python scripts/validate_geometric_presentations.py
+
       - name: Validate catalog LaTeX
         run: PYTHONDONTWRITEBYTECODE=1 python scripts/validate_catalog_tex.py
 

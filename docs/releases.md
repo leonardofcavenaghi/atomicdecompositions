@@ -27,10 +27,12 @@ Sources were prepared on 2026-11-12 and published on 2026-11-13.
 - Universal catalogue organized by dimension and construction, with separate flag and toric mathematical descriptions.
 - Individual flag 1.0.6.dev0, flag 1.1.0.dev1 and toric 1.1.0.dev1 downloads, plus combined 1.1.0.dev1 and preserved flag 1.0.5.
 - Revised isolated-environment installation commands, version-specific launchers and unmarked cubic-surface installation checks.
+- Replaced source-code-only example titles with 166 exact fan-verified geometric presentations; explained CKP/HLM references and retained the original inputs.
 - Published 96 completed fourfold and 72 completed fivefold toric matrix records, preserving unresolved connection-factor notes and excluding unfinished matrices.
 - Added Milena Brockhof and alphabetized the contributors by surname.
 - Aligned the mathematical descriptions with the papers: pushed curve-class sums, projected operator A(q), grading G, connection signs and regularized-exponent multiset conventions.
 - Added measured formula-rendering checks for full-page loads, instant navigation and rapid page changes.
+- Correct display-equation delimiters before Markdown parsing and reject unwrapped TeX in browser checks across every new record and both mathematical descriptions.
 - Retry failed math-runtime downloads through an alternate provider and render late-arriving content automatically, with uncached first-open regression checks.
 
 The new software downloads keep development version labels. See [version differences](software/changes.md), [input/output formats](software/input-output.md) and [validation scope](software/launch-plan.md).

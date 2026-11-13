@@ -1,9 +1,13 @@
 ---
-title: HLM-27 — 4-fold complete intersection
+title: "Section of P_{P³}(O ⊕ O(2)^2) by 2ξ — HLM-27"
 description: Exact fan inputs, ordered ambient basis, symbolic quantum multiplication and saved computation notes for HLM-27.
 ---
 
-# HLM-27
+# Complete intersection in \(\mathbb P_{\mathbb P^{3}}(\mathcal O\oplus \mathcal O(2)^{\oplus 2})\)
+
+**Geometric presentation.** Ambient variety: \(\mathbb P_{\mathbb P^{3}}(\mathcal O\oplus \mathcal O(2)^{\oplus 2})\), in the quotient convention. With \(H\) the pullback of the base hyperplane class and \(\xi=c_1(\mathcal O(1))\), the defining divisors are \(2\xi\).
+
+Source identifier: **HLM-27**; see [CKP and HLM terminology](../sources.md). The presentation is verified by the [fan and divisor certificate](../../data/geometric-presentations.json).
 
 **Construction:** Complete intersection of codimension 1. **Dimension:** 4. **Index in source:** 1. **h(1,1):** 2.
 
@@ -17,9 +21,21 @@ Saved record: **complete with notes**. Matrix coefficients are exact; connection
 **Selection:**  nef_additional.
 **Hodge source:**  HLM-27, HLM Proposition 7.2, [1907.08000v3](https://arxiv.org/abs/1907.08000v3).
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $1$, $(-K_X)^4=64$, $e(X)=184$.
-\[\begin{array}{ccccccccc}&&&&1&&&&\\&&&0&&0&&&\\&&0&&2&&0&&\\&0&&0&&0&&0&\\0&&20&&138&&20&&0\\&0&&0&&0&&0&\\&&0&&2&&0&&\\&&&0&&0&&&\\&&&&1&&&&\end{array}\]
+
+
+$$
+\begin{array}{ccccccccc}&&&&1&&&&\\&&&0&&0&&&\\&&0&&2&&0&&\\&0&&0&&0&&0&\\0&&20&&138&&20&&0\\&0&&0&&0&&0&\\&&0&&2&&0&&\\&&&0&&0&&&\\&&&&1&&&&\end{array}
+$$
+
+
 Ambient rank: 8; full even rank: 184; full odd rank: 0. The complement of the ambient image in middle cohomology has dimension 176.
-\[\begin{aligned}\int_Xc_1^4&=64,&\int_Xc_1^2c_2&=112\\\int_Xc_2^2&=192,&\int_Xc_1c_3&=-56\\\int_Xc_4&=184,&\chi(\mathcal O_X)&=1.\end{aligned}\]
+
+
+$$
+\begin{aligned}\int_Xc_1^4&=64,&\int_Xc_1^2c_2&=112\\\int_Xc_2^2&=192,&\int_Xc_1c_3&=-56\\\int_Xc_4&=184,&\chi(\mathcal O_X)&=1.\end{aligned}
+$$
+
+
 Minimum wall degrees of the defining bundles: [0]; minimum adjunction wall degree: 0.
 
 ### Exact toric inputs
@@ -64,7 +80,13 @@ Columns are images of basis vectors. All omitted matrix entries are zero; indice
 basis = ['1', 'x2', 'x0', 'x2^2', 'x0*x2', 'x2^3', 'x0*x2^2', 'x0*x2^3']
 ```
 
-\[\mathrm{Gr}=\operatorname{diag}(-2,-1,-1,0,0,1,1,2)\]
+
+
+$$
+\mathrm{Gr}=\operatorname{diag}(-2,-1,-1,0,0,1,1,2)
+$$
+
+
 
 | $i$ | $j$ | $M_{ij}$ |
 |---|---|---|
@@ -117,7 +139,13 @@ Matrix time: 149.87 minutes. Saved checks: matrix rank, basis, Poincare pairing,
 
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 
-\[\Delta=0\]
+
+
+$$
+\Delta=0
+$$
+
+
 
 Cyclic at this point: False.
 Numerical eigenvalues of $M$ (multiplicities retained):
@@ -137,7 +165,13 @@ Numerical eigenvalues of $M$ (multiplicities retained):
 
 Factor 1: multiplicity 4; 1 distinct root(s) of $\det(xI-K^F)$.
 
-\[\begin{aligned}p_{1}(x)&=x - 6\end{aligned}\]
+
+
+$$
+\begin{aligned}p_{1}(x)&=x - 6\end{aligned}
+$$
+
+
 
 Complete exponent computation: False.
 **Unresolved:** 
@@ -148,13 +182,31 @@ the eigenvalue 6 has a 2-dimensional kernel, so its generalized eigenspace is no
 
 Factor 2: multiplicity 1; 4 distinct root(s) of $\det(xI-K^F)$.
 
-\[\begin{aligned}p_{2}(x)&=x^{4} + 24 x^{3} - 9000 x^{2} + 775008 x + 15594768\end{aligned}\]
 
-\[\text{Powers}=\{0\}\]
 
-\[\text{Classes modulo }\mathbb Z=\{0\}\]
+$$
+\begin{aligned}p_{2}(x)&=x^{4} + 24 x^{3} - 9000 x^{2} + 775008 x + 15594768\end{aligned}
+$$
+
+
+
+
+
+$$
+\text{Powers}=\{0\}
+$$
+
+
+
+
+
+$$
+\text{Classes modulo }\mathbb Z=\{0\}
+$$
+
+
 
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
 
-**Search aliases:** HLM-27; dimension 4; fourfold; Complete intersection of codimension 1; Fano; quantum cohomology; Gromov-Witten; Hodge diamond; quantum multiplication; connection exponents; Hausen Laface Mauz; HLM.
+**Search aliases:** HLM-27; dimension 4; fourfold; Complete intersection of codimension 1; Fano; quantum cohomology; Gromov-Witten; Hodge diamond; quantum multiplication; connection exponents; Hausen Laface Mauz; HLM; Section of P_{P³}(O ⊕ O(2)^2) by 2ξ; split projective bundle.

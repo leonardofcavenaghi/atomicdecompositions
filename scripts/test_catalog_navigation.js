@@ -18,6 +18,19 @@ async function measureMath(page, label, started) {
       node.querySelectorAll('mjx-container').length === 1);
   }, {timeout: 20000, polling: 50});
   const formulas = await page.$$eval('.arithmatex', nodes => nodes.length);
+  const unwrapped = await page.evaluate(() => {
+    const article = document.querySelector('article');
+    if (!article) return [];
+    const walker = document.createTreeWalker(article, NodeFilter.SHOW_TEXT);
+    const bad = [];
+    while (walker.nextNode()) {
+      const node = walker.currentNode;
+      if (node.parentElement.closest('pre,code,script,style,.arithmatex,mjx-container')) continue;
+      if (/\\(?:frac|begin|mathbb|langle|rangle|sum|operatorname)\b|\\[()[\]]/.test(node.textContent)) bad.push(node.textContent.trim().slice(0,180));
+    }
+    return bad;
+  });
+  if (unwrapped.length) throw new Error(label + ': raw TeX outside math blocks: ' + JSON.stringify(unwrapped.slice(0,5)));
   const errors = await page.$$eval('mjx-merror', nodes => nodes.length);
   if (errors) throw new Error(label + ': MathJax reported ' + errors + ' formula errors');
   return {page: label, navigation_to_rendered_ms: Date.now() - started, formulas};
@@ -197,7 +210,11 @@ async function main() {
       const count=await page.evaluate(() => jQuery('table').DataTable().rows().count());
       if (count!==expected) throw new Error('Wrong toric collection count: '+collection+' '+count);
     }
-    for (const id of ['hlm-29','qc5-001','prod5-b03']) {
+    const recordIds = await page.evaluate(async base => {
+      const data = await fetch(base + '/data/catalog-records.json').then(r => r.json());
+      return data.records.filter(r => r.link.startsWith('records/')).map(r => r.link.split('/').pop().replace('.md',''));
+    }, base);
+    for (const id of recordIds) {
       const started = Date.now();
       await page.goto(`${base}/catalog/records/${id}/`, {waitUntil:'domcontentloaded'});
       renderingTimings.push(await measureMath(page, id + ': full-page navigation with cached shared assets', started));

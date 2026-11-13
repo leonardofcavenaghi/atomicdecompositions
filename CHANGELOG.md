@@ -26,3 +26,11 @@ Math rendering now retries failed initial runtime downloads using an alternate p
 ## Mathematical notation
 
 The flag and toric mathematical descriptions now use the papers’ notation and formulae, including ambient pushforward sums and the sign relation K^F=-A(q). They distinguish computed ambient data from full Hodge-invariant factors and retain the hypotheses needed for atomic and rationality interpretations.
+
+## Explicit geometric presentations
+
+166 toric catalogue records now use explicit projective-space, product or split-projective-bundle descriptions, verified from the exact saved fans and divisor relations. CKP and HLM remain source identifiers with a terminology page; the two presentations not identified by these checks retain their full fan inputs.
+
+## Display-equation parsing
+
+Display equations now use blank-separated math blocks so Markdown cannot strip their delimiters or reinterpret TeX subscripts. Browser checks visit every new catalogue record and both mathematical descriptions, rejecting raw TeX outside math containers as well as rendering errors.

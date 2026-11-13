@@ -1,9 +1,13 @@
 ---
-title: PROD5-E01 — 5-fold complete intersection
+title: "Complete intersection of multidegrees (2,2), (1,1), (1,1) in P⁴ × P⁴ — PROD5-E01"
 description: Exact fan inputs, ordered ambient basis, symbolic quantum multiplication and saved computation notes for PROD5-E01.
 ---
 
-# PROD5-E01
+# Complete intersection in \(\mathbb P^{4}\times \mathbb P^{4}\)
+
+**Geometric presentation.** Ambient variety: \(\mathbb P^{4}\times \mathbb P^{4}\). Defining multidegrees in this factor order: `[[2, 2], [1, 1], [1, 1]]`.
+
+Source identifier: **PROD5-E01**; see [CKP and HLM terminology](../sources.md). The presentation is verified by the [fan and divisor certificate](../../data/geometric-presentations.json).
 
 **Construction:** Complete intersection in a product of projective spaces. **Dimension:** 5. **Index in source:** 1. **h(1,1):** 2.
 
@@ -27,7 +31,13 @@ Related workbook IDs: [111].
 ### Invariants and full Hodge diamond
 
 $\dim X=5$, $h^{1,1}=2$, index $1$, $(-K_X)^5=140$, $e(X)=-1080$.
-\[\begin{array}{ccccccccccc}&&&&&1&&&&&\\&&&&0&&0&&&&\\&&&0&&2&&0&&&\\&&0&&0&&0&&0&&\\&0&&0&&3&&0&&0&\\0&&25&&521&&521&&25&&0\\&0&&0&&3&&0&&0&\\&&0&&0&&0&&0&&\\&&&0&&2&&0&&&\\&&&&0&&0&&&&\\&&&&&1&&&&&\end{array}\]
+
+
+$$
+\begin{array}{ccccccccccc}&&&&&1&&&&&\\&&&&0&&0&&&&\\&&&0&&2&&0&&&\\&&0&&0&&0&&0&&\\&0&&0&&3&&0&&0&\\0&&25&&521&&521&&25&&0\\&0&&0&&3&&0&&0&\\&&0&&0&&0&&0&&\\&&&0&&2&&0&&&\\&&&&0&&0&&&&\\&&&&&1&&&&&\end{array}
+$$
+
+
 $h^{4,1}=25$, $h^{3,2}=521$; even rank 12; odd rank 1092.
 Independent K-theory check: $(\chi(\mathcal O_X),\chi(\Omega_X^1),\chi(\Omega_X^2))=(1, 23, -518)$.
 
@@ -81,7 +91,13 @@ Write $M=c_1(X)\star$ and use the ordered basis $e_0,\ldots,e_{11}$ below. Colum
 basis = ['1', 'x5', 'x0', 'x5^2', 'x0^2', 'x0*x5', 'x5^3', 'x0^3', 'x0*x5^2', 'x5^4', 'x0^4', 'x0*x5^4']
 ```
 
-\[\mathrm{Gr}=\operatorname{diag}\!\left(- \frac{5}{2},- \frac{3}{2},- \frac{3}{2},- \frac{1}{2},- \frac{1}{2},- \frac{1}{2},\frac{1}{2},\frac{1}{2},\frac{1}{2},\frac{3}{2},\frac{3}{2},\frac{5}{2}\right).\]
+
+
+$$
+\mathrm{Gr}=\operatorname{diag}\!\left(- \frac{5}{2},- \frac{3}{2},- \frac{3}{2},- \frac{1}{2},- \frac{1}{2},- \frac{1}{2},\frac{1}{2},\frac{1}{2},\frac{1}{2},\frac{3}{2},\frac{3}{2},\frac{5}{2}\right).
+$$
+
+
 **Exact matrix:**  every nonzero entry is listed below; all omitted entries are zero. Indices are zero based. No Novikov specialization has been made in this table.
 
 | Row $i$ | Column $j$ | $M_{ij}$ |
@@ -198,9 +214,27 @@ Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 
 ### Exact characteristic polynomial of $K^F$
 
-\[\det(xI-K^F)=p_{1}(x)^{7}\,p_{2}(x).\]
-\[\begin{aligned}p_{1}(x)&=x - 10.\end{aligned}\]
-\[\begin{aligned}p_{2}(x)&=x^{5} + 50 x^{4} - 59000 x^{3} + 5410000 x^{2} - 85150000 x\\&+372100000.\end{aligned}\]
+
+
+$$
+\det(xI-K^F)=p_{1}(x)^{7}\,p_{2}(x).
+$$
+
+
+
+
+$$
+\begin{aligned}p_{1}(x)&=x - 10.\end{aligned}
+$$
+
+
+
+
+$$
+\begin{aligned}p_{2}(x)&=x^{5} + 50 x^{4} - 59000 x^{3} + 5410000 x^{2} - 85150000 x\\&+372100000.\end{aligned}
+$$
+
+
 Cyclic determinant: $\Delta=0$. The specialized operator is not cyclic.
 
 ### Numerical eigenvalues of $c_1\star$
@@ -226,4 +260,4 @@ Values are rounded to eight significant digits; repeated eigenvalues are retaine
 Powers and residue classes are multisets for each eigenvalue in the indicated factor, not paired lists. A simple-factor power applies at every root of that factor.
 **Unresolved factor $p_{1}$:**  the eigenvalue 10 has a 3-dimensional kernel, so its generalized eigenspace is not a single Jordan block and the factor is not cyclic (check cyclic_determinant first).
 
-**Search aliases:** PROD5-E01; dimension 5; fivefold; Complete intersection in a product of projective spaces; Fano; quantum cohomology; Gromov-Witten; Hodge diamond; quantum multiplication; connection exponents.
+**Search aliases:** PROD5-E01; dimension 5; fivefold; Complete intersection in a product of projective spaces; Fano; quantum cohomology; Gromov-Witten; Hodge diamond; quantum multiplication; connection exponents; Complete intersection of multidegrees (2,2), (1,1), (1,1) in P⁴ × P⁴; product of projective spaces.

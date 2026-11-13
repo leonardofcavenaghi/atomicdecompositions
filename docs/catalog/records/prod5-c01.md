@@ -1,9 +1,13 @@
 ---
-title: PROD5-C01 — 5-fold complete intersection
+title: "Complete intersection of multidegrees (2,2,2) in P² × P² × P² — PROD5-C01"
 description: Exact fan inputs, ordered ambient basis, symbolic quantum multiplication and saved computation notes for PROD5-C01.
 ---
 
-# PROD5-C01
+# Complete intersection in \(\mathbb P^{2}\times \mathbb P^{2}\times \mathbb P^{2}\)
+
+**Geometric presentation.** Ambient variety: \(\mathbb P^{2}\times \mathbb P^{2}\times \mathbb P^{2}\). Defining multidegrees in this factor order: `[[2, 2, 2]]`.
+
+Source identifier: **PROD5-C01**; see [CKP and HLM terminology](../sources.md). The presentation is verified by the [fan and divisor certificate](../../data/geometric-presentations.json).
 
 **Construction:** Complete intersection in a product of projective spaces. **Dimension:** 5. **Index in source:** 1. **h(1,1):** 3.
 
@@ -26,7 +30,13 @@ The residual product degrees give the anticanonical class.
 ### Invariants and full Hodge diamond
 
 $\dim X=5$, $h^{1,1}=3$, index $1$, $(-K_X)^5=180$, $e(X)=-1170$.
-\[\begin{array}{ccccccccccc}&&&&&1&&&&&\\&&&&0&&0&&&&\\&&&0&&3&&0&&&\\&&0&&0&&0&&0&&\\&0&&0&&6&&0&&0&\\0&&27&&568&&568&&27&&0\\&0&&0&&6&&0&&0&\\&&0&&0&&0&&0&&\\&&&0&&3&&0&&&\\&&&&0&&0&&&&\\&&&&&1&&&&&\end{array}\]
+
+
+$$
+\begin{array}{ccccccccccc}&&&&&1&&&&&\\&&&&0&&0&&&&\\&&&0&&3&&0&&&\\&&0&&0&&0&&0&&\\&0&&0&&6&&0&&0&\\0&&27&&568&&568&&27&&0\\&0&&0&&6&&0&&0&\\&&0&&0&&0&&0&&\\&&&0&&3&&0&&&\\&&&&0&&0&&&&\\&&&&&1&&&&&\end{array}
+$$
+
+
 $h^{4,1}=27$, $h^{3,2}=568$; even rank 20; odd rank 1190.
 Independent K-theory check: $(\chi(\mathcal O_X),\chi(\Omega_X^1),\chi(\Omega_X^2))=(1, 24, -562)$.
 
@@ -77,7 +87,13 @@ Write $M=c_1(X)\star$ and use the ordered basis $e_0,\ldots,e_{19}$ below. Colum
 basis = ['1', 'x6', 'x3', 'x0', 'x6^2', 'x3^2', 'x0^2', 'x3*x6', 'x0*x6', 'x0*x3', 'x3*x6^2', 'x3^2*x6', 'x0*x6^2', 'x0*x3^2', 'x0^2*x6', 'x0*x3*x6', 'x3^2*x6^2', 'x0*x3*x6^2', 'x0*x3^2*x6', 'x0*x3^2*x6^2']
 ```
 
-\[\mathrm{Gr}=\operatorname{diag}\!\left(- \frac{5}{2},- \frac{3}{2},- \frac{3}{2},- \frac{3}{2},- \frac{1}{2},- \frac{1}{2},- \frac{1}{2},- \frac{1}{2},- \frac{1}{2},- \frac{1}{2},\frac{1}{2},\frac{1}{2},\frac{1}{2},\frac{1}{2},\frac{1}{2},\frac{1}{2},\frac{3}{2},\frac{3}{2},\frac{3}{2},\frac{5}{2}\right).\]
+
+
+$$
+\mathrm{Gr}=\operatorname{diag}\!\left(- \frac{5}{2},- \frac{3}{2},- \frac{3}{2},- \frac{3}{2},- \frac{1}{2},- \frac{1}{2},- \frac{1}{2},- \frac{1}{2},- \frac{1}{2},- \frac{1}{2},\frac{1}{2},\frac{1}{2},\frac{1}{2},\frac{1}{2},\frac{1}{2},\frac{1}{2},\frac{3}{2},\frac{3}{2},\frac{3}{2},\frac{5}{2}\right).
+$$
+
+
 **Exact matrix:**  every nonzero entry is listed below; all omitted entries are zero. Indices are zero based. No Novikov specialization has been made in this table.
 
 | Row $i$ | Column $j$ | $M_{ij}$ |
@@ -376,9 +392,27 @@ Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 
 ### Exact characteristic polynomial of $K^F$
 
-\[\det(xI-K^F)=p_{1}(x)^{11}\,p_{2}(x).\]
-\[\begin{aligned}p_{1}(x)&=x - 20.\end{aligned}\]
-\[\begin{aligned}p_{2}(x)&=x^{9} + 180 x^{8} - 25776 x^{7} + 4896960 x^{6} - 444907008 x^{5}\\&+36841328640 x^{4} - 1967691890688 x^{3} + 85755764736000 x^{2}\\&+16119716249600000 - 1971756564480000 x.\end{aligned}\]
+
+
+$$
+\det(xI-K^F)=p_{1}(x)^{11}\,p_{2}(x).
+$$
+
+
+
+
+$$
+\begin{aligned}p_{1}(x)&=x - 20.\end{aligned}
+$$
+
+
+
+
+$$
+\begin{aligned}p_{2}(x)&=x^{9} + 180 x^{8} - 25776 x^{7} + 4896960 x^{6} - 444907008 x^{5}\\&+36841328640 x^{4} - 1967691890688 x^{3} + 85755764736000 x^{2}\\&+16119716249600000 - 1971756564480000 x.\end{aligned}
+$$
+
+
 Cyclic determinant: $\Delta=0$. The specialized operator is not cyclic.
 
 ### Numerical eigenvalues of $c_1\star$
@@ -408,4 +442,4 @@ Values are rounded to eight significant digits; repeated eigenvalues are retaine
 Powers and residue classes are multisets for each eigenvalue in the indicated factor, not paired lists. A simple-factor power applies at every root of that factor.
 **Unresolved factor $p_{1}$:**  the eigenvalue 20 has a 6-dimensional kernel, so its generalized eigenspace is not a single Jordan block and the factor is not cyclic (check cyclic_determinant first).
 
-**Search aliases:** PROD5-C01; dimension 5; fivefold; Complete intersection in a product of projective spaces; Fano; quantum cohomology; Gromov-Witten; Hodge diamond; quantum multiplication; connection exponents.
+**Search aliases:** PROD5-C01; dimension 5; fivefold; Complete intersection in a product of projective spaces; Fano; quantum cohomology; Gromov-Witten; Hodge diamond; quantum multiplication; connection exponents; Complete intersection of multidegrees (2,2,2) in P² × P² × P²; product of projective spaces.

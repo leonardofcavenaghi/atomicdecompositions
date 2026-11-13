@@ -1,9 +1,13 @@
 ---
-title: PROD5-B02 — 5-fold complete intersection
+title: "Complete intersection of multidegrees (2,3) in P³ × P³ — PROD5-B02"
 description: Exact fan inputs, ordered ambient basis, symbolic quantum multiplication and saved computation notes for PROD5-B02.
 ---
 
-# PROD5-B02
+# Complete intersection in \(\mathbb P^{3}\times \mathbb P^{3}\)
+
+**Geometric presentation.** Ambient variety: \(\mathbb P^{3}\times \mathbb P^{3}\). Defining multidegrees in this factor order: `[[2, 3]]`.
+
+Source identifier: **PROD5-B02**; see [CKP and HLM terminology](../sources.md). The presentation is verified by the [fan and divisor certificate](../../data/geometric-presentations.json).
 
 **Construction:** Complete intersection in a product of projective spaces. **Dimension:** 5. **Index in source:** 1. **h(1,1):** 2.
 
@@ -27,7 +31,13 @@ Related workbook IDs: [29, 31].
 ### Invariants and full Hodge diamond
 
 $\dim X=5$, $h^{1,1}=2$, index $1$, $(-K_X)^5=320$, $e(X)=-668$.
-\[\begin{array}{ccccccccccc}&&&&&1&&&&&\\&&&&0&&0&&&&\\&&&0&&2&&0&&&\\&&0&&0&&0&&0&&\\&0&&0&&3&&0&&0&\\0&&10&&330&&330&&10&&0\\&0&&0&&3&&0&&0&\\&&0&&0&&0&&0&&\\&&&0&&2&&0&&&\\&&&&0&&0&&&&\\&&&&&1&&&&&\end{array}\]
+
+
+$$
+\begin{array}{ccccccccccc}&&&&&1&&&&&\\&&&&0&&0&&&&\\&&&0&&2&&0&&&\\&&0&&0&&0&&0&&\\&0&&0&&3&&0&&0&\\0&&10&&330&&330&&10&&0\\&0&&0&&3&&0&&0&\\&&0&&0&&0&&0&&\\&&&0&&2&&0&&&\\&&&&0&&0&&&&\\&&&&&1&&&&&\end{array}
+$$
+
+
 $h^{4,1}=10$, $h^{3,2}=330$; even rank 12; odd rank 680.
 Independent K-theory check: $(\chi(\mathcal O_X),\chi(\Omega_X^1),\chi(\Omega_X^2))=(1, 8, -327)$.
 
@@ -73,7 +83,13 @@ Write $M=c_1(X)\star$ and use the ordered basis $e_0,\ldots,e_{11}$ below. Colum
 basis = ['1', 'x4', 'x0', 'x4^2', 'x0^2', 'x0*x4', 'x4^3', 'x0^3', 'x0*x4^2', 'x0*x4^3', 'x0^3*x4', 'x0^2*x4^3']
 ```
 
-\[\mathrm{Gr}=\operatorname{diag}\!\left(- \frac{5}{2},- \frac{3}{2},- \frac{3}{2},- \frac{1}{2},- \frac{1}{2},- \frac{1}{2},\frac{1}{2},\frac{1}{2},\frac{1}{2},\frac{3}{2},\frac{3}{2},\frac{5}{2}\right).\]
+
+
+$$
+\mathrm{Gr}=\operatorname{diag}\!\left(- \frac{5}{2},- \frac{3}{2},- \frac{3}{2},- \frac{1}{2},- \frac{1}{2},- \frac{1}{2},\frac{1}{2},\frac{1}{2},\frac{1}{2},\frac{3}{2},\frac{3}{2},\frac{5}{2}\right).
+$$
+
+
 **Exact matrix:**  every nonzero entry is listed below; all omitted entries are zero. Indices are zero based. No Novikov specialization has been made in this table.
 
 | Row $i$ | Column $j$ | $M_{ij}$ |
@@ -179,9 +195,27 @@ Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 
 ### Exact characteristic polynomial of $K^F$
 
-\[\det(xI-K^F)=p_{1}(x)^{4}\,p_{2}(x).\]
-\[\begin{aligned}p_{1}(x)&=x - 12.\end{aligned}\]
-\[\begin{aligned}p_{2}(x)&=x^{8} + 120 x^{7} + 3192 x^{6} + 165024 x^{5} - 24639984 x^{4}\\&+731278080 x^{3} - 9592128000 x^{2} + 59939426304 x\\&-146046578688.\end{aligned}\]
+
+
+$$
+\det(xI-K^F)=p_{1}(x)^{4}\,p_{2}(x).
+$$
+
+
+
+
+$$
+\begin{aligned}p_{1}(x)&=x - 12.\end{aligned}
+$$
+
+
+
+
+$$
+\begin{aligned}p_{2}(x)&=x^{8} + 120 x^{7} + 3192 x^{6} + 165024 x^{5} - 24639984 x^{4}\\&+731278080 x^{3} - 9592128000 x^{2} + 59939426304 x\\&-146046578688.\end{aligned}
+$$
+
+
 Cyclic determinant: $\Delta=-39026244510746984439730217597591863638834020352$. The specialized operator is cyclic.
 
 ### Numerical eigenvalues of $c_1\star$
@@ -207,4 +241,4 @@ Values are rounded to eight significant digits; repeated eigenvalues are retaine
 Powers and residue classes are multisets for each eigenvalue in the indicated factor, not paired lists. A simple-factor power applies at every root of that factor.
 Recursion obstruction for $p_{1}$: $- \frac{\left(2 s + 3\right)^{4}}{1333248}$.
 
-**Search aliases:** PROD5-B02; dimension 5; fivefold; Complete intersection in a product of projective spaces; Fano; quantum cohomology; Gromov-Witten; Hodge diamond; quantum multiplication; connection exponents.
+**Search aliases:** PROD5-B02; dimension 5; fivefold; Complete intersection in a product of projective spaces; Fano; quantum cohomology; Gromov-Witten; Hodge diamond; quantum multiplication; connection exponents; Complete intersection of multidegrees (2,3) in P³ × P³; product of projective spaces.

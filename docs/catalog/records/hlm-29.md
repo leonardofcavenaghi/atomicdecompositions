@@ -1,9 +1,13 @@
 ---
-title: HLM-29 — 4-fold complete intersection
+title: "Verra fourfold — HLM-29"
 description: Exact fan inputs, ordered ambient basis, symbolic quantum multiplication and saved computation notes for HLM-29.
 ---
 
-# HLM-29
+# Verra fourfold
+
+**Geometric presentation.** Ambient variety: \(\mathbb P_{\mathbb P^{2}}(\mathcal O\oplus \mathcal O(1)^{\oplus 3})\), in the quotient convention. With \(H\) the pullback of the base hyperplane class and \(\xi=c_1(\mathcal O(1))\), the defining divisors are \(2\xi\).
+
+Source identifier: **HLM-29**; see [CKP and HLM terminology](../sources.md). The presentation is verified by the [fan and divisor certificate](../../data/geometric-presentations.json).
 
 **Construction:** Verra fourfold. **Dimension:** 4. **Index in source:** 2. **h(1,1):** 2.
 
@@ -18,9 +22,21 @@ Saved record: **complete with notes**. Matrix coefficients are exact; connection
 Verra fourfold
 **Hodge source:**  HLM-29, HLM Proposition 7.2, [1907.08000v3](https://arxiv.org/abs/1907.08000v3).
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $2$, $(-K_X)^4=192$, $e(X)=30$.
-\[\begin{array}{ccccccccc}&&&&1&&&&\\&&&0&&0&&&\\&&0&&2&&0&&\\&0&&0&&0&&0&\\0&&1&&22&&1&&0\\&0&&0&&0&&0&\\&&0&&2&&0&&\\&&&0&&0&&&\\&&&&1&&&&\end{array}\]
+
+
+$$
+\begin{array}{ccccccccc}&&&&1&&&&\\&&&0&&0&&&\\&&0&&2&&0&&\\&0&&0&&0&&0&\\0&&1&&22&&1&&0\\&0&&0&&0&&0&\\&&0&&2&&0&&\\&&&0&&0&&&\\&&&&1&&&&\end{array}
+$$
+
+
 Ambient rank: 9; full even rank: 30; full odd rank: 0. The complement of the ambient image in middle cohomology has dimension 21.
-\[\begin{aligned}\int_Xc_1^4&=192,&\int_Xc_1^2c_2&=144\\\int_Xc_2^2&=114,&\int_Xc_1c_3&=24\\\int_Xc_4&=30,&\chi(\mathcal O_X)&=1.\end{aligned}\]
+
+
+$$
+\begin{aligned}\int_Xc_1^4&=192,&\int_Xc_1^2c_2&=144\\\int_Xc_2^2&=114,&\int_Xc_1c_3&=24\\\int_Xc_4&=30,&\chi(\mathcal O_X)&=1.\end{aligned}
+$$
+
+
 Minimum wall degrees of the defining bundles: [0]; minimum adjunction wall degree: 0.
 
 ### Exact toric inputs
@@ -65,7 +81,13 @@ Columns are images of basis vectors. All omitted matrix entries are zero; indice
 basis = ['1', 'x3', 'x0', 'x3^2', 'x0^2', 'x0*x3', 'x0*x3^2', 'x0^2*x3', 'x0*x3^3']
 ```
 
-\[\mathrm{Gr}=\operatorname{diag}(-2,-1,-1,0,0,0,1,1,2)\]
+
+
+$$
+\mathrm{Gr}=\operatorname{diag}(-2,-1,-1,0,0,0,1,1,2)
+$$
+
+
 
 | $i$ | $j$ | $M_{ij}$ |
 |---|---|---|
@@ -104,7 +126,13 @@ Matrix time: 0.14 minutes. Saved checks: matrix rank, basis, Poincare pairing, u
 
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 
-\[\Delta=0\]
+
+
+$$
+\Delta=0
+$$
+
+
 
 Cyclic at this point: False.
 Numerical eigenvalues of $M$ (multiplicities retained):
@@ -125,7 +153,13 @@ Numerical eigenvalues of $M$ (multiplicities retained):
 
 Factor 1: multiplicity 3; 1 distinct root(s) of $\det(xI-K^F)$.
 
-\[\begin{aligned}p_{1}(x)&=x\end{aligned}\]
+
+
+$$
+\begin{aligned}p_{1}(x)&=x\end{aligned}
+$$
+
+
 
 Complete exponent computation: False.
 **Unresolved:** 
@@ -136,13 +170,31 @@ the eigenvalue 0 has a 3-dimensional kernel, so its generalized eigenspace is no
 
 Factor 2: multiplicity 1; 6 distinct root(s) of $\det(xI-K^F)$.
 
-\[\begin{aligned}p_{2}(x)&=x^{6} - 432 x^{4} - 62208 x^{2} - 2985984\end{aligned}\]
 
-\[\text{Powers}=\{0\}\]
 
-\[\text{Classes modulo }\mathbb Z=\{0\}\]
+$$
+\begin{aligned}p_{2}(x)&=x^{6} - 432 x^{4} - 62208 x^{2} - 2985984\end{aligned}
+$$
+
+
+
+
+
+$$
+\text{Powers}=\{0\}
+$$
+
+
+
+
+
+$$
+\text{Classes modulo }\mathbb Z=\{0\}
+$$
+
+
 
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
 
-**Search aliases:** HLM-29; dimension 4; fourfold; Verra fourfold; Fano; quantum cohomology; Gromov-Witten; Hodge diamond; quantum multiplication; connection exponents; Hausen Laface Mauz; HLM.
+**Search aliases:** HLM-29; dimension 4; fourfold; Verra fourfold; Fano; quantum cohomology; Gromov-Witten; Hodge diamond; quantum multiplication; connection exponents; Hausen Laface Mauz; HLM; split projective bundle.
