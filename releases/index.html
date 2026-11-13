@@ -1718,6 +1718,7 @@ using it for reproducible work.</p>
 <li>Published 96 completed fourfold and 72 completed fivefold toric matrix records, preserving unresolved connection-factor notes and excluding unfinished matrices.</li>
 <li>Added Milena Brockhof and alphabetized the contributors by surname.</li>
 <li>Added measured formula-rendering checks for full-page loads, instant navigation and rapid page changes.</li>
+<li>Retry failed math-runtime downloads through an alternate provider and render late-arriving content automatically, with uncached first-open regression checks.</li>
 </ul>
 <p>The new software downloads keep development version labels. See <a href="../software/changes/">version differences</a>, <a href="../software/input-output/">input/output formats</a> and <a href="../software/launch-plan/">validation scope</a>.</p>
 <h2 id="v105-2026-10-12">v1.0.5 — 2026-10-12<a class="headerlink" href="#v105-2026-10-12" title="Permanent link">&para;</a></h2>
@@ -1832,9 +1833,7 @@ using it for reproducible work.</p>
       
         <script src="../javascripts/catalog.js"></script>
       
-        <script src="../javascripts/mathjax.js"></script>
-      
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../javascripts/mathjax-loader.js"></script>
       
     
   </body>
