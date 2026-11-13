@@ -1,0 +1,6328 @@
+{
+  "convention": "A=c1 star; saved characteristic factors p_i are for K^F=-A. Each row gives the multiset separately at every lambda with p_i(-lambda)=0. Powers s=-theta; classes are s modulo Z. Repeated entries are retained; unresolved is not an empty multiset.",
+  "records": [
+    {
+      "id": "HLM-29",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x",
+          "multiplicity": 3,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{6} - 432 x^{4} - 62208 x^{2} - 2985984",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/hlm-29.md"
+    },
+    {
+      "id": "HLM-27",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 6",
+          "multiplicity": 4,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{4} + 24 x^{3} - 9000 x^{2} + 775008 x + 15594768",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 4,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/hlm-27.md"
+    },
+    {
+      "id": "CKP-001",
+      "point": {
+        "y1": 2
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x^{5} + 6250",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 5,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-001.md"
+    },
+    {
+      "id": "CKP-002",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x^{8} - 9 x^{7} + 27 x^{6} - 27 x^{5} - 1024 x^{4} + 29184 x^{3} - 201600 x^{2}\\\\&+540000 x - 244106",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 8,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-002.md"
+    },
+    {
+      "id": "CKP-003",
+      "point": {
+        "y1": 2
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{4} - 2048",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 4,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-003.md"
+    },
+    {
+      "id": "CKP-004",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 3",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{7} - 6 x^{6} + 9 x^{5} - 54 x^{4} - 6792 x^{3} + 99900 x^{2} - 405000 x\\\\&+838026",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 7,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-004.md"
+    },
+    {
+      "id": "CKP-005",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 3",
+          "multiplicity": 2,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-2/3",
+            "-1/3"
+          ],
+          "classes": [
+            "1/3",
+            "2/3"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{6} - 3 x^{5} - 32 x^{4} - 192 x^{3} - 32400 x^{2} + 270000 x\\\\&+489078",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-005.md"
+    },
+    {
+      "id": "CKP-006",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 2",
+          "multiplicity": 3,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{5} - 81 x^{4} - 216 x^{3} - 600 x^{2} - 60000 x + 4868592",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 5,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-006.md"
+    },
+    {
+      "id": "CKP-014",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x^{9} - 9 x^{8} + 27 x^{7} + 135 x^{6} - 8262 x^{5} + 62010 x^{4} - 164052 x^{3}\\\\&+454572 x^{2} - 124416 x + 268056",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 9,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-014.md"
+    },
+    {
+      "id": "CKP-018",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x^{9} - 12 x^{8} + 54 x^{7} + 54 x^{6} - 12879 x^{5} + 198036 x^{4}\\\\&- 1285794 x^{3} + 4304340 x^{2} - 7480998 x + 5569830",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 9,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-018.md"
+    },
+    {
+      "id": "CKP-026",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x - 3",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 3,
+          "polynomial_latex": "x^{6} - 6 x^{5} + 9 x^{4} + 432 x^{3} - 9072 x^{2} + 41472 x - 8640",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-026.md"
+    },
+    {
+      "id": "CKP-030",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 3",
+          "multiplicity": 2,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-1/2",
+            "-1/2"
+          ],
+          "classes": [
+            "1/2",
+            "1/2"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{6} - 3 x^{5} + 432 x^{3} - 16200 x^{2} + 101250 x - 122094",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-030.md"
+    },
+    {
+      "id": "CKP-033",
+      "point": {
+        "y1": 2
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x",
+          "multiplicity": 2,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-1/2",
+            "-1/2"
+          ],
+          "classes": [
+            "1/2",
+            "1/2"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{3} + 864",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 3,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-033.md"
+    },
+    {
+      "id": "CKP-036",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 3",
+          "multiplicity": 2,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-1/2",
+            "-1/2"
+          ],
+          "classes": [
+            "1/2",
+            "1/2"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{7} - 6 x^{6} + 25 x^{5} + 2952 x^{4} - 74186 x^{3} + 576450 x^{2}\\\\&+1684638 - 1648350 x",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 7,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-036.md"
+    },
+    {
+      "id": "CKP-037",
+      "point": {
+        "y1": 2
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x",
+          "multiplicity": 2,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-1",
+            "0"
+          ],
+          "classes": [
+            "0",
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{3} + 1458",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 3,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-037.md"
+    },
+    {
+      "id": "CKP-039",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 3",
+          "multiplicity": 3,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{5} + 32 x^{3} + 4950 x^{2} - 67500 x + 308718",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 5,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-039.md"
+    },
+    {
+      "id": "CKP-040",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 2",
+          "multiplicity": 4,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{5} + 24 x^{4} + 282 x^{3} + 16680 x^{2} + 256368 x + 1705020",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 5,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-040.md"
+    },
+    {
+      "id": "CKP-041",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 3",
+          "multiplicity": 3,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-1",
+            "-1",
+            "-1"
+          ],
+          "classes": [
+            "0",
+            "0",
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{5} + 32 x^{4} + 192 x^{3} + 32400 x^{2} + 725328 x - 2479734",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 5,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-041.md"
+    },
+    {
+      "id": "CKP-046",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x^{2} - 12",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 2,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{6} + 32 x^{5} - 36 x^{4} - 1200 x^{3} + 432 x^{2} + 72000 x\\\\&+1798272",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-046.md"
+    },
+    {
+      "id": "CKP-049",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{8} + 24 x^{7} + 112 x^{6} - 882 x^{5} - 5016 x^{4} + 77088 x^{3}\\\\&+1604452 x^{2} + 9326388 x + 229096",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 8,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-049.md"
+    },
+    {
+      "id": "CKP-060",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 10",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x + 10",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 3,
+          "polynomial_latex": "x^{2} - 12",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 2,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 4,
+          "polynomial_latex": "x^{4} + 96 x^{2} + 2352",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 4,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-060.md"
+    },
+    {
+      "id": "CKP-061",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{8} - 8 x^{6} - 7152 x^{4} - 286208 x^{2} - 512000",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 8,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-061.md"
+    },
+    {
+      "id": "CKP-078",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x^{9} - 48 x^{7} + 162 x^{6} + 864 x^{5} + 29808 x^{4} + 1836 x^{3}\\\\&+209952 x^{2} - 355428 x + 143640",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 9,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-078.md"
+    },
+    {
+      "id": "CKP-102",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x^{12} - 32 x^{11} + 144 x^{10} + 5848 x^{9} - 82016 x^{8} + 435936 x^{7}\\\\&- 9069992 x^{6} + 212732672 x^{5} - 2332200512 x^{4} + 13449589344 x^{3}\\\\&- 41842620288 x^{2} + 64589369472 x - 37136055536",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 12,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-102.md"
+    },
+    {
+      "id": "CKP-107",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x^{9} - 6 x^{8} - 144 x^{7} + 1026 x^{6} - 8910 x^{5} + 358524 x^{4}\\\\&- 4616676 x^{3} + 26216784 x^{2} - 70669260 x + 74312100",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 9,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-107.md"
+    },
+    {
+      "id": "CKP-111",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x^{2} - 12",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 2,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{2} + 12 x + 24",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 2,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 3,
+          "polynomial_latex": "x^{4} - 12 x^{3} + 84 x^{2} - 288 x + 1872",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 4,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-111.md"
+    },
+    {
+      "id": "CKP-114",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{8} + 3 x^{7} - 32 x^{6} + 1206 x^{5} + 4272 x^{4} + 72288 x^{3} + 639472 x^{2}\\\\&+1389120 x + 56584",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 8,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-114.md"
+    },
+    {
+      "id": "CKP-144",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 8",
+          "multiplicity": 2,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-1/2",
+            "-1/2"
+          ],
+          "classes": [
+            "1/2",
+            "1/2"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{10} - 16 x^{9} - 160 x^{8} + 4792 x^{7} - 107930 x^{6} + 3156748 x^{5}\\\\&- 55352880 x^{4} + 562450848 x^{3} - 3378029856 x^{2} + 11059767828 x\\\\&-15007446816",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 10,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-144.md"
+    },
+    {
+      "id": "CKP-145",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 4",
+          "multiplicity": 2,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-1/2",
+            "-1/2"
+          ],
+          "classes": [
+            "1/2",
+            "1/2"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{6} + 8 x^{5} - 16 x^{4} + 1040 x^{3} - 57280 x^{2} + 368384 x\\\\&-261056",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-145.md"
+    },
+    {
+      "id": "CKP-155",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 3",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{12} - 29 x^{11} + 429 x^{10} - 441 x^{9} - 154753 x^{8} + 3933213 x^{7}\\\\&- 56939797 x^{6} + 546655271 x^{5} - 3399347766 x^{4} + 12379523132 x^{3}\\\\&- 17929905728 x^{2} - 15775514378 x + 50897823982",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 12,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-155.md"
+    },
+    {
+      "id": "CKP-157",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 5",
+          "multiplicity": 4,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{8} + 40 x^{7} + 184 x^{6} + 4320 x^{5} - 148904 x^{4} - 8971360 x^{3}\\\\&+93976224 x^{2} + 392732160 x + 346145296",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 8,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-157.md"
+    },
+    {
+      "id": "CKP-160",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{8} - 9 x^{7} - 5 x^{6} + 3243 x^{5} - 24852 x^{4} + 138072 x^{3}\\\\&+115924 x^{2} + 29280 x + 2152",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 8,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-160.md"
+    },
+    {
+      "id": "CKP-169",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x^{2} - 12",
+          "multiplicity": 2,
+          "distinct_eigenvalues": 2,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{4} - 54 x^{3} - 24 x^{2} + 5832 x - 236052",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 4,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-169.md"
+    },
+    {
+      "id": "CKP-170",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{8} - 24 x^{7} + 112 x^{6} + 5598 x^{5} - 112368 x^{4} + 686208 x^{3}\\\\&- 37040 x^{2} - 10368 x + 56584",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 8,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-170.md"
+    },
+    {
+      "id": "CKP-172",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 5",
+          "multiplicity": 4,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{8} + 5 x^{7} + 354 x^{6} + 27665 x^{5} - 472794 x^{4} + 14870040 x^{3}\\\\&- 145345596 x^{2} + 1611701640 x - 3992494074",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 8,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-172.md"
+    },
+    {
+      "id": "CKP-174",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 4",
+          "multiplicity": 2,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-1",
+            "0"
+          ],
+          "classes": [
+            "0",
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{7} + 4 x^{6} - 24 x^{5} + 4926 x^{4} - 141168 x^{3} + 1302000 x^{2}\\\\&+7344920 - 4958512 x",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 7,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-174.md"
+    },
+    {
+      "id": "CKP-175",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 3",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{8} - 9 x^{7} - 5 x^{6} + 5979 x^{5} - 119388 x^{4} + 978120 x^{3}\\\\&- 3911126 x^{2} + 7584786 x - 5724998",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 8,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-175.md"
+    },
+    {
+      "id": "CKP-179",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 4",
+          "multiplicity": 4,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{5} + 36 x^{4} + 674 x^{3} + 72352 x^{2} + 775044 x + 4576316",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 5,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-179.md"
+    },
+    {
+      "id": "CKP-182",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x",
+          "multiplicity": 2,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-3/4",
+            "-1/4"
+          ],
+          "classes": [
+            "1/4",
+            "3/4"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x + 12",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 3,
+          "polynomial_latex": "x^{6} + 12 x^{5} - 96 x^{4} - 1200 x^{3} + 3072 x^{2} + 192000 x\\\\&+1767232",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-182.md"
+    },
+    {
+      "id": "CKP-186",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{2} + 12",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 2,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 3,
+          "polynomial_latex": "x^{6} - 84 x^{4} - 4608 x^{2} - 204800",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-186.md"
+    },
+    {
+      "id": "CKP-189",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{8} - 80 x^{6} - 10656 x^{4} - 247040 x^{2} + 256",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 8,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-189.md"
+    },
+    {
+      "id": "CKP-233",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x",
+          "multiplicity": 2,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-1/2",
+            "-1/2"
+          ],
+          "classes": [
+            "1/2",
+            "1/2"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x + 3",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 3,
+          "polynomial_latex": "x^{6} - 96 x^{4} + 1296 x^{3} + 3072 x^{2} + 124416 x + 387136",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-233.md"
+    },
+    {
+      "id": "CKP-247",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 5",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{12} - 15 x^{11} - 45 x^{10} + 3775 x^{9} - 39309 x^{8} + 383310 x^{7}\\\\&- 4953685 x^{6} + 38339400 x^{5} - 213510711 x^{4} + 1474188555 x^{3}\\\\&- 8249853000 x^{2} + 22963567500 x - 22831409375",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 12,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-247.md"
+    },
+    {
+      "id": "CKP-314",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x",
+          "multiplicity": 3,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{6} - 9 x^{5} - 69 x^{4} + 5733 x^{3} - 40560 x^{2} + 279144 x\\\\&-26450",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-314.md"
+    },
+    {
+      "id": "CKP-320",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 3",
+          "multiplicity": 4,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{9} - 26 x^{8} + 248 x^{7} + 30472 x^{6} - 1150415 x^{5} + 26898788 x^{4}\\\\&- 369798522 x^{3} + 3612067452 x^{2} - 16717772736 x\\\\&+35450311122",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 9,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-320.md"
+    },
+    {
+      "id": "CKP-322",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 3",
+          "multiplicity": 3,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{6} - 3 x^{5} - 96 x^{4} + 8832 x^{3} - 101328 x^{2} + 457224 x\\\\&-727946",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-322.md"
+    },
+    {
+      "id": "CKP-323",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 6",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{8} - 176 x^{6} + 8718 x^{5} - 289524 x^{4} + 4154160 x^{3}\\\\&- 28953068 x^{2} + 98411220 x - 131489504",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 8,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-323.md"
+    },
+    {
+      "id": "CKP-327",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{8} - 144 x^{6} - 12000 x^{4} - 236288 x^{2} + 57600",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 8,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-327.md"
+    },
+    {
+      "id": "CKP-363",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 3",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{12} - 24 x^{11} - 621 x^{10} + 22619 x^{9} - 121888 x^{8} - 2011552 x^{7}\\\\&+9910288 x^{6} + 629818161 x^{5} - 11623238661 x^{4} + 93015380417 x^{3}\\\\&- 383280080428 x^{2} + 785308960427 x - 631774515243",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 12,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-363.md"
+    },
+    {
+      "id": "CKP-432",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 8",
+          "multiplicity": 4,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{8} - 368 x^{6} + 8192 x^{5} - 275872 x^{4} + 4390912 x^{3}\\\\&- 25519872 x^{2} + 44695552 x + 16343296",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 8,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-432.md"
+    },
+    {
+      "id": "CKP-439",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 6",
+          "multiplicity": 3,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-1",
+            "-1",
+            "-1"
+          ],
+          "classes": [
+            "0",
+            "0",
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{6} + 12 x^{5} - 132 x^{4} + 17376 x^{3} - 397968 x^{2} + 2965440 x\\\\&-7211456",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-439.md"
+    },
+    {
+      "id": "CKP-450",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 2",
+          "multiplicity": 4,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{9} - 24 x^{8} - 1077 x^{7} + 18808 x^{6} - 72600 x^{5} + 7883232 x^{4}\\\\&+12199728 x^{3} + 733421568 x^{2} + 317620224 x + 1760657408",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 9,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-450.md"
+    },
+    {
+      "id": "CKP-475",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5,
+        "y4": 7
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 15",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{16} - 60 x^{15} - 418 x^{14} + 116100 x^{13} - 2970391 x^{12} - 7548840 x^{11}\\\\&+1466637488 x^{10} - 13253280120 x^{9} - 562820756216 x^{8}\\\\&+19166231529840 x^{7} - 285611473985672 x^{6}\\\\&+2420287141669440 x^{5} - 10969249542051328 x^{4}\\\\&+10592360597229600 x^{3} + 142935286378178560 x^{2}\\\\&+907650754595919376 - 665504921784312960 x",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 16,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-475.md"
+    },
+    {
+      "id": "CKP-492",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 5",
+          "multiplicity": 4,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{9} - 15 x^{8} - 1257 x^{7} + 56770 x^{6} - 1854042 x^{5} + 41918415 x^{4}\\\\&- 598604559 x^{3} + 7810837005 x^{2} - 49787799750 x\\\\&+107394033545",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 9,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-492.md"
+    },
+    {
+      "id": "CKP-498",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 2",
+          "multiplicity": 4,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{5} + 3 x^{4} - 768 x^{3} + 22296 x^{2} + 101184 x + 214512",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 5,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-498.md"
+    },
+    {
+      "id": "CKP-535",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5,
+        "y4": 7
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 10",
+          "multiplicity": 5,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{12} - 28 x^{11} - 1010 x^{10} + 103732 x^{9} - 4847815 x^{8}\\\\&+134550464 x^{7} - 2251472160 x^{6} + 18804645120 x^{5}\\\\&+192384060672 x^{4} - 8011420786688 x^{3} + 74178647457792 x^{2}\\\\&+25134322810880 x - 2150999206068224",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 12,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-535.md"
+    },
+    {
+      "id": "CKP-551",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x",
+          "multiplicity": 2,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-1",
+            "0"
+          ],
+          "classes": [
+            "0",
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x - 3",
+          "multiplicity": 2,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-2/3",
+            "-1/3"
+          ],
+          "classes": [
+            "1/3",
+            "2/3"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 3,
+          "polynomial_latex": "x^{4} - 3 x^{3} - 432 x^{2} + 5832 x + 33534",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 4,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-551.md"
+    },
+    {
+      "id": "CKP-560",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 11",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{12} - 15 x^{11} - 1899 x^{10} + 55930 x^{9} + 364791 x^{8} - 28402461 x^{7}\\\\&+15991214 x^{6} + 14698275807 x^{5} - 325991712315 x^{4}\\\\&+3527094003294 x^{3} - 21591322536333 x^{2} + 71892643133421 x\\\\&-101684100959819",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 12,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-560.md"
+    },
+    {
+      "id": "CKP-566",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 3",
+          "multiplicity": 3,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-1",
+            "-1",
+            "-1"
+          ],
+          "classes": [
+            "0",
+            "0",
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{5} - 432 x^{3} + 16200 x^{2} - 54594 x + 28782",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 5,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-566.md"
+    },
+    {
+      "id": "CKP-567",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x^{2} - 12",
+          "multiplicity": 2,
+          "distinct_eigenvalues": 2,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{4} - 456 x^{2} + 41616",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 4,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-567.md"
+    },
+    {
+      "id": "CKP-593",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 8",
+          "multiplicity": 4,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{8} - 16 x^{7} - 1256 x^{6} + 127162 x^{5} - 4113948 x^{4} + 76039056 x^{3}\\\\&- 595162464 x^{2} + 1286853108 x + 1893464736",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 8,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-593.md"
+    },
+    {
+      "id": "CKP-594",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 7",
+          "multiplicity": 4,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{9} - 3 x^{8} - 1183 x^{7} + 120308 x^{6} - 4301738 x^{5} + 109360387 x^{4}\\\\&- 1661494227 x^{3} + 16523780095 x^{2} - 103932342826 x\\\\&+289668048869",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 9,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-594.md"
+    },
+    {
+      "id": "CKP-595",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 4",
+          "multiplicity": 4,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{5} + 15 x^{4} - 1222 x^{3} + 83032 x^{2} - 94512 x + 330104",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 5,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-595.md"
+    },
+    {
+      "id": "CKP-596",
+      "point": {
+        "y1": 2
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x",
+          "multiplicity": 3,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-1",
+            "-1",
+            "-1"
+          ],
+          "classes": [
+            "0",
+            "0",
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{2} - 512",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 2,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-596.md"
+    },
+    {
+      "id": "CKP-611",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 2",
+          "multiplicity": 4,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{5} - 9 x^{4} - 1809 x^{3} + 48363 x^{2} - 80856 x + 59676",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 5,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-611.md"
+    },
+    {
+      "id": "CKP-623",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 10",
+          "multiplicity": 5,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{9} - 2511 x^{7} + 153900 x^{6} - 5115393 x^{5} + 116742060 x^{4}\\\\&- 1867520853 x^{3} + 20849020920 x^{2} - 143512689600 x\\\\&+432081216000",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 9,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-623.md"
+    },
+    {
+      "id": "CKP-628",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5,
+        "y4": 7,
+        "y5": 11
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 28",
+          "multiplicity": 6,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{16} - 9216 x^{14} + 347648 x^{13} + 14686464 x^{12} - 1102553088 x^{11}\\\\&+10296786944 x^{10} + 792846630912 x^{9} - 24747096121344 x^{8}\\\\&+119473561403392 x^{7} + 6013629681893376 x^{6}\\\\&- 116750591755026432 x^{5} + 602622668802359296 x^{4}\\\\&+4239123165487300608 x^{3} - 64188096828917415936 x^{2}\\\\&+261995194671263907840 x - 332722176814970044416",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 16,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-628.md"
+    },
+    {
+      "id": "CKP-639",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 7",
+          "multiplicity": 4,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{9} - 8 x^{8} - 3058 x^{7} + 174008 x^{6} - 4611643 x^{5} + 46258632 x^{4}\\\\&+547566238 x^{3} - 14540304750 x^{2} + 105892092874 x\\\\&-268112665966",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 9,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-639.md"
+    },
+    {
+      "id": "CKP-640",
+      "point": {
+        "y1": 2
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x",
+          "multiplicity": 3,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-4/3",
+            "-1",
+            "-2/3"
+          ],
+          "classes": [
+            "0",
+            "1/3",
+            "2/3"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{2} - 864",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 2,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-640.md"
+    },
+    {
+      "id": "CKP-645",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 3",
+          "multiplicity": 4,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{5} - 16 x^{4} - 2936 x^{3} + 108450 x^{2} - 632988 x + 1003914",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 5,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-645.md"
+    },
+    {
+      "id": "CKP-656",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 4",
+          "multiplicity": 4,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{5} + 3 x^{4} - 3067 x^{3} + 129277 x^{2} - 821532 x + 1460792",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 5,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-656.md"
+    },
+    {
+      "id": "CKP-665",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 5",
+          "multiplicity": 4,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{5} - 3750 x^{3} + 112500 x^{2} - 825000 x + 1781250",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 5,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-665.md"
+    },
+    {
+      "id": "CKP-667",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5,
+        "y4": 7
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 19",
+          "multiplicity": 5,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{12} + 16 x^{11} - 5992 x^{10} + 231800 x^{9} - 1972464 x^{8}\\\\&- 105339072 x^{7} + 4509592984 x^{6} - 81256034368 x^{5}\\\\&+374581762784 x^{4} + 11018838716384 x^{3} - 174049888035072 x^{2}\\\\&+575939602251392 x + 2055548201594896",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 12,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-667.md"
+    },
+    {
+      "id": "CKP-681",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 7",
+          "multiplicity": 4,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{5} + 12 x^{4} - 5782 x^{3} + 202336 x^{2} - 2013402 x + 6116966",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 5,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-681.md"
+    },
+    {
+      "id": "CKP-682",
+      "point": {
+        "y1": 2
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x",
+          "multiplicity": 3,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-3/2",
+            "-1",
+            "-1/2"
+          ],
+          "classes": [
+            "0",
+            "1/2",
+            "1/2"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{2} - 2048",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 2,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-682.md"
+    },
+    {
+      "id": "CKP-683",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 3",
+          "multiplicity": 3,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-1",
+            "-1",
+            "-1"
+          ],
+          "classes": [
+            "0",
+            "0",
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{5} - 54 x^{4} - 6792 x^{3} + 431676 x^{2} - 2395656 x + 3492234",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 5,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-683.md"
+    },
+    {
+      "id": "CKP-685",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 4",
+          "multiplicity": 5,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{4} - 8 x^{3} - 7152 x^{2} + 343552 x - 1771520",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 4,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-685.md"
+    },
+    {
+      "id": "CKP-688",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 12",
+          "multiplicity": 2,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-1",
+            "0"
+          ],
+          "classes": [
+            "0",
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{2} - 24 x + 156",
+          "multiplicity": 2,
+          "distinct_eigenvalues": 2,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved"
+        },
+        {
+          "number": 3,
+          "polynomial_latex": "x^{3} + 126 x^{2} + 5292 x + 78462",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 3,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-688.md"
+    },
+    {
+      "id": "CKP-691",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 12",
+          "multiplicity": 4,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x",
+          "multiplicity": 2,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved"
+        },
+        {
+          "number": 3,
+          "polynomial_latex": "x^{3} + 126 x^{2} + 5292 x + 310284",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 3,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-691.md"
+    },
+    {
+      "id": "CKP-694",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 12",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{8} + 66 x^{7} - 876 x^{6} - 64962 x^{5} + 365040 x^{4} + 44455248 x^{3}\\\\&- 949386204 x^{2} + 7434408960 x - 20903608548",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 8,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-694.md"
+    },
+    {
+      "id": "CKP-698",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 15",
+          "multiplicity": 4,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{9} + 30 x^{8} - 7884 x^{7} + 461605 x^{6} - 13347036 x^{5}\\\\&+181440660 x^{4} + 498071825 x^{3} - 56829615750 x^{2}\\\\&+759168990000 x - 3358148540625",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 9,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-698.md"
+    },
+    {
+      "id": "CKP-702",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 12",
+          "multiplicity": 4,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x - 9",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 3,
+          "polynomial_latex": "x^{4} + 114 x^{3} + 2484 x^{2} + 216648 x - 2282904",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 4,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-702.md"
+    },
+    {
+      "id": "CKP-705",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 10",
+          "multiplicity": 4,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{5} + 30 x^{4} - 8518 x^{3} + 325540 x^{2} - 4074372 x + 16312580",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 5,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-705.md"
+    },
+    {
+      "id": "CKP-711",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 11",
+          "multiplicity": 4,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{5} + 56 x^{4} - 8192 x^{3} + 350160 x^{2} - 5112072 x + 23786442",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 5,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-711.md"
+    },
+    {
+      "id": "CKP-715",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 10",
+          "multiplicity": 5,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{4} + 40 x^{3} - 12456 x^{2} + 480160 x - 3605744",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 4,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-715.md"
+    },
+    {
+      "id": "CKP-718",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 12",
+          "multiplicity": 4,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{5} + 93 x^{4} - 5391 x^{3} + 604575 x^{2} - 13224600 x\\\\&+79051248",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 5,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-718.md"
+    },
+    {
+      "id": "CKP-721",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 20",
+          "multiplicity": 4,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{8} + 120 x^{7} - 8952 x^{6} - 156672 x^{5} + 18606256 x^{4}\\\\&- 258613248 x^{3} - 4890801024 x^{2} + 143783677440 x\\\\&-932369719040",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 8,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-721.md"
+    },
+    {
+      "id": "CKP-722",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 15",
+          "multiplicity": 4,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{5} + 102 x^{4} - 9576 x^{3} + 565182 x^{2} - 12114522 x\\\\&+80951022",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 5,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-722.md"
+    },
+    {
+      "id": "CKP-726",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 18",
+          "multiplicity": 5,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{4} + 138 x^{3} - 29592 x^{2} + 1658340 x - 21137544",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 4,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-726.md"
+    },
+    {
+      "id": "CKP-731",
+      "point": {
+        "y1": 2
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 32",
+          "multiplicity": 4,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-3/2",
+            "-3/2",
+            "-3/2",
+            "-3/2"
+          ],
+          "classes": [
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x + 480",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-731.md"
+    },
+    {
+      "id": "CKP-733",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 51",
+          "multiplicity": 3,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x - 48",
+          "multiplicity": 3,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-3/2",
+            "-1",
+            "-1/2"
+          ],
+          "classes": [
+            "0",
+            "1/2",
+            "1/2"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 3,
+          "polynomial_latex": "x^{2} + 928 x + 209152",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 2,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-733.md"
+    },
+    {
+      "id": "CKP-734",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 51",
+          "multiplicity": 3,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-1",
+            "-1",
+            "-1"
+          ],
+          "classes": [
+            "0",
+            "0",
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{5} + 784 x^{4} + 59392 x^{3} - 22654080 x^{2} + 1397453472 x\\\\&-25874220150",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 5,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-734.md"
+    },
+    {
+      "id": "CKP-735",
+      "point": {
+        "y1": 2
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 48",
+          "multiplicity": 4,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-5/3",
+            "-3/2",
+            "-3/2",
+            "-4/3"
+          ],
+          "classes": [
+            "1/3",
+            "1/2",
+            "1/2",
+            "2/3"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x + 816",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-735.md"
+    },
+    {
+      "id": "CKP-736",
+      "point": {
+        "y1": 2
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 72",
+          "multiplicity": 4,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-5/3",
+            "-5/3",
+            "-4/3",
+            "-4/3"
+          ],
+          "classes": [
+            "1/3",
+            "1/3",
+            "2/3",
+            "2/3"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x + 1386",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-736.md"
+    },
+    {
+      "id": "CKP-737",
+      "point": {
+        "y1": 2
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 96",
+          "multiplicity": 4,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-7/4",
+            "-3/2",
+            "-3/2",
+            "-5/4"
+          ],
+          "classes": [
+            "1/4",
+            "1/2",
+            "1/2",
+            "3/4"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x + 1952",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-737.md"
+    },
+    {
+      "id": "CKP-738",
+      "point": {
+        "y1": 2
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 240",
+          "multiplicity": 4,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-9/5",
+            "-8/5",
+            "-7/5",
+            "-6/5"
+          ],
+          "classes": [
+            "1/5",
+            "2/5",
+            "3/5",
+            "4/5"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x + 6010",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/ckp-738.md"
+    },
+    {
+      "id": "PROD5-B03",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 30",
+          "multiplicity": 8,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved",
+          "method": "not computed"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{4} + 420 x^{3} - 528714 x^{2} + 106457220 x - 2729492559",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 4,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/prod5-b03.md"
+    },
+    {
+      "id": "PROD5-A03",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 54",
+          "multiplicity": 7,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved",
+          "method": "not computed"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{5} + 1326 x^{4} - 19224 x^{3} + 192631280 x^{2} - 21539338416 x\\\\&+592705245024",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 5,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/prod5-a03.md"
+    },
+    {
+      "id": "QC5-001",
+      "point": {
+        "y1": 2
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x",
+          "multiplicity": 3,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-3/2",
+            "-1",
+            "-1/2"
+          ],
+          "classes": [
+            "0",
+            "1/2",
+            "1/2"
+          ],
+          "status": "complete",
+          "method": "complete / recursion"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x + 18",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        },
+        {
+          "number": 3,
+          "polynomial_latex": "x^{2} - 18 x + 324",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 2,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/qc5-001.md"
+    },
+    {
+      "id": "PCI5-4",
+      "point": {
+        "y1": 2
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x",
+          "multiplicity": 3,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-7/4",
+            "-1",
+            "-1/4"
+          ],
+          "classes": [
+            "0",
+            "1/4",
+            "3/4"
+          ],
+          "status": "complete",
+          "method": "complete / recursion"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x + 24",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        },
+        {
+          "number": 3,
+          "polynomial_latex": "x^{2} - 24 x + 576",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 2,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/pci5-4.md"
+    },
+    {
+      "id": "PCI5-5",
+      "point": {
+        "y1": 2
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x",
+          "multiplicity": 4,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-21/10",
+            "-17/10",
+            "-13/10",
+            "-9/10"
+          ],
+          "classes": [
+            "1/10",
+            "3/10",
+            "7/10",
+            "9/10"
+          ],
+          "status": "complete",
+          "method": "complete / recursion"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{2} - 25000",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 2,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/pci5-5.md"
+    },
+    {
+      "id": "PCI5-2-4",
+      "point": {
+        "y1": 2
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x",
+          "multiplicity": 4,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-2",
+            "-3/2",
+            "-3/2",
+            "-1"
+          ],
+          "classes": [
+            "0",
+            "0",
+            "1/2",
+            "1/2"
+          ],
+          "status": "complete",
+          "method": "complete / recursion"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{2} - 8192",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 2,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/pci5-2-4.md"
+    },
+    {
+      "id": "PCI5-3-3",
+      "point": {
+        "y1": 2
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x",
+          "multiplicity": 4,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-11/6",
+            "-11/6",
+            "-7/6",
+            "-7/6"
+          ],
+          "classes": [
+            "1/6",
+            "1/6",
+            "5/6",
+            "5/6"
+          ],
+          "status": "complete",
+          "method": "complete / recursion"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{2} - 5832",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 2,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/pci5-3-3.md"
+    },
+    {
+      "id": "PCI5-2-2-3",
+      "point": {
+        "y1": 2
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x",
+          "multiplicity": 4,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-11/6",
+            "-3/2",
+            "-3/2",
+            "-7/6"
+          ],
+          "classes": [
+            "1/6",
+            "1/2",
+            "1/2",
+            "5/6"
+          ],
+          "status": "complete",
+          "method": "complete / recursion"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{2} - 3456",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 2,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/pci5-2-2-3.md"
+    },
+    {
+      "id": "PCI5-2-2-2-2",
+      "point": {
+        "y1": 2
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x",
+          "multiplicity": 4,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-3/2",
+            "-3/2",
+            "-3/2",
+            "-3/2"
+          ],
+          "classes": [
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2"
+          ],
+          "status": "complete",
+          "method": "complete / recursion"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{2} - 2048",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 2,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/pci5-2-2-2-2.md"
+    },
+    {
+      "id": "PROD5-B01",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x",
+          "multiplicity": 4,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved",
+          "method": "not computed"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{8} - 320 x^{6} - 170496 x^{4} - 15810560 x^{2} + 65536",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 8,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/prod5-b01.md"
+    },
+    {
+      "id": "QD5-001",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x",
+          "multiplicity": 2,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-3/2",
+            "1/2"
+          ],
+          "classes": [
+            "1/2",
+            "1/2"
+          ],
+          "status": "complete",
+          "method": "complete / recursion"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{4} - 196608",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 4,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/qd5-001.md"
+    },
+    {
+      "id": "PB5-036",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x",
+          "multiplicity": 4,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-3/2",
+            "-3/2",
+            "-3/2",
+            "-3/2"
+          ],
+          "classes": [
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2"
+          ],
+          "status": "complete",
+          "method": "complete / recursion"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{8} - 24 x^{7} + 51808 x^{5} - 1062912 x^{4} + 14533632 x^{3}\\\\&+26440704 x^{2} + 14376960 x + 2322432",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 8,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/pb5-036.md"
+    },
+    {
+      "id": "PB5-056",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x",
+          "multiplicity": 4,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved",
+          "method": "not computed"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{8} - 8 x^{7} - 168 x^{6} + 22048 x^{5} - 137192 x^{4} + 3679296 x^{3}\\\\&+15820704 x^{2} + 24865920 x + 6906384",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 8,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/pb5-056.md"
+    },
+    {
+      "id": "PROD5-A01",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 6",
+          "multiplicity": 3,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-1",
+            "-1",
+            "-1"
+          ],
+          "classes": [
+            "0",
+            "0",
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / recursion"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{9} + 6 x^{8} - 144 x^{7} - 216 x^{6} - 176256 x^{5} + 6850080 x^{4}\\\\&- 99116352 x^{3} + 704153088 x^{2} - 2492052480 x + 3546878976",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 9,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/prod5-a01.md"
+    },
+    {
+      "id": "PB5-075",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 6",
+          "multiplicity": 5,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved",
+          "method": "not computed"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{7} + 18 x^{6} + 100 x^{5} + 48072 x^{4} - 3600848 x^{3} + 64107360 x^{2}\\\\&+782745984 - 388798272 x",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 7,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/pb5-075.md"
+    },
+    {
+      "id": "PB5-079",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 4",
+          "multiplicity": 4,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved",
+          "method": "not computed"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{8} + 8 x^{7} - 128 x^{6} - 2784 x^{5} - 634488 x^{4} + 15041280 x^{3}\\\\&- 56685952 x^{2} - 112875392 x - 833107696",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 8,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/pb5-079.md"
+    },
+    {
+      "id": "PB5-085",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 6",
+          "multiplicity": 4,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved",
+          "method": "not computed"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{8} + 12 x^{7} - 80 x^{6} + 7308 x^{5} - 1392012 x^{4} + 37157184 x^{3}\\\\&- 355811292 x^{2} + 1405424520 x - 2062810476",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 8,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/pb5-085.md"
+    },
+    {
+      "id": "PB5-101",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 6",
+          "multiplicity": 3,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-3/2",
+            "-1",
+            "-1/2"
+          ],
+          "classes": [
+            "0",
+            "1/2",
+            "1/2"
+          ],
+          "status": "complete",
+          "method": "complete / recursion"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{9} + 6 x^{8} - 120 x^{7} + 19932 x^{6} - 1950324 x^{5} + 52099656 x^{4}\\\\&- 622928476 x^{3} + 3789956160 x^{2} - 11494356300 x\\\\&+13817909448",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 9,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/pb5-101.md"
+    },
+    {
+      "id": "PROD5-B02",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 12",
+          "multiplicity": 4,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-3/2",
+            "-3/2",
+            "-3/2",
+            "-3/2"
+          ],
+          "classes": [
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2"
+          ],
+          "status": "complete",
+          "method": "complete / recursion"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{8} + 120 x^{7} + 3192 x^{6} + 165024 x^{5} - 24639984 x^{4}\\\\&+731278080 x^{3} - 9592128000 x^{2} + 59939426304 x\\\\&-146046578688",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 8,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/prod5-b02.md"
+    },
+    {
+      "id": "PROD5-D01",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 6",
+          "multiplicity": 4,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-3/2",
+            "-3/2",
+            "-3/2",
+            "-3/2"
+          ],
+          "classes": [
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2"
+          ],
+          "status": "complete",
+          "method": "complete / recursion"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{8} + 12 x^{7} - 200 x^{6} + 90192 x^{5} - 4845504 x^{4} + 91651392 x^{3}\\\\&- 789420416 x^{2} + 3185087232 x - 4904234240",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 8,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/prod5-d01.md"
+    },
+    {
+      "id": "PROD5-D02",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 6",
+          "multiplicity": 4,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved",
+          "method": "not computed"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{8} + 12 x^{7} - 200 x^{6} + 59952 x^{5} - 2777844 x^{4} + 47551872 x^{3}\\\\&- 385153376 x^{2} + 1500089472 x - 2265748124",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 8,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/prod5-d02.md"
+    },
+    {
+      "id": "PB5-139",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 3",
+          "multiplicity": 5,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved",
+          "method": "not computed"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{7} - 3 x^{6} + 64 x^{5} + 20376 x^{4} - 698240 x^{3} + 7277760 x^{2}\\\\&+22398336 - 17722368 x",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 7,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/pb5-139.md"
+    },
+    {
+      "id": "PROD5-A02",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 6",
+          "multiplicity": 6,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved",
+          "method": "not computed"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{6} + 24 x^{5} - 468 x^{4} + 243324 x^{3} - 8079912 x^{2} + 91955952 x\\\\&-323829900",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/prod5-a02.md"
+    },
+    {
+      "id": "PCI5-6",
+      "point": {
+        "y1": 2
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 1440",
+          "multiplicity": 5,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-7/3",
+            "-13/6",
+            "-2",
+            "-11/6",
+            "-5/3"
+          ],
+          "classes": [
+            "0",
+            "1/6",
+            "1/3",
+            "2/3",
+            "5/6"
+          ],
+          "status": "complete",
+          "method": "complete / recursion"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x + 91872",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/pci5-6.md"
+    },
+    {
+      "id": "PCI5-2-5",
+      "point": {
+        "y1": 2
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 480",
+          "multiplicity": 5,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-23/10",
+            "-21/10",
+            "-2",
+            "-19/10",
+            "-17/10"
+          ],
+          "classes": [
+            "0",
+            "1/10",
+            "3/10",
+            "7/10",
+            "9/10"
+          ],
+          "status": "complete",
+          "method": "complete / recursion"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x + 24520",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/pci5-2-5.md"
+    },
+    {
+      "id": "PCI5-3-4",
+      "point": {
+        "y1": 2
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 288",
+          "multiplicity": 5,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-9/4",
+            "-13/6",
+            "-2",
+            "-11/6",
+            "-7/4"
+          ],
+          "classes": [
+            "0",
+            "1/6",
+            "1/4",
+            "3/4",
+            "5/6"
+          ],
+          "status": "complete",
+          "method": "complete / recursion"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x + 13536",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/pci5-3-4.md"
+    },
+    {
+      "id": "PCI5-2-2-4",
+      "point": {
+        "y1": 2
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 192",
+          "multiplicity": 5,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-9/4",
+            "-2",
+            "-2",
+            "-2",
+            "-7/4"
+          ],
+          "classes": [
+            "0",
+            "0",
+            "0",
+            "1/4",
+            "3/4"
+          ],
+          "status": "complete",
+          "method": "complete / recursion"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x + 8000",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/pci5-2-2-4.md"
+    },
+    {
+      "id": "PCI5-2-3-3",
+      "point": {
+        "y1": 2
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 144",
+          "multiplicity": 5,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-13/6",
+            "-13/6",
+            "-2",
+            "-11/6",
+            "-11/6"
+          ],
+          "classes": [
+            "0",
+            "1/6",
+            "1/6",
+            "5/6",
+            "5/6"
+          ],
+          "status": "complete",
+          "method": "complete / recursion"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x + 5688",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/pci5-2-3-3.md"
+    },
+    {
+      "id": "PCI5-2-2-2-3",
+      "point": {
+        "y1": 2
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 96",
+          "multiplicity": 5,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-13/6",
+            "-2",
+            "-2",
+            "-2",
+            "-11/6"
+          ],
+          "classes": [
+            "0",
+            "0",
+            "0",
+            "1/6",
+            "5/6"
+          ],
+          "status": "complete",
+          "method": "complete / recursion"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x + 3360",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/pci5-2-2-2-3.md"
+    },
+    {
+      "id": "PCI5-2-2-2-2-2",
+      "point": {
+        "y1": 2
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 64",
+          "multiplicity": 5,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-2",
+            "-2",
+            "-2",
+            "-2",
+            "-2"
+          ],
+          "classes": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / recursion"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x + 1984",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/pci5-2-2-2-2-2.md"
+    },
+    {
+      "id": "PB5-127",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 2",
+          "multiplicity": 4,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved",
+          "method": "not computed"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{6} - 192 x^{4} - 1536 x^{3} - 207360 x^{2} + 1492992 x\\\\&+35509248",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/pb5-127.md"
+    },
+    {
+      "id": "PB5-040",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x",
+          "multiplicity": 4,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved",
+          "method": "not computed"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{8} + 36 x^{7} + 304 x^{6} - 3840 x^{5} - 60852 x^{4} + 1941840 x^{3}\\\\&+70428928 x^{2} + 844406400 x + 3049911076",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 8,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/pb5-040.md"
+    },
+    {
+      "id": "PB5-043",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x",
+          "multiplicity": 4,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved",
+          "method": "not computed"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{8} + 4 x^{7} - 188 x^{6} + 8064 x^{5} + 48168 x^{4} + 3361968 x^{3}\\\\&+32590080 x^{2} + 138475008 x + 41525136",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 8,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/pb5-043.md"
+    },
+    {
+      "id": "PB5-037",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 18",
+          "multiplicity": 3,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-7/4",
+            "-1",
+            "-1/4"
+          ],
+          "classes": [
+            "0",
+            "1/4",
+            "3/4"
+          ],
+          "status": "complete",
+          "method": "complete / recursion"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{9} + 162 x^{8} + 4398 x^{7} - 333756 x^{6} - 22938279 x^{5}\\\\&+1351212426 x^{4} - 20200665844 x^{3} - 23512838472 x^{2}\\\\&+2844469543680 x - 17597950914816",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 9,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/pb5-037.md"
+    },
+    {
+      "id": "PB5-016",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x",
+          "multiplicity": 5,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved",
+          "method": "not computed"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{7} - 8 x^{6} - 948 x^{5} + 54724 x^{4} - 56768 x^{3} + 18160896 x^{2}\\\\&- 12253788 x - 516096",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 7,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/pb5-016.md"
+    },
+    {
+      "id": "PB5-131",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 2",
+          "multiplicity": 4,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved",
+          "method": "not computed"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{6} + 768 x^{5} + 1920 x^{4} + 4920 x^{3} + 12960 x^{2} + 1866240 x\\\\&+1401771024",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/pb5-131.md"
+    },
+    {
+      "id": "PB5-080",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 4",
+          "multiplicity": 7,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved",
+          "method": "not computed"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{5} + 116 x^{4} + 6208 x^{3} + 1131520 x^{2} + 74412800 x\\\\&+2025856000",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 5,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/pb5-080.md"
+    },
+    {
+      "id": "PB5-144",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 2",
+          "multiplicity": 6,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved",
+          "method": "not computed"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{6} - 162 x^{5} + 5841 x^{4} + 37584 x^{3} - 361800 x^{2} + 93848544 x\\\\&-3782279664",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/pb5-144.md"
+    },
+    {
+      "id": "PB5-147",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 3",
+          "multiplicity": 6,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved",
+          "method": "not computed"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{6} - 8 x^{5} + 372 x^{4} + 96972 x^{3} - 3225636 x^{2} + 66011112 x\\\\&-432566892",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/pb5-147.md"
+    },
+    {
+      "id": "PB5-154",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 2",
+          "multiplicity": 6,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved",
+          "method": "not computed"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{6} + 36 x^{5} + 1008 x^{4} + 113076 x^{3} + 2331936 x^{2} + 54849312 x\\\\&+35852004",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/pb5-154.md"
+    },
+    {
+      "id": "PB5-143",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 2",
+          "multiplicity": 6,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved",
+          "method": "not computed"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{6} + 96 x^{5} + 3168 x^{4} + 170616 x^{3} + 12043296 x^{2}\\\\&+289162368 x - 627806448",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/pb5-143.md"
+    },
+    {
+      "id": "PB5-124",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 3",
+          "multiplicity": 4,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-3/2",
+            "-3/2",
+            "-3/2",
+            "-3/2"
+          ],
+          "classes": [
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2"
+          ],
+          "status": "complete",
+          "method": "complete / recursion"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{6} + 216 x^{4} + 46656 x^{3} - 979776 x^{2} + 13996800 x\\\\&-34432128",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/pb5-124.md"
+    },
+    {
+      "id": "PB5-130",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 2",
+          "multiplicity": 4,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-3/2",
+            "-3/2",
+            "-3/2",
+            "-3/2"
+          ],
+          "classes": [
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2"
+          ],
+          "status": "complete",
+          "method": "complete / recursion"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{6} - 324 x^{5} - 1080 x^{4} - 3840 x^{3} - 725760 x^{2} + 234132480 x\\\\&-465278976",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/pb5-130.md"
+    },
+    {
+      "id": "PB5-105",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 4",
+          "multiplicity": 6,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved",
+          "method": "not computed"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{6} + 52 x^{5} + 1940 x^{4} + 482364 x^{3} + 4753444 x^{2}\\\\&+197331320 x - 121793164",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/pb5-105.md"
+    },
+    {
+      "id": "PB5-082",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 4",
+          "multiplicity": 6,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved",
+          "method": "not computed"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{6} - 146 x^{5} + 2897 x^{4} + 140208 x^{3} - 4803656 x^{2}\\\\&+1226429024 x - 50495651056",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/pb5-082.md"
+    },
+    {
+      "id": "PB5-088",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 6",
+          "multiplicity": 6,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved",
+          "method": "not computed"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{6} + 16 x^{5} + 600 x^{4} + 430308 x^{3} - 25794612 x^{2}\\\\&+651619080 x - 5070641148",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/pb5-088.md"
+    },
+    {
+      "id": "PB5-128",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 2",
+          "multiplicity": 4,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-3/2",
+            "-3/2",
+            "-3/2",
+            "-3/2"
+          ],
+          "classes": [
+            "1/2",
+            "1/2",
+            "1/2",
+            "1/2"
+          ],
+          "status": "complete",
+          "method": "complete / recursion"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{6} + 324 x^{5} + 1620 x^{4} + 262440 x^{3} + 79796340 x^{2}\\\\&+323571024 - 322451280 x",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/pb5-128.md"
+    },
+    {
+      "id": "PB5-041",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 12",
+          "multiplicity": 6,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved",
+          "method": "not computed"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{6} + 180 x^{5} + 13968 x^{4} + 4913460 x^{3} - 127115136 x^{2}\\\\&+2466868608 x - 13632905772",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/pb5-041.md"
+    },
+    {
+      "id": "PB5-086",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 6",
+          "multiplicity": 7,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved",
+          "method": "not computed"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{5} + 38 x^{4} - 11736 x^{3} + 2046000 x^{2} + 13348944 x\\\\&+243864288",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 5,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/pb5-086.md"
+    },
+    {
+      "id": "PB5-102",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 6",
+          "multiplicity": 7,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved",
+          "method": "not computed"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{5} + 6 x^{4} - 29400 x^{3} + 3343792 x^{2} - 14593968 x\\\\&+18499296",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 5,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/pb5-102.md"
+    },
+    {
+      "id": "PB5-103",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 6",
+          "multiplicity": 6,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved",
+          "method": "not computed"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{6} - 20712 x^{4} + 2151556 x^{3} - 30145428 x^{2} + 152135496 x\\\\&-265911228",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/pb5-103.md"
+    },
+    {
+      "id": "PB5-155",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 3",
+          "multiplicity": 6,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved",
+          "method": "not computed"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{6} + 4 x^{5} - 3116 x^{4} + 266052 x^{3} - 147072 x^{2} + 21578256 x\\\\&-63978300",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/pb5-155.md"
+    },
+    {
+      "id": "PB5-158",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 3",
+          "multiplicity": 6,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved",
+          "method": "not computed"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{6} - 8 x^{5} - 7608 x^{4} + 453688 x^{3} + 217984 x^{2} + 993216 x\\\\&-16582992",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/pb5-158.md"
+    },
+    {
+      "id": "PB5-076",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 6",
+          "multiplicity": 7,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved",
+          "method": "not computed"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{5} - 78 x^{4} - 86304 x^{3} + 14792760 x^{2} - 275389308 x\\\\&+1138116744",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 5,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/pb5-076.md"
+    },
+    {
+      "id": "PB5-114",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 6",
+          "multiplicity": 6,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved",
+          "method": "not computed"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{6} + 16 x^{5} - 12540 x^{4} + 1451524 x^{3} - 20317208 x^{2}\\\\&+111914160 x - 237945132",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/pb5-114.md"
+    },
+    {
+      "id": "PB5-038",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 18",
+          "multiplicity": 7,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved",
+          "method": "not computed"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{5} + 210 x^{4} - 73194 x^{3} + 28004920 x^{2} - 908942847 x\\\\&+7714310046",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 5,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/pb5-038.md"
+    },
+    {
+      "id": "PB5-107",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 6",
+          "multiplicity": 6,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved",
+          "method": "not computed"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{6} + 28 x^{5} - 4952 x^{4} + 1008804 x^{3} - 15881184 x^{2}\\\\&+159585120 x - 565387452",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/pb5-107.md"
+    },
+    {
+      "id": "PB5-057",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 18",
+          "multiplicity": 6,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved",
+          "method": "not computed"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{6} + 208 x^{5} - 15366 x^{4} + 9520300 x^{3} - 492931799 x^{2}\\\\&+8729810988 x - 51763163964",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/pb5-057.md"
+    },
+    {
+      "id": "PB5-058",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 12",
+          "multiplicity": 6,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved",
+          "method": "not computed"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{6} + 112 x^{5} - 17112 x^{4} + 4462936 x^{3} - 147214736 x^{2}\\\\&+1713207648 x - 6747718896",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/pb5-058.md"
+    },
+    {
+      "id": "PB5-044",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 18",
+          "multiplicity": 6,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved",
+          "method": "not computed"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{6} + 220 x^{5} + 3622 x^{4} + 8350440 x^{3} - 506437959 x^{2}\\\\&+10013835996 x - 65598483708",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/pb5-044.md"
+    },
+    {
+      "id": "PB5-017",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 72",
+          "multiplicity": 6,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved",
+          "method": "not computed"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{6} + 1864 x^{5} + 918552 x^{4} + 138707032 x^{3} - 65915386352 x^{2}\\\\&+5701207621728 x - 148984756257648",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/pb5-017.md"
+    },
+    {
+      "id": "PROD5-E01",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 10",
+          "multiplicity": 7,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved",
+          "method": "not computed"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{5} + 50 x^{4} - 59000 x^{3} + 5410000 x^{2} - 85150000 x\\\\&+372100000",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 5,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/prod5-e01.md"
+    },
+    {
+      "id": "PROD5-E02",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 10",
+          "multiplicity": 6,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved",
+          "method": "not computed"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{6} + 40 x^{5} - 40456 x^{4} + 3436380 x^{3} - 79886516 x^{2}\\\\&+726083000 x - 2308999372",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/prod5-e02.md"
+    },
+    {
+      "id": "PROD5-D03",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 18",
+          "multiplicity": 7,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved",
+          "method": "not computed"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{5} + 186 x^{4} - 157212 x^{3} + 23873544 x^{2} - 710255196 x\\\\&+5945038200",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 5,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/prod5-d03.md"
+    },
+    {
+      "id": "PROD5-D04",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 18",
+          "multiplicity": 6,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved",
+          "method": "not computed"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{6} + 168 x^{5} - 76284 x^{4} + 8921700 x^{3} - 332007336 x^{2}\\\\&+4963631184 x - 26146096812",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/prod5-d04.md"
+    },
+    {
+      "id": "PROD5-D05",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 14",
+          "multiplicity": 7,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved",
+          "method": "not computed"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{5} + 118 x^{4} - 87864 x^{3} + 9147888 x^{2} - 206522928 x\\\\&+1334372064",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 5,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/prod5-d05.md"
+    },
+    {
+      "id": "PROD5-C01",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 20",
+          "multiplicity": 11,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved",
+          "method": "not computed"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{9} + 180 x^{8} - 25776 x^{7} + 4896960 x^{6} - 444907008 x^{5}\\\\&+36841328640 x^{4} - 1967691890688 x^{3} + 85755764736000 x^{2}\\\\&+16119716249600000 - 1971756564480000 x",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 9,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/prod5-c01.md"
+    },
+    {
+      "id": "PB5-153",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 3",
+          "multiplicity": 6,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved",
+          "method": "not computed"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{6} - 24 x^{5} - 12300 x^{4} + 792604 x^{3} - 813636 x^{2} - 1086264 x\\\\&-9781452",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/pb5-153.md"
+    },
+    {
+      "id": "PB5-003",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 3",
+          "multiplicity": 4,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved",
+          "method": "not computed"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{6} + 2916 x^{3} - 157464 x^{2} + 1259712 x - 393660",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/pb5-003.md"
+    },
+    {
+      "id": "PB5-028",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x",
+          "multiplicity": 4,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved",
+          "method": "not computed"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{8} - 320 x^{6} - 170496 x^{4} - 15810560 x^{2} + 65536",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 8,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/pb5-028.md"
+    },
+    {
+      "id": "PB5-051",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 6",
+          "multiplicity": 4,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved",
+          "method": "not computed"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{8} + 12 x^{7} - 200 x^{6} + 59952 x^{5} - 2777844 x^{4} + 47551872 x^{3}\\\\&- 385153376 x^{2} + 1500089472 x - 2265748124",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 8,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/pb5-051.md"
+    },
+    {
+      "id": "PB5-060",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 3",
+          "multiplicity": 4,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved",
+          "method": "not computed"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{8} - 6 x^{7} - 119 x^{6} + 41472 x^{5} - 1069284 x^{4} + 11655300 x^{3}\\\\&- 54907592 x^{2} + 117054912 x - 94049852",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 8,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete",
+          "method": "complete / residue"
+        }
+      ],
+      "source": "catalog/records/pb5-060.md"
+    }
+  ]
+}

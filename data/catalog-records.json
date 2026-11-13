@@ -641,7 +641,7 @@
       "ambient": "Smooth projective 6-fold (ambient Picard rank 2)",
       "matrix_rank": 6,
       "h11": 1,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "QD5-001",
         "dimension 5",
@@ -656,13 +656,17 @@
         "weighted hypersurface",
         "double cover",
         "split projective bundle",
-        "Quartic double cover of P⁵"
+        "Quartic double cover of P⁵",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "QD5-001",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Quartic double cover of P⁵"
+      "geometric_description": "Quartic double cover of P⁵",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "834882311808",
@@ -835,7 +839,7 @@
       "ambient": "Smooth projective 6-fold (ambient Picard rank 1)",
       "matrix_rank": 6,
       "h11": 1,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "PCI5-4",
         "dimension 5",
@@ -848,13 +852,17 @@
         "quantum multiplication",
         "connection exponents",
         "Quartic fivefold in P⁶",
-        "projective space"
+        "projective space",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PCI5-4",
       "geometry_kind": "projective space",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Quartic fivefold in P⁶"
+      "geometric_description": "Quartic fivefold in P⁶",
+      "exponent_status": "complete",
+      "exponent_factor_count": 3
     },
     {
       "id": "QC5-001",
@@ -865,7 +873,7 @@
       "ambient": "Smooth projective 7-fold (ambient Picard rank 1)",
       "matrix_rank": 6,
       "h11": 1,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "QC5-001",
         "dimension 5",
@@ -878,13 +886,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection (2,3) in P⁷",
-        "projective space"
+        "projective space",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "QC5-001",
       "geometry_kind": "projective space",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection (2,3) in P⁷"
+      "geometric_description": "Complete intersection (2,3) in P⁷",
+      "exponent_status": "complete",
+      "exponent_factor_count": 3
     },
     {
       "id": "9cb29c69a3f5",
@@ -1057,7 +1069,7 @@
       "ambient": "Smooth projective 6-fold (ambient Picard rank 2)",
       "matrix_rank": 12,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "PB5-028",
         "dimension 5",
@@ -1070,13 +1082,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection of multidegrees (2,2) in P³ × P³",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-028",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (2,2) in P³ × P³"
+      "geometric_description": "Complete intersection of multidegrees (2,2) in P³ × P³",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PCI5-2-2-2-2",
@@ -1087,7 +1103,7 @@
       "ambient": "Smooth projective 9-fold (ambient Picard rank 1)",
       "matrix_rank": 6,
       "h11": 1,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "PCI5-2-2-2-2",
         "dimension 5",
@@ -1100,13 +1116,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection (2,2,2,2) in P⁹",
-        "projective space"
+        "projective space",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PCI5-2-2-2-2",
       "geometry_kind": "projective space",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection (2,2,2,2) in P⁹"
+      "geometric_description": "Complete intersection (2,2,2,2) in P⁹",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "PCI5-2-2-3",
@@ -1117,7 +1137,7 @@
       "ambient": "Smooth projective 8-fold (ambient Picard rank 1)",
       "matrix_rank": 6,
       "h11": 1,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "PCI5-2-2-3",
         "dimension 5",
@@ -1130,13 +1150,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection (2,2,3) in P⁸",
-        "projective space"
+        "projective space",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PCI5-2-2-3",
       "geometry_kind": "projective space",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection (2,2,3) in P⁸"
+      "geometric_description": "Complete intersection (2,2,3) in P⁸",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "PCI5-2-4",
@@ -1147,7 +1171,7 @@
       "ambient": "Smooth projective 7-fold (ambient Picard rank 1)",
       "matrix_rank": 6,
       "h11": 1,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "PCI5-2-4",
         "dimension 5",
@@ -1160,13 +1184,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection (2,4) in P⁷",
-        "projective space"
+        "projective space",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PCI5-2-4",
       "geometry_kind": "projective space",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection (2,4) in P⁷"
+      "geometric_description": "Complete intersection (2,4) in P⁷",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "PCI5-3-3",
@@ -1177,7 +1205,7 @@
       "ambient": "Smooth projective 7-fold (ambient Picard rank 1)",
       "matrix_rank": 6,
       "h11": 1,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "PCI5-3-3",
         "dimension 5",
@@ -1190,13 +1218,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection (3,3) in P⁷",
-        "projective space"
+        "projective space",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PCI5-3-3",
       "geometry_kind": "projective space",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection (3,3) in P⁷"
+      "geometric_description": "Complete intersection (3,3) in P⁷",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "PCI5-5",
@@ -1207,7 +1239,7 @@
       "ambient": "Smooth projective 6-fold (ambient Picard rank 1)",
       "matrix_rank": 6,
       "h11": 1,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "PCI5-5",
         "dimension 5",
@@ -1220,13 +1252,17 @@
         "quantum multiplication",
         "connection exponents",
         "Quintic fivefold in P⁶",
-        "projective space"
+        "projective space",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PCI5-5",
       "geometry_kind": "projective space",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Quintic fivefold in P⁶"
+      "geometric_description": "Quintic fivefold in P⁶",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "PROD5-B01",
@@ -1237,7 +1273,7 @@
       "ambient": "Smooth projective 6-fold (ambient Picard rank 2)",
       "matrix_rank": 12,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "PROD5-B01",
         "dimension 5",
@@ -1250,13 +1286,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection of multidegrees (2,2) in P³ × P³",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PROD5-B01",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (2,2) in P³ × P³"
+      "geometric_description": "Complete intersection of multidegrees (2,2) in P³ × P³",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-003",
@@ -1267,7 +1307,7 @@
       "ambient": "Smooth projective 6-fold (ambient Picard rank 2)",
       "matrix_rank": 10,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "PB5-003",
         "dimension 5",
@@ -1280,13 +1320,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection of multidegrees (1,3) in P¹ × P⁵",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-003",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,3) in P¹ × P⁵"
+      "geometric_description": "Complete intersection of multidegrees (1,3) in P¹ × P⁵",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-016",
@@ -1297,7 +1341,7 @@
       "ambient": "Smooth projective 6-fold (ambient Picard rank 2)",
       "matrix_rank": 12,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "PB5-016",
         "dimension 5",
@@ -1310,13 +1354,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P²}(O^4 ⊕ O(1)) by 3ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-016",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P²}(O^4 ⊕ O(1)) by 3ξ+H"
+      "geometric_description": "Section of P_{P²}(O^4 ⊕ O(1)) by 3ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-017",
@@ -1327,7 +1375,7 @@
       "ambient": "Smooth projective 6-fold (ambient Picard rank 2)",
       "matrix_rank": 12,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "PB5-017",
         "dimension 5",
@@ -1340,13 +1388,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P²}(O^4 ⊕ O(1)) by 4ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-017",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P²}(O^4 ⊕ O(1)) by 4ξ+H"
+      "geometric_description": "Section of P_{P²}(O^4 ⊕ O(1)) by 4ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-036",
@@ -1357,7 +1409,7 @@
       "ambient": "Smooth projective 6-fold (ambient Picard rank 2)",
       "matrix_rank": 12,
       "h11": 2,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "PB5-036",
         "dimension 5",
@@ -1370,13 +1422,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P³}(O^3 ⊕ O(1)) by 2ξ+2H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-036",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P³}(O^3 ⊕ O(1)) by 2ξ+2H"
+      "geometric_description": "Section of P_{P³}(O^3 ⊕ O(1)) by 2ξ+2H",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-037",
@@ -1387,7 +1443,7 @@
       "ambient": "Smooth projective 6-fold (ambient Picard rank 2)",
       "matrix_rank": 12,
       "h11": 2,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "PB5-037",
         "dimension 5",
@@ -1400,13 +1456,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P³}(O^3 ⊕ O(1)) by 3ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-037",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P³}(O^3 ⊕ O(1)) by 3ξ+H"
+      "geometric_description": "Section of P_{P³}(O^3 ⊕ O(1)) by 3ξ+H",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-038",
@@ -1417,7 +1477,7 @@
       "ambient": "Smooth projective 6-fold (ambient Picard rank 2)",
       "matrix_rank": 12,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "PB5-038",
         "dimension 5",
@@ -1430,13 +1490,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P³}(O^3 ⊕ O(1)) by 3ξ+2H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-038",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P³}(O^3 ⊕ O(1)) by 3ξ+2H"
+      "geometric_description": "Section of P_{P³}(O^3 ⊕ O(1)) by 3ξ+2H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-040",
@@ -1447,7 +1511,7 @@
       "ambient": "Smooth projective 6-fold (ambient Picard rank 2)",
       "matrix_rank": 12,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "PB5-040",
         "dimension 5",
@@ -1460,13 +1524,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P³}(O^3 ⊕ O(2)) by 2ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-040",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P³}(O^3 ⊕ O(2)) by 2ξ+H"
+      "geometric_description": "Section of P_{P³}(O^3 ⊕ O(2)) by 2ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-041",
@@ -1477,7 +1545,7 @@
       "ambient": "Smooth projective 6-fold (ambient Picard rank 2)",
       "matrix_rank": 12,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "PB5-041",
         "dimension 5",
@@ -1490,13 +1558,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P³}(O^3 ⊕ O(2)) by 3ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-041",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P³}(O^3 ⊕ O(2)) by 3ξ+H"
+      "geometric_description": "Section of P_{P³}(O^3 ⊕ O(2)) by 3ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-043",
@@ -1507,7 +1579,7 @@
       "ambient": "Smooth projective 6-fold (ambient Picard rank 2)",
       "matrix_rank": 12,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "PB5-043",
         "dimension 5",
@@ -1520,13 +1592,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P³}(O^2 ⊕ O(1)^2) by 2ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-043",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P³}(O^2 ⊕ O(1)^2) by 2ξ+H"
+      "geometric_description": "Section of P_{P³}(O^2 ⊕ O(1)^2) by 2ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-044",
@@ -1537,7 +1613,7 @@
       "ambient": "Smooth projective 6-fold (ambient Picard rank 2)",
       "matrix_rank": 12,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "PB5-044",
         "dimension 5",
@@ -1550,13 +1626,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P³}(O^2 ⊕ O(1)^2) by 3ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-044",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P³}(O^2 ⊕ O(1)^2) by 3ξ+H"
+      "geometric_description": "Section of P_{P³}(O^2 ⊕ O(1)^2) by 3ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-051",
@@ -1567,7 +1647,7 @@
       "ambient": "Smooth projective 7-fold (ambient Picard rank 2)",
       "matrix_rank": 12,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "PB5-051",
         "dimension 5",
@@ -1580,13 +1660,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection of multidegrees (2,1), (1,2) in P³ × P⁴",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-051",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (2,1), (1,2) in P³ × P⁴"
+      "geometric_description": "Complete intersection of multidegrees (2,1), (1,2) in P³ × P⁴",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-056",
@@ -1597,7 +1681,7 @@
       "ambient": "Smooth projective 7-fold (ambient Picard rank 2)",
       "matrix_rank": 12,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "PB5-056",
         "dimension 5",
@@ -1610,13 +1694,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P³}(O^4 ⊕ O(1)) by ξ+H, 2ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-056",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P³}(O^4 ⊕ O(1)) by ξ+H, 2ξ+H"
+      "geometric_description": "Section of P_{P³}(O^4 ⊕ O(1)) by ξ+H, 2ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-057",
@@ -1627,7 +1715,7 @@
       "ambient": "Smooth projective 7-fold (ambient Picard rank 2)",
       "matrix_rank": 12,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "PB5-057",
         "dimension 5",
@@ -1640,13 +1728,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P³}(O^4 ⊕ O(1)) by ξ+H, 3ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-057",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P³}(O^4 ⊕ O(1)) by ξ+H, 3ξ+H"
+      "geometric_description": "Section of P_{P³}(O^4 ⊕ O(1)) by ξ+H, 3ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-058",
@@ -1657,7 +1749,7 @@
       "ambient": "Smooth projective 7-fold (ambient Picard rank 2)",
       "matrix_rank": 12,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "PB5-058",
         "dimension 5",
@@ -1670,13 +1762,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P³}(O^4 ⊕ O(1)) by 2ξ+H, 2ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-058",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P³}(O^4 ⊕ O(1)) by 2ξ+H, 2ξ+H"
+      "geometric_description": "Section of P_{P³}(O^4 ⊕ O(1)) by 2ξ+H, 2ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-060",
@@ -1687,7 +1783,7 @@
       "ambient": "Smooth projective 8-fold (ambient Picard rank 2)",
       "matrix_rank": 12,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "PB5-060",
         "dimension 5",
@@ -1700,13 +1796,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection of multidegrees (1,1), (1,1), (1,2) in P³ × P⁵",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-060",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,1), (1,1), (1,2) in P³ × P⁵"
+      "geometric_description": "Complete intersection of multidegrees (1,1), (1,1), (1,2) in P³ × P⁵",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-075",
@@ -1717,7 +1817,7 @@
       "ambient": "Smooth projective 6-fold (ambient Picard rank 2)",
       "matrix_rank": 12,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "PB5-075",
         "dimension 5",
@@ -1730,13 +1830,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P⁴}(O^2 ⊕ O(1)) by 2ξ+2H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-075",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁴}(O^2 ⊕ O(1)) by 2ξ+2H"
+      "geometric_description": "Section of P_{P⁴}(O^2 ⊕ O(1)) by 2ξ+2H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-076",
@@ -1747,7 +1851,7 @@
       "ambient": "Smooth projective 6-fold (ambient Picard rank 2)",
       "matrix_rank": 12,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "PB5-076",
         "dimension 5",
@@ -1760,13 +1864,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P⁴}(O^2 ⊕ O(1)) by 2ξ+3H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-076",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁴}(O^2 ⊕ O(1)) by 2ξ+3H"
+      "geometric_description": "Section of P_{P⁴}(O^2 ⊕ O(1)) by 2ξ+3H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-079",
@@ -1777,7 +1885,7 @@
       "ambient": "Smooth projective 6-fold (ambient Picard rank 2)",
       "matrix_rank": 12,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "PB5-079",
         "dimension 5",
@@ -1790,13 +1898,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P⁴}(O^2 ⊕ O(2)) by 2ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-079",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁴}(O^2 ⊕ O(2)) by 2ξ+H"
+      "geometric_description": "Section of P_{P⁴}(O^2 ⊕ O(2)) by 2ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-080",
@@ -1807,7 +1919,7 @@
       "ambient": "Smooth projective 6-fold (ambient Picard rank 2)",
       "matrix_rank": 12,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "PB5-080",
         "dimension 5",
@@ -1820,13 +1932,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P⁴}(O^2 ⊕ O(2)) by 2ξ+2H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-080",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁴}(O^2 ⊕ O(2)) by 2ξ+2H"
+      "geometric_description": "Section of P_{P⁴}(O^2 ⊕ O(2)) by 2ξ+2H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-082",
@@ -1837,7 +1953,7 @@
       "ambient": "Smooth projective 6-fold (ambient Picard rank 2)",
       "matrix_rank": 12,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "PB5-082",
         "dimension 5",
@@ -1850,13 +1966,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P⁴}(O^2 ⊕ O(3)) by 2ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-082",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁴}(O^2 ⊕ O(3)) by 2ξ+H"
+      "geometric_description": "Section of P_{P⁴}(O^2 ⊕ O(3)) by 2ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-085",
@@ -1867,7 +1987,7 @@
       "ambient": "Smooth projective 6-fold (ambient Picard rank 2)",
       "matrix_rank": 12,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "PB5-085",
         "dimension 5",
@@ -1880,13 +2000,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P⁴}(O ⊕ O(1)^2) by 2ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-085",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁴}(O ⊕ O(1)^2) by 2ξ+H"
+      "geometric_description": "Section of P_{P⁴}(O ⊕ O(1)^2) by 2ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-086",
@@ -1897,7 +2021,7 @@
       "ambient": "Smooth projective 6-fold (ambient Picard rank 2)",
       "matrix_rank": 12,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "PB5-086",
         "dimension 5",
@@ -1910,13 +2034,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P⁴}(O ⊕ O(1)^2) by 2ξ+2H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-086",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁴}(O ⊕ O(1)^2) by 2ξ+2H"
+      "geometric_description": "Section of P_{P⁴}(O ⊕ O(1)^2) by 2ξ+2H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-088",
@@ -1927,7 +2055,7 @@
       "ambient": "Smooth projective 6-fold (ambient Picard rank 2)",
       "matrix_rank": 12,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "PB5-088",
         "dimension 5",
@@ -1940,13 +2068,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P⁴}(O ⊕ O(1) ⊕ O(2)) by 2ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-088",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁴}(O ⊕ O(1) ⊕ O(2)) by 2ξ+H"
+      "geometric_description": "Section of P_{P⁴}(O ⊕ O(1) ⊕ O(2)) by 2ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-101",
@@ -1957,7 +2089,7 @@
       "ambient": "Smooth projective 7-fold (ambient Picard rank 2)",
       "matrix_rank": 12,
       "h11": 2,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "PB5-101",
         "dimension 5",
@@ -1970,13 +2102,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P⁴}(O^3 ⊕ O(1)) by ξ+H, 2ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-101",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁴}(O^3 ⊕ O(1)) by ξ+H, 2ξ+H"
+      "geometric_description": "Section of P_{P⁴}(O^3 ⊕ O(1)) by ξ+H, 2ξ+H",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-102",
@@ -1987,7 +2123,7 @@
       "ambient": "Smooth projective 7-fold (ambient Picard rank 2)",
       "matrix_rank": 12,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "PB5-102",
         "dimension 5",
@@ -2000,13 +2136,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P⁴}(O^3 ⊕ O(1)) by ξ+H, 2ξ+2H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-102",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁴}(O^3 ⊕ O(1)) by ξ+H, 2ξ+2H"
+      "geometric_description": "Section of P_{P⁴}(O^3 ⊕ O(1)) by ξ+H, 2ξ+2H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-103",
@@ -2017,7 +2157,7 @@
       "ambient": "Smooth projective 7-fold (ambient Picard rank 2)",
       "matrix_rank": 12,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "PB5-103",
         "dimension 5",
@@ -2030,13 +2170,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P⁴}(O^3 ⊕ O(1)) by ξ+2H, 2ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-103",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁴}(O^3 ⊕ O(1)) by ξ+2H, 2ξ+H"
+      "geometric_description": "Section of P_{P⁴}(O^3 ⊕ O(1)) by ξ+2H, 2ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-105",
@@ -2047,7 +2191,7 @@
       "ambient": "Smooth projective 7-fold (ambient Picard rank 2)",
       "matrix_rank": 12,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "PB5-105",
         "dimension 5",
@@ -2060,13 +2204,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P⁴}(O^3 ⊕ O(2)) by ξ+H, 2ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-105",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁴}(O^3 ⊕ O(2)) by ξ+H, 2ξ+H"
+      "geometric_description": "Section of P_{P⁴}(O^3 ⊕ O(2)) by ξ+H, 2ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-107",
@@ -2077,7 +2225,7 @@
       "ambient": "Smooth projective 7-fold (ambient Picard rank 2)",
       "matrix_rank": 12,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "PB5-107",
         "dimension 5",
@@ -2090,13 +2238,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P⁴}(O^2 ⊕ O(1)^2) by ξ+H, 2ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-107",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁴}(O^2 ⊕ O(1)^2) by ξ+H, 2ξ+H"
+      "geometric_description": "Section of P_{P⁴}(O^2 ⊕ O(1)^2) by ξ+H, 2ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-114",
@@ -2107,7 +2259,7 @@
       "ambient": "Smooth projective 8-fold (ambient Picard rank 2)",
       "matrix_rank": 12,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "PB5-114",
         "dimension 5",
@@ -2120,13 +2272,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P⁴}(O^4 ⊕ O(1)) by ξ+H, ξ+H, 2ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-114",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁴}(O^4 ⊕ O(1)) by ξ+H, ξ+H, 2ξ+H"
+      "geometric_description": "Section of P_{P⁴}(O^4 ⊕ O(1)) by ξ+H, ξ+H, 2ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-124",
@@ -2137,7 +2293,7 @@
       "ambient": "Smooth projective 6-fold (ambient Picard rank 2)",
       "matrix_rank": 10,
       "h11": 2,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "PB5-124",
         "dimension 5",
@@ -2150,13 +2306,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P⁵}(O ⊕ O(1)) by ξ+3H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-124",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁵}(O ⊕ O(1)) by ξ+3H"
+      "geometric_description": "Section of P_{P⁵}(O ⊕ O(1)) by ξ+3H",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-127",
@@ -2167,7 +2327,7 @@
       "ambient": "Smooth projective 6-fold (ambient Picard rank 2)",
       "matrix_rank": 10,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "PB5-127",
         "dimension 5",
@@ -2180,13 +2340,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P⁵}(O ⊕ O(2)) by ξ+2H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-127",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁵}(O ⊕ O(2)) by ξ+2H"
+      "geometric_description": "Section of P_{P⁵}(O ⊕ O(2)) by ξ+2H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-128",
@@ -2197,7 +2361,7 @@
       "ambient": "Smooth projective 6-fold (ambient Picard rank 2)",
       "matrix_rank": 10,
       "h11": 2,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "PB5-128",
         "dimension 5",
@@ -2210,13 +2374,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P⁵}(O ⊕ O(2)) by ξ+3H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-128",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁵}(O ⊕ O(2)) by ξ+3H"
+      "geometric_description": "Section of P_{P⁵}(O ⊕ O(2)) by ξ+3H",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-130",
@@ -2227,7 +2395,7 @@
       "ambient": "Smooth projective 6-fold (ambient Picard rank 2)",
       "matrix_rank": 10,
       "h11": 2,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "PB5-130",
         "dimension 5",
@@ -2240,13 +2408,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P⁵}(O ⊕ O(3)) by ξ+2H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-130",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁵}(O ⊕ O(3)) by ξ+2H"
+      "geometric_description": "Section of P_{P⁵}(O ⊕ O(3)) by ξ+2H",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-131",
@@ -2257,7 +2429,7 @@
       "ambient": "Smooth projective 6-fold (ambient Picard rank 2)",
       "matrix_rank": 10,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "PB5-131",
         "dimension 5",
@@ -2270,13 +2442,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P⁵}(O ⊕ O(4)) by ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-131",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁵}(O ⊕ O(4)) by ξ+H"
+      "geometric_description": "Section of P_{P⁵}(O ⊕ O(4)) by ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-139",
@@ -2287,7 +2463,7 @@
       "ambient": "Smooth projective 7-fold (ambient Picard rank 2)",
       "matrix_rank": 12,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "PB5-139",
         "dimension 5",
@@ -2300,13 +2476,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P⁵}(O^2 ⊕ O(1)) by ξ+H, ξ+2H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-139",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁵}(O^2 ⊕ O(1)) by ξ+H, ξ+2H"
+      "geometric_description": "Section of P_{P⁵}(O^2 ⊕ O(1)) by ξ+H, ξ+2H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-143",
@@ -2317,7 +2497,7 @@
       "ambient": "Smooth projective 7-fold (ambient Picard rank 2)",
       "matrix_rank": 12,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "PB5-143",
         "dimension 5",
@@ -2330,13 +2510,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P⁵}(O^2 ⊕ O(2)) by ξ+H, ξ+2H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-143",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁵}(O^2 ⊕ O(2)) by ξ+H, ξ+2H"
+      "geometric_description": "Section of P_{P⁵}(O^2 ⊕ O(2)) by ξ+H, ξ+2H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-144",
@@ -2347,7 +2531,7 @@
       "ambient": "Smooth projective 7-fold (ambient Picard rank 2)",
       "matrix_rank": 12,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "PB5-144",
         "dimension 5",
@@ -2360,13 +2544,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P⁵}(O^2 ⊕ O(3)) by ξ+H, ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-144",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁵}(O^2 ⊕ O(3)) by ξ+H, ξ+H"
+      "geometric_description": "Section of P_{P⁵}(O^2 ⊕ O(3)) by ξ+H, ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-147",
@@ -2377,7 +2565,7 @@
       "ambient": "Smooth projective 7-fold (ambient Picard rank 2)",
       "matrix_rank": 12,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "PB5-147",
         "dimension 5",
@@ -2390,13 +2578,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P⁵}(O ⊕ O(1) ⊕ O(2)) by ξ+H, ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-147",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁵}(O ⊕ O(1) ⊕ O(2)) by ξ+H, ξ+H"
+      "geometric_description": "Section of P_{P⁵}(O ⊕ O(1) ⊕ O(2)) by ξ+H, ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-153",
@@ -2407,7 +2599,7 @@
       "ambient": "Smooth projective 8-fold (ambient Picard rank 2)",
       "matrix_rank": 12,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "PB5-153",
         "dimension 5",
@@ -2420,13 +2612,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P⁵}(O^3 ⊕ O(1)) by ξ+H, ξ+H, ξ+2H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-153",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁵}(O^3 ⊕ O(1)) by ξ+H, ξ+H, ξ+2H"
+      "geometric_description": "Section of P_{P⁵}(O^3 ⊕ O(1)) by ξ+H, ξ+H, ξ+2H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-154",
@@ -2437,7 +2633,7 @@
       "ambient": "Smooth projective 8-fold (ambient Picard rank 2)",
       "matrix_rank": 12,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "PB5-154",
         "dimension 5",
@@ -2450,13 +2646,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P⁵}(O^3 ⊕ O(2)) by ξ+H, ξ+H, ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-154",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁵}(O^3 ⊕ O(2)) by ξ+H, ξ+H, ξ+H"
+      "geometric_description": "Section of P_{P⁵}(O^3 ⊕ O(2)) by ξ+H, ξ+H, ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-155",
@@ -2467,7 +2667,7 @@
       "ambient": "Smooth projective 8-fold (ambient Picard rank 2)",
       "matrix_rank": 12,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "PB5-155",
         "dimension 5",
@@ -2480,13 +2680,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P⁵}(O^2 ⊕ O(1)^2) by ξ+H, ξ+H, ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-155",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁵}(O^2 ⊕ O(1)^2) by ξ+H, ξ+H, ξ+H"
+      "geometric_description": "Section of P_{P⁵}(O^2 ⊕ O(1)^2) by ξ+H, ξ+H, ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-158",
@@ -2497,7 +2701,7 @@
       "ambient": "Smooth projective 9-fold (ambient Picard rank 2)",
       "matrix_rank": 12,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "PB5-158",
         "dimension 5",
@@ -2510,13 +2714,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P⁵}(O^4 ⊕ O(1)) by ξ+H, ξ+H, ξ+H, ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-158",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁵}(O^4 ⊕ O(1)) by ξ+H, ξ+H, ξ+H, ξ+H"
+      "geometric_description": "Section of P_{P⁵}(O^4 ⊕ O(1)) by ξ+H, ξ+H, ξ+H, ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PCI5-2-2-2-2-2",
@@ -2527,7 +2735,7 @@
       "ambient": "Smooth projective 10-fold (ambient Picard rank 1)",
       "matrix_rank": 6,
       "h11": 1,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "PCI5-2-2-2-2-2",
         "dimension 5",
@@ -2540,13 +2748,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection (2,2,2,2,2) in P¹⁰",
-        "projective space"
+        "projective space",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PCI5-2-2-2-2-2",
       "geometry_kind": "projective space",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection (2,2,2,2,2) in P¹⁰"
+      "geometric_description": "Complete intersection (2,2,2,2,2) in P¹⁰",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "PCI5-2-2-2-3",
@@ -2557,7 +2769,7 @@
       "ambient": "Smooth projective 9-fold (ambient Picard rank 1)",
       "matrix_rank": 6,
       "h11": 1,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "PCI5-2-2-2-3",
         "dimension 5",
@@ -2570,13 +2782,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection (2,2,2,3) in P⁹",
-        "projective space"
+        "projective space",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PCI5-2-2-2-3",
       "geometry_kind": "projective space",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection (2,2,2,3) in P⁹"
+      "geometric_description": "Complete intersection (2,2,2,3) in P⁹",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "PCI5-2-2-4",
@@ -2587,7 +2803,7 @@
       "ambient": "Smooth projective 8-fold (ambient Picard rank 1)",
       "matrix_rank": 6,
       "h11": 1,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "PCI5-2-2-4",
         "dimension 5",
@@ -2600,13 +2816,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection (2,2,4) in P⁸",
-        "projective space"
+        "projective space",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PCI5-2-2-4",
       "geometry_kind": "projective space",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection (2,2,4) in P⁸"
+      "geometric_description": "Complete intersection (2,2,4) in P⁸",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "PCI5-2-3-3",
@@ -2617,7 +2837,7 @@
       "ambient": "Smooth projective 8-fold (ambient Picard rank 1)",
       "matrix_rank": 6,
       "h11": 1,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "PCI5-2-3-3",
         "dimension 5",
@@ -2630,13 +2850,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection (2,3,3) in P⁸",
-        "projective space"
+        "projective space",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PCI5-2-3-3",
       "geometry_kind": "projective space",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection (2,3,3) in P⁸"
+      "geometric_description": "Complete intersection (2,3,3) in P⁸",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "PCI5-2-5",
@@ -2647,7 +2871,7 @@
       "ambient": "Smooth projective 7-fold (ambient Picard rank 1)",
       "matrix_rank": 6,
       "h11": 1,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "PCI5-2-5",
         "dimension 5",
@@ -2660,13 +2884,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection (2,5) in P⁷",
-        "projective space"
+        "projective space",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PCI5-2-5",
       "geometry_kind": "projective space",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection (2,5) in P⁷"
+      "geometric_description": "Complete intersection (2,5) in P⁷",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "PCI5-3-4",
@@ -2677,7 +2905,7 @@
       "ambient": "Smooth projective 7-fold (ambient Picard rank 1)",
       "matrix_rank": 6,
       "h11": 1,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "PCI5-3-4",
         "dimension 5",
@@ -2690,13 +2918,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection (3,4) in P⁷",
-        "projective space"
+        "projective space",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PCI5-3-4",
       "geometry_kind": "projective space",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection (3,4) in P⁷"
+      "geometric_description": "Complete intersection (3,4) in P⁷",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "PCI5-6",
@@ -2707,7 +2939,7 @@
       "ambient": "Smooth projective 6-fold (ambient Picard rank 1)",
       "matrix_rank": 6,
       "h11": 1,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "PCI5-6",
         "dimension 5",
@@ -2720,13 +2952,17 @@
         "quantum multiplication",
         "connection exponents",
         "Degree-6 fivefold in P⁶",
-        "projective space"
+        "projective space",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PCI5-6",
       "geometry_kind": "projective space",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Degree-6 fivefold in P⁶"
+      "geometric_description": "Degree-6 fivefold in P⁶",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "PROD5-A01",
@@ -2737,7 +2973,7 @@
       "ambient": "Smooth projective 6-fold (ambient Picard rank 2)",
       "matrix_rank": 12,
       "h11": 2,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "PROD5-A01",
         "dimension 5",
@@ -2750,13 +2986,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection of multidegrees (2,2) in P² × P⁴",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PROD5-A01",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (2,2) in P² × P⁴"
+      "geometric_description": "Complete intersection of multidegrees (2,2) in P² × P⁴",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "PROD5-A02",
@@ -2767,7 +3007,7 @@
       "ambient": "Smooth projective 6-fold (ambient Picard rank 2)",
       "matrix_rank": 12,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "PROD5-A02",
         "dimension 5",
@@ -2780,13 +3020,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection of multidegrees (2,3) in P² × P⁴",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PROD5-A02",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (2,3) in P² × P⁴"
+      "geometric_description": "Complete intersection of multidegrees (2,3) in P² × P⁴",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PROD5-A03",
@@ -2797,7 +3041,7 @@
       "ambient": "Smooth projective 6-fold (ambient Picard rank 2)",
       "matrix_rank": 12,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "PROD5-A03",
         "dimension 5",
@@ -2810,13 +3054,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection of multidegrees (2,4) in P² × P⁴",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PROD5-A03",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (2,4) in P² × P⁴"
+      "geometric_description": "Complete intersection of multidegrees (2,4) in P² × P⁴",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PROD5-B02",
@@ -2827,7 +3075,7 @@
       "ambient": "Smooth projective 6-fold (ambient Picard rank 2)",
       "matrix_rank": 12,
       "h11": 2,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "PROD5-B02",
         "dimension 5",
@@ -2840,13 +3088,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection of multidegrees (2,3) in P³ × P³",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PROD5-B02",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (2,3) in P³ × P³"
+      "geometric_description": "Complete intersection of multidegrees (2,3) in P³ × P³",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "PROD5-B03",
@@ -2857,7 +3109,7 @@
       "ambient": "Smooth projective 6-fold (ambient Picard rank 2)",
       "matrix_rank": 12,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "PROD5-B03",
         "dimension 5",
@@ -2870,13 +3122,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection of multidegrees (3,3) in P³ × P³",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PROD5-B03",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (3,3) in P³ × P³"
+      "geometric_description": "Complete intersection of multidegrees (3,3) in P³ × P³",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PROD5-C01",
@@ -2887,7 +3143,7 @@
       "ambient": "Smooth projective 6-fold (ambient Picard rank 3)",
       "matrix_rank": 20,
       "h11": 3,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "PROD5-C01",
         "dimension 5",
@@ -2900,13 +3156,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection of multidegrees (2,2,2) in P² × P² × P²",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PROD5-C01",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (2,2,2) in P² × P² × P²"
+      "geometric_description": "Complete intersection of multidegrees (2,2,2) in P² × P² × P²",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PROD5-D01",
@@ -2917,7 +3177,7 @@
       "ambient": "Smooth projective 7-fold (ambient Picard rank 2)",
       "matrix_rank": 12,
       "h11": 2,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "PROD5-D01",
         "dimension 5",
@@ -2930,13 +3190,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection of multidegrees (2,2), (1,1) in P³ × P⁴",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PROD5-D01",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (2,2), (1,1) in P³ × P⁴"
+      "geometric_description": "Complete intersection of multidegrees (2,2), (1,1) in P³ × P⁴",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "PROD5-D02",
@@ -2947,7 +3211,7 @@
       "ambient": "Smooth projective 7-fold (ambient Picard rank 2)",
       "matrix_rank": 12,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "PROD5-D02",
         "dimension 5",
@@ -2960,13 +3224,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection of multidegrees (2,1), (1,2) in P³ × P⁴",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PROD5-D02",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (2,1), (1,2) in P³ × P⁴"
+      "geometric_description": "Complete intersection of multidegrees (2,1), (1,2) in P³ × P⁴",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PROD5-D03",
@@ -2977,7 +3245,7 @@
       "ambient": "Smooth projective 7-fold (ambient Picard rank 2)",
       "matrix_rank": 12,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "PROD5-D03",
         "dimension 5",
@@ -2990,13 +3258,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection of multidegrees (2,3), (1,1) in P³ × P⁴",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PROD5-D03",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (2,3), (1,1) in P³ × P⁴"
+      "geometric_description": "Complete intersection of multidegrees (2,3), (1,1) in P³ × P⁴",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PROD5-D04",
@@ -3007,7 +3279,7 @@
       "ambient": "Smooth projective 7-fold (ambient Picard rank 2)",
       "matrix_rank": 12,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "PROD5-D04",
         "dimension 5",
@@ -3020,13 +3292,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection of multidegrees (2,1), (1,3) in P³ × P⁴",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PROD5-D04",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (2,1), (1,3) in P³ × P⁴"
+      "geometric_description": "Complete intersection of multidegrees (2,1), (1,3) in P³ × P⁴",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PROD5-D05",
@@ -3037,7 +3313,7 @@
       "ambient": "Smooth projective 7-fold (ambient Picard rank 2)",
       "matrix_rank": 12,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "PROD5-D05",
         "dimension 5",
@@ -3050,13 +3326,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection of multidegrees (2,2), (1,2) in P³ × P⁴",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PROD5-D05",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (2,2), (1,2) in P³ × P⁴"
+      "geometric_description": "Complete intersection of multidegrees (2,2), (1,2) in P³ × P⁴",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PROD5-E01",
@@ -3067,7 +3347,7 @@
       "ambient": "Smooth projective 8-fold (ambient Picard rank 2)",
       "matrix_rank": 12,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "PROD5-E01",
         "dimension 5",
@@ -3080,13 +3360,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection of multidegrees (2,2), (1,1), (1,1) in P⁴ × P⁴",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PROD5-E01",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (2,2), (1,1), (1,1) in P⁴ × P⁴"
+      "geometric_description": "Complete intersection of multidegrees (2,2), (1,1), (1,1) in P⁴ × P⁴",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PROD5-E02",
@@ -3097,7 +3381,7 @@
       "ambient": "Smooth projective 8-fold (ambient Picard rank 2)",
       "matrix_rank": 12,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "PROD5-E02",
         "dimension 5",
@@ -3110,13 +3394,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection of multidegrees (2,1), (1,2), (1,1) in P⁴ × P⁴",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PROD5-E02",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (2,1), (1,2), (1,1) in P⁴ × P⁴"
+      "geometric_description": "Complete intersection of multidegrees (2,1), (1,2), (1,1) in P⁴ × P⁴",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-001",
@@ -3127,7 +3415,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 1)",
       "matrix_rank": 5,
       "h11": 1,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "CKP-001",
         "dimension 4",
@@ -3142,13 +3430,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "P⁴",
-        "projective space"
+        "projective space",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-001",
       "geometry_kind": "projective space",
       "geometry_status": "verified from the fan",
-      "geometric_description": "P⁴"
+      "geometric_description": "P⁴",
+      "exponent_status": "complete",
+      "exponent_factor_count": 1
     },
     {
       "id": "139781d9fb14",
@@ -3195,7 +3487,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 1)",
       "matrix_rank": 5,
       "h11": 1,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "CKP-003",
         "dimension 4",
@@ -3210,13 +3502,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Quadric fourfold in P⁵",
-        "projective space"
+        "projective space",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-003",
       "geometry_kind": "projective space",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Quadric fourfold in P⁵"
+      "geometric_description": "Quadric fourfold in P⁵",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "51615a7643a1",
@@ -3263,7 +3559,7 @@
       "ambient": "Smooth projective 6-fold (ambient Picard rank 1)",
       "matrix_rank": 5,
       "h11": 1,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "CKP-033",
         "dimension 4",
@@ -3278,13 +3574,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection (2,2) in P⁶",
-        "projective space"
+        "projective space",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-033",
       "geometry_kind": "projective space",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection (2,2) in P⁶"
+      "geometric_description": "Complete intersection (2,2) in P⁶",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-037",
@@ -3295,7 +3595,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 1)",
       "matrix_rank": 5,
       "h11": 1,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "CKP-037",
         "dimension 4",
@@ -3310,13 +3610,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Cubic fourfold in P⁵",
-        "projective space"
+        "projective space",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-037",
       "geometry_kind": "projective space",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Cubic fourfold in P⁵"
+      "geometric_description": "Cubic fourfold in P⁵",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "3c0ee725b9d8",
@@ -3399,7 +3703,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 2)",
       "matrix_rank": 8,
       "h11": 2,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "CKP-060",
         "dimension 4",
@@ -3414,13 +3718,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P⁴}(O ⊕ O(1)) by 2H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-060",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁴}(O ⊕ O(1)) by 2H"
+      "geometric_description": "Section of P_{P⁴}(O ⊕ O(1)) by 2H",
+      "exponent_status": "complete",
+      "exponent_factor_count": 4
     },
     {
       "id": "CKP-061",
@@ -3431,7 +3739,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 2)",
       "matrix_rank": 9,
       "h11": 2,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "CKP-061",
         "dimension 4",
@@ -3446,13 +3754,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P³}(O^2 ⊕ O(1)) by ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-061",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P³}(O^2 ⊕ O(1)) by ξ+H"
+      "geometric_description": "Section of P_{P³}(O^2 ⊕ O(1)) by ξ+H",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-186",
@@ -3463,7 +3775,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 2)",
       "matrix_rank": 9,
       "h11": 2,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "CKP-186",
         "dimension 4",
@@ -3478,13 +3790,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P²}(O^3 ⊕ O(1)) by 2ξ",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-186",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P²}(O^3 ⊕ O(1)) by 2ξ"
+      "geometric_description": "Section of P_{P²}(O^3 ⊕ O(1)) by 2ξ",
+      "exponent_status": "complete",
+      "exponent_factor_count": 3
     },
     {
       "id": "CKP-189",
@@ -3495,7 +3811,7 @@
       "ambient": "Smooth projective 6-fold (ambient Picard rank 2)",
       "matrix_rank": 9,
       "h11": 2,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "CKP-189",
         "dimension 4",
@@ -3510,13 +3826,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (1,1), (1,1) in P³ × P³",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-189",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,1), (1,1) in P³ × P³"
+      "geometric_description": "Complete intersection of multidegrees (1,1), (1,1) in P³ × P³",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-327",
@@ -3527,7 +3847,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 2)",
       "matrix_rank": 9,
       "h11": 2,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "CKP-327",
         "dimension 4",
@@ -3542,13 +3862,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (1,2) in P² × P³",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-327",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,2) in P² × P³"
+      "geometric_description": "Complete intersection of multidegrees (1,2) in P² × P³",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-567",
@@ -3559,7 +3883,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 2)",
       "matrix_rank": 8,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "CKP-567",
         "dimension 4",
@@ -3574,13 +3898,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (0,3) in P¹ × P⁴",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-567",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (0,3) in P¹ × P⁴"
+      "geometric_description": "Complete intersection of multidegrees (0,3) in P¹ × P⁴",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-596",
@@ -3591,7 +3919,7 @@
       "ambient": "Smooth projective 7-fold (ambient Picard rank 1)",
       "matrix_rank": 5,
       "h11": 1,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "CKP-596",
         "dimension 4",
@@ -3606,13 +3934,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection (2,2,2) in P⁷",
-        "projective space"
+        "projective space",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-596",
       "geometry_kind": "projective space",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection (2,2,2) in P⁷"
+      "geometric_description": "Complete intersection (2,2,2) in P⁷",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-640",
@@ -3623,7 +3955,7 @@
       "ambient": "Smooth projective 6-fold (ambient Picard rank 1)",
       "matrix_rank": 5,
       "h11": 1,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "CKP-640",
         "dimension 4",
@@ -3638,13 +3970,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection (2,3) in P⁶",
-        "projective space"
+        "projective space",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-640",
       "geometry_kind": "projective space",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection (2,3) in P⁶"
+      "geometric_description": "Complete intersection (2,3) in P⁶",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-682",
@@ -3655,7 +3991,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 1)",
       "matrix_rank": 5,
       "h11": 1,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "CKP-682",
         "dimension 4",
@@ -3670,13 +4006,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Quartic fourfold in P⁵",
-        "projective space"
+        "projective space",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-682",
       "geometry_kind": "projective space",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Quartic fourfold in P⁵"
+      "geometric_description": "Quartic fourfold in P⁵",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "3ed191207b19",
@@ -3759,7 +4099,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 2)",
       "matrix_rank": 9,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "HLM-29",
         "dimension 4",
@@ -3773,13 +4113,17 @@
         "connection exponents",
         "Hausen Laface Mauz",
         "HLM",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "HLM-29",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Verra fourfold"
+      "geometric_description": "Verra fourfold",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "5a3d521e7212",
@@ -3880,7 +4224,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 2)",
       "matrix_rank": 8,
       "h11": 2,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "CKP-002",
         "dimension 4",
@@ -3895,13 +4239,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (1,1) in P¹ × P⁴",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-002",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,1) in P¹ × P⁴"
+      "geometric_description": "Complete intersection of multidegrees (1,1) in P¹ × P⁴",
+      "exponent_status": "complete",
+      "exponent_factor_count": 1
     },
     {
       "id": "CKP-004",
@@ -3912,7 +4260,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 2)",
       "matrix_rank": 8,
       "h11": 2,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "CKP-004",
         "dimension 4",
@@ -3927,13 +4275,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P⁴}(O ⊕ O(1)) by ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-004",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁴}(O ⊕ O(1)) by ξ+H"
+      "geometric_description": "Section of P_{P⁴}(O ⊕ O(1)) by ξ+H",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-005",
@@ -3944,7 +4296,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 2)",
       "matrix_rank": 8,
       "h11": 2,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "CKP-005",
         "dimension 4",
@@ -3959,13 +4311,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P⁴}(O ⊕ O(2)) by ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-005",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁴}(O ⊕ O(2)) by ξ+H"
+      "geometric_description": "Section of P_{P⁴}(O ⊕ O(2)) by ξ+H",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-006",
@@ -3976,7 +4332,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 2)",
       "matrix_rank": 8,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "CKP-006",
         "dimension 4",
@@ -3991,13 +4347,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P⁴}(O ⊕ O(3)) by ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-006",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁴}(O ⊕ O(3)) by ξ+H"
+      "geometric_description": "Section of P_{P⁴}(O ⊕ O(3)) by ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-014",
@@ -4008,7 +4368,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 2)",
       "matrix_rank": 9,
       "h11": 2,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "CKP-014",
         "dimension 4",
@@ -4023,13 +4383,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P²}(O^3 ⊕ O(1)) by ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-014",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P²}(O^3 ⊕ O(1)) by ξ+H"
+      "geometric_description": "Section of P_{P²}(O^3 ⊕ O(1)) by ξ+H",
+      "exponent_status": "complete",
+      "exponent_factor_count": 1
     },
     {
       "id": "CKP-018",
@@ -4040,7 +4404,7 @@
       "ambient": "Smooth projective 6-fold (ambient Picard rank 2)",
       "matrix_rank": 9,
       "h11": 2,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "CKP-018",
         "dimension 4",
@@ -4055,13 +4419,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (1,1), (1,1) in P² × P⁴",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-018",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,1), (1,1) in P² × P⁴"
+      "geometric_description": "Complete intersection of multidegrees (1,1), (1,1) in P² × P⁴",
+      "exponent_status": "complete",
+      "exponent_factor_count": 1
     },
     {
       "id": "CKP-026",
@@ -4072,7 +4440,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 2)",
       "matrix_rank": 8,
       "h11": 2,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "CKP-026",
         "dimension 4",
@@ -4087,13 +4455,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P¹}(O^4 ⊕ O(1)) by 2ξ",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-026",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P¹}(O^4 ⊕ O(1)) by 2ξ"
+      "geometric_description": "Section of P_{P¹}(O^4 ⊕ O(1)) by 2ξ",
+      "exponent_status": "complete",
+      "exponent_factor_count": 3
     },
     {
       "id": "CKP-030",
@@ -4104,7 +4476,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 2)",
       "matrix_rank": 8,
       "h11": 2,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "CKP-030",
         "dimension 4",
@@ -4119,13 +4491,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (1,2) in P¹ × P⁴",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-030",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,2) in P¹ × P⁴"
+      "geometric_description": "Complete intersection of multidegrees (1,2) in P¹ × P⁴",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-036",
@@ -4136,7 +4512,7 @@
       "ambient": "Smooth projective 6-fold (ambient Picard rank 2)",
       "matrix_rank": 9,
       "h11": 2,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "CKP-036",
         "dimension 4",
@@ -4151,13 +4527,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P⁴}(O^2 ⊕ O(1)) by ξ+H, ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-036",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁴}(O^2 ⊕ O(1)) by ξ+H, ξ+H"
+      "geometric_description": "Section of P_{P⁴}(O^2 ⊕ O(1)) by ξ+H, ξ+H",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-039",
@@ -4168,7 +4548,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 2)",
       "matrix_rank": 8,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "CKP-039",
         "dimension 4",
@@ -4183,13 +4563,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P⁴}(O ⊕ O(1)) by ξ+2H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-039",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁴}(O ⊕ O(1)) by ξ+2H"
+      "geometric_description": "Section of P_{P⁴}(O ⊕ O(1)) by ξ+2H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-040",
@@ -4200,7 +4584,7 @@
       "ambient": "Smooth projective 6-fold (ambient Picard rank 2)",
       "matrix_rank": 9,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "CKP-040",
         "dimension 4",
@@ -4215,13 +4599,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P⁴}(O^2 ⊕ O(2)) by ξ+H, ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-040",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁴}(O^2 ⊕ O(2)) by ξ+H, ξ+H"
+      "geometric_description": "Section of P_{P⁴}(O^2 ⊕ O(2)) by ξ+H, ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-041",
@@ -4232,7 +4620,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 2)",
       "matrix_rank": 8,
       "h11": 2,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "CKP-041",
         "dimension 4",
@@ -4247,13 +4635,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P⁴}(O ⊕ O(2)) by ξ+2H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-041",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁴}(O ⊕ O(2)) by ξ+2H"
+      "geometric_description": "Section of P_{P⁴}(O ⊕ O(2)) by ξ+2H",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-046",
@@ -4264,7 +4656,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 2)",
       "matrix_rank": 8,
       "h11": 2,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "CKP-046",
         "dimension 4",
@@ -4279,13 +4671,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P⁴}(O ⊕ O(2)) by 2H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-046",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁴}(O ⊕ O(2)) by 2H"
+      "geometric_description": "Section of P_{P⁴}(O ⊕ O(2)) by 2H",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-049",
@@ -4296,7 +4692,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 2)",
       "matrix_rank": 9,
       "h11": 2,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "CKP-049",
         "dimension 4",
@@ -4311,13 +4707,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P³}(O^2 ⊕ O(2)) by ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-049",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P³}(O^2 ⊕ O(2)) by ξ+H"
+      "geometric_description": "Section of P_{P³}(O^2 ⊕ O(2)) by ξ+H",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-078",
@@ -4328,7 +4728,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 2)",
       "matrix_rank": 9,
       "h11": 2,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "CKP-078",
         "dimension 4",
@@ -4343,13 +4743,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (1,1) in P² × P³",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-078",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,1) in P² × P³"
+      "geometric_description": "Complete intersection of multidegrees (1,1) in P² × P³",
+      "exponent_status": "complete",
+      "exponent_factor_count": 1
     },
     {
       "id": "CKP-102",
@@ -4360,7 +4764,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 3)",
       "matrix_rank": 12,
       "h11": 3,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "CKP-102",
         "dimension 4",
@@ -4375,13 +4779,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (1,1,1) in P¹ × P¹ × P³",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-102",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,1,1) in P¹ × P¹ × P³"
+      "geometric_description": "Complete intersection of multidegrees (1,1,1) in P¹ × P¹ × P³",
+      "exponent_status": "complete",
+      "exponent_factor_count": 1
     },
     {
       "id": "CKP-107",
@@ -4392,7 +4800,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 2)",
       "matrix_rank": 9,
       "h11": 2,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "CKP-107",
         "dimension 4",
@@ -4407,13 +4815,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (2,1) in P² × P³",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-107",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (2,1) in P² × P³"
+      "geometric_description": "Complete intersection of multidegrees (2,1) in P² × P³",
+      "exponent_status": "complete",
+      "exponent_factor_count": 1
     },
     {
       "id": "CKP-111",
@@ -4424,7 +4836,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 2)",
       "matrix_rank": 8,
       "h11": 2,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "CKP-111",
         "dimension 4",
@@ -4439,13 +4851,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (0,2) in P¹ × P⁴",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-111",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (0,2) in P¹ × P⁴"
+      "geometric_description": "Complete intersection of multidegrees (0,2) in P¹ × P⁴",
+      "exponent_status": "complete",
+      "exponent_factor_count": 3
     },
     {
       "id": "CKP-114",
@@ -4456,7 +4872,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 2)",
       "matrix_rank": 9,
       "h11": 2,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "CKP-114",
         "dimension 4",
@@ -4471,13 +4887,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P³}(O ⊕ O(1)^2) by ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-114",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P³}(O ⊕ O(1)^2) by ξ+H"
+      "geometric_description": "Section of P_{P³}(O ⊕ O(1)^2) by ξ+H",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-144",
@@ -4488,7 +4908,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 3)",
       "matrix_rank": 12,
       "h11": 3,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "CKP-144",
         "dimension 4",
@@ -4503,13 +4923,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P¹ × P³}(O ⊕ O(0,1)) by ξ+H1+H2",
-        "split projective bundle over product"
+        "split projective bundle over product",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-144",
       "geometry_kind": "split projective bundle over product",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P¹ × P³}(O ⊕ O(0,1)) by ξ+H1+H2"
+      "geometric_description": "Section of P_{P¹ × P³}(O ⊕ O(0,1)) by ξ+H1+H2",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-145",
@@ -4520,7 +4944,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 2)",
       "matrix_rank": 8,
       "h11": 2,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "CKP-145",
         "dimension 4",
@@ -4535,13 +4959,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P³}(O ⊕ O(1)^2) by 2ξ",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-145",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P³}(O ⊕ O(1)^2) by 2ξ"
+      "geometric_description": "Section of P_{P³}(O ⊕ O(1)^2) by 2ξ",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-155",
@@ -4552,7 +4980,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 3)",
       "matrix_rank": 13,
       "h11": 3,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "CKP-155",
         "dimension 4",
@@ -4567,13 +4995,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P¹ × P²}(O^2 ⊕ O(0,1)) by ξ+H1+H2",
-        "split projective bundle over product"
+        "split projective bundle over product",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-155",
       "geometry_kind": "split projective bundle over product",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P¹ × P²}(O^2 ⊕ O(0,1)) by ξ+H1+H2"
+      "geometric_description": "Section of P_{P¹ × P²}(O^2 ⊕ O(0,1)) by ξ+H1+H2",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-157",
@@ -4584,7 +5016,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 3)",
       "matrix_rank": 12,
       "h11": 3,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "CKP-157",
         "dimension 4",
@@ -4599,13 +5031,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P¹ × P³}(O ⊕ O(0,2)) by ξ+H1+H2",
-        "split projective bundle over product"
+        "split projective bundle over product",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-157",
       "geometry_kind": "split projective bundle over product",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P¹ × P³}(O ⊕ O(0,2)) by ξ+H1+H2"
+      "geometric_description": "Section of P_{P¹ × P³}(O ⊕ O(0,2)) by ξ+H1+H2",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-160",
@@ -4616,7 +5052,7 @@
       "ambient": "Smooth projective 6-fold (ambient Picard rank 2)",
       "matrix_rank": 9,
       "h11": 2,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "CKP-160",
         "dimension 4",
@@ -4631,13 +5067,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P³}(O^3 ⊕ O(1)) by ξ+H, ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-160",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P³}(O^3 ⊕ O(1)) by ξ+H, ξ+H"
+      "geometric_description": "Section of P_{P³}(O^3 ⊕ O(1)) by ξ+H, ξ+H",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-169",
@@ -4648,7 +5088,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 2)",
       "matrix_rank": 8,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "CKP-169",
         "dimension 4",
@@ -4663,13 +5103,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P⁴}(O ⊕ O(1)) by 3H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-169",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁴}(O ⊕ O(1)) by 3H"
+      "geometric_description": "Section of P_{P⁴}(O ⊕ O(1)) by 3H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-170",
@@ -4680,7 +5124,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 2)",
       "matrix_rank": 9,
       "h11": 2,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "CKP-170",
         "dimension 4",
@@ -4695,13 +5139,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P³}(O^2 ⊕ O(1)) by ξ+2H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-170",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P³}(O^2 ⊕ O(1)) by ξ+2H"
+      "geometric_description": "Section of P_{P³}(O^2 ⊕ O(1)) by ξ+2H",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-172",
@@ -4712,7 +5160,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 3)",
       "matrix_rank": 12,
       "h11": 3,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "CKP-172",
         "dimension 4",
@@ -4725,9 +5173,13 @@
         "quantum multiplication",
         "connection exponents",
         "Coates Kasprzyk Prince",
-        "CKP"
+        "CKP",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
-      "source": "toric-fourfolds.json"
+      "source": "toric-fourfolds.json",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-174",
@@ -4738,7 +5190,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 2)",
       "matrix_rank": 9,
       "h11": 2,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "CKP-174",
         "dimension 4",
@@ -4753,13 +5205,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P³}(O^2 ⊕ O(1)) by 2ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-174",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P³}(O^2 ⊕ O(1)) by 2ξ+H"
+      "geometric_description": "Section of P_{P³}(O^2 ⊕ O(1)) by 2ξ+H",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-175",
@@ -4770,7 +5226,7 @@
       "ambient": "Smooth projective 7-fold (ambient Picard rank 2)",
       "matrix_rank": 9,
       "h11": 2,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "CKP-175",
         "dimension 4",
@@ -4785,13 +5241,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (1,1), (1,1), (1,1) in P³ × P⁴",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-175",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,1), (1,1), (1,1) in P³ × P⁴"
+      "geometric_description": "Complete intersection of multidegrees (1,1), (1,1), (1,1) in P³ × P⁴",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-179",
@@ -4802,7 +5262,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 2)",
       "matrix_rank": 9,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "CKP-179",
         "dimension 4",
@@ -4817,13 +5277,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P³}(O^2 ⊕ O(2)) by 2ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-179",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P³}(O^2 ⊕ O(2)) by 2ξ+H"
+      "geometric_description": "Section of P_{P³}(O^2 ⊕ O(2)) by 2ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-182",
@@ -4834,7 +5298,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 2)",
       "matrix_rank": 9,
       "h11": 2,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "CKP-182",
         "dimension 4",
@@ -4849,13 +5313,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P²}(O^3 ⊕ O(2)) by 2ξ",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-182",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P²}(O^3 ⊕ O(2)) by 2ξ"
+      "geometric_description": "Section of P_{P²}(O^3 ⊕ O(2)) by 2ξ",
+      "exponent_status": "complete",
+      "exponent_factor_count": 3
     },
     {
       "id": "CKP-233",
@@ -4866,7 +5334,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 2)",
       "matrix_rank": 9,
       "h11": 2,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "CKP-233",
         "dimension 4",
@@ -4881,13 +5349,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P²}(O^2 ⊕ O(1)^2) by 2ξ",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-233",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P²}(O^2 ⊕ O(1)^2) by 2ξ"
+      "geometric_description": "Section of P_{P²}(O^2 ⊕ O(1)^2) by 2ξ",
+      "exponent_status": "complete",
+      "exponent_factor_count": 3
     },
     {
       "id": "CKP-247",
@@ -4898,7 +5370,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 3)",
       "matrix_rank": 13,
       "h11": 3,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "CKP-247",
         "dimension 4",
@@ -4913,13 +5385,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (1,1,1) in P¹ × P² × P²",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-247",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,1,1) in P¹ × P² × P²"
+      "geometric_description": "Complete intersection of multidegrees (1,1,1) in P¹ × P² × P²",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-314",
@@ -4930,7 +5406,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 2)",
       "matrix_rank": 9,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "CKP-314",
         "dimension 4",
@@ -4945,13 +5421,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P²}(O^3 ⊕ O(1)) by 2ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-314",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P²}(O^3 ⊕ O(1)) by 2ξ+H"
+      "geometric_description": "Section of P_{P²}(O^3 ⊕ O(1)) by 2ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-320",
@@ -4962,7 +5442,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 3)",
       "matrix_rank": 13,
       "h11": 3,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "CKP-320",
         "dimension 4",
@@ -4975,9 +5455,13 @@
         "quantum multiplication",
         "connection exponents",
         "Coates Kasprzyk Prince",
-        "CKP"
+        "CKP",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
-      "source": "toric-fourfolds.json"
+      "source": "toric-fourfolds.json",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-322",
@@ -4988,7 +5472,7 @@
       "ambient": "Smooth projective 6-fold (ambient Picard rank 2)",
       "matrix_rank": 9,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "CKP-322",
         "dimension 4",
@@ -5003,13 +5487,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (1,1), (1,2) in P² × P⁴",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-322",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,1), (1,2) in P² × P⁴"
+      "geometric_description": "Complete intersection of multidegrees (1,1), (1,2) in P² × P⁴",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-323",
@@ -5020,7 +5508,7 @@
       "ambient": "Smooth projective 6-fold (ambient Picard rank 2)",
       "matrix_rank": 9,
       "h11": 2,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "CKP-323",
         "dimension 4",
@@ -5035,13 +5523,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (1,1), (2,1) in P³ × P³",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-323",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,1), (2,1) in P³ × P³"
+      "geometric_description": "Complete intersection of multidegrees (1,1), (2,1) in P³ × P³",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-363",
@@ -5052,7 +5544,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 3)",
       "matrix_rank": 13,
       "h11": 3,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "CKP-363",
         "dimension 4",
@@ -5067,13 +5559,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P² × P²}(O ⊕ O(1,0)) by ξ+H1+H2",
-        "split projective bundle over product"
+        "split projective bundle over product",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-363",
       "geometry_kind": "split projective bundle over product",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P² × P²}(O ⊕ O(1,0)) by ξ+H1+H2"
+      "geometric_description": "Section of P_{P² × P²}(O ⊕ O(1,0)) by ξ+H1+H2",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-432",
@@ -5084,7 +5580,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 3)",
       "matrix_rank": 12,
       "h11": 3,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "CKP-432",
         "dimension 4",
@@ -5099,13 +5595,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (1,1,2) in P¹ × P¹ × P³",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-432",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,1,2) in P¹ × P¹ × P³"
+      "geometric_description": "Complete intersection of multidegrees (1,1,2) in P¹ × P¹ × P³",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-439",
@@ -5116,7 +5616,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 2)",
       "matrix_rank": 9,
       "h11": 2,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "CKP-439",
         "dimension 4",
@@ -5131,13 +5631,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (2,2) in P² × P³",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-439",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (2,2) in P² × P³"
+      "geometric_description": "Complete intersection of multidegrees (2,2) in P² × P³",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-450",
@@ -5148,7 +5652,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 3)",
       "matrix_rank": 13,
       "h11": 3,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "CKP-450",
         "dimension 4",
@@ -5163,13 +5667,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P² × P²}(O ⊕ O(1,1)) by ξ+H1+H2",
-        "split projective bundle over product"
+        "split projective bundle over product",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-450",
       "geometry_kind": "split projective bundle over product",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P² × P²}(O ⊕ O(1,1)) by ξ+H1+H2"
+      "geometric_description": "Section of P_{P² × P²}(O ⊕ O(1,1)) by ξ+H1+H2",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-475",
@@ -5180,7 +5688,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 4)",
       "matrix_rank": 17,
       "h11": 4,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "CKP-475",
         "dimension 4",
@@ -5195,13 +5703,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (1,1,1,1) in P¹ × P¹ × P¹ × P²",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-475",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,1,1,1) in P¹ × P¹ × P¹ × P²"
+      "geometric_description": "Complete intersection of multidegrees (1,1,1,1) in P¹ × P¹ × P¹ × P²",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-492",
@@ -5212,7 +5724,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 3)",
       "matrix_rank": 13,
       "h11": 3,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "CKP-492",
         "dimension 4",
@@ -5227,13 +5739,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P² × P²}(O(0,1) ⊕ O(1,0)) by ξ+H1+H2",
-        "split projective bundle over product"
+        "split projective bundle over product",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-492",
       "geometry_kind": "split projective bundle over product",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P² × P²}(O(0,1) ⊕ O(1,0)) by ξ+H1+H2"
+      "geometric_description": "Section of P_{P² × P²}(O(0,1) ⊕ O(1,0)) by ξ+H1+H2",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-498",
@@ -5244,7 +5760,7 @@
       "ambient": "Smooth projective 6-fold (ambient Picard rank 2)",
       "matrix_rank": 9,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "CKP-498",
         "dimension 4",
@@ -5259,13 +5775,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P⁴}(O ⊕ O(1)^2) by ξ+H, ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-498",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁴}(O ⊕ O(1)^2) by ξ+H, ξ+H"
+      "geometric_description": "Section of P_{P⁴}(O ⊕ O(1)^2) by ξ+H, ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-535",
@@ -5276,7 +5796,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 4)",
       "matrix_rank": 17,
       "h11": 4,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "CKP-535",
         "dimension 4",
@@ -5291,13 +5811,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P¹ × P¹ × P²}(O ⊕ O(0,0,1)) by ξ+H1+H2+H3",
-        "split projective bundle over product"
+        "split projective bundle over product",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-535",
       "geometry_kind": "split projective bundle over product",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P¹ × P¹ × P²}(O ⊕ O(0,0,1)) by ξ+H1+H2+H3"
+      "geometric_description": "Section of P_{P¹ × P¹ × P²}(O ⊕ O(0,0,1)) by ξ+H1+H2+H3",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-551",
@@ -5308,7 +5832,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 2)",
       "matrix_rank": 8,
       "h11": 2,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "CKP-551",
         "dimension 4",
@@ -5323,13 +5847,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P¹}(O^4 ⊕ O(1)) by 3ξ",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-551",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P¹}(O^4 ⊕ O(1)) by 3ξ"
+      "geometric_description": "Section of P_{P¹}(O^4 ⊕ O(1)) by 3ξ",
+      "exponent_status": "complete",
+      "exponent_factor_count": 3
     },
     {
       "id": "CKP-560",
@@ -5340,7 +5868,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 3)",
       "matrix_rank": 13,
       "h11": 3,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "CKP-560",
         "dimension 4",
@@ -5355,13 +5883,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (1,2,1) in P¹ × P² × P²",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-560",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,2,1) in P¹ × P² × P²"
+      "geometric_description": "Complete intersection of multidegrees (1,2,1) in P¹ × P² × P²",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-566",
@@ -5372,7 +5904,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 2)",
       "matrix_rank": 8,
       "h11": 2,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "CKP-566",
         "dimension 4",
@@ -5387,13 +5919,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (1,3) in P¹ × P⁴",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-566",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,3) in P¹ × P⁴"
+      "geometric_description": "Complete intersection of multidegrees (1,3) in P¹ × P⁴",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-593",
@@ -5404,7 +5940,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 3)",
       "matrix_rank": 12,
       "h11": 3,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "CKP-593",
         "dimension 4",
@@ -5419,13 +5955,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P¹ × P³}(O ⊕ O(0,1)) by ξ+H1+2H2",
-        "split projective bundle over product"
+        "split projective bundle over product",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-593",
       "geometry_kind": "split projective bundle over product",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P¹ × P³}(O ⊕ O(0,1)) by ξ+H1+2H2"
+      "geometric_description": "Section of P_{P¹ × P³}(O ⊕ O(0,1)) by ξ+H1+2H2",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-594",
@@ -5436,7 +5976,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 3)",
       "matrix_rank": 13,
       "h11": 3,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "CKP-594",
         "dimension 4",
@@ -5451,13 +5991,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P² × P²}(O ⊕ O(1,0)) by ξ+H1+2H2",
-        "split projective bundle over product"
+        "split projective bundle over product",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-594",
       "geometry_kind": "split projective bundle over product",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P² × P²}(O ⊕ O(1,0)) by ξ+H1+2H2"
+      "geometric_description": "Section of P_{P² × P²}(O ⊕ O(1,0)) by ξ+H1+2H2",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-595",
@@ -5468,7 +6012,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 2)",
       "matrix_rank": 9,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "CKP-595",
         "dimension 4",
@@ -5483,13 +6027,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P³}(O ⊕ O(1)^2) by 2ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-595",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P³}(O ⊕ O(1)^2) by 2ξ+H"
+      "geometric_description": "Section of P_{P³}(O ⊕ O(1)^2) by 2ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-611",
@@ -5500,7 +6048,7 @@
       "ambient": "Smooth projective 7-fold (ambient Picard rank 2)",
       "matrix_rank": 9,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "CKP-611",
         "dimension 4",
@@ -5515,13 +6063,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P⁴}(O^3 ⊕ O(1)) by ξ+H, ξ+H, ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-611",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁴}(O^3 ⊕ O(1)) by ξ+H, ξ+H, ξ+H"
+      "geometric_description": "Section of P_{P⁴}(O^3 ⊕ O(1)) by ξ+H, ξ+H, ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-623",
@@ -5532,7 +6084,7 @@
       "ambient": "Smooth projective 6-fold (ambient Picard rank 3)",
       "matrix_rank": 14,
       "h11": 3,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "CKP-623",
         "dimension 4",
@@ -5547,13 +6099,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (1,1,1), (1,1,1) in P² × P² × P²",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-623",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,1,1), (1,1,1) in P² × P² × P²"
+      "geometric_description": "Complete intersection of multidegrees (1,1,1), (1,1,1) in P² × P² × P²",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-628",
@@ -5564,7 +6120,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 5)",
       "matrix_rank": 22,
       "h11": 5,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "CKP-628",
         "dimension 4",
@@ -5579,13 +6135,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (1,1,1,1,1) in P¹ × P¹ × P¹ × P¹ × P¹",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-628",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,1,1,1,1) in P¹ × P¹ × P¹ × P¹ × P¹"
+      "geometric_description": "Complete intersection of multidegrees (1,1,1,1,1) in P¹ × P¹ × P¹ × P¹ × P¹",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-639",
@@ -5596,7 +6156,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 3)",
       "matrix_rank": 13,
       "h11": 3,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "CKP-639",
         "dimension 4",
@@ -5611,13 +6171,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P¹ × P²}(O^2 ⊕ O(0,1)) by 2ξ+H1+H2",
-        "split projective bundle over product"
+        "split projective bundle over product",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-639",
       "geometry_kind": "split projective bundle over product",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P¹ × P²}(O^2 ⊕ O(0,1)) by 2ξ+H1+H2"
+      "geometric_description": "Section of P_{P¹ × P²}(O^2 ⊕ O(0,1)) by 2ξ+H1+H2",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-645",
@@ -5628,7 +6192,7 @@
       "ambient": "Smooth projective 6-fold (ambient Picard rank 2)",
       "matrix_rank": 9,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "CKP-645",
         "dimension 4",
@@ -5643,13 +6207,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P⁴}(O^2 ⊕ O(1)) by ξ+H, ξ+2H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-645",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁴}(O^2 ⊕ O(1)) by ξ+H, ξ+2H"
+      "geometric_description": "Section of P_{P⁴}(O^2 ⊕ O(1)) by ξ+H, ξ+2H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-656",
@@ -5660,7 +6228,7 @@
       "ambient": "Smooth projective 6-fold (ambient Picard rank 2)",
       "matrix_rank": 9,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "CKP-656",
         "dimension 4",
@@ -5675,13 +6243,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P³}(O^3 ⊕ O(1)) by ξ+H, 2ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-656",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P³}(O^3 ⊕ O(1)) by ξ+H, 2ξ+H"
+      "geometric_description": "Section of P_{P³}(O^3 ⊕ O(1)) by ξ+H, 2ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-665",
@@ -5692,7 +6264,7 @@
       "ambient": "Smooth projective 8-fold (ambient Picard rank 2)",
       "matrix_rank": 9,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "CKP-665",
         "dimension 4",
@@ -5707,13 +6279,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (1,1), (1,1), (1,1), (1,1) in P⁴ × P⁴",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-665",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,1), (1,1), (1,1), (1,1) in P⁴ × P⁴"
+      "geometric_description": "Complete intersection of multidegrees (1,1), (1,1), (1,1), (1,1) in P⁴ × P⁴",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-667",
@@ -5724,7 +6300,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 4)",
       "matrix_rank": 17,
       "h11": 4,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "CKP-667",
         "dimension 4",
@@ -5739,13 +6315,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (1,1,1,2) in P¹ × P¹ × P¹ × P²",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-667",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,1,1,2) in P¹ × P¹ × P¹ × P²"
+      "geometric_description": "Complete intersection of multidegrees (1,1,1,2) in P¹ × P¹ × P¹ × P²",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-681",
@@ -5756,7 +6336,7 @@
       "ambient": "Smooth projective 7-fold (ambient Picard rank 2)",
       "matrix_rank": 9,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "CKP-681",
         "dimension 4",
@@ -5771,13 +6351,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (1,1), (1,1), (1,2) in P³ × P⁴",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-681",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,1), (1,1), (1,2) in P³ × P⁴"
+      "geometric_description": "Complete intersection of multidegrees (1,1), (1,1), (1,2) in P³ × P⁴",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-683",
@@ -5788,7 +6372,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 2)",
       "matrix_rank": 8,
       "h11": 2,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "CKP-683",
         "dimension 4",
@@ -5803,13 +6387,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P⁴}(O ⊕ O(1)) by ξ+3H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-683",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁴}(O ⊕ O(1)) by ξ+3H"
+      "geometric_description": "Section of P_{P⁴}(O ⊕ O(1)) by ξ+3H",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-685",
@@ -5820,7 +6408,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 2)",
       "matrix_rank": 9,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "CKP-685",
         "dimension 4",
@@ -5835,13 +6423,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P³}(O^2 ⊕ O(1)) by 2ξ+2H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-685",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P³}(O^2 ⊕ O(1)) by 2ξ+2H"
+      "geometric_description": "Section of P_{P³}(O^2 ⊕ O(1)) by 2ξ+2H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-688",
@@ -5852,7 +6444,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 2)",
       "matrix_rank": 9,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "CKP-688",
         "dimension 4",
@@ -5867,13 +6459,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P²}(O^3 ⊕ O(1)) by 3ξ",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-688",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P²}(O^3 ⊕ O(1)) by 3ξ"
+      "geometric_description": "Section of P_{P²}(O^3 ⊕ O(1)) by 3ξ",
+      "exponent_status": "partial",
+      "exponent_factor_count": 3
     },
     {
       "id": "CKP-691",
@@ -5884,7 +6480,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 2)",
       "matrix_rank": 9,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "CKP-691",
         "dimension 4",
@@ -5899,13 +6495,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P²}(O^3 ⊕ O(2)) by 3ξ",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-691",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P²}(O^3 ⊕ O(2)) by 3ξ"
+      "geometric_description": "Section of P_{P²}(O^3 ⊕ O(2)) by 3ξ",
+      "exponent_status": "partial",
+      "exponent_factor_count": 3
     },
     {
       "id": "CKP-694",
@@ -5916,7 +6516,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 2)",
       "matrix_rank": 9,
       "h11": 2,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "CKP-694",
         "dimension 4",
@@ -5931,13 +6531,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (1,3) in P² × P³",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-694",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,3) in P² × P³"
+      "geometric_description": "Complete intersection of multidegrees (1,3) in P² × P³",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-698",
@@ -5948,7 +6552,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 3)",
       "matrix_rank": 13,
       "h11": 3,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "CKP-698",
         "dimension 4",
@@ -5963,13 +6567,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (1,2,2) in P¹ × P² × P²",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-698",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,2,2) in P¹ × P² × P²"
+      "geometric_description": "Complete intersection of multidegrees (1,2,2) in P¹ × P² × P²",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-702",
@@ -5980,7 +6588,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 2)",
       "matrix_rank": 9,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "CKP-702",
         "dimension 4",
@@ -5995,13 +6603,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P²}(O^2 ⊕ O(1)^2) by 3ξ",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-702",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P²}(O^2 ⊕ O(1)^2) by 3ξ"
+      "geometric_description": "Section of P_{P²}(O^2 ⊕ O(1)^2) by 3ξ",
+      "exponent_status": "partial",
+      "exponent_factor_count": 3
     },
     {
       "id": "CKP-705",
@@ -6012,7 +6624,7 @@
       "ambient": "Smooth projective 6-fold (ambient Picard rank 2)",
       "matrix_rank": 9,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "CKP-705",
         "dimension 4",
@@ -6027,13 +6639,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (2,1), (1,2) in P³ × P³",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-705",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (2,1), (1,2) in P³ × P³"
+      "geometric_description": "Complete intersection of multidegrees (2,1), (1,2) in P³ × P³",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-711",
@@ -6044,7 +6660,7 @@
       "ambient": "Smooth projective 6-fold (ambient Picard rank 2)",
       "matrix_rank": 9,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "CKP-711",
         "dimension 4",
@@ -6059,13 +6675,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (1,2), (1,2) in P² × P⁴",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-711",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,2), (1,2) in P² × P⁴"
+      "geometric_description": "Complete intersection of multidegrees (1,2), (1,2) in P² × P⁴",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-715",
@@ -6076,7 +6696,7 @@
       "ambient": "Smooth projective 6-fold (ambient Picard rank 2)",
       "matrix_rank": 9,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "CKP-715",
         "dimension 4",
@@ -6091,13 +6711,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (1,1), (2,2) in P³ × P³",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-715",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,1), (2,2) in P³ × P³"
+      "geometric_description": "Complete intersection of multidegrees (1,1), (2,2) in P³ × P³",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-718",
@@ -6108,7 +6732,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 2)",
       "matrix_rank": 9,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "CKP-718",
         "dimension 4",
@@ -6123,13 +6747,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P²}(O^3 ⊕ O(1)) by 3ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-718",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P²}(O^3 ⊕ O(1)) by 3ξ+H"
+      "geometric_description": "Section of P_{P²}(O^3 ⊕ O(1)) by 3ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-721",
@@ -6140,7 +6768,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 3)",
       "matrix_rank": 12,
       "h11": 3,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "CKP-721",
         "dimension 4",
@@ -6155,13 +6783,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (1,1,3) in P¹ × P¹ × P³",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-721",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,1,3) in P¹ × P¹ × P³"
+      "geometric_description": "Complete intersection of multidegrees (1,1,3) in P¹ × P¹ × P³",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-722",
@@ -6172,7 +6804,7 @@
       "ambient": "Smooth projective 6-fold (ambient Picard rank 2)",
       "matrix_rank": 9,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "CKP-722",
         "dimension 4",
@@ -6187,13 +6819,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (1,1), (1,3) in P² × P⁴",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-722",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,1), (1,3) in P² × P⁴"
+      "geometric_description": "Complete intersection of multidegrees (1,1), (1,3) in P² × P⁴",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-726",
@@ -6204,7 +6840,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 2)",
       "matrix_rank": 9,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "CKP-726",
         "dimension 4",
@@ -6219,13 +6855,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (2,3) in P² × P³",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-726",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (2,3) in P² × P³"
+      "geometric_description": "Complete intersection of multidegrees (2,3) in P² × P³",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-731",
@@ -6236,7 +6876,7 @@
       "ambient": "Smooth projective 8-fold (ambient Picard rank 1)",
       "matrix_rank": 5,
       "h11": 1,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "CKP-731",
         "dimension 4",
@@ -6251,13 +6891,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection (2,2,2,2) in P⁸",
-        "projective space"
+        "projective space",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-731",
       "geometry_kind": "projective space",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection (2,2,2,2) in P⁸"
+      "geometric_description": "Complete intersection (2,2,2,2) in P⁸",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-733",
@@ -6268,7 +6912,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 2)",
       "matrix_rank": 8,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "CKP-733",
         "dimension 4",
@@ -6283,13 +6927,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P¹}(O^4 ⊕ O(1)) by 4ξ",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-733",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P¹}(O^4 ⊕ O(1)) by 4ξ"
+      "geometric_description": "Section of P_{P¹}(O^4 ⊕ O(1)) by 4ξ",
+      "exponent_status": "partial",
+      "exponent_factor_count": 3
     },
     {
       "id": "CKP-734",
@@ -6300,7 +6948,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 2)",
       "matrix_rank": 8,
       "h11": 2,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "CKP-734",
         "dimension 4",
@@ -6315,13 +6963,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (1,4) in P¹ × P⁴",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-734",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,4) in P¹ × P⁴"
+      "geometric_description": "Complete intersection of multidegrees (1,4) in P¹ × P⁴",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-735",
@@ -6332,7 +6984,7 @@
       "ambient": "Smooth projective 7-fold (ambient Picard rank 1)",
       "matrix_rank": 5,
       "h11": 1,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "CKP-735",
         "dimension 4",
@@ -6347,13 +6999,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection (2,2,3) in P⁷",
-        "projective space"
+        "projective space",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-735",
       "geometry_kind": "projective space",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection (2,2,3) in P⁷"
+      "geometric_description": "Complete intersection (2,2,3) in P⁷",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-736",
@@ -6364,7 +7020,7 @@
       "ambient": "Smooth projective 6-fold (ambient Picard rank 1)",
       "matrix_rank": 5,
       "h11": 1,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "CKP-736",
         "dimension 4",
@@ -6379,13 +7035,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection (3,3) in P⁶",
-        "projective space"
+        "projective space",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-736",
       "geometry_kind": "projective space",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection (3,3) in P⁶"
+      "geometric_description": "Complete intersection (3,3) in P⁶",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-737",
@@ -6396,7 +7056,7 @@
       "ambient": "Smooth projective 6-fold (ambient Picard rank 1)",
       "matrix_rank": 5,
       "h11": 1,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "CKP-737",
         "dimension 4",
@@ -6411,13 +7071,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection (2,4) in P⁶",
-        "projective space"
+        "projective space",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-737",
       "geometry_kind": "projective space",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection (2,4) in P⁶"
+      "geometric_description": "Complete intersection (2,4) in P⁶",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-738",
@@ -6428,7 +7092,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 1)",
       "matrix_rank": 5,
       "h11": 1,
-      "status": "Complete",
+      "status": "Matrix complete; exponent multisets complete",
       "keywords": [
         "CKP-738",
         "dimension 4",
@@ -6443,13 +7107,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Quintic fourfold in P⁵",
-        "projective space"
+        "projective space",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-738",
       "geometry_kind": "projective space",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Quintic fourfold in P⁵"
+      "geometric_description": "Quintic fourfold in P⁵",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "e1322438fd01",
@@ -6550,7 +7218,7 @@
       "ambient": "Smooth projective 5-fold (ambient Picard rank 2)",
       "matrix_rank": 8,
       "h11": 2,
-      "status": "Complete with notes",
+      "status": "Matrix complete; exponent multisets partial",
       "keywords": [
         "HLM-27",
         "dimension 4",
@@ -6565,13 +7233,17 @@
         "Hausen Laface Mauz",
         "HLM",
         "Section of P_{P³}(O ⊕ O(2)^2) by 2ξ",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "HLM-27",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P³}(O ⊕ O(2)^2) by 2ξ"
+      "geometric_description": "Section of P_{P³}(O ⊕ O(2)^2) by 2ξ",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "61e63b38f5a8",
