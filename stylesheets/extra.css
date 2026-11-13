@@ -71,3 +71,10 @@ mjx-math {
     grid-template-columns: 1fr;
   }
 }
+
+
+.geometry-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:1.2rem; margin:1.5rem 0; }
+.geometry-card { border:1px solid var(--md-default-fg-color--lightest); border-top:4px solid; border-radius:6px; padding:1rem 1.2rem; }
+.geometry-card.flags { border-top-color:#526cfe; }
+.geometry-card.toric { border-top-color:#009688; }
+.geometry-card h2 { margin-top:0.3em; }
