@@ -1,0 +1,3967 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Exact unit-cyclicity and Hodge-invariant audit of every published computation record, with full atomic invariants where the criterion applies.">
+      
+      
+      
+        <link rel="canonical" href="https://leonardofcavenaghi.github.io/atomicdecompositions/catalog/atomic-invariants/">
+      
+      
+        <link rel="prev" href="../sources/">
+      
+      
+        <link rel="next" href="../datasets/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/logo.jpg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Atomic invariants - GEOATOMS</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#cyclicity-and-atomic-hodge-invariants" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="GEOATOMS" class="md-header__button md-logo" aria-label="GEOATOMS" data-md-component="logo">
+      
+  <img src="../../assets/logo.jpg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            GEOATOMS
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Atomic invariants
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="teal"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="cyan"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/leonardofcavenaghi/atomicdecompositions" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    leonardofcavenaghi/atomicdecompositions
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Catalogue
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../methodology/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Mathematics
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../software/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Software
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../about/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  About
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="GEOATOMS" class="md-nav__button md-logo" aria-label="GEOATOMS" data-md-component="logo">
+      
+  <img src="../../assets/logo.jpg" alt="logo">
+
+    </a>
+    GEOATOMS
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/leonardofcavenaghi/atomicdecompositions" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    leonardofcavenaghi/atomicdecompositions
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Catalogue
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Catalogue
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../points-curves/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Points and curves
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../surfaces/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Surfaces
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../threefolds/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Threefolds
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fourfolds/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fourfolds
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fivefolds/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fivefolds
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../higher-dimensional/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Higher dimensions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../projective/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projective constructions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../grassmannians/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Grassmannian constructions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../additional/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Homogeneous constructions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fanography/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fano threefold reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sources/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sources and terminology
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Atomic invariants
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Atomic invariants
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-the-invariants-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What the invariants mean
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-a-full-certificate-is-given" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        When a full certificate is given
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#primitive-assignment-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Primitive assignment rules
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#browse-by-dimension" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Browse by dimension
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#all-records" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        All records
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../datasets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exact datasets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../computed/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Original dataset usage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mathematics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Mathematics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../methodology/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Flag localization
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lie-algebras/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Root-system inputs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../toric/mathematics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Toric localization
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../software/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Software
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Software
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    How to install
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../software/flags-1.0.6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Flag 1.0.6.dev0
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../software/flags-1.1.0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Flag 1.1.0.dev1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../software/toric-1.1.0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Toric 1.1.0.dev1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../software/combined/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Combined 1.1.0.dev1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../software/launch-2026-11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changes in this launch
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../software/input-output/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inputs and outputs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../software/notation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Notation and compatibility
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../software/changes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Version differences
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../software/flags-legacy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Preserved flag 1.0.5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api-reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../releases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Release notes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../software/launch-plan/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Validation and publication
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Catalogue
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="cyclicity-and-atomic-hodge-invariants">Cyclicity and atomic Hodge invariants<a class="headerlink" href="#cyclicity-and-atomic-hodge-invariants" title="Permanent link">&para;</a></h1>
+<p>The audit covers <strong>301 computation records</strong>. It tests the unit cyclic determinant at the saved Novikov point and, when needed, additional exact rational points. It combines the result with a full Hodge-space identification and a justified primitive-cohomology assignment. A cyclic ambient matrix alone does not identify the full atoms.</p>
+<table>
+<thead>
+<tr>
+<th>Outcome</th>
+<th style="text-align: right;">Records</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Full coarse factors and Hodge invariants identified under the stated geometric hypotheses</td>
+<td style="text-align: right;">147</td>
+</tr>
+<tr>
+<td>Cyclic ambient operator, with additional Hodge-invariant classes outside that matrix</td>
+<td style="text-align: right;">46</td>
+</tr>
+<tr>
+<td>Unit cyclicity not found at the tested points</td>
+<td style="text-align: right;">108</td>
+</tr>
+</tbody>
+</table>
+<p><a href="../../data/atomic-invariants.json">Download exact points, determinants, Hodge data and factors</a>. These are exact post-calculations on existing matrices; selected fresh localization checks and Hodge calculations are identified by their provenance.</p>
+<h2 id="what-the-invariants-mean">What the invariants mean<a class="headerlink" href="#what-the-invariants-mean" title="Permanent link">&para;</a></h2>
+<p>For a coarse atom <span class="arithmatex">\(\alpha\)</span>, <span class="arithmatex">\(\rho_\alpha=\dim_{\mathbb C}\bigl((E^\alpha_{\mathbb C})^{\mathrm{Hod}_{\mathbb C}}\bigr)\)</span> counts rational Hodge-invariant directions. The Hodge-character polynomial is</p>
+<div class="arithmatex">\[
+P_\alpha(t)=\sum_{p,q}h^{p,q}(E^\alpha)t^{p-q}.
+\]</div>
+<p>It records the Hodge cocharacter with positive multiplicities. Its constant coefficient can exceed <span class="arithmatex">\(\rho_\alpha\)</span>; it does not count only rational Hodge classes. For the added LG(3,6) example, <span class="arithmatex">\(\rho=3\)</span>, while <span class="arithmatex">\(P(t)=14t^2+102+14t^{-2}\)</span>.</p>
+<p>A characteristic factor of degree d describes d conjugate eigenvalues. A listed atomic polynomial applies separately at each root; the consistency checks sum over all these roots. The audit polynomials refer to A=c1 multiplication. The saved connection pages also use K=-A; their factor numbering and sign convention are kept separate.</p>
+<h2 id="when-a-full-certificate-is-given">When a full certificate is given<a class="headerlink" href="#when-a-full-certificate-is-given" title="Permanent link">&para;</a></h2>
+<p>The matrix must span the full Hodge-invariant sector, have a nonzero unit determinant, and represent a complete curve calculation. For an ample complete intersection, weak Lefschetz identifies the fixed ambient part. Irreducible non-Tate vanishing cohomology has no rational Hodge classes for a very general member. The primitive assignment uses monodromy, the first-Chern degree, the rational characteristic relation, or the stated projective-bundle argument. Very-general qualifications remain explicit.</p>
+<p>The finite numerical point is a display normalization. The corresponding admissible small-locus point is obtained by homogeneous Novikov rescaling along the ample anticanonical class. The non-further-splitting criterion then identifies the local coarse factors. The <a href="../../toric/mathematics/">mathematical conventions</a> state the criterion and the distinction between ambient computations and full Hodge data.</p>
+<p>For projective complete intersections of index one, the primitive eigenvalue uses the factorial correction described in <a href="https://arxiv.org/html/1501.03683v6">Hu, Proposition 5.9 and the index-one shift</a>. The two exceptional Hodge reconstructions use the projective incidence/blow-up model and <a href="https://www.kurims.kyoto-u.ac.jp/~mukai/paper/Trieste.pdf">Mukai’s genus-twelve model</a>; the ordinary Gushel–Mukai Hodge data appear in <a href="https://arxiv.org/html/2001.03485">Debarre, §5.1</a>. For those two Hodge reconstructions, characteristic numbers were checked independently at two exact torus points.</p>
+<p>Two useful scope checks are GM-20 and CKP-551: their very-general Hodge-invariant ranks are both 14, while the stored matrices have ranks 9 and 8. Their nonzero ambient determinants therefore do not certify a full atomic decomposition.</p>
+<h2 id="primitive-assignment-rules">Primitive assignment rules<a class="headerlink" href="#primitive-assignment-rules" title="Permanent link">&para;</a></h2>
+<p><strong>Full Tate cohomology.</strong> When the full cohomology is Tate and equals the recorded space, each eigenvalue factor of multiplicity m has rho=m and Hodge polynomial m.</p>
+<p><strong>Chern index at least two.</strong> For an ample intersection, monodromy acts irreducibly on the vanishing middle cohomology and quantum multiplication acts there by a scalar. Returning to the same degree requires a curve of Chern degree one. An index of at least two excludes it, so the scalar is zero.</p>
+<p><strong>Unique rational eigenvalue.</strong> The scalar action is rational. The ambient characteristic relation annihilates the full ring: it annihilates the unit, and multiplication is associative. If it has a single rational root, that root therefore carries all vanishing cohomology.</p>
+<p><strong>Projective complete intersection of index one.</strong> For a projective complete intersection of degrees d_i and index one, the primitive eigenvalue is minus the product of d_i factorials times q; the source and shift are cited above.</p>
+<p><strong>Odd middle cohomology.</strong> When all even cohomology is ambient and odd cohomology is middle-dimensional, its products lie in the ambient algebra. Choose paired odd classes u,v. The nonzero product Theta=u star v is a common eigenvector; associativity and v star v=0 imply Theta squared=0. Its supporting rational spectral factor must therefore be repeated. A unique repeated rational factor fixes the assignment.</p>
+<p><strong>Projective bundle over a cubic threefold.</strong> In CKP-169 and CKP-567, the projective-bundle theorem gives two Tate-shifted copies of the cubic threefold middle Hodge structure. A simple one-dimensional even spectral factor cannot carry odd cohomology: nondegeneracy and associativity would contradict the square-zero relation of an odd class. Hence all odd classes lie on the unique repeated quadratic factor. Irreducible cubic-threefold monodromy reduces the action to a rational two-by-two multiplicity operator; each of its two roots carries one copy, with polynomial 5t+5/t.</p>
+<p>These rules give the full polynomial by adding the assigned vanishing-cohomology polynomial to the ambient contribution. Every certified decomposition is checked against the full Hodge polynomial and the total Hodge-invariant rank.</p>
+<h2 id="browse-by-dimension">Browse by dimension<a class="headerlink" href="#browse-by-dimension" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../invariants-points-curves/">Points and curves</a></li>
+<li><a href="../invariants-surfaces/">Surfaces</a></li>
+<li><a href="../invariants-threefolds/">Threefolds</a></li>
+<li><a href="../invariants-fourfolds/">Fourfolds</a></li>
+<li><a href="../invariants-fivefolds/">Fivefolds</a></li>
+<li><a href="../invariants-higher-dimensional/">Higher dimensions</a></li>
+</ul>
+<h2 id="all-records">All records<a class="headerlink" href="#all-records" title="Permanent link">&para;</a></h2>
+<div class="atomic-index">
+<table>
+<thead>
+<tr>
+<th>Geometric record</th>
+<th style="text-align: right;">Dimension</th>
+<th style="text-align: right;">Ambient rank</th>
+<th style="text-align: right;">Full Hodge-invariant rank</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../grassmannians/#gr26">Gr(2,6)</a></td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">15</td>
+<td><a href="../invariants-higher-dimensional/#1251e5bfa1a6">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../projective/#p8fanoindex9">P8  Fano index 9</a></td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
+<td><a href="../invariants-higher-dimensional/#38cfb4dd44e9">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../additional/#fl145">Fl(1,4,5)</a></td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">20</td>
+<td><a href="../invariants-higher-dimensional/#6d625eb08919">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../grassmannians/#gr26o1">Gr(2,6) / O(1)</a></td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-higher-dimensional/#a1cae496a552">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../projective/#p7fanoindex8">P7  Fano index 8</a></td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td><a href="../invariants-higher-dimensional/#2b39fd310de2">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../projective/#p8o2">P8 / O(2)</a></td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td><a href="../invariants-higher-dimensional/#4ffe1ade62f4">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../projective/#p8o3">P8 / O(3)</a></td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td><a href="../invariants-higher-dimensional/#765c6cbd0f13">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../projective/#p8o4">P8 / O(4)</a></td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td><a href="../invariants-higher-dimensional/#6604d561e8a4">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../projective/#p8o5">P8 / O(5)</a></td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td><a href="../invariants-higher-dimensional/#15b578599b32">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../projective/#p8o6">P8 / O(6)</a></td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td><a href="../invariants-higher-dimensional/#b7e34220e954">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../projective/#p8o7">P8 / O(7)</a></td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td><a href="../invariants-higher-dimensional/#bcd0369eeffc">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../grassmannians/#gr25">Gr(2,5)</a></td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+<td><a href="../invariants-higher-dimensional/#add4e2cdc0c7">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../grassmannians/#gr26o1o1">Gr(2,6) / O(1)+O(1)</a></td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-higher-dimensional/#92c91f67a0db">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../grassmannians/#gr26o1o2">Gr(2,6) / O(1)+O(2)</a></td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+<td><a href="../invariants-higher-dimensional/#58854a726a80">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../grassmannians/#gr35">Gr(3,5)</a></td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+<td><a href="../invariants-higher-dimensional/#9d177386f50d">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../projective/#p6fanoindex7">P6  Fano index 7</a></td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">7</td>
+<td><a href="../invariants-higher-dimensional/#7dbd349ec9ab">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../projective/#p7o2">P7 / O(2)</a></td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td><a href="../invariants-higher-dimensional/#12203c19a2ac">Ambient matrix incomplete</a></td>
+</tr>
+<tr>
+<td><a href="../projective/#p7o3">P7 / O(3)</a></td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">7</td>
+<td><a href="../invariants-higher-dimensional/#c48a08dcc0ef">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../projective/#p7o4">P7 / O(4)</a></td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">7</td>
+<td><a href="../invariants-higher-dimensional/#4d98dba9cf55">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../projective/#p7o5">P7 / O(5)</a></td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">7</td>
+<td><a href="../invariants-higher-dimensional/#8547b3f70ef7">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../projective/#p7o6">P7 / O(6)</a></td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">7</td>
+<td><a href="../invariants-higher-dimensional/#8c15f95b6325">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../projective/#p8o2o2">P8 / O(2)+O(2)</a></td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">16</td>
+<td><a href="../invariants-higher-dimensional/#e0a0b3d40922">Ambient matrix incomplete</a></td>
+</tr>
+<tr>
+<td><a href="../projective/#p8o2o3">P8 / O(2)+O(3)</a></td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">7</td>
+<td><a href="../invariants-higher-dimensional/#99ac9ea3af4c">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../projective/#p8o2o4">P8 / O(2)+O(4)</a></td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">7</td>
+<td><a href="../invariants-higher-dimensional/#d5cc160f2e6a">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../projective/#p8o2o5">P8 / O(2)+O(5)</a></td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">7</td>
+<td><a href="../invariants-higher-dimensional/#11d7c5142e09">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../projective/#p8o3o3">P8 / O(3)+O(3)</a></td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">7</td>
+<td><a href="../invariants-higher-dimensional/#53a423286d87">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../projective/#p8o3o4">P8 / O(3)+O(4)</a></td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">7</td>
+<td><a href="../invariants-higher-dimensional/#d8d261b9c52c">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../records/pci5-2-2-2-2/">Complete intersection (2,2,2,2) in P⁹ (PCI5-2-2-2-2)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td><a href="../invariants-fivefolds/#pci5-2-2-2-2">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../records/pci5-2-2-2-2-2/">Complete intersection (2,2,2,2,2) in P¹⁰ (PCI5-2-2-2-2-2)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td><a href="../invariants-fivefolds/#pci5-2-2-2-2-2">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../records/pci5-2-2-2-3/">Complete intersection (2,2,2,3) in P⁹ (PCI5-2-2-2-3)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td><a href="../invariants-fivefolds/#pci5-2-2-2-3">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../records/pci5-2-2-3/">Complete intersection (2,2,3) in P⁸ (PCI5-2-2-3)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td><a href="../invariants-fivefolds/#pci5-2-2-3">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../records/pci5-2-2-4/">Complete intersection (2,2,4) in P⁸ (PCI5-2-2-4)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td><a href="../invariants-fivefolds/#pci5-2-2-4">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../records/qc5-001/">Complete intersection (2,3) in P⁷ (QC5-001)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td><a href="../invariants-fivefolds/#qc5-001">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../records/pci5-2-3-3/">Complete intersection (2,3,3) in P⁸ (PCI5-2-3-3)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td><a href="../invariants-fivefolds/#pci5-2-3-3">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../records/pci5-2-4/">Complete intersection (2,4) in P⁷ (PCI5-2-4)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td><a href="../invariants-fivefolds/#pci5-2-4">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../records/pci5-2-5/">Complete intersection (2,5) in P⁷ (PCI5-2-5)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td><a href="../invariants-fivefolds/#pci5-2-5">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../records/pci5-3-3/">Complete intersection (3,3) in P⁷ (PCI5-3-3)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td><a href="../invariants-fivefolds/#pci5-3-3">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../records/pci5-3-4/">Complete intersection (3,4) in P⁷ (PCI5-3-4)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td><a href="../invariants-fivefolds/#pci5-3-4">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../records/pb5-060/">Complete intersection of multidegrees (1,1), (1,1), (1,2) in P³ × P⁵ (PB5-060)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fivefolds/#pb5-060">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/pb5-003/">Complete intersection of multidegrees (1,3) in P¹ × P⁵ (PB5-003)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+<td><a href="../invariants-fivefolds/#pb5-003">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/pb5-051/">Complete intersection of multidegrees (2,1), (1,2) in P³ × P⁴ (PB5-051)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fivefolds/#pb5-051">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/prod5-d02/">Complete intersection of multidegrees (2,1), (1,2) in P³ × P⁴ (PROD5-D02)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fivefolds/#prod5-d02">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/prod5-e02/">Complete intersection of multidegrees (2,1), (1,2), (1,1) in P⁴ × P⁴ (PROD5-E02)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fivefolds/#prod5-e02">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/prod5-d04/">Complete intersection of multidegrees (2,1), (1,3) in P³ × P⁴ (PROD5-D04)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fivefolds/#prod5-d04">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/prod5-a01/">Complete intersection of multidegrees (2,2) in P² × P⁴ (PROD5-A01)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fivefolds/#prod5-a01">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../records/pb5-028/">Complete intersection of multidegrees (2,2) in P³ × P³ (PB5-028)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fivefolds/#pb5-028">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/prod5-b01/">Complete intersection of multidegrees (2,2) in P³ × P³ (PROD5-B01)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fivefolds/#prod5-b01">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/prod5-d01/">Complete intersection of multidegrees (2,2), (1,1) in P³ × P⁴ (PROD5-D01)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fivefolds/#prod5-d01">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../records/prod5-e01/">Complete intersection of multidegrees (2,2), (1,1), (1,1) in P⁴ × P⁴ (PROD5-E01)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fivefolds/#prod5-e01">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/prod5-d05/">Complete intersection of multidegrees (2,2), (1,2) in P³ × P⁴ (PROD5-D05)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fivefolds/#prod5-d05">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/prod5-c01/">Complete intersection of multidegrees (2,2,2) in P² × P² × P² (PROD5-C01)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">20</td>
+<td><a href="../invariants-fivefolds/#prod5-c01">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/prod5-a02/">Complete intersection of multidegrees (2,3) in P² × P⁴ (PROD5-A02)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fivefolds/#prod5-a02">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/prod5-b02/">Complete intersection of multidegrees (2,3) in P³ × P³ (PROD5-B02)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fivefolds/#prod5-b02">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../records/prod5-d03/">Complete intersection of multidegrees (2,3), (1,1) in P³ × P⁴ (PROD5-D03)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fivefolds/#prod5-d03">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/prod5-a03/">Complete intersection of multidegrees (2,4) in P² × P⁴ (PROD5-A03)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fivefolds/#prod5-a03">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/prod5-b03/">Complete intersection of multidegrees (3,3) in P³ × P³ (PROD5-B03)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fivefolds/#prod5-b03">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/pci5-6/">Degree-6 fivefold in P⁶ (PCI5-6)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td><a href="../invariants-fivefolds/#pci5-6">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../additional/#fl145o11o11">Fl(1,4,5) / O(1,1)+O(1,1)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fivefolds/#9cb29c69a3f5">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../additional/#g2p1">G2/P1</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td><a href="../invariants-fivefolds/#fd2bd6eae26b">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../additional/#g2p2">G2/P2</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td><a href="../invariants-fivefolds/#834882311808">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../grassmannians/#gr25o1">Gr(2,5) / O(1)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td><a href="../invariants-fivefolds/#1584955327b7">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../grassmannians/#gr25o2">Gr(2,5) / O(2)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td><a href="../invariants-fivefolds/#1cd0a9ffb74e">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../grassmannians/#gr25o3">Gr(2,5) / O(3)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td><a href="../invariants-fivefolds/#dd16e36a8997">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../grassmannians/#gr26o1o1o1">Gr(2,6) / O(1)+O(1)+O(1)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td><a href="../invariants-fivefolds/#51706ac77ff7">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../grassmannians/#gr26o1o1o2">Gr(2,6) / O(1)+O(1)+O(2)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td><a href="../invariants-fivefolds/#c7da579d09a1">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../grassmannians/#gr35o1">Gr(3,5) / O(1)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td><a href="../invariants-fivefolds/#1e7394ef8632">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../grassmannians/#gr35o2">Gr(3,5) / O(2)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td><a href="../invariants-fivefolds/#d7857b18eb8e">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../grassmannians/#gr35o3">Gr(3,5) / O(3)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td><a href="../invariants-fivefolds/#ffb644472d2c">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../additional/#lg36o1">LG(3,6) / O(1)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td><a href="../invariants-fivefolds/#141c91366f21">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../additional/#og37o2">OG(3,7) / O(2)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td><a href="../invariants-fivefolds/#76928fabba80">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../additional/#og37o3">OG(3,7) / O(3)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td><a href="../invariants-fivefolds/#29e94da02c49">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../additional/#og37o4">OG(3,7) / O(4)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td><a href="../invariants-fivefolds/#10e047830d24">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../projective/#p5fanoindex6">P5  Fano index 6</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td><a href="../invariants-fivefolds/#75f4cdb8997b">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../projective/#p6o2">P6 / O(2)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td><a href="../invariants-fivefolds/#7ccb7c3e0b6b">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../projective/#p6o3">P6 / O(3)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td><a href="../invariants-fivefolds/#c44e0fd4a5b0">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../projective/#p6o4">P6 / O(4)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td><a href="../invariants-fivefolds/#b740ed7ac87d">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../projective/#p6o5">P6 / O(5)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td><a href="../invariants-fivefolds/#ee9c4f882e7c">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../projective/#p7o2o2">P7 / O(2)+O(2)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td><a href="../invariants-fivefolds/#75efe609f198">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../projective/#p7o2o3">P7 / O(2)+O(3)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td><a href="../invariants-fivefolds/#86a2cd927e5d">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../projective/#p7o2o4">P7 / O(2)+O(4)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td><a href="../invariants-fivefolds/#bbd63cac242a">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../projective/#p7o3o3">P7 / O(3)+O(3)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td><a href="../invariants-fivefolds/#0dfe4b49547a">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../projective/#p8o2o2o2">P8 / O(2)+O(2)+O(2)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td><a href="../invariants-fivefolds/#649a71c1db0a">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../projective/#p8o2o2o3">P8 / O(2)+O(2)+O(3)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td><a href="../invariants-fivefolds/#819481252d0a">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../records/qd5-001/">Quartic double cover of P⁵ (QD5-001)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td><a href="../invariants-fivefolds/#qd5-001">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../records/pci5-4/">Quartic fivefold in P⁶ (PCI5-4)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td><a href="../invariants-fivefolds/#pci5-4">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../records/pci5-5/">Quintic fivefold in P⁶ (PCI5-5)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td><a href="../invariants-fivefolds/#pci5-5">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../records/pb5-016/">Section of P_{P²}(O^4 ⊕ O(1)) by 3ξ+H (PB5-016)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fivefolds/#pb5-016">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/pb5-017/">Section of P_{P²}(O^4 ⊕ O(1)) by 4ξ+H (PB5-017)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fivefolds/#pb5-017">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/pb5-043/">Section of P_{P³}(O^2 ⊕ O(1)^2) by 2ξ+H (PB5-043)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fivefolds/#pb5-043">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/pb5-044/">Section of P_{P³}(O^2 ⊕ O(1)^2) by 3ξ+H (PB5-044)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fivefolds/#pb5-044">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/pb5-036/">Section of P_{P³}(O^3 ⊕ O(1)) by 2ξ+2H (PB5-036)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fivefolds/#pb5-036">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../records/pb5-038/">Section of P_{P³}(O^3 ⊕ O(1)) by 3ξ+2H (PB5-038)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fivefolds/#pb5-038">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/pb5-037/">Section of P_{P³}(O^3 ⊕ O(1)) by 3ξ+H (PB5-037)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fivefolds/#pb5-037">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../records/pb5-040/">Section of P_{P³}(O^3 ⊕ O(2)) by 2ξ+H (PB5-040)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fivefolds/#pb5-040">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/pb5-041/">Section of P_{P³}(O^3 ⊕ O(2)) by 3ξ+H (PB5-041)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fivefolds/#pb5-041">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/pb5-058/">Section of P_{P³}(O^4 ⊕ O(1)) by 2ξ+H, 2ξ+H (PB5-058)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fivefolds/#pb5-058">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/pb5-056/">Section of P_{P³}(O^4 ⊕ O(1)) by ξ+H, 2ξ+H (PB5-056)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fivefolds/#pb5-056">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/pb5-057/">Section of P_{P³}(O^4 ⊕ O(1)) by ξ+H, 3ξ+H (PB5-057)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fivefolds/#pb5-057">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/pb5-088/">Section of P_{P⁴}(O ⊕ O(1) ⊕ O(2)) by 2ξ+H (PB5-088)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fivefolds/#pb5-088">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/pb5-086/">Section of P_{P⁴}(O ⊕ O(1)^2) by 2ξ+2H (PB5-086)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fivefolds/#pb5-086">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/pb5-085/">Section of P_{P⁴}(O ⊕ O(1)^2) by 2ξ+H (PB5-085)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fivefolds/#pb5-085">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/pb5-075/">Section of P_{P⁴}(O^2 ⊕ O(1)) by 2ξ+2H (PB5-075)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fivefolds/#pb5-075">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/pb5-076/">Section of P_{P⁴}(O^2 ⊕ O(1)) by 2ξ+3H (PB5-076)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fivefolds/#pb5-076">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/pb5-107/">Section of P_{P⁴}(O^2 ⊕ O(1)^2) by ξ+H, 2ξ+H (PB5-107)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fivefolds/#pb5-107">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/pb5-080/">Section of P_{P⁴}(O^2 ⊕ O(2)) by 2ξ+2H (PB5-080)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fivefolds/#pb5-080">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/pb5-079/">Section of P_{P⁴}(O^2 ⊕ O(2)) by 2ξ+H (PB5-079)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fivefolds/#pb5-079">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/pb5-082/">Section of P_{P⁴}(O^2 ⊕ O(3)) by 2ξ+H (PB5-082)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fivefolds/#pb5-082">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/pb5-103/">Section of P_{P⁴}(O^3 ⊕ O(1)) by ξ+2H, 2ξ+H (PB5-103)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fivefolds/#pb5-103">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/pb5-102/">Section of P_{P⁴}(O^3 ⊕ O(1)) by ξ+H, 2ξ+2H (PB5-102)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fivefolds/#pb5-102">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/pb5-101/">Section of P_{P⁴}(O^3 ⊕ O(1)) by ξ+H, 2ξ+H (PB5-101)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fivefolds/#pb5-101">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../records/pb5-105/">Section of P_{P⁴}(O^3 ⊕ O(2)) by ξ+H, 2ξ+H (PB5-105)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fivefolds/#pb5-105">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/pb5-114/">Section of P_{P⁴}(O^4 ⊕ O(1)) by ξ+H, ξ+H, 2ξ+H (PB5-114)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fivefolds/#pb5-114">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/pb5-147/">Section of P_{P⁵}(O ⊕ O(1) ⊕ O(2)) by ξ+H, ξ+H (PB5-147)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fivefolds/#pb5-147">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/pb5-124/">Section of P_{P⁵}(O ⊕ O(1)) by ξ+3H (PB5-124)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+<td><a href="../invariants-fivefolds/#pb5-124">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../records/pb5-127/">Section of P_{P⁵}(O ⊕ O(2)) by ξ+2H (PB5-127)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+<td><a href="../invariants-fivefolds/#pb5-127">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/pb5-128/">Section of P_{P⁵}(O ⊕ O(2)) by ξ+3H (PB5-128)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+<td><a href="../invariants-fivefolds/#pb5-128">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../records/pb5-130/">Section of P_{P⁵}(O ⊕ O(3)) by ξ+2H (PB5-130)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+<td><a href="../invariants-fivefolds/#pb5-130">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../records/pb5-131/">Section of P_{P⁵}(O ⊕ O(4)) by ξ+H (PB5-131)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+<td><a href="../invariants-fivefolds/#pb5-131">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/pb5-139/">Section of P_{P⁵}(O^2 ⊕ O(1)) by ξ+H, ξ+2H (PB5-139)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fivefolds/#pb5-139">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/pb5-155/">Section of P_{P⁵}(O^2 ⊕ O(1)^2) by ξ+H, ξ+H, ξ+H (PB5-155)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fivefolds/#pb5-155">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/pb5-143/">Section of P_{P⁵}(O^2 ⊕ O(2)) by ξ+H, ξ+2H (PB5-143)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fivefolds/#pb5-143">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/pb5-144/">Section of P_{P⁵}(O^2 ⊕ O(3)) by ξ+H, ξ+H (PB5-144)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fivefolds/#pb5-144">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/pb5-153/">Section of P_{P⁵}(O^3 ⊕ O(1)) by ξ+H, ξ+H, ξ+2H (PB5-153)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fivefolds/#pb5-153">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/pb5-154/">Section of P_{P⁵}(O^3 ⊕ O(2)) by ξ+H, ξ+H, ξ+H (PB5-154)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fivefolds/#pb5-154">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/pb5-158/">Section of P_{P⁵}(O^4 ⊕ O(1)) by ξ+H, ξ+H, ξ+H, ξ+H (PB5-158)</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fivefolds/#pb5-158">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-172/">CKP-172 — Complete intersection of codimension 1</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fourfolds/#ckp-172">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-320/">CKP-320 — Complete intersection of codimension 1</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">13</td>
+<td><a href="../invariants-fourfolds/#ckp-320">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-033/">Complete intersection (2,2) in P⁶ (CKP-033)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fourfolds/#ckp-033">Ambient matrix incomplete</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-596/">Complete intersection (2,2,2) in P⁷ (CKP-596)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td><a href="../invariants-fourfolds/#ckp-596">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-731/">Complete intersection (2,2,2,2) in P⁸ (CKP-731)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td><a href="../invariants-fourfolds/#ckp-731">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-735/">Complete intersection (2,2,3) in P⁷ (CKP-735)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td><a href="../invariants-fourfolds/#ckp-735">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-640/">Complete intersection (2,3) in P⁶ (CKP-640)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td><a href="../invariants-fourfolds/#ckp-640">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-737/">Complete intersection (2,4) in P⁶ (CKP-737)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td><a href="../invariants-fourfolds/#ckp-737">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-736/">Complete intersection (3,3) in P⁶ (CKP-736)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td><a href="../invariants-fourfolds/#ckp-736">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-111/">Complete intersection of multidegrees (0,2) in P¹ × P⁴ (CKP-111)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td><a href="../invariants-fourfolds/#ckp-111">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-567/">Complete intersection of multidegrees (0,3) in P¹ × P⁴ (CKP-567)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td><a href="../invariants-fourfolds/#ckp-567">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-078/">Complete intersection of multidegrees (1,1) in P² × P³ (CKP-078)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
+<td><a href="../invariants-fourfolds/#ckp-078">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-002/">Complete intersection of multidegrees (1,1) in P¹ × P⁴ (CKP-002)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td><a href="../invariants-fourfolds/#ckp-002">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-018/">Complete intersection of multidegrees (1,1), (1,1) in P² × P⁴ (CKP-018)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
+<td><a href="../invariants-fourfolds/#ckp-018">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-189/">Complete intersection of multidegrees (1,1), (1,1) in P³ × P³ (CKP-189)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fourfolds/#ckp-189">Ambient matrix incomplete</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-175/">Complete intersection of multidegrees (1,1), (1,1), (1,1) in P³ × P⁴ (CKP-175)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">18</td>
+<td><a href="../invariants-fourfolds/#ckp-175">Ambient matrix incomplete</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-665/">Complete intersection of multidegrees (1,1), (1,1), (1,1), (1,1) in P⁴ × P⁴ (CKP-665)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
+<td><a href="../invariants-fourfolds/#ckp-665">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-681/">Complete intersection of multidegrees (1,1), (1,1), (1,2) in P³ × P⁴ (CKP-681)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
+<td><a href="../invariants-fourfolds/#ckp-681">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-322/">Complete intersection of multidegrees (1,1), (1,2) in P² × P⁴ (CKP-322)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
+<td><a href="../invariants-fourfolds/#ckp-322">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-722/">Complete intersection of multidegrees (1,1), (1,3) in P² × P⁴ (CKP-722)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
+<td><a href="../invariants-fourfolds/#ckp-722">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-323/">Complete intersection of multidegrees (1,1), (2,1) in P³ × P³ (CKP-323)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">23</td>
+<td><a href="../invariants-fourfolds/#ckp-323">Ambient matrix incomplete</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-715/">Complete intersection of multidegrees (1,1), (2,2) in P³ × P³ (CKP-715)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
+<td><a href="../invariants-fourfolds/#ckp-715">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-247/">Complete intersection of multidegrees (1,1,1) in P¹ × P² × P² (CKP-247)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">15</td>
+<td><a href="../invariants-fourfolds/#ckp-247">Ambient matrix incomplete</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-102/">Complete intersection of multidegrees (1,1,1) in P¹ × P¹ × P³ (CKP-102)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fourfolds/#ckp-102">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-623/">Complete intersection of multidegrees (1,1,1), (1,1,1) in P² × P² × P² (CKP-623)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">14</td>
+<td><a href="../invariants-fourfolds/#ckp-623">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-475/">Complete intersection of multidegrees (1,1,1,1) in P¹ × P¹ × P¹ × P² (CKP-475)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">22</td>
+<td><a href="../invariants-fourfolds/#ckp-475">Ambient matrix incomplete</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-628/">Complete intersection of multidegrees (1,1,1,1,1) in P¹ × P¹ × P¹ × P¹ × P¹ (CKP-628)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">22</td>
+<td><a href="../invariants-fourfolds/#ckp-628">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-667/">Complete intersection of multidegrees (1,1,1,2) in P¹ × P¹ × P¹ × P² (CKP-667)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">17</td>
+<td><a href="../invariants-fourfolds/#ckp-667">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-432/">Complete intersection of multidegrees (1,1,2) in P¹ × P¹ × P³ (CKP-432)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fourfolds/#ckp-432">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-721/">Complete intersection of multidegrees (1,1,3) in P¹ × P¹ × P³ (CKP-721)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fourfolds/#ckp-721">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-327/">Complete intersection of multidegrees (1,2) in P² × P³ (CKP-327)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">16</td>
+<td><a href="../invariants-fourfolds/#ckp-327">Ambient matrix incomplete</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-030/">Complete intersection of multidegrees (1,2) in P¹ × P⁴ (CKP-030)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">13</td>
+<td><a href="../invariants-fourfolds/#ckp-030">Ambient matrix incomplete</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-711/">Complete intersection of multidegrees (1,2), (1,2) in P² × P⁴ (CKP-711)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
+<td><a href="../invariants-fourfolds/#ckp-711">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-560/">Complete intersection of multidegrees (1,2,1) in P¹ × P² × P² (CKP-560)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">24</td>
+<td><a href="../invariants-fourfolds/#ckp-560">Ambient matrix incomplete</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-698/">Complete intersection of multidegrees (1,2,2) in P¹ × P² × P² (CKP-698)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">13</td>
+<td><a href="../invariants-fourfolds/#ckp-698">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-694/">Complete intersection of multidegrees (1,3) in P² × P³ (CKP-694)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">35</td>
+<td><a href="../invariants-fourfolds/#ckp-694">Ambient matrix incomplete</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-566/">Complete intersection of multidegrees (1,3) in P¹ × P⁴ (CKP-566)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td><a href="../invariants-fourfolds/#ckp-566">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-734/">Complete intersection of multidegrees (1,4) in P¹ × P⁴ (CKP-734)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td><a href="../invariants-fourfolds/#ckp-734">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-107/">Complete intersection of multidegrees (2,1) in P² × P³ (CKP-107)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
+<td><a href="../invariants-fourfolds/#ckp-107">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-705/">Complete intersection of multidegrees (2,1), (1,2) in P³ × P³ (CKP-705)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
+<td><a href="../invariants-fourfolds/#ckp-705">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-439/">Complete intersection of multidegrees (2,2) in P² × P³ (CKP-439)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
+<td><a href="../invariants-fourfolds/#ckp-439">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-726/">Complete intersection of multidegrees (2,3) in P² × P³ (CKP-726)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
+<td><a href="../invariants-fourfolds/#ckp-726">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-037/">Cubic fourfold in P⁵ (CKP-037)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td><a href="../invariants-fourfolds/#ckp-037">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../additional/#fl125o01o02o10gm20">Fl(1,2,5) / O(0,1)+O(0,2)+O(1,0) (GM-20)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">14</td>
+<td><a href="../invariants-fourfolds/#e1322438fd01">Ambient matrix incomplete</a></td>
+</tr>
+<tr>
+<td><a href="../additional/#fl134o11">Fl(1,3,4) / O(1,1)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fourfolds/#3ed191207b19">Ambient matrix incomplete</a></td>
+</tr>
+<tr>
+<td><a href="../additional/#g2p2o1">G2/P2 / O(1)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td><a href="../invariants-fourfolds/#b9a91f8b2a8f">Ambient matrix incomplete</a></td>
+</tr>
+<tr>
+<td><a href="../grassmannians/#gr24">Gr(2,4)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td><a href="../invariants-fourfolds/#51615a7643a1">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../grassmannians/#gr25o1o1">Gr(2,5) / O(1)+O(1)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td><a href="../invariants-fourfolds/#3c0ee725b9d8">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../grassmannians/#gr25o1o2">Gr(2,5) / O(1)+O(2)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td><a href="../invariants-fourfolds/#5a3a05721152">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../grassmannians/#gr25o1o3">Gr(2,5) / O(1)+O(3)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td><a href="../invariants-fourfolds/#d2a92bddd407">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../grassmannians/#gr25o2o2">Gr(2,5) / O(2)+O(2)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td><a href="../invariants-fourfolds/#71c4061dbdf2">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../grassmannians/#gr35o1o1">Gr(3,5) / O(1)+O(1)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td><a href="../invariants-fourfolds/#fbeb5f79765b">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../grassmannians/#gr35o1o2">Gr(3,5) / O(1)+O(2)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td><a href="../invariants-fourfolds/#0c8674c9ad6f">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../grassmannians/#gr35o1o3">Gr(3,5) / O(1)+O(3)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td><a href="../invariants-fourfolds/#f418dda622c4">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../grassmannians/#gr35o2o2">Gr(3,5) / O(2)+O(2)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td><a href="../invariants-fourfolds/#a6bf73eeb7fb">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../grassmannians/#gr45">Gr(4,5)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td><a href="../invariants-fourfolds/#139781d9fb14">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../records/lg3-1-2/">Hyperplane and quadric section of LG(3,6)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td><a href="../invariants-fourfolds/#lg3-1-2">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../additional/#lg36o1o1">LG(3,6) / O(1)+O(1)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">8</td>
+<td><a href="../invariants-fourfolds/#5a3d521e7212">Ambient matrix incomplete</a></td>
+</tr>
+<tr>
+<td><a href="../additional/#og37o2o2">OG(3,7) / O(2)+O(2)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td><a href="../invariants-fourfolds/#176397975a00">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../projective/#p4fanoindex5">P4  Fano index 5</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td><a href="../invariants-fourfolds/#53078b491137">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../projective/#p5o2">P5 / O(2)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td><a href="../invariants-fourfolds/#8884770b89b8">Ambient matrix incomplete</a></td>
+</tr>
+<tr>
+<td><a href="../projective/#p5o3">P5 / O(3)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td><a href="../invariants-fourfolds/#31aadf32267f">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../projective/#p5o4">P5 / O(4)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td><a href="../invariants-fourfolds/#8bd58b781863">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../projective/#p5o5">P5 / O(5)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td><a href="../invariants-fourfolds/#61e63b38f5a8">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../projective/#p6o2o2">P6 / O(2)+O(2)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fourfolds/#e4065b55a49a">Ambient matrix incomplete</a></td>
+</tr>
+<tr>
+<td><a href="../projective/#p6o2o3">P6 / O(2)+O(3)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td><a href="../invariants-fourfolds/#6324179fa1e1">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../projective/#p6o2o4">P6 / O(2)+O(4)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td><a href="../invariants-fourfolds/#3150500f5723">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../projective/#p6o3o3">P6 / O(3)+O(3)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td><a href="../invariants-fourfolds/#de2575bbb840">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../projective/#p7o2o2o2">P7 / O(2)+O(2)+O(2)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td><a href="../invariants-fourfolds/#d68ecb775686">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../projective/#p7o2o2o3">P7 / O(2)+O(2)+O(3)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td><a href="../invariants-fourfolds/#5ae4d92d2f20">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-001/">P⁴ (CKP-001)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td><a href="../invariants-fourfolds/#ckp-001">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-003/">Quadric fourfold in P⁵ (CKP-003)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td><a href="../invariants-fourfolds/#ckp-003">Ambient matrix incomplete</a></td>
+</tr>
+<tr>
+<td><a href="../records/g2-quadric/">Quadric section of the adjoint G₂ variety</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td><a href="../invariants-fourfolds/#g2-quadric">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-682/">Quartic fourfold in P⁵ (CKP-682)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td><a href="../invariants-fourfolds/#ckp-682">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-738/">Quintic fourfold in P⁵ (CKP-738)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td><a href="../invariants-fourfolds/#ckp-738">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-594/">Section of P_{P² × P²}(O ⊕ O(1,0)) by ξ+H1+2H2 (CKP-594)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">13</td>
+<td><a href="../invariants-fourfolds/#ckp-594">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-363/">Section of P_{P² × P²}(O ⊕ O(1,0)) by ξ+H1+H2 (CKP-363)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">19</td>
+<td><a href="../invariants-fourfolds/#ckp-363">Ambient matrix incomplete</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-450/">Section of P_{P² × P²}(O ⊕ O(1,1)) by ξ+H1+H2 (CKP-450)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">13</td>
+<td><a href="../invariants-fourfolds/#ckp-450">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-492/">Section of P_{P² × P²}(O(0,1) ⊕ O(1,0)) by ξ+H1+H2 (CKP-492)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">13</td>
+<td><a href="../invariants-fourfolds/#ckp-492">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-233/">Section of P_{P²}(O^2 ⊕ O(1)^2) by 2ξ (CKP-233)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">16</td>
+<td><a href="../invariants-fourfolds/#ckp-233">Ambient matrix incomplete</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-702/">Section of P_{P²}(O^2 ⊕ O(1)^2) by 3ξ (CKP-702)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">not identified</td>
+<td><a href="../invariants-fourfolds/#ckp-702">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-186/">Section of P_{P²}(O^3 ⊕ O(1)) by 2ξ (CKP-186)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td><a href="../invariants-fourfolds/#ckp-186">Ambient matrix incomplete</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-314/">Section of P_{P²}(O^3 ⊕ O(1)) by 2ξ+H (CKP-314)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
+<td><a href="../invariants-fourfolds/#ckp-314">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-688/">Section of P_{P²}(O^3 ⊕ O(1)) by 3ξ (CKP-688)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">not identified</td>
+<td><a href="../invariants-fourfolds/#ckp-688">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-718/">Section of P_{P²}(O^3 ⊕ O(1)) by 3ξ+H (CKP-718)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
+<td><a href="../invariants-fourfolds/#ckp-718">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-014/">Section of P_{P²}(O^3 ⊕ O(1)) by ξ+H (CKP-014)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
+<td><a href="../invariants-fourfolds/#ckp-014">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-182/">Section of P_{P²}(O^3 ⊕ O(2)) by 2ξ (CKP-182)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">16</td>
+<td><a href="../invariants-fourfolds/#ckp-182">Ambient matrix incomplete</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-691/">Section of P_{P²}(O^3 ⊕ O(2)) by 3ξ (CKP-691)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">not identified</td>
+<td><a href="../invariants-fourfolds/#ckp-691">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-145/">Section of P_{P³}(O ⊕ O(1)^2) by 2ξ (CKP-145)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">16</td>
+<td><a href="../invariants-fourfolds/#ckp-145">Ambient matrix incomplete</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-595/">Section of P_{P³}(O ⊕ O(1)^2) by 2ξ+H (CKP-595)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
+<td><a href="../invariants-fourfolds/#ckp-595">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-114/">Section of P_{P³}(O ⊕ O(1)^2) by ξ+H (CKP-114)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fourfolds/#ckp-114">Ambient matrix incomplete</a></td>
+</tr>
+<tr>
+<td><a href="../records/hlm-27/">Section of P_{P³}(O ⊕ O(2)^2) by 2ξ (HLM-27)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">not identified</td>
+<td><a href="../invariants-fourfolds/#hlm-27">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-685/">Section of P_{P³}(O^2 ⊕ O(1)) by 2ξ+2H (CKP-685)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
+<td><a href="../invariants-fourfolds/#ckp-685">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-174/">Section of P_{P³}(O^2 ⊕ O(1)) by 2ξ+H (CKP-174)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
+<td><a href="../invariants-fourfolds/#ckp-174">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-170/">Section of P_{P³}(O^2 ⊕ O(1)) by ξ+2H (CKP-170)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">20</td>
+<td><a href="../invariants-fourfolds/#ckp-170">Ambient matrix incomplete</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-061/">Section of P_{P³}(O^2 ⊕ O(1)) by ξ+H (CKP-061)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td><a href="../invariants-fourfolds/#ckp-061">Ambient matrix incomplete</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-179/">Section of P_{P³}(O^2 ⊕ O(2)) by 2ξ+H (CKP-179)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
+<td><a href="../invariants-fourfolds/#ckp-179">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-049/">Section of P_{P³}(O^2 ⊕ O(2)) by ξ+H (CKP-049)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">11</td>
+<td><a href="../invariants-fourfolds/#ckp-049">Ambient matrix incomplete</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-656/">Section of P_{P³}(O^3 ⊕ O(1)) by ξ+H, 2ξ+H (CKP-656)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
+<td><a href="../invariants-fourfolds/#ckp-656">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-160/">Section of P_{P³}(O^3 ⊕ O(1)) by ξ+H, ξ+H (CKP-160)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">15</td>
+<td><a href="../invariants-fourfolds/#ckp-160">Ambient matrix incomplete</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-639/">Section of P_{P¹ × P²}(O^2 ⊕ O(0,1)) by 2ξ+H1+H2 (CKP-639)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">13</td>
+<td><a href="../invariants-fourfolds/#ckp-639">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-155/">Section of P_{P¹ × P²}(O^2 ⊕ O(0,1)) by ξ+H1+H2 (CKP-155)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">17</td>
+<td><a href="../invariants-fourfolds/#ckp-155">Ambient matrix incomplete</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-593/">Section of P_{P¹ × P³}(O ⊕ O(0,1)) by ξ+H1+2H2 (CKP-593)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fourfolds/#ckp-593">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-144/">Section of P_{P¹ × P³}(O ⊕ O(0,1)) by ξ+H1+H2 (CKP-144)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">17</td>
+<td><a href="../invariants-fourfolds/#ckp-144">Ambient matrix incomplete</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-157/">Section of P_{P¹ × P³}(O ⊕ O(0,2)) by ξ+H1+H2 (CKP-157)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td><a href="../invariants-fourfolds/#ckp-157">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-535/">Section of P_{P¹ × P¹ × P²}(O ⊕ O(0,0,1)) by ξ+H1+H2+H3 (CKP-535)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">17</td>
+<td><a href="../invariants-fourfolds/#ckp-535">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-026/">Section of P_{P¹}(O^4 ⊕ O(1)) by 2ξ (CKP-026)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">10</td>
+<td><a href="../invariants-fourfolds/#ckp-026">Ambient matrix incomplete</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-551/">Section of P_{P¹}(O^4 ⊕ O(1)) by 3ξ (CKP-551)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">14</td>
+<td><a href="../invariants-fourfolds/#ckp-551">Ambient matrix incomplete</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-733/">Section of P_{P¹}(O^4 ⊕ O(1)) by 4ξ (CKP-733)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">not identified</td>
+<td><a href="../invariants-fourfolds/#ckp-733">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-060/">Section of P_{P⁴}(O ⊕ O(1)) by 2H (CKP-060)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td><a href="../invariants-fourfolds/#ckp-060">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-169/">Section of P_{P⁴}(O ⊕ O(1)) by 3H (CKP-169)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td><a href="../invariants-fourfolds/#ckp-169">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-039/">Section of P_{P⁴}(O ⊕ O(1)) by ξ+2H (CKP-039)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td><a href="../invariants-fourfolds/#ckp-039">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-683/">Section of P_{P⁴}(O ⊕ O(1)) by ξ+3H (CKP-683)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td><a href="../invariants-fourfolds/#ckp-683">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-004/">Section of P_{P⁴}(O ⊕ O(1)) by ξ+H (CKP-004)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td><a href="../invariants-fourfolds/#ckp-004">Ambient matrix incomplete</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-498/">Section of P_{P⁴}(O ⊕ O(1)^2) by ξ+H, ξ+H (CKP-498)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
+<td><a href="../invariants-fourfolds/#ckp-498">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-046/">Section of P_{P⁴}(O ⊕ O(2)) by 2H (CKP-046)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td><a href="../invariants-fourfolds/#ckp-046">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-041/">Section of P_{P⁴}(O ⊕ O(2)) by ξ+2H (CKP-041)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td><a href="../invariants-fourfolds/#ckp-041">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-005/">Section of P_{P⁴}(O ⊕ O(2)) by ξ+H (CKP-005)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">14</td>
+<td><a href="../invariants-fourfolds/#ckp-005">Ambient matrix incomplete</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-006/">Section of P_{P⁴}(O ⊕ O(3)) by ξ+H (CKP-006)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td><a href="../invariants-fourfolds/#ckp-006">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-645/">Section of P_{P⁴}(O^2 ⊕ O(1)) by ξ+H, ξ+2H (CKP-645)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
+<td><a href="../invariants-fourfolds/#ckp-645">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-036/">Section of P_{P⁴}(O^2 ⊕ O(1)) by ξ+H, ξ+H (CKP-036)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">16</td>
+<td><a href="../invariants-fourfolds/#ckp-036">Ambient matrix incomplete</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-040/">Section of P_{P⁴}(O^2 ⊕ O(2)) by ξ+H, ξ+H (CKP-040)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
+<td><a href="../invariants-fourfolds/#ckp-040">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/ckp-611/">Section of P_{P⁴}(O^3 ⊕ O(1)) by ξ+H, ξ+H, ξ+H (CKP-611)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
+<td><a href="../invariants-fourfolds/#ckp-611">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../records/hlm-29/">Verra fourfold (HLM-29)</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">not identified</td>
+<td><a href="../invariants-fourfolds/#hlm-29">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../additional/#b2bo11">B2/B / O(1,1)</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td><a href="../invariants-threefolds/#34fec398819e">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../fanography/#fano-variety-1-10">Fanography 1-10</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td><a href="../invariants-threefolds/#7d708946a6fa">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../fanography/#fano-variety-1-6">Fanography 1-6</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td><a href="../invariants-threefolds/#e3f3a551d928">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../fanography/#fano-variety-1-7">Fanography 1-7</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td><a href="../invariants-threefolds/#541768cd0738">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../fanography/#fano-variety-1-8">Fanography 1-8</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td><a href="../invariants-threefolds/#8f9e7a526fba">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../fanography/#fano-variety-1-9">Fanography 1-9</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td><a href="../invariants-threefolds/#6f17aaf4290d">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../fanography/#fano-variety-2-24">Fanography 2-24</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td><a href="../invariants-threefolds/#3538d68c1866">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../fanography/#fano-variety-2-32">Fanography 2-32</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td><a href="../invariants-threefolds/#a6cb2e5a95bb">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../fanography/#fano-variety-2-34">Fanography 2-34</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td><a href="../invariants-threefolds/#ea3e323d9fcb">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../fanography/#fano-variety-3-11">Fanography 3-11</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td><a href="../invariants-threefolds/#a8e28f47c77f">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../fanography/#fano-variety-3-27">Fanography 3-27</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td><a href="../invariants-threefolds/#292efbd7ade0">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../fanography/#fano-variety-4-1">Fanography 4-1</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+<td><a href="../invariants-threefolds/#96d957608200">No cyclic point found</a></td>
+</tr>
+<tr>
+<td><a href="../additional/#fl134o11o11">Fl(1,3,4) / O(1,1)+O(1,1)</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td><a href="../invariants-threefolds/#d3154e614ad6">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../grassmannians/#gr24o1">Gr(2,4) / O(1)</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td><a href="../invariants-threefolds/#1841f3a70f74">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../grassmannians/#gr24o2">Gr(2,4) / O(2)</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td><a href="../invariants-threefolds/#0156965bbcb0">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../grassmannians/#gr24o3">Gr(2,4) / O(3)</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td><a href="../invariants-threefolds/#83c013d9bdf4">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../grassmannians/#gr25o1o1o1">Gr(2,5) / O(1)+O(1)+O(1)</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td><a href="../invariants-threefolds/#f443674348ad">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../grassmannians/#gr25o1o1o2">Gr(2,5) / O(1)+O(1)+O(2)</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td><a href="../invariants-threefolds/#4a1a8491be38">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../grassmannians/#gr34">Gr(3,4)</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td><a href="../invariants-threefolds/#92f8f69bd1f8">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../grassmannians/#gr35o1o1o1">Gr(3,5) / O(1)+O(1)+O(1)</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td><a href="../invariants-threefolds/#70aac1aaa08e">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../grassmannians/#gr35o1o1o2">Gr(3,5) / O(1)+O(1)+O(2)</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td><a href="../invariants-threefolds/#d1339713ede4">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../grassmannians/#gr45o1">Gr(4,5) / O(1)</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td><a href="../invariants-threefolds/#005416420233">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../grassmannians/#gr45o2">Gr(4,5) / O(2)</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td><a href="../invariants-threefolds/#6ce465296672">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../grassmannians/#gr45o3">Gr(4,5) / O(3)</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td><a href="../invariants-threefolds/#a408b7769859">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../grassmannians/#gr45o4">Gr(4,5) / O(4)</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td><a href="../invariants-threefolds/#490a4dc43960">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../projective/#p3fanoindex4">P3  Fano index 4</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td><a href="../invariants-threefolds/#ebd198ca1849">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../projective/#p4o2">P4 / O(2)</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td><a href="../invariants-threefolds/#6ceccace2e40">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../projective/#p4o3">P4 / O(3)</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td><a href="../invariants-threefolds/#0743d9764a4a">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../projective/#p4o4">P4 / O(4)</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td><a href="../invariants-threefolds/#1c4486700490">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../projective/#p5o2o2">P5 / O(2)+O(2)</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td><a href="../invariants-threefolds/#420c622c9cb3">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../projective/#p5o2o3">P5 / O(2)+O(3)</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td><a href="../invariants-threefolds/#3834707b4d89">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../projective/#p6o2o2o2">P6 / O(2)+O(2)+O(2)</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td><a href="../invariants-threefolds/#352c4508e307">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../grassmannians/#gr24o1o1">Gr(2,4) / O(1)+O(1)</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td><a href="../invariants-surfaces/#1d67c54eac18">Ambient matrix incomplete</a></td>
+</tr>
+<tr>
+<td><a href="../grassmannians/#gr24o1o2">Gr(2,4) / O(1)+O(2)</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">8</td>
+<td><a href="../invariants-surfaces/#c5377008d724">Ambient matrix incomplete</a></td>
+</tr>
+<tr>
+<td><a href="../grassmannians/#gr34o1">Gr(3,4) / O(1)</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td><a href="../invariants-surfaces/#892655959f06">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../grassmannians/#gr34o2">Gr(3,4) / O(2)</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td><a href="../invariants-surfaces/#53ee7c8af21e">Ambient matrix incomplete</a></td>
+</tr>
+<tr>
+<td><a href="../grassmannians/#gr34o3">Gr(3,4) / O(3)</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">9</td>
+<td><a href="../invariants-surfaces/#1fe2cc704593">Ambient matrix incomplete</a></td>
+</tr>
+<tr>
+<td><a href="../grassmannians/#gr45o1o1">Gr(4,5) / O(1)+O(1)</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td><a href="../invariants-surfaces/#5bdf83aa585a">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../grassmannians/#gr45o1o2">Gr(4,5) / O(1)+O(2)</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td><a href="../invariants-surfaces/#04f8ea67b0d4">Ambient matrix incomplete</a></td>
+</tr>
+<tr>
+<td><a href="../grassmannians/#gr45o1o3">Gr(4,5) / O(1)+O(3)</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">9</td>
+<td><a href="../invariants-surfaces/#b1aa6f89ec3e">Ambient matrix incomplete</a></td>
+</tr>
+<tr>
+<td><a href="../grassmannians/#gr45o2o2">Gr(4,5) / O(2)+O(2)</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">8</td>
+<td><a href="../invariants-surfaces/#2dd604001dc5">Ambient matrix incomplete</a></td>
+</tr>
+<tr>
+<td><a href="../projective/#p2fanoindex3">P2 Fano index 3</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td><a href="../invariants-surfaces/#7bea0424f8dd">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../projective/#p3o2">P3 / O(2)</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td><a href="../invariants-surfaces/#c26b71c1c385">Ambient matrix incomplete</a></td>
+</tr>
+<tr>
+<td><a href="../projective/#p3o3">P3 / O(3)</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">9</td>
+<td><a href="../invariants-surfaces/#785f6e8bcd76">Ambient matrix incomplete</a></td>
+</tr>
+<tr>
+<td><a href="../projective/#p4o2o2">P4 / O(2)+O(2)</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">8</td>
+<td><a href="../invariants-surfaces/#904c41fdd438">Ambient matrix incomplete</a></td>
+</tr>
+<tr>
+<td><a href="../grassmannians/#gr24o1o1o1">Gr(2,4) / O(1)+O(1)+O(1)</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td><a href="../invariants-points-curves/#8b39618f3aed">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../grassmannians/#gr34o1o1">Gr(3,4) / O(1)+O(1)</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td><a href="../invariants-points-curves/#375785af1f22">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../grassmannians/#gr34o1o2">Gr(3,4) / O(1)+O(2)</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td><a href="../invariants-points-curves/#79dd3601d09b">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../grassmannians/#gr45o1o1o1">Gr(4,5) / O(1)+O(1)+O(1)</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td><a href="../invariants-points-curves/#8156468b738f">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../grassmannians/#gr45o1o1o2">Gr(4,5) / O(1)+O(1)+O(2)</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td><a href="../invariants-points-curves/#af3a5033ba7a">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../projective/#p2o2">P2 / O(2)</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td><a href="../invariants-points-curves/#81b66f277517">Full atomic invariants</a></td>
+</tr>
+<tr>
+<td><a href="../grassmannians/#gr34o1o1o1">Gr(3,4) / O(1)+O(1)+O(1)</a></td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td><a href="../invariants-points-curves/#c427c3fda1be">Full atomic invariants</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.top", "navigation.path", "navigation.instant", "navigation.indexes", "search.suggest", "search.highlight", "toc.integrate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+      
+        <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js"></script>
+      
+        <script src="../../javascripts/catalog.js"></script>
+      
+        <script src="../../javascripts/mathjax-loader.js"></script>
+      
+    
+  </body>
+</html>

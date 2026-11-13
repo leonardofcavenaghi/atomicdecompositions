@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://leonardofcavenaghi.github.io/atomicdecompositions/catalog/datasets/">
       
       
-        <link rel="prev" href="../sources/">
+        <link rel="prev" href="../atomic-invariants/">
       
       
         <link rel="next" href="../computed/">
@@ -444,6 +444,8 @@
       
         
       
+        
+      
     
     
     
@@ -796,6 +798,34 @@
     
   
     Sources and terminology
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../atomic-invariants/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Atomic invariants
   
 
     
@@ -1629,6 +1659,11 @@
 <td>Fresh exact matrices, automatic curves, Schubert bases, cyclic determinants, connection multisets and generic atomic invariants</td>
 </tr>
 <tr>
+<td><a href="../../data/atomic-invariants.json">Atomic and Hodge invariant audit</a></td>
+<td style="text-align: right;">301</td>
+<td>Derived view: full Hodge data, exact point tests, determinants, factor scope and certified atomic polynomials</td>
+</tr>
+<tr>
 <td><a href="../../data/catalog-records.json">Universal catalogue index</a></td>
 <td style="text-align: right;">301</td>
 <td>Canonical record links, dimension, recorded index, matrix rank and search terms</td>
@@ -1640,6 +1675,7 @@
 <p>The matrices act on the returned ambient sector. Their columns are images of the ordered basis; grading and Novikov maps are part of the data. Full Hodge numbers do not supply missing primitive quantum operators. Use the <a href="../../methodology/">root-system</a> or <a href="../../toric/mathematics/">fan/divisor</a> mathematical conventions for the relevant presentation, and the version-specific <a href="../../software/">software guides</a> to reproduce its input.</p>
 <p>These are saved outputs. Exact consistency checks of their gradings and characteristic polynomials do not rerun localization. <a href="../computed/">Original dataset usage</a> gives a Python example for its schema.</p>
 <p>The exponent summary contains 251 completed factor multisets and 92 unresolved factors. All factors are complete in 77 records; the other 91 records preserve their unresolved sectors. Multiplicities are retained separately at each eigenvalue. No exponent lists are invented for the original dataset, which does not store them.</p>
+<p>The derived exponent and atomic views do not add new localization records to the catalogue count. The atomic view certifies 147 full decompositions under their stated hypotheses; 46 cyclic ambient matrices have a larger full Hodge-invariant space, and 108 records did not yield unit cyclicity at the tested points.</p>
 
 
 
