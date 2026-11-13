@@ -194,3 +194,7 @@ where \(N\) is the dimension of the space on which the matrix acts. Its nonvanis
 References: [flag varieties](https://arxiv.org/abs/2609.21914), Theorems 3.26 and 3.28 and Definitions 4.5–4.6. Virtual localization follows Graber–Pandharipande, [*Localization of virtual classes*](https://arxiv.org/abs/alg-geom/9708001). The connection and exponent conventions are those used in the papers' examples and their cited formal-connection results.
 
 Exact coefficients, curve coordinates, bases and grading are retained in the [datasets](catalog/datasets.md). Validation checks saved outputs and selected freshly computed benchmarks; it is not a fresh localization run for every catalogue record. See [software input/output formats](software/input-output.md) and [validation scope](software/launch-plan.md).
+
+## Verification
+
+Retain the exact matrix together with its ordered basis, grading, curve list and Novikov-coordinate map. The automated checks compare exact localization results, validate catalogue formulas and exercise the displayed software inputs. A numerical specialization or a rendered spectrum does not supply the additional geometric hypotheses needed for a full atomic decomposition.

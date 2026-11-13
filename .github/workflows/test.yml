@@ -7,9 +7,27 @@ on:
 
 permissions:
   contents: read
+  actions: read
 
 jobs:
+  changes:
+    name: Select checks for changed files
+    runs-on: ubuntu-24.04
+    outputs:
+      full: ${{ steps.classify.outputs.full }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Classify documentation and software changes
+        id: classify
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 scripts/classify_ci_changes.py
+
   python:
+    needs: changes
+    if: needs.changes.outputs.full == 'true'
     name: Python ${{ matrix.python-version }}
     runs-on: ubuntu-24.04
     timeout-minutes: 20
@@ -36,6 +54,8 @@ jobs:
         run: PYTHONDONTWRITEBYTECODE=1 python -m pytest tests/ -q -m "not slow"
 
   python-slow:
+    needs: changes
+    if: needs.changes.outputs.full == 'true'
     name: Exact algebra regressions
     runs-on: ubuntu-24.04
     timeout-minutes: 20
@@ -59,7 +79,11 @@ jobs:
 
   catalog:
     name: Catalog and LaTeX validation
-    needs: [python, python-slow]
+    needs: [changes, python, python-slow]
+    if: >-
+      ${{ always() && !cancelled() && needs.changes.result == 'success' &&
+          (needs.changes.outputs.full == 'false' ||
+           (needs.python.result == 'success' && needs.python-slow.result == 'success')) }}
     runs-on: ubuntu-24.04
     timeout-minutes: 20
     steps:
@@ -150,6 +174,8 @@ jobs:
 
 
   distributions:
+    needs: changes
+    if: needs.changes.outputs.full == 'true'
     name: Source distributions (${{ matrix.os }})
     runs-on: ${{ matrix.os }}
     timeout-minutes: 20

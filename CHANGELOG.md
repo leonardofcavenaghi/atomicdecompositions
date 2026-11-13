@@ -34,3 +34,7 @@ The flag and toric mathematical descriptions now use the papers’ notation and 
 ## Display-equation parsing
 
 Display equations now use blank-separated math blocks so Markdown cannot strip their delimiters or reinterpret TeX subscripts. Browser checks visit every new catalogue record and both mathematical descriptions, rejecting raw TeX outside math containers as well as rendering errors.
+
+## Documentation publication checks
+
+Documentation-only changes retain catalogue, exact saved-data, strict-build, search and browser checks without repeating software algebra and platform installation tests. Software, dependency and downloadable-archive changes retain the complete regression suite. Change selection compares with a successful ancestor, so a documentation follow-up cannot bypass an unvalidated software change. If the baseline cannot be established, the complete suite runs.

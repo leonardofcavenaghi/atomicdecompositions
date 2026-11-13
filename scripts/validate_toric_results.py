@@ -56,7 +56,7 @@ for path in (P/'docs/data').glob('toric-*.json'):
   if dim==4:
    multiplicities={int(i):int(m) for i,m in re.findall(r'Factor (\d+): multiplicity (\d+)',page)}
   else:
-   line=re.search(r'\\det\(xI-K\^F\)=(.*?)\\\]',page,re.S)
+   line=re.search(r'\\det\(xI-K\^F\)=(.*?)(?:\\\]|\$\$)',page,re.S)
    assert line,(ident,'missing characteristic polynomial')
    multiplicities={int(i):int(m or 1) for i,m in re.findall(r'p_\{(\d+)\}\(x\)(?:\^\{(\d+)\})?',line[1])}
   assert set(factors)==set(multiplicities),(ident,'factor multiplicities',factors,multiplicities)
