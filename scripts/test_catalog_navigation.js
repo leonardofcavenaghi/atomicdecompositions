@@ -147,7 +147,7 @@ async function main() {
       if (state.mathErrors || state.inputs<2 || !state.matrices || state.emptyLinks) throw new Error(id+': '+JSON.stringify(state));
     }
     await page.goto(`${base}/`, {waitUntil:'domcontentloaded'});
-    if (await page.$('.geometry-card').then(cards=>cards.length)!==2) throw new Error('Geometry division missing');
+    if (await page.$$eval('.geometry-card', cards=>cards.length)!==2) throw new Error('Geometry division missing');
     const search = await page.evaluate(async () => {
       const [index,records] = await Promise.all([
         fetch('search/search_index.json').then(r=>r.json()),

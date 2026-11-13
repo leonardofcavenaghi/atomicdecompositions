@@ -99,7 +99,7 @@ jobs:
 
   website:
     name: Documentation and browser regressions
-    needs: catalog
+    # Deployment waits for all jobs; website checks can run independently.
     runs-on: ubuntu-24.04
     timeout-minutes: 20
     steps:
