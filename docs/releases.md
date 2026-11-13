@@ -14,19 +14,22 @@ using it for reproducible work.
 
 ## Current development version: 1.0.6.dev0
 
-The development update changes default non-type-A flag Novikov labels to consecutive kept-root names while preserving type A labels. Python, CLI and interface choices retain legacy names when requested. Empty CLI insertion text now denotes an unmarked invariant. Exact coefficients, curve lists, bases and grading are preserved. This development build is distributed with the 2026-11-12 website launch; it is not a stable tag; v1.0.5 remains the preserved stable snapshot.
+The development update changes default non-type-A flag Novikov labels to consecutive kept-root names while preserving type A labels. Python, CLI and interface choices retain legacy names when requested. Empty CLI insertion text now denotes an unmarked invariant. Exact coefficients, curve lists, bases and grading are preserved. This development build is distributed with the 2026-11-13 website launch; it is not a stable tag; v1.0.5 remains the preserved stable snapshot.
 
 Existing catalog matrices retain their original ambient-node labels. Use the ambient compatibility convention to compare fresh calculations with those archives. No stored coefficients, bases or gradings were rewritten.
 
 The development build also adopts the verified rooted-shape/AHU tree generator from upstream commit 7f167e1, preserving the previous representatives and ordering through the independently checked range.
 
-## Website launch — 2026-11-12
+## Website launch — 2026-11-13
+
+Sources were prepared on 2026-11-12 and published on 2026-11-13.
 
 - Universal catalogue organized by dimension and construction, with separate flag and toric mathematical descriptions.
 - Individual flag 1.0.6.dev0, flag 1.1.0.dev1 and toric 1.1.0.dev1 downloads, plus combined 1.1.0.dev1 and preserved flag 1.0.5.
 - Revised isolated-environment installation commands, version-specific launchers and unmarked cubic-surface installation checks.
 - Published 96 completed fourfold and 72 completed fivefold toric matrix records, preserving unresolved connection-factor notes and excluding unfinished matrices.
-- Added Milena Brockhof to the contributors.
+- Added Milena Brockhof and alphabetized the contributors by surname.
+- Added measured formula-rendering checks for full-page loads, instant navigation and rapid page changes.
 
 The new software downloads keep development version labels. See [version differences](software/changes.md), [input/output formats](software/input-output.md) and [validation scope](software/launch-plan.md).
 

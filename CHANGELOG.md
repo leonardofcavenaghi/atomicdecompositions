@@ -1,6 +1,6 @@
-# Unreleased 1.0.6.dev0
+# Development version 1.0.6.dev0
 
-This is a prepared local development build, not a published release.
+This development source distribution is published; no new stable tag is implied.
 
 - Default flag parameter names retain ambient nodes for type A and use consecutive kept-root labels for other root-system families. Thus C3/keep 3, G2/keep 2 and D5/keep 4 use y1.
 - Python: `FlagVariety(..., novikov_convention="ambient")` retains the previous names; `"compact"` is also available. The CLI and interface expose the same choice and results record the map.
@@ -11,8 +11,12 @@ This is a prepared local development build, not a published release.
 
 ## Documentation prepared for launch
 
-The repository now includes [LAUNCH.md](LAUNCH.md), a complete change overview, a shared input/output reference with generated records, separate usage guides, preserved legacy instructions and the remaining publication checks. These documents describe the prepared development sources and do not announce a completed release.
+The repository now includes [LAUNCH.md](LAUNCH.md), a complete change overview, a shared input/output reference with generated records, separate usage guides, preserved legacy instructions and the remaining publication checks. These documents describe the published development sources; the preserved stable tag remains v1.0.5.
 
-## Website launch — 2026-11-12
+## Website launch — 2026-11-13
 
 Universal catalogue organized by dimension and construction, with separate flag and toric mathematical descriptions; versioned individual and combined source downloads; revised installation and usage guides; contributor credits updated. The 1.0.6.dev0 and 1.1.0.dev1 sources retain development version labels.
+
+## Contributors and mathematical display
+
+Contributors are listed alphabetically by surname. Browser checks report navigation-to-rendered times and formula counts for full-page loads, instant navigation and rapid page changes, and reject missing, duplicate or errored formula displays. These timings describe the CI browser environment, rather than a guaranteed time on every connection.

@@ -11,6 +11,18 @@ const handler = require('serve-handler');
 
 const pause = ms => new Promise(resolve => setTimeout(resolve, ms));
 
+async function measureMath(page, label, started) {
+  await page.waitForFunction(() => {
+    const nodes = [...document.querySelectorAll('.arithmatex')];
+    return nodes.length > 0 && nodes.every(node =>
+      node.querySelectorAll('mjx-container').length === 1);
+  }, {timeout: 20000, polling: 50});
+  const formulas = await page.$$eval('.arithmatex', nodes => nodes.length);
+  const errors = await page.$$eval('mjx-merror', nodes => nodes.length);
+  if (errors) throw new Error(label + ': MathJax reported ' + errors + ' formula errors');
+  return {page: label, navigation_to_rendered_ms: Date.now() - started, formulas};
+}
+
 async function main() {
   const site = process.env.SITE_DIR || path.resolve(__dirname, '..', 'site');
   const server = http.createServer((request, response) => {
@@ -32,6 +44,7 @@ async function main() {
   const browser = await puppeteer.launch({args: ['--no-sandbox', '--disable-setuid-sandbox']});
   const page = await browser.newPage();
   const errors = [];
+  const renderingTimings = [];
   page.on('pageerror', error => errors.push(String(error)));
   try {
     const base = `http://127.0.0.1:${port}`;
@@ -43,13 +56,14 @@ async function main() {
     await page.waitForFunction(() => location.pathname.endsWith('/catalog/') &&
       window.jQuery && jQuery.fn.dataTable && jQuery.fn.dataTable.isDataTable('table'));
     await pause(1200);
+    const grassmannianStarted = Date.now();
     await page.evaluate(() => {
       const link = document.querySelector('nav a[href*="/catalog/grassmannians/"]');
       if (!link) throw new Error('Grassmannians navigation link not found');
       link.click();
     });
     await page.waitForFunction(() => location.pathname.endsWith('/catalog/grassmannians/'));
-    await pause(2200);
+    renderingTimings.push(await measureMath(page, 'grassmannians: instant navigation', grassmannianStarted));
     const pageState = await page.evaluate(() => ({
       math: Array.from(document.querySelectorAll('.arithmatex'))
         .every(node => node.querySelector('mjx-container')),
@@ -88,14 +102,12 @@ async function main() {
       document.querySelector('nav a[href*="additional/"]').click();
     });
     await page.waitForFunction(() => window.pendingTypeset);
+    const rapidStarted = Date.now();
     await page.evaluate(() => {
       document.querySelector('nav a[href*="projective/"]').click();
     });
     await page.waitForFunction(() => location.pathname.endsWith('/catalog/projective/'));
-    await page.waitForFunction(() => {
-      const formulas = [...document.querySelectorAll('.arithmatex')];
-      return formulas.length > 0 && formulas.every(node => node.querySelector('mjx-container'));
-    }, {timeout: 20000});
+    renderingTimings.push(await measureMath(page, 'projective: rapid navigation with simulated 600ms typeset delay', rapidStarted));
     const duplicates = await page.evaluate(() => [...document.querySelectorAll('.arithmatex')]
       .some(node => node.querySelectorAll('mjx-container').length !== 1));
     if (duplicates || errors.length) throw new Error(JSON.stringify({duplicates, errors}));
@@ -133,11 +145,9 @@ async function main() {
       if (count!==expected) throw new Error('Wrong toric collection count: '+collection+' '+count);
     }
     for (const id of ['hlm-29','qc5-001','prod5-b03']) {
+      const started = Date.now();
       await page.goto(`${base}/catalog/records/${id}/`, {waitUntil:'domcontentloaded'});
-      await page.waitForFunction(() => {
-        const formulas=[...document.querySelectorAll('.arithmatex')];
-        return formulas.length>0 && formulas.every(node => node.querySelector('mjx-container'));
-      }, {timeout:30000});
+      renderingTimings.push(await measureMath(page, id + ': full-page navigation with cached shared assets', started));
       const state=await page.evaluate(() => ({
         mathErrors:document.querySelectorAll('mjx-merror').length,
         inputs:document.querySelectorAll('pre code').length,
@@ -161,6 +171,7 @@ async function main() {
     await page.setViewport({width:390,height:844});
     if (await page.evaluate(() => document.documentElement.scrollWidth>window.innerWidth+2)) throw new Error('Home page overflows mobile viewport');
     if (errors.length) throw new Error(errors.join('; '));
+    console.log('MathJax render timings: ' + JSON.stringify(renderingTimings));
     console.log('Universal catalogue and search passed: 299 records, including 168 new presentations, exact matrix tables and rendered fourfold/fivefold mathematics; mobile home layout.');
 
   } finally {

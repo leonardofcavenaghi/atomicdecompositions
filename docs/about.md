@@ -14,8 +14,8 @@ enumerative geometry, with a focus on quantum cohomology of flag and toric varie
 
 ## Contributors
 
-- Milena Brockhof
 - Boris Alexeev
+- Milena Brockhof
 - Leonardo F. Cavenaghi
 - Giovane Galindo
 - Bogdan Georgiev
