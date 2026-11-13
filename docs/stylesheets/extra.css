@@ -95,3 +95,8 @@ mjx-math {
   overflow-x: auto;
 }
 .md-typeset h1 { overflow-wrap: anywhere; }
+
+.md-typeset .md-typeset__table {
+  display: block;
+  max-width: 100%;
+}

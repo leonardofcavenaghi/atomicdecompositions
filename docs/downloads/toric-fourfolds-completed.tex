@@ -20,10 +20,10 @@
 \newsavebox{\mathbox}
 \newcommand{\fitmath}[1]{\sbox{\mathbox}{$\displaystyle #1$}\ifdim\wd\mathbox>\linewidth\resizebox{\linewidth}{!}{\usebox{\mathbox}}\else\usebox{\mathbox}\fi}
 \begin{document}
-\section*{Completed matrix records}
-Only completed matrices are included. Unresolved connection factors remain explicit.
-\clearpage\section*{HLM-29 --- geometry and Hodge diamond}\label{entry:HLM-29}
-\textbf{Selection:} nef\_additional.
+\section*{Fano fourfolds}
+Exact geometric inputs, quantum multiplication matrices and connection data. Unresolved connection factors are marked explicitly.
+\clearpage\section*{Verra fourfold (HLM-29) --- geometry and Hodge diamond}\label{entry:HLM-29}
+\textbf{Positivity:} nef defining divisors.
 {\large\color{accent}Verra fourfold}\par
 \textbf{Hodge source:} HLM-29, HLM Proposition 7.2, \href{https://arxiv.org/abs/1907.08000v3}{1907.08000v3}.
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $2$, $(-K_X)^4=192$, $e(X)=30$.
@@ -52,14 +52,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x3', 'x0', 'x3^2', 'x0^2', 'x0*x3', 'x0*x3^2', 'x0^2*x3', 'x0*x3^3']
 \end{lstlisting}
 
-\clearpage\section*{HLM-29 --- computation record}
-\textbf{Status:} complete\_with\_notes.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/additional_fourfolds/batch_results/HLM-29
-\end{lstlisting}
+\clearpage\section*{Verra fourfold (HLM-29) --- quantum multiplication}
 
-Enumeration: mori; 6 classes including zero.
+Curve enumeration: mori; 6 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -98,7 +93,6 @@ basis = ['1', 'x3', 'x0', 'x3^2', 'x0^2', 'x0*x3', 'x0*x3^2', 'x0^2*x3', 'x0*x3^
 8 & 6 & \fitmath{2}\\
 8 & 7 & \fitmath{\frac{2}{3}}\\
 \bottomrule\end{longtable}}
-Matrix time: 0.14 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=0}\end{center}
@@ -131,8 +125,8 @@ Factor 2: multiplicity 1; 6 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{HLM-27 --- geometry and Hodge diamond}\label{entry:HLM-27}
-\textbf{Selection:} nef\_additional.
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{3}}(\mathcal O\oplus \mathcal O(2)^{2})$ by $2\xi $ (HLM-27) --- geometry and Hodge diamond}\label{entry:HLM-27}
+\textbf{Positivity:} nef defining divisors.
 \textbf{Hodge source:} HLM-27, HLM Proposition 7.2, \href{https://arxiv.org/abs/1907.08000v3}{1907.08000v3}.
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $1$, $(-K_X)^4=64$, $e(X)=184$.
 \[\hodge{2}{0}{20}{138}\]
@@ -160,14 +154,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x2', 'x0', 'x2^2', 'x0*x2', 'x2^3', 'x0*x2^2', 'x0*x2^3']
 \end{lstlisting}
 
-\clearpage\section*{HLM-27 --- computation record}
-\textbf{Status:} complete\_with\_notes.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/additional_fourfolds/batch_results/HLM-27
-\end{lstlisting}
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{3}}(\mathcal O\oplus \mathcal O(2)^{2})$ by $2\xi $ (HLM-27) --- quantum multiplication}
 
-Enumeration: mori; 11 classes including zero.
+Curve enumeration: mori; 11 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -220,7 +209,6 @@ basis = ['1', 'x2', 'x0', 'x2^2', 'x0*x2', 'x2^3', 'x0*x2^2', 'x0*x2^3']
 7 & 5 & \fitmath{4}\\
 7 & 6 & \fitmath{1}\\
 \bottomrule\end{longtable}}
-Matrix time: 149.87 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=0}\end{center}
@@ -252,8 +240,8 @@ Factor 2: multiplicity 1; 4 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-001 --- geometry and Hodge diamond}\label{entry:CKP-001}
-\textbf{Selection:} ample.
+\clearpage\section*{$\mathbb P^{4}$ (CKP-001) --- geometry and Hodge diamond}\label{entry:CKP-001}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 1; source record 4; ambient polytope 1013.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $5$, $(-K_X)^4=625$, $e(X)=5$.
@@ -281,14 +269,9 @@ eval_y = {'y1': 2}
 ['1', 'x0', 'x0^2', 'x0^3', 'x0^4']
 \end{lstlisting}
 
-\clearpage\section*{CKP-001 --- computation record}
-\textbf{Status:} complete.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-001
-\end{lstlisting}
+\clearpage\section*{$\mathbb P^{4}$ (CKP-001) --- quantum multiplication}
 
-Enumeration: positive; 2 classes including zero.
+Curve enumeration: positive; 2 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -304,7 +287,6 @@ basis = ['1', 'x0', 'x0^2', 'x0^3', 'x0^4']
 3 & 2 & \fitmath{5}\\
 4 & 3 & \fitmath{5}\\
 \bottomrule\end{longtable}}
-Matrix time: 0.00 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=9765625}\end{center}
@@ -324,8 +306,8 @@ Factor 1: multiplicity 1; 5 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-002 --- geometry and Hodge diamond}\label{entry:CKP-002}
-\textbf{Selection:} ample.
+\clearpage\section*{Complete intersection of multidegrees $(1,1)$ in $\mathbb P^{1}\times \mathbb P^{4}$ (CKP-002) --- geometry and Hodge diamond}\label{entry:CKP-002}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 2; source record 195; ambient polytope 1010.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $1$, $(-K_X)^4=512$, $e(X)=8$.
@@ -353,14 +335,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x1', 'x0', 'x1^2', 'x0*x1', 'x1^3', 'x0*x1^2', 'x1^4']
 \end{lstlisting}
 
-\clearpage\section*{CKP-002 --- computation record}
-\textbf{Status:} complete.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-002
-\end{lstlisting}
+\clearpage\section*{Complete intersection of multidegrees $(1,1)$ in $\mathbb P^{1}\times \mathbb P^{4}$ (CKP-002) --- quantum multiplication}
 
-Enumeration: positive; 7 classes including zero.
+Curve enumeration: positive; 7 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -390,7 +367,6 @@ basis = ['1', 'x1', 'x0', 'x1^2', 'x0*x1', 'x1^3', 'x0*x1^2', 'x1^4']
 7 & 5 & \fitmath{5}\\
 7 & 6 & \fitmath{4}\\
 \bottomrule\end{longtable}}
-Matrix time: 0.01 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=11243465615464308755}\end{center}
@@ -413,8 +389,8 @@ Factor 1: multiplicity 1; 8 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-003 --- geometry and Hodge diamond}\label{entry:CKP-003}
-\textbf{Selection:} ample.
+\clearpage\section*{Quadric fourfold in $\mathbb P^{5}$ (CKP-003) --- geometry and Hodge diamond}\label{entry:CKP-003}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 3; source record 549; ambient polytope 1013.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $4$, $(-K_X)^4=512$, $e(X)=6$.
@@ -442,14 +418,9 @@ eval_y = {'y1': 2}
 ['1', 'x0', 'x0^2', 'x0^3', 'x0^4']
 \end{lstlisting}
 
-\clearpage\section*{CKP-003 --- computation record}
-\textbf{Status:} complete.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-003
-\end{lstlisting}
+\clearpage\section*{Quadric fourfold in $\mathbb P^{5}$ (CKP-003) --- quantum multiplication}
 
-Enumeration: positive; 2 classes including zero.
+Curve enumeration: positive; 2 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -466,7 +437,6 @@ basis = ['1', 'x0', 'x0^2', 'x0^3', 'x0^4']
 3 & 2 & \fitmath{4}\\
 4 & 3 & \fitmath{4}\\
 \bottomrule\end{longtable}}
-Matrix time: 0.00 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=1048576}\end{center}
@@ -491,8 +461,8 @@ Factor 2: multiplicity 1; 4 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-004 --- geometry and Hodge diamond}\label{entry:CKP-004}
-\textbf{Selection:} ample.
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{4}}(\mathcal O\oplus \mathcal O(1))$ by $\xi +H$ (CKP-004) --- geometry and Hodge diamond}\label{entry:CKP-004}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 4; source record 606; ambient polytope 1009.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $1$, $(-K_X)^4=431$, $e(X)=9$.
@@ -520,14 +490,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x1', 'x0', 'x1^2', 'x0*x1', 'x1^3', 'x0^2*x1', 'x1^4']
 \end{lstlisting}
 
-\clearpage\section*{CKP-004 --- computation record}
-\textbf{Status:} complete.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-004
-\end{lstlisting}
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{4}}(\mathcal O\oplus \mathcal O(1))$ by $\xi +H$ (CKP-004) --- quantum multiplication}
 
-Enumeration: positive; 8 classes including zero.
+Curve enumeration: positive; 8 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -560,7 +525,6 @@ basis = ['1', 'x1', 'x0', 'x1^2', 'x0*x1', 'x1^3', 'x0^2*x1', 'x1^4']
 7 & 5 & \fitmath{5}\\
 7 & 6 & \fitmath{-3}\\
 \bottomrule\end{longtable}}
-Matrix time: 0.01 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=-42819362401891562568}\end{center}
@@ -588,8 +552,8 @@ Factor 2: multiplicity 1; 7 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-005 --- geometry and Hodge diamond}\label{entry:CKP-005}
-\textbf{Selection:} ample.
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{4}}(\mathcal O\oplus \mathcal O(2))$ by $\xi +H$ (CKP-005) --- geometry and Hodge diamond}\label{entry:CKP-005}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 5; source record 699; ambient polytope 1008.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $1$, $(-K_X)^4=376$, $e(X)=14$.
@@ -617,14 +581,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x1', 'x0', 'x1^2', 'x0*x1', 'x1^3', 'x0^2*x1', 'x1^4']
 \end{lstlisting}
 
-\clearpage\section*{CKP-005 --- computation record}
-\textbf{Status:} complete.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-005
-\end{lstlisting}
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{4}}(\mathcal O\oplus \mathcal O(2))$ by $\xi +H$ (CKP-005) --- quantum multiplication}
 
-Enumeration: positive; 9 classes including zero.
+Curve enumeration: positive; 9 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -663,7 +622,6 @@ basis = ['1', 'x1', 'x0', 'x1^2', 'x0*x1', 'x1^3', 'x0^2*x1', 'x1^4']
 7 & 5 & \fitmath{5}\\
 7 & 6 & \fitmath{-4}\\
 \bottomrule\end{longtable}}
-Matrix time: 0.03 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=- \frac{31461395819568644457}{2}}\end{center}
@@ -691,8 +649,8 @@ Factor 2: multiplicity 1; 6 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-006 --- geometry and Hodge diamond}\label{entry:CKP-006}
-\textbf{Selection:} ample.
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{4}}(\mathcal O\oplus \mathcal O(3))$ by $\xi +H$ (CKP-006) --- geometry and Hodge diamond}\label{entry:CKP-006}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 6; source record 775; ambient polytope 990.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $1$, $(-K_X)^4=341$, $e(X)=29$.
@@ -720,14 +678,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x4', 'x0', 'x0^2', 'x0*x4', 'x0^3', 'x0^2*x4', 'x0^4']
 \end{lstlisting}
 
-\clearpage\section*{CKP-006 --- computation record}
-\textbf{Status:} complete\_with\_notes.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-006
-\end{lstlisting}
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{4}}(\mathcal O\oplus \mathcal O(3))$ by $\xi +H$ (CKP-006) --- quantum multiplication}
 
-Enumeration: positive; 14 classes including zero.
+Curve enumeration: positive; 14 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -773,7 +726,6 @@ basis = ['1', 'x4', 'x0', 'x0^2', 'x0*x4', 'x0^3', 'x0^2*x4', 'x0^4']
 7 & 5 & \fitmath{5}\\
 7 & 6 & \fitmath{1}\\
 \bottomrule\end{longtable}}
-Matrix time: 0.41 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=0}\end{center}
@@ -805,8 +757,8 @@ Factor 2: multiplicity 1; 5 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-014 --- geometry and Hodge diamond}\label{entry:CKP-014}
-\textbf{Selection:} ample.
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{2}}(\mathcal O^{3}\oplus \mathcal O(1))$ by $\xi +H$ (CKP-014) --- geometry and Hodge diamond}\label{entry:CKP-014}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 14; source record 2273; ambient polytope 1002.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $1$, $(-K_X)^4=432$, $e(X)=9$.
@@ -835,14 +787,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x2', 'x0', 'x2^2', 'x0^2', 'x0*x2', 'x2^3', 'x0*x2^2', 'x0*x2^3']
 \end{lstlisting}
 
-\clearpage\section*{CKP-014 --- computation record}
-\textbf{Status:} complete.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-014
-\end{lstlisting}
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{2}}(\mathcal O^{3}\oplus \mathcal O(1))$ by $\xi +H$ (CKP-014) --- quantum multiplication}
 
-Enumeration: positive; 6 classes including zero.
+Curve enumeration: positive; 6 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -882,7 +829,6 @@ basis = ['1', 'x2', 'x0', 'x2^2', 'x0^2', 'x0*x2', 'x2^3', 'x0*x2^2', 'x0*x2^3']
 8 & 6 & \fitmath{4}\\
 8 & 7 & \fitmath{\frac{7}{2}}\\
 \bottomrule\end{longtable}}
-Matrix time: 0.01 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=-220837737222693690980616}\end{center}
@@ -906,8 +852,8 @@ Factor 1: multiplicity 1; 9 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-018 --- geometry and Hodge diamond}\label{entry:CKP-018}
-\textbf{Selection:} ample.
+\clearpage\section*{Complete intersection of multidegrees $(1,1)$, $(1,1)$ in $\mathbb P^{2}\times \mathbb P^{4}$ (CKP-018) --- geometry and Hodge diamond}\label{entry:CKP-018}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 18; source record 2840; ambient polytope 8633.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=6$, codimension $2$, index $1$, $(-K_X)^4=351$, $e(X)=9$.
@@ -937,14 +883,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x2', 'x0', 'x2^2', 'x0^2', 'x0*x2', 'x2^3', 'x0*x2^2', 'x2^4']
 \end{lstlisting}
 
-\clearpage\section*{CKP-018 --- computation record}
-\textbf{Status:} complete.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-018
-\end{lstlisting}
+\clearpage\section*{Complete intersection of multidegrees $(1,1)$, $(1,1)$ in $\mathbb P^{2}\times \mathbb P^{4}$ (CKP-018) --- quantum multiplication}
 
-Enumeration: positive; 8 classes including zero.
+Curve enumeration: positive; 8 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -986,7 +927,6 @@ basis = ['1', 'x2', 'x0', 'x2^2', 'x0^2', 'x0*x2', 'x2^3', 'x0*x2^2', 'x2^4']
 8 & 6 & \fitmath{5}\\
 8 & 7 & \fitmath{7}\\
 \bottomrule\end{longtable}}
-Matrix time: 0.16 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=798082336730259265704012}\end{center}
@@ -1010,8 +950,8 @@ Factor 1: multiplicity 1; 9 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-026 --- geometry and Hodge diamond}\label{entry:CKP-026}
-\textbf{Selection:} nef\_literature.
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{1}}(\mathcal O^{4}\oplus \mathcal O(1))$ by $2\xi $ (CKP-026) --- geometry and Hodge diamond}\label{entry:CKP-026}
+\textbf{Positivity:} nef defining divisors.
 CKP period ID 26; source record 3830; ambient polytope 989.
 \textbf{Hodge source:} HLM-34, HLM Proposition 7.2, \href{https://arxiv.org/abs/1907.08000v3}{1907.08000v3}.
 The source family is identified by the saved exact Cox/GIT presentation certificate.
@@ -1040,14 +980,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x1', 'x0', 'x1^2', 'x0*x1', 'x1^3', 'x0*x1^2', 'x1^4']
 \end{lstlisting}
 
-\clearpage\section*{CKP-026 --- computation record}
-\textbf{Status:} complete.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-026
-\end{lstlisting}
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{1}}(\mathcal O^{4}\oplus \mathcal O(1))$ by $2\xi $ (CKP-026) --- quantum multiplication}
 
-Enumeration: positive; 6 classes including zero.
+Curve enumeration: positive; 6 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -1082,7 +1017,6 @@ basis = ['1', 'x1', 'x0', 'x1^2', 'x0*x1', 'x1^3', 'x0*x1^2', 'x1^4']
 7 & 5 & \fitmath{4}\\
 7 & 6 & \fitmath{3}\\
 \bottomrule\end{longtable}}
-Matrix time: 0.00 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=-41590691702784000}\end{center}
@@ -1115,8 +1049,8 @@ Factor 3: multiplicity 1; 6 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-030 --- geometry and Hodge diamond}\label{entry:CKP-030}
-\textbf{Selection:} ample.
+\clearpage\section*{Complete intersection of multidegrees $(1,2)$ in $\mathbb P^{1}\times \mathbb P^{4}$ (CKP-030) --- geometry and Hodge diamond}\label{entry:CKP-030}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 30; source record 4021; ambient polytope 1010.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $1$, $(-K_X)^4=297$, $e(X)=13$.
@@ -1144,14 +1078,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x1', 'x0', 'x1^2', 'x0*x1', 'x1^3', 'x0*x1^2', 'x1^4']
 \end{lstlisting}
 
-\clearpage\section*{CKP-030 --- computation record}
-\textbf{Status:} complete.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-030
-\end{lstlisting}
+\clearpage\section*{Complete intersection of multidegrees $(1,2)$ in $\mathbb P^{1}\times \mathbb P^{4}$ (CKP-030) --- quantum multiplication}
 
-Enumeration: positive; 8 classes including zero.
+Curve enumeration: positive; 8 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -1188,7 +1117,6 @@ basis = ['1', 'x1', 'x0', 'x1^2', 'x0*x1', 'x1^3', 'x0*x1^2', 'x1^4']
 7 & 5 & \fitmath{5}\\
 7 & 6 & \fitmath{6}\\
 \bottomrule\end{longtable}}
-Matrix time: 0.01 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=304748396651706975}\end{center}
@@ -1216,8 +1144,8 @@ Factor 2: multiplicity 1; 6 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-033 --- geometry and Hodge diamond}\label{entry:CKP-033}
-\textbf{Selection:} ample.
+\clearpage\section*{Complete intersection $(2,2)$ in $\mathbb P^{6}$ (CKP-033) --- geometry and Hodge diamond}\label{entry:CKP-033}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 33; source record 4223; ambient polytope 8635.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=6$, codimension $2$, index $3$, $(-K_X)^4=324$, $e(X)=12$.
@@ -1245,14 +1173,9 @@ eval_y = {'y1': 2}
 ['1', 'x0', 'x0^2', 'x0^3', 'x0^4']
 \end{lstlisting}
 
-\clearpage\section*{CKP-033 --- computation record}
-\textbf{Status:} complete.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-033
-\end{lstlisting}
+\clearpage\section*{Complete intersection $(2,2)$ in $\mathbb P^{6}$ (CKP-033) --- quantum multiplication}
 
-Enumeration: positive; 2 classes including zero.
+Curve enumeration: positive; 2 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -1270,7 +1193,6 @@ basis = ['1', 'x0', 'x0^2', 'x0^3', 'x0^4']
 3 & 2 & \fitmath{3}\\
 4 & 3 & \fitmath{3}\\
 \bottomrule\end{longtable}}
-Matrix time: 0.00 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=59049}\end{center}
@@ -1295,8 +1217,8 @@ Factor 2: multiplicity 1; 3 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-036 --- geometry and Hodge diamond}\label{entry:CKP-036}
-\textbf{Selection:} ample.
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{4}}(\mathcal O^{2}\oplus \mathcal O(1))$ by $\xi +H$, $\xi +H$ (CKP-036) --- geometry and Hodge diamond}\label{entry:CKP-036}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 36; source record 4278; ambient polytope 8632.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=6$, codimension $2$, index $1$, $(-K_X)^4=244$, $e(X)=16$.
@@ -1326,14 +1248,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x1', 'x0', 'x1^2', 'x0^2', 'x0*x1', 'x1^3', 'x0^3', 'x1^4']
 \end{lstlisting}
 
-\clearpage\section*{CKP-036 --- computation record}
-\textbf{Status:} complete.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-036
-\end{lstlisting}
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{4}}(\mathcal O^{2}\oplus \mathcal O(1))$ by $\xi +H$, $\xi +H$ (CKP-036) --- quantum multiplication}
 
-Enumeration: positive; 9 classes including zero.
+Curve enumeration: positive; 9 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -1384,7 +1301,6 @@ basis = ['1', 'x1', 'x0', 'x1^2', 'x0^2', 'x0*x1', 'x1^3', 'x0^3', 'x1^4']
 8 & 6 & \fitmath{1}\\
 8 & 7 & \fitmath{12}\\
 \bottomrule\end{longtable}}
-Matrix time: 0.52 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=-674225641664265725845632}\end{center}
@@ -1413,8 +1329,8 @@ Factor 2: multiplicity 1; 7 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-037 --- geometry and Hodge diamond}\label{entry:CKP-037}
-\textbf{Selection:} ample.
+\clearpage\section*{Cubic fourfold in $\mathbb P^{5}$ (CKP-037) --- geometry and Hodge diamond}\label{entry:CKP-037}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 37; source record 4280; ambient polytope 1013.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $3$, $(-K_X)^4=243$, $e(X)=27$.
@@ -1442,14 +1358,9 @@ eval_y = {'y1': 2}
 ['1', 'x0', 'x0^2', 'x0^3', 'x0^4']
 \end{lstlisting}
 
-\clearpage\section*{CKP-037 --- computation record}
-\textbf{Status:} complete.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-037
-\end{lstlisting}
+\clearpage\section*{Cubic fourfold in $\mathbb P^{5}$ (CKP-037) --- quantum multiplication}
 
-Enumeration: positive; 2 classes including zero.
+Curve enumeration: positive; 2 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -1467,7 +1378,6 @@ basis = ['1', 'x0', 'x0^2', 'x0^3', 'x0^4']
 3 & 2 & \fitmath{3}\\
 4 & 3 & \fitmath{3}\\
 \bottomrule\end{longtable}}
-Matrix time: 0.00 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=59049}\end{center}
@@ -1492,8 +1402,8 @@ Factor 2: multiplicity 1; 3 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-039 --- geometry and Hodge diamond}\label{entry:CKP-039}
-\textbf{Selection:} ample.
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{4}}(\mathcal O\oplus \mathcal O(1))$ by $\xi +2H$ (CKP-039) --- geometry and Hodge diamond}\label{entry:CKP-039}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 39; source record 4331; ambient polytope 1009.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $1$, $(-K_X)^4=211$, $e(X)=29$.
@@ -1521,14 +1431,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x1', 'x0', 'x1^2', 'x0*x1', 'x1^3', 'x0^2*x1', 'x1^4']
 \end{lstlisting}
 
-\clearpage\section*{CKP-039 --- computation record}
-\textbf{Status:} complete\_with\_notes.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-039
-\end{lstlisting}
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{4}}(\mathcal O\oplus \mathcal O(1))$ by $\xi +2H$ (CKP-039) --- quantum multiplication}
 
-Enumeration: positive; 9 classes including zero.
+Curve enumeration: positive; 9 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -1571,7 +1476,6 @@ basis = ['1', 'x1', 'x0', 'x1^2', 'x0*x1', 'x1^3', 'x0^2*x1', 'x1^4']
 7 & 5 & \fitmath{5}\\
 7 & 6 & \fitmath{-4}\\
 \bottomrule\end{longtable}}
-Matrix time: 0.03 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=0}\end{center}
@@ -1603,8 +1507,8 @@ Factor 2: multiplicity 1; 5 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-040 --- geometry and Hodge diamond}\label{entry:CKP-040}
-\textbf{Selection:} ample.
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{4}}(\mathcal O^{2}\oplus \mathcal O(2))$ by $\xi +H$, $\xi +H$ (CKP-040) --- geometry and Hodge diamond}\label{entry:CKP-040}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 40; source record 4401; ambient polytope 8628.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=6$, codimension $2$, index $1$, $(-K_X)^4=179$, $e(X)=41$.
@@ -1634,14 +1538,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x4', 'x0', 'x4^2', 'x0^2', 'x0*x4', 'x0^3', 'x0*x4^2', 'x0^4']
 \end{lstlisting}
 
-\clearpage\section*{CKP-040 --- computation record}
-\textbf{Status:} complete\_with\_notes.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-040
-\end{lstlisting}
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{4}}(\mathcal O^{2}\oplus \mathcal O(2))$ by $\xi +H$, $\xi +H$ (CKP-040) --- quantum multiplication}
 
-Enumeration: positive; 14 classes including zero.
+Curve enumeration: positive; 14 classes including zero.
 Connectedness pruning reached its configuration limit; the finite candidate list was retained for localization.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
@@ -1706,7 +1605,6 @@ basis = ['1', 'x4', 'x0', 'x4^2', 'x0^2', 'x0*x4', 'x0^3', 'x0*x4^2', 'x0^4']
 8 & 6 & \fitmath{5}\\
 8 & 7 & \fitmath{27}\\
 \bottomrule\end{longtable}}
-Matrix time: 4.87 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=0}\end{center}
@@ -1739,8 +1637,8 @@ Factor 2: multiplicity 1; 5 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-041 --- geometry and Hodge diamond}\label{entry:CKP-041}
-\textbf{Selection:} ample.
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{4}}(\mathcal O\oplus \mathcal O(2))$ by $\xi +2H$ (CKP-041) --- geometry and Hodge diamond}\label{entry:CKP-041}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 41; source record 4402; ambient polytope 1008.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $1$, $(-K_X)^4=161$, $e(X)=69$.
@@ -1768,14 +1666,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x1', 'x0', 'x1^2', 'x0*x1', 'x1^3', 'x0^2*x1', 'x1^4']
 \end{lstlisting}
 
-\clearpage\section*{CKP-041 --- computation record}
-\textbf{Status:} complete.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-041
-\end{lstlisting}
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{4}}(\mathcal O\oplus \mathcal O(2))$ by $\xi +2H$ (CKP-041) --- quantum multiplication}
 
-Enumeration: positive; 14 classes including zero.
+Curve enumeration: positive; 14 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -1825,7 +1718,6 @@ basis = ['1', 'x1', 'x0', 'x1^2', 'x0*x1', 'x1^3', 'x0^2*x1', 'x1^4']
 7 & 5 & \fitmath{5}\\
 7 & 6 & \fitmath{-4}\\
 \bottomrule\end{longtable}}
-Matrix time: 0.36 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=\frac{543161910927913191}{2}}\end{center}
@@ -1853,8 +1745,8 @@ Factor 2: multiplicity 1; 5 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-046 --- geometry and Hodge diamond}\label{entry:CKP-046}
-\textbf{Selection:} nef\_literature.
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{4}}(\mathcal O\oplus \mathcal O(2))$ by $2H$ (CKP-046) --- geometry and Hodge diamond}\label{entry:CKP-046}
+\textbf{Positivity:} nef defining divisors.
 CKP period ID 46; source record 5007; ambient polytope 1008.
 \textbf{Hodge source:} HLM-67, HLM Proposition 7.2, \href{https://arxiv.org/abs/1907.08000v3}{1907.08000v3}.
 The source family is identified by the saved exact Cox/GIT presentation certificate.
@@ -1883,14 +1775,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x1', 'x0', 'x1^2', 'x0*x1', 'x1^3', 'x0^2*x1', 'x0^2*x1^2']
 \end{lstlisting}
 
-\clearpage\section*{CKP-046 --- computation record}
-\textbf{Status:} complete.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-046
-\end{lstlisting}
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{4}}(\mathcal O\oplus \mathcal O(2))$ by $2H$ (CKP-046) --- quantum multiplication}
 
-Enumeration: positive; 9 classes including zero.
+Curve enumeration: positive; 9 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -1935,7 +1822,6 @@ basis = ['1', 'x1', 'x0', 'x1^2', 'x0*x1', 'x1^3', 'x0^2*x1', 'x0^2*x1^2']
 7 & 5 & \fitmath{-1}\\
 7 & 6 & \fitmath{1}\\
 \bottomrule\end{longtable}}
-Matrix time: 0.04 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=-2525104621728990314496}\end{center}
@@ -1963,8 +1849,8 @@ Factor 2: multiplicity 1; 6 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-049 --- geometry and Hodge diamond}\label{entry:CKP-049}
-\textbf{Selection:} ample.
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{3}}(\mathcal O^{2}\oplus \mathcal O(2))$ by $\xi +H$ (CKP-049) --- geometry and Hodge diamond}\label{entry:CKP-049}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 49; source record 5668; ambient polytope 993.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $1$, $(-K_X)^4=464$, $e(X)=11$.
@@ -1993,14 +1879,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x3', 'x0', 'x3^2', 'x0^2', 'x0*x3', 'x0^3', 'x0*x3^2', 'x0^3*x3']
 \end{lstlisting}
 
-\clearpage\section*{CKP-049 --- computation record}
-\textbf{Status:} complete.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-049
-\end{lstlisting}
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{3}}(\mathcal O^{2}\oplus \mathcal O(2))$ by $\xi +H$ (CKP-049) --- quantum multiplication}
 
-Enumeration: positive; 9 classes including zero.
+Curve enumeration: positive; 9 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -2049,7 +1930,6 @@ basis = ['1', 'x3', 'x0', 'x3^2', 'x0^2', 'x0*x3', 'x0^3', 'x0*x3^2', 'x0^3*x3']
 8 & 6 & \fitmath{2}\\
 8 & 7 & \fitmath{15}\\
 \bottomrule\end{longtable}}
-Matrix time: 0.07 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=\frac{70858729810730581991568080}{3}}\end{center}
@@ -2078,8 +1958,8 @@ Factor 2: multiplicity 1; 8 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-060 --- geometry and Hodge diamond}\label{entry:CKP-060}
-\textbf{Selection:} nef\_literature.
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{4}}(\mathcal O\oplus \mathcal O(1))$ by $2H$ (CKP-060) --- geometry and Hodge diamond}\label{entry:CKP-060}
+\textbf{Positivity:} nef defining divisors.
 CKP period ID 60; source record 8406; ambient polytope 1009.
 \textbf{Hodge source:} HLM-66, HLM Proposition 7.2, \href{https://arxiv.org/abs/1907.08000v3}{1907.08000v3}.
 The source family is identified by the saved exact Cox/GIT presentation certificate.
@@ -2108,14 +1988,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x1', 'x0', 'x1^2', 'x0*x1', 'x1^3', 'x0^2*x1', 'x0^2*x1^2']
 \end{lstlisting}
 
-\clearpage\section*{CKP-060 --- computation record}
-\textbf{Status:} complete.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-060
-\end{lstlisting}
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{4}}(\mathcal O\oplus \mathcal O(1))$ by $2H$ (CKP-060) --- quantum multiplication}
 
-Enumeration: positive; 5 classes including zero.
+Curve enumeration: positive; 5 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -2146,7 +2021,6 @@ basis = ['1', 'x1', 'x0', 'x1^2', 'x0*x1', 'x1^3', 'x0^2*x1', 'x0^2*x1^2']
 7 & 5 & \fitmath{-2}\\
 7 & 6 & \fitmath{2}\\
 \bottomrule\end{longtable}}
-Matrix time: 0.00 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=-2956064527252193280}\end{center}
@@ -2184,8 +2058,8 @@ Factor 4: multiplicity 1; 4 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-061 --- geometry and Hodge diamond}\label{entry:CKP-061}
-\textbf{Selection:} ample.
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{3}}(\mathcal O^{2}\oplus \mathcal O(1))$ by $\xi +H$ (CKP-061) --- geometry and Hodge diamond}\label{entry:CKP-061}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 61; source record 8493; ambient polytope 1011.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $2$, $(-K_X)^4=416$, $e(X)=10$.
@@ -2214,14 +2088,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x3', 'x0', 'x3^2', 'x0^2', 'x0*x3', 'x0^3', 'x0*x3^2', 'x0^3*x3']
 \end{lstlisting}
 
-\clearpage\section*{CKP-061 --- computation record}
-\textbf{Status:} complete.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-061
-\end{lstlisting}
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{3}}(\mathcal O^{2}\oplus \mathcal O(1))$ by $\xi +H$ (CKP-061) --- quantum multiplication}
 
-Enumeration: positive; 5 classes including zero.
+Curve enumeration: positive; 5 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -2257,7 +2126,6 @@ basis = ['1', 'x3', 'x0', 'x3^2', 'x0^2', 'x0*x3', 'x0^3', 'x0*x3^2', 'x0^3*x3']
 8 & 6 & \fitmath{2}\\
 8 & 7 & \fitmath{8}\\
 \bottomrule\end{longtable}}
-Matrix time: 0.00 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=-2475668757180021997568000}\end{center}
@@ -2286,8 +2154,8 @@ Factor 2: multiplicity 1; 8 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-078 --- geometry and Hodge diamond}\label{entry:CKP-078}
-\textbf{Selection:} ample.
+\clearpage\section*{Complete intersection of multidegrees $(1,1)$ in $\mathbb P^{2}\times \mathbb P^{3}$ (CKP-078) --- geometry and Hodge diamond}\label{entry:CKP-078}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 78; source record 10278; ambient polytope 1012.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $1$, $(-K_X)^4=432$, $e(X)=9$.
@@ -2316,14 +2184,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x2', 'x0', 'x2^2', 'x0^2', 'x0*x2', 'x2^3', 'x0*x2^2', 'x0*x2^3']
 \end{lstlisting}
 
-\clearpage\section*{CKP-078 --- computation record}
-\textbf{Status:} complete.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-078
-\end{lstlisting}
+\clearpage\section*{Complete intersection of multidegrees $(1,1)$ in $\mathbb P^{2}\times \mathbb P^{3}$ (CKP-078) --- quantum multiplication}
 
-Enumeration: positive; 5 classes including zero.
+Curve enumeration: positive; 5 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -2358,7 +2221,6 @@ basis = ['1', 'x2', 'x0', 'x2^2', 'x0^2', 'x0*x2', 'x2^3', 'x0*x2^2', 'x0*x2^3']
 8 & 6 & \fitmath{2}\\
 8 & 7 & \fitmath{5}\\
 \bottomrule\end{longtable}}
-Matrix time: 0.01 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=-726942335679224144471232}\end{center}
@@ -2382,8 +2244,8 @@ Factor 1: multiplicity 1; 9 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-102 --- geometry and Hodge diamond}\label{entry:CKP-102}
-\textbf{Selection:} ample.
+\clearpage\section*{Complete intersection of multidegrees $(1,1,1)$ in $\mathbb P^{1}\times \mathbb P^{1}\times \mathbb P^{3}$ (CKP-102) --- geometry and Hodge diamond}\label{entry:CKP-102}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 102; source record 16505; ambient polytope 1006.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $1$, $(-K_X)^4=324$, $e(X)=12$.
@@ -2424,14 +2286,9 @@ eval_y = {'y1': 2, 'y2': 3, 'y3': 5}
  'x1*x2^3']
 \end{lstlisting}
 
-\clearpage\section*{CKP-102 --- computation record}
-\textbf{Status:} complete.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-102
-\end{lstlisting}
+\clearpage\section*{Complete intersection of multidegrees $(1,1,1)$ in $\mathbb P^{1}\times \mathbb P^{1}\times \mathbb P^{3}$ (CKP-102) --- quantum multiplication}
 
-Enumeration: positive; 19 classes including zero.
+Curve enumeration: positive; 19 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -2519,7 +2376,6 @@ basis = ['1',
 11 & 9 & \fitmath{4}\\
 11 & 10 & \fitmath{4}\\
 \bottomrule\end{longtable}}
-Matrix time: 0.13 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3,\ y_3=5$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=43480813291221123469434254724386913393685439709184}\end{center}
@@ -2546,8 +2402,8 @@ Factor 1: multiplicity 1; 12 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-107 --- geometry and Hodge diamond}\label{entry:CKP-107}
-\textbf{Selection:} ample.
+\clearpage\section*{Complete intersection of multidegrees $(2,1)$ in $\mathbb P^{2}\times \mathbb P^{3}$ (CKP-107) --- geometry and Hodge diamond}\label{entry:CKP-107}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 107; source record 17031; ambient polytope 1012.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $1$, $(-K_X)^4=270$, $e(X)=9$.
@@ -2576,14 +2432,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x2', 'x0', 'x2^2', 'x0^2', 'x0*x2', 'x2^3', 'x0*x2^2', 'x0*x2^3']
 \end{lstlisting}
 
-\clearpage\section*{CKP-107 --- computation record}
-\textbf{Status:} complete.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-107
-\end{lstlisting}
+\clearpage\section*{Complete intersection of multidegrees $(2,1)$ in $\mathbb P^{2}\times \mathbb P^{3}$ (CKP-107) --- quantum multiplication}
 
-Enumeration: positive; 8 classes including zero.
+Curve enumeration: positive; 8 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -2628,7 +2479,6 @@ basis = ['1', 'x2', 'x0', 'x2^2', 'x0^2', 'x0*x2', 'x2^3', 'x0*x2^2', 'x0*x2^3']
 8 & 6 & \fitmath{1}\\
 8 & 7 & \fitmath{\frac{7}{2}}\\
 \bottomrule\end{longtable}}
-Matrix time: 0.12 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=137846922773939793831375}\end{center}
@@ -2652,8 +2502,8 @@ Factor 1: multiplicity 1; 9 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-111 --- geometry and Hodge diamond}\label{entry:CKP-111}
-\textbf{Selection:} nef\_literature.
+\clearpage\section*{Complete intersection of multidegrees $(0,2)$ in $\mathbb P^{1}\times \mathbb P^{4}$ (CKP-111) --- geometry and Hodge diamond}\label{entry:CKP-111}
+\textbf{Positivity:} nef defining divisors.
 CKP period ID 111; source record 18154; ambient polytope 1010.
 \textbf{Hodge source:} HLM-65, HLM Proposition 7.2, \href{https://arxiv.org/abs/1907.08000v3}{1907.08000v3}.
 The source family is identified by the saved exact Cox/GIT presentation certificate.
@@ -2682,14 +2532,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x1', 'x0', 'x1^2', 'x0*x1', 'x1^3', 'x0*x1^2', 'x0*x1^3']
 \end{lstlisting}
 
-\clearpage\section*{CKP-111 --- computation record}
-\textbf{Status:} complete.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-111
-\end{lstlisting}
+\clearpage\section*{Complete intersection of multidegrees $(0,2)$ in $\mathbb P^{1}\times \mathbb P^{4}$ (CKP-111) --- quantum multiplication}
 
-Enumeration: positive; 5 classes including zero.
+Curve enumeration: positive; 5 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -2718,7 +2563,6 @@ basis = ['1', 'x1', 'x0', 'x1^2', 'x0*x1', 'x1^3', 'x0*x1^2', 'x0*x1^3']
 7 & 5 & \fitmath{2}\\
 7 & 6 & \fitmath{3}\\
 \bottomrule\end{longtable}}
-Matrix time: 0.00 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=-744967672151998464}\end{center}
@@ -2751,8 +2595,8 @@ Factor 3: multiplicity 1; 4 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-114 --- geometry and Hodge diamond}\label{entry:CKP-114}
-\textbf{Selection:} ample.
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{3}}(\mathcal O\oplus \mathcal O(1)^{2})$ by $\xi +H$ (CKP-114) --- geometry and Hodge diamond}\label{entry:CKP-114}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 114; source record 18652; ambient polytope 995.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $1$, $(-K_X)^4=352$, $e(X)=12$.
@@ -2781,14 +2625,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x3', 'x0', 'x3^2', 'x0^2', 'x0*x3', 'x0^3', 'x0*x3^2', 'x0^3*x3']
 \end{lstlisting}
 
-\clearpage\section*{CKP-114 --- computation record}
-\textbf{Status:} complete.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-114
-\end{lstlisting}
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{3}}(\mathcal O\oplus \mathcal O(1)^{2})$ by $\xi +H$ (CKP-114) --- quantum multiplication}
 
-Enumeration: positive; 9 classes including zero.
+Curve enumeration: positive; 9 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -2827,7 +2666,6 @@ basis = ['1', 'x3', 'x0', 'x3^2', 'x0^2', 'x0*x3', 'x0^3', 'x0*x3^2', 'x0^3*x3']
 8 & 6 & \fitmath{2}\\
 8 & 7 & \fitmath{1}\\
 \bottomrule\end{longtable}}
-Matrix time: 0.03 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=7110486747437034563939744}\end{center}
@@ -2856,8 +2694,8 @@ Factor 2: multiplicity 1; 8 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-144 --- geometry and Hodge diamond}\label{entry:CKP-144}
-\textbf{Selection:} ample.
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{1}\times \mathbb P^{3}}(\mathcal O\oplus \mathcal O(0,1))$ by $\xi +H_{1}+H_{2}$ (CKP-144) --- geometry and Hodge diamond}\label{entry:CKP-144}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 144; source record 22532; ambient polytope 1005.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $1$, $(-K_X)^4=249$, $e(X)=17$.
@@ -2898,14 +2736,9 @@ eval_y = {'y1': 2, 'y2': 3, 'y3': 5}
  'x0*x2^3']
 \end{lstlisting}
 
-\clearpage\section*{CKP-144 --- computation record}
-\textbf{Status:} complete.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-144
-\end{lstlisting}
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{1}\times \mathbb P^{3}}(\mathcal O\oplus \mathcal O(0,1))$ by $\xi +H_{1}+H_{2}$ (CKP-144) --- quantum multiplication}
 
-Enumeration: positive; 22 classes including zero.
+Curve enumeration: positive; 22 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -3004,7 +2837,6 @@ basis = ['1',
 11 & 9 & \fitmath{-3}\\
 11 & 10 & \fitmath{4}\\
 \bottomrule\end{longtable}}
-Matrix time: 0.28 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3,\ y_3=5$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=\frac{49403645349491256853610768925672636294565984786432}{3}}\end{center}
@@ -3036,8 +2868,8 @@ Factor 2: multiplicity 1; 10 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-145 --- geometry and Hodge diamond}\label{entry:CKP-145}
-\textbf{Selection:} nef\_literature.
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{3}}(\mathcal O\oplus \mathcal O(1)^{2})$ by $2\xi $ (CKP-145) --- geometry and Hodge diamond}\label{entry:CKP-145}
+\textbf{Positivity:} nef defining divisors.
 CKP period ID 145; source record 22727; ambient polytope 995.
 \textbf{Hodge source:} HLM-26, HLM Proposition 7.2, \href{https://arxiv.org/abs/1907.08000v3}{1907.08000v3}.
 The source family is identified by the saved exact Cox/GIT presentation certificate.
@@ -3067,14 +2899,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x3', 'x0', 'x0^2', 'x0*x3', 'x0^3', 'x0^2*x3', 'x0^3*x3']
 \end{lstlisting}
 
-\clearpage\section*{CKP-145 --- computation record}
-\textbf{Status:} complete.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-145
-\end{lstlisting}
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{3}}(\mathcal O\oplus \mathcal O(1)^{2})$ by $2\xi $ (CKP-145) --- quantum multiplication}
 
-Enumeration: positive; 8 classes including zero.
+Curve enumeration: positive; 8 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -3112,7 +2939,6 @@ basis = ['1', 'x3', 'x0', 'x0^2', 'x0*x3', 'x0^3', 'x0^2*x3', 'x0^3*x3']
 7 & 5 & \fitmath{1}\\
 7 & 6 & \fitmath{3}\\
 \bottomrule\end{longtable}}
-Matrix time: 0.26 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=15617646890842783744}\end{center}
@@ -3140,8 +2966,8 @@ Factor 2: multiplicity 1; 6 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-155 --- geometry and Hodge diamond}\label{entry:CKP-155}
-\textbf{Selection:} ample.
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{1}\times \mathbb P^{2}}(\mathcal O^{2}\oplus \mathcal O(0,1))$ by $\xi +H_{1}+H_{2}$ (CKP-155) --- geometry and Hodge diamond}\label{entry:CKP-155}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 155; source record 24136; ambient polytope 999.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $1$, $(-K_X)^4=256$, $e(X)=17$.
@@ -3183,14 +3009,9 @@ eval_y = {'y1': 2, 'y2': 3, 'y3': 5}
  'x0*x2*x3^2']
 \end{lstlisting}
 
-\clearpage\section*{CKP-155 --- computation record}
-\textbf{Status:} complete.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-155
-\end{lstlisting}
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{1}\times \mathbb P^{2}}(\mathcal O^{2}\oplus \mathcal O(0,1))$ by $\xi +H_{1}+H_{2}$ (CKP-155) --- quantum multiplication}
 
-Enumeration: positive; 19 classes including zero.
+Curve enumeration: positive; 19 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -3301,7 +3122,6 @@ basis = ['1',
 12 & 10 & \fitmath{\frac{5}{2}}\\
 12 & 11 & \fitmath{\frac{3}{2}}\\
 \bottomrule\end{longtable}}
-Matrix time: 0.24 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3,\ y_3=5$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=4156555438853439685567538425719655317952630033500255518686000}\end{center}
@@ -3334,8 +3154,8 @@ Factor 2: multiplicity 1; 12 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-157 --- geometry and Hodge diamond}\label{entry:CKP-157}
-\textbf{Selection:} ample.
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{1}\times \mathbb P^{3}}(\mathcal O\oplus \mathcal O(0,2))$ by $\xi +H_{1}+H_{2}$ (CKP-157) --- geometry and Hodge diamond}\label{entry:CKP-157}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 157; source record 24256; ambient polytope 991.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $1$, $(-K_X)^4=200$, $e(X)=32$.
@@ -3376,14 +3196,9 @@ eval_y = {'y1': 2, 'y2': 3, 'y3': 5}
  'x0^3*x3']
 \end{lstlisting}
 
-\clearpage\section*{CKP-157 --- computation record}
-\textbf{Status:} complete\_with\_notes.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-157
-\end{lstlisting}
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{1}\times \mathbb P^{3}}(\mathcal O\oplus \mathcal O(0,2))$ by $\xi +H_{1}+H_{2}$ (CKP-157) --- quantum multiplication}
 
-Enumeration: positive; 33 classes including zero.
+Curve enumeration: positive; 33 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -3503,7 +3318,6 @@ basis = ['1',
 11 & 9 & \fitmath{2}\\
 11 & 10 & \fitmath{4}\\
 \bottomrule\end{longtable}}
-Matrix time: 2.06 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3,\ y_3=5$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=0}\end{center}
@@ -3539,8 +3353,8 @@ Factor 2: multiplicity 1; 8 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-160 --- geometry and Hodge diamond}\label{entry:CKP-160}
-\textbf{Selection:} ample.
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{3}}(\mathcal O^{3}\oplus \mathcal O(1))$ by $\xi +H$, $\xi +H$ (CKP-160) --- geometry and Hodge diamond}\label{entry:CKP-160}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 160; source record 24304; ambient polytope 8630.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=6$, codimension $2$, index $1$, $(-K_X)^4=272$, $e(X)=15$.
@@ -3570,14 +3384,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x3', 'x0', 'x3^2', 'x0^2', 'x0*x3', 'x3^3', 'x0^3', 'x0*x3^3']
 \end{lstlisting}
 
-\clearpage\section*{CKP-160 --- computation record}
-\textbf{Status:} complete.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-160
-\end{lstlisting}
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{3}}(\mathcal O^{3}\oplus \mathcal O(1))$ by $\xi +H$, $\xi +H$ (CKP-160) --- quantum multiplication}
 
-Enumeration: positive; 9 classes including zero.
+Curve enumeration: positive; 9 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -3623,7 +3432,6 @@ basis = ['1', 'x3', 'x0', 'x3^2', 'x0^2', 'x0*x3', 'x3^3', 'x0^3', 'x0*x3^3']
 8 & 6 & \fitmath{3}\\
 8 & 7 & \fitmath{\frac{1}{2}}\\
 \bottomrule\end{longtable}}
-Matrix time: 0.18 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=- \frac{421733336404271455981}{2}}\end{center}
@@ -3652,8 +3460,8 @@ Factor 2: multiplicity 1; 8 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-169 --- geometry and Hodge diamond}\label{entry:CKP-169}
-\textbf{Selection:} nef\_literature.
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{4}}(\mathcal O\oplus \mathcal O(1))$ by $3H$ (CKP-169) --- geometry and Hodge diamond}\label{entry:CKP-169}
+\textbf{Positivity:} nef defining divisors.
 CKP period ID 169; source record 24474; ambient polytope 1009.
 \textbf{Hodge source:} HLM-64, HLM Proposition 7.2, \href{https://arxiv.org/abs/1907.08000v3}{1907.08000v3}.
 The source family is identified by the saved exact Cox/GIT presentation certificate.
@@ -3682,14 +3490,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x1', 'x0', 'x1^2', 'x0*x1', 'x1^3', 'x0^2*x1', 'x0^2*x1^2']
 \end{lstlisting}
 
-\clearpage\section*{CKP-169 --- computation record}
-\textbf{Status:} complete\_with\_notes.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-169
-\end{lstlisting}
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{4}}(\mathcal O\oplus \mathcal O(1))$ by $3H$ (CKP-169) --- quantum multiplication}
 
-Enumeration: positive; 9 classes including zero.
+Curve enumeration: positive; 9 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -3732,7 +3535,6 @@ basis = ['1', 'x1', 'x0', 'x1^2', 'x0*x1', 'x1^3', 'x0^2*x1', 'x0^2*x1^2']
 7 & 5 & \fitmath{-2}\\
 7 & 6 & \fitmath{1}\\
 \bottomrule\end{longtable}}
-Matrix time: 0.04 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=-2454513918138722304000}\end{center}
@@ -3764,8 +3566,8 @@ Factor 2: multiplicity 1; 4 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-170 --- geometry and Hodge diamond}\label{entry:CKP-170}
-\textbf{Selection:} ample.
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{3}}(\mathcal O^{2}\oplus \mathcal O(1))$ by $\xi +2H$ (CKP-170) --- geometry and Hodge diamond}\label{entry:CKP-170}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 170; source record 24515; ambient polytope 1011.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $1$, $(-K_X)^4=224$, $e(X)=20$.
@@ -3794,14 +3596,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x3', 'x0', 'x3^2', 'x0^2', 'x0*x3', 'x0^3', 'x0*x3^2', 'x0^3*x3']
 \end{lstlisting}
 
-\clearpage\section*{CKP-170 --- computation record}
-\textbf{Status:} complete.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-170
-\end{lstlisting}
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{3}}(\mathcal O^{2}\oplus \mathcal O(1))$ by $\xi +2H$ (CKP-170) --- quantum multiplication}
 
-Enumeration: positive; 9 classes including zero.
+Curve enumeration: positive; 9 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -3853,7 +3650,6 @@ basis = ['1', 'x3', 'x0', 'x3^2', 'x0^2', 'x0*x3', 'x0^3', 'x0*x3^2', 'x0^3*x3']
 8 & 6 & \fitmath{2}\\
 8 & 7 & \fitmath{9}\\
 \bottomrule\end{longtable}}
-Matrix time: 0.08 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=\frac{155558332113177702673448000}{3}}\end{center}
@@ -3882,8 +3678,8 @@ Factor 2: multiplicity 1; 8 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-172 --- geometry and Hodge diamond}\label{entry:CKP-172}
-\textbf{Selection:} ample.
+\clearpage\section*{Hypersurface in a toric fivefold (CKP-172) --- geometry and Hodge diamond}\label{entry:CKP-172}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 172; source record 24625; ambient polytope 994.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $1$, $(-K_X)^4=180$, $e(X)=32$.
@@ -3924,14 +3720,9 @@ eval_y = {'y1': 2, 'y2': 3, 'y3': 5}
  'x0^2*x4^2']
 \end{lstlisting}
 
-\clearpage\section*{CKP-172 --- computation record}
-\textbf{Status:} complete\_with\_notes.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-172
-\end{lstlisting}
+\clearpage\section*{Hypersurface in a toric fivefold (CKP-172) --- quantum multiplication}
 
-Enumeration: positive; 31 classes including zero.
+Curve enumeration: positive; 31 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -4044,7 +3835,6 @@ basis = ['1',
 11 & 9 & \fitmath{-3}\\
 11 & 10 & \fitmath{-3}\\
 \bottomrule\end{longtable}}
-Matrix time: 1.19 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3,\ y_3=5$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=0}\end{center}
@@ -4080,8 +3870,8 @@ Factor 2: multiplicity 1; 8 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-174 --- geometry and Hodge diamond}\label{entry:CKP-174}
-\textbf{Selection:} ample.
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{3}}(\mathcal O^{2}\oplus \mathcal O(1))$ by $2\xi +H$ (CKP-174) --- geometry and Hodge diamond}\label{entry:CKP-174}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 174; source record 24688; ambient polytope 1011.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $1$, $(-K_X)^4=163$, $e(X)=31$.
@@ -4110,14 +3900,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x3', 'x0', 'x3^2', 'x0^2', 'x0*x3', 'x0^3', 'x0*x3^2', 'x0^3*x3']
 \end{lstlisting}
 
-\clearpage\section*{CKP-174 --- computation record}
-\textbf{Status:} complete.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-174
-\end{lstlisting}
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{3}}(\mathcal O^{2}\oplus \mathcal O(1))$ by $2\xi +H$ (CKP-174) --- quantum multiplication}
 
-Enumeration: positive; 9 classes including zero.
+Curve enumeration: positive; 9 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -4168,7 +3953,6 @@ basis = ['1', 'x3', 'x0', 'x3^2', 'x0^2', 'x0*x3', 'x0^3', 'x0*x3^2', 'x0^3*x3']
 8 & 6 & \fitmath{1}\\
 8 & 7 & \fitmath{\frac{9}{2}}\\
 \bottomrule\end{longtable}}
-Matrix time: 0.35 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=-2685646530238196565216000}\end{center}
@@ -4197,8 +3981,8 @@ Factor 2: multiplicity 1; 7 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-175 --- geometry and Hodge diamond}\label{entry:CKP-175}
-\textbf{Selection:} ample.
+\clearpage\section*{Complete intersection of multidegrees $(1,1)$, $(1,1)$, $(1,1)$ in $\mathbb P^{3}\times \mathbb P^{4}$ (CKP-175) --- geometry and Hodge diamond}\label{entry:CKP-175}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 175; source record 24733; ambient polytope 80890.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=7$, codimension $3$, index $1$, $(-K_X)^4=192$, $e(X)=18$.
@@ -4232,14 +4016,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x3', 'x0', 'x3^2', 'x0^2', 'x0*x3', 'x3^3', 'x0^3', 'x3^4']
 \end{lstlisting}
 
-\clearpage\section*{CKP-175 --- computation record}
-\textbf{Status:} complete.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-175
-\end{lstlisting}
+\clearpage\section*{Complete intersection of multidegrees $(1,1)$, $(1,1)$, $(1,1)$ in $\mathbb P^{3}\times \mathbb P^{4}$ (CKP-175) --- quantum multiplication}
 
-Enumeration: positive; 11 classes including zero.
+Curve enumeration: positive; 11 classes including zero.
 Connectedness pruning reached its configuration limit; the finite candidate list was retained for localization.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
@@ -4293,7 +4072,6 @@ basis = ['1', 'x3', 'x0', 'x3^2', 'x0^2', 'x0*x3', 'x3^3', 'x0^3', 'x3^4']
 8 & 6 & \fitmath{5}\\
 8 & 7 & \fitmath{2}\\
 \bottomrule\end{longtable}}
-Matrix time: 3.07 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=- \frac{168517555263793518884684}{3}}\end{center}
@@ -4322,8 +4100,8 @@ Factor 2: multiplicity 1; 8 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-179 --- geometry and Hodge diamond}\label{entry:CKP-179}
-\textbf{Selection:} ample.
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{3}}(\mathcal O^{2}\oplus \mathcal O(2))$ by $2\xi +H$ (CKP-179) --- geometry and Hodge diamond}\label{entry:CKP-179}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 179; source record 24810; ambient polytope 993.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $1$, $(-K_X)^4=98$, $e(X)=125$.
@@ -4352,14 +4130,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x3', 'x0', 'x3^2', 'x0^2', 'x0*x3', 'x0^3', 'x0*x3^2', 'x0^3*x3']
 \end{lstlisting}
 
-\clearpage\section*{CKP-179 --- computation record}
-\textbf{Status:} complete\_with\_notes.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-179
-\end{lstlisting}
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{3}}(\mathcal O^{2}\oplus \mathcal O(2))$ by $2\xi +H$ (CKP-179) --- quantum multiplication}
 
-Enumeration: positive; 14 classes including zero.
+Curve enumeration: positive; 14 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -4426,7 +4199,6 @@ basis = ['1', 'x3', 'x0', 'x3^2', 'x0^2', 'x0*x3', 'x0^3', 'x0*x3^2', 'x0^3*x3']
 8 & 6 & \fitmath{1}\\
 8 & 7 & \fitmath{\frac{15}{2}}\\
 \bottomrule\end{longtable}}
-Matrix time: 3.18 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=0}\end{center}
@@ -4459,8 +4231,8 @@ Factor 2: multiplicity 1; 5 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-182 --- geometry and Hodge diamond}\label{entry:CKP-182}
-\textbf{Selection:} nef\_literature.
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{2}}(\mathcal O^{3}\oplus \mathcal O(2))$ by $2\xi $ (CKP-182) --- geometry and Hodge diamond}\label{entry:CKP-182}
+\textbf{Positivity:} nef defining divisors.
 CKP period ID 182; source record 25581; ambient polytope 354.
 \textbf{Hodge source:} HLM-42, HLM Proposition 7.2, \href{https://arxiv.org/abs/1907.08000v3}{1907.08000v3}.
 The source family is identified by the saved exact Cox/GIT presentation certificate.
@@ -4490,14 +4262,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x2', 'x0', 'x2^2', 'x0^2', 'x0*x2', 'x2^3', 'x0^2*x2', 'x0*x2^3']
 \end{lstlisting}
 
-\clearpage\section*{CKP-182 --- computation record}
-\textbf{Status:} complete.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-182
-\end{lstlisting}
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{2}}(\mathcal O^{3}\oplus \mathcal O(2))$ by $2\xi $ (CKP-182) --- quantum multiplication}
 
-Enumeration: positive; 9 classes including zero.
+Curve enumeration: positive; 9 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -4549,7 +4316,6 @@ basis = ['1', 'x2', 'x0', 'x2^2', 'x0^2', 'x0*x2', 'x2^3', 'x0^2*x2', 'x0*x2^3']
 8 & 6 & \fitmath{5}\\
 8 & 7 & \fitmath{1}\\
 \bottomrule\end{longtable}}
-Matrix time: 1.13 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=176278017954559676424192}\end{center}
@@ -4583,8 +4349,8 @@ Factor 3: multiplicity 1; 6 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-186 --- geometry and Hodge diamond}\label{entry:CKP-186}
-\textbf{Selection:} nef\_literature.
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{2}}(\mathcal O^{3}\oplus \mathcal O(1))$ by $2\xi $ (CKP-186) --- geometry and Hodge diamond}\label{entry:CKP-186}
+\textbf{Positivity:} nef defining divisors.
 CKP period ID 186; source record 27633; ambient polytope 1002.
 \textbf{Hodge source:} HLM-40, HLM Proposition 7.2, \href{https://arxiv.org/abs/1907.08000v3}{1907.08000v3}.
 The source family is identified by the saved exact Cox/GIT presentation certificate.
@@ -4614,14 +4380,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x2', 'x0', 'x2^2', 'x0^2', 'x0*x2', 'x2^3', 'x0^2*x2', 'x0*x2^3']
 \end{lstlisting}
 
-\clearpage\section*{CKP-186 --- computation record}
-\textbf{Status:} complete.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-186
-\end{lstlisting}
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{2}}(\mathcal O^{3}\oplus \mathcal O(1))$ by $2\xi $ (CKP-186) --- quantum multiplication}
 
-Enumeration: positive; 5 classes including zero.
+Curve enumeration: positive; 5 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -4659,7 +4420,6 @@ basis = ['1', 'x2', 'x0', 'x2^2', 'x0^2', 'x0*x2', 'x2^3', 'x0^2*x2', 'x0*x2^3']
 8 & 6 & \fitmath{4}\\
 8 & 7 & \fitmath{2}\\
 \bottomrule\end{longtable}}
-Matrix time: 0.01 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=2328153076507594457088000}\end{center}
@@ -4693,8 +4453,8 @@ Factor 3: multiplicity 1; 6 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-189 --- geometry and Hodge diamond}\label{entry:CKP-189}
-\textbf{Selection:} ample.
+\clearpage\section*{Complete intersection of multidegrees $(1,1)$, $(1,1)$ in $\mathbb P^{3}\times \mathbb P^{3}$ (CKP-189) --- geometry and Hodge diamond}\label{entry:CKP-189}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 189; source record 27826; ambient polytope 8634.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=6$, codimension $2$, index $2$, $(-K_X)^4=320$, $e(X)=12$.
@@ -4724,14 +4484,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x3', 'x0', 'x3^2', 'x0^2', 'x0*x3', 'x3^3', 'x0^3', 'x0*x3^3']
 \end{lstlisting}
 
-\clearpage\section*{CKP-189 --- computation record}
-\textbf{Status:} complete.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-189
-\end{lstlisting}
+\clearpage\section*{Complete intersection of multidegrees $(1,1)$, $(1,1)$ in $\mathbb P^{3}\times \mathbb P^{3}$ (CKP-189) --- quantum multiplication}
 
-Enumeration: positive; 6 classes including zero.
+Curve enumeration: positive; 6 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -4770,7 +4525,6 @@ basis = ['1', 'x3', 'x0', 'x3^2', 'x0^2', 'x0*x3', 'x3^3', 'x0^3', 'x0*x3^3']
 8 & 6 & \fitmath{2}\\
 8 & 7 & \fitmath{2}\\
 \bottomrule\end{longtable}}
-Matrix time: 0.02 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=1708917900203498930176}\end{center}
@@ -4799,8 +4553,8 @@ Factor 2: multiplicity 1; 8 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-233 --- geometry and Hodge diamond}\label{entry:CKP-233}
-\textbf{Selection:} nef\_literature.
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{2}}(\mathcal O^{2}\oplus \mathcal O(1)^{2})$ by $2\xi $ (CKP-233) --- geometry and Hodge diamond}\label{entry:CKP-233}
+\textbf{Positivity:} nef defining divisors.
 CKP period ID 233; source record 40706; ambient polytope 623.
 \textbf{Hodge source:} HLM-22, HLM Proposition 7.2, \href{https://arxiv.org/abs/1907.08000v3}{1907.08000v3}.
 The source family is identified by the saved exact Cox/GIT presentation certificate.
@@ -4830,14 +4584,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x2', 'x0', 'x2^2', 'x0^2', 'x0*x2', 'x2^3', 'x0*x2^2', 'x0*x2^3']
 \end{lstlisting}
 
-\clearpage\section*{CKP-233 --- computation record}
-\textbf{Status:} complete.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-233
-\end{lstlisting}
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{2}}(\mathcal O^{2}\oplus \mathcal O(1)^{2})$ by $2\xi $ (CKP-233) --- quantum multiplication}
 
-Enumeration: positive; 9 classes including zero.
+Curve enumeration: positive; 9 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -4885,7 +4634,6 @@ basis = ['1', 'x2', 'x0', 'x2^2', 'x0^2', 'x0*x2', 'x2^3', 'x0*x2^2', 'x0*x2^3']
 8 & 6 & \fitmath{4}\\
 8 & 7 & \fitmath{\frac{5}{2}}\\
 \bottomrule\end{longtable}}
-Matrix time: 0.73 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=-46145153498164324024320}\end{center}
@@ -4919,8 +4667,8 @@ Factor 3: multiplicity 1; 6 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-247 --- geometry and Hodge diamond}\label{entry:CKP-247}
-\textbf{Selection:} ample.
+\clearpage\section*{Complete intersection of multidegrees $(1,1,1)$ in $\mathbb P^{1}\times \mathbb P^{2}\times \mathbb P^{2}$ (CKP-247) --- geometry and Hodge diamond}\label{entry:CKP-247}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 247; source record 43846; ambient polytope 1007.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $1$, $(-K_X)^4=288$, $e(X)=15$.
@@ -4962,14 +4710,9 @@ eval_y = {'y1': 2, 'y2': 3, 'y3': 5}
  'x1^2*x3^2']
 \end{lstlisting}
 
-\clearpage\section*{CKP-247 --- computation record}
-\textbf{Status:} complete.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-247
-\end{lstlisting}
+\clearpage\section*{Complete intersection of multidegrees $(1,1,1)$ in $\mathbb P^{1}\times \mathbb P^{2}\times \mathbb P^{2}$ (CKP-247) --- quantum multiplication}
 
-Enumeration: positive; 15 classes including zero.
+Curve enumeration: positive; 15 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -5064,7 +4807,6 @@ basis = ['1',
 12 & 10 & \fitmath{3}\\
 12 & 11 & \fitmath{2}\\
 \bottomrule\end{longtable}}
-Matrix time: 0.07 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3,\ y_3=5$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=4942594994632829523786444275849425367874364599669140625}\end{center}
@@ -5097,8 +4839,8 @@ Factor 2: multiplicity 1; 12 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-314 --- geometry and Hodge diamond}\label{entry:CKP-314}
-\textbf{Selection:} ample.
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{2}}(\mathcal O^{3}\oplus \mathcal O(1))$ by $2\xi +H$ (CKP-314) --- geometry and Hodge diamond}\label{entry:CKP-314}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 314; source record 50674; ambient polytope 1002.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $1$, $(-K_X)^4=192$, $e(X)=30$.
@@ -5127,14 +4869,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x2', 'x0', 'x2^2', 'x0^2', 'x0*x2', 'x2^3', 'x0*x2^2', 'x0*x2^3']
 \end{lstlisting}
 
-\clearpage\section*{CKP-314 --- computation record}
-\textbf{Status:} complete\_with\_notes.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-314
-\end{lstlisting}
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{2}}(\mathcal O^{3}\oplus \mathcal O(1))$ by $2\xi +H$ (CKP-314) --- quantum multiplication}
 
-Enumeration: positive; 9 classes including zero.
+Curve enumeration: positive; 9 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -5185,7 +4922,6 @@ basis = ['1', 'x2', 'x0', 'x2^2', 'x0^2', 'x0*x2', 'x2^3', 'x0*x2^2', 'x0*x2^3']
 8 & 6 & \fitmath{3}\\
 8 & 7 & \fitmath{\frac{8}{3}}\\
 \bottomrule\end{longtable}}
-Matrix time: 0.07 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=0}\end{center}
@@ -5218,8 +4954,8 @@ Factor 2: multiplicity 1; 6 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-320 --- geometry and Hodge diamond}\label{entry:CKP-320}
-\textbf{Selection:} ample.
+\clearpage\section*{Hypersurface in a toric fivefold (CKP-320) --- geometry and Hodge diamond}\label{entry:CKP-320}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 320; source record 51070; ambient polytope 998.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $1$, $(-K_X)^4=176$, $e(X)=33$.
@@ -5261,14 +4997,9 @@ eval_y = {'y1': 2, 'y2': 3, 'y3': 5}
  'x0*x2^2*x3']
 \end{lstlisting}
 
-\clearpage\section*{CKP-320 --- computation record}
-\textbf{Status:} complete\_with\_notes.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-320
-\end{lstlisting}
+\clearpage\section*{Hypersurface in a toric fivefold (CKP-320) --- quantum multiplication}
 
-Enumeration: positive; 27 classes including zero.
+Curve enumeration: positive; 27 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -5402,7 +5133,6 @@ basis = ['1',
 12 & 10 & \fitmath{- \frac{5}{2}}\\
 12 & 11 & \fitmath{- \frac{3}{2}}\\
 \bottomrule\end{longtable}}
-Matrix time: 2.07 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3,\ y_3=5$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=0}\end{center}
@@ -5439,8 +5169,8 @@ Factor 2: multiplicity 1; 9 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-322 --- geometry and Hodge diamond}\label{entry:CKP-322}
-\textbf{Selection:} ample.
+\clearpage\section*{Complete intersection of multidegrees $(1,1)$, $(1,2)$ in $\mathbb P^{2}\times \mathbb P^{4}$ (CKP-322) --- geometry and Hodge diamond}\label{entry:CKP-322}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 322; source record 51097; ambient polytope 8633.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=6$, codimension $2$, index $1$, $(-K_X)^4=160$, $e(X)=30$.
@@ -5470,14 +5200,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x2', 'x0', 'x2^2', 'x0^2', 'x0*x2', 'x2^3', 'x0*x2^2', 'x2^4']
 \end{lstlisting}
 
-\clearpage\section*{CKP-322 --- computation record}
-\textbf{Status:} complete\_with\_notes.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-322
-\end{lstlisting}
+\clearpage\section*{Complete intersection of multidegrees $(1,1)$, $(1,2)$ in $\mathbb P^{2}\times \mathbb P^{4}$ (CKP-322) --- quantum multiplication}
 
-Enumeration: positive; 11 classes including zero.
+Curve enumeration: positive; 11 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -5535,7 +5260,6 @@ basis = ['1', 'x2', 'x0', 'x2^2', 'x0^2', 'x0*x2', 'x2^3', 'x0*x2^2', 'x2^4']
 8 & 6 & \fitmath{5}\\
 8 & 7 & \fitmath{8}\\
 \bottomrule\end{longtable}}
-Matrix time: 0.82 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=0}\end{center}
@@ -5568,8 +5292,8 @@ Factor 2: multiplicity 1; 6 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-323 --- geometry and Hodge diamond}\label{entry:CKP-323}
-\textbf{Selection:} ample.
+\clearpage\section*{Complete intersection of multidegrees $(1,1)$, $(2,1)$ in $\mathbb P^{3}\times \mathbb P^{3}$ (CKP-323) --- geometry and Hodge diamond}\label{entry:CKP-323}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 323; source record 51117; ambient polytope 8634.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=6$, codimension $2$, index $1$, $(-K_X)^4=144$, $e(X)=23$.
@@ -5599,14 +5323,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x3', 'x0', 'x3^2', 'x0^2', 'x0*x3', 'x3^3', 'x0^3', 'x0*x3^3']
 \end{lstlisting}
 
-\clearpage\section*{CKP-323 --- computation record}
-\textbf{Status:} complete.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-323
-\end{lstlisting}
+\clearpage\section*{Complete intersection of multidegrees $(1,1)$, $(2,1)$ in $\mathbb P^{3}\times \mathbb P^{3}$ (CKP-323) --- quantum multiplication}
 
-Enumeration: positive; 11 classes including zero.
+Curve enumeration: positive; 11 classes including zero.
 Connectedness pruning reached its configuration limit; the finite candidate list was retained for localization.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
@@ -5663,7 +5382,6 @@ basis = ['1', 'x3', 'x0', 'x3^2', 'x0^2', 'x0*x3', 'x3^3', 'x0^3', 'x0*x3^3']
 8 & 6 & \fitmath{1}\\
 8 & 7 & \fitmath{1}\\
 \bottomrule\end{longtable}}
-Matrix time: 1.86 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=-424625759565196296404}\end{center}
@@ -5692,8 +5410,8 @@ Factor 2: multiplicity 1; 8 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-327 --- geometry and Hodge diamond}\label{entry:CKP-327}
-\textbf{Selection:} ample.
+\clearpage\section*{Complete intersection of multidegrees $(1,2)$ in $\mathbb P^{2}\times \mathbb P^{3}$ (CKP-327) --- geometry and Hodge diamond}\label{entry:CKP-327}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 327; source record 51511; ambient polytope 1012.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $2$, $(-K_X)^4=256$, $e(X)=16$.
@@ -5722,14 +5440,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x2', 'x0', 'x2^2', 'x0^2', 'x0*x2', 'x2^3', 'x0*x2^2', 'x0*x2^3']
 \end{lstlisting}
 
-\clearpage\section*{CKP-327 --- computation record}
-\textbf{Status:} complete.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-327
-\end{lstlisting}
+\clearpage\section*{Complete intersection of multidegrees $(1,2)$ in $\mathbb P^{2}\times \mathbb P^{3}$ (CKP-327) --- quantum multiplication}
 
-Enumeration: positive; 6 classes including zero.
+Curve enumeration: positive; 6 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -5772,7 +5485,6 @@ basis = ['1', 'x2', 'x0', 'x2^2', 'x0^2', 'x0*x2', 'x2^3', 'x0*x2^2', 'x0*x2^3']
 8 & 6 & \fitmath{2}\\
 8 & 7 & \fitmath{6}\\
 \bottomrule\end{longtable}}
-Matrix time: 0.01 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=477711680071419297792000}\end{center}
@@ -5801,8 +5513,8 @@ Factor 2: multiplicity 1; 8 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-363 --- geometry and Hodge diamond}\label{entry:CKP-363}
-\textbf{Selection:} ample.
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{2}\times \mathbb P^{2}}(\mathcal O\oplus \mathcal O(1,0))$ by $\xi +H_{1}+H_{2}$ (CKP-363) --- geometry and Hodge diamond}\label{entry:CKP-363}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 363; source record 63909; ambient polytope 1000.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $1$, $(-K_X)^4=224$, $e(X)=19$.
@@ -5844,14 +5556,9 @@ eval_y = {'y1': 2, 'y2': 3, 'y3': 5}
  'x0*x2^2*x4']
 \end{lstlisting}
 
-\clearpage\section*{CKP-363 --- computation record}
-\textbf{Status:} complete.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-363
-\end{lstlisting}
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{2}\times \mathbb P^{2}}(\mathcal O\oplus \mathcal O(1,0))$ by $\xi +H_{1}+H_{2}$ (CKP-363) --- quantum multiplication}
 
-Enumeration: positive; 20 classes including zero.
+Curve enumeration: positive; 20 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -5957,7 +5664,6 @@ basis = ['1',
 12 & 10 & \fitmath{3}\\
 12 & 11 & \fitmath{2}\\
 \bottomrule\end{longtable}}
-Matrix time: 0.35 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3,\ y_3=5$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=393707732668054311505400978590899947678542653681563310158724455250}\end{center}
@@ -5990,8 +5696,8 @@ Factor 2: multiplicity 1; 12 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-432 --- geometry and Hodge diamond}\label{entry:CKP-432}
-\textbf{Selection:} ample.
+\clearpage\section*{Complete intersection of multidegrees $(1,1,2)$ in $\mathbb P^{1}\times \mathbb P^{1}\times \mathbb P^{3}$ (CKP-432) --- geometry and Hodge diamond}\label{entry:CKP-432}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 432; source record 70313; ambient polytope 1006.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $1$, $(-K_X)^4=160$, $e(X)=32$.
@@ -6032,14 +5738,9 @@ eval_y = {'y1': 2, 'y2': 3, 'y3': 5}
  'x1*x2^3']
 \end{lstlisting}
 
-\clearpage\section*{CKP-432 --- computation record}
-\textbf{Status:} complete\_with\_notes.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-432
-\end{lstlisting}
+\clearpage\section*{Complete intersection of multidegrees $(1,1,2)$ in $\mathbb P^{1}\times \mathbb P^{1}\times \mathbb P^{3}$ (CKP-432) --- quantum multiplication}
 
-Enumeration: positive; 24 classes including zero.
+Curve enumeration: positive; 24 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -6152,7 +5853,6 @@ basis = ['1',
 11 & 9 & \fitmath{4}\\
 11 & 10 & \fitmath{4}\\
 \bottomrule\end{longtable}}
-Matrix time: 0.43 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3,\ y_3=5$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=0}\end{center}
@@ -6188,8 +5888,8 @@ Factor 2: multiplicity 1; 8 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-439 --- geometry and Hodge diamond}\label{entry:CKP-439}
-\textbf{Selection:} ample.
+\clearpage\section*{Complete intersection of multidegrees $(2,2)$ in $\mathbb P^{2}\times \mathbb P^{3}$ (CKP-439) --- geometry and Hodge diamond}\label{entry:CKP-439}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 439; source record 70667; ambient polytope 1012.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $1$, $(-K_X)^4=112$, $e(X)=52$.
@@ -6218,14 +5918,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x2', 'x0', 'x2^2', 'x0^2', 'x0*x2', 'x2^3', 'x0*x2^2', 'x0*x2^3']
 \end{lstlisting}
 
-\clearpage\section*{CKP-439 --- computation record}
-\textbf{Status:} complete.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-439
-\end{lstlisting}
+\clearpage\section*{Complete intersection of multidegrees $(2,2)$ in $\mathbb P^{2}\times \mathbb P^{3}$ (CKP-439) --- quantum multiplication}
 
-Enumeration: positive; 11 classes including zero.
+Curve enumeration: positive; 11 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -6285,7 +5980,6 @@ basis = ['1', 'x2', 'x0', 'x2^2', 'x0^2', 'x0*x2', 'x2^3', 'x0*x2^2', 'x0*x2^3']
 8 & 6 & \fitmath{1}\\
 8 & 7 & \fitmath{3}\\
 \bottomrule\end{longtable}}
-Matrix time: 0.53 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=-2195661943588427661312}\end{center}
@@ -6314,8 +6008,8 @@ Factor 2: multiplicity 1; 6 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-450 --- geometry and Hodge diamond}\label{entry:CKP-450}
-\textbf{Selection:} ample.
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{2}\times \mathbb P^{2}}(\mathcal O\oplus \mathcal O(1,1))$ by $\xi +H_{1}+H_{2}$ (CKP-450) --- geometry and Hodge diamond}\label{entry:CKP-450}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 450; source record 84048; ambient polytope 996.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $1$, $(-K_X)^4=186$, $e(X)=33$.
@@ -6357,14 +6051,9 @@ eval_y = {'y1': 2, 'y2': 3, 'y3': 5}
  'x0*x2^2*x4']
 \end{lstlisting}
 
-\clearpage\section*{CKP-450 --- computation record}
-\textbf{Status:} complete\_with\_notes.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-450
-\end{lstlisting}
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{2}\times \mathbb P^{2}}(\mathcal O\oplus \mathcal O(1,1))$ by $\xi +H_{1}+H_{2}$ (CKP-450) --- quantum multiplication}
 
-Enumeration: positive; 27 classes including zero.
+Curve enumeration: positive; 27 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -6493,7 +6182,6 @@ basis = ['1',
 12 & 10 & \fitmath{3}\\
 12 & 11 & \fitmath{1}\\
 \bottomrule\end{longtable}}
-Matrix time: 1.15 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3,\ y_3=5$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=0}\end{center}
@@ -6530,8 +6218,8 @@ Factor 2: multiplicity 1; 9 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-475 --- geometry and Hodge diamond}\label{entry:CKP-475}
-\textbf{Selection:} ample.
+\clearpage\section*{Complete intersection of multidegrees $(1,1,1,1)$ in $\mathbb P^{1}\times \mathbb P^{1}\times \mathbb P^{1}\times \mathbb P^{2}$ (CKP-475) --- geometry and Hodge diamond}\label{entry:CKP-475}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 475; source record 88152; ambient polytope 1004.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $1$, $(-K_X)^4=192$, $e(X)=22$.
@@ -6580,14 +6268,9 @@ eval_y = {'y1': 2, 'y2': 3, 'y3': 5, 'y4': 7}
  'x1*x2*x3^2']
 \end{lstlisting}
 
-\clearpage\section*{CKP-475 --- computation record}
-\textbf{Status:} complete.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-475
-\end{lstlisting}
+\clearpage\section*{Complete intersection of multidegrees $(1,1,1,1)$ in $\mathbb P^{1}\times \mathbb P^{1}\times \mathbb P^{1}\times \mathbb P^{2}$ (CKP-475) --- quantum multiplication}
 
-Enumeration: positive; 47 classes including zero.
+Curve enumeration: positive; 47 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -6787,7 +6470,6 @@ basis = ['1',
 16 & 14 & \fitmath{2}\\
 16 & 15 & \fitmath{3}\\
 \bottomrule\end{longtable}}
-Matrix time: 1.30 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3,\ y_3=5,\ y_4=7$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=26925163410387221853522390049524396420680690864541412823085758292378020380078571749902614526099414296952035082240000}\end{center}
@@ -6824,8 +6506,8 @@ Factor 2: multiplicity 1; 16 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-492 --- geometry and Hodge diamond}\label{entry:CKP-492}
-\textbf{Selection:} ample.
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{2}\times \mathbb P^{2}}(\mathcal O(0,1)\oplus \mathcal O(1,0))$ by $\xi +H_{1}+H_{2}$ (CKP-492) --- geometry and Hodge diamond}\label{entry:CKP-492}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 492; source record 89289; ambient polytope 1001.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $1$, $(-K_X)^4=141$, $e(X)=33$.
@@ -6867,14 +6549,9 @@ eval_y = {'y1': 2, 'y2': 3, 'y3': 5}
  'x0*x2^2*x4']
 \end{lstlisting}
 
-\clearpage\section*{CKP-492 --- computation record}
-\textbf{Status:} complete\_with\_notes.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-492
-\end{lstlisting}
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{2}\times \mathbb P^{2}}(\mathcal O(0,1)\oplus \mathcal O(1,0))$ by $\xi +H_{1}+H_{2}$ (CKP-492) --- quantum multiplication}
 
-Enumeration: positive; 28 classes including zero.
+Curve enumeration: positive; 28 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -7003,7 +6680,6 @@ basis = ['1',
 12 & 10 & \fitmath{3}\\
 12 & 11 & \fitmath{4}\\
 \bottomrule\end{longtable}}
-Matrix time: 2.01 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3,\ y_3=5$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=0}\end{center}
@@ -7040,8 +6716,8 @@ Factor 2: multiplicity 1; 9 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-498 --- geometry and Hodge diamond}\label{entry:CKP-498}
-\textbf{Selection:} ample.
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{4}}(\mathcal O\oplus \mathcal O(1)^{2})$ by $\xi +H$, $\xi +H$ (CKP-498) --- geometry and Hodge diamond}\label{entry:CKP-498}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 498; source record 89409; ambient polytope 8629.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=6$, codimension $2$, index $1$, $(-K_X)^4=129$, $e(X)=41$.
@@ -7071,14 +6747,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x4', 'x0', 'x4^2', 'x0^2', 'x0*x4', 'x0^3', 'x0*x4^2', 'x0^4']
 \end{lstlisting}
 
-\clearpage\section*{CKP-498 --- computation record}
-\textbf{Status:} complete\_with\_notes.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-498
-\end{lstlisting}
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{4}}(\mathcal O\oplus \mathcal O(1)^{2})$ by $\xi +H$, $\xi +H$ (CKP-498) --- quantum multiplication}
 
-Enumeration: positive; 17 classes including zero.
+Curve enumeration: positive; 17 classes including zero.
 Connectedness pruning reached its configuration limit; the finite candidate list was retained for localization.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
@@ -7139,7 +6810,6 @@ basis = ['1', 'x4', 'x0', 'x4^2', 'x0^2', 'x0*x4', 'x0^3', 'x0*x4^2', 'x0^4']
 8 & 6 & \fitmath{5}\\
 8 & 7 & \fitmath{1}\\
 \bottomrule\end{longtable}}
-Matrix time: 14.53 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=0}\end{center}
@@ -7172,8 +6842,8 @@ Factor 2: multiplicity 1; 5 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-535 --- geometry and Hodge diamond}\label{entry:CKP-535}
-\textbf{Selection:} ample.
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{1}\times \mathbb P^{1}\times \mathbb P^{2}}(\mathcal O\oplus \mathcal O(0,0,1))$ by $\xi +H_{1}+H_{2}+H_{3}$ (CKP-535) --- geometry and Hodge diamond}\label{entry:CKP-535}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 535; source record 101319; ambient polytope 997.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $1$, $(-K_X)^4=140$, $e(X)=36$.
@@ -7222,14 +6892,9 @@ eval_y = {'y1': 2, 'y2': 3, 'y3': 5, 'y4': 7}
  'x0^2*x3*x4']
 \end{lstlisting}
 
-\clearpage\section*{CKP-535 --- computation record}
-\textbf{Status:} complete\_with\_notes.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-535
-\end{lstlisting}
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{1}\times \mathbb P^{1}\times \mathbb P^{2}}(\mathcal O\oplus \mathcal O(0,0,1))$ by $\xi +H_{1}+H_{2}+H_{3}$ (CKP-535) --- quantum multiplication}
 
-Enumeration: positive; 71 classes including zero.
+Curve enumeration: positive; 71 classes including zero.
 Connectedness pruning reached its configuration limit; the finite candidate list was retained for localization.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
@@ -7454,7 +7119,6 @@ basis = ['1',
 16 & 14 & \fitmath{2}\\
 16 & 15 & \fitmath{1}\\
 \bottomrule\end{longtable}}
-Matrix time: 8.96 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3,\ y_3=5,\ y_4=7$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=0}\end{center}
@@ -7495,8 +7159,8 @@ Factor 2: multiplicity 1; 12 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-551 --- geometry and Hodge diamond}\label{entry:CKP-551}
-\textbf{Selection:} nef\_literature.
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{1}}(\mathcal O^{4}\oplus \mathcal O(1))$ by $3\xi $ (CKP-551) --- geometry and Hodge diamond}\label{entry:CKP-551}
+\textbf{Positivity:} nef defining divisors.
 CKP period ID 551; source record 103188; ambient polytope 989.
 \textbf{Hodge source:} HLM-35, HLM Proposition 7.2, \href{https://arxiv.org/abs/1907.08000v3}{1907.08000v3}.
 The source family is identified by the saved exact Cox/GIT presentation certificate.
@@ -7525,14 +7189,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x1', 'x0', 'x1^2', 'x0*x1', 'x1^3', 'x0*x1^2', 'x1^4']
 \end{lstlisting}
 
-\clearpage\section*{CKP-551 --- computation record}
-\textbf{Status:} complete.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-551
-\end{lstlisting}
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{1}}(\mathcal O^{4}\oplus \mathcal O(1))$ by $3\xi $ (CKP-551) --- quantum multiplication}
 
-Enumeration: positive; 9 classes including zero.
+Curve enumeration: positive; 9 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -7575,7 +7234,6 @@ basis = ['1', 'x1', 'x0', 'x1^2', 'x0*x1', 'x1^3', 'x0*x1^2', 'x1^4']
 7 & 5 & \fitmath{3}\\
 7 & 6 & \fitmath{2}\\
 \bottomrule\end{longtable}}
-Matrix time: 0.25 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=111628975617589401}\end{center}
@@ -7608,8 +7266,8 @@ Factor 3: multiplicity 1; 4 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-560 --- geometry and Hodge diamond}\label{entry:CKP-560}
-\textbf{Selection:} ample.
+\clearpage\section*{Complete intersection of multidegrees $(1,2,1)$ in $\mathbb P^{1}\times \mathbb P^{2}\times \mathbb P^{2}$ (CKP-560) --- geometry and Hodge diamond}\label{entry:CKP-560}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 560; source record 103739; ambient polytope 1007.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $1$, $(-K_X)^4=144$, $e(X)=24$.
@@ -7651,14 +7309,9 @@ eval_y = {'y1': 2, 'y2': 3, 'y3': 5}
  'x1^2*x3^2']
 \end{lstlisting}
 
-\clearpage\section*{CKP-560 --- computation record}
-\textbf{Status:} complete.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-560
-\end{lstlisting}
+\clearpage\section*{Complete intersection of multidegrees $(1,2,1)$ in $\mathbb P^{1}\times \mathbb P^{2}\times \mathbb P^{2}$ (CKP-560) --- quantum multiplication}
 
-Enumeration: positive; 24 classes including zero.
+Curve enumeration: positive; 24 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -7783,7 +7436,6 @@ basis = ['1',
 12 & 10 & \fitmath{3}\\
 12 & 11 & \fitmath{2}\\
 \bottomrule\end{longtable}}
-Matrix time: 1.47 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3,\ y_3=5$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=-186213441025810861286370142628886338717479868389410401187862032}\end{center}
@@ -7816,8 +7468,8 @@ Factor 2: multiplicity 1; 12 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-566 --- geometry and Hodge diamond}\label{entry:CKP-566}
-\textbf{Selection:} ample.
+\clearpage\section*{Complete intersection of multidegrees $(1,3)$ in $\mathbb P^{1}\times \mathbb P^{4}$ (CKP-566) --- geometry and Hodge diamond}\label{entry:CKP-566}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 566; source record 104058; ambient polytope 1010.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $1$, $(-K_X)^4=112$, $e(X)=68$.
@@ -7845,14 +7497,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x1', 'x0', 'x1^2', 'x0*x1', 'x1^3', 'x0*x1^2', 'x1^4']
 \end{lstlisting}
 
-\clearpage\section*{CKP-566 --- computation record}
-\textbf{Status:} complete.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-566
-\end{lstlisting}
+\clearpage\section*{Complete intersection of multidegrees $(1,3)$ in $\mathbb P^{1}\times \mathbb P^{4}$ (CKP-566) --- quantum multiplication}
 
-Enumeration: positive; 11 classes including zero.
+Curve enumeration: positive; 11 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -7900,7 +7547,6 @@ basis = ['1', 'x1', 'x0', 'x1^2', 'x0*x1', 'x1^3', 'x0*x1^2', 'x1^4']
 7 & 5 & \fitmath{5}\\
 7 & 6 & \fitmath{6}\\
 \bottomrule\end{longtable}}
-Matrix time: 0.11 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=-1034476343271657}\end{center}
@@ -7928,8 +7574,8 @@ Factor 2: multiplicity 1; 5 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-567 --- geometry and Hodge diamond}\label{entry:CKP-567}
-\textbf{Selection:} nef\_literature.
+\clearpage\section*{Complete intersection of multidegrees $(0,3)$ in $\mathbb P^{1}\times \mathbb P^{4}$ (CKP-567) --- geometry and Hodge diamond}\label{entry:CKP-567}
+\textbf{Positivity:} nef defining divisors.
 CKP period ID 567; source record 104128; ambient polytope 1010.
 \textbf{Hodge source:} HLM-63, HLM Proposition 7.2, \href{https://arxiv.org/abs/1907.08000v3}{1907.08000v3}.
 The source family is identified by the saved exact Cox/GIT presentation certificate.
@@ -7958,14 +7604,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x1', 'x0', 'x1^2', 'x0*x1', 'x1^3', 'x0*x1^2', 'x0*x1^3']
 \end{lstlisting}
 
-\clearpage\section*{CKP-567 --- computation record}
-\textbf{Status:} complete\_with\_notes.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-567
-\end{lstlisting}
+\clearpage\section*{Complete intersection of multidegrees $(0,3)$ in $\mathbb P^{1}\times \mathbb P^{4}$ (CKP-567) --- quantum multiplication}
 
-Enumeration: positive; 6 classes including zero.
+Curve enumeration: positive; 6 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -7998,7 +7639,6 @@ basis = ['1', 'x1', 'x0', 'x1^2', 'x0*x1', 'x1^3', 'x0*x1^2', 'x0*x1^3']
 7 & 5 & \fitmath{2}\\
 7 & 6 & \fitmath{2}\\
 \bottomrule\end{longtable}}
-Matrix time: 0.01 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=2044788780929384448}\end{center}
@@ -8030,8 +7670,8 @@ Factor 2: multiplicity 1; 4 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-593 --- geometry and Hodge diamond}\label{entry:CKP-593}
-\textbf{Selection:} ample.
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{1}\times \mathbb P^{3}}(\mathcal O\oplus \mathcal O(0,1))$ by $\xi +H_{1}+2H_{2}$ (CKP-593) --- geometry and Hodge diamond}\label{entry:CKP-593}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 593; source record 109652; ambient polytope 1005.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $1$, $(-K_X)^4=103$, $e(X)=63$.
@@ -8072,14 +7712,9 @@ eval_y = {'y1': 2, 'y2': 3, 'y3': 5}
  'x0*x2^3']
 \end{lstlisting}
 
-\clearpage\section*{CKP-593 --- computation record}
-\textbf{Status:} complete\_with\_notes.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-593
-\end{lstlisting}
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{1}\times \mathbb P^{3}}(\mathcal O\oplus \mathcal O(0,1))$ by $\xi +H_{1}+2H_{2}$ (CKP-593) --- quantum multiplication}
 
-Enumeration: positive; 34 classes including zero.
+Curve enumeration: positive; 34 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -8207,7 +7842,6 @@ basis = ['1',
 11 & 9 & \fitmath{-3}\\
 11 & 10 & \fitmath{4}\\
 \bottomrule\end{longtable}}
-Matrix time: 3.31 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3,\ y_3=5$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=0}\end{center}
@@ -8243,8 +7877,8 @@ Factor 2: multiplicity 1; 8 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-594 --- geometry and Hodge diamond}\label{entry:CKP-594}
-\textbf{Selection:} ample.
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{2}\times \mathbb P^{2}}(\mathcal O\oplus \mathcal O(1,0))$ by $\xi +H_{1}+2H_{2}$ (CKP-594) --- geometry and Hodge diamond}\label{entry:CKP-594}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 594; source record 109710; ambient polytope 1000.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $1$, $(-K_X)^4=98$, $e(X)=55$.
@@ -8286,14 +7920,9 @@ eval_y = {'y1': 2, 'y2': 3, 'y3': 5}
  'x0*x2^2*x4']
 \end{lstlisting}
 
-\clearpage\section*{CKP-594 --- computation record}
-\textbf{Status:} complete\_with\_notes.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-594
-\end{lstlisting}
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{2}\times \mathbb P^{2}}(\mathcal O\oplus \mathcal O(1,0))$ by $\xi +H_{1}+2H_{2}$ (CKP-594) --- quantum multiplication}
 
-Enumeration: positive; 34 classes including zero.
+Curve enumeration: positive; 34 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -8431,7 +8060,6 @@ basis = ['1',
 12 & 10 & \fitmath{3}\\
 12 & 11 & \fitmath{2}\\
 \bottomrule\end{longtable}}
-Matrix time: 9.27 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3,\ y_3=5$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=0}\end{center}
@@ -8468,8 +8096,8 @@ Factor 2: multiplicity 1; 9 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-595 --- geometry and Hodge diamond}\label{entry:CKP-595}
-\textbf{Selection:} ample.
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{3}}(\mathcal O\oplus \mathcal O(1)^{2})$ by $2\xi +H$ (CKP-595) --- geometry and Hodge diamond}\label{entry:CKP-595}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 595; source record 109779; ambient polytope 995.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $1$, $(-K_X)^4=81$, $e(X)=101$.
@@ -8498,14 +8126,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x3', 'x0', 'x3^2', 'x0^2', 'x0*x3', 'x0^3', 'x0*x3^2', 'x0^3*x3']
 \end{lstlisting}
 
-\clearpage\section*{CKP-595 --- computation record}
-\textbf{Status:} complete\_with\_notes.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-595
-\end{lstlisting}
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{3}}(\mathcal O\oplus \mathcal O(1)^{2})$ by $2\xi +H$ (CKP-595) --- quantum multiplication}
 
-Enumeration: positive; 15 classes including zero.
+Curve enumeration: positive; 15 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -8567,7 +8190,6 @@ basis = ['1', 'x3', 'x0', 'x3^2', 'x0^2', 'x0*x3', 'x0^3', 'x0*x3^2', 'x0^3*x3']
 8 & 6 & \fitmath{1}\\
 8 & 7 & \fitmath{\frac{1}{2}}\\
 \bottomrule\end{longtable}}
-Matrix time: 3.42 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=0}\end{center}
@@ -8600,8 +8222,8 @@ Factor 2: multiplicity 1; 5 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-596 --- geometry and Hodge diamond}\label{entry:CKP-596}
-\textbf{Selection:} ample.
+\clearpage\section*{Complete intersection $(2,2,2)$ in $\mathbb P^{7}$ (CKP-596) --- geometry and Hodge diamond}\label{entry:CKP-596}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 596; source record 109780; ambient polytope 80891.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=7$, codimension $3$, index $2$, $(-K_X)^4=128$, $e(X)=48$.
@@ -8631,14 +8253,9 @@ eval_y = {'y1': 2}
 ['1', 'x0', 'x0^2', 'x0^3', 'x0^4']
 \end{lstlisting}
 
-\clearpage\section*{CKP-596 --- computation record}
-\textbf{Status:} complete.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-596
-\end{lstlisting}
+\clearpage\section*{Complete intersection $(2,2,2)$ in $\mathbb P^{7}$ (CKP-596) --- quantum multiplication}
 
-Enumeration: positive; 3 classes including zero.
+Curve enumeration: positive; 3 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -8659,7 +8276,6 @@ basis = ['1', 'x0', 'x0^2', 'x0^3', 'x0^4']
 3 & 4 & \fitmath{16 y_{1}}\\
 4 & 3 & \fitmath{2}\\
 \bottomrule\end{longtable}}
-Matrix time: 0.01 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=1024}\end{center}
@@ -8684,8 +8300,8 @@ Factor 2: multiplicity 1; 2 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-611 --- geometry and Hodge diamond}\label{entry:CKP-611}
-\textbf{Selection:} ample.
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{4}}(\mathcal O^{3}\oplus \mathcal O(1))$ by $\xi +H$, $\xi +H$, $\xi +H$ (CKP-611) --- geometry and Hodge diamond}\label{entry:CKP-611}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 611; source record 111311; ambient polytope 80889.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=7$, codimension $3$, index $1$, $(-K_X)^4=99$, $e(X)=51$.
@@ -8719,14 +8335,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x4', 'x0', 'x4^2', 'x0^2', 'x0*x4', 'x4^3', 'x0^3', 'x0^4']
 \end{lstlisting}
 
-\clearpage\section*{CKP-611 --- computation record}
-\textbf{Status:} complete\_with\_notes.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-611
-\end{lstlisting}
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{4}}(\mathcal O^{3}\oplus \mathcal O(1))$ by $\xi +H$, $\xi +H$, $\xi +H$ (CKP-611) --- quantum multiplication}
 
-Enumeration: positive; 17 classes including zero.
+Curve enumeration: positive; 17 classes including zero.
 Connectedness pruning reached its configuration limit; the finite candidate list was retained for localization.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
@@ -8795,7 +8406,6 @@ basis = ['1', 'x4', 'x0', 'x4^2', 'x0^2', 'x0*x4', 'x4^3', 'x0^3', 'x0^4']
 8 & 6 & \fitmath{16}\\
 8 & 7 & \fitmath{5}\\
 \bottomrule\end{longtable}}
-Matrix time: 153.79 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=0}\end{center}
@@ -8828,8 +8438,8 @@ Factor 2: multiplicity 1; 5 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-623 --- geometry and Hodge diamond}\label{entry:CKP-623}
-\textbf{Selection:} ample.
+\clearpage\section*{Complete intersection of multidegrees $(1,1,1)$, $(1,1,1)$ in $\mathbb P^{2}\times \mathbb P^{2}\times \mathbb P^{2}$ (CKP-623) --- geometry and Hodge diamond}\label{entry:CKP-623}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 623; source record 111728; ambient polytope 8631.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=6$, codimension $2$, index $1$, $(-K_X)^4=90$, $e(X)=45$.
@@ -8876,14 +8486,9 @@ eval_y = {'y1': 2, 'y2': 3, 'y3': 5}
  'x2^2*x4^2']
 \end{lstlisting}
 
-\clearpage\section*{CKP-623 --- computation record}
-\textbf{Status:} complete\_with\_notes.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-623
-\end{lstlisting}
+\clearpage\section*{Complete intersection of multidegrees $(1,1,1)$, $(1,1,1)$ in $\mathbb P^{2}\times \mathbb P^{2}\times \mathbb P^{2}$ (CKP-623) --- quantum multiplication}
 
-Enumeration: positive; 41 classes including zero.
+Curve enumeration: positive; 41 classes including zero.
 Connectedness pruning reached its configuration limit; the finite candidate list was retained for localization.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
@@ -9055,7 +8660,6 @@ basis = ['1',
 13 & 11 & \fitmath{3}\\
 13 & 12 & \fitmath{3}\\
 \bottomrule\end{longtable}}
-Matrix time: 123.17 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3,\ y_3=5$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=0}\end{center}
@@ -9093,8 +8697,8 @@ Factor 2: multiplicity 1; 9 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-628 --- geometry and Hodge diamond}\label{entry:CKP-628}
-\textbf{Selection:} ample.
+\clearpage\section*{Complete intersection of multidegrees $(1,1,1,1,1)$ in $\mathbb P^{1}\times \mathbb P^{1}\times \mathbb P^{1}\times \mathbb P^{1}\times \mathbb P^{1}$ (CKP-628) --- geometry and Hodge diamond}\label{entry:CKP-628}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 628; source record 111847; ambient polytope 1003.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $1$, $(-K_X)^4=120$, $e(X)=40$.
@@ -9152,14 +8756,9 @@ eval_y = {'y1': 2, 'y2': 3, 'y3': 5, 'y4': 7, 'y5': 11}
  'x1*x2*x3*x4']
 \end{lstlisting}
 
-\clearpage\section*{CKP-628 --- computation record}
-\textbf{Status:} complete\_with\_notes.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-628
-\end{lstlisting}
+\clearpage\section*{Complete intersection of multidegrees $(1,1,1,1,1)$ in $\mathbb P^{1}\times \mathbb P^{1}\times \mathbb P^{1}\times \mathbb P^{1}\times \mathbb P^{1}$ (CKP-628) --- quantum multiplication}
 
-Enumeration: positive; 127 classes including zero.
+Curve enumeration: positive; 127 classes including zero.
 Connectedness pruning reached its configuration limit; the finite candidate list was retained for localization.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
@@ -9543,7 +9142,6 @@ basis = ['1',
 21 & 19 & \fitmath{2}\\
 21 & 20 & \fitmath{2}\\
 \bottomrule\end{longtable}}
-Matrix time: 11.64 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3,\ y_3=5,\ y_4=7,\ y_5=11$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=0}\end{center}
@@ -9589,8 +9187,8 @@ Factor 2: multiplicity 1; 16 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-639 --- geometry and Hodge diamond}\label{entry:CKP-639}
-\textbf{Selection:} ample.
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{1}\times \mathbb P^{2}}(\mathcal O^{2}\oplus \mathcal O(0,1))$ by $2\xi +H_{1}+H_{2}$ (CKP-639) --- geometry and Hodge diamond}\label{entry:CKP-639}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 639; source record 113345; ambient polytope 999.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $1$, $(-K_X)^4=83$, $e(X)=72$.
@@ -9632,14 +9230,9 @@ eval_y = {'y1': 2, 'y2': 3, 'y3': 5}
  'x0*x2*x3^2']
 \end{lstlisting}
 
-\clearpage\section*{CKP-639 --- computation record}
-\textbf{Status:} complete\_with\_notes.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-639
-\end{lstlisting}
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{1}\times \mathbb P^{2}}(\mathcal O^{2}\oplus \mathcal O(0,1))$ by $2\xi +H_{1}+H_{2}$ (CKP-639) --- quantum multiplication}
 
-Enumeration: positive; 38 classes including zero.
+Curve enumeration: positive; 38 classes including zero.
 Connectedness pruning reached its configuration limit; the finite candidate list was retained for localization.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
@@ -9788,7 +9381,6 @@ basis = ['1',
 12 & 10 & \fitmath{\frac{5}{3}}\\
 12 & 11 & \fitmath{1}\\
 \bottomrule\end{longtable}}
-Matrix time: 16.99 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3,\ y_3=5$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=0}\end{center}
@@ -9825,8 +9417,8 @@ Factor 2: multiplicity 1; 9 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-640 --- geometry and Hodge diamond}\label{entry:CKP-640}
-\textbf{Selection:} ample.
+\clearpage\section*{Complete intersection $(2,3)$ in $\mathbb P^{6}$ (CKP-640) --- geometry and Hodge diamond}\label{entry:CKP-640}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 640; source record 113356; ambient polytope 8635.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=6$, codimension $2$, index $2$, $(-K_X)^4=96$, $e(X)=90$.
@@ -9854,14 +9446,9 @@ eval_y = {'y1': 2}
 ['1', 'x0', 'x0^2', 'x0^3', 'x0^4']
 \end{lstlisting}
 
-\clearpage\section*{CKP-640 --- computation record}
-\textbf{Status:} complete.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-640
-\end{lstlisting}
+\clearpage\section*{Complete intersection $(2,3)$ in $\mathbb P^{6}$ (CKP-640) --- quantum multiplication}
 
-Enumeration: positive; 3 classes including zero.
+Curve enumeration: positive; 3 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -9882,7 +9469,6 @@ basis = ['1', 'x0', 'x0^2', 'x0^3', 'x0^4']
 3 & 4 & \fitmath{24 y_{1}}\\
 4 & 3 & \fitmath{2}\\
 \bottomrule\end{longtable}}
-Matrix time: 0.01 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=1024}\end{center}
@@ -9907,8 +9493,8 @@ Factor 2: multiplicity 1; 2 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-645 --- geometry and Hodge diamond}\label{entry:CKP-645}
-\textbf{Selection:} ample.
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{4}}(\mathcal O^{2}\oplus \mathcal O(1))$ by $\xi +H$, $\xi +2H$ (CKP-645) --- geometry and Hodge diamond}\label{entry:CKP-645}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 645; source record 113495; ambient polytope 8632.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=6$, codimension $2$, index $1$, $(-K_X)^4=83$, $e(X)=77$.
@@ -9938,14 +9524,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x1', 'x0', 'x1^2', 'x0^2', 'x0*x1', 'x1^3', 'x0^3', 'x1^4']
 \end{lstlisting}
 
-\clearpage\section*{CKP-645 --- computation record}
-\textbf{Status:} complete\_with\_notes.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-645
-\end{lstlisting}
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{4}}(\mathcal O^{2}\oplus \mathcal O(1))$ by $\xi +H$, $\xi +2H$ (CKP-645) --- quantum multiplication}
 
-Enumeration: positive; 17 classes including zero.
+Curve enumeration: positive; 17 classes including zero.
 Connectedness pruning reached its configuration limit; the finite candidate list was retained for localization.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
@@ -10014,7 +9595,6 @@ basis = ['1', 'x1', 'x0', 'x1^2', 'x0^2', 'x0*x1', 'x1^3', 'x0^3', 'x1^4']
 8 & 6 & \fitmath{\frac{1}{3}}\\
 8 & 7 & \fitmath{4}\\
 \bottomrule\end{longtable}}
-Matrix time: 32.98 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=0}\end{center}
@@ -10047,8 +9627,8 @@ Factor 2: multiplicity 1; 5 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-656 --- geometry and Hodge diamond}\label{entry:CKP-656}
-\textbf{Selection:} ample.
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{3}}(\mathcal O^{3}\oplus \mathcal O(1))$ by $\xi +H$, $2\xi +H$ (CKP-656) --- geometry and Hodge diamond}\label{entry:CKP-656}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 656; source record 113930; ambient polytope 8630.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=6$, codimension $2$, index $1$, $(-K_X)^4=68$, $e(X)=93$.
@@ -10078,14 +9658,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x3', 'x0', 'x3^2', 'x0^2', 'x0*x3', 'x3^3', 'x0^3', 'x0*x3^3']
 \end{lstlisting}
 
-\clearpage\section*{CKP-656 --- computation record}
-\textbf{Status:} complete\_with\_notes.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-656
-\end{lstlisting}
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{3}}(\mathcal O^{3}\oplus \mathcal O(1))$ by $\xi +H$, $2\xi +H$ (CKP-656) --- quantum multiplication}
 
-Enumeration: positive; 17 classes including zero.
+Curve enumeration: positive; 17 classes including zero.
 Connectedness pruning reached its configuration limit; the finite candidate list was retained for localization.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
@@ -10155,7 +9730,6 @@ basis = ['1', 'x3', 'x0', 'x3^2', 'x0^2', 'x0*x3', 'x3^3', 'x0^3', 'x0*x3^3']
 8 & 6 & \fitmath{2}\\
 8 & 7 & \fitmath{\frac{1}{3}}\\
 \bottomrule\end{longtable}}
-Matrix time: 53.49 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=0}\end{center}
@@ -10188,8 +9762,8 @@ Factor 2: multiplicity 1; 5 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-665 --- geometry and Hodge diamond}\label{entry:CKP-665}
-\textbf{Selection:} ample.
+\clearpage\section*{Complete intersection of multidegrees $(1,1)$, $(1,1)$, $(1,1)$, $(1,1)$ in $\mathbb P^{4}\times \mathbb P^{4}$ (CKP-665) --- geometry and Hodge diamond}\label{entry:CKP-665}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 665; source record 114094; ambient polytope 830782.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=8$, codimension $4$, index $1$, $(-K_X)^4=70$, $e(X)=60$.
@@ -10227,14 +9801,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x4', 'x0', 'x4^2', 'x0^2', 'x0*x4', 'x4^3', 'x0^3', 'x4^4']
 \end{lstlisting}
 
-\clearpage\section*{CKP-665 --- computation record}
-\textbf{Status:} complete\_with\_notes.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-665
-\end{lstlisting}
+\clearpage\section*{Complete intersection of multidegrees $(1,1)$, $(1,1)$, $(1,1)$, $(1,1)$ in $\mathbb P^{4}\times \mathbb P^{4}$ (CKP-665) --- quantum multiplication}
 
-Enumeration: positive; 19 classes including zero.
+Curve enumeration: positive; 19 classes including zero.
 Connectedness pruning reached its configuration limit; the finite candidate list was retained for localization.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
@@ -10306,7 +9875,6 @@ basis = ['1', 'x4', 'x0', 'x4^2', 'x0^2', 'x0*x4', 'x4^3', 'x0^3', 'x4^4']
 8 & 6 & \fitmath{5}\\
 8 & 7 & \fitmath{5}\\
 \bottomrule\end{longtable}}
-Matrix time: 689.55 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=0}\end{center}
@@ -10339,8 +9907,8 @@ Factor 2: multiplicity 1; 5 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-667 --- geometry and Hodge diamond}\label{entry:CKP-667}
-\textbf{Selection:} ample.
+\clearpage\section*{Complete intersection of multidegrees $(1,1,1,2)$ in $\mathbb P^{1}\times \mathbb P^{1}\times \mathbb P^{1}\times \mathbb P^{2}$ (CKP-667) --- geometry and Hodge diamond}\label{entry:CKP-667}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 667; source record 114096; ambient polytope 1004.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $1$, $(-K_X)^4=84$, $e(X)=58$.
@@ -10389,14 +9957,9 @@ eval_y = {'y1': 2, 'y2': 3, 'y3': 5, 'y4': 7}
  'x1*x2*x3^2']
 \end{lstlisting}
 
-\clearpage\section*{CKP-667 --- computation record}
-\textbf{Status:} complete\_with\_notes.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-667
-\end{lstlisting}
+\clearpage\section*{Complete intersection of multidegrees $(1,1,1,2)$ in $\mathbb P^{1}\times \mathbb P^{1}\times \mathbb P^{1}\times \mathbb P^{2}$ (CKP-667) --- quantum multiplication}
 
-Enumeration: positive; 74 classes including zero.
+Curve enumeration: positive; 74 classes including zero.
 Connectedness pruning reached its configuration limit; the finite candidate list was retained for localization.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
@@ -10646,7 +10209,6 @@ basis = ['1',
 16 & 14 & \fitmath{2}\\
 16 & 15 & \fitmath{3}\\
 \bottomrule\end{longtable}}
-Matrix time: 18.65 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3,\ y_3=5,\ y_4=7$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=0}\end{center}
@@ -10687,8 +10249,8 @@ Factor 2: multiplicity 1; 12 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-681 --- geometry and Hodge diamond}\label{entry:CKP-681}
-\textbf{Selection:} ample.
+\clearpage\section*{Complete intersection of multidegrees $(1,1)$, $(1,1)$, $(1,2)$ in $\mathbb P^{3}\times \mathbb P^{4}$ (CKP-681) --- geometry and Hodge diamond}\label{entry:CKP-681}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 681; source record 114635; ambient polytope 80890.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=7$, codimension $3$, index $1$, $(-K_X)^4=55$, $e(X)=85$.
@@ -10722,14 +10284,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x3', 'x0', 'x3^2', 'x0^2', 'x0*x3', 'x3^3', 'x0^3', 'x3^4']
 \end{lstlisting}
 
-\clearpage\section*{CKP-681 --- computation record}
-\textbf{Status:} complete\_with\_notes.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-681
-\end{lstlisting}
+\clearpage\section*{Complete intersection of multidegrees $(1,1)$, $(1,1)$, $(1,2)$ in $\mathbb P^{3}\times \mathbb P^{4}$ (CKP-681) --- quantum multiplication}
 
-Enumeration: positive; 19 classes including zero.
+Curve enumeration: positive; 19 classes including zero.
 Connectedness pruning reached its configuration limit; the finite candidate list was retained for localization.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
@@ -10800,7 +10357,6 @@ basis = ['1', 'x3', 'x0', 'x3^2', 'x0^2', 'x0*x3', 'x3^3', 'x0^3', 'x3^4']
 8 & 6 & \fitmath{5}\\
 8 & 7 & \fitmath{2}\\
 \bottomrule\end{longtable}}
-Matrix time: 312.37 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=0}\end{center}
@@ -10833,8 +10389,8 @@ Factor 2: multiplicity 1; 5 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-682 --- geometry and Hodge diamond}\label{entry:CKP-682}
-\textbf{Selection:} ample.
+\clearpage\section*{Quartic fourfold in $\mathbb P^{5}$ (CKP-682) --- geometry and Hodge diamond}\label{entry:CKP-682}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 682; source record 114640; ambient polytope 1013.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $2$, $(-K_X)^4=64$, $e(X)=188$.
@@ -10862,14 +10418,9 @@ eval_y = {'y1': 2}
 ['1', 'x0', 'x0^2', 'x0^3', 'x0^4']
 \end{lstlisting}
 
-\clearpage\section*{CKP-682 --- computation record}
-\textbf{Status:} complete.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-682
-\end{lstlisting}
+\clearpage\section*{Quartic fourfold in $\mathbb P^{5}$ (CKP-682) --- quantum multiplication}
 
-Enumeration: positive; 3 classes including zero.
+Curve enumeration: positive; 3 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -10890,7 +10441,6 @@ basis = ['1', 'x0', 'x0^2', 'x0^3', 'x0^4']
 3 & 4 & \fitmath{48 y_{1}}\\
 4 & 3 & \fitmath{2}\\
 \bottomrule\end{longtable}}
-Matrix time: 0.00 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=1024}\end{center}
@@ -10915,8 +10465,8 @@ Factor 2: multiplicity 1; 2 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-683 --- geometry and Hodge diamond}\label{entry:CKP-683}
-\textbf{Selection:} ample.
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{4}}(\mathcal O\oplus \mathcal O(1))$ by $\xi +3H$ (CKP-683) --- geometry and Hodge diamond}\label{entry:CKP-683}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 683; source record 114665; ambient polytope 1009.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $1$, $(-K_X)^4=61$, $e(X)=149$.
@@ -10944,14 +10494,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x1', 'x0', 'x1^2', 'x0*x1', 'x1^3', 'x0^2*x1', 'x1^4']
 \end{lstlisting}
 
-\clearpage\section*{CKP-683 --- computation record}
-\textbf{Status:} complete.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-683
-\end{lstlisting}
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{4}}(\mathcal O\oplus \mathcal O(1))$ by $\xi +3H$ (CKP-683) --- quantum multiplication}
 
-Enumeration: positive; 15 classes including zero.
+Curve enumeration: positive; 15 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -11005,7 +10550,6 @@ basis = ['1', 'x1', 'x0', 'x1^2', 'x0*x1', 'x1^3', 'x0^2*x1', 'x1^4']
 7 & 5 & \fitmath{5}\\
 7 & 6 & \fitmath{-3}\\
 \bottomrule\end{longtable}}
-Matrix time: 1.13 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=-1230087740277123000}\end{center}
@@ -11033,8 +10577,8 @@ Factor 2: multiplicity 1; 5 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-685 --- geometry and Hodge diamond}\label{entry:CKP-685}
-\textbf{Selection:} ample.
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{3}}(\mathcal O^{2}\oplus \mathcal O(1))$ by $2\xi +2H$ (CKP-685) --- geometry and Hodge diamond}\label{entry:CKP-685}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 685; source record 114765; ambient polytope 1011.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $1$, $(-K_X)^4=52$, $e(X)=168$.
@@ -11063,14 +10607,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x3', 'x0', 'x3^2', 'x0^2', 'x0*x3', 'x0^3', 'x0*x3^2', 'x0^3*x3']
 \end{lstlisting}
 
-\clearpage\section*{CKP-685 --- computation record}
-\textbf{Status:} complete\_with\_notes.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-685
-\end{lstlisting}
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{3}}(\mathcal O^{2}\oplus \mathcal O(1))$ by $2\xi +2H$ (CKP-685) --- quantum multiplication}
 
-Enumeration: positive; 15 classes including zero.
+Curve enumeration: positive; 15 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -11140,7 +10679,6 @@ basis = ['1', 'x3', 'x0', 'x3^2', 'x0^2', 'x0*x3', 'x0^3', 'x0*x3^2', 'x0^3*x3']
 8 & 6 & \fitmath{1}\\
 8 & 7 & \fitmath{4}\\
 \bottomrule\end{longtable}}
-Matrix time: 6.51 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=0}\end{center}
@@ -11173,8 +10711,8 @@ Factor 2: multiplicity 1; 4 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-688 --- geometry and Hodge diamond}\label{entry:CKP-688}
-\textbf{Selection:} nef\_literature.
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{2}}(\mathcal O^{3}\oplus \mathcal O(1))$ by $3\xi $ (CKP-688) --- geometry and Hodge diamond}\label{entry:CKP-688}
+\textbf{Positivity:} nef defining divisors.
 CKP period ID 688; source record 114883; ambient polytope 1002.
 \textbf{Hodge source:} HLM-41, HLM Proposition 7.2, \href{https://arxiv.org/abs/1907.08000v3}{1907.08000v3}.
 The source family is identified by the saved exact Cox/GIT presentation certificate.
@@ -11204,14 +10742,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x2', 'x0', 'x2^2', 'x0^2', 'x0*x2', 'x2^3', 'x0^2*x2', 'x0*x2^3']
 \end{lstlisting}
 
-\clearpage\section*{CKP-688 --- computation record}
-\textbf{Status:} complete\_with\_notes.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-688
-\end{lstlisting}
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{2}}(\mathcal O^{3}\oplus \mathcal O(1))$ by $3\xi $ (CKP-688) --- quantum multiplication}
 
-Enumeration: positive; 9 classes including zero.
+Curve enumeration: positive; 9 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -11267,7 +10800,6 @@ basis = ['1', 'x2', 'x0', 'x2^2', 'x0^2', 'x0*x2', 'x2^3', 'x0^2*x2', 'x0*x2^3']
 8 & 6 & \fitmath{3}\\
 8 & 7 & \fitmath{1}\\
 \bottomrule\end{longtable}}
-Matrix time: 1.27 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=0}\end{center}
@@ -11305,8 +10837,8 @@ Factor 3: multiplicity 1; 3 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-691 --- geometry and Hodge diamond}\label{entry:CKP-691}
-\textbf{Selection:} nef\_literature.
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{2}}(\mathcal O^{3}\oplus \mathcal O(2))$ by $3\xi $ (CKP-691) --- geometry and Hodge diamond}\label{entry:CKP-691}
+\textbf{Positivity:} nef defining divisors.
 CKP period ID 691; source record 114959; ambient polytope 354.
 \textbf{Hodge source:} HLM-43, HLM Proposition 7.2, \href{https://arxiv.org/abs/1907.08000v3}{1907.08000v3}.
 The source family is identified by the saved exact Cox/GIT presentation certificate.
@@ -11336,14 +10868,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x2', 'x0', 'x2^2', 'x0^2', 'x0*x2', 'x2^3', 'x0^2*x2', 'x0*x2^3']
 \end{lstlisting}
 
-\clearpage\section*{CKP-691 --- computation record}
-\textbf{Status:} complete\_with\_notes.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-691
-\end{lstlisting}
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{2}}(\mathcal O^{3}\oplus \mathcal O(2))$ by $3\xi $ (CKP-691) --- quantum multiplication}
 
-Enumeration: positive; 14 classes including zero.
+Curve enumeration: positive; 14 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -11410,7 +10937,6 @@ basis = ['1', 'x2', 'x0', 'x2^2', 'x0^2', 'x0*x2', 'x2^3', 'x0^2*x2', 'x0*x2^3']
 8 & 6 & \fitmath{3}\\
 8 & 7 & \fitmath{\frac{1}{2}}\\
 \bottomrule\end{longtable}}
-Matrix time: 0.02 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=0}\end{center}
@@ -11452,8 +10978,8 @@ Factor 3: multiplicity 1; 3 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-694 --- geometry and Hodge diamond}\label{entry:CKP-694}
-\textbf{Selection:} ample.
+\clearpage\section*{Complete intersection of multidegrees $(1,3)$ in $\mathbb P^{2}\times \mathbb P^{3}$ (CKP-694) --- geometry and Hodge diamond}\label{entry:CKP-694}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 694; source record 115105; ambient polytope 1012.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $1$, $(-K_X)^4=80$, $e(X)=35$.
@@ -11482,14 +11008,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x2', 'x0', 'x2^2', 'x0^2', 'x0*x2', 'x2^3', 'x0*x2^2', 'x0*x2^3']
 \end{lstlisting}
 
-\clearpage\section*{CKP-694 --- computation record}
-\textbf{Status:} complete.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-694
-\end{lstlisting}
+\clearpage\section*{Complete intersection of multidegrees $(1,3)$ in $\mathbb P^{2}\times \mathbb P^{3}$ (CKP-694) --- quantum multiplication}
 
-Enumeration: positive; 11 classes including zero.
+Curve enumeration: positive; 11 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -11553,7 +11074,6 @@ basis = ['1', 'x2', 'x0', 'x2^2', 'x0^2', 'x0*x2', 'x2^3', 'x0*x2^2', 'x0*x2^3']
 8 & 6 & \fitmath{2}\\
 8 & 7 & \fitmath{7}\\
 \bottomrule\end{longtable}}
-Matrix time: 1.04 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=979925902155125617568683867200}\end{center}
@@ -11582,8 +11102,8 @@ Factor 2: multiplicity 1; 8 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-698 --- geometry and Hodge diamond}\label{entry:CKP-698}
-\textbf{Selection:} ample.
+\clearpage\section*{Complete intersection of multidegrees $(1,2,2)$ in $\mathbb P^{1}\times \mathbb P^{2}\times \mathbb P^{2}$ (CKP-698) --- geometry and Hodge diamond}\label{entry:CKP-698}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 698; source record 115644; ambient polytope 1007.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $1$, $(-K_X)^4=54$, $e(X)=105$.
@@ -11625,14 +11145,9 @@ eval_y = {'y1': 2, 'y2': 3, 'y3': 5}
  'x1^2*x3^2']
 \end{lstlisting}
 
-\clearpage\section*{CKP-698 --- computation record}
-\textbf{Status:} complete\_with\_notes.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-698
-\end{lstlisting}
+\clearpage\section*{Complete intersection of multidegrees $(1,2,2)$ in $\mathbb P^{1}\times \mathbb P^{2}\times \mathbb P^{2}$ (CKP-698) --- quantum multiplication}
 
-Enumeration: positive; 41 classes including zero.
+Curve enumeration: positive; 41 classes including zero.
 Connectedness pruning reached its configuration limit; the finite candidate list was retained for localization.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
@@ -11784,7 +11299,6 @@ basis = ['1',
 12 & 10 & \fitmath{3}\\
 12 & 11 & \fitmath{2}\\
 \bottomrule\end{longtable}}
-Matrix time: 32.63 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3,\ y_3=5$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=0}\end{center}
@@ -11821,8 +11335,8 @@ Factor 2: multiplicity 1; 9 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-702 --- geometry and Hodge diamond}\label{entry:CKP-702}
-\textbf{Selection:} nef\_literature.
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{2}}(\mathcal O^{2}\oplus \mathcal O(1)^{2})$ by $3\xi $ (CKP-702) --- geometry and Hodge diamond}\label{entry:CKP-702}
+\textbf{Positivity:} nef defining divisors.
 CKP period ID 702; source record 115809; ambient polytope 623.
 \textbf{Hodge source:} HLM-23, HLM Proposition 7.2, \href{https://arxiv.org/abs/1907.08000v3}{1907.08000v3}.
 The source family is identified by the saved exact Cox/GIT presentation certificate.
@@ -11852,14 +11366,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x2', 'x0', 'x2^2', 'x0^2', 'x0*x2', 'x2^3', 'x0*x2^2', 'x0*x2^3']
 \end{lstlisting}
 
-\clearpage\section*{CKP-702 --- computation record}
-\textbf{Status:} complete\_with\_notes.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-702
-\end{lstlisting}
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{2}}(\mathcal O^{2}\oplus \mathcal O(1)^{2})$ by $3\xi $ (CKP-702) --- quantum multiplication}
 
-Enumeration: positive; 15 classes including zero.
+Curve enumeration: positive; 15 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -11927,7 +11436,6 @@ basis = ['1', 'x2', 'x0', 'x2^2', 'x0^2', 'x0*x2', 'x2^3', 'x0*x2^2', 'x0*x2^3']
 8 & 6 & \fitmath{\frac{5}{2}}\\
 8 & 7 & \fitmath{\frac{3}{2}}\\
 \bottomrule\end{longtable}}
-Matrix time: 0.02 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=0}\end{center}
@@ -11965,8 +11473,8 @@ Factor 3: multiplicity 1; 4 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-705 --- geometry and Hodge diamond}\label{entry:CKP-705}
-\textbf{Selection:} ample.
+\clearpage\section*{Complete intersection of multidegrees $(2,1)$, $(1,2)$ in $\mathbb P^{3}\times \mathbb P^{3}$ (CKP-705) --- geometry and Hodge diamond}\label{entry:CKP-705}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 705; source record 116070; ambient polytope 8634.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=6$, codimension $2$, index $1$, $(-K_X)^4=46$, $e(X)=93$.
@@ -11996,14 +11504,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x3', 'x0', 'x3^2', 'x0^2', 'x0*x3', 'x3^3', 'x0^3', 'x0*x3^3']
 \end{lstlisting}
 
-\clearpage\section*{CKP-705 --- computation record}
-\textbf{Status:} complete\_with\_notes.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-705
-\end{lstlisting}
+\clearpage\section*{Complete intersection of multidegrees $(2,1)$, $(1,2)$ in $\mathbb P^{3}\times \mathbb P^{3}$ (CKP-705) --- quantum multiplication}
 
-Enumeration: positive; 19 classes including zero.
+Curve enumeration: positive; 19 classes including zero.
 Connectedness pruning reached its configuration limit; the finite candidate list was retained for localization.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
@@ -12072,7 +11575,6 @@ basis = ['1', 'x3', 'x0', 'x3^2', 'x0^2', 'x0*x3', 'x3^3', 'x0^3', 'x0*x3^3']
 8 & 6 & \fitmath{1}\\
 8 & 7 & \fitmath{1}\\
 \bottomrule\end{longtable}}
-Matrix time: 97.97 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=0}\end{center}
@@ -12105,8 +11607,8 @@ Factor 2: multiplicity 1; 5 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-711 --- geometry and Hodge diamond}\label{entry:CKP-711}
-\textbf{Selection:} ample.
+\clearpage\section*{Complete intersection of multidegrees $(1,2)$, $(1,2)$ in $\mathbb P^{2}\times \mathbb P^{4}$ (CKP-711) --- geometry and Hodge diamond}\label{entry:CKP-711}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 711; source record 116222; ambient polytope 8633.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=6$, codimension $2$, index $1$, $(-K_X)^4=41$, $e(X)=109$.
@@ -12136,14 +11638,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x2', 'x0', 'x2^2', 'x0^2', 'x0*x2', 'x2^3', 'x0*x2^2', 'x2^4']
 \end{lstlisting}
 
-\clearpage\section*{CKP-711 --- computation record}
-\textbf{Status:} complete\_with\_notes.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-711
-\end{lstlisting}
+\clearpage\section*{Complete intersection of multidegrees $(1,2)$, $(1,2)$ in $\mathbb P^{2}\times \mathbb P^{4}$ (CKP-711) --- quantum multiplication}
 
-Enumeration: positive; 19 classes including zero.
+Curve enumeration: positive; 19 classes including zero.
 Connectedness pruning reached its configuration limit; the finite candidate list was retained for localization.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
@@ -12215,7 +11712,6 @@ basis = ['1', 'x2', 'x0', 'x2^2', 'x0^2', 'x0*x2', 'x2^3', 'x0*x2^2', 'x2^4']
 8 & 6 & \fitmath{5}\\
 8 & 7 & \fitmath{8}\\
 \bottomrule\end{longtable}}
-Matrix time: 89.17 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=0}\end{center}
@@ -12248,8 +11744,8 @@ Factor 2: multiplicity 1; 5 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-715 --- geometry and Hodge diamond}\label{entry:CKP-715}
-\textbf{Selection:} ample.
+\clearpage\section*{Complete intersection of multidegrees $(1,1)$, $(2,2)$ in $\mathbb P^{3}\times \mathbb P^{3}$ (CKP-715) --- geometry and Hodge diamond}\label{entry:CKP-715}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 715; source record 116589; ambient polytope 8634.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=6$, codimension $2$, index $1$, $(-K_X)^4=40$, $e(X)=152$.
@@ -12279,14 +11775,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x3', 'x0', 'x3^2', 'x0^2', 'x0*x3', 'x3^3', 'x0^3', 'x0*x3^3']
 \end{lstlisting}
 
-\clearpage\section*{CKP-715 --- computation record}
-\textbf{Status:} complete\_with\_notes.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-715
-\end{lstlisting}
+\clearpage\section*{Complete intersection of multidegrees $(1,1)$, $(2,2)$ in $\mathbb P^{3}\times \mathbb P^{3}$ (CKP-715) --- quantum multiplication}
 
-Enumeration: positive; 19 classes including zero.
+Curve enumeration: positive; 19 classes including zero.
 Connectedness pruning reached its configuration limit; the finite candidate list was retained for localization.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
@@ -12355,7 +11846,6 @@ basis = ['1', 'x3', 'x0', 'x3^2', 'x0^2', 'x0*x3', 'x3^3', 'x0^3', 'x0*x3^3']
 8 & 6 & \fitmath{1}\\
 8 & 7 & \fitmath{1}\\
 \bottomrule\end{longtable}}
-Matrix time: 96.24 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=0}\end{center}
@@ -12388,8 +11878,8 @@ Factor 2: multiplicity 1; 4 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-718 --- geometry and Hodge diamond}\label{entry:CKP-718}
-\textbf{Selection:} ample.
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{2}}(\mathcal O^{3}\oplus \mathcal O(1))$ by $3\xi +H$ (CKP-718) --- geometry and Hodge diamond}\label{entry:CKP-718}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 718; source record 116705; ambient polytope 1002.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $1$, $(-K_X)^4=38$, $e(X)=191$.
@@ -12418,14 +11908,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x2', 'x0', 'x2^2', 'x0^2', 'x0*x2', 'x2^3', 'x0*x2^2', 'x0*x2^3']
 \end{lstlisting}
 
-\clearpage\section*{CKP-718 --- computation record}
-\textbf{Status:} complete\_with\_notes.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-718
-\end{lstlisting}
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{2}}(\mathcal O^{3}\oplus \mathcal O(1))$ by $3\xi +H$ (CKP-718) --- quantum multiplication}
 
-Enumeration: positive; 17 classes including zero.
+Curve enumeration: positive; 17 classes including zero.
 Connectedness pruning reached its configuration limit; the finite candidate list was retained for localization.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
@@ -12497,7 +11982,6 @@ basis = ['1', 'x2', 'x0', 'x2^2', 'x0^2', 'x0*x2', 'x2^3', 'x0*x2^2', 'x0*x2^3']
 8 & 6 & \fitmath{2}\\
 8 & 7 & \fitmath{\frac{7}{4}}\\
 \bottomrule\end{longtable}}
-Matrix time: 22.28 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=0}\end{center}
@@ -12530,8 +12014,8 @@ Factor 2: multiplicity 1; 5 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-721 --- geometry and Hodge diamond}\label{entry:CKP-721}
-\textbf{Selection:} ample.
+\clearpage\section*{Complete intersection of multidegrees $(1,1,3)$ in $\mathbb P^{1}\times \mathbb P^{1}\times \mathbb P^{3}$ (CKP-721) --- geometry and Hodge diamond}\label{entry:CKP-721}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 721; source record 116751; ambient polytope 1006.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $1$, $(-K_X)^4=44$, $e(X)=116$.
@@ -12572,14 +12056,9 @@ eval_y = {'y1': 2, 'y2': 3, 'y3': 5}
  'x1*x2^3']
 \end{lstlisting}
 
-\clearpage\section*{CKP-721 --- computation record}
-\textbf{Status:} complete\_with\_notes.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-721
-\end{lstlisting}
+\clearpage\section*{Complete intersection of multidegrees $(1,1,3)$ in $\mathbb P^{1}\times \mathbb P^{1}\times \mathbb P^{3}$ (CKP-721) --- quantum multiplication}
 
-Enumeration: positive; 41 classes including zero.
+Curve enumeration: positive; 41 classes including zero.
 Connectedness pruning reached its configuration limit; the finite candidate list was retained for localization.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
@@ -12713,7 +12192,6 @@ basis = ['1',
 11 & 9 & \fitmath{4}\\
 11 & 10 & \fitmath{4}\\
 \bottomrule\end{longtable}}
-Matrix time: 21.95 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3,\ y_3=5$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=0}\end{center}
@@ -12749,8 +12227,8 @@ Factor 2: multiplicity 1; 8 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-722 --- geometry and Hodge diamond}\label{entry:CKP-722}
-\textbf{Selection:} ample.
+\clearpage\section*{Complete intersection of multidegrees $(1,1)$, $(1,3)$ in $\mathbb P^{2}\times \mathbb P^{4}$ (CKP-722) --- geometry and Hodge diamond}\label{entry:CKP-722}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 722; source record 116846; ambient polytope 8633.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=6$, codimension $2$, index $1$, $(-K_X)^4=35$, $e(X)=155$.
@@ -12780,14 +12258,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x2', 'x0', 'x2^2', 'x0^2', 'x0*x2', 'x2^3', 'x0*x2^2', 'x2^4']
 \end{lstlisting}
 
-\clearpage\section*{CKP-722 --- computation record}
-\textbf{Status:} complete\_with\_notes.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-722
-\end{lstlisting}
+\clearpage\section*{Complete intersection of multidegrees $(1,1)$, $(1,3)$ in $\mathbb P^{2}\times \mathbb P^{4}$ (CKP-722) --- quantum multiplication}
 
-Enumeration: positive; 19 classes including zero.
+Curve enumeration: positive; 19 classes including zero.
 Connectedness pruning reached its configuration limit; the finite candidate list was retained for localization.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
@@ -12859,7 +12332,6 @@ basis = ['1', 'x2', 'x0', 'x2^2', 'x0^2', 'x0*x2', 'x2^3', 'x0*x2^2', 'x2^4']
 8 & 6 & \fitmath{5}\\
 8 & 7 & \fitmath{7}\\
 \bottomrule\end{longtable}}
-Matrix time: 87.06 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=0}\end{center}
@@ -12892,8 +12364,8 @@ Factor 2: multiplicity 1; 5 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-726 --- geometry and Hodge diamond}\label{entry:CKP-726}
-\textbf{Selection:} ample.
+\clearpage\section*{Complete intersection of multidegrees $(2,3)$ in $\mathbb P^{2}\times \mathbb P^{3}$ (CKP-726) --- geometry and Hodge diamond}\label{entry:CKP-726}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 726; source record 116865; ambient polytope 1012.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $1$, $(-K_X)^4=26$, $e(X)=251$.
@@ -12922,14 +12394,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x2', 'x0', 'x2^2', 'x0^2', 'x0*x2', 'x2^3', 'x0*x2^2', 'x0*x2^3']
 \end{lstlisting}
 
-\clearpage\section*{CKP-726 --- computation record}
-\textbf{Status:} complete\_with\_notes.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-726
-\end{lstlisting}
+\clearpage\section*{Complete intersection of multidegrees $(2,3)$ in $\mathbb P^{2}\times \mathbb P^{3}$ (CKP-726) --- quantum multiplication}
 
-Enumeration: positive; 19 classes including zero.
+Curve enumeration: positive; 19 classes including zero.
 Connectedness pruning reached its configuration limit; the finite candidate list was retained for localization.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
@@ -13001,7 +12468,6 @@ basis = ['1', 'x2', 'x0', 'x2^2', 'x0^2', 'x0*x2', 'x2^3', 'x0*x2^2', 'x0*x2^3']
 8 & 6 & \fitmath{1}\\
 8 & 7 & \fitmath{\frac{5}{2}}\\
 \bottomrule\end{longtable}}
-Matrix time: 32.91 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=0}\end{center}
@@ -13034,8 +12500,8 @@ Factor 2: multiplicity 1; 4 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-731 --- geometry and Hodge diamond}\label{entry:CKP-731}
-\textbf{Selection:} ample.
+\clearpage\section*{Complete intersection $(2,2,2,2)$ in $\mathbb P^{8}$ (CKP-731) --- geometry and Hodge diamond}\label{entry:CKP-731}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 731; source record 116975; ambient polytope 830783.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=8$, codimension $4$, index $1$, $(-K_X)^4=16$, $e(X)=224$.
@@ -13066,14 +12532,9 @@ eval_y = {'y1': 2}
 ['1', 'x0', 'x0^2', 'x0^3', 'x0^4']
 \end{lstlisting}
 
-\clearpage\section*{CKP-731 --- computation record}
-\textbf{Status:} complete.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-731
-\end{lstlisting}
+\clearpage\section*{Complete intersection $(2,2,2,2)$ in $\mathbb P^{8}$ (CKP-731) --- quantum multiplication}
 
-Enumeration: positive; 6 classes including zero.
+Curve enumeration: positive; 6 classes including zero.
 Connectedness pruning reached its configuration limit; the finite candidate list was retained for localization.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
@@ -13102,7 +12563,6 @@ basis = ['1', 'x0', 'x0^2', 'x0^3', 'x0^4']
 3 & 4 & \fitmath{2080 y_{1}^{2}}\\
 4 & 3 & \fitmath{1}\\
 \bottomrule\end{longtable}}
-Matrix time: 423.23 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=1}\end{center}
@@ -13127,8 +12587,8 @@ Factor 2: multiplicity 1; 1 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-733 --- geometry and Hodge diamond}\label{entry:CKP-733}
-\textbf{Selection:} nef\_literature.
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{1}}(\mathcal O^{4}\oplus \mathcal O(1))$ by $4\xi $ (CKP-733) --- geometry and Hodge diamond}\label{entry:CKP-733}
+\textbf{Positivity:} nef defining divisors.
 CKP period ID 733; source record 117104; ambient polytope 989.
 \textbf{Hodge source:} HLM-36, HLM Proposition 7.2, \href{https://arxiv.org/abs/1907.08000v3}{1907.08000v3}.
 The source family is identified by the saved exact Cox/GIT presentation certificate.
@@ -13157,14 +12617,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x1', 'x0', 'x1^2', 'x0*x1', 'x1^3', 'x0*x1^2', 'x1^4']
 \end{lstlisting}
 
-\clearpage\section*{CKP-733 --- computation record}
-\textbf{Status:} complete\_with\_notes.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-733
-\end{lstlisting}
+\clearpage\section*{Section of $\mathbb P_{\mathbb P^{1}}(\mathcal O^{4}\oplus \mathcal O(1))$ by $4\xi $ (CKP-733) --- quantum multiplication}
 
-Enumeration: positive; 17 classes including zero.
+Curve enumeration: positive; 17 classes including zero.
 Connectedness pruning reached its configuration limit; the finite candidate list was retained for localization.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
@@ -13222,7 +12677,6 @@ basis = ['1', 'x1', 'x0', 'x1^2', 'x0*x1', 'x1^3', 'x0*x1^2', 'x1^4']
 7 & 5 & \fitmath{2}\\
 7 & 6 & \fitmath{1}\\
 \bottomrule\end{longtable}}
-Matrix time: 0.01 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=0}\end{center}
@@ -13259,8 +12713,8 @@ Factor 3: multiplicity 1; 2 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-734 --- geometry and Hodge diamond}\label{entry:CKP-734}
-\textbf{Selection:} ample.
+\clearpage\section*{Complete intersection of multidegrees $(1,4)$ in $\mathbb P^{1}\times \mathbb P^{4}$ (CKP-734) --- geometry and Hodge diamond}\label{entry:CKP-734}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 734; source record 117105; ambient polytope 1010.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $1$, $(-K_X)^4=17$, $e(X)=293$.
@@ -13288,14 +12742,9 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x1', 'x0', 'x1^2', 'x0*x1', 'x1^3', 'x0*x1^2', 'x1^4']
 \end{lstlisting}
 
-\clearpage\section*{CKP-734 --- computation record}
-\textbf{Status:} complete.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-734
-\end{lstlisting}
+\clearpage\section*{Complete intersection of multidegrees $(1,4)$ in $\mathbb P^{1}\times \mathbb P^{4}$ (CKP-734) --- quantum multiplication}
 
-Enumeration: positive; 19 classes including zero.
+Curve enumeration: positive; 19 classes including zero.
 Connectedness pruning reached its configuration limit; the finite candidate list was retained for localization.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
@@ -13353,7 +12802,6 @@ basis = ['1', 'x1', 'x0', 'x1^2', 'x0*x1', 'x1^3', 'x0*x1^2', 'x1^4']
 7 & 5 & \fitmath{5}\\
 7 & 6 & \fitmath{4}\\
 \bottomrule\end{longtable}}
-Matrix time: 21.20 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=-4117827544142465336157}\end{center}
@@ -13381,8 +12829,8 @@ Factor 2: multiplicity 1; 5 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-735 --- geometry and Hodge diamond}\label{entry:CKP-735}
-\textbf{Selection:} ample.
+\clearpage\section*{Complete intersection $(2,2,3)$ in $\mathbb P^{7}$ (CKP-735) --- geometry and Hodge diamond}\label{entry:CKP-735}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 735; source record 117143; ambient polytope 80891.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=7$, codimension $3$, index $1$, $(-K_X)^4=12$, $e(X)=324$.
@@ -13412,14 +12860,9 @@ eval_y = {'y1': 2}
 ['1', 'x0', 'x0^2', 'x0^3', 'x0^4']
 \end{lstlisting}
 
-\clearpage\section*{CKP-735 --- computation record}
-\textbf{Status:} complete.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-735
-\end{lstlisting}
+\clearpage\section*{Complete intersection $(2,2,3)$ in $\mathbb P^{7}$ (CKP-735) --- quantum multiplication}
 
-Enumeration: positive; 6 classes including zero.
+Curve enumeration: positive; 6 classes including zero.
 Connectedness pruning reached its configuration limit; the finite candidate list was retained for localization.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
@@ -13448,7 +12891,6 @@ basis = ['1', 'x0', 'x0^2', 'x0^3', 'x0^4']
 3 & 4 & \fitmath{5328 y_{1}^{2}}\\
 4 & 3 & \fitmath{1}\\
 \bottomrule\end{longtable}}
-Matrix time: 156.38 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=1}\end{center}
@@ -13473,8 +12915,8 @@ Factor 2: multiplicity 1; 1 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-736 --- geometry and Hodge diamond}\label{entry:CKP-736}
-\textbf{Selection:} ample.
+\clearpage\section*{Complete intersection $(3,3)$ in $\mathbb P^{6}$ (CKP-736) --- geometry and Hodge diamond}\label{entry:CKP-736}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 736; source record 117152; ambient polytope 8635.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=6$, codimension $2$, index $1$, $(-K_X)^4=9$, $e(X)=369$.
@@ -13502,14 +12944,9 @@ eval_y = {'y1': 2}
 ['1', 'x0', 'x0^2', 'x0^3', 'x0^4']
 \end{lstlisting}
 
-\clearpage\section*{CKP-736 --- computation record}
-\textbf{Status:} complete.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-736
-\end{lstlisting}
+\clearpage\section*{Complete intersection $(3,3)$ in $\mathbb P^{6}$ (CKP-736) --- quantum multiplication}
 
-Enumeration: positive; 6 classes including zero.
+Curve enumeration: positive; 6 classes including zero.
 Connectedness pruning reached its configuration limit; the finite candidate list was retained for localization.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
@@ -13538,7 +12975,6 @@ basis = ['1', 'x0', 'x0^2', 'x0^3', 'x0^4']
 3 & 4 & \fitmath{13608 y_{1}^{2}}\\
 4 & 3 & \fitmath{1}\\
 \bottomrule\end{longtable}}
-Matrix time: 62.74 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=1}\end{center}
@@ -13563,8 +12999,8 @@ Factor 2: multiplicity 1; 1 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-737 --- geometry and Hodge diamond}\label{entry:CKP-737}
-\textbf{Selection:} ample.
+\clearpage\section*{Complete intersection $(2,4)$ in $\mathbb P^{6}$ (CKP-737) --- geometry and Hodge diamond}\label{entry:CKP-737}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 737; source record 117159; ambient polytope 8635.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=6$, codimension $2$, index $1$, $(-K_X)^4=8$, $e(X)=552$.
@@ -13592,14 +13028,9 @@ eval_y = {'y1': 2}
 ['1', 'x0', 'x0^2', 'x0^3', 'x0^4']
 \end{lstlisting}
 
-\clearpage\section*{CKP-737 --- computation record}
-\textbf{Status:} complete.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-737
-\end{lstlisting}
+\clearpage\section*{Complete intersection $(2,4)$ in $\mathbb P^{6}$ (CKP-737) --- quantum multiplication}
 
-Enumeration: positive; 6 classes including zero.
+Curve enumeration: positive; 6 classes including zero.
 Connectedness pruning reached its configuration limit; the finite candidate list was retained for localization.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
@@ -13628,7 +13059,6 @@ basis = ['1', 'x0', 'x0^2', 'x0^3', 'x0^4']
 3 & 4 & \fitmath{25632 y_{1}^{2}}\\
 4 & 3 & \fitmath{1}\\
 \bottomrule\end{longtable}}
-Matrix time: 62.84 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=1}\end{center}
@@ -13653,8 +13083,8 @@ Factor 2: multiplicity 1; 1 distinct root(s) of $\det(xI-K^F)$.
 \begin{center}\fitmath{\text{Classes modulo }\mathbb Z=\{0\}}\end{center}
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-\clearpage\section*{CKP-738 --- geometry and Hodge diamond}\label{entry:CKP-738}
-\textbf{Selection:} ample.
+\clearpage\section*{Quintic fourfold in $\mathbb P^{5}$ (CKP-738) --- geometry and Hodge diamond}\label{entry:CKP-738}
+\textbf{Positivity:} ample defining divisors.
 CKP period ID 738; source record 117160; ambient polytope 1013.
 Hodge method: ample Lefschetz and Hirzebruch--Riemann--Roch.
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $1$, $(-K_X)^4=5$, $e(X)=825$.
@@ -13682,14 +13112,9 @@ eval_y = {'y1': 2}
 ['1', 'x0', 'x0^2', 'x0^3', 'x0^4']
 \end{lstlisting}
 
-\clearpage\section*{CKP-738 --- computation record}
-\textbf{Status:} complete.
-\textbf{Checkpoint directory:}
-\begin{lstlisting}
-examples/fourfolds/batch_results/CKP-738
-\end{lstlisting}
+\clearpage\section*{Quintic fourfold in $\mathbb P^{5}$ (CKP-738) --- quantum multiplication}
 
-Enumeration: positive; 6 classes including zero.
+Curve enumeration: positive; 6 classes including zero.
 \subsection*{Quantum multiplication by $c_1(X)$}
 Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
 
@@ -13717,7 +13142,6 @@ basis = ['1', 'x0', 'x0^2', 'x0^3', 'x0^4']
 3 & 4 & \fitmath{198000 y_{1}^{2}}\\
 4 & 3 & \fitmath{1}\\
 \bottomrule\end{longtable}}
-Matrix time: 19.87 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 \subsection*{Specialized spectrum}
 At $y_1=2$, let $K^F=-M$.
 \begin{center}\fitmath{\Delta=1}\end{center}

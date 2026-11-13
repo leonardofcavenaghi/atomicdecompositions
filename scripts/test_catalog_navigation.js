@@ -128,6 +128,25 @@ async function main() {
   page.on('pageerror', error => errors.push(String(error)));
   try {
     const base = `http://127.0.0.1:${port}`;
+    // Exercise intrinsic SVG/table widths before the longer catalogue pass.
+    await page.setViewport({width:390,height:844});
+    await page.goto(base+'/catalog/records/lg3-1-2/', {waitUntil:'domcontentloaded'});
+    await measureMath(page,'LG fourfold initial mobile layout',Date.now());
+    const mobile = await page.evaluate(() => {
+      const wide=[...document.querySelectorAll('body *')].filter(e=>{
+        const r=e.getBoundingClientRect();if(r.right<=innerWidth+2 || r.width===0)return false;
+        for(let a=e.parentElement;a && a!==document.body;a=a.parentElement){
+          const style=getComputedStyle(a);
+          if (['auto','hidden','scroll','clip'].includes(style.overflowX) && a.getBoundingClientRect().right<=innerWidth+2) return false;
+        }
+        return true;
+      }).map(e=>({tag:e.tagName,cls:typeof e.className==='string'?e.className:'',rect:e.getBoundingClientRect().toJSON(),overflow:getComputedStyle(e).overflowX,display:getComputedStyle(e).display,text:e.textContent.slice(0,100)}));
+      return {width:document.documentElement.scrollWidth,viewport:innerWidth,wide:wide.slice(0,35)};
+    });
+    if (mobile.width>mobile.viewport+2) throw new Error('Initial mobile overflow '+JSON.stringify(mobile));
+    console.log('Initial LG fourfold mobile layout passed.');
+    await page.setViewport({width:1280,height:900});
+
     await page.goto(`${base}/`, {waitUntil: 'domcontentloaded'});
     await page.evaluate(() => {
       [...document.querySelectorAll('nav a[href]')].find(link =>
