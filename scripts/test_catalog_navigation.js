@@ -177,6 +177,8 @@ async function main() {
 
     }
     console.log('Inline equations follow the surrounding text baseline.');
+    const mathStyles=await page.$eval('link[href*="stylesheets/extra.css"]', link=>link.href);
+    if (!new URL(mathStyles).searchParams.has('v')) throw new Error('Math stylesheet can reuse an outdated cached version');
 
 
     await page.goto(`${base}/`, {waitUntil: 'domcontentloaded'});

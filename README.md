@@ -1,251 +1,99 @@
-# gwflags — GW invariants of flag varieties (Python / SageMath)
+# GEOATOMS — quantum cohomology computations
 
-See [Software documentation](LAUNCH.md) for version choices, installation, exact input/output conventions and validation.
+GEOATOMS provides exact genus-zero Gromov–Witten computations for flag varieties, toric varieties and supported complete intersections. The website combines mathematical methods, software guides and a catalogue organized by geometric dimension and construction.
 
-A translation of `V3.nb` (Mathematica + LieART) into a fast Python
-package; runs on plain Python and inside SageMath.
+[Website and catalogue](https://leonardofcavenaghi.github.io/atomicdecompositions/) · [Installation](https://leonardofcavenaghi.github.io/atomicdecompositions/installation/) · [Version comparison](docs/software/launch-2026-11.md) · [Release notes](docs/releases.md)
 
-[Website and catalogue](https://leonardofcavenaghi.github.io/atomicdecompositions/)
-· [Release notes and downloads](https://leonardofcavenaghi.github.io/atomicdecompositions/releases/)
+## Software distributions
 
-The repository root provides flag `1.0.6.dev0`. Versioned flag, toric and combined `1.1.0.dev1` distributions are also available. These are development versions; the stable flag release remains `v1.0.5`. See the [installation guide](https://leonardofcavenaghi.github.io/atomicdecompositions/installation/) for individual and combined downloads.
+| Distribution | Scope | Source | Guide |
+|---|---|---|---|
+| Flag `1.0.6.dev0` | Flag varieties and homogeneous complete intersections | Repository root | [Flag guide](docs/software/flags-1.0.6.md) |
+| Flag `1.1.0.dev1` | Flag computations, checkpointed execution and supported Hodge and connection analysis | [Flag source](software/flag-1.1.0.dev1/) | [Flag guide](docs/software/flags-1.1.0.md) |
+| Toric `1.1.0.dev1` | Toric varieties and complete intersections, with supported Hodge and connection analysis | [Toric source](software/toric-1.1.0.dev1/) | [Toric guide](docs/software/toric-1.1.0.md) |
+| Combined `1.1.0.dev1` | Both engines, with separate flag and toric interface workspaces | [Combined source](software/combined-1.1.0.dev1/) | [Combined guide](docs/software/combined.md) |
 
-It computes, for a flag variety **G/P** — of any simple type A–G *or a
-product* (`'A3xA3'` for P³×P³-type flags, `'A1xA1xA4'`, …):
+These are development versions. The stable flag release remains [v1.0.5](https://github.com/leonardofcavenaghi/atomicdecompositions/archive/refs/tags/v1.0.5.zip); its [preserved source](software/flag-1.0.5/) and [guide](docs/software/flags-legacy.md) retain that version’s conventions.
 
-- genus-0 **Gromov–Witten invariants** by Graber–Pandharipande virtual localization: sums over
-  decorated trees (fixed loci of stable maps), equivariant Schubert classes
-  restricted to fixed points via **Billey's formula**;
-- the same for **complete intersections** in G/P (twisted invariants with
-  line bundles and curve-wise-convex homogeneous bundles, including quotients and subbundles,
-  duals, direct sums, tensor, symmetric and exterior powers);
-- the **small quantum multiplication matrix `c1(TX)⋆`**, its grading
-  operator, and its **eigenvalues**, plus the **ambient Chern index** and the curve
-  classes to sum over.
+Installing the repository root installs **flag `1.0.6.dev0`**. Choose a versioned source directory or [source archive](docs/installation.md) to install a different distribution. Use a separate virtual environment for each distribution.
 
-## Exact localization and caching
+## Install from a checkout
 
-The notebook carried symbolic rational functions through every step and
-took `x → prime·t, t → 0` limits at the end.  This package instead:
+Use Python 3.9 or later. From the repository directory, create an environment:
 
-- **gates every invariant by the dimension axiom** (`expected_degree`) —
-  mismatched insertions return 0 exactly, which is what the notebook's
-  limits computed;
-- **evaluates the gated localization sum exactly at two independent random
-  rational points** of the equivariant torus (`NumericBackend`): the gated
-  sum is a constant, so the evaluation *is* the invariant, agreement of the
-  two points guards against accidental poles, and no CAS ever runs in the
-  hot loop (plain `fractions.Fraction`);
-- keeps all Weyl/root data as **integer-normalized exact tuples** (fast
-  hashing), turns decorated-tree vertex computation into **precomputed
-  integer table lookups**, canonicalizes trees by **AHU hashing from the
-  center** (no permutation sweeps; automorphism orders fall out of the same
-  pass), and enumerates edge decorations by a **pruned per-edge DFS**;
-- **caches everything class-independent** across the quantum-matrix pair
-  loops: decorations per (tree, β, marks) on the flag, per-decoration base
-  factors, edge factors, Billey restrictions, R-factors, CI twists;
-- optionally distributes per-β blocks over processes
-  (`small_quantum_multiplication(..., workers=N)`, fork-based; verified
-  bit-identical to serial).
+```bash
+python -m venv .venv
+```
 
-sympy (or Sage, auto-detected) only assembles the final matrices with quantum
-variables named by `X.novikov_names` and extracts eigenvalues. The raw symbolic sums
-remain available via `FlagVariety.gw_raw` / the `.sym` calculator.
+Activate it with `source .venv/bin/activate` on Linux/macOS, `.venv\Scripts\activate.bat` in Windows Command Prompt, or `.venv\Scripts\Activate.ps1` in PowerShell. Package installation resolves SymPy and mpmath.
 
-## Requirements
+Choose **one** installation command:
 
-- Plain Python ≥ 3.9; package installation resolves SymPy and mpmath, **or**
-- SageMath (no extra dependencies; the package detects Sage and uses its
-  symbolic ring — same code, faster algebra).
+| Distribution | Installation command |
+|---|---|
+| Flag `1.0.6.dev0` | `python -m pip install .` |
+| Flag `1.1.0.dev1` | `python -m pip install ./software/flag-1.1.0.dev1` |
+| Toric `1.1.0.dev1` | `python -m pip install ./software/toric-1.1.0.dev1` |
+| Combined `1.1.0.dev1` | `python -m pip install ./software/combined-1.1.0.dev1` |
 
-For development and the full test suite, install the test extra:
+The [installation guide](docs/installation.md) also covers standalone ZIP downloads and platform-specific commands.
+
+## Launch the interface
+
+Run the command matching the installed distribution:
+
+```bash
+# Either individual flag version:
+python -m gwflags.gui --no-browser --port 8642
+
+# Individual toric version:
+python -m gwtoric.gui --no-browser --port 8643
+
+# Combined version:
+python -m gwapp --no-browser --port 8650 --workspace ./geoatoms-workspace
+```
+
+Open `http://127.0.0.1:8642`, `http://127.0.0.1:8643`, or `http://127.0.0.1:8650`, respectively. The combined interface has separate **Flag varieties** and **Toric varieties** workspaces. The version-specific guides provide complete interface, Python and terminal examples.
+
+## Python examples
+
+For either flag distribution, or the combined distribution:
+
+```python
+from gwflags import FlagVariety
+
+P3 = FlagVariety("A3", [1])
+assert P3.gw([], beta=(1,), K=[[3]]) == 27
+```
+
+For the toric distribution, or the combined distribution:
+
+```python
+from gwtoric import projective_space
+
+P3 = projective_space(3)
+assert P3.gw([], beta=(1, 1, 1, 1), K=[[3]]) == 27
+```
+
+Both examples count the 27 lines on a smooth cubic surface, with **zero insertions**. The curve coordinates differ: kept-root coordinates for the flag input and full ray coordinates for the toric input. Bundle rows and Novikov names follow the [input/output conventions](docs/software/input-output.md).
+
+## Mathematics and catalogue
+
+- [Localization on flag varieties](docs/methodology.md): root systems, Schubert classes, curve coordinates and twisted localization.
+- [Localization on toric varieties](docs/toric/mathematics.md): fans, divisor classes, invariant curves and twisted localization.
+- [Geometric catalogue](docs/catalog/index.md): constructions, inputs, ordered bases, quantum multiplication and computed exponent multisets.
+- [Atomic invariants](docs/catalog/atomic-invariants.md): cyclic determinants, full Hodge data and atomic Hodge polynomials where the required hypotheses hold.
+- [Exact datasets](docs/catalog/datasets.md): downloadable inputs, matrices, bases, gradings and analysis points.
+
+A returned ambient quantum operator need not describe full cohomology. The mathematical guides and individual examples state the hypotheses for interpreting it and for identifying full atomic decompositions.
+
+## Development and validation
+
+For the repository-root flag package:
 
 ```bash
 python -m pip install -e ".[test]"
+python -m pytest tests/ -q
 ```
 
-## Usage
-
-```python
-from gwflags import FlagVariety, projective_space, grassmannian, full_flag
-
-X = projective_space(2)               # = FlagVariety('A2', [1])
-X.gw([X.pt, X.pt], beta=(1,))         # 1   — kept-root basis
-X.gw([X.pt, X.pt], beta=(1, 0))       # 1   — equivalent ambient form
-X.gw([X.pt]*5,      beta=(2,))         # 1   — one conic through five points
-
-G = grassmannian(2, 4)                # A3 / P_2
-# sigma_1 * sigma_21 = sigma_22 + q  (Bertram):
-G.gw([G.schubert((2,)), G.schubert((1, 3, 2)), G.pt], beta=(1,))  # 1
-
-M, Gr, idx = X.small_quantum_multiplication()
-X.eigenvalues(M)                      # [3*y1**(1/3), 3*y1**(1/3)*zeta_3, ...]
-
-# complete intersection: quadric surface in P^3
-Q = projective_space(3)
-M, Gr, idx = Q.small_quantum_multiplication(K=[[2]])
-Q.eigenvalues(M)                      # [4*sqrt(y1), -4*sqrt(y1), 0]
-```
-
-In SageMath the same code applies (`sage -python`, or `import gwflags`
-from a Sage session with the package on `sys.path`).
-
-GUI (local web app, stdlib-only server — the modern replacement for the
-notebook's dialog screens): `python3 -m gwflags.gui`, with curated presets for
-common benchmark examples. The Results toolbar copies the exact input JSON and
-downloads completed results as JSON.
-
-Command line (**see [cli.md](cli.md) for the full guide** — setup and all
-subcommands):
-
-```bash
-python3 -m gwflags.cli A2 --keep 1 info
-python3 -m gwflags.cli A2 --keep 1 gw --beta 1 --classes pt,pt
-python3 -m gwflags.cli A3 --keep 2 gw --beta 1 --classes "2|1 3 2|pt"
-python3 -m gwflags.cli A2 --keep 1 sqm
-python3 -m gwflags.cli A3 --keep 1 -K 2 sqm          # quadric in P^3
-```
-
-`--keep` is the notebook's `m` (RootsThatStay): the 1-based simple roots
-**not** in the parabolic — `1` for Pⁿ, `k` for Gr(k, n). A GW `beta` vector
-may be entered in kept-root order or as a full ambient
-vector with zeros at removed nodes. Schubert classes in the CLI/browser are
-reduced words for minimal coset representatives (`pt`, `id` accepted); copy
-words from `info`. `-K` rows are the multidegrees of the bundle summands over
-the Picard generators (the notebook's `{{1,2},{1,1}}` becomes
-`"1,2;1,1"`). Bundle expressions also accept compact aliases `O(...)`,
-`S(node)`, and `Q(node)` in the CLI/browser; Python list notation such as
-`[[3]]` is Python-only.
-
-Tests (all values independently known from Schubert calculus):
-
-```bash
-python3 -m pytest tests/ -q
-```
-
-## Input conventions
-
-The browser and CLI deliberately use copyable text. Enter compact line-bundle
-rows such as `3` or `1,1;2,2`; enter homogeneous expressions such as
-`Q(2)`, `quot(osum(S(2),Q(2)),S(2))`, or `osum(Q(2),O(1))`; and use
-`info`/**Space Info** to obtain valid
-Schubert words. The high-level Python API additionally accepts explicit
-constructors and legacy rows (`K=[[3]]`). Automatic `sqm` curve enumeration
-is exhaustive when every supported curve generator has strictly positive
-first-Chern pairing. Mixed zero/positive or negative ambient pairings require
-an explicit `betas` list unless a constructor supplies suitable effective
-generators. When the entire Chern vector is zero, the operator is zero.
-The matrix is the flag-ambient operator unless
-the ambient-completeness hypotheses identify it with full small quantum
-cohomology.
-
-## Notebook-to-package reference
-
-| V3.nb | gwflags |
-|---|---|
-| LieART data (`PositiveRoots`, `OrthogonalBasis`, `ReflectionMatrices`, `CartanMatrix`, `Coroots`, `OmegaBasis`) | `rootsystem.RootSystemData` (pure Python, exact `Fraction` arithmetic, Bourbaki realizations) |
-| `WeylGroupWords`, `GenerateGroup`, `FindCosets`, `ProjectionMap`, `ReflextionRoots` | `weyl` (`WeylData`) |
-| `AllTrees(N)`, `nonnegCompositions`, `congruentModGensQ`, `FindExpandedAssociations`, `AllPossibleMarks`, `DecoratedTrees`, `VertexComputation`, `TableOfTheTree`, `RemoveIsomorphicDuplicates`, `DecoratedAutomorphismGroupSize`, `IntegerCombination` | `trees` |
-| `ChangeToPolynom(Byll)`, `LinearMapToPolynomial`, `InvertVariables`, `RFactor`, `Bylleys`, `OmegaLie`, `KappaGamma`, `IVertex`, `GWInvariant` | `localization.GWCalculator` |
-| `mu`, `EulerCompleteIntersection`, `hCompleteIntersection`, `OmegaCompleteIntersection`, `GWCOMPLETEINTERSECTION` | `cintersection` |
-| `MetricCompletInter`, `LinesLI`/`ColumnsLI`/`ReduceMatrix`, `VectorsWithSupport`, `BetasAndFanoIndex`, `SmallQuantumMultiplication` | `quantum` |
-| `DialogInput` GUI screens, progress bars | `cli` (argparse) / `progress=` callbacks |
-| final `x -> prime * t`, `Limit[t -> 0]` evaluation | `symbolic.get_backend(...).evaluate_gw` |
-
-Conventions: simple roots are numbered as in Bourbaki (for type A this
-matches LieART). Equivariant variables `x_i` correspond to the simple roots
-α_i (a root's polynomial is its expansion in simple roots). A kept-root beta is
-written in `roots_that_stay` order and is embedded at those ambient nodes;
-the default `paper` Novikov names retain ambient nodes for type A (kept nodes `1,3` use `y1,y3`) and use consecutive kept-root labels for other families. Pass `novikov_convention="ambient"` to retain the previous names; `X.novikov_metadata` gives the map. All Weyl-group elements are matrices in the orthogonal
-realization; Schubert classes are minimal coset representatives
-(`FlagVariety.classes`, `.schubert(word)`, `.pt`).
-
-## Implementation conventions
-
-- **Edge labels in isomorphism tests compare degree only.** The notebook's
-  `EffectiveEdgeLabel[{_, lbl_}] := lbl` drops the root part of an edge
-  label in `RemoveIsomorphicDuplicates` and in the automorphism count.
-  This is not an accident but load-bearing: the same fixed curve seen from
-  its two endpoints carries *different* root labels in a partial flag, and
-  only the degree-blind comparison merges the two copies. The translation
-  reproduces this exactly (`DecoratedTree.canonical_key`,
-  `.automorphism_group_size`); with full edge labels P² ⟨pt,pt⟩₁ would
-  come out wrong.
-- **Parent vertex lookup.** `KappaGamma` finds the Weyl element across the
-  incoming edge by comparing `PropertyValue[...][[1]][[1]]` against the
-  *list-wrapped* `TreeTable[[i]][[1]]`, which never matches, so it always
-  takes the edge's first endpoint; that is the parent for the tree
-  representatives the notebook generates. The translation uses the rooted
-  tree's actual parent, which is the intended (and equivalent) semantics.
-  Contributions were verified to be independent of the rooting.
-- **`ChangeToPolynomByll`'s inverted-variables branch** (for negative
-  roots) is preserved but is dead code in practice: BFS words are reduced,
-  so Billey's β_i are always positive roots.
-- **Curve ordering and finite enumeration:**
-  (1) the notebook pairs the bundle multidegrees `K` with the ascending
-  positions of positive c1 entries in `BetasAndFanoIndex` /
-  `SmallQuantumMultiplication` but with `RootsThatStay` order in `mu` — the
-  two disagree when `RootsThatStay` is not sorted; `chern_class_ci` now
-  always uses `roots_that_stay` order, matching the localization twist.
-  (2) automatic curve enumeration uses the bound
-  `⟨c1, β⟩ ≤ dim+1` when the first-Chern pairings are strictly positive
-  on all supported effective generators. This gives a finite exhaustive
-  list. Mixed zero/positive or negative pairings require an explicit curve
-  list unless the constructor supplies suitable effective generators;
-  the dimension axiom alone does not bound a zero-pairing direction.
-  If the entire first-Chern vector vanishes, `c1⋆` is the zero operator.
-- **`Bylleys` subset size.** The notebook enumerates subsets of size ≤
-  ℓ(shubert); products of fewer than ℓ simple reflections can never equal
-  an element of length ℓ, so the translation enumerates size exactly ℓ.
-- **Parallelism.** `LaunchKernels/ParallelTable` are replaced by optional
-  fork-based process workers over the per-β blocks of the quantum matrix
-  (`small_quantum_multiplication(..., workers=N)`, CLI `--workers N`),
-  verified bit-identical to the serial path.
-- **GW number extraction.** The notebook substituted every equivariant
-  variable by a random prime times `t` and took `t → 0`; the package gates
-  by the dimension axiom and evaluates the (then constant) sum exactly at
-  two independent random points — same numbers, no symbolic limits.  The
-  notebook-style raw symbolic sum remains available via
-  `FlagVariety.gw_raw` and `symbolic` backends' `evaluate_gw`.
-
-## Verified against known values
-
-| invariant | value |
-|---|---|
-| P¹, P², P³: ⟨pt, pt⟩ degree 1 | 1 |
-| P²: ⟨pt, pt, h⟩₁ (divisor axiom), ⟨pt⁵⟩₂ (conics through 5 points) | 1 |
-| Fl(3) = A2/B: ⟨pt, pt⟩₍₁,₁₎ | 1 |
-| Gr(2,4): ⟨σ₁, σ₂₁, pt⟩ degree 1 (σ₁⋆σ₂₁ = σ₂₂ + q) | 1 |
-| P¹: c1⋆ eigenvalues ±2√y, Fano index 2; P²: 3·y^{1/3}·µ₃, Fano index 3 | ✓ |
-| Quadric surface in P³ (K=[[2]]): twisted metric, rank reduction, eigenvalues {±4√y, 0} | ✓ |
-| P¹×P¹: divisor axiom per factor; c1⋆ eigenvalues {±4, 0, 0} at y=1 | ✓ |
-| (1,2)-curve in P¹×P¹ (K=[[1,2]]): c1⋆ eigenvalues ±2 at y=1 (ambient QH of a P¹) | ✓ |
-| Quartic K3 in P³ (K=[[4]]): c1⋆ = 0 (Calabi–Yau) | ✓ |
-| Quadric threefold Q³ in P⁴ (K=[[2]]): Fano index, full SQM matrix, grading, and eigenvalues {0} ∪ 3·2^{2/3}y^{1/3}µ₃ agree **exactly with V3.nb's cached Mathematica output**  | ✓ |
-| **Homogeneous-bundle twists** (`gwflags/bundles.py`, `tests/test_bundles.py`): complete intersections in arbitrary curve-wise-convex homogeneous bundles via fiber-weight multisets — tautological Q and S\*, duals, ⊕/⊗/Sym/Λ, cross-factor box products. Verified by classical isomorphisms: Z(Gr(2,4), Q) = P² and Z(Gr(2,5), Q) = P³ (**twisted SQM equals the native matrix entry-for-entry**), Z(Gr(2,5), Sym²S\*) = OG(2,5) = B₂/P₂ (**cross-Dynkin-type spectral agreement**); legacy split rows reproduce exactly; non-convex bundles (e.g. S) rejected with guidance | ✓ |
-| **Second, formula-independent engine** (`gwflags/gkm.py`, `tests/test_gkm_engine.py`): the Holmes–Muratore GKM localization formula (arXiv:2509.07562, Thm 3.4) implemented from their statement — intrinsic GKM-graph trees, connection-based edge factors, uniform vertex factor — and diffed against the classical engine **at the same random torus point: raw localization sums agree exactly as rational numbers** across P², Fl(3), Gr(2,4), SO(5)/B, P²×P² (incl. degree-2, 5-mark, and non-gated homogeneous sums); h(e,d) flag-independence (their Thm 3.6) verified; no parallel GKM edges in the battery (documents the dedup assumption) | ✓ |
-| **Reference regressions:** stored exact matrices are checked against the localization engine; the full GM-20 calculation includes the supported degree-5 classes. See `tests/test_reference_list.py` and `tests/gm20_forensics.py`. | ✓ |
-| AHU canonicalization + automorphism orders ≡ brute-force n! reference on 4600 random labeled trees; DFS decoration enumeration ≡ compositions/permutations reference | ✓ |
-
-## Reproducible validation
-
-Executable validation is kept in `tests/`. Run the complete suite with:
-
-```bash
-python3 -m pytest tests/ -q
-```
-
-`tests/test_reference_list.py` checks the external reference
-matrices; `tests/test_bundles.py` checks quotient bundles and bundle
-combinations.
-
-
-## Unmarked tree generation
-
-The rooted-shape/AHU generator preserves the previous tree representatives and ordering through six edges in independent compatibility checks. See [CHANGELOG.md](CHANGELOG.md).
-
-## Catalogue and software distributions
-
-The [website](https://leonardofcavenaghi.github.io/atomicdecompositions/) organizes a universal catalogue by dimension and construction, with distinct flag and toric mathematical conventions and usage guides. The [installation page](https://leonardofcavenaghi.github.io/atomicdecompositions/installation/) provides individual flag/toric and combined versioned downloads. Catalogue records provide exact inputs, symbolic matrices, Hodge data and available connection analysis. Stable v1.0.5 remains preserved.
-
-Versioned source folders are [flag 1.0.5](software/flag-1.0.5), [flag 1.1.0.dev1](software/flag-1.1.0.dev1), [toric 1.1.0.dev1](software/toric-1.1.0.dev1) and [combined 1.1.0.dev1](software/combined-1.1.0.dev1). The repository root provides flag `1.0.6.dev0`. Install each distribution into its own environment. The runtime ZIPs provide the same software choices without requiring a Git checkout.
+Automated checks also install the downloadable distributions on Linux and Windows, validate catalogue mathematics and data, and exercise website navigation, search, equation rendering and interface controls. See [Validation and reproducibility](docs/software/launch-plan.md).

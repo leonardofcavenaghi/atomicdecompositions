@@ -1,6 +1,8 @@
-# gwflags — command-line usage
+# Flag 1.0.6.dev0 — terminal and interface usage
 
-Everything runs locally from a terminal. Use Python ≥ 3.9 and install the prepared source with `python -m pip install -e .` in an isolated environment; this installs SymPy and mpmath as declared by the package.
+This guide covers the repository-root flag version `1.0.6.dev0`. For flag `1.1.0.dev1`, toric and combined distributions, use the [version-specific guides](docs/software/index.md).
+
+Use Python ≥ 3.9 and install the package with `python -m pip install -e .` in an isolated environment; this installs SymPy and mpmath as declared by the package.
 
 ## Graphical interface
 

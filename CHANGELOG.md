@@ -34,3 +34,5 @@ Website equations are rendered as SVG with accessible MathML during the document
 ## Validation
 
 Exact regression checks cover the supported flag and toric computations, tree generation, checkpoint fractions and documented usage examples. Downloadable archives pass isolated Linux and Windows installation and launcher checks. Catalogue consistency, documentation builds, search and mathematical display are checked before deployment. Software or download changes run the full regression suite; documentation changes retain the relevant data and website checks.
+
+Inline formulas share the surrounding text baseline; display equations retain horizontal scrolling. Stylesheet and script URLs include content versions so a new page receives the matching assets.

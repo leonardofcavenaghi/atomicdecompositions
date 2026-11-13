@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 /** Render every compiled equation before publishing, retaining accessible MathML. */
 const fs = require('node:fs');
+const crypto = require('node:crypto');
 const path = require('node:path');
 const puppeteer = require('puppeteer');
 const site = process.env.SITE_DIR || path.resolve(__dirname, '..', 'site');
@@ -91,7 +92,18 @@ async function main() {
     const accessibleStyle='<style>.arithmatex{position:relative}.geoatoms-mathml{position:absolute!important;left:0;top:0;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}</style>';
     for (const file of htmlFiles) {
       const html=fs.readFileSync(file,'utf8');
-      fs.writeFileSync(file,html.replace('</head>',stylesheet+accessibleStyle+'</head>'));
+      const versioned=html.replace(/(<(?:script|link)\b[^>]*?\b(?:src|href)=)(["'])([^"']+)\2/g,
+        (match,prefix,quote,url) => {
+          if (/^(?:https?:|data:|\/\/|#)/.test(url)) return match;
+          const relative=url.split(/[?#]/)[0];
+          if (!/\.(?:css|js)$/.test(relative)) return match;
+          const asset=path.resolve(path.dirname(file),decodeURIComponent(relative));
+          if (!asset.startsWith(path.resolve(site)+path.sep)||!fs.existsSync(asset)) return match;
+          const digest=crypto.createHash('sha256').update(fs.readFileSync(asset)).digest('hex').slice(0,16);
+          const current=url.replace(/([?&])v=[^&]*/,'$1').replace(/[?&]$/,'');
+          return prefix+quote+current+(current.includes('?')?'&':'?')+'v='+digest+quote;
+        });
+      fs.writeFileSync(file,versioned.replace('</head>',stylesheet+accessibleStyle+'</head>'));
     }
     console.log(JSON.stringify({static_math_pages:htmlFiles.length,rendered_formulas:total,renderer:'MathJax 3.2.2 SVG; accessible MathML; no client runtime required'}));
   } finally { await browser.close(); }
