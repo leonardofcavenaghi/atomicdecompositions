@@ -1,6 +1,6 @@
 site_name: GEOATOMS
 site_url: https://leonardofcavenaghi.github.io/atomicdecompositions/
-site_description: 'Exact genus-zero localization software and separate flag and toric quantum-cohomology catalogues.'
+site_description: 'Exact genus-zero localization software and a universal catalogue of varieties and complete intersections.'
 repo_name: leonardofcavenaghi/atomicdecompositions
 repo_url: https://github.com/leonardofcavenaghi/atomicdecompositions
 edit_uri: edit/main/docs/
@@ -69,8 +69,7 @@ extra_javascript:
   - https://code.jquery.com/jquery-3.7.0.min.js
   - https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js
   - javascripts/catalog.js
-  - javascripts/mathjax.js
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - javascripts/mathjax-loader.js
 
 extra_css:
   - https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css

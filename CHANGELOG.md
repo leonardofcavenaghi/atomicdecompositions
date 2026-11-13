@@ -20,3 +20,5 @@ Universal catalogue organized by dimension and construction, with separate flag 
 ## Contributors and mathematical display
 
 Contributors are listed alphabetically by surname. Browser checks report navigation-to-rendered times and formula counts for full-page loads, instant navigation and rapid page changes, and reject missing, duplicate or errored formula displays. These timings describe the CI browser environment, rather than a guaranteed time on every connection.
+
+Math rendering now retries failed initial runtime downloads using an alternate provider and watches for late-arriving mathematical content. Browser tests disable the cache, abort the first runtime request and delay startup while navigating, and require successful rendering without a page reload.

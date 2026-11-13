@@ -23,6 +23,57 @@ async function measureMath(page, label, started) {
   return {page: label, navigation_to_rendered_ms: Date.now() - started, formulas};
 }
 
+async function checkFirstOpen(browser, base, mode) {
+  const cold = await browser.newPage();
+  const pageErrors = [];
+  const sources = [];
+  let intercepted = false;
+  let documents = 0;
+  cold.on('pageerror', error => pageErrors.push(String(error)));
+  await cold.setCacheEnabled(false);
+  await cold.setRequestInterception(true);
+  cold.on('request', async request => {
+    if (request.isNavigationRequest() && request.frame() === cold.mainFrame()) documents += 1;
+    if (/mathjax(?:@|\/)3(?:\.2\.2)?\/es5\/tex-mml-chtml\.js/.test(request.url())) {
+      sources.push(request.url());
+      if (!intercepted) {
+        intercepted = true;
+        if (mode === 'failed-primary') { await request.abort(); return; }
+        await pause(2000);
+      }
+    }
+    await request.continue();
+  });
+  const started = Date.now();
+  try {
+    const route = mode === 'failed-primary' ? 'catalog/records/qc5-001/' : 'catalog/grassmannians/';
+    await cold.goto(base + '/' + route, {waitUntil: 'domcontentloaded'});
+    if (mode === 'delayed-startup') {
+      await cold.evaluate(() => document.querySelector('nav a[href*="projective/"]').click());
+      await cold.waitForFunction(() => location.pathname.endsWith('/catalog/projective/'));
+    }
+    const timing = await measureMath(cold, mode + ': uncached first open without refresh', started);
+    if (!intercepted || documents !== 1 || pageErrors.length) {
+      throw new Error(JSON.stringify({mode, intercepted, documents, pageErrors}));
+    }
+    if (mode === 'failed-primary' && !sources.some(url => url.includes('cdnjs.cloudflare.com'))) {
+      throw new Error('The alternate math provider was not used');
+    }
+    // A late content insertion must render even without a navigation event.
+    await cold.evaluate(() => {
+      const math = document.createElement('span');
+      math.className = 'arithmatex';
+      math.id = 'late-math-probe';
+      math.textContent = String.raw`\(1+1=2\)`;
+      document.querySelector('[data-md-component="content"]').appendChild(math);
+    });
+    await cold.waitForFunction(() => document.querySelector('#late-math-probe mjx-container'));
+    console.log('First-open math recovery passed: ' + JSON.stringify({...timing, documents, sources}));
+  } finally {
+    await cold.close();
+  }
+}
+
 async function main() {
   const site = process.env.SITE_DIR || path.resolve(__dirname, '..', 'site');
   const server = http.createServer((request, response) => {
@@ -171,6 +222,8 @@ async function main() {
     await page.setViewport({width:390,height:844});
     if (await page.evaluate(() => document.documentElement.scrollWidth>window.innerWidth+2)) throw new Error('Home page overflows mobile viewport');
     if (errors.length) throw new Error(errors.join('; '));
+    await checkFirstOpen(browser, base, 'failed-primary');
+    await checkFirstOpen(browser, base, 'delayed-startup');
     console.log('MathJax render timings: ' + JSON.stringify(renderingTimings));
     console.log('Universal catalogue and search passed: 299 records, including 168 new presentations, exact matrix tables and rendered fourfold/fivefold mathematics; mobile home layout.');
 

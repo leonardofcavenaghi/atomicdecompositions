@@ -30,6 +30,7 @@ Sources were prepared on 2026-11-12 and published on 2026-11-13.
 - Published 96 completed fourfold and 72 completed fivefold toric matrix records, preserving unresolved connection-factor notes and excluding unfinished matrices.
 - Added Milena Brockhof and alphabetized the contributors by surname.
 - Added measured formula-rendering checks for full-page loads, instant navigation and rapid page changes.
+- Retry failed math-runtime downloads through an alternate provider and render late-arriving content automatically, with uncached first-open regression checks.
 
 The new software downloads keep development version labels. See [version differences](software/changes.md), [input/output formats](software/input-output.md) and [validation scope](software/launch-plan.md).
 
