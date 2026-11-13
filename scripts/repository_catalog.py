@@ -47,22 +47,34 @@ ANALYSES = {
 }
 
 
+def generated_path(path):
+    parts = Path(path).parts
+    return (any(part in IGNORED or part in {'venv', '.venv', 'workspace', 'interactive-combined-workspace'}
+                or part.endswith(('_env', '_venv', '.egg-info', '.dist-info'))
+                or part.startswith('gw-work') for part in parts)
+            or path.endswith(('.pyc', '.pyo', '.log', '.out'))
+            or re.search(r'(?:^|/)screenshot\d*\.png$', path) is not None)
+
+
 def tracked_files():
-    result = subprocess.run(['git', 'rev-parse', '--show-toplevel'], cwd=ROOT,
-                            capture_output=True, text=True)
-    if result.returncode == 0 and Path(result.stdout.strip()).resolve() == ROOT:
+    try:
+        result = subprocess.run(['git', 'rev-parse', '--show-toplevel'], cwd=ROOT,
+                                capture_output=True, text=True)
+    except FileNotFoundError:
+        result = None
+    if result is not None and result.returncode == 0 and Path(result.stdout.strip()).resolve() == ROOT:
         files = subprocess.check_output(['git', 'ls-files', '-z'], cwd=ROOT).decode().split('\0')
         paths = {p for p in files if p}
     else:
         paths = {p.relative_to(ROOT).as_posix() for p in ROOT.rglob('*')
-                 if p.is_file() and not IGNORED.intersection(p.relative_to(ROOT).parts)
-                 and not p.name.endswith(('.pyc', '.pyo'))}
+                 if p.is_file() and not generated_path(p.relative_to(ROOT).as_posix())}
     paths.add(OUTPUT.relative_to(ROOT).as_posix())
     return sorted(paths)
 
 
 def category(path):
     parts = Path(path).parts
+    assert not generated_path(path), ('Tracked generated artifact', path)
     assert not any(p.endswith(('_env', '_venv')) or p in {'.venv', 'venv', 'pyvenv.cfg'} for p in parts), ('Tracked local environment', path)
     assert not path.endswith(('.log', '.out', '.pyc', '.pyo')), ('Tracked execution output', path)
     assert not re.search(r'(?:^|/)screenshot\d*\.png$', path), ('Tracked exploratory screenshot', path)
