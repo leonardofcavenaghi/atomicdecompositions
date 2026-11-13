@@ -39,7 +39,7 @@ async function checkFirstOpen(browser, base, mode) {
       if (!intercepted) {
         intercepted = true;
         if (mode === 'failed-primary') { await request.abort(); return; }
-        await pause(2000);
+        await pause(4000);
       }
     }
     await request.continue();
@@ -49,6 +49,8 @@ async function checkFirstOpen(browser, base, mode) {
     const route = mode === 'failed-primary' ? 'catalog/records/qc5-001/' : 'catalog/grassmannians/';
     await cold.goto(base + '/' + route, {waitUntil: 'domcontentloaded'});
     if (mode === 'delayed-startup') {
+      await cold.waitForFunction(() => typeof document$ !== 'undefined' && typeof document$.subscribe === 'function');
+      await cold.evaluate(() => new Promise(resolve => document$.subscribe(() => resolve())));
       await cold.evaluate(() => document.querySelector('nav a[href*="projective/"]').click());
       await cold.waitForFunction(() => location.pathname.endsWith('/catalog/projective/'));
     }
