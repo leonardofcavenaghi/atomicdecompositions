@@ -11,7 +11,7 @@ permissions:
 jobs:
   python:
     name: Python ${{ matrix.python-version }}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 20
     strategy:
       fail-fast: false
@@ -37,7 +37,7 @@ jobs:
 
   python-slow:
     name: Exact algebra regressions
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
@@ -60,7 +60,7 @@ jobs:
   catalog:
     name: Catalog and LaTeX validation
     needs: [python, python-slow]
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
@@ -100,7 +100,7 @@ jobs:
   website:
     name: Documentation and browser regressions
     needs: catalog
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
@@ -153,7 +153,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-latest, windows-latest]
+        os: [ubuntu-24.04, windows-latest]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
