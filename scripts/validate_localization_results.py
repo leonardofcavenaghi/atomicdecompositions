@@ -51,7 +51,7 @@ def validate():
         assert set(spec) == {'algebra', 'keep', 'bundle'}
         key = (spec['algebra'], tuple(spec['keep']))
         if key not in varieties:
-            varieties[key] = FlagVariety(spec['algebra'], spec['keep'])
+            varieties[key] = FlagVariety(spec['algebra'], spec['keep'], novikov_convention='ambient')
         X = varieties[key]
         K = parse_k(spec['bundle'], X) if isinstance(spec['bundle'], str) else spec['bundle']
         assert X.dimension - (ci_rank(K) if K else 0) == record['dimension'], (name, 'dimension')
@@ -107,3 +107,4 @@ def validate():
 
 if __name__ == '__main__':
     validate()
+

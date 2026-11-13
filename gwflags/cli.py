@@ -27,6 +27,8 @@ from . import FlagVariety
 
 def parse_classes(spec, X):
     out = []
+    if not spec.strip():
+        return out
     for token in spec.split('|') if '|' in spec else spec.split(','):
         token = token.strip()
         if token in ('pt', 'point'):
@@ -112,6 +114,8 @@ def main(argv=None):
     ap.add_argument('--keep', required=True,
                     help='comma-separated 1-based simple roots kept out of P '
                          '(the notebook\'s m); e.g. 1 for P^n, k for Gr(k,.)')
+    ap.add_argument('--novikov-convention', choices=('paper', 'ambient', 'compact'),
+                    default='paper', help='parameter names: paper (default), legacy ambient nodes, or compact kept order')
     ap.add_argument('-K', default='',
                     help='complete-intersection multidegrees, rows separated '
                          'by ";", entries by ","')
@@ -133,7 +137,7 @@ def main(argv=None):
     args = ap.parse_args(argv)
     keep = [int(v) for v in args.keep.split(',')]
     try:
-        X = FlagVariety(args.algebra, keep)
+        X = FlagVariety(args.algebra, keep, novikov_convention=args.novikov_convention)
         K = X._check_K(parse_k(args.K, X))
     except ValueError as exc:
         ap.error(str(exc))
@@ -149,6 +153,7 @@ def main(argv=None):
             print(f'  sigma_{i}: word {list(w) or "e"}, degree {len(w)}')
         c = chern_class_ci(X, K) if K else chern_class_vector(X)
         print('c1 =', c)
+        print('Novikov variables =', X.novikov_metadata)
         return
 
     if args.cmd == 'gw':
@@ -166,6 +171,7 @@ def main(argv=None):
 
     if args.cmd == 'sqm':
         fano, betas = X.fano_index_and_betas(K or None)
+        print('Novikov variables =', X.novikov_metadata)
         print('Fano index =', fano)
         print('betas =', [list(b) for b in betas])
         M, Gr, idx = X.small_quantum_multiplication(
@@ -190,3 +196,4 @@ def main(argv=None):
 
 if __name__ == '__main__':
     main()
+

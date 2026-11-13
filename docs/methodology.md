@@ -2,7 +2,7 @@
 description: Virtual localization, ambient quantum multiplication, curve degrees and verification conventions used by gwflags.
 ---
 
-# Methods and conventions
+# Flag methods and conventions
 
 `gwflags` computes genus-zero Gromov–Witten invariants and small quantum
 multiplication by the first Chern class. For a flag variety \(F=G/P\), it
@@ -119,3 +119,6 @@ Checking saved outputs does not rerun all localization sums or prove every
 geometric realization in the reference catalog. To reproduce a matrix, use
 its input with the [software](how-to-use.md); **Catalog only** entries have no
 supported computed matrix.
+
+
+For fan-based computations, see the separate [toric mathematical description](toric/mathematics.md).

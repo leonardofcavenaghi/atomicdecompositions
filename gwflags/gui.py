@@ -24,7 +24,7 @@ PRESETS = [
     # label, algebra, keep, K, action, beta, classes, eval_y, expected
     ('(a) Fl(1,2,3)', 'A2', '1,2', '', 'info', '', '', '', 'full flag variety'),
     ('(b) P2xP2 / O(1,1)', 'A2xA2', '1,3', '1,1', 'info', '', '', '', 'dimension 3'),
-    ('(c) quartic threefold', 'A4', '1', '4', 'gw', '1', '', '', '2875-style setup'),
+    ('(c) quartic threefold', 'A4', '1', '4', 'info', '', '', '', 'dimension 3'),
     ('(d) Gr(2,4)', 'A3', '2', '', 'gw', '1', '2 1 3 2|1 2|3 2', '', 'invariant 1'),
     ('(e) cubic surface', 'A3', '1', '3', 'gw', '1', '', '', '27'),
     ('(f) quintic threefold', 'A4', '1', '5', 'gw', '1', '', '', '2875'),
@@ -175,7 +175,7 @@ def run_job(job, kind, params):
         except ValueError as e:
             raise ValueError(f'Cannot describe the variety: {e}') from e
         try:
-            X = FlagVariety(algebra, keep)
+            X = FlagVariety(algebra, keep, novikov_convention=params.get('novikov_convention', 'paper'))
         except ValueError as e:
             raise ValueError(f'Cannot describe the variety: {e}') from e
         try:
@@ -186,7 +186,8 @@ def run_job(job, kind, params):
             + (f', bundle {K}' if K else '')
             + f': |W| = {len(X.wd.group)}, {len(X.classes)} Schubert classes,'
               f' ambient dim {X.dimension}')
-        result = {}
+        result = {'novikov': X.novikov_metadata,
+                  'bundle_rank': K.rank if hasattr(K, 'rank') else len(K)}
 
         if kind == 'info':
             from gwflags.quantum import chern_class_vector, chern_class_ci
@@ -279,7 +280,7 @@ def run_job(job, kind, params):
         else:
             raise ValueError(f'unknown action {kind!r}')
 
-        result['input'] = {'algebra': algebra, 'keep': keep, 'K': params.get('K', '').strip(), 'action': kind}
+        result['input'] = {'algebra': algebra, 'keep': keep, 'K': params.get('K', '').strip(), 'action': kind, 'novikov_convention': X.novikov_convention}
         result['seconds'] = round(time.time() - t0, 2)
         job['result'] = result
         job['state'] = 'done'
@@ -483,7 +484,7 @@ varieties — G/P and complete intersections</span></header>
       <div>
         <label for="K">Bundle K (optional)</label>
         <input id="K" aria-describedby="K-help" placeholder="3 or 1,1;2,2">
-        <div id="K-help" class="help">Use 3 or O(3) for a one-generator line bundle. Use O(a,b,...) when several kept roots are present; S(node) and Q(node) name tautological bundles at a kept type-A node. Use quot(E,F) (or Quot(E,F)) to form a quotient after the parser verifies F is a subbundle of E. Use semicolons between summands and commas between degree entries; Python [[3]] syntax is not accepted here.</div>
+        <div id="K-help" class="help">Use 3 or O(3) for a one-generator line bundle. Use O(a,b,...) when several kept roots are present; S(node) and Q(node) name tautological bundles at a kept type-A node. Use quot(E,F) (or Quot(E,F)) to form a quotient after the parser checks fiber-weight containment; you must justify the geometric subbundle and its supported curve restrictions. Use semicolons between summands and commas between degree entries; Python [[3]] syntax is not accepted here.</div>
       </div>
     </div>
   </div>
@@ -492,14 +493,16 @@ varieties — G/P and complete intersections</span></header>
     <div class="card-header">2. Execution Options</div>
     <div class="row">
       <div>
+        <label for="novikov_convention">Novikov notation</label>
+        <select id="novikov_convention"><option value="paper">Paper notation</option><option value="ambient">Legacy ambient-node labels</option><option value="compact">Consecutive kept-root labels</option></select>
         <label for="eval_y">Evaluate y (optional)</label>
         <input id="eval_y" aria-describedby="eval-help" placeholder="y1=1">
-        <div id="eval-help" class="help">Leave blank for symbolic variables. Use y&lt;ambient node&gt; labels, for example y1=1,y3=1 when kept roots are 1,3.</div>
+        <div id="eval-help" class="help">Paper notation uses ambient node labels for type A and consecutive kept-root labels for the other families. Describe this space to see the exact variable-to-node map. Leave blank for symbolic variables.</div>
       </div>
       <div>
         <label for="workers">Parallel workers</label>
         <input id="workers" value="8" aria-describedby="workers-help">
-        <div id="workers-help" class="help">Use 0 for automatic; 4–8 is a good default.</div>
+        <div id="workers-help" class="help">Use 0 or 1 for serial calculation; values above 1 request parallel curve blocks.</div>
       </div>
     </div>
     <button id="bsqm" class="primary-btn">Compute quantum matrix</button>
@@ -541,6 +544,7 @@ $('preset').onchange = ()=>{ const p=window._presets[$('preset').value];
   if(p){ $('algebra').value=p.algebra; $('keep').value=p.keep; $('K').value=p.K;
     $('beta').value=p.beta||''; $('classes').value=p.classes||''; $('eval_y').value=p.eval_y||'';
     $('status').textContent='Loaded '+p.label+'. Recommended action: '+p.action+'. Expected: '+p.expected+'.';
+    $('novikov_convention').value='paper';
     window._recommended=p.action; } };
 function validate(action){
   let ok=true; ['algebra','keep','K','beta','classes','eval_y'].forEach(id=>$(id).classList.remove('invalid'));
@@ -558,6 +562,7 @@ function inputSnapshot(action){
     window._recommended || 'info';
   return {action:chosen, algebra: $('algebra').value.trim(),
     keep: $('keep').value.trim(), K: $('K').value.trim(),
+    novikov_convention: $('novikov_convention').value,
     beta: $('beta').value.trim(), classes: $('classes').value.trim(),
     eval_y: $('eval_y').value.trim(), workers: $('workers').value.trim()};
 }
@@ -595,6 +600,7 @@ $('download-output').onclick=()=>{
 function run(action){
   if(!validate(action)) return;
   const params={action, algebra:$('algebra').value, keep:$('keep').value,
+    novikov_convention:$('novikov_convention').value,
     K:$('K').value, eval_y:$('eval_y').value, workers:$('workers').value,
     beta:$('beta').value, classes:$('classes').value};
   lastRequest=params; lastResult=null; $('download-output').disabled=true;
@@ -622,9 +628,11 @@ function run(action){
 }
 function render(action,res){
   let h='';
+  if(res.novikov) h+='<div class="help">Novikov notation ('+res.novikov.convention+'): '+res.novikov.variables.map(v=>v.name+' at node '+v.node).join(', ')+'</div>';
   if(res.input) h+='<div class="help">Input used: '+res.input.algebra+'; kept roots '+res.input.keep.join(',')+'; K='+((res.input.K||'empty'))+'</div>';
   if(action==='info'){
     h+='<span class="badge">dim '+res.dim+'</span>'+
+       '<span class="badge">bundle rank '+res.bundle_rank+'</span>'+ 
        '<span class="badge">Fano index '+res.fano+'</span>'+
        '<span class="badge">c&#8321; = ['+res.c1+']</span>'+
        '<span class="badge">'+res.n_betas+' curve classes</span>';
@@ -688,3 +696,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+

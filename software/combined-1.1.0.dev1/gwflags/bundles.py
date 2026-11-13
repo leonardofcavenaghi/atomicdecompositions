@@ -1,0 +1,425 @@
+"""Homogeneous vector bundles on flag varieties by T-weight multisets.
+
+A completely reducible homogeneous bundle E on X = G/P is described, for
+all localization purposes, by the multiset of T-weights of its fiber at
+the base point eP (each weight given as a vector in the orthogonal
+realization of the ambient root/weight space; type-A epsilon vectors are
+fine — characters of the semisimple torus are read modulo the
+W-invariant complement of the root span, which the evaluation projects
+out).  The Weyl action transports the multiset to every fixed point; the
+pairing <mu, beta^vee> gives the Birkhoff-Grothendieck splitting degrees
+on invariant curves.
+
+Conventions are anchored to the existing split-line-bundle code:
+O_X(a_1,...,a_k) has the single fiber weight  mu = -sum_m a_m omega_{i_m},
+so its localized weight at w is P(w.mu) = the engine's mu().  With this,
+    det S* = det Q = O(1)   on Gr(k, n),
+and the classical identifications hold (verified in the test-suite via
+Z(Gr(2,4), Q) = P^2, Z(Gr(2,5), Q) = P^3, Z(Gr(2,5), Sym^2 S*) = OG(2,5)).
+
+Constructors: O(X, *a), taut_sub(X, node), taut_quot(X, node), dual(E),
+osum(E1, E2, ...), tensor(E1, E2) (also box products across factors),
+sym(p, E), wedge(p, E), and quot(E, F) (the quotient E/F when F is a
+subbundle of E).
+"""
+
+from fractions import Fraction
+from itertools import combinations, combinations_with_replacement
+
+from .rootsystem import dot, mat_inverse, vadd, vscale
+
+
+class HomogeneousBundle:
+    """weights: tuple of ort-space vectors (tuples of Fractions/ints) —
+    the fiber weights at the base point."""
+
+    def __init__(self, X, weights, name='E', edge_data=None,
+                 effective_beta_generators=None):
+        self.X = X
+        self.weights = tuple(tuple(w) for w in weights)
+        self.name = name
+        if edge_data is None:
+            self.edge_data = None
+        else:
+            self.edge_data = tuple(
+                tuple((tuple(mu), int(degree)) for mu, degree in data)
+                for data in edge_data)
+            if len(self.edge_data) != len(X.rs.positive_roots):
+                raise ValueError(
+                    'edge restriction data must be supplied for every '
+                    'positive root')
+            if any(len(data) != self.rank for data in self.edge_data):
+                raise ValueError(
+                    'each edge restriction must have one entry per bundle '
+                    'summand')
+        self.effective_beta_generators = (
+            None if effective_beta_generators is None else
+            tuple(tuple(int(v) for v in beta)
+                  for beta in effective_beta_generators))
+
+    @property
+    def rank(self):
+        return len(self.weights)
+
+    def key(self):
+        """Hashable cache key."""
+        return self.weights, self.edge_data
+
+    def __repr__(self):
+        return f'<{self.name}: rank {self.rank} on {self.X.rs.name}>'
+
+    # ------------------------------------------------------- derived data
+    def c1_coordinates(self):
+        """c1(E) in the Schubert-divisor basis over the kept nodes:
+        c1(E)_m = -<sum weights, alpha_{i_m}^vee>."""
+        rs, kept = self.X.rs, self.X.wd.roots_that_stay
+        total = None
+        for w in self.weights:
+            total = w if total is None else vadd(total, w)
+        out = []
+        for r in kept:
+            a = rs.simple_roots_ort[r - 1]
+            v = -Fraction(2 * dot(total, a), dot(a, a))
+            assert v.denominator == 1, 'c1(E) not integral on kept nodes'
+            out.append(int(v))
+        return out
+
+    def splitting_degrees(self, root_idx):
+        """Birkhoff-Grothendieck degrees b_mu = -<mu, beta^vee> of E on
+        the primitive invariant curve with root beta = root[root_idx]."""
+        if self.edge_data is not None:
+            return [degree for _, degree in self.edge_data[root_idx]]
+        rs = self.X.rs
+        b_ort = rs.positive_roots_ort[root_idx]
+        bb = dot(b_ort, b_ort)
+        out = []
+        for mu in self.weights:
+            v = -Fraction(2 * dot(mu, b_ort), bb)
+            assert v.denominator == 1, 'non-integral splitting degree'
+            out.append(int(v))
+        return out
+
+    def edge_splitting(self, root_idx):
+        """Equivariant line-summand data on a root curve at its base point.
+
+        Ordinary bundles use the weight/pairing formula.  Specialized
+        homogeneous bundles may provide the actual splitting, including
+        non-trivial extensions that are invisible in the fiber weight
+        multiset.
+        """
+        if self.edge_data is not None:
+            return self.edge_data[root_idx]
+        return tuple(zip(self.weights, self.splitting_degrees(root_idx)))
+
+    def _reduced_weight(self, weight):
+        """Project one weight onto the root span used by the evaluator."""
+        rs = self.X.rs
+        n = rs.rank
+        gram = tuple(tuple(dot(rs.simple_roots_ort[i], rs.simple_roots_ort[j])
+                           for j in range(n)) for i in range(n))
+        ginv = mat_inverse(gram)
+        b = [dot(weight, rs.simple_roots_ort[i]) for i in range(n)]
+        c = [sum(ginv[i][j] * b[j] for j in range(n)) for i in range(n)]
+        v = tuple(Fraction(0) for _ in range(rs.dim_ort))
+        for ci, a in zip(c, rs.simple_roots_ort):
+            v = vadd(v, vscale(ci, a))
+        return tuple(Fraction(x) for x in v)
+
+    def reduced_weights(self):
+        """Canonical form of the weight multiset: each weight projected
+        onto the root span (the torus-trivial W-invariant complement —
+        e.g. the trace direction in type A — carries no character data),
+        sorted.  Two presentations of the same bundle agree here."""
+        return tuple(sorted(self._reduced_weight(w) for w in self.weights))
+
+    def is_curvewise_convex(self):
+        """True iff f*E is globally generated on every invariant curve
+        (all splitting degrees >= 0) — the hypothesis the genus-0
+        twisted theory needs."""
+        return all(b >= 0
+                   for q in self.X.wd.reduced_root_indices
+                   for b in self.splitting_degrees(q))
+
+
+# ----------------------------------------------------------- constructors
+def _omega_ort(rs, node):
+    """Fundamental weight omega_node in ort coordinates (via the inverse
+    Cartan matrix: omega_r = sum_j (A^-1)^T[j][r] alpha_j)."""
+    v = tuple(Fraction(0) for _ in range(rs.dim_ort))
+    for j in range(rs.rank):
+        c = rs.cart_matrix[j][node - 1]
+        if c:
+            v = vadd(v, vscale(c, rs.simple_roots_ort[j]))
+    return v
+
+
+def O(X, *a, name=None):
+    """O_X(a_1, ..., a_k) over the kept nodes (roots_that_stay order):
+    single fiber weight -sum a_m omega_{i_m}."""
+    kept = X.wd.roots_that_stay
+    if len(a) != len(kept):
+        raise ValueError(f'O() needs {len(kept)} entries, got {len(a)}')
+    v = tuple(Fraction(0) for _ in range(X.rs.dim_ort))
+    for am, r in zip(a, kept):
+        if am:
+            v = vadd(v, vscale(-am, _omega_ort(X.rs, r)))
+    return HomogeneousBundle(X, [v], name or f'O{a}')
+
+
+def _type_a_factor(X, node):
+    """(factor_start_node, factor_rank+1, offset in ort space) of the
+    type-A factor containing the given global node."""
+    start_node, off = 1, 0
+    for fam, rank in X.rs.factors:
+        dim = rank + 1 if fam == 'A' else None
+        if fam != 'A':
+            if start_node <= node < start_node + rank:
+                raise ValueError('tautological bundles: type A factors only')
+            start_node += rank
+            off += {'A': rank + 1, 'B': rank, 'C': rank, 'D': rank,
+                    'G': 3, 'F': 4, 'E': 8}[fam]
+            continue
+        if start_node <= node < start_node + rank:
+            return start_node, rank + 1, off
+        start_node += rank
+        off += dim
+    raise ValueError(f'node {node} not found')
+
+
+def _eps(X, off, i, n_amb):
+    """epsilon_i (1-based within the factor) as an ort vector."""
+    return tuple(Fraction(1) if j == off + i - 1 else Fraction(0)
+                 for j in range(X.rs.dim_ort))
+
+
+def taut_sub(X, node, name=None):
+    """Tautological subbundle S_k at a kept type-A node."""
+    if node not in X.wd.roots_that_stay:
+        raise ValueError(f'node {node} is not kept by this flag variety')
+    start, n_amb, off = _type_a_factor(X, node)
+    k = node - start + 1
+    ws = [_eps(X, off, i, n_amb) for i in range(1, k + 1)]
+    return HomogeneousBundle(X, ws, name or f'S({node})')
+
+
+def taut_quot(X, node, name=None):
+    """Tautological quotient Q_k at a kept type-A node."""
+    if node not in X.wd.roots_that_stay:
+        raise ValueError(f'node {node} is not kept by this flag variety')
+    start, n_amb, off = _type_a_factor(X, node)
+    k = node - start + 1
+    ws = [_eps(X, off, i, n_amb) for i in range(k + 1, n_amb + 1)]
+    return HomogeneousBundle(X, ws, name or f'Q({node})')
+
+
+def dual(E, name=None):
+    return HomogeneousBundle(
+        E.X, [tuple(-x for x in w) for w in E.weights],
+        name or f'({E.name})^*')
+
+
+def osum(*Es, name=None):
+    if not Es:
+        raise ValueError('osum needs at least one bundle')
+    X = Es[0].X
+    if any(E.X is not X for E in Es[1:]):
+        raise ValueError('all bundles in osum must belong to the same FlagVariety')
+    ws = [w for E in Es for w in E.weights]
+    return HomogeneousBundle(X, ws,
+                             name or '+'.join(E.name for E in Es))
+
+
+def tensor(E1, E2, name=None):
+    """Tensor product of bundles on the same FlagVariety."""
+    if E1.X is not E2.X:
+        raise ValueError('tensor factors must belong to the same FlagVariety')
+    ws = [vadd(w1, w2) for w1 in E1.weights for w2 in E2.weights]
+    return HomogeneousBundle(E1.X, ws,
+                             name or f'{E1.name}(x){E2.name}')
+
+
+def sym(p, E, name=None):
+    if not isinstance(p, int) or p < 0:
+        raise ValueError('symmetric-power degree p must be a nonnegative integer')
+    ws = []
+    for comb in combinations_with_replacement(range(E.rank), p):
+        v = tuple(Fraction(0) for _ in range(E.X.rs.dim_ort))
+        for i in comb:
+            v = vadd(v, E.weights[i])
+        ws.append(v)
+    return HomogeneousBundle(E.X, ws, name or f'Sym^{p}{E.name}')
+
+
+def wedge(p, E, name=None):
+    if not isinstance(p, int) or p < 0 or p > E.rank:
+        raise ValueError(f'exterior-power degree p must satisfy 0 <= p <= rank ({E.rank})')
+    ws = []
+    for comb in combinations(range(E.rank), p):
+        v = tuple(Fraction(0) for _ in range(E.X.rs.dim_ort))
+        for i in comb:
+            v = vadd(v, E.weights[i])
+        ws.append(v)
+    return HomogeneousBundle(E.X, ws, name or f'L^{p}{E.name}')
+
+
+def quot(E, F, name=None):
+    '''Return the homogeneous quotient bundle E/F.
+
+    F is accepted precisely when its fiber-weight multiset is contained
+    in that of E (with multiplicity). The comparison uses the canonical
+    root-span projection used by reduced_weights, so equivalent
+    presentations that differ only by the torus-trivial type-A trace
+    direction are treated as the same character. Weyl transport preserves
+    this containment, hence the check holds at every fixed point.
+    '''
+    if not isinstance(E, HomogeneousBundle) or not isinstance(F, HomogeneousBundle):
+        raise ValueError('quot requires two HomogeneousBundle instances')
+    if E.X is not F.X:
+        raise ValueError('quotient bundles must belong to the same FlagVariety')
+
+    # Keep the original E weights for the quotient, but consume matching
+    # canonical characters one at a time so multiplicities are respected.
+    e_keys = list(E.reduced_weights())
+    f_keys = list(F.reduced_weights())
+    for key in f_keys:
+        try:
+            e_keys.remove(key)
+        except ValueError as exc:
+            raise ValueError(
+                'F must be a subbundle of E: every fiber weight of F must '
+                'occur in E with at least the same multiplicity') from exc
+
+    # Preserve E's raw representatives for all downstream formulas while
+    # consuming matching characters in their original order.
+    remaining_keys = list(f_keys)
+    remaining = []
+    for weight in E.weights:
+        key = E._reduced_weight(weight)
+        if key in remaining_keys:
+            remaining_keys.remove(key)
+        else:
+            remaining.append(weight)
+    return HomogeneousBundle(E.X, remaining,
+                             name or f'Quot({E.name},{F.name})')
+
+
+# The mathematical notation is often written with a capital Q; keep both
+# spellings available while using the lowercase constructor convention.
+Quot = quot
+
+
+def _negative_epsilon_sum(X, indices):
+    """The type-A weight ``-sum(e_i)`` for 1-based positions."""
+    v = [Fraction(0)] * X.rs.dim_ort
+    for i in indices:
+        v[i - 1] -= 1
+    return tuple(v)
+
+
+def _a_root_endpoints(root):
+    """Return p,q for the A-type positive root e_p-e_q."""
+    support = [i + 1 for i, c in enumerate(root) if c]
+    if not support:
+        raise ValueError('zero is not a positive root')
+    p, q = support[0], support[-1] + 1
+    if any(root[i - 1] != 1 for i in range(p, q)):
+        raise ValueError('expected an A-type interval root')
+    if any(root[i - 1] != 0 for i in range(1, len(root) + 1)
+           if i < p or i >= q):
+        raise ValueError('expected an A-type interval root')
+    return p, q
+
+
+def peskine_bundle(X, name=None):
+    """The extension-aware bundle for the Peskine incidence construction.
+
+    On ``F(1,4;10)`` this is
+
+        S_1^* tensor (Lambda^2 Q_1^* / Lambda^2 Q_4^*).
+
+    Its fixed-point character is still the quotient character, but its
+    invariant-curve restrictions are computed from the non-split quotient.
+    In particular, on a root crossing the 4-plane cut, two apparent
+    negative summands are paired with positive ones by the Euler extension.
+    The effective curve generator of the Peskine zero locus has ambient
+    degree (1,0,0,3,0,...,0), reflecting H_4|_X = 3 H_1|_X.
+    """
+    if X.rs.factors != [('A', 9)] or set(X.wd.roots_that_stay) != {1, 4}:
+        raise ValueError(
+            'peskine_bundle requires FlagVariety(\'A9\', [1, 4])')
+
+    line = taut_sub(X, 1)
+    q1 = taut_quot(X, 1)
+    q4 = taut_quot(X, 4)
+    quotient = quot(wedge(2, dual(q1)), wedge(2, dual(q4)))
+    weights = tensor(quotient, dual(line)).weights
+
+    # The quotient character consists of pairs (i,j) with 2 <= i < j <= 10
+    # and not both i,j >= 5; tensoring with S_1^* adds position 1.
+    pair_weights = []
+    for i, j in combinations(range(2, 11), 2):
+        if i >= 5 and j >= 5:
+            continue
+        pair_weights.append((i, j, _negative_epsilon_sum(X, (1, i, j))))
+    if tuple(mu for _, _, mu in pair_weights) != tuple(weights):
+        raise AssertionError('Peskine quotient character ordering changed')
+
+    edge_data = []
+    right = {5, 6, 7, 8, 9, 10}
+    for root in X.rs.positive_roots:
+        p, q = _a_root_endpoints(root)
+        entries = []
+        for i, j, mu in pair_weights:
+            pair = {i, j}
+            if p == 1 and q <= 4:
+                degree = 0 if q in pair else 1
+            elif p == 1 and q >= 5:
+                degree = 0 if q in pair else 1
+            elif 2 <= p <= 4 and q >= 5:
+                degree = (1 if p in pair and q not in pair
+                          and any(k in right and k != q for k in pair)
+                          else 0)
+            else:
+                degree = -(mu[p - 1] - mu[q - 1])
+            entries.append((mu, degree))
+        edge_data.append(tuple(entries))
+
+    generator = [0] * X.rs.rank
+    generator[0], generator[3] = 1, 3
+    return HomogeneousBundle(
+        X, weights, name or 'Peskine E', edge_data=edge_data,
+        effective_beta_generators=(tuple(generator),))
+
+
+PeskineBundle = peskine_bundle
+
+
+# ------------------------------------------------ weight-value evaluation
+class WeightEvaluator:
+    """P(w . mu) for arbitrary weights mu: expands the projection of an
+    ort vector onto the root span in the simple-root basis and evaluates
+    against the backend's x-variables.  Agrees with the root-only poly
+    table on roots; extends it to epsilon/omega vectors (the projection
+    kills the torus-trivial W-invariant directions)."""
+
+    def __init__(self, rs, bk):
+        self.rs = rs
+        self.bk = bk
+        n = rs.rank
+        gram = tuple(tuple(dot(rs.simple_roots_ort[i],
+                               rs.simple_roots_ort[j])
+                           for j in range(n)) for i in range(n))
+        self._gram_inv = mat_inverse(gram)
+        self._cache = {}
+
+    def value(self, v_ort):
+        v_ort = tuple(v_ort)
+        hit = self._cache.get(v_ort)
+        if hit is None:
+            n = self.rs.rank
+            b = [dot(v_ort, self.rs.simple_roots_ort[i]) for i in range(n)]
+            coeffs = [sum(self._gram_inv[i][j] * b[j] for j in range(n))
+                      for i in range(n)]
+            hit = self.bk.linear([Fraction(c) for c in coeffs])
+            self._cache[v_ort] = hit
+        return hit

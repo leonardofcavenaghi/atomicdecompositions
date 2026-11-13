@@ -1,0 +1,1 @@
+Preserved original runtime source, matching the recorded v1.0.5/main runtime blobs. This is not a full repository archive. The old CLI treats empty insertion text as a unit insertion; Python and interface unmarked cubic-surface calculations correctly return 27. Use the corrected development bundle for the CLI correction.

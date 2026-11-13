@@ -54,7 +54,8 @@ def spectra_match(A, B, trials=3, seed=7):
 
 def verify(label, algebra, keep, K, ref_entries, workers=0):
     t0 = time.time()
-    X = FlagVariety(algebra, keep)
+    # Stored references use the original ambient-node parameter labels.
+    X = FlagVariety(algebra, keep, novikov_convention="ambient")
     M, Gr, idx = X.small_quantum_multiplication(K or None, workers=workers)
     ours = sympy.Matrix([[sympy.sympify(v) for v in row] for row in M])
     took = time.time() - t0
@@ -100,3 +101,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+

@@ -1,37 +1,45 @@
 ---
-title: GEOATOMS — Quantum cohomology of flag varieties
-description: A catalog of quantum multiplication matrices for flag varieties and their sections, with the gwflags software for exact virtual localization.
+title: GEOATOMS — Quantum cohomology and varieties
+description: A universal catalogue of varieties and complete intersections, with exact quantum-cohomology data and flag and toric localization software.
 ---
 
-# Quantum cohomology of flag varieties
+# Varieties and quantum cohomology
 
-GEOATOMS brings together computed examples and software for genus-zero
-Gromov–Witten theory. The catalog covers flag varieties and their complete
-intersections; the Python package **gwflags** computes their invariants by
-exact virtual localization.
+GEOATOMS brings together geometric examples, exact genus-zero Gromov–Witten computations and small quantum multiplication. The catalogue follows the varieties: start with their dimension and construction, then inspect their invariants, cohomology and computed ambient operator.
 
-[Explore the catalog](catalog/index.md){ .md-button .md-button--primary }
-[Use the software](installation.md){ .md-button }
+[Explore the catalogue](catalog/index.md){ .md-button .md-button--primary }
+[Choose and install software](installation.md){ .md-button }
 
-## Explore the examples
+## A catalogue organized by geometry
 
-Browse [projective complete intersections](catalog/projective.md),
-[Grassmannians](catalog/grassmannians.md), [flag varieties and their sections](catalog/additional.md),
-or the [Fano threefold reference catalog](catalog/fanography.md).
-Each computed entry includes a multiplication matrix and the information
-needed to interpret it.
+Browse [surfaces](catalog/surfaces.md), [threefolds](catalog/threefolds.md), [fourfolds](catalog/fourfolds.md), [fivefolds](catalog/fivefolds.md), or the [full dimension index](catalog/index.md). Compare complete intersections in projective spaces, Grassmannians, homogeneous spaces and projective bundles in the same geometric collection.
 
-The collection includes **131 completed computations**. [Download matrices and inputs](catalog/computed.md)
-to reuse the symbolic results, bases and gradings in your own calculations.
+The catalogue contains **299 saved computation records**, including **168 newly published fourfold and fivefold matrices**. These count presentations and computations, not distinct varieties. Each record preserves its basis and conventions; unresolved connection factors remain explicit.
 
-## Compute with gwflags
+## Two input models, one documented collection
 
-Use the local browser interface, command line or Python API to compute GW
-invariants and multiplication by the first Chern class. For complete
-intersections, the returned matrix acts on the flag-ambient sector;
-[Methods and conventions](methodology.md) explains its scope.
+<div class="geometry-grid" markdown>
 
-The stable software is **v1.0.5**.
-[Download its source ZIP](https://github.com/leonardofcavenaghi/atomicdecompositions/archive/refs/tags/v1.0.5.zip),
-follow the [installation guide](installation.md), or read the
-[release notes](releases.md).
+<div class="geometry-card flags" markdown>
+
+### Flag computations
+
+Describe homogeneous spaces using root systems, kept roots and supported bundles. Use flag 1.0.6.dev0 or 1.1.0.dev1, or the flag workspace in the combined application.
+
+[Flag mathematics](methodology.md){ .md-button }
+[Flag usage](software/flags-1.1.0.md){ .md-button }
+
+</div>
+<div class="geometry-card toric" markdown>
+
+### Toric computations
+
+Describe a smooth projective ambient using rays, maximal cones and defining divisors. Use toric 1.1.0.dev1 or its workspace in the combined application.
+
+[Toric mathematics](toric/mathematics.md){ .md-button }
+[Toric usage](software/toric-1.1.0.md){ .md-button }
+
+</div>
+</div>
+
+The new software downloads retain development version labels. The preserved stable flag release is [v1.0.5](https://github.com/leonardofcavenaghi/atomicdecompositions/archive/refs/tags/v1.0.5.zip). See [installation choices](installation.md), [version differences](software/changes.md), and [release notes](releases.md).

@@ -1,7 +1,6 @@
 # gwflags — command-line usage
 
-Everything runs locally from a terminal. All you need is Python ≥ 3.9 with
-`sympy` (`pip3 install --user sympy`), or a SageMath installation.
+Everything runs locally from a terminal. Use Python ≥ 3.9 and install the prepared source with `python -m pip install -e .` in an isolated environment; this installs SymPy and mpmath as declared by the package.
 
 ## Graphical interface
 
@@ -29,12 +28,11 @@ python3 -m gwflags.cli <algebra> --keep <nodes> [-K "<rows>"] <subcommand> [...]
 Or install once (editable, picks up code changes automatically):
 
 ```bash
-pip3 install --user -e .
+python -m pip install -e .
 gwflags <algebra> --keep <nodes> [-K "<rows>"] <subcommand> [...]
 ```
 
-If your shell can't find `gwflags`, add the user scripts directory to your
-PATH (it's `$(python3 -m site --user-base)/bin`).
+Run the command inside the activated virtual environment. Alternatively, use its full Python path with `-m gwflags.cli`, as shown in the installation guide.
 
 ## Describing the variety
 
@@ -164,3 +162,13 @@ python3 tests/test_gwflags.py        # 20 checks, ~10 s
   (`from gwflags import FlagVariety`; see README.md) — the Python API
   additionally exposes custom β lists, raw symbolic localization sums
   (`gw_raw`), and eigenvalues at y=1 (`eigenvalues(M, at_one=True)`).
+
+
+## Parameter names and empty insertions
+
+The default `--novikov-convention paper` keeps ambient labels in type A and uses consecutive kept-root labels in the other families. `--novikov-convention ambient` preserves the previous labels. The option goes before `info`, `gw` or `sqm`; `info` prints the map.
+
+```bash
+# Unmarked cubic-surface lines: 27; no point insertion.
+python -m gwflags.cli A3 --keep 1 -K 3 gw --beta 1 --classes ""
+```

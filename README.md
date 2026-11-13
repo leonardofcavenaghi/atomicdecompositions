@@ -1,13 +1,14 @@
 # gwflags — GW invariants of flag varieties (Python / SageMath)
 
+Start with [Launch documentation](LAUNCH.md) for the complete change overview, software choices, input/output conventions and publication and validation.
+
 A translation of `V3.nb` (Mathematica + LieART) into a fast Python
 package; runs on plain Python and inside SageMath.
 
 [Website and catalogue](https://leonardofcavenaghi.github.io/atomicdecompositions/)
 · [Release notes and downloads](https://leonardofcavenaghi.github.io/atomicdecompositions/releases/)
 
-The current package version is `1.0.5`, available as the stable tag `v1.0.5`.
-Use that tag for a reproducible release snapshot matching the website.
+This development version is `1.0.6.dev0`; its source bundle is published with the website launch, without a new stable tag. The preserved stable release remains `v1.0.5`. See the release notes for the parameter-name change and the empty-insertion CLI correction.
 
 It computes, for a flag variety **G/P** — of any simple type A–G *or a
 product* (`'A3xA3'` for P³×P³-type flags, `'A1xA1xA4'`, …):
@@ -48,12 +49,12 @@ took `x → prime·t, t → 0` limits at the end.  This package instead:
   bit-identical to serial).
 
 sympy (or Sage, auto-detected) only assembles the final matrices with quantum
-variables named `y<ambient node>` and extracts eigenvalues. The raw symbolic sums
+variables named by `X.novikov_names` and extracts eigenvalues. The raw symbolic sums
 remain available via `FlagVariety.gw_raw` / the `.sym` calculator.
 
 ## Requirements
 
-- Plain Python ≥ 3.9 with `sympy` (`pip install sympy`), **or**
+- Plain Python ≥ 3.9; package installation resolves SymPy and mpmath, **or**
 - SageMath (no extra dependencies; the package detects Sage and uses its
   symbolic ring — same code, faster algebra).
 
@@ -155,8 +156,7 @@ Conventions: simple roots are numbered as in Bourbaki (for type A this
 matches LieART). Equivariant variables `x_i` correspond to the simple roots
 α_i (a root's polynomial is its expansion in simple roots). A kept-root beta is
 written in `roots_that_stay` order and is embedded at those ambient nodes;
-quantum variables are named `y<ambient node>` (kept nodes `1,3` therefore use
-`y1` and `y3`). All Weyl-group elements are matrices in the orthogonal
+the default `paper` Novikov names retain ambient nodes for type A (kept nodes `1,3` use `y1,y3`) and use consecutive kept-root labels for other families. Pass `novikov_convention="ambient"` to retain the previous names; `X.novikov_metadata` gives the map. All Weyl-group elements are matrices in the orthogonal
 realization; Schubert classes are minimal coset representatives
 (`FlagVariety.classes`, `.schubert(word)`, `.pt`).
 
@@ -240,3 +240,14 @@ python3 -m pytest tests/ -q
 `tests/test_reference_list.py` checks the transcribed external reference
 matrices; `tests/test_bundles.py` checks quotient bundles and bundle
 combinations.
+
+
+## Unmarked tree generation
+
+This prepared build adopts the rooted-shape/AHU generator from upstream commit 7f167e1. It preserves legacy tree representatives and ordering; independent compatibility checks cover six edges. See CHANGELOG.md.
+
+## Website launch — 2026-11-12
+
+The [website](https://leonardofcavenaghi.github.io/atomicdecompositions/) organizes a universal catalogue by dimension and construction, with distinct flag and toric mathematical conventions and usage guides. The [installation page](https://leonardofcavenaghi.github.io/atomicdecompositions/installation/) provides individual flag/toric and combined versioned downloads. Published toric records preserve exact inputs, symbolic matrices and unresolved connection-factor notes. Stable v1.0.5 remains preserved.
+
+Versioned source folders are [flag 1.0.5](software/flag-1.0.5), [flag 1.1.0.dev1](software/flag-1.1.0.dev1), [toric 1.1.0.dev1](software/toric-1.1.0.dev1) and [combined 1.1.0.dev1](software/combined-1.1.0.dev1). The repository root provides flag `1.0.6.dev0`. Install each distribution into its own environment. The runtime ZIPs provide the same software choices without requiring a Git checkout.

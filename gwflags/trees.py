@@ -95,36 +95,55 @@ def nonneg_compositions(k, n):
 
 
 # ------------------------------------------------------------------ raw trees
+def _rooted_level_sequences(n):
+    """Beyer-Hedetniemi rooted shapes, as used by the toric engine."""
+    levels = list(range(n))
+    yield list(levels)
+    while True:
+        p = n - 1
+        while p > 0 and levels[p] == 1:
+            p -= 1
+        if p == 0:
+            return
+        q = p - 1
+        while levels[q] != levels[p] - 1:
+            q -= 1
+        for i in range(p, n):
+            levels[i] = levels[i - p + q]
+        yield list(levels)
+
+
 @lru_cache(maxsize=None)
 def all_trees_n(n):
     """All trees on vertices 1..n up to isomorphism, first (lexicographic)
-    representative kept — same enumeration order as AllTreesN."""
+    representative kept — same enumeration order as AllTreesN.
+
+    Generate rooted shapes and deduplicate by AHU before relabeling. Only
+    one representative per free shape needs its lexicographically least
+    labeling, preserving legacy checkpoint tree indices and vertex labels.
+    """
     if n == 1:
         return [((), 1)]
-    pairs = list(combinations(range(1, n + 1), 2))
     reps, seen_canon = [], set()
-    for edges in combinations(pairs, n - 1):
-        adj = {v: [] for v in range(1, n + 1)}
-        for u, v in edges:
-            adj[u].append(v)
-            adj[v].append(u)
-        # connectivity (n-1 edges + connected => tree)
-        stack, seen = [1], {1}
-        while stack:
-            for w in adj[stack.pop()]:
-                if w not in seen:
-                    seen.add(w)
-                    stack.append(w)
-        if len(seen) != n:
+    for levels in _rooted_level_sequences(n):
+        edges, stack = [], []
+        for vertex, level in enumerate(levels, 1):
+            while len(stack) > level:
+                stack.pop()
+            if stack:
+                edges.append((stack[-1], vertex))
+            stack.append(vertex)
+        edges = tuple(sorted(edges))
+        adj = _tree_adjacency(edges, n)
+        key, _ = ahu_canon(n, adj, {e: 1 for e in edges}, lambda v: 0)
+        if key in seen_canon:
             continue
+        seen_canon.add(key)
         canon = min(
             tuple(sorted(tuple(sorted((p[u], p[v]))) for u, v in edges))
-            for p in ({v: i + 1 for i, v in enumerate(perm)}
-                      for perm in permutations(range(1, n + 1))))
-        if canon not in seen_canon:
-            seen_canon.add(canon)
-            reps.append((edges, n))
-    return reps
+            for p in ((0,) + perm for perm in permutations(range(1, n + 1))))
+        reps.append((canon, n))
+    return sorted(reps)
 
 
 def all_trees(n):
@@ -471,3 +490,4 @@ def decorated_trees(tree, beta, num_marks, wd):
             out.append(dt)
     wd.decoration_cache[cache_key] = out
     return out
+

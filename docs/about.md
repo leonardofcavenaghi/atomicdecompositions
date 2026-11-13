@@ -5,7 +5,7 @@ description: The GEOATOMS group and contributors behind the gwflags software and
 # About GEOATOMS
 
 GEOATOMS develops computational tools and examples in algebraic and
-enumerative geometry, with a focus on quantum cohomology and flag varieties.
+enumerative geometry, with a focus on quantum cohomology of flag and toric varieties.
 
 ## Project leaders
 
@@ -14,6 +14,7 @@ enumerative geometry, with a focus on quantum cohomology and flag varieties.
 
 ## Contributors
 
+- Milena Brockhof
 - Boris Alexeev
 - Leonardo F. Cavenaghi
 - Giovane Galindo

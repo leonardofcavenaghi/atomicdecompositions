@@ -42,7 +42,8 @@ class FlagVariety:
     """High-level interface: fast numeric evaluation by default, symbolic
     calculators on demand (`.sym` / `.gw_raw`)."""
 
-    def __init__(self, algebra, roots_that_stay, backend=None, seed=0):
+    def __init__(self, algebra, roots_that_stay, backend=None, seed=0,
+                 novikov_convention='paper'):
         self.rs = RootSystemData(algebra)
         keep = list(roots_that_stay)
         if not keep or len(set(keep)) != len(keep) or \
@@ -51,11 +52,30 @@ class FlagVariety:
             raise ValueError(
                 f'roots_that_stay must be distinct 1-based simple-root '
                 f'indices within 1..{self.rs.rank}; got {roots_that_stay!r}')
+        from .novikov import variable_labels
+        variable_labels(self.rs, keep, novikov_convention)
+        self.novikov_convention = novikov_convention
         self.wd = WeylData(self.rs, keep)
         self._backend_pref = backend
         self._seed = seed
         self._sym = None
         self._numeric = None
+
+    @property
+    def novikov_labels(self):
+        from .novikov import variable_labels
+        return variable_labels(self.rs, self.wd.roots_that_stay,
+                               self.novikov_convention)
+
+    @property
+    def novikov_names(self):
+        return tuple(f'y{label}' for label in self.novikov_labels)
+
+    @property
+    def novikov_metadata(self):
+        from .novikov import metadata
+        return metadata(self.rs, self.wd.roots_that_stay,
+                        self.novikov_convention)
 
     # ------------------------------------------------------- input checks
     def _check_K(self, K):
@@ -301,3 +321,4 @@ def full_flag(algebra, backend=None):
     """G/B for the given algebra."""
     rs = RootSystemData(algebra)
     return FlagVariety(algebra, list(range(1, rs.rank + 1)), backend)
+

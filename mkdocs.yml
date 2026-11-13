@@ -1,6 +1,6 @@
 site_name: GEOATOMS
 site_url: https://leonardofcavenaghi.github.io/atomicdecompositions/
-site_description: 'GEOATOMS and gwflags: exact virtual localization for genus-zero Gromov-Witten invariants, small quantum multiplication, and a catalogue of Fano varieties and complete intersections in flag varieties.'
+site_description: 'Exact genus-zero localization software and separate flag and toric quantum-cohomology catalogues.'
 repo_name: leonardofcavenaghi/atomicdecompositions
 repo_url: https://github.com/leonardofcavenaghi/atomicdecompositions
 edit_uri: edit/main/docs/
@@ -78,19 +78,37 @@ extra_css:
 
 nav:
   - Home: index.md
-  - Catalog:
-      - Overview: catalog/index.md
-      - Projective Spaces: catalog/projective.md
-      - Grassmannians: catalog/grassmannians.md
-      - Flag Varieties and Sections: catalog/additional.md
-      - Download matrices and inputs: catalog/computed.md
-      - Fano Threefolds: catalog/fanography.md
-  - Software:
-      - Installation: installation.md
-      - User Guide: how-to-use.md
-      - Python API: api-reference.md
-      - Releases: releases.md
+  - Catalogue:
+      - All varieties: catalog/index.md
+      - Points and curves: catalog/points-curves.md
+      - Surfaces: catalog/surfaces.md
+      - Threefolds: catalog/threefolds.md
+      - Fourfolds: catalog/fourfolds.md
+      - Fivefolds: catalog/fivefolds.md
+      - Higher dimensions: catalog/higher-dimensional.md
+      - Projective constructions: catalog/projective.md
+      - Grassmannian constructions: catalog/grassmannians.md
+      - Homogeneous constructions: catalog/additional.md
+      - Fano threefold reference: catalog/fanography.md
+      - Exact datasets: catalog/datasets.md
+      - Original dataset usage: catalog/computed.md
   - Mathematics:
-      - Methods and Conventions: methodology.md
-      - Flag Variety Inputs: lie-algebras.md
+      - Flag localization: methodology.md
+      - Root-system inputs: lie-algebras.md
+      - Toric localization: toric/mathematics.md
+  - Software:
+      - Versions and scope: software/index.md
+      - How to install: installation.md
+      - Flag 1.0.6.dev0: software/flags-1.0.6.md
+      - Flag 1.1.0.dev1: software/flags-1.1.0.md
+      - Toric 1.1.0.dev1: software/toric-1.1.0.md
+      - Combined 1.1.0.dev1: software/combined.md
+      - Changes in this launch: software/launch-2026-11.md
+      - Inputs and outputs: software/input-output.md
+      - Notation and compatibility: software/notation.md
+      - Version differences: software/changes.md
+      - Preserved flag 1.0.5: software/flags-legacy.md
+      - Python API: api-reference.md
+      - Release notes: releases.md
+      - Validation and publication: software/launch-plan.md
   - About: about.md

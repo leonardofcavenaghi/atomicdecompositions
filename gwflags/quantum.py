@@ -4,7 +4,7 @@ SmallQuantumMultiplication, BetasAndFanoIndex.
 All GW numbers are obtained through FlagVariety.gw_number (degree gate +
 exact two-point numeric evaluation), so the metric and the pair sums are
 exact Fractions; sympy/Sage only enters when the quantum variables y<node>
-(named by ambient Bourbaki node) are attached to the final matrix.  The
+(named by the selected Novikov convention) are attached to the final matrix.  The
 per-beta pair sums can be distributed
 over processes with workers=N.
 """
@@ -308,8 +308,8 @@ def _beta_block_fork(beta):
 
 def small_quantum_multiplication(X, K, betas, progress=None, workers=0):
     """SmallQuantumMultiplication: (matrix of c1(TX)*, grading matrix,
-    0-based basis indices into X.classes). Entries carry variables y<node>,
-    named by ambient Bourbaki labels of kept nodes. workers > 0 distributes
+    0-based basis indices into X.classes). Entries use X.novikov_names;
+    the curve lattice and the returned basis do not depend on the names. workers > 0 distributes
     the per-beta blocks over processes."""
     bk, wd, rs = X.bk, X.wd, X.rs
     reps = wd.reduced_group
@@ -364,9 +364,10 @@ def small_quantum_multiplication(X, K, betas, progress=None, workers=0):
             qmon = 1
         else:
             qmon = 1
-            for u, bu in enumerate(beta, start=1):
+            for node, label in zip(wd.roots_that_stay, X.novikov_labels):
+                bu = beta[node - 1]
                 if bu:
-                    qmon = qmon * bk.y(u) ** bu
+                    qmon = qmon * bk.y(label) ** bu
         for (i, j), val in block.items():
             term = bk.rational(val) * qmon if qmon != 1 else val
             sqm[i][j] = sqm[i][j] + term
@@ -380,3 +381,4 @@ def small_quantum_multiplication(X, K, betas, progress=None, workers=0):
     grading = [[bk.rational(Fraction(2 * wd.length(reps[indices[a]]) - dim, 2))
                 if a == b else 0 for b in range(n)] for a in range(n)]
     return mat_c1, grading, indices
+

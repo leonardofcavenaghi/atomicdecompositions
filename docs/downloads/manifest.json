@@ -1,0 +1,35 @@
+[
+  {
+    "file": "gwflags-1.0.6.dev0.zip",
+    "sha256": "df8b9d055c366f07847525ca55cda18532c75901bf008fc35fa54a076675cd54",
+    "files": 42,
+    "version": "1.0.6.dev0"
+  },
+  {
+    "file": "gw-combined-1.1.0.dev1.zip",
+    "sha256": "5b4894cbd0b0f183be69c0c0eb418f9e3ecc7a0fe083691dc227b911be7a102f",
+    "files": 71,
+    "version": "1.1.0.dev1"
+  },
+  {
+    "file": "gwflags-1.0.5-preserved.zip",
+    "sha256": "da539f5c2192f8124f7c6875ffbcd23bfb614c3585e426ee33c3de287175c3e5",
+    "files": 17,
+    "version": "1.0.5",
+    "runtime_git_blob_identity_verified": true
+  },
+  {
+    "file": "gw-flag-1.1.0.dev1.zip",
+    "sha256": "9cfded1bf4de6722511fedde6e4cdfec14295c49e5cd12e423040bc29dee62ae",
+    "files": 66,
+    "version": "1.1.0.dev1",
+    "scope": "flag"
+  },
+  {
+    "file": "gw-toric-1.1.0.dev1.zip",
+    "sha256": "08e709bbe6ced8ddee1f13cd05a690e2dd5a76c3b8f63cbd7ddd31e7d9093190",
+    "files": 66,
+    "version": "1.1.0.dev1",
+    "scope": "toric"
+  }
+]

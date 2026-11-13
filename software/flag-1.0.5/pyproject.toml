@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gwflags"
+version = "1.0.5"
+description = "Quantum cohomology computations for flag varieties"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.9"
+dependencies = ["sympy>=1.10", "mpmath>=1.2"]
+
+[project.optional-dependencies]
+test = ["pytest>=7.4,<9"]
+
+[project.urls]
+Homepage = "https://leonardofcavenaghi.github.io/atomicdecompositions/"
+Documentation = "https://leonardofcavenaghi.github.io/atomicdecompositions/"
+Repository = "https://github.com/leonardofcavenaghi/atomicdecompositions"
+Issues = "https://github.com/leonardofcavenaghi/atomicdecompositions/issues"
+
+[tool.setuptools.packages.find]
+include = ["gwflags*"]
+
+[project.scripts]
+gwflags = "gwflags.cli:main"
+gwflags-gui = "gwflags.gui:main"
+
+[tool.pytest.ini_options]
+markers = [
+    "slow: exact algebra regressions run once on the newest supported Python",
+]

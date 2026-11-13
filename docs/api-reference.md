@@ -61,7 +61,7 @@ example `[[1], [2]]` for `O(1) + O(2)` on a one-generator space.
 
 ## 4. Main interface (`gwflags/__init__.py`)
 
-### `FlagVariety(algebra, roots_that_stay, backend=None)`
+### `FlagVariety(algebra, roots_that_stay, backend=None, seed=0, novikov_convention="paper")`
 
 `roots_that_stay` is a distinct list of 1-based simple-root nodes not in the
 parabolic, in the order used for Picard coordinates. For example,
@@ -118,9 +118,7 @@ method returns index zero and only the zero class.
 ### `small_quantum_multiplication(K=None, betas=None, progress=None, workers=0)`
 
 Returns `(M, grading, basis_indices)` for multiplication by `c1(TX)` on the
-flag-ambient Schubert sector. `M` is symbolic in `y<node>`, where `<node>` is
-the ambient Bourbaki label of a kept root (so kept nodes `1,3` use `y1` and
-`y3`). `betas` may be supplied in either accepted beta convention. The matrix
+flag-ambient Schubert sector. `M` is symbolic in `X.novikov_names`. The default `paper` convention keeps ambient node labels for type A (kept nodes `1,3` use `y1,y3`) and uses consecutive kept-root labels for other families. Use `novikov_convention="ambient"` for the previous names, or `"compact"` for consecutive labels for all types. `X.novikov_metadata` records the map without changing the beta lattice. `betas` may be supplied in either accepted beta convention. The matrix
 uses input columns and output rows. The grading is diagonal with entries
 `codimension − dim(X)/2`, and `basis_indices` indexes `X.classes` and
 `X.class_words()` in their returned order. It is the full small quantum-cohomology operator only when the relevant homology
@@ -145,9 +143,7 @@ the printed words (or use the **Add** button). Separate insertions with `|`;
 `pt`, `id`, and `e` are accepted shortcuts.
 
 For the compact GUI/CLI bundle field, use `3` or `1,1;2,2` for line-bundle
-rows; Python list notation such as `[[3]]` belongs to the Python API. In a
-symbolic matrix, variables are named by ambient nodes, while beta input is in
-kept-root order unless zero-padded.
+rows; Python list notation such as `[[3]]` belongs to the Python API. A blank CLI `--classes ""` means zero insertions; `id` means one unit insertion. Symbolic parameter names follow the selected convention, while beta input remains in kept-root order unless zero-padded.
 
 ## 6. Minimal reproducible examples
 
@@ -171,3 +167,4 @@ E = osum(taut_sub(G, 2), Q)
 Kq = quot(E, taut_sub(G, 2))
 assert Kq.rank == 2
 ```
+

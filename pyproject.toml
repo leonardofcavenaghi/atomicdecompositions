@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "gwflags"
-version = "1.0.5"
+version = "1.0.6.dev0"
 description = "Quantum cohomology computations for flag varieties"
 readme = "README.md"
 license = {file = "LICENSE"}
@@ -31,3 +31,4 @@ gwflags-gui = "gwflags.gui:main"
 markers = [
     "slow: exact algebra regressions run once on the newest supported Python",
 ]
+

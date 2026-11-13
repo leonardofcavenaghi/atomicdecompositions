@@ -125,6 +125,44 @@ async function main() {
     const cubicIndex = await page.$eval('tbody tr', row => row.cells[3].textContent.trim());
     if (cubicIndex !== '2' || errors.length) throw new Error(JSON.stringify({cubicIndex, errors}));
     console.log('Computed catalog passed: 15 new cards, 131 downloadable results, full GM-20 matrix, correct master-table ambient index.');
+
+    for (const [collection, expected] of [['fourfolds',122],['fivefolds',98]]) {
+      await page.goto(`${base}/catalog/${collection}/`, {waitUntil:'domcontentloaded'});
+      await page.waitForFunction(() => window.jQuery && jQuery.fn.dataTable && jQuery.fn.dataTable.isDataTable('table'));
+      const count=await page.evaluate(() => jQuery('table').DataTable().rows().count());
+      if (count!==expected) throw new Error('Wrong toric collection count: '+collection+' '+count);
+    }
+    for (const id of ['hlm-29','qc5-001','prod5-b03']) {
+      await page.goto(`${base}/catalog/records/${id}/`, {waitUntil:'domcontentloaded'});
+      await page.waitForFunction(() => {
+        const formulas=[...document.querySelectorAll('.arithmatex')];
+        return formulas.length>0 && formulas.every(node => node.querySelector('mjx-container'));
+      }, {timeout:30000});
+      const state=await page.evaluate(() => ({
+        mathErrors:document.querySelectorAll('mjx-merror').length,
+        inputs:document.querySelectorAll('pre code').length,
+        matrices:[...document.querySelectorAll('table')].some(t => t.textContent.includes('M')),
+        emptyLinks:[...document.querySelectorAll('article a')].some(a => !a.getAttribute('href'))
+      }));
+      if (state.mathErrors || state.inputs<2 || !state.matrices || state.emptyLinks) throw new Error(id+': '+JSON.stringify(state));
+    }
+    await page.goto(`${base}/`, {waitUntil:'domcontentloaded'});
+    if (await page.$('.geometry-card').then(cards=>cards.length)!==2) throw new Error('Geometry division missing');
+    const search = await page.evaluate(async () => {
+      const [index,records] = await Promise.all([
+        fetch('search/search_index.json').then(r=>r.json()),
+        fetch('data/catalog-records.json').then(r=>r.json())
+      ]);
+      const missing=records.records.filter(r => r.link.startsWith('records/')).filter(r =>
+        !index.docs.some(d => d.location.startsWith('catalog/'+r.link.replace('.md','/')) && (d.title+' '+d.text).includes(r.id)));
+      return {missing:missing.map(r=>r.id),count:index.docs.length};
+    });
+    if (search.missing.length) throw new Error('Unindexed catalogue records: '+search.missing.join(', '));
+    await page.setViewport({width:390,height:844});
+    if (await page.evaluate(() => document.documentElement.scrollWidth>window.innerWidth+2)) throw new Error('Home page overflows mobile viewport');
+    if (errors.length) throw new Error(errors.join('; '));
+    console.log('Universal catalogue and search passed: 299 records, including 168 new presentations, exact matrix tables and rendered fourfold/fivefold mathematics; mobile home layout.');
+
   } finally {
     await browser.close();
     await new Promise(resolve => server.close(resolve));
@@ -132,3 +170,4 @@ async function main() {
 }
 
 main().catch(error => { console.error(error); process.exitCode = 1; });
+

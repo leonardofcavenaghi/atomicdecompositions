@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gw-combined"
+version = "1.1.0.dev1"
+description = "Separate flag and toric workspaces for exact Gromov-Witten computations"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.9"
+dependencies = ["sympy>=1.14", "mpmath>=1.2"]
+
+[project.urls]
+Homepage = "https://github.com/GiovaneGalindo/Torics"
+Documentation = "https://github.com/GiovaneGalindo/Torics"
+Repository = "https://github.com/GiovaneGalindo/Torics"
+Issues = "https://github.com/GiovaneGalindo/Torics/issues"
+
+[tool.setuptools.packages.find]
+include = ["gwflags*", "gwtoric*", "gwapp*"]
+
+[tool.setuptools.package-data]
+gwapp = ["*.js"]
+
+[project.scripts]
+gwflags = "gwflags.cli:main"
+gwflags-gui = "gwflags.gui:main"
+gw-combined = "gwapp.server:main"
+gwtoric = "gwtoric.cli:main"
+gwtoric-gui = "gwtoric.gui:main"
+
+
+[tool.pytest.ini_options]
+markers = ["slow: exact algebra regression"]

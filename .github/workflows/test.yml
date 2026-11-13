@@ -88,6 +88,9 @@ jobs:
       - name: Validate exact computation data and catalog index
         run: PYTHONDONTWRITEBYTECODE=1 python scripts/validate_localization_results.py
 
+      - name: Validate exact saved toric records
+        run: python scripts/validate_toric_results.py
+
       - name: Validate catalog LaTeX
         run: PYTHONDONTWRITEBYTECODE=1 python scripts/validate_catalog_tex.py
 
@@ -114,6 +117,9 @@ jobs:
           python -m pip install -e .
           python -m pip install -r requirements-docs.txt
 
+      - name: Validate catalogue links and downloadable sources
+        run: python scripts/validate_delivery.py
+
       - name: Build documentation strictly
         run: mkdocs build --strict
 
@@ -138,3 +144,20 @@ jobs:
 
       - name: Run GUI controls regression
         run: node scripts/test_gui_controls.js
+
+
+  distributions:
+    name: Source distributions (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install and exercise every downloadable distribution
+        run: python scripts/validate_distributions.py

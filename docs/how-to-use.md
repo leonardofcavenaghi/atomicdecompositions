@@ -8,7 +8,7 @@ description: Run gwflags to compute exact genus-zero Gromov-Witten invariants an
 
 ## Launch the interface
 
-Follow [Installation](installation.md) to install the stable software. Then run:
+This guide describes the development version `1.0.6.dev0`. Install its prepared source bundle as described in [Installation](installation.md). The preserved `v1.0.5` download keeps its original notation. Then run:
 
 ```bash
 python -m gwflags.gui --no-browser
@@ -49,10 +49,9 @@ The preset fills every dependent field, so an old β or insertion cannot acciden
 - **Insertions**: `pt`, `id`, or reduced minimal Weyl words separated by `|`.
   Copy words printed by **Space Info**, or click **Add** beside a basis word.
 
-`Evaluate y` is optional and applies to quantum matrices only. Variables use
-ambient node labels (`y1`, `y3`, ...), so a variety with kept roots `1,3` uses
-`y1` and `y3`. Leave it blank for symbolic Novikov variables, or enter
-assignments such as `y1=1,y3=1`.
+`Novikov notation` defaults to **Paper notation**. Type A examples retain ambient node labels: kept roots `1,3` use `y1,y3`. For other families, the parameters are consecutive in kept-root order: `C3` with kept root `3`, `G2` with kept root `2`, and `D5` with kept root `4` each use `y1`. **Describe this space** displays the variable-to-node map. Choose **Legacy ambient-node labels** to reproduce the old parameter names. Curve coordinates do not change.
+
+`Evaluate y` applies to quantum matrices only. Leave it blank for a symbolic matrix, or assign the names shown by **Describe this space**, for example `y1=2`. The standalone flag GUI substitutes into the returned matrix; custom assignments suppress its separate `y=1` eigenvalue display.
 
 ## Copyable examples
 
@@ -89,7 +88,7 @@ supported convex Euler-twisted computation reject that direct input; use
 
 **Space Info** reports dimension, Fano index, first Chern class, number of curve classes, and the Schubert basis. Use the **Add** buttons to build insertion lists.
 
-**Quantum matrix** reports the matrix, grading, characteristic polynomial, and numerical eigenvalues only when all Novikov variables are specialized to one. A custom `Evaluate y` value is reported separately and does not claim to be the `y=1` spectrum.
+**Quantum matrix** reports the matrix, grading, characteristic polynomial, and numerical eigenvalues only when all Novikov variables are specialized to one. A custom `Evaluate y` assignment is substituted into the returned matrix and characteristic polynomial. No eigenvalues are displayed for that custom assignment in this standalone interface.
 
 **GW invariant** reports the insertion list, the canonical ambient form of β,
 and the computed number. The degree-zero API path is a classical cup-integral
@@ -158,7 +157,9 @@ print(X.gw([], beta=(1, 0, 0), K=[[3]]))  # same, zero-padded form
 For the CLI, put bundle options before the subcommand:
 
 ```bash
-python3 -m gwflags.cli A3 --keep 1 -K 3 sqm
+python3 -m gwflags.cli A3 --keep 1 -K 3 gw --beta 1 --classes ""
+# Empty classes mean no insertions: the cubic-surface line count is 27.
+python3 -m gwflags.cli C2 --keep 2 --novikov-convention ambient sqm
 ```
 
 ## Bundle combinations: detailed walkthroughs
@@ -329,3 +330,8 @@ allows the documented constructors and rejects arbitrary Python code.
    silently accepted.
 4. Start with symbolic `y` variables. Specialize with `Evaluate y` only after
 the symbolic matrix has been assembled.
+
+
+## Parameter-name compatibility
+
+The Python constructor accepts `novikov_convention="paper"` (default), `"ambient"` (the original names), or `"compact"` (consecutive labels for every family). The CLI option is `--novikov-convention` and precedes the subcommand. Read `X.novikov_metadata` for the explicit map. The exact coefficients, curve classes, ordered basis and grading are preserved under this renaming. Result JSON records the selected convention.

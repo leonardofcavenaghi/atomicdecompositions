@@ -1,91 +1,100 @@
 ---
-description: Install gwflags on Linux, macOS, or Windows to compute Gromov-Witten invariants and quantum multiplication using exact virtual localization.
+description: Install individual flag or toric distributions or the combined application, using isolated environments and version-specific launch commands.
 ---
 
-# Installation
+# How to install
 
-Choose the path that matches your background. You do not need SageMath to use the browser interface or the core Python API.
+Choose a distribution below. Each ZIP is an installable source bundle: extract it, open the folder containing `pyproject.toml`, and follow the same installation steps. Use a **separate virtual environment for each distribution**, since they share the Python import name `gwflags`.
 
-## New to Python (recommended path)
+## Source downloads
 
-1. Install Python 3.9 or newer (Python 3.10+ is recommended) from [python.org](https://www.python.org/downloads/). On Windows, select **Add Python to PATH**.
-2. Download the [stable v1.0.5 ZIP](https://github.com/leonardofcavenaghi/atomicdecompositions/archive/refs/tags/v1.0.5.zip)
-   and extract it. Alternatively, install Git from [git-scm.com](https://git-scm.com/downloads)
-   and obtain that same version with:
+| Distribution | Version | Download | Launch module |
+|---|---|---|---|
+| Flag | 1.0.6.dev0 | [Flag source ZIP](downloads/gwflags-1.0.6.dev0.zip) | `gwflags.gui` |
+| Flag, with staged execution and analysis API | 1.1.0.dev1 | [Flag source ZIP](downloads/gw-flag-1.1.0.dev1.zip) | `gwflags.gui` |
+| Toric | 1.1.0.dev1 | [Toric source ZIP](downloads/gw-toric-1.1.0.dev1.zip) | `gwtoric.gui` |
+| Combined, separate flag and toric workspaces | 1.1.0.dev1 | [Combined source ZIP](downloads/gw-combined-1.1.0.dev1.zip) | `gwapp` |
+| Preserved original flag | 1.0.5 | [Preserved runtime ZIP](downloads/gwflags-1.0.5-preserved.zip) | `gwflags.gui` |
 
-```bash
-git clone --branch v1.0.5 --depth 1 https://github.com/leonardofcavenaghi/atomicdecompositions.git
-```
+The new versions are **development builds**. The preserved [stable v1.0.5 full repository ZIP](https://github.com/leonardofcavenaghi/atomicdecompositions/archive/refs/tags/v1.0.5.zip) remains available. ZIP checksums are in the [download manifest](downloads/manifest.json).
 
-3. Open a terminal in the extracted or cloned source folder.
+The individual 1.1.0.dev1 downloads include shared flag and toric execution infrastructure, but omit the combined application. Select the combined download for the enhanced flag workspace and both geometries in one launcher. Do not copy individual package directories out of an archive.
 
-4. Create and activate an isolated environment:
+## 1. Create an environment
 
-=== "Windows"
+Install **Python 3.9 or newer** with `pip` and `venv` available. Python 3.12 or 3.13 is a practical starting point. On Windows, enable **Add Python to PATH** in the Python installer. Open a terminal in the extracted folder containing `pyproject.toml`.
+
+=== "Windows PowerShell"
 
     ```powershell
     py -m venv .venv
-    .venv\Scripts\Activate.ps1
+    .\.venv\Scripts\python.exe -m pip install --upgrade pip
+    .\.venv\Scripts\python.exe -m pip install .
     ```
 
-=== "macOS/Linux"
+    Activation is optional. Use `.\.venv\Scripts\python.exe` in place of `python` in the launch commands below. This also avoids PowerShell activation-policy errors.
+
+=== "macOS / Linux"
 
     ```bash
     python3 -m venv .venv
+    .venv/bin/python -m pip install --upgrade pip
+    .venv/bin/python -m pip install .
     source .venv/bin/activate
     ```
 
-5. Install the project and its declared dependencies:
+    If your Linux distribution provides `venv` or `pip` separately, install those Python components through its package manager before creating the environment.
+
+The package installer resolves SymPy and mpmath automatically; do not install similarly named unrelated packages. Version 1.1.0.dev1 requires SymPy >=1.14, while flag 1.0.6.dev0 declares SymPy >=1.10. Both require mpmath >=1.2. For source development use `python -m pip install -e .` instead of `python -m pip install .`.
+
+## 2. Launch the selected program
+
+Run the command for the distribution you installed:
+
+=== "Flag 1.0.6.dev0 / 1.1.0.dev1"
+
+    ```bash
+    python -m gwflags.gui --no-browser
+    ```
+
+    Open <http://127.0.0.1:8642>. Follow the [1.0.6.dev0 guide](software/flags-1.0.6.md) or [1.1.0.dev1 guide](software/flags-1.1.0.md). The standalone flag interface and the enhanced combined flag workspace have different controls.
+
+=== "Toric 1.1.0.dev1"
+
+    ```bash
+    python -m gwtoric.gui --no-browser
+    ```
+
+    Open <http://127.0.0.1:8643>. Follow the [toric guide](software/toric-1.1.0.md).
+
+=== "Combined 1.1.0.dev1"
+
+    ```bash
+    python -m gwapp --workspace ./gw-work --no-browser
+    ```
+
+    Open <http://127.0.0.1:8650>. Choose **Flag varieties** or **Toric varieties**. The writable workspace holds jobs and checkpoints. Follow the [combined guide](software/combined.md).
+
+Use `--port` to choose a free port. Keep the terminal open while computing; stop the server with Ctrl-C. On Windows, use the full environment Python path from step 1. The local interfaces do not require a web-hosting service.
+
+## 3. Check the installation
+
+From outside the extracted source directory, run the relevant command with the environment Python:
 
 ```bash
-python -m pip install --upgrade pip
-python -m pip install -e .
+python -c "from gwflags import FlagVariety; assert FlagVariety('A3',[1]).gw([], beta=(1,), K=[[3]]) == 27; print('Flag check passed')"
 ```
 
-6. Launch the local website:
+For toric or combined 1.1.0.dev1:
 
 ```bash
-python -m gwflags.gui --no-browser
+python -c "from gwtoric import projective_space; assert projective_space(3).gw([], beta=(1,1,1,1), K=[[3]]) == 27; print('Toric check passed')"
 ```
 
-Open <http://127.0.0.1:8642>. Stop the server with `Ctrl-C`.
+These are unmarked cubic-surface counts: the insertion list is empty. They also check that the installed imports work. Command-line users can run `python -m gwflags.cli --help`, or `python -m gwtoric.cli --help` for the toric distribution.
 
-## Comfortable with Python
+## SageMath and archived calculations
 
-From a checkout, activate your existing environment and run `python -m pip install -e .`. Then use the GUI, CLI, or import `FlagVariety` in a script. Run a quick smoke test:
+The flag backend can use SageMath where available; plain Python is the baseline for these instructions. Toric and combined analysis modules directly use SymPy. No separate SageMath installation is needed for the plain Python route.
 
-```bash
-python -c "from gwflags import FlagVariety; print(FlagVariety('A2',[1]).dimension)"
-```
-
-To run the tests, install the optional test dependency first:
-
-```bash
-python -m pip install -e ".[test]"
-```
-
-Then run the full tests with:
-
-```bash
-python -m pytest tests/ -q
-```
-
-## SageMath users
-
-SageMath is optional. If it is installed, `gwflags` can use it for symbolic work; the plain Python installation above remains the supported baseline. On Windows, use WSL for SageMath and follow the Linux commands there.
-
-## Command-line and browser entry points
-
-```bash
-python -m gwflags.cli A2 --keep 1 sqm
-python -m gwflags.gui --port 9000 --no-browser
-```
-
-For complete examples and input syntax, see [How to Use](how-to-use.md). In the GUI, compact bundles use `3` or `1,1;2,2`; Python code may use `K=[[3]]`.
-
-To build the documentation locally with the same pinned toolchain used by CI:
-
-```bash
-python -m pip install -r requirements-docs.txt
-mkdocs build --strict
-```
+Preserved v1.0.5 uses the original input conventions and retains its historical empty-CLI behavior. Use the [archived guide](software/flags-legacy.md) for that version; use current versions for the CLI correction. Existing saved flag catalogue matrices keep ambient-node Novikov labels: select `novikov_convention='ambient'` for comparisons.
