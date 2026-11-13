@@ -26,6 +26,9 @@ assert len(catalog)==299 and len({r['id'] for r in catalog})==299
 sources={r['id']:r for r in original+new}
 assert set(sources)=={r['id'] for r in catalog}
 master=(DOCS/'catalog/index.md').read_text()
+qd5=next(r for r in catalog if r['id']=='QD5-001')
+assert 'Quartic double cover' in qd5['title']
+assert 'weighted hypersurface' in qd5['keywords']
 for row in catalog:
  source=sources[row['id']]
  assert row['dimension']==source['dimension'],row['id']

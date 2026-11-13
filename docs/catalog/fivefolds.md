@@ -20,7 +20,7 @@ The 72 new matrix records are a snapshot dated 2026-11-09 18:05 UTC: 24 have com
 | [OG(3,7) / O(2)](additional.md#og37o2) | B3 | 5 | 4 | 6 | — | Matrix complete |
 | [P6 / O(3)](projective.md#p6o3) | A6 | 5 | 4 | 6 | — | Matrix complete |
 | [P7 / O(2)+O(2)](projective.md#p7o2o2) | A7 | 5 | 4 | 6 | — | Matrix complete |
-| [QD5-001 — Projective complete intersection](records/qd5-001.md) | Smooth projective 6-fold (ambient Picard rank 2) | 5 | 4 | 6 | 1 | Complete |
+| [QD5-001 — Quartic double cover of projective five-space](records/qd5-001.md) | Smooth projective 6-fold (ambient Picard rank 2) | 5 | 4 | 6 | 1 | Complete |
 | [G2/P2](additional.md#g2p2) | G2 | 5 | 3 | 6 | — | Matrix complete |
 | [Gr(2,5) / O(2)](grassmannians.md#gr25o2) | A4 | 5 | 3 | 8 | — | Matrix complete |
 | [Gr(2,6) / O(1)+O(1)+O(1)](grassmannians.md#gr26o1o1o1) | A5 | 5 | 3 | 8 | — | Matrix complete |

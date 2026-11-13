@@ -634,7 +634,7 @@
     },
     {
       "id": "QD5-001",
-      "title": "QD5-001 \u2014 Projective complete intersection",
+      "title": "QD5-001 \u2014 Quartic double cover of projective five-space",
       "link": "records/qd5-001.md",
       "dimension": 5,
       "index": 4,
@@ -646,13 +646,16 @@
         "QD5-001",
         "dimension 5",
         "fivefold",
-        "Projective complete intersection",
+        "Quartic double cover of projective five-space",
         "Fano",
         "quantum cohomology",
         "Gromov-Witten",
         "Hodge diamond",
         "quantum multiplication",
-        "connection exponents"
+        "connection exponents",
+        "weighted hypersurface",
+        "double cover",
+        "split projective bundle"
       ],
       "source": "toric-fivefolds.json"
     },
