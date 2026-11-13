@@ -114,7 +114,7 @@ An ambient projection need not be the full quantum operator. Primitive cohomolog
 
 ## Novikov names and finite enumeration
 
-The theoretical variable is \(q^\beta\). The software writes its monomials using the displayed `y` variables; these are Novikov names, not the papers' additive coordinates for big quantum cohomology. In the default flag convention, type A retains kept-node labels and other families use consecutive kept-root names. Explicit `ambient` and `compact` conventions are documented in the [notation guide](software/notation.md).
+The theoretical variable is \(q^\beta\). The software writes its monomials using the displayed `y` variables; these are Novikov names, distinct from additive coordinates for big quantum cohomology. In the default flag convention, type A retains kept-node labels and other families use consecutive kept-root names. Explicit `ambient` and `compact` conventions are documented in the [notation guide](software/notation.md).
 
 <span id="4a-coordinate-contract-used-by-the-software"></span>
 
@@ -154,7 +154,7 @@ $$
 $$
 
 
-The saved analysis code also writes \(K^F=-A(q)\), so the same connection is \(\partial_u+K^F/u^2+G/u\). A characteristic factor \(p(z)\) of \(K^F\) corresponds to paper eigenvalues \(\lambda\) satisfying **\(p(-\lambda)=0\)**. This sign change must accompany the eigenvalue labels; the grading is unchanged.
+The saved analysis code also writes \(K^F=-A(q)\), so the same connection is \(\partial_u+K^F/u^2+G/u\). A characteristic factor \(p(z)\) of \(K^F\) corresponds to eigenvalues \(\lambda\) of \(A\) satisfying **\(p(-\lambda)=0\)**. This sign change must accompany the eigenvalue labels; the grading is unchanged.
 
 ## Regularized-exponent multisets
 
@@ -187,11 +187,11 @@ $$
 $$
 
 
-where \(N\) is the dimension of the space on which the matrix acts. Its nonvanishing proves that the unit is cyclic on that space. Identifying this with a generic Hodge factor additionally requires the paper's ambient/Hodge comparison and persistence hypotheses. A numerical specialization used to display eigenvalues does not itself verify those hypotheses or the admissibility of a point in the theoretical parameter domain.
+where \(N\) is the dimension of the space on which the matrix acts. Its nonvanishing proves that the unit is cyclic on that space. Identifying this with a generic Hodge factor additionally requires the ambient/Hodge comparison and persistence hypotheses. A numerical specialization used to display eigenvalues does not itself verify those hypotheses or the admissibility of a point in the theoretical parameter domain.
 
 ## Sources and verification
 
-References: [flag varieties](https://arxiv.org/abs/2609.21914), Theorems 3.26 and 3.28 and Definitions 4.5–4.6. Virtual localization follows Graber–Pandharipande, [*Localization of virtual classes*](https://arxiv.org/abs/alg-geom/9708001). The connection and exponent conventions are those used in the papers' examples and their cited formal-connection results.
+References: [flag varieties](https://arxiv.org/abs/2609.21914), Theorems 3.26 and 3.28 and Definitions 4.5–4.6. Virtual localization follows Graber–Pandharipande, [*Localization of virtual classes*](https://arxiv.org/abs/alg-geom/9708001). 
 
 Exact coefficients, curve coordinates, bases and grading are retained in the [datasets](catalog/datasets.md). Validation checks saved outputs and selected freshly computed benchmarks; it is not a fresh localization run for every catalogue record. See [software input/output formats](software/input-output.md) and [validation scope](software/launch-plan.md).
 

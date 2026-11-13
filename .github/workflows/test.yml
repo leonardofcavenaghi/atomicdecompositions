@@ -115,6 +115,9 @@ jobs:
       - name: Validate exact saved toric records
         run: python scripts/validate_toric_results.py
 
+      - name: Validate additional homogeneous fourfolds
+        run: python scripts/validate_flag_fourfolds.py
+
       - name: Validate saved regularized exponent multisets
         run: python scripts/validate_exponent_multisets.py
 

@@ -14,7 +14,7 @@ GEOATOMS brings together geometric examples, exact genus-zero Gromov–Witten co
 
 Browse [surfaces](catalog/surfaces.md), [threefolds](catalog/threefolds.md), [fourfolds](catalog/fourfolds.md), [fivefolds](catalog/fivefolds.md), or the [full dimension index](catalog/index.md). Compare complete intersections in projective spaces, Grassmannians, homogeneous spaces and projective bundles in the same geometric collection.
 
-The catalogue contains **299 saved computation records**, including **168 newly published fourfold and fivefold matrices**. These count presentations and computations, not distinct varieties. Each record preserves its basis and conventions; unresolved connection factors remain explicit.
+The catalogue contains **301 saved computation records**, including **168 newly published fan-based matrices** and **two additional homogeneous complete intersections**. These count presentations and computations, not distinct varieties. Each record preserves its basis and conventions; unresolved connection factors remain explicit.
 
 ## Two input models, one documented collection
 

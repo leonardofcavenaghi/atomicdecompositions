@@ -204,11 +204,13 @@ async function main() {
     if (cubicIndex !== '2' || errors.length) throw new Error(JSON.stringify({cubicIndex, errors}));
     console.log('Computed catalog passed: 15 new cards, 131 downloadable results, full GM-20 matrix, correct master-table ambient index.');
 
-    for (const [collection, expected] of [['fourfolds',122],['fivefolds',98]]) {
+    const catalogue = await page.evaluate(async base => fetch(base + '/data/catalog-records.json').then(r => r.json()), base);
+    for (const [collection, dimension] of [['fourfolds',4],['fivefolds',5]]) {
+      const expected = catalogue.records.filter(r => r.dimension === dimension).length;
       await page.goto(`${base}/catalog/${collection}/`, {waitUntil:'domcontentloaded'});
       await page.waitForFunction(() => window.jQuery && jQuery.fn.dataTable && jQuery.fn.dataTable.isDataTable('table'));
       const count=await page.evaluate(() => jQuery('table').DataTable().rows().count());
-      if (count!==expected) throw new Error('Wrong toric collection count: '+collection+' '+count);
+      if (count!==expected) throw new Error('Wrong dimension collection count: '+collection+' '+count);
     }
     const recordIds = await page.evaluate(async base => {
       const data = await fetch(base + '/data/catalog-records.json').then(r => r.json());
@@ -263,7 +265,7 @@ async function main() {
     await checkFirstOpen(browser, base, 'failed-primary');
     await checkFirstOpen(browser, base, 'delayed-startup');
     console.log('MathJax render timings: ' + JSON.stringify(renderingTimings));
-    console.log('Universal catalogue and search passed: 299 records, including 168 new presentations, exact matrix tables and rendered fourfold/fivefold mathematics; mobile home layout.');
+    console.log('Universal catalogue and search passed: ' + catalogue.records.length + ' records, exact matrix tables and rendered mathematics; mobile home layout.');
 
   } finally {
     await browser.close();

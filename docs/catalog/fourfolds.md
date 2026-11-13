@@ -6,7 +6,7 @@ description: Fourfolds in the universal catalogue, with construction, recorded i
 
 [Universal catalogue](index.md) · [Conventions and downloads](datasets.md)
 
-**122 saved computation records.** This list groups geometric presentations by dimension, independently of the computation engine. Within the dimension, records are ordered by recorded Chern index and name. Multiple presentations can describe the same variety; no automatic identification is asserted.
+**124 saved computation records.** This list groups geometric presentations by dimension, independently of the computation engine. Within the dimension, records are ordered by recorded Chern index and name. Multiple presentations can describe the same variety; no automatic identification is asserted.
 
 The new fourfold records use CKP period buckets and HLM families. Equal periods alone do not identify varieties. For nef non-ample examples the Hodge data are attributed to the literature in each record. Of the 96 new matrices, 53 have complete saved analysis and 43 retain connection-factor notes.
 
@@ -84,10 +84,12 @@ The new fourfold records use CKP period buckets and HLM families. Equal periods 
 | [Gr(2,5) / O(2)+O(2)](grassmannians.md#gr25o2o2) | A4 | 4 | 1 | 6 | — | Matrix complete |
 | [Gr(3,5) / O(1)+O(3)](grassmannians.md#gr35o1o3) | A4 | 4 | 1 | 6 | — | Matrix complete |
 | [Gr(3,5) / O(2)+O(2)](grassmannians.md#gr35o2o2) | A4 | 4 | 1 | 6 | — | Matrix complete |
+| [Hyperplane and quadric section of LG(3,6)](records/lg3-1-2.md) | C3 / kept root 3 | 4 | 1 | 5 | 1 | Matrix and exponents complete; very general irrational |
 | [P5 / O(5)](projective.md#p5o5) | A5 | 4 | 1 | 5 | — | Matrix complete |
 | [P6 / O(2)+O(4)](projective.md#p6o2o4) | A6 | 4 | 1 | 5 | — | Matrix complete |
 | [P6 / O(3)+O(3)](projective.md#p6o3o3) | A6 | 4 | 1 | 5 | — | Matrix complete |
 | [P7 / O(2)+O(2)+O(3)](projective.md#p7o2o2o3) | A7 | 4 | 1 | 5 | — | Matrix complete |
+| [Quadric section of the adjoint G₂ variety](records/g2-quadric.md) | G2 / kept root 2 | 4 | 1 | 5 | 1 | Matrix and exponents complete; very general irrational |
 | [Quintic fourfold in P⁵ (CKP-738)](records/ckp-738.md) | Smooth projective 5-fold (ambient Picard rank 1) | 4 | 1 | 5 | 1 | Matrix complete; exponent multisets complete |
 | [Section of P_{P² × P²}(O ⊕ O(1,0)) by ξ+H1+2H2 (CKP-594)](records/ckp-594.md) | Smooth projective 5-fold (ambient Picard rank 3) | 4 | 1 | 13 | 3 | Matrix complete; exponent multisets partial |
 | [Section of P_{P² × P²}(O ⊕ O(1,0)) by ξ+H1+H2 (CKP-363)](records/ckp-363.md) | Smooth projective 5-fold (ambient Picard rank 3) | 4 | 1 | 13 | 3 | Matrix complete; exponent multisets complete |

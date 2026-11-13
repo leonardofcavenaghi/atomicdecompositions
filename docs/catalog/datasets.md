@@ -1,10 +1,10 @@
 ---
-description: Exact downloadable inputs, matrices, bases and gradings for all 299 saved catalogue computation records.
+description: Exact downloadable inputs, matrices, bases and gradings for all 301 saved catalogue computation records.
 ---
 
 # Exact datasets and source records
 
-The catalogue is organized by geometry. Downloads retain their original schemas so that no coordinate map, basis order or specialization is silently changed. There are 299 computation records across the three datasets, without a claim that they describe distinct varieties.
+The catalogue is organized by geometry. Downloads retain their original schemas so that no coordinate map, basis order or specialization is silently changed. There are 301 computation records across the four primary datasets, without a claim that they describe distinct varieties.
 
 | Dataset | Records | Contents |
 |---|---:|---|
@@ -12,7 +12,8 @@ The catalogue is organized by geometry. Downloads retain their original schemas 
 | [New fourfold records](../data/toric-fourfolds.json) | 96 | Fans, defining divisors, Novikov divisors, sparse exact symbolic matrices, ordered ambient bases and grading |
 | [New fivefold records](../data/toric-fivefolds.json) | 72 | Same fan/divisor contract, with construction data and saved analysis notes in the linked records |
 | [Regularized exponent multisets](../data/connection-exponents.json) | 168 | Exact saved power and residue-class multisets per characteristic factor, with specialization and unresolved status |
-| [Universal catalogue index](../data/catalog-records.json) | 299 | Canonical record links, dimension, recorded index, matrix rank and search terms |
+| [Additional homogeneous fourfolds](../data/flag-fourfolds.json) | 2 | Fresh exact matrices, automatic curves, Schubert bases, cyclic determinants, connection multisets and generic atomic invariants |
+| [Universal catalogue index](../data/catalog-records.json) | 301 | Canonical record links, dimension, recorded index, matrix rank and search terms |
 
 The [completed fourfold TeX source](../downloads/toric-fourfolds-completed.tex) and [completed fivefold TeX source](../downloads/toric-fivefolds-completed.tex) retain the full saved calculation notes, characteristic factors and connection exponents. Unfinished matrix records are removed. A completed matrix can have unresolved connection factors; those notes are preserved.
 

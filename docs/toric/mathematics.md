@@ -156,7 +156,7 @@ $$
 $$
 
 
-The saved analysis code also writes \(K^F=-A(q)\), so the same connection is \(\partial_u+K^F/u^2+G/u\). A characteristic factor \(p(z)\) of \(K^F\) corresponds to paper eigenvalues \(\lambda\) satisfying **\(p(-\lambda)=0\)**. This sign change must accompany the eigenvalue labels; the grading is unchanged.
+The saved analysis code also writes \(K^F=-A(q)\), so the same connection is \(\partial_u+K^F/u^2+G/u\). A characteristic factor \(p(z)\) of \(K^F\) corresponds to eigenvalues \(\lambda\) of \(A\) satisfying **\(p(-\lambda)=0\)**. This sign change must accompany the eigenvalue labels; the grading is unchanged.
 
 ## Regularized-exponent multisets
 
@@ -189,7 +189,7 @@ $$
 $$
 
 
-where \(N\) is the dimension of the space on which the matrix acts. Its nonvanishing proves that the unit is cyclic on that space. Identifying this with a generic Hodge factor additionally requires the paper's ambient/Hodge comparison and persistence hypotheses. A numerical specialization used to display eigenvalues does not itself verify those hypotheses or the admissibility of a point in the theoretical parameter domain.
+where \(N\) is the dimension of the space on which the matrix acts. Its nonvanishing proves that the unit is cyclic on that space. Identifying this with a generic Hodge factor additionally requires the ambient/Hodge comparison and persistence hypotheses. A numerical specialization used to display eigenvalues does not itself verify those hypotheses or the admissibility of a point in the theoretical parameter domain.
 
 ## Hodge data and the scope of rationality statements
 

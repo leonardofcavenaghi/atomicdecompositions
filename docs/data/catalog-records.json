@@ -8252,6 +8252,64 @@
         "A3"
       ],
       "source": "localization-results.json"
+    },
+    {
+      "id": "LG3-1-2",
+      "title": "Hyperplane and quadric section of LG(3,6)",
+      "link": "records/lg3-1-2.md",
+      "ambient": "C3 / kept root 3",
+      "dimension": 4,
+      "index": 1,
+      "matrix_rank": 5,
+      "h11": 1,
+      "status": "Matrix and exponents complete; very general irrational",
+      "keywords": [
+        "LG3-1-2",
+        "Hyperplane and quadric section of LG(3,6)",
+        "dimension 4",
+        "fourfold",
+        "Fano",
+        "index one",
+        "irrationality",
+        "very general",
+        "regularized exponent multiset",
+        "Hodge polynomial",
+        "atomic invariants",
+        "quantum cohomology",
+        "hyperplane section",
+        "Lagrangian Grassmannian"
+      ],
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
+    },
+    {
+      "id": "G2-QUADRIC",
+      "title": "Quadric section of the adjoint G₂ variety",
+      "link": "records/g2-quadric.md",
+      "ambient": "G2 / kept root 2",
+      "dimension": 4,
+      "index": 1,
+      "matrix_rank": 5,
+      "h11": 1,
+      "status": "Matrix and exponents complete; very general irrational",
+      "keywords": [
+        "G2-QUADRIC",
+        "Quadric section of the adjoint G₂ variety",
+        "dimension 4",
+        "fourfold",
+        "Fano",
+        "index one",
+        "irrationality",
+        "very general",
+        "regularized exponent multiset",
+        "Hodge polynomial",
+        "atomic invariants",
+        "quantum cohomology",
+        "adjoint G2",
+        "quadric section"
+      ],
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     }
   ]
 }

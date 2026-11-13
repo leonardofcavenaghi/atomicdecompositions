@@ -21,9 +21,10 @@ for page in pages:
 
 catalog=json.loads((DOCS/'data/catalog-records.json').read_text())['records']
 original=json.loads((DOCS/'data/localization-results.json').read_text())['examples']
+fresh=json.loads((DOCS/'data/flag-fourfolds.json').read_text())['records']
 new=[r for name in ['fourfolds','fivefolds'] for r in json.loads((DOCS/'data'/('toric-'+name+'.json')).read_text())['records']]
-assert len(catalog)==299 and len({r['id'] for r in catalog})==299
-sources={r['id']:r for r in original+new}
+assert len(catalog)==len(original)+len(new)+len(fresh) and len({r['id'] for r in catalog})==len(catalog)
+sources={r['id']:r for r in original+new+fresh}
 assert set(sources)=={r['id'] for r in catalog}
 master=(DOCS/'catalog/index.md').read_text()
 qd5=next(r for r in catalog if r['id']=='QD5-001')
@@ -37,6 +38,7 @@ for row in catalog:
   text=(DOCS/'catalog'/row['link']).read_text()
   assert '**Search aliases:**' in text and row['id'] in text
   assert all(keyword in text for keyword in row['keywords']),(row['id'],'search alias')
+ if 'basis' in source:
   assert row['matrix_rank']==len(source['basis'])
  else:
   assert row['index']==source['fano_index']
@@ -70,4 +72,4 @@ for item in archives:
   scripts=metadata.split('[project.scripts]')[1].split('\n[')[0]
   for module in re.findall(r'= "([a-zA-Z0-9_.]+):[a-zA-Z0-9_]+"',scripts):
    assert prefix+module.replace('.','/')+'.py' in names,(item['file'],module)
-print(json.dumps(dict(markdown_pages=len(pages),catalogue_records=len(catalog),new_searchable_records=len(new),archives=len(archives),source_mirrors=len(mirrors),passed=True)))
+print(json.dumps(dict(markdown_pages=len(pages),catalogue_records=len(catalog),new_searchable_records=len(new)+len(fresh),archives=len(archives),source_mirrors=len(mirrors),passed=True)))

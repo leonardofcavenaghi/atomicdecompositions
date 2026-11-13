@@ -118,4 +118,4 @@ Ambient toric Hodge diamonds come from the fan. Full CI Hodge support currently 
 See [Notation and compatibility](notation.md) and [Changes](changes.md).
 
 
-For the common conventions and concrete result examples, see [Input/output](input-output.md). The [upcoming release overview](launch-2026-11.md) explains the differences between the offerings.
+For the common conventions and concrete result examples, see [Input/output](input-output.md). The [release overview](launch-2026-11.md) explains the differences between the offerings.

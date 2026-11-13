@@ -132,4 +132,4 @@ See [Notation and compatibility](notation.md) and [Changes](changes.md).
 
 The prepared build includes the verified 7f167e1 update: faster unmarked shape generation preserves the tested legacy ordering, and large partial-sum fractions are saved as exact tagged hexadecimal integers. Once new tagged values have been written, resume with this updated build; older readers do not understand them.
 
-For the common conventions and concrete result examples, see [Input/output](input-output.md). The [upcoming release overview](launch-2026-11.md) explains the differences between the offerings.
+For the common conventions and concrete result examples, see [Input/output](input-output.md). The [release overview](launch-2026-11.md) explains the differences between the offerings.

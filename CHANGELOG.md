@@ -42,3 +42,7 @@ Documentation-only changes retain catalogue, exact saved-data, strict-build, sea
 ## Saved exponent multisets
 
 All 168 new records display their saved regularized-exponent multisets near the top of the page, separately for each eigenvalue and with the analysis point and unresolved status. The exact downloadable summary contains 251 completed factor multisets and 92 unresolved factors, retaining repeated entries. This is a presentation of existing computations, not a new localization run or an automatic atomic/rationality certificate. Documented Python and interface cubic inputs were rechecked in each prepared version; the combined guide includes the same unmarked example in both workspaces.
+
+## Additional homogeneous fourfolds
+
+Fresh virtual-localization calculations and exact connection analysis add the LG(3,6) hyperplane/quadric section and the adjoint G2 quadric section to the universal fourfold list. Each record retains the complete automatic curve list, ordered Schubert basis and grading, proves unit cyclicity, and explains the very-general irrationality criterion and primitive-cohomology assignment used for its full atomic Hodge polynomial. The original 131-result archive remains unchanged.

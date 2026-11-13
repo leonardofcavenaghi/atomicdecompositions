@@ -336,4 +336,4 @@ the symbolic matrix has been assembled.
 
 The Python constructor accepts `novikov_convention="paper"` (default), `"ambient"` (the original names), or `"compact"` (consecutive labels for every family). The CLI option is `--novikov-convention` and precedes the subcommand. Read `X.novikov_metadata` for the explicit map. The exact coefficients, curve classes, ordered basis and grading are preserved under this renaming. Result JSON records the selected convention.
 
-For the common conventions and concrete result examples, see [Input/output](input-output.md). The [upcoming release overview](launch-2026-11.md) explains the differences between the offerings.
+For the common conventions and concrete result examples, see [Input/output](input-output.md). The [release overview](launch-2026-11.md) explains the differences between the offerings.

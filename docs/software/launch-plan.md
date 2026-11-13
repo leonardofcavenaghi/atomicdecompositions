@@ -1,10 +1,10 @@
 ---
-description: Publication versions, validation scope and reproducibility checks for the 2026-11-12 flag and toric website launch.
+description: Publication versions, validation scope and reproducibility checks for the 2026-11-13 flag and toric website launch.
 ---
 
 # Publication and validation
 
-The 2026-11-12 launch organizes the universal catalogue by dimension and distinguishes the flag and toric methods and publishes versioned source distributions. Flag 1.0.6.dev0 and flag/toric/combined 1.1.0.dev1 remain development builds. Stable v1.0.5 is preserved with its original behavior.
+The 2026-11-13 launch organizes the universal catalogue by dimension with separate flag and toric methods and publishes versioned source distributions. Flag 1.0.6.dev0 and flag/toric/combined 1.1.0.dev1 remain development builds. Stable v1.0.5 is preserved with its original behavior.
 
 ## Distributed sources
 
@@ -16,7 +16,7 @@ The mathematical regression review passed both standalone flag suites (74 tests 
 
 The source review adopts upstream execution commit `7f167e17a35069ac1ff1cefecce2ac8a0be8231c`, plus the documented notation and empty-CLI corrections. The new tree generator preserves the old unmarked representatives and ordering in the independently checked range. Tagged exact checkpoint fractions handle large numerators and denominators; ordinary decimal checkpoints remain readable.
 
-GitHub Actions gates website deployment on the package, catalogue, strict documentation and browser checks. Distribution checks install the exact extracted archives in isolated environments and exercise their launchers. A passing Linux pipeline does not establish Windows or SageMath coverage. Local sandbox restrictions prevented live socket tests; worker tests alone are not described as live browser verification.
+GitHub Actions gates website deployment on the package, catalogue, strict documentation and browser checks. Distribution checks install the exact extracted archives in isolated environments and exercise their launchers. The published archives passed isolated Linux and Windows installation and launcher checks. Browser checks cover the website, mathematical rendering, catalogue search and interface copy/download controls. SageMath is outside this automated platform coverage.
 
 ## Catalogue publication
 

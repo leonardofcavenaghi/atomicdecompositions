@@ -100,4 +100,4 @@ A Hodge diamond supplies dimensions, not missing primitive quantum operators. Ex
 See [Changes](changes.md) for the explicit behavior changes.
 
 
-For the common conventions and concrete result examples, see [Input/output](input-output.md). The [upcoming release overview](launch-2026-11.md) explains the differences between the offerings.
+For the common conventions and concrete result examples, see [Input/output](input-output.md). The [release overview](launch-2026-11.md) explains the differences between the offerings.

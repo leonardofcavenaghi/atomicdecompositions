@@ -1,0 +1,595 @@
+{
+  "schema_version": 1,
+  "provenance": "Fresh exact virtual localization and connection analysis; rationality applies to very general smooth members",
+  "records": [
+    {
+      "id": "LG3-1-2",
+      "title": "Hyperplane and quadric section of LG(3,6)",
+      "input": {
+        "algebra": "C3",
+        "keep": [
+          3
+        ],
+        "bundle": [
+          [
+            1
+          ],
+          [
+            2
+          ]
+        ]
+      },
+      "dimension": 4,
+      "fano_index": 1,
+      "curve_classes": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          5
+        ]
+      ],
+      "basis_indices": [
+        0,
+        1,
+        2,
+        3,
+        5
+      ],
+      "basis_words": [
+        [],
+        [
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          3,
+          2,
+          3
+        ]
+      ],
+      "basis_degrees": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "matrix_symbolic": [
+        [
+          "0",
+          "352*y1**2",
+          "9600*y1**3",
+          "92096*y1**4",
+          "1346560*y1**5"
+        ],
+        [
+          "1",
+          "16*y1",
+          "624*y1**2",
+          "6144*y1**3",
+          "92096*y1**4"
+        ],
+        [
+          "0",
+          "2",
+          "24*y1",
+          "312*y1**2",
+          "4800*y1**3"
+        ],
+        [
+          "0",
+          "0",
+          "4",
+          "16*y1",
+          "352*y1**2"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "0"
+        ]
+      ],
+      "matrix_at_one": [
+        [
+          "0",
+          "352",
+          "9600",
+          "92096",
+          "1346560"
+        ],
+        [
+          "1",
+          "16",
+          "624",
+          "6144",
+          "92096"
+        ],
+        [
+          "0",
+          "2",
+          "24",
+          "312",
+          "4800"
+        ],
+        [
+          "0",
+          "0",
+          "4",
+          "16",
+          "352"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "0"
+        ]
+      ],
+      "grading": [
+        [
+          "-2",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "2"
+        ]
+      ],
+      "charpoly": "lambda**5 - 56*lambda**4 - 2176*lambda**3 - 25600*lambda**2 - 126976*lambda - 229376",
+      "cyclic_determinant_at_one": "128",
+      "elapsed_seconds": 60.66096520423889,
+      "method": "Fresh existing gwflags virtual-localization run; full automatically supported curve list; paper parameter names",
+      "connection": {
+        "status": "computed",
+        "sectors": [
+          {
+            "eigenvalue_factor_K": "t - 8",
+            "factor_degree": 1,
+            "multiplicity_per_root": 3,
+            "total_rank": 3,
+            "geometric_multiplicity_per_root": 1,
+            "method": "exact_scalar_filtration",
+            "classes_mod_Z": {
+              "0": 1,
+              "1/2": 2
+            },
+            "representatives": {
+              "-1": 1,
+              "-1/2": 1,
+              "-3/2": 1
+            },
+            "indicial_polynomials": [
+              {
+                "polynomial": "7836206745894912*(s + 1)*(2*s + 1)*(2*s + 3)",
+                "valuation": 3
+              }
+            ],
+            "status": "computed"
+          },
+          {
+            "eigenvalue_factor_K": "t**2 + 80*t - 448",
+            "factor_degree": 2,
+            "multiplicity_per_root": 1,
+            "total_rank": 2,
+            "geometric_multiplicity_per_root": 1,
+            "method": "exact_semisimple_residue",
+            "residue_charpoly": "s",
+            "geometric_multiplicity": 1,
+            "field_degree": 2,
+            "checks": {
+              "left_right_kernel_dimensions": true,
+              "pairing_invertible": true,
+              "kernel_identities": true,
+              "residue_charpoly_rational": true
+            },
+            "representatives": {
+              "0": 1
+            },
+            "classes_mod_Z": {
+              "0": 1
+            },
+            "status": "computed"
+          }
+        ],
+        "rank": 5,
+        "convention": "K=-M; nabla=d/du+K/u^2+G/u; exponent classes modulo Z",
+        "specialization": {
+          "y1": "1"
+        },
+        "logarithmic_jordan_structure": "not computed",
+        "scope": "Returned quantum cohomology sector; no rationality verdict"
+      },
+      "catalog_page": "records/lg3-1-2.md",
+      "hodge_numbers": {
+        "0,0": 1,
+        "1,1": 1,
+        "2,2": 100,
+        "3,3": 1,
+        "4,4": 1,
+        "3,1": 14,
+        "1,3": 14
+      },
+      "genericity": "Very general smooth member",
+      "reference": {
+        "work": "On some atomic decompositions in flag varieties",
+        "irrationality_theorem": "6.13"
+      },
+      "coarse_factors": [
+        {
+          "eigenvalue": "-8",
+          "conjugate_count": 1,
+          "rho": 3,
+          "full_rank": 130,
+          "hodge_polynomial": {
+            "-2": 14,
+            "0": 102,
+            "2": 14
+          }
+        },
+        {
+          "eigenvalues": "40 \\pm 32\\sqrt{2}",
+          "conjugate_count": 2,
+          "rho": 1,
+          "full_rank": 1,
+          "hodge_polynomial": {
+            "0": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "G2-QUADRIC",
+      "title": "Quadric section of the adjoint G\u2082 variety",
+      "input": {
+        "algebra": "G2",
+        "keep": [
+          2
+        ],
+        "bundle": [
+          [
+            2
+          ]
+        ]
+      },
+      "dimension": 4,
+      "fano_index": 1,
+      "curve_classes": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ]
+      ],
+      "basis_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "basis_words": [
+        [],
+        [
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          1,
+          2
+        ]
+      ],
+      "basis_degrees": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "matrix_symbolic": [
+        [
+          "0",
+          "252*y1**2",
+          "4032*y1**3",
+          "68256*y1**4",
+          "285120*y1**5"
+        ],
+        [
+          "1",
+          "12*y1",
+          "312*y1**2",
+          "5328*y1**3",
+          "22752*y1**4"
+        ],
+        [
+          "0",
+          "3",
+          "18*y1",
+          "468*y1**2",
+          "2016*y1**3"
+        ],
+        [
+          "0",
+          "0",
+          "2",
+          "12*y1",
+          "84*y1**2"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "3",
+          "0"
+        ]
+      ],
+      "matrix_at_one": [
+        [
+          "0",
+          "252",
+          "4032",
+          "68256",
+          "285120"
+        ],
+        [
+          "1",
+          "12",
+          "312",
+          "5328",
+          "22752"
+        ],
+        [
+          "0",
+          "3",
+          "18",
+          "468",
+          "2016"
+        ],
+        [
+          "0",
+          "0",
+          "2",
+          "12",
+          "84"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "3",
+          "0"
+        ]
+      ],
+      "grading": [
+        [
+          "-2",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "2"
+        ]
+      ],
+      "charpoly": "lambda**5 - 42*lambda**4 - 1800*lambda**3 - 21168*lambda**2 - 102384*lambda - 178848",
+      "cyclic_determinant_at_one": "324",
+      "elapsed_seconds": 7.153915882110596,
+      "method": "Fresh existing gwflags virtual-localization run; full automatically supported curve list; paper parameter names",
+      "connection": {
+        "status": "computed",
+        "sectors": [
+          {
+            "eigenvalue_factor_K": "t - 6",
+            "factor_degree": 1,
+            "multiplicity_per_root": 3,
+            "total_rank": 3,
+            "geometric_multiplicity_per_root": 1,
+            "method": "exact_scalar_filtration",
+            "classes_mod_Z": {
+              "0": 1,
+              "1/2": 2
+            },
+            "representatives": {
+              "-1": 1,
+              "-1/2": 1,
+              "-3/2": 1
+            },
+            "indicial_polynomials": [
+              {
+                "polynomial": "-2011453114176*(s + 1)*(2*s + 1)*(2*s + 3)",
+                "valuation": 3
+              }
+            ],
+            "status": "computed"
+          },
+          {
+            "eigenvalue_factor_K": "t**2 + 60*t - 828",
+            "factor_degree": 2,
+            "multiplicity_per_root": 1,
+            "total_rank": 2,
+            "geometric_multiplicity_per_root": 1,
+            "method": "exact_semisimple_residue",
+            "residue_charpoly": "s",
+            "geometric_multiplicity": 1,
+            "field_degree": 2,
+            "checks": {
+              "left_right_kernel_dimensions": true,
+              "pairing_invertible": true,
+              "kernel_identities": true,
+              "residue_charpoly_rational": true
+            },
+            "representatives": {
+              "0": 1
+            },
+            "classes_mod_Z": {
+              "0": 1
+            },
+            "status": "computed"
+          }
+        ],
+        "rank": 5,
+        "convention": "K=-M; nabla=d/du+K/u^2+G/u; exponent classes modulo Z",
+        "specialization": {
+          "y1": "1"
+        },
+        "logarithmic_jordan_structure": "not computed",
+        "scope": "Returned quantum cohomology sector; no rationality verdict"
+      },
+      "catalog_page": "records/g2-quadric.md",
+      "hodge_numbers": {
+        "0,0": 1,
+        "1,1": 1,
+        "2,2": 100,
+        "3,3": 1,
+        "4,4": 1,
+        "3,1": 14,
+        "1,3": 14
+      },
+      "genericity": "Very general smooth member",
+      "reference": {
+        "work": "On some atomic decompositions in flag varieties",
+        "irrationality_theorem": "6.16"
+      },
+      "coarse_factors": [
+        {
+          "eigenvalue": "-6",
+          "conjugate_count": 1,
+          "rho": 3,
+          "full_rank": 130,
+          "hodge_polynomial": {
+            "-2": 14,
+            "0": 102,
+            "2": 14
+          }
+        },
+        {
+          "eigenvalues": "30 \\pm 24\\sqrt{3}",
+          "conjugate_count": 2,
+          "rho": 1,
+          "full_rank": 1,
+          "hodge_polynomial": {
+            "0": 1
+          }
+        }
+      ]
+    }
+  ]
+}

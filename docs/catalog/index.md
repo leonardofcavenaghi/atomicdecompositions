@@ -19,7 +19,7 @@ Browse by **dimension**, then compare construction, Chern index, Hodge data and 
 
 ## Reading and comparing records
 
-There are **299 saved computation records**, including 168 newly published fourfold and fivefold records. This counts computations and presentations, not distinct isomorphism or deformation classes. Projective spaces, Grassmannians, homogeneous spaces, split projective bundles and their complete intersections can appear in the same dimension list. Repeated presentations have not been identified automatically.
+There are **301 saved computation records**, including 168 new fan-based records and two additional homogeneous complete intersections with verified irrationality criteria. This counts computations and presentations, not distinct isomorphism or deformation classes. Projective spaces, Grassmannians, homogeneous spaces, split projective bundles and their complete intersections can appear in the same dimension list. Repeated presentations have not been identified automatically.
 
 **Recorded Chern index** retains the convention in the source. In the original dataset this is the ambient Chern gcd, which need not equal the intrinsic Fano index: a smooth conic has ambient gcd 1 but geometric index 2. For a point this gcd is not a geometric Fano index. Higher-dimensional source indices retain their stated geometric assumptions; compare them using the [mathematical conventions](../methodology.md) and [fan/divisor conventions](../toric/mathematics.md).
 
@@ -232,10 +232,12 @@ Search by ID, construction, ambient description, dimension or numerical data. Th
 | [Gr(2,5) / O(2)+O(2)](grassmannians.md#gr25o2o2) | A4 | 4 | 1 | 6 | — | Matrix complete |
 | [Gr(3,5) / O(1)+O(3)](grassmannians.md#gr35o1o3) | A4 | 4 | 1 | 6 | — | Matrix complete |
 | [Gr(3,5) / O(2)+O(2)](grassmannians.md#gr35o2o2) | A4 | 4 | 1 | 6 | — | Matrix complete |
+| [Hyperplane and quadric section of LG(3,6)](records/lg3-1-2.md) | C3 / kept root 3 | 4 | 1 | 5 | 1 | Matrix and exponents complete; very general irrational |
 | [P5 / O(5)](projective.md#p5o5) | A5 | 4 | 1 | 5 | — | Matrix complete |
 | [P6 / O(2)+O(4)](projective.md#p6o2o4) | A6 | 4 | 1 | 5 | — | Matrix complete |
 | [P6 / O(3)+O(3)](projective.md#p6o3o3) | A6 | 4 | 1 | 5 | — | Matrix complete |
 | [P7 / O(2)+O(2)+O(3)](projective.md#p7o2o2o3) | A7 | 4 | 1 | 5 | — | Matrix complete |
+| [Quadric section of the adjoint G₂ variety](records/g2-quadric.md) | G2 / kept root 2 | 4 | 1 | 5 | 1 | Matrix and exponents complete; very general irrational |
 | [Quintic fourfold in P⁵ (CKP-738)](records/ckp-738.md) | Smooth projective 5-fold (ambient Picard rank 1) | 4 | 1 | 5 | 1 | Matrix complete; exponent multisets complete |
 | [Section of P_{P² × P²}(O ⊕ O(1,0)) by ξ+H1+2H2 (CKP-594)](records/ckp-594.md) | Smooth projective 5-fold (ambient Picard rank 3) | 4 | 1 | 13 | 3 | Matrix complete; exponent multisets partial |
 | [Section of P_{P² × P²}(O ⊕ O(1,0)) by ξ+H1+H2 (CKP-363)](records/ckp-363.md) | Smooth projective 5-fold (ambient Picard rank 3) | 4 | 1 | 13 | 3 | Matrix complete; exponent multisets complete |
