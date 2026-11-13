@@ -46,3 +46,7 @@ All 168 new records display their saved regularized-exponent multisets near the 
 ## Additional homogeneous fourfolds
 
 Fresh virtual-localization calculations and exact connection analysis add the LG(3,6) hyperplane/quadric section and the adjoint G2 quadric section to the universal fourfold list. Each record retains the complete automatic curve list, ordered Schubert basis and grading, proves unit cyclicity, and explains the very-general irrationality criterion and primitive-cohomology assignment used for its full atomic Hodge polynomial. The original 131-result archive remains unchanged.
+
+## Full Hodge and atomic invariants
+
+The universal catalogue links an exact audit of all 301 published records: full Hodge data, saved and additional rational Novikov points, unit cyclic determinants and characteristic factors. Under the stated geometric hypotheses, 147 records receive full coarse-factor Hodge-class counts and Hodge-character polynomials; the 46 cyclic ambient matrices missing Hodge-invariant classes and 108 records without unit cyclicity at the tested points are labelled explicitly. The distinction between rational Hodge classes and complex diagonal Hodge dimensions is preserved. Tests reproduce exact determinants and factor polynomials, recalculate supported Hodge reports and check all atomic polynomial sums. The invariant index is searchable and organized by the same dimension groups as the geometric catalogue.

@@ -242,11 +242,26 @@ async function main() {
       }));
       if (state.mathErrors || state.inputs<2 || !state.matrices || state.emptyLinks) throw new Error(id+': '+JSON.stringify(state));
     }
-    for (const route of ['methodology/', 'toric/mathematics/']) {
+    for (const route of ['methodology/', 'toric/mathematics/', 'catalog/atomic-invariants/',
+      ...['points-curves','surfaces','threefolds','fourfolds','fivefolds','higher-dimensional'].map(s => 'catalog/invariants-' + s + '/')]) {
       const started = Date.now();
       await page.goto(base + '/' + route, {waitUntil: 'domcontentloaded'});
-      renderingTimings.push(await measureMath(page, route + ': paper-notation equations', started));
+      renderingTimings.push(await measureMath(page, route + ': mathematical rendering', started));
     }
+    await page.goto(base + '/catalog/atomic-invariants/', {waitUntil:'domcontentloaded'});
+    await page.waitForFunction(() => window.jQuery && jQuery.fn.dataTable &&
+      jQuery.fn.dataTable.isDataTable('.atomic-index table'));
+    const atomicCounts = await page.evaluate(() => {
+      const table = jQuery('.atomic-index table').DataTable();
+      const total = table.rows().count();
+      table.search('Full atomic invariants').draw(); const full = table.rows({search:'applied'}).count();
+      table.search('Ambient matrix incomplete').draw(); const incomplete = table.rows({search:'applied'}).count();
+      table.search('').draw(); return {total,full,incomplete};
+    });
+    const atomicData = await page.evaluate(async base => fetch(base + '/data/atomic-invariants.json').then(r => r.json()), base);
+    if (atomicCounts.total !== catalogue.records.length || atomicCounts.full !== atomicData.counts.full_coarse_factors ||
+        atomicCounts.incomplete !== atomicData.counts.ambient_sector_incomplete)
+      throw new Error('Atomic audit table mismatch: ' + JSON.stringify(atomicCounts));
     await page.goto(`${base}/`, {waitUntil:'domcontentloaded'});
     if (await page.$$eval('.geometry-card', cards=>cards.length)!==2) throw new Error('Geometry division missing');
     const search = await page.evaluate(async () => {
@@ -261,6 +276,12 @@ async function main() {
     if (search.missing.length) throw new Error('Unindexed catalogue records: '+search.missing.join(', '));
     await page.setViewport({width:390,height:844});
     if (await page.evaluate(() => document.documentElement.scrollWidth>window.innerWidth+2)) throw new Error('Home page overflows mobile viewport');
+    for (const route of ['catalog/records/qc5-001/', 'catalog/records/lg3-1-2/', 'catalog/invariants-fourfolds/']) {
+      await page.goto(base + '/' + route, {waitUntil:'domcontentloaded'});
+      await measureMath(page, route + ': mobile mathematical layout', Date.now());
+      if (await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 2))
+        throw new Error('Mobile overflow: ' + route);
+    }
     if (errors.length) throw new Error(errors.join('; '));
     await checkFirstOpen(browser, base, 'failed-primary');
     await checkFirstOpen(browser, base, 'delayed-startup');

@@ -90,6 +90,7 @@ nav:
       - Homogeneous constructions: catalog/additional.md
       - Fano threefold reference: catalog/fanography.md
       - Sources and terminology: catalog/sources.md
+      - Atomic invariants: catalog/atomic-invariants.md
       - Exact datasets: catalog/datasets.md
       - Original dataset usage: catalog/computed.md
   - Mathematics:

@@ -115,6 +115,9 @@ jobs:
       - name: Validate exact saved toric records
         run: python scripts/validate_toric_results.py
 
+      - name: Validate complete atomic and Hodge audit
+        run: python scripts/validate_atomic_invariants.py
+
       - name: Validate additional homogeneous fourfolds
         run: python scripts/validate_flag_fourfolds.py
 

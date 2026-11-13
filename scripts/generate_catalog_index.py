@@ -5,9 +5,15 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 HEADER='| Geometry | Ambient presentation | Dimension | Recorded Chern index | Ambient matrix rank | h(1,1) | Analysis |'
 
+def analysis_label(row):
+ text=row['status']
+ if row.get('atomic_invariants_link'):
+  text+=' · [Atomic invariants]('+row['atomic_invariants_link']+')'
+ return text
+
 def render_table(records):
  records=sorted(records,key=lambda r:(-r['dimension'],-r['index'],r['title']))
- return HEADER+'\n|---|---|---:|---:|---:|---:|---|\n'+''.join(f'| [{r["title"]}]({r["link"]}) | {r["ambient"]} | {r["dimension"]} | {r["index"]} | {r["matrix_rank"]} | {r["h11"]} | {r["status"]} |\n' for r in records)
+ return HEADER+'\n|---|---|---:|---:|---:|---:|---|\n'+''.join(f'| [{r["title"]}]({r["link"]}) | {r["ambient"]} | {r["dimension"]} | {r["index"]} | {r["matrix_rank"]} | {r["h11"]} | {analysis_label(r)} |\n' for r in records)
 
 def render_index():
  page=ROOT/'docs/catalog/index.md'
