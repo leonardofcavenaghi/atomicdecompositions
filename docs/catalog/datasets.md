@@ -6,6 +6,8 @@ description: Download exact catalogue inputs, quantum matrices, ordered bases, g
 
 Download the exact inputs and results underlying the catalogue. Each dataset retains its coordinate conventions, ordered bases, gradings and specialization data.
 
+The `id` field is a stable machine key for cross-referencing computations. It has no mathematical meaning; geometric names identify examples on the site.
+
 | Dataset | Records | Contents |
 |---|---:|---|
 | [Original exact matrix dataset](../data/localization-results.json) | 131 | Root-system and bundle inputs, curve lists, symbolic and y=1 matrices, Schubert bases and grading |

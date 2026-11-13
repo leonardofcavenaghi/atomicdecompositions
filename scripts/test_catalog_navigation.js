@@ -278,11 +278,11 @@ async function main() {
     if (search.missing.length) throw new Error('Unindexed catalogue records: '+search.missing.join(', '));
     await page.setViewport({width:390,height:844});
     if (await page.evaluate(() => document.documentElement.scrollWidth>window.innerWidth+2)) throw new Error('Home page overflows mobile viewport');
-    for (const route of ['catalog/records/qc5-001/', 'catalog/records/lg3-1-2/', 'catalog/invariants-fourfolds/']) {
+    for (const route of ['catalog/records/qc5-001/', 'catalog/records/lg3-1-2/', 'catalog/records/g2-quadric/', 'catalog/invariants-fourfolds/']) {
       await page.goto(base + '/' + route, {waitUntil:'domcontentloaded'});
       await measureMath(page, route + ': mobile mathematical layout', Date.now());
       if (await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 2))
-        throw new Error('Mobile overflow: ' + route);
+        throw new Error('Mobile overflow: ' + route + ' ' + JSON.stringify(await page.evaluate(() => ({viewport:innerWidth,width:document.documentElement.scrollWidth,wide:[...document.querySelectorAll('article,article *')].map(e=>({tag:e.tagName,cls:typeof e.className==='string'?e.className:'',width:e.getBoundingClientRect().width,right:e.getBoundingClientRect().right,scroll:e.scrollWidth,text:e.textContent.slice(0,100)})).filter(e=>e.right>innerWidth+2).slice(0,30)}))));
     }
     if (errors.length) throw new Error(errors.join('; '));
     await checkWithoutBrowserRenderer(browser, base);

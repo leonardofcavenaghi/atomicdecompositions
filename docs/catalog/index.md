@@ -29,11 +29,11 @@ Projective spaces, Grassmannians, homogeneous spaces, projective bundles and the
 
 Computed [regularized exponent multisets](datasets.md) appear near the top of the corresponding record, including repetitions, specialization and unresolved-factor status. They remain attached to their individual connection factors.
 
-The [atomic invariants](atomic-invariants.md) records full Hodge data and exact unit-cyclicity tests for every presentation. It identifies full coarse factors where the geometric hypotheses are established and explains the remaining scope limitations.
+The [atomic invariants](atomic-invariants.md) page records full Hodge data and exact unit-cyclicity tests for every presentation. It identifies full coarse factors where the geometric hypotheses are established and explains the remaining scope limitations.
 
 ## Search all computed presentations
 
-Search by ID, construction, ambient description, dimension or numerical data. The table filters the entire collection; the site search also indexes the full example narratives, inputs, matrices and search aliases.
+Search by geometric name, construction, dimension or numerical data. The table filters the collection; site search also includes example descriptions, inputs and scientific keywords.
 
 | Geometry | Ambient presentation | Dimension | Recorded Chern index | Ambient matrix rank | h(1,1) | Analysis |
 |---|---|---:|---:|---:|---:|---|

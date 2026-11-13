@@ -41,6 +41,14 @@ async function main() {
         const doc = new DOMParser().parseFromString(html,'text/html');
         const article = doc.querySelector('article');
         const bad = [];
+        const labels = [];
+        if (article) {
+          const text = article.textContent;
+          const opaque = text.match(/\b(?=[a-f0-9]{12}\b)(?=[a-f0-9]*[a-f])[a-f0-9]{12}\b/g) || [];
+          const synthetic = text.match(/\b(?:QD5|QC5|PB5|PROD5|PCI5)-[A-Z0-9-]+\b|GM-20/g) || [];
+          labels.push(...opaque,...synthetic);
+        }
+        if (labels.length) throw new Error('Non-geometric visible labels: '+[...new Set(labels)].join(', '));
         if (article) {
           const walker = doc.createTreeWalker(article,NodeFilter.SHOW_TEXT);
           while (walker.nextNode()) {
