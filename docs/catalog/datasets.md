@@ -11,6 +11,7 @@ The catalogue is organized by geometry. Downloads retain their original schemas 
 | [Original exact matrix dataset](../data/localization-results.json) | 131 | Root-system and bundle inputs, curve lists, symbolic and y=1 matrices, Schubert bases and grading |
 | [New fourfold records](../data/toric-fourfolds.json) | 96 | Fans, defining divisors, Novikov divisors, sparse exact symbolic matrices, ordered ambient bases and grading |
 | [New fivefold records](../data/toric-fivefolds.json) | 72 | Same fan/divisor contract, with construction data and saved analysis notes in the linked records |
+| [Regularized exponent multisets](../data/connection-exponents.json) | 168 | Exact saved power and residue-class multisets per characteristic factor, with specialization and unresolved status |
 | [Universal catalogue index](../data/catalog-records.json) | 299 | Canonical record links, dimension, recorded index, matrix rank and search terms |
 
 The [completed fourfold TeX source](../downloads/toric-fourfolds-completed.tex) and [completed fivefold TeX source](../downloads/toric-fivefolds-completed.tex) retain the full saved calculation notes, characteristic factors and connection exponents. Unfinished matrix records are removed. A completed matrix can have unresolved connection factors; those notes are preserved.
@@ -20,3 +21,5 @@ The fourfold source follows Coates–Kasprzyk–Prince, [1409.5030v3](https://ar
 The matrices act on the returned ambient sector. Their columns are images of the ordered basis; grading and Novikov maps are part of the data. Full Hodge numbers do not supply missing primitive quantum operators. Use the [root-system](../methodology.md) or [fan/divisor](../toric/mathematics.md) mathematical conventions for the relevant presentation, and the version-specific [software guides](../software/index.md) to reproduce its input.
 
 These are saved outputs. Exact consistency checks of their gradings and characteristic polynomials do not rerun localization. [Original dataset usage](computed.md) gives a Python example for its schema.
+
+The exponent summary contains 251 completed factor multisets and 92 unresolved factors. All factors are complete in 77 records; the other 91 records preserve their unresolved sectors. Multiplicities are retained separately at each eigenvalue. No exponent lists are invented for the original dataset, which does not store them.

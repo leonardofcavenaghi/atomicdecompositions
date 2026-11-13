@@ -656,13 +656,17 @@
         "weighted hypersurface",
         "double cover",
         "split projective bundle",
-        "Quartic double cover of P⁵"
+        "Quartic double cover of P⁵",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "QD5-001",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Quartic double cover of P⁵"
+      "geometric_description": "Quartic double cover of P⁵",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "834882311808",
@@ -848,13 +852,17 @@
         "quantum multiplication",
         "connection exponents",
         "Quartic fivefold in P⁶",
-        "projective space"
+        "projective space",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PCI5-4",
       "geometry_kind": "projective space",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Quartic fivefold in P⁶"
+      "geometric_description": "Quartic fivefold in P⁶",
+      "exponent_status": "complete",
+      "exponent_factor_count": 3
     },
     {
       "id": "QC5-001",
@@ -878,13 +886,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection (2,3) in P⁷",
-        "projective space"
+        "projective space",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "QC5-001",
       "geometry_kind": "projective space",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection (2,3) in P⁷"
+      "geometric_description": "Complete intersection (2,3) in P⁷",
+      "exponent_status": "complete",
+      "exponent_factor_count": 3
     },
     {
       "id": "9cb29c69a3f5",
@@ -1070,13 +1082,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection of multidegrees (2,2) in P³ × P³",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-028",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (2,2) in P³ × P³"
+      "geometric_description": "Complete intersection of multidegrees (2,2) in P³ × P³",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PCI5-2-2-2-2",
@@ -1100,13 +1116,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection (2,2,2,2) in P⁹",
-        "projective space"
+        "projective space",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PCI5-2-2-2-2",
       "geometry_kind": "projective space",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection (2,2,2,2) in P⁹"
+      "geometric_description": "Complete intersection (2,2,2,2) in P⁹",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "PCI5-2-2-3",
@@ -1130,13 +1150,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection (2,2,3) in P⁸",
-        "projective space"
+        "projective space",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PCI5-2-2-3",
       "geometry_kind": "projective space",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection (2,2,3) in P⁸"
+      "geometric_description": "Complete intersection (2,2,3) in P⁸",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "PCI5-2-4",
@@ -1160,13 +1184,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection (2,4) in P⁷",
-        "projective space"
+        "projective space",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PCI5-2-4",
       "geometry_kind": "projective space",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection (2,4) in P⁷"
+      "geometric_description": "Complete intersection (2,4) in P⁷",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "PCI5-3-3",
@@ -1190,13 +1218,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection (3,3) in P⁷",
-        "projective space"
+        "projective space",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PCI5-3-3",
       "geometry_kind": "projective space",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection (3,3) in P⁷"
+      "geometric_description": "Complete intersection (3,3) in P⁷",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "PCI5-5",
@@ -1220,13 +1252,17 @@
         "quantum multiplication",
         "connection exponents",
         "Quintic fivefold in P⁶",
-        "projective space"
+        "projective space",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PCI5-5",
       "geometry_kind": "projective space",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Quintic fivefold in P⁶"
+      "geometric_description": "Quintic fivefold in P⁶",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "PROD5-B01",
@@ -1250,13 +1286,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection of multidegrees (2,2) in P³ × P³",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PROD5-B01",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (2,2) in P³ × P³"
+      "geometric_description": "Complete intersection of multidegrees (2,2) in P³ × P³",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-003",
@@ -1280,13 +1320,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection of multidegrees (1,3) in P¹ × P⁵",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-003",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,3) in P¹ × P⁵"
+      "geometric_description": "Complete intersection of multidegrees (1,3) in P¹ × P⁵",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-016",
@@ -1310,13 +1354,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P²}(O^4 ⊕ O(1)) by 3ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-016",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P²}(O^4 ⊕ O(1)) by 3ξ+H"
+      "geometric_description": "Section of P_{P²}(O^4 ⊕ O(1)) by 3ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-017",
@@ -1340,13 +1388,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P²}(O^4 ⊕ O(1)) by 4ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-017",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P²}(O^4 ⊕ O(1)) by 4ξ+H"
+      "geometric_description": "Section of P_{P²}(O^4 ⊕ O(1)) by 4ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-036",
@@ -1370,13 +1422,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P³}(O^3 ⊕ O(1)) by 2ξ+2H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-036",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P³}(O^3 ⊕ O(1)) by 2ξ+2H"
+      "geometric_description": "Section of P_{P³}(O^3 ⊕ O(1)) by 2ξ+2H",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-037",
@@ -1400,13 +1456,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P³}(O^3 ⊕ O(1)) by 3ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-037",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P³}(O^3 ⊕ O(1)) by 3ξ+H"
+      "geometric_description": "Section of P_{P³}(O^3 ⊕ O(1)) by 3ξ+H",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-038",
@@ -1430,13 +1490,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P³}(O^3 ⊕ O(1)) by 3ξ+2H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-038",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P³}(O^3 ⊕ O(1)) by 3ξ+2H"
+      "geometric_description": "Section of P_{P³}(O^3 ⊕ O(1)) by 3ξ+2H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-040",
@@ -1460,13 +1524,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P³}(O^3 ⊕ O(2)) by 2ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-040",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P³}(O^3 ⊕ O(2)) by 2ξ+H"
+      "geometric_description": "Section of P_{P³}(O^3 ⊕ O(2)) by 2ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-041",
@@ -1490,13 +1558,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P³}(O^3 ⊕ O(2)) by 3ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-041",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P³}(O^3 ⊕ O(2)) by 3ξ+H"
+      "geometric_description": "Section of P_{P³}(O^3 ⊕ O(2)) by 3ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-043",
@@ -1520,13 +1592,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P³}(O^2 ⊕ O(1)^2) by 2ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-043",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P³}(O^2 ⊕ O(1)^2) by 2ξ+H"
+      "geometric_description": "Section of P_{P³}(O^2 ⊕ O(1)^2) by 2ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-044",
@@ -1550,13 +1626,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P³}(O^2 ⊕ O(1)^2) by 3ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-044",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P³}(O^2 ⊕ O(1)^2) by 3ξ+H"
+      "geometric_description": "Section of P_{P³}(O^2 ⊕ O(1)^2) by 3ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-051",
@@ -1580,13 +1660,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection of multidegrees (2,1), (1,2) in P³ × P⁴",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-051",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (2,1), (1,2) in P³ × P⁴"
+      "geometric_description": "Complete intersection of multidegrees (2,1), (1,2) in P³ × P⁴",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-056",
@@ -1610,13 +1694,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P³}(O^4 ⊕ O(1)) by ξ+H, 2ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-056",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P³}(O^4 ⊕ O(1)) by ξ+H, 2ξ+H"
+      "geometric_description": "Section of P_{P³}(O^4 ⊕ O(1)) by ξ+H, 2ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-057",
@@ -1640,13 +1728,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P³}(O^4 ⊕ O(1)) by ξ+H, 3ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-057",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P³}(O^4 ⊕ O(1)) by ξ+H, 3ξ+H"
+      "geometric_description": "Section of P_{P³}(O^4 ⊕ O(1)) by ξ+H, 3ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-058",
@@ -1670,13 +1762,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P³}(O^4 ⊕ O(1)) by 2ξ+H, 2ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-058",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P³}(O^4 ⊕ O(1)) by 2ξ+H, 2ξ+H"
+      "geometric_description": "Section of P_{P³}(O^4 ⊕ O(1)) by 2ξ+H, 2ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-060",
@@ -1700,13 +1796,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection of multidegrees (1,1), (1,1), (1,2) in P³ × P⁵",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-060",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,1), (1,1), (1,2) in P³ × P⁵"
+      "geometric_description": "Complete intersection of multidegrees (1,1), (1,1), (1,2) in P³ × P⁵",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-075",
@@ -1730,13 +1830,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P⁴}(O^2 ⊕ O(1)) by 2ξ+2H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-075",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁴}(O^2 ⊕ O(1)) by 2ξ+2H"
+      "geometric_description": "Section of P_{P⁴}(O^2 ⊕ O(1)) by 2ξ+2H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-076",
@@ -1760,13 +1864,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P⁴}(O^2 ⊕ O(1)) by 2ξ+3H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-076",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁴}(O^2 ⊕ O(1)) by 2ξ+3H"
+      "geometric_description": "Section of P_{P⁴}(O^2 ⊕ O(1)) by 2ξ+3H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-079",
@@ -1790,13 +1898,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P⁴}(O^2 ⊕ O(2)) by 2ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-079",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁴}(O^2 ⊕ O(2)) by 2ξ+H"
+      "geometric_description": "Section of P_{P⁴}(O^2 ⊕ O(2)) by 2ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-080",
@@ -1820,13 +1932,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P⁴}(O^2 ⊕ O(2)) by 2ξ+2H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-080",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁴}(O^2 ⊕ O(2)) by 2ξ+2H"
+      "geometric_description": "Section of P_{P⁴}(O^2 ⊕ O(2)) by 2ξ+2H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-082",
@@ -1850,13 +1966,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P⁴}(O^2 ⊕ O(3)) by 2ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-082",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁴}(O^2 ⊕ O(3)) by 2ξ+H"
+      "geometric_description": "Section of P_{P⁴}(O^2 ⊕ O(3)) by 2ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-085",
@@ -1880,13 +2000,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P⁴}(O ⊕ O(1)^2) by 2ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-085",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁴}(O ⊕ O(1)^2) by 2ξ+H"
+      "geometric_description": "Section of P_{P⁴}(O ⊕ O(1)^2) by 2ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-086",
@@ -1910,13 +2034,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P⁴}(O ⊕ O(1)^2) by 2ξ+2H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-086",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁴}(O ⊕ O(1)^2) by 2ξ+2H"
+      "geometric_description": "Section of P_{P⁴}(O ⊕ O(1)^2) by 2ξ+2H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-088",
@@ -1940,13 +2068,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P⁴}(O ⊕ O(1) ⊕ O(2)) by 2ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-088",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁴}(O ⊕ O(1) ⊕ O(2)) by 2ξ+H"
+      "geometric_description": "Section of P_{P⁴}(O ⊕ O(1) ⊕ O(2)) by 2ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-101",
@@ -1970,13 +2102,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P⁴}(O^3 ⊕ O(1)) by ξ+H, 2ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-101",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁴}(O^3 ⊕ O(1)) by ξ+H, 2ξ+H"
+      "geometric_description": "Section of P_{P⁴}(O^3 ⊕ O(1)) by ξ+H, 2ξ+H",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-102",
@@ -2000,13 +2136,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P⁴}(O^3 ⊕ O(1)) by ξ+H, 2ξ+2H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-102",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁴}(O^3 ⊕ O(1)) by ξ+H, 2ξ+2H"
+      "geometric_description": "Section of P_{P⁴}(O^3 ⊕ O(1)) by ξ+H, 2ξ+2H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-103",
@@ -2030,13 +2170,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P⁴}(O^3 ⊕ O(1)) by ξ+2H, 2ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-103",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁴}(O^3 ⊕ O(1)) by ξ+2H, 2ξ+H"
+      "geometric_description": "Section of P_{P⁴}(O^3 ⊕ O(1)) by ξ+2H, 2ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-105",
@@ -2060,13 +2204,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P⁴}(O^3 ⊕ O(2)) by ξ+H, 2ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-105",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁴}(O^3 ⊕ O(2)) by ξ+H, 2ξ+H"
+      "geometric_description": "Section of P_{P⁴}(O^3 ⊕ O(2)) by ξ+H, 2ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-107",
@@ -2090,13 +2238,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P⁴}(O^2 ⊕ O(1)^2) by ξ+H, 2ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-107",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁴}(O^2 ⊕ O(1)^2) by ξ+H, 2ξ+H"
+      "geometric_description": "Section of P_{P⁴}(O^2 ⊕ O(1)^2) by ξ+H, 2ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-114",
@@ -2120,13 +2272,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P⁴}(O^4 ⊕ O(1)) by ξ+H, ξ+H, 2ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-114",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁴}(O^4 ⊕ O(1)) by ξ+H, ξ+H, 2ξ+H"
+      "geometric_description": "Section of P_{P⁴}(O^4 ⊕ O(1)) by ξ+H, ξ+H, 2ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-124",
@@ -2150,13 +2306,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P⁵}(O ⊕ O(1)) by ξ+3H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-124",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁵}(O ⊕ O(1)) by ξ+3H"
+      "geometric_description": "Section of P_{P⁵}(O ⊕ O(1)) by ξ+3H",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-127",
@@ -2180,13 +2340,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P⁵}(O ⊕ O(2)) by ξ+2H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-127",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁵}(O ⊕ O(2)) by ξ+2H"
+      "geometric_description": "Section of P_{P⁵}(O ⊕ O(2)) by ξ+2H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-128",
@@ -2210,13 +2374,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P⁵}(O ⊕ O(2)) by ξ+3H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-128",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁵}(O ⊕ O(2)) by ξ+3H"
+      "geometric_description": "Section of P_{P⁵}(O ⊕ O(2)) by ξ+3H",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-130",
@@ -2240,13 +2408,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P⁵}(O ⊕ O(3)) by ξ+2H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-130",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁵}(O ⊕ O(3)) by ξ+2H"
+      "geometric_description": "Section of P_{P⁵}(O ⊕ O(3)) by ξ+2H",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-131",
@@ -2270,13 +2442,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P⁵}(O ⊕ O(4)) by ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-131",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁵}(O ⊕ O(4)) by ξ+H"
+      "geometric_description": "Section of P_{P⁵}(O ⊕ O(4)) by ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-139",
@@ -2300,13 +2476,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P⁵}(O^2 ⊕ O(1)) by ξ+H, ξ+2H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-139",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁵}(O^2 ⊕ O(1)) by ξ+H, ξ+2H"
+      "geometric_description": "Section of P_{P⁵}(O^2 ⊕ O(1)) by ξ+H, ξ+2H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-143",
@@ -2330,13 +2510,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P⁵}(O^2 ⊕ O(2)) by ξ+H, ξ+2H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-143",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁵}(O^2 ⊕ O(2)) by ξ+H, ξ+2H"
+      "geometric_description": "Section of P_{P⁵}(O^2 ⊕ O(2)) by ξ+H, ξ+2H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-144",
@@ -2360,13 +2544,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P⁵}(O^2 ⊕ O(3)) by ξ+H, ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-144",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁵}(O^2 ⊕ O(3)) by ξ+H, ξ+H"
+      "geometric_description": "Section of P_{P⁵}(O^2 ⊕ O(3)) by ξ+H, ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-147",
@@ -2390,13 +2578,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P⁵}(O ⊕ O(1) ⊕ O(2)) by ξ+H, ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-147",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁵}(O ⊕ O(1) ⊕ O(2)) by ξ+H, ξ+H"
+      "geometric_description": "Section of P_{P⁵}(O ⊕ O(1) ⊕ O(2)) by ξ+H, ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-153",
@@ -2420,13 +2612,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P⁵}(O^3 ⊕ O(1)) by ξ+H, ξ+H, ξ+2H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-153",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁵}(O^3 ⊕ O(1)) by ξ+H, ξ+H, ξ+2H"
+      "geometric_description": "Section of P_{P⁵}(O^3 ⊕ O(1)) by ξ+H, ξ+H, ξ+2H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-154",
@@ -2450,13 +2646,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P⁵}(O^3 ⊕ O(2)) by ξ+H, ξ+H, ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-154",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁵}(O^3 ⊕ O(2)) by ξ+H, ξ+H, ξ+H"
+      "geometric_description": "Section of P_{P⁵}(O^3 ⊕ O(2)) by ξ+H, ξ+H, ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-155",
@@ -2480,13 +2680,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P⁵}(O^2 ⊕ O(1)^2) by ξ+H, ξ+H, ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-155",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁵}(O^2 ⊕ O(1)^2) by ξ+H, ξ+H, ξ+H"
+      "geometric_description": "Section of P_{P⁵}(O^2 ⊕ O(1)^2) by ξ+H, ξ+H, ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PB5-158",
@@ -2510,13 +2714,17 @@
         "quantum multiplication",
         "connection exponents",
         "Section of P_{P⁵}(O^4 ⊕ O(1)) by ξ+H, ξ+H, ξ+H, ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PB5-158",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁵}(O^4 ⊕ O(1)) by ξ+H, ξ+H, ξ+H, ξ+H"
+      "geometric_description": "Section of P_{P⁵}(O^4 ⊕ O(1)) by ξ+H, ξ+H, ξ+H, ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PCI5-2-2-2-2-2",
@@ -2540,13 +2748,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection (2,2,2,2,2) in P¹⁰",
-        "projective space"
+        "projective space",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PCI5-2-2-2-2-2",
       "geometry_kind": "projective space",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection (2,2,2,2,2) in P¹⁰"
+      "geometric_description": "Complete intersection (2,2,2,2,2) in P¹⁰",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "PCI5-2-2-2-3",
@@ -2570,13 +2782,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection (2,2,2,3) in P⁹",
-        "projective space"
+        "projective space",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PCI5-2-2-2-3",
       "geometry_kind": "projective space",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection (2,2,2,3) in P⁹"
+      "geometric_description": "Complete intersection (2,2,2,3) in P⁹",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "PCI5-2-2-4",
@@ -2600,13 +2816,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection (2,2,4) in P⁸",
-        "projective space"
+        "projective space",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PCI5-2-2-4",
       "geometry_kind": "projective space",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection (2,2,4) in P⁸"
+      "geometric_description": "Complete intersection (2,2,4) in P⁸",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "PCI5-2-3-3",
@@ -2630,13 +2850,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection (2,3,3) in P⁸",
-        "projective space"
+        "projective space",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PCI5-2-3-3",
       "geometry_kind": "projective space",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection (2,3,3) in P⁸"
+      "geometric_description": "Complete intersection (2,3,3) in P⁸",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "PCI5-2-5",
@@ -2660,13 +2884,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection (2,5) in P⁷",
-        "projective space"
+        "projective space",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PCI5-2-5",
       "geometry_kind": "projective space",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection (2,5) in P⁷"
+      "geometric_description": "Complete intersection (2,5) in P⁷",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "PCI5-3-4",
@@ -2690,13 +2918,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection (3,4) in P⁷",
-        "projective space"
+        "projective space",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PCI5-3-4",
       "geometry_kind": "projective space",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection (3,4) in P⁷"
+      "geometric_description": "Complete intersection (3,4) in P⁷",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "PCI5-6",
@@ -2720,13 +2952,17 @@
         "quantum multiplication",
         "connection exponents",
         "Degree-6 fivefold in P⁶",
-        "projective space"
+        "projective space",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PCI5-6",
       "geometry_kind": "projective space",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Degree-6 fivefold in P⁶"
+      "geometric_description": "Degree-6 fivefold in P⁶",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "PROD5-A01",
@@ -2750,13 +2986,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection of multidegrees (2,2) in P² × P⁴",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PROD5-A01",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (2,2) in P² × P⁴"
+      "geometric_description": "Complete intersection of multidegrees (2,2) in P² × P⁴",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "PROD5-A02",
@@ -2780,13 +3020,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection of multidegrees (2,3) in P² × P⁴",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PROD5-A02",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (2,3) in P² × P⁴"
+      "geometric_description": "Complete intersection of multidegrees (2,3) in P² × P⁴",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PROD5-A03",
@@ -2810,13 +3054,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection of multidegrees (2,4) in P² × P⁴",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PROD5-A03",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (2,4) in P² × P⁴"
+      "geometric_description": "Complete intersection of multidegrees (2,4) in P² × P⁴",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PROD5-B02",
@@ -2840,13 +3088,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection of multidegrees (2,3) in P³ × P³",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PROD5-B02",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (2,3) in P³ × P³"
+      "geometric_description": "Complete intersection of multidegrees (2,3) in P³ × P³",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "PROD5-B03",
@@ -2870,13 +3122,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection of multidegrees (3,3) in P³ × P³",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PROD5-B03",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (3,3) in P³ × P³"
+      "geometric_description": "Complete intersection of multidegrees (3,3) in P³ × P³",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PROD5-C01",
@@ -2900,13 +3156,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection of multidegrees (2,2,2) in P² × P² × P²",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PROD5-C01",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (2,2,2) in P² × P² × P²"
+      "geometric_description": "Complete intersection of multidegrees (2,2,2) in P² × P² × P²",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PROD5-D01",
@@ -2930,13 +3190,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection of multidegrees (2,2), (1,1) in P³ × P⁴",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PROD5-D01",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (2,2), (1,1) in P³ × P⁴"
+      "geometric_description": "Complete intersection of multidegrees (2,2), (1,1) in P³ × P⁴",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "PROD5-D02",
@@ -2960,13 +3224,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection of multidegrees (2,1), (1,2) in P³ × P⁴",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PROD5-D02",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (2,1), (1,2) in P³ × P⁴"
+      "geometric_description": "Complete intersection of multidegrees (2,1), (1,2) in P³ × P⁴",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PROD5-D03",
@@ -2990,13 +3258,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection of multidegrees (2,3), (1,1) in P³ × P⁴",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PROD5-D03",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (2,3), (1,1) in P³ × P⁴"
+      "geometric_description": "Complete intersection of multidegrees (2,3), (1,1) in P³ × P⁴",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PROD5-D04",
@@ -3020,13 +3292,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection of multidegrees (2,1), (1,3) in P³ × P⁴",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PROD5-D04",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (2,1), (1,3) in P³ × P⁴"
+      "geometric_description": "Complete intersection of multidegrees (2,1), (1,3) in P³ × P⁴",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PROD5-D05",
@@ -3050,13 +3326,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection of multidegrees (2,2), (1,2) in P³ × P⁴",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PROD5-D05",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (2,2), (1,2) in P³ × P⁴"
+      "geometric_description": "Complete intersection of multidegrees (2,2), (1,2) in P³ × P⁴",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PROD5-E01",
@@ -3080,13 +3360,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection of multidegrees (2,2), (1,1), (1,1) in P⁴ × P⁴",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PROD5-E01",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (2,2), (1,1), (1,1) in P⁴ × P⁴"
+      "geometric_description": "Complete intersection of multidegrees (2,2), (1,1), (1,1) in P⁴ × P⁴",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "PROD5-E02",
@@ -3110,13 +3394,17 @@
         "quantum multiplication",
         "connection exponents",
         "Complete intersection of multidegrees (2,1), (1,2), (1,1) in P⁴ × P⁴",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fivefolds.json",
       "source_id": "PROD5-E02",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (2,1), (1,2), (1,1) in P⁴ × P⁴"
+      "geometric_description": "Complete intersection of multidegrees (2,1), (1,2), (1,1) in P⁴ × P⁴",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-001",
@@ -3142,13 +3430,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "P⁴",
-        "projective space"
+        "projective space",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-001",
       "geometry_kind": "projective space",
       "geometry_status": "verified from the fan",
-      "geometric_description": "P⁴"
+      "geometric_description": "P⁴",
+      "exponent_status": "complete",
+      "exponent_factor_count": 1
     },
     {
       "id": "139781d9fb14",
@@ -3210,13 +3502,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Quadric fourfold in P⁵",
-        "projective space"
+        "projective space",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-003",
       "geometry_kind": "projective space",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Quadric fourfold in P⁵"
+      "geometric_description": "Quadric fourfold in P⁵",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "51615a7643a1",
@@ -3278,13 +3574,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection (2,2) in P⁶",
-        "projective space"
+        "projective space",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-033",
       "geometry_kind": "projective space",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection (2,2) in P⁶"
+      "geometric_description": "Complete intersection (2,2) in P⁶",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-037",
@@ -3310,13 +3610,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Cubic fourfold in P⁵",
-        "projective space"
+        "projective space",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-037",
       "geometry_kind": "projective space",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Cubic fourfold in P⁵"
+      "geometric_description": "Cubic fourfold in P⁵",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "3c0ee725b9d8",
@@ -3414,13 +3718,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P⁴}(O ⊕ O(1)) by 2H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-060",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁴}(O ⊕ O(1)) by 2H"
+      "geometric_description": "Section of P_{P⁴}(O ⊕ O(1)) by 2H",
+      "exponent_status": "complete",
+      "exponent_factor_count": 4
     },
     {
       "id": "CKP-061",
@@ -3446,13 +3754,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P³}(O^2 ⊕ O(1)) by ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-061",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P³}(O^2 ⊕ O(1)) by ξ+H"
+      "geometric_description": "Section of P_{P³}(O^2 ⊕ O(1)) by ξ+H",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-186",
@@ -3478,13 +3790,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P²}(O^3 ⊕ O(1)) by 2ξ",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-186",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P²}(O^3 ⊕ O(1)) by 2ξ"
+      "geometric_description": "Section of P_{P²}(O^3 ⊕ O(1)) by 2ξ",
+      "exponent_status": "complete",
+      "exponent_factor_count": 3
     },
     {
       "id": "CKP-189",
@@ -3510,13 +3826,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (1,1), (1,1) in P³ × P³",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-189",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,1), (1,1) in P³ × P³"
+      "geometric_description": "Complete intersection of multidegrees (1,1), (1,1) in P³ × P³",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-327",
@@ -3542,13 +3862,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (1,2) in P² × P³",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-327",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,2) in P² × P³"
+      "geometric_description": "Complete intersection of multidegrees (1,2) in P² × P³",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-567",
@@ -3574,13 +3898,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (0,3) in P¹ × P⁴",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-567",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (0,3) in P¹ × P⁴"
+      "geometric_description": "Complete intersection of multidegrees (0,3) in P¹ × P⁴",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-596",
@@ -3606,13 +3934,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection (2,2,2) in P⁷",
-        "projective space"
+        "projective space",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-596",
       "geometry_kind": "projective space",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection (2,2,2) in P⁷"
+      "geometric_description": "Complete intersection (2,2,2) in P⁷",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-640",
@@ -3638,13 +3970,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection (2,3) in P⁶",
-        "projective space"
+        "projective space",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-640",
       "geometry_kind": "projective space",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection (2,3) in P⁶"
+      "geometric_description": "Complete intersection (2,3) in P⁶",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-682",
@@ -3670,13 +4006,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Quartic fourfold in P⁵",
-        "projective space"
+        "projective space",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-682",
       "geometry_kind": "projective space",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Quartic fourfold in P⁵"
+      "geometric_description": "Quartic fourfold in P⁵",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "3ed191207b19",
@@ -3773,13 +4113,17 @@
         "connection exponents",
         "Hausen Laface Mauz",
         "HLM",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "HLM-29",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Verra fourfold"
+      "geometric_description": "Verra fourfold",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "5a3d521e7212",
@@ -3895,13 +4239,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (1,1) in P¹ × P⁴",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-002",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,1) in P¹ × P⁴"
+      "geometric_description": "Complete intersection of multidegrees (1,1) in P¹ × P⁴",
+      "exponent_status": "complete",
+      "exponent_factor_count": 1
     },
     {
       "id": "CKP-004",
@@ -3927,13 +4275,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P⁴}(O ⊕ O(1)) by ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-004",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁴}(O ⊕ O(1)) by ξ+H"
+      "geometric_description": "Section of P_{P⁴}(O ⊕ O(1)) by ξ+H",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-005",
@@ -3959,13 +4311,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P⁴}(O ⊕ O(2)) by ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-005",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁴}(O ⊕ O(2)) by ξ+H"
+      "geometric_description": "Section of P_{P⁴}(O ⊕ O(2)) by ξ+H",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-006",
@@ -3991,13 +4347,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P⁴}(O ⊕ O(3)) by ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-006",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁴}(O ⊕ O(3)) by ξ+H"
+      "geometric_description": "Section of P_{P⁴}(O ⊕ O(3)) by ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-014",
@@ -4023,13 +4383,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P²}(O^3 ⊕ O(1)) by ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-014",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P²}(O^3 ⊕ O(1)) by ξ+H"
+      "geometric_description": "Section of P_{P²}(O^3 ⊕ O(1)) by ξ+H",
+      "exponent_status": "complete",
+      "exponent_factor_count": 1
     },
     {
       "id": "CKP-018",
@@ -4055,13 +4419,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (1,1), (1,1) in P² × P⁴",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-018",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,1), (1,1) in P² × P⁴"
+      "geometric_description": "Complete intersection of multidegrees (1,1), (1,1) in P² × P⁴",
+      "exponent_status": "complete",
+      "exponent_factor_count": 1
     },
     {
       "id": "CKP-026",
@@ -4087,13 +4455,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P¹}(O^4 ⊕ O(1)) by 2ξ",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-026",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P¹}(O^4 ⊕ O(1)) by 2ξ"
+      "geometric_description": "Section of P_{P¹}(O^4 ⊕ O(1)) by 2ξ",
+      "exponent_status": "complete",
+      "exponent_factor_count": 3
     },
     {
       "id": "CKP-030",
@@ -4119,13 +4491,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (1,2) in P¹ × P⁴",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-030",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,2) in P¹ × P⁴"
+      "geometric_description": "Complete intersection of multidegrees (1,2) in P¹ × P⁴",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-036",
@@ -4151,13 +4527,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P⁴}(O^2 ⊕ O(1)) by ξ+H, ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-036",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁴}(O^2 ⊕ O(1)) by ξ+H, ξ+H"
+      "geometric_description": "Section of P_{P⁴}(O^2 ⊕ O(1)) by ξ+H, ξ+H",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-039",
@@ -4183,13 +4563,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P⁴}(O ⊕ O(1)) by ξ+2H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-039",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁴}(O ⊕ O(1)) by ξ+2H"
+      "geometric_description": "Section of P_{P⁴}(O ⊕ O(1)) by ξ+2H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-040",
@@ -4215,13 +4599,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P⁴}(O^2 ⊕ O(2)) by ξ+H, ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-040",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁴}(O^2 ⊕ O(2)) by ξ+H, ξ+H"
+      "geometric_description": "Section of P_{P⁴}(O^2 ⊕ O(2)) by ξ+H, ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-041",
@@ -4247,13 +4635,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P⁴}(O ⊕ O(2)) by ξ+2H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-041",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁴}(O ⊕ O(2)) by ξ+2H"
+      "geometric_description": "Section of P_{P⁴}(O ⊕ O(2)) by ξ+2H",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-046",
@@ -4279,13 +4671,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P⁴}(O ⊕ O(2)) by 2H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-046",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁴}(O ⊕ O(2)) by 2H"
+      "geometric_description": "Section of P_{P⁴}(O ⊕ O(2)) by 2H",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-049",
@@ -4311,13 +4707,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P³}(O^2 ⊕ O(2)) by ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-049",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P³}(O^2 ⊕ O(2)) by ξ+H"
+      "geometric_description": "Section of P_{P³}(O^2 ⊕ O(2)) by ξ+H",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-078",
@@ -4343,13 +4743,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (1,1) in P² × P³",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-078",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,1) in P² × P³"
+      "geometric_description": "Complete intersection of multidegrees (1,1) in P² × P³",
+      "exponent_status": "complete",
+      "exponent_factor_count": 1
     },
     {
       "id": "CKP-102",
@@ -4375,13 +4779,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (1,1,1) in P¹ × P¹ × P³",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-102",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,1,1) in P¹ × P¹ × P³"
+      "geometric_description": "Complete intersection of multidegrees (1,1,1) in P¹ × P¹ × P³",
+      "exponent_status": "complete",
+      "exponent_factor_count": 1
     },
     {
       "id": "CKP-107",
@@ -4407,13 +4815,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (2,1) in P² × P³",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-107",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (2,1) in P² × P³"
+      "geometric_description": "Complete intersection of multidegrees (2,1) in P² × P³",
+      "exponent_status": "complete",
+      "exponent_factor_count": 1
     },
     {
       "id": "CKP-111",
@@ -4439,13 +4851,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (0,2) in P¹ × P⁴",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-111",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (0,2) in P¹ × P⁴"
+      "geometric_description": "Complete intersection of multidegrees (0,2) in P¹ × P⁴",
+      "exponent_status": "complete",
+      "exponent_factor_count": 3
     },
     {
       "id": "CKP-114",
@@ -4471,13 +4887,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P³}(O ⊕ O(1)^2) by ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-114",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P³}(O ⊕ O(1)^2) by ξ+H"
+      "geometric_description": "Section of P_{P³}(O ⊕ O(1)^2) by ξ+H",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-144",
@@ -4503,13 +4923,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P¹ × P³}(O ⊕ O(0,1)) by ξ+H1+H2",
-        "split projective bundle over product"
+        "split projective bundle over product",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-144",
       "geometry_kind": "split projective bundle over product",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P¹ × P³}(O ⊕ O(0,1)) by ξ+H1+H2"
+      "geometric_description": "Section of P_{P¹ × P³}(O ⊕ O(0,1)) by ξ+H1+H2",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-145",
@@ -4535,13 +4959,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P³}(O ⊕ O(1)^2) by 2ξ",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-145",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P³}(O ⊕ O(1)^2) by 2ξ"
+      "geometric_description": "Section of P_{P³}(O ⊕ O(1)^2) by 2ξ",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-155",
@@ -4567,13 +4995,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P¹ × P²}(O^2 ⊕ O(0,1)) by ξ+H1+H2",
-        "split projective bundle over product"
+        "split projective bundle over product",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-155",
       "geometry_kind": "split projective bundle over product",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P¹ × P²}(O^2 ⊕ O(0,1)) by ξ+H1+H2"
+      "geometric_description": "Section of P_{P¹ × P²}(O^2 ⊕ O(0,1)) by ξ+H1+H2",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-157",
@@ -4599,13 +5031,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P¹ × P³}(O ⊕ O(0,2)) by ξ+H1+H2",
-        "split projective bundle over product"
+        "split projective bundle over product",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-157",
       "geometry_kind": "split projective bundle over product",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P¹ × P³}(O ⊕ O(0,2)) by ξ+H1+H2"
+      "geometric_description": "Section of P_{P¹ × P³}(O ⊕ O(0,2)) by ξ+H1+H2",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-160",
@@ -4631,13 +5067,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P³}(O^3 ⊕ O(1)) by ξ+H, ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-160",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P³}(O^3 ⊕ O(1)) by ξ+H, ξ+H"
+      "geometric_description": "Section of P_{P³}(O^3 ⊕ O(1)) by ξ+H, ξ+H",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-169",
@@ -4663,13 +5103,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P⁴}(O ⊕ O(1)) by 3H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-169",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁴}(O ⊕ O(1)) by 3H"
+      "geometric_description": "Section of P_{P⁴}(O ⊕ O(1)) by 3H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-170",
@@ -4695,13 +5139,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P³}(O^2 ⊕ O(1)) by ξ+2H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-170",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P³}(O^2 ⊕ O(1)) by ξ+2H"
+      "geometric_description": "Section of P_{P³}(O^2 ⊕ O(1)) by ξ+2H",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-172",
@@ -4725,9 +5173,13 @@
         "quantum multiplication",
         "connection exponents",
         "Coates Kasprzyk Prince",
-        "CKP"
+        "CKP",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
-      "source": "toric-fourfolds.json"
+      "source": "toric-fourfolds.json",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-174",
@@ -4753,13 +5205,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P³}(O^2 ⊕ O(1)) by 2ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-174",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P³}(O^2 ⊕ O(1)) by 2ξ+H"
+      "geometric_description": "Section of P_{P³}(O^2 ⊕ O(1)) by 2ξ+H",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-175",
@@ -4785,13 +5241,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (1,1), (1,1), (1,1) in P³ × P⁴",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-175",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,1), (1,1), (1,1) in P³ × P⁴"
+      "geometric_description": "Complete intersection of multidegrees (1,1), (1,1), (1,1) in P³ × P⁴",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-179",
@@ -4817,13 +5277,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P³}(O^2 ⊕ O(2)) by 2ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-179",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P³}(O^2 ⊕ O(2)) by 2ξ+H"
+      "geometric_description": "Section of P_{P³}(O^2 ⊕ O(2)) by 2ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-182",
@@ -4849,13 +5313,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P²}(O^3 ⊕ O(2)) by 2ξ",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-182",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P²}(O^3 ⊕ O(2)) by 2ξ"
+      "geometric_description": "Section of P_{P²}(O^3 ⊕ O(2)) by 2ξ",
+      "exponent_status": "complete",
+      "exponent_factor_count": 3
     },
     {
       "id": "CKP-233",
@@ -4881,13 +5349,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P²}(O^2 ⊕ O(1)^2) by 2ξ",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-233",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P²}(O^2 ⊕ O(1)^2) by 2ξ"
+      "geometric_description": "Section of P_{P²}(O^2 ⊕ O(1)^2) by 2ξ",
+      "exponent_status": "complete",
+      "exponent_factor_count": 3
     },
     {
       "id": "CKP-247",
@@ -4913,13 +5385,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (1,1,1) in P¹ × P² × P²",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-247",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,1,1) in P¹ × P² × P²"
+      "geometric_description": "Complete intersection of multidegrees (1,1,1) in P¹ × P² × P²",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-314",
@@ -4945,13 +5421,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P²}(O^3 ⊕ O(1)) by 2ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-314",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P²}(O^3 ⊕ O(1)) by 2ξ+H"
+      "geometric_description": "Section of P_{P²}(O^3 ⊕ O(1)) by 2ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-320",
@@ -4975,9 +5455,13 @@
         "quantum multiplication",
         "connection exponents",
         "Coates Kasprzyk Prince",
-        "CKP"
+        "CKP",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
-      "source": "toric-fourfolds.json"
+      "source": "toric-fourfolds.json",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-322",
@@ -5003,13 +5487,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (1,1), (1,2) in P² × P⁴",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-322",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,1), (1,2) in P² × P⁴"
+      "geometric_description": "Complete intersection of multidegrees (1,1), (1,2) in P² × P⁴",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-323",
@@ -5035,13 +5523,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (1,1), (2,1) in P³ × P³",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-323",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,1), (2,1) in P³ × P³"
+      "geometric_description": "Complete intersection of multidegrees (1,1), (2,1) in P³ × P³",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-363",
@@ -5067,13 +5559,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P² × P²}(O ⊕ O(1,0)) by ξ+H1+H2",
-        "split projective bundle over product"
+        "split projective bundle over product",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-363",
       "geometry_kind": "split projective bundle over product",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P² × P²}(O ⊕ O(1,0)) by ξ+H1+H2"
+      "geometric_description": "Section of P_{P² × P²}(O ⊕ O(1,0)) by ξ+H1+H2",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-432",
@@ -5099,13 +5595,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (1,1,2) in P¹ × P¹ × P³",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-432",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,1,2) in P¹ × P¹ × P³"
+      "geometric_description": "Complete intersection of multidegrees (1,1,2) in P¹ × P¹ × P³",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-439",
@@ -5131,13 +5631,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (2,2) in P² × P³",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-439",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (2,2) in P² × P³"
+      "geometric_description": "Complete intersection of multidegrees (2,2) in P² × P³",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-450",
@@ -5163,13 +5667,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P² × P²}(O ⊕ O(1,1)) by ξ+H1+H2",
-        "split projective bundle over product"
+        "split projective bundle over product",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-450",
       "geometry_kind": "split projective bundle over product",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P² × P²}(O ⊕ O(1,1)) by ξ+H1+H2"
+      "geometric_description": "Section of P_{P² × P²}(O ⊕ O(1,1)) by ξ+H1+H2",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-475",
@@ -5195,13 +5703,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (1,1,1,1) in P¹ × P¹ × P¹ × P²",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-475",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,1,1,1) in P¹ × P¹ × P¹ × P²"
+      "geometric_description": "Complete intersection of multidegrees (1,1,1,1) in P¹ × P¹ × P¹ × P²",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-492",
@@ -5227,13 +5739,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P² × P²}(O(0,1) ⊕ O(1,0)) by ξ+H1+H2",
-        "split projective bundle over product"
+        "split projective bundle over product",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-492",
       "geometry_kind": "split projective bundle over product",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P² × P²}(O(0,1) ⊕ O(1,0)) by ξ+H1+H2"
+      "geometric_description": "Section of P_{P² × P²}(O(0,1) ⊕ O(1,0)) by ξ+H1+H2",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-498",
@@ -5259,13 +5775,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P⁴}(O ⊕ O(1)^2) by ξ+H, ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-498",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁴}(O ⊕ O(1)^2) by ξ+H, ξ+H"
+      "geometric_description": "Section of P_{P⁴}(O ⊕ O(1)^2) by ξ+H, ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-535",
@@ -5291,13 +5811,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P¹ × P¹ × P²}(O ⊕ O(0,0,1)) by ξ+H1+H2+H3",
-        "split projective bundle over product"
+        "split projective bundle over product",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-535",
       "geometry_kind": "split projective bundle over product",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P¹ × P¹ × P²}(O ⊕ O(0,0,1)) by ξ+H1+H2+H3"
+      "geometric_description": "Section of P_{P¹ × P¹ × P²}(O ⊕ O(0,0,1)) by ξ+H1+H2+H3",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-551",
@@ -5323,13 +5847,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P¹}(O^4 ⊕ O(1)) by 3ξ",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-551",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P¹}(O^4 ⊕ O(1)) by 3ξ"
+      "geometric_description": "Section of P_{P¹}(O^4 ⊕ O(1)) by 3ξ",
+      "exponent_status": "complete",
+      "exponent_factor_count": 3
     },
     {
       "id": "CKP-560",
@@ -5355,13 +5883,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (1,2,1) in P¹ × P² × P²",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-560",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,2,1) in P¹ × P² × P²"
+      "geometric_description": "Complete intersection of multidegrees (1,2,1) in P¹ × P² × P²",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-566",
@@ -5387,13 +5919,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (1,3) in P¹ × P⁴",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-566",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,3) in P¹ × P⁴"
+      "geometric_description": "Complete intersection of multidegrees (1,3) in P¹ × P⁴",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-593",
@@ -5419,13 +5955,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P¹ × P³}(O ⊕ O(0,1)) by ξ+H1+2H2",
-        "split projective bundle over product"
+        "split projective bundle over product",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-593",
       "geometry_kind": "split projective bundle over product",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P¹ × P³}(O ⊕ O(0,1)) by ξ+H1+2H2"
+      "geometric_description": "Section of P_{P¹ × P³}(O ⊕ O(0,1)) by ξ+H1+2H2",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-594",
@@ -5451,13 +5991,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P² × P²}(O ⊕ O(1,0)) by ξ+H1+2H2",
-        "split projective bundle over product"
+        "split projective bundle over product",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-594",
       "geometry_kind": "split projective bundle over product",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P² × P²}(O ⊕ O(1,0)) by ξ+H1+2H2"
+      "geometric_description": "Section of P_{P² × P²}(O ⊕ O(1,0)) by ξ+H1+2H2",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-595",
@@ -5483,13 +6027,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P³}(O ⊕ O(1)^2) by 2ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-595",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P³}(O ⊕ O(1)^2) by 2ξ+H"
+      "geometric_description": "Section of P_{P³}(O ⊕ O(1)^2) by 2ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-611",
@@ -5515,13 +6063,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P⁴}(O^3 ⊕ O(1)) by ξ+H, ξ+H, ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-611",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁴}(O^3 ⊕ O(1)) by ξ+H, ξ+H, ξ+H"
+      "geometric_description": "Section of P_{P⁴}(O^3 ⊕ O(1)) by ξ+H, ξ+H, ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-623",
@@ -5547,13 +6099,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (1,1,1), (1,1,1) in P² × P² × P²",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-623",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,1,1), (1,1,1) in P² × P² × P²"
+      "geometric_description": "Complete intersection of multidegrees (1,1,1), (1,1,1) in P² × P² × P²",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-628",
@@ -5579,13 +6135,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (1,1,1,1,1) in P¹ × P¹ × P¹ × P¹ × P¹",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-628",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,1,1,1,1) in P¹ × P¹ × P¹ × P¹ × P¹"
+      "geometric_description": "Complete intersection of multidegrees (1,1,1,1,1) in P¹ × P¹ × P¹ × P¹ × P¹",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-639",
@@ -5611,13 +6171,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P¹ × P²}(O^2 ⊕ O(0,1)) by 2ξ+H1+H2",
-        "split projective bundle over product"
+        "split projective bundle over product",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-639",
       "geometry_kind": "split projective bundle over product",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P¹ × P²}(O^2 ⊕ O(0,1)) by 2ξ+H1+H2"
+      "geometric_description": "Section of P_{P¹ × P²}(O^2 ⊕ O(0,1)) by 2ξ+H1+H2",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-645",
@@ -5643,13 +6207,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P⁴}(O^2 ⊕ O(1)) by ξ+H, ξ+2H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-645",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁴}(O^2 ⊕ O(1)) by ξ+H, ξ+2H"
+      "geometric_description": "Section of P_{P⁴}(O^2 ⊕ O(1)) by ξ+H, ξ+2H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-656",
@@ -5675,13 +6243,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P³}(O^3 ⊕ O(1)) by ξ+H, 2ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-656",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P³}(O^3 ⊕ O(1)) by ξ+H, 2ξ+H"
+      "geometric_description": "Section of P_{P³}(O^3 ⊕ O(1)) by ξ+H, 2ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-665",
@@ -5707,13 +6279,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (1,1), (1,1), (1,1), (1,1) in P⁴ × P⁴",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-665",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,1), (1,1), (1,1), (1,1) in P⁴ × P⁴"
+      "geometric_description": "Complete intersection of multidegrees (1,1), (1,1), (1,1), (1,1) in P⁴ × P⁴",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-667",
@@ -5739,13 +6315,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (1,1,1,2) in P¹ × P¹ × P¹ × P²",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-667",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,1,1,2) in P¹ × P¹ × P¹ × P²"
+      "geometric_description": "Complete intersection of multidegrees (1,1,1,2) in P¹ × P¹ × P¹ × P²",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-681",
@@ -5771,13 +6351,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (1,1), (1,1), (1,2) in P³ × P⁴",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-681",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,1), (1,1), (1,2) in P³ × P⁴"
+      "geometric_description": "Complete intersection of multidegrees (1,1), (1,1), (1,2) in P³ × P⁴",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-683",
@@ -5803,13 +6387,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P⁴}(O ⊕ O(1)) by ξ+3H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-683",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P⁴}(O ⊕ O(1)) by ξ+3H"
+      "geometric_description": "Section of P_{P⁴}(O ⊕ O(1)) by ξ+3H",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-685",
@@ -5835,13 +6423,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P³}(O^2 ⊕ O(1)) by 2ξ+2H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-685",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P³}(O^2 ⊕ O(1)) by 2ξ+2H"
+      "geometric_description": "Section of P_{P³}(O^2 ⊕ O(1)) by 2ξ+2H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-688",
@@ -5867,13 +6459,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P²}(O^3 ⊕ O(1)) by 3ξ",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-688",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P²}(O^3 ⊕ O(1)) by 3ξ"
+      "geometric_description": "Section of P_{P²}(O^3 ⊕ O(1)) by 3ξ",
+      "exponent_status": "partial",
+      "exponent_factor_count": 3
     },
     {
       "id": "CKP-691",
@@ -5899,13 +6495,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P²}(O^3 ⊕ O(2)) by 3ξ",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-691",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P²}(O^3 ⊕ O(2)) by 3ξ"
+      "geometric_description": "Section of P_{P²}(O^3 ⊕ O(2)) by 3ξ",
+      "exponent_status": "partial",
+      "exponent_factor_count": 3
     },
     {
       "id": "CKP-694",
@@ -5931,13 +6531,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (1,3) in P² × P³",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-694",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,3) in P² × P³"
+      "geometric_description": "Complete intersection of multidegrees (1,3) in P² × P³",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-698",
@@ -5963,13 +6567,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (1,2,2) in P¹ × P² × P²",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-698",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,2,2) in P¹ × P² × P²"
+      "geometric_description": "Complete intersection of multidegrees (1,2,2) in P¹ × P² × P²",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-702",
@@ -5995,13 +6603,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P²}(O^2 ⊕ O(1)^2) by 3ξ",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-702",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P²}(O^2 ⊕ O(1)^2) by 3ξ"
+      "geometric_description": "Section of P_{P²}(O^2 ⊕ O(1)^2) by 3ξ",
+      "exponent_status": "partial",
+      "exponent_factor_count": 3
     },
     {
       "id": "CKP-705",
@@ -6027,13 +6639,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (2,1), (1,2) in P³ × P³",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-705",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (2,1), (1,2) in P³ × P³"
+      "geometric_description": "Complete intersection of multidegrees (2,1), (1,2) in P³ × P³",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-711",
@@ -6059,13 +6675,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (1,2), (1,2) in P² × P⁴",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-711",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,2), (1,2) in P² × P⁴"
+      "geometric_description": "Complete intersection of multidegrees (1,2), (1,2) in P² × P⁴",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-715",
@@ -6091,13 +6711,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (1,1), (2,2) in P³ × P³",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-715",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,1), (2,2) in P³ × P³"
+      "geometric_description": "Complete intersection of multidegrees (1,1), (2,2) in P³ × P³",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-718",
@@ -6123,13 +6747,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P²}(O^3 ⊕ O(1)) by 3ξ+H",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-718",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P²}(O^3 ⊕ O(1)) by 3ξ+H"
+      "geometric_description": "Section of P_{P²}(O^3 ⊕ O(1)) by 3ξ+H",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-721",
@@ -6155,13 +6783,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (1,1,3) in P¹ × P¹ × P³",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-721",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,1,3) in P¹ × P¹ × P³"
+      "geometric_description": "Complete intersection of multidegrees (1,1,3) in P¹ × P¹ × P³",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-722",
@@ -6187,13 +6819,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (1,1), (1,3) in P² × P⁴",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-722",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,1), (1,3) in P² × P⁴"
+      "geometric_description": "Complete intersection of multidegrees (1,1), (1,3) in P² × P⁴",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-726",
@@ -6219,13 +6855,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (2,3) in P² × P³",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-726",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (2,3) in P² × P³"
+      "geometric_description": "Complete intersection of multidegrees (2,3) in P² × P³",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-731",
@@ -6251,13 +6891,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection (2,2,2,2) in P⁸",
-        "projective space"
+        "projective space",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-731",
       "geometry_kind": "projective space",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection (2,2,2,2) in P⁸"
+      "geometric_description": "Complete intersection (2,2,2,2) in P⁸",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-733",
@@ -6283,13 +6927,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Section of P_{P¹}(O^4 ⊕ O(1)) by 4ξ",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-733",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P¹}(O^4 ⊕ O(1)) by 4ξ"
+      "geometric_description": "Section of P_{P¹}(O^4 ⊕ O(1)) by 4ξ",
+      "exponent_status": "partial",
+      "exponent_factor_count": 3
     },
     {
       "id": "CKP-734",
@@ -6315,13 +6963,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection of multidegrees (1,4) in P¹ × P⁴",
-        "product of projective spaces"
+        "product of projective spaces",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-734",
       "geometry_kind": "product of projective spaces",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection of multidegrees (1,4) in P¹ × P⁴"
+      "geometric_description": "Complete intersection of multidegrees (1,4) in P¹ × P⁴",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-735",
@@ -6347,13 +6999,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection (2,2,3) in P⁷",
-        "projective space"
+        "projective space",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-735",
       "geometry_kind": "projective space",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection (2,2,3) in P⁷"
+      "geometric_description": "Complete intersection (2,2,3) in P⁷",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-736",
@@ -6379,13 +7035,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection (3,3) in P⁶",
-        "projective space"
+        "projective space",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-736",
       "geometry_kind": "projective space",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection (3,3) in P⁶"
+      "geometric_description": "Complete intersection (3,3) in P⁶",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-737",
@@ -6411,13 +7071,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Complete intersection (2,4) in P⁶",
-        "projective space"
+        "projective space",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-737",
       "geometry_kind": "projective space",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Complete intersection (2,4) in P⁶"
+      "geometric_description": "Complete intersection (2,4) in P⁶",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "CKP-738",
@@ -6443,13 +7107,17 @@
         "Coates Kasprzyk Prince",
         "CKP",
         "Quintic fourfold in P⁵",
-        "projective space"
+        "projective space",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "CKP-738",
       "geometry_kind": "projective space",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Quintic fourfold in P⁵"
+      "geometric_description": "Quintic fourfold in P⁵",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2
     },
     {
       "id": "e1322438fd01",
@@ -6565,13 +7233,17 @@
         "Hausen Laface Mauz",
         "HLM",
         "Section of P_{P³}(O ⊕ O(2)^2) by 2ξ",
-        "split projective bundle"
+        "split projective bundle",
+        "regularized exponent multiset",
+        "repeated exponents"
       ],
       "source": "toric-fourfolds.json",
       "source_id": "HLM-27",
       "geometry_kind": "split projective bundle",
       "geometry_status": "verified from the fan",
-      "geometric_description": "Section of P_{P³}(O ⊕ O(2)^2) by 2ξ"
+      "geometric_description": "Section of P_{P³}(O ⊕ O(2)^2) by 2ξ",
+      "exponent_status": "partial",
+      "exponent_factor_count": 2
     },
     {
       "id": "61e63b38f5a8",

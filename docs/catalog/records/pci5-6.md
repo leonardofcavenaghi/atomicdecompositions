@@ -16,6 +16,21 @@ Source identifier: **PCI5-6**; see [CKP and HLM terminology](../sources.md). The
 
 Saved record: **complete**. Matrix coefficients are exact; connection-factor notes below are retained. This page transcribes a completed computation, without rerunning localization.
 
+<!-- saved-exponent-summary:start -->
+## Regularized exponent multisets
+
+Analysis point: `y1=2`. These lists describe the computed ambient connection. Every row applies **separately to each eigenvalue** satisfying the displayed condition; repeated entries retain their multiplicity.
+
+The characteristic factors below use \(K^F=-A\), so an eigenvalue \(\lambda\) of \(A=c_1\star\) satisfies \(p_i(-\lambda)=0\). The classes are powers modulo \(\mathbb Z\); their order does not pair them term by term with the powers.
+
+| Spectral condition | Multiplicity per eigenvalue | \(F_{b,\lambda}\) | Saved computation |
+|---|---:|---|---|
+| \(p_{1}(-\lambda)=0\) | 5 | \(\{\!\{0,\ \frac{1}{6},\ \frac{1}{3},\ \frac{2}{3},\ \frac{5}{6}\}\!\}\) | Complete |
+| \(p_{2}(-\lambda)=0\) | 1 | \(\{\!\{0\}\!\}\) | Complete |
+
+Unresolved factors have no computed multiset here. These ambient data alone do not identify full atoms or establish a rationality result. See the [connection conventions](../../toric/mathematics.md).
+<!-- saved-exponent-summary:end -->
+
 ## PCI5-6 --- construction and Hodge data
 
 A smooth complete intersection of multidegree $(6)$ in $\mathbb P^{6}$.
@@ -162,4 +177,4 @@ Values are rounded to eight significant digits; repeated eigenvalues are retaine
 Powers and residue classes are multisets for each eigenvalue in the indicated factor, not paired lists. A simple-factor power applies at every root of that factor.
 Recursion obstruction for $p_{1}$: $\frac{\left(s + 2\right) \left(3 s + 5\right) \left(3 s + 7\right) \left(6 s + 11\right) \left(6 s + 13\right)}{252844002938880000}$.
 
-**Search aliases:** PCI5-6; dimension 5; fivefold; Projective complete intersection; Fano; quantum cohomology; Gromov-Witten; Hodge diamond; quantum multiplication; connection exponents; Degree-6 fivefold in P⁶; projective space.
+**Search aliases:** PCI5-6; dimension 5; fivefold; Projective complete intersection; Fano; quantum cohomology; Gromov-Witten; Hodge diamond; quantum multiplication; connection exponents; Degree-6 fivefold in P⁶; projective space; regularized exponent multiset; repeated exponents.

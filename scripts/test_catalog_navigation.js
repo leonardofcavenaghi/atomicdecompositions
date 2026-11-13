@@ -218,6 +218,20 @@ async function main() {
       const started = Date.now();
       await page.goto(`${base}/catalog/records/${id}/`, {waitUntil:'domcontentloaded'});
       renderingTimings.push(await measureMath(page, id + ': full-page navigation with cached shared assets', started));
+      if (id === 'qc5-001') {
+        const multiset = await page.evaluate(async base => {
+          const data = await fetch(base + '/data/connection-exponents.json').then(r => r.json());
+          const factor = data.records.find(r => r.id === 'QC5-001').factors.find(f => f.number === 1);
+          const table = document.querySelector('article table');
+          return {classes: factor.classes, rows: table.tBodies[0].rows.length,
+            displayedHalves: table.tBodies[0].rows[0].cells[2].querySelectorAll('mjx-mfrac').length};
+        }, base);
+        if (JSON.stringify(multiset.classes) !== JSON.stringify(['0','1/2','1/2']) ||
+            multiset.rows !== 3 || multiset.displayedHalves !== 2) {
+          throw new Error('Repeated exponent classes were lost: ' + JSON.stringify(multiset));
+        }
+      }
+
       const state=await page.evaluate(() => ({
         mathErrors:document.querySelectorAll('mjx-merror').length,
         inputs:document.querySelectorAll('pre code').length,

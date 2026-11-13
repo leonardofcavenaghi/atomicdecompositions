@@ -47,6 +47,12 @@ Insertions:        [leave empty]
 
 Click **Compute one GW invariant**. The answer is 27.
 
+The toric workspace can compute the same unmarked cubic-surface invariant:
+
+1. Choose **P3** from **Preset library**, or use **Product of Pⁿ** with factor `3`.
+2. Enter `3` in **Complete intersection** and `1,1,1,1` in beta.
+3. Leave **Insertions** empty and click **Compute invariant**. The answer is 27.
+
 For one line through two points in the toric workspace, choose P2, enter beta `1,1,1` and insertions `pt|pt`, then click **Compute invariant**. The answer is 1.
 
 ## Flag computations and saved progress

@@ -38,3 +38,7 @@ Display equations now use blank-separated math blocks so Markdown cannot strip t
 ## Documentation publication checks
 
 Documentation-only changes retain catalogue, exact saved-data, strict-build, search and browser checks without repeating software algebra and platform installation tests. Software, dependency and downloadable-archive changes retain the complete regression suite. Change selection compares with a successful ancestor, so a documentation follow-up cannot bypass an unvalidated software change. If the baseline cannot be established, the complete suite runs.
+
+## Saved exponent multisets
+
+All 168 new records display their saved regularized-exponent multisets near the top of the page, separately for each eigenvalue and with the analysis point and unresolved status. The exact downloadable summary contains 251 completed factor multisets and 92 unresolved factors, retaining repeated entries. This is a presentation of existing computations, not a new localization run or an automatic atomic/rationality certificate. Documented Python and interface cubic inputs were rechecked in each prepared version; the combined guide includes the same unmarked example in both workspaces.

@@ -7,7 +7,7 @@ from pathlib import Path
 DOC_CHECKS = {
     'scripts/validate_catalog.py', 'scripts/validate_catalog_tex.py',
     'scripts/validate_catalog_math.py', 'scripts/validate_delivery.py',
-    'scripts/validate_geometric_presentations.py',
+    'scripts/validate_geometric_presentations.py', 'scripts/validate_exponent_multisets.py',
     'scripts/validate_localization_results.py', 'scripts/validate_toric_results.py',
     'scripts/validate_release_metadata.py', 'scripts/validate_search_metadata.py',
     'scripts/test_catalog_navigation.js', 'scripts/test_gui_controls.js',

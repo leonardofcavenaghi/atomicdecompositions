@@ -115,6 +115,9 @@ jobs:
       - name: Validate exact saved toric records
         run: python scripts/validate_toric_results.py
 
+      - name: Validate saved regularized exponent multisets
+        run: python scripts/validate_exponent_multisets.py
+
       - name: Verify explicit projective and bundle presentations
         run: python scripts/validate_geometric_presentations.py
 

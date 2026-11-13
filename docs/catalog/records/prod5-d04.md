@@ -16,6 +16,21 @@ Source identifier: **PROD5-D04**; see [CKP and HLM terminology](../sources.md). 
 
 Saved record: **complete with notes**. Matrix coefficients are exact; connection-factor notes below are retained. This page transcribes a completed computation, without rerunning localization.
 
+<!-- saved-exponent-summary:start -->
+## Regularized exponent multisets
+
+Analysis point: `y1=2, y2=3`. These lists describe the computed ambient connection. Every row applies **separately to each eigenvalue** satisfying the displayed condition; repeated entries retain their multiplicity.
+
+The characteristic factors below use \(K^F=-A\), so an eigenvalue \(\lambda\) of \(A=c_1\star\) satisfies \(p_i(-\lambda)=0\). The classes are powers modulo \(\mathbb Z\); their order does not pair them term by term with the powers.
+
+| Spectral condition | Multiplicity per eigenvalue | \(F_{b,\lambda}\) | Saved computation |
+|---|---:|---|---|
+| \(p_{1}(-\lambda)=0\) | 6 | Unresolved | Unresolved |
+| \(p_{2}(-\lambda)=0\) | 1 | \(\{\!\{0\}\!\}\) | Complete |
+
+Unresolved factors have no computed multiset here. These ambient data alone do not identify full atoms or establish a rationality result. See the [connection conventions](../../toric/mathematics.md).
+<!-- saved-exponent-summary:end -->
+
 ## PROD5-D04 --- construction and Hodge data
 
 A smooth complete intersection in $Y=\mathbb P^{3}\times\mathbb P^{4}$; the rows below are the defining multidegrees in the displayed factor order.
@@ -259,4 +274,4 @@ Values are rounded to eight significant digits; repeated eigenvalues are retaine
 Powers and residue classes are multisets for each eigenvalue in the indicated factor, not paired lists. A simple-factor power applies at every root of that factor.
 **Unresolved factor $p_{1}$:**  the eigenvalue 18 has a 2-dimensional kernel, so its generalized eigenspace is not a single Jordan block and the factor is not cyclic (check cyclic_determinant first).
 
-**Search aliases:** PROD5-D04; dimension 5; fivefold; Complete intersection in a product of projective spaces; Fano; quantum cohomology; Gromov-Witten; Hodge diamond; quantum multiplication; connection exponents; Complete intersection of multidegrees (2,1), (1,3) in P³ × P⁴; product of projective spaces.
+**Search aliases:** PROD5-D04; dimension 5; fivefold; Complete intersection in a product of projective spaces; Fano; quantum cohomology; Gromov-Witten; Hodge diamond; quantum multiplication; connection exponents; Complete intersection of multidegrees (2,1), (1,3) in P³ × P⁴; product of projective spaces; regularized exponent multiset; repeated exponents.
