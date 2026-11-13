@@ -4,7 +4,7 @@ description: Use version 1.1.0.dev1 flag engine through Python, the command line
 
 # How to use version 1.1.0.dev1 flag software
 
-This guide describes the prepared development version `1.1.0.dev1`. It is distributed as a development source bundle. The individual flag distribution contains the flag engine and its shared execution dependencies. Install that source bundle, or select the combined distribution for the enhanced `/flag/` workspace. Copying only `gwflags/` omits required shared modules.
+This guide describes the development version `1.1.0.dev1`. It is distributed as a development source bundle. The individual flag distribution contains the flag engine and its shared execution dependencies. Install that source bundle, or select the combined distribution for the enhanced `/flag/` workspace. Copying only `gwflags/` omits required shared modules.
 
 ## Launch the interface
 
@@ -130,6 +130,6 @@ See [Notation and compatibility](notation.md) and [Changes](changes.md).
 
 ## Checkpoint format compatibility
 
-The prepared build includes the verified 7f167e1 update: faster unmarked shape generation preserves the tested legacy ordering, and large partial-sum fractions are saved as exact tagged hexadecimal integers. Once new tagged values have been written, resume with this updated build; older readers do not understand them.
+This version includes the 7f167e1 execution update: faster unmarked shape generation preserves the tested legacy ordering, and large partial-sum fractions are saved as exact tagged hexadecimal integers. Once new tagged values have been written, resume with this updated build; older readers do not understand them.
 
 For the common conventions and concrete result examples, see [Input/output](input-output.md). The [release overview](launch-2026-11.md) explains the differences between the offerings.

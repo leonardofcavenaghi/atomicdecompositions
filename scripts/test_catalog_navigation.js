@@ -31,62 +31,76 @@ async function measureMath(page, label, started) {
     return bad;
   });
   if (unwrapped.length) throw new Error(label + ': raw TeX outside math blocks: ' + JSON.stringify(unwrapped.slice(0,5)));
-  const errors = await page.$$eval('mjx-merror', nodes => nodes.length);
+  const errors = await page.$$eval('mjx-merror,[data-mml-node="merror"]', nodes => nodes.length);
   if (errors) throw new Error(label + ': MathJax reported ' + errors + ' formula errors');
   return {page: label, navigation_to_rendered_ms: Date.now() - started, formulas};
 }
 
 async function checkFirstOpen(browser, base, mode) {
   const cold = await browser.newPage();
-  const pageErrors = [];
-  const sources = [];
-  let intercepted = false;
-  let documents = 0;
+  const pageErrors = []; const sources = [];
+  let intercepted = false; let documents = 0;
   cold.on('pageerror', error => pageErrors.push(String(error)));
   await cold.setCacheEnabled(false);
   await cold.setRequestInterception(true);
   cold.on('request', async request => {
-    if (request.isNavigationRequest() && request.frame() === cold.mainFrame()) documents += 1;
-    if (/mathjax(?:@|\/)3(?:\.2\.2)?\/es5\/tex-mml-chtml\.js/.test(request.url())) {
+    if (request.isNavigationRequest() && request.frame() === cold.mainFrame()) documents++;
+    if (request.url().includes('mathjax') && request.url().includes('tex-mml-chtml.js')) {
       sources.push(request.url());
       if (!intercepted) {
-        intercepted = true;
-        if (mode === 'failed-primary') { await request.abort(); return; }
+        intercepted=true;
+        if (mode==='failed-primary') { await request.abort(); return; }
         await pause(4000);
       }
     }
     await request.continue();
   });
-  const started = Date.now();
   try {
-    const route = mode === 'failed-primary' ? 'catalog/records/qc5-001/' : 'catalog/grassmannians/';
-    await cold.goto(base + '/' + route, {waitUntil: 'domcontentloaded'});
-    if (mode === 'delayed-startup') {
-      await cold.waitForFunction(() => typeof document$ !== 'undefined' && typeof document$.subscribe === 'function');
-      await cold.evaluate(() => new Promise(resolve => document$.subscribe(() => resolve())));
-      await cold.evaluate(() => document.querySelector('nav a[href*="projective/"]').click());
-      await cold.waitForFunction(() => location.pathname.endsWith('/catalog/projective/'));
-    }
-    const timing = await measureMath(cold, mode + ': uncached first open without refresh', started);
-    if (!intercepted || documents !== 1 || pageErrors.length) {
-      throw new Error(JSON.stringify({mode, intercepted, documents, pageErrors}));
-    }
-    if (mode === 'failed-primary' && !sources.some(url => url.includes('cdnjs.cloudflare.com'))) {
-      throw new Error('The alternate math provider was not used');
-    }
-    // A late content insertion must render even without a navigation event.
+    const start=Date.now();
+    await cold.goto(base+'/catalog/records/qc5-001/',{waitUntil:'domcontentloaded'});
+    const first=await measureMath(cold,'pre-rendered uncached first open',start);
+    if (sources.length) throw new Error('Static equations requested a browser math runtime');
+    await cold.waitForFunction(() => typeof document$!=='undefined');
+    await cold.evaluate(() => new Promise(resolve => document$.subscribe(resolve)));
+    await cold.evaluate(() => document.querySelector('nav a[href*="projective/"]').click());
+    await cold.waitForFunction(() => location.pathname.endsWith('/catalog/projective/'));
+    await measureMath(cold,'pre-rendered instant navigation',Date.now());
+    if (sources.length || documents!==1) throw new Error('Static navigation depended on runtime/reload');
     await cold.evaluate(() => {
-      const math = document.createElement('span');
-      math.className = 'arithmatex';
-      math.id = 'late-math-probe';
-      math.textContent = String.raw`\(1+1=2\)`;
-      document.querySelector('[data-md-component="content"]').appendChild(math);
+      const node=document.createElement('span');node.className='arithmatex';node.id='late-math-probe';
+      node.textContent=String.raw`\(1+1=2\)`;
+      document.querySelector('[data-md-component="content"]').appendChild(node);
     });
-    await cold.waitForFunction(() => document.querySelector('#late-math-probe mjx-container'));
-    console.log('First-open math recovery passed: ' + JSON.stringify({...timing, documents, sources}));
-  } finally {
-    await cold.close();
-  }
+    await cold.waitForFunction(() => document.querySelector('#late-math-probe mjx-container'),{timeout:20000});
+    if (!intercepted || pageErrors.length) throw new Error(JSON.stringify({mode,intercepted,pageErrors}));
+    if (mode==='failed-primary' && !sources.some(url=>url.includes('cdnjs'))) throw new Error('Dynamic alternate runtime was not used');
+    console.log('First-open static math and dynamic recovery passed: '+JSON.stringify({...first,mode,documents,sources}));
+  } finally { await cold.close(); }
+}
+
+async function checkWithoutBrowserRenderer(browser, base) {
+  const page=await browser.newPage();let mathRequests=0;
+  await page.setCacheEnabled(false);
+  await page.setJavaScriptEnabled(false);
+  page.on('request',request=>{if (/https:\/\/.*(?:jsdelivr|cdnjs).*mathjax/.test(request.url())) mathRequests++;});
+  try {
+    await page.goto(base+'/methodology/',{waitUntil:'domcontentloaded'});
+    const session=await page.createCDPSession();
+    const {root}=await session.send('DOM.getDocument',{depth:0});
+    const all=await session.send('DOM.querySelectorAll',{nodeId:root.nodeId,selector:'.arithmatex'});
+    const rendered=await session.send('DOM.querySelectorAll',{nodeId:root.nodeId,selector:'.arithmatex mjx-container[jax="SVG"]'});
+    const accessible=await session.send('DOM.querySelectorAll',{nodeId:root.nodeId,selector:'.geoatoms-mathml math'});
+    if (!all.nodeIds.length || all.nodeIds.length!==rendered.nodeIds.length || all.nodeIds.length!==accessible.nodeIds.length || mathRequests) throw new Error('Math is not complete without JavaScript');
+    console.log('JavaScript-disabled first open passed: '+rendered.nodeIds.length+' rendered equations and accessible MathML, no CDN math request.');
+    await session.detach();
+  } finally { await page.close(); }
+  const blocked=await browser.newPage();await blocked.setCacheEnabled(false);await blocked.setRequestInterception(true);
+  blocked.on('request',request => /https:\/\/.*(?:jsdelivr|cdnjs).*mathjax/.test(request.url()) ? request.abort() : request.continue());
+  try {
+    await blocked.goto(base+'/catalog/records/qc5-001/',{waitUntil:'domcontentloaded'});
+    await measureMath(blocked,'first open with every math CDN blocked',Date.now());
+    console.log('CDN-blocked first open passed without a refresh.');
+  } finally { await blocked.close(); }
 }
 
 async function main() {
@@ -155,25 +169,13 @@ async function main() {
       throw new Error(JSON.stringify({pageState, cardState, errors}));
     }
     if (new URL(page.url()).origin !== base) throw new Error('Test left the local build');
-    // Force a navigation while a preceding typeset is still pending.
-    // Slow fonts/network make this possible in normal browsing as well.
-    await page.evaluate(() => {
-      const original = MathJax.typesetPromise.bind(MathJax);
-      window.pendingTypeset = false;
-      MathJax.typesetPromise = async elements => {
-        window.pendingTypeset = true;
-        await new Promise(resolve => setTimeout(resolve, 600));
-        return original(elements);
-      };
-      document.querySelector('nav a[href*="additional/"]').click();
-    });
-    await page.waitForFunction(() => window.pendingTypeset);
+    // Published equations survive rapid navigation without a runtime startup.
     const rapidStarted = Date.now();
-    await page.evaluate(() => {
-      document.querySelector('nav a[href*="projective/"]').click();
-    });
+    await page.evaluate(() => document.querySelector('nav a[href*="additional/"]').click());
+    await page.waitForFunction(() => location.pathname.endsWith('/catalog/additional/'));
+    await page.evaluate(() => document.querySelector('nav a[href*="projective/"]').click());
     await page.waitForFunction(() => location.pathname.endsWith('/catalog/projective/'));
-    renderingTimings.push(await measureMath(page, 'projective: rapid navigation with simulated 600ms typeset delay', rapidStarted));
+    renderingTimings.push(await measureMath(page,'pre-rendered rapid navigation',rapidStarted));
     const duplicates = await page.evaluate(() => [...document.querySelectorAll('.arithmatex')]
       .some(node => node.querySelectorAll('mjx-container').length !== 1));
     if (duplicates || errors.length) throw new Error(JSON.stringify({duplicates, errors}));
@@ -226,7 +228,7 @@ async function main() {
           const factor = data.records.find(r => r.id === 'QC5-001').factors.find(f => f.number === 1);
           const table = document.querySelector('article table');
           return {classes: factor.classes, rows: table.tBodies[0].rows.length,
-            displayedHalves: table.tBodies[0].rows[0].cells[2].querySelectorAll('mjx-mfrac').length};
+            displayedHalves: table.tBodies[0].rows[0].cells[2].querySelectorAll('mjx-mfrac,[data-mml-node="mfrac"]').length};
         }, base);
         if (JSON.stringify(multiset.classes) !== JSON.stringify(['0','1/2','1/2']) ||
             multiset.rows !== 3 || multiset.displayedHalves !== 2) {
@@ -270,7 +272,7 @@ async function main() {
         fetch('data/catalog-records.json').then(r=>r.json())
       ]);
       const missing=records.records.filter(r => r.link.startsWith('records/')).filter(r =>
-        !index.docs.some(d => d.location.startsWith('catalog/'+r.link.replace('.md','/')) && (d.title+' '+d.text).includes(r.id)));
+        !index.docs.some(d => d.location === 'catalog/'+r.link.replace('.md','/') && r.keywords.every(keyword => d.text.includes(keyword))));
       return {missing:missing.map(r=>r.id),count:index.docs.length};
     });
     if (search.missing.length) throw new Error('Unindexed catalogue records: '+search.missing.join(', '));
@@ -283,6 +285,7 @@ async function main() {
         throw new Error('Mobile overflow: ' + route);
     }
     if (errors.length) throw new Error(errors.join('; '));
+    await checkWithoutBrowserRenderer(browser, base);
     await checkFirstOpen(browser, base, 'failed-primary');
     await checkFirstOpen(browser, base, 'delayed-startup');
     console.log('MathJax render timings: ' + JSON.stringify(renderingTimings));

@@ -1,6 +1,6 @@
 # gwflags — GW invariants of flag varieties (Python / SageMath)
 
-Start with [Launch documentation](LAUNCH.md) for the complete change overview, software choices, input/output conventions and publication and validation.
+See [Software documentation](LAUNCH.md) for version choices, installation, exact input/output conventions and validation.
 
 A translation of `V3.nb` (Mathematica + LieART) into a fast Python
 package; runs on plain Python and inside SageMath.
@@ -8,7 +8,7 @@ package; runs on plain Python and inside SageMath.
 [Website and catalogue](https://leonardofcavenaghi.github.io/atomicdecompositions/)
 · [Release notes and downloads](https://leonardofcavenaghi.github.io/atomicdecompositions/releases/)
 
-This development version is `1.0.6.dev0`; its source bundle is published with the website launch, without a new stable tag. The preserved stable release remains `v1.0.5`. See the release notes for the parameter-name change and the empty-insertion CLI correction.
+The repository root provides flag `1.0.6.dev0`. Versioned flag, toric and combined `1.1.0.dev1` distributions are also available. These are development versions; the stable flag release remains `v1.0.5`. See the [installation guide](https://leonardofcavenaghi.github.io/atomicdecompositions/installation/) for individual and combined downloads.
 
 It computes, for a flag variety **G/P** — of any simple type A–G *or a
 product* (`'A3xA3'` for P³×P³-type flags, `'A1xA1xA4'`, …):
@@ -181,21 +181,19 @@ realization; Schubert classes are minimal coset representatives
 - **`ChangeToPolynomByll`'s inverted-variables branch** (for negative
   roots) is preserved but is dead code in practice: BFS words are reduced,
   so Billey's β_i are always positive roots.
-- **Two latent bugs of the notebook are fixed rather than reproduced**
-  (both found by adversarial review with concrete wrong outputs):
+- **Curve ordering and finite enumeration:**
   (1) the notebook pairs the bundle multidegrees `K` with the ascending
   positions of positive c1 entries in `BetasAndFanoIndex` /
   `SmallQuantumMultiplication` but with `RootsThatStay` order in `mu` — the
   two disagree when `RootsThatStay` is not sorted; `chern_class_ci` now
   always uses `roots_that_stay` order, matching the localization twist.
-  (2) the notebook bounds the curve-class enumeration by total degree
-  `(dim+1)/min(positive c1 entries)`, which silently drops contributing
-  classes whenever c1 of the complete intersection has a *zero* entry on a
-  kept node (e.g. a (1,2)-curve in P¹×P¹ lost its quantum term and got a
-  nilpotent c1⋆); the enumeration is now `⟨c1, β⟩ ≤ dim+1` with
-  zero-coefficient directions capped at `dim+1`, which the dimension axiom
-  makes exhaustive.  A Calabi–Yau intersection (c1 = 0) now returns the
-  zero operator instead of crashing.
+  (2) automatic curve enumeration uses the bound
+  `⟨c1, β⟩ ≤ dim+1` when the first-Chern pairings are strictly positive
+  on all supported effective generators. This gives a finite exhaustive
+  list. Mixed zero/positive or negative pairings require an explicit curve
+  list unless the constructor supplies suitable effective generators;
+  the dimension axiom alone does not bound a zero-pairing direction.
+  If the entire first-Chern vector vanishes, `c1⋆` is the zero operator.
 - **`Bylleys` subset size.** The notebook enumerates subsets of size ≤
   ℓ(shubert); products of fewer than ℓ simple reflections can never equal
   an element of length ℓ, so the translation enumerates size exactly ℓ.
@@ -244,10 +242,10 @@ combinations.
 
 ## Unmarked tree generation
 
-This prepared build adopts the rooted-shape/AHU generator from upstream commit 7f167e1. It preserves legacy tree representatives and ordering; independent compatibility checks cover six edges. See CHANGELOG.md.
+The rooted-shape/AHU generator preserves the previous tree representatives and ordering through six edges in independent compatibility checks. See [CHANGELOG.md](CHANGELOG.md).
 
-## Website launch — 2026-11-12
+## Catalogue and software distributions
 
-The [website](https://leonardofcavenaghi.github.io/atomicdecompositions/) organizes a universal catalogue by dimension and construction, with distinct flag and toric mathematical conventions and usage guides. The [installation page](https://leonardofcavenaghi.github.io/atomicdecompositions/installation/) provides individual flag/toric and combined versioned downloads. Published toric records preserve exact inputs, symbolic matrices and unresolved connection-factor notes. Stable v1.0.5 remains preserved.
+The [website](https://leonardofcavenaghi.github.io/atomicdecompositions/) organizes a universal catalogue by dimension and construction, with distinct flag and toric mathematical conventions and usage guides. The [installation page](https://leonardofcavenaghi.github.io/atomicdecompositions/installation/) provides individual flag/toric and combined versioned downloads. Catalogue records provide exact inputs, symbolic matrices, Hodge data and available connection analysis. Stable v1.0.5 remains preserved.
 
 Versioned source folders are [flag 1.0.5](software/flag-1.0.5), [flag 1.1.0.dev1](software/flag-1.1.0.dev1), [toric 1.1.0.dev1](software/toric-1.1.0.dev1) and [combined 1.1.0.dev1](software/combined-1.1.0.dev1). The repository root provides flag `1.0.6.dev0`. Install each distribution into its own environment. The runtime ZIPs provide the same software choices without requiring a Git checkout.

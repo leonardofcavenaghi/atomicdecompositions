@@ -1,27 +1,29 @@
 ---
-description: Publication versions, validation scope and reproducibility checks for the 2026-11-13 flag and toric website launch.
+description: Versioned source archives, installation checks, mathematical regression tests and catalogue verification scope.
 ---
 
-# Publication and validation
+# Validation and reproducibility
 
-The 2026-11-13 launch organizes the universal catalogue by dimension with separate flag and toric methods and publishes versioned source distributions. Flag 1.0.6.dev0 and flag/toric/combined 1.1.0.dev1 remain development builds. Stable v1.0.5 is preserved with its original behavior.
+The distributed flag 1.0.6.dev0 and flag, toric and combined 1.1.0.dev1 packages are development versions. Stable v1.0.5 remains available with its original behavior.
 
-## Distributed sources
+## Source archives
 
-Each ZIP contains package metadata, shared runtime dependencies, a launch handbook and a SHA-256 file manifest. The website [download manifest](../downloads/manifest.json) identifies the ZIP bytes. Runtime bundles omit private research notes and local verification dependency copies. The two 1.1.0.dev1 individual bundles include shared flag/toric execution infrastructure and omit `gwapp`; the combined bundle includes all three packages and its JavaScript assets.
+Each archive contains package metadata, the required shared runtime modules, installation instructions and a SHA-256 file manifest. The [download manifest](../downloads/manifest.json) identifies the archive bytes. Individual 1.1.0.dev1 distributions include the shared flag/toric execution infrastructure; the combined distribution also provides `gwapp` and its interface assets.
 
-## Verification scope
+Record the distribution version and archive checksum with a calculation. For a source checkout, record its commit. Install each distribution in a separate environment following [Installation](../installation.md).
 
-The mathematical regression review passed both standalone flag suites (74 tests each, one socket-dependent HTTP test excluded locally), 133 toric regressions, 19 toric Hodge/spectrum tests, 27 independent tree/checkpoint checks and 19 merged-worker/routing checks. Guide examples were executed against their corresponding sources. In particular, the cubic-surface count is 27 with no insertions in Python, CLI and the interface request path.
+## Software checks
 
-The source review adopts upstream execution commit `7f167e17a35069ac1ff1cefecce2ac8a0be8231c`, plus the documented notation and empty-CLI corrections. The new tree generator preserves the old unmarked representatives and ordering in the independently checked range. Tagged exact checkpoint fractions handle large numerators and denominators; ordinary decimal checkpoints remain readable.
+Regression tests cover flag and toric localization, supported bundle operations, Hodge and spectrum calculations, unmarked tree generation, exact checkpoint fractions and combined-worker routing. The documented examples are checked against their corresponding versions, including the cubic-surface invariant 27 with an empty insertion list in Python, CLI and interface requests.
 
-GitHub Actions gates website deployment on the package, catalogue, strict documentation and browser checks. Distribution checks install the exact extracted archives in isolated environments and exercise their launchers. The published archives passed isolated Linux and Windows installation and launcher checks. Browser checks cover the website, mathematical rendering, catalogue search and interface copy/download controls. SageMath is outside this automated platform coverage.
+The downloadable archives are installed and their launchers exercised in isolated Linux and Windows environments. Website checks cover catalogue consistency, documentation builds, search, mathematical display and interface copy/download controls. SageMath is outside this automated platform coverage.
 
-## Catalogue publication
+The updated tree generator preserves the previous representatives, vertex labels and ordering through six edges in independent comparisons. Large checkpoint fractions retain exact signs, numerators and denominators; old decimal checkpoints remain readable, while tagged large-fraction values require the updated reader.
 
-The toric data are imported from completed saved records, with source hashes. The import checks dimensions, full divisor-row lengths, zero-based cone indices, matrix indices and duplicate entries. Further exact checks validate symbolic expressions and grading. These checks do not rerun every localization sum or independently certify every geometry and Hodge calculation.
+## Mathematical data
 
-96 fourfold and 72 fivefold matrices are included. Records with unfinished matrix computations are excluded; completed matrices with unresolved connection factors retain their notes. Fivefold records do not receive rationality verdicts. Their one-evaluation or cached two-evaluation provenance is stated on the collection page.
+Catalogue validation checks fan and divisor dimensions, cone indices, exact matrix expressions, basis ordering, grading and characteristic polynomials. These consistency checks complement the stated localization provenance; they do not independently rerun every localization sum.
 
-[Main changes](launch-2026-11.md) · [Input/output conventions](input-output.md) · [Installation](../installation.md)
+Each result retains its curve-list assumptions and exact analysis point. A complete quantum matrix can have unresolved connection factors. Full atomic decompositions require the cyclicity and cohomological hypotheses described in [Atomic invariants](../catalog/atomic-invariants.md); a matrix and its exponents alone do not imply a rationality conclusion.
+
+[Version comparison](launch-2026-11.md) · [Input/output conventions](input-output.md) · [Installation](../installation.md)

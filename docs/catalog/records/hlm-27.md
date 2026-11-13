@@ -1,20 +1,20 @@
 ---
-title: "Section of P_{P³}(O ⊕ O(2)^2) by 2ξ — HLM-27"
-description: Exact fan inputs, ordered ambient basis, symbolic quantum multiplication and saved computation notes for HLM-27.
+title: "Section of P_{P³}(O ⊕ O(2)^2) by 2ξ (HLM-27)"
+description: "Exact inputs, ordered basis, quantum multiplication and connection exponents for Section of P_{P³}(O ⊕ O(2)^2) by 2ξ (HLM-27)."
+keywords: ["HLM-27", "dimension 4", "fourfold", "Complete intersection of codimension 1", "Fano", "quantum cohomology", "Gromov-Witten", "Hodge diamond", "quantum multiplication", "connection exponents", "Hausen Laface Mauz", "HLM", "Section of P_{P³}(O ⊕ O(2)^2) by 2ξ", "split projective bundle", "regularized exponent multiset", "repeated exponents"]
 ---
 
 # Complete intersection in \(\mathbb P_{\mathbb P^{3}}(\mathcal O\oplus \mathcal O(2)^{\oplus 2})\)
 
 **Geometric presentation.** Ambient variety: \(\mathbb P_{\mathbb P^{3}}(\mathcal O\oplus \mathcal O(2)^{\oplus 2})\), in the quotient convention. With \(H\) the pullback of the base hyperplane class and \(\xi=c_1(\mathcal O(1))\), the defining divisors are \(2\xi\).
 
-Source identifier: **HLM-27**; see [CKP and HLM terminology](../sources.md). The presentation is verified by the [fan and divisor certificate](../../data/geometric-presentations.json).
+Source identifier: **HLM-27**; see [CKP and HLM terminology](../sources.md). See the [fan and divisor certificate](../../data/geometric-presentations.json).
 
-**Construction:** Complete intersection of codimension 1. **Dimension:** 4. **Index in source:** 1. **h(1,1):** 2.
+**Construction:** Complete intersection of codimension 1. **Dimension:** 4. **Index:** 1. **h(1,1):** 2.
 
 
 [Catalogue](../index.md) · [4-folds](../fourfolds.md)
 
-Saved record: **complete with notes**. Matrix coefficients are exact; connection-factor notes below are retained. This page transcribes a completed computation, without rerunning localization.
 
 <!-- saved-exponent-summary:start -->
 ## Regularized exponent multisets
@@ -23,7 +23,7 @@ Analysis point: `y1=2, y2=3`. These lists describe the computed ambient connecti
 
 The characteristic factors below use \(K^F=-A\), so an eigenvalue \(\lambda\) of \(A=c_1\star\) satisfies \(p_i(-\lambda)=0\). The classes are powers modulo \(\mathbb Z\); their order does not pair them term by term with the powers.
 
-| Spectral condition | Multiplicity per eigenvalue | \(F_{b,\lambda}\) | Saved computation |
+| Spectral condition | Multiplicity per eigenvalue | \(F_{b,\lambda}\) | Computation |
 |---|---:|---|---|
 | \(p_{1}(-\lambda)=0\) | 4 | Unresolved | Unresolved |
 | \(p_{2}(-\lambda)=0\) | 1 | \(\{\!\{0\}\!\}\) | Complete |
@@ -31,9 +31,9 @@ The characteristic factors below use \(K^F=-A\), so an eigenvalue \(\lambda\) of
 Unresolved factors have no computed multiset here. These ambient data alone do not identify full atoms or establish a rationality result. See the [connection conventions](../../toric/mathematics.md).
 <!-- saved-exponent-summary:end -->
 
-## HLM-27 --- geometry and Hodge diamond
+## Geometry and Hodge diamond
 
-**Selection:**  nef_additional.
+**Positivity:** nef defining divisors.
 **Hodge source:**  HLM-27, HLM Proposition 7.2, [1907.08000v3](https://arxiv.org/abs/1907.08000v3).
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $1$, $(-K_X)^4=64$, $e(X)=184$.
 
@@ -76,16 +76,7 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x2', 'x0', 'x2^2', 'x0*x2', 'x2^3', 'x0*x2^2', 'x0*x2^3']
 ```
 
-## HLM-27 --- computation record
-
-**Status:**  complete_with_notes.
-**Checkpoint directory:** 
-
-```python
-examples/additional_fourfolds/batch_results/HLM-27
-```
-
-Enumeration: mori; 11 classes including zero.
+Curve enumeration: mori; 11 classes including zero.
 
 ### Quantum multiplication by $c_1(X)$
 
@@ -96,11 +87,9 @@ basis = ['1', 'x2', 'x0', 'x2^2', 'x0*x2', 'x2^3', 'x0*x2^2', 'x0*x2^3']
 ```
 
 
-
 $$
 \mathrm{Gr}=\operatorname{diag}(-2,-1,-1,0,0,1,1,2)
 $$
-
 
 
 | $i$ | $j$ | $M_{ij}$ |
@@ -148,18 +137,15 @@ $$
 | 7 | 5 | $4$ |
 | 7 | 6 | $1$ |
 
-Matrix time: 149.87 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 
 ### Specialized spectrum
 
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 
 
-
 $$
 \Delta=0
 $$
-
 
 
 Cyclic at this point: False.
@@ -181,11 +167,9 @@ Numerical eigenvalues of $M$ (multiplicities retained):
 Factor 1: multiplicity 4; 1 distinct root(s) of $\det(xI-K^F)$.
 
 
-
 $$
 \begin{aligned}p_{1}(x)&=x - 6\end{aligned}
 $$
-
 
 
 Complete exponent computation: False.
@@ -198,13 +182,9 @@ the eigenvalue 6 has a 2-dimensional kernel, so its generalized eigenspace is no
 Factor 2: multiplicity 1; 4 distinct root(s) of $\det(xI-K^F)$.
 
 
-
 $$
 \begin{aligned}p_{2}(x)&=x^{4} + 24 x^{3} - 9000 x^{2} + 775008 x + 15594768\end{aligned}
 $$
-
-
-
 
 
 $$
@@ -212,16 +192,10 @@ $$
 $$
 
 
-
-
-
 $$
 \text{Classes modulo }\mathbb Z=\{0\}
 $$
 
 
-
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-
-**Search aliases:** HLM-27; dimension 4; fourfold; Complete intersection of codimension 1; Fano; quantum cohomology; Gromov-Witten; Hodge diamond; quantum multiplication; connection exponents; Hausen Laface Mauz; HLM; Section of P_{P³}(O ⊕ O(2)^2) by 2ξ; split projective bundle; regularized exponent multiset; repeated exponents.

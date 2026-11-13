@@ -16,6 +16,10 @@ def load_results():
     return json.loads(DATA.read_text(encoding='utf-8'))['examples']
 
 
+def display_title(record):
+    return record["title"].removesuffix(" (GM-20)")
+
+
 def bundle_input(record):
     bundle = record['input']['bundle']
     if isinstance(bundle, str):
@@ -50,17 +54,17 @@ def additional_page(records):
         '|---|---|---|---|',
     ]
     for r in selected:
-        lines.append(f"| [{r['title']}](#{r['catalog_anchor']}) | {r['dimension']} | {r['fano_index']} | {len(r['basis_indices'])} |")
+        lines.append(f"| [{display_title(r)}](#{r['catalog_anchor']}) | {r['dimension']} | {r['fano_index']} | {len(r['basis_indices'])} |")
     for r in selected:
         lines += ['', '---', '', f'<span id="{r["catalog_anchor"]}"></span>', '',
-                  f'??? example "{r["title"]}"',
+                  f'??? example "{display_title(r)}"',
                   f'    - **Ambient Space:** `{r["input"]["algebra"]}`',
                   f'    - **Keep Nodes:** `{",".join(map(str, r["input"]["keep"]))}`',
                   f'    - **Bundle K:** `{bundle_input(r)}`' if bundle_input(r) else '    - **Bundle K:** empty (the flag variety itself)',
                   f'    - **Dimension:** ${r["dimension"]}$',
                   f'    - **Ambient Index:** ${r["fano_index"]}$',
                   f'    - **Basis Rank:** ${len(r["basis_indices"])}$',
-                  f'    - **Exact data identifier:** `{r["id"]}`', '',
+                  '',
                   '    ??? note "Quantum Matrix ($y=1$)"', '        $$',
                   '        ' + matrix_tex(r['matrix_at_one']), '        $$', '',
                   '    ??? note "Ordered basis and degrees"', '',
@@ -77,7 +81,7 @@ def additional_page(records):
 def computed_page(records):
     lines = [
         '---',
-        'description: Download exact symbolic quantum multiplication matrices, ordered bases, gradings and supported curve classes for 131 completed localization computations.',
+        'description: Download exact symbolic quantum multiplication matrices, ordered bases, gradings and supported curve classes for flag varieties and complete intersections.',
         '---', '', '# Download matrices and inputs', '',
         'This download lets you reuse the matrices displayed in the catalog in Python, '
         'SageMath or other software, or repeat the computations from their original inputs. '
@@ -89,9 +93,6 @@ def computed_page(records):
         'it need not be the intrinsic Fano index of a low-dimensional section. '
         'For example, a conic is `P1` with geometric index 2 even when the ambient gcd is 1. '
         'See [catalog conventions](index.md).', '',
-        f'This collection contains **{len(records)} completed exact localization computations**, '
-        f'including **{sum(r["dimension"] == 3 for r in records)} threefold realizations**. '
-        'Different realizations are listed separately even when the resulting varieties are isomorphic.', '',
         '[Download the complete JSON dataset](../data/localization-results.json)', '',
         'Each record contains the executable algebra/kept-root/bundle input, the full '
         'automatically supported curve list in ambient coordinates, the symbolic '
@@ -103,7 +104,8 @@ def computed_page(records):
         '## Use a saved result', '', '```python', 'import json',
         'from pathlib import Path', '',
         'data = json.loads(Path("localization-results.json").read_text())',
-        'example = next(r for r in data["examples"] if r["id"] == "e1322438fd01")',
+        'example = next(r for r in data["examples"]',
+        '               if r["title"] == "P4  Fano index 5")',
         'print(example["input"])', 'print(example["matrix_symbolic"])',
         'print(example["basis_words"])', '```', '',
         'To recompute a record, construct `FlagVariety` with its algebra and kept '

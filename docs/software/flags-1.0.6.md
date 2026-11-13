@@ -8,7 +8,7 @@ description: Run gwflags to compute exact genus-zero Gromov-Witten invariants an
 
 ## Launch the interface
 
-This guide describes the development version `1.0.6.dev0`. Install its prepared source bundle as described in [Installation](../installation.md). The preserved `v1.0.5` download keeps its original notation. Then run:
+This guide describes the development version `1.0.6.dev0`. Install its source bundle as described in [Installation](../installation.md). The preserved `v1.0.5` download keeps its original notation. Then run:
 
 ```bash
 python -m gwflags.gui --no-browser
@@ -134,8 +134,8 @@ Nested lists such as `[[3]]` belong to the Python API only.
 - Insertion words must contain integers separated by spaces; separate multiple insertions with `|`.
 - A catalog entry marked **Catalog only** has no supported input or computed matrix provided on this site.
 - If a computation is slow, lower the worker count or start with a preset of lower degree.
-- Catalog matrices are rendered by MathJax. If you copy one into a LaTeX
-  document, load `amsmath` and raise the column limit for the wider matrices:
+- To use catalogue matrix TeX in a LaTeX document, load `amsmath` and
+  raise the column limit for wider matrices:
 
   ```tex
   \usepackage{amsmath}

@@ -4,11 +4,11 @@ description: Exact input and output conventions for Python, CLI, flag and toric 
 
 # Input and output conventions
 
-This reference describes the prepared versions gwflags 1.0.6.dev0 and gw-combined 1.1.0.dev1. The [preserved v1.0.5 guide](flags-legacy.md) describes the archived runtime separately.
+This reference covers flag 1.0.6.dev0 and the flag, toric and combined 1.1.0.dev1 distributions. The [preserved v1.0.5 guide](flags-legacy.md) describes the archived runtime separately.
 
 Run the cross-engine Python blocks in the complete combined installation, which contains both APIs. The dedicated flag guide provides flag-only examples for the standalone flag installation.
 
-The examples below were generated or checked against the actual prepared sources. Complete example records are available for [flags 1.0.6.dev0](examples/io-1.0.6.json) and [version 1.1.0.dev1 flag, toric and merged modes](examples/io-1.1.0.json). Runtimes in those records are incidental and can vary.
+Exact input/output examples are available for [flags 1.0.6.dev0](examples/io-1.0.6.json) and [flag, toric and combined 1.1.0.dev1](examples/io-1.1.0.json). Runtimes in those records are incidental and can vary.
 
 ## 1. Select the input model
 

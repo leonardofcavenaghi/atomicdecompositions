@@ -1,52 +1,36 @@
 # Development version 1.0.6.dev0
 
-This development source distribution is published; no new stable tag is implied.
+Stable flag v1.0.5 remains available. The current source and versioned 1.1.0.dev1 distributions retain development version labels.
 
-- Default flag parameter names retain ambient nodes for type A and use consecutive kept-root labels for other root-system families. Thus C3/keep 3, G2/keep 2 and D5/keep 4 use y1.
-- Python: `FlagVariety(..., novikov_convention="ambient")` retains the previous names; `"compact"` is also available. The CLI and interface expose the same choice and results record the map.
-- Renaming preserves exact coefficients, beta coordinates, the ordered basis and grading.
-- An empty flag CLI `--classes ""` now means no insertions, matching Python and the interface. The unmarked cubic-surface line count remains 27.
-- The standalone flag interface reports bundle rank and clarifies serial worker settings and quotient-bundle validation.
-- Adopted verified unmarked-tree generation from Giovane commit 7f167e17a35069ac1ff1cefecce2ac8a0be8231c. It preserves tree representatives, ordering and vertex labels; compatibility was independently checked through six edges.
+## Flag inputs and execution
 
-## Documentation prepared for launch
+- Default Novikov names retain ambient nodes for type A and use consecutive kept-root labels for other families. C3/keep 3, G2/keep 2 and D5/keep 4 use `y1`.
+- Python, CLI and interface offer `paper`, `ambient` and `compact` conventions. Results retain the node-to-parameter map. Relabeling preserves coefficients, curve coordinates, ordered bases and grading.
+- Empty flag CLI `--classes ""` means no insertions, matching Python and the interface. The unmarked cubic-surface line count is 27.
+- The standalone flag interface reports bundle rank and explains serial workers and quotient-bundle validation.
+- Rooted-shape/AHU unmarked-tree generation preserves the previous representatives, ordering and vertex labels through six edges in independent comparisons.
 
-The repository now includes [LAUNCH.md](LAUNCH.md), a complete change overview, a shared input/output reference with generated records, separate usage guides, preserved legacy instructions and the remaining publication checks. These documents describe the published development sources; the preserved stable tag remains v1.0.5.
+## Version 1.1.0.dev1
 
-## Website launch — 2026-11-13
+- Individual flag and toric distributions and a combined application provide version-specific installation and usage guides.
+- Enhanced flag execution supports checkpoints, saved progress and cancellation, with supported Hodge, cyclicity and exponent analysis.
+- Completed flag matrix caches distinguish Novikov conventions and mappings.
+- Large checkpoint fractions use exact tagged hexadecimal integers. Old decimal checkpoints remain readable; tagged values require the updated reader.
+- The combined application retains separate flag and toric workspaces and geometric input models.
 
-Universal catalogue organized by dimension and construction, with separate flag and toric mathematical descriptions; versioned individual and combined source downloads; revised installation and usage guides; contributor credits updated. The 1.0.6.dev0 and 1.1.0.dev1 sources retain development version labels.
+## Website and mathematical data — 2026-11-13
 
-## Contributors and mathematical display
+- The universal catalogue is organized by dimension and geometric construction, with explicit projective-space, product and projective-bundle names and explained literature references.
+- Flag and toric methods describe their own curve coordinates, pushforward formulas, grading and the connection sign relation `K^F = -A(q)`.
+- Exact datasets retain matrices, curve lists, ordered bases, grading and analysis points. Regularized-exponent multisets preserve repetitions and unresolved factors.
+- Hodge and atomic invariant pages distinguish rational Hodge classes from complex diagonal Hodge dimensions, ambient operators from full cohomology, and point tests from conclusions requiring geometric hypotheses.
+- LG(3,6) hyperplane/quadric and adjoint G₂ quadric fourfold examples include exact localization data, connection analysis and very-general irrationality criteria.
+- Installation guides cover isolated environments, individual and combined launchers, and empty-insertion cubic checks. Contributor credits include Milena Brockhof and are alphabetical by surname.
 
-Contributors are listed alphabetically by surname. Browser checks report navigation-to-rendered times and formula counts for full-page loads, instant navigation and rapid page changes, and reject missing, duplicate or errored formula displays. These timings describe the CI browser environment, rather than a guaranteed time on every connection.
+## Mathematical display
 
-Math rendering now retries failed initial runtime downloads using an alternate provider and watches for late-arriving mathematical content. Browser tests disable the cache, abort the first runtime request and delay startup while navigating, and require successful rendering without a page reload.
+Website equations are rendered as SVG with accessible MathML during the documentation build. Their display does not depend on visitor JavaScript or a mathematics CDN.
 
-## Mathematical notation
+## Validation
 
-The flag and toric mathematical descriptions now use the papers’ notation and formulae, including ambient pushforward sums and the sign relation K^F=-A(q). They distinguish computed ambient data from full Hodge-invariant factors and retain the hypotheses needed for atomic and rationality interpretations.
-
-## Explicit geometric presentations
-
-166 toric catalogue records now use explicit projective-space, product or split-projective-bundle descriptions, verified from the exact saved fans and divisor relations. CKP and HLM remain source identifiers with a terminology page; the two presentations not identified by these checks retain their full fan inputs.
-
-## Display-equation parsing
-
-Display equations now use blank-separated math blocks so Markdown cannot strip their delimiters or reinterpret TeX subscripts. Browser checks visit every new catalogue record and both mathematical descriptions, rejecting raw TeX outside math containers as well as rendering errors.
-
-## Documentation publication checks
-
-Documentation-only changes retain catalogue, exact saved-data, strict-build, search and browser checks without repeating software algebra and platform installation tests. Software, dependency and downloadable-archive changes retain the complete regression suite. Change selection compares with a successful ancestor, so a documentation follow-up cannot bypass an unvalidated software change. If the baseline cannot be established, the complete suite runs.
-
-## Saved exponent multisets
-
-All 168 new records display their saved regularized-exponent multisets near the top of the page, separately for each eigenvalue and with the analysis point and unresolved status. The exact downloadable summary contains 251 completed factor multisets and 92 unresolved factors, retaining repeated entries. This is a presentation of existing computations, not a new localization run or an automatic atomic/rationality certificate. Documented Python and interface cubic inputs were rechecked in each prepared version; the combined guide includes the same unmarked example in both workspaces.
-
-## Additional homogeneous fourfolds
-
-Fresh virtual-localization calculations and exact connection analysis add the LG(3,6) hyperplane/quadric section and the adjoint G2 quadric section to the universal fourfold list. Each record retains the complete automatic curve list, ordered Schubert basis and grading, proves unit cyclicity, and explains the very-general irrationality criterion and primitive-cohomology assignment used for its full atomic Hodge polynomial. The original 131-result archive remains unchanged.
-
-## Full Hodge and atomic invariants
-
-The universal catalogue links an exact audit of all 301 published records: full Hodge data, saved and additional rational Novikov points, unit cyclic determinants and characteristic factors. Under the stated geometric hypotheses, 147 records receive full coarse-factor Hodge-class counts and Hodge-character polynomials; the 46 cyclic ambient matrices missing Hodge-invariant classes and 108 records without unit cyclicity at the tested points are labelled explicitly. The distinction between rational Hodge classes and complex diagonal Hodge dimensions is preserved. Tests reproduce exact determinants and factor polynomials, recalculate supported Hodge reports and check all atomic polynomial sums. The invariant index is searchable and organized by the same dimension groups as the geometric catalogue.
+Exact regression checks cover the supported flag and toric computations, tree generation, checkpoint fractions and documented usage examples. Downloadable archives pass isolated Linux and Windows installation and launcher checks. Catalogue consistency, documentation builds, search and mathematical display are checked before deployment. Software or download changes run the full regression suite; documentation changes retain the relevant data and website checks.

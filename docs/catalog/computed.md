@@ -1,5 +1,5 @@
 ---
-description: Download exact symbolic quantum multiplication matrices, ordered bases, gradings and supported curve classes for 131 completed localization computations.
+description: Download exact symbolic quantum multiplication matrices, ordered bases, gradings and supported curve classes for flag varieties and complete intersections.
 ---
 
 # Download matrices and inputs
@@ -9,8 +9,6 @@ This download lets you reuse the matrices displayed in the catalog in Python, Sa
 You can read the examples directly in the [catalog](index.md); the download is optional. **Exact** means that fractions and symbolic expressions are preserved instead of rounded decimal approximations.
 
 The `fano_index` field uses the software’s ambient Chern-lattice convention; it need not be the intrinsic Fano index of a low-dimensional section. For example, a conic is `P1` with geometric index 2 even when the ambient gcd is 1. See [catalog conventions](index.md).
-
-This collection contains **131 completed exact localization computations**, including **32 threefold realizations**. Different realizations are listed separately even when the resulting varieties are isomorphic.
 
 [Download the complete JSON dataset](../data/localization-results.json)
 
@@ -25,7 +23,8 @@ import json
 from pathlib import Path
 
 data = json.loads(Path("localization-results.json").read_text())
-example = next(r for r in data["examples"] if r["id"] == "e1322438fd01")
+example = next(r for r in data["examples"]
+               if r["title"] == "P4  Fano index 5")
 print(example["input"])
 print(example["matrix_symbolic"])
 print(example["basis_words"])

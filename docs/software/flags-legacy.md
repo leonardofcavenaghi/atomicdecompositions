@@ -137,8 +137,8 @@ Nested lists such as `[[3]]` belong to the Python API only.
 - Insertion words must contain integers separated by spaces; separate multiple insertions with `|`.
 - A catalog entry marked **Catalog only** has no supported input or computed matrix provided on this site.
 - If a computation is slow, lower the worker count or start with a preset of lower degree.
-- Catalog matrices are rendered by MathJax. If you copy one into a LaTeX
-  document, load `amsmath` and raise the column limit for the wider matrices:
+- To use catalogue matrix TeX in a LaTeX document, load `amsmath` and
+  raise the column limit for wider matrices:
 
   ```tex
   \usepackage{amsmath}
@@ -335,4 +335,4 @@ the symbolic matrix has been assembled.
 
 ## Known archived CLI behavior
 
-The preserved v1.0.5 CLI interprets empty insertion text as one unit insertion. Use the Python API or interface for unmarked invariants in that archived version. The prepared corrected build fixes the CLI; no point insertion is required for cubic-surface lines.
+The preserved v1.0.5 CLI interprets empty insertion text as one unit insertion. Use the Python API or interface for unmarked invariants in that archived version. Flag versions 1.0.6.dev0 and 1.1.0.dev1 correct the CLI; no point insertion is required for cubic-surface lines.

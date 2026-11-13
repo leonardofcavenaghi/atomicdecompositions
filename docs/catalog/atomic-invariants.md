@@ -1,18 +1,14 @@
 ---
-description: Exact unit-cyclicity and Hodge-invariant audit of every published computation record, with full atomic invariants where the criterion applies.
+description: Cyclic determinants, Hodge classes and full atomic Hodge invariants for the catalogue examples.
 ---
 
 # Cyclicity and atomic Hodge invariants
 
-The audit covers **301 computation records**. It tests the unit cyclic determinant at the saved Novikov point and, when needed, additional exact rational points. It combines the result with a full Hodge-space identification and a justified primitive-cohomology assignment. A cyclic ambient matrix alone does not identify the full atoms.
+The unit cyclic determinant, the full Hodge-invariant sector and the action on primitive cohomology determine when the computed spectral factors identify coarse atoms. A cyclic ambient matrix alone is insufficient if additional Hodge-invariant classes lie outside its span.
 
-| Outcome | Records |
-|---|---:|
-| Full coarse factors and Hodge invariants identified under the stated geometric hypotheses | 147 |
-| Cyclic ambient operator, with additional Hodge-invariant classes outside that matrix | 46 |
-| Unit cyclicity not found at the tested points | 108 |
+The entries below give exact analysis points, cyclicity results and atomic Hodge invariants under their stated geometric hypotheses. A vanishing determinant at the tested points leaves cyclicity at other parameters open.
 
-[Download exact points, determinants, Hodge data and factors](../data/atomic-invariants.json). These are exact post-calculations on existing matrices; selected fresh localization checks and Hodge calculations are identified by their provenance.
+[Download exact points, determinants, Hodge data and factors](../data/atomic-invariants.json).
 
 ## What the invariants mean
 
@@ -22,11 +18,11 @@ $$
 P_\alpha(t)=\sum_{p,q}h^{p,q}(E^\alpha)t^{p-q}.
 $$
 
-It records the Hodge cocharacter with positive multiplicities. Its constant coefficient can exceed \(\rho_\alpha\); it does not count only rational Hodge classes. For the added LG(3,6) example, \(\rho=3\), while \(P(t)=14t^2+102+14t^{-2}\).
+It records the Hodge cocharacter with positive multiplicities. Its constant coefficient can exceed \(\rho_\alpha\); it does not count only rational Hodge classes. For the hyperplane and quadric section of LG(3,6), \(\rho=3\), while \(P(t)=14t^2+102+14t^{-2}\).
 
-A characteristic factor of degree d describes d conjugate eigenvalues. A listed atomic polynomial applies separately at each root; the consistency checks sum over all these roots. The audit polynomials refer to A=c1 multiplication. The saved connection pages also use K=-A; their factor numbering and sign convention are kept separate.
+A characteristic factor of degree d describes d conjugate eigenvalues. A listed atomic polynomial applies separately at each root; the consistency checks sum over all these roots. The polynomials here refer to first-Chern multiplication. The connection pages also use the negative of this operator; their factor numbering and sign convention are stated on each page.
 
-## When a full certificate is given
+## When the criterion identifies atoms
 
 The matrix must span the full Hodge-invariant sector, have a nonzero unit determinant, and represent a complete curve calculation. For an ample complete intersection, weak Lefschetz identifies the fixed ambient part. Irreducible non-Tate vanishing cohomology has no rational Hodge classes for a very general member. The primitive assignment uses monodromy, the first-Chern degree, the rational characteristic relation, or the stated projective-bundle argument. Very-general qualifications remain explicit.
 
@@ -34,7 +30,7 @@ The finite numerical point is a display normalization. The corresponding admissi
 
 For projective complete intersections of index one, the primitive eigenvalue uses the factorial correction described in [Hu, Proposition 5.9 and the index-one shift](https://arxiv.org/html/1501.03683v6). The two exceptional Hodge reconstructions use the projective incidence/blow-up model and [Mukai’s genus-twelve model](https://www.kurims.kyoto-u.ac.jp/~mukai/paper/Trieste.pdf); the ordinary Gushel–Mukai Hodge data appear in [Debarre, §5.1](https://arxiv.org/html/2001.03485). For those two Hodge reconstructions, characteristic numbers were checked independently at two exact torus points.
 
-Two useful scope checks are GM-20 and CKP-551: their very-general Hodge-invariant ranks are both 14, while the stored matrices have ranks 9 and 8. Their nonzero ambient determinants therefore do not certify a full atomic decomposition.
+For the [incidence complete intersection in Fl(1,2,5)](additional.md#fl125o01o02o10gm20) and the [cubic-divisor construction CKP-551](records/ckp-551.md), the very-general Hodge-invariant ranks are both 14, while the ambient matrices have ranks 9 and 8. Their nonzero ambient determinants therefore do not certify full atomic decompositions.
 
 ## Primitive assignment rules
 
@@ -61,11 +57,11 @@ These rules give the full polynomial by adding the assigned vanishing-cohomology
 - [Fivefolds](invariants-fivefolds.md)
 - [Higher dimensions](invariants-higher-dimensional.md)
 
-## All records
+## Catalogue
 
 <div class="atomic-index" markdown>
 
-| Geometric record | Dimension | Ambient rank | Full Hodge-invariant rank | Result |
+| Geometric presentation | Dimension | Ambient rank | Full Hodge-invariant rank | Result |
 |---|---:|---:|---:|---|
 | [Gr(2,6)](grassmannians.md#gr26) | 8 | 15 | 15 | [No cyclic point found](invariants-higher-dimensional.md#1251e5bfa1a6) |
 | [P8  Fano index 9](projective.md#p8fanoindex9) | 8 | 9 | 9 | [Full atomic invariants](invariants-higher-dimensional.md#38cfb4dd44e9) |
@@ -94,36 +90,36 @@ These rules give the full polynomial by adding the assigned vanishing-cohomology
 | [P8 / O(2)+O(5)](projective.md#p8o2o5) | 6 | 7 | 7 | [Full atomic invariants](invariants-higher-dimensional.md#11d7c5142e09) |
 | [P8 / O(3)+O(3)](projective.md#p8o3o3) | 6 | 7 | 7 | [Full atomic invariants](invariants-higher-dimensional.md#53a423286d87) |
 | [P8 / O(3)+O(4)](projective.md#p8o3o4) | 6 | 7 | 7 | [Full atomic invariants](invariants-higher-dimensional.md#d8d261b9c52c) |
-| [Complete intersection (2,2,2,2) in P⁹ (PCI5-2-2-2-2)](records/pci5-2-2-2-2.md) | 5 | 6 | 6 | [Full atomic invariants](invariants-fivefolds.md#pci5-2-2-2-2) |
-| [Complete intersection (2,2,2,2,2) in P¹⁰ (PCI5-2-2-2-2-2)](records/pci5-2-2-2-2-2.md) | 5 | 6 | 6 | [Full atomic invariants](invariants-fivefolds.md#pci5-2-2-2-2-2) |
-| [Complete intersection (2,2,2,3) in P⁹ (PCI5-2-2-2-3)](records/pci5-2-2-2-3.md) | 5 | 6 | 6 | [Full atomic invariants](invariants-fivefolds.md#pci5-2-2-2-3) |
-| [Complete intersection (2,2,3) in P⁸ (PCI5-2-2-3)](records/pci5-2-2-3.md) | 5 | 6 | 6 | [Full atomic invariants](invariants-fivefolds.md#pci5-2-2-3) |
-| [Complete intersection (2,2,4) in P⁸ (PCI5-2-2-4)](records/pci5-2-2-4.md) | 5 | 6 | 6 | [Full atomic invariants](invariants-fivefolds.md#pci5-2-2-4) |
-| [Complete intersection (2,3) in P⁷ (QC5-001)](records/qc5-001.md) | 5 | 6 | 6 | [Full atomic invariants](invariants-fivefolds.md#qc5-001) |
-| [Complete intersection (2,3,3) in P⁸ (PCI5-2-3-3)](records/pci5-2-3-3.md) | 5 | 6 | 6 | [Full atomic invariants](invariants-fivefolds.md#pci5-2-3-3) |
-| [Complete intersection (2,4) in P⁷ (PCI5-2-4)](records/pci5-2-4.md) | 5 | 6 | 6 | [Full atomic invariants](invariants-fivefolds.md#pci5-2-4) |
-| [Complete intersection (2,5) in P⁷ (PCI5-2-5)](records/pci5-2-5.md) | 5 | 6 | 6 | [Full atomic invariants](invariants-fivefolds.md#pci5-2-5) |
-| [Complete intersection (3,3) in P⁷ (PCI5-3-3)](records/pci5-3-3.md) | 5 | 6 | 6 | [Full atomic invariants](invariants-fivefolds.md#pci5-3-3) |
-| [Complete intersection (3,4) in P⁷ (PCI5-3-4)](records/pci5-3-4.md) | 5 | 6 | 6 | [Full atomic invariants](invariants-fivefolds.md#pci5-3-4) |
-| [Complete intersection of multidegrees (1,1), (1,1), (1,2) in P³ × P⁵ (PB5-060)](records/pb5-060.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-060) |
-| [Complete intersection of multidegrees (1,3) in P¹ × P⁵ (PB5-003)](records/pb5-003.md) | 5 | 10 | 10 | [No cyclic point found](invariants-fivefolds.md#pb5-003) |
-| [Complete intersection of multidegrees (2,1), (1,2) in P³ × P⁴ (PB5-051)](records/pb5-051.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-051) |
-| [Complete intersection of multidegrees (2,1), (1,2) in P³ × P⁴ (PROD5-D02)](records/prod5-d02.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#prod5-d02) |
-| [Complete intersection of multidegrees (2,1), (1,2), (1,1) in P⁴ × P⁴ (PROD5-E02)](records/prod5-e02.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#prod5-e02) |
-| [Complete intersection of multidegrees (2,1), (1,3) in P³ × P⁴ (PROD5-D04)](records/prod5-d04.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#prod5-d04) |
-| [Complete intersection of multidegrees (2,2) in P² × P⁴ (PROD5-A01)](records/prod5-a01.md) | 5 | 12 | 12 | [Full atomic invariants](invariants-fivefolds.md#prod5-a01) |
-| [Complete intersection of multidegrees (2,2) in P³ × P³ (PB5-028)](records/pb5-028.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-028) |
-| [Complete intersection of multidegrees (2,2) in P³ × P³ (PROD5-B01)](records/prod5-b01.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#prod5-b01) |
-| [Complete intersection of multidegrees (2,2), (1,1) in P³ × P⁴ (PROD5-D01)](records/prod5-d01.md) | 5 | 12 | 12 | [Full atomic invariants](invariants-fivefolds.md#prod5-d01) |
-| [Complete intersection of multidegrees (2,2), (1,1), (1,1) in P⁴ × P⁴ (PROD5-E01)](records/prod5-e01.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#prod5-e01) |
-| [Complete intersection of multidegrees (2,2), (1,2) in P³ × P⁴ (PROD5-D05)](records/prod5-d05.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#prod5-d05) |
-| [Complete intersection of multidegrees (2,2,2) in P² × P² × P² (PROD5-C01)](records/prod5-c01.md) | 5 | 20 | 20 | [No cyclic point found](invariants-fivefolds.md#prod5-c01) |
-| [Complete intersection of multidegrees (2,3) in P² × P⁴ (PROD5-A02)](records/prod5-a02.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#prod5-a02) |
-| [Complete intersection of multidegrees (2,3) in P³ × P³ (PROD5-B02)](records/prod5-b02.md) | 5 | 12 | 12 | [Full atomic invariants](invariants-fivefolds.md#prod5-b02) |
-| [Complete intersection of multidegrees (2,3), (1,1) in P³ × P⁴ (PROD5-D03)](records/prod5-d03.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#prod5-d03) |
-| [Complete intersection of multidegrees (2,4) in P² × P⁴ (PROD5-A03)](records/prod5-a03.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#prod5-a03) |
-| [Complete intersection of multidegrees (3,3) in P³ × P³ (PROD5-B03)](records/prod5-b03.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#prod5-b03) |
-| [Degree-6 fivefold in P⁶ (PCI5-6)](records/pci5-6.md) | 5 | 6 | 6 | [Full atomic invariants](invariants-fivefolds.md#pci5-6) |
+| [Complete intersection (2,2,2,2) in P⁹](records/pci5-2-2-2-2.md) | 5 | 6 | 6 | [Full atomic invariants](invariants-fivefolds.md#pci5-2-2-2-2) |
+| [Complete intersection (2,2,2,2,2) in P¹⁰](records/pci5-2-2-2-2-2.md) | 5 | 6 | 6 | [Full atomic invariants](invariants-fivefolds.md#pci5-2-2-2-2-2) |
+| [Complete intersection (2,2,2,3) in P⁹](records/pci5-2-2-2-3.md) | 5 | 6 | 6 | [Full atomic invariants](invariants-fivefolds.md#pci5-2-2-2-3) |
+| [Complete intersection (2,2,3) in P⁸](records/pci5-2-2-3.md) | 5 | 6 | 6 | [Full atomic invariants](invariants-fivefolds.md#pci5-2-2-3) |
+| [Complete intersection (2,2,4) in P⁸](records/pci5-2-2-4.md) | 5 | 6 | 6 | [Full atomic invariants](invariants-fivefolds.md#pci5-2-2-4) |
+| [Complete intersection (2,3) in P⁷](records/qc5-001.md) | 5 | 6 | 6 | [Full atomic invariants](invariants-fivefolds.md#qc5-001) |
+| [Complete intersection (2,3,3) in P⁸](records/pci5-2-3-3.md) | 5 | 6 | 6 | [Full atomic invariants](invariants-fivefolds.md#pci5-2-3-3) |
+| [Complete intersection (2,4) in P⁷](records/pci5-2-4.md) | 5 | 6 | 6 | [Full atomic invariants](invariants-fivefolds.md#pci5-2-4) |
+| [Complete intersection (2,5) in P⁷](records/pci5-2-5.md) | 5 | 6 | 6 | [Full atomic invariants](invariants-fivefolds.md#pci5-2-5) |
+| [Complete intersection (3,3) in P⁷](records/pci5-3-3.md) | 5 | 6 | 6 | [Full atomic invariants](invariants-fivefolds.md#pci5-3-3) |
+| [Complete intersection (3,4) in P⁷](records/pci5-3-4.md) | 5 | 6 | 6 | [Full atomic invariants](invariants-fivefolds.md#pci5-3-4) |
+| [Complete intersection of multidegrees (1,1), (1,1), (1,2) in P³ × P⁵](records/pb5-060.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-060) |
+| [Complete intersection of multidegrees (1,3) in P¹ × P⁵](records/pb5-003.md) | 5 | 10 | 10 | [No cyclic point found](invariants-fivefolds.md#pb5-003) |
+| [Complete intersection of multidegrees (2,1), (1,2) in P³ × P⁴](records/pb5-051.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-051) |
+| [Complete intersection of multidegrees (2,1), (1,2) in P³ × P⁴](records/prod5-d02.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#prod5-d02) |
+| [Complete intersection of multidegrees (2,1), (1,2), (1,1) in P⁴ × P⁴](records/prod5-e02.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#prod5-e02) |
+| [Complete intersection of multidegrees (2,1), (1,3) in P³ × P⁴](records/prod5-d04.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#prod5-d04) |
+| [Complete intersection of multidegrees (2,2) in P² × P⁴](records/prod5-a01.md) | 5 | 12 | 12 | [Full atomic invariants](invariants-fivefolds.md#prod5-a01) |
+| [Complete intersection of multidegrees (2,2) in P³ × P³](records/pb5-028.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-028) |
+| [Complete intersection of multidegrees (2,2) in P³ × P³](records/prod5-b01.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#prod5-b01) |
+| [Complete intersection of multidegrees (2,2), (1,1) in P³ × P⁴](records/prod5-d01.md) | 5 | 12 | 12 | [Full atomic invariants](invariants-fivefolds.md#prod5-d01) |
+| [Complete intersection of multidegrees (2,2), (1,1), (1,1) in P⁴ × P⁴](records/prod5-e01.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#prod5-e01) |
+| [Complete intersection of multidegrees (2,2), (1,2) in P³ × P⁴](records/prod5-d05.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#prod5-d05) |
+| [Complete intersection of multidegrees (2,2,2) in P² × P² × P²](records/prod5-c01.md) | 5 | 20 | 20 | [No cyclic point found](invariants-fivefolds.md#prod5-c01) |
+| [Complete intersection of multidegrees (2,3) in P² × P⁴](records/prod5-a02.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#prod5-a02) |
+| [Complete intersection of multidegrees (2,3) in P³ × P³](records/prod5-b02.md) | 5 | 12 | 12 | [Full atomic invariants](invariants-fivefolds.md#prod5-b02) |
+| [Complete intersection of multidegrees (2,3), (1,1) in P³ × P⁴](records/prod5-d03.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#prod5-d03) |
+| [Complete intersection of multidegrees (2,4) in P² × P⁴](records/prod5-a03.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#prod5-a03) |
+| [Complete intersection of multidegrees (3,3) in P³ × P³](records/prod5-b03.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#prod5-b03) |
+| [Degree-6 fivefold in P⁶](records/pci5-6.md) | 5 | 6 | 6 | [Full atomic invariants](invariants-fivefolds.md#pci5-6) |
 | [Fl(1,4,5) / O(1,1)+O(1,1)](additional.md#fl145o11o11) | 5 | 12 | 12 | [Full atomic invariants](invariants-fivefolds.md#9cb29c69a3f5) |
 | [G2/P1](additional.md#g2p1) | 5 | 6 | 6 | [Full atomic invariants](invariants-fivefolds.md#fd2bd6eae26b) |
 | [G2/P2](additional.md#g2p2) | 5 | 6 | 6 | [Full atomic invariants](invariants-fivefolds.md#834882311808) |
@@ -150,50 +146,50 @@ These rules give the full polynomial by adding the assigned vanishing-cohomology
 | [P7 / O(3)+O(3)](projective.md#p7o3o3) | 5 | 6 | 6 | [Full atomic invariants](invariants-fivefolds.md#0dfe4b49547a) |
 | [P8 / O(2)+O(2)+O(2)](projective.md#p8o2o2o2) | 5 | 6 | 6 | [Full atomic invariants](invariants-fivefolds.md#649a71c1db0a) |
 | [P8 / O(2)+O(2)+O(3)](projective.md#p8o2o2o3) | 5 | 6 | 6 | [Full atomic invariants](invariants-fivefolds.md#819481252d0a) |
-| [Quartic double cover of P⁵ (QD5-001)](records/qd5-001.md) | 5 | 6 | 6 | [Full atomic invariants](invariants-fivefolds.md#qd5-001) |
-| [Quartic fivefold in P⁶ (PCI5-4)](records/pci5-4.md) | 5 | 6 | 6 | [Full atomic invariants](invariants-fivefolds.md#pci5-4) |
-| [Quintic fivefold in P⁶ (PCI5-5)](records/pci5-5.md) | 5 | 6 | 6 | [Full atomic invariants](invariants-fivefolds.md#pci5-5) |
-| [Section of P_{P²}(O^4 ⊕ O(1)) by 3ξ+H (PB5-016)](records/pb5-016.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-016) |
-| [Section of P_{P²}(O^4 ⊕ O(1)) by 4ξ+H (PB5-017)](records/pb5-017.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-017) |
-| [Section of P_{P³}(O^2 ⊕ O(1)^2) by 2ξ+H (PB5-043)](records/pb5-043.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-043) |
-| [Section of P_{P³}(O^2 ⊕ O(1)^2) by 3ξ+H (PB5-044)](records/pb5-044.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-044) |
-| [Section of P_{P³}(O^3 ⊕ O(1)) by 2ξ+2H (PB5-036)](records/pb5-036.md) | 5 | 12 | 12 | [Full atomic invariants](invariants-fivefolds.md#pb5-036) |
-| [Section of P_{P³}(O^3 ⊕ O(1)) by 3ξ+2H (PB5-038)](records/pb5-038.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-038) |
-| [Section of P_{P³}(O^3 ⊕ O(1)) by 3ξ+H (PB5-037)](records/pb5-037.md) | 5 | 12 | 12 | [Full atomic invariants](invariants-fivefolds.md#pb5-037) |
-| [Section of P_{P³}(O^3 ⊕ O(2)) by 2ξ+H (PB5-040)](records/pb5-040.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-040) |
-| [Section of P_{P³}(O^3 ⊕ O(2)) by 3ξ+H (PB5-041)](records/pb5-041.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-041) |
-| [Section of P_{P³}(O^4 ⊕ O(1)) by 2ξ+H, 2ξ+H (PB5-058)](records/pb5-058.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-058) |
-| [Section of P_{P³}(O^4 ⊕ O(1)) by ξ+H, 2ξ+H (PB5-056)](records/pb5-056.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-056) |
-| [Section of P_{P³}(O^4 ⊕ O(1)) by ξ+H, 3ξ+H (PB5-057)](records/pb5-057.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-057) |
-| [Section of P_{P⁴}(O ⊕ O(1) ⊕ O(2)) by 2ξ+H (PB5-088)](records/pb5-088.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-088) |
-| [Section of P_{P⁴}(O ⊕ O(1)^2) by 2ξ+2H (PB5-086)](records/pb5-086.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-086) |
-| [Section of P_{P⁴}(O ⊕ O(1)^2) by 2ξ+H (PB5-085)](records/pb5-085.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-085) |
-| [Section of P_{P⁴}(O^2 ⊕ O(1)) by 2ξ+2H (PB5-075)](records/pb5-075.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-075) |
-| [Section of P_{P⁴}(O^2 ⊕ O(1)) by 2ξ+3H (PB5-076)](records/pb5-076.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-076) |
-| [Section of P_{P⁴}(O^2 ⊕ O(1)^2) by ξ+H, 2ξ+H (PB5-107)](records/pb5-107.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-107) |
-| [Section of P_{P⁴}(O^2 ⊕ O(2)) by 2ξ+2H (PB5-080)](records/pb5-080.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-080) |
-| [Section of P_{P⁴}(O^2 ⊕ O(2)) by 2ξ+H (PB5-079)](records/pb5-079.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-079) |
-| [Section of P_{P⁴}(O^2 ⊕ O(3)) by 2ξ+H (PB5-082)](records/pb5-082.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-082) |
-| [Section of P_{P⁴}(O^3 ⊕ O(1)) by ξ+2H, 2ξ+H (PB5-103)](records/pb5-103.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-103) |
-| [Section of P_{P⁴}(O^3 ⊕ O(1)) by ξ+H, 2ξ+2H (PB5-102)](records/pb5-102.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-102) |
-| [Section of P_{P⁴}(O^3 ⊕ O(1)) by ξ+H, 2ξ+H (PB5-101)](records/pb5-101.md) | 5 | 12 | 12 | [Full atomic invariants](invariants-fivefolds.md#pb5-101) |
-| [Section of P_{P⁴}(O^3 ⊕ O(2)) by ξ+H, 2ξ+H (PB5-105)](records/pb5-105.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-105) |
-| [Section of P_{P⁴}(O^4 ⊕ O(1)) by ξ+H, ξ+H, 2ξ+H (PB5-114)](records/pb5-114.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-114) |
-| [Section of P_{P⁵}(O ⊕ O(1) ⊕ O(2)) by ξ+H, ξ+H (PB5-147)](records/pb5-147.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-147) |
-| [Section of P_{P⁵}(O ⊕ O(1)) by ξ+3H (PB5-124)](records/pb5-124.md) | 5 | 10 | 10 | [Full atomic invariants](invariants-fivefolds.md#pb5-124) |
-| [Section of P_{P⁵}(O ⊕ O(2)) by ξ+2H (PB5-127)](records/pb5-127.md) | 5 | 10 | 10 | [No cyclic point found](invariants-fivefolds.md#pb5-127) |
-| [Section of P_{P⁵}(O ⊕ O(2)) by ξ+3H (PB5-128)](records/pb5-128.md) | 5 | 10 | 10 | [Full atomic invariants](invariants-fivefolds.md#pb5-128) |
-| [Section of P_{P⁵}(O ⊕ O(3)) by ξ+2H (PB5-130)](records/pb5-130.md) | 5 | 10 | 10 | [Full atomic invariants](invariants-fivefolds.md#pb5-130) |
-| [Section of P_{P⁵}(O ⊕ O(4)) by ξ+H (PB5-131)](records/pb5-131.md) | 5 | 10 | 10 | [No cyclic point found](invariants-fivefolds.md#pb5-131) |
-| [Section of P_{P⁵}(O^2 ⊕ O(1)) by ξ+H, ξ+2H (PB5-139)](records/pb5-139.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-139) |
-| [Section of P_{P⁵}(O^2 ⊕ O(1)^2) by ξ+H, ξ+H, ξ+H (PB5-155)](records/pb5-155.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-155) |
-| [Section of P_{P⁵}(O^2 ⊕ O(2)) by ξ+H, ξ+2H (PB5-143)](records/pb5-143.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-143) |
-| [Section of P_{P⁵}(O^2 ⊕ O(3)) by ξ+H, ξ+H (PB5-144)](records/pb5-144.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-144) |
-| [Section of P_{P⁵}(O^3 ⊕ O(1)) by ξ+H, ξ+H, ξ+2H (PB5-153)](records/pb5-153.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-153) |
-| [Section of P_{P⁵}(O^3 ⊕ O(2)) by ξ+H, ξ+H, ξ+H (PB5-154)](records/pb5-154.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-154) |
-| [Section of P_{P⁵}(O^4 ⊕ O(1)) by ξ+H, ξ+H, ξ+H, ξ+H (PB5-158)](records/pb5-158.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-158) |
-| [CKP-172 — Complete intersection of codimension 1](records/ckp-172.md) | 4 | 12 | 12 | [No cyclic point found](invariants-fourfolds.md#ckp-172) |
-| [CKP-320 — Complete intersection of codimension 1](records/ckp-320.md) | 4 | 13 | 13 | [No cyclic point found](invariants-fourfolds.md#ckp-320) |
+| [Quartic double cover of P⁵](records/qd5-001.md) | 5 | 6 | 6 | [Full atomic invariants](invariants-fivefolds.md#qd5-001) |
+| [Quartic fivefold in P⁶](records/pci5-4.md) | 5 | 6 | 6 | [Full atomic invariants](invariants-fivefolds.md#pci5-4) |
+| [Quintic fivefold in P⁶](records/pci5-5.md) | 5 | 6 | 6 | [Full atomic invariants](invariants-fivefolds.md#pci5-5) |
+| [Section of P_{P²}(O^4 ⊕ O(1)) by 3ξ+H](records/pb5-016.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-016) |
+| [Section of P_{P²}(O^4 ⊕ O(1)) by 4ξ+H](records/pb5-017.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-017) |
+| [Section of P_{P³}(O^2 ⊕ O(1)^2) by 2ξ+H](records/pb5-043.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-043) |
+| [Section of P_{P³}(O^2 ⊕ O(1)^2) by 3ξ+H](records/pb5-044.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-044) |
+| [Section of P_{P³}(O^3 ⊕ O(1)) by 2ξ+2H](records/pb5-036.md) | 5 | 12 | 12 | [Full atomic invariants](invariants-fivefolds.md#pb5-036) |
+| [Section of P_{P³}(O^3 ⊕ O(1)) by 3ξ+2H](records/pb5-038.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-038) |
+| [Section of P_{P³}(O^3 ⊕ O(1)) by 3ξ+H](records/pb5-037.md) | 5 | 12 | 12 | [Full atomic invariants](invariants-fivefolds.md#pb5-037) |
+| [Section of P_{P³}(O^3 ⊕ O(2)) by 2ξ+H](records/pb5-040.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-040) |
+| [Section of P_{P³}(O^3 ⊕ O(2)) by 3ξ+H](records/pb5-041.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-041) |
+| [Section of P_{P³}(O^4 ⊕ O(1)) by 2ξ+H, 2ξ+H](records/pb5-058.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-058) |
+| [Section of P_{P³}(O^4 ⊕ O(1)) by ξ+H, 2ξ+H](records/pb5-056.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-056) |
+| [Section of P_{P³}(O^4 ⊕ O(1)) by ξ+H, 3ξ+H](records/pb5-057.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-057) |
+| [Section of P_{P⁴}(O ⊕ O(1) ⊕ O(2)) by 2ξ+H](records/pb5-088.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-088) |
+| [Section of P_{P⁴}(O ⊕ O(1)^2) by 2ξ+2H](records/pb5-086.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-086) |
+| [Section of P_{P⁴}(O ⊕ O(1)^2) by 2ξ+H](records/pb5-085.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-085) |
+| [Section of P_{P⁴}(O^2 ⊕ O(1)) by 2ξ+2H](records/pb5-075.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-075) |
+| [Section of P_{P⁴}(O^2 ⊕ O(1)) by 2ξ+3H](records/pb5-076.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-076) |
+| [Section of P_{P⁴}(O^2 ⊕ O(1)^2) by ξ+H, 2ξ+H](records/pb5-107.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-107) |
+| [Section of P_{P⁴}(O^2 ⊕ O(2)) by 2ξ+2H](records/pb5-080.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-080) |
+| [Section of P_{P⁴}(O^2 ⊕ O(2)) by 2ξ+H](records/pb5-079.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-079) |
+| [Section of P_{P⁴}(O^2 ⊕ O(3)) by 2ξ+H](records/pb5-082.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-082) |
+| [Section of P_{P⁴}(O^3 ⊕ O(1)) by ξ+2H, 2ξ+H](records/pb5-103.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-103) |
+| [Section of P_{P⁴}(O^3 ⊕ O(1)) by ξ+H, 2ξ+2H](records/pb5-102.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-102) |
+| [Section of P_{P⁴}(O^3 ⊕ O(1)) by ξ+H, 2ξ+H](records/pb5-101.md) | 5 | 12 | 12 | [Full atomic invariants](invariants-fivefolds.md#pb5-101) |
+| [Section of P_{P⁴}(O^3 ⊕ O(2)) by ξ+H, 2ξ+H](records/pb5-105.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-105) |
+| [Section of P_{P⁴}(O^4 ⊕ O(1)) by ξ+H, ξ+H, 2ξ+H](records/pb5-114.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-114) |
+| [Section of P_{P⁵}(O ⊕ O(1) ⊕ O(2)) by ξ+H, ξ+H](records/pb5-147.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-147) |
+| [Section of P_{P⁵}(O ⊕ O(1)) by ξ+3H](records/pb5-124.md) | 5 | 10 | 10 | [Full atomic invariants](invariants-fivefolds.md#pb5-124) |
+| [Section of P_{P⁵}(O ⊕ O(2)) by ξ+2H](records/pb5-127.md) | 5 | 10 | 10 | [No cyclic point found](invariants-fivefolds.md#pb5-127) |
+| [Section of P_{P⁵}(O ⊕ O(2)) by ξ+3H](records/pb5-128.md) | 5 | 10 | 10 | [Full atomic invariants](invariants-fivefolds.md#pb5-128) |
+| [Section of P_{P⁵}(O ⊕ O(3)) by ξ+2H](records/pb5-130.md) | 5 | 10 | 10 | [Full atomic invariants](invariants-fivefolds.md#pb5-130) |
+| [Section of P_{P⁵}(O ⊕ O(4)) by ξ+H](records/pb5-131.md) | 5 | 10 | 10 | [No cyclic point found](invariants-fivefolds.md#pb5-131) |
+| [Section of P_{P⁵}(O^2 ⊕ O(1)) by ξ+H, ξ+2H](records/pb5-139.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-139) |
+| [Section of P_{P⁵}(O^2 ⊕ O(1)^2) by ξ+H, ξ+H, ξ+H](records/pb5-155.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-155) |
+| [Section of P_{P⁵}(O^2 ⊕ O(2)) by ξ+H, ξ+2H](records/pb5-143.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-143) |
+| [Section of P_{P⁵}(O^2 ⊕ O(3)) by ξ+H, ξ+H](records/pb5-144.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-144) |
+| [Section of P_{P⁵}(O^3 ⊕ O(1)) by ξ+H, ξ+H, ξ+2H](records/pb5-153.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-153) |
+| [Section of P_{P⁵}(O^3 ⊕ O(2)) by ξ+H, ξ+H, ξ+H](records/pb5-154.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-154) |
+| [Section of P_{P⁵}(O^4 ⊕ O(1)) by ξ+H, ξ+H, ξ+H, ξ+H](records/pb5-158.md) | 5 | 12 | 12 | [No cyclic point found](invariants-fivefolds.md#pb5-158) |
+| [Hypersurface in a toric fivefold (CKP-172)](records/ckp-172.md) | 4 | 12 | 12 | [No cyclic point found](invariants-fourfolds.md#ckp-172) |
+| [Hypersurface in a toric fivefold (CKP-320)](records/ckp-320.md) | 4 | 13 | 13 | [No cyclic point found](invariants-fourfolds.md#ckp-320) |
 | [Complete intersection (2,2) in P⁶ (CKP-033)](records/ckp-033.md) | 4 | 5 | 12 | [Ambient matrix incomplete](invariants-fourfolds.md#ckp-033) |
 | [Complete intersection (2,2,2) in P⁷ (CKP-596)](records/ckp-596.md) | 4 | 5 | 5 | [Full atomic invariants](invariants-fourfolds.md#ckp-596) |
 | [Complete intersection (2,2,2,2) in P⁸ (CKP-731)](records/ckp-731.md) | 4 | 5 | 5 | [Full atomic invariants](invariants-fourfolds.md#ckp-731) |
@@ -235,7 +231,7 @@ These rules give the full polynomial by adding the assigned vanishing-cohomology
 | [Complete intersection of multidegrees (2,2) in P² × P³ (CKP-439)](records/ckp-439.md) | 4 | 9 | 9 | [Full atomic invariants](invariants-fourfolds.md#ckp-439) |
 | [Complete intersection of multidegrees (2,3) in P² × P³ (CKP-726)](records/ckp-726.md) | 4 | 9 | 9 | [No cyclic point found](invariants-fourfolds.md#ckp-726) |
 | [Cubic fourfold in P⁵ (CKP-037)](records/ckp-037.md) | 4 | 5 | 5 | [Full atomic invariants](invariants-fourfolds.md#ckp-037) |
-| [Fl(1,2,5) / O(0,1)+O(0,2)+O(1,0) (GM-20)](additional.md#fl125o01o02o10gm20) | 4 | 9 | 14 | [Ambient matrix incomplete](invariants-fourfolds.md#e1322438fd01) |
+| [Fl(1,2,5) / O(0,1)+O(0,2)+O(1,0)](additional.md#fl125o01o02o10gm20) | 4 | 9 | 14 | [Ambient matrix incomplete](invariants-fourfolds.md#e1322438fd01) |
 | [Fl(1,3,4) / O(1,1)](additional.md#fl134o11) | 4 | 9 | 12 | [Ambient matrix incomplete](invariants-fourfolds.md#3ed191207b19) |
 | [G2/P2 / O(1)](additional.md#g2p2o1) | 4 | 5 | 6 | [Ambient matrix incomplete](invariants-fourfolds.md#b9a91f8b2a8f) |
 | [Gr(2,4)](grassmannians.md#gr24) | 4 | 6 | 6 | [No cyclic point found](invariants-fourfolds.md#51615a7643a1) |

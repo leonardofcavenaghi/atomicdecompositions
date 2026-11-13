@@ -1,4 +1,4 @@
-"""Validate catalogue links, search aliases and the exact distributable sources.
+"""Validate catalogue links, scientific search keywords and the exact distributable sources.
 
 This checks source artifacts; it does not replace a MkDocs/browser build or
 an installed-package smoke test.
@@ -13,6 +13,16 @@ def links(text):
  return re.findall(r'\]\(([^)]+)\)',text)
 
 pages=list(DOCS.rglob('*.md'))
+for page in pages:
+ text=page.read_text()
+ text=re.sub(r'^---\n.*?\n---\n','',text,flags=re.S)
+ text=re.sub(r'```.*?```','',text,flags=re.S)
+ text=re.sub(r'\]\([^)]*\)',']',text)
+ text=re.sub(r'<span[^>]*>','',text)
+ assert not re.search(r'\b(?:QD5|QC5|PB5|PROD5|PCI5)-[A-Z0-9-]+\b|GM-20',text),(page,'synthetic public label')
+ for phrase in ('saved computation records','newly published fan-based matrices','prepared source bundle','our internal conversations'):
+  assert phrase not in text,(page,'internal public copy',phrase)
+
 for page in pages:
  for target in links(page.read_text()):
   address=target.split('#')[0].split('?')[0]
@@ -36,8 +46,8 @@ for row in catalog:
  assert f']({row["link"]})' in master,row['id']
  if row['link'].startswith('records/'):
   text=(DOCS/'catalog'/row['link']).read_text()
-  assert '**Search aliases:**' in text and row['id'] in text
-  assert all(keyword in text for keyword in row['keywords']),(row['id'],'search alias')
+  assert '**Search aliases:**' not in text
+  assert all(keyword in text for keyword in row['keywords']),(row['id'],'scientific keywords')
  if 'basis' in source:
   assert row['matrix_rank']==len(source['basis'])
  else:

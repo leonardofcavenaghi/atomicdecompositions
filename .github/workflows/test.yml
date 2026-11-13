@@ -175,6 +175,9 @@ jobs:
         working-directory: scripts
         run: npm ci
 
+      - name: Render all published equations before serving
+        run: node scripts/render_static_math.js
+
       - name: Run catalog browser regression
         run: node scripts/test_catalog_navigation.js
 

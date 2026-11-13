@@ -22,7 +22,7 @@ Matrices represent multiplication by $c_1(TY)$ on the returned ambient sector, w
 | [OG(3,7) / O(2)](#og37o2) | 5 | 4 | 6 |
 | [OG(3,7) / O(3)](#og37o3) | 5 | 3 | 6 |
 | [OG(3,7) / O(4)](#og37o4) | 5 | 2 | 6 |
-| [Fl(1,2,5) / O(0,1)+O(0,2)+O(1,0) (GM-20)](#fl125o01o02o10gm20) | 4 | 1 | 9 |
+| [Fl(1,2,5) / O(0,1)+O(0,2)+O(1,0)](#fl125o01o02o10gm20) | 4 | 1 | 9 |
 | [Fl(1,3,4) / O(1,1)](#fl134o11) | 4 | 2 | 9 |
 | [G2/P2 / O(1)](#g2p2o1) | 4 | 2 | 5 |
 | [LG(3,6) / O(1)+O(1)](#lg36o1o1) | 4 | 2 | 5 |
@@ -41,7 +41,6 @@ Matrices represent multiplication by $c_1(TY)$ on the returned ambient sector, w
     - **Dimension:** $7$
     - **Ambient Index:** $4$
     - **Basis Rank:** $20$
-    - **Exact data identifier:** `6d625eb08919`
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
@@ -84,7 +83,6 @@ Matrices represent multiplication by $c_1(TY)$ on the returned ambient sector, w
     - **Dimension:** $5$
     - **Ambient Index:** $2$
     - **Basis Rank:** $12$
-    - **Exact data identifier:** `9cb29c69a3f5`
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
@@ -119,7 +117,6 @@ Matrices represent multiplication by $c_1(TY)$ on the returned ambient sector, w
     - **Dimension:** $5$
     - **Ambient Index:** $5$
     - **Basis Rank:** $6$
-    - **Exact data identifier:** `fd2bd6eae26b`
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
@@ -148,7 +145,6 @@ Matrices represent multiplication by $c_1(TY)$ on the returned ambient sector, w
     - **Dimension:** $5$
     - **Ambient Index:** $3$
     - **Basis Rank:** $6$
-    - **Exact data identifier:** `834882311808`
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
@@ -177,7 +173,6 @@ Matrices represent multiplication by $c_1(TY)$ on the returned ambient sector, w
     - **Dimension:** $5$
     - **Ambient Index:** $3$
     - **Basis Rank:** $6$
-    - **Exact data identifier:** `141c91366f21`
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
@@ -206,7 +201,6 @@ Matrices represent multiplication by $c_1(TY)$ on the returned ambient sector, w
     - **Dimension:** $5$
     - **Ambient Index:** $4$
     - **Basis Rank:** $6$
-    - **Exact data identifier:** `76928fabba80`
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
@@ -235,7 +229,6 @@ Matrices represent multiplication by $c_1(TY)$ on the returned ambient sector, w
     - **Dimension:** $5$
     - **Ambient Index:** $3$
     - **Basis Rank:** $6$
-    - **Exact data identifier:** `29e94da02c49`
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
@@ -264,7 +257,6 @@ Matrices represent multiplication by $c_1(TY)$ on the returned ambient sector, w
     - **Dimension:** $5$
     - **Ambient Index:** $2$
     - **Basis Rank:** $6$
-    - **Exact data identifier:** `10e047830d24`
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
@@ -286,14 +278,13 @@ Matrices represent multiplication by $c_1(TY)$ on the returned ambient sector, w
 
 <span id="fl125o01o02o10gm20"></span>
 
-??? example "Fl(1,2,5) / O(0,1)+O(0,2)+O(1,0) (GM-20)"
+??? example "Fl(1,2,5) / O(0,1)+O(0,2)+O(1,0)"
     - **Ambient Space:** `A4`
     - **Keep Nodes:** `1,2`
     - **Bundle K:** `0,1;0,2;1,0`
     - **Dimension:** $4$
     - **Ambient Index:** $1$
     - **Basis Rank:** $9$
-    - **Exact data identifier:** `e1322438fd01`
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
@@ -327,7 +318,6 @@ Matrices represent multiplication by $c_1(TY)$ on the returned ambient sector, w
     - **Dimension:** $4$
     - **Ambient Index:** $2$
     - **Basis Rank:** $9$
-    - **Exact data identifier:** `3ed191207b19`
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
@@ -359,7 +349,6 @@ Matrices represent multiplication by $c_1(TY)$ on the returned ambient sector, w
     - **Dimension:** $4$
     - **Ambient Index:** $2$
     - **Basis Rank:** $5$
-    - **Exact data identifier:** `b9a91f8b2a8f`
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
@@ -387,7 +376,6 @@ Matrices represent multiplication by $c_1(TY)$ on the returned ambient sector, w
     - **Dimension:** $4$
     - **Ambient Index:** $2$
     - **Basis Rank:** $5$
-    - **Exact data identifier:** `5a3d521e7212`
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
@@ -415,7 +403,6 @@ Matrices represent multiplication by $c_1(TY)$ on the returned ambient sector, w
     - **Dimension:** $4$
     - **Ambient Index:** $2$
     - **Basis Rank:** $5$
-    - **Exact data identifier:** `176397975a00`
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
@@ -443,7 +430,6 @@ Matrices represent multiplication by $c_1(TY)$ on the returned ambient sector, w
     - **Dimension:** $3$
     - **Ambient Index:** $1$
     - **Basis Rank:** $6$
-    - **Exact data identifier:** `34fec398819e`
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
@@ -472,7 +458,6 @@ Matrices represent multiplication by $c_1(TY)$ on the returned ambient sector, w
     - **Dimension:** $3$
     - **Ambient Index:** $1$
     - **Basis Rank:** $6$
-    - **Exact data identifier:** `d3154e614ad6`
 
     ??? note "Quantum Matrix ($y=1$)"
         $$

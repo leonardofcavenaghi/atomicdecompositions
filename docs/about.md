@@ -30,4 +30,4 @@ website development under the contributors’ mathematical supervision.
 
 The threefold classification follows [Fanography](https://www.fanography.info/).
 The mathematical formulas, conventions and verification procedures are
-described in [Methods and conventions](methodology.md).
+described in the [flag methods](methodology.md) and [toric methods](toric/mathematics.md).

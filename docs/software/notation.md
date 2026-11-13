@@ -4,7 +4,7 @@ description: Parameter naming, beta coordinates and compatibility choices for th
 
 # Notation and compatibility
 
-The prepared flag builds default to Paper notation. Naming is separate from the curve lattice and does not change any localization coefficient.
+Flag versions 1.0.6.dev0 and 1.1.0.dev1 default to the convention named `paper`. Naming is separate from the curve lattice and does not change any localization coefficient.
 
 | Target family | Default paper labels | Example |
 |---|---|---|

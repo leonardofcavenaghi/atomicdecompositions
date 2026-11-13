@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Check the built site's sitemap, canonical URLs, and search metadata."""
 import argparse
+import json
 from html.parser import HTMLParser
 from pathlib import Path
 import xml.etree.ElementTree as ET
@@ -44,6 +45,13 @@ def validate(directory):
     assert 'Disallow: /' not in robots, 'Project robots.txt denies crawling'
     assert f'Sitemap: {BASE}sitemap.xml' in robots, 'Missing sitemap instruction'
     assert not (directory / 'peskine').exists(), 'Withdrawn example still built'
+    index = json.loads((directory / 'search/search_index.json').read_text())
+    records = json.loads((directory / 'data/catalog-records.json').read_text())['records']
+    indexed = {doc['location']: doc for doc in index['docs']}
+    for record in records:
+        if record['link'].startswith('records/'):
+            doc = indexed['catalog/' + record['link'].replace('.md', '/')]
+            assert all(keyword in doc['text'] for keyword in record['keywords']), record['id']
     print(f'Search metadata validation passed: {len(urls)} canonical pages')
 
 

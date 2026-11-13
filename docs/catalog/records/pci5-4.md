@@ -1,20 +1,20 @@
 ---
-title: "Quartic fivefold in P⁶ — PCI5-4"
-description: Exact fan inputs, ordered ambient basis, symbolic quantum multiplication and saved computation notes for PCI5-4.
+title: "Quartic fivefold in P⁶"
+description: "Exact inputs, ordered basis, quantum multiplication and connection exponents for Quartic fivefold in P⁶."
+keywords: ["dimension 5", "fivefold", "Projective complete intersection", "Fano", "quantum cohomology", "Gromov-Witten", "Hodge diamond", "quantum multiplication", "connection exponents", "Quartic fivefold in P⁶", "projective space", "regularized exponent multiset", "repeated exponents"]
 ---
 
 # Quartic fivefold in \(\mathbb P^{6}\)
 
 **Geometric presentation.** Ambient variety: \(\mathbb P^{6}\). Defining multidegrees in this factor order: `[[4]]`.
 
-Source identifier: **PCI5-4**; see [CKP and HLM terminology](../sources.md). The presentation is verified by the [fan and divisor certificate](../../data/geometric-presentations.json).
+See the [fan and divisor certificate](../../data/geometric-presentations.json).
 
-**Construction:** Projective complete intersection. **Dimension:** 5. **Index in source:** 3. **h(1,1):** 1.
+**Construction:** Projective complete intersection. **Dimension:** 5. **Index:** 3. **h(1,1):** 1.
 
 
 [Catalogue](../index.md) · [5-folds](../fivefolds.md)
 
-Saved record: **complete**. Matrix coefficients are exact; connection-factor notes below are retained. This page transcribes a completed computation, without rerunning localization.
 
 <!-- saved-exponent-summary:start -->
 ## Regularized exponent multisets
@@ -23,16 +23,16 @@ Analysis point: `y1=2`. These lists describe the computed ambient connection. Ev
 
 The characteristic factors below use \(K^F=-A\), so an eigenvalue \(\lambda\) of \(A=c_1\star\) satisfies \(p_i(-\lambda)=0\). The classes are powers modulo \(\mathbb Z\); their order does not pair them term by term with the powers.
 
-| Spectral condition | Multiplicity per eigenvalue | \(F_{b,\lambda}\) | Saved computation |
+| Spectral condition | Multiplicity per eigenvalue | \(F_{b,\lambda}\) | Computation |
 |---|---:|---|---|
 | \(p_{1}(-\lambda)=0\) | 3 | \(\{\!\{0,\ \frac{1}{4},\ \frac{3}{4}\}\!\}\) | Complete |
 | \(p_{2}(-\lambda)=0\) | 1 | \(\{\!\{0\}\!\}\) | Complete |
 | \(p_{3}(-\lambda)=0\) | 1 | \(\{\!\{0\}\!\}\) | Complete |
 
-Unresolved factors have no computed multiset here. These ambient data alone do not identify full atoms or establish a rationality result. See the [connection conventions](../../toric/mathematics.md).
+These ambient data alone do not identify full atoms or establish a rationality result. See the [connection conventions](../../toric/mathematics.md).
 <!-- saved-exponent-summary:end -->
 
-## PCI5-4 --- construction and Hodge data
+## Construction and Hodge data
 
 A smooth complete intersection of multidegree $(4)$ in $\mathbb P^{6}$.
 Adjunction gives $-K_X=3H$.
@@ -56,7 +56,7 @@ chern_numbers = {'c1_5': 972, 'c1_3_c2': 972, 'c1_c2_2': 972, 'c1_2_c3': -36, 'c
 
 ### Exact software inputs
 
-Executable input: `examples/fivefolds_positive/inputs/PCI5-4.py`. Ray order and zero-based cone indices must be preserved; K consists of full ray-coefficient rows.
+Ray order and zero-based cone indices must be preserved; K consists of full ray-coefficient rows.
 
 ```python
 rays = [[1, 0, 0, 0, 0, 0], [0, 1, 0, 0, 0, 0], [0, 0, 1, 0, 0, 0], [0, 0, 0, 1, 0, 0],
@@ -76,11 +76,6 @@ novikov_divisors = [[1, 0, 0, 0, 0, 0, 0]]
 h2_basis = [[1, 1, 1, 1, 1, 1, 1]]
 ```
 
-### Computation record
-
-**Status:**  complete. Snapshot: 2026-11-09 18:05 UTC.
-Checkpoint directory: `examples/fivefolds_positive/batch_results/PCI5-4/`.
-
 ### Computed quantum multiplication
 
 Write $M=c_1(X)\star$ and use the ordered basis $e_0,\ldots,e_{5}$ below. Columns are images: $M e_j=\sum_i M_{ij}e_i$.
@@ -88,7 +83,6 @@ Write $M=c_1(X)\star$ and use the ordered basis $e_0,\ldots,e_{5}$ below. Column
 ```python
 basis = ['1', 'x0', 'x0^2', 'x0^3', 'x0^4', 'x0^5']
 ```
-
 
 
 $$
@@ -100,7 +94,6 @@ $$
 
 | Row $i$ | Column $j$ | $M_{ij}$ |
 |---|---|---|
-| Row $i$ | Column $j$ | $M_{ij}$ |
 | 0 | 2 | $72 y_{1}$ |
 | 0 | 5 | $1728 y_{1}^{2}$ |
 | 1 | 0 | $3$ |
@@ -112,15 +105,13 @@ $$
 | 4 | 3 | $3$ |
 | 5 | 4 | $3$ |
 
-Enumeration mode: positive; 3 curve classes including zero. Matrix computation time: 0.01 minutes.
-Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
+Curve enumeration: positive; 3 curve classes including zero.
 
-## PCI5-4 --- spectrum and connection
+## Spectrum and connection
 
 **Specialization:**  $y_1=2$. The connection operator is $K^F=-M$. The exact factors below refer to $K^F$; the numerical eigenvalues refer to $M=c_1\star$.
 
 ### Exact characteristic polynomial of $K^F$
-
 
 
 $$
@@ -128,20 +119,14 @@ $$
 $$
 
 
-
-
 $$
 \begin{aligned}p_{1}(x)&=x.\end{aligned}
 $$
 
 
-
-
 $$
 \begin{aligned}p_{2}(x)&=x + 24.\end{aligned}
 $$
-
-
 
 
 $$
@@ -171,5 +156,3 @@ Values are rounded to eight significant digits; repeated eigenvalues are retaine
 
 Powers and residue classes are multisets for each eigenvalue in the indicated factor, not paired lists. A simple-factor power applies at every root of that factor.
 Recursion obstruction for $p_{1}$: $\frac{\left(2 s + 2\right) \left(4 s + 1\right) \left(4 s + 7\right)}{27}$.
-
-**Search aliases:** PCI5-4; dimension 5; fivefold; Projective complete intersection; Fano; quantum cohomology; Gromov-Witten; Hodge diamond; quantum multiplication; connection exponents; Quartic fivefold in P⁶; projective space; regularized exponent multiset; repeated exponents.

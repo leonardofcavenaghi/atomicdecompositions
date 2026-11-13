@@ -4,7 +4,7 @@ description: Compute toric GW invariants, ambient quantum multiplication and sup
 
 # How to use version 1.1.0.dev1 toric software
 
-This guide describes the prepared development version `1.1.0.dev1`. Install the complete bundle as described in [Installation](../installation.md). The toric engine imports shared `gwflags` infrastructure; `gwtoric/` alone is not a complete distribution.
+This guide describes the development version `1.1.0.dev1`. Install the complete bundle as described in [Installation](../installation.md). The toric engine imports shared `gwflags` infrastructure; `gwtoric/` alone is not a complete distribution.
 
 ## Launch the interface
 

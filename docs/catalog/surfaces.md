@@ -6,7 +6,7 @@ description: Surfaces in the universal catalogue, with construction, recorded in
 
 [Universal catalogue](index.md) · [Conventions and downloads](datasets.md)
 
-**13 saved computation records.** This list groups geometric presentations by dimension, independently of the computation engine. Within the dimension, records are ordered by recorded Chern index and name. Multiple presentations can describe the same variety; no automatic identification is asserted.
+Presentations are ordered by recorded Chern index and geometric name.
 
 | Geometry | Ambient presentation | Dimension | Recorded Chern index | Ambient matrix rank | h(1,1) | Analysis |
 |---|---|---:|---:|---:|---:|---|

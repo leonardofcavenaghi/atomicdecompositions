@@ -14,7 +14,7 @@ GEOATOMS brings together geometric examples, exact genus-zero Gromov–Witten co
 
 Browse [surfaces](catalog/surfaces.md), [threefolds](catalog/threefolds.md), [fourfolds](catalog/fourfolds.md), [fivefolds](catalog/fivefolds.md), or the [full dimension index](catalog/index.md). Compare complete intersections in projective spaces, Grassmannians, homogeneous spaces and projective bundles in the same geometric collection.
 
-The catalogue contains **301 saved computation records**, including **168 newly published fan-based matrices** and **two additional homogeneous complete intersections**. These count presentations and computations, not distinct varieties. Each record preserves its basis and conventions; unresolved connection factors remain explicit.
+Each example brings together its geometric construction, exact inputs, quantum multiplication data and available Hodge and atomic invariants. [Atomic invariants](catalog/atomic-invariants.md) explains the cyclicity criterion and its hypotheses.
 
 ## Two input models, one documented collection
 
@@ -42,4 +42,4 @@ Describe a smooth projective ambient using rays, maximal cones and defining divi
 </div>
 </div>
 
-The new software downloads retain development version labels. The preserved stable flag release is [v1.0.5](https://github.com/leonardofcavenaghi/atomicdecompositions/archive/refs/tags/v1.0.5.zip). See [installation choices](installation.md), [version differences](software/changes.md), and [release notes](releases.md).
+The current software downloads are development versions. The preserved stable flag release is [v1.0.5](https://github.com/leonardofcavenaghi/atomicdecompositions/archive/refs/tags/v1.0.5.zip). See [installation choices](installation.md), [version differences](software/changes.md), and [release notes](releases.md).

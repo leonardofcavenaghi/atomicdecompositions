@@ -1,20 +1,20 @@
 ---
-title: "Verra fourfold — HLM-29"
-description: Exact fan inputs, ordered ambient basis, symbolic quantum multiplication and saved computation notes for HLM-29.
+title: "Verra fourfold (HLM-29)"
+description: "Exact inputs, ordered basis, quantum multiplication and connection exponents for Verra fourfold (HLM-29)."
+keywords: ["HLM-29", "dimension 4", "fourfold", "Verra fourfold", "Fano", "quantum cohomology", "Gromov-Witten", "Hodge diamond", "quantum multiplication", "connection exponents", "Hausen Laface Mauz", "HLM", "split projective bundle", "regularized exponent multiset", "repeated exponents"]
 ---
 
 # Verra fourfold
 
 **Geometric presentation.** Ambient variety: \(\mathbb P_{\mathbb P^{2}}(\mathcal O\oplus \mathcal O(1)^{\oplus 3})\), in the quotient convention. With \(H\) the pullback of the base hyperplane class and \(\xi=c_1(\mathcal O(1))\), the defining divisors are \(2\xi\).
 
-Source identifier: **HLM-29**; see [CKP and HLM terminology](../sources.md). The presentation is verified by the [fan and divisor certificate](../../data/geometric-presentations.json).
+Source identifier: **HLM-29**; see [CKP and HLM terminology](../sources.md). See the [fan and divisor certificate](../../data/geometric-presentations.json).
 
-**Construction:** Verra fourfold. **Dimension:** 4. **Index in source:** 2. **h(1,1):** 2.
+**Construction:** Verra fourfold. **Dimension:** 4. **Index:** 2. **h(1,1):** 2.
 
 
 [Catalogue](../index.md) · [4-folds](../fourfolds.md)
 
-Saved record: **complete with notes**. Matrix coefficients are exact; connection-factor notes below are retained. This page transcribes a completed computation, without rerunning localization.
 
 <!-- saved-exponent-summary:start -->
 ## Regularized exponent multisets
@@ -23,7 +23,7 @@ Analysis point: `y1=2, y2=3`. These lists describe the computed ambient connecti
 
 The characteristic factors below use \(K^F=-A\), so an eigenvalue \(\lambda\) of \(A=c_1\star\) satisfies \(p_i(-\lambda)=0\). The classes are powers modulo \(\mathbb Z\); their order does not pair them term by term with the powers.
 
-| Spectral condition | Multiplicity per eigenvalue | \(F_{b,\lambda}\) | Saved computation |
+| Spectral condition | Multiplicity per eigenvalue | \(F_{b,\lambda}\) | Computation |
 |---|---:|---|---|
 | \(p_{1}(-\lambda)=0\) | 3 | Unresolved | Unresolved |
 | \(p_{2}(-\lambda)=0\) | 1 | \(\{\!\{0\}\!\}\) | Complete |
@@ -31,9 +31,9 @@ The characteristic factors below use \(K^F=-A\), so an eigenvalue \(\lambda\) of
 Unresolved factors have no computed multiset here. These ambient data alone do not identify full atoms or establish a rationality result. See the [connection conventions](../../toric/mathematics.md).
 <!-- saved-exponent-summary:end -->
 
-## HLM-29 --- geometry and Hodge diamond
+## Geometry and Hodge diamond
 
-**Selection:**  nef_additional.
+**Positivity:** nef defining divisors.
 Verra fourfold
 **Hodge source:**  HLM-29, HLM Proposition 7.2, [1907.08000v3](https://arxiv.org/abs/1907.08000v3).
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $2$, $(-K_X)^4=192$, $e(X)=30$.
@@ -77,16 +77,7 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x3', 'x0', 'x3^2', 'x0^2', 'x0*x3', 'x0*x3^2', 'x0^2*x3', 'x0*x3^3']
 ```
 
-## HLM-29 --- computation record
-
-**Status:**  complete_with_notes.
-**Checkpoint directory:** 
-
-```python
-examples/additional_fourfolds/batch_results/HLM-29
-```
-
-Enumeration: mori; 6 classes including zero.
+Curve enumeration: mori; 6 classes including zero.
 
 ### Quantum multiplication by $c_1(X)$
 
@@ -97,11 +88,9 @@ basis = ['1', 'x3', 'x0', 'x3^2', 'x0^2', 'x0*x3', 'x0*x3^2', 'x0^2*x3', 'x0*x3^
 ```
 
 
-
 $$
 \mathrm{Gr}=\operatorname{diag}(-2,-1,-1,0,0,0,1,1,2)
 $$
-
 
 
 | $i$ | $j$ | $M_{ij}$ |
@@ -135,18 +124,15 @@ $$
 | 8 | 6 | $2$ |
 | 8 | 7 | $\frac{2}{3}$ |
 
-Matrix time: 0.14 minutes. Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
 
 ### Specialized spectrum
 
 At $y_1=2,\ y_2=3$, let $K^F=-M$.
 
 
-
 $$
 \Delta=0
 $$
-
 
 
 Cyclic at this point: False.
@@ -169,11 +155,9 @@ Numerical eigenvalues of $M$ (multiplicities retained):
 Factor 1: multiplicity 3; 1 distinct root(s) of $\det(xI-K^F)$.
 
 
-
 $$
 \begin{aligned}p_{1}(x)&=x\end{aligned}
 $$
-
 
 
 Complete exponent computation: False.
@@ -186,13 +170,9 @@ the eigenvalue 0 has a 3-dimensional kernel, so its generalized eigenspace is no
 Factor 2: multiplicity 1; 6 distinct root(s) of $\det(xI-K^F)$.
 
 
-
 $$
 \begin{aligned}p_{2}(x)&=x^{6} - 432 x^{4} - 62208 x^{2} - 2985984\end{aligned}
 $$
-
-
-
 
 
 $$
@@ -200,16 +180,10 @@ $$
 $$
 
 
-
-
-
 $$
 \text{Classes modulo }\mathbb Z=\{0\}
 $$
 
 
-
 Complete exponent computation: True.
 Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
-
-**Search aliases:** HLM-29; dimension 4; fourfold; Verra fourfold; Fano; quantum cohomology; Gromov-Witten; Hodge diamond; quantum multiplication; connection exponents; Hausen Laface Mauz; HLM; split projective bundle; regularized exponent multiset; repeated exponents.

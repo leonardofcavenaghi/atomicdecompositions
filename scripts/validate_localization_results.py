@@ -88,7 +88,7 @@ def validate():
                     assert coefficient.is_Rational, (name, 'nonrational coefficient')
         targets = record['catalog_aliases'] or [{'page': record['catalog_page'], 'title': name}]
         for target in targets:
-            card = catalog_cards.get((target['page'], target['title']))
+            card = catalog_cards.get((target['page'], target['title'].removesuffix(' (GM-20)')))
             if card is None:
                 assert target['page'] == 'flag_varieties.md', (name, 'missing catalog card')
                 continue

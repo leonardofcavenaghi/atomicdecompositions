@@ -20,23 +20,36 @@ jobs:
           github.event.workflow_run.head_branch == 'main' }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout validated source
         uses: actions/checkout@v4
         with:
           ref: ${{ github.event.workflow_run.head_sha }}
           fetch-depth: 0
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
-      - name: Install documentation dependencies
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: scripts/package-lock.json
+
+      - name: Install documentation and rendering dependencies
         run: |
           python -m pip install --upgrade pip
           python -m pip install -r requirements-docs.txt
+          npm ci --prefix scripts
 
-      - name: Deploy to GitHub Pages
+      - name: Build validated documentation and render all equations
+        run: |
+          mkdocs build --strict
+          python scripts/validate_search_metadata.py
+          python scripts/validate_release_metadata.py
+          node scripts/render_static_math.js
+
+      - name: Publish rendered pages
         env:
           VALIDATED_SHA: ${{ github.event.workflow_run.head_sha }}
         run: |
@@ -45,7 +58,4 @@ jobs:
             echo "Skipping superseded documentation build: $VALIDATED_SHA"
             exit 0
           fi
-          mkdocs build --strict
-          python scripts/validate_search_metadata.py
-          python scripts/validate_release_metadata.py
-          mkdocs gh-deploy --force
+          ghp-import -n -p -f -m "Deploy $VALIDATED_SHA" site

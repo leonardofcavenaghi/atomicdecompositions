@@ -102,6 +102,12 @@ window.MathJax = {
 
   function typesetArticle() {
     revealHash();
+    // Published pages already contain complete SVG and accessible MathML.
+    // The browser runtime is needed only for newly inserted source content.
+    var pendingSource = Array.from(document.querySelectorAll('.arithmatex')).some(function (node) {
+      return !node.querySelector('mjx-container');
+    });
+    if (!pendingSource) { clearNotice(); return; }
     requested = true;
     var math = window.MathJax;
     if (!math || typeof math.typesetPromise !== "function") { loadRuntime(); return; }
@@ -188,7 +194,7 @@ window.MathJax = {
     if (addedMath) typesetArticle();
   });
   observer.observe(document.body, {childList: true, subtree: true});
-  loadRuntime();
+  typesetArticle();
 })();
 
 })();

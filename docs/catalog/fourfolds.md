@@ -6,9 +6,7 @@ description: Fourfolds in the universal catalogue, with construction, recorded i
 
 [Universal catalogue](index.md) · [Conventions and downloads](datasets.md)
 
-**124 saved computation records.** This list groups geometric presentations by dimension, independently of the computation engine. Within the dimension, records are ordered by recorded Chern index and name. Multiple presentations can describe the same variety; no automatic identification is asserted.
-
-The new fourfold records use CKP period buckets and HLM families. Equal periods alone do not identify varieties. For nef non-ample examples the Hodge data are attributed to the literature in each record. Of the 96 new matrices, 53 have complete saved analysis and 43 retain connection-factor notes.
+Presentations are ordered by recorded Chern index and geometric name.
 
 | Geometry | Ambient presentation | Dimension | Recorded Chern index | Ambient matrix rank | h(1,1) | Analysis |
 |---|---|---:|---:|---:|---:|---|
@@ -43,8 +41,6 @@ The new fourfold records use CKP period buckets and HLM families. Equal periods 
 | [Section of P_{P³}(O^2 ⊕ O(1)) by ξ+H (CKP-061)](records/ckp-061.md) | Smooth projective 5-fold (ambient Picard rank 2) | 4 | 2 | 9 | 2 | Matrix complete; exponent multisets complete · [Atomic invariants](invariants-fourfolds.md#ckp-061) |
 | [Section of P_{P⁴}(O ⊕ O(1)) by 2H (CKP-060)](records/ckp-060.md) | Smooth projective 5-fold (ambient Picard rank 2) | 4 | 2 | 8 | 2 | Matrix complete; exponent multisets complete · [Atomic invariants](invariants-fourfolds.md#ckp-060) |
 | [Verra fourfold (HLM-29)](records/hlm-29.md) | Smooth projective 5-fold (ambient Picard rank 2) | 4 | 2 | 9 | 2 | Matrix complete; exponent multisets partial · [Atomic invariants](invariants-fourfolds.md#hlm-29) |
-| [CKP-172 — Complete intersection of codimension 1](records/ckp-172.md) | Smooth projective 5-fold (ambient Picard rank 3) | 4 | 1 | 12 | 3 | Matrix complete; exponent multisets partial · [Atomic invariants](invariants-fourfolds.md#ckp-172) |
-| [CKP-320 — Complete intersection of codimension 1](records/ckp-320.md) | Smooth projective 5-fold (ambient Picard rank 3) | 4 | 1 | 13 | 3 | Matrix complete; exponent multisets partial · [Atomic invariants](invariants-fourfolds.md#ckp-320) |
 | [Complete intersection (2,2,2,2) in P⁸ (CKP-731)](records/ckp-731.md) | Smooth projective 8-fold (ambient Picard rank 1) | 4 | 1 | 5 | 1 | Matrix complete; exponent multisets complete · [Atomic invariants](invariants-fourfolds.md#ckp-731) |
 | [Complete intersection (2,2,3) in P⁷ (CKP-735)](records/ckp-735.md) | Smooth projective 7-fold (ambient Picard rank 1) | 4 | 1 | 5 | 1 | Matrix complete; exponent multisets complete · [Atomic invariants](invariants-fourfolds.md#ckp-735) |
 | [Complete intersection (2,4) in P⁶ (CKP-737)](records/ckp-737.md) | Smooth projective 6-fold (ambient Picard rank 1) | 4 | 1 | 5 | 1 | Matrix complete; exponent multisets complete · [Atomic invariants](invariants-fourfolds.md#ckp-737) |
@@ -79,12 +75,14 @@ The new fourfold records use CKP period buckets and HLM families. Equal periods 
 | [Complete intersection of multidegrees (2,1), (1,2) in P³ × P³ (CKP-705)](records/ckp-705.md) | Smooth projective 6-fold (ambient Picard rank 2) | 4 | 1 | 9 | 2 | Matrix complete; exponent multisets partial · [Atomic invariants](invariants-fourfolds.md#ckp-705) |
 | [Complete intersection of multidegrees (2,2) in P² × P³ (CKP-439)](records/ckp-439.md) | Smooth projective 5-fold (ambient Picard rank 2) | 4 | 1 | 9 | 2 | Matrix complete; exponent multisets complete · [Atomic invariants](invariants-fourfolds.md#ckp-439) |
 | [Complete intersection of multidegrees (2,3) in P² × P³ (CKP-726)](records/ckp-726.md) | Smooth projective 5-fold (ambient Picard rank 2) | 4 | 1 | 9 | 2 | Matrix complete; exponent multisets partial · [Atomic invariants](invariants-fourfolds.md#ckp-726) |
-| [Fl(1,2,5) / O(0,1)+O(0,2)+O(1,0) (GM-20)](additional.md#fl125o01o02o10gm20) | A4 | 4 | 1 | 9 | — | Matrix complete · [Atomic invariants](invariants-fourfolds.md#e1322438fd01) |
+| [Fl(1,2,5) / O(0,1)+O(0,2)+O(1,0)](additional.md#fl125o01o02o10gm20) | A4 | 4 | 1 | 9 | — | Matrix complete · [Atomic invariants](invariants-fourfolds.md#e1322438fd01) |
 | [Gr(2,5) / O(1)+O(3)](grassmannians.md#gr25o1o3) | A4 | 4 | 1 | 6 | — | Matrix complete · [Atomic invariants](invariants-fourfolds.md#d2a92bddd407) |
 | [Gr(2,5) / O(2)+O(2)](grassmannians.md#gr25o2o2) | A4 | 4 | 1 | 6 | — | Matrix complete · [Atomic invariants](invariants-fourfolds.md#71c4061dbdf2) |
 | [Gr(3,5) / O(1)+O(3)](grassmannians.md#gr35o1o3) | A4 | 4 | 1 | 6 | — | Matrix complete · [Atomic invariants](invariants-fourfolds.md#f418dda622c4) |
 | [Gr(3,5) / O(2)+O(2)](grassmannians.md#gr35o2o2) | A4 | 4 | 1 | 6 | — | Matrix complete · [Atomic invariants](invariants-fourfolds.md#a6bf73eeb7fb) |
 | [Hyperplane and quadric section of LG(3,6)](records/lg3-1-2.md) | C3 / kept root 3 | 4 | 1 | 5 | 1 | Matrix and exponents complete; very general irrational · [Atomic invariants](invariants-fourfolds.md#lg3-1-2) |
+| [Hypersurface in a toric fivefold (CKP-172)](records/ckp-172.md) | Smooth projective 5-fold (ambient Picard rank 3) | 4 | 1 | 12 | 3 | Matrix complete; exponent multisets partial · [Atomic invariants](invariants-fourfolds.md#ckp-172) |
+| [Hypersurface in a toric fivefold (CKP-320)](records/ckp-320.md) | Smooth projective 5-fold (ambient Picard rank 3) | 4 | 1 | 13 | 3 | Matrix complete; exponent multisets partial · [Atomic invariants](invariants-fourfolds.md#ckp-320) |
 | [P5 / O(5)](projective.md#p5o5) | A5 | 4 | 1 | 5 | — | Matrix complete · [Atomic invariants](invariants-fourfolds.md#61e63b38f5a8) |
 | [P6 / O(2)+O(4)](projective.md#p6o2o4) | A6 | 4 | 1 | 5 | — | Matrix complete · [Atomic invariants](invariants-fourfolds.md#3150500f5723) |
 | [P6 / O(3)+O(3)](projective.md#p6o3o3) | A6 | 4 | 1 | 5 | — | Matrix complete · [Atomic invariants](invariants-fourfolds.md#de2575bbb840) |

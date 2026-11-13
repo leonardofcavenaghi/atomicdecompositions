@@ -1,20 +1,20 @@
 ---
-title: "Complete intersection of multidegrees (2,4) in P² × P⁴ — PROD5-A03"
-description: Exact fan inputs, ordered ambient basis, symbolic quantum multiplication and saved computation notes for PROD5-A03.
+title: "Complete intersection of multidegrees (2,4) in P² × P⁴"
+description: "Exact inputs, ordered basis, quantum multiplication and connection exponents for Complete intersection of multidegrees (2,4) in P² × P⁴."
+keywords: ["dimension 5", "fivefold", "Complete intersection in a product of projective spaces", "Fano", "quantum cohomology", "Gromov-Witten", "Hodge diamond", "quantum multiplication", "connection exponents", "Complete intersection of multidegrees (2,4) in P² × P⁴", "product of projective spaces", "regularized exponent multiset", "repeated exponents"]
 ---
 
 # Complete intersection in \(\mathbb P^{2}\times \mathbb P^{4}\)
 
 **Geometric presentation.** Ambient variety: \(\mathbb P^{2}\times \mathbb P^{4}\). Defining multidegrees in this factor order: `[[2, 4]]`.
 
-Source identifier: **PROD5-A03**; see [CKP and HLM terminology](../sources.md). The presentation is verified by the [fan and divisor certificate](../../data/geometric-presentations.json).
+See the [fan and divisor certificate](../../data/geometric-presentations.json).
 
-**Construction:** Complete intersection in a product of projective spaces. **Dimension:** 5. **Index in source:** 1. **h(1,1):** 2.
+**Construction:** Complete intersection in a product of projective spaces. **Dimension:** 5. **Index:** 1. **h(1,1):** 2.
 
 
 [Catalogue](../index.md) · [5-folds](../fivefolds.md)
 
-Saved record: **complete with notes**. Matrix coefficients are exact; connection-factor notes below are retained. This page transcribes a completed computation, without rerunning localization.
 
 <!-- saved-exponent-summary:start -->
 ## Regularized exponent multisets
@@ -23,7 +23,7 @@ Analysis point: `y1=2, y2=3`. These lists describe the computed ambient connecti
 
 The characteristic factors below use \(K^F=-A\), so an eigenvalue \(\lambda\) of \(A=c_1\star\) satisfies \(p_i(-\lambda)=0\). The classes are powers modulo \(\mathbb Z\); their order does not pair them term by term with the powers.
 
-| Spectral condition | Multiplicity per eigenvalue | \(F_{b,\lambda}\) | Saved computation |
+| Spectral condition | Multiplicity per eigenvalue | \(F_{b,\lambda}\) | Computation |
 |---|---:|---|---|
 | \(p_{1}(-\lambda)=0\) | 7 | Unresolved | Unresolved |
 | \(p_{2}(-\lambda)=0\) | 1 | \(\{\!\{0\}\!\}\) | Complete |
@@ -31,7 +31,7 @@ The characteristic factors below use \(K^F=-A\), so an eigenvalue \(\lambda\) of
 Unresolved factors have no computed multiset here. These ambient data alone do not identify full atoms or establish a rationality result. See the [connection conventions](../../toric/mathematics.md).
 <!-- saved-exponent-summary:end -->
 
-## PROD5-A03 --- construction and Hodge data
+## Construction and Hodge data
 
 A smooth complete intersection in $Y=\mathbb P^{2}\times\mathbb P^{4}$; the rows below are the defining multidegrees in the displayed factor order.
 
@@ -62,7 +62,7 @@ chern_numbers = {'c1_5': 50, 'c1_3_c2': 238, 'c1_c2_2': 1092, 'c1_2_c3': -320, '
 
 ### Exact software inputs
 
-Executable input: `examples/fivefolds_positive/inputs/PROD5-A03.py`. Ray order and zero-based cone indices must be preserved; K consists of full ray-coefficient rows.
+Ray order and zero-based cone indices must be preserved; K consists of full ray-coefficient rows.
 
 ```python
 rays = [[1, 0, 0, 0, 0, 0], [0, 1, 0, 0, 0, 0], [-1, -1, 0, 0, 0, 0], [0, 0, 1, 0, 0, 0],
@@ -85,11 +85,6 @@ novikov_divisors = [[0, 0, 0, 1, 0, 0, 0, 0], [1, 0, 0, 0, 0, 0, 0, 0]]
 h2_basis = [[1, 1, 1, 0, 0, 0, 0, 0], [0, 0, 0, 1, 1, 1, 1, 1]]
 ```
 
-### Computation record
-
-**Status:**  complete with notes. Snapshot: 2026-11-09 18:05 UTC.
-Checkpoint directory: `examples/fivefolds_positive/batch_results/PROD5-A03/`.
-
 ### Computed quantum multiplication
 
 Write $M=c_1(X)\star$ and use the ordered basis $e_0,\ldots,e_{11}$ below. Columns are images: $M e_j=\sum_i M_{ij}e_i$.
@@ -97,7 +92,6 @@ Write $M=c_1(X)\star$ and use the ordered basis $e_0,\ldots,e_{11}$ below. Colum
 ```python
 basis = ['1', 'x3', 'x0', 'x3^2', 'x0^2', 'x0*x3', 'x3^3', 'x0*x3^2', 'x0^2*x3', 'x3^4', 'x0*x3^3', 'x0*x3^4']
 ```
-
 
 
 $$
@@ -109,7 +103,6 @@ $$
 
 | Row $i$ | Column $j$ | $M_{ij}$ |
 |---|---|---|
-| Row $i$ | Column $j$ | $M_{ij}$ |
 | 0 | 1 | $3888 y_{1}^{2} + 1344 y_{1} y_{2}$ |
 | 0 | 2 | $1344 y_{1} y_{2} + 4 y_{2}^{2}$ |
 | 0 | 3 | $504576 y_{1}^{3} + 774144 y_{1}^{2} y_{2} + 10272 y_{1} y_{2}^{2}$ |
@@ -212,15 +205,13 @@ $$
 | 11 | 9 | $1$ |
 | 11 | 10 | $3$ |
 
-Enumeration mode: positive; 26 curve classes including zero. Matrix computation time: 103.36 minutes.
-Saved checks: matrix rank, basis, Poincare pairing, unit column, c1 homogeneity.
+Curve enumeration: positive; 26 curve classes including zero.
 
-## PROD5-A03 --- spectrum and connection
+## Spectrum and connection
 
 **Specialization:**  $y_1=2,\ y_2=3$. The connection operator is $K^F=-M$. The exact factors below refer to $K^F$; the numerical eigenvalues refer to $M=c_1\star$.
 
 ### Exact characteristic polynomial of $K^F$
-
 
 
 $$
@@ -228,13 +219,9 @@ $$
 $$
 
 
-
-
 $$
 \begin{aligned}p_{1}(x)&=x - 54.\end{aligned}
 $$
-
-
 
 
 $$
@@ -266,5 +253,3 @@ Values are rounded to eight significant digits; repeated eigenvalues are retaine
 
 Powers and residue classes are multisets for each eigenvalue in the indicated factor, not paired lists. A simple-factor power applies at every root of that factor.
 **Unresolved factor $p_{1}$:**  the eigenvalue 54 has a 2-dimensional kernel, so its generalized eigenspace is not a single Jordan block and the factor is not cyclic (check cyclic_determinant first).
-
-**Search aliases:** PROD5-A03; dimension 5; fivefold; Complete intersection in a product of projective spaces; Fano; quantum cohomology; Gromov-Witten; Hodge diamond; quantum multiplication; connection exponents; Complete intersection of multidegrees (2,4) in P² × P⁴; product of projective spaces; regularized exponent multiset; repeated exponents.

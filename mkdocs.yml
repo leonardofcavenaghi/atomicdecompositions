@@ -62,6 +62,9 @@ markdown_extensions:
       permalink: true
       toc_depth: 3
 
+hooks:
+  - scripts/search_keywords.py
+
 plugins:
   - search
 
@@ -69,7 +72,7 @@ extra_javascript:
   - https://code.jquery.com/jquery-3.7.0.min.js
   - https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js
   - javascripts/catalog.js
-  - javascripts/mathjax-loader.js
+  - javascripts/mathjax-loader-v2.js
 
 extra_css:
   - https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css
@@ -104,12 +107,12 @@ nav:
       - Flag 1.1.0.dev1: software/flags-1.1.0.md
       - Toric 1.1.0.dev1: software/toric-1.1.0.md
       - Combined 1.1.0.dev1: software/combined.md
-      - Changes in this launch: software/launch-2026-11.md
+      - Version comparison: software/launch-2026-11.md
       - Inputs and outputs: software/input-output.md
       - Notation and compatibility: software/notation.md
       - Version differences: software/changes.md
       - Preserved flag 1.0.5: software/flags-legacy.md
       - Python API: api-reference.md
       - Release notes: releases.md
-      - Validation and publication: software/launch-plan.md
+      - Validation and reproducibility: software/launch-plan.md
   - About: about.md

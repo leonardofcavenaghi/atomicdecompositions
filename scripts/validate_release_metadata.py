@@ -11,7 +11,8 @@ readme = (ROOT/'README.md').read_text()
 releases = (ROOT/'docs/releases.md').read_text()
 assert f'`{version}`' in readme, 'README does not identify package version'
 if '.dev' in version:
-    assert f'## Current development version: {version}' in releases
+    assert '## Development versions' in releases
+    assert re.search(r'(?<![0-9.])' + re.escape(version) + r'(?![0-9.])', releases), 'Release notes omit current development version'
 tags = subprocess.check_output(['git','tag','--list','v*','--sort=-version:refname'],
                                cwd=ROOT,text=True).splitlines()
 if tags:
