@@ -434,6 +434,8 @@
       
         
       
+        
+      
     
     
     
@@ -755,6 +757,34 @@
     
   
     Fano threefold reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../catalog/sources/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sources and terminology
   
 
     
@@ -1558,12 +1588,12 @@ parabolic, in the order used for Picard coordinates. For example,
 <code>FlagVariety("A4", [2])</code> is <code>Gr(2,5)</code>, and
 <code>FlagVariety("A2xA2", [1,3])</code> is <code>P² × P²</code>.</p>
 <h3 id="curve-classes-beta">Curve classes (<code>beta</code>)<a class="headerlink" href="#curve-classes-beta" title="Permanent link">&para;</a></h3>
-<p>A curve class is written
-[
-  \beta=(b_{i_1},\ldots,b_{i_\rho}),
-  \qquad (i_1,\ldots,i_\rho)=\texttt{roots_that_stay},
-]
-where the entries are nonnegative integers in the kept simple-coroot basis.
+<p>A curve class is written</p>
+<div class="arithmatex">\[
+\beta=(b_{i_1},\ldots,b_{i_\rho}),
+  \qquad (i_1,\ldots,i_\rho)=\texttt{roots\_that\_stay},
+\]</div>
+<p>where the entries are nonnegative integers in the kept simple-coroot basis.
 The public methods accept this compact vector and embed it at the ambient
 Bourbaki nodes. A zero-padded ambient vector of length <code>rank</code> is also accepted,
 but every removed-node entry must be zero. For <code>A3 --keep 2</code>, <code>(1)</code> and

@@ -1,0 +1,5965 @@
+{
+  "method": "Exact fan combinatorics, primitive collections, unimodular cone bases and divisor-class relations; no identification solely by periods",
+  "records": [
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 2,
+      "fibre_dimension": 3,
+      "twists": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 2,
+          "H": 0
+        }
+      ],
+      "base_rays": [
+        4,
+        5,
+        6
+      ],
+      "fibre_rays": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "ray_twists": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "HLM-29"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 3,
+      "fibre_dimension": 2,
+      "twists": [
+        0,
+        2,
+        2
+      ],
+      "defining_divisors": [
+        {
+          "xi": 2,
+          "H": 0
+        }
+      ],
+      "base_rays": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "fibre_rays": [
+        0,
+        1,
+        2
+      ],
+      "ray_twists": [
+        2,
+        2,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "HLM-27"
+    },
+    {
+      "status": "verified",
+      "kind": "projective space",
+      "dimensions": [
+        5
+      ],
+      "defining_degrees": [
+        [
+          1
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "CKP-001"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        1,
+        4
+      ],
+      "defining_degrees": [
+        [
+          1,
+          1
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2,
+          3,
+          4,
+          6
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "CKP-002"
+    },
+    {
+      "status": "verified",
+      "kind": "projective space",
+      "dimensions": [
+        5
+      ],
+      "defining_degrees": [
+        [
+          2
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "CKP-003"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 4,
+      "fibre_dimension": 1,
+      "twists": [
+        0,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 1,
+          "H": 1
+        }
+      ],
+      "base_rays": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "fibre_rays": [
+        0,
+        5
+      ],
+      "ray_twists": [
+        1,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "CKP-004"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 4,
+      "fibre_dimension": 1,
+      "twists": [
+        0,
+        2
+      ],
+      "defining_divisors": [
+        {
+          "xi": 1,
+          "H": 1
+        }
+      ],
+      "base_rays": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "fibre_rays": [
+        0,
+        5
+      ],
+      "ray_twists": [
+        2,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "CKP-005"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 4,
+      "fibre_dimension": 1,
+      "twists": [
+        0,
+        3
+      ],
+      "defining_divisors": [
+        {
+          "xi": 1,
+          "H": 1
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        2,
+        3,
+        5
+      ],
+      "fibre_rays": [
+        4,
+        6
+      ],
+      "ray_twists": [
+        3,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "CKP-006"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 2,
+      "fibre_dimension": 3,
+      "twists": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 1,
+          "H": 1
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        5
+      ],
+      "fibre_rays": [
+        2,
+        3,
+        4,
+        6
+      ],
+      "ray_twists": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "CKP-014"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        2,
+        4
+      ],
+      "defining_degrees": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          6
+        ],
+        [
+          2,
+          3,
+          4,
+          5,
+          7
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "CKP-018"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 1,
+      "fibre_dimension": 4,
+      "twists": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 2,
+          "H": 0
+        }
+      ],
+      "base_rays": [
+        0,
+        5
+      ],
+      "fibre_rays": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "ray_twists": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "CKP-026"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        1,
+        4
+      ],
+      "defining_degrees": [
+        [
+          1,
+          2
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2,
+          3,
+          4,
+          6
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "CKP-030"
+    },
+    {
+      "status": "verified",
+      "kind": "projective space",
+      "dimensions": [
+        6
+      ],
+      "defining_degrees": [
+        [
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "CKP-033"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 4,
+      "fibre_dimension": 2,
+      "twists": [
+        0,
+        0,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 1,
+          "H": 1
+        },
+        {
+          "xi": 1,
+          "H": 1
+        }
+      ],
+      "base_rays": [
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "fibre_rays": [
+        0,
+        1,
+        6
+      ],
+      "ray_twists": [
+        0,
+        1,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "CKP-036"
+    },
+    {
+      "status": "verified",
+      "kind": "projective space",
+      "dimensions": [
+        5
+      ],
+      "defining_degrees": [
+        [
+          3
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "CKP-037"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 4,
+      "fibre_dimension": 1,
+      "twists": [
+        0,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 1,
+          "H": 2
+        }
+      ],
+      "base_rays": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "fibre_rays": [
+        0,
+        5
+      ],
+      "ray_twists": [
+        1,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "CKP-039"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 4,
+      "fibre_dimension": 2,
+      "twists": [
+        0,
+        0,
+        2
+      ],
+      "defining_divisors": [
+        {
+          "xi": 1,
+          "H": 1
+        },
+        {
+          "xi": 1,
+          "H": 1
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        2,
+        3,
+        6
+      ],
+      "fibre_rays": [
+        4,
+        5,
+        7
+      ],
+      "ray_twists": [
+        0,
+        2,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "CKP-040"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 4,
+      "fibre_dimension": 1,
+      "twists": [
+        0,
+        2
+      ],
+      "defining_divisors": [
+        {
+          "xi": 1,
+          "H": 2
+        }
+      ],
+      "base_rays": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "fibre_rays": [
+        0,
+        5
+      ],
+      "ray_twists": [
+        2,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "CKP-041"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 4,
+      "fibre_dimension": 1,
+      "twists": [
+        0,
+        2
+      ],
+      "defining_divisors": [
+        {
+          "xi": 0,
+          "H": 2
+        }
+      ],
+      "base_rays": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "fibre_rays": [
+        0,
+        5
+      ],
+      "ray_twists": [
+        2,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "CKP-046"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 3,
+      "fibre_dimension": 2,
+      "twists": [
+        0,
+        0,
+        2
+      ],
+      "defining_divisors": [
+        {
+          "xi": 1,
+          "H": 1
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "fibre_rays": [
+        3,
+        4,
+        6
+      ],
+      "ray_twists": [
+        0,
+        2,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "CKP-049"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 4,
+      "fibre_dimension": 1,
+      "twists": [
+        0,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 0,
+          "H": 2
+        }
+      ],
+      "base_rays": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "fibre_rays": [
+        0,
+        5
+      ],
+      "ray_twists": [
+        1,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "CKP-060"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 3,
+      "fibre_dimension": 2,
+      "twists": [
+        0,
+        0,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 1,
+          "H": 1
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "fibre_rays": [
+        3,
+        4,
+        6
+      ],
+      "ray_twists": [
+        0,
+        1,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "CKP-061"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        2,
+        3
+      ],
+      "defining_degrees": [
+        [
+          1,
+          1
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          2,
+          3,
+          4,
+          6
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "CKP-078"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        1,
+        1,
+        3
+      ],
+      "defining_degrees": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          3,
+          4,
+          7
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "CKP-102"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        2,
+        3
+      ],
+      "defining_degrees": [
+        [
+          2,
+          1
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          2,
+          3,
+          4,
+          6
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "CKP-107"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        1,
+        4
+      ],
+      "defining_degrees": [
+        [
+          0,
+          2
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2,
+          3,
+          4,
+          6
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "CKP-111"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 3,
+      "fibre_dimension": 2,
+      "twists": [
+        0,
+        1,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 1,
+          "H": 1
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "fibre_rays": [
+        3,
+        4,
+        6
+      ],
+      "ray_twists": [
+        1,
+        1,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "CKP-114"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle over product",
+      "base_dimensions": [
+        1,
+        3
+      ],
+      "twists_vectors": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "defining_divisor_coordinates": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "base_rays": [
+        [
+          0,
+          5
+        ],
+        [
+          2,
+          3,
+          4,
+          7
+        ]
+      ],
+      "fibre_rays": [
+        1,
+        6
+      ],
+      "certificate": "Primitive collections and all product maximal cones match; a cone gives a unimodular lattice basis; fibre ray sum vanishes and the exact divisor-class matrix satisfies every lattice linear relation.",
+      "id": "CKP-144"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 3,
+      "fibre_dimension": 2,
+      "twists": [
+        0,
+        1,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 2,
+          "H": 0
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "fibre_rays": [
+        3,
+        4,
+        6
+      ],
+      "ray_twists": [
+        1,
+        1,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "CKP-145"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle over product",
+      "base_dimensions": [
+        1,
+        2
+      ],
+      "twists_vectors": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "defining_divisor_coordinates": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "base_rays": [
+        [
+          2,
+          6
+        ],
+        [
+          0,
+          1,
+          5
+        ]
+      ],
+      "fibre_rays": [
+        3,
+        4,
+        7
+      ],
+      "certificate": "Primitive collections and all product maximal cones match; a cone gives a unimodular lattice basis; fibre ray sum vanishes and the exact divisor-class matrix satisfies every lattice linear relation.",
+      "id": "CKP-155"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle over product",
+      "base_dimensions": [
+        1,
+        3
+      ],
+      "twists_vectors": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "defining_divisor_coordinates": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "base_rays": [
+        [
+          3,
+          6
+        ],
+        [
+          0,
+          1,
+          2,
+          5
+        ]
+      ],
+      "fibre_rays": [
+        4,
+        7
+      ],
+      "certificate": "Primitive collections and all product maximal cones match; a cone gives a unimodular lattice basis; fibre ray sum vanishes and the exact divisor-class matrix satisfies every lattice linear relation.",
+      "id": "CKP-157"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 3,
+      "fibre_dimension": 3,
+      "twists": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 1,
+          "H": 1
+        },
+        {
+          "xi": 1,
+          "H": 1
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        2,
+        6
+      ],
+      "fibre_rays": [
+        3,
+        4,
+        5,
+        7
+      ],
+      "ray_twists": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "CKP-160"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 4,
+      "fibre_dimension": 1,
+      "twists": [
+        0,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 0,
+          "H": 3
+        }
+      ],
+      "base_rays": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "fibre_rays": [
+        0,
+        5
+      ],
+      "ray_twists": [
+        1,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "CKP-169"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 3,
+      "fibre_dimension": 2,
+      "twists": [
+        0,
+        0,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 1,
+          "H": 2
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "fibre_rays": [
+        3,
+        4,
+        6
+      ],
+      "ray_twists": [
+        0,
+        1,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "CKP-170"
+    },
+    {
+      "status": "fan presentation retained",
+      "picard_rank": 3,
+      "id": "CKP-172"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 3,
+      "fibre_dimension": 2,
+      "twists": [
+        0,
+        0,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 2,
+          "H": 1
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "fibre_rays": [
+        3,
+        4,
+        6
+      ],
+      "ray_twists": [
+        0,
+        1,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "CKP-174"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        3,
+        4
+      ],
+      "defining_degrees": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          2,
+          7
+        ],
+        [
+          3,
+          4,
+          5,
+          6,
+          8
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "CKP-175"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 3,
+      "fibre_dimension": 2,
+      "twists": [
+        0,
+        0,
+        2
+      ],
+      "defining_divisors": [
+        {
+          "xi": 2,
+          "H": 1
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "fibre_rays": [
+        3,
+        4,
+        6
+      ],
+      "ray_twists": [
+        0,
+        2,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "CKP-179"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 2,
+      "fibre_dimension": 3,
+      "twists": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "defining_divisors": [
+        {
+          "xi": 2,
+          "H": 0
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        5
+      ],
+      "fibre_rays": [
+        2,
+        3,
+        4,
+        6
+      ],
+      "ray_twists": [
+        0,
+        0,
+        2,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "CKP-182"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 2,
+      "fibre_dimension": 3,
+      "twists": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 2,
+          "H": 0
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        5
+      ],
+      "fibre_rays": [
+        2,
+        3,
+        4,
+        6
+      ],
+      "ray_twists": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "CKP-186"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        3,
+        3
+      ],
+      "defining_degrees": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          2,
+          6
+        ],
+        [
+          3,
+          4,
+          5,
+          7
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "CKP-189"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 2,
+      "fibre_dimension": 3,
+      "twists": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 2,
+          "H": 0
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        5
+      ],
+      "fibre_rays": [
+        2,
+        3,
+        4,
+        6
+      ],
+      "ray_twists": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "CKP-233"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        1,
+        2,
+        2
+      ],
+      "defining_degrees": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2,
+          6
+        ],
+        [
+          3,
+          4,
+          7
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "CKP-247"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 2,
+      "fibre_dimension": 3,
+      "twists": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 2,
+          "H": 1
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        5
+      ],
+      "fibre_rays": [
+        2,
+        3,
+        4,
+        6
+      ],
+      "ray_twists": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "CKP-314"
+    },
+    {
+      "status": "fan presentation retained",
+      "picard_rank": 3,
+      "id": "CKP-320"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        2,
+        4
+      ],
+      "defining_degrees": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          6
+        ],
+        [
+          2,
+          3,
+          4,
+          5,
+          7
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "CKP-322"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        3,
+        3
+      ],
+      "defining_degrees": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          2,
+          6
+        ],
+        [
+          3,
+          4,
+          5,
+          7
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "CKP-323"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        2,
+        3
+      ],
+      "defining_degrees": [
+        [
+          1,
+          2
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          2,
+          3,
+          4,
+          6
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "CKP-327"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle over product",
+      "base_dimensions": [
+        2,
+        2
+      ],
+      "twists_vectors": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "defining_divisor_coordinates": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "base_rays": [
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          2,
+          3,
+          7
+        ]
+      ],
+      "fibre_rays": [
+        4,
+        6
+      ],
+      "certificate": "Primitive collections and all product maximal cones match; a cone gives a unimodular lattice basis; fibre ray sum vanishes and the exact divisor-class matrix satisfies every lattice linear relation.",
+      "id": "CKP-363"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        1,
+        1,
+        3
+      ],
+      "defining_degrees": [
+        [
+          1,
+          1,
+          2
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          3,
+          4,
+          7
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "CKP-432"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        2,
+        3
+      ],
+      "defining_degrees": [
+        [
+          2,
+          2
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          2,
+          3,
+          4,
+          6
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "CKP-439"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle over product",
+      "base_dimensions": [
+        2,
+        2
+      ],
+      "twists_vectors": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "defining_divisor_coordinates": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "base_rays": [
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          2,
+          3,
+          6
+        ]
+      ],
+      "fibre_rays": [
+        4,
+        7
+      ],
+      "certificate": "Primitive collections and all product maximal cones match; a cone gives a unimodular lattice basis; fibre ray sum vanishes and the exact divisor-class matrix satisfies every lattice linear relation.",
+      "id": "CKP-450"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        1,
+        1,
+        1,
+        2
+      ],
+      "defining_degrees": [
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          4,
+          8
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "CKP-475"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle over product",
+      "base_dimensions": [
+        2,
+        2
+      ],
+      "twists_vectors": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "defining_divisor_coordinates": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "base_rays": [
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          2,
+          3,
+          7
+        ]
+      ],
+      "fibre_rays": [
+        4,
+        6
+      ],
+      "certificate": "Primitive collections and all product maximal cones match; a cone gives a unimodular lattice basis; fibre ray sum vanishes and the exact divisor-class matrix satisfies every lattice linear relation.",
+      "id": "CKP-492"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 4,
+      "fibre_dimension": 2,
+      "twists": [
+        0,
+        1,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 1,
+          "H": 1
+        },
+        {
+          "xi": 1,
+          "H": 1
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        2,
+        3,
+        6
+      ],
+      "fibre_rays": [
+        4,
+        5,
+        7
+      ],
+      "ray_twists": [
+        1,
+        1,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "CKP-498"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle over product",
+      "base_dimensions": [
+        1,
+        1,
+        2
+      ],
+      "twists_vectors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "defining_divisor_coordinates": [
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "base_rays": [
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          0,
+          1,
+          5
+        ]
+      ],
+      "fibre_rays": [
+        4,
+        8
+      ],
+      "certificate": "Primitive collections and all product maximal cones match; a cone gives a unimodular lattice basis; fibre ray sum vanishes and the exact divisor-class matrix satisfies every lattice linear relation.",
+      "id": "CKP-535"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 1,
+      "fibre_dimension": 4,
+      "twists": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 3,
+          "H": 0
+        }
+      ],
+      "base_rays": [
+        0,
+        5
+      ],
+      "fibre_rays": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "ray_twists": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "CKP-551"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        1,
+        2,
+        2
+      ],
+      "defining_degrees": [
+        [
+          1,
+          2,
+          1
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2,
+          6
+        ],
+        [
+          3,
+          4,
+          7
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "CKP-560"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        1,
+        4
+      ],
+      "defining_degrees": [
+        [
+          1,
+          3
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2,
+          3,
+          4,
+          6
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "CKP-566"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        1,
+        4
+      ],
+      "defining_degrees": [
+        [
+          0,
+          3
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2,
+          3,
+          4,
+          6
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "CKP-567"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle over product",
+      "base_dimensions": [
+        1,
+        3
+      ],
+      "twists_vectors": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "defining_divisor_coordinates": [
+        [
+          1,
+          2,
+          1
+        ]
+      ],
+      "base_rays": [
+        [
+          0,
+          5
+        ],
+        [
+          2,
+          3,
+          4,
+          7
+        ]
+      ],
+      "fibre_rays": [
+        1,
+        6
+      ],
+      "certificate": "Primitive collections and all product maximal cones match; a cone gives a unimodular lattice basis; fibre ray sum vanishes and the exact divisor-class matrix satisfies every lattice linear relation.",
+      "id": "CKP-593"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle over product",
+      "base_dimensions": [
+        2,
+        2
+      ],
+      "twists_vectors": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "defining_divisor_coordinates": [
+        [
+          1,
+          2,
+          1
+        ]
+      ],
+      "base_rays": [
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          2,
+          3,
+          7
+        ]
+      ],
+      "fibre_rays": [
+        4,
+        6
+      ],
+      "certificate": "Primitive collections and all product maximal cones match; a cone gives a unimodular lattice basis; fibre ray sum vanishes and the exact divisor-class matrix satisfies every lattice linear relation.",
+      "id": "CKP-594"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 3,
+      "fibre_dimension": 2,
+      "twists": [
+        0,
+        1,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 2,
+          "H": 1
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "fibre_rays": [
+        3,
+        4,
+        6
+      ],
+      "ray_twists": [
+        1,
+        1,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "CKP-595"
+    },
+    {
+      "status": "verified",
+      "kind": "projective space",
+      "dimensions": [
+        7
+      ],
+      "defining_degrees": [
+        [
+          2
+        ],
+        [
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "CKP-596"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 4,
+      "fibre_dimension": 3,
+      "twists": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 1,
+          "H": 1
+        },
+        {
+          "xi": 1,
+          "H": 1
+        },
+        {
+          "xi": 1,
+          "H": 1
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        2,
+        3,
+        7
+      ],
+      "fibre_rays": [
+        4,
+        5,
+        6,
+        8
+      ],
+      "ray_twists": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "CKP-611"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        2,
+        2,
+        2
+      ],
+      "defining_degrees": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          6
+        ],
+        [
+          2,
+          3,
+          7
+        ],
+        [
+          4,
+          5,
+          8
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "CKP-623"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "defining_degrees": [
+        [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          4,
+          9
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "CKP-628"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle over product",
+      "base_dimensions": [
+        1,
+        2
+      ],
+      "twists_vectors": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "defining_divisor_coordinates": [
+        [
+          1,
+          1,
+          2
+        ]
+      ],
+      "base_rays": [
+        [
+          2,
+          6
+        ],
+        [
+          0,
+          1,
+          5
+        ]
+      ],
+      "fibre_rays": [
+        3,
+        4,
+        7
+      ],
+      "certificate": "Primitive collections and all product maximal cones match; a cone gives a unimodular lattice basis; fibre ray sum vanishes and the exact divisor-class matrix satisfies every lattice linear relation.",
+      "id": "CKP-639"
+    },
+    {
+      "status": "verified",
+      "kind": "projective space",
+      "dimensions": [
+        6
+      ],
+      "defining_degrees": [
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "CKP-640"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 4,
+      "fibre_dimension": 2,
+      "twists": [
+        0,
+        0,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 1,
+          "H": 1
+        },
+        {
+          "xi": 1,
+          "H": 2
+        }
+      ],
+      "base_rays": [
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "fibre_rays": [
+        0,
+        1,
+        6
+      ],
+      "ray_twists": [
+        0,
+        1,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "CKP-645"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 3,
+      "fibre_dimension": 3,
+      "twists": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 1,
+          "H": 1
+        },
+        {
+          "xi": 2,
+          "H": 1
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        2,
+        6
+      ],
+      "fibre_rays": [
+        3,
+        4,
+        5,
+        7
+      ],
+      "ray_twists": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "CKP-656"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        4,
+        4
+      ],
+      "defining_degrees": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          2,
+          3,
+          8
+        ],
+        [
+          4,
+          5,
+          6,
+          7,
+          9
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "CKP-665"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        1,
+        1,
+        1,
+        2
+      ],
+      "defining_degrees": [
+        [
+          1,
+          1,
+          1,
+          2
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          4,
+          8
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "CKP-667"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        3,
+        4
+      ],
+      "defining_degrees": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          2,
+          7
+        ],
+        [
+          3,
+          4,
+          5,
+          6,
+          8
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "CKP-681"
+    },
+    {
+      "status": "verified",
+      "kind": "projective space",
+      "dimensions": [
+        5
+      ],
+      "defining_degrees": [
+        [
+          4
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "CKP-682"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 4,
+      "fibre_dimension": 1,
+      "twists": [
+        0,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 1,
+          "H": 3
+        }
+      ],
+      "base_rays": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "fibre_rays": [
+        0,
+        5
+      ],
+      "ray_twists": [
+        1,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "CKP-683"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 3,
+      "fibre_dimension": 2,
+      "twists": [
+        0,
+        0,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 2,
+          "H": 2
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "fibre_rays": [
+        3,
+        4,
+        6
+      ],
+      "ray_twists": [
+        0,
+        1,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "CKP-685"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 2,
+      "fibre_dimension": 3,
+      "twists": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 3,
+          "H": 0
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        5
+      ],
+      "fibre_rays": [
+        2,
+        3,
+        4,
+        6
+      ],
+      "ray_twists": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "CKP-688"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 2,
+      "fibre_dimension": 3,
+      "twists": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "defining_divisors": [
+        {
+          "xi": 3,
+          "H": 0
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        5
+      ],
+      "fibre_rays": [
+        2,
+        3,
+        4,
+        6
+      ],
+      "ray_twists": [
+        0,
+        0,
+        2,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "CKP-691"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        2,
+        3
+      ],
+      "defining_degrees": [
+        [
+          1,
+          3
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          2,
+          3,
+          4,
+          6
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "CKP-694"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        1,
+        2,
+        2
+      ],
+      "defining_degrees": [
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2,
+          6
+        ],
+        [
+          3,
+          4,
+          7
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "CKP-698"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 2,
+      "fibre_dimension": 3,
+      "twists": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 3,
+          "H": 0
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        5
+      ],
+      "fibre_rays": [
+        2,
+        3,
+        4,
+        6
+      ],
+      "ray_twists": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "CKP-702"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        3,
+        3
+      ],
+      "defining_degrees": [
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          2,
+          6
+        ],
+        [
+          3,
+          4,
+          5,
+          7
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "CKP-705"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        2,
+        4
+      ],
+      "defining_degrees": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          6
+        ],
+        [
+          2,
+          3,
+          4,
+          5,
+          7
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "CKP-711"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        3,
+        3
+      ],
+      "defining_degrees": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          2,
+          6
+        ],
+        [
+          3,
+          4,
+          5,
+          7
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "CKP-715"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 2,
+      "fibre_dimension": 3,
+      "twists": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 3,
+          "H": 1
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        5
+      ],
+      "fibre_rays": [
+        2,
+        3,
+        4,
+        6
+      ],
+      "ray_twists": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "CKP-718"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        1,
+        1,
+        3
+      ],
+      "defining_degrees": [
+        [
+          1,
+          1,
+          3
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          3,
+          4,
+          7
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "CKP-721"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        2,
+        4
+      ],
+      "defining_degrees": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          6
+        ],
+        [
+          2,
+          3,
+          4,
+          5,
+          7
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "CKP-722"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        2,
+        3
+      ],
+      "defining_degrees": [
+        [
+          2,
+          3
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          2,
+          3,
+          4,
+          6
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "CKP-726"
+    },
+    {
+      "status": "verified",
+      "kind": "projective space",
+      "dimensions": [
+        8
+      ],
+      "defining_degrees": [
+        [
+          2
+        ],
+        [
+          2
+        ],
+        [
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "CKP-731"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 1,
+      "fibre_dimension": 4,
+      "twists": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 4,
+          "H": 0
+        }
+      ],
+      "base_rays": [
+        0,
+        5
+      ],
+      "fibre_rays": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "ray_twists": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "CKP-733"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        1,
+        4
+      ],
+      "defining_degrees": [
+        [
+          1,
+          4
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2,
+          3,
+          4,
+          6
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "CKP-734"
+    },
+    {
+      "status": "verified",
+      "kind": "projective space",
+      "dimensions": [
+        7
+      ],
+      "defining_degrees": [
+        [
+          2
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "CKP-735"
+    },
+    {
+      "status": "verified",
+      "kind": "projective space",
+      "dimensions": [
+        6
+      ],
+      "defining_degrees": [
+        [
+          3
+        ],
+        [
+          3
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "CKP-736"
+    },
+    {
+      "status": "verified",
+      "kind": "projective space",
+      "dimensions": [
+        6
+      ],
+      "defining_degrees": [
+        [
+          2
+        ],
+        [
+          4
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "CKP-737"
+    },
+    {
+      "status": "verified",
+      "kind": "projective space",
+      "dimensions": [
+        5
+      ],
+      "defining_degrees": [
+        [
+          5
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "CKP-738"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        3,
+        3
+      ],
+      "defining_degrees": [
+        [
+          3,
+          3
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          4,
+          5,
+          6,
+          7
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "PROD5-B03"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        2,
+        4
+      ],
+      "defining_degrees": [
+        [
+          2,
+          4
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "PROD5-A03"
+    },
+    {
+      "status": "verified",
+      "kind": "projective space",
+      "dimensions": [
+        7
+      ],
+      "defining_degrees": [
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "QC5-001"
+    },
+    {
+      "status": "verified",
+      "kind": "projective space",
+      "dimensions": [
+        6
+      ],
+      "defining_degrees": [
+        [
+          4
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "PCI5-4"
+    },
+    {
+      "status": "verified",
+      "kind": "projective space",
+      "dimensions": [
+        6
+      ],
+      "defining_degrees": [
+        [
+          5
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "PCI5-5"
+    },
+    {
+      "status": "verified",
+      "kind": "projective space",
+      "dimensions": [
+        7
+      ],
+      "defining_degrees": [
+        [
+          2
+        ],
+        [
+          4
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "PCI5-2-4"
+    },
+    {
+      "status": "verified",
+      "kind": "projective space",
+      "dimensions": [
+        7
+      ],
+      "defining_degrees": [
+        [
+          3
+        ],
+        [
+          3
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "PCI5-3-3"
+    },
+    {
+      "status": "verified",
+      "kind": "projective space",
+      "dimensions": [
+        8
+      ],
+      "defining_degrees": [
+        [
+          2
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "PCI5-2-2-3"
+    },
+    {
+      "status": "verified",
+      "kind": "projective space",
+      "dimensions": [
+        9
+      ],
+      "defining_degrees": [
+        [
+          2
+        ],
+        [
+          2
+        ],
+        [
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "PCI5-2-2-2-2"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        3,
+        3
+      ],
+      "defining_degrees": [
+        [
+          2,
+          2
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          4,
+          5,
+          6,
+          7
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "PROD5-B01"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 5,
+      "fibre_dimension": 1,
+      "twists": [
+        0,
+        2
+      ],
+      "defining_divisors": [
+        {
+          "xi": 2,
+          "H": 0
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "fibre_rays": [
+        6,
+        7
+      ],
+      "ray_twists": [
+        2,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "QD5-001"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 3,
+      "fibre_dimension": 3,
+      "twists": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 2,
+          "H": 2
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fibre_rays": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "ray_twists": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "PB5-036"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 3,
+      "fibre_dimension": 4,
+      "twists": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 1,
+          "H": 1
+        },
+        {
+          "xi": 2,
+          "H": 1
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fibre_rays": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "ray_twists": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "PB5-056"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        2,
+        4
+      ],
+      "defining_degrees": [
+        [
+          2,
+          2
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "PROD5-A01"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 4,
+      "fibre_dimension": 2,
+      "twists": [
+        0,
+        0,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 2,
+          "H": 2
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "fibre_rays": [
+        5,
+        6,
+        7
+      ],
+      "ray_twists": [
+        0,
+        1,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "PB5-075"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 4,
+      "fibre_dimension": 2,
+      "twists": [
+        0,
+        0,
+        2
+      ],
+      "defining_divisors": [
+        {
+          "xi": 2,
+          "H": 1
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "fibre_rays": [
+        5,
+        6,
+        7
+      ],
+      "ray_twists": [
+        0,
+        2,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "PB5-079"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 4,
+      "fibre_dimension": 2,
+      "twists": [
+        0,
+        1,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 2,
+          "H": 1
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "fibre_rays": [
+        5,
+        6,
+        7
+      ],
+      "ray_twists": [
+        1,
+        1,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "PB5-085"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 4,
+      "fibre_dimension": 3,
+      "twists": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 1,
+          "H": 1
+        },
+        {
+          "xi": 2,
+          "H": 1
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "fibre_rays": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "ray_twists": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "PB5-101"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        3,
+        3
+      ],
+      "defining_degrees": [
+        [
+          2,
+          3
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          4,
+          5,
+          6,
+          7
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "PROD5-B02"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        3,
+        4
+      ],
+      "defining_degrees": [
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "PROD5-D01"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        3,
+        4
+      ],
+      "defining_degrees": [
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "PROD5-D02"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 5,
+      "fibre_dimension": 2,
+      "twists": [
+        0,
+        0,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 1,
+          "H": 1
+        },
+        {
+          "xi": 1,
+          "H": 2
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "fibre_rays": [
+        6,
+        7,
+        8
+      ],
+      "ray_twists": [
+        0,
+        1,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "PB5-139"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        2,
+        4
+      ],
+      "defining_degrees": [
+        [
+          2,
+          3
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "PROD5-A02"
+    },
+    {
+      "status": "verified",
+      "kind": "projective space",
+      "dimensions": [
+        6
+      ],
+      "defining_degrees": [
+        [
+          6
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "PCI5-6"
+    },
+    {
+      "status": "verified",
+      "kind": "projective space",
+      "dimensions": [
+        7
+      ],
+      "defining_degrees": [
+        [
+          2
+        ],
+        [
+          5
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "PCI5-2-5"
+    },
+    {
+      "status": "verified",
+      "kind": "projective space",
+      "dimensions": [
+        7
+      ],
+      "defining_degrees": [
+        [
+          3
+        ],
+        [
+          4
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "PCI5-3-4"
+    },
+    {
+      "status": "verified",
+      "kind": "projective space",
+      "dimensions": [
+        8
+      ],
+      "defining_degrees": [
+        [
+          2
+        ],
+        [
+          2
+        ],
+        [
+          4
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "PCI5-2-2-4"
+    },
+    {
+      "status": "verified",
+      "kind": "projective space",
+      "dimensions": [
+        8
+      ],
+      "defining_degrees": [
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          3
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "PCI5-2-3-3"
+    },
+    {
+      "status": "verified",
+      "kind": "projective space",
+      "dimensions": [
+        9
+      ],
+      "defining_degrees": [
+        [
+          2
+        ],
+        [
+          2
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "PCI5-2-2-2-3"
+    },
+    {
+      "status": "verified",
+      "kind": "projective space",
+      "dimensions": [
+        10
+      ],
+      "defining_degrees": [
+        [
+          2
+        ],
+        [
+          2
+        ],
+        [
+          2
+        ],
+        [
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "PCI5-2-2-2-2-2"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 5,
+      "fibre_dimension": 1,
+      "twists": [
+        0,
+        2
+      ],
+      "defining_divisors": [
+        {
+          "xi": 1,
+          "H": 2
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "fibre_rays": [
+        6,
+        7
+      ],
+      "ray_twists": [
+        2,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "PB5-127"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 3,
+      "fibre_dimension": 3,
+      "twists": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "defining_divisors": [
+        {
+          "xi": 2,
+          "H": 1
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fibre_rays": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "ray_twists": [
+        0,
+        0,
+        2,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "PB5-040"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 3,
+      "fibre_dimension": 3,
+      "twists": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 2,
+          "H": 1
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fibre_rays": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "ray_twists": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "PB5-043"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 3,
+      "fibre_dimension": 3,
+      "twists": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 3,
+          "H": 1
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fibre_rays": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "ray_twists": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "PB5-037"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 2,
+      "fibre_dimension": 4,
+      "twists": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 3,
+          "H": 1
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        2
+      ],
+      "fibre_rays": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "ray_twists": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "PB5-016"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 5,
+      "fibre_dimension": 1,
+      "twists": [
+        0,
+        4
+      ],
+      "defining_divisors": [
+        {
+          "xi": 1,
+          "H": 1
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "fibre_rays": [
+        6,
+        7
+      ],
+      "ray_twists": [
+        4,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "PB5-131"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 4,
+      "fibre_dimension": 2,
+      "twists": [
+        0,
+        0,
+        2
+      ],
+      "defining_divisors": [
+        {
+          "xi": 2,
+          "H": 2
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "fibre_rays": [
+        5,
+        6,
+        7
+      ],
+      "ray_twists": [
+        0,
+        2,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "PB5-080"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 5,
+      "fibre_dimension": 2,
+      "twists": [
+        0,
+        0,
+        3
+      ],
+      "defining_divisors": [
+        {
+          "xi": 1,
+          "H": 1
+        },
+        {
+          "xi": 1,
+          "H": 1
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "fibre_rays": [
+        6,
+        7,
+        8
+      ],
+      "ray_twists": [
+        0,
+        3,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "PB5-144"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 5,
+      "fibre_dimension": 2,
+      "twists": [
+        0,
+        1,
+        2
+      ],
+      "defining_divisors": [
+        {
+          "xi": 1,
+          "H": 1
+        },
+        {
+          "xi": 1,
+          "H": 1
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "fibre_rays": [
+        6,
+        7,
+        8
+      ],
+      "ray_twists": [
+        1,
+        2,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "PB5-147"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 5,
+      "fibre_dimension": 3,
+      "twists": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "defining_divisors": [
+        {
+          "xi": 1,
+          "H": 1
+        },
+        {
+          "xi": 1,
+          "H": 1
+        },
+        {
+          "xi": 1,
+          "H": 1
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "fibre_rays": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "ray_twists": [
+        0,
+        0,
+        2,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "PB5-154"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 5,
+      "fibre_dimension": 2,
+      "twists": [
+        0,
+        0,
+        2
+      ],
+      "defining_divisors": [
+        {
+          "xi": 1,
+          "H": 1
+        },
+        {
+          "xi": 1,
+          "H": 2
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "fibre_rays": [
+        6,
+        7,
+        8
+      ],
+      "ray_twists": [
+        0,
+        2,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "PB5-143"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 5,
+      "fibre_dimension": 1,
+      "twists": [
+        0,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 1,
+          "H": 3
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "fibre_rays": [
+        6,
+        7
+      ],
+      "ray_twists": [
+        1,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "PB5-124"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 5,
+      "fibre_dimension": 1,
+      "twists": [
+        0,
+        3
+      ],
+      "defining_divisors": [
+        {
+          "xi": 1,
+          "H": 2
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "fibre_rays": [
+        6,
+        7
+      ],
+      "ray_twists": [
+        3,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "PB5-130"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 4,
+      "fibre_dimension": 3,
+      "twists": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "defining_divisors": [
+        {
+          "xi": 1,
+          "H": 1
+        },
+        {
+          "xi": 2,
+          "H": 1
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "fibre_rays": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "ray_twists": [
+        0,
+        0,
+        2,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "PB5-105"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 4,
+      "fibre_dimension": 2,
+      "twists": [
+        0,
+        0,
+        3
+      ],
+      "defining_divisors": [
+        {
+          "xi": 2,
+          "H": 1
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "fibre_rays": [
+        5,
+        6,
+        7
+      ],
+      "ray_twists": [
+        0,
+        3,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "PB5-082"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 4,
+      "fibre_dimension": 2,
+      "twists": [
+        0,
+        1,
+        2
+      ],
+      "defining_divisors": [
+        {
+          "xi": 2,
+          "H": 1
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "fibre_rays": [
+        5,
+        6,
+        7
+      ],
+      "ray_twists": [
+        1,
+        2,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "PB5-088"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 5,
+      "fibre_dimension": 1,
+      "twists": [
+        0,
+        2
+      ],
+      "defining_divisors": [
+        {
+          "xi": 1,
+          "H": 3
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "fibre_rays": [
+        6,
+        7
+      ],
+      "ray_twists": [
+        2,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "PB5-128"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 3,
+      "fibre_dimension": 3,
+      "twists": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "defining_divisors": [
+        {
+          "xi": 3,
+          "H": 1
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fibre_rays": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "ray_twists": [
+        0,
+        0,
+        2,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "PB5-041"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 4,
+      "fibre_dimension": 2,
+      "twists": [
+        0,
+        1,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 2,
+          "H": 2
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "fibre_rays": [
+        5,
+        6,
+        7
+      ],
+      "ray_twists": [
+        1,
+        1,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "PB5-086"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 4,
+      "fibre_dimension": 3,
+      "twists": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 1,
+          "H": 1
+        },
+        {
+          "xi": 2,
+          "H": 2
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "fibre_rays": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "ray_twists": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "PB5-102"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 4,
+      "fibre_dimension": 3,
+      "twists": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 1,
+          "H": 2
+        },
+        {
+          "xi": 2,
+          "H": 1
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "fibre_rays": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "ray_twists": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "PB5-103"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 5,
+      "fibre_dimension": 3,
+      "twists": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 1,
+          "H": 1
+        },
+        {
+          "xi": 1,
+          "H": 1
+        },
+        {
+          "xi": 1,
+          "H": 1
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "fibre_rays": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "ray_twists": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "PB5-155"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 5,
+      "fibre_dimension": 4,
+      "twists": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 1,
+          "H": 1
+        },
+        {
+          "xi": 1,
+          "H": 1
+        },
+        {
+          "xi": 1,
+          "H": 1
+        },
+        {
+          "xi": 1,
+          "H": 1
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "fibre_rays": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "ray_twists": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "PB5-158"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 4,
+      "fibre_dimension": 2,
+      "twists": [
+        0,
+        0,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 2,
+          "H": 3
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "fibre_rays": [
+        5,
+        6,
+        7
+      ],
+      "ray_twists": [
+        0,
+        1,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "PB5-076"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 4,
+      "fibre_dimension": 4,
+      "twists": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 1,
+          "H": 1
+        },
+        {
+          "xi": 1,
+          "H": 1
+        },
+        {
+          "xi": 2,
+          "H": 1
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "fibre_rays": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "ray_twists": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "PB5-114"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 3,
+      "fibre_dimension": 3,
+      "twists": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 3,
+          "H": 2
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fibre_rays": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "ray_twists": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "PB5-038"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 4,
+      "fibre_dimension": 3,
+      "twists": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 1,
+          "H": 1
+        },
+        {
+          "xi": 2,
+          "H": 1
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "fibre_rays": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "ray_twists": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "PB5-107"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 3,
+      "fibre_dimension": 4,
+      "twists": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 1,
+          "H": 1
+        },
+        {
+          "xi": 3,
+          "H": 1
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fibre_rays": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "ray_twists": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "PB5-057"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 3,
+      "fibre_dimension": 4,
+      "twists": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 2,
+          "H": 1
+        },
+        {
+          "xi": 2,
+          "H": 1
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fibre_rays": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "ray_twists": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "PB5-058"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 3,
+      "fibre_dimension": 3,
+      "twists": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 3,
+          "H": 1
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fibre_rays": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "ray_twists": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "PB5-044"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 2,
+      "fibre_dimension": 4,
+      "twists": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 4,
+          "H": 1
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        2
+      ],
+      "fibre_rays": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "ray_twists": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "PB5-017"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        4,
+        4
+      ],
+      "defining_degrees": [
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "PROD5-E01"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        4,
+        4
+      ],
+      "defining_degrees": [
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "PROD5-E02"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        3,
+        4
+      ],
+      "defining_degrees": [
+        [
+          2,
+          3
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "PROD5-D03"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        3,
+        4
+      ],
+      "defining_degrees": [
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "PROD5-D04"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        3,
+        4
+      ],
+      "defining_degrees": [
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "PROD5-D05"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        2,
+        2,
+        2
+      ],
+      "defining_degrees": [
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          6,
+          7,
+          8
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "PROD5-C01"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 5,
+      "fibre_dimension": 3,
+      "twists": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 1,
+          "H": 1
+        },
+        {
+          "xi": 1,
+          "H": 1
+        },
+        {
+          "xi": 1,
+          "H": 2
+        }
+      ],
+      "base_rays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "fibre_rays": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "ray_twists": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "PB5-153"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        1,
+        5
+      ],
+      "defining_degrees": [
+        [
+          1,
+          3
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "PB5-003"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        3,
+        3
+      ],
+      "defining_degrees": [
+        [
+          2,
+          2
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          4,
+          5,
+          6,
+          7
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "PB5-028"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        3,
+        4
+      ],
+      "defining_degrees": [
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "PB5-051"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        3,
+        5
+      ],
+      "defining_degrees": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "PB5-060"
+    }
+  ]
+}
