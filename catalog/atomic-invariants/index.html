@@ -1,12 +1,10 @@
-
 <!doctype html>
-<html lang="en" class="no-js">
-  <head>
+<html lang="en" class="no-js"><head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Exact unit-cyclicity and Hodge-invariant audit of every published computation record, with full atomic invariants where the criterion applies.">
+        <meta name="description" content="Cyclic determinants, Hodge classes and full atomic Hodge invariants for the catalogue examples.">
       
       
       
@@ -47,8 +45,8 @@
       
         
         
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
       
     
@@ -63,7 +61,145 @@
 
     
     
-  </head>
+  <style id="MJX-SVG-styles">
+mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+mjx-container[jax="SVG"] > svg a {
+  fill: blue;
+  stroke: blue;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display="block"] {
+  width: 100% !important;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][display="true"][width="full"] {
+  display: flex;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line], svg[data-table] > g > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame], svg[data-table] > g > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed, svg[data-table] > g > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted, svg[data-table] > g > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > g > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
+  stroke-width: 3;
+}
+</style><style>.arithmatex{position:relative}.geoatoms-mathml{position:absolute!important;left:0;top:0;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}</style></head>
   
   
     
@@ -105,7 +241,7 @@
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -130,20 +266,20 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="teal"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="teal" aria-label="Switch to dark mode" type="radio" name="__palette" id="__palette_0">
     
-      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
       </label>
     
   
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="cyan"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="cyan" aria-label="Switch to light mode" type="radio" name="__palette" id="__palette_1">
     
-      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
       </label>
     
   
@@ -159,24 +295,24 @@
       
         <label class="md-header__button md-icon" for="__search">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         </label>
         <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
         </button>
       </nav>
       
@@ -184,7 +320,7 @@
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
@@ -202,7 +338,7 @@
         <a href="https://github.com/leonardofcavenaghi/atomicdecompositions" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"></path></svg>
   </div>
   <div class="md-source__repository">
     leonardofcavenaghi/atomicdecompositions
@@ -341,7 +477,7 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -366,7 +502,7 @@
       <a href="https://github.com/leonardofcavenaghi/atomicdecompositions" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"></path></svg>
   </div>
   <div class="md-source__repository">
     leonardofcavenaghi/atomicdecompositions
@@ -374,7 +510,7 @@
 </a>
     </div>
   
-  <ul class="md-nav__list" data-md-scrollfix>
+  <ul class="md-nav__list" data-md-scrollfix="">
     
       
       
@@ -462,7 +598,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked="">
         
           
           <div class="md-nav__link md-nav__container">
@@ -499,7 +635,7 @@
   
 
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
             
@@ -875,7 +1011,7 @@
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
   <a href="#what-the-invariants-mean" class="md-nav__link">
@@ -889,10 +1025,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#when-a-full-certificate-is-given" class="md-nav__link">
+  <a href="#when-the-criterion-identifies-atoms" class="md-nav__link">
     <span class="md-ellipsis">
       
-        When a full certificate is given
+        When the criterion identifies atoms
       
     </span>
   </a>
@@ -922,10 +1058,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#all-records" class="md-nav__link">
+  <a href="#catalogue" class="md-nav__link">
     <span class="md-ellipsis">
       
-        All records
+        Catalogue
       
     </span>
   </a>
@@ -1032,7 +1168,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3">
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -1062,7 +1198,7 @@
   
 
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
@@ -1207,7 +1343,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4">
         
           
           <div class="md-nav__link md-nav__container">
@@ -1244,7 +1380,7 @@
   
 
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
             
@@ -1402,7 +1538,7 @@
   <span class="md-ellipsis">
     
   
-    Changes in this launch
+    Version comparison
   
 
     
@@ -1598,7 +1734,7 @@
   <span class="md-ellipsis">
     
   
-    Validation and publication
+    Validation and reproducibility
   
 
     
@@ -1664,7 +1800,7 @@
   
 
 
-  <nav class="md-path" aria-label="Navigation" >
+  <nav class="md-path" aria-label="Navigation">
     <ol class="md-path__list">
       
         
@@ -1714,44 +1850,142 @@
   
 
 
-<h1 id="cyclicity-and-atomic-hodge-invariants">Cyclicity and atomic Hodge invariants<a class="headerlink" href="#cyclicity-and-atomic-hodge-invariants" title="Permanent link">&para;</a></h1>
-<p>The audit covers <strong>301 computation records</strong>. It tests the unit cyclic determinant at the saved Novikov point and, when needed, additional exact rational points. It combines the result with a full Hodge-space identification and a justified primitive-cohomology assignment. A cyclic ambient matrix alone does not identify the full atoms.</p>
-<table>
-<thead>
-<tr>
-<th>Outcome</th>
-<th style="text-align: right;">Records</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Full coarse factors and Hodge invariants identified under the stated geometric hypotheses</td>
-<td style="text-align: right;">147</td>
-</tr>
-<tr>
-<td>Cyclic ambient operator, with additional Hodge-invariant classes outside that matrix</td>
-<td style="text-align: right;">46</td>
-</tr>
-<tr>
-<td>Unit cyclicity not found at the tested points</td>
-<td style="text-align: right;">108</td>
-</tr>
-</tbody>
-</table>
-<p><a href="../../data/atomic-invariants.json">Download exact points, determinants, Hodge data and factors</a>. These are exact post-calculations on existing matrices; selected fresh localization checks and Hodge calculations are identified by their provenance.</p>
-<h2 id="what-the-invariants-mean">What the invariants mean<a class="headerlink" href="#what-the-invariants-mean" title="Permanent link">&para;</a></h2>
-<p>For a coarse atom <span class="arithmatex">\(\alpha\)</span>, <span class="arithmatex">\(\rho_\alpha=\dim_{\mathbb C}\bigl((E^\alpha_{\mathbb C})^{\mathrm{Hod}_{\mathbb C}}\bigr)\)</span> counts rational Hodge-invariant directions. The Hodge-character polynomial is</p>
-<div class="arithmatex">\[
+<h1 id="cyclicity-and-atomic-hodge-invariants">Cyclicity and atomic Hodge invariants<a class="headerlink" href="#cyclicity-and-atomic-hodge-invariants" title="Permanent link">¶</a></h1>
+<p>The unit cyclic determinant, the full Hodge-invariant sector and the action on primitive cohomology determine when the computed spectral factors identify coarse atoms. A cyclic ambient matrix alone is insufficient if additional Hodge-invariant classes lie outside its span.</p>
+<p>The entries below give exact analysis points, cyclicity results and atomic Hodge invariants under their stated geometric hypotheses. A vanishing determinant at the tested points leaves cyclicity at other parameters open.</p>
+<p><a href="../../data/atomic-invariants.json">Download exact points, determinants, Hodge data and factors</a>.</p>
+<h2 id="what-the-invariants-mean">What the invariants mean<a class="headerlink" href="#what-the-invariants-mean" title="Permanent link">¶</a></h2>
+<p>For a coarse atom <span class="arithmatex" data-tex="\alpha" data-math-rendered="svg"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="SVG" tabindex="0" ctxtmenu_counter="80" aria-hidden="true" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="1.448ex" height="1.025ex" role="img" focusable="false" viewBox="0 -442 640 453" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.025ex;"><defs><path id="MJX-81-TEX-I-1D6FC" d="M34 156Q34 270 120 356T309 442Q379 442 421 402T478 304Q484 275 485 237V208Q534 282 560 374Q564 388 566 390T582 393Q603 393 603 385Q603 376 594 346T558 261T497 161L486 147L487 123Q489 67 495 47T514 26Q528 28 540 37T557 60Q559 67 562 68T577 70Q597 70 597 62Q597 56 591 43Q579 19 556 5T512 -10H505Q438 -10 414 62L411 69L400 61Q390 53 370 41T325 18T267 -2T203 -11Q124 -11 79 39T34 156ZM208 26Q257 26 306 47T379 90L403 112Q401 255 396 290Q382 405 304 405Q235 405 183 332Q156 292 139 224T121 120Q121 71 146 49T208 26Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D6FC" xlink:href="#MJX-81-TEX-I-1D6FC"></use></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>α</mi></math></mjx-assistive-mml></mjx-container><span class="geoatoms-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>α</mi>
+</math></span></span>, <span class="arithmatex" data-tex="\rho_\alpha=\dim_{\mathbb C}\bigl((E^\alpha_{\mathbb C})^{\mathrm{Hod}_{\mathbb C}}\bigr)" data-math-rendered="svg"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="SVG" tabindex="0" ctxtmenu_counter="81" aria-hidden="true" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="21.428ex" height="2.722ex" role="img" focusable="false" viewBox="0 -853.7 9471.2 1203.2" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.791ex;"><defs><path id="MJX-82-TEX-I-1D70C" d="M58 -216Q25 -216 23 -186Q23 -176 73 26T127 234Q143 289 182 341Q252 427 341 441Q343 441 349 441T359 442Q432 442 471 394T510 276Q510 219 486 165T425 74T345 13T266 -10H255H248Q197 -10 165 35L160 41L133 -71Q108 -168 104 -181T92 -202Q76 -216 58 -216ZM424 322Q424 359 407 382T357 405Q322 405 287 376T231 300Q217 269 193 170L176 102Q193 26 260 26Q298 26 334 62Q367 92 389 158T418 266T424 322Z"></path><path id="MJX-82-TEX-I-1D6FC" d="M34 156Q34 270 120 356T309 442Q379 442 421 402T478 304Q484 275 485 237V208Q534 282 560 374Q564 388 566 390T582 393Q603 393 603 385Q603 376 594 346T558 261T497 161L486 147L487 123Q489 67 495 47T514 26Q528 28 540 37T557 60Q559 67 562 68T577 70Q597 70 597 62Q597 56 591 43Q579 19 556 5T512 -10H505Q438 -10 414 62L411 69L400 61Q390 53 370 41T325 18T267 -2T203 -11Q124 -11 79 39T34 156ZM208 26Q257 26 306 47T379 90L403 112Q401 255 396 290Q382 405 304 405Q235 405 183 332Q156 292 139 224T121 120Q121 71 146 49T208 26Z"></path><path id="MJX-82-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJX-82-TEX-N-64" d="M376 495Q376 511 376 535T377 568Q377 613 367 624T316 637H298V660Q298 683 300 683L310 684Q320 685 339 686T376 688Q393 689 413 690T443 693T454 694H457V390Q457 84 458 81Q461 61 472 55T517 46H535V0Q533 0 459 -5T380 -11H373V44L365 37Q307 -11 235 -11Q158 -11 96 50T34 215Q34 315 97 378T244 442Q319 442 376 393V495ZM373 342Q328 405 260 405Q211 405 173 369Q146 341 139 305T131 211Q131 155 138 120T173 59Q203 26 251 26Q322 26 373 103V342Z"></path><path id="MJX-82-TEX-N-69" d="M69 609Q69 637 87 653T131 669Q154 667 171 652T188 609Q188 579 171 564T129 549Q104 549 87 564T69 609ZM247 0Q232 3 143 3Q132 3 106 3T56 1L34 0H26V46H42Q70 46 91 49Q100 53 102 60T104 102V205V293Q104 345 102 359T88 378Q74 385 41 385H30V408Q30 431 32 431L42 432Q52 433 70 434T106 436Q123 437 142 438T171 441T182 442H185V62Q190 52 197 50T232 46H255V0H247Z"></path><path id="MJX-82-TEX-N-6D" d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 122T103 161T103 203Q103 234 103 269T102 328V351Q99 370 88 376T43 385H25V408Q25 431 27 431L37 432Q47 433 65 434T102 436Q119 437 138 438T167 441T178 442H181V402Q181 364 182 364T187 369T199 384T218 402T247 421T285 437Q305 442 336 442Q351 442 364 440T387 434T406 426T421 417T432 406T441 395T448 384T452 374T455 366L457 361L460 365Q463 369 466 373T475 384T488 397T503 410T523 422T546 432T572 439T603 442Q729 442 740 329Q741 322 741 190V104Q741 66 743 59T754 49Q775 46 803 46H819V0H811L788 1Q764 2 737 2T699 3Q596 3 587 0H579V46H595Q656 46 656 62Q657 64 657 200Q656 335 655 343Q649 371 635 385T611 402T585 404Q540 404 506 370Q479 343 472 315T464 232V168V108Q464 78 465 68T468 55T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z"></path><path id="MJX-82-TEX-D-2102" d="M684 131Q684 125 672 109T633 71T573 29T489 -5T386 -19Q330 -19 276 -3T174 46T91 134T44 261Q39 283 39 341T44 421Q66 538 143 611T341 699Q344 699 364 700T395 701Q449 698 503 677T585 655Q603 655 611 662T620 678T625 694T639 702Q650 702 657 690V481L653 474Q640 467 628 472Q624 476 618 496T595 541Q562 587 507 625T390 663H381Q337 663 299 625Q212 547 212 336Q212 249 233 179Q274 30 405 30Q533 30 641 130Q658 147 666 147Q671 147 677 143T684 131ZM250 625Q264 643 261 643Q238 635 214 620T161 579T110 510T79 414Q74 384 74 341T79 268Q89 213 113 169T164 101T217 61T260 39L277 34Q270 41 264 48Q199 111 181 254Q178 281 178 344T181 434Q200 559 250 625ZM621 565V625Q617 623 613 623Q603 619 590 619H575L588 605Q608 583 610 579L621 565Z"></path><path id="MJX-82-TEX-N-2061" d=""></path><path id="MJX-82-TEX-SO-28" d="M152 251Q152 646 388 850H416Q422 844 422 841Q422 837 403 816T357 753T302 649T255 482T236 250Q236 124 255 19T301 -147T356 -251T403 -315T422 -340Q422 -343 416 -349H388Q359 -325 332 -296T271 -213T212 -97T170 56T152 251Z"></path><path id="MJX-82-TEX-N-28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path><path id="MJX-82-TEX-I-1D438" d="M492 213Q472 213 472 226Q472 230 477 250T482 285Q482 316 461 323T364 330H312Q311 328 277 192T243 52Q243 48 254 48T334 46Q428 46 458 48T518 61Q567 77 599 117T670 248Q680 270 683 272Q690 274 698 274Q718 274 718 261Q613 7 608 2Q605 0 322 0H133Q31 0 31 11Q31 13 34 25Q38 41 42 43T65 46Q92 46 125 49Q139 52 144 61Q146 66 215 342T285 622Q285 629 281 629Q273 632 228 634H197Q191 640 191 642T193 659Q197 676 203 680H757Q764 676 764 669Q764 664 751 557T737 447Q735 440 717 440H705Q698 445 698 453L701 476Q704 500 704 528Q704 558 697 578T678 609T643 625T596 632T532 634H485Q397 633 392 631Q388 629 386 622Q385 619 355 499T324 377Q347 376 372 376H398Q464 376 489 391T534 472Q538 488 540 490T557 493Q562 493 565 493T570 492T572 491T574 487T577 483L544 351Q511 218 508 216Q505 213 492 213Z"></path><path id="MJX-82-TEX-N-29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path><path id="MJX-82-TEX-N-48" d="M128 622Q121 629 117 631T101 634T58 637H25V683H36Q57 680 180 680Q315 680 324 683H335V637H302Q262 636 251 634T233 622L232 500V378H517V622Q510 629 506 631T490 634T447 637H414V683H425Q446 680 569 680Q704 680 713 683H724V637H691Q651 636 640 634T622 622V61Q628 51 639 49T691 46H724V0H713Q692 3 569 3Q434 3 425 0H414V46H447Q489 47 498 49T517 61V332H232V197L233 61Q239 51 250 49T302 46H335V0H324Q303 3 180 3Q45 3 36 0H25V46H58Q100 47 109 49T128 61V622Z"></path><path id="MJX-82-TEX-N-6F" d="M28 214Q28 309 93 378T250 448Q340 448 405 380T471 215Q471 120 407 55T250 -10Q153 -10 91 57T28 214ZM250 30Q372 30 372 193V225V250Q372 272 371 288T364 326T348 362T317 390T268 410Q263 411 252 411Q222 411 195 399Q152 377 139 338T126 246V226Q126 130 145 91Q177 30 250 30Z"></path><path id="MJX-82-TEX-SO-29" d="M305 251Q305 -145 69 -349H56Q43 -349 39 -347T35 -338Q37 -333 60 -307T108 -239T160 -136T204 27T221 250T204 473T160 636T108 740T60 807T35 839Q35 850 50 850H56H69Q197 743 256 566Q305 425 305 251Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D70C" xlink:href="#MJX-82-TEX-I-1D70C"></use></g><g data-mml-node="mi" transform="translate(550,-150) scale(0.707)"><use data-c="1D6FC" xlink:href="#MJX-82-TEX-I-1D6FC"></use></g></g><g data-mml-node="mo" transform="translate(1330.3,0)"><use data-c="3D" xlink:href="#MJX-82-TEX-N-3D"></use></g><g data-mml-node="msub" transform="translate(2386.1,0)"><g data-mml-node="mi"><use data-c="64" xlink:href="#MJX-82-TEX-N-64"></use><use data-c="69" xlink:href="#MJX-82-TEX-N-69" transform="translate(556,0)"></use><use data-c="6D" xlink:href="#MJX-82-TEX-N-6D" transform="translate(834,0)"></use></g><g data-mml-node="TeXAtom" transform="translate(1700,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mi"><use data-c="2102" xlink:href="#MJX-82-TEX-D-2102"></use></g></g></g></g><g data-mml-node="mo" transform="translate(4646.6,0)"><use data-c="2061" xlink:href="#MJX-82-TEX-N-2061"></use></g><g data-mml-node="TeXAtom" data-mjx-texclass="OPEN" transform="translate(4646.6,0)"><g data-mml-node="mo" transform="translate(0 -0.5)"><use data-c="28" xlink:href="#MJX-82-TEX-SO-28"></use></g></g><g data-mml-node="mo" transform="translate(5104.6,0)"><use data-c="28" xlink:href="#MJX-82-TEX-N-28"></use></g><g data-mml-node="msubsup" transform="translate(5493.6,0)"><g data-mml-node="mi"><use data-c="1D438" xlink:href="#MJX-82-TEX-I-1D438"></use></g><g data-mml-node="mi" transform="translate(848.3,363) scale(0.707)"><use data-c="1D6FC" xlink:href="#MJX-82-TEX-I-1D6FC"></use></g><g data-mml-node="TeXAtom" transform="translate(771,-321.2) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mi"><use data-c="2102" xlink:href="#MJX-82-TEX-D-2102"></use></g></g></g></g><g data-mml-node="msup" transform="translate(6844.5,0)"><g data-mml-node="mo"><use data-c="29" xlink:href="#MJX-82-TEX-N-29"></use></g><g data-mml-node="TeXAtom" transform="translate(422,363) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="msub"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mi"><use data-c="48" xlink:href="#MJX-82-TEX-N-48"></use><use data-c="6F" xlink:href="#MJX-82-TEX-N-6F" transform="translate(750,0)"></use><use data-c="64" xlink:href="#MJX-82-TEX-N-64" transform="translate(1250,0)"></use></g></g><g data-mml-node="TeXAtom" transform="translate(1839,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mi"><use data-c="2102" xlink:href="#MJX-82-TEX-D-2102"></use></g></g></g></g></g></g><g data-mml-node="TeXAtom" data-mjx-texclass="CLOSE" transform="translate(9013.2,0)"><g data-mml-node="mo" transform="translate(0 -0.5)"><use data-c="29" xlink:href="#MJX-82-TEX-SO-29"></use></g></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>ρ</mi><mi>α</mi></msub><mo>=</mo><msub><mi>dim</mi><mrow data-mjx-texclass="ORD"><mrow data-mjx-texclass="ORD"><mi mathvariant="double-struck">C</mi></mrow></mrow></msub><mo data-mjx-texclass="NONE">⁡</mo><mrow data-mjx-texclass="OPEN"><mo minsize="1.2em" maxsize="1.2em">(</mo></mrow><mo stretchy="false">(</mo><msubsup><mi>E</mi><mrow data-mjx-texclass="ORD"><mrow data-mjx-texclass="ORD"><mi mathvariant="double-struck">C</mi></mrow></mrow><mi>α</mi></msubsup><msup><mo stretchy="false">)</mo><mrow data-mjx-texclass="ORD"><msub><mrow data-mjx-texclass="ORD"><mi data-mjx-auto-op="false">Hod</mi></mrow><mrow data-mjx-texclass="ORD"><mrow data-mjx-texclass="ORD"><mi mathvariant="double-struck">C</mi></mrow></mrow></msub></mrow></msup><mrow data-mjx-texclass="CLOSE"><mo minsize="1.2em" maxsize="1.2em">)</mo></mrow></math></mjx-assistive-mml></mjx-container><span class="geoatoms-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi>ρ</mi>
+    <mi>α</mi>
+  </msub>
+  <mo>=</mo>
+  <msub>
+    <mi>dim</mi>
+    <mrow data-mjx-texclass="ORD">
+      <mrow data-mjx-texclass="ORD">
+        <mi mathvariant="double-struck">C</mi>
+      </mrow>
+    </mrow>
+  </msub>
+  <mo data-mjx-texclass="NONE">⁡</mo>
+  <mrow data-mjx-texclass="OPEN">
+    <mo minsize="1.2em" maxsize="1.2em">(</mo>
+  </mrow>
+  <mo stretchy="false">(</mo>
+  <msubsup>
+    <mi>E</mi>
+    <mrow data-mjx-texclass="ORD">
+      <mrow data-mjx-texclass="ORD">
+        <mi mathvariant="double-struck">C</mi>
+      </mrow>
+    </mrow>
+    <mi>α</mi>
+  </msubsup>
+  <msup>
+    <mo stretchy="false">)</mo>
+    <mrow data-mjx-texclass="ORD">
+      <msub>
+        <mrow data-mjx-texclass="ORD">
+          <mi data-mjx-auto-op="false">Hod</mi>
+        </mrow>
+        <mrow data-mjx-texclass="ORD">
+          <mrow data-mjx-texclass="ORD">
+            <mi mathvariant="double-struck">C</mi>
+          </mrow>
+        </mrow>
+      </msub>
+    </mrow>
+  </msup>
+  <mrow data-mjx-texclass="CLOSE">
+    <mo minsize="1.2em" maxsize="1.2em">)</mo>
+  </mrow>
+</math></span></span> counts rational Hodge-invariant directions. The Hodge-character polynomial is</p>
+<div class="arithmatex" data-tex="
 P_\alpha(t)=\sum_{p,q}h^{p,q}(E^\alpha)t^{p-q}.
-\]</div>
-<p>It records the Hodge cocharacter with positive multiplicities. Its constant coefficient can exceed <span class="arithmatex">\(\rho_\alpha\)</span>; it does not count only rational Hodge classes. For the added LG(3,6) example, <span class="arithmatex">\(\rho=3\)</span>, while <span class="arithmatex">\(P(t)=14t^2+102+14t^{-2}\)</span>.</p>
-<p>A characteristic factor of degree d describes d conjugate eigenvalues. A listed atomic polynomial applies separately at each root; the consistency checks sum over all these roots. The audit polynomials refer to A=c1 multiplication. The saved connection pages also use K=-A; their factor numbering and sign convention are kept separate.</p>
-<h2 id="when-a-full-certificate-is-given">When a full certificate is given<a class="headerlink" href="#when-a-full-certificate-is-given" title="Permanent link">&para;</a></h2>
+" data-math-rendered="svg"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="SVG" display="true" tabindex="0" ctxtmenu_counter="82" aria-hidden="true" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="24.614ex" height="5.061ex" role="img" focusable="false" viewBox="0 -950 10879.2 2237.2" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -2.912ex;"><defs><path id="MJX-83-TEX-I-1D443" d="M287 628Q287 635 230 637Q206 637 199 638T192 648Q192 649 194 659Q200 679 203 681T397 683Q587 682 600 680Q664 669 707 631T751 530Q751 453 685 389Q616 321 507 303Q500 302 402 301H307L277 182Q247 66 247 59Q247 55 248 54T255 50T272 48T305 46H336Q342 37 342 35Q342 19 335 5Q330 0 319 0Q316 0 282 1T182 2Q120 2 87 2T51 1Q33 1 33 11Q33 13 36 25Q40 41 44 43T67 46Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628ZM645 554Q645 567 643 575T634 597T609 619T560 635Q553 636 480 637Q463 637 445 637T416 636T404 636Q391 635 386 627Q384 621 367 550T332 412T314 344Q314 342 395 342H407H430Q542 342 590 392Q617 419 631 471T645 554Z"></path><path id="MJX-83-TEX-I-1D6FC" d="M34 156Q34 270 120 356T309 442Q379 442 421 402T478 304Q484 275 485 237V208Q534 282 560 374Q564 388 566 390T582 393Q603 393 603 385Q603 376 594 346T558 261T497 161L486 147L487 123Q489 67 495 47T514 26Q528 28 540 37T557 60Q559 67 562 68T577 70Q597 70 597 62Q597 56 591 43Q579 19 556 5T512 -10H505Q438 -10 414 62L411 69L400 61Q390 53 370 41T325 18T267 -2T203 -11Q124 -11 79 39T34 156ZM208 26Q257 26 306 47T379 90L403 112Q401 255 396 290Q382 405 304 405Q235 405 183 332Q156 292 139 224T121 120Q121 71 146 49T208 26Z"></path><path id="MJX-83-TEX-N-28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path><path id="MJX-83-TEX-I-1D461" d="M26 385Q19 392 19 395Q19 399 22 411T27 425Q29 430 36 430T87 431H140L159 511Q162 522 166 540T173 566T179 586T187 603T197 615T211 624T229 626Q247 625 254 615T261 596Q261 589 252 549T232 470L222 433Q222 431 272 431H323Q330 424 330 420Q330 398 317 385H210L174 240Q135 80 135 68Q135 26 162 26Q197 26 230 60T283 144Q285 150 288 151T303 153H307Q322 153 322 145Q322 142 319 133Q314 117 301 95T267 48T216 6T155 -11Q125 -11 98 4T59 56Q57 64 57 83V101L92 241Q127 382 128 383Q128 385 77 385H26Z"></path><path id="MJX-83-TEX-N-29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path><path id="MJX-83-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJX-83-TEX-LO-2211" d="M60 948Q63 950 665 950H1267L1325 815Q1384 677 1388 669H1348L1341 683Q1320 724 1285 761Q1235 809 1174 838T1033 881T882 898T699 902H574H543H251L259 891Q722 258 724 252Q725 250 724 246Q721 243 460 -56L196 -356Q196 -357 407 -357Q459 -357 548 -357T676 -358Q812 -358 896 -353T1063 -332T1204 -283T1307 -196Q1328 -170 1348 -124H1388Q1388 -125 1381 -145T1356 -210T1325 -294L1267 -449L666 -450Q64 -450 61 -448Q55 -446 55 -439Q55 -437 57 -433L590 177Q590 178 557 222T452 366T322 544L56 909L55 924Q55 945 60 948Z"></path><path id="MJX-83-TEX-I-1D45D" d="M23 287Q24 290 25 295T30 317T40 348T55 381T75 411T101 433T134 442Q209 442 230 378L240 387Q302 442 358 442Q423 442 460 395T497 281Q497 173 421 82T249 -10Q227 -10 210 -4Q199 1 187 11T168 28L161 36Q160 35 139 -51T118 -138Q118 -144 126 -145T163 -148H188Q194 -155 194 -157T191 -175Q188 -187 185 -190T172 -194Q170 -194 161 -194T127 -193T65 -192Q-5 -192 -24 -194H-32Q-39 -187 -39 -183Q-37 -156 -26 -148H-6Q28 -147 33 -136Q36 -130 94 103T155 350Q156 355 156 364Q156 405 131 405Q109 405 94 377T71 316T59 280Q57 278 43 278H29Q23 284 23 287ZM178 102Q200 26 252 26Q282 26 310 49T356 107Q374 141 392 215T411 325V331Q411 405 350 405Q339 405 328 402T306 393T286 380T269 365T254 350T243 336T235 326L232 322Q232 321 229 308T218 264T204 212Q178 106 178 102Z"></path><path id="MJX-83-TEX-N-2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path><path id="MJX-83-TEX-I-1D45E" d="M33 157Q33 258 109 349T280 441Q340 441 372 389Q373 390 377 395T388 406T404 418Q438 442 450 442Q454 442 457 439T460 434Q460 425 391 149Q320 -135 320 -139Q320 -147 365 -148H390Q396 -156 396 -157T393 -175Q389 -188 383 -194H370Q339 -192 262 -192Q234 -192 211 -192T174 -192T157 -193Q143 -193 143 -185Q143 -182 145 -170Q149 -154 152 -151T172 -148Q220 -148 230 -141Q238 -136 258 -53T279 32Q279 33 272 29Q224 -10 172 -10Q117 -10 75 30T33 157ZM352 326Q329 405 277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q233 26 290 98L298 109L352 326Z"></path><path id="MJX-83-TEX-I-210E" d="M137 683Q138 683 209 688T282 694Q294 694 294 685Q294 674 258 534Q220 386 220 383Q220 381 227 388Q288 442 357 442Q411 442 444 415T478 336Q478 285 440 178T402 50Q403 36 407 31T422 26Q450 26 474 56T513 138Q516 149 519 151T535 153Q555 153 555 145Q555 144 551 130Q535 71 500 33Q466 -10 419 -10H414Q367 -10 346 17T325 74Q325 90 361 192T398 345Q398 404 354 404H349Q266 404 205 306L198 293L164 158Q132 28 127 16Q114 -11 83 -11Q69 -11 59 -2T48 16Q48 30 121 320L195 616Q195 629 188 632T149 637H128Q122 643 122 645T124 664Q129 683 137 683Z"></path><path id="MJX-83-TEX-I-1D438" d="M492 213Q472 213 472 226Q472 230 477 250T482 285Q482 316 461 323T364 330H312Q311 328 277 192T243 52Q243 48 254 48T334 46Q428 46 458 48T518 61Q567 77 599 117T670 248Q680 270 683 272Q690 274 698 274Q718 274 718 261Q613 7 608 2Q605 0 322 0H133Q31 0 31 11Q31 13 34 25Q38 41 42 43T65 46Q92 46 125 49Q139 52 144 61Q146 66 215 342T285 622Q285 629 281 629Q273 632 228 634H197Q191 640 191 642T193 659Q197 676 203 680H757Q764 676 764 669Q764 664 751 557T737 447Q735 440 717 440H705Q698 445 698 453L701 476Q704 500 704 528Q704 558 697 578T678 609T643 625T596 632T532 634H485Q397 633 392 631Q388 629 386 622Q385 619 355 499T324 377Q347 376 372 376H398Q464 376 489 391T534 472Q538 488 540 490T557 493Q562 493 565 493T570 492T572 491T574 487T577 483L544 351Q511 218 508 216Q505 213 492 213Z"></path><path id="MJX-83-TEX-N-2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path><path id="MJX-83-TEX-N-2E" d="M78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D443" xlink:href="#MJX-83-TEX-I-1D443"></use></g><g data-mml-node="mi" transform="translate(675,-150) scale(0.707)"><use data-c="1D6FC" xlink:href="#MJX-83-TEX-I-1D6FC"></use></g></g><g data-mml-node="mo" transform="translate(1177.5,0)"><use data-c="28" xlink:href="#MJX-83-TEX-N-28"></use></g><g data-mml-node="mi" transform="translate(1566.5,0)"><use data-c="1D461" xlink:href="#MJX-83-TEX-I-1D461"></use></g><g data-mml-node="mo" transform="translate(1927.5,0)"><use data-c="29" xlink:href="#MJX-83-TEX-N-29"></use></g><g data-mml-node="mo" transform="translate(2594.3,0)"><use data-c="3D" xlink:href="#MJX-83-TEX-N-3D"></use></g><g data-mml-node="munder" transform="translate(3650.1,0)"><g data-mml-node="mo"><use data-c="2211" xlink:href="#MJX-83-TEX-LO-2211"></use></g><g data-mml-node="TeXAtom" transform="translate(283.2,-1050) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><use data-c="1D45D" xlink:href="#MJX-83-TEX-I-1D45D"></use></g><g data-mml-node="mo" transform="translate(503,0)"><use data-c="2C" xlink:href="#MJX-83-TEX-N-2C"></use></g><g data-mml-node="mi" transform="translate(781,0)"><use data-c="1D45E" xlink:href="#MJX-83-TEX-I-1D45E"></use></g></g></g><g data-mml-node="msup" transform="translate(5260.8,0)"><g data-mml-node="mi"><use data-c="210E" xlink:href="#MJX-83-TEX-I-210E"></use></g><g data-mml-node="TeXAtom" transform="translate(609,413) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><use data-c="1D45D" xlink:href="#MJX-83-TEX-I-1D45D"></use></g><g data-mml-node="mo" transform="translate(503,0)"><use data-c="2C" xlink:href="#MJX-83-TEX-N-2C"></use></g><g data-mml-node="mi" transform="translate(781,0)"><use data-c="1D45E" xlink:href="#MJX-83-TEX-I-1D45E"></use></g></g></g><g data-mml-node="mo" transform="translate(6797.3,0)"><use data-c="28" xlink:href="#MJX-83-TEX-N-28"></use></g><g data-mml-node="msup" transform="translate(7186.3,0)"><g data-mml-node="mi"><use data-c="1D438" xlink:href="#MJX-83-TEX-I-1D438"></use></g><g data-mml-node="mi" transform="translate(848.3,413) scale(0.707)"><use data-c="1D6FC" xlink:href="#MJX-83-TEX-I-1D6FC"></use></g></g><g data-mml-node="mo" transform="translate(8537.1,0)"><use data-c="29" xlink:href="#MJX-83-TEX-N-29"></use></g><g data-mml-node="msup" transform="translate(8926.1,0)"><g data-mml-node="mi"><use data-c="1D461" xlink:href="#MJX-83-TEX-I-1D461"></use></g><g data-mml-node="TeXAtom" transform="translate(394,413) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><use data-c="1D45D" xlink:href="#MJX-83-TEX-I-1D45D"></use></g><g data-mml-node="mo" transform="translate(503,0)"><use data-c="2212" xlink:href="#MJX-83-TEX-N-2212"></use></g><g data-mml-node="mi" transform="translate(1281,0)"><use data-c="1D45E" xlink:href="#MJX-83-TEX-I-1D45E"></use></g></g></g><g data-mml-node="mo" transform="translate(10601.2,0)"><use data-c="2E" xlink:href="#MJX-83-TEX-N-2E"></use></g></g></g></svg><mjx-assistive-mml unselectable="on" display="block"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><msub><mi>P</mi><mi>α</mi></msub><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><munder><mo data-mjx-texclass="OP">∑</mo><mrow data-mjx-texclass="ORD"><mi>p</mi><mo>,</mo><mi>q</mi></mrow></munder><msup><mi>h</mi><mrow data-mjx-texclass="ORD"><mi>p</mi><mo>,</mo><mi>q</mi></mrow></msup><mo stretchy="false">(</mo><msup><mi>E</mi><mi>α</mi></msup><mo stretchy="false">)</mo><msup><mi>t</mi><mrow data-mjx-texclass="ORD"><mi>p</mi><mo>−</mo><mi>q</mi></mrow></msup><mo>.</mo></math></mjx-assistive-mml></mjx-container><span class="geoatoms-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <msub>
+    <mi>P</mi>
+    <mi>α</mi>
+  </msub>
+  <mo stretchy="false">(</mo>
+  <mi>t</mi>
+  <mo stretchy="false">)</mo>
+  <mo>=</mo>
+  <munder>
+    <mo data-mjx-texclass="OP">∑</mo>
+    <mrow data-mjx-texclass="ORD">
+      <mi>p</mi>
+      <mo>,</mo>
+      <mi>q</mi>
+    </mrow>
+  </munder>
+  <msup>
+    <mi>h</mi>
+    <mrow data-mjx-texclass="ORD">
+      <mi>p</mi>
+      <mo>,</mo>
+      <mi>q</mi>
+    </mrow>
+  </msup>
+  <mo stretchy="false">(</mo>
+  <msup>
+    <mi>E</mi>
+    <mi>α</mi>
+  </msup>
+  <mo stretchy="false">)</mo>
+  <msup>
+    <mi>t</mi>
+    <mrow data-mjx-texclass="ORD">
+      <mi>p</mi>
+      <mo>−</mo>
+      <mi>q</mi>
+    </mrow>
+  </msup>
+  <mo>.</mo>
+</math></span></div>
+<p>It records the Hodge cocharacter with positive multiplicities. Its constant coefficient can exceed <span class="arithmatex" data-tex="\rho_\alpha" data-math-rendered="svg"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="SVG" tabindex="0" ctxtmenu_counter="83" aria-hidden="true" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="2.381ex" height="1.489ex" role="img" focusable="false" viewBox="0 -442 1052.5 658" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.489ex;"><defs><path id="MJX-84-TEX-I-1D70C" d="M58 -216Q25 -216 23 -186Q23 -176 73 26T127 234Q143 289 182 341Q252 427 341 441Q343 441 349 441T359 442Q432 442 471 394T510 276Q510 219 486 165T425 74T345 13T266 -10H255H248Q197 -10 165 35L160 41L133 -71Q108 -168 104 -181T92 -202Q76 -216 58 -216ZM424 322Q424 359 407 382T357 405Q322 405 287 376T231 300Q217 269 193 170L176 102Q193 26 260 26Q298 26 334 62Q367 92 389 158T418 266T424 322Z"></path><path id="MJX-84-TEX-I-1D6FC" d="M34 156Q34 270 120 356T309 442Q379 442 421 402T478 304Q484 275 485 237V208Q534 282 560 374Q564 388 566 390T582 393Q603 393 603 385Q603 376 594 346T558 261T497 161L486 147L487 123Q489 67 495 47T514 26Q528 28 540 37T557 60Q559 67 562 68T577 70Q597 70 597 62Q597 56 591 43Q579 19 556 5T512 -10H505Q438 -10 414 62L411 69L400 61Q390 53 370 41T325 18T267 -2T203 -11Q124 -11 79 39T34 156ZM208 26Q257 26 306 47T379 90L403 112Q401 255 396 290Q382 405 304 405Q235 405 183 332Q156 292 139 224T121 120Q121 71 146 49T208 26Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D70C" xlink:href="#MJX-84-TEX-I-1D70C"></use></g><g data-mml-node="mi" transform="translate(550,-150) scale(0.707)"><use data-c="1D6FC" xlink:href="#MJX-84-TEX-I-1D6FC"></use></g></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>ρ</mi><mi>α</mi></msub></math></mjx-assistive-mml></mjx-container><span class="geoatoms-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi>ρ</mi>
+    <mi>α</mi>
+  </msub>
+</math></span></span>; it does not count only rational Hodge classes. For the hyperplane and quadric section of LG(3,6), <span class="arithmatex" data-tex="\rho=3" data-math-rendered="svg"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="SVG" tabindex="0" ctxtmenu_counter="84" aria-hidden="true" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="5.318ex" height="1.993ex" role="img" focusable="false" viewBox="0 -665 2350.6 881" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.489ex;"><defs><path id="MJX-85-TEX-I-1D70C" d="M58 -216Q25 -216 23 -186Q23 -176 73 26T127 234Q143 289 182 341Q252 427 341 441Q343 441 349 441T359 442Q432 442 471 394T510 276Q510 219 486 165T425 74T345 13T266 -10H255H248Q197 -10 165 35L160 41L133 -71Q108 -168 104 -181T92 -202Q76 -216 58 -216ZM424 322Q424 359 407 382T357 405Q322 405 287 376T231 300Q217 269 193 170L176 102Q193 26 260 26Q298 26 334 62Q367 92 389 158T418 266T424 322Z"></path><path id="MJX-85-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJX-85-TEX-N-33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D70C" xlink:href="#MJX-85-TEX-I-1D70C"></use></g><g data-mml-node="mo" transform="translate(794.8,0)"><use data-c="3D" xlink:href="#MJX-85-TEX-N-3D"></use></g><g data-mml-node="mn" transform="translate(1850.6,0)"><use data-c="33" xlink:href="#MJX-85-TEX-N-33"></use></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>ρ</mi><mo>=</mo><mn>3</mn></math></mjx-assistive-mml></mjx-container><span class="geoatoms-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>ρ</mi>
+  <mo>=</mo>
+  <mn>3</mn>
+</math></span></span>, while <span class="arithmatex" data-tex="P(t)=14t^2+102+14t^{-2}" data-math-rendered="svg"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="SVG" tabindex="0" ctxtmenu_counter="85" aria-hidden="true" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="25.597ex" height="2.452ex" role="img" focusable="false" viewBox="0 -833.9 11313.7 1083.9" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.566ex;"><defs><path id="MJX-86-TEX-I-1D443" d="M287 628Q287 635 230 637Q206 637 199 638T192 648Q192 649 194 659Q200 679 203 681T397 683Q587 682 600 680Q664 669 707 631T751 530Q751 453 685 389Q616 321 507 303Q500 302 402 301H307L277 182Q247 66 247 59Q247 55 248 54T255 50T272 48T305 46H336Q342 37 342 35Q342 19 335 5Q330 0 319 0Q316 0 282 1T182 2Q120 2 87 2T51 1Q33 1 33 11Q33 13 36 25Q40 41 44 43T67 46Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628ZM645 554Q645 567 643 575T634 597T609 619T560 635Q553 636 480 637Q463 637 445 637T416 636T404 636Q391 635 386 627Q384 621 367 550T332 412T314 344Q314 342 395 342H407H430Q542 342 590 392Q617 419 631 471T645 554Z"></path><path id="MJX-86-TEX-N-28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path><path id="MJX-86-TEX-I-1D461" d="M26 385Q19 392 19 395Q19 399 22 411T27 425Q29 430 36 430T87 431H140L159 511Q162 522 166 540T173 566T179 586T187 603T197 615T211 624T229 626Q247 625 254 615T261 596Q261 589 252 549T232 470L222 433Q222 431 272 431H323Q330 424 330 420Q330 398 317 385H210L174 240Q135 80 135 68Q135 26 162 26Q197 26 230 60T283 144Q285 150 288 151T303 153H307Q322 153 322 145Q322 142 319 133Q314 117 301 95T267 48T216 6T155 -11Q125 -11 98 4T59 56Q57 64 57 83V101L92 241Q127 382 128 383Q128 385 77 385H26Z"></path><path id="MJX-86-TEX-N-29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path><path id="MJX-86-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJX-86-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJX-86-TEX-N-34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"></path><path id="MJX-86-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path id="MJX-86-TEX-N-2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path><path id="MJX-86-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJX-86-TEX-N-2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D443" xlink:href="#MJX-86-TEX-I-1D443"></use></g><g data-mml-node="mo" transform="translate(751,0)"><use data-c="28" xlink:href="#MJX-86-TEX-N-28"></use></g><g data-mml-node="mi" transform="translate(1140,0)"><use data-c="1D461" xlink:href="#MJX-86-TEX-I-1D461"></use></g><g data-mml-node="mo" transform="translate(1501,0)"><use data-c="29" xlink:href="#MJX-86-TEX-N-29"></use></g><g data-mml-node="mo" transform="translate(2167.8,0)"><use data-c="3D" xlink:href="#MJX-86-TEX-N-3D"></use></g><g data-mml-node="mn" transform="translate(3223.6,0)"><use data-c="31" xlink:href="#MJX-86-TEX-N-31"></use><use data-c="34" xlink:href="#MJX-86-TEX-N-34" transform="translate(500,0)"></use></g><g data-mml-node="msup" transform="translate(4223.6,0)"><g data-mml-node="mi"><use data-c="1D461" xlink:href="#MJX-86-TEX-I-1D461"></use></g><g data-mml-node="mn" transform="translate(394,363) scale(0.707)"><use data-c="32" xlink:href="#MJX-86-TEX-N-32"></use></g></g><g data-mml-node="mo" transform="translate(5243.3,0)"><use data-c="2B" xlink:href="#MJX-86-TEX-N-2B"></use></g><g data-mml-node="mn" transform="translate(6243.6,0)"><use data-c="31" xlink:href="#MJX-86-TEX-N-31"></use><use data-c="30" xlink:href="#MJX-86-TEX-N-30" transform="translate(500,0)"></use><use data-c="32" xlink:href="#MJX-86-TEX-N-32" transform="translate(1000,0)"></use></g><g data-mml-node="mo" transform="translate(7965.8,0)"><use data-c="2B" xlink:href="#MJX-86-TEX-N-2B"></use></g><g data-mml-node="mn" transform="translate(8966,0)"><use data-c="31" xlink:href="#MJX-86-TEX-N-31"></use><use data-c="34" xlink:href="#MJX-86-TEX-N-34" transform="translate(500,0)"></use></g><g data-mml-node="msup" transform="translate(9966,0)"><g data-mml-node="mi"><use data-c="1D461" xlink:href="#MJX-86-TEX-I-1D461"></use></g><g data-mml-node="TeXAtom" transform="translate(394,363) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mo"><use data-c="2212" xlink:href="#MJX-86-TEX-N-2212"></use></g><g data-mml-node="mn" transform="translate(778,0)"><use data-c="32" xlink:href="#MJX-86-TEX-N-32"></use></g></g></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>P</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mn>14</mn><msup><mi>t</mi><mn>2</mn></msup><mo>+</mo><mn>102</mn><mo>+</mo><mn>14</mn><msup><mi>t</mi><mrow data-mjx-texclass="ORD"><mo>−</mo><mn>2</mn></mrow></msup></math></mjx-assistive-mml></mjx-container><span class="geoatoms-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>P</mi>
+  <mo stretchy="false">(</mo>
+  <mi>t</mi>
+  <mo stretchy="false">)</mo>
+  <mo>=</mo>
+  <mn>14</mn>
+  <msup>
+    <mi>t</mi>
+    <mn>2</mn>
+  </msup>
+  <mo>+</mo>
+  <mn>102</mn>
+  <mo>+</mo>
+  <mn>14</mn>
+  <msup>
+    <mi>t</mi>
+    <mrow data-mjx-texclass="ORD">
+      <mo>−</mo>
+      <mn>2</mn>
+    </mrow>
+  </msup>
+</math></span></span>.</p>
+<p>A characteristic factor of degree d describes d conjugate eigenvalues. A listed atomic polynomial applies separately at each root; the consistency checks sum over all these roots. The polynomials here refer to first-Chern multiplication. The connection pages also use the negative of this operator; their factor numbering and sign convention are stated on each page.</p>
+<h2 id="when-the-criterion-identifies-atoms">When the criterion identifies atoms<a class="headerlink" href="#when-the-criterion-identifies-atoms" title="Permanent link">¶</a></h2>
 <p>The matrix must span the full Hodge-invariant sector, have a nonzero unit determinant, and represent a complete curve calculation. For an ample complete intersection, weak Lefschetz identifies the fixed ambient part. Irreducible non-Tate vanishing cohomology has no rational Hodge classes for a very general member. The primitive assignment uses monodromy, the first-Chern degree, the rational characteristic relation, or the stated projective-bundle argument. Very-general qualifications remain explicit.</p>
 <p>The finite numerical point is a display normalization. The corresponding admissible small-locus point is obtained by homogeneous Novikov rescaling along the ample anticanonical class. The non-further-splitting criterion then identifies the local coarse factors. The <a href="../../toric/mathematics/">mathematical conventions</a> state the criterion and the distinction between ambient computations and full Hodge data.</p>
 <p>For projective complete intersections of index one, the primitive eigenvalue uses the factorial correction described in <a href="https://arxiv.org/html/1501.03683v6">Hu, Proposition 5.9 and the index-one shift</a>. The two exceptional Hodge reconstructions use the projective incidence/blow-up model and <a href="https://www.kurims.kyoto-u.ac.jp/~mukai/paper/Trieste.pdf">Mukai’s genus-twelve model</a>; the ordinary Gushel–Mukai Hodge data appear in <a href="https://arxiv.org/html/2001.03485">Debarre, §5.1</a>. For those two Hodge reconstructions, characteristic numbers were checked independently at two exact torus points.</p>
-<p>Two useful scope checks are GM-20 and CKP-551: their very-general Hodge-invariant ranks are both 14, while the stored matrices have ranks 9 and 8. Their nonzero ambient determinants therefore do not certify a full atomic decomposition.</p>
-<h2 id="primitive-assignment-rules">Primitive assignment rules<a class="headerlink" href="#primitive-assignment-rules" title="Permanent link">&para;</a></h2>
+<p>For the <a href="../additional/#fl125o01o02o10gm20">incidence complete intersection in Fl(1,2,5)</a> and the <a href="../records/ckp-551/">cubic-divisor construction CKP-551</a>, the very-general Hodge-invariant ranks are both 14, while the ambient matrices have ranks 9 and 8. Their nonzero ambient determinants therefore do not certify full atomic decompositions.</p>
+<h2 id="primitive-assignment-rules">Primitive assignment rules<a class="headerlink" href="#primitive-assignment-rules" title="Permanent link">¶</a></h2>
 <p><strong>Full Tate cohomology.</strong> When the full cohomology is Tate and equals the recorded space, each eigenvalue factor of multiplicity m has rho=m and Hodge polynomial m.</p>
 <p><strong>Chern index at least two.</strong> For an ample intersection, monodromy acts irreducibly on the vanishing middle cohomology and quantum multiplication acts there by a scalar. Returning to the same degree requires a curve of Chern degree one. An index of at least two excludes it, so the scalar is zero.</p>
 <p><strong>Unique rational eigenvalue.</strong> The scalar action is rational. The ambient characteristic relation annihilates the full ring: it annihilates the unit, and multiplication is associative. If it has a single rational root, that root therefore carries all vanishing cohomology.</p>
@@ -1759,7 +1993,7 @@ P_\alpha(t)=\sum_{p,q}h^{p,q}(E^\alpha)t^{p-q}.
 <p><strong>Odd middle cohomology.</strong> When all even cohomology is ambient and odd cohomology is middle-dimensional, its products lie in the ambient algebra. Choose paired odd classes u,v. The nonzero product Theta=u star v is a common eigenvector; associativity and v star v=0 imply Theta squared=0. Its supporting rational spectral factor must therefore be repeated. A unique repeated rational factor fixes the assignment.</p>
 <p><strong>Projective bundle over a cubic threefold.</strong> In CKP-169 and CKP-567, the projective-bundle theorem gives two Tate-shifted copies of the cubic threefold middle Hodge structure. A simple one-dimensional even spectral factor cannot carry odd cohomology: nondegeneracy and associativity would contradict the square-zero relation of an odd class. Hence all odd classes lie on the unique repeated quadratic factor. Irreducible cubic-threefold monodromy reduces the action to a rational two-by-two multiplicity operator; each of its two roots carries one copy, with polynomial 5t+5/t.</p>
 <p>These rules give the full polynomial by adding the assigned vanishing-cohomology polynomial to the ambient contribution. Every certified decomposition is checked against the full Hodge polynomial and the total Hodge-invariant rank.</p>
-<h2 id="browse-by-dimension">Browse by dimension<a class="headerlink" href="#browse-by-dimension" title="Permanent link">&para;</a></h2>
+<h2 id="browse-by-dimension">Browse by dimension<a class="headerlink" href="#browse-by-dimension" title="Permanent link">¶</a></h2>
 <ul>
 <li><a href="../invariants-points-curves/">Points and curves</a></li>
 <li><a href="../invariants-surfaces/">Surfaces</a></li>
@@ -1768,12 +2002,12 @@ P_\alpha(t)=\sum_{p,q}h^{p,q}(E^\alpha)t^{p-q}.
 <li><a href="../invariants-fivefolds/">Fivefolds</a></li>
 <li><a href="../invariants-higher-dimensional/">Higher dimensions</a></li>
 </ul>
-<h2 id="all-records">All records<a class="headerlink" href="#all-records" title="Permanent link">&para;</a></h2>
+<h2 id="catalogue">Catalogue<a class="headerlink" href="#catalogue" title="Permanent link">¶</a></h2>
 <div class="atomic-index">
 <table>
 <thead>
 <tr>
-<th>Geometric record</th>
+<th>Geometric presentation</th>
 <th style="text-align: right;">Dimension</th>
 <th style="text-align: right;">Ambient rank</th>
 <th style="text-align: right;">Full Hodge-invariant rank</th>
@@ -1971,210 +2205,210 @@ P_\alpha(t)=\sum_{p,q}h^{p,q}(E^\alpha)t^{p-q}.
 <td><a href="../invariants-higher-dimensional/#d8d261b9c52c">Full atomic invariants</a></td>
 </tr>
 <tr>
-<td><a href="../records/pci5-2-2-2-2/">Complete intersection (2,2,2,2) in P⁹ (PCI5-2-2-2-2)</a></td>
+<td><a href="../records/pci5-2-2-2-2/">Complete intersection (2,2,2,2) in P⁹</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">6</td>
 <td style="text-align: right;">6</td>
 <td><a href="../invariants-fivefolds/#pci5-2-2-2-2">Full atomic invariants</a></td>
 </tr>
 <tr>
-<td><a href="../records/pci5-2-2-2-2-2/">Complete intersection (2,2,2,2,2) in P¹⁰ (PCI5-2-2-2-2-2)</a></td>
+<td><a href="../records/pci5-2-2-2-2-2/">Complete intersection (2,2,2,2,2) in P¹⁰</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">6</td>
 <td style="text-align: right;">6</td>
 <td><a href="../invariants-fivefolds/#pci5-2-2-2-2-2">Full atomic invariants</a></td>
 </tr>
 <tr>
-<td><a href="../records/pci5-2-2-2-3/">Complete intersection (2,2,2,3) in P⁹ (PCI5-2-2-2-3)</a></td>
+<td><a href="../records/pci5-2-2-2-3/">Complete intersection (2,2,2,3) in P⁹</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">6</td>
 <td style="text-align: right;">6</td>
 <td><a href="../invariants-fivefolds/#pci5-2-2-2-3">Full atomic invariants</a></td>
 </tr>
 <tr>
-<td><a href="../records/pci5-2-2-3/">Complete intersection (2,2,3) in P⁸ (PCI5-2-2-3)</a></td>
+<td><a href="../records/pci5-2-2-3/">Complete intersection (2,2,3) in P⁸</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">6</td>
 <td style="text-align: right;">6</td>
 <td><a href="../invariants-fivefolds/#pci5-2-2-3">Full atomic invariants</a></td>
 </tr>
 <tr>
-<td><a href="../records/pci5-2-2-4/">Complete intersection (2,2,4) in P⁸ (PCI5-2-2-4)</a></td>
+<td><a href="../records/pci5-2-2-4/">Complete intersection (2,2,4) in P⁸</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">6</td>
 <td style="text-align: right;">6</td>
 <td><a href="../invariants-fivefolds/#pci5-2-2-4">Full atomic invariants</a></td>
 </tr>
 <tr>
-<td><a href="../records/qc5-001/">Complete intersection (2,3) in P⁷ (QC5-001)</a></td>
+<td><a href="../records/qc5-001/">Complete intersection (2,3) in P⁷</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">6</td>
 <td style="text-align: right;">6</td>
 <td><a href="../invariants-fivefolds/#qc5-001">Full atomic invariants</a></td>
 </tr>
 <tr>
-<td><a href="../records/pci5-2-3-3/">Complete intersection (2,3,3) in P⁸ (PCI5-2-3-3)</a></td>
+<td><a href="../records/pci5-2-3-3/">Complete intersection (2,3,3) in P⁸</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">6</td>
 <td style="text-align: right;">6</td>
 <td><a href="../invariants-fivefolds/#pci5-2-3-3">Full atomic invariants</a></td>
 </tr>
 <tr>
-<td><a href="../records/pci5-2-4/">Complete intersection (2,4) in P⁷ (PCI5-2-4)</a></td>
+<td><a href="../records/pci5-2-4/">Complete intersection (2,4) in P⁷</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">6</td>
 <td style="text-align: right;">6</td>
 <td><a href="../invariants-fivefolds/#pci5-2-4">Full atomic invariants</a></td>
 </tr>
 <tr>
-<td><a href="../records/pci5-2-5/">Complete intersection (2,5) in P⁷ (PCI5-2-5)</a></td>
+<td><a href="../records/pci5-2-5/">Complete intersection (2,5) in P⁷</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">6</td>
 <td style="text-align: right;">6</td>
 <td><a href="../invariants-fivefolds/#pci5-2-5">Full atomic invariants</a></td>
 </tr>
 <tr>
-<td><a href="../records/pci5-3-3/">Complete intersection (3,3) in P⁷ (PCI5-3-3)</a></td>
+<td><a href="../records/pci5-3-3/">Complete intersection (3,3) in P⁷</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">6</td>
 <td style="text-align: right;">6</td>
 <td><a href="../invariants-fivefolds/#pci5-3-3">Full atomic invariants</a></td>
 </tr>
 <tr>
-<td><a href="../records/pci5-3-4/">Complete intersection (3,4) in P⁷ (PCI5-3-4)</a></td>
+<td><a href="../records/pci5-3-4/">Complete intersection (3,4) in P⁷</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">6</td>
 <td style="text-align: right;">6</td>
 <td><a href="../invariants-fivefolds/#pci5-3-4">Full atomic invariants</a></td>
 </tr>
 <tr>
-<td><a href="../records/pb5-060/">Complete intersection of multidegrees (1,1), (1,1), (1,2) in P³ × P⁵ (PB5-060)</a></td>
+<td><a href="../records/pb5-060/">Complete intersection of multidegrees (1,1), (1,1), (1,2) in P³ × P⁵</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">12</td>
 <td style="text-align: right;">12</td>
 <td><a href="../invariants-fivefolds/#pb5-060">No cyclic point found</a></td>
 </tr>
 <tr>
-<td><a href="../records/pb5-003/">Complete intersection of multidegrees (1,3) in P¹ × P⁵ (PB5-003)</a></td>
+<td><a href="../records/pb5-003/">Complete intersection of multidegrees (1,3) in P¹ × P⁵</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">10</td>
 <td style="text-align: right;">10</td>
 <td><a href="../invariants-fivefolds/#pb5-003">No cyclic point found</a></td>
 </tr>
 <tr>
-<td><a href="../records/pb5-051/">Complete intersection of multidegrees (2,1), (1,2) in P³ × P⁴ (PB5-051)</a></td>
+<td><a href="../records/pb5-051/">Complete intersection of multidegrees (2,1), (1,2) in P³ × P⁴</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">12</td>
 <td style="text-align: right;">12</td>
 <td><a href="../invariants-fivefolds/#pb5-051">No cyclic point found</a></td>
 </tr>
 <tr>
-<td><a href="../records/prod5-d02/">Complete intersection of multidegrees (2,1), (1,2) in P³ × P⁴ (PROD5-D02)</a></td>
+<td><a href="../records/prod5-d02/">Complete intersection of multidegrees (2,1), (1,2) in P³ × P⁴</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">12</td>
 <td style="text-align: right;">12</td>
 <td><a href="../invariants-fivefolds/#prod5-d02">No cyclic point found</a></td>
 </tr>
 <tr>
-<td><a href="../records/prod5-e02/">Complete intersection of multidegrees (2,1), (1,2), (1,1) in P⁴ × P⁴ (PROD5-E02)</a></td>
+<td><a href="../records/prod5-e02/">Complete intersection of multidegrees (2,1), (1,2), (1,1) in P⁴ × P⁴</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">12</td>
 <td style="text-align: right;">12</td>
 <td><a href="../invariants-fivefolds/#prod5-e02">No cyclic point found</a></td>
 </tr>
 <tr>
-<td><a href="../records/prod5-d04/">Complete intersection of multidegrees (2,1), (1,3) in P³ × P⁴ (PROD5-D04)</a></td>
+<td><a href="../records/prod5-d04/">Complete intersection of multidegrees (2,1), (1,3) in P³ × P⁴</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">12</td>
 <td style="text-align: right;">12</td>
 <td><a href="../invariants-fivefolds/#prod5-d04">No cyclic point found</a></td>
 </tr>
 <tr>
-<td><a href="../records/prod5-a01/">Complete intersection of multidegrees (2,2) in P² × P⁴ (PROD5-A01)</a></td>
+<td><a href="../records/prod5-a01/">Complete intersection of multidegrees (2,2) in P² × P⁴</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">12</td>
 <td style="text-align: right;">12</td>
 <td><a href="../invariants-fivefolds/#prod5-a01">Full atomic invariants</a></td>
 </tr>
 <tr>
-<td><a href="../records/pb5-028/">Complete intersection of multidegrees (2,2) in P³ × P³ (PB5-028)</a></td>
+<td><a href="../records/pb5-028/">Complete intersection of multidegrees (2,2) in P³ × P³</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">12</td>
 <td style="text-align: right;">12</td>
 <td><a href="../invariants-fivefolds/#pb5-028">No cyclic point found</a></td>
 </tr>
 <tr>
-<td><a href="../records/prod5-b01/">Complete intersection of multidegrees (2,2) in P³ × P³ (PROD5-B01)</a></td>
+<td><a href="../records/prod5-b01/">Complete intersection of multidegrees (2,2) in P³ × P³</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">12</td>
 <td style="text-align: right;">12</td>
 <td><a href="../invariants-fivefolds/#prod5-b01">No cyclic point found</a></td>
 </tr>
 <tr>
-<td><a href="../records/prod5-d01/">Complete intersection of multidegrees (2,2), (1,1) in P³ × P⁴ (PROD5-D01)</a></td>
+<td><a href="../records/prod5-d01/">Complete intersection of multidegrees (2,2), (1,1) in P³ × P⁴</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">12</td>
 <td style="text-align: right;">12</td>
 <td><a href="../invariants-fivefolds/#prod5-d01">Full atomic invariants</a></td>
 </tr>
 <tr>
-<td><a href="../records/prod5-e01/">Complete intersection of multidegrees (2,2), (1,1), (1,1) in P⁴ × P⁴ (PROD5-E01)</a></td>
+<td><a href="../records/prod5-e01/">Complete intersection of multidegrees (2,2), (1,1), (1,1) in P⁴ × P⁴</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">12</td>
 <td style="text-align: right;">12</td>
 <td><a href="../invariants-fivefolds/#prod5-e01">No cyclic point found</a></td>
 </tr>
 <tr>
-<td><a href="../records/prod5-d05/">Complete intersection of multidegrees (2,2), (1,2) in P³ × P⁴ (PROD5-D05)</a></td>
+<td><a href="../records/prod5-d05/">Complete intersection of multidegrees (2,2), (1,2) in P³ × P⁴</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">12</td>
 <td style="text-align: right;">12</td>
 <td><a href="../invariants-fivefolds/#prod5-d05">No cyclic point found</a></td>
 </tr>
 <tr>
-<td><a href="../records/prod5-c01/">Complete intersection of multidegrees (2,2,2) in P² × P² × P² (PROD5-C01)</a></td>
+<td><a href="../records/prod5-c01/">Complete intersection of multidegrees (2,2,2) in P² × P² × P²</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">20</td>
 <td style="text-align: right;">20</td>
 <td><a href="../invariants-fivefolds/#prod5-c01">No cyclic point found</a></td>
 </tr>
 <tr>
-<td><a href="../records/prod5-a02/">Complete intersection of multidegrees (2,3) in P² × P⁴ (PROD5-A02)</a></td>
+<td><a href="../records/prod5-a02/">Complete intersection of multidegrees (2,3) in P² × P⁴</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">12</td>
 <td style="text-align: right;">12</td>
 <td><a href="../invariants-fivefolds/#prod5-a02">No cyclic point found</a></td>
 </tr>
 <tr>
-<td><a href="../records/prod5-b02/">Complete intersection of multidegrees (2,3) in P³ × P³ (PROD5-B02)</a></td>
+<td><a href="../records/prod5-b02/">Complete intersection of multidegrees (2,3) in P³ × P³</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">12</td>
 <td style="text-align: right;">12</td>
 <td><a href="../invariants-fivefolds/#prod5-b02">Full atomic invariants</a></td>
 </tr>
 <tr>
-<td><a href="../records/prod5-d03/">Complete intersection of multidegrees (2,3), (1,1) in P³ × P⁴ (PROD5-D03)</a></td>
+<td><a href="../records/prod5-d03/">Complete intersection of multidegrees (2,3), (1,1) in P³ × P⁴</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">12</td>
 <td style="text-align: right;">12</td>
 <td><a href="../invariants-fivefolds/#prod5-d03">No cyclic point found</a></td>
 </tr>
 <tr>
-<td><a href="../records/prod5-a03/">Complete intersection of multidegrees (2,4) in P² × P⁴ (PROD5-A03)</a></td>
+<td><a href="../records/prod5-a03/">Complete intersection of multidegrees (2,4) in P² × P⁴</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">12</td>
 <td style="text-align: right;">12</td>
 <td><a href="../invariants-fivefolds/#prod5-a03">No cyclic point found</a></td>
 </tr>
 <tr>
-<td><a href="../records/prod5-b03/">Complete intersection of multidegrees (3,3) in P³ × P³ (PROD5-B03)</a></td>
+<td><a href="../records/prod5-b03/">Complete intersection of multidegrees (3,3) in P³ × P³</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">12</td>
 <td style="text-align: right;">12</td>
 <td><a href="../invariants-fivefolds/#prod5-b03">No cyclic point found</a></td>
 </tr>
 <tr>
-<td><a href="../records/pci5-6/">Degree-6 fivefold in P⁶ (PCI5-6)</a></td>
+<td><a href="../records/pci5-6/">Degree-6 fivefold in P⁶</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">6</td>
 <td style="text-align: right;">6</td>
@@ -2363,308 +2597,308 @@ P_\alpha(t)=\sum_{p,q}h^{p,q}(E^\alpha)t^{p-q}.
 <td><a href="../invariants-fivefolds/#819481252d0a">Full atomic invariants</a></td>
 </tr>
 <tr>
-<td><a href="../records/qd5-001/">Quartic double cover of P⁵ (QD5-001)</a></td>
+<td><a href="../records/qd5-001/">Quartic double cover of P⁵</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">6</td>
 <td style="text-align: right;">6</td>
 <td><a href="../invariants-fivefolds/#qd5-001">Full atomic invariants</a></td>
 </tr>
 <tr>
-<td><a href="../records/pci5-4/">Quartic fivefold in P⁶ (PCI5-4)</a></td>
+<td><a href="../records/pci5-4/">Quartic fivefold in P⁶</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">6</td>
 <td style="text-align: right;">6</td>
 <td><a href="../invariants-fivefolds/#pci5-4">Full atomic invariants</a></td>
 </tr>
 <tr>
-<td><a href="../records/pci5-5/">Quintic fivefold in P⁶ (PCI5-5)</a></td>
+<td><a href="../records/pci5-5/">Quintic fivefold in P⁶</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">6</td>
 <td style="text-align: right;">6</td>
 <td><a href="../invariants-fivefolds/#pci5-5">Full atomic invariants</a></td>
 </tr>
 <tr>
-<td><a href="../records/pb5-016/">Section of P_{P²}(O^4 ⊕ O(1)) by 3ξ+H (PB5-016)</a></td>
+<td><a href="../records/pb5-016/">Section of P_{P²}(O^4 ⊕ O(1)) by 3ξ+H</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">12</td>
 <td style="text-align: right;">12</td>
 <td><a href="../invariants-fivefolds/#pb5-016">No cyclic point found</a></td>
 </tr>
 <tr>
-<td><a href="../records/pb5-017/">Section of P_{P²}(O^4 ⊕ O(1)) by 4ξ+H (PB5-017)</a></td>
+<td><a href="../records/pb5-017/">Section of P_{P²}(O^4 ⊕ O(1)) by 4ξ+H</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">12</td>
 <td style="text-align: right;">12</td>
 <td><a href="../invariants-fivefolds/#pb5-017">No cyclic point found</a></td>
 </tr>
 <tr>
-<td><a href="../records/pb5-043/">Section of P_{P³}(O^2 ⊕ O(1)^2) by 2ξ+H (PB5-043)</a></td>
+<td><a href="../records/pb5-043/">Section of P_{P³}(O^2 ⊕ O(1)^2) by 2ξ+H</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">12</td>
 <td style="text-align: right;">12</td>
 <td><a href="../invariants-fivefolds/#pb5-043">No cyclic point found</a></td>
 </tr>
 <tr>
-<td><a href="../records/pb5-044/">Section of P_{P³}(O^2 ⊕ O(1)^2) by 3ξ+H (PB5-044)</a></td>
+<td><a href="../records/pb5-044/">Section of P_{P³}(O^2 ⊕ O(1)^2) by 3ξ+H</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">12</td>
 <td style="text-align: right;">12</td>
 <td><a href="../invariants-fivefolds/#pb5-044">No cyclic point found</a></td>
 </tr>
 <tr>
-<td><a href="../records/pb5-036/">Section of P_{P³}(O^3 ⊕ O(1)) by 2ξ+2H (PB5-036)</a></td>
+<td><a href="../records/pb5-036/">Section of P_{P³}(O^3 ⊕ O(1)) by 2ξ+2H</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">12</td>
 <td style="text-align: right;">12</td>
 <td><a href="../invariants-fivefolds/#pb5-036">Full atomic invariants</a></td>
 </tr>
 <tr>
-<td><a href="../records/pb5-038/">Section of P_{P³}(O^3 ⊕ O(1)) by 3ξ+2H (PB5-038)</a></td>
+<td><a href="../records/pb5-038/">Section of P_{P³}(O^3 ⊕ O(1)) by 3ξ+2H</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">12</td>
 <td style="text-align: right;">12</td>
 <td><a href="../invariants-fivefolds/#pb5-038">No cyclic point found</a></td>
 </tr>
 <tr>
-<td><a href="../records/pb5-037/">Section of P_{P³}(O^3 ⊕ O(1)) by 3ξ+H (PB5-037)</a></td>
+<td><a href="../records/pb5-037/">Section of P_{P³}(O^3 ⊕ O(1)) by 3ξ+H</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">12</td>
 <td style="text-align: right;">12</td>
 <td><a href="../invariants-fivefolds/#pb5-037">Full atomic invariants</a></td>
 </tr>
 <tr>
-<td><a href="../records/pb5-040/">Section of P_{P³}(O^3 ⊕ O(2)) by 2ξ+H (PB5-040)</a></td>
+<td><a href="../records/pb5-040/">Section of P_{P³}(O^3 ⊕ O(2)) by 2ξ+H</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">12</td>
 <td style="text-align: right;">12</td>
 <td><a href="../invariants-fivefolds/#pb5-040">No cyclic point found</a></td>
 </tr>
 <tr>
-<td><a href="../records/pb5-041/">Section of P_{P³}(O^3 ⊕ O(2)) by 3ξ+H (PB5-041)</a></td>
+<td><a href="../records/pb5-041/">Section of P_{P³}(O^3 ⊕ O(2)) by 3ξ+H</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">12</td>
 <td style="text-align: right;">12</td>
 <td><a href="../invariants-fivefolds/#pb5-041">No cyclic point found</a></td>
 </tr>
 <tr>
-<td><a href="../records/pb5-058/">Section of P_{P³}(O^4 ⊕ O(1)) by 2ξ+H, 2ξ+H (PB5-058)</a></td>
+<td><a href="../records/pb5-058/">Section of P_{P³}(O^4 ⊕ O(1)) by 2ξ+H, 2ξ+H</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">12</td>
 <td style="text-align: right;">12</td>
 <td><a href="../invariants-fivefolds/#pb5-058">No cyclic point found</a></td>
 </tr>
 <tr>
-<td><a href="../records/pb5-056/">Section of P_{P³}(O^4 ⊕ O(1)) by ξ+H, 2ξ+H (PB5-056)</a></td>
+<td><a href="../records/pb5-056/">Section of P_{P³}(O^4 ⊕ O(1)) by ξ+H, 2ξ+H</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">12</td>
 <td style="text-align: right;">12</td>
 <td><a href="../invariants-fivefolds/#pb5-056">No cyclic point found</a></td>
 </tr>
 <tr>
-<td><a href="../records/pb5-057/">Section of P_{P³}(O^4 ⊕ O(1)) by ξ+H, 3ξ+H (PB5-057)</a></td>
+<td><a href="../records/pb5-057/">Section of P_{P³}(O^4 ⊕ O(1)) by ξ+H, 3ξ+H</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">12</td>
 <td style="text-align: right;">12</td>
 <td><a href="../invariants-fivefolds/#pb5-057">No cyclic point found</a></td>
 </tr>
 <tr>
-<td><a href="../records/pb5-088/">Section of P_{P⁴}(O ⊕ O(1) ⊕ O(2)) by 2ξ+H (PB5-088)</a></td>
+<td><a href="../records/pb5-088/">Section of P_{P⁴}(O ⊕ O(1) ⊕ O(2)) by 2ξ+H</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">12</td>
 <td style="text-align: right;">12</td>
 <td><a href="../invariants-fivefolds/#pb5-088">No cyclic point found</a></td>
 </tr>
 <tr>
-<td><a href="../records/pb5-086/">Section of P_{P⁴}(O ⊕ O(1)^2) by 2ξ+2H (PB5-086)</a></td>
+<td><a href="../records/pb5-086/">Section of P_{P⁴}(O ⊕ O(1)^2) by 2ξ+2H</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">12</td>
 <td style="text-align: right;">12</td>
 <td><a href="../invariants-fivefolds/#pb5-086">No cyclic point found</a></td>
 </tr>
 <tr>
-<td><a href="../records/pb5-085/">Section of P_{P⁴}(O ⊕ O(1)^2) by 2ξ+H (PB5-085)</a></td>
+<td><a href="../records/pb5-085/">Section of P_{P⁴}(O ⊕ O(1)^2) by 2ξ+H</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">12</td>
 <td style="text-align: right;">12</td>
 <td><a href="../invariants-fivefolds/#pb5-085">No cyclic point found</a></td>
 </tr>
 <tr>
-<td><a href="../records/pb5-075/">Section of P_{P⁴}(O^2 ⊕ O(1)) by 2ξ+2H (PB5-075)</a></td>
+<td><a href="../records/pb5-075/">Section of P_{P⁴}(O^2 ⊕ O(1)) by 2ξ+2H</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">12</td>
 <td style="text-align: right;">12</td>
 <td><a href="../invariants-fivefolds/#pb5-075">No cyclic point found</a></td>
 </tr>
 <tr>
-<td><a href="../records/pb5-076/">Section of P_{P⁴}(O^2 ⊕ O(1)) by 2ξ+3H (PB5-076)</a></td>
+<td><a href="../records/pb5-076/">Section of P_{P⁴}(O^2 ⊕ O(1)) by 2ξ+3H</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">12</td>
 <td style="text-align: right;">12</td>
 <td><a href="../invariants-fivefolds/#pb5-076">No cyclic point found</a></td>
 </tr>
 <tr>
-<td><a href="../records/pb5-107/">Section of P_{P⁴}(O^2 ⊕ O(1)^2) by ξ+H, 2ξ+H (PB5-107)</a></td>
+<td><a href="../records/pb5-107/">Section of P_{P⁴}(O^2 ⊕ O(1)^2) by ξ+H, 2ξ+H</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">12</td>
 <td style="text-align: right;">12</td>
 <td><a href="../invariants-fivefolds/#pb5-107">No cyclic point found</a></td>
 </tr>
 <tr>
-<td><a href="../records/pb5-080/">Section of P_{P⁴}(O^2 ⊕ O(2)) by 2ξ+2H (PB5-080)</a></td>
+<td><a href="../records/pb5-080/">Section of P_{P⁴}(O^2 ⊕ O(2)) by 2ξ+2H</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">12</td>
 <td style="text-align: right;">12</td>
 <td><a href="../invariants-fivefolds/#pb5-080">No cyclic point found</a></td>
 </tr>
 <tr>
-<td><a href="../records/pb5-079/">Section of P_{P⁴}(O^2 ⊕ O(2)) by 2ξ+H (PB5-079)</a></td>
+<td><a href="../records/pb5-079/">Section of P_{P⁴}(O^2 ⊕ O(2)) by 2ξ+H</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">12</td>
 <td style="text-align: right;">12</td>
 <td><a href="../invariants-fivefolds/#pb5-079">No cyclic point found</a></td>
 </tr>
 <tr>
-<td><a href="../records/pb5-082/">Section of P_{P⁴}(O^2 ⊕ O(3)) by 2ξ+H (PB5-082)</a></td>
+<td><a href="../records/pb5-082/">Section of P_{P⁴}(O^2 ⊕ O(3)) by 2ξ+H</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">12</td>
 <td style="text-align: right;">12</td>
 <td><a href="../invariants-fivefolds/#pb5-082">No cyclic point found</a></td>
 </tr>
 <tr>
-<td><a href="../records/pb5-103/">Section of P_{P⁴}(O^3 ⊕ O(1)) by ξ+2H, 2ξ+H (PB5-103)</a></td>
+<td><a href="../records/pb5-103/">Section of P_{P⁴}(O^3 ⊕ O(1)) by ξ+2H, 2ξ+H</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">12</td>
 <td style="text-align: right;">12</td>
 <td><a href="../invariants-fivefolds/#pb5-103">No cyclic point found</a></td>
 </tr>
 <tr>
-<td><a href="../records/pb5-102/">Section of P_{P⁴}(O^3 ⊕ O(1)) by ξ+H, 2ξ+2H (PB5-102)</a></td>
+<td><a href="../records/pb5-102/">Section of P_{P⁴}(O^3 ⊕ O(1)) by ξ+H, 2ξ+2H</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">12</td>
 <td style="text-align: right;">12</td>
 <td><a href="../invariants-fivefolds/#pb5-102">No cyclic point found</a></td>
 </tr>
 <tr>
-<td><a href="../records/pb5-101/">Section of P_{P⁴}(O^3 ⊕ O(1)) by ξ+H, 2ξ+H (PB5-101)</a></td>
+<td><a href="../records/pb5-101/">Section of P_{P⁴}(O^3 ⊕ O(1)) by ξ+H, 2ξ+H</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">12</td>
 <td style="text-align: right;">12</td>
 <td><a href="../invariants-fivefolds/#pb5-101">Full atomic invariants</a></td>
 </tr>
 <tr>
-<td><a href="../records/pb5-105/">Section of P_{P⁴}(O^3 ⊕ O(2)) by ξ+H, 2ξ+H (PB5-105)</a></td>
+<td><a href="../records/pb5-105/">Section of P_{P⁴}(O^3 ⊕ O(2)) by ξ+H, 2ξ+H</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">12</td>
 <td style="text-align: right;">12</td>
 <td><a href="../invariants-fivefolds/#pb5-105">No cyclic point found</a></td>
 </tr>
 <tr>
-<td><a href="../records/pb5-114/">Section of P_{P⁴}(O^4 ⊕ O(1)) by ξ+H, ξ+H, 2ξ+H (PB5-114)</a></td>
+<td><a href="../records/pb5-114/">Section of P_{P⁴}(O^4 ⊕ O(1)) by ξ+H, ξ+H, 2ξ+H</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">12</td>
 <td style="text-align: right;">12</td>
 <td><a href="../invariants-fivefolds/#pb5-114">No cyclic point found</a></td>
 </tr>
 <tr>
-<td><a href="../records/pb5-147/">Section of P_{P⁵}(O ⊕ O(1) ⊕ O(2)) by ξ+H, ξ+H (PB5-147)</a></td>
+<td><a href="../records/pb5-147/">Section of P_{P⁵}(O ⊕ O(1) ⊕ O(2)) by ξ+H, ξ+H</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">12</td>
 <td style="text-align: right;">12</td>
 <td><a href="../invariants-fivefolds/#pb5-147">No cyclic point found</a></td>
 </tr>
 <tr>
-<td><a href="../records/pb5-124/">Section of P_{P⁵}(O ⊕ O(1)) by ξ+3H (PB5-124)</a></td>
+<td><a href="../records/pb5-124/">Section of P_{P⁵}(O ⊕ O(1)) by ξ+3H</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">10</td>
 <td style="text-align: right;">10</td>
 <td><a href="../invariants-fivefolds/#pb5-124">Full atomic invariants</a></td>
 </tr>
 <tr>
-<td><a href="../records/pb5-127/">Section of P_{P⁵}(O ⊕ O(2)) by ξ+2H (PB5-127)</a></td>
+<td><a href="../records/pb5-127/">Section of P_{P⁵}(O ⊕ O(2)) by ξ+2H</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">10</td>
 <td style="text-align: right;">10</td>
 <td><a href="../invariants-fivefolds/#pb5-127">No cyclic point found</a></td>
 </tr>
 <tr>
-<td><a href="../records/pb5-128/">Section of P_{P⁵}(O ⊕ O(2)) by ξ+3H (PB5-128)</a></td>
+<td><a href="../records/pb5-128/">Section of P_{P⁵}(O ⊕ O(2)) by ξ+3H</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">10</td>
 <td style="text-align: right;">10</td>
 <td><a href="../invariants-fivefolds/#pb5-128">Full atomic invariants</a></td>
 </tr>
 <tr>
-<td><a href="../records/pb5-130/">Section of P_{P⁵}(O ⊕ O(3)) by ξ+2H (PB5-130)</a></td>
+<td><a href="../records/pb5-130/">Section of P_{P⁵}(O ⊕ O(3)) by ξ+2H</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">10</td>
 <td style="text-align: right;">10</td>
 <td><a href="../invariants-fivefolds/#pb5-130">Full atomic invariants</a></td>
 </tr>
 <tr>
-<td><a href="../records/pb5-131/">Section of P_{P⁵}(O ⊕ O(4)) by ξ+H (PB5-131)</a></td>
+<td><a href="../records/pb5-131/">Section of P_{P⁵}(O ⊕ O(4)) by ξ+H</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">10</td>
 <td style="text-align: right;">10</td>
 <td><a href="../invariants-fivefolds/#pb5-131">No cyclic point found</a></td>
 </tr>
 <tr>
-<td><a href="../records/pb5-139/">Section of P_{P⁵}(O^2 ⊕ O(1)) by ξ+H, ξ+2H (PB5-139)</a></td>
+<td><a href="../records/pb5-139/">Section of P_{P⁵}(O^2 ⊕ O(1)) by ξ+H, ξ+2H</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">12</td>
 <td style="text-align: right;">12</td>
 <td><a href="../invariants-fivefolds/#pb5-139">No cyclic point found</a></td>
 </tr>
 <tr>
-<td><a href="../records/pb5-155/">Section of P_{P⁵}(O^2 ⊕ O(1)^2) by ξ+H, ξ+H, ξ+H (PB5-155)</a></td>
+<td><a href="../records/pb5-155/">Section of P_{P⁵}(O^2 ⊕ O(1)^2) by ξ+H, ξ+H, ξ+H</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">12</td>
 <td style="text-align: right;">12</td>
 <td><a href="../invariants-fivefolds/#pb5-155">No cyclic point found</a></td>
 </tr>
 <tr>
-<td><a href="../records/pb5-143/">Section of P_{P⁵}(O^2 ⊕ O(2)) by ξ+H, ξ+2H (PB5-143)</a></td>
+<td><a href="../records/pb5-143/">Section of P_{P⁵}(O^2 ⊕ O(2)) by ξ+H, ξ+2H</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">12</td>
 <td style="text-align: right;">12</td>
 <td><a href="../invariants-fivefolds/#pb5-143">No cyclic point found</a></td>
 </tr>
 <tr>
-<td><a href="../records/pb5-144/">Section of P_{P⁵}(O^2 ⊕ O(3)) by ξ+H, ξ+H (PB5-144)</a></td>
+<td><a href="../records/pb5-144/">Section of P_{P⁵}(O^2 ⊕ O(3)) by ξ+H, ξ+H</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">12</td>
 <td style="text-align: right;">12</td>
 <td><a href="../invariants-fivefolds/#pb5-144">No cyclic point found</a></td>
 </tr>
 <tr>
-<td><a href="../records/pb5-153/">Section of P_{P⁵}(O^3 ⊕ O(1)) by ξ+H, ξ+H, ξ+2H (PB5-153)</a></td>
+<td><a href="../records/pb5-153/">Section of P_{P⁵}(O^3 ⊕ O(1)) by ξ+H, ξ+H, ξ+2H</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">12</td>
 <td style="text-align: right;">12</td>
 <td><a href="../invariants-fivefolds/#pb5-153">No cyclic point found</a></td>
 </tr>
 <tr>
-<td><a href="../records/pb5-154/">Section of P_{P⁵}(O^3 ⊕ O(2)) by ξ+H, ξ+H, ξ+H (PB5-154)</a></td>
+<td><a href="../records/pb5-154/">Section of P_{P⁵}(O^3 ⊕ O(2)) by ξ+H, ξ+H, ξ+H</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">12</td>
 <td style="text-align: right;">12</td>
 <td><a href="../invariants-fivefolds/#pb5-154">No cyclic point found</a></td>
 </tr>
 <tr>
-<td><a href="../records/pb5-158/">Section of P_{P⁵}(O^4 ⊕ O(1)) by ξ+H, ξ+H, ξ+H, ξ+H (PB5-158)</a></td>
+<td><a href="../records/pb5-158/">Section of P_{P⁵}(O^4 ⊕ O(1)) by ξ+H, ξ+H, ξ+H, ξ+H</a></td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">12</td>
 <td style="text-align: right;">12</td>
 <td><a href="../invariants-fivefolds/#pb5-158">No cyclic point found</a></td>
 </tr>
 <tr>
-<td><a href="../records/ckp-172/">CKP-172 — Complete intersection of codimension 1</a></td>
+<td><a href="../records/ckp-172/">Hypersurface in a toric fivefold (CKP-172)</a></td>
 <td style="text-align: right;">4</td>
 <td style="text-align: right;">12</td>
 <td style="text-align: right;">12</td>
 <td><a href="../invariants-fourfolds/#ckp-172">No cyclic point found</a></td>
 </tr>
 <tr>
-<td><a href="../records/ckp-320/">CKP-320 — Complete intersection of codimension 1</a></td>
+<td><a href="../records/ckp-320/">Hypersurface in a toric fivefold (CKP-320)</a></td>
 <td style="text-align: right;">4</td>
 <td style="text-align: right;">13</td>
 <td style="text-align: right;">13</td>
@@ -2958,7 +3192,7 @@ P_\alpha(t)=\sum_{p,q}h^{p,q}(E^\alpha)t^{p-q}.
 <td><a href="../invariants-fourfolds/#ckp-037">Full atomic invariants</a></td>
 </tr>
 <tr>
-<td><a href="../additional/#fl125o01o02o10gm20">Fl(1,2,5) / O(0,1)+O(0,2)+O(1,0) (GM-20)</a></td>
+<td><a href="../additional/#fl125o01o02o10gm20">Fl(1,2,5) / O(0,1)+O(0,2)+O(1,0)</a></td>
 <td style="text-align: right;">4</td>
 <td style="text-align: right;">9</td>
 <td style="text-align: right;">14</td>
@@ -3914,9 +4148,9 @@ P_\alpha(t)=\sum_{p,q}h^{p,q}(E^\alpha)t^{p-q}.
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
-          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden="">
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
   Back to top
 </button>
         
@@ -3960,8 +4194,8 @@ P_\alpha(t)=\sum_{p,q}h^{p,q}(E^\alpha)t^{p-q}.
       
         <script src="../../javascripts/catalog.js"></script>
       
-        <script src="../../javascripts/mathjax-loader.js"></script>
+        <script src="../../javascripts/mathjax-loader-v2.js"></script>
       
     
-  </body>
-</html>
+  
+</body></html>

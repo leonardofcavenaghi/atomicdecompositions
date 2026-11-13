@@ -78,3 +78,25 @@ mjx-math {
 .geometry-card.flags { border-top-color:#526cfe; }
 .geometry-card.toric { border-top-color:#009688; }
 .geometry-card h2 { margin-top:0.3em; }
+
+/* Bound intrinsic SVG and table widths to the reading column. */
+.md-content, .md-content__inner { min-width: 0; }
+.md-typeset div.arithmatex {
+  display: block !important;
+  width: 100%;
+}
+.md-typeset .md-typeset__scrollwrap {
+  max-width: 100%;
+  overflow-x: auto;
+}
+.md-typeset table:not(.dataTable) {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+}
+.md-typeset h1 { overflow-wrap: anywhere; }
+
+.md-typeset .md-typeset__table {
+  display: block;
+  max-width: 100%;
+}

@@ -6053,7 +6053,7 @@
     },
     {
       "id": "e1322438fd01",
-      "title": "Fl(1,2,5) / O(0,1)+O(0,2)+O(1,0) (GM-20)",
+      "title": "Fl(1,2,5) / O(0,1)+O(0,2)+O(1,0)",
       "record_link": "additional.md#fl125o01o02o10gm20",
       "dimension": 4,
       "ambient_rank": 9,
@@ -15541,7 +15541,7 @@
     },
     {
       "id": "CKP-172",
-      "title": "CKP-172 — Complete intersection of codimension 1",
+      "title": "Hypersurface in a toric fivefold (CKP-172)",
       "record_link": "records/ckp-172.md",
       "dimension": 4,
       "ambient_rank": 12,
@@ -16400,7 +16400,7 @@
     },
     {
       "id": "CKP-320",
-      "title": "CKP-320 — Complete intersection of codimension 1",
+      "title": "Hypersurface in a toric fivefold (CKP-320)",
       "record_link": "records/ckp-320.md",
       "dimension": 4,
       "ambient_rank": 13,
@@ -21416,7 +21416,7 @@
     },
     {
       "id": "PROD5-B03",
-      "title": "Complete intersection of multidegrees (3,3) in P³ × P³ (PROD5-B03)",
+      "title": "Complete intersection of multidegrees (3,3) in P³ × P³",
       "record_link": "records/prod5-b03.md",
       "dimension": 5,
       "ambient_rank": 12,
@@ -21528,7 +21528,7 @@
     },
     {
       "id": "PROD5-A03",
-      "title": "Complete intersection of multidegrees (2,4) in P² × P⁴ (PROD5-A03)",
+      "title": "Complete intersection of multidegrees (2,4) in P² × P⁴",
       "record_link": "records/prod5-a03.md",
       "dimension": 5,
       "ambient_rank": 12,
@@ -21640,7 +21640,7 @@
     },
     {
       "id": "QC5-001",
-      "title": "Complete intersection (2,3) in P⁷ (QC5-001)",
+      "title": "Complete intersection (2,3) in P⁷",
       "record_link": "records/qc5-001.md",
       "dimension": 5,
       "ambient_rank": 6,
@@ -21769,7 +21769,7 @@
     },
     {
       "id": "PCI5-4",
-      "title": "Quartic fivefold in P⁶ (PCI5-4)",
+      "title": "Quartic fivefold in P⁶",
       "record_link": "records/pci5-4.md",
       "dimension": 5,
       "ambient_rank": 6,
@@ -21898,7 +21898,7 @@
     },
     {
       "id": "PCI5-5",
-      "title": "Quintic fivefold in P⁶ (PCI5-5)",
+      "title": "Quintic fivefold in P⁶",
       "record_link": "records/pci5-5.md",
       "dimension": 5,
       "ambient_rank": 6,
@@ -22016,7 +22016,7 @@
     },
     {
       "id": "PCI5-2-4",
-      "title": "Complete intersection (2,4) in P⁷ (PCI5-2-4)",
+      "title": "Complete intersection (2,4) in P⁷",
       "record_link": "records/pci5-2-4.md",
       "dimension": 5,
       "ambient_rank": 6,
@@ -22134,7 +22134,7 @@
     },
     {
       "id": "PCI5-3-3",
-      "title": "Complete intersection (3,3) in P⁷ (PCI5-3-3)",
+      "title": "Complete intersection (3,3) in P⁷",
       "record_link": "records/pci5-3-3.md",
       "dimension": 5,
       "ambient_rank": 6,
@@ -22252,7 +22252,7 @@
     },
     {
       "id": "PCI5-2-2-3",
-      "title": "Complete intersection (2,2,3) in P⁸ (PCI5-2-2-3)",
+      "title": "Complete intersection (2,2,3) in P⁸",
       "record_link": "records/pci5-2-2-3.md",
       "dimension": 5,
       "ambient_rank": 6,
@@ -22370,7 +22370,7 @@
     },
     {
       "id": "PCI5-2-2-2-2",
-      "title": "Complete intersection (2,2,2,2) in P⁹ (PCI5-2-2-2-2)",
+      "title": "Complete intersection (2,2,2,2) in P⁹",
       "record_link": "records/pci5-2-2-2-2.md",
       "dimension": 5,
       "ambient_rank": 6,
@@ -22488,7 +22488,7 @@
     },
     {
       "id": "PROD5-B01",
-      "title": "Complete intersection of multidegrees (2,2) in P³ × P³ (PROD5-B01)",
+      "title": "Complete intersection of multidegrees (2,2) in P³ × P³",
       "record_link": "records/prod5-b01.md",
       "dimension": 5,
       "ambient_rank": 12,
@@ -22600,7 +22600,7 @@
     },
     {
       "id": "QD5-001",
-      "title": "Quartic double cover of P⁵ (QD5-001)",
+      "title": "Quartic double cover of P⁵",
       "record_link": "records/qd5-001.md",
       "dimension": 5,
       "ambient_rank": 6,
@@ -22720,7 +22720,7 @@
     },
     {
       "id": "PB5-036",
-      "title": "Section of P_{P³}(O^3 ⊕ O(1)) by 2ξ+2H (PB5-036)",
+      "title": "Section of P_{P³}(O^3 ⊕ O(1)) by 2ξ+2H",
       "record_link": "records/pb5-036.md",
       "dimension": 5,
       "ambient_rank": 12,
@@ -22840,7 +22840,7 @@
     },
     {
       "id": "PB5-056",
-      "title": "Section of P_{P³}(O^4 ⊕ O(1)) by ξ+H, 2ξ+H (PB5-056)",
+      "title": "Section of P_{P³}(O^4 ⊕ O(1)) by ξ+H, 2ξ+H",
       "record_link": "records/pb5-056.md",
       "dimension": 5,
       "ambient_rank": 12,
@@ -22952,7 +22952,7 @@
     },
     {
       "id": "PROD5-A01",
-      "title": "Complete intersection of multidegrees (2,2) in P² × P⁴ (PROD5-A01)",
+      "title": "Complete intersection of multidegrees (2,2) in P² × P⁴",
       "record_link": "records/prod5-a01.md",
       "dimension": 5,
       "ambient_rank": 12,
@@ -23058,7 +23058,7 @@
     },
     {
       "id": "PB5-075",
-      "title": "Section of P_{P⁴}(O^2 ⊕ O(1)) by 2ξ+2H (PB5-075)",
+      "title": "Section of P_{P⁴}(O^2 ⊕ O(1)) by 2ξ+2H",
       "record_link": "records/pb5-075.md",
       "dimension": 5,
       "ambient_rank": 12,
@@ -23170,7 +23170,7 @@
     },
     {
       "id": "PB5-079",
-      "title": "Section of P_{P⁴}(O^2 ⊕ O(2)) by 2ξ+H (PB5-079)",
+      "title": "Section of P_{P⁴}(O^2 ⊕ O(2)) by 2ξ+H",
       "record_link": "records/pb5-079.md",
       "dimension": 5,
       "ambient_rank": 12,
@@ -23282,7 +23282,7 @@
     },
     {
       "id": "PB5-085",
-      "title": "Section of P_{P⁴}(O ⊕ O(1)^2) by 2ξ+H (PB5-085)",
+      "title": "Section of P_{P⁴}(O ⊕ O(1)^2) by 2ξ+H",
       "record_link": "records/pb5-085.md",
       "dimension": 5,
       "ambient_rank": 12,
@@ -23394,7 +23394,7 @@
     },
     {
       "id": "PB5-101",
-      "title": "Section of P_{P⁴}(O^3 ⊕ O(1)) by ξ+H, 2ξ+H (PB5-101)",
+      "title": "Section of P_{P⁴}(O^3 ⊕ O(1)) by ξ+H, 2ξ+H",
       "record_link": "records/pb5-101.md",
       "dimension": 5,
       "ambient_rank": 12,
@@ -23514,7 +23514,7 @@
     },
     {
       "id": "PROD5-B02",
-      "title": "Complete intersection of multidegrees (2,3) in P³ × P³ (PROD5-B02)",
+      "title": "Complete intersection of multidegrees (2,3) in P³ × P³",
       "record_link": "records/prod5-b02.md",
       "dimension": 5,
       "ambient_rank": 12,
@@ -23634,7 +23634,7 @@
     },
     {
       "id": "PROD5-D01",
-      "title": "Complete intersection of multidegrees (2,2), (1,1) in P³ × P⁴ (PROD5-D01)",
+      "title": "Complete intersection of multidegrees (2,2), (1,1) in P³ × P⁴",
       "record_link": "records/prod5-d01.md",
       "dimension": 5,
       "ambient_rank": 12,
@@ -23754,7 +23754,7 @@
     },
     {
       "id": "PROD5-D02",
-      "title": "Complete intersection of multidegrees (2,1), (1,2) in P³ × P⁴ (PROD5-D02)",
+      "title": "Complete intersection of multidegrees (2,1), (1,2) in P³ × P⁴",
       "record_link": "records/prod5-d02.md",
       "dimension": 5,
       "ambient_rank": 12,
@@ -23866,7 +23866,7 @@
     },
     {
       "id": "PB5-139",
-      "title": "Section of P_{P⁵}(O^2 ⊕ O(1)) by ξ+H, ξ+2H (PB5-139)",
+      "title": "Section of P_{P⁵}(O^2 ⊕ O(1)) by ξ+H, ξ+2H",
       "record_link": "records/pb5-139.md",
       "dimension": 5,
       "ambient_rank": 12,
@@ -23978,7 +23978,7 @@
     },
     {
       "id": "PROD5-A02",
-      "title": "Complete intersection of multidegrees (2,3) in P² × P⁴ (PROD5-A02)",
+      "title": "Complete intersection of multidegrees (2,3) in P² × P⁴",
       "record_link": "records/prod5-a02.md",
       "dimension": 5,
       "ambient_rank": 12,
@@ -24090,7 +24090,7 @@
     },
     {
       "id": "PCI5-6",
-      "title": "Degree-6 fivefold in P⁶ (PCI5-6)",
+      "title": "Degree-6 fivefold in P⁶",
       "record_link": "records/pci5-6.md",
       "dimension": 5,
       "ambient_rank": 6,
@@ -24208,7 +24208,7 @@
     },
     {
       "id": "PCI5-2-5",
-      "title": "Complete intersection (2,5) in P⁷ (PCI5-2-5)",
+      "title": "Complete intersection (2,5) in P⁷",
       "record_link": "records/pci5-2-5.md",
       "dimension": 5,
       "ambient_rank": 6,
@@ -24326,7 +24326,7 @@
     },
     {
       "id": "PCI5-3-4",
-      "title": "Complete intersection (3,4) in P⁷ (PCI5-3-4)",
+      "title": "Complete intersection (3,4) in P⁷",
       "record_link": "records/pci5-3-4.md",
       "dimension": 5,
       "ambient_rank": 6,
@@ -24444,7 +24444,7 @@
     },
     {
       "id": "PCI5-2-2-4",
-      "title": "Complete intersection (2,2,4) in P⁸ (PCI5-2-2-4)",
+      "title": "Complete intersection (2,2,4) in P⁸",
       "record_link": "records/pci5-2-2-4.md",
       "dimension": 5,
       "ambient_rank": 6,
@@ -24562,7 +24562,7 @@
     },
     {
       "id": "PCI5-2-3-3",
-      "title": "Complete intersection (2,3,3) in P⁸ (PCI5-2-3-3)",
+      "title": "Complete intersection (2,3,3) in P⁸",
       "record_link": "records/pci5-2-3-3.md",
       "dimension": 5,
       "ambient_rank": 6,
@@ -24680,7 +24680,7 @@
     },
     {
       "id": "PCI5-2-2-2-3",
-      "title": "Complete intersection (2,2,2,3) in P⁹ (PCI5-2-2-2-3)",
+      "title": "Complete intersection (2,2,2,3) in P⁹",
       "record_link": "records/pci5-2-2-2-3.md",
       "dimension": 5,
       "ambient_rank": 6,
@@ -24798,7 +24798,7 @@
     },
     {
       "id": "PCI5-2-2-2-2-2",
-      "title": "Complete intersection (2,2,2,2,2) in P¹⁰ (PCI5-2-2-2-2-2)",
+      "title": "Complete intersection (2,2,2,2,2) in P¹⁰",
       "record_link": "records/pci5-2-2-2-2-2.md",
       "dimension": 5,
       "ambient_rank": 6,
@@ -24916,7 +24916,7 @@
     },
     {
       "id": "PB5-127",
-      "title": "Section of P_{P⁵}(O ⊕ O(2)) by ξ+2H (PB5-127)",
+      "title": "Section of P_{P⁵}(O ⊕ O(2)) by ξ+2H",
       "record_link": "records/pb5-127.md",
       "dimension": 5,
       "ambient_rank": 10,
@@ -25028,7 +25028,7 @@
     },
     {
       "id": "PB5-040",
-      "title": "Section of P_{P³}(O^3 ⊕ O(2)) by 2ξ+H (PB5-040)",
+      "title": "Section of P_{P³}(O^3 ⊕ O(2)) by 2ξ+H",
       "record_link": "records/pb5-040.md",
       "dimension": 5,
       "ambient_rank": 12,
@@ -25140,7 +25140,7 @@
     },
     {
       "id": "PB5-043",
-      "title": "Section of P_{P³}(O^2 ⊕ O(1)^2) by 2ξ+H (PB5-043)",
+      "title": "Section of P_{P³}(O^2 ⊕ O(1)^2) by 2ξ+H",
       "record_link": "records/pb5-043.md",
       "dimension": 5,
       "ambient_rank": 12,
@@ -25252,7 +25252,7 @@
     },
     {
       "id": "PB5-037",
-      "title": "Section of P_{P³}(O^3 ⊕ O(1)) by 3ξ+H (PB5-037)",
+      "title": "Section of P_{P³}(O^3 ⊕ O(1)) by 3ξ+H",
       "record_link": "records/pb5-037.md",
       "dimension": 5,
       "ambient_rank": 12,
@@ -25372,7 +25372,7 @@
     },
     {
       "id": "PB5-016",
-      "title": "Section of P_{P²}(O^4 ⊕ O(1)) by 3ξ+H (PB5-016)",
+      "title": "Section of P_{P²}(O^4 ⊕ O(1)) by 3ξ+H",
       "record_link": "records/pb5-016.md",
       "dimension": 5,
       "ambient_rank": 12,
@@ -25484,7 +25484,7 @@
     },
     {
       "id": "PB5-131",
-      "title": "Section of P_{P⁵}(O ⊕ O(4)) by ξ+H (PB5-131)",
+      "title": "Section of P_{P⁵}(O ⊕ O(4)) by ξ+H",
       "record_link": "records/pb5-131.md",
       "dimension": 5,
       "ambient_rank": 10,
@@ -25596,7 +25596,7 @@
     },
     {
       "id": "PB5-080",
-      "title": "Section of P_{P⁴}(O^2 ⊕ O(2)) by 2ξ+2H (PB5-080)",
+      "title": "Section of P_{P⁴}(O^2 ⊕ O(2)) by 2ξ+2H",
       "record_link": "records/pb5-080.md",
       "dimension": 5,
       "ambient_rank": 12,
@@ -25708,7 +25708,7 @@
     },
     {
       "id": "PB5-144",
-      "title": "Section of P_{P⁵}(O^2 ⊕ O(3)) by ξ+H, ξ+H (PB5-144)",
+      "title": "Section of P_{P⁵}(O^2 ⊕ O(3)) by ξ+H, ξ+H",
       "record_link": "records/pb5-144.md",
       "dimension": 5,
       "ambient_rank": 12,
@@ -25820,7 +25820,7 @@
     },
     {
       "id": "PB5-147",
-      "title": "Section of P_{P⁵}(O ⊕ O(1) ⊕ O(2)) by ξ+H, ξ+H (PB5-147)",
+      "title": "Section of P_{P⁵}(O ⊕ O(1) ⊕ O(2)) by ξ+H, ξ+H",
       "record_link": "records/pb5-147.md",
       "dimension": 5,
       "ambient_rank": 12,
@@ -25932,7 +25932,7 @@
     },
     {
       "id": "PB5-154",
-      "title": "Section of P_{P⁵}(O^3 ⊕ O(2)) by ξ+H, ξ+H, ξ+H (PB5-154)",
+      "title": "Section of P_{P⁵}(O^3 ⊕ O(2)) by ξ+H, ξ+H, ξ+H",
       "record_link": "records/pb5-154.md",
       "dimension": 5,
       "ambient_rank": 12,
@@ -26044,7 +26044,7 @@
     },
     {
       "id": "PB5-143",
-      "title": "Section of P_{P⁵}(O^2 ⊕ O(2)) by ξ+H, ξ+2H (PB5-143)",
+      "title": "Section of P_{P⁵}(O^2 ⊕ O(2)) by ξ+H, ξ+2H",
       "record_link": "records/pb5-143.md",
       "dimension": 5,
       "ambient_rank": 12,
@@ -26156,7 +26156,7 @@
     },
     {
       "id": "PB5-124",
-      "title": "Section of P_{P⁵}(O ⊕ O(1)) by ξ+3H (PB5-124)",
+      "title": "Section of P_{P⁵}(O ⊕ O(1)) by ξ+3H",
       "record_link": "records/pb5-124.md",
       "dimension": 5,
       "ambient_rank": 10,
@@ -26276,7 +26276,7 @@
     },
     {
       "id": "PB5-130",
-      "title": "Section of P_{P⁵}(O ⊕ O(3)) by ξ+2H (PB5-130)",
+      "title": "Section of P_{P⁵}(O ⊕ O(3)) by ξ+2H",
       "record_link": "records/pb5-130.md",
       "dimension": 5,
       "ambient_rank": 10,
@@ -26396,7 +26396,7 @@
     },
     {
       "id": "PB5-105",
-      "title": "Section of P_{P⁴}(O^3 ⊕ O(2)) by ξ+H, 2ξ+H (PB5-105)",
+      "title": "Section of P_{P⁴}(O^3 ⊕ O(2)) by ξ+H, 2ξ+H",
       "record_link": "records/pb5-105.md",
       "dimension": 5,
       "ambient_rank": 12,
@@ -26508,7 +26508,7 @@
     },
     {
       "id": "PB5-082",
-      "title": "Section of P_{P⁴}(O^2 ⊕ O(3)) by 2ξ+H (PB5-082)",
+      "title": "Section of P_{P⁴}(O^2 ⊕ O(3)) by 2ξ+H",
       "record_link": "records/pb5-082.md",
       "dimension": 5,
       "ambient_rank": 12,
@@ -26620,7 +26620,7 @@
     },
     {
       "id": "PB5-088",
-      "title": "Section of P_{P⁴}(O ⊕ O(1) ⊕ O(2)) by 2ξ+H (PB5-088)",
+      "title": "Section of P_{P⁴}(O ⊕ O(1) ⊕ O(2)) by 2ξ+H",
       "record_link": "records/pb5-088.md",
       "dimension": 5,
       "ambient_rank": 12,
@@ -26732,7 +26732,7 @@
     },
     {
       "id": "PB5-128",
-      "title": "Section of P_{P⁵}(O ⊕ O(2)) by ξ+3H (PB5-128)",
+      "title": "Section of P_{P⁵}(O ⊕ O(2)) by ξ+3H",
       "record_link": "records/pb5-128.md",
       "dimension": 5,
       "ambient_rank": 10,
@@ -26852,7 +26852,7 @@
     },
     {
       "id": "PB5-041",
-      "title": "Section of P_{P³}(O^3 ⊕ O(2)) by 3ξ+H (PB5-041)",
+      "title": "Section of P_{P³}(O^3 ⊕ O(2)) by 3ξ+H",
       "record_link": "records/pb5-041.md",
       "dimension": 5,
       "ambient_rank": 12,
@@ -26964,7 +26964,7 @@
     },
     {
       "id": "PB5-086",
-      "title": "Section of P_{P⁴}(O ⊕ O(1)^2) by 2ξ+2H (PB5-086)",
+      "title": "Section of P_{P⁴}(O ⊕ O(1)^2) by 2ξ+2H",
       "record_link": "records/pb5-086.md",
       "dimension": 5,
       "ambient_rank": 12,
@@ -27076,7 +27076,7 @@
     },
     {
       "id": "PB5-102",
-      "title": "Section of P_{P⁴}(O^3 ⊕ O(1)) by ξ+H, 2ξ+2H (PB5-102)",
+      "title": "Section of P_{P⁴}(O^3 ⊕ O(1)) by ξ+H, 2ξ+2H",
       "record_link": "records/pb5-102.md",
       "dimension": 5,
       "ambient_rank": 12,
@@ -27188,7 +27188,7 @@
     },
     {
       "id": "PB5-103",
-      "title": "Section of P_{P⁴}(O^3 ⊕ O(1)) by ξ+2H, 2ξ+H (PB5-103)",
+      "title": "Section of P_{P⁴}(O^3 ⊕ O(1)) by ξ+2H, 2ξ+H",
       "record_link": "records/pb5-103.md",
       "dimension": 5,
       "ambient_rank": 12,
@@ -27300,7 +27300,7 @@
     },
     {
       "id": "PB5-155",
-      "title": "Section of P_{P⁵}(O^2 ⊕ O(1)^2) by ξ+H, ξ+H, ξ+H (PB5-155)",
+      "title": "Section of P_{P⁵}(O^2 ⊕ O(1)^2) by ξ+H, ξ+H, ξ+H",
       "record_link": "records/pb5-155.md",
       "dimension": 5,
       "ambient_rank": 12,
@@ -27412,7 +27412,7 @@
     },
     {
       "id": "PB5-158",
-      "title": "Section of P_{P⁵}(O^4 ⊕ O(1)) by ξ+H, ξ+H, ξ+H, ξ+H (PB5-158)",
+      "title": "Section of P_{P⁵}(O^4 ⊕ O(1)) by ξ+H, ξ+H, ξ+H, ξ+H",
       "record_link": "records/pb5-158.md",
       "dimension": 5,
       "ambient_rank": 12,
@@ -27524,7 +27524,7 @@
     },
     {
       "id": "PB5-076",
-      "title": "Section of P_{P⁴}(O^2 ⊕ O(1)) by 2ξ+3H (PB5-076)",
+      "title": "Section of P_{P⁴}(O^2 ⊕ O(1)) by 2ξ+3H",
       "record_link": "records/pb5-076.md",
       "dimension": 5,
       "ambient_rank": 12,
@@ -27636,7 +27636,7 @@
     },
     {
       "id": "PB5-114",
-      "title": "Section of P_{P⁴}(O^4 ⊕ O(1)) by ξ+H, ξ+H, 2ξ+H (PB5-114)",
+      "title": "Section of P_{P⁴}(O^4 ⊕ O(1)) by ξ+H, ξ+H, 2ξ+H",
       "record_link": "records/pb5-114.md",
       "dimension": 5,
       "ambient_rank": 12,
@@ -27748,7 +27748,7 @@
     },
     {
       "id": "PB5-038",
-      "title": "Section of P_{P³}(O^3 ⊕ O(1)) by 3ξ+2H (PB5-038)",
+      "title": "Section of P_{P³}(O^3 ⊕ O(1)) by 3ξ+2H",
       "record_link": "records/pb5-038.md",
       "dimension": 5,
       "ambient_rank": 12,
@@ -27860,7 +27860,7 @@
     },
     {
       "id": "PB5-107",
-      "title": "Section of P_{P⁴}(O^2 ⊕ O(1)^2) by ξ+H, 2ξ+H (PB5-107)",
+      "title": "Section of P_{P⁴}(O^2 ⊕ O(1)^2) by ξ+H, 2ξ+H",
       "record_link": "records/pb5-107.md",
       "dimension": 5,
       "ambient_rank": 12,
@@ -27972,7 +27972,7 @@
     },
     {
       "id": "PB5-057",
-      "title": "Section of P_{P³}(O^4 ⊕ O(1)) by ξ+H, 3ξ+H (PB5-057)",
+      "title": "Section of P_{P³}(O^4 ⊕ O(1)) by ξ+H, 3ξ+H",
       "record_link": "records/pb5-057.md",
       "dimension": 5,
       "ambient_rank": 12,
@@ -28084,7 +28084,7 @@
     },
     {
       "id": "PB5-058",
-      "title": "Section of P_{P³}(O^4 ⊕ O(1)) by 2ξ+H, 2ξ+H (PB5-058)",
+      "title": "Section of P_{P³}(O^4 ⊕ O(1)) by 2ξ+H, 2ξ+H",
       "record_link": "records/pb5-058.md",
       "dimension": 5,
       "ambient_rank": 12,
@@ -28196,7 +28196,7 @@
     },
     {
       "id": "PB5-044",
-      "title": "Section of P_{P³}(O^2 ⊕ O(1)^2) by 3ξ+H (PB5-044)",
+      "title": "Section of P_{P³}(O^2 ⊕ O(1)^2) by 3ξ+H",
       "record_link": "records/pb5-044.md",
       "dimension": 5,
       "ambient_rank": 12,
@@ -28308,7 +28308,7 @@
     },
     {
       "id": "PB5-017",
-      "title": "Section of P_{P²}(O^4 ⊕ O(1)) by 4ξ+H (PB5-017)",
+      "title": "Section of P_{P²}(O^4 ⊕ O(1)) by 4ξ+H",
       "record_link": "records/pb5-017.md",
       "dimension": 5,
       "ambient_rank": 12,
@@ -28420,7 +28420,7 @@
     },
     {
       "id": "PROD5-E01",
-      "title": "Complete intersection of multidegrees (2,2), (1,1), (1,1) in P⁴ × P⁴ (PROD5-E01)",
+      "title": "Complete intersection of multidegrees (2,2), (1,1), (1,1) in P⁴ × P⁴",
       "record_link": "records/prod5-e01.md",
       "dimension": 5,
       "ambient_rank": 12,
@@ -28532,7 +28532,7 @@
     },
     {
       "id": "PROD5-E02",
-      "title": "Complete intersection of multidegrees (2,1), (1,2), (1,1) in P⁴ × P⁴ (PROD5-E02)",
+      "title": "Complete intersection of multidegrees (2,1), (1,2), (1,1) in P⁴ × P⁴",
       "record_link": "records/prod5-e02.md",
       "dimension": 5,
       "ambient_rank": 12,
@@ -28644,7 +28644,7 @@
     },
     {
       "id": "PROD5-D03",
-      "title": "Complete intersection of multidegrees (2,3), (1,1) in P³ × P⁴ (PROD5-D03)",
+      "title": "Complete intersection of multidegrees (2,3), (1,1) in P³ × P⁴",
       "record_link": "records/prod5-d03.md",
       "dimension": 5,
       "ambient_rank": 12,
@@ -28756,7 +28756,7 @@
     },
     {
       "id": "PROD5-D04",
-      "title": "Complete intersection of multidegrees (2,1), (1,3) in P³ × P⁴ (PROD5-D04)",
+      "title": "Complete intersection of multidegrees (2,1), (1,3) in P³ × P⁴",
       "record_link": "records/prod5-d04.md",
       "dimension": 5,
       "ambient_rank": 12,
@@ -28868,7 +28868,7 @@
     },
     {
       "id": "PROD5-D05",
-      "title": "Complete intersection of multidegrees (2,2), (1,2) in P³ × P⁴ (PROD5-D05)",
+      "title": "Complete intersection of multidegrees (2,2), (1,2) in P³ × P⁴",
       "record_link": "records/prod5-d05.md",
       "dimension": 5,
       "ambient_rank": 12,
@@ -28980,7 +28980,7 @@
     },
     {
       "id": "PROD5-C01",
-      "title": "Complete intersection of multidegrees (2,2,2) in P² × P² × P² (PROD5-C01)",
+      "title": "Complete intersection of multidegrees (2,2,2) in P² × P² × P²",
       "record_link": "records/prod5-c01.md",
       "dimension": 5,
       "ambient_rank": 20,
@@ -29095,7 +29095,7 @@
     },
     {
       "id": "PB5-153",
-      "title": "Section of P_{P⁵}(O^3 ⊕ O(1)) by ξ+H, ξ+H, ξ+2H (PB5-153)",
+      "title": "Section of P_{P⁵}(O^3 ⊕ O(1)) by ξ+H, ξ+H, ξ+2H",
       "record_link": "records/pb5-153.md",
       "dimension": 5,
       "ambient_rank": 12,
@@ -29207,7 +29207,7 @@
     },
     {
       "id": "PB5-003",
-      "title": "Complete intersection of multidegrees (1,3) in P¹ × P⁵ (PB5-003)",
+      "title": "Complete intersection of multidegrees (1,3) in P¹ × P⁵",
       "record_link": "records/pb5-003.md",
       "dimension": 5,
       "ambient_rank": 10,
@@ -29319,7 +29319,7 @@
     },
     {
       "id": "PB5-028",
-      "title": "Complete intersection of multidegrees (2,2) in P³ × P³ (PB5-028)",
+      "title": "Complete intersection of multidegrees (2,2) in P³ × P³",
       "record_link": "records/pb5-028.md",
       "dimension": 5,
       "ambient_rank": 12,
@@ -29431,7 +29431,7 @@
     },
     {
       "id": "PB5-051",
-      "title": "Complete intersection of multidegrees (2,1), (1,2) in P³ × P⁴ (PB5-051)",
+      "title": "Complete intersection of multidegrees (2,1), (1,2) in P³ × P⁴",
       "record_link": "records/pb5-051.md",
       "dimension": 5,
       "ambient_rank": 12,
@@ -29543,7 +29543,7 @@
     },
     {
       "id": "PB5-060",
-      "title": "Complete intersection of multidegrees (1,1), (1,1), (1,2) in P³ × P⁵ (PB5-060)",
+      "title": "Complete intersection of multidegrees (1,1), (1,1), (1,2) in P³ × P⁵",
       "record_link": "records/pb5-060.md",
       "dimension": 5,
       "ambient_rank": 12,
