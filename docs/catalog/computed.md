@@ -16,7 +16,7 @@ Each record contains the executable algebra/kept-root/bundle input, the full aut
 
 These are the same results displayed in the [catalog](index.md). See [Methods and conventions](../methodology.md) for their mathematical scope.
 
-## Use a saved result
+## Use the exact dataset
 
 ```python
 import json

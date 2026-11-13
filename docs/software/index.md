@@ -1,5 +1,5 @@
 ---
-description: Choose the combined flag and toric application or a standalone workflow, with preserved original software and reproducible guides.
+description: Choose the combined flag and toric application or a individual distribution, with preserved original software and reproducible guides.
 ---
 
 # Choose the software
@@ -8,7 +8,7 @@ Use the combined application to access flag and toric workspaces from one launch
 
 Flag 1.0.6.dev0 and flag, toric and combined 1.1.0.dev1 are development distributions. The stable flag release remains v1.0.5.
 
-| Offering | Version | Interface | Guide |
+| Distribution | Version | Interface | Guide |
 |---|---|---|---|
 | Combined flag and toric application | 1.1.0.dev1 | python -m gwapp; port 8650 | [Combined](combined.md) |
 | Flag program 1.0.6.dev0 | 1.0.6.dev0 | python -m gwflags.gui; port 8642 | [Flags 1.0.6.dev0](flags-1.0.6.md) |
@@ -22,5 +22,5 @@ For a comparison of capabilities, read [Main changes](launch-2026-11.md), [Input
 
 Start with [Installation](../installation.md). Read [Notation](notation.md) for parameter names, [Changes](changes.md) for the behavior changes, and [Releases](../releases.md) for the preserved stable download.
 
-Existing catalog matrices retain their original ambient-node parameter names. Select the ambient compatibility convention to reproduce them; the new default does not silently rewrite archived data.
+Existing catalog matrices retain their original ambient-node parameter names. Select the ambient compatibility convention to reproduce them; their coordinate conventions remain unchanged.
 

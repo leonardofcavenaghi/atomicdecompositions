@@ -19,7 +19,7 @@ python -m gwflags.gui --no-browser
 Open <http://127.0.0.1:8642>. The server runs on your computer; stop it with
 `Ctrl-C`. Use `--port 9000` if the default port is occupied.
 
-## Fastest path: load an example
+## Load a preset
 
 1. Choose an item from **Preset library**.
 2. Read the recommended action and expected result shown below the selector.
@@ -31,7 +31,7 @@ Open <http://127.0.0.1:8642>. The server runs on your computer; stop it with
 
 The preset fills every dependent field, so an old β or insertion cannot accidentally remain in a new example.
 
-## The five core inputs
+## Input fields
 
 - **Lie algebra**: `A3`, `B2`, `C3`, `D5`, `G2`, or a product such as `A3xA3`.
 - **Kept simple roots**: comma-separated Bourbaki node numbers, for example `1` for projective space or `2` for `Gr(2,4)` in type `A3`.
@@ -56,16 +56,16 @@ ambient node labels (`y1`, `y3`, ...), so a variety with kept roots `1,3` uses
 `y1` and `y3`. Leave it blank for symbolic Novikov variables, or enter
 assignments such as `y1=1,y3=1`.
 
-## Copyable examples
+## Examples
 
-### Beginner path: direct flags and products
+### Flag varieties and products
 
 For an untwisted direct flag, leave `K` blank. For example, `A2` with
 kept roots `1` is `P²`; choose **Describe this space** first, then choose
 **Compute quantum matrix**. A product flag can be entered in the same form:
 `A1xA1`, kept roots `1,2`, and blank `K` describes `(P¹)²`.
 
-### Advanced path: bundle expressions and GW insertions
+### Bundle expressions and Gromov–Witten insertions
 
 After **Space Info** displays the Schubert basis, use its **Add** controls to
 build a valid insertion list. This avoids having to know reduced Weyl words in
@@ -112,7 +112,7 @@ a regular section with a smooth zero locus of the expected codimension.
 
 The quantum matrix is the flag-ambient operator described above. It is the
 full small quantum-cohomology operator only when the relevant homology and
-ambient-completeness hypotheses hold. For complete intersections, the published matrix is an ambient block.
+ambient-completeness hypotheses hold. For complete intersections, the returned matrix is an ambient block.
 
 Automatic curve enumeration needs strictly positive first-Chern pairings on
 the enumerated curve generators. Mixed zero/positive or negative pairings
@@ -121,7 +121,7 @@ effective generators with a positive bound. The all-zero Chern class gives a
 zero multiplication operator. The reported index uses the specified ambient
 lattice; see the [API conventions](api-legacy.md#fano_index_and_betasknone).
 
-## Advanced bundle syntax
+## Bundle expressions
 
 Supported constructors include `O(a,...)`, `S(node)`, `Q(node)`,
 `taut_quot(X, k)`, `taut_sub(X, k)`, `dual(...)`, `osum(...)`, `tensor(...)`,
@@ -163,7 +163,7 @@ For the CLI, put bundle options before the subcommand:
 python3 -m gwflags.cli A3 --keep 1 -K 3 sqm
 ```
 
-## Bundle combinations: detailed walkthroughs
+## Operations on bundles
 
 All bundle examples below use the same ambient variety:
 `X = Gr(2,5)`, entered as algebra `A4` with kept roots `2`. Begin with
@@ -322,7 +322,7 @@ osum(
 For long expressions, Python is easier to read and debug. The GUI parser only
 allows the documented constructors and rejects arbitrary Python code.
 
-### What to check before computing
+### Before computing
 
 1. Confirm that every component uses the same algebra and kept nodes.
 2. Use **Describe this space** first; it reports the resulting bundle rank.

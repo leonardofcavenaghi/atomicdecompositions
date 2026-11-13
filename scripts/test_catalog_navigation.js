@@ -151,6 +151,33 @@ async function main() {
     if (mobile.width>mobile.viewport+2) throw new Error('Initial mobile overflow '+JSON.stringify(mobile));
     console.log('Initial LG fourfold mobile layout passed.');
     await page.setViewport({width:1280,height:900});
+    // Inline math must use MathJax's natural baseline, not a scroll-box baseline.
+    for (const route of ['catalog/records/ckp-002/', 'catalog/records/pb5-016/', 'catalog/records/lg3-1-2/']) {
+      await page.goto(base+'/'+route,{waitUntil:'domcontentloaded'});
+      const alignment=await page.evaluate(() => [...document.querySelectorAll('p > span.arithmatex')].map(node=>({
+        outer:getComputedStyle(node).display,
+        overflow:getComputedStyle(node.querySelector('mjx-container')).overflowX,
+        text:node.getAttribute('data-tex')
+      })));
+      if (!alignment.length || alignment.some(node=>node.outer!=='inline'||node.overflow!=='visible'))
+        throw new Error('Inline mathematical baseline changed on '+route+': '+JSON.stringify(alignment));
+      const baseline=await page.evaluate(() => {
+        const node=document.querySelector('p > span.arithmatex');
+        const marker=document.createElement('span');
+        marker.style.cssText='display:inline-block;width:0;height:0;padding:0;margin:0;vertical-align:baseline';
+        node.before(marker);
+        const svg=node.querySelector('mjx-container > svg');
+        const mathBaseline=svg.getBoundingClientRect().bottom+parseFloat(getComputedStyle(svg).verticalAlign);
+        const textBaseline=marker.getBoundingClientRect().bottom;
+        marker.remove();
+        return {math:mathBaseline,text:textBaseline,difference:Math.abs(mathBaseline-textBaseline)};
+      });
+      if (!Number.isFinite(baseline.difference)||baseline.difference>1.5)
+        throw new Error('Inline formula is vertically displaced on '+route+': '+JSON.stringify(baseline));
+
+    }
+    console.log('Inline equations follow the surrounding text baseline.');
+
 
     await page.goto(`${base}/`, {waitUntil: 'domcontentloaded'});
     await page.evaluate(() => {

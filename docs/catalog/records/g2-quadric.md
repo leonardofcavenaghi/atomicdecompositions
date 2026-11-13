@@ -55,11 +55,11 @@ The eigenvalues here are those of \(A\). The software’s characteristic factors
 | \(-6\) | 3 | \(\{\!\{0,\tfrac12,\tfrac12\}\!\}\) |
 | \(30 \pm 24\sqrt{3}\) (each) | 1 | \(\{\!\{0\}\!\}\) |
 
-The fourfold rationality criterion permits only the pairs \((1,\{\!\{0\}\!\})\), \((2,\{\!\{\tfrac12,\tfrac12\}\!\})\), and \((3,\{\!\{0,0,0\}\!\})\). The cyclic rank-three factor above has a different exponent multiset. This gives irrationality for a **very general smooth** member, as in Theorem 6.16 of *On some atomic decompositions in flag varieties*. It is not a claim about every special member.
+The fourfold rationality criterion permits only the pairs \((1,\{\!\{0\}\!\})\), \((2,\{\!\{\tfrac12,\tfrac12\}\!\})\), and \((3,\{\!\{0,0,0\}\!\})\). The cyclic rank-three factor above has a different exponent multiset. This gives irrationality for a **very general smooth** member, as in Theorem 6.16 of *On the atomic decomposition of complete intersection in flag varieties*. It is not a claim about every special member.
 
 ## Full atomic Hodge invariants
 
-Here \(\rho_\alpha\) counts rational Hodge-invariant classes; \(P_\alpha(t)=\sum_{p,q}h^{p,q}(E_\alpha)t^{p-q}\) is the Hodge-character polynomial. Its constant coefficient need not equal \(\rho_\alpha\).
+Here \(\rho_\alpha\) counts rational Hodge-invariant classes; \(P_\alpha(t)=\sum_{p,q}h^{p,q}(E_\alpha)t^{p-q}\) is the Hodge polynomial. Its constant coefficient need not equal \(\rho_\alpha\).
 
 | Generic coarse atom | Number of conjugate atoms | \(\rho_\alpha\) | Full rank per atom | \(P_\alpha(t)\) |
 |---|---:|---:|---:|---|

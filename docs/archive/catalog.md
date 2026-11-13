@@ -6,4 +6,4 @@ search:
 
 # Catalog
 
-This page has been consolidated into the [current documentation](../catalog/index.md).
+See the [documentation](../catalog/index.md).

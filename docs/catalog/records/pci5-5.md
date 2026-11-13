@@ -8,7 +8,7 @@ keywords: ["dimension 5", "fivefold", "Projective complete intersection", "Fano"
 
 **Geometric presentation.** Ambient variety: \(\mathbb P^{6}\). Defining multidegrees in this factor order: `[[5]]`.
 
-See the [fan and divisor certificate](../../data/geometric-presentations.json).
+[Geometric identification](../sources.md#geometric-identification).
 
 **Construction:** Projective complete intersection. **Dimension:** 5. **Index:** 2. **h(1,1):** 1.
 

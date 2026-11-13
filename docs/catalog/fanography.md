@@ -172,7 +172,7 @@ entries marked **Catalog only** have reference descriptions without a computed m
     - **Basis Rank:** `4`
     - **Description:** Zero locus of $(\bigwedge^2\mathcal{U}^\vee)^{\oplus 3}$ on $\mathrm{Gr}(3,7)$.
     - **Realization type:** Homogeneous-bundle zero locus; independently recomputed with `gwflags`.
-    - **Matrix status:** Published after an exact software run and an independent regularized-period check against the smooth-Fano database entry for $V(3,22)$.
+    - **Regularized period:** Agrees with the smooth-Fano database entry for $V(3,22)$.
 
     ??? note "Quantum Matrix ($y=1$)"
         $$

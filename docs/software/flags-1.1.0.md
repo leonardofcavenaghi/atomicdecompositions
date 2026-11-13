@@ -24,7 +24,7 @@ python -m gwapp --workspace ./gw-work --no-browser
 
 Open <http://127.0.0.1:8650/flag/>. The [combined guide](combined.md) describes the shared launcher.
 
-## Fastest path: load an example
+## Load a preset
 
 1. Choose the cubic-surface preset.
 2. Confirm algebra `A3`, kept root `1`, bundle `3` and curve class `1`.
@@ -32,7 +32,7 @@ Open <http://127.0.0.1:8650/flag/>. The [combined guide](combined.md) describes 
 4. Click **Compute one GW invariant**. The answer is 27.
 5. Use **Copy input JSON** or **Download result JSON** in the flag workspace to retain the inputs and result.
 
-## The core inputs
+## Input fields
 
 The flag fields use the same conventions as the [original flag guide](flags-1.0.6.md): algebra names such as `A4` or `A2xA2`; 1-based kept nodes; semicolon-separated bundle summands; and beta in kept-root order or zero-padded ambient-root coordinates.
 
@@ -132,4 +132,4 @@ See [Notation and compatibility](notation.md) and [Changes](changes.md).
 
 This version includes the 7f167e1 execution update: faster unmarked shape generation preserves the tested legacy ordering, and large partial-sum fractions are saved as exact tagged hexadecimal integers. Once new tagged values have been written, resume with this updated build; older readers do not understand them.
 
-For the common conventions and concrete result examples, see [Input/output](input-output.md). The [release overview](launch-2026-11.md) explains the differences between the offerings.
+See [Input/output conventions](input-output.md) for result formats and [Version comparison](launch-2026-11.md) for the differences between distributions.

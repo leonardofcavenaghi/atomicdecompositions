@@ -14,7 +14,7 @@ python -m gwtoric.gui --no-browser
 
 Open <http://127.0.0.1:8643>. The same interface is available at <http://127.0.0.1:8650/toric/> when using the [combined application](combined.md). Stop a server with Ctrl-C.
 
-## Fastest path: load an example
+## Load a preset
 
 1. Choose **P2** from **Preset library**, or use the **Product of Pⁿ** tab with factor `2`.
 2. Click **Fan, cohomology & curves** to see the basis, divisor generators and curve coordinates.
@@ -22,7 +22,7 @@ Open <http://127.0.0.1:8643>. The same interface is available at <http://127.0.0
 4. Click **Compute invariant**. The answer is 1.
 5. To compute multiplication by c1 instead, leave the optional curve list blank and click **Compute c1(TX)⋆ matrix**. Read the returned curve-list mode.
 
-## The core inputs
+## Input fields
 
 | Field | Accepted form |
 |---|---|
@@ -105,7 +105,7 @@ python -m gwtoric.cli --preset P2 sqm --workers 1
 
 The matrix describes c1 multiplication on the returned ambient sector for complete intersections. Retain its basis, grading, Novikov divisors, curve list and completeness mode.
 
-Ambient toric Hodge diamonds come from the fan. Full CI Hodge support currently requires dimensions 3–5 and the implemented ampleness/Fano certificates; separate Chern-number calculations have a wider supported scope. A supported GW input does not guarantee a supported full Hodge calculation.
+Ambient toric Hodge diamonds come from the fan. Full CI Hodge support is limited to dimensions 3–5 and requires the implemented ampleness and Fano checks to pass; separate Chern-number calculations have a wider supported scope. A supported GW input does not guarantee a supported full Hodge calculation.
 
 ## Troubleshooting
 
@@ -118,4 +118,4 @@ Ambient toric Hodge diamonds come from the fan. Full CI Hodge support currently 
 See [Notation and compatibility](notation.md) and [Changes](changes.md).
 
 
-For the common conventions and concrete result examples, see [Input/output](input-output.md). The [release overview](launch-2026-11.md) explains the differences between the offerings.
+See [Input/output conventions](input-output.md) for result formats and [Version comparison](launch-2026-11.md) for the differences between distributions.

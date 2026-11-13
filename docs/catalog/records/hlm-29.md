@@ -8,7 +8,7 @@ keywords: ["HLM-29", "dimension 4", "fourfold", "Verra fourfold", "Fano", "quant
 
 **Geometric presentation.** Ambient variety: \(\mathbb P_{\mathbb P^{2}}(\mathcal O\oplus \mathcal O(1)^{\oplus 3})\), in the quotient convention. With \(H\) the pullback of the base hyperplane class and \(\xi=c_1(\mathcal O(1))\), the defining divisors are \(2\xi\).
 
-Source identifier: **HLM-29**; see [CKP and HLM terminology](../sources.md). See the [fan and divisor certificate](../../data/geometric-presentations.json).
+Source identifier: **HLM-29**; see [CKP and HLM terminology](../sources.md). [Geometric identification](../sources.md#geometric-identification).
 
 **Construction:** Verra fourfold. **Dimension:** 4. **Index:** 2. **h(1,1):** 2.
 

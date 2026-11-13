@@ -1,5 +1,5 @@
 ---
-description: Install and launch the combined local application, choose a geometry, and use its separate flag and toric workflows.
+description: Install and launch the combined local application, choose a geometry, and compute on flag and toric varieties in separate interfaces.
 ---
 
 # How to use the combined software
@@ -24,7 +24,7 @@ python -m gwapp --port 8651 --workspace ./gw-work-8651 --no-browser
 
 The installed `gw-combined` command starts the same server. On Windows, the provided launcher starts the application with its default workspace; the command above gives explicit control of its location.
 
-## Choose the appropriate input guide
+## Flag and toric inputs
 
 | Workspace | Target description | Input guide |
 |---|---|---|
@@ -33,7 +33,7 @@ The installed `gw-combined` command starts the same server. On Windows, the prov
 
 The two workspaces share infrastructure but keep different cohomology and curve-coordinate models. A type A name is not a substitute for a toric fan, and toric ray coordinates are not flag beta coordinates.
 
-## Copyable first calculations
+## Examples
 
 For unmarked cubic-surface lines in the flag workspace:
 
@@ -67,7 +67,7 @@ The flag **Novikov notation** selector defaults to Paper notation; see [Notation
 
 ## Toric computations
 
-The toric workspace retains its own fan/product/projective-bundle tabs, curve-list controls, Hodge support, cancellation and spectrum updates. It delegates to the toric engine. Read the reported completeness mode and the [toric guide](toric-1.1.0.md); do not assume all flag persistence controls apply to toric jobs.
+The toric workspace retains its own fan/product/projective-bundle tabs, curve-list controls, Hodge support, cancellation and spectrum updates. Read the reported completeness mode and the [toric guide](toric-1.1.0.md); do not assume all flag persistence controls apply to toric jobs.
 
 ## Python interfaces
 
@@ -100,4 +100,4 @@ A Hodge diamond supplies dimensions, not missing primitive quantum operators. Ex
 See [Changes](changes.md) for the explicit behavior changes.
 
 
-For the common conventions and concrete result examples, see [Input/output](input-output.md). The [release overview](launch-2026-11.md) explains the differences between the offerings.
+See [Input/output conventions](input-output.md) for result formats and [Version comparison](launch-2026-11.md) for the differences between distributions.

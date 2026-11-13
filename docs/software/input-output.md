@@ -6,11 +6,11 @@ description: Exact input and output conventions for Python, CLI, flag and toric 
 
 This reference covers flag 1.0.6.dev0 and the flag, toric and combined 1.1.0.dev1 distributions. The [preserved v1.0.5 guide](flags-legacy.md) describes the archived runtime separately.
 
-Run the cross-engine Python blocks in the complete combined installation, which contains both APIs. The dedicated flag guide provides flag-only examples for the standalone flag installation.
+Run the examples using both Python APIs in the complete combined installation, which contains both APIs. The dedicated flag guide provides flag-only examples for the standalone flag installation.
 
 Exact input/output examples are available for [flags 1.0.6.dev0](examples/io-1.0.6.json) and [flag, toric and combined 1.1.0.dev1](examples/io-1.1.0.json). Runtimes in those records are incidental and can vary.
 
-## 1. Select the input model
+## 1. Geometric inputs
 
 | Item | Flag Python API | Flag form / CLI | Toric Python API | Toric form / CLI |
 |---|---|---|---|---|
@@ -27,7 +27,7 @@ The toric interface also accepts newlines between fan/divisor rows. The toric CL
 
 For flags, an ambient-root beta vector is also accepted when it is zero off the kept roots. For toric targets, coordinates in the displayed integral H2 basis are an alternative to the full ray relation. These alternatives must be read from the relevant engine, rather than inferred from the number of displayed parameters.
 
-## 2. A complete scalar example: 27 cubic-surface lines
+## 2. Example: the 27 lines on a cubic surface
 
 Python:
 
@@ -79,7 +79,7 @@ In either flag interface, use algebra A3, kept root 1, bundle 3, beta 1 and an e
 
 An interface serializes the scalar as a string, "27", preserving exact rational spelling. A nonintegral rational uses a fraction string rather than a rounded decimal. Numerical spectra use numerical fields separately.
 
-A verified subset of the standalone flag result is:
+The standalone flag result includes:
 
 ```json
 {
@@ -91,9 +91,9 @@ A verified subset of the standalone flag result is:
 }
 ```
 
-The toric result instead contains beta [1,1,1,1], c1_beta 1 and Novikov exponent list [1]. The merged flag worker returns value, insertions, canonical beta, evaluation count and its parameter map; it does not promise every standalone flag field. The full subprocess result adds the submitted input and runtime.
+The toric result instead contains beta [1,1,1,1], c1_beta 1 and Novikov exponent list [1]. The combined flag worker returns value, insertions, canonical beta, evaluation count and its parameter map; it does not promise every standalone flag field. The full subprocess result adds the submitted input and runtime.
 
-These are result examples, not a declaration that every launch mode shares one JSON schema.
+Result fields depend on the interface and engine.
 
 ## 3. Quantum matrix outputs
 
@@ -149,7 +149,7 @@ The toric scalar-GW result's novikov field is instead the exponent list of the c
 
 In toric mode, short K rows use the displayed cohomology divisor basis, while quantum monomials use the reported Novikov divisors. These bases can differ. Effective relation vectors can have negative entries; fallback quantum coordinates can produce Laurent monomials.
 
-## 5. Symbolic matrices and selected-point analysis
+## 5. Symbolic matrices and Novikov specializations
 
 | Launch mode | Blank evaluation field | Custom assignment |
 |---|---|---|
@@ -178,7 +178,7 @@ For reproducibility, keep:
 
 The flag toolbar provides copied input JSON and downloadable result JSON. The toric interface has its own controls; it does not share every flag toolbar action. Its Python API can be used to save a result with the relevant metadata.
 
-Checkpoints are execution state, not a substitute for a reviewed result export. Newly tagged large-fraction checkpoints require the updated reader.
+Checkpoints store execution state; use a result export for the mathematical output. Newly tagged large-fraction checkpoints require the updated reader.
 
 ## 7. Mathematical interpretation
 

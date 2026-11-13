@@ -101,7 +101,7 @@ def computed_page(records):
         'The matrix acts on the returned ambient sector, with columns as inputs and rows as outputs.', '',
         'These are the same results displayed in the [catalog](index.md). '
         'See [Methods and conventions](../methodology.md) for their mathematical scope.', '',
-        '## Use a saved result', '', '```python', 'import json',
+        '## Use the exact dataset', '', '```python', 'import json',
         'from pathlib import Path', '',
         'data = json.loads(Path("localization-results.json").read_text())',
         'example = next(r for r in data["examples"]',

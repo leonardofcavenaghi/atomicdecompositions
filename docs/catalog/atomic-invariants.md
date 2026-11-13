@@ -12,7 +12,7 @@ The entries below give exact analysis points, cyclicity results and atomic Hodge
 
 ## What the invariants mean
 
-For a coarse atom \(\alpha\), \(\rho_\alpha=\dim_{\mathbb C}\bigl((E^\alpha_{\mathbb C})^{\mathrm{Hod}_{\mathbb C}}\bigr)\) counts rational Hodge-invariant directions. The Hodge-character polynomial is
+For a coarse atom \(\alpha\), \(\rho_\alpha=\dim_{\mathbb C}\bigl((E^\alpha_{\mathbb C})^{\mathrm{Hod}_{\mathbb C}}\bigr)\) counts rational Hodge-invariant directions. The Hodge polynomial is
 
 $$
 P_\alpha(t)=\sum_{p,q}h^{p,q}(E^\alpha)t^{p-q}.

@@ -97,9 +97,9 @@ nav:
       - Exact datasets: catalog/datasets.md
       - Original dataset usage: catalog/computed.md
   - Mathematics:
-      - Flag localization: methodology.md
+      - Localization on flag varieties: methodology.md
       - Root-system inputs: lie-algebras.md
-      - Toric localization: toric/mathematics.md
+      - Localization on toric varieties: toric/mathematics.md
   - Software:
       - Versions and scope: software/index.md
       - How to install: installation.md

@@ -141,7 +141,7 @@ per-beta blocks over forked processes.
 
 `FlagVariety.schubert(word)` projects an arbitrary Weyl word to its minimal
 coset representative for low-level exploratory use. The CLI and browser form
-use the safer published contract: each insertion word must be reduced and
+use the following input requirements: each insertion word must be reduced and
 minimal for the chosen parabolic. Run `info`/**Space Info**, then copy one of
 the printed words (or use the **Add** button). Separate insertions with `|`;
 `pt`, `id`, and `e` are accepted shortcuts.

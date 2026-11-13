@@ -24,7 +24,7 @@ Sources for the fourfold constructions include Coates–Kasprzyk–Prince, [1409
 
 The matrices act on the returned ambient sector. Their columns are images of the ordered basis; grading and Novikov maps are part of the data. Full Hodge numbers do not supply missing primitive quantum operators. Use the [root-system](../methodology.md) or [fan/divisor](../toric/mathematics.md) mathematical conventions for the relevant presentation, and the version-specific [software guides](../software/index.md) to reproduce its input.
 
-Consistency checks of the stored matrices, gradings and characteristic polynomials do not rerun localization. [Original dataset usage](computed.md) gives a Python example for its schema.
+[Dataset usage](computed.md) gives a Python example for reading the exact matrices and their conventions.
 
 Exponent multisets apply separately at each eigenvalue, with multiplicities retained. An unresolved factor has no assigned multiset. The original matrix dataset does not include connection exponents.
 

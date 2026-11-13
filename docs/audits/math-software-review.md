@@ -6,4 +6,4 @@ search:
 
 # Methods and validation
 
-This page has been consolidated into the [current documentation](../methodology.md#verification).
+See the [documentation](../methodology.md#verification).

@@ -22,22 +22,22 @@ Each example brings together its geometric construction, exact inputs, quantum m
 
 <div class="geometry-card flags" markdown>
 
-### Flag computations
+### Flag varieties
 
 Describe homogeneous spaces using root systems, kept roots and supported bundles. Use flag 1.0.6.dev0 or 1.1.0.dev1, or the flag workspace in the combined application.
 
-[Flag mathematics](methodology.md){ .md-button }
-[Flag usage](software/flags-1.1.0.md){ .md-button }
+[Localization on flag varieties](methodology.md){ .md-button }
+[Flag software guide](software/flags-1.1.0.md){ .md-button }
 
 </div>
 <div class="geometry-card toric" markdown>
 
-### Toric computations
+### Toric varieties
 
 Describe a smooth projective ambient using rays, maximal cones and defining divisors. Use toric 1.1.0.dev1 or its workspace in the combined application.
 
-[Toric mathematics](toric/mathematics.md){ .md-button }
-[Toric usage](software/toric-1.1.0.md){ .md-button }
+[Localization on toric varieties](toric/mathematics.md){ .md-button }
+[Toric software guide](software/toric-1.1.0.md){ .md-button }
 
 </div>
 </div>

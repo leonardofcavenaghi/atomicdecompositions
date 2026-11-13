@@ -6,4 +6,4 @@ search:
 
 # Using gwflags
 
-This page has been consolidated into the [current documentation](../how-to-use.md).
+See the [documentation](../how-to-use.md).

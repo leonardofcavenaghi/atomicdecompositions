@@ -8,7 +8,7 @@ keywords: ["HLM-27", "dimension 4", "fourfold", "Complete intersection of codime
 
 **Geometric presentation.** Ambient variety: \(\mathbb P_{\mathbb P^{3}}(\mathcal O\oplus \mathcal O(2)^{\oplus 2})\), in the quotient convention. With \(H\) the pullback of the base hyperplane class and \(\xi=c_1(\mathcal O(1))\), the defining divisors are \(2\xi\).
 
-Source identifier: **HLM-27**; see [CKP and HLM terminology](../sources.md). See the [fan and divisor certificate](../../data/geometric-presentations.json).
+Source identifier: **HLM-27**; see [CKP and HLM terminology](../sources.md). [Geometric identification](../sources.md#geometric-identification).
 
 **Construction:** Complete intersection of codimension 1. **Dimension:** 4. **Index:** 1. **h(1,1):** 2.
 

@@ -20,8 +20,8 @@ for page in pages:
  text=re.sub(r'\]\([^)]*\)',']',text)
  text=re.sub(r'<span[^>]*>','',text)
  assert not re.search(r'\b(?:QD5|QC5|PB5|PROD5|PCI5)-[A-Z0-9-]+\b|GM-20',text),(page,'synthetic public label')
- for phrase in ('saved computation records','newly published fan-based matrices','prepared source bundle','our internal conversations'):
-  assert phrase not in text,(page,'internal public copy',phrase)
+ for phrase in ('saved computation records','newly published fan-based matrices','prepared source bundle','our internal conversations','Saved record:','This page transcribes','fan and divisor certificate','Workbook source ID','Flag mathematics','Toric mathematics'):
+  assert phrase.casefold() not in text.casefold(),(page,'internal public copy',phrase)
 
 for page in pages:
  for target in links(page.read_text()):

@@ -23,7 +23,7 @@ product* (`'A3xA3'` for P³×P³-type flags, `'A1xA1xA4'`, …):
   operator, and its **eigenvalues**, plus the **ambient Chern index** and the curve
   classes to sum over.
 
-## How it is fast
+## Exact localization and caching
 
 The notebook carried symbolic rational functions through every step and
 took `x → prime·t, t → 0` limits at the end.  This package instead:
@@ -123,7 +123,7 @@ Tests (all values independently known from Schubert calculus):
 python3 -m pytest tests/ -q
 ```
 
-## Public input contract
+## Input conventions
 
 The browser and CLI deliberately use copyable text. Enter compact line-bundle
 rows such as `3` or `1,1;2,2`; enter homogeneous expressions such as
@@ -139,7 +139,7 @@ The matrix is the flag-ambient operator unless
 the ambient-completeness hypotheses identify it with full small quantum
 cohomology.
 
-## Where each notebook function lives
+## Notebook-to-package reference
 
 | V3.nb | gwflags |
 |---|---|
@@ -160,7 +160,7 @@ the default `paper` Novikov names retain ambient nodes for type A (kept nodes `1
 realization; Schubert classes are minimal coset representatives
 (`FlagVariety.classes`, `.schubert(word)`, `.pt`).
 
-## Translation notes (deliberate differences / notebook quirks)
+## Implementation conventions
 
 - **Edge labels in isomorphism tests compare degree only.** The notebook's
   `EffectiveEdgeLabel[{_, lbl_}] := lbl` drops the root part of an edge
@@ -221,7 +221,7 @@ realization; Schubert classes are minimal coset representatives
 | P¹×P¹: divisor axiom per factor; c1⋆ eigenvalues {±4, 0, 0} at y=1 | ✓ |
 | (1,2)-curve in P¹×P¹ (K=[[1,2]]): c1⋆ eigenvalues ±2 at y=1 (ambient QH of a P¹) | ✓ |
 | Quartic K3 in P³ (K=[[4]]): c1⋆ = 0 (Calabi–Yau) | ✓ |
-| Quadric threefold Q³ in P⁴ (K=[[2]]): Fano index, full SQM matrix, grading, and eigenvalues {0} ∪ 3·2^{2/3}y^{1/3}µ₃ agree **exactly with V3.nb's cached Mathematica output** (the notebook's one completely saved run) | ✓ |
+| Quadric threefold Q³ in P⁴ (K=[[2]]): Fano index, full SQM matrix, grading, and eigenvalues {0} ∪ 3·2^{2/3}y^{1/3}µ₃ agree **exactly with V3.nb's cached Mathematica output**  | ✓ |
 | **Homogeneous-bundle twists** (`gwflags/bundles.py`, `tests/test_bundles.py`): complete intersections in arbitrary curve-wise-convex homogeneous bundles via fiber-weight multisets — tautological Q and S\*, duals, ⊕/⊗/Sym/Λ, cross-factor box products. Verified by classical isomorphisms: Z(Gr(2,4), Q) = P² and Z(Gr(2,5), Q) = P³ (**twisted SQM equals the native matrix entry-for-entry**), Z(Gr(2,5), Sym²S\*) = OG(2,5) = B₂/P₂ (**cross-Dynkin-type spectral agreement**); legacy split rows reproduce exactly; non-convex bundles (e.g. S) rejected with guidance | ✓ |
 | **Second, formula-independent engine** (`gwflags/gkm.py`, `tests/test_gkm_engine.py`): the Holmes–Muratore GKM localization formula (arXiv:2509.07562, Thm 3.4) implemented from their statement — intrinsic GKM-graph trees, connection-based edge factors, uniform vertex factor — and diffed against the classical engine **at the same random torus point: raw localization sums agree exactly as rational numbers** across P², Fl(3), Gr(2,4), SO(5)/B, P²×P² (incl. degree-2, 5-mark, and non-gated homogeneous sums); h(e,d) flag-independence (their Thm 3.6) verified; no parallel GKM edges in the battery (documents the dedup assumption) | ✓ |
 | **Reference regressions:** stored exact matrices are checked against the localization engine; the full GM-20 calculation includes the supported degree-5 classes. See `tests/test_reference_list.py` and `tests/gm20_forensics.py`. | ✓ |
@@ -235,7 +235,7 @@ Executable validation is kept in `tests/`. Run the complete suite with:
 python3 -m pytest tests/ -q
 ```
 
-`tests/test_reference_list.py` checks the transcribed external reference
+`tests/test_reference_list.py` checks the external reference
 matrices; `tests/test_bundles.py` checks quotient bundles and bundle
 combinations.
 

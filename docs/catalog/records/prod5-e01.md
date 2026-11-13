@@ -8,7 +8,7 @@ keywords: ["dimension 5", "fivefold", "Complete intersection in a product of pro
 
 **Geometric presentation.** Ambient variety: \(\mathbb P^{4}\times \mathbb P^{4}\). Defining multidegrees in this factor order: `[[2, 2], [1, 1], [1, 1]]`.
 
-See the [fan and divisor certificate](../../data/geometric-presentations.json).
+[Geometric identification](../sources.md#geometric-identification).
 
 **Construction:** Complete intersection in a product of projective spaces. **Dimension:** 5. **Index:** 1. **h(1,1):** 2.
 
@@ -41,7 +41,6 @@ residual_product_degrees = [1, 1]
 ```
 
 The residual product degrees give the anticanonical class. 
-Related workbook IDs: [111].
 
 ### Invariants and full Hodge diamond
 

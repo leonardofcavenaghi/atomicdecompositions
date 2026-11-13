@@ -16,7 +16,7 @@ The factor numbers below refer to the characteristic polynomial of \(A=c_1\star\
 
 **Dimension:** 2. **Ambient rank:** 3. **Full cohomology rank:** 4. **Full Hodge-invariant rank:** 4.
 
-Full Hodge-character polynomial: \(P_X(t)=4\).
+Full Hodge polynomial: \(P_X(t)=4\).
 
 **Analysis point:** `y2=1`. **Unit determinant:** nonzero.
 
@@ -34,7 +34,7 @@ No full atomic Hodge polynomial is assigned by this test.
 
 **Dimension:** 2. **Ambient rank:** 3. **Full cohomology rank:** 8. **Full Hodge-invariant rank:** 8.
 
-Full Hodge-character polynomial: \(P_X(t)=8\).
+Full Hodge polynomial: \(P_X(t)=8\).
 
 **Analysis point:** `y2=1`. **Unit determinant:** nonzero.
 
@@ -52,7 +52,7 @@ No full atomic Hodge polynomial is assigned by this test.
 
 **Dimension:** 2. **Ambient rank:** 3. **Full cohomology rank:** 3. **Full Hodge-invariant rank:** 3.
 
-Full Hodge-character polynomial: \(P_X(t)=3\).
+Full Hodge polynomial: \(P_X(t)=3\).
 
 **Analysis point:** `y3=1`. **Unit determinant:** nonzero.
 
@@ -84,7 +84,7 @@ Full Hodge-character polynomial: \(P_X(t)=3\).
 
 **Dimension:** 2. **Ambient rank:** 3. **Full cohomology rank:** 4. **Full Hodge-invariant rank:** 4.
 
-Full Hodge-character polynomial: \(P_X(t)=4\).
+Full Hodge polynomial: \(P_X(t)=4\).
 
 **Analysis point:** `y3=1`. **Unit determinant:** nonzero.
 
@@ -102,7 +102,7 @@ No full atomic Hodge polynomial is assigned by this test.
 
 **Dimension:** 2. **Ambient rank:** 3. **Full cohomology rank:** 9. **Full Hodge-invariant rank:** 9.
 
-Full Hodge-character polynomial: \(P_X(t)=9\).
+Full Hodge polynomial: \(P_X(t)=9\).
 
 **Analysis point:** `y3=1`. **Unit determinant:** nonzero.
 
@@ -120,7 +120,7 @@ No full atomic Hodge polynomial is assigned by this test.
 
 **Dimension:** 2. **Ambient rank:** 3. **Full cohomology rank:** 3. **Full Hodge-invariant rank:** 3.
 
-Full Hodge-character polynomial: \(P_X(t)=3\).
+Full Hodge polynomial: \(P_X(t)=3\).
 
 **Analysis point:** `y4=1`. **Unit determinant:** nonzero.
 
@@ -152,7 +152,7 @@ Full Hodge-character polynomial: \(P_X(t)=3\).
 
 **Dimension:** 2. **Ambient rank:** 3. **Full cohomology rank:** 4. **Full Hodge-invariant rank:** 4.
 
-Full Hodge-character polynomial: \(P_X(t)=4\).
+Full Hodge polynomial: \(P_X(t)=4\).
 
 **Analysis point:** `y4=1`. **Unit determinant:** nonzero.
 
@@ -170,7 +170,7 @@ No full atomic Hodge polynomial is assigned by this test.
 
 **Dimension:** 2. **Ambient rank:** 3. **Full cohomology rank:** 9. **Full Hodge-invariant rank:** 9.
 
-Full Hodge-character polynomial: \(P_X(t)=9\).
+Full Hodge polynomial: \(P_X(t)=9\).
 
 **Analysis point:** `y4=1`. **Unit determinant:** nonzero.
 
@@ -188,7 +188,7 @@ No full atomic Hodge polynomial is assigned by this test.
 
 **Dimension:** 2. **Ambient rank:** 3. **Full cohomology rank:** 8. **Full Hodge-invariant rank:** 8.
 
-Full Hodge-character polynomial: \(P_X(t)=8\).
+Full Hodge polynomial: \(P_X(t)=8\).
 
 **Analysis point:** `y4=1`. **Unit determinant:** nonzero.
 
@@ -206,7 +206,7 @@ No full atomic Hodge polynomial is assigned by this test.
 
 **Dimension:** 2. **Ambient rank:** 3. **Full cohomology rank:** 3. **Full Hodge-invariant rank:** 3.
 
-Full Hodge-character polynomial: \(P_X(t)=3\).
+Full Hodge polynomial: \(P_X(t)=3\).
 
 **Analysis point:** `y1=1`. **Unit determinant:** nonzero.
 
@@ -238,7 +238,7 @@ Full Hodge-character polynomial: \(P_X(t)=3\).
 
 **Dimension:** 2. **Ambient rank:** 3. **Full cohomology rank:** 4. **Full Hodge-invariant rank:** 4.
 
-Full Hodge-character polynomial: \(P_X(t)=4\).
+Full Hodge polynomial: \(P_X(t)=4\).
 
 **Analysis point:** `y1=1`. **Unit determinant:** nonzero.
 
@@ -255,7 +255,7 @@ No full atomic Hodge polynomial is assigned by this test.
 
 **Dimension:** 2. **Ambient rank:** 3. **Full cohomology rank:** 9. **Full Hodge-invariant rank:** 9.
 
-Full Hodge-character polynomial: \(P_X(t)=9\).
+Full Hodge polynomial: \(P_X(t)=9\).
 
 **Analysis point:** `y1=1`. **Unit determinant:** nonzero.
 
@@ -272,7 +272,7 @@ No full atomic Hodge polynomial is assigned by this test.
 
 **Dimension:** 2. **Ambient rank:** 3. **Full cohomology rank:** 8. **Full Hodge-invariant rank:** 8.
 
-Full Hodge-character polynomial: \(P_X(t)=8\).
+Full Hodge polynomial: \(P_X(t)=8\).
 
 **Analysis point:** `y1=1`. **Unit determinant:** nonzero.
 

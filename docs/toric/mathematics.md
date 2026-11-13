@@ -1,8 +1,8 @@
 ---
-description: Toric geometry, localization formulas, divisor and curve coordinates, and ambient quantum operators.
+description: Gromov–Witten invariants and quantum multiplication for toric varieties and their complete intersections, computed by equivariant localization.
 ---
 
-# Toric methods and conventions
+# Localization on toric varieties
 
 A fan describes the ambient smooth projective toric variety and its divisor and curve lattices. A sum of globally generated line bundles defines the complete intersection whose genus-zero invariants are computed by Euler-twisted localization.
 
@@ -82,9 +82,9 @@ I_v=\left(\prod_{e\ni v}\omega_{v,e}^{-1}\right)
 $$
 
 
-For unstable vertices the paper uses \(\Theta_v\): one edge/no markings gives \(\omega_{v,e}\); one edge/one marking gives \(1\); two edges/no markings give \((\omega_{v,e_1}+\omega_{v,e_2})^{-1}\).
+For unstable vertices, write \(\Theta_v\): one edge/no markings gives \(\omega_{v,e}\); one edge/one marking gives \(1\); two edges/no markings give \((\omega_{v,e_1}+\omega_{v,e_2})^{-1}\).
 
-For the complete intersection, Theorem 3.17 inserts \(\operatorname{Tw}(\Gamma;\lambda_{\mathrm{aux}})\) into this summand, uses the ambient lifts \(\alpha_k\), and specializes the auxiliary Euler parameters and positive-degree torus classes **after taking the complete sum**. Torus evaluations in the software are exact; independent evaluations are a consistency check when enabled. New saved fivefold-queue records explicitly used one evaluation per class, while older caches may have two.
+For the complete intersection, Theorem 3.17 inserts \(\operatorname{Tw}(\Gamma;\lambda_{\mathrm{aux}})\) into this summand, uses the ambient lifts \(\alpha_k\), and specializes the auxiliary Euler parameters and positive-degree torus classes **after taking the complete sum**. Torus evaluations in the software are exact. Two independent evaluations provide a consistency check; selecting one evaluation omits that comparison. The evaluation count is part of the result metadata.
 
 No insertion is required for the cubic-surface line count: `projective_space(3).gw([], beta=(1,1,1,1), K=[[3]])` returns **27**. The unstable-vertex rules do not create extra marked points. The toric degree-zero GW entry path uses its documented three-insertion classical convention.
 
@@ -92,7 +92,7 @@ No insertion is required for the cubic-surface line count: `projective_space(3).
 
 In the ray-relation presentation, \(\beta=(b_\rho)\) satisfies \(\sum_\rho b_\rho v_\rho=0\). Coordinates in the reported integral `h2_basis` are also accepted. An effective curve relation can have negative entries.
 
-Choose divisor classes \(A_1,\ldots,A_r\) for the quantum coordinates and writes
+Choose divisor classes \(A_1,\ldots,A_r\) for the quantum coordinates and write
 
 
 $$
@@ -156,7 +156,7 @@ $$
 $$
 
 
-The saved analysis code also writes \(K^F=-A(q)\), so the same connection is \(\partial_u+K^F/u^2+G/u\). A characteristic factor \(p(z)\) of \(K^F\) corresponds to eigenvalues \(\lambda\) of \(A\) satisfying **\(p(-\lambda)=0\)**. This sign change must accompany the eigenvalue labels; the grading is unchanged.
+The connection analysis uses \(K^F=-A(q)\), so the same connection is \(\partial_u+K^F/u^2+G/u\). A characteristic factor \(p(z)\) of \(K^F\) corresponds to eigenvalues \(\lambda\) of \(A\) satisfying **\(p(-\lambda)=0\)**. This sign change must accompany the eigenvalue labels; the grading is unchanged.
 
 ## Regularized-exponent multisets
 
@@ -195,12 +195,12 @@ where \(N\) is the dimension of the space on which the matrix acts. Its nonvanis
 
 Fan cohomology gives the ambient Hodge diamond. Full complete-intersection Hodge calculations require the implemented positivity and dimension hypotheses; some nef fourfold records instead cite literature values. In fivefolds, primitive middle \(H^5\) is odd and lies outside the displayed ambient even-sector matrix.
 
-The cyclic-factor obstruction applies to dimensions 2–4 and requires a cyclic generic Hodge factor of unramified exponential type with rational residues. Its separate fivefold criterion, Theorem 4.10 attributed to Cavenaghi–Katzarkov–Kontsevich, assumes a **coarse Hodge atom** \(\alpha\) with \(\rho_\alpha\le3\) and \([t^3]P_\alpha(t)>0\). A small-matrix eigenvalue or a computed exponent list alone does not establish these hypotheses. The catalogue therefore preserves the computations without assigning automatic fivefold rationality verdicts.
+The cyclic-factor obstruction applies to dimensions 2–4 and requires a cyclic generic Hodge factor of unramified exponential type with rational residues. Its separate fivefold criterion, Theorem 4.10 attributed to Cavenaghi–Katzarkov–Kontsevich, assumes a **coarse Hodge atom** \(\alpha\) with \(\rho_\alpha\le3\) and \([t^3]P_\alpha(t)>0\). A small-matrix eigenvalue or a computed exponent list alone does not establish these hypotheses. Apply this criterion only after identifying the full coarse atom and its Hodge polynomial.
 
 ## Sources and reproducibility
 
-References: the toric article, Theorems 3.12 and 3.17, Definition 4.2, §4.3 and Appendix B. Their localization framework follows the cited work of Liu, Liu–Sheshmani and Graber–Pandharipande. The [flag paper](https://arxiv.org/abs/2609.21914) supplies the parallel homogeneous calculation.
+References: M. Brockhof, G. Galindo, L. Katzarkov and P. A. Muniz Martins, *On the atomic decomposition of complete intersections in toric varieties*, Theorems 3.12 and 3.17, Definition 4.2, §4.3 and Appendix B. Virtual localization follows Liu, Liu–Sheshmani and Graber–Pandharipande. For homogeneous spaces, see B. Alexeev et al., [*On the atomic decomposition of complete intersection in flag varieties*](https://arxiv.org/abs/2609.21914).
 
 The [universal catalogue](../catalog/index.md) is organized by geometric dimension and construction. Its CKP and HLM identifiers refer to Coates–Kasprzyk–Prince, [*Four-dimensional Fano toric complete intersections*](https://arxiv.org/abs/1409.5030), and Hausen–Laface–Mauz, [*On smooth Fano fourfolds of Picard number two*](https://arxiv.org/abs/1907.08000). CKP period buckets do not identify varieties solely by equality of periods.
 
-The [saved datasets](../catalog/datasets.md) retain the exact inputs, basis, grading and analysis point. Their validation is not a new localization run of every entry. The [software guides](../software/index.md) distinguish Python, terminal and interface input styles.
+The [exact datasets](../catalog/datasets.md) provide inputs, ordered bases, grading and analysis points. The [software guides](../software/index.md) explain Python, terminal and interface input styles.

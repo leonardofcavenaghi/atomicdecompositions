@@ -16,7 +16,7 @@ The factor numbers below refer to the characteristic polynomial of \(A=c_1\star\
 
 **Dimension:** 4. **Ambient rank:** 12. **Full cohomology rank:** 32. **Full Hodge-invariant rank:** 12.
 
-Full Hodge-character polynomial: \(P_X(t)=t^{2} + 30 + t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=t^{2} + 30 + t^{-2}\).
 
 **Analysis point:** `y1=2, y2=3, y3=5`. **Unit determinant:** zero at every tested point.
 
@@ -31,7 +31,7 @@ No atomic decomposition is certified at these points; cyclicity may hold at othe
 
 **Dimension:** 4. **Ambient rank:** 13. **Full cohomology rank:** 33. **Full Hodge-invariant rank:** 13.
 
-Full Hodge-character polynomial: \(P_X(t)=t^{2} + 31 + t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=t^{2} + 31 + t^{-2}\).
 
 **Analysis point:** `y1=2, y2=3, y3=5`. **Unit determinant:** zero at every tested point.
 
@@ -46,7 +46,7 @@ No atomic decomposition is certified at these points; cyclicity may hold at othe
 
 **Dimension:** 4. **Ambient rank:** 5. **Full cohomology rank:** 12. **Full Hodge-invariant rank:** 12.
 
-Full Hodge-character polynomial: \(P_X(t)=12\).
+Full Hodge polynomial: \(P_X(t)=12\).
 
 **Analysis point:** `y1=2`. **Unit determinant:** nonzero.
 
@@ -63,7 +63,7 @@ No full atomic Hodge polynomial is assigned by this test.
 
 **Dimension:** 4. **Ambient rank:** 5. **Full cohomology rank:** 48. **Full Hodge-invariant rank:** 5.
 
-Full Hodge-character polynomial: \(P_X(t)=3t^{2} + 42 + 3t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=3t^{2} + 42 + 3t^{-2}\).
 
 **Analysis point:** `y1=2`. **Unit determinant:** nonzero.
 
@@ -94,7 +94,7 @@ Full Hodge-character polynomial: \(P_X(t)=3t^{2} + 42 + 3t^{-2}\).
 
 **Dimension:** 4. **Ambient rank:** 5. **Full cohomology rank:** 224. **Full Hodge-invariant rank:** 5.
 
-Full Hodge-character polynomial: \(P_X(t)=27t^{2} + 170 + 27t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=27t^{2} + 170 + 27t^{-2}\).
 
 **Analysis point:** `y1=2`. **Unit determinant:** nonzero.
 
@@ -125,7 +125,7 @@ Full Hodge-character polynomial: \(P_X(t)=27t^{2} + 170 + 27t^{-2}\).
 
 **Dimension:** 4. **Ambient rank:** 5. **Full cohomology rank:** 324. **Full Hodge-invariant rank:** 5.
 
-Full Hodge-character polynomial: \(P_X(t)=42t^{2} + 240 + 42t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=42t^{2} + 240 + 42t^{-2}\).
 
 **Analysis point:** `y1=2`. **Unit determinant:** nonzero.
 
@@ -156,7 +156,7 @@ Full Hodge-character polynomial: \(P_X(t)=42t^{2} + 240 + 42t^{-2}\).
 
 **Dimension:** 4. **Ambient rank:** 5. **Full cohomology rank:** 90. **Full Hodge-invariant rank:** 5.
 
-Full Hodge-character polynomial: \(P_X(t)=8t^{2} + 74 + 8t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=8t^{2} + 74 + 8t^{-2}\).
 
 **Analysis point:** `y1=2`. **Unit determinant:** nonzero.
 
@@ -187,7 +187,7 @@ Full Hodge-character polynomial: \(P_X(t)=8t^{2} + 74 + 8t^{-2}\).
 
 **Dimension:** 4. **Ambient rank:** 5. **Full cohomology rank:** 552. **Full Hodge-invariant rank:** 5.
 
-Full Hodge-character polynomial: \(P_X(t)=77t^{2} + 398 + 77t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=77t^{2} + 398 + 77t^{-2}\).
 
 **Analysis point:** `y1=2`. **Unit determinant:** nonzero.
 
@@ -218,7 +218,7 @@ Full Hodge-character polynomial: \(P_X(t)=77t^{2} + 398 + 77t^{-2}\).
 
 **Dimension:** 4. **Ambient rank:** 5. **Full cohomology rank:** 369. **Full Hodge-invariant rank:** 5.
 
-Full Hodge-character polynomial: \(P_X(t)=49t^{2} + 271 + 49t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=49t^{2} + 271 + 49t^{-2}\).
 
 **Analysis point:** `y1=2`. **Unit determinant:** nonzero.
 
@@ -249,7 +249,7 @@ Full Hodge-character polynomial: \(P_X(t)=49t^{2} + 271 + 49t^{-2}\).
 
 **Dimension:** 4. **Ambient rank:** 8. **Full cohomology rank:** 8. **Full Hodge-invariant rank:** 8.
 
-Full Hodge-character polynomial: \(P_X(t)=8\).
+Full Hodge polynomial: \(P_X(t)=8\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** nonzero.
 
@@ -282,7 +282,7 @@ Full Hodge-character polynomial: \(P_X(t)=8\).
 
 **Dimension:** 4. **Ambient rank:** 8. **Full cohomology rank:** 28. **Full Hodge-invariant rank:** 8.
 
-Full Hodge-character polynomial: \(P_X(t)=10t + 8 + 10t^{-1}\).
+Full Hodge polynomial: \(P_X(t)=10t + 8 + 10t^{-1}\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** nonzero.
 
@@ -313,7 +313,7 @@ Full Hodge-character polynomial: \(P_X(t)=10t + 8 + 10t^{-1}\).
 
 **Dimension:** 4. **Ambient rank:** 9. **Full cohomology rank:** 9. **Full Hodge-invariant rank:** 9.
 
-Full Hodge-character polynomial: \(P_X(t)=9\).
+Full Hodge polynomial: \(P_X(t)=9\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** nonzero.
 
@@ -342,7 +342,7 @@ Full Hodge-character polynomial: \(P_X(t)=9\).
 
 **Dimension:** 4. **Ambient rank:** 8. **Full cohomology rank:** 8. **Full Hodge-invariant rank:** 8.
 
-Full Hodge-character polynomial: \(P_X(t)=8\).
+Full Hodge polynomial: \(P_X(t)=8\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** nonzero.
 
@@ -371,7 +371,7 @@ Full Hodge-character polynomial: \(P_X(t)=8\).
 
 **Dimension:** 4. **Ambient rank:** 9. **Full cohomology rank:** 9. **Full Hodge-invariant rank:** 9.
 
-Full Hodge-character polynomial: \(P_X(t)=9\).
+Full Hodge polynomial: \(P_X(t)=9\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** nonzero.
 
@@ -400,7 +400,7 @@ Full Hodge-character polynomial: \(P_X(t)=9\).
 
 **Dimension:** 4. **Ambient rank:** 9. **Full cohomology rank:** 12. **Full Hodge-invariant rank:** 12.
 
-Full Hodge-character polynomial: \(P_X(t)=12\).
+Full Hodge polynomial: \(P_X(t)=12\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** nonzero.
 
@@ -417,7 +417,7 @@ No full atomic Hodge polynomial is assigned by this test.
 
 **Dimension:** 4. **Ambient rank:** 9. **Full cohomology rank:** 18. **Full Hodge-invariant rank:** 18.
 
-Full Hodge-character polynomial: \(P_X(t)=18\).
+Full Hodge polynomial: \(P_X(t)=18\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** nonzero.
 
@@ -434,7 +434,7 @@ No full atomic Hodge polynomial is assigned by this test.
 
 **Dimension:** 4. **Ambient rank:** 9. **Full cohomology rank:** 60. **Full Hodge-invariant rank:** 9.
 
-Full Hodge-character polynomial: \(P_X(t)=4t^{2} + 52 + 4t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=4t^{2} + 52 + 4t^{-2}\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** zero at every tested point.
 
@@ -449,7 +449,7 @@ No atomic decomposition is certified at these points; cyclicity may hold at othe
 
 **Dimension:** 4. **Ambient rank:** 9. **Full cohomology rank:** 85. **Full Hodge-invariant rank:** 9.
 
-Full Hodge-character polynomial: \(P_X(t)=7t^{2} + 71 + 7t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=7t^{2} + 71 + 7t^{-2}\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** zero at every tested point.
 
@@ -464,7 +464,7 @@ No atomic decomposition is certified at these points; cyclicity may hold at othe
 
 **Dimension:** 4. **Ambient rank:** 9. **Full cohomology rank:** 30. **Full Hodge-invariant rank:** 9.
 
-Full Hodge-character polynomial: \(P_X(t)=t^{2} + 28 + t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=t^{2} + 28 + t^{-2}\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** zero at every tested point.
 
@@ -479,7 +479,7 @@ No atomic decomposition is certified at these points; cyclicity may hold at othe
 
 **Dimension:** 4. **Ambient rank:** 9. **Full cohomology rank:** 155. **Full Hodge-invariant rank:** 9.
 
-Full Hodge-character polynomial: \(P_X(t)=16t^{2} + 123 + 16t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=16t^{2} + 123 + 16t^{-2}\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** zero at every tested point.
 
@@ -494,7 +494,7 @@ No atomic decomposition is certified at these points; cyclicity may hold at othe
 
 **Dimension:** 4. **Ambient rank:** 9. **Full cohomology rank:** 23. **Full Hodge-invariant rank:** 23.
 
-Full Hodge-character polynomial: \(P_X(t)=23\).
+Full Hodge polynomial: \(P_X(t)=23\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** nonzero.
 
@@ -511,7 +511,7 @@ No full atomic Hodge polynomial is assigned by this test.
 
 **Dimension:** 4. **Ambient rank:** 9. **Full cohomology rank:** 152. **Full Hodge-invariant rank:** 9.
 
-Full Hodge-character polynomial: \(P_X(t)=16t^{2} + 120 + 16t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=16t^{2} + 120 + 16t^{-2}\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** zero at every tested point.
 
@@ -526,7 +526,7 @@ No atomic decomposition is certified at these points; cyclicity may hold at othe
 
 **Dimension:** 4. **Ambient rank:** 13. **Full cohomology rank:** 15. **Full Hodge-invariant rank:** 15.
 
-Full Hodge-character polynomial: \(P_X(t)=15\).
+Full Hodge polynomial: \(P_X(t)=15\).
 
 **Analysis point:** `y1=2, y2=3, y3=5`. **Unit determinant:** nonzero.
 
@@ -543,7 +543,7 @@ No full atomic Hodge polynomial is assigned by this test.
 
 **Dimension:** 4. **Ambient rank:** 12. **Full cohomology rank:** 12. **Full Hodge-invariant rank:** 12.
 
-Full Hodge-character polynomial: \(P_X(t)=12\).
+Full Hodge polynomial: \(P_X(t)=12\).
 
 **Analysis point:** `y1=2, y2=3, y3=5`. **Unit determinant:** nonzero.
 
@@ -572,7 +572,7 @@ Full Hodge-character polynomial: \(P_X(t)=12\).
 
 **Dimension:** 4. **Ambient rank:** 14. **Full cohomology rank:** 45. **Full Hodge-invariant rank:** 14.
 
-Full Hodge-character polynomial: \(P_X(t)=2t^{2} + 41 + 2t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=2t^{2} + 41 + 2t^{-2}\).
 
 **Analysis point:** `y1=2, y2=3, y3=5`. **Unit determinant:** zero at every tested point.
 
@@ -587,7 +587,7 @@ No atomic decomposition is certified at these points; cyclicity may hold at othe
 
 **Dimension:** 4. **Ambient rank:** 17. **Full cohomology rank:** 22. **Full Hodge-invariant rank:** 22.
 
-Full Hodge-character polynomial: \(P_X(t)=22\).
+Full Hodge polynomial: \(P_X(t)=22\).
 
 **Analysis point:** `y1=2, y2=3, y3=5, y4=7`. **Unit determinant:** nonzero.
 
@@ -604,7 +604,7 @@ No full atomic Hodge polynomial is assigned by this test.
 
 **Dimension:** 4. **Ambient rank:** 22. **Full cohomology rank:** 40. **Full Hodge-invariant rank:** 22.
 
-Full Hodge-character polynomial: \(P_X(t)=t^{2} + 38 + t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=t^{2} + 38 + t^{-2}\).
 
 **Analysis point:** `y1=2, y2=3, y3=5, y4=7, y5=11`. **Unit determinant:** zero at every tested point.
 
@@ -619,7 +619,7 @@ No atomic decomposition is certified at these points; cyclicity may hold at othe
 
 **Dimension:** 4. **Ambient rank:** 17. **Full cohomology rank:** 58. **Full Hodge-invariant rank:** 17.
 
-Full Hodge-character polynomial: \(P_X(t)=3t^{2} + 52 + 3t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=3t^{2} + 52 + 3t^{-2}\).
 
 **Analysis point:** `y1=2, y2=3, y3=5, y4=7`. **Unit determinant:** zero at every tested point.
 
@@ -634,7 +634,7 @@ No atomic decomposition is certified at these points; cyclicity may hold at othe
 
 **Dimension:** 4. **Ambient rank:** 12. **Full cohomology rank:** 32. **Full Hodge-invariant rank:** 12.
 
-Full Hodge-character polynomial: \(P_X(t)=t^{2} + 30 + t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=t^{2} + 30 + t^{-2}\).
 
 **Analysis point:** `y1=2, y2=3, y3=5`. **Unit determinant:** zero at every tested point.
 
@@ -649,7 +649,7 @@ No atomic decomposition is certified at these points; cyclicity may hold at othe
 
 **Dimension:** 4. **Ambient rank:** 12. **Full cohomology rank:** 116. **Full Hodge-invariant rank:** 12.
 
-Full Hodge-character polynomial: \(P_X(t)=10t^{2} + 96 + 10t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=10t^{2} + 96 + 10t^{-2}\).
 
 **Analysis point:** `y1=2, y2=3, y3=5`. **Unit determinant:** zero at every tested point.
 
@@ -664,7 +664,7 @@ No atomic decomposition is certified at these points; cyclicity may hold at othe
 
 **Dimension:** 4. **Ambient rank:** 9. **Full cohomology rank:** 16. **Full Hodge-invariant rank:** 16.
 
-Full Hodge-character polynomial: \(P_X(t)=16\).
+Full Hodge polynomial: \(P_X(t)=16\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** nonzero.
 
@@ -681,7 +681,7 @@ No full atomic Hodge polynomial is assigned by this test.
 
 **Dimension:** 4. **Ambient rank:** 8. **Full cohomology rank:** 13. **Full Hodge-invariant rank:** 13.
 
-Full Hodge-character polynomial: \(P_X(t)=13\).
+Full Hodge polynomial: \(P_X(t)=13\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** nonzero.
 
@@ -698,7 +698,7 @@ No full atomic Hodge polynomial is assigned by this test.
 
 **Dimension:** 4. **Ambient rank:** 9. **Full cohomology rank:** 109. **Full Hodge-invariant rank:** 9.
 
-Full Hodge-character polynomial: \(P_X(t)=10t^{2} + 89 + 10t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=10t^{2} + 89 + 10t^{-2}\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** zero at every tested point.
 
@@ -713,7 +713,7 @@ No atomic decomposition is certified at these points; cyclicity may hold at othe
 
 **Dimension:** 4. **Ambient rank:** 13. **Full cohomology rank:** 24. **Full Hodge-invariant rank:** 24.
 
-Full Hodge-character polynomial: \(P_X(t)=24\).
+Full Hodge polynomial: \(P_X(t)=24\).
 
 **Analysis point:** `y1=2, y2=3, y3=5`. **Unit determinant:** nonzero.
 
@@ -730,7 +730,7 @@ No full atomic Hodge polynomial is assigned by this test.
 
 **Dimension:** 4. **Ambient rank:** 13. **Full cohomology rank:** 105. **Full Hodge-invariant rank:** 13.
 
-Full Hodge-character polynomial: \(P_X(t)=9t^{2} + 87 + 9t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=9t^{2} + 87 + 9t^{-2}\).
 
 **Analysis point:** `y1=2, y2=3, y3=5`. **Unit determinant:** zero at every tested point.
 
@@ -745,7 +745,7 @@ No atomic decomposition is certified at these points; cyclicity may hold at othe
 
 **Dimension:** 4. **Ambient rank:** 9. **Full cohomology rank:** 35. **Full Hodge-invariant rank:** 35.
 
-Full Hodge-character polynomial: \(P_X(t)=35\).
+Full Hodge polynomial: \(P_X(t)=35\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** nonzero.
 
@@ -762,7 +762,7 @@ No full atomic Hodge polynomial is assigned by this test.
 
 **Dimension:** 4. **Ambient rank:** 8. **Full cohomology rank:** 68. **Full Hodge-invariant rank:** 8.
 
-Full Hodge-character polynomial: \(P_X(t)=5t^{2} + 58 + 5t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=5t^{2} + 58 + 5t^{-2}\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** nonzero.
 
@@ -793,7 +793,7 @@ Full Hodge-character polynomial: \(P_X(t)=5t^{2} + 58 + 5t^{-2}\).
 
 **Dimension:** 4. **Ambient rank:** 8. **Full cohomology rank:** 293. **Full Hodge-invariant rank:** 8.
 
-Full Hodge-character polynomial: \(P_X(t)=35t^{2} + 223 + 35t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=35t^{2} + 223 + 35t^{-2}\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** nonzero.
 
@@ -824,7 +824,7 @@ Full Hodge-character polynomial: \(P_X(t)=35t^{2} + 223 + 35t^{-2}\).
 
 **Dimension:** 4. **Ambient rank:** 9. **Full cohomology rank:** 9. **Full Hodge-invariant rank:** 9.
 
-Full Hodge-character polynomial: \(P_X(t)=9\).
+Full Hodge polynomial: \(P_X(t)=9\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** nonzero.
 
@@ -853,7 +853,7 @@ Full Hodge-character polynomial: \(P_X(t)=9\).
 
 **Dimension:** 4. **Ambient rank:** 9. **Full cohomology rank:** 93. **Full Hodge-invariant rank:** 9.
 
-Full Hodge-character polynomial: \(P_X(t)=8t^{2} + 77 + 8t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=8t^{2} + 77 + 8t^{-2}\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** zero at every tested point.
 
@@ -868,7 +868,7 @@ No atomic decomposition is certified at these points; cyclicity may hold at othe
 
 **Dimension:** 4. **Ambient rank:** 9. **Full cohomology rank:** 52. **Full Hodge-invariant rank:** 9.
 
-Full Hodge-character polynomial: \(P_X(t)=3t^{2} + 46 + 3t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=3t^{2} + 46 + 3t^{-2}\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** nonzero.
 
@@ -899,7 +899,7 @@ Full Hodge-character polynomial: \(P_X(t)=3t^{2} + 46 + 3t^{-2}\).
 
 **Dimension:** 4. **Ambient rank:** 9. **Full cohomology rank:** 251. **Full Hodge-invariant rank:** 9.
 
-Full Hodge-character polynomial: \(P_X(t)=30t^{2} + 191 + 30t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=30t^{2} + 191 + 30t^{-2}\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** zero at every tested point.
 
@@ -914,7 +914,7 @@ No atomic decomposition is certified at these points; cyclicity may hold at othe
 
 **Dimension:** 4. **Ambient rank:** 5. **Full cohomology rank:** 27. **Full Hodge-invariant rank:** 5.
 
-Full Hodge-character polynomial: \(P_X(t)=t^{2} + 25 + t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=t^{2} + 25 + t^{-2}\).
 
 **Analysis point:** `y1=2`. **Unit determinant:** nonzero.
 
@@ -945,7 +945,7 @@ Full Hodge-character polynomial: \(P_X(t)=t^{2} + 25 + t^{-2}\).
 
 **Dimension:** 4. **Ambient rank:** 9. **Full cohomology rank:** 36. **Full Hodge-invariant rank:** 14.
 
-Full Hodge-character polynomial: \(P_X(t)=t^{2} + 34 + t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=t^{2} + 34 + t^{-2}\).
 
 **Analysis point:** `y1=1, y2=1`. **Unit determinant:** nonzero.
 
@@ -963,7 +963,7 @@ No full atomic Hodge polynomial is assigned by this test.
 
 **Dimension:** 4. **Ambient rank:** 9. **Full cohomology rank:** 12. **Full Hodge-invariant rank:** 12.
 
-Full Hodge-character polynomial: \(P_X(t)=12\).
+Full Hodge polynomial: \(P_X(t)=12\).
 
 **Analysis point:** `y1=2, y3=3`. **Unit determinant:** nonzero.
 
@@ -981,7 +981,7 @@ No full atomic Hodge polynomial is assigned by this test.
 
 **Dimension:** 4. **Ambient rank:** 5. **Full cohomology rank:** 6. **Full Hodge-invariant rank:** 6.
 
-Full Hodge-character polynomial: \(P_X(t)=6\).
+Full Hodge polynomial: \(P_X(t)=6\).
 
 **Analysis point:** `y2=1`. **Unit determinant:** nonzero.
 
@@ -999,7 +999,7 @@ No full atomic Hodge polynomial is assigned by this test.
 
 **Dimension:** 4. **Ambient rank:** 6. **Full cohomology rank:** 6. **Full Hodge-invariant rank:** 6.
 
-Full Hodge-character polynomial: \(P_X(t)=6\).
+Full Hodge polynomial: \(P_X(t)=6\).
 
 **Analysis point:** `y2=1`. **Unit determinant:** zero at every tested point.
 
@@ -1015,7 +1015,7 @@ No atomic decomposition is certified at these points; cyclicity may hold at othe
 
 **Dimension:** 4. **Ambient rank:** 6. **Full cohomology rank:** 6. **Full Hodge-invariant rank:** 6.
 
-Full Hodge-character polynomial: \(P_X(t)=6\).
+Full Hodge polynomial: \(P_X(t)=6\).
 
 **Analysis point:** `y2=1`. **Unit determinant:** nonzero.
 
@@ -1045,7 +1045,7 @@ Full Hodge-character polynomial: \(P_X(t)=6\).
 
 **Dimension:** 4. **Ambient rank:** 6. **Full cohomology rank:** 28. **Full Hodge-invariant rank:** 6.
 
-Full Hodge-character polynomial: \(P_X(t)=t^{2} + 26 + t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=t^{2} + 26 + t^{-2}\).
 
 **Analysis point:** `y2=1`. **Unit determinant:** zero at every tested point.
 
@@ -1061,7 +1061,7 @@ No atomic decomposition is certified at these points; cyclicity may hold at othe
 
 **Dimension:** 4. **Ambient rank:** 6. **Full cohomology rank:** 318. **Full Hodge-invariant rank:** 6.
 
-Full Hodge-character polynomial: \(P_X(t)=41t^{2} + 236 + 41t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=41t^{2} + 236 + 41t^{-2}\).
 
 **Analysis point:** `y2=1`. **Unit determinant:** zero at every tested point.
 
@@ -1077,7 +1077,7 @@ No atomic decomposition is certified at these points; cyclicity may hold at othe
 
 **Dimension:** 4. **Ambient rank:** 6. **Full cohomology rank:** 176. **Full Hodge-invariant rank:** 6.
 
-Full Hodge-character polynomial: \(P_X(t)=20t^{2} + 136 + 20t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=20t^{2} + 136 + 20t^{-2}\).
 
 **Analysis point:** `y2=1`. **Unit determinant:** zero at every tested point.
 
@@ -1093,7 +1093,7 @@ No atomic decomposition is certified at these points; cyclicity may hold at othe
 
 **Dimension:** 4. **Ambient rank:** 6. **Full cohomology rank:** 6. **Full Hodge-invariant rank:** 6.
 
-Full Hodge-character polynomial: \(P_X(t)=6\).
+Full Hodge polynomial: \(P_X(t)=6\).
 
 **Analysis point:** `y3=1`. **Unit determinant:** nonzero.
 
@@ -1123,7 +1123,7 @@ Full Hodge-character polynomial: \(P_X(t)=6\).
 
 **Dimension:** 4. **Ambient rank:** 6. **Full cohomology rank:** 28. **Full Hodge-invariant rank:** 6.
 
-Full Hodge-character polynomial: \(P_X(t)=t^{2} + 26 + t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=t^{2} + 26 + t^{-2}\).
 
 **Analysis point:** `y3=1`. **Unit determinant:** zero at every tested point.
 
@@ -1139,7 +1139,7 @@ No atomic decomposition is certified at these points; cyclicity may hold at othe
 
 **Dimension:** 4. **Ambient rank:** 6. **Full cohomology rank:** 318. **Full Hodge-invariant rank:** 6.
 
-Full Hodge-character polynomial: \(P_X(t)=41t^{2} + 236 + 41t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=41t^{2} + 236 + 41t^{-2}\).
 
 **Analysis point:** `y3=1`. **Unit determinant:** zero at every tested point.
 
@@ -1155,7 +1155,7 @@ No atomic decomposition is certified at these points; cyclicity may hold at othe
 
 **Dimension:** 4. **Ambient rank:** 6. **Full cohomology rank:** 176. **Full Hodge-invariant rank:** 6.
 
-Full Hodge-character polynomial: \(P_X(t)=20t^{2} + 136 + 20t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=20t^{2} + 136 + 20t^{-2}\).
 
 **Analysis point:** `y3=1`. **Unit determinant:** zero at every tested point.
 
@@ -1171,7 +1171,7 @@ No atomic decomposition is certified at these points; cyclicity may hold at othe
 
 **Dimension:** 4. **Ambient rank:** 5. **Full cohomology rank:** 5. **Full Hodge-invariant rank:** 5.
 
-Full Hodge-character polynomial: \(P_X(t)=5\).
+Full Hodge polynomial: \(P_X(t)=5\).
 
 **Analysis point:** `y4=1`. **Unit determinant:** nonzero.
 
@@ -1203,7 +1203,7 @@ Full Hodge-character polynomial: \(P_X(t)=5\).
 
 **Dimension:** 4. **Ambient rank:** 5. **Full cohomology rank:** 132. **Full Hodge-invariant rank:** 5.
 
-Full Hodge-character polynomial: \(P_X(t)=14t^{2} + 104 + 14t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=14t^{2} + 104 + 14t^{-2}\).
 
 **Analysis point:** `y1=1`. **Unit determinant:** nonzero.
 
@@ -1214,7 +1214,7 @@ Full Hodge-character polynomial: \(P_X(t)=14t^{2} + 104 + 14t^{-2}\).
 | 1 | 1 | 3 | 130 | \(14t^{2} + 102 + 14t^{-2}\) |
 | 2 | 2 | 1 | 1 | \(1\) |
 
-**Hodge identification:** Full Hodge identification stated in the record-specific certificate.
+**Hodge identification:** For a very general member, weak Lefschetz and irreducible non-Tate vanishing cohomology identify the Hodge-invariant sector with the five-dimensional ambient space; see the [geometric argument](records/lg3-1-2.md#full-atomic-hodge-invariants).
 
 **Primitive assignment:** Unique rational eigenvalue; see the [common proof rules](atomic-invariants.md#primitive-assignment-rules).
 
@@ -1235,7 +1235,7 @@ Full Hodge-character polynomial: \(P_X(t)=14t^{2} + 104 + 14t^{-2}\).
 
 **Dimension:** 4. **Ambient rank:** 5. **Full cohomology rank:** 8. **Full Hodge-invariant rank:** 8.
 
-Full Hodge-character polynomial: \(P_X(t)=8\).
+Full Hodge polynomial: \(P_X(t)=8\).
 
 **Analysis point:** `y3=1`. **Unit determinant:** nonzero.
 
@@ -1253,7 +1253,7 @@ No full atomic Hodge polynomial is assigned by this test.
 
 **Dimension:** 4. **Ambient rank:** 5. **Full cohomology rank:** 48. **Full Hodge-invariant rank:** 5.
 
-Full Hodge-character polynomial: \(P_X(t)=3t^{2} + 42 + 3t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=3t^{2} + 42 + 3t^{-2}\).
 
 **Analysis point:** `y3=1`. **Unit determinant:** nonzero.
 
@@ -1287,7 +1287,7 @@ Full Hodge-character polynomial: \(P_X(t)=3t^{2} + 42 + 3t^{-2}\).
 
 **Dimension:** 4. **Ambient rank:** 5. **Full cohomology rank:** 5. **Full Hodge-invariant rank:** 5.
 
-Full Hodge-character polynomial: \(P_X(t)=5\).
+Full Hodge polynomial: \(P_X(t)=5\).
 
 **Analysis point:** `y1=1`. **Unit determinant:** nonzero.
 
@@ -1319,7 +1319,7 @@ Full Hodge-character polynomial: \(P_X(t)=5\).
 
 **Dimension:** 4. **Ambient rank:** 5. **Full cohomology rank:** 6. **Full Hodge-invariant rank:** 6.
 
-Full Hodge-character polynomial: \(P_X(t)=6\).
+Full Hodge polynomial: \(P_X(t)=6\).
 
 **Analysis point:** `y1=1`. **Unit determinant:** nonzero.
 
@@ -1336,7 +1336,7 @@ No full atomic Hodge polynomial is assigned by this test.
 
 **Dimension:** 4. **Ambient rank:** 5. **Full cohomology rank:** 27. **Full Hodge-invariant rank:** 5.
 
-Full Hodge-character polynomial: \(P_X(t)=t^{2} + 25 + t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=t^{2} + 25 + t^{-2}\).
 
 **Analysis point:** `y1=1`. **Unit determinant:** nonzero.
 
@@ -1369,7 +1369,7 @@ Full Hodge-character polynomial: \(P_X(t)=t^{2} + 25 + t^{-2}\).
 
 **Dimension:** 4. **Ambient rank:** 5. **Full cohomology rank:** 188. **Full Hodge-invariant rank:** 5.
 
-Full Hodge-character polynomial: \(P_X(t)=21t^{2} + 146 + 21t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=21t^{2} + 146 + 21t^{-2}\).
 
 **Analysis point:** `y1=1`. **Unit determinant:** nonzero.
 
@@ -1402,7 +1402,7 @@ Full Hodge-character polynomial: \(P_X(t)=21t^{2} + 146 + 21t^{-2}\).
 
 **Dimension:** 4. **Ambient rank:** 5. **Full cohomology rank:** 825. **Full Hodge-invariant rank:** 5.
 
-Full Hodge-character polynomial: \(P_X(t)=120t^{2} + 585 + 120t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=120t^{2} + 585 + 120t^{-2}\).
 
 **Analysis point:** `y1=1`. **Unit determinant:** nonzero.
 
@@ -1433,7 +1433,7 @@ Full Hodge-character polynomial: \(P_X(t)=120t^{2} + 585 + 120t^{-2}\).
 
 **Dimension:** 4. **Ambient rank:** 5. **Full cohomology rank:** 12. **Full Hodge-invariant rank:** 12.
 
-Full Hodge-character polynomial: \(P_X(t)=12\).
+Full Hodge polynomial: \(P_X(t)=12\).
 
 **Analysis point:** `y1=1`. **Unit determinant:** nonzero.
 
@@ -1450,7 +1450,7 @@ No full atomic Hodge polynomial is assigned by this test.
 
 **Dimension:** 4. **Ambient rank:** 5. **Full cohomology rank:** 90. **Full Hodge-invariant rank:** 5.
 
-Full Hodge-character polynomial: \(P_X(t)=8t^{2} + 74 + 8t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=8t^{2} + 74 + 8t^{-2}\).
 
 **Analysis point:** `y1=1`. **Unit determinant:** nonzero.
 
@@ -1481,7 +1481,7 @@ Full Hodge-character polynomial: \(P_X(t)=8t^{2} + 74 + 8t^{-2}\).
 
 **Dimension:** 4. **Ambient rank:** 5. **Full cohomology rank:** 552. **Full Hodge-invariant rank:** 5.
 
-Full Hodge-character polynomial: \(P_X(t)=77t^{2} + 398 + 77t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=77t^{2} + 398 + 77t^{-2}\).
 
 **Analysis point:** `y1=1`. **Unit determinant:** nonzero.
 
@@ -1512,7 +1512,7 @@ Full Hodge-character polynomial: \(P_X(t)=77t^{2} + 398 + 77t^{-2}\).
 
 **Dimension:** 4. **Ambient rank:** 5. **Full cohomology rank:** 369. **Full Hodge-invariant rank:** 5.
 
-Full Hodge-character polynomial: \(P_X(t)=49t^{2} + 271 + 49t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=49t^{2} + 271 + 49t^{-2}\).
 
 **Analysis point:** `y1=1`. **Unit determinant:** nonzero.
 
@@ -1543,7 +1543,7 @@ Full Hodge-character polynomial: \(P_X(t)=49t^{2} + 271 + 49t^{-2}\).
 
 **Dimension:** 4. **Ambient rank:** 5. **Full cohomology rank:** 48. **Full Hodge-invariant rank:** 5.
 
-Full Hodge-character polynomial: \(P_X(t)=3t^{2} + 42 + 3t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=3t^{2} + 42 + 3t^{-2}\).
 
 **Analysis point:** `y1=1`. **Unit determinant:** nonzero.
 
@@ -1576,7 +1576,7 @@ Full Hodge-character polynomial: \(P_X(t)=3t^{2} + 42 + 3t^{-2}\).
 
 **Dimension:** 4. **Ambient rank:** 5. **Full cohomology rank:** 324. **Full Hodge-invariant rank:** 5.
 
-Full Hodge-character polynomial: \(P_X(t)=42t^{2} + 240 + 42t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=42t^{2} + 240 + 42t^{-2}\).
 
 **Analysis point:** `y1=1`. **Unit determinant:** nonzero.
 
@@ -1607,7 +1607,7 @@ Full Hodge-character polynomial: \(P_X(t)=42t^{2} + 240 + 42t^{-2}\).
 
 **Dimension:** 4. **Ambient rank:** 5. **Full cohomology rank:** 5. **Full Hodge-invariant rank:** 5.
 
-Full Hodge-character polynomial: \(P_X(t)=5\).
+Full Hodge polynomial: \(P_X(t)=5\).
 
 **Analysis point:** `y1=2`. **Unit determinant:** nonzero.
 
@@ -1636,7 +1636,7 @@ Full Hodge-character polynomial: \(P_X(t)=5\).
 
 **Dimension:** 4. **Ambient rank:** 5. **Full cohomology rank:** 6. **Full Hodge-invariant rank:** 6.
 
-Full Hodge-character polynomial: \(P_X(t)=6\).
+Full Hodge polynomial: \(P_X(t)=6\).
 
 **Analysis point:** `y1=2`. **Unit determinant:** nonzero.
 
@@ -1653,7 +1653,7 @@ No full atomic Hodge polynomial is assigned by this test.
 
 **Dimension:** 4. **Ambient rank:** 5. **Full cohomology rank:** 132. **Full Hodge-invariant rank:** 5.
 
-Full Hodge-character polynomial: \(P_X(t)=14t^{2} + 104 + 14t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=14t^{2} + 104 + 14t^{-2}\).
 
 **Analysis point:** `y1=1`. **Unit determinant:** nonzero.
 
@@ -1664,7 +1664,7 @@ Full Hodge-character polynomial: \(P_X(t)=14t^{2} + 104 + 14t^{-2}\).
 | 1 | 1 | 3 | 130 | \(14t^{2} + 102 + 14t^{-2}\) |
 | 2 | 2 | 1 | 1 | \(1\) |
 
-**Hodge identification:** Full Hodge identification stated in the record-specific certificate.
+**Hodge identification:** For a very general member, weak Lefschetz and irreducible non-Tate vanishing cohomology identify the Hodge-invariant sector with the five-dimensional ambient space; see the [geometric argument](records/g2-quadric.md#full-atomic-hodge-invariants).
 
 **Primitive assignment:** Unique rational eigenvalue; see the [common proof rules](atomic-invariants.md#primitive-assignment-rules).
 
@@ -1685,7 +1685,7 @@ Full Hodge-character polynomial: \(P_X(t)=14t^{2} + 104 + 14t^{-2}\).
 
 **Dimension:** 4. **Ambient rank:** 5. **Full cohomology rank:** 188. **Full Hodge-invariant rank:** 5.
 
-Full Hodge-character polynomial: \(P_X(t)=21t^{2} + 146 + 21t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=21t^{2} + 146 + 21t^{-2}\).
 
 **Analysis point:** `y1=2`. **Unit determinant:** nonzero.
 
@@ -1716,7 +1716,7 @@ Full Hodge-character polynomial: \(P_X(t)=21t^{2} + 146 + 21t^{-2}\).
 
 **Dimension:** 4. **Ambient rank:** 5. **Full cohomology rank:** 825. **Full Hodge-invariant rank:** 5.
 
-Full Hodge-character polynomial: \(P_X(t)=120t^{2} + 585 + 120t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=120t^{2} + 585 + 120t^{-2}\).
 
 **Analysis point:** `y1=2`. **Unit determinant:** nonzero.
 
@@ -1747,7 +1747,7 @@ Full Hodge-character polynomial: \(P_X(t)=120t^{2} + 585 + 120t^{-2}\).
 
 **Dimension:** 4. **Ambient rank:** 13. **Full cohomology rank:** 55. **Full Hodge-invariant rank:** 13.
 
-Full Hodge-character polynomial: \(P_X(t)=3t^{2} + 49 + 3t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=3t^{2} + 49 + 3t^{-2}\).
 
 **Analysis point:** `y1=2, y2=3, y3=5`. **Unit determinant:** zero at every tested point.
 
@@ -1762,7 +1762,7 @@ No atomic decomposition is certified at these points; cyclicity may hold at othe
 
 **Dimension:** 4. **Ambient rank:** 13. **Full cohomology rank:** 19. **Full Hodge-invariant rank:** 19.
 
-Full Hodge-character polynomial: \(P_X(t)=19\).
+Full Hodge polynomial: \(P_X(t)=19\).
 
 **Analysis point:** `y1=2, y2=3, y3=5`. **Unit determinant:** nonzero.
 
@@ -1779,7 +1779,7 @@ No full atomic Hodge polynomial is assigned by this test.
 
 **Dimension:** 4. **Ambient rank:** 13. **Full cohomology rank:** 33. **Full Hodge-invariant rank:** 13.
 
-Full Hodge-character polynomial: \(P_X(t)=t^{2} + 31 + t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=t^{2} + 31 + t^{-2}\).
 
 **Analysis point:** `y1=2, y2=3, y3=5`. **Unit determinant:** zero at every tested point.
 
@@ -1794,7 +1794,7 @@ No atomic decomposition is certified at these points; cyclicity may hold at othe
 
 **Dimension:** 4. **Ambient rank:** 13. **Full cohomology rank:** 33. **Full Hodge-invariant rank:** 13.
 
-Full Hodge-character polynomial: \(P_X(t)=t^{2} + 31 + t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=t^{2} + 31 + t^{-2}\).
 
 **Analysis point:** `y1=2, y2=3, y3=5`. **Unit determinant:** zero at every tested point.
 
@@ -1809,7 +1809,7 @@ No atomic decomposition is certified at these points; cyclicity may hold at othe
 
 **Dimension:** 4. **Ambient rank:** 9. **Full cohomology rank:** 16. **Full Hodge-invariant rank:** 16.
 
-Full Hodge-character polynomial: \(P_X(t)=16\).
+Full Hodge polynomial: \(P_X(t)=16\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** nonzero.
 
@@ -1826,7 +1826,7 @@ No full atomic Hodge polynomial is assigned by this test.
 
 **Dimension:** 4. **Ambient rank:** 9. **Full cohomology rank:** 135. **Full Hodge-invariant rank:** not identified here.
 
-Full Hodge-character polynomial: \(P_X(t)=13t^{2} + 109 + 13t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=13t^{2} + 109 + 13t^{-2}\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** zero at every tested point.
 
@@ -1841,7 +1841,7 @@ No atomic decomposition is certified at these points; cyclicity may hold at othe
 
 **Dimension:** 4. **Ambient rank:** 9. **Full cohomology rank:** 10. **Full Hodge-invariant rank:** 10.
 
-Full Hodge-character polynomial: \(P_X(t)=10\).
+Full Hodge polynomial: \(P_X(t)=10\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** nonzero.
 
@@ -1858,7 +1858,7 @@ No full atomic Hodge polynomial is assigned by this test.
 
 **Dimension:** 4. **Ambient rank:** 9. **Full cohomology rank:** 30. **Full Hodge-invariant rank:** 9.
 
-Full Hodge-character polynomial: \(P_X(t)=t^{2} + 28 + t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=t^{2} + 28 + t^{-2}\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** zero at every tested point.
 
@@ -1873,7 +1873,7 @@ No atomic decomposition is certified at these points; cyclicity may hold at othe
 
 **Dimension:** 4. **Ambient rank:** 9. **Full cohomology rank:** 35. **Full Hodge-invariant rank:** not identified here.
 
-Full Hodge-character polynomial: \(P_X(t)=t^{2} + 2t + 29 + 2t^{-1} + t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=t^{2} + 2t + 29 + 2t^{-1} + t^{-2}\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** zero at every tested point.
 
@@ -1888,7 +1888,7 @@ No atomic decomposition is certified at these points; cyclicity may hold at othe
 
 **Dimension:** 4. **Ambient rank:** 9. **Full cohomology rank:** 191. **Full Hodge-invariant rank:** 9.
 
-Full Hodge-character polynomial: \(P_X(t)=21t^{2} + 149 + 21t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=21t^{2} + 149 + 21t^{-2}\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** zero at every tested point.
 
@@ -1903,7 +1903,7 @@ No atomic decomposition is certified at these points; cyclicity may hold at othe
 
 **Dimension:** 4. **Ambient rank:** 9. **Full cohomology rank:** 9. **Full Hodge-invariant rank:** 9.
 
-Full Hodge-character polynomial: \(P_X(t)=9\).
+Full Hodge polynomial: \(P_X(t)=9\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** nonzero.
 
@@ -1932,7 +1932,7 @@ Full Hodge-character polynomial: \(P_X(t)=9\).
 
 **Dimension:** 4. **Ambient rank:** 9. **Full cohomology rank:** 16. **Full Hodge-invariant rank:** 16.
 
-Full Hodge-character polynomial: \(P_X(t)=16\).
+Full Hodge polynomial: \(P_X(t)=16\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** nonzero.
 
@@ -1949,7 +1949,7 @@ No full atomic Hodge polynomial is assigned by this test.
 
 **Dimension:** 4. **Ambient rank:** 9. **Full cohomology rank:** 179. **Full Hodge-invariant rank:** not identified here.
 
-Full Hodge-character polynomial: \(P_X(t)=19t^{2} + 2t + 137 + 2t^{-1} + 19t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=19t^{2} + 2t + 137 + 2t^{-1} + 19t^{-2}\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** zero at every tested point.
 
@@ -1964,7 +1964,7 @@ No atomic decomposition is certified at these points; cyclicity may hold at othe
 
 **Dimension:** 4. **Ambient rank:** 8. **Full cohomology rank:** 16. **Full Hodge-invariant rank:** 16.
 
-Full Hodge-character polynomial: \(P_X(t)=16\).
+Full Hodge polynomial: \(P_X(t)=16\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** nonzero.
 
@@ -1981,7 +1981,7 @@ No full atomic Hodge polynomial is assigned by this test.
 
 **Dimension:** 4. **Ambient rank:** 9. **Full cohomology rank:** 101. **Full Hodge-invariant rank:** 9.
 
-Full Hodge-character polynomial: \(P_X(t)=9t^{2} + 83 + 9t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=9t^{2} + 83 + 9t^{-2}\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** zero at every tested point.
 
@@ -1996,7 +1996,7 @@ No atomic decomposition is certified at these points; cyclicity may hold at othe
 
 **Dimension:** 4. **Ambient rank:** 9. **Full cohomology rank:** 12. **Full Hodge-invariant rank:** 12.
 
-Full Hodge-character polynomial: \(P_X(t)=12\).
+Full Hodge polynomial: \(P_X(t)=12\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** nonzero.
 
@@ -2013,7 +2013,7 @@ No full atomic Hodge polynomial is assigned by this test.
 
 **Dimension:** 4. **Ambient rank:** 8. **Full cohomology rank:** 184. **Full Hodge-invariant rank:** not identified here.
 
-Full Hodge-character polynomial: \(P_X(t)=20t^{2} + 144 + 20t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=20t^{2} + 144 + 20t^{-2}\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** zero at every tested point.
 
@@ -2028,7 +2028,7 @@ No atomic decomposition is certified at these points; cyclicity may hold at othe
 
 **Dimension:** 4. **Ambient rank:** 9. **Full cohomology rank:** 168. **Full Hodge-invariant rank:** 9.
 
-Full Hodge-character polynomial: \(P_X(t)=18t^{2} + 132 + 18t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=18t^{2} + 132 + 18t^{-2}\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** zero at every tested point.
 
@@ -2043,7 +2043,7 @@ No atomic decomposition is certified at these points; cyclicity may hold at othe
 
 **Dimension:** 4. **Ambient rank:** 9. **Full cohomology rank:** 31. **Full Hodge-invariant rank:** 9.
 
-Full Hodge-character polynomial: \(P_X(t)=t^{2} + 29 + t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=t^{2} + 29 + t^{-2}\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** nonzero.
 
@@ -2074,7 +2074,7 @@ Full Hodge-character polynomial: \(P_X(t)=t^{2} + 29 + t^{-2}\).
 
 **Dimension:** 4. **Ambient rank:** 9. **Full cohomology rank:** 20. **Full Hodge-invariant rank:** 20.
 
-Full Hodge-character polynomial: \(P_X(t)=20\).
+Full Hodge polynomial: \(P_X(t)=20\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** nonzero.
 
@@ -2091,7 +2091,7 @@ No full atomic Hodge polynomial is assigned by this test.
 
 **Dimension:** 4. **Ambient rank:** 9. **Full cohomology rank:** 10. **Full Hodge-invariant rank:** 10.
 
-Full Hodge-character polynomial: \(P_X(t)=10\).
+Full Hodge polynomial: \(P_X(t)=10\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** nonzero.
 
@@ -2108,7 +2108,7 @@ No full atomic Hodge polynomial is assigned by this test.
 
 **Dimension:** 4. **Ambient rank:** 9. **Full cohomology rank:** 125. **Full Hodge-invariant rank:** 9.
 
-Full Hodge-character polynomial: \(P_X(t)=12t^{2} + 101 + 12t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=12t^{2} + 101 + 12t^{-2}\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** zero at every tested point.
 
@@ -2123,7 +2123,7 @@ No atomic decomposition is certified at these points; cyclicity may hold at othe
 
 **Dimension:** 4. **Ambient rank:** 9. **Full cohomology rank:** 11. **Full Hodge-invariant rank:** 11.
 
-Full Hodge-character polynomial: \(P_X(t)=11\).
+Full Hodge polynomial: \(P_X(t)=11\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** nonzero.
 
@@ -2140,7 +2140,7 @@ No full atomic Hodge polynomial is assigned by this test.
 
 **Dimension:** 4. **Ambient rank:** 9. **Full cohomology rank:** 93. **Full Hodge-invariant rank:** 9.
 
-Full Hodge-character polynomial: \(P_X(t)=8t^{2} + 77 + 8t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=8t^{2} + 77 + 8t^{-2}\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** zero at every tested point.
 
@@ -2155,7 +2155,7 @@ No atomic decomposition is certified at these points; cyclicity may hold at othe
 
 **Dimension:** 4. **Ambient rank:** 9. **Full cohomology rank:** 15. **Full Hodge-invariant rank:** 15.
 
-Full Hodge-character polynomial: \(P_X(t)=15\).
+Full Hodge polynomial: \(P_X(t)=15\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** nonzero.
 
@@ -2172,7 +2172,7 @@ No full atomic Hodge polynomial is assigned by this test.
 
 **Dimension:** 4. **Ambient rank:** 13. **Full cohomology rank:** 72. **Full Hodge-invariant rank:** 13.
 
-Full Hodge-character polynomial: \(P_X(t)=5t^{2} + 62 + 5t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=5t^{2} + 62 + 5t^{-2}\).
 
 **Analysis point:** `y1=2, y2=3, y3=5`. **Unit determinant:** zero at every tested point.
 
@@ -2187,7 +2187,7 @@ No atomic decomposition is certified at these points; cyclicity may hold at othe
 
 **Dimension:** 4. **Ambient rank:** 13. **Full cohomology rank:** 17. **Full Hodge-invariant rank:** 17.
 
-Full Hodge-character polynomial: \(P_X(t)=17\).
+Full Hodge polynomial: \(P_X(t)=17\).
 
 **Analysis point:** `y1=2, y2=3, y3=5`. **Unit determinant:** nonzero.
 
@@ -2204,7 +2204,7 @@ No full atomic Hodge polynomial is assigned by this test.
 
 **Dimension:** 4. **Ambient rank:** 12. **Full cohomology rank:** 63. **Full Hodge-invariant rank:** 12.
 
-Full Hodge-character polynomial: \(P_X(t)=4t^{2} + 55 + 4t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=4t^{2} + 55 + 4t^{-2}\).
 
 **Analysis point:** `y1=2, y2=3, y3=5`. **Unit determinant:** zero at every tested point.
 
@@ -2219,7 +2219,7 @@ No atomic decomposition is certified at these points; cyclicity may hold at othe
 
 **Dimension:** 4. **Ambient rank:** 12. **Full cohomology rank:** 17. **Full Hodge-invariant rank:** 17.
 
-Full Hodge-character polynomial: \(P_X(t)=17\).
+Full Hodge polynomial: \(P_X(t)=17\).
 
 **Analysis point:** `y1=2, y2=3, y3=5`. **Unit determinant:** nonzero.
 
@@ -2236,7 +2236,7 @@ No full atomic Hodge polynomial is assigned by this test.
 
 **Dimension:** 4. **Ambient rank:** 12. **Full cohomology rank:** 32. **Full Hodge-invariant rank:** 12.
 
-Full Hodge-character polynomial: \(P_X(t)=t^{2} + 30 + t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=t^{2} + 30 + t^{-2}\).
 
 **Analysis point:** `y1=2, y2=3, y3=5`. **Unit determinant:** zero at every tested point.
 
@@ -2251,7 +2251,7 @@ No atomic decomposition is certified at these points; cyclicity may hold at othe
 
 **Dimension:** 4. **Ambient rank:** 17. **Full cohomology rank:** 36. **Full Hodge-invariant rank:** 17.
 
-Full Hodge-character polynomial: \(P_X(t)=t^{2} + 34 + t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=t^{2} + 34 + t^{-2}\).
 
 **Analysis point:** `y1=2, y2=3, y3=5, y4=7`. **Unit determinant:** zero at every tested point.
 
@@ -2266,7 +2266,7 @@ No atomic decomposition is certified at these points; cyclicity may hold at othe
 
 **Dimension:** 4. **Ambient rank:** 8. **Full cohomology rank:** 10. **Full Hodge-invariant rank:** 10.
 
-Full Hodge-character polynomial: \(P_X(t)=10\).
+Full Hodge polynomial: \(P_X(t)=10\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** nonzero.
 
@@ -2283,7 +2283,7 @@ No full atomic Hodge polynomial is assigned by this test.
 
 **Dimension:** 4. **Ambient rank:** 8. **Full cohomology rank:** 36. **Full Hodge-invariant rank:** 14.
 
-Full Hodge-character polynomial: \(P_X(t)=t^{2} + 34 + t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=t^{2} + 34 + t^{-2}\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** nonzero.
 
@@ -2300,7 +2300,7 @@ No full atomic Hodge polynomial is assigned by this test.
 
 **Dimension:** 4. **Ambient rank:** 8. **Full cohomology rank:** 212. **Full Hodge-invariant rank:** not identified here.
 
-Full Hodge-character polynomial: \(P_X(t)=22t^{2} + 168 + 22t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=22t^{2} + 168 + 22t^{-2}\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** zero at every tested point.
 
@@ -2315,7 +2315,7 @@ No atomic decomposition is certified at these points; cyclicity may hold at othe
 
 **Dimension:** 4. **Ambient rank:** 8. **Full cohomology rank:** 8. **Full Hodge-invariant rank:** 8.
 
-Full Hodge-character polynomial: \(P_X(t)=8\).
+Full Hodge polynomial: \(P_X(t)=8\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** nonzero.
 
@@ -2350,7 +2350,7 @@ Full Hodge-character polynomial: \(P_X(t)=8\).
 
 **Dimension:** 4. **Ambient rank:** 8. **Full cohomology rank:** 28. **Full Hodge-invariant rank:** 8.
 
-Full Hodge-character polynomial: \(P_X(t)=10t + 8 + 10t^{-1}\).
+Full Hodge polynomial: \(P_X(t)=10t + 8 + 10t^{-1}\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** nonzero.
 
@@ -2381,7 +2381,7 @@ Full Hodge-character polynomial: \(P_X(t)=10t + 8 + 10t^{-1}\).
 
 **Dimension:** 4. **Ambient rank:** 8. **Full cohomology rank:** 29. **Full Hodge-invariant rank:** 8.
 
-Full Hodge-character polynomial: \(P_X(t)=t^{2} + 27 + t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=t^{2} + 27 + t^{-2}\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** zero at every tested point.
 
@@ -2396,7 +2396,7 @@ No atomic decomposition is certified at these points; cyclicity may hold at othe
 
 **Dimension:** 4. **Ambient rank:** 8. **Full cohomology rank:** 149. **Full Hodge-invariant rank:** 8.
 
-Full Hodge-character polynomial: \(P_X(t)=15t^{2} + 119 + 15t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=15t^{2} + 119 + 15t^{-2}\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** nonzero.
 
@@ -2427,7 +2427,7 @@ Full Hodge-character polynomial: \(P_X(t)=15t^{2} + 119 + 15t^{-2}\).
 
 **Dimension:** 4. **Ambient rank:** 8. **Full cohomology rank:** 9. **Full Hodge-invariant rank:** 9.
 
-Full Hodge-character polynomial: \(P_X(t)=9\).
+Full Hodge polynomial: \(P_X(t)=9\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** nonzero.
 
@@ -2444,7 +2444,7 @@ No full atomic Hodge polynomial is assigned by this test.
 
 **Dimension:** 4. **Ambient rank:** 9. **Full cohomology rank:** 41. **Full Hodge-invariant rank:** 9.
 
-Full Hodge-character polynomial: \(P_X(t)=2t^{2} + 37 + 2t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=2t^{2} + 37 + 2t^{-2}\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** zero at every tested point.
 
@@ -2459,7 +2459,7 @@ No atomic decomposition is certified at these points; cyclicity may hold at othe
 
 **Dimension:** 4. **Ambient rank:** 8. **Full cohomology rank:** 8. **Full Hodge-invariant rank:** 8.
 
-Full Hodge-character polynomial: \(P_X(t)=8\).
+Full Hodge polynomial: \(P_X(t)=8\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** nonzero.
 
@@ -2490,7 +2490,7 @@ Full Hodge-character polynomial: \(P_X(t)=8\).
 
 **Dimension:** 4. **Ambient rank:** 8. **Full cohomology rank:** 69. **Full Hodge-invariant rank:** 8.
 
-Full Hodge-character polynomial: \(P_X(t)=5t^{2} + 59 + 5t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=5t^{2} + 59 + 5t^{-2}\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** nonzero.
 
@@ -2521,7 +2521,7 @@ Full Hodge-character polynomial: \(P_X(t)=5t^{2} + 59 + 5t^{-2}\).
 
 **Dimension:** 4. **Ambient rank:** 8. **Full cohomology rank:** 14. **Full Hodge-invariant rank:** 14.
 
-Full Hodge-character polynomial: \(P_X(t)=14\).
+Full Hodge polynomial: \(P_X(t)=14\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** nonzero.
 
@@ -2538,7 +2538,7 @@ No full atomic Hodge polynomial is assigned by this test.
 
 **Dimension:** 4. **Ambient rank:** 8. **Full cohomology rank:** 29. **Full Hodge-invariant rank:** 8.
 
-Full Hodge-character polynomial: \(P_X(t)=t^{2} + 27 + t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=t^{2} + 27 + t^{-2}\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** zero at every tested point.
 
@@ -2553,7 +2553,7 @@ No atomic decomposition is certified at these points; cyclicity may hold at othe
 
 **Dimension:** 4. **Ambient rank:** 9. **Full cohomology rank:** 77. **Full Hodge-invariant rank:** 9.
 
-Full Hodge-character polynomial: \(P_X(t)=6t^{2} + 65 + 6t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=6t^{2} + 65 + 6t^{-2}\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** zero at every tested point.
 
@@ -2568,7 +2568,7 @@ No atomic decomposition is certified at these points; cyclicity may hold at othe
 
 **Dimension:** 4. **Ambient rank:** 9. **Full cohomology rank:** 16. **Full Hodge-invariant rank:** 16.
 
-Full Hodge-character polynomial: \(P_X(t)=16\).
+Full Hodge polynomial: \(P_X(t)=16\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** nonzero.
 
@@ -2585,7 +2585,7 @@ No full atomic Hodge polynomial is assigned by this test.
 
 **Dimension:** 4. **Ambient rank:** 9. **Full cohomology rank:** 41. **Full Hodge-invariant rank:** 9.
 
-Full Hodge-character polynomial: \(P_X(t)=2t^{2} + 37 + 2t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=2t^{2} + 37 + 2t^{-2}\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** zero at every tested point.
 
@@ -2600,7 +2600,7 @@ No atomic decomposition is certified at these points; cyclicity may hold at othe
 
 **Dimension:** 4. **Ambient rank:** 9. **Full cohomology rank:** 51. **Full Hodge-invariant rank:** 9.
 
-Full Hodge-character polynomial: \(P_X(t)=3t^{2} + 45 + 3t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=3t^{2} + 45 + 3t^{-2}\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** zero at every tested point.
 
@@ -2615,7 +2615,7 @@ No atomic decomposition is certified at these points; cyclicity may hold at othe
 
 **Dimension:** 4. **Ambient rank:** 9. **Full cohomology rank:** 30. **Full Hodge-invariant rank:** not identified here.
 
-Full Hodge-character polynomial: \(P_X(t)=t^{2} + 28 + t^{-2}\).
+Full Hodge polynomial: \(P_X(t)=t^{2} + 28 + t^{-2}\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** zero at every tested point.
 

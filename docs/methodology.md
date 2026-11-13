@@ -1,8 +1,8 @@
 ---
-description: Flag geometry, localization formulas, curve coordinates and ambient quantum operators.
+description: Gromov–Witten invariants and quantum multiplication for flag varieties, computed by equivariant localization.
 ---
 
-# Flag methods and conventions
+# Localization on flag varieties
 
 Root systems describe the ambient flag variety, its Schubert classes and effective curves. Euler-twisted virtual localization supplies the invariants of a supported smooth complete intersection and its ambient quantum operator.
 
@@ -19,7 +19,7 @@ $$
 
 The minimal representatives \(W^F\) of \(W/W_P\) index the Schubert basis \(\sigma_w\), with \(\operatorname{codim}\sigma_w=\ell(w)\). The software's **kept roots** are \(\Pi_F\), entered as **one-based** ambient Dynkin-node numbers. Schubert basis indices are different from these node numbers.
 
-Curve coordinates use the reduced coroot lattice. A compact beta vector follows the declared kept-root order; the equivalent ambient vector has zeros on removed nodes. Line-bundle rows of `K` have one coefficient per kept root. Supported homogeneous bundle expressions use the fiber-weight and curve-restriction constructions described in Appendix A; fixed-point weight containment alone does not prove a geometric quotient-bundle construction.
+Curve coordinates use the reduced coroot lattice. A compact beta vector follows the declared kept-root order; the equivalent ambient vector has zeros on removed nodes. Line-bundle rows of `K` have one coefficient per kept root. Supported homogeneous bundle expressions use the fiber-weight and curve-restriction constructions described in the [bundle API](api-reference.md); fixed-point weight containment alone does not prove a geometric quotient-bundle construction.
 
 ## Complete intersections and pushed curve classes
 
@@ -110,7 +110,7 @@ q^\beta g^{jk}\sigma_k.
 $$
 
 
-An ambient projection need not be the full quantum operator. Primitive cohomology is not supplied by reducing the ambient pairing, and identifying the result with the Hodge-invariant sector requires the hypotheses stated in the paper.
+An ambient projection need not be the full quantum operator. Primitive cohomology is not supplied by reducing the ambient pairing, and identifying the result with the Hodge-invariant sector requires the ambient/Hodge comparison and persistence hypotheses described below.
 
 ## Novikov names and finite enumeration
 
@@ -154,7 +154,7 @@ $$
 $$
 
 
-The saved analysis code also writes \(K^F=-A(q)\), so the same connection is \(\partial_u+K^F/u^2+G/u\). A characteristic factor \(p(z)\) of \(K^F\) corresponds to eigenvalues \(\lambda\) of \(A\) satisfying **\(p(-\lambda)=0\)**. This sign change must accompany the eigenvalue labels; the grading is unchanged.
+The connection analysis uses \(K^F=-A(q)\), so the same connection is \(\partial_u+K^F/u^2+G/u\). A characteristic factor \(p(z)\) of \(K^F\) corresponds to eigenvalues \(\lambda\) of \(A\) satisfying **\(p(-\lambda)=0\)**. This sign change must accompany the eigenvalue labels; the grading is unchanged.
 
 ## Regularized-exponent multisets
 
@@ -191,9 +191,9 @@ where \(N\) is the dimension of the space on which the matrix acts. Its nonvanis
 
 ## Sources and verification
 
-References: [flag varieties](https://arxiv.org/abs/2609.21914), Theorems 3.26 and 3.28 and Definitions 4.5–4.6. Virtual localization follows Graber–Pandharipande, [*Localization of virtual classes*](https://arxiv.org/abs/alg-geom/9708001). 
+References: B. Alexeev et al., [*On the atomic decomposition of complete intersection in flag varieties*](https://arxiv.org/abs/2609.21914), Theorems 3.26 and 3.28 and Definitions 4.5–4.6. Virtual localization follows Graber–Pandharipande, [*Localization of virtual classes*](https://arxiv.org/abs/alg-geom/9708001). 
 
-Exact coefficients, curve coordinates, bases and grading are retained in the [datasets](catalog/datasets.md). Validation checks saved outputs and selected freshly computed benchmarks; it is not a fresh localization run for every catalogue record. See [software input/output formats](software/input-output.md) and [validation scope](software/launch-plan.md).
+The [exact datasets](catalog/datasets.md) provide coefficients, curve coordinates, ordered bases and grading. See [software input/output formats](software/input-output.md) and [validation scope](software/launch-plan.md).
 
 ## Verification
 
