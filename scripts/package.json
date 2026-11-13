@@ -1,18 +1,16 @@
 {
-  "name": "scripts",
+  "name": "geoatoms-documentation-checks",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
     "test": "npm run test:catalog && npm run test:gui",
     "test:catalog": "node test_catalog_navigation.js",
     "test:gui": "node test_gui_controls.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "license": "MIT",
+  "description": "Build-time equation rendering and browser checks for GEOATOMS documentation.",
   "dependencies": {
     "puppeteer": "^24.43.1",
     "serve-handler": "^6.1.7"
-  }
+  },
+  "private": true
 }

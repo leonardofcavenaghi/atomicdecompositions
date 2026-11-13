@@ -87,6 +87,12 @@ Both examples count the 27 lines on a smooth cubic surface, with **zero insertio
 
 A returned ambient quantum operator need not describe full cohomology. The mathematical guides and individual examples state the hypotheses for interpreting it and for identifying full atomic decompositions.
 
+## Repository organization
+
+[Repository map](docs/development/repository-map.md) · [Contributing](CONTRIBUTING.md) · [Maintenance guide](docs/development/maintenance.md) · [File and collection catalogue](docs/data/repository-catalog.json)
+
+Maintained software, exact results, analysis data and documentation have separate roles. Historical helpers are indexed under [archive/](archive/README.md); they are separate from the supported generators and validators in `scripts/`.
+
 ## Development and validation
 
 For the repository-root flag package:

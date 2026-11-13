@@ -5,7 +5,7 @@ from urllib.request import Request, urlopen
 from pathlib import Path
 
 DOC_CHECKS = {
-    'scripts/validate_catalog.py', 'scripts/validate_catalog_tex.py',
+    'scripts/repository_catalog.py', 'scripts/validate_catalog.py', 'scripts/validate_catalog_tex.py',
     'scripts/validate_catalog_math.py', 'scripts/validate_delivery.py',
     'scripts/validate_flag_fourfolds.py', 'scripts/validate_atomic_invariants.py',
     'scripts/generate_catalog_index.py', 'scripts/catalog_results.py', 'scripts/search_keywords.py', 'scripts/render_static_math.js',

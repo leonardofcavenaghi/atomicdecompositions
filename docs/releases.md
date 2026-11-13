@@ -18,6 +18,10 @@ Flag **1.0.6.dev0** and flag, toric and combined **1.1.0.dev1** are available as
 
 The flag updates introduce parameter-name choices, correct empty CLI insertions and improve unmarked tree generation. Version 1.1.0.dev1 adds checkpointed execution and supported Hodge and connection analysis. The combined application offers separate flag and toric workspaces. See [Version differences](software/changes.md) and the [capability comparison](software/launch-2026-11.md).
 
+## Repository organization
+
+Contributor and maintenance guides describe the source tree, distribution snapshots, mathematical collections, generators and validation procedures. A machine-readable repository catalogue checks that tracked files, software distributions and exact datasets are registered. Historical utilities are indexed separately from maintained tools.
+
 ## Website — 2026-11-13
 
 - A geometric catalogue organized by dimension and construction, with exact downloadable matrices, bases and gradings.

@@ -115,4 +115,8 @@ nav:
       - Python API: api-reference.md
       - Release notes: releases.md
       - Validation and reproducibility: software/launch-plan.md
+  - Development:
+      - Overview: development/index.md
+      - Repository map: development/repository-map.md
+      - Maintenance: development/maintenance.md
   - About: about.md

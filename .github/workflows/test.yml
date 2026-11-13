@@ -153,6 +153,9 @@ jobs:
           python -m pip install -e .
           python -m pip install -r requirements-docs.txt
 
+      - name: Validate repository organization and registrations
+        run: python scripts/repository_catalog.py --check
+
       - name: Validate catalogue links and downloadable sources
         run: python scripts/validate_delivery.py
 

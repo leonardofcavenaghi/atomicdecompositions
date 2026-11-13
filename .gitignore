@@ -15,3 +15,15 @@ node_modules/
 # Python build artifacts
 build/
 *.egg-info/
+
+# Local application workspaces and generated review output
+workspace/
+gw-work*/
+interactive-combined-workspace/
+*.log
+*.out
+/screenshot*.png
+/scripts/screenshot*.png
+/tests/os
+/tests/sys
+/extracted_api.txt
