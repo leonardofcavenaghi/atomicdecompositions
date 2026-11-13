@@ -141,7 +141,12 @@ async function main() {
         }
         return true;
       }).map(e=>({tag:e.tagName,cls:typeof e.className==='string'?e.className:'',rect:e.getBoundingClientRect().toJSON(),overflow:getComputedStyle(e).overflowX,display:getComputedStyle(e).display,text:e.textContent.slice(0,100)}));
-      return {width:document.documentElement.scrollWidth,viewport:innerWidth,wide:wide.slice(0,35)};
+      const probes={};
+      for(const selector of ['.geoatoms-mathml','div.arithmatex','span.arithmatex','pre','table','.md-sidebar','.md-header']){
+        const style=document.createElement('style');style.textContent=selector+'{display:none!important}';document.head.append(style);
+        probes[selector]=document.documentElement.scrollWidth;style.remove();
+      }
+      return {width:document.documentElement.scrollWidth,viewport:innerWidth,wide:wide.slice(0,35),probes};
     });
     if (mobile.width>mobile.viewport+2) throw new Error('Initial mobile overflow '+JSON.stringify(mobile));
     console.log('Initial LG fourfold mobile layout passed.');

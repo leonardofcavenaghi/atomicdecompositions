@@ -35,7 +35,15 @@ def server(python,module,cwd):
      with urllib.request.urlopen(f'http://127.0.0.1:{port}/{path}',timeout=10) as response:
       assert response.status==200 and '<html' in response.read().decode().lower()
   finally:
-   process.terminate()
+   if os.name == 'nt':
+    # A venv python.exe can redirect to a child interpreter. Terminating only
+    # the launcher leaves the HTTP process and its log handle alive.
+    stopped=subprocess.run(['taskkill','/PID',str(process.pid),'/T','/F'],
+                           stdout=subprocess.PIPE,stderr=subprocess.PIPE,text=True)
+    if stopped.returncode and process.poll() is None:
+     raise RuntimeError('Cannot stop GUI process tree: '+stopped.stderr)
+   else:
+    process.terminate()
    try:process.wait(timeout=10)
    except subprocess.TimeoutExpired:process.kill();process.wait()
 

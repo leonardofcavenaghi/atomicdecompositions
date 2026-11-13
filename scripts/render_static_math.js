@@ -88,7 +88,7 @@ async function main() {
     }
     if (coverageErrors.length) throw new Error('Unwrapped source across compiled pages: '+JSON.stringify(coverageErrors));
     const stylesheet=await page.evaluate(() => MathJax.svgStylesheet().outerHTML);
-    const accessibleStyle='<style>.geoatoms-mathml{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}</style>';
+    const accessibleStyle='<style>.arithmatex{position:relative}.geoatoms-mathml{position:absolute!important;left:0;top:0;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}</style>';
     for (const file of htmlFiles) {
       const html=fs.readFileSync(file,'utf8');
       fs.writeFileSync(file,html.replace('</head>',stylesheet+accessibleStyle+'</head>'));
