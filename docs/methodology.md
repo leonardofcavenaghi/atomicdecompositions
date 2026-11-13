@@ -1,124 +1,140 @@
 ---
-description: Virtual localization, ambient quantum multiplication, curve degrees and verification conventions used by gwflags.
+description: Root, curve, ambient quantum-product and connection conventions following the flag paper, with exact correspondence to software inputs and outputs.
 ---
 
 # Flag methods and conventions
 
-`gwflags` computes genus-zero Gromov–Witten invariants and small quantum
-multiplication by the first Chern class. For a flag variety \(F=G/P\), it
-uses Schubert classes. For a complete intersection \(Y\subset F\), the
-returned matrix describes the **flag-ambient sector**: the cohomology classes
-obtained by restriction from \(F\).
+This description follows *On the atomic decomposition of complete intersections in flag varieties*, particularly the localization formulae of §3.3, the quantum products and ambient operator of §4, and the software appendix. We retain the paper's geometric notation and distinguish it from the names used in input fields. The [toric description](toric/mathematics.md) follows the same structure for fan inputs.
 
-## Quantum multiplication
+## The flag variety and its inputs
 
-Let \(\{\phi_i\}\) be a cohomology basis and \(\{\phi^i\}\) its dual
-for the Poincaré pairing. The small quantum product is
+Let \(F=G/P\), with \(T\subset B\subset P\), simple roots \(\Pi\), and positive roots \(R^+\). As in the paper,
 \[
-\alpha\star\delta
-=\sum_{\beta,i}q^\beta
-\langle\alpha,\delta,\phi_i\rangle_{0,3,\beta}\,\phi^i.
+\Pi_F=\Pi\setminus\Pi_P,\qquad R_F^+=R^+\setminus R_P^+,
+\qquad \dim F=|R_F^+|.
 \]
-The degree-zero term is the cup product. In a general basis, forming its
-matrix requires the inverse pairing as well as the three-point invariants.
-The software specializes to \(\alpha=c_1(TY)\).
+The minimal representatives \(W^F\) of \(W/W_P\) index the Schubert basis \(\sigma_w\), with \(\operatorname{codim}\sigma_w=\ell(w)\). The software's **kept roots** are \(\Pi_F\), entered as **one-based** ambient Dynkin-node numbers. Schubert basis indices are different from these node numbers.
 
-Matrix columns are inputs and rows are outputs. The returned grading is
-diagonal, with entries \(\operatorname{codim}(\phi_i)-\dim(Y)/2\).
-Catalog matrices use all Novikov variables \(y_i=1\) unless explicitly
-labelled symbolic. The [download](catalog/computed.md) preserves both forms
-and the ordered basis.
+Curve coordinates use the reduced coroot lattice. A compact beta vector follows the declared kept-root order; the equivalent ambient vector has zeros on removed nodes. Line-bundle rows of `K` have one coefficient per kept root. Supported homogeneous bundle expressions use the fiber-weight and curve-restriction constructions described in Appendix A; fixed-point weight containment alone does not prove a geometric quotient-bundle construction.
 
-## Virtual localization
+## Complete intersections and pushed curve classes
 
-The torus action on \(G/P\) induces an action on the moduli space of stable
-maps. Its genus-zero fixed loci are indexed by decorated trees: vertices map
-to torus-fixed points and edges cover invariant curves. The software sums
-their contributions using the virtual-localization formula of Graber and
-Pandharipande, [Localization of virtual classes](https://arxiv.org/abs/alg-geom/9708001).
-
-Calculations use exact rational arithmetic. The default implementation
-evaluates the localization sum at two rational torus points and compares the
-results; the symbolic path is also available. Agreement is a consistency check,
-not an independent proof of every formula in the implementation.
-
-## Complete intersections and the ambient sector
-
-For a bundle \(E\) on \(F\), the supported Euler-twisted calculation
-requires nonnegative splitting degrees along the relevant invariant curves.
-A standard geometric interpretation assumes a globally generated bundle and a
-regular section with smooth zero locus \(Y\). Then
+Let \(X=Z(F,E)\) be the smooth zero locus of a regular section of a globally generated homogeneous bundle, with inclusion \(\iota:X\hookrightarrow F\). Then
 \[
-\dim Y=\dim F-\operatorname{rank}E,\qquad
-c_1(TY)=\bigl(c_1(TF)-c_1(E)\bigr)|_Y.
+\dim X=\dim F-\operatorname{rk}E,\qquad
+\widehat c_1(TX)=c_1(TF)-c_1(E),\qquad
+c_1(TX)=\iota^*\widehat c_1(TX).
 \]
+The hat matters: an ambient curve class \(\beta\) pairs with \(\widehat c_1(TX)\), whereas a class \(\beta'\) on \(X\) pairs with \(c_1(TX)\). Their pairings agree when \(\iota_*\beta'=\beta\).
 
-The software forms the classical twisted pairing
+For primary insertions \(\gamma_k=\iota^*\sigma_{u_k}\), the dimensional condition is
 \[
-g_{ij}=\int_F\sigma_i\sigma_j e(E)
+\sum_{k=1}^{m}\ell(u_k)
+=\dim X+\int_\beta\widehat c_1(TX)+m-3.
 \]
-and selects a nondegenerate submatrix to obtain its ambient basis. Primitive
-cohomology is not supplied by this reduction. Identifying the output with the
-full quantum-cohomology operator requires the corresponding homology and
-ambient-completeness hypotheses.
+The twisted localization calculation of Theorem 3.28 computes
+\[
+\sum_{\substack{\beta'\in\mathrm{NE}(X)\\\iota_*\beta'=\beta}}
+\langle\gamma_1,\ldots,\gamma_m\rangle^X_{0,\beta'}.
+\]
+It should be called an individual curve-class invariant only when the relevant identification of curve classes is justified. Different target classes with the same ambient image contribute to the same Novikov monomial.
 
-Fixed-point weights alone do not determine the curve restrictions of an
-arbitrary non-split bundle. Quotient constructions must come from a genuine
-geometric quotient with supported restriction data; weight containment is a
-consistency check rather than a proof of a bundle embedding.
+## The decorated-tree formula
+
+For nonzero effective degree, Theorems 3.26 and 3.28 sum over decorated trees \(\Gamma=(G,\ell,d,\mathrm{mk})\). Vertices carry fixed-point labels \(w_v\in W^F\), edges carry invariant curves and covering degrees \(d_e>0\), and \(\mathrm{mk}\) assigns the markings to vertices. With the factors defined in those statements, the complete-intersection contribution is
+\[
+\sum_\Gamma
+\frac{
+ \displaystyle\prod_{v\in V}e_{w_v}^{\operatorname{val}(v)-1}
+ \prod_{e\in E}\Omega_e\prod_{v\in V}I_v\,
+ \operatorname{Tw}(\Gamma)
+ \prod_{k=1}^{m}\sigma_{u_k}|_{p_{w_{\mathrm{mk}(k)}}}
+}{|\operatorname{Aut}\Gamma|\displaystyle\prod_{e\in E}d_e}.
+\]
+Here \(e_w=e_T(T_{p_w}F)\), \(\Omega_e\) is the edge factor, and \(\operatorname{Tw}(\Gamma)\) is the Euler twist of Proposition 3.27; omit this twist for the ambient target itself. The flags' root and bundle conventions determine these weights.
+
+Put \(n_v=\operatorname{val}(v)+|\mathrm{mk}^{-1}(v)|\). For \(n_v\ge3\),
+\[
+I_v=\left(\prod_{e\ni v}\omega_{v,e}^{-1}\right)
+\left(\sum_{e\ni v}\omega_{v,e}^{-1}\right)^{n_v-3}.
+\]
+For the unstable vertex conventions, \(I_v=\Theta_v\): one edge and no markings contributes \(\omega_{v,e}\), one edge and one marking contributes \(1\), and two edges with no markings contribute \((\omega_{v,e_1}+\omega_{v,e_2})^{-1}\). These are the formula's vertex factors, not instructions to add marked insertions.
+
+In particular, the cubic-surface line count is **27 with zero insertions**. The software's empty list `[]` expresses this unmarked invariant. The degree-zero API's classical cup-integral shortcut, including unstable pairing inputs, is a separate implementation convention and is not a definition of unstable degree-zero stable-map invariants.
+
+## The flag-ambient operator
+
+The paper uses
+\[
+H^*_{\mathrm{amb}}(X)=\operatorname{im}\bigl(H^*(F,\mathbb Q)\to H^*(X,\mathbb Q)\bigr),
+\qquad
+A(q)=\operatorname{pr}_F\circ\bigl(c_1(TX)\star_{\mathrm{small}}(-)\bigr)
+\big|_{H^*_{\mathrm{amb}}(X)}.
+\]
+The restricted pairing is \(g_{ij}=\int_F\sigma_i\sigma_j e(E)\). The software chooses a nondegenerate reduced ambient basis. In the paper's notation,
+\[
+A(q)\sigma_i=\sum_{\beta\in\mathrm{NE}(F)}\sum_{j,k}
+\left(\sum_{\iota_*\beta'=\beta}
+\langle c_1(TX),\sigma_i,\sigma_j\rangle^X_{0,\beta'}\right)
+q^\beta g^{jk}\sigma_k.
+\]
+An ambient projection need not be the full quantum operator. Primitive cohomology is not supplied by reducing the ambient pairing, and identifying the result with the Hodge-invariant sector requires the hypotheses stated in the paper.
+
+## Novikov names and finite enumeration
+
+The theoretical variable is \(q^\beta\). The software writes its monomials using the displayed `y` variables; these are Novikov names, not the papers' additive coordinates for big quantum cohomology. In the default flag convention, type A retains kept-node labels and other families use consecutive kept-root names. Explicit `ambient` and `compact` conventions are documented in the [notation guide](software/notation.md).
 
 <span id="4a-coordinate-contract-used-by-the-software"></span>
 
-## Curve degrees and index
+The dimension axiom bounds degrees contributing to multiplication by \(c_1\) by \(\int_\beta\widehat c_1(TX)\le\dim X+1\). A finite automatic search additionally requires positive bounds on the supported effective generators. Zero or negative directions cannot be cut off solely by that inequality. Preserve the actual curve list with the result.
 
-For positive degree and \(n\) primary insertions, the dimension axiom is
+The recorded ambient Chern gcd is not automatically the intrinsic Fano index; for instance a conic has ambient gcd 1 in \(\mathbb P^2\), but intrinsic index 2. For a point this gcd does not define a geometric Fano index.
+
+## Quantum multiplication, grading and the connection
+
+The papers use a homogeneous basis \(\{T_i\}\), the Poincaré pairing
+\(g_{ab}=\int_Z T_a\smile T_b\), and its inverse \((g^{ab})\). In this notation,
 \[
-\sum_i\operatorname{codim}(\alpha_i)
-=\dim Y+\langle c_1(TY),\beta\rangle+n-3.
+T_i\star_{\mathrm{small}}T_j
+=\sum_{a,b}\left(\sum_{\beta\in\mathrm{NE}(Z)}
+\langle T_i,T_j,T_a\rangle^Z_{0,\beta}\,q^\beta\right)g^{ab}T_b.
 \]
-For multiplication by \(c_1\), it bounds contributing degrees by
-\(\langle c_1(TY),\beta\rangle\leq\dim Y+1\). This gives a finite
-automatic list when every enumerated curve generator has positive Chern
-pairing. A zero direction in an otherwise nonzero Chern vector is not bounded
-by this inequality. Such cases, and negative pairings, require explicit curve
-lists unless a supported constructor supplies effective generators with a
-positive bound. If the entire Chern class vanishes, its multiplication
-operator is zero.
+Here \(Z\) denotes the target of this full-cohomology formula. The zero-class term is cup product. A matrix requires the inverse pairing, not merely a table of three-point invariants. The papers' three-point brackets sometimes write the number of markings instead of the genus; these are the same genus-zero three-point invariants.
 
-The catalog’s **Ambient Index** is the gcd of the Chern pairings in the
-specified ambient curve lattice (or a constructor’s effective generators).
-It agrees with the geometric Fano index when the relevant integral-lattice
-identification holds. A smooth conic illustrates the distinction: it is
-\(\mathbb P^1\), with geometric index 2, while its ambient Chern gcd in
-\(\mathbb P^2\) is 1. This gcd does not define a geometric Fano index for a
-point. The software and JSON retain the field name `fano_index`.
+The matrix returned by the software is denoted **\(A(q)\)** in the papers. It represents the ambient projection of multiplication by the first Chern class. Columns are images of basis vectors. In a homogeneous basis the grading matrix is \(G=[\mathrm{Gr}]\), with
+\[
+\mathrm{Gr}|_{H^a(Z)}=\frac{a-\dim Z}{2}\,\mathrm{id},\qquad
+G_{ii}=\operatorname{codim}(T_i)-\frac{\dim Z}{2}.
+\]
+When the computed sector is identified with the Hodge-invariant module under the paper's hypotheses, the small-locus connection has the convention
+\[
+\nabla_{\partial_u}=\partial_u-\frac{A(q)}{u^2}+\frac{G}{u}.
+\]
+The saved analysis code also writes \(K^F=-A(q)\), so the same connection is \(\partial_u+K^F/u^2+G/u\). A characteristic factor \(p(z)\) of \(K^F\) corresponds to paper eigenvalues \(\lambda\) satisfying **\(p(-\lambda)=0\)**. This sign change must accompany the eigenvalue labels; the grading is unchanged.
 
-The [Python API](api-reference.md) specifies kept-root coordinates, basis
-indices and the degree-zero classical-pairing shortcut. The
-[user guide](how-to-use.md) gives copyable inputs.
+## Regularized-exponent multisets
 
-## Verification
+Following the connection notation in the papers, write a supported formal factor as
+\[
+M_{b,\alpha}\simeq\mathcal E^{\lambda(b)/u}\otimes R_{b,\lambda}.
+\]
+Here \(\lambda(b)\) is an eigenvalue of \(\kappa_b=\mathrm{Eu}\star_b(-)\); on the small locus the Euler class is \(c_1(TZ)\). If \(R_{b,\lambda}\) is regular singular with rational residue eigenvalues, its regularized-exponent multiset is
+\[
+F_{b,\lambda}
+=\{\!\{-\theta+\mathbb Z:\theta\text{ is a residue eigenvalue of }R_{b,\lambda}\}\!\}.
+\]
+Every occurrence is retained with its algebraic multiplicity. Thus \(\{\!\{0,\tfrac12,\tfrac12\}\!\}\) has three entries; it must not be simplified to a two-element set. The software's admissible powers \(s=-\theta\) give these classes modulo \(\mathbb Z\). The powers and residue-class lists are multisets, not a termwise pairing of sorted lists.
 
-The test suite checks known enumerative values, including the line through
-two points of \(\mathbb P^2\), 27 lines on a cubic surface and 2875 lines on
-a quintic threefold. Catalog checks compare saved matrices with their inputs,
-bases, gradings, degree constraints and characteristic polynomials. Displayed
-spectra are checked numerically, while projective Hodge diamonds are checked
-by exact Riemann–Roch and Lefschetz calculations.
+Catalogue summaries keep the specialization point and factor association. When one rational characteristic factor has several roots, the displayed multiset applies **separately at each indicated eigenvalue**. Partial and unresolved calculations remain labelled; a missing exponent is not zero.
 
-These checks are reproducible in the repository:
+The unit cyclic determinant is
+\[
+\Delta(b)=\det\bigl(1,A(b)1,\ldots,A(b)^{N-1}1\bigr),
+\]
+where \(N\) is the dimension of the space on which the matrix acts. Its nonvanishing proves that the unit is cyclic on that space. Identifying this with a generic Hodge factor additionally requires the paper's ambient/Hodge comparison and persistence hypotheses. A numerical specialization used to display eigenvalues does not itself verify those hypotheses or the admissibility of a point in the theoretical parameter domain.
 
-```bash
-python -m pip install -r requirements-test.txt
-python -m pytest tests/ -q
-python scripts/validate_localization_results.py
-python scripts/validate_catalog_math.py
-```
+## Sources and verification
 
-Checking saved outputs does not rerun all localization sums or prove every
-geometric realization in the reference catalog. To reproduce a matrix, use
-its input with the [software](how-to-use.md); **Catalog only** entries have no
-supported computed matrix.
+The root-system and ambient conventions follow the [flag paper](https://arxiv.org/abs/2609.21914), Theorems 3.26 and 3.28 and Definitions 4.5–4.6. Virtual localization follows Graber–Pandharipande, [*Localization of virtual classes*](https://arxiv.org/abs/alg-geom/9708001). The connection and exponent conventions are those used in the papers' examples and their cited formal-connection results.
 
-
-For fan-based computations, see the separate [toric mathematical description](toric/mathematics.md).
+Exact coefficients, curve coordinates, bases and grading are retained in the [datasets](catalog/datasets.md). Validation checks saved outputs and selected freshly computed benchmarks; it is not a fresh localization run for every catalogue record. See [software input/output formats](software/input-output.md) and [validation scope](software/launch-plan.md).

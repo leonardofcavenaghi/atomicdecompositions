@@ -209,6 +209,11 @@ async function main() {
       }));
       if (state.mathErrors || state.inputs<2 || !state.matrices || state.emptyLinks) throw new Error(id+': '+JSON.stringify(state));
     }
+    for (const route of ['methodology/', 'toric/mathematics/']) {
+      const started = Date.now();
+      await page.goto(base + '/' + route, {waitUntil: 'domcontentloaded'});
+      renderingTimings.push(await measureMath(page, route + ': paper-notation equations', started));
+    }
     await page.goto(`${base}/`, {waitUntil:'domcontentloaded'});
     if (await page.$$eval('.geometry-card', cards=>cards.length)!==2) throw new Error('Geometry division missing');
     const search = await page.evaluate(async () => {

@@ -29,6 +29,7 @@ Sources were prepared on 2026-11-12 and published on 2026-11-13.
 - Revised isolated-environment installation commands, version-specific launchers and unmarked cubic-surface installation checks.
 - Published 96 completed fourfold and 72 completed fivefold toric matrix records, preserving unresolved connection-factor notes and excluding unfinished matrices.
 - Added Milena Brockhof and alphabetized the contributors by surname.
+- Aligned the mathematical descriptions with the papers: pushed curve-class sums, projected operator A(q), grading G, connection signs and regularized-exponent multiset conventions.
 - Added measured formula-rendering checks for full-page loads, instant navigation and rapid page changes.
 - Retry failed math-runtime downloads through an alternate provider and render late-arriving content automatically, with uncached first-open regression checks.
 
