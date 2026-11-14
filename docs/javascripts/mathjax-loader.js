@@ -205,7 +205,9 @@ window.MathJax = {
     });
     if (addedMath) typesetArticle();
   });
-  observer.observe(document.body, {childList: true, subtree: true});
+  // Instant navigation can replace the body itself. Observe the stable
+  // Document so late source containers in the new body are still detected.
+  observer.observe(document, {childList: true, subtree: true});
   typesetArticle();
 })();
 

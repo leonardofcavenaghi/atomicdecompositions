@@ -69,6 +69,7 @@ async function checkFirstOpen(browser, base, mode, runtimeBytes) {
     if (sources.length) throw new Error('Static equations requested a browser math runtime');
     await cold.waitForFunction(() => typeof document$!=='undefined');
     await cold.evaluate(() => new Promise(resolve => document$.subscribe(resolve)));
+    await cold.evaluate(() => { window.__mathTestOriginalBody=document.body; });
     await cold.evaluate(() => document.querySelector('nav a[href*="projective/"]').click());
     await cold.waitForFunction(() => location.pathname.endsWith('/catalog/projective/'));
     await measureMath(cold,'pre-rendered instant navigation',Date.now());
@@ -78,7 +79,19 @@ async function checkFirstOpen(browser, base, mode, runtimeBytes) {
       node.textContent=String.raw`\(1+1=2\)`;
       document.querySelector('[data-md-component="content"]').appendChild(node);
     });
-    await cold.waitForFunction(() => document.querySelector('#late-math-probe mjx-container'),{timeout:20000});
+    try {
+      await cold.waitForFunction(() => document.querySelector('#late-math-probe mjx-container'),{timeout:20000});
+    } catch (error) {
+      const state=await cold.evaluate(() => ({
+        bodyReplaced:window.__mathTestOriginalBody!==document.body,
+        refreshAvailable:typeof window.geoatomsMathjax?.refresh,
+        typesetAvailable:typeof window.MathJax?.typesetPromise,
+        probe:document.getElementById('late-math-probe')?.outerHTML,
+        runtimeScripts:[...document.scripts].filter(s=>s.src.includes('tex-mml')).map(s=>s.src),
+        notice:document.getElementById('math-render-status')?.textContent
+      }));
+      throw new Error('Late equation recovery failed: '+JSON.stringify({mode,sources,pageErrors,...state})+'; '+error.message);
+    }
     if (!intercepted || pageErrors.length) throw new Error(JSON.stringify({mode,intercepted,pageErrors}));
     if (mode==='failed-primary' && !sources.some(url=>url.includes('cdnjs'))) throw new Error('Dynamic alternate runtime was not used');
     console.log('First-open static math and dynamic recovery passed: '+JSON.stringify({...first,mode,documents,sources}));
