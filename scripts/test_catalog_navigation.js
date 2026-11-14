@@ -36,7 +36,7 @@ async function measureMath(page, label, started) {
   return {page: label, navigation_to_rendered_ms: Date.now() - started, formulas};
 }
 
-async function checkFirstOpen(browser, base, mode) {
+async function checkFirstOpen(browser, base, mode, runtimeBytes) {
   const cold = await browser.newPage();
   const pageErrors = []; const sources = [];
   let intercepted = false; let documents = 0;
@@ -45,12 +45,19 @@ async function checkFirstOpen(browser, base, mode) {
   await cold.setRequestInterception(true);
   cold.on('request', async request => {
     if (request.isNavigationRequest() && request.frame() === cold.mainFrame()) documents++;
-    if (request.url().includes('mathjax') && request.url().includes('tex-mml-chtml.js')) {
+    if (request.url().includes('mathjax') && request.url().includes('tex-mml-svg.js')) {
       sources.push(request.url());
+      if (mode==='failed-primary' && !request.url().includes('cdnjs')) {
+        intercepted=true; await request.abort(); return;
+      }
       if (!intercepted) {
         intercepted=true;
-        if (mode==='failed-primary') { await request.abort(); return; }
         await pause(4000);
+      }
+      // Exercise the alternate-URL path with the pinned build artifact, so a
+      // network outage cannot turn recovery tests into CDN availability tests.
+      if (!request.url().startsWith(base)) {
+        await request.respond({status:200,contentType:'application/javascript',body:runtimeBytes}); return;
       }
     }
     await request.continue();
@@ -339,8 +346,9 @@ async function main() {
     }
     if (errors.length) throw new Error(errors.join('; '));
     await checkWithoutBrowserRenderer(browser, base);
-    await checkFirstOpen(browser, base, 'failed-primary');
-    await checkFirstOpen(browser, base, 'delayed-startup');
+    const runtimeBytes=fs.readFileSync(path.join(site,'assets/mathjax/tex-mml-svg.js'));
+    await checkFirstOpen(browser, base, 'failed-primary', runtimeBytes);
+    await checkFirstOpen(browser, base, 'delayed-startup', runtimeBytes);
     console.log('MathJax render timings: ' + JSON.stringify(renderingTimings));
     console.log('Universal catalogue and search passed: ' + catalogue.records.length + ' records, exact matrix tables and rendered mathematics; mobile home layout.');
 

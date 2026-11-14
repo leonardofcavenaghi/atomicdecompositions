@@ -581,6 +581,7 @@
       "description": "Website styles, scripts, images and search-engine metadata",
       "files": [
         "docs/assets/logo.jpg",
+        "docs/assets/mathjax-LICENSE.txt",
         "docs/googlebd6161581795df59.html",
         "docs/javascripts/catalog.js",
         "docs/javascripts/mathjax-loader-v2.js",

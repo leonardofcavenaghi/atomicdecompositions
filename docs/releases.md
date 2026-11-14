@@ -25,6 +25,7 @@ Contributor and maintenance guides describe the source tree, distribution snapsh
 ## Catalogue notation and spectral data — 2026-11-14
 
 - The spinor-tenfold section by five hyperplanes and a quadric includes a fresh exact matrix, connection exponents and very-general atomic Hodge invariants.
+- Newly inserted equations use a locally hosted, pinned SVG renderer; the published equations remain pre-rendered.
 - A self-contained notation key defines the first-Chern operator, grading, quantum parameters, cyclic determinant, exponent multisets and atomic Hodge invariants.
 - All examples use the same first-Chern sign convention and state their spectral parameter point explicitly.
 - The spectral dataset includes exact connection analysis of the original flag matrices and the toric factors. Exponent tables preserve repeated entries and give values separately at each eigenvalue.

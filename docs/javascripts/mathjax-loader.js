@@ -10,7 +10,8 @@ window.MathJax = {
   options: {
     ignoreHtmlClass: ".*|",
     processHtmlClass: "arithmatex"
-  }
+  },
+  svg: {fontCache: 'local'}
 };
 
 // Material for MkDocs replaces the article body during instant navigation.
@@ -23,9 +24,11 @@ window.MathJax = {
   var loading = false;
   var loadAttempts = 0;
   var renderAttempts = 0;
+  var loaderURL = document.currentScript && document.currentScript.src;
   var sources = [
-    'https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js',
-    'https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js'
+    new URL('../assets/mathjax/tex-mml-svg.js', loaderURL || document.baseURI).href,
+    'https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-svg.js',
+    'https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-svg.js'
   ];
 
   function clearNotice() {
@@ -55,23 +58,32 @@ window.MathJax = {
 
   function loadRuntime() {
     if (loading || (window.MathJax && typeof window.MathJax.typesetPromise === 'function')) return;
-    if (loadAttempts >= 3) { showRetry(); return; }
+    if (loadAttempts >= sources.length) { showRetry(); return; }
     loading = true;
     var script = document.createElement('script');
     script.id = 'MathJax-script';
     script.async = true;
     script.src = sources[loadAttempts % sources.length];
     loadAttempts += 1;
+    var settled = false;
+    var timeout = setTimeout(failed, 8000);
+    function failed() {
+      if (settled) return;
+      settled = true;
+      clearTimeout(timeout);
+      loading = false;
+      script.remove();
+      if (loadAttempts < sources.length) setTimeout(loadRuntime, 300 * loadAttempts);
+      else showRetry();
+    }
     script.addEventListener('load', function () {
+      if (settled) return;
+      settled = true;
+      clearTimeout(timeout);
       loading = false;
       typesetArticle();
     });
-    script.addEventListener('error', function () {
-      loading = false;
-      script.remove();
-      if (loadAttempts < 3) setTimeout(loadRuntime, 300 * loadAttempts);
-      else showRetry();
-    });
+    script.addEventListener('error', failed);
     document.head.appendChild(script);
   }
 

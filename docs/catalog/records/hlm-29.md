@@ -64,7 +64,6 @@ $$
 $$
 
 
-Minimum wall degrees of the defining bundles: [0]; minimum adjunction wall degree: 0.
 
 ### Exact toric inputs
 

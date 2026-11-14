@@ -1,6 +1,7 @@
 # Catalogue documentation — 2026-11-14
 
 - Add the completed spinor-tenfold section by five hyperplanes and a quadric, with a fresh exact localization matrix, cyclic determinant `72/7`, connection exponents and very-general atomic Hodge invariants.
+- Host the pinned SVG runtime for late-inserted source equations, bound loading retries and verify alternate-runtime recovery independently of CDN availability.
 - Define catalogue notation in a self-contained key and use the first-Chern operator `A` for all displayed characteristic factors and unit determinants, including the sign conversion from negative-operator exports.
 - Publish exact connection analysis of the flag and toric matrices in a unified spectral dataset, including algebraic-conjugate checks for the two repeated quadratic sectors. Parameter points and per-eigenvalue multiset multiplicities are explicit.
 - Standardize spectral sections across examples, fill summary Hodge numbers from the computed Hodge data, and use mathematical content links in catalogue tables.

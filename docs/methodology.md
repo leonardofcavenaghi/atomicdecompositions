@@ -210,6 +210,8 @@ $$
 
 A Hodge type \((p,q)\) has cocharacter weight \(p-q\). Hence the full Hodge polynomial is \(P_X(t)=\sum_{p,q}h^{p,q}(X)t^{p-q}\), with nonnegative dimensions and no alternating signs for odd cohomology. The constant coefficient of \(P_\alpha\) can exceed \(\rho_\alpha\); \(P_\alpha(1)\) is its full rank. Full atomic polynomials require the geometric assignment of cohomology beyond the ambient sector. See the [catalogue notation key](catalog/notation.md) and [atomic invariants](catalog/atomic-invariants.md) for the definitions and their use in examples.
 
+<span id="verification"></span>
+
 ## Sources and reproducibility
 
 References: B. Alexeev et al., [*On the atomic decomposition of complete intersection in flag varieties*](https://arxiv.org/abs/2609.21914), Theorems 3.26 and 3.28 and Definitions 4.5–4.6. Virtual localization follows Graber–Pandharipande, [*Localization of virtual classes*](https://arxiv.org/abs/alg-geom/9708001). 

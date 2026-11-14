@@ -14,6 +14,7 @@ function files(directory) {
 async function main() {
   const browser = await puppeteer.launch({args:['--no-sandbox','--disable-setuid-sandbox']});
   let page;
+  let runtimeBytes;
   try {
     for (const base of ['https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/',
       'https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/']) {
@@ -22,6 +23,9 @@ async function main() {
       await page.setContent('<!doctype html><html><head></head><body></body></html>');
       await page.evaluate(() => { window.MathJax = {startup:{typeset:false}, svg:{fontCache:'local'}}; });
       try {
+        const runtimeResponse = page.waitForResponse(response =>
+          response.url() === base+'tex-mml-svg.js' && response.status() === 200,
+          {timeout:15000}).catch(() => null);
         await Promise.race([
           page.addScriptTag({url:base+'tex-mml-svg.js'}),
           new Promise((_,reject) => setTimeout(() => reject(new Error('Math renderer download timed out')),15000))
@@ -29,11 +33,21 @@ async function main() {
         await page.waitForFunction(() => window.MathJax && typeof MathJax.tex2mmlPromise==='function', {timeout:15000});
         await page.evaluate(() => MathJax.startup.promise);
         if (await page.evaluate(() => MathJax.version) !== '3.2.2') throw new Error('Unexpected MathJax version');
+        const response = await runtimeResponse;
+        if (!response) throw new Error('Math renderer response was not captured');
+        runtimeBytes = await response.buffer();
         break;
       } catch (error) {
         if (base.includes('cdnjs')) throw error;
       }
     }
+    // Late-inserted source equations use the same pinned SVG runtime locally.
+    // Published formulas remain fully rendered and need no browser runtime.
+    const runtimeDirectory = path.join(site, 'assets/mathjax');
+    fs.mkdirSync(runtimeDirectory, {recursive:true});
+    if (!runtimeBytes || runtimeBytes.length < 100000) throw new Error('Incomplete MathJax runtime');
+    fs.writeFileSync(path.join(runtimeDirectory, 'tex-mml-svg.js'), runtimeBytes);
+    fs.copyFileSync(path.join(site, 'assets/mathjax-LICENSE.txt'), path.join(runtimeDirectory, 'LICENSE.txt'));
     const htmlFiles = files(site);
     let total = 0;
     const coverageErrors=[];

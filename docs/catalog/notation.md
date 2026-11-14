@@ -59,6 +59,8 @@ $$
 
 It uses complex codimension: a class in \(H^{2d_i}(X)\) has grading \(d_i-d/2\). This matrix is unchanged by specializing the quantum parameters.
 
+An empty Schubert word, written `[]` or `()`, denotes the unit class. Entries of a nonempty reduced word are one-based simple-reflection labels; the order of the returned words fixes the matrix basis.
+
 ## Quantum parameters and spectral factors
 
 The tuple \(\mathbf y=(y_i)_{i\in I}\) consists of the reported Novikov coordinates, in their stated order. The label set \(I\) need not be consecutive. If \(\eta_i\) is the divisor class defining coordinate \(y_i\), then the formal curve monomial is
@@ -143,6 +145,6 @@ The unit-cyclic criterion identifies full coarse factors only after the computed
 
 ## Export compatibility
 
-Some connection-analysis exports use the negative of the matrix displayed here. If such an export has a monic characteristic factor \(p(z)\) of degree \(r\), the corresponding monic factor of \(A\) is \((-1)^r p(-z)\). The grading matrix and the underlying connection are unchanged. All catalogue eigenvalue labels and spectral conditions refer to \(A(\mathbf a)\).
+Some connection-analysis exports use the negative of the matrix displayed here. If such an export has a monic characteristic factor \(p(z)\) of degree \(r\), the corresponding monic factor of \(A\) is \((-1)^r p(-z)\). If \(B=-A\) uses the same basis and unit, its cyclic determinant satisfies \(\Delta_A=(-1)^{N(N-1)/2}\Delta_B\). The grading matrix and the underlying connection are unchanged. All catalogue eigenvalue labels and spectral conditions refer to \(A(\mathbf a)\).
 
 In exact-data exports, `null` in an exponent field supplies no exponent value. It must not be interpreted as an empty multiset or as the zero exponent.
