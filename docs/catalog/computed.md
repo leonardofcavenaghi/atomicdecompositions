@@ -12,7 +12,7 @@ The `fano_index` field uses the software’s ambient Chern-lattice convention; i
 
 [Download the complete JSON dataset](../data/localization-results.json)
 
-Each record contains the executable algebra/kept-root/bundle input, the full automatically supported curve list in ambient coordinates, the symbolic $c_1(TY)$ multiplication matrix, its specialization at all $y_i=1$, the ordered Schubert basis, and the grading. Rational numbers are stored as exact strings. The matrix acts on the returned ambient sector, with columns as inputs and rows as outputs.
+Each record contains the executable algebra/kept-root/bundle input, the full automatically supported curve list in ambient coordinates, the symbolic $c_1(TX)$ multiplication matrix, its specialization at all $y_i=1$, the ordered Schubert basis, and the grading. Rational numbers are stored as exact strings. The matrix acts on the returned ambient sector, with columns as inputs and rows as outputs.
 
 These are the same results displayed in the [catalog](index.md). See [Methods and conventions](../methodology.md) for their mathematical scope.
 

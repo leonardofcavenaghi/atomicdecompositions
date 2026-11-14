@@ -7,7 +7,7 @@
   "localization_scope": "Exact post-analysis of existing localization matrices. Fresh Hodge and selected localization checks are identified by their provenance; the audit itself is not a new localization run for every record.",
   "counts": {
     "unit_cyclicity_not_established": 108,
-    "full_coarse_factors": 147,
+    "full_coarse_factors": 148,
     "ambient_sector_incomplete": 46
   },
   "records": [
@@ -12786,7 +12786,7 @@
       "unit_cyclic": false,
       "classification": "unit_cyclicity_not_established",
       "interpretation": "The unit determinant vanished at every tested point. This does not assert failure at every possible quantum parameter.",
-      "curve_completeness": "not established",
+      "curve_completeness": "Finite double-cover model of the Verra fourfold: effective curve images have degrees a,b>=0 and 2(a+b)<=5. The resulting six ambient classes reproduce the exact symbolic matrix, returned basis and grading in a fresh existing localization run.",
       "generality": "Smooth regular target under the recorded geometric hypotheses",
       "hodge_identification": "No additional identification is inferred",
       "factors": [
@@ -29850,6 +29850,105 @@
       ],
       "primitive_assignment_rule": "unique_rational_root",
       "primitive_eigenvalue": "-8"
+    },
+    {
+      "id": "SPINOR-1X5-2",
+      "title": "Five hyperplanes and a quadric in the spinor tenfold",
+      "record_link": "records/spinor-1x5-2.md",
+      "dimension": 4,
+      "ambient_rank": 5,
+      "full_rank": 148,
+      "full_hodge_invariant_rank": 5,
+      "full_hodge_numbers": [
+        {
+          "p": 0,
+          "q": 0,
+          "value": 1
+        },
+        {
+          "p": 1,
+          "q": 1,
+          "value": 1
+        },
+        {
+          "p": 1,
+          "q": 3,
+          "value": 16
+        },
+        {
+          "p": 2,
+          "q": 2,
+          "value": 112
+        },
+        {
+          "p": 3,
+          "q": 1,
+          "value": 16
+        },
+        {
+          "p": 3,
+          "q": 3,
+          "value": 1
+        },
+        {
+          "p": 4,
+          "q": 4,
+          "value": 1
+        }
+      ],
+      "full_hodge_polynomial": {
+        "-2": 16,
+        "0": 116,
+        "2": 16
+      },
+      "hodge_provenance": "Exact Borel–Weil–Bott, Koszul and Hirzebruch–Riemann–Roch calculation, verified at two exact torus points",
+      "point_tests": [
+        {
+          "point": {
+            "y1": "1"
+          },
+          "determinant": "72/7",
+          "cyclic": true
+        }
+      ],
+      "selected_point": {
+        "y1": "1"
+      },
+      "unit_cyclic_determinant": "72/7",
+      "unit_cyclic": true,
+      "classification": "full_coarse_factors",
+      "interpretation": "The full Hodge-invariant sector, unit cyclicity and full-cohomology assignment are identified under the stated geometric hypotheses.",
+      "curve_completeness": "full automatic positive flag bounds",
+      "generality": "Very general smooth member",
+      "hodge_identification": "Full Hodge identification stated in the record-specific certificate",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_A": "lambda + 10",
+          "multiplicity_per_root": 3,
+          "conjugate_eigenvalues": 1,
+          "rho": 3,
+          "full_rank": 146,
+          "hodge_polynomial": {
+            "-2": 16,
+            "0": 114,
+            "2": 16
+          }
+        },
+        {
+          "number": 2,
+          "polynomial_A": "lambda**2 - 116*lambda - 1244",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 2,
+          "rho": 1,
+          "full_rank": 1,
+          "hodge_polynomial": {
+            "0": 1
+          }
+        }
+      ],
+      "primitive_assignment_rule": "unique_rational_root",
+      "primitive_eigenvalue": "-10"
     }
   ]
 }

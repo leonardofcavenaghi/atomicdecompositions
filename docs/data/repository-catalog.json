@@ -308,7 +308,8 @@
       "files": [
         "docs/data/atomic-invariants.json",
         "docs/data/connection-exponents.json",
-        "docs/data/geometric-presentations.json"
+        "docs/data/geometric-presentations.json",
+        "docs/data/spectral-data.json"
       ]
     },
     {
@@ -352,6 +353,7 @@
         "docs/catalog/invariants-points-curves.md",
         "docs/catalog/invariants-surfaces.md",
         "docs/catalog/invariants-threefolds.md",
+        "docs/catalog/notation.md",
         "docs/catalog/points-curves.md",
         "docs/catalog/projective.md",
         "docs/catalog/records/ckp-001.md",
@@ -524,6 +526,7 @@
         "docs/catalog/records/prod5-e02.md",
         "docs/catalog/records/qc5-001.md",
         "docs/catalog/records/qd5-001.md",
+        "docs/catalog/records/spinor-1x5-2.md",
         "docs/catalog/sources.md",
         "docs/catalog/surfaces.md",
         "docs/catalog/threefolds.md"
@@ -606,6 +609,7 @@
       "description": "Supported generators, validators and browser regressions",
       "files": [
         "scripts/catalog_results.py",
+        "scripts/catalog_spectra.py",
         "scripts/classify_ci_changes.py",
         "scripts/generate_catalog_index.py",
         "scripts/package-lock.json",
@@ -847,7 +851,13 @@
     {
       "path": "docs/data/flag-fourfolds.json",
       "role": "Additional homogeneous fourfold results",
-      "records": 2,
+      "records": 3,
+      "collection_key": "records"
+    },
+    {
+      "path": "docs/data/spectral-data.json",
+      "role": "First-Chern characteristic factors, cyclic determinants and computed exponent multisets",
+      "records": 302,
       "collection_key": "records"
     },
     {
@@ -865,13 +875,13 @@
     {
       "path": "docs/data/atomic-invariants.json",
       "role": "Hodge data, cyclicity and certified atomic invariants",
-      "records": 301,
+      "records": 302,
       "collection_key": "records"
     },
     {
       "path": "docs/data/catalog-records.json",
       "role": "Normalized geometric catalogue and search index",
-      "records": 301,
+      "records": 302,
       "collection_key": "records"
     }
   ],

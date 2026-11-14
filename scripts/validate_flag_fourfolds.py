@@ -9,7 +9,7 @@ analysis=importlib.util.module_from_spec(spec);spec.loader.exec_module(analysis)
 hspec=importlib.util.spec_from_file_location('gwflags._hodge_validation',R/'software/flag-1.1.0.dev1/gwflags/hodge.py')
 hmodule=importlib.util.module_from_spec(hspec);hspec.loader.exec_module(hmodule)
 data=json.loads((R/'docs/data/flag-fourfolds.json').read_text())['records']
-expected={'LG3-1-2':(128,-8,80,448),'G2-QUADRIC':(324,-6,60,828)}
+expected={'LG3-1-2':(128,-8,80,448),'G2-QUADRIC':(324,-6,60,828),'SPINOR-1X5-2':(s.Rational(72,7),-10,116,1244)}
 assert {r['id'] for r in data}==set(expected)
 for r in data:
  ident=r['id'];delta,root,a,b=expected[ident]
@@ -44,6 +44,6 @@ for r in data:
  full={}
  for pair,value in r['hodge_numbers'].items():
   p,q=map(int,pair.split(','));k=str(p-q);full[k]=full.get(k,0)+value
- assert poly==full=={'0':104,'2':14,'-2':14}
- assert sum(f['conjugate_count']*f['full_rank'] for f in factors)==132
+ assert poly==full==({'0':116,'2':16,'-2':16} if ident=='SPINOR-1X5-2' else {'0':104,'2':14,'-2':14})
+ assert sum(f['conjugate_count']*f['full_rank'] for f in factors)==sum(r['hodge_numbers'].values())
 print('Validated fresh fourfold matrices, full curve lists, exact exponent multisets and Hodge polynomial identities:',len(data))

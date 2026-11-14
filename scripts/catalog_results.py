@@ -4,12 +4,15 @@ from __future__ import annotations
 
 import argparse
 import json
+import sys
 from pathlib import Path
 
 import sympy
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / 'docs/data/localization-results.json'
+sys.path.insert(0, str(ROOT))
+from scripts.catalog_spectra import card_section
 
 
 def load_results():
@@ -43,7 +46,7 @@ def additional_page(records):
         'and complete intersections in them. Each displayed matrix comes from exact '
         '`gwflags` virtual localization using the full automatically supported curve list.', '',
         'For a worked full-flag example, see [Fl(1,2,3)](flag_varieties.md#afl123).', '',
-        'Matrices represent multiplication by $c_1(TY)$ on the returned ambient sector, '
+        'Matrices represent multiplication by $c_1(TX)$ on the returned ambient sector, '
         'with every Novikov variable set to $1$. Columns are inputs and rows are outputs. '
         'The ordered basis below uses reduced Schubert words; `()` is the unit. '
         'Basis indices in the download are zero-based.', '',
@@ -64,7 +67,7 @@ def additional_page(records):
                   f'    - **Dimension:** ${r["dimension"]}$',
                   f'    - **Ambient Index:** ${r["fano_index"]}$',
                   f'    - **Basis Rank:** ${len(r["basis_indices"])}$',
-                  '',
+                  '', card_section(r['id']).rstrip(), '',
                   '    ??? note "Quantum Matrix ($y=1$)"', '        $$',
                   '        ' + matrix_tex(r['matrix_at_one']), '        $$', '',
                   '    ??? note "Ordered basis and degrees"', '',
@@ -96,7 +99,7 @@ def computed_page(records):
         '[Download the complete JSON dataset](../data/localization-results.json)', '',
         'Each record contains the executable algebra/kept-root/bundle input, the full '
         'automatically supported curve list in ambient coordinates, the symbolic '
-        '$c_1(TY)$ multiplication matrix, its specialization at all $y_i=1$, the '
+        '$c_1(TX)$ multiplication matrix, its specialization at all $y_i=1$, the '
         'ordered Schubert basis, and the grading. Rational numbers are stored as exact strings. '
         'The matrix acts on the returned ambient sector, with columns as inputs and rows as outputs.', '',
         'These are the same results displayed in the [catalog](index.md). '

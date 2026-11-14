@@ -16,20 +16,32 @@ keywords: ["dimension 5", "fivefold", "Complete intersection in a product of pro
 [Catalogue](../index.md) · [5-folds](../fivefolds.md)
 
 
-<!-- saved-exponent-summary:start -->
-## Regularized exponent multisets
 
-Analysis point: `y1=2, y2=3`. These lists describe the computed ambient connection. Every row applies **separately to each eigenvalue** satisfying the displayed condition; repeated entries retain their multiplicity.
+## Spectrum and connection exponents
 
-The characteristic factors below use \(K^F=-A\), so an eigenvalue \(\lambda\) of \(A=c_1\star\) satisfies \(p_i(-\lambda)=0\). The classes are powers modulo \(\mathbb Z\); their order does not pair them term by term with the powers.
+**Parameter point:** `y1=2, y2=3`.
 
-| Spectral condition | Multiplicity per eigenvalue | \(F_{b,\lambda}\) | Computation |
-|---|---:|---|---|
-| \(p_{1}(-\lambda)=0\) | 4 | \(\{\!\{\frac{1}{2},\ \frac{1}{2},\ \frac{1}{2},\ \frac{1}{2}\}\!\}\) | Complete |
-| \(p_{2}(-\lambda)=0\) | 1 | \(\{\!\{0\}\!\}\) | Complete |
+Here \(A(\mathbf y)\) is first-Chern quantum multiplication on the returned ambient space, and \(G\) is its centered codimension grading. Columns are images of the ordered basis. [Notation and scope](../notation.md).
 
-These ambient data alone do not identify full atoms or establish a rationality result. See the [connection conventions](../../toric/mathematics.md).
-<!-- saved-exponent-summary:end -->
+\(\chi_{A(\mathbf a)}(z)=\prod_i p_i(z)^{m_i}\), with the monic factors below. Each multiplicity and exponent multiset applies separately at every root \(\lambda\) of the indicated factor.
+
+| Factor \(p_i(z)\) | Distinct roots | Multiplicity \(m_i\) per root |
+|---|---:|---:|
+| \(z + 6\) | 1 | 4 |
+| \(z^{8} - 12 z^{7} - 200 z^{6} - 90192 z^{5} - 4845504 z^{4} - 91651392 z^{3} - 789420416 z^{2} - 3185087232 z - 4904234240\) | 8 | 1 |
+
+**Unit cyclic determinant:** \(\Delta_A(\mathbf a)=- \frac{429702116898067728563330602412370770066931712}{3}\), in this basis.
+
+**Regularized exponent multisets** \(F_{\mathbf a,\lambda}\), with classes in \(\mathbb Q/\mathbb Z\):
+
+| Spectral condition | \(F_{\mathbf a,\lambda}\) per eigenvalue |
+|---|---|
+| \(\lambda + 6=0\) | \(\{\!\{\frac{1}{2},\frac{1}{2},\frac{1}{2},\frac{1}{2}\}\!\}\) |
+| \(\lambda^{8} - 12 \lambda^{7} - 200 \lambda^{6} - 90192 \lambda^{5} - 4845504 \lambda^{4} - 91651392 \lambda^{3} - 789420416 \lambda^{2} - 3185087232 \lambda - 4904234240=0\) | \(\{\!\{0\}\!\}\) |
+
+Repeated entries retain their multiplicity.
+
+[Exact matrix, ordered basis and grading](../../data/toric-fivefolds.json) · [Hodge data and atomic invariants](../invariants-fivefolds.md#prod5-d01). The full atomic interpretation uses the Hodge-space and curve hypotheses stated there.
 
 ## Construction and Hodge data
 
@@ -90,7 +102,7 @@ h2_basis = [[1, 1, 1, 1, 0, 0, 0, 0, 0], [0, 0, 0, 0, 1, 1, 1, 1, 1]]
 
 ### Computed quantum multiplication
 
-Write $M=c_1(X)\star$ and use the ordered basis $e_0,\ldots,e_{11}$ below. Columns are images: $M e_j=\sum_i M_{ij}e_i$.
+Write $A(\mathbf y)=c_1(X)\star$ and use the ordered basis $e_0,\ldots,e_{11}$ below. Columns are images: $A(\mathbf y)e_j=\sum_i A_{ij}(\mathbf y)e_i$.
 
 ```python
 basis = ['1', 'x4', 'x0', 'x4^2', 'x0^2', 'x0*x4', 'x4^3', 'x0^3', 'x0*x4^2', 'x4^4', 'x0*x4^3', 'x0*x4^4']
@@ -98,13 +110,13 @@ basis = ['1', 'x4', 'x0', 'x4^2', 'x0^2', 'x0*x4', 'x4^3', 'x0^3', 'x0*x4^2', 'x
 
 
 $$
-\mathrm{Gr}=\operatorname{diag}\!\left(- \frac{5}{2},- \frac{3}{2},- \frac{3}{2},- \frac{1}{2},- \frac{1}{2},- \frac{1}{2},\frac{1}{2},\frac{1}{2},\frac{1}{2},\frac{3}{2},\frac{3}{2},\frac{5}{2}\right).
+G=\operatorname{diag}\!\left(- \frac{5}{2},- \frac{3}{2},- \frac{3}{2},- \frac{1}{2},- \frac{1}{2},- \frac{1}{2},\frac{1}{2},\frac{1}{2},\frac{1}{2},\frac{3}{2},\frac{3}{2},\frac{5}{2}\right).
 $$
 
 
 **Exact matrix:**  every nonzero entry is listed below; all omitted entries are zero. Indices are zero based. No Novikov specialization has been made in this table.
 
-| Row $i$ | Column $j$ | $M_{ij}$ |
+| Row $i$ | Column $j$ | $A_{ij}(\mathbf y)$ |
 |---|---|---|
 | 0 | 1 | $4 y_{1}$ |
 | 0 | 2 | $4 y_{2}^{2}$ |
@@ -194,50 +206,3 @@ $$
 | 11 | 10 | $4$ |
 
 Curve enumeration: positive; 14 curve classes including zero.
-
-## Spectrum and connection
-
-**Specialization:**  $y_1=2,\ y_2=3$. The connection operator is $K^F=-M$. The exact factors below refer to $K^F$; the numerical eigenvalues refer to $M=c_1\star$.
-
-### Exact characteristic polynomial of $K^F$
-
-
-$$
-\det(xI-K^F)=p_{1}(x)^{4}\,p_{2}(x).
-$$
-
-
-$$
-\begin{aligned}p_{1}(x)&=x - 6.\end{aligned}
-$$
-
-
-$$
-\begin{aligned}p_{2}(x)&=x^{8} + 12 x^{7} - 200 x^{6} + 90192 x^{5} - 4845504 x^{4} + 91651392 x^{3}\\&- 789420416 x^{2} + 3185087232 x - 4904234240.\end{aligned}
-$$
-
-
-Cyclic determinant: $\Delta=- \frac{429702116898067728563330602412370770066931712}{3}$. The specialized operator is cyclic.
-
-### Numerical eigenvalues of $c_1\star$
-
-Values are rounded to eight significant digits; repeated eigenvalues are retained with multiplicity.
-
-| $j$ | Real part | Imaginary part | $j$ | Real part | Imaginary part |
-|---|---|---|---|---|---|
-| 1 | 63.302893 | 0 | 7 | -6 | 0 |
-| 2 | -2.7045334 | -44.65939 | 8 | -6 | 0 |
-| 3 | -2.7045334 | 44.65939 | 9 | -6 | 0 |
-| 4 | -14.404898 | -0.59964837 | 10 | -5.7016838 | -0.51689102 |
-| 5 | -14.404898 | 0.59964837 | 11 | -5.7016838 | 0.51689102 |
-| 6 | -6 | 0 | 12 | -5.6806629 | 0 |
-
-### Connection exponents
-
-| Factor | Powers | Classes mod $\mathbb Z$ | Status / method |
-|---|---|---|---|
-| $p_{1}$ | $- \frac{3}{2},\ - \frac{3}{2},\ - \frac{3}{2},\ - \frac{3}{2}$ | $\frac{1}{2},\ \frac{1}{2},\ \frac{1}{2},\ \frac{1}{2}$ | complete / recursion |
-| $p_{2}$ | $0$ | $0$ | complete / residue |
-
-Powers and residue classes are multisets for each eigenvalue in the indicated factor, not paired lists. A simple-factor power applies at every root of that factor.
-Recursion obstruction for $p_{1}$: $- \frac{\left(2 s + 3\right)^{4}}{7296}$.

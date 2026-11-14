@@ -2621,4 +2621,34 @@ Full Hodge polynomial: \(P_X(t)=t^{2} + 28 + t^{-2}\).
 
 No atomic decomposition is certified at these points; cyclicity may hold at other quantum parameters.
 
+<span id="spinor-1x5-2"></span>
 
+## Five hyperplanes and a quadric in the spinor tenfold
+
+[Construction, inputs and matrix](records/spinor-1x5-2.md)
+
+**Dimension:** 4. **Ambient rank:** 5. **Full cohomology rank:** 148. **Full Hodge-invariant rank:** 5.
+
+Full Hodge polynomial: \(P_X(t)=16t^{2} + 116 + 16t^{-2}\).
+
+**Analysis point:** `y1=1`. **Unit determinant:** \(\Delta_A(1)=72/7\).
+
+**Generality:** Very general smooth member.
+
+| Factor of \(A\) | Distinct roots | \(\rho_\alpha\) per root | Full rank per root | \(P_\alpha(t)\) per root |
+|---|---:|---:|---:|---|
+| 1 | 1 | 3 | 146 | \(16t^{2} + 114 + 16t^{-2}\) |
+| 2 | 2 | 1 | 1 | \(1\) |
+
+**Hodge identification:** For a very general member, weak Lefschetz and irreducible non-Tate vanishing cohomology identify the Hodge-invariant sector with the five-dimensional ambient space; see the [geometric argument](records/spinor-1x5-2.md#full-hodge-and-atomic-invariants).
+
+**Primitive assignment:** Unique rational eigenvalue; see the [common proof rules](atomic-invariants.md#primitive-assignment-rules).
+
+??? note "Exact characteristic factors of A at this point"
+
+    ```text
+    factor 1: lambda + 10; multiplicity per root 3
+    factor 2: lambda**2 - 116*lambda - 1244; multiplicity per root 1
+    ```
+
+**Hodge data:** Full Hodge calculation for this smooth homogeneous complete intersection.

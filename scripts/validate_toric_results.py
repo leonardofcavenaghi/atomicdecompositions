@@ -6,12 +6,8 @@ sys.path.insert(0,str(P))
 import sympy as sp
 from sympy.parsing.sympy_parser import parse_expr,standard_transformations,implicit_multiplication_application
 
-def expression(s):
- s=s.replace('\\left','').replace('\\right','').replace('\\!','')
- s=re.sub(r'y_\{(\d+)\}',r'y\1',s)
- s=re.sub(r'\^\{(-?\d+)\}',r'**(\1)',s)
- s=re.sub(r'\\frac\{([^{}]+)\}\{([^{}]+)\}',r'((\1)/(\2))',s)
- return parse_expr(s,transformations=standard_transformations+(implicit_multiplication_application,),local_dict={f'y{i}':sp.Symbol(f'y{i}') for i in range(1,20)})
+from scripts.validate_exponent_multisets import expression
+
 checked=nonzero=0
 polynomials_checked=0
 for path in (P/'docs/data').glob('toric-*.json'):
@@ -47,19 +43,10 @@ for path in (P/'docs/data').glob('toric-*.json'):
     assert coefficient.is_Rational,(ident,'coefficient')
     assert degree+basisdegrees[a]-basisdegrees[b]==1,(ident,'degree axiom',a,b,latex,weights,basisdegrees[a],basisdegrees[b])
    nonzero+=1
-  page=(P/'docs/catalog/records'/(ident.lower()+'.md')).read_text()
-  factors={}
-  for match in re.finditer(r'p_\{(\d+)\}\(x\)&=(.*?)\\end\{aligned\}',page,re.S):
-   formula=match[2].replace('\\\\','').replace('&','').replace('\\,','').strip().rstrip('.')
-   factors[int(match[1])]=expression(formula)
-  assert factors,(ident,'missing characteristic factors')
-  if dim==4:
-   multiplicities={int(i):int(m) for i,m in re.findall(r'Factor (\d+): multiplicity (\d+)',page)}
-  else:
-   line=re.search(r'\\det\(xI-K\^F\)=(.*?)(?:\\\]|\$\$)',page,re.S)
-   assert line,(ident,'missing characteristic polynomial')
-   multiplicities={int(i):int(m or 1) for i,m in re.findall(r'p_\{(\d+)\}\(x\)(?:\^\{(\d+)\})?',line[1])}
-  assert set(factors)==set(multiplicities),(ident,'factor multiplicities',factors,multiplicities)
+  connection=next(q for q in json.loads((P/'docs/data/connection-exponents.json').read_text())['records'] if q['id']==ident)
+  factors={f['number']:expression(f['polynomial_latex']) for f in connection['factors']}
+  multiplicities={f['number']:f['multiplicity'] for f in connection['factors']}
+  assert factors and set(factors)==set(multiplicities),(ident,'factor multiplicities')
   x=sp.Symbol('x');expected=sp.prod(factors[i]**m for i,m in multiplicities.items()).expand()
   M=sp.zeros(n)
   values={sp.Symbol(name):sp.sympify(value) for name,value in r.get('eval_y',{}).items()}

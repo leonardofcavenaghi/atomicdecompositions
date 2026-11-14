@@ -8,7 +8,7 @@ These entries include orthogonal, symplectic, exceptional and partial flag varie
 
 For a worked full-flag example, see [Fl(1,2,3)](flag_varieties.md#afl123).
 
-Matrices represent multiplication by $c_1(TY)$ on the returned ambient sector, with every Novikov variable set to $1$. Columns are inputs and rows are outputs. The ordered basis below uses reduced Schubert words; `()` is the unit. Basis indices in the download are zero-based.
+Matrices represent multiplication by $c_1(TX)$ on the returned ambient sector, with every Novikov variable set to $1$. Columns are inputs and rows are outputs. The ordered basis below uses reduced Schubert words; `()` is the unit. Basis indices in the download are zero-based.
 
 [Download all symbolic matrices, bases, gradings and curve classes](../data/localization-results.json) or browse [Download matrices and inputs](computed.md). See [How to Use](../how-to-use.md) for input conventions.
 
@@ -41,6 +41,30 @@ Matrices represent multiplication by $c_1(TY)$ on the returned ambient sector, w
     - **Dimension:** $7$
     - **Ambient Index:** $4$
     - **Basis Rank:** $20$
+
+    ??? note "Spectrum and connection exponents"
+
+        **Parameter point:** `y1=2, y4=3`.
+
+        Here \(A(\mathbf y)\) is first-Chern quantum multiplication on the returned ambient space, and \(G\) is its centered codimension grading. Columns are images of the ordered basis. [Notation and scope](notation.md).
+
+        \(\chi_{A(\mathbf a)}(z)=\prod_i p_i(z)^{m_i}\), with the monic factors below. Each multiplicity and exponent multiset applies separately at every root \(\lambda\) of the indicated factor.
+
+        | Factor \(p_i(z)\) | Distinct roots | Multiplicity \(m_i\) per root |
+        |---|---:|---:|
+        | \(z^{20} - 6400 z^{16} - 229376000 z^{12} - 964689920000 z^{8} + 93952409600000 z^{4} - 3435973836800000\) | 20 | 1 |
+
+        **Unit cyclic determinant:** \(\Delta_A(\mathbf a)=123132100092197157611761412271350402846525195494450646698395299600708971388952916064230858727526878588511525158256640000000000000000000000000000000000000000000000\), in this basis.
+
+        **Regularized exponent multisets** \(F_{\mathbf a,\lambda}\), with classes in \(\mathbb Q/\mathbb Z\):
+
+        | Spectral condition | \(F_{\mathbf a,\lambda}\) per eigenvalue |
+        |---|---|
+        | \(\lambda^{20} - 6400 \lambda^{16} - 229376000 \lambda^{12} - 964689920000 \lambda^{8} + 93952409600000 \lambda^{4} - 3435973836800000=0\) | \(\{\!\{0\}\!\}\) |
+
+        Repeated entries retain their multiplicity.
+
+        [Exact matrix, ordered basis and grading](../data/localization-results.json) · [Hodge data and atomic invariants](invariants-higher-dimensional.md#6d625eb08919). The full atomic interpretation uses the Hodge-space and curve hypotheses stated there.
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
@@ -84,6 +108,32 @@ Matrices represent multiplication by $c_1(TY)$ on the returned ambient sector, w
     - **Ambient Index:** $2$
     - **Basis Rank:** $12$
 
+    ??? note "Spectrum and connection exponents"
+
+        **Parameter point:** `y1=2, y4=3`.
+
+        Here \(A(\mathbf y)\) is first-Chern quantum multiplication on the returned ambient space, and \(G\) is its centered codimension grading. Columns are images of the ordered basis. [Notation and scope](notation.md).
+
+        \(\chi_{A(\mathbf a)}(z)=\prod_i p_i(z)^{m_i}\), with the monic factors below. Each multiplicity and exponent multiset applies separately at every root \(\lambda\) of the indicated factor.
+
+        | Factor \(p_i(z)\) | Distinct roots | Multiplicity \(m_i\) per root |
+        |---|---:|---:|
+        | \(z\) | 1 | 2 |
+        | \(z^{10} - 100 z^{8} - 56000 z^{6} - 3680000 z^{4} + 5600000 z^{2} - 3200000\) | 10 | 1 |
+
+        **Unit cyclic determinant:** \(\Delta_A(\mathbf a)=1031207821410880716800000000000000000000000000\), in this basis.
+
+        **Regularized exponent multisets** \(F_{\mathbf a,\lambda}\), with classes in \(\mathbb Q/\mathbb Z\):
+
+        | Spectral condition | \(F_{\mathbf a,\lambda}\) per eigenvalue |
+        |---|---|
+        | \(\lambda=0\) | \(\{\!\{\frac{1}{2},\frac{1}{2}\}\!\}\) |
+        | \(\lambda^{10} - 100 \lambda^{8} - 56000 \lambda^{6} - 3680000 \lambda^{4} + 5600000 \lambda^{2} - 3200000=0\) | \(\{\!\{0\}\!\}\) |
+
+        Repeated entries retain their multiplicity.
+
+        [Exact matrix, ordered basis and grading](../data/localization-results.json) · [Hodge data and atomic invariants](invariants-fivefolds.md#9cb29c69a3f5). The full atomic interpretation uses the Hodge-space and curve hypotheses stated there.
+
     ??? note "Quantum Matrix ($y=1$)"
         $$
         \begin{bmatrix}0 & 2 & 2 & 0 & 0 & 0 & 28 & 28 & 16 & 0 & 0 & 12\\2 & 0 & 0 & 2 & 0 & 6 & 0 & 0 & 0 & 4 & 16 & 0\\2 & 0 & 0 & 2 & 6 & 0 & 0 & 0 & 0 & 8 & 20 & 0\\0 & 2 & 2 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 4\\0 & 2 & 0 & 0 & 0 & 0 & 6 & 2 & 6 & 0 & 0 & 4\\0 & 0 & 2 & 0 & 0 & 0 & 2 & 6 & 0 & 0 & 0 & 4\\0 & 0 & 0 & 2 & -3 & 2 & 0 & 0 & 0 & -3 & -6 & 0\\0 & 0 & 0 & 2 & 5 & 0 & 0 & 0 & 0 & 3 & 6 & 0\\0 & 0 & 0 & 0 & 2 & 2 & 0 & 0 & 0 & 2 & 6 & 0\\0 & 0 & 0 & 0 & 0 & 0 & -4 & -16 & 4 & 0 & 0 & -2\\0 & 0 & 0 & 0 & 0 & 0 & 8 & 12 & 2 & 0 & 0 & 2\\0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 2 & 6 & 0\end{bmatrix}
@@ -118,6 +168,32 @@ Matrices represent multiplication by $c_1(TY)$ on the returned ambient sector, w
     - **Ambient Index:** $5$
     - **Basis Rank:** $6$
 
+    ??? note "Spectrum and connection exponents"
+
+        **Parameter point:** `y1=1`.
+
+        Here \(A(\mathbf y)\) is first-Chern quantum multiplication on the returned ambient space, and \(G\) is its centered codimension grading. Columns are images of the ordered basis. [Notation and scope](notation.md).
+
+        \(\chi_{A(\mathbf a)}(z)=\prod_i p_i(z)^{m_i}\), with the monic factors below. Each multiplicity and exponent multiset applies separately at every root \(\lambda\) of the indicated factor.
+
+        | Factor \(p_i(z)\) | Distinct roots | Multiplicity \(m_i\) per root |
+        |---|---:|---:|
+        | \(z\) | 1 | 1 |
+        | \(z^{5} - 12500\) | 5 | 1 |
+
+        **Unit cyclic determinant:** \(\Delta_A(\mathbf a)=244140625000\), in this basis.
+
+        **Regularized exponent multisets** \(F_{\mathbf a,\lambda}\), with classes in \(\mathbb Q/\mathbb Z\):
+
+        | Spectral condition | \(F_{\mathbf a,\lambda}\) per eigenvalue |
+        |---|---|
+        | \(\lambda=0\) | \(\{\!\{0\}\!\}\) |
+        | \(\lambda^{5} - 12500=0\) | \(\{\!\{0\}\!\}\) |
+
+        Repeated entries retain their multiplicity.
+
+        [Exact matrix, ordered basis and grading](../data/localization-results.json) · [Hodge data and atomic invariants](invariants-fivefolds.md#fd2bd6eae26b). The full atomic interpretation uses the Hodge-space and curve hypotheses stated there.
+
     ??? note "Quantum Matrix ($y=1$)"
         $$
         \begin{bmatrix}0 & 0 & 0 & 0 & 5 & 0\\5 & 0 & 0 & 0 & 0 & 5\\0 & 5 & 0 & 0 & 0 & 0\\0 & 0 & 10 & 0 & 0 & 0\\0 & 0 & 0 & 5 & 0 & 0\\0 & 0 & 0 & 0 & 5 & 0\end{bmatrix}
@@ -145,6 +221,30 @@ Matrices represent multiplication by $c_1(TY)$ on the returned ambient sector, w
     - **Dimension:** $5$
     - **Ambient Index:** $3$
     - **Basis Rank:** $6$
+
+    ??? note "Spectrum and connection exponents"
+
+        **Parameter point:** `y2=1`.
+
+        Here \(A(\mathbf y)\) is first-Chern quantum multiplication on the returned ambient space, and \(G\) is its centered codimension grading. Columns are images of the ordered basis. [Notation and scope](notation.md).
+
+        \(\chi_{A(\mathbf a)}(z)=\prod_i p_i(z)^{m_i}\), with the monic factors below. Each multiplicity and exponent multiset applies separately at every root \(\lambda\) of the indicated factor.
+
+        | Factor \(p_i(z)\) | Distinct roots | Multiplicity \(m_i\) per root |
+        |---|---:|---:|
+        | \(z^{6} - 486 z^{3} - 19683\) | 6 | 1 |
+
+        **Unit cyclic determinant:** \(\Delta_A(\mathbf a)=83682825624\), in this basis.
+
+        **Regularized exponent multisets** \(F_{\mathbf a,\lambda}\), with classes in \(\mathbb Q/\mathbb Z\):
+
+        | Spectral condition | \(F_{\mathbf a,\lambda}\) per eigenvalue |
+        |---|---|
+        | \(\lambda^{6} - 486 \lambda^{3} - 19683=0\) | \(\{\!\{0\}\!\}\) |
+
+        Repeated entries retain their multiplicity.
+
+        [Exact matrix, ordered basis and grading](../data/localization-results.json) · [Hodge data and atomic invariants](invariants-fivefolds.md#834882311808). The full atomic interpretation uses the Hodge-space and curve hypotheses stated there.
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
@@ -174,6 +274,30 @@ Matrices represent multiplication by $c_1(TY)$ on the returned ambient sector, w
     - **Ambient Index:** $3$
     - **Basis Rank:** $6$
 
+    ??? note "Spectrum and connection exponents"
+
+        **Parameter point:** `y3=1`.
+
+        Here \(A(\mathbf y)\) is first-Chern quantum multiplication on the returned ambient space, and \(G\) is its centered codimension grading. Columns are images of the ordered basis. [Notation and scope](notation.md).
+
+        \(\chi_{A(\mathbf a)}(z)=\prod_i p_i(z)^{m_i}\), with the monic factors below. Each multiplicity and exponent multiset applies separately at every root \(\lambda\) of the indicated factor.
+
+        | Factor \(p_i(z)\) | Distinct roots | Multiplicity \(m_i\) per root |
+        |---|---:|---:|
+        | \(z^{6} - 648 z^{3} + 11664\) | 6 | 1 |
+
+        **Unit cyclic determinant:** \(\Delta_A(\mathbf a)=29386561536\), in this basis.
+
+        **Regularized exponent multisets** \(F_{\mathbf a,\lambda}\), with classes in \(\mathbb Q/\mathbb Z\):
+
+        | Spectral condition | \(F_{\mathbf a,\lambda}\) per eigenvalue |
+        |---|---|
+        | \(\lambda^{6} - 648 \lambda^{3} + 11664=0\) | \(\{\!\{0\}\!\}\) |
+
+        Repeated entries retain their multiplicity.
+
+        [Exact matrix, ordered basis and grading](../data/localization-results.json) · [Hodge data and atomic invariants](invariants-fivefolds.md#141c91366f21). The full atomic interpretation uses the Hodge-space and curve hypotheses stated there.
+
     ??? note "Quantum Matrix ($y=1$)"
         $$
         \begin{bmatrix}0 & 0 & 6 & 0 & 0 & 0\\3 & 0 & 0 & 3 & 0 & 0\\0 & 6 & 0 & 0 & 6 & 0\\0 & 0 & 12 & 0 & 0 & 6\\0 & 0 & 0 & 3 & 0 & 0\\0 & 0 & 0 & 0 & 6 & 0\end{bmatrix}
@@ -201,6 +325,36 @@ Matrices represent multiplication by $c_1(TY)$ on the returned ambient sector, w
     - **Dimension:** $5$
     - **Ambient Index:** $4$
     - **Basis Rank:** $6$
+
+    ??? note "Spectrum and connection exponents"
+
+        **Parameter point:** `y3=1`.
+
+        Here \(A(\mathbf y)\) is first-Chern quantum multiplication on the returned ambient space, and \(G\) is its centered codimension grading. Columns are images of the ordered basis. [Notation and scope](notation.md).
+
+        \(\chi_{A(\mathbf a)}(z)=\prod_i p_i(z)^{m_i}\), with the monic factors below. Each multiplicity and exponent multiset applies separately at every root \(\lambda\) of the indicated factor.
+
+        | Factor \(p_i(z)\) | Distinct roots | Multiplicity \(m_i\) per root |
+        |---|---:|---:|
+        | \(z + 8\) | 1 | 1 |
+        | \(z - 8\) | 1 | 1 |
+        | \(z\) | 1 | 2 |
+        | \(z^{2} + 64\) | 2 | 1 |
+
+        **Unit cyclic determinant:** \(\Delta_A(\mathbf a)=8589934592\), in this basis.
+
+        **Regularized exponent multisets** \(F_{\mathbf a,\lambda}\), with classes in \(\mathbb Q/\mathbb Z\):
+
+        | Spectral condition | \(F_{\mathbf a,\lambda}\) per eigenvalue |
+        |---|---|
+        | \(\lambda + 8=0\) | \(\{\!\{0\}\!\}\) |
+        | \(\lambda - 8=0\) | \(\{\!\{0\}\!\}\) |
+        | \(\lambda=0\) | \(\{\!\{\frac{1}{2},\frac{1}{2}\}\!\}\) |
+        | \(\lambda^{2} + 64=0\) | \(\{\!\{0\}\!\}\) |
+
+        Repeated entries retain their multiplicity.
+
+        [Exact matrix, ordered basis and grading](../data/localization-results.json) · [Hodge data and atomic invariants](invariants-fivefolds.md#76928fabba80). The full atomic interpretation uses the Hodge-space and curve hypotheses stated there.
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
@@ -230,6 +384,32 @@ Matrices represent multiplication by $c_1(TY)$ on the returned ambient sector, w
     - **Ambient Index:** $3$
     - **Basis Rank:** $6$
 
+    ??? note "Spectrum and connection exponents"
+
+        **Parameter point:** `y3=1`.
+
+        Here \(A(\mathbf y)\) is first-Chern quantum multiplication on the returned ambient space, and \(G\) is its centered codimension grading. Columns are images of the ordered basis. [Notation and scope](notation.md).
+
+        \(\chi_{A(\mathbf a)}(z)=\prod_i p_i(z)^{m_i}\), with the monic factors below. Each multiplicity and exponent multiset applies separately at every root \(\lambda\) of the indicated factor.
+
+        | Factor \(p_i(z)\) | Distinct roots | Multiplicity \(m_i\) per root |
+        |---|---:|---:|
+        | \(z\) | 1 | 3 |
+        | \(z^{3} - 2916\) | 3 | 1 |
+
+        **Unit cyclic determinant:** \(\Delta_A(\mathbf a)=114791256\), in this basis.
+
+        **Regularized exponent multisets** \(F_{\mathbf a,\lambda}\), with classes in \(\mathbb Q/\mathbb Z\):
+
+        | Spectral condition | \(F_{\mathbf a,\lambda}\) per eigenvalue |
+        |---|---|
+        | \(\lambda=0\) | \(\{\!\{0,\frac{1}{2},\frac{1}{2}\}\!\}\) |
+        | \(\lambda^{3} - 2916=0\) | \(\{\!\{0\}\!\}\) |
+
+        Repeated entries retain their multiplicity.
+
+        [Exact matrix, ordered basis and grading](../data/localization-results.json) · [Hodge data and atomic invariants](invariants-fivefolds.md#29e94da02c49). The full atomic interpretation uses the Hodge-space and curve hypotheses stated there.
+
     ??? note "Quantum Matrix ($y=1$)"
         $$
         \begin{bmatrix}0 & 0 & 36 & 0 & 0 & 216\\3 & 0 & 0 & 63 & 0 & 0\\0 & 3 & 0 & 0 & 63 & 0\\0 & 0 & 6 & 0 & 0 & 36\\0 & 0 & 0 & 3 & 0 & 0\\0 & 0 & 0 & 0 & 3 & 0\end{bmatrix}
@@ -258,6 +438,34 @@ Matrices represent multiplication by $c_1(TY)$ on the returned ambient sector, w
     - **Ambient Index:** $2$
     - **Basis Rank:** $6$
 
+    ??? note "Spectrum and connection exponents"
+
+        **Parameter point:** `y3=1`.
+
+        Here \(A(\mathbf y)\) is first-Chern quantum multiplication on the returned ambient space, and \(G\) is its centered codimension grading. Columns are images of the ordered basis. [Notation and scope](notation.md).
+
+        \(\chi_{A(\mathbf a)}(z)=\prod_i p_i(z)^{m_i}\), with the monic factors below. Each multiplicity and exponent multiset applies separately at every root \(\lambda\) of the indicated factor.
+
+        | Factor \(p_i(z)\) | Distinct roots | Multiplicity \(m_i\) per root |
+        |---|---:|---:|
+        | \(z + 64\) | 1 | 1 |
+        | \(z - 64\) | 1 | 1 |
+        | \(z\) | 1 | 4 |
+
+        **Unit cyclic determinant:** \(\Delta_A(\mathbf a)=262144\), in this basis.
+
+        **Regularized exponent multisets** \(F_{\mathbf a,\lambda}\), with classes in \(\mathbb Q/\mathbb Z\):
+
+        | Spectral condition | \(F_{\mathbf a,\lambda}\) per eigenvalue |
+        |---|---|
+        | \(\lambda + 64=0\) | \(\{\!\{0\}\!\}\) |
+        | \(\lambda - 64=0\) | \(\{\!\{0\}\!\}\) |
+        | \(\lambda=0\) | \(\{\!\{0,0,\frac{1}{2},\frac{1}{2}\}\!\}\) |
+
+        Repeated entries retain their multiplicity.
+
+        [Exact matrix, ordered basis and grading](../data/localization-results.json) · [Hodge data and atomic invariants](invariants-fivefolds.md#10e047830d24). The full atomic interpretation uses the Hodge-space and curve hypotheses stated there.
+
     ??? note "Quantum Matrix ($y=1$)"
         $$
         \begin{bmatrix}0 & 96 & 0 & 26688 & 0 & 1603584\\2 & 0 & 512 & 0 & 78976 & 0\\0 & 2 & 0 & 416 & 0 & 26688\\0 & 0 & 4 & 0 & 512 & 0\\0 & 0 & 0 & 2 & 0 & 96\\0 & 0 & 0 & 0 & 2 & 0\end{bmatrix}
@@ -285,6 +493,34 @@ Matrices represent multiplication by $c_1(TY)$ on the returned ambient sector, w
     - **Dimension:** $4$
     - **Ambient Index:** $1$
     - **Basis Rank:** $9$
+
+    ??? note "Spectrum and connection exponents"
+
+        **Parameter point:** `y1=1, y2=1`.
+
+        Here \(A(\mathbf y)\) is first-Chern quantum multiplication on the returned ambient space, and \(G\) is its centered codimension grading. Columns are images of the ordered basis. [Notation and scope](notation.md).
+
+        \(\chi_{A(\mathbf a)}(z)=\prod_i p_i(z)^{m_i}\), with the monic factors below. Each multiplicity and exponent multiset applies separately at every root \(\lambda\) of the indicated factor.
+
+        | Factor \(p_i(z)\) | Distinct roots | Multiplicity \(m_i\) per root |
+        |---|---:|---:|
+        | \(z + 3\) | 1 | 2 |
+        | \(z + 2\) | 1 | 2 |
+        | \(z^{5} - 5 z^{4} - 192 z^{3} - 3848 z^{2} - 17040 z - 22928\) | 5 | 1 |
+
+        **Unit cyclic determinant:** \(\Delta_A(\mathbf a)=-61355573168046080\), in this basis.
+
+        **Regularized exponent multisets** \(F_{\mathbf a,\lambda}\), with classes in \(\mathbb Q/\mathbb Z\):
+
+        | Spectral condition | \(F_{\mathbf a,\lambda}\) per eigenvalue |
+        |---|---|
+        | \(\lambda + 3=0\) | \(\{\!\{\frac{1}{2},\frac{1}{2}\}\!\}\) |
+        | \(\lambda + 2=0\) | \(\{\!\{0,0\}\!\}\) |
+        | \(\lambda^{5} - 5 \lambda^{4} - 192 \lambda^{3} - 3848 \lambda^{2} - 17040 \lambda - 22928=0\) | \(\{\!\{0\}\!\}\) |
+
+        Repeated entries retain their multiplicity.
+
+        [Exact matrix, ordered basis and grading](../data/localization-results.json) · [Hodge data and atomic invariants](invariants-fourfolds.md#e1322438fd01). The full atomic interpretation uses the Hodge-space and curve hypotheses stated there.
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
@@ -319,6 +555,32 @@ Matrices represent multiplication by $c_1(TY)$ on the returned ambient sector, w
     - **Ambient Index:** $2$
     - **Basis Rank:** $9$
 
+    ??? note "Spectrum and connection exponents"
+
+        **Parameter point:** `y1=2, y3=3`.
+
+        Here \(A(\mathbf y)\) is first-Chern quantum multiplication on the returned ambient space, and \(G\) is its centered codimension grading. Columns are images of the ordered basis. [Notation and scope](notation.md).
+
+        \(\chi_{A(\mathbf a)}(z)=\prod_i p_i(z)^{m_i}\), with the monic factors below. Each multiplicity and exponent multiset applies separately at every root \(\lambda\) of the indicated factor.
+
+        | Factor \(p_i(z)\) | Distinct roots | Multiplicity \(m_i\) per root |
+        |---|---:|---:|
+        | \(z\) | 1 | 1 |
+        | \(z^{8} - 80 z^{6} - 10656 z^{4} - 247040 z^{2} + 256\) | 8 | 1 |
+
+        **Unit cyclic determinant:** \(\Delta_A(\mathbf a)=-1708917900203498930176\), in this basis.
+
+        **Regularized exponent multisets** \(F_{\mathbf a,\lambda}\), with classes in \(\mathbb Q/\mathbb Z\):
+
+        | Spectral condition | \(F_{\mathbf a,\lambda}\) per eigenvalue |
+        |---|---|
+        | \(\lambda=0\) | \(\{\!\{0\}\!\}\) |
+        | \(\lambda^{8} - 80 \lambda^{6} - 10656 \lambda^{4} - 247040 \lambda^{2} + 256=0\) | \(\{\!\{0\}\!\}\) |
+
+        Repeated entries retain their multiplicity.
+
+        [Exact matrix, ordered basis and grading](../data/localization-results.json) · [Hodge data and atomic invariants](invariants-fourfolds.md#3ed191207b19). The full atomic interpretation uses the Hodge-space and curve hypotheses stated there.
+
     ??? note "Quantum Matrix ($y=1$)"
         $$
         \begin{bmatrix}0 & 2 & 2 & 0 & 0 & 0 & 4 & 8 & 0\\2 & 0 & 0 & 2 & 0 & 4 & 0 & 0 & 4\\2 & 0 & 0 & 2 & 4 & 0 & 0 & 0 & 4\\0 & 2 & 2 & 0 & 0 & 0 & 0 & 0 & 0\\0 & 2 & 0 & 0 & 0 & 0 & 2 & 2 & 0\\0 & 0 & 2 & 0 & 0 & 0 & 0 & 2 & 0\\0 & 0 & 0 & 0 & -4 & 4 & 0 & 0 & 0\\0 & 0 & 0 & 6 & 6 & 2 & 0 & 0 & 2\\0 & 0 & 0 & 0 & 0 & 0 & 2 & 4 & 0\end{bmatrix}
@@ -350,6 +612,32 @@ Matrices represent multiplication by $c_1(TY)$ on the returned ambient sector, w
     - **Ambient Index:** $2$
     - **Basis Rank:** $5$
 
+    ??? note "Spectrum and connection exponents"
+
+        **Parameter point:** `y2=1`.
+
+        Here \(A(\mathbf y)\) is first-Chern quantum multiplication on the returned ambient space, and \(G\) is its centered codimension grading. Columns are images of the ordered basis. [Notation and scope](notation.md).
+
+        \(\chi_{A(\mathbf a)}(z)=\prod_i p_i(z)^{m_i}\), with the monic factors below. Each multiplicity and exponent multiset applies separately at every root \(\lambda\) of the indicated factor.
+
+        | Factor \(p_i(z)\) | Distinct roots | Multiplicity \(m_i\) per root |
+        |---|---:|---:|
+        | \(z\) | 1 | 1 |
+        | \(z^{4} - 72 z^{2} - 432\) | 4 | 1 |
+
+        **Unit cyclic determinant:** \(\Delta_A(\mathbf a)=331776\), in this basis.
+
+        **Regularized exponent multisets** \(F_{\mathbf a,\lambda}\), with classes in \(\mathbb Q/\mathbb Z\):
+
+        | Spectral condition | \(F_{\mathbf a,\lambda}\) per eigenvalue |
+        |---|---|
+        | \(\lambda=0\) | \(\{\!\{0\}\!\}\) |
+        | \(\lambda^{4} - 72 \lambda^{2} - 432=0\) | \(\{\!\{0\}\!\}\) |
+
+        Repeated entries retain their multiplicity.
+
+        [Exact matrix, ordered basis and grading](../data/localization-results.json) · [Hodge data and atomic invariants](invariants-fourfolds.md#b9a91f8b2a8f). The full atomic interpretation uses the Hodge-space and curve hypotheses stated there.
+
     ??? note "Quantum Matrix ($y=1$)"
         $$
         \begin{bmatrix}0 & 6 & 0 & 12 & 0\\2 & 0 & 4 & 0 & 4\\0 & 6 & 0 & 6 & 0\\0 & 0 & 4 & 0 & 2\\0 & 0 & 0 & 6 & 0\end{bmatrix}
@@ -376,6 +664,34 @@ Matrices represent multiplication by $c_1(TY)$ on the returned ambient sector, w
     - **Dimension:** $4$
     - **Ambient Index:** $2$
     - **Basis Rank:** $5$
+
+    ??? note "Spectrum and connection exponents"
+
+        **Parameter point:** `y3=1`.
+
+        Here \(A(\mathbf y)\) is first-Chern quantum multiplication on the returned ambient space, and \(G\) is its centered codimension grading. Columns are images of the ordered basis. [Notation and scope](notation.md).
+
+        \(\chi_{A(\mathbf a)}(z)=\prod_i p_i(z)^{m_i}\), with the monic factors below. Each multiplicity and exponent multiset applies separately at every root \(\lambda\) of the indicated factor.
+
+        | Factor \(p_i(z)\) | Distinct roots | Multiplicity \(m_i\) per root |
+        |---|---:|---:|
+        | \(z\) | 1 | 1 |
+        | \(z^{2} + 8 z - 16\) | 2 | 1 |
+        | \(z^{2} - 8 z - 16\) | 2 | 1 |
+
+        **Unit cyclic determinant:** \(\Delta_A(\mathbf a)=131072\), in this basis.
+
+        **Regularized exponent multisets** \(F_{\mathbf a,\lambda}\), with classes in \(\mathbb Q/\mathbb Z\):
+
+        | Spectral condition | \(F_{\mathbf a,\lambda}\) per eigenvalue |
+        |---|---|
+        | \(\lambda=0\) | \(\{\!\{0\}\!\}\) |
+        | \(\lambda^{2} + 8 \lambda - 16=0\) | \(\{\!\{0\}\!\}\) |
+        | \(\lambda^{2} - 8 \lambda - 16=0\) | \(\{\!\{0\}\!\}\) |
+
+        Repeated entries retain their multiplicity.
+
+        [Exact matrix, ordered basis and grading](../data/localization-results.json) · [Hodge data and atomic invariants](invariants-fourfolds.md#5a3d521e7212). The full atomic interpretation uses the Hodge-space and curve hypotheses stated there.
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
@@ -404,6 +720,34 @@ Matrices represent multiplication by $c_1(TY)$ on the returned ambient sector, w
     - **Ambient Index:** $2$
     - **Basis Rank:** $5$
 
+    ??? note "Spectrum and connection exponents"
+
+        **Parameter point:** `y3=1`.
+
+        Here \(A(\mathbf y)\) is first-Chern quantum multiplication on the returned ambient space, and \(G\) is its centered codimension grading. Columns are images of the ordered basis. [Notation and scope](notation.md).
+
+        \(\chi_{A(\mathbf a)}(z)=\prod_i p_i(z)^{m_i}\), with the monic factors below. Each multiplicity and exponent multiset applies separately at every root \(\lambda\) of the indicated factor.
+
+        | Factor \(p_i(z)\) | Distinct roots | Multiplicity \(m_i\) per root |
+        |---|---:|---:|
+        | \(z + 16\) | 1 | 1 |
+        | \(z - 16\) | 1 | 1 |
+        | \(z\) | 1 | 3 |
+
+        **Unit cyclic determinant:** \(\Delta_A(\mathbf a)=4096\), in this basis.
+
+        **Regularized exponent multisets** \(F_{\mathbf a,\lambda}\), with classes in \(\mathbb Q/\mathbb Z\):
+
+        | Spectral condition | \(F_{\mathbf a,\lambda}\) per eigenvalue |
+        |---|---|
+        | \(\lambda + 16=0\) | \(\{\!\{0\}\!\}\) |
+        | \(\lambda - 16=0\) | \(\{\!\{0\}\!\}\) |
+        | \(\lambda=0\) | \(\{\!\{0,0,0\}\!\}\) |
+
+        Repeated entries retain their multiplicity.
+
+        [Exact matrix, ordered basis and grading](../data/localization-results.json) · [Hodge data and atomic invariants](invariants-fourfolds.md#176397975a00). The full atomic interpretation uses the Hodge-space and curve hypotheses stated there.
+
     ??? note "Quantum Matrix ($y=1$)"
         $$
         \begin{bmatrix}0 & 16 & 0 & 224 & 0\\2 & 0 & 48 & 0 & 224\\0 & 2 & 0 & 24 & 0\\0 & 0 & 4 & 0 & 16\\0 & 0 & 0 & 2 & 0\end{bmatrix}
@@ -430,6 +774,32 @@ Matrices represent multiplication by $c_1(TY)$ on the returned ambient sector, w
     - **Dimension:** $3$
     - **Ambient Index:** $1$
     - **Basis Rank:** $6$
+
+    ??? note "Spectrum and connection exponents"
+
+        **Parameter point:** `y1=1, y2=1`.
+
+        Here \(A(\mathbf y)\) is first-Chern quantum multiplication on the returned ambient space, and \(G\) is its centered codimension grading. Columns are images of the ordered basis. [Notation and scope](notation.md).
+
+        \(\chi_{A(\mathbf a)}(z)=\prod_i p_i(z)^{m_i}\), with the monic factors below. Each multiplicity and exponent multiset applies separately at every root \(\lambda\) of the indicated factor.
+
+        | Factor \(p_i(z)\) | Distinct roots | Multiplicity \(m_i\) per root |
+        |---|---:|---:|
+        | \(z + 2\) | 1 | 2 |
+        | \(z^{4} - 90 z^{2} - 428 z - 391\) | 4 | 1 |
+
+        **Unit cyclic determinant:** \(\Delta_A(\mathbf a)=0\), in this basis.
+
+        **Regularized exponent multisets** \(F_{\mathbf a,\lambda}\), with classes in \(\mathbb Q/\mathbb Z\):
+
+        | Spectral condition | \(F_{\mathbf a,\lambda}\) per eigenvalue |
+        |---|---|
+        | \(\lambda + 2=0\) | \(\{\!\{\frac{1}{2},\frac{1}{2}\}\!\}\) |
+        | \(\lambda^{4} - 90 \lambda^{2} - 428 \lambda - 391=0\) | \(\{\!\{0\}\!\}\) |
+
+        Repeated entries retain their multiplicity.
+
+        [Exact matrix, ordered basis and grading](../data/localization-results.json) · [Hodge data and atomic invariants](invariants-threefolds.md#34fec398819e). The full atomic interpretation uses the Hodge-space and curve hypotheses stated there.
 
     ??? note "Quantum Matrix ($y=1$)"
         $$
@@ -458,6 +828,32 @@ Matrices represent multiplication by $c_1(TY)$ on the returned ambient sector, w
     - **Dimension:** $3$
     - **Ambient Index:** $1$
     - **Basis Rank:** $6$
+
+    ??? note "Spectrum and connection exponents"
+
+        **Parameter point:** `y1=2, y3=3`.
+
+        Here \(A(\mathbf y)\) is first-Chern quantum multiplication on the returned ambient space, and \(G\) is its centered codimension grading. Columns are images of the ordered basis. [Notation and scope](notation.md).
+
+        \(\chi_{A(\mathbf a)}(z)=\prod_i p_i(z)^{m_i}\), with the monic factors below. Each multiplicity and exponent multiset applies separately at every root \(\lambda\) of the indicated factor.
+
+        | Factor \(p_i(z)\) | Distinct roots | Multiplicity \(m_i\) per root |
+        |---|---:|---:|
+        | \(z + 5\) | 1 | 2 |
+        | \(z^{4} - 816 z^{2} - 11520 z - 37824\) | 4 | 1 |
+
+        **Unit cyclic determinant:** \(\Delta_A(\mathbf a)=- \frac{315392}{3}\), in this basis.
+
+        **Regularized exponent multisets** \(F_{\mathbf a,\lambda}\), with classes in \(\mathbb Q/\mathbb Z\):
+
+        | Spectral condition | \(F_{\mathbf a,\lambda}\) per eigenvalue |
+        |---|---|
+        | \(\lambda + 5=0\) | \(\{\!\{\frac{1}{2},\frac{1}{2}\}\!\}\) |
+        | \(\lambda^{4} - 816 \lambda^{2} - 11520 \lambda - 37824=0\) | \(\{\!\{0\}\!\}\) |
+
+        Repeated entries retain their multiplicity.
+
+        [Exact matrix, ordered basis and grading](../data/localization-results.json) · [Hodge data and atomic invariants](invariants-threefolds.md#d3154e614ad6). The full atomic interpretation uses the Hodge-space and curve hypotheses stated there.
 
     ??? note "Quantum Matrix ($y=1$)"
         $$

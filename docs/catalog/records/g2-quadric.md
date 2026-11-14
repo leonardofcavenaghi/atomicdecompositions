@@ -41,19 +41,36 @@ $$
 At \(y_1=1\),
 
 $$
-\chi_{A(1)}(\lambda)=\left(\lambda + 6\right)^{3} \left(\lambda^{2} - 60 \lambda - 828\right),\qquad\Delta(1)=\det(1,A(1)1,\ldots,A(1)^4 1)=324\ne0.
+\chi_{A(1)}(\lambda)=\left(\lambda + 6\right)^{3} \left(\lambda^{2} - 60 \lambda - 828\right),\qquad\Delta_A(1)=\det(1,A(1)1,\ldots,A(1)^4 1)=324\ne0.
 $$
 
 The determinant uses the returned basis. It proves cyclicity on the five-dimensional ambient sector. For a very general member, this sector equals the rational Hodge-invariant cohomology; the generic Hodge-factor criterion therefore applies. Homogeneous rescaling of the Novikov coordinate gives the corresponding admissible small-locus point.
 
-## Regularized exponent multisets
+## Spectrum and connection exponents
 
-The eigenvalues here are those of \(A\). The software’s characteristic factors for \(K^F=-A\) correspond by \(p(-\lambda)=0\). Repeated entries are retained.
+**Parameter point:** `y1=1`.
 
-| Eigenvalue of \(A(1)\) | Multiplicity per eigenvalue | \(F_{b,\lambda}\) |
-|---|---:|---|
-| \(-6\) | 3 | \(\{\!\{0,\tfrac12,\tfrac12\}\!\}\) |
-| \(30 \pm 24\sqrt{3}\) (each) | 1 | \(\{\!\{0\}\!\}\) |
+Here \(A(\mathbf y)\) is first-Chern quantum multiplication on the returned ambient space, and \(G\) is its centered codimension grading. Columns are images of the ordered basis. [Notation and scope](../notation.md).
+
+\(\chi_{A(\mathbf a)}(z)=\prod_i p_i(z)^{m_i}\), with the monic factors below. Each multiplicity and exponent multiset applies separately at every root \(\lambda\) of the indicated factor.
+
+| Factor \(p_i(z)\) | Distinct roots | Multiplicity \(m_i\) per root |
+|---|---:|---:|
+| \(z + 6\) | 1 | 3 |
+| \(z^{2} - 60 z - 828\) | 2 | 1 |
+
+**Unit cyclic determinant:** \(\Delta_A(\mathbf a)=324\), in this basis.
+
+**Regularized exponent multisets** \(F_{\mathbf a,\lambda}\), with classes in \(\mathbb Q/\mathbb Z\):
+
+| Spectral condition | \(F_{\mathbf a,\lambda}\) per eigenvalue |
+|---|---|
+| \(\lambda + 6=0\) | \(\{\!\{0,\frac{1}{2},\frac{1}{2}\}\!\}\) |
+| \(\lambda^{2} - 60 \lambda - 828=0\) | \(\{\!\{0\}\!\}\) |
+
+Repeated entries retain their multiplicity.
+
+[Exact matrix, ordered basis and grading](../../data/flag-fourfolds.json) · [Hodge data and atomic invariants](../invariants-fourfolds.md#g2-quadric). The full atomic interpretation uses the Hodge-space and curve hypotheses stated there.
 
 The fourfold rationality criterion permits only the pairs \((1,\{\!\{0\}\!\})\), \((2,\{\!\{\tfrac12,\tfrac12\}\!\})\), and \((3,\{\!\{0,0,0\}\!\})\). The cyclic rank-three factor above has a different exponent multiset. This gives irrationality for a **very general smooth** member, as in Theorem 6.16 of *On the atomic decomposition of complete intersection in flag varieties*. It is not a claim about every special member.
 

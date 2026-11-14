@@ -279,9 +279,9 @@ async function main() {
         const multiset = await page.evaluate(async base => {
           const data = await fetch(base + '/data/connection-exponents.json').then(r => r.json());
           const factor = data.records.find(r => r.id === 'QC5-001').factors.find(f => f.number === 1);
-          const table = document.querySelector('article table');
+          const table = [...document.querySelectorAll('article table')].find(t => t.textContent.includes('Spectral condition'));
           return {classes: factor.classes, rows: table.tBodies[0].rows.length,
-            displayedHalves: table.tBodies[0].rows[0].cells[2].querySelectorAll('mjx-mfrac,[data-mml-node="mfrac"]').length};
+            displayedHalves: table.tBodies[0].rows[0].cells[1].querySelectorAll('mjx-mfrac,[data-mml-node="mfrac"]').length};
         }, base);
         if (JSON.stringify(multiset.classes) !== JSON.stringify(['0','1/2','1/2']) ||
             multiset.rows !== 3 || multiset.displayedHalves !== 2) {
@@ -292,7 +292,7 @@ async function main() {
       const state=await page.evaluate(() => ({
         mathErrors:document.querySelectorAll('mjx-merror').length,
         inputs:document.querySelectorAll('pre code').length,
-        matrices:[...document.querySelectorAll('table')].some(t => t.textContent.includes('M')),
+        matrices:[...document.querySelectorAll('table')].some(t => t.textContent.includes('A') || t.textContent.includes('Multiplicity')),
         emptyLinks:[...document.querySelectorAll('article a')].some(a => !a.getAttribute('href'))
       }));
       if (state.mathErrors || state.inputs<2 || !state.matrices || state.emptyLinks) throw new Error(id+': '+JSON.stringify(state));
@@ -309,8 +309,8 @@ async function main() {
     const atomicCounts = await page.evaluate(() => {
       const table = jQuery('.atomic-index table').DataTable();
       const total = table.rows().count();
-      table.search('Full atomic invariants').draw(); const full = table.rows({search:'applied'}).count();
-      table.search('Ambient matrix incomplete').draw(); const incomplete = table.rows({search:'applied'}).count();
+      table.search('Atomic decomposition').draw(); const full = table.rows({search:'applied'}).count();
+      table.search('Hodge and ambient spectral data').draw(); const incomplete = table.rows({search:'applied'}).count();
       table.search('').draw(); return {total,full,incomplete};
     });
     const atomicData = await page.evaluate(async base => fetch(base + '/data/atomic-invariants.json').then(r => r.json()), base);

@@ -41,6 +41,7 @@ RESULTS = {
     'flag-fourfolds.json': ('records', 'Additional homogeneous fourfold results'),
 }
 ANALYSES = {
+    'spectral-data.json': 'First-Chern characteristic factors, cyclic determinants and computed exponent multisets',
     'geometric-presentations.json': 'Geometric identification from fans and divisor classes',
     'connection-exponents.json': 'Regularized exponent multisets at specified points',
     'atomic-invariants.json': 'Hodge data, cyclicity and certified atomic invariants',

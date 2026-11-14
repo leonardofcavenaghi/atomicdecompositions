@@ -29,6 +29,7 @@ The [dataset guide](../catalog/datasets.md) describes the public schemas and con
 | `toric-fourfolds.json`, `toric-fivefolds.json` | Exact toric fan, divisor and matrix inputs and results |
 | `flag-fourfolds.json` | Additional homogeneous fourfold computations and their analysis |
 | `connection-exponents.json` | Regularized exponent multisets at the stated analysis points |
+| `spectral-data.json` | Unified first-Chern factors, exact parameter points, unit determinants and computed exponent multisets for every catalogue example |
 | `atomic-invariants.json` | Hodge data, cyclicity tests and atomic invariants with their hypotheses |
 | `geometric-presentations.json` | Identification of geometric constructions from fan and divisor data |
 | `catalog-records.json` | Normalized names, dimensions, links and scientific keywords used by the catalogue |

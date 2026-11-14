@@ -1,3 +1,11 @@
+# Catalogue documentation — 2026-11-14
+
+- Add the completed spinor-tenfold section by five hyperplanes and a quadric, with a fresh exact localization matrix, cyclic determinant `72/7`, connection exponents and very-general atomic Hodge invariants.
+- Define catalogue notation in a self-contained key and use the first-Chern operator `A` for all displayed characteristic factors and unit determinants, including the sign conversion from negative-operator exports.
+- Publish exact connection analysis of the flag and toric matrices in a unified spectral dataset, including algebraic-conjugate checks for the two repeated quadratic sectors. Parameter points and per-eigenvalue multiset multiplicities are explicit.
+- Standardize spectral sections across examples, fill summary Hodge numbers from the computed Hodge data, and use mathematical content links in catalogue tables.
+- Validate displayed spectra against exact matrices and Krylov determinants; repeat the flag connection analysis with the versioned exact algorithm.
+
 # Development version 1.0.6.dev0
 
 Stable flag v1.0.5 remains available. The current source and versioned 1.1.0.dev1 distributions retain development version labels.

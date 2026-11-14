@@ -3,12 +3,12 @@ from __future__ import annotations
 import argparse,json
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-HEADER='| Geometry | Ambient presentation | Dimension | Recorded Chern index | Ambient matrix rank | h(1,1) | Analysis |'
+HEADER='| Geometry | Ambient presentation | Dimension | Recorded Chern index | Ambient dimension | h(1,1) | Analysis |'
 
 def analysis_label(row):
- text=row['status']
+ text='[Operator]('+row['link']+')'
  if row.get('atomic_invariants_link'):
-  text+=' · [Atomic invariants]('+row['atomic_invariants_link']+')'
+  text+=' · [Hodge and atomic data]('+row['atomic_invariants_link']+')'
  return text
 
 def render_table(records):

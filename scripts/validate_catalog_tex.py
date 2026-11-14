@@ -22,7 +22,7 @@ DISPLAY_RE = re.compile(r"(?ms)^\s*\$\$\s*\n(.*?)^\s*\$\$\s*$")
 
 def blocks() -> list[tuple[Path, str]]:
     found: list[tuple[Path, str]] = []
-    for path in sorted(CATALOG.glob("*.md")):
+    for path in sorted(CATALOG.rglob("*.md")):
         text = path.read_text(encoding="utf-8")
         found.extend((path, match.group(1).strip()) for match in DISPLAY_RE.finditer(text))
     return found
@@ -41,6 +41,7 @@ def main() -> int:
     document = [
         r"\documentclass{article}",
         r"\usepackage{amsmath}",
+        r"\usepackage{amssymb}",
         r"\usepackage[margin=1in]{geometry}",
         r"\setcounter{MaxMatrixCols}{50}",
         r"\allowdisplaybreaks",

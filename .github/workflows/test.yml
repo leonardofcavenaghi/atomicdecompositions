@@ -122,7 +122,7 @@ jobs:
         run: python scripts/validate_flag_fourfolds.py
 
       - name: Validate saved regularized exponent multisets
-        run: python scripts/validate_exponent_multisets.py
+        run: python scripts/catalog_spectra.py --check
 
       - name: Verify explicit projective and bundle presentations
         run: python scripts/validate_geometric_presentations.py
@@ -132,6 +132,24 @@ jobs:
 
       - name: Validate displayed spectra and Hodge diamonds
         run: PYTHONDONTWRITEBYTECODE=1 python scripts/validate_catalog_math.py
+
+  connections:
+    name: Exact connection analysis ${{ matrix.shard }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: ["0/3", "1/3", "2/3"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install exact algebra dependencies
+        run: python -m pip install -e .
+      - name: Recompute and validate spectral data
+        run: python scripts/validate_exponent_multisets.py --shard "${{ matrix.shard }}"
 
   website:
     name: Documentation and browser regressions

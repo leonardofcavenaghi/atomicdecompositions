@@ -303,7 +303,7 @@
     },
     {
       "id": "G2-QUADRIC",
-      "title": "Quadric section of the adjoint G\u2082 variety",
+      "title": "Quadric section of the adjoint G₂ variety",
       "input": {
         "algebra": "G2",
         "keep": [
@@ -582,6 +582,326 @@
         },
         {
           "eigenvalues": "30 \\pm 24\\sqrt{3}",
+          "conjugate_count": 2,
+          "rho": 1,
+          "full_rank": 1,
+          "hodge_polynomial": {
+            "0": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "SPINOR-1X5-2",
+      "title": "Five hyperplanes and a quadric in the spinor tenfold",
+      "input": {
+        "algebra": "D5",
+        "keep": [
+          4
+        ],
+        "bundle": [
+          [
+            1
+          ],
+          [
+            1
+          ],
+          [
+            1
+          ],
+          [
+            1
+          ],
+          [
+            1
+          ],
+          [
+            2
+          ]
+        ]
+      },
+      "dimension": 4,
+      "fano_index": 1,
+      "curve_classes": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          4,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          5,
+          0
+        ]
+      ],
+      "basis_indices": [
+        0,
+        1,
+        2,
+        3,
+        5
+      ],
+      "basis_words": [
+        [],
+        [
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          3,
+          4
+        ]
+      ],
+      "basis_degrees": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "matrix_symbolic": [
+        [
+          "0",
+          "676*y1**2",
+          "55584*y1**3",
+          "1773408*y1**4",
+          "9838080*y1**5"
+        ],
+        [
+          "1",
+          "24*y1",
+          "2736*y1**2",
+          "89376*y1**3",
+          "506688*y1**4"
+        ],
+        [
+          "0",
+          "1",
+          "38*y1",
+          "1596*y1**2",
+          "9264*y1**3"
+        ],
+        [
+          "0",
+          "0",
+          "12/7",
+          "24*y1",
+          "1352*y1**2/7"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "7/2",
+          "0"
+        ]
+      ],
+      "matrix_at_one": [
+        [
+          "0",
+          "676",
+          "55584",
+          "1773408",
+          "9838080"
+        ],
+        [
+          "1",
+          "24",
+          "2736",
+          "89376",
+          "506688"
+        ],
+        [
+          "0",
+          "1",
+          "38",
+          "1596",
+          "9264"
+        ],
+        [
+          "0",
+          "0",
+          "12/7",
+          "24",
+          "1352/7"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "7/2",
+          "0"
+        ]
+      ],
+      "grading": [
+        [
+          "-2",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "2"
+        ]
+      ],
+      "charpoly": "lambda**5 - 86*lambda**4 - 4424*lambda**3 - 71120*lambda**2 - 489200*lambda - 1244000",
+      "cyclic_determinant_at_one": "72/7",
+      "elapsed_seconds": 66898.77148103714,
+      "method": "Existing flag 1.1.0.dev1 virtual localization, complete automatic curve list, checkpointed unmarked trees and marking sums, two independent exact evaluations",
+      "source_sha256": "dc66899a8c1f4e9333210a93db8d6dbbf195b270b930a5553c612a2f50f0799e",
+      "connection": {
+        "status": "computed",
+        "sectors": [
+          {
+            "eigenvalue_factor_K": "t - 10",
+            "factor_degree": 1,
+            "multiplicity_per_root": 3,
+            "total_rank": 3,
+            "geometric_multiplicity_per_root": 1,
+            "method": "exact_scalar_filtration",
+            "classes_mod_Z": {
+              "0": 1,
+              "1/2": 2
+            },
+            "representatives": {
+              "-1": 1,
+              "-1/2": 1,
+              "-3/2": 1
+            },
+            "indicial_polynomials": [
+              {
+                "polynomial": "678251782809452544*(s + 1)*(2*s + 1)*(2*s + 3)",
+                "valuation": 3
+              }
+            ],
+            "status": "computed"
+          },
+          {
+            "eigenvalue_factor_K": "t**2 + 116*t - 1244",
+            "factor_degree": 2,
+            "multiplicity_per_root": 1,
+            "total_rank": 2,
+            "geometric_multiplicity_per_root": 1,
+            "method": "exact_semisimple_residue",
+            "residue_charpoly": "s",
+            "geometric_multiplicity": 1,
+            "field_degree": 2,
+            "checks": {
+              "left_right_kernel_dimensions": true,
+              "pairing_invertible": true,
+              "kernel_identities": true,
+              "residue_charpoly_rational": true
+            },
+            "representatives": {
+              "0": 1
+            },
+            "classes_mod_Z": {
+              "0": 1
+            },
+            "status": "computed"
+          }
+        ],
+        "rank": 5,
+        "convention": "K=-M; nabla=d/du+K/u^2+G/u; exponent classes modulo Z",
+        "specialization": {
+          "y1": "1"
+        },
+        "logarithmic_jordan_structure": "not computed",
+        "scope": "Returned quantum cohomology sector; no rationality verdict"
+      },
+      "catalog_page": "records/spinor-1x5-2.md",
+      "hodge_numbers": {
+        "0,0": 1,
+        "1,1": 1,
+        "1,3": 16,
+        "2,2": 112,
+        "3,1": 16,
+        "3,3": 1,
+        "4,4": 1
+      },
+      "genericity": "Very general smooth member",
+      "coarse_factors": [
+        {
+          "eigenvalue": "-10",
+          "conjugate_count": 1,
+          "rho": 3,
+          "full_rank": 146,
+          "hodge_polynomial": {
+            "-2": 16,
+            "0": 114,
+            "2": 16
+          }
+        },
+        {
+          "eigenvalues": "58 \\pm 48\\sqrt{2}",
           "conjugate_count": 2,
           "rho": 1,
           "full_rank": 1,

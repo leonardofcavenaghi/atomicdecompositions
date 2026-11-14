@@ -22,6 +22,14 @@ The flag updates introduce parameter-name choices, correct empty CLI insertions 
 
 Contributor and maintenance guides describe the source tree, distribution snapshots, mathematical collections, generators and validation procedures. A machine-readable repository catalogue checks that tracked files, software distributions and exact datasets are registered. Historical utilities are indexed separately from maintained tools.
 
+## Catalogue notation and spectral data — 2026-11-14
+
+- The spinor-tenfold section by five hyperplanes and a quadric includes a fresh exact matrix, connection exponents and very-general atomic Hodge invariants.
+- A self-contained notation key defines the first-Chern operator, grading, quantum parameters, cyclic determinant, exponent multisets and atomic Hodge invariants.
+- All examples use the same first-Chern sign convention and state their spectral parameter point explicitly.
+- The spectral dataset includes exact connection analysis of the original flag matrices and the toric factors. Exponent tables preserve repeated entries and give values separately at each eigenvalue.
+- Catalogue summaries include the computed Hodge numbers and link directly to operators and Hodge data. Mathematical hypotheses accompany atomic interpretations.
+
 ## Website — 2026-11-13
 
 - A geometric catalogue organized by dimension and construction, with exact downloadable matrices, bases and gradings.

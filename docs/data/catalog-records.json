@@ -10,7 +10,7 @@
       "index": 9,
       "ambient": "A8",
       "matrix_rank": 9,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -29,7 +29,7 @@
       "index": 6,
       "ambient": "A5",
       "matrix_rank": 15,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -48,7 +48,7 @@
       "index": 8,
       "ambient": "A7",
       "matrix_rank": 8,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -67,7 +67,7 @@
       "index": 7,
       "ambient": "A8",
       "matrix_rank": 8,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -86,7 +86,7 @@
       "index": 6,
       "ambient": "A8",
       "matrix_rank": 8,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -105,7 +105,7 @@
       "index": 5,
       "ambient": "A5",
       "matrix_rank": 12,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -124,7 +124,7 @@
       "index": 5,
       "ambient": "A8",
       "matrix_rank": 8,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -143,7 +143,7 @@
       "index": 4,
       "ambient": "A4",
       "matrix_rank": 20,
-      "h11": "—",
+      "h11": 2,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -162,7 +162,7 @@
       "index": 4,
       "ambient": "A8",
       "matrix_rank": 8,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -181,7 +181,7 @@
       "index": 3,
       "ambient": "A8",
       "matrix_rank": 8,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -200,7 +200,7 @@
       "index": 2,
       "ambient": "A8",
       "matrix_rank": 8,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -219,7 +219,7 @@
       "index": 7,
       "ambient": "A6",
       "matrix_rank": 7,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -238,7 +238,7 @@
       "index": 6,
       "ambient": "A7",
       "matrix_rank": 7,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -257,7 +257,7 @@
       "index": 5,
       "ambient": "A4",
       "matrix_rank": 10,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -276,7 +276,7 @@
       "index": 5,
       "ambient": "A4",
       "matrix_rank": 10,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -295,7 +295,7 @@
       "index": 5,
       "ambient": "A7",
       "matrix_rank": 7,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -314,7 +314,7 @@
       "index": 5,
       "ambient": "A8",
       "matrix_rank": 7,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -333,7 +333,7 @@
       "index": 4,
       "ambient": "A5",
       "matrix_rank": 10,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -352,7 +352,7 @@
       "index": 4,
       "ambient": "A7",
       "matrix_rank": 7,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -371,7 +371,7 @@
       "index": 4,
       "ambient": "A8",
       "matrix_rank": 7,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -390,7 +390,7 @@
       "index": 3,
       "ambient": "A5",
       "matrix_rank": 10,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -409,7 +409,7 @@
       "index": 3,
       "ambient": "A7",
       "matrix_rank": 7,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -428,7 +428,7 @@
       "index": 3,
       "ambient": "A8",
       "matrix_rank": 7,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -447,7 +447,7 @@
       "index": 3,
       "ambient": "A8",
       "matrix_rank": 7,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -466,7 +466,7 @@
       "index": 2,
       "ambient": "A7",
       "matrix_rank": 7,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -485,7 +485,7 @@
       "index": 2,
       "ambient": "A8",
       "matrix_rank": 7,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -504,7 +504,7 @@
       "index": 2,
       "ambient": "A8",
       "matrix_rank": 7,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -523,7 +523,7 @@
       "index": 6,
       "ambient": "A5",
       "matrix_rank": 6,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -542,7 +542,7 @@
       "index": 5,
       "ambient": "G2",
       "matrix_rank": 6,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -561,7 +561,7 @@
       "index": 5,
       "ambient": "A6",
       "matrix_rank": 6,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -580,7 +580,7 @@
       "index": 4,
       "ambient": "A4",
       "matrix_rank": 8,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -599,7 +599,7 @@
       "index": 4,
       "ambient": "A4",
       "matrix_rank": 8,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -618,7 +618,7 @@
       "index": 4,
       "ambient": "B3",
       "matrix_rank": 6,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -637,7 +637,7 @@
       "index": 4,
       "ambient": "A6",
       "matrix_rank": 6,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -656,7 +656,7 @@
       "index": 4,
       "ambient": "A7",
       "matrix_rank": 6,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -711,7 +711,7 @@
       "index": 3,
       "ambient": "G2",
       "matrix_rank": 6,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -730,7 +730,7 @@
       "index": 3,
       "ambient": "A4",
       "matrix_rank": 8,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -749,7 +749,7 @@
       "index": 3,
       "ambient": "A5",
       "matrix_rank": 8,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -768,7 +768,7 @@
       "index": 3,
       "ambient": "A4",
       "matrix_rank": 8,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -787,7 +787,7 @@
       "index": 3,
       "ambient": "C3",
       "matrix_rank": 6,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -806,7 +806,7 @@
       "index": 3,
       "ambient": "B3",
       "matrix_rank": 6,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -825,7 +825,7 @@
       "index": 3,
       "ambient": "A6",
       "matrix_rank": 6,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -844,7 +844,7 @@
       "index": 3,
       "ambient": "A7",
       "matrix_rank": 6,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -863,7 +863,7 @@
       "index": 3,
       "ambient": "A8",
       "matrix_rank": 6,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -950,7 +950,7 @@
       "index": 2,
       "ambient": "A4",
       "matrix_rank": 12,
-      "h11": "—",
+      "h11": 2,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -969,7 +969,7 @@
       "index": 2,
       "ambient": "A4",
       "matrix_rank": 8,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -988,7 +988,7 @@
       "index": 2,
       "ambient": "A5",
       "matrix_rank": 8,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -1007,7 +1007,7 @@
       "index": 2,
       "ambient": "A4",
       "matrix_rank": 8,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -1026,7 +1026,7 @@
       "index": 2,
       "ambient": "B3",
       "matrix_rank": 6,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -1045,7 +1045,7 @@
       "index": 2,
       "ambient": "A6",
       "matrix_rank": 6,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -1064,7 +1064,7 @@
       "index": 2,
       "ambient": "A7",
       "matrix_rank": 6,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -1083,7 +1083,7 @@
       "index": 2,
       "ambient": "A7",
       "matrix_rank": 6,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -1102,7 +1102,7 @@
       "index": 2,
       "ambient": "A8",
       "matrix_rank": 6,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -3504,7 +3504,7 @@
       "index": 5,
       "ambient": "A4",
       "matrix_rank": 5,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -3523,7 +3523,7 @@
       "index": 5,
       "ambient": "A4",
       "matrix_rank": 5,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -3579,7 +3579,7 @@
       "index": 4,
       "ambient": "A3",
       "matrix_rank": 6,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -3598,7 +3598,7 @@
       "index": 4,
       "ambient": "A5",
       "matrix_rank": 5,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -3691,7 +3691,7 @@
       "index": 3,
       "ambient": "A4",
       "matrix_rank": 6,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -3710,7 +3710,7 @@
       "index": 3,
       "ambient": "A4",
       "matrix_rank": 6,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -3729,7 +3729,7 @@
       "index": 3,
       "ambient": "A5",
       "matrix_rank": 5,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -3748,7 +3748,7 @@
       "index": 3,
       "ambient": "A6",
       "matrix_rank": 5,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -4100,7 +4100,7 @@
       "index": 2,
       "ambient": "A3",
       "matrix_rank": 9,
-      "h11": "—",
+      "h11": 2,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -4119,7 +4119,7 @@
       "index": 2,
       "ambient": "G2",
       "matrix_rank": 5,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -4138,7 +4138,7 @@
       "index": 2,
       "ambient": "A4",
       "matrix_rank": 6,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -4157,7 +4157,7 @@
       "index": 2,
       "ambient": "A4",
       "matrix_rank": 6,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -4212,7 +4212,7 @@
       "index": 2,
       "ambient": "C3",
       "matrix_rank": 5,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -4231,7 +4231,7 @@
       "index": 2,
       "ambient": "B3",
       "matrix_rank": 5,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -4250,7 +4250,7 @@
       "index": 2,
       "ambient": "A5",
       "matrix_rank": 5,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -4269,7 +4269,7 @@
       "index": 2,
       "ambient": "A6",
       "matrix_rank": 5,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -4288,7 +4288,7 @@
       "index": 2,
       "ambient": "A7",
       "matrix_rank": 5,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -7292,7 +7292,7 @@
       "index": 1,
       "ambient": "A4",
       "matrix_rank": 9,
-      "h11": "—",
+      "h11": 2,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -7311,7 +7311,7 @@
       "index": 1,
       "ambient": "A4",
       "matrix_rank": 6,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -7330,7 +7330,7 @@
       "index": 1,
       "ambient": "A4",
       "matrix_rank": 6,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -7349,7 +7349,7 @@
       "index": 1,
       "ambient": "A4",
       "matrix_rank": 6,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -7368,7 +7368,7 @@
       "index": 1,
       "ambient": "A4",
       "matrix_rank": 6,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -7424,7 +7424,7 @@
       "index": 1,
       "ambient": "A5",
       "matrix_rank": 5,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -7443,7 +7443,7 @@
       "index": 1,
       "ambient": "A6",
       "matrix_rank": 5,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -7462,7 +7462,7 @@
       "index": 1,
       "ambient": "A6",
       "matrix_rank": 5,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -7481,7 +7481,7 @@
       "index": 1,
       "ambient": "A7",
       "matrix_rank": 5,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -7500,7 +7500,7 @@
       "index": 4,
       "ambient": "A3",
       "matrix_rank": 4,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -7519,7 +7519,7 @@
       "index": 4,
       "ambient": "A4",
       "matrix_rank": 4,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -7538,7 +7538,7 @@
       "index": 4,
       "ambient": "A3",
       "matrix_rank": 4,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -7557,7 +7557,7 @@
       "index": 3,
       "ambient": "A3",
       "matrix_rank": 4,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -7576,7 +7576,7 @@
       "index": 3,
       "ambient": "A4",
       "matrix_rank": 4,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -7595,7 +7595,7 @@
       "index": 3,
       "ambient": "A4",
       "matrix_rank": 4,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -7614,7 +7614,7 @@
       "index": 2,
       "ambient": "A2",
       "matrix_rank": 6,
-      "h11": "—",
+      "h11": 2,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -7633,7 +7633,7 @@
       "index": 2,
       "ambient": "A1xA1xA1",
       "matrix_rank": 8,
-      "h11": "—",
+      "h11": 3,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -7652,7 +7652,7 @@
       "index": 2,
       "ambient": "A3",
       "matrix_rank": 4,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -7671,7 +7671,7 @@
       "index": 2,
       "ambient": "A4",
       "matrix_rank": 4,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -7690,7 +7690,7 @@
       "index": 2,
       "ambient": "A4",
       "matrix_rank": 4,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -7709,7 +7709,7 @@
       "index": 2,
       "ambient": "A4",
       "matrix_rank": 4,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -7728,7 +7728,7 @@
       "index": 2,
       "ambient": "A4",
       "matrix_rank": 4,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -7747,7 +7747,7 @@
       "index": 2,
       "ambient": "A5",
       "matrix_rank": 4,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -7766,7 +7766,7 @@
       "index": 1,
       "ambient": "B2",
       "matrix_rank": 6,
-      "h11": "—",
+      "h11": 2,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -7785,7 +7785,7 @@
       "index": 1,
       "ambient": "A6",
       "matrix_rank": 4,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -7804,7 +7804,7 @@
       "index": 1,
       "ambient": "D5",
       "matrix_rank": 4,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -7823,7 +7823,7 @@
       "index": 1,
       "ambient": "A5",
       "matrix_rank": 4,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -7842,7 +7842,7 @@
       "index": 1,
       "ambient": "C3",
       "matrix_rank": 4,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -7861,7 +7861,7 @@
       "index": 1,
       "ambient": "G2",
       "matrix_rank": 4,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -7880,7 +7880,7 @@
       "index": 1,
       "ambient": "A2xA2",
       "matrix_rank": 6,
-      "h11": "—",
+      "h11": 2,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -7899,7 +7899,7 @@
       "index": 1,
       "ambient": "A1xA2",
       "matrix_rank": 6,
-      "h11": "—",
+      "h11": 2,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -7918,7 +7918,7 @@
       "index": 1,
       "ambient": "A1xA1xA2",
       "matrix_rank": 8,
-      "h11": "—",
+      "h11": 3,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -7937,7 +7937,7 @@
       "index": 1,
       "ambient": "A1xA1xA1xA1",
       "matrix_rank": 10,
-      "h11": "—",
+      "h11": 4,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -7956,7 +7956,7 @@
       "index": 1,
       "ambient": "A3",
       "matrix_rank": 6,
-      "h11": "—",
+      "h11": 2,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -7975,7 +7975,7 @@
       "index": 1,
       "ambient": "A3",
       "matrix_rank": 4,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -7994,7 +7994,7 @@
       "index": 1,
       "ambient": "A4",
       "matrix_rank": 4,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -8013,7 +8013,7 @@
       "index": 1,
       "ambient": "A4",
       "matrix_rank": 4,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -8032,7 +8032,7 @@
       "index": 1,
       "ambient": "A4",
       "matrix_rank": 4,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -8051,7 +8051,7 @@
       "index": 1,
       "ambient": "A4",
       "matrix_rank": 4,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -8070,7 +8070,7 @@
       "index": 1,
       "ambient": "A5",
       "matrix_rank": 4,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -8089,7 +8089,7 @@
       "index": 1,
       "ambient": "A6",
       "matrix_rank": 4,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -8108,7 +8108,7 @@
       "index": 3,
       "ambient": "A3",
       "matrix_rank": 3,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -8127,7 +8127,7 @@
       "index": 3,
       "ambient": "A4",
       "matrix_rank": 3,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -8146,7 +8146,7 @@
       "index": 3,
       "ambient": "A2",
       "matrix_rank": 3,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -8165,7 +8165,7 @@
       "index": 2,
       "ambient": "A3",
       "matrix_rank": 3,
-      "h11": "—",
+      "h11": 2,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -8184,7 +8184,7 @@
       "index": 2,
       "ambient": "A3",
       "matrix_rank": 3,
-      "h11": "—",
+      "h11": 2,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -8203,7 +8203,7 @@
       "index": 2,
       "ambient": "A4",
       "matrix_rank": 3,
-      "h11": "—",
+      "h11": 2,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -8222,7 +8222,7 @@
       "index": 2,
       "ambient": "A3",
       "matrix_rank": 3,
-      "h11": "—",
+      "h11": 2,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -8241,7 +8241,7 @@
       "index": 1,
       "ambient": "A3",
       "matrix_rank": 3,
-      "h11": "—",
+      "h11": 6,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -8260,7 +8260,7 @@
       "index": 1,
       "ambient": "A3",
       "matrix_rank": 3,
-      "h11": "—",
+      "h11": 7,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -8279,7 +8279,7 @@
       "index": 1,
       "ambient": "A4",
       "matrix_rank": 3,
-      "h11": "—",
+      "h11": 7,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -8298,7 +8298,7 @@
       "index": 1,
       "ambient": "A4",
       "matrix_rank": 3,
-      "h11": "—",
+      "h11": 6,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -8317,7 +8317,7 @@
       "index": 1,
       "ambient": "A3",
       "matrix_rank": 3,
-      "h11": "—",
+      "h11": 7,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -8336,7 +8336,7 @@
       "index": 1,
       "ambient": "A4",
       "matrix_rank": 3,
-      "h11": "—",
+      "h11": 6,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -8355,7 +8355,7 @@
       "index": 2,
       "ambient": "A3",
       "matrix_rank": 2,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -8374,7 +8374,7 @@
       "index": 2,
       "ambient": "A4",
       "matrix_rank": 2,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -8393,7 +8393,7 @@
       "index": 1,
       "ambient": "A3",
       "matrix_rank": 2,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -8412,7 +8412,7 @@
       "index": 1,
       "ambient": "A3",
       "matrix_rank": 2,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -8431,7 +8431,7 @@
       "index": 1,
       "ambient": "A4",
       "matrix_rank": 2,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -8450,7 +8450,7 @@
       "index": 1,
       "ambient": "A2",
       "matrix_rank": 2,
-      "h11": "—",
+      "h11": 1,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -8469,7 +8469,7 @@
       "index": 1,
       "ambient": "A3",
       "matrix_rank": 1,
-      "h11": "—",
+      "h11": 0,
       "status": "Matrix complete",
       "keywords": [
         "Schubert basis",
@@ -8537,6 +8537,39 @@
       "exponent_status": "complete",
       "exponent_factor_count": 2,
       "atomic_invariants_link": "invariants-fourfolds.md#g2-quadric"
+    },
+    {
+      "id": "SPINOR-1X5-2",
+      "title": "Five hyperplanes and a quadric in the spinor tenfold",
+      "link": "records/spinor-1x5-2.md",
+      "ambient": "D5 / kept root 4",
+      "dimension": 4,
+      "index": 1,
+      "matrix_rank": 5,
+      "h11": 1,
+      "status": "Matrix and exponents complete; very general irrational",
+      "keywords": [
+        "Five hyperplanes and a quadric in the spinor tenfold",
+        "spinor tenfold",
+        "orthogonal Grassmannian",
+        "five hyperplanes",
+        "quadric section",
+        "D5",
+        "fourfold",
+        "dimension 4",
+        "Fano",
+        "index one",
+        "irrationality",
+        "very general",
+        "regularized exponent multiset",
+        "Hodge polynomial",
+        "atomic invariants",
+        "quantum cohomology"
+      ],
+      "source": "flag-fourfolds.json",
+      "exponent_status": "complete",
+      "exponent_factor_count": 2,
+      "atomic_invariants_link": "invariants-fourfolds.md#spinor-1x5-2"
     }
   ]
 }

@@ -16,20 +16,32 @@ Source identifier: **HLM-29**; see [CKP and HLM terminology](../sources.md). [Ge
 [Catalogue](../index.md) · [4-folds](../fourfolds.md)
 
 
-<!-- saved-exponent-summary:start -->
-## Regularized exponent multisets
 
-Analysis point: `y1=2, y2=3`. These lists describe the computed ambient connection. Every row applies **separately to each eigenvalue** satisfying the displayed condition; repeated entries retain their multiplicity.
+## Spectrum and connection exponents
 
-The characteristic factors below use \(K^F=-A\), so an eigenvalue \(\lambda\) of \(A=c_1\star\) satisfies \(p_i(-\lambda)=0\). The classes are powers modulo \(\mathbb Z\); their order does not pair them term by term with the powers.
+**Parameter point:** `y1=2, y2=3`.
 
-| Spectral condition | Multiplicity per eigenvalue | \(F_{b,\lambda}\) | Computation |
-|---|---:|---|---|
-| \(p_{1}(-\lambda)=0\) | 3 | Unresolved | Unresolved |
-| \(p_{2}(-\lambda)=0\) | 1 | \(\{\!\{0\}\!\}\) | Complete |
+Here \(A(\mathbf y)\) is first-Chern quantum multiplication on the returned ambient space, and \(G\) is its centered codimension grading. Columns are images of the ordered basis. [Notation and scope](../notation.md).
 
-Unresolved factors have no computed multiset here. These ambient data alone do not identify full atoms or establish a rationality result. See the [connection conventions](../../toric/mathematics.md).
-<!-- saved-exponent-summary:end -->
+\(\chi_{A(\mathbf a)}(z)=\prod_i p_i(z)^{m_i}\), with the monic factors below. Each multiplicity and exponent multiset applies separately at every root \(\lambda\) of the indicated factor.
+
+| Factor \(p_i(z)\) | Distinct roots | Multiplicity \(m_i\) per root |
+|---|---:|---:|
+| \(z\) | 1 | 3 |
+| \(z^{6} - 432 z^{4} - 62208 z^{2} - 2985984\) | 6 | 1 |
+
+**Unit cyclic determinant:** \(\Delta_A(\mathbf a)=0\), in this basis.
+
+**Regularized exponent multisets** \(F_{\mathbf a,\lambda}\), with classes in \(\mathbb Q/\mathbb Z\):
+
+| Spectral condition | \(F_{\mathbf a,\lambda}\) per eigenvalue |
+|---|---|
+| \(\lambda=0\) | \(\{\!\{0,0,0\}\!\}\) |
+| \(\lambda^{6} - 432 \lambda^{4} - 62208 \lambda^{2} - 2985984=0\) | \(\{\!\{0\}\!\}\) |
+
+Repeated entries retain their multiplicity.
+
+[Exact matrix, ordered basis and grading](../../data/toric-fourfolds.json) · [Hodge data and atomic invariants](../invariants-fourfolds.md#hlm-29). The full atomic interpretation uses the Hodge-space and curve hypotheses stated there.
 
 ## Geometry and Hodge diamond
 
@@ -77,113 +89,24 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x3', 'x0', 'x3^2', 'x0^2', 'x0*x3', 'x0*x3^2', 'x0^2*x3', 'x0*x3^3']
 ```
 
-Curve enumeration: mori; 6 classes including zero.
+## Complete curve images
 
-### Quantum multiplication by $c_1(X)$
+The quadric is disjoint from the section corresponding to the trivial summand. Indeed, a quadric containing that section would have anticanonical degree zero on its base curves and would not be Fano. Projection from the section realizes the fourfold as a finite double cover of \(\mathbb P^2\times\mathbb P^2\), branched in bidegree \((2,2)\). If \(H,L\) are the two hyperplane classes, then \(\xi|_X=H+L\) and \(c_1(TX)=2(H+L)\).
 
-Columns are images of basis vectors. All omitted matrix entries are zero; indices are zero based.
-
-```python
-basis = ['1', 'x3', 'x0', 'x3^2', 'x0^2', 'x0*x3', 'x0*x3^2', 'x0^2*x3', 'x0*x3^3']
-```
-
-
-$$
-\mathrm{Gr}=\operatorname{diag}(-2,-1,-1,0,0,0,1,1,2)
-$$
-
-
-| $i$ | $j$ | $M_{ij}$ |
-|---|---|---|
-| 0 | 1 | $4 y_{1} y_{2} + 4 y_{2}$ |
-| 0 | 2 | $4 y_{2}$ |
-| 0 | 6 | $96 y_{1} y_{2}^{2}$ |
-| 0 | 7 | $32 y_{1} y_{2}^{2}$ |
-| 1 | 0 | $2$ |
-| 1 | 3 | $4 y_{1} y_{2} + 16 y_{2}$ |
-| 1 | 4 | $8 y_{2}$ |
-| 1 | 5 | $12 y_{2}$ |
-| 1 | 8 | $96 y_{1} y_{2}^{2}$ |
-| 2 | 3 | $12 y_{1} y_{2} - 12 y_{2}$ |
-| 2 | 4 | $- 4 y_{2}$ |
-| 2 | 5 | $4 y_{1} y_{2} - 8 y_{2}$ |
-| 3 | 1 | $2$ |
-| 3 | 6 | $20 y_{2}$ |
-| 3 | 7 | $8 y_{2}$ |
-| 4 | 6 | $12 y_{1} y_{2} + 12 y_{2}$ |
-| 4 | 7 | $4 y_{1} y_{2} + 4 y_{2}$ |
-| 5 | 2 | $2$ |
-| 5 | 6 | $4 y_{1} y_{2} - 32 y_{2}$ |
-| 5 | 7 | $- 12 y_{2}$ |
-| 6 | 3 | $6$ |
-| 6 | 5 | $2$ |
-| 6 | 8 | $12 y_{2}$ |
-| 7 | 3 | $-6$ |
-| 7 | 4 | $2$ |
-| 7 | 8 | $12 y_{1} y_{2} - 24 y_{2}$ |
-| 8 | 6 | $2$ |
-| 8 | 7 | $\frac{2}{3}$ |
-
-
-### Specialized spectrum
-
-At $y_1=2,\ y_2=3$, let $K^F=-M$.
-
-
-$$
-\Delta=0
-$$
-
-
-Cyclic at this point: False.
-Numerical eigenvalues of $M$ (multiplicities retained):
-
-| $j$ | Real part | Imaginary part |
-|---|---|---|
-| 1 | 23.53751012 | 0 |
-| 2 | -23.53751012 | 0 |
-| 3 | 2.490736917 | -8.198229182 |
-| 4 | 2.490736917 | 8.198229182 |
-| 5 | -2.490736917 | -8.198229182 |
-| 6 | -2.490736917 | 8.198229182 |
-| 7 | 0 | 0 |
-| 8 | 0 | 0 |
-| 9 | 0 | 0 |
-
-### Exact characteristic factors and connection exponents
-
-Factor 1: multiplicity 3; 1 distinct root(s) of $\det(xI-K^F)$.
-
-
-$$
-\begin{aligned}p_{1}(x)&=x\end{aligned}
-$$
-
-
-Complete exponent computation: False.
-**Unresolved:** 
+For an effective curve put \(a=H\cdot C\) and \(b=L\cdot C\). These are nonnegative integers. A contribution to the fourfold operator has \(2(a+b)\le5\), so \(a+b\le2\). In the stated ray order, its ambient image is \((b,b,b,a+b,a,a,a)\). This gives the exhaustive list below; it does not assert existence of a curve for every candidate image.
 
 ```python
-the eigenvalue 0 has a 3-dimensional kernel, so its generalized eigenspace is not a single Jordan block and the factor is not cyclic (check cyclic_determinant first)
+from gwtoric import ToricVariety
+
+ambient = ToricVariety(rays, cones)
+betas = [[0, 0, 0, 0, 0, 0, 0],
+         [0, 0, 0, 1, 1, 1, 1],
+         [1, 1, 1, 1, 0, 0, 0],
+         [0, 0, 0, 2, 2, 2, 2],
+         [1, 1, 1, 2, 1, 1, 1],
+         [2, 2, 2, 2, 0, 0, 0]]
+A, G, basis = ambient.small_quantum_multiplication(
+    betas=betas, K=K, workers=1, cache=False)
 ```
 
-Factor 2: multiplicity 1; 6 distinct root(s) of $\det(xI-K^F)$.
-
-
-$$
-\begin{aligned}p_{2}(x)&=x^{6} - 432 x^{4} - 62208 x^{2} - 2985984\end{aligned}
-$$
-
-
-$$
-\text{Powers}=\{0\}
-$$
-
-
-$$
-\text{Classes modulo }\mathbb Z=\{0\}
-$$
-
-
-Complete exponent computation: True.
-Exponent lists are multisets per eigenvalue in each factor. They describe the computed ambient sector only.
+The existing localization routine on this list reproduces the displayed symbolic matrix, ordered basis and grading exactly.

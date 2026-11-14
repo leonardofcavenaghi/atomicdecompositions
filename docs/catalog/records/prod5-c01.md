@@ -16,20 +16,32 @@ keywords: ["dimension 5", "fivefold", "Complete intersection in a product of pro
 [Catalogue](../index.md) · [5-folds](../fivefolds.md)
 
 
-<!-- saved-exponent-summary:start -->
-## Regularized exponent multisets
 
-Analysis point: `y1=2, y2=3, y3=5`. These lists describe the computed ambient connection. Every row applies **separately to each eigenvalue** satisfying the displayed condition; repeated entries retain their multiplicity.
+## Spectrum and connection exponents
 
-The characteristic factors below use \(K^F=-A\), so an eigenvalue \(\lambda\) of \(A=c_1\star\) satisfies \(p_i(-\lambda)=0\). The classes are powers modulo \(\mathbb Z\); their order does not pair them term by term with the powers.
+**Parameter point:** `y1=2, y2=3, y3=5`.
 
-| Spectral condition | Multiplicity per eigenvalue | \(F_{b,\lambda}\) | Computation |
-|---|---:|---|---|
-| \(p_{1}(-\lambda)=0\) | 11 | Unresolved | Unresolved |
-| \(p_{2}(-\lambda)=0\) | 1 | \(\{\!\{0\}\!\}\) | Complete |
+Here \(A(\mathbf y)\) is first-Chern quantum multiplication on the returned ambient space, and \(G\) is its centered codimension grading. Columns are images of the ordered basis. [Notation and scope](../notation.md).
 
-Unresolved factors have no computed multiset here. These ambient data alone do not identify full atoms or establish a rationality result. See the [connection conventions](../../toric/mathematics.md).
-<!-- saved-exponent-summary:end -->
+\(\chi_{A(\mathbf a)}(z)=\prod_i p_i(z)^{m_i}\), with the monic factors below. Each multiplicity and exponent multiset applies separately at every root \(\lambda\) of the indicated factor.
+
+| Factor \(p_i(z)\) | Distinct roots | Multiplicity \(m_i\) per root |
+|---|---:|---:|
+| \(z + 20\) | 1 | 11 |
+| \(z^{9} - 180 z^{8} - 25776 z^{7} - 4896960 z^{6} - 444907008 z^{5} - 36841328640 z^{4} - 1967691890688 z^{3} - 85755764736000 z^{2} - 1971756564480000 z - 16119716249600000\) | 9 | 1 |
+
+**Unit cyclic determinant:** \(\Delta_A(\mathbf a)=0\), in this basis.
+
+**Regularized exponent multisets** \(F_{\mathbf a,\lambda}\), with classes in \(\mathbb Q/\mathbb Z\):
+
+| Spectral condition | \(F_{\mathbf a,\lambda}\) per eigenvalue |
+|---|---|
+| \(\lambda + 20=0\) | \(\{\!\{0,0,0,0,0,0,0,0,0,\frac{1}{2},\frac{1}{2}\}\!\}\) |
+| \(\lambda^{9} - 180 \lambda^{8} - 25776 \lambda^{7} - 4896960 \lambda^{6} - 444907008 \lambda^{5} - 36841328640 \lambda^{4} - 1967691890688 \lambda^{3} - 85755764736000 \lambda^{2} - 1971756564480000 \lambda - 16119716249600000=0\) | \(\{\!\{0\}\!\}\) |
+
+Repeated entries retain their multiplicity.
+
+[Exact matrix, ordered basis and grading](../../data/toric-fivefolds.json) · [Hodge data and atomic invariants](../invariants-fivefolds.md#prod5-c01). The full atomic interpretation uses the Hodge-space and curve hypotheses stated there.
 
 ## Construction and Hodge data
 
@@ -91,7 +103,7 @@ h2_basis = [[1, 1, 1, 0, 0, 0, 0, 0, 0], [0, 0, 0, 1, 1, 1, 0, 0, 0], [0, 0, 0, 
 
 ### Computed quantum multiplication
 
-Write $M=c_1(X)\star$ and use the ordered basis $e_0,\ldots,e_{19}$ below. Columns are images: $M e_j=\sum_i M_{ij}e_i$.
+Write $A(\mathbf y)=c_1(X)\star$ and use the ordered basis $e_0,\ldots,e_{19}$ below. Columns are images: $A(\mathbf y)e_j=\sum_i A_{ij}(\mathbf y)e_i$.
 
 ```python
 basis = ['1', 'x6', 'x3', 'x0', 'x6^2', 'x3^2', 'x0^2', 'x3*x6', 'x0*x6', 'x0*x3', 'x3*x6^2', 'x3^2*x6', 'x0*x6^2', 'x0*x3^2', 'x0^2*x6', 'x0*x3*x6', 'x3^2*x6^2', 'x0*x3*x6^2', 'x0*x3^2*x6', 'x0*x3^2*x6^2']
@@ -99,13 +111,13 @@ basis = ['1', 'x6', 'x3', 'x0', 'x6^2', 'x3^2', 'x0^2', 'x3*x6', 'x0*x6', 'x0*x3
 
 
 $$
-\mathrm{Gr}=\operatorname{diag}\!\left(- \frac{5}{2},- \frac{3}{2},- \frac{3}{2},- \frac{3}{2},- \frac{1}{2},- \frac{1}{2},- \frac{1}{2},- \frac{1}{2},- \frac{1}{2},- \frac{1}{2},\frac{1}{2},\frac{1}{2},\frac{1}{2},\frac{1}{2},\frac{1}{2},\frac{1}{2},\frac{3}{2},\frac{3}{2},\frac{3}{2},\frac{5}{2}\right).
+G=\operatorname{diag}\!\left(- \frac{5}{2},- \frac{3}{2},- \frac{3}{2},- \frac{3}{2},- \frac{1}{2},- \frac{1}{2},- \frac{1}{2},- \frac{1}{2},- \frac{1}{2},- \frac{1}{2},\frac{1}{2},\frac{1}{2},\frac{1}{2},\frac{1}{2},\frac{1}{2},\frac{1}{2},\frac{3}{2},\frac{3}{2},\frac{3}{2},\frac{5}{2}\right).
 $$
 
 
 **Exact matrix:**  every nonzero entry is listed below; all omitted entries are zero. Indices are zero based. No Novikov specialization has been made in this table.
 
-| Row $i$ | Column $j$ | $M_{ij}$ |
+| Row $i$ | Column $j$ | $A_{ij}(\mathbf y)$ |
 |---|---|---|
 | 0 | 1 | $4 y_{1}^{2} + 40 y_{1} y_{2} + 40 y_{1} y_{3}$ |
 | 0 | 2 | $40 y_{1} y_{2} + 4 y_{2}^{2} + 40 y_{2} y_{3}$ |
@@ -392,54 +404,3 @@ $$
 | 19 | 18 | $2$ |
 
 Curve enumeration: positive; 66 curve classes including zero.
-
-## Spectrum and connection
-
-**Specialization:**  $y_1=2,\ y_2=3,\ y_3=5$. The connection operator is $K^F=-M$. The exact factors below refer to $K^F$; the numerical eigenvalues refer to $M=c_1\star$.
-
-### Exact characteristic polynomial of $K^F$
-
-
-$$
-\det(xI-K^F)=p_{1}(x)^{11}\,p_{2}(x).
-$$
-
-
-$$
-\begin{aligned}p_{1}(x)&=x - 20.\end{aligned}
-$$
-
-
-$$
-\begin{aligned}p_{2}(x)&=x^{9} + 180 x^{8} - 25776 x^{7} + 4896960 x^{6} - 444907008 x^{5}\\&+36841328640 x^{4} - 1967691890688 x^{3} + 85755764736000 x^{2}\\&+16119716249600000 - 1971756564480000 x.\end{aligned}
-$$
-
-
-Cyclic determinant: $\Delta=0$. The specialized operator is not cyclic.
-
-### Numerical eigenvalues of $c_1\star$
-
-Values are rounded to eight significant digits; repeated eigenvalues are retained with multiplicity.
-
-| $j$ | Real part | Imaginary part | $j$ | Real part | Imaginary part |
-|---|---|---|---|---|---|
-| 1 | 323.56569 | 0 | 11 | -20 | 0 |
-| 2 | 8.1501755 | -78.102243 | 12 | -20 | 0 |
-| 3 | 8.1501755 | 78.102243 | 13 | -20 | 0 |
-| 4 | -16.61076 | -68.001237 | 14 | -20 | 0 |
-| 5 | -16.61076 | 68.001237 | 15 | -20 | 0 |
-| 6 | -43.399786 | -47.644364 | 16 | -20 | 0 |
-| 7 | -43.399786 | 47.644364 | 17 | -20 | 0 |
-| 8 | -20 | 0 | 18 | -20 | 0 |
-| 9 | -20 | 0 | 19 | -19.922474 | -0.22830906 |
-| 10 | -20 | 0 | 20 | -19.922474 | 0.22830906 |
-
-### Connection exponents
-
-| Factor | Powers | Classes mod $\mathbb Z$ | Status / method |
-|---|---|---|---|
-| $p_{1}$ | unresolved | unresolved | not computed |
-| $p_{2}$ | $0$ | $0$ | complete / residue |
-
-Powers and residue classes are multisets for each eigenvalue in the indicated factor, not paired lists. A simple-factor power applies at every root of that factor.
-**Unresolved factor $p_{1}$:**  the eigenvalue 20 has a 6-dimensional kernel, so its generalized eigenspace is not a single Jordan block and the factor is not cyclic (check cyclic_determinant first).

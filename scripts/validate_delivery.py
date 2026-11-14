@@ -22,6 +22,10 @@ for page in pages:
  assert not re.search(r'\b(?:QD5|QC5|PB5|PROD5|PCI5)-[A-Z0-9-]+\b|GM-20',text),(page,'synthetic public label')
  for phrase in ('saved computation records','newly published fan-based matrices','prepared source bundle','our internal conversations','Saved record:','This page transcribes','fan and divisor certificate','Workbook source ID','Flag mathematics','Toric mathematics'):
   assert phrase.casefold() not in text.casefold(),(page,'internal public copy',phrase)
+ if page.is_relative_to(DOCS/'catalog'):
+  for phrase in ('Complete exponent computation:', 'Status / method', 'Matrix complete', 'Ambient matrix incomplete', 'saved-exponent-summary:', '**Unresolved:**'):
+   assert phrase.casefold() not in text.casefold(),(page,'workflow label in catalogue',phrase)
+  assert not re.search(r'\b(?=[0-9a-f]{0,11}[a-f])[0-9a-f]{12}\b',text),(page,'visible machine identifier')
 
 for page in pages:
  for target in links(page.read_text()):
@@ -35,6 +39,7 @@ fresh=json.loads((DOCS/'data/flag-fourfolds.json').read_text())['records']
 new=[r for name in ['fourfolds','fivefolds'] for r in json.loads((DOCS/'data'/('toric-'+name+'.json')).read_text())['records']]
 assert len(catalog)==len(original)+len(new)+len(fresh) and len({r['id'] for r in catalog})==len(catalog)
 sources={r['id']:r for r in original+new+fresh}
+atomic={r['id']:r for r in json.loads((DOCS/'data/atomic-invariants.json').read_text())['records']}
 assert set(sources)=={r['id'] for r in catalog}
 master=(DOCS/'catalog/index.md').read_text()
 qd5=next(r for r in catalog if r['id']=='QD5-001')
@@ -42,6 +47,7 @@ assert 'Quartic double cover' in qd5['title']
 assert 'weighted hypersurface' in qd5['keywords']
 for row in catalog:
  source=sources[row['id']]
+ assert row['h11']==next((v['value'] for v in atomic[row['id']]['full_hodge_numbers'] if (v['p'],v['q'])==(1,1)),0),(row['id'],'summary Hodge number')
  assert row['dimension']==source['dimension'],row['id']
  assert f']({row["link"]})' in master,row['id']
  if row['link'].startswith('records/'):
