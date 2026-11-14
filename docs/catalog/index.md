@@ -321,7 +321,7 @@ Search by geometric name, construction, dimension or numerical data. The table f
 | [Fanography 1-9](fanography.md#fano-variety-1-9) | G2 | 3 | 1 | 4 | 1 | [Operator](fanography.md#fano-variety-1-9) · [Hodge and atomic data](invariants-threefolds.md#6f17aaf4290d) |
 | [Fanography 2-24](fanography.md#fano-variety-2-24) | A2xA2 | 3 | 1 | 6 | 2 | [Operator](fanography.md#fano-variety-2-24) · [Hodge and atomic data](invariants-threefolds.md#3538d68c1866) |
 | [Fanography 2-34](fanography.md#fano-variety-2-34) | A1xA2 | 3 | 1 | 6 | 2 | [Operator](fanography.md#fano-variety-2-34) · [Hodge and atomic data](invariants-threefolds.md#ea3e323d9fcb) |
-| [Fanography 3-11](fanography.md#fano-variety-3-11) | A1xA1xA2 | 3 | 1 | 8 | 3 | [Operator](fanography.md#fano-variety-3-11) · [Hodge and atomic data](invariants-threefolds.md#a8e28f47c77f) |
+| [Fanography 3-17](fanography.md#fano-variety-3-17) | A1xA1xA2 | 3 | 1 | 8 | 3 | [Operator](fanography.md#fano-variety-3-17) · [Hodge and atomic data](invariants-threefolds.md#a8e28f47c77f) |
 | [Fanography 4-1](fanography.md#fano-variety-4-1) | A1xA1xA1xA1 | 3 | 1 | 10 | 4 | [Operator](fanography.md#fano-variety-4-1) · [Hodge and atomic data](invariants-threefolds.md#96d957608200) |
 | [Fl(1,3,4) / O(1,1)+O(1,1)](additional.md#fl134o11o11) | A3 | 3 | 1 | 6 | 2 | [Operator](additional.md#fl134o11o11) · [Hodge and atomic data](invariants-threefolds.md#d3154e614ad6) |
 | [Gr(2,4) / O(3)](grassmannians.md#gr24o3) | A3 | 3 | 1 | 4 | 1 | [Operator](grassmannians.md#gr24o3) · [Hodge and atomic data](invariants-threefolds.md#83c013d9bdf4) |

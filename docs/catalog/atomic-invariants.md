@@ -335,7 +335,7 @@ These rules give the full polynomial by adding the assigned vanishing-cohomology
 | [Fanography 1-9](fanography.md#fano-variety-1-9) | 3 | 4 | 4 | [Atomic decomposition](invariants-threefolds.md#6f17aaf4290d) |
 | [Fanography 2-24](fanography.md#fano-variety-2-24) | 3 | 6 | 6 | [Atomic decomposition](invariants-threefolds.md#3538d68c1866) |
 | [Fanography 2-34](fanography.md#fano-variety-2-34) | 3 | 6 | 6 | [Atomic decomposition](invariants-threefolds.md#ea3e323d9fcb) |
-| [Fanography 3-11](fanography.md#fano-variety-3-11) | 3 | 8 | 8 | [Atomic decomposition](invariants-threefolds.md#a8e28f47c77f) |
+| [Fanography 3-17](fanography.md#fano-variety-3-17) | 3 | 8 | 8 | [Atomic decomposition](invariants-threefolds.md#a8e28f47c77f) |
 | [Fanography 4-1](fanography.md#fano-variety-4-1) | 3 | 10 | 10 | [Hodge and spectral data](invariants-threefolds.md#96d957608200) |
 | [Fl(1,3,4) / O(1,1)+O(1,1)](additional.md#fl134o11o11) | 3 | 6 | 6 | [Atomic decomposition](invariants-threefolds.md#d3154e614ad6) |
 | [Gr(2,4) / O(3)](grassmannians.md#gr24o3) | 3 | 4 | 4 | [Atomic decomposition](invariants-threefolds.md#83c013d9bdf4) |

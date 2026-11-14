@@ -56,6 +56,14 @@ def validate():
         K = parse_k(spec['bundle'], X) if isinstance(spec['bundle'], str) else spec['bundle']
         assert X.dimension - (ci_rank(K) if K else 0) == record['dimension'], (name, 'dimension')
         index, betas = X.fano_index_and_betas(K)
+        if spec == {'algebra': 'A1xA1xA2', 'keep': [1, 2, 3], 'bundle': [[1, 1, 1]]}:
+            # Fanography 3-17: independent intersection-number identification.
+            # A tridegree (1,1,1) divisor in P1 x P1 x P2 has -K=(1,1,2).
+            # The top product is the coefficient of h1*h2*h3**2.
+            h1, h2, h3 = sp.symbols('h1 h2 h3')
+            volume = sp.Poly((h1+h2+2*h3)**3*(h1+h2+h3), h1, h2, h3).coeff_monomial(h1*h2*h3**2)
+            assert volume == 36 and name == 'Fanography 3-17'
+            assert record['catalog_anchor'] == 'fano-variety-3-17'
         assert index == record['fano_index'], (name, 'Fano index')
         assert [list(b) for b in betas] == record['curve_classes'], (name, 'automatic curve list')
         words = X.class_words()

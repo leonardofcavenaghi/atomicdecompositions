@@ -1131,43 +1131,13 @@ The displayed matrices are \(A(\mathbf 1)\), first-Chern quantum multiplication 
 
 ### Fano Variety 3-11
 ??? example "3-11"
-    - **Ambient Space:** `A1xA1xA2`
-    - **Keep Nodes:** `1,2,3`
-    - **Bundle K:** `1,1,1`
-    - **Ambient Index:** `1`
-    - **Dimension:** `3`
-    - **Basis Rank:** `8`
-    - **Description:** Divisor of tridegree $(1,1,1)$ in $\mathbb{P}^1 \times \mathbb{P}^1 \times \mathbb{P}^2$; a blow-up of the quadric $Q^3$ along a conic.
-    - **Realization type:** Line-bundle complete intersection.
 
-    ??? note "Spectrum and connection exponents"
+    **Description:** Blowup of the degree-seven del Pezzo threefold, itself the blowup of projective three-space at a point, along a smooth elliptic curve cut out by two divisors in half the anticanonical class. Its anticanonical volume is $28$ and $h^{1,2}=1$.
 
-        **Parameter point:** `y1=2, y2=3, y3=5`.
+    **Realization type:** Catalog only — no computed matrix is provided here.
 
-        Here \(A(\mathbf y)\) is first-Chern quantum multiplication on the returned ambient space, and \(G\) is its centered codimension grading. Columns are images of the ordered basis. [Notation and scope](notation.md).
+    **Reference:** [Fanography 3-11](https://fanography.info/3-11/).
 
-        \(\chi_{A(\mathbf a)}(z)=\prod_i p_i(z)^{m_i}\), with the monic factors below. Each multiplicity and exponent multiset applies separately at every root \(\lambda\) of the indicated factor.
-
-        | Factor \(p_i(z)\) | Distinct roots | Multiplicity \(m_i\) per root |
-        |---|---:|---:|
-        | \(z^{8} + 10 z^{7} - 127 z^{6} - 2920 z^{5} - 33342 z^{4} - 234470 z^{3} - 670544 z^{2} - 309240 z + 353425\) | 8 | 1 |
-
-        **Unit cyclic determinant:** \(\Delta_A(\mathbf a)=13834679905648998704\), in this basis.
-
-        **Regularized exponent multisets** \(F_{\mathbf a,\lambda}\), with classes in \(\mathbb Q/\mathbb Z\):
-
-        | Spectral condition | \(F_{\mathbf a,\lambda}\) per eigenvalue |
-        |---|---|
-        | \(\lambda^{8} + 10 \lambda^{7} - 127 \lambda^{6} - 2920 \lambda^{5} - 33342 \lambda^{4} - 234470 \lambda^{3} - 670544 \lambda^{2} - 309240 \lambda + 353425=0\) | \(\{\!\{0\}\!\}\) |
-
-        Repeated entries retain their multiplicity.
-
-        [Exact matrix, ordered basis and grading](../data/localization-results.json) · [Hodge data and atomic invariants](invariants-threefolds.md#a8e28f47c77f). The full atomic interpretation uses the Hodge-space and curve hypotheses stated there.
-
-    ??? note "Quantum Matrix ($y=1$)"
-        $$
-        \begin{bmatrix}0 & 2 & 2 & 2 & 0 & 3 & 3 & 8\\1 & -1 & 1 & 0 & 0 & 2 & 0 & 3\\1 & 1 & -1 & 0 & 0 & 0 & 2 & 3\\2 & 1 & 1 & 0 & 2 & 2 & 2 & 0\\0 & 1 & 1 & -4 & -2 & -2 & -2 & -2\\0 & 2 & 0 & 3 & 1 & 0 & 2 & 2\\0 & 0 & 2 & 3 & 1 & 2 & 0 & 2\\0 & 0 & 0 & 0 & 2 & 3 & 3 & 0\end{bmatrix}
-        $$
 
 ### Fano Variety 3-12
 ??? example "3-12"
@@ -1211,11 +1181,45 @@ The displayed matrices are \(A(\mathbf 1)\), first-Chern quantum multiplication 
 
 ### Fano Variety 3-17
 ??? example "3-17"
+    - **Ambient Space:** `A1xA1xA2`
+    - **Keep Nodes:** `1,2,3`
+    - **Bundle K:** `1,1,1`
+    - **Ambient Index:** `1`
+    - **Dimension:** `3`
+    - **Basis Rank:** `8`
+    - **Description:** Divisor of tridegree $(1,1,1)$ in $\mathbb P^1\times\mathbb P^1\times\mathbb P^2$, with anticanonical volume $36$ and $h^{1,2}=0$.
+    - **Realization type:** Line-bundle complete intersection.
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
+    ??? note "Spectrum and connection exponents"
 
-    **Reference:** [Fanography 3-17](https://fanography.info/3-17).
+        **Parameter point:** `y1=2, y2=3, y3=5`.
 
+        Here \(A(\mathbf y)\) is first-Chern quantum multiplication on the returned ambient space, and \(G\) is its centered codimension grading. Columns are images of the ordered basis. [Notation and scope](notation.md).
+
+        \(\chi_{A(\mathbf a)}(z)=\prod_i p_i(z)^{m_i}\), with the monic factors below. Each multiplicity and exponent multiset applies separately at every root \(\lambda\) of the indicated factor.
+
+        | Factor \(p_i(z)\) | Distinct roots | Multiplicity \(m_i\) per root |
+        |---|---:|---:|
+        | \(z^{8} + 10 z^{7} - 127 z^{6} - 2920 z^{5} - 33342 z^{4} - 234470 z^{3} - 670544 z^{2} - 309240 z + 353425\) | 8 | 1 |
+
+        **Unit cyclic determinant:** \(\Delta_A(\mathbf a)=13834679905648998704\), in this basis.
+
+        **Regularized exponent multisets** \(F_{\mathbf a,\lambda}\), with classes in \(\mathbb Q/\mathbb Z\):
+
+        | Spectral condition | \(F_{\mathbf a,\lambda}\) per eigenvalue |
+        |---|---|
+        | \(\lambda^{8} + 10 \lambda^{7} - 127 \lambda^{6} - 2920 \lambda^{5} - 33342 \lambda^{4} - 234470 \lambda^{3} - 670544 \lambda^{2} - 309240 \lambda + 353425=0\) | \(\{\!\{0\}\!\}\) |
+
+        Repeated entries retain their multiplicity.
+
+        [Exact matrix, ordered basis and grading](../data/localization-results.json) · [Hodge data and atomic invariants](invariants-threefolds.md#a8e28f47c77f). The full atomic interpretation uses the Hodge-space and curve hypotheses stated there.
+
+    ??? note "Quantum Matrix ($y=1$)"
+        $$
+        \begin{bmatrix}0 & 2 & 2 & 2 & 0 & 3 & 3 & 8\\1 & -1 & 1 & 0 & 0 & 2 & 0 & 3\\1 & 1 & -1 & 0 & 0 & 0 & 2 & 3\\2 & 1 & 1 & 0 & 2 & 2 & 2 & 0\\0 & 1 & 1 & -4 & -2 & -2 & -2 & -2\\0 & 2 & 0 & 3 & 1 & 0 & 2 & 2\\0 & 0 & 2 & 3 & 1 & 2 & 0 & 2\\0 & 0 & 0 & 0 & 2 & 3 & 3 & 0\end{bmatrix}
+        $$
+
+    **Classification reference:** [Fanography 3-17](https://fanography.info/3-17/).
 
 ### Fano Variety 3-18
 ??? example "3-18"

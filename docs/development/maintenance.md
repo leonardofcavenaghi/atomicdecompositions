@@ -106,7 +106,9 @@ node scripts/test_catalog_navigation.js
 node scripts/test_gui_controls.js
 ```
 
-Equation rendering is a separate step after MkDocs. It produces standalone SVG and accessible MathML, rejects unwrapped or invalid mathematical source, and versions local styles and scripts by content. Rebuilding with MkDocs after this step would replace those rendered pages. The rendering build obtains the pinned MathJax runtime and includes that same SVG runtime under `assets/mathjax/`, with its license. Published equations are already complete; newly inserted source equations can use the local runtime, with bounded fallback attempts. Browser recovery tests use the pinned artifact when simulating alternate URLs, independently of CDN availability.
+Equation rendering is a separate step after MkDocs. It produces standalone SVG and accessible MathML, rejects unwrapped or invalid mathematical source, and versions local styles and scripts by content. Rebuilding with MkDocs after this step would replace those rendered pages. The maintained browser loader is `docs/javascripts/mathjax-loader.js`, referenced directly by `mkdocs.yml`. The build generates copies for older loader URLs so there is one source to update.
+
+The rendering build obtains the pinned MathJax runtime and includes that same SVG runtime under `assets/mathjax/`, with its license. Published equations are already complete; newly inserted source equations can use the local runtime, with bounded fallback attempts. Browser recovery tests use the pinned artifact when simulating alternate URLs, independently of CDN availability.
 
 The browser tests exercise local HTTP servers. They check catalogue navigation, scientific search, inline mathematical baselines, mobile layout, first opening with JavaScript disabled or math CDNs blocked, and interface copy/download controls. Run them in an environment with a browser and local server access.
 

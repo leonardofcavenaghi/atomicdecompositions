@@ -92,7 +92,7 @@ async function checkFirstOpen(browser, base, mode, runtimeBytes) {
       }));
       throw new Error('Late equation recovery failed: '+JSON.stringify({mode,sources,pageErrors,...state})+'; '+error.message);
     }
-    if (!intercepted || pageErrors.length) throw new Error(JSON.stringify({mode,intercepted,pageErrors}));
+    if (!intercepted || pageErrors.length) throw new Error(JSON.stringify({mode,intercepted,sources,pageErrors}));
     if (mode==='failed-primary' && !sources.some(url=>url.includes('cdnjs'))) throw new Error('Dynamic alternate runtime was not used');
     console.log('First-open static math and dynamic recovery passed: '+JSON.stringify({...first,mode,documents,sources}));
   } finally { await cold.close(); }
@@ -199,6 +199,8 @@ async function main() {
     console.log('Inline equations follow the surrounding text baseline.');
     const mathStyles=await page.$eval('link[href*="stylesheets/extra.css"]', link=>link.href);
     if (!new URL(mathStyles).searchParams.has('v')) throw new Error('Math stylesheet can reuse an outdated cached version');
+    const mathLoader=await page.$eval('script[src*="javascripts/mathjax-loader.js"]',script=>script.src);
+    if (!new URL(mathLoader).searchParams.has('v')) throw new Error('The maintained math loader is not content-versioned');
 
 
     await page.goto(`${base}/`, {waitUntil: 'domcontentloaded'});

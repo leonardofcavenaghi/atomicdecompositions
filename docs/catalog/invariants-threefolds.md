@@ -286,9 +286,9 @@ Full Hodge polynomial: \(P_X(t)=6\).
 
 <span id="a8e28f47c77f"></span>
 
-## Fanography 3-11
+## Fanography 3-17
 
-[Construction, inputs and matrix](fanography.md#fano-variety-3-11)
+[Construction, inputs and matrix](fanography.md#fano-variety-3-17)
 
 **Dimension:** 3. **Ambient rank:** 8. **Full cohomology rank:** 8. **Full Hodge-invariant rank:** 8.
 

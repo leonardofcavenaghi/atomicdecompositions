@@ -48,6 +48,10 @@ async function main() {
     if (!runtimeBytes || runtimeBytes.length < 100000) throw new Error('Incomplete MathJax runtime');
     fs.writeFileSync(path.join(runtimeDirectory, 'tex-mml-svg.js'), runtimeBytes);
     fs.copyFileSync(path.join(site, 'assets/mathjax-LICENSE.txt'), path.join(runtimeDirectory, 'LICENSE.txt'));
+    // Preserve old published URLs without maintaining divergent source files.
+    for (const name of ['mathjax-loader-v2.js', 'mathjax.js']) {
+      fs.copyFileSync(path.join(site, 'javascripts/mathjax-loader.js'), path.join(site, 'javascripts', name));
+    }
     const htmlFiles = files(site);
     let total = 0;
     const coverageErrors=[];

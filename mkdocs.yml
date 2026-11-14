@@ -72,7 +72,7 @@ extra_javascript:
   - https://code.jquery.com/jquery-3.7.0.min.js
   - https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js
   - javascripts/catalog.js
-  - javascripts/mathjax-loader-v2.js
+  - javascripts/mathjax-loader.js
 
 extra_css:
   - https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css
