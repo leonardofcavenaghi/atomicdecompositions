@@ -23,8 +23,8 @@ enumerative geometry, with a focus on quantum cohomology of flag and toric varie
 
 ## Software and sources
 
-The open-source [gwflags repository](https://github.com/leonardofcavenaghi/atomicdecompositions)
-contains the localization algorithms, tests and catalog-generation tools.
+The open-source [GEOATOMS repository](https://github.com/leonardofcavenaghi/atomicdecompositions)
+contains the flag and toric localization engines (`gwflags`, `gwtoric`, `gwapp`), test suites, and catalogue-generation tools.
 AI coding tools, including Google Antigravity, have assisted software and
 website development under the contributors’ mathematical supervision.
 

@@ -35,7 +35,7 @@ $$
 \Delta_A(\mathbf a)=\det\bigl[\mathbf 1,A(\mathbf a)\mathbf 1,\ldots,A(\mathbf a)^{N-1}\mathbf 1\bigr].
 $$
 
-Its nonvanishing proves that these quantum powers span the computed space. The **regularized-exponent multiset** \(F_{\mathbf a,\lambda}\) records the classes \(-\theta+\mathbb Z\) of residue eigenvalues \(\theta\) of the regular-singular connection factor at \(\lambda\), with repetitions retained. For a coarse Hodge atom \(\alpha\), \(\rho_\alpha\) counts rational Hodge-invariant directions, and \(P_\alpha(t)=\sum_{p,q}h^{p,q}(E^\alpha)t^{p-q}\) records the Hodge-cocharacter weights with positive multiplicities.
+Its nonvanishing proves that these quantum powers span the computed space. The **regularized-exponent multiset** \(F_{\mathbf a,\lambda}\) records the classes \(-\theta+\mathbb Z\) of residue eigenvalues \(\theta\) of the regular-singular connection factor at \(\lambda\), with repetitions retained. For a coarse Hodge atom \(\alpha\) represented by \(E^\alpha\) with complexification \(E^\alpha_{\mathbb C}=E^\alpha\otimes_{\mathbb Q}\mathbb C\), the rational Hodge-invariant count and Hodge polynomial are \(\rho_\alpha=\dim_{\mathbb C}\bigl((E^\alpha_{\mathbb C})^{\mathrm{Hod}_{\mathbb C}}\bigr)\) and \(P_\alpha(t)=\sum_{p,q}h^{p,q}(E^\alpha)t^{p-q}\), recording Hodge-cocharacter weights with positive multiplicities.
 
 The matrix size \(N\) is the ambient cohomology dimension, which may differ from both the full rational Hodge-invariant dimension and the total cohomology dimension. Atomic interpretations drawn from these matrices require the cohomological and genericity hypotheses stated with each result. A zero cyclic determinant at a particular point does not imply vanishing at every point.
 
@@ -351,3 +351,6 @@ Search by geometric name, construction, dimension or numerical data. The table f
 | [Gr(4,5) / O(1)+O(1)+O(2)](grassmannians.md#gr45o1o1o2) | A4 | 1 | 1 | 2 | 1 | [Operator](grassmannians.md#gr45o1o1o2) · [Hodge and atomic data](invariants-points-curves.md#af3a5033ba7a) |
 | [P2 / O(2)](projective.md#p2o2) | A2 | 1 | 1 | 2 | 1 | [Operator](projective.md#p2o2) · [Hodge and atomic data](invariants-points-curves.md#81b66f277517) |
 | [Gr(3,4) / O(1)+O(1)+O(1)](grassmannians.md#gr34o1o1o1) | A3 | 0 | 1 | 1 | 0 | [Operator](grassmannians.md#gr34o1o1o1) · [Hodge and atomic data](invariants-points-curves.md#c427c3fda1be) |
+
+
+Related: [Algebraic-geometry databases](databases.md) and the companion software [GKMtools.jl](../software/gkmtools.md).

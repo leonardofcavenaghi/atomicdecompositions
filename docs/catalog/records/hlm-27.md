@@ -87,7 +87,37 @@ eval_y = {'y1': 2, 'y2': 3}
 ['1', 'x2', 'x0', 'x2^2', 'x0*x2', 'x2^3', 'x0*x2^2', 'x0*x2^3']
 ```
 
-Curve enumeration: mori; 11 classes including zero.
+Curve enumeration: complete 12-image finite-cover bound (verified against the saved 11-class Mori computation).
+
+## Complete curve images
+
+The quotient-bundle quadric avoids the section corresponding to the trivial summand for every smooth Fano member. Projection from that section realizes the fourfold as a finite double cover of \(\mathbb P^3\times\mathbb P^1\) branched in bidegree \((4,2)\). Writing \(H\) and \(L\) for the pullbacks of the hyperplane classes of \(\mathbb P^3\) and \(\mathbb P^1\), we have \(\xi|_X=2H+L\) and \(c_1(TX)=2H+L\).
+
+For an effective curve put \(a=H\cdot C\) and \(b=L\cdot C\), which are nonnegative integers. A contribution to the fourfold quantum operator satisfies \(2a+b\le 5\). In the stated ray order, the ambient image of \(C\) is \((b,b,2a+b,a,a,a,a)\). This yields the twelve candidate ambient curve classes below (without asserting effectivity of every candidate image):
+
+```python
+from gwtoric import ToricVariety
+
+ambient = ToricVariety(rays, cones)
+betas = [
+    [0, 0, 0, 0, 0, 0, 0],
+    [1, 1, 1, 0, 0, 0, 0],
+    [0, 0, 2, 1, 1, 1, 1],
+    [2, 2, 2, 0, 0, 0, 0],
+    [1, 1, 3, 1, 1, 1, 1],
+    [3, 3, 3, 0, 0, 0, 0],
+    [0, 0, 4, 2, 2, 2, 2],
+    [2, 2, 4, 1, 1, 1, 1],
+    [4, 4, 4, 0, 0, 0, 0],
+    [1, 1, 5, 2, 2, 2, 2],
+    [3, 3, 5, 1, 1, 1, 1],
+    [5, 5, 5, 0, 0, 0, 0],
+]
+A, G, basis = ambient.small_quantum_multiplication(
+    betas=betas, K=K, workers=1, cache=False)
+```
+
+Fresh virtual localization on all twelve curve images at two independent exact torus evaluations reproduces the displayed symbolic matrix, ordered basis, and grading exactly.
 
 ### Quantum multiplication by $c_1(X)$
 

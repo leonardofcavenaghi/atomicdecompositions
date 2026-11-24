@@ -93,6 +93,7 @@ nav:
       - Grassmannian constructions: catalog/grassmannians.md
       - Homogeneous constructions: catalog/additional.md
       - Fano threefold reference: catalog/fanography.md
+      - Algebraic-geometry databases: catalog/databases.md
       - Sources and terminology: catalog/sources.md
       - Atomic invariants: catalog/atomic-invariants.md
       - Exact datasets: catalog/datasets.md
@@ -108,6 +109,7 @@ nav:
       - Flag 1.1.0.dev1: software/flags-1.1.0.md
       - Toric 1.1.0.dev1: software/toric-1.1.0.md
       - Combined 1.1.0.dev1: software/combined.md
+      - GKMtools.jl (Julia/OSCAR): software/gkmtools.md
       - Version comparison: software/launch-2026-11.md
       - Inputs and outputs: software/input-output.md
       - Notation and compatibility: software/notation.md

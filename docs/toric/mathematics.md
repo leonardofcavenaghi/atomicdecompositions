@@ -36,7 +36,7 @@ $$
 
 The interface checks nontrivial nef defining summands; it does not certify smoothness of a chosen section.
 
-For \(\gamma_k=\iota^*\alpha_k\), with \(\alpha_k\in H^{2q_k}(Y)\), Theorem 3.17 assumes
+For primary insertions \(\gamma_k=\iota^*\alpha_k\) with \(\alpha_k\in H^{2q_k}(Y)\), the dimension axiom requires
 
 
 $$
@@ -45,7 +45,7 @@ $$
 $$
 
 
-For this ambient curve class, twisted localization computes the sum
+For this ambient curve class, Euler-twisted localization computes the pushed-forward sum
 
 
 $$
@@ -54,11 +54,11 @@ $$
 $$
 
 
-Thus the ambient curve coordinate alone does not distinguish different target classes with the same pushforward. The ample complete-intersection and dimension hypotheses discussed in Appendix B supply the relevant homology identifications in the supported cases; nefness alone should not be substituted for all of those hypotheses.
+Thus the ambient curve coordinate alone does not distinguish different target classes with the same pushforward. When \(L_1,\ldots,L_s\) are ample and \(d\ge 3\), the Lefschetz hyperplane theorem identifies \(H_2(X,\mathbb Z)\cong H_2(Y,\mathbb Z)\); nefness alone does not supply this identification.
 
 ## Decorated-tree localization
 
-For nonzero effective \(\beta\), Theorem 3.12 indexes the fixed loci by decorated trees \(\Gamma=(\mathcal T,\ell,\mathbf d,\mathrm{mk})\). Here \(\mathcal T\) is the underlying tree, with vertex set \(V(\Gamma)\) and edge set \(E(\Gamma)\). Vertices are labelled by maximal cones, edges by invariant curves and covering degrees \(d_e>0\), and \(\mathrm{mk}\) assigns the marked points. For ambient insertions \(\alpha_1,\ldots,\alpha_m\), the ordinary localization formula is
+For nonzero effective \(\beta\), torus-fixed loci in \(\overline{\mathcal M}_{0,m}(Y,\beta)\) are indexed by decorated trees \(\Gamma=(\mathcal T,\ell,\mathbf d,\mathrm{mk})\). Here \(\mathcal T\) is the underlying tree, with vertex set \(V(\Gamma)\) and edge set \(E(\Gamma)\). Vertices are labelled by maximal cones, edges by invariant curves and covering degrees \(d_e>0\), and \(\mathrm{mk}\) assigns the marked points. For ambient insertions \(\alpha_1,\ldots,\alpha_m\), the untwisted localization formula is
 
 
 $$
@@ -72,7 +72,7 @@ $$
 $$
 
 
-Here \(s_\sigma\) is fixed-point restriction, \(e_\sigma\) is the tangent Euler class, and \(\Omega_e\) is the edge factor defined in §3.3. The number \(\operatorname{val}(v)\) counts incident edges, and \(\omega_{v,e}\) is the target tangent weight divided by the covering degree \(d_e\). With \(n_v=\operatorname{val}(v)+|\mathrm{mk}^{-1}(v)|\),
+Here \(s_\sigma\) is fixed-point restriction, \(e_\sigma\) is the tangent Euler class at the torus-fixed point corresponding to \(\sigma\), and \(\Omega_e\) is the invariant-curve edge factor (normal-bundle contribution along the \(d_e\)-fold cover of the invariant \(\mathbb P^1\)). The number \(\operatorname{val}(v)\) counts incident edges, and \(\omega_{v,e}\) is the target tangent weight divided by the covering degree \(d_e\). With \(n_v=\operatorname{val}(v)+|\mathrm{mk}^{-1}(v)|\),
 
 
 $$
@@ -84,7 +84,7 @@ $$
 
 For unstable vertices, write \(\Theta_v\): one edge/no markings gives \(\omega_{v,e}\); one edge/one marking gives \(1\); two edges/no markings give \((\omega_{v,e_1}+\omega_{v,e_2})^{-1}\).
 
-For the complete intersection, Theorem 3.17 inserts \(\operatorname{Tw}(\Gamma;\lambda_{\mathrm{aux}})\) into this summand, uses the ambient lifts \(\alpha_k\), and specializes the auxiliary Euler parameters and positive-degree torus classes **after taking the complete sum**. Torus evaluations in the software are exact. Two independent evaluations provide a consistency check; selecting one evaluation omits that comparison. The evaluation count is part of the result metadata.
+For the complete intersection \(X=Z(Y,E)\), the Euler twist \(\operatorname{Tw}(\Gamma;\lambda_{\mathrm{aux}})\) is inserted into this summand using the ambient lifts \(\alpha_k\), and the auxiliary Euler parameters and positive-degree torus classes are specialized **after taking the complete sum**. Torus evaluations in the software are exact. Two independent evaluations provide a consistency check; selecting one evaluation omits that comparison. The evaluation count is part of the result metadata.
 
 No insertion is required for the cubic-surface line count: `projective_space(3).gw([], beta=(1,1,1,1), K=[[3]])` returns **27**. The unstable-vertex rules do not create extra marked points. The toric degree-zero GW entry path uses its documented three-insertion classical convention.
 
@@ -120,105 +120,29 @@ This is the ambient projection of small quantum multiplication. The software ret
 
 ## Finite curve searches
 
-The dimension condition gives the bound \((c_1(TY)-c_1(E))\cdot\beta\le\dim X+1\) for matrix contributions. If the residual divisor is ample on the ambient Mori cone, this yields a finite ambient search. If \(X\) is Fano but the residual is not ample on \(Y\), the additional positivity hypothesis of Proposition B.3 is relevant; target Fano positivity alone is not an ambient stopping rule.
+The dimension condition gives the bound \((c_1(TY)-c_1(E))\cdot\beta\le\dim X+1\) for matrix contributions. If the residual divisor is ample on the ambient Mori cone, this yields a finite ambient search. If \(X\) is Fano but the residual divisor is only nef on \(Y\), an additional geometric positivity bound on effective target curves (such as a finite-cover projection or explicit Mori-cone inequalities) is required; target Fano positivity alone is not an ambient stopping rule.
 
 Keep the returned curve list and enumeration mode. Supported modes distinguish positive ambient bounds, conditional Mori searches, suggested inequalities and ample-degree cutoffs. A sampled inequality check is not a proof of the Mori cone; a cutoff is exact only on its selected region.
 
-## Quantum multiplication and grading
-
-For a homogeneous basis \((T_i)\) of the full cohomology of \(X\), let \(g_{ab}=\int_X T_a\smile T_b\), with inverse \((g^{ab})\). The small quantum product is
-
-$$
-T_i\star T_j
-=\sum_{a,b}\left(\sum_{\beta\in\mathrm{NE}(X)}
-\langle T_i,T_j,T_a\rangle^X_{0,\beta}\,q^\beta\right)g^{ab}T_b.
-$$
-
-The degree-zero term is cup product. The inverse pairing is part of the product; three-point invariants alone are not its matrix coefficients.
-
-For the returned ambient sector \(V\), let \((e_1,\ldots,e_N)\) be the ordered homogeneous basis and \(d=\dim X\). The Novikov coordinates are \(\mathbf y\), and the displayed matrix is \(A(\mathbf y)\), the ambient projection of \(c_1(TX)\star(-)\). The symbol \(\star\) denotes the small quantum product. Its entries and grading satisfy
-
-$$
-A(\mathbf y)e_j=\sum_{i=1}^{N}A_{ij}(\mathbf y)e_i,
-\qquad
-G=\operatorname{diag}\left(\operatorname{codim}(e_i)-\frac d2\right).
-$$
-
-Thus columns are images of basis vectors, and the grading uses complex codimension. The matrix size \(N\) is the dimension of the computed space, not automatically the full cohomology dimension.
-
-At the stated parameter assignment \(\mathbf a\), write \(A(\mathbf a)=A(\mathbf y)|_{\mathbf y=\mathbf a}\). The characteristic polynomial is
-
-$$
-\chi_{A(\mathbf a)}(z)=\det(zI_N-A(\mathbf a))
-=\prod_jp_j(z)^{m_j},
-$$
-
-where the \(p_j\) are monic, pairwise coprime, square-free factors. Each root \(\lambda\) of \(p_j\) is an eigenvalue of \(A(\mathbf a)\) with algebraic multiplicity \(m_j\). Let \(\mathbf 1\) be the coordinate column of the unit in the returned basis. The unit cyclic determinant is
-
-$$
-\Delta_A(\mathbf a)
-=\det\bigl[\mathbf 1,A(\mathbf a)\mathbf 1,\ldots,
-A(\mathbf a)^{N-1}\mathbf 1\bigr].
-$$
-
-Its nonvanishing proves that the quantum powers of the unit span \(V\). Its vanishing at a particular assignment does not imply vanishing at every point.
-
 ## Regularized-exponent multisets
 
-With auxiliary coordinate \(u\), the small-locus quantum connection has convention
+On the returned homogeneous basis \((e_1,\ldots,e_N)\) of \(V\), the ambient operator \(A(\mathbf y)\) (columns as images of basis vectors) and centered grading \(G=\operatorname{diag}\bigl(\operatorname{codim}(e_i)-d/2\bigr)\) determine the small-locus quantum connection
 
 $$
 \nabla_{\partial_u}=\partial_u-\frac{A(\mathbf y)}{u^2}+\frac{G}{u}.
 $$
 
-For an eigenvalue \(\lambda\) at \(\mathbf a\), a formal factor of unramified exponential type has the form
+At a parameter assignment \(\mathbf a\), the characteristic polynomial \(\chi_{A(\mathbf a)}(z)=\det(zI_N-A(\mathbf a))=\prod_j p_j(z)^{m_j}\), unit cyclic determinant \(\Delta_A(\mathbf a)=\det[\mathbf 1,A(\mathbf a)\mathbf 1,\ldots,A(\mathbf a)^{N-1}\mathbf 1]\), formal unramified decomposition \(M_{\mathbf a,\lambda}\simeq\mathcal E^{\lambda/u}\otimes R_{\mathbf a,\lambda}\), and regularized-exponent multisets \(F_{\mathbf a,\lambda}\) (classes \(-\theta+\mathbb Z\) in \(\mathbb Q/\mathbb Z\) with multiplicity) follow the common definitions in the [catalogue notation key](../catalog/notation.md#connection-exponents).
 
-$$
-M_{\mathbf a,\lambda}\simeq\mathcal E^{\lambda/u}\otimes R_{\mathbf a,\lambda},
-$$
+## Hodge data, atomic invariants and rationality criteria
 
-without a substitution by fractional powers of \(u\). Here \(\mathcal E^{\lambda/u}\) denotes the rank-one connection \(\partial_u-\lambda/u^2\), and \(R_{\mathbf a,\lambda}\) is regular singular. If its residue eigenvalues \(\theta\) are rational, the regularized-exponent multiset is
+As detailed in the [catalogue notation key](../catalog/notation.md#full-cohomology-and-atomic-invariants) and [atomic invariants](../catalog/atomic-invariants.md), interpreting ambient spectral factors as coarse Hodge atoms—with rational Hodge-invariant rank \(\rho_\alpha\) and Hodge polynomial \(P_\alpha(t)=\sum_{p,q}h^{p,q}(E^\alpha)t^{p-q}\)—requires identifying \(V\) with \(H^*_{\mathrm{Hod}}(X)=\bigoplus_p(H^{2p}(X,\mathbb Q)\cap H^{p,p}(X))\), a complete curve list, and the required geometric persistence and primitive-assignment hypotheses.
 
-$$
-F_{\mathbf a,\lambda}
-=\{\!\{-\theta+\mathbb Z:
-\theta\text{ is a residue eigenvalue of }R_{\mathbf a,\lambda}\}\!\}.
-$$
-
-Each class in \(\mathbb Q/\mathbb Z\) is counted with its algebraic multiplicity. In particular, \(\{\!\{0,\tfrac12,\tfrac12\}\!\}\) has three entries. The reported powers \(s=-\theta\) give these classes modulo \(\mathbb Z\), usually represented in \([0,1)\). Neither multiset is a termwise pairing of independently sorted lists.
-
-A condition \(p_j(\lambda)=0\) refers to an eigenvalue of \(A(\mathbf a)\). A row grouping several roots applies separately at each indicated root and at that analysis point. The grading diagonal alone is not the residue spectrum of the formal factors.
-
-## Hodge data and atomic invariants
-
-The rational Hodge-invariant subspace is
-
-$$
-H^*_{\mathrm{Hod}}(X)
-=\bigoplus_p\bigl(H^{2p}(X,\mathbb Q)\cap H^{p,p}(X)\bigr).
-$$
-
-Ambient classes lie in this space, but primitive cohomology can contain additional rational Hodge classes. Equality of the ambient sector with \(H^*_{\mathrm{Hod}}(X)\), a complete curve calculation and the geometric persistence hypotheses are required to interpret ambient cyclicity as the generic Hodge-factor criterion. A finite numerical specialization is not by itself an admissibility or persistence argument.
-
-Let \(E^\alpha\) be a coarse Hodge atom and \(E^\alpha_{\mathbb C}=E^\alpha\otimes_{\mathbb Q}\mathbb C\). The Hodge group \(\mathrm{Hod}\) is the kernel of the Mumford–Tate group's character on \(\mathbb Q(1)\). Its invariant space and Hodge-cocharacter weight spaces define
-
-$$
-\rho_\alpha=\dim_{\mathbb C}
-\bigl(E^\alpha_{\mathbb C}\bigr)^{\mathrm{Hod}_{\mathbb C}},
-\qquad
-P_\alpha(t)=\sum_k\dim_{\mathbb C}
-\bigl(E^\alpha_{\mathbb C}\bigr)^k t^k.
-$$
-
-A Hodge type \((p,q)\) has cocharacter weight \(p-q\). Hence the full Hodge polynomial is \(P_X(t)=\sum_{p,q}h^{p,q}(X)t^{p-q}\), with nonnegative dimensions and no alternating signs for odd cohomology. The constant coefficient of \(P_\alpha\) can exceed \(\rho_\alpha\); \(P_\alpha(1)\) is its full rank. Full atomic polynomials require the geometric assignment of cohomology beyond the ambient sector. See the [catalogue notation key](../catalog/notation.md) and [atomic invariants](../catalog/atomic-invariants.md) for the definitions and their use in examples.
-
-## Rationality criteria
-
-The cyclic-factor obstruction applies to dimensions 2–4 and requires a cyclic generic Hodge factor of unramified exponential type with rational residues. Its separate fivefold criterion, Theorem 4.10 attributed to Cavenaghi–Katzarkov–Kontsevich, assumes a **coarse Hodge atom** \(\alpha\) with \(\rho_\alpha\le3\) and \([t^3]P_\alpha(t)>0\). A small-matrix eigenvalue or a computed exponent list alone does not establish these hypotheses. Apply this criterion only after identifying the full coarse atom and its Hodge polynomial.
+The cyclic-factor rationality obstruction applies in dimensions 2–4 and requires a cyclic generic Hodge factor of unramified exponential type with rational residues. The fivefold irrationality criterion (Cavenaghi–Katzarkov–Kontsevich, as stated in Brockhof–Galindo–Katzarkov–Muniz Martins) assumes a **coarse Hodge atom** \(\alpha\) with \(\rho_\alpha\le3\) and \([t^3]P_\alpha(t)>0\). A small-matrix eigenvalue or a computed exponent list alone does not establish these hypotheses; apply either criterion only after identifying the full coarse atom and its Hodge polynomial.
 
 ## Sources and reproducibility
 
-References: M. Brockhof, G. Galindo, L. Katzarkov and P. A. Muniz Martins, *On the atomic decomposition of complete intersections in toric varieties*, Theorems 3.12 and 3.17, Definition 4.2, §4.3 and Appendix B. Virtual localization follows Liu, Liu–Sheshmani and Graber–Pandharipande. For homogeneous spaces, see B. Alexeev et al., [*On the atomic decomposition of complete intersection in flag varieties*](https://arxiv.org/abs/2609.21914).
+References: M. Brockhof, G. Galindo, L. Katzarkov and P. A. Muniz Martins, *On the atomic decomposition of complete intersections in toric varieties* (virtual localization on smooth projective toric complete intersections, Mori-cone stopping criteria, and fivefold applications). Virtual localization follows Liu, Liu–Sheshmani and Graber–Pandharipande. For homogeneous spaces, see B. Alexeev et al., [*On the atomic decomposition of complete intersection in flag varieties*](https://arxiv.org/abs/2609.21914).
 
 The [universal catalogue](../catalog/index.md) is organized by geometric dimension and construction. Its CKP and HLM identifiers refer to Coates–Kasprzyk–Prince, [*Four-dimensional Fano toric complete intersections*](https://arxiv.org/abs/1409.5030), and Hausen–Laface–Mauz, [*On smooth Fano fourfolds of Picard number two*](https://arxiv.org/abs/1907.08000). CKP period buckets do not identify varieties solely by equality of periods.
 

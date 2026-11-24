@@ -20,7 +20,7 @@ $$
 
 It records the Hodge cocharacter with positive multiplicities. Its constant coefficient can exceed \(\rho_\alpha\); it does not count only rational Hodge classes. For the hyperplane and quadric section of LG(3,6), \(\rho=3\), while \(P(t)=14t^2+102+14t^{-2}\).
 
-A characteristic factor of degree d describes d conjugate eigenvalues. A listed atomic polynomial applies separately at each root; the consistency checks sum over all these roots. The polynomials refer to \(A=c_1(X)\star\). Each spectral or atomic table states its own parameter point; compare factors by their polynomials, since a different point can change their factorization. See the [notation key](notation.md).
+A characteristic factor of degree \(d\) describes \(d\) distinct eigenvalues (and \(d\) Galois-conjugate eigenvalues whenever the factor is irreducible over \(\mathbb Q\)). A listed atomic polynomial applies separately at each root; the consistency checks sum over all these roots. The polynomials refer to \(A=c_1(X)\star\). Each spectral or atomic table states its own parameter point; compare factors by their polynomials, since a different point can change their factorization. See the [notation key](notation.md).
 
 ## When the criterion identifies atoms
 
@@ -34,17 +34,17 @@ For the [incidence complete intersection in Fl(1,2,5)](additional.md#fl125o01o02
 
 ## Primitive assignment rules
 
-**Full Tate cohomology.** When the full cohomology is Tate and equals the recorded space, each eigenvalue factor of multiplicity m has rho=m and Hodge polynomial m.
+**Full Tate cohomology.** When the full cohomology is Tate and equals the recorded space, each eigenvalue factor of multiplicity \(m\) has \(\rho_\alpha=m\) and Hodge polynomial \(P_\alpha(t)=m\).
 
-**Chern index at least two.** For an ample intersection, monodromy acts irreducibly on the vanishing middle cohomology and quantum multiplication acts there by a scalar. Returning to the same degree requires a curve of Chern degree one. An index of at least two excludes it, so the scalar is zero.
+**Chern index at least two.** For an ample complete intersection, Lefschetz-pencil monodromy acts irreducibly on the complexified vanishing middle cohomology, so by Schur's lemma first-Chern quantum multiplication acts there by a scalar (which is rational because the operator is defined over \(\mathbb Q\)). Returning to the same degree requires a curve of Chern degree one. An index of at least two excludes it, so the scalar is zero.
 
-**Unique rational eigenvalue.** The scalar action is rational. The ambient characteristic relation annihilates the full ring: it annihilates the unit, and multiplication is associative. If it has a single rational root, that root therefore carries all vanishing cohomology.
+**Unique rational eigenvalue.** By absolute monodromy irreducibility on the vanishing middle cohomology and rationality of first-Chern multiplication, the action on vanishing cohomology is multiplication by a rational scalar. The ambient characteristic relation annihilates the full ring: it annihilates the unit, and multiplication is associative. If it has a single rational root, that root therefore carries all vanishing cohomology.
 
-**Projective complete intersection of index one.** For a projective complete intersection of degrees d_i and index one, the primitive eigenvalue is minus the product of d_i factorials times q; the source and shift are cited above.
+**Projective complete intersection of index one.** For a projective complete intersection of degrees \(d_1,\ldots,d_s\) and index one, the primitive eigenvalue is \(-\bigl(\prod_i d_i!\bigr)q\); the source and shift are cited above.
 
-**Odd middle cohomology.** When all even cohomology is ambient and odd cohomology is middle-dimensional, its products lie in the ambient algebra. Choose paired odd classes u,v. The nonzero product Theta=u star v is a common eigenvector; associativity and v star v=0 imply Theta squared=0. Its supporting rational spectral factor must therefore be repeated. A unique repeated rational factor fixes the assignment.
+**Odd middle cohomology.** When all even cohomology is ambient and odd cohomology is middle-dimensional, products of odd classes lie in the ambient algebra. Choose paired odd classes \(\alpha,\beta\) with nondegenerate Poincaré pairing. The nonzero product \(\Theta=\alpha\star\beta\) is a common eigenvector; associativity and \(\beta\star\beta=0\) imply \(\Theta\star\Theta=0\). Its supporting rational spectral factor must therefore be repeated. A unique repeated rational factor fixes the assignment.
 
-**Projective bundle over a cubic threefold.** In CKP-169 and CKP-567, the projective-bundle theorem gives two Tate-shifted copies of the cubic threefold middle Hodge structure. A simple one-dimensional even spectral factor cannot carry odd cohomology: nondegeneracy and associativity would contradict the square-zero relation of an odd class. Hence all odd classes lie on the unique repeated quadratic factor. Irreducible cubic-threefold monodromy reduces the action to a rational two-by-two multiplicity operator; each of its two roots carries one copy, with polynomial 5t+5/t.
+**Projective bundle over a cubic threefold.** In CKP-169 and CKP-567, the projective-bundle theorem gives two Tate-shifted copies of the cubic threefold middle Hodge structure. A simple one-dimensional even spectral factor cannot carry odd cohomology: nondegeneracy and associativity would contradict the square-zero relation of an odd class. Hence all odd classes lie on the unique repeated quadratic factor. Absolute irreducibility of cubic-threefold monodromy reduces the action to a rational \(2\times 2\) multiplicity operator; each of its two roots carries one copy, with Hodge polynomial \(5t+5t^{-1}\).
 
 These rules give the full polynomial by adding the assigned vanishing-cohomology polynomial to the ambient contribution. Every certified decomposition is checked against the full Hodge polynomial and the total Hodge-invariant rank.
 

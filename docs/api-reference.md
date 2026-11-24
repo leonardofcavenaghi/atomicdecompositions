@@ -2,7 +2,9 @@
 description: Python API for gwflags: flag varieties, homogeneous bundles, Gromov-Witten invariants, and small quantum multiplication.
 ---
 
-# GWFlags API Reference
+# GWFlags Python API Reference (`1.0.6.dev0`)
+
+This reference documents the repository-root `gwflags` `1.0.6.dev0` Python API. For the staged execution, Hodge, and connection-analysis wrappers in `1.1.0.dev1`, see the [Flag 1.1.0.dev1 guide](software/flags-1.1.0.md); for toric varieties and the combined application, see the [Toric 1.1.0.dev1 guide](software/toric-1.1.0.md) and [Combined 1.1.0.dev1 guide](software/combined.md).
 
 `gwflags` evaluates decorated-tree formulas with exact Python/Sage
 computations. The default numerical path evaluates the

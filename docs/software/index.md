@@ -24,3 +24,6 @@ Start with [Installation](../installation.md). Read [Notation](notation.md) for 
 
 Existing catalog matrices retain their original ambient-node parameter names. Select the ambient compatibility convention to reproduce them; their coordinate conventions remain unchanged.
 
+
+
+See also the companion Julia/OSCAR package [GKMtools.jl](gkmtools.md).

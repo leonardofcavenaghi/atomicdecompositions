@@ -6,10 +6,10 @@
   "scope": "Runtime source bundle with launch handbook, not a full Git repository archive",
   "documentation_note": "The bundled installation page omits website ZIP download links because this source bundle is already extracted.",
   "files": {
-    "CHANGELOG.md": "0e6b786740ec81b41479920723426cd1f13b2916e79a07efe8e3afc9fd942b5a",
+    "CHANGELOG.md": "a364c2bbd6a80ec178d7c5dfb50f60a377799d589e45f94b4862677e9327730a",
     "LAUNCH.md": "17d0c27cd9585ed76f68e3170bb4e825f13a693f3cfd6d3246b4a53ea8cb40e5",
     "LICENSE": "b22b1e6f731959f8dc1ee30208f1be4334c0e559352f61bde6bb0bbfcd5339bf",
-    "README.md": "f0a0f165c92a3823abb466ff0dd5e3676c3f3cc85bc8d774f19efe5100f51ab4",
+    "README.md": "ab7ec4e3caa187e40bc0d767d14b385d532ebc5f33786b4934c1bf7c8454f463",
     "Start GW Software.cmd": "32e24b0f32a4808d8b3001a9a43b7e4c8ed03d8a03bd5113cecb2a66c77ecd3f",
     "docs/api-reference.md": "698890f242d01b088cd50a511cc5caa8bd8a02809ad7706fb18549856be3c673",
     "docs/how-to-use.md": "a78fd475cac803c83e159cdab73a7f25c53bf3795f4061b2d6634a586689de1d",

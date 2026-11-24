@@ -53,7 +53,7 @@ Describe the space first. The displayed cohomology divisor basis used by short K
 
 Negative entries of an effective beta relation are permitted. If no nef integral Novikov basis is found, the fallback coordinates can give Laurent monomials. Do not replace this with a nonnegativity test on all ray entries.
 
-**Novikov point for spectrum & cyclic determinant** analyzes the symbolic matrix at selected values; omitted variables equal one. Fractions, decimals, sqrt(...) and I are accepted. The symbolic matrix is retained. The optional eigenvalue selection refers to K=-c1⋆, including its sign. The interface reports unsupported factors without giving a rationality verdict.
+**Novikov point for spectrum & cyclic determinant** analyzes the symbolic matrix at selected values; omitted variables equal one. Fractions, decimals, sqrt(...) and I are accepted. The symbolic matrix is retained. The optional eigenvalue selection in the connection interface uses the negated operator \(B=-A=-c_1(TX)\star\) (see [export compatibility](../catalog/notation.md#export-compatibility)), so its sign is opposite to the multiplication eigenvalues of \(A\). The interface reports unsupported factors without giving a rationality verdict.
 
 **Update spectrum & cyclic determinant** reuses the previous matrix. After changing the target, K or curve list, compute a new matrix first.
 

@@ -29,3 +29,6 @@ These relations convert each full ray-coefficient row of `K` into a divisor clas
 For a split bundle \(E=\bigoplus_j L_j\) on a base \(B\), the catalogue uses the **quotient convention** for \(\mathbb P_B(E)\). Write \(\pi\) for the projection and \(\xi=c_1(\mathcal O_{\mathbb P_B(E)}(1))\). The fibre-coordinate divisors have classes \(\xi-\pi^*c_1(L_j)\). Thus the converted rows are expressed in \(\xi\) and the pullbacks of the base hyperplane classes. Tensoring every summand by the same line bundle preserves the projective bundle; its tautological class changes accordingly, so the defining divisor classes must be transformed at the same time.
 
 The [exact fan and divisor data](../data/geometric-presentations.json) give the lattice blocks, twisting data and converted degrees for the displayed constructions. This identification concerns the ambient variety and the defining divisor classes. Gromov–Witten computations require their own localization and curve-completeness arguments; primitive cohomology and full atomic decompositions require the separate Hodge-theoretic hypotheses stated with the results.
+
+
+See [Algebraic-geometry databases](databases.md) and [GKMtools.jl](../software/gkmtools.md) for related resources.

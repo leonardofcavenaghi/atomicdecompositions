@@ -159,7 +159,7 @@ In toric mode, short K rows use the displayed cohomology divisor basis, while qu
 
 The combined flag **Update spectrum & exponents** action reuses a completed matrix for matching inputs. The toric **Update spectrum & cyclic determinant** action reuses its previous matrix; changing the geometry, bundle or curve list requires computing a new one.
 
-Flag exact exponent analysis currently requires rational specialized entries. Unsupported sectors remain unresolved. Connection eigenvalue selection uses K=-M, so its sign differs from multiplication eigenvalues.
+Flag exact exponent analysis currently requires rational specialized entries. Unsupported sectors remain unresolved. The raw connection-analysis interface selects eigenvalues of the negated operator \(B=-A\) (named `K` in legacy connection exports, distinct from the defining-bundle input `K`), so its eigenvalue sign is opposite to that of \(A=c_1(TX)\star\); see [export compatibility](../catalog/notation.md#export-compatibility).
 
 Characteristic-polynomial text uses a mathematical symbol named lambda. It is display text, not a Python lambda expression to paste directly into source code.
 

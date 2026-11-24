@@ -1509,3 +1509,6 @@ The displayed matrices are \(A(\mathbf 1)\), first-Chern quantum multiplication 
 ??? example "10-1"
     **Description:** yes
 
+
+
+See [Algebraic-geometry databases](databases.md) for Fanography and related databases.

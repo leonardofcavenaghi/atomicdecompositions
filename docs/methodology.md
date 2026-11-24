@@ -44,7 +44,7 @@ $$
 $$
 
 
-The twisted localization calculation of Theorem 3.28 computes
+The Euler-twisted virtual localization formula for complete intersections in \(F\) evaluates the pushed-forward sum
 
 
 $$
@@ -57,7 +57,7 @@ It should be called an individual curve-class invariant only when the relevant i
 
 ## The decorated-tree formula
 
-For nonzero effective degree, Theorems 3.26 and 3.28 sum over decorated trees \(\Gamma=(\mathcal T,\ell,\mathbf d,\mathrm{mk})\). Here \(\mathcal T\) is the underlying tree, with vertex set \(V(\Gamma)\) and edge set \(E(\Gamma)\). Vertices carry fixed-point labels \(w_v\in W^F\), edges carry invariant curves and covering degrees \(d_e>0\), and \(\mathrm{mk}\) assigns the markings to vertices. With the factors defined in those statements, the complete-intersection contribution is
+For nonzero effective degree \(\beta\), torus-fixed loci in \(\overline{\mathcal M}_{0,m}(F,\beta)\) are indexed by decorated trees \(\Gamma=(\mathcal T,\ell,\mathbf d,\mathrm{mk})\). Here \(\mathcal T\) is the underlying tree, with vertex set \(V(\Gamma)\) and edge set \(E(\Gamma)\). Vertices carry fixed-point labels \(w_v\in W^F\), edges carry invariant curves and covering degrees \(d_e>0\), and \(\mathrm{mk}\) assigns the markings to vertices. The twisted localization contribution is
 
 
 $$
@@ -71,7 +71,7 @@ $$
 $$
 
 
-Here \(e_w=e_T(T_{p_w}F)\), \(\Omega_e\) is the edge factor, and \(\operatorname{Tw}(\Gamma)\) is the Euler twist of Proposition 3.27; omit this twist for the ambient target itself. The flags' root and bundle conventions determine these weights.
+Here \(e_w=e_T(T_{p_w}F)\) is the fixed-point tangent Euler class, \(\Omega_e\) is the invariant-curve edge factor, and \(\operatorname{Tw}(\Gamma)\) is the Euler twist of the bundle \(E\) on the decorated tree (omitted when computing on the ambient flag variety \(F\) itself). The root and bundle conventions determine these weights.
 
 The number \(\operatorname{val}(v)\) counts incident edges, and \(\omega_{v,e}\) is the tangent weight on the covering source at that endpoint: the corresponding target tangent weight divided by \(d_e\). Put \(n_v=\operatorname{val}(v)+|\mathrm{mk}^{-1}(v)|\). For \(n_v\ge3\),
 
@@ -122,101 +122,24 @@ The dimension axiom bounds degrees contributing to multiplication by \(c_1\) by 
 
 The recorded ambient Chern gcd is not automatically the intrinsic Fano index; for instance a conic has ambient gcd 1 in \(\mathbb P^2\), but intrinsic index 2. For a point this gcd does not define a geometric Fano index.
 
-## Quantum multiplication and grading
+## Quantum connection, spectra and atomic invariants
 
-For a homogeneous basis \((T_i)\) of the full cohomology of \(X\), let \(g_{ab}=\int_X T_a\smile T_b\), with inverse \((g^{ab})\). The small quantum product is
-
-$$
-T_i\star T_j
-=\sum_{a,b}\left(\sum_{\beta\in\mathrm{NE}(X)}
-\langle T_i,T_j,T_a\rangle^X_{0,\beta}\,q^\beta\right)g^{ab}T_b.
-$$
-
-The degree-zero term is cup product. The inverse pairing is part of the product; three-point invariants alone are not its matrix coefficients.
-
-For the returned ambient sector \(V\), let \((e_1,\ldots,e_N)\) be the ordered homogeneous basis and \(d=\dim X\). The Novikov coordinates are \(\mathbf y\), and the displayed matrix is \(A(\mathbf y)\), the ambient projection of \(c_1(TX)\star(-)\). The symbol \(\star\) denotes the small quantum product. Its entries and grading satisfy
-
-$$
-A(\mathbf y)e_j=\sum_{i=1}^{N}A_{ij}(\mathbf y)e_i,
-\qquad
-G=\operatorname{diag}\left(\operatorname{codim}(e_i)-\frac d2\right).
-$$
-
-Thus columns are images of basis vectors, and the grading uses complex codimension. The matrix size \(N\) is the dimension of the computed space, not automatically the full cohomology dimension.
-
-At the stated parameter assignment \(\mathbf a\), write \(A(\mathbf a)=A(\mathbf y)|_{\mathbf y=\mathbf a}\). The characteristic polynomial is
-
-$$
-\chi_{A(\mathbf a)}(z)=\det(zI_N-A(\mathbf a))
-=\prod_jp_j(z)^{m_j},
-$$
-
-where the \(p_j\) are monic, pairwise coprime, square-free factors. Each root \(\lambda\) of \(p_j\) is an eigenvalue of \(A(\mathbf a)\) with algebraic multiplicity \(m_j\). Let \(\mathbf 1\) be the coordinate column of the unit in the returned basis. The unit cyclic determinant is
-
-$$
-\Delta_A(\mathbf a)
-=\det\bigl[\mathbf 1,A(\mathbf a)\mathbf 1,\ldots,
-A(\mathbf a)^{N-1}\mathbf 1\bigr].
-$$
-
-Its nonvanishing proves that the quantum powers of the unit span \(V\). Its vanishing at a particular assignment does not imply vanishing at every point.
-
-## Regularized-exponent multisets
-
-With auxiliary coordinate \(u\), the small-locus quantum connection has convention
+On the returned homogeneous basis \((e_1,\ldots,e_N)\) of \(V\), the ambient first-Chern operator \(A(\mathbf y)\) and grading \(G=\operatorname{diag}\bigl(\operatorname{codim}(e_i)-d/2\bigr)\) (columns as images of basis vectors) determine the small-locus quantum connection
 
 $$
 \nabla_{\partial_u}=\partial_u-\frac{A(\mathbf y)}{u^2}+\frac{G}{u}.
 $$
 
-For an eigenvalue \(\lambda\) at \(\mathbf a\), a formal factor of unramified exponential type has the form
+At a stated Novikov assignment \(\mathbf a\), the characteristic polynomial \(\chi_{A(\mathbf a)}(z)=\det(zI_N-A(\mathbf a))=\prod_j p_j(z)^{m_j}\), unit cyclic determinant \(\Delta_A(\mathbf a)=\det[\mathbf 1,A(\mathbf a)\mathbf 1,\ldots,A(\mathbf a)^{N-1}\mathbf 1]\), and regularized-exponent multisets \(F_{\mathbf a,\lambda}\) (classes \(-\theta+\mathbb Z\) of regular-singular residue eigenvalues \(\theta\)) are defined uniformly across the catalogue in the [catalogue notation key](catalog/notation.md).
 
-$$
-M_{\mathbf a,\lambda}\simeq\mathcal E^{\lambda/u}\otimes R_{\mathbf a,\lambda},
-$$
-
-without a substitution by fractional powers of \(u\). Here \(\mathcal E^{\lambda/u}\) denotes the rank-one connection \(\partial_u-\lambda/u^2\), and \(R_{\mathbf a,\lambda}\) is regular singular. If its residue eigenvalues \(\theta\) are rational, the regularized-exponent multiset is
-
-$$
-F_{\mathbf a,\lambda}
-=\{\!\{-\theta+\mathbb Z:
-\theta\text{ is a residue eigenvalue of }R_{\mathbf a,\lambda}\}\!\}.
-$$
-
-Each class in \(\mathbb Q/\mathbb Z\) is counted with its algebraic multiplicity. In particular, \(\{\!\{0,\tfrac12,\tfrac12\}\!\}\) has three entries. The reported powers \(s=-\theta\) give these classes modulo \(\mathbb Z\), usually represented in \([0,1)\). Neither multiset is a termwise pairing of independently sorted lists.
-
-A condition \(p_j(\lambda)=0\) refers to an eigenvalue of \(A(\mathbf a)\). A row grouping several roots applies separately at each indicated root and at that analysis point. The grading diagonal alone is not the residue spectrum of the formal factors.
-
-## Hodge data and atomic invariants
-
-The rational Hodge-invariant subspace is
-
-$$
-H^*_{\mathrm{Hod}}(X)
-=\bigoplus_p\bigl(H^{2p}(X,\mathbb Q)\cap H^{p,p}(X)\bigr).
-$$
-
-Ambient classes lie in this space, but primitive cohomology can contain additional rational Hodge classes. Equality of the ambient sector with \(H^*_{\mathrm{Hod}}(X)\), a complete curve calculation and the geometric persistence hypotheses are required to interpret ambient cyclicity as the generic Hodge-factor criterion. A finite numerical specialization is not by itself an admissibility or persistence argument.
-
-Let \(E^\alpha\) be a coarse Hodge atom and \(E^\alpha_{\mathbb C}=E^\alpha\otimes_{\mathbb Q}\mathbb C\). The Hodge group \(\mathrm{Hod}\) is the kernel of the Mumford–Tate group's character on \(\mathbb Q(1)\). Its invariant space and Hodge-cocharacter weight spaces define
-
-$$
-\rho_\alpha=\dim_{\mathbb C}
-\bigl(E^\alpha_{\mathbb C}\bigr)^{\mathrm{Hod}_{\mathbb C}},
-\qquad
-P_\alpha(t)=\sum_k\dim_{\mathbb C}
-\bigl(E^\alpha_{\mathbb C}\bigr)^k t^k.
-$$
-
-A Hodge type \((p,q)\) has cocharacter weight \(p-q\). Hence the full Hodge polynomial is \(P_X(t)=\sum_{p,q}h^{p,q}(X)t^{p-q}\), with nonnegative dimensions and no alternating signs for odd cohomology. The constant coefficient of \(P_\alpha\) can exceed \(\rho_\alpha\); \(P_\alpha(1)\) is its full rank. Full atomic polynomials require the geometric assignment of cohomology beyond the ambient sector. See the [catalogue notation key](catalog/notation.md) and [atomic invariants](catalog/atomic-invariants.md) for the definitions and their use in examples.
+Interpreting ambient spectral factors as coarse Hodge atoms—with rational Hodge-invariant count \(\rho_\alpha=\dim_{\mathbb C}\bigl((E^\alpha_{\mathbb C})^{\mathrm{Hod}_{\mathbb C}}\bigr)\) and Hodge polynomial \(P_\alpha(t)=\sum_{p,q}h^{p,q}(E^\alpha)t^{p-q}\)—requires identifying \(V\) with \(H^*_{\mathrm{Hod}}(X)=\bigoplus_p(H^{2p}(X,\mathbb Q)\cap H^{p,p}(X))\), a complete curve list, and the geometric persistence and primitive-assignment hypotheses documented in [atomic invariants](catalog/atomic-invariants.md).
 
 <span id="verification"></span>
 
 ## Sources and reproducibility
 
-References: B. Alexeev et al., [*On the atomic decomposition of complete intersection in flag varieties*](https://arxiv.org/abs/2609.21914), Theorems 3.26 and 3.28 and Definitions 4.5–4.6. Virtual localization follows Graber–Pandharipande, [*Localization of virtual classes*](https://arxiv.org/abs/alg-geom/9708001). 
+References: B. Alexeev et al., [*On the atomic decomposition of complete intersection in flag varieties*](https://arxiv.org/abs/2609.21914) (decorated-tree twisted localization and spectral/atomic framework), and T. Graber and R. Pandharipande, [*Localization of virtual classes*](https://arxiv.org/abs/alg-geom/9708001).
 
 The [exact datasets](catalog/datasets.md) provide coefficients, curve coordinates, ordered bases and grading. See [software input/output formats](software/input-output.md) and [validation scope](software/launch-plan.md).
-
 
 The verification procedures compare exact matrix contracts, mathematical regression identities and documented inputs. Fresh matrix calculations use the localization routines and retain their complete curve list, basis, grading and parameter map.
