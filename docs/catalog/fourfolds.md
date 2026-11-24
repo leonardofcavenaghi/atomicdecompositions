@@ -6,7 +6,7 @@ description: Fourfolds in the universal catalogue, with construction, recorded i
 
 [Universal catalogue](index.md) · [Conventions and downloads](datasets.md)
 
-Presentations are ordered by recorded Chern index and geometric name.
+Presentations are ordered by recorded Chern index and geometric name. For the systematic catalogue of smooth Fano fourfolds realized as zero loci of homogeneous vector bundles on products of type-\(A\) partial flag varieties (with quantum periods and flag-ambient spectra computed via `gwflags`), see [**FanoBase (`type-a.fanobase.net`)**](https://type-a.fanobase.net/) and [Algebraic-geometry databases](databases.md).
 
 | Geometry | Ambient presentation | Dimension | Recorded Chern index | Ambient dimension | h(1,1) | Analysis |
 |---|---|---:|---:|---:|---:|---|

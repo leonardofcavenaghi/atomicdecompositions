@@ -47,7 +47,7 @@ Repeated entries retain their multiplicity.
 
 **Positivity:** nef defining divisors.
 Verra fourfold
-**Hodge source:**  HLM-29, HLM Proposition 7.2, [1907.08000v3](https://arxiv.org/abs/1907.08000v3).
+**Hodge source:**  HLM-29, HLM Proposition 7.2, [1907.08000v3](https://arxiv.org/abs/1907.08000v3); see also Benedetti–Guéré–Manivel–Perrin, [2605.30450](https://arxiv.org/abs/2605.30450), for the small quantum cohomology and atomic birational geometry of Verra fourfolds.
 $\dim X=4$, $\dim Y=5$, codimension $1$, index $2$, $(-K_X)^4=192$, $e(X)=30$.
 
 

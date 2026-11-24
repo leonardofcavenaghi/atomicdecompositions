@@ -28,6 +28,6 @@ contains the flag and toric localization engines (`gwflags`, `gwtoric`, `gwapp`)
 AI coding tools, including Google Antigravity, have assisted software and
 website development under the contributors’ mathematical supervision.
 
-The threefold classification follows [Fanography](https://www.fanography.info/).
+The threefold classification follows [Fanography](https://www.fanography.info/); for type-\(A\) homogeneous Fano fourfolds, see also [FanoBase](https://type-a.fanobase.net/) and [Algebraic-geometry databases](catalog/databases.md).
 The mathematical formulas, conventions and verification procedures are
 described in the [localization on flag varieties](methodology.md) and [localization on toric varieties](toric/mathematics.md).

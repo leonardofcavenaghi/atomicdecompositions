@@ -47,7 +47,7 @@ The **Recorded Chern index** uses the presentation's convention. In the original
 
 Search by geometric name, construction, dimension or numerical data. The table filters the collection; site search includes descriptions, exact inputs and scientific keywords. The [Fano threefold reference](fanography.md) also lists classification families beyond those with quantum matrices in the catalogue.
 
-See [Algebraic-geometry databases](databases.md) for how these entries connect to Fanography, Grassmannian.info, GRDB, and related classifications.
+See [Algebraic-geometry databases](databases.md) for how these entries connect to Fanography, FanoBase, Grassmannian.info, GRDB, and related classifications.
 
 | Geometry | Ambient presentation | Dimension | Recorded Chern index | Ambient dimension | h(1,1) | Analysis |
 |---|---|---:|---:|---:|---:|---|

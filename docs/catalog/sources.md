@@ -8,7 +8,9 @@ Examples are named by their geometric construction: projective spaces, complete 
 
 **CKP** means Coates–Kasprzyk–Prince, [*Four-dimensional Fano toric complete intersections*](https://arxiv.org/abs/1409.5030). The CKP numbers denote period buckets in their dataset of presentations. Equality of periods alone does not identify varieties up to isomorphism.
 
-**HLM** means Hausen–Laface–Mauz, [*On smooth Fano fourfolds of Picard number two*](https://arxiv.org/abs/1907.08000). HLM numbers denote cases in their classification. For example, HLM-29 is the Verra fourfold.
+**HLM** means Hausen–Laface–Mauz, [*On smooth Fano fourfolds of Picard number two*](https://arxiv.org/abs/1907.08000). HLM numbers denote cases in their classification. For example, HLM-29 is the Verra fourfold (whose small quantum cohomology and atomic birational invariants are also studied in Benedetti–Guéré–Manivel–Perrin, [`arXiv:2605.30450`](https://arxiv.org/abs/2605.30450); see also Benedetti–Manivel–Perrin, [`arXiv:2603.17487`](https://arxiv.org/abs/2603.17487), for Gushel–Mukai fourfolds).
+
+**FanoBase** ([`fanobase.net`](https://fanobase.net/), [*Fano fourfolds in type A*](https://type-a.fanobase.net/), by Belmans, Benedetti, Denisi, Fatighenti, Fernández Píriz, Frassineti, Manivel, Papa, Tanturri, and Tufo) catalogues smooth Fano fourfolds realized as strongly Fano zero loci of homogeneous vector bundles on products of type-\(A\) partial flag varieties, using family labels `rho-c1^4-h0-letter`, case-sensitive `ZL62` presentation encodings, and quantum periods/spectra computed with `gwflags`. See [Algebraic-geometry databases](databases.md) for details.
 
 ## Geometric identification
 
