@@ -6323,6 +6323,2170 @@
         }
       ],
       "source": "catalog/records/pb5-060.md"
+    },
+    {
+      "id": "FANOGRAPHY-2-4",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 20",
+          "multiplicity": 2,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-1/2",
+            "-1/2"
+          ],
+          "classes": [
+            "1/2",
+            "1/2"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{4} + 90 x^{3} - 2511 x^{2} - 39744 x + 919200",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 4,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-2-4.md"
+    },
+    {
+      "id": "FANOGRAPHY-2-5",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 20",
+          "multiplicity": 2,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x - 18",
+          "multiplicity": 2,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-5/6",
+            "-1/6"
+          ],
+          "classes": [
+            "1/6",
+            "5/6"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 3,
+          "polynomial_latex": "x^{2} + 126 x + 3321",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 2,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-2-5.md"
+    },
+    {
+      "id": "FANOGRAPHY-2-6",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 10",
+          "multiplicity": 3,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{3} + 30 x^{2} - 2292 x + 26920",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 3,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-2-6.md"
+    },
+    {
+      "id": "FANOGRAPHY-2-7",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 14",
+          "multiplicity": 2,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-1/2",
+            "-1/2"
+          ],
+          "classes": [
+            "1/2",
+            "1/2"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x - 12",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 3,
+          "polynomial_latex": "x^{3} + 60 x^{2} - 432 x - 8496",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 3,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-2-7.md"
+    },
+    {
+      "id": "FANOGRAPHY-2-9",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 7",
+          "multiplicity": 2,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-1/2",
+            "-1/2"
+          ],
+          "classes": [
+            "1/2",
+            "1/2"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{4} + 8 x^{3} - 1212 x^{2} + 18112 x - 72316",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 4,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-2-9.md"
+    },
+    {
+      "id": "FANOGRAPHY-2-10",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 14",
+          "multiplicity": 2,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x - 12",
+          "multiplicity": 2,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-1/2",
+            "-1/2"
+          ],
+          "classes": [
+            "1/2",
+            "1/2"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 3,
+          "polynomial_latex": "x^{2} + 72 x + 912",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 2,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-2-10.md"
+    },
+    {
+      "id": "FANOGRAPHY-2-11",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 6",
+          "multiplicity": 2,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-5/6",
+            "-1/6"
+          ],
+          "classes": [
+            "1/6",
+            "5/6"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{4} + 8 x^{3} - 776 x^{2} + 18024 x - 86796",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 4,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-2-11.md"
+    },
+    {
+      "id": "FANOGRAPHY-2-12",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 5",
+          "multiplicity": 2,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-1/2",
+            "-1/2"
+          ],
+          "classes": [
+            "1/2",
+            "1/2"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{4} - 816 x^{2} + 11520 x - 37824",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 4,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-2-12.md"
+    },
+    {
+      "id": "FANOGRAPHY-2-13",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 8",
+          "multiplicity": 2,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-1/2",
+            "-1/2"
+          ],
+          "classes": [
+            "1/2",
+            "1/2"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x - 6",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 3,
+          "polynomial_latex": "x^{3} + 18 x^{2} - 540 x + 5400",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 3,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-2-13.md"
+    },
+    {
+      "id": "FANOGRAPHY-2-15",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 3",
+          "multiplicity": 2,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-1/2",
+            "-1/2"
+          ],
+          "classes": [
+            "1/2",
+            "1/2"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{4} - 8 x^{3} - 720 x^{2} + 12096 x - 29376",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 4,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-2-15.md"
+    },
+    {
+      "id": "FANOGRAPHY-2-16",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 6",
+          "multiplicity": 2,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-1/2",
+            "-1/2"
+          ],
+          "classes": [
+            "1/2",
+            "1/2"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x - 8",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 3,
+          "polynomial_latex": "x^{3} + 16 x^{2} - 348 x + 6096",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 3,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-2-16.md"
+    },
+    {
+      "id": "FANOGRAPHY-2-18",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 6",
+          "multiplicity": 2,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-1/2",
+            "-1/2"
+          ],
+          "classes": [
+            "1/2",
+            "1/2"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{4} + 12 x^{3} - 192 x^{2} + 7632 x - 30096",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 4,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-2-18.md"
+    },
+    {
+      "id": "FANOGRAPHY-2-19",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 3",
+          "multiplicity": 2,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-1/2",
+            "-1/2"
+          ],
+          "classes": [
+            "1/2",
+            "1/2"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{4} - 4 x^{3} - 440 x^{2} + 7368 x - 18492",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 4,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-2-19.md"
+    },
+    {
+      "id": "FANOGRAPHY-2-23",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 3",
+          "multiplicity": 2,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 3,
+          "polynomial_latex": "x + 22",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 4,
+          "polynomial_latex": "x^{2} - 30 x + 228",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 2,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-2-23.md"
+    },
+    {
+      "id": "FANOGRAPHY-2-25",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 2",
+          "multiplicity": 2,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{4} - 96 x^{2} + 1536 x - 768",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 4,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-2-25.md"
+    },
+    {
+      "id": "FANOGRAPHY-2-27",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x^{6} - 6 x^{5} - 15 x^{4} + 1284 x^{3} - 11508 x^{2} + 38496 x - 45116",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-2-27.md"
+    },
+    {
+      "id": "FANOGRAPHY-2-28",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 3",
+          "multiplicity": 2,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{4} + 8 x^{3} + 36 x^{2} + 3456 x + 12420",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 4,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-2-28.md"
+    },
+    {
+      "id": "FANOGRAPHY-2-29",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x - 2",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 3,
+          "polynomial_latex": "x^{4} - 2 x^{3} - 96 x^{2} + 864 x + 1008",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 4,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-2-29.md"
+    },
+    {
+      "id": "FANOGRAPHY-2-30",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 3",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{5} - 3 x^{4} + 8 x^{3} + 720 x^{2} - 6912 x + 19008",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 5,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-2-30.md"
+    },
+    {
+      "id": "FANOGRAPHY-2-31",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x^{6} - 4 x^{5} - 32 x^{4} + 852 x^{3} - 2376 x^{2} + 8496 x - 2700",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-2-31.md"
+    },
+    {
+      "id": "FANOGRAPHY-2-32",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x^{6} - 60 x^{4} - 1392 x^{2} - 8000",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-2-32.md"
+    },
+    {
+      "id": "FANOGRAPHY-2-33",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x^{6} - 4 x^{5} + 4 x^{4} + 162 x^{3} - 2268 x^{2} + 6912 x + 417",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-2-33.md"
+    },
+    {
+      "id": "FANOGRAPHY-2-35",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x^{6} - 28 x^{4} - 1488 x^{2} - 23232",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-2-35.md"
+    },
+    {
+      "id": "FANOGRAPHY-2-36",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x^{6} + 8 x^{5} - 36 x^{4} - 300 x^{3} + 432 x^{2} + 18000 x + 110772",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-2-36.md"
+    },
+    {
+      "id": "FANOGRAPHY-3-3",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 15",
+          "multiplicity": 2,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-1/2",
+            "-1/2"
+          ],
+          "classes": [
+            "1/2",
+            "1/2"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{6} + 20 x^{5} - 1972 x^{4} + 21550 x^{3} + 162028 x^{2} - 2216640 x - 2683599",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-3-3.md"
+    },
+    {
+      "id": "FANOGRAPHY-3-6",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 11",
+          "multiplicity": 2,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{6} + 8 x^{5} - 1376 x^{4} + 14562 x^{3} + 224496 x^{2} - 4298640 x + 17704065",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-3-6.md"
+    },
+    {
+      "id": "FANOGRAPHY-3-7",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 10",
+          "multiplicity": 2,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{6} - 1002 x^{4} + 19440 x^{3} - 82887 x^{2} - 965520 x + 8576576",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-3-7.md"
+    },
+    {
+      "id": "FANOGRAPHY-3-8",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 15",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{7} + 5 x^{6} - 1512 x^{5} + 22230 x^{4} + 292038 x^{3} - 10589460 x^{2} + 103089161 x - 352928735",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 7,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-3-8.md"
+    },
+    {
+      "id": "FANOGRAPHY-3-9",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 6",
+          "multiplicity": 2,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "-3/4",
+            "-1/4"
+          ],
+          "classes": [
+            "1/4",
+            "3/4"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x + 2",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 3,
+          "polynomial_latex": "x^{3} + 18 x^{2} + 108 x + 7992",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 3,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-3-9.md"
+    },
+    {
+      "id": "FANOGRAPHY-3-10",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 11",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x - 8",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 3,
+          "polynomial_latex": "x - 6",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 4,
+          "polynomial_latex": "x^{5} + 11 x^{4} - 758 x^{3} + 2508 x^{2} + 59400 x - 185040",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 5,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-3-10.md"
+    },
+    {
+      "id": "FANOGRAPHY-3-11",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 8",
+          "multiplicity": 2,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{6} - 4 x^{5} - 352 x^{4} + 10908 x^{3} - 155088 x^{2} + 1274592 x - 3774396",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-3-11.md"
+    },
+    {
+      "id": "FANOGRAPHY-3-12",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x^{8} - 20 x^{7} - 762 x^{6} + 29860 x^{5} - 286727 x^{4} - 1610040 x^{3} + 50560296 x^{2} - 356020320 x + 858061200",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 8,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-3-12.md"
+    },
+    {
+      "id": "FANOGRAPHY-3-13",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 10",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{7} - 10 x^{6} - 372 x^{5} + 12240 x^{4} - 169872 x^{3} + 1400160 x^{2} - 6802624 x + 17221120",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 7,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-3-13.md"
+    },
+    {
+      "id": "FANOGRAPHY-3-15",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 7",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{7} - 13 x^{6} - 609 x^{5} + 16047 x^{4} - 137340 x^{3} - 53250 x^{2} + 9545405 x - 39712175",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 7,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-3-15.md"
+    },
+    {
+      "id": "FANOGRAPHY-3-18",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 5",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{7} - 15 x^{6} - 429 x^{5} + 15349 x^{4} - 126708 x^{3} - 862950 x^{2} + 16899705 x - 60325845",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 7,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-3-18.md"
+    },
+    {
+      "id": "FANOGRAPHY-3-19",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 6",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{2} - 12 x + 44",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 2,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 3,
+          "polynomial_latex": "x^{3} + 18 x^{2} + 108 x + 864",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 3,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-3-19.md"
+    },
+    {
+      "id": "FANOGRAPHY-3-20",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x^{8} - 20 x^{7} - 188 x^{6} + 9780 x^{5} - 146664 x^{4} + 1437960 x^{3} - 8901700 x^{2} + 38593640 x - 85607500",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 8,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-3-20.md"
+    },
+    {
+      "id": "FANOGRAPHY-3-21",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x^{8} - 20 x^{7} - 444 x^{6} + 12980 x^{5} - 99200 x^{4} + 418200 x^{3} + 1181900 x^{2} - 34135000 x + 132980500",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 8,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-3-21.md"
+    },
+    {
+      "id": "FANOGRAPHY-3-22",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 7",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{7} + 5 x^{6} - 144 x^{5} + 3270 x^{4} - 66450 x^{3} + 227400 x^{2} + 7864625 x + 14486125",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 7,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-3-22.md"
+    },
+    {
+      "id": "FANOGRAPHY-3-23",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x^{8} - 20 x^{7} + 16 x^{6} + 6264 x^{5} - 136588 x^{4} + 1683600 x^{3} - 14321280 x^{2} + 86782080 x - 235260300",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 8,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-3-23.md"
+    },
+    {
+      "id": "FANOGRAPHY-3-24",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x^{8} - 10 x^{7} - 127 x^{6} + 2280 x^{5} - 17142 x^{4} + 110430 x^{3} - 214664 x^{2} - 305320 x + 2718665",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 8,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-3-24.md"
+    },
+    {
+      "id": "FANOGRAPHY-3-25",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x^{8} - 10 x^{7} - 43 x^{6} + 2140 x^{5} - 22914 x^{4} + 62150 x^{3} + 268180 x^{2} - 948600 x - 1030655",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 8,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-3-25.md"
+    },
+    {
+      "id": "FANOGRAPHY-3-26",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x^{8} - 16 x^{7} - 108 x^{6} + 3372 x^{5} - 19548 x^{4} + 117000 x^{3} - 1886220 x^{2} + 13336920 x - 26238060",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 8,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-3-26.md"
+    },
+    {
+      "id": "FANOGRAPHY-3-28",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x^{8} - 6 x^{7} - 103 x^{6} + 1464 x^{5} - 2462 x^{4} - 26022 x^{3} + 257760 x^{2} - 606168 x - 983007",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 8,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-3-28.md"
+    },
+    {
+      "id": "FANOGRAPHY-3-29",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x^{8} - 2 x^{7} - 209 x^{6} - 102 x^{5} - 30735 x^{4} + 354000 x^{3} + 2196200 x^{2} - 7828000 x + 264914000",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 8,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-3-29.md"
+    },
+    {
+      "id": "FANOGRAPHY-3-30",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x^{8} - 10 x^{7} - 19 x^{6} + 1404 x^{5} - 18618 x^{4} + 90750 x^{3} - 54860 x^{2} - 1159000 x + 10901465",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 8,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-3-30.md"
+    },
+    {
+      "id": "FANOGRAPHY-3-31",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x^{8} - 10 x^{7} - 79 x^{6} + 2200 x^{5} - 11190 x^{4} - 74650 x^{3} + 529600 x^{2} + 477000 x - 5113775",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 8,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-3-31.md"
+    },
+    {
+      "id": "FANOGRAPHY-4-2",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 10",
+          "multiplicity": 2,
+          "distinct_eigenvalues": 1,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{2} - 30 x + 201",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 2,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 3,
+          "polynomial_latex": "x^{4} + 40 x^{3} - 200 x^{2} - 12000 x - 63600",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 4,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-4-2.md"
+    },
+    {
+      "id": "FANOGRAPHY-4-3",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5,
+        "y4": 7
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x^{10} - 34 x^{9} - 877 x^{8} + 56130 x^{7} - 786139 x^{6} - 1338770 x^{5} + 106124802 x^{4} - 435867878 x^{3} - 3569454844 x^{2} + 13644220960 x + 55181579065",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 10,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-4-3.md"
+    },
+    {
+      "id": "FANOGRAPHY-4-4",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x - 12",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x - 10",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 3,
+          "polynomial_latex": "x^{2} - 26 x + 193",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 2,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 4,
+          "polynomial_latex": "x^{4} + 38 x^{3} + 60 x^{2} - 1880 x + 54320",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 4,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-4-4.md"
+    },
+    {
+      "id": "FANOGRAPHY-4-6",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5,
+        "y4": 7
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x^{10} - 34 x^{9} - 769 x^{8} + 49986 x^{7} - 619927 x^{6} - 4070582 x^{5} + 132248358 x^{4} - 517247738 x^{3} - 4885419784 x^{2} + 30601667152 x + 3996723241",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 10,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-4-6.md"
+    },
+    {
+      "id": "FANOGRAPHY-4-7",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5,
+        "y4": 7
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x^{10} - 34 x^{9} - 661 x^{8} + 43482 x^{7} - 546655 x^{6} - 3063482 x^{5} + 125596986 x^{4} - 804859346 x^{3} - 3757434088 x^{2} + 65732679940 x - 224178705023",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 10,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-4-7.md"
+    },
+    {
+      "id": "FANOGRAPHY-4-8",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5,
+        "y4": 7
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x^{10} - 34 x^{9} - 859 x^{8} + 44496 x^{7} - 240112 x^{6} - 8073632 x^{5} + 74510688 x^{4} + 417636352 x^{3} - 4884457984 x^{2} - 3342875648 x + 70462771456",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 10,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-4-8.md"
+    },
+    {
+      "id": "FANOGRAPHY-4-9",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5,
+        "y4": 7
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x^{10} - 34 x^{9} - 477 x^{8} + 38358 x^{7} - 564547 x^{6} - 1766202 x^{5} + 137771146 x^{4} - 1514246734 x^{3} + 4988155340 x^{2} + 26102362020 x - 175678959575",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 10,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-4-9.md"
+    },
+    {
+      "id": "FANOGRAPHY-4-10",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5,
+        "y4": 7
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x^{10} - 24 x^{9} - 504 x^{8} + 17736 x^{7} - 53772 x^{6} - 2392392 x^{5} + 24735328 x^{4} - 43909008 x^{3} - 347018784 x^{2} + 1116525312 x + 318569616",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 10,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-4-10.md"
+    },
+    {
+      "id": "FANOGRAPHY-4-11",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5,
+        "y4": 7
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x^{10} - 34 x^{9} - 343 x^{8} + 34740 x^{7} - 511990 x^{6} - 2259866 x^{5} + 130807908 x^{4} - 1030885352 x^{3} - 3619082719 x^{2} + 93993791752 x - 400521295412",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 10,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-4-11.md"
+    },
+    {
+      "id": "FANOGRAPHY-4-12",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5,
+        "y4": 7
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x^{10} - 34 x^{9} - 537 x^{8} + 34466 x^{7} - 374135 x^{6} - 3668358 x^{5} + 134240062 x^{4} - 1516208890 x^{3} + 9881149656 x^{2} - 39769549792 x + 107639990857",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 10,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-4-12.md"
+    },
+    {
+      "id": "FANOGRAPHY-5-2",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5,
+        "y4": 7,
+        "y5": 11
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x^{12} - 364 x^{11} + 41118 x^{10} + 1384196 x^{9} - 797972815 x^{8} + 78352910992 x^{7} - 1862448777768 x^{6} - 290528571988160 x^{5} + 33921468139947696 x^{4} - 1796179021770290432 x^{3} + 54769766287342513792 x^{2} - 935588553375882250240 x + 7039149454721760400640",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 12,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-5-2.md"
+    },
+    {
+      "id": "FANOGRAPHY-5-3",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5,
+        "y4": 7,
+        "y5": 11
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x^{12} - 360 x^{11} + 39006 x^{10} + 1701000 x^{9} - 786824655 x^{8} + 69699382560 x^{7} - 805798497888 x^{6} - 341073610686720 x^{5} + 33291344951089536 x^{4} - 1592361633032202240 x^{3} + 44019729610800924672 x^{2} - 673042469795634954240 x + 4418873783420338376704",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 12,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-5-3.md"
+    },
+    {
+      "id": "FANOGRAPHY-6-1",
+      "point": {
+        "y1": 2,
+        "y2": 3,
+        "y3": 5
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x^{2} - 22 x + 113",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 2,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{6} + 12 x^{5} - 1140 x^{4} + 1554 x^{3} + 383340 x^{2} - 4723152 x + 16577137",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-6-1.md"
+    },
+    {
+      "id": "FANOGRAPHY-7-1",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x^{2} - 16 x + 52",
+          "multiplicity": 2,
+          "distinct_eigenvalues": 2,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{2} + 48 x + 564",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 2,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-7-1.md"
+    },
+    {
+      "id": "FANOGRAPHY-8-1",
+      "point": {
+        "y1": 2,
+        "y2": 3
+      },
+      "sector": "computed ambient connection",
+      "factors": [
+        {
+          "number": 1,
+          "polynomial_latex": "x^{2} - 24 x + 132",
+          "multiplicity": 2,
+          "distinct_eigenvalues": 2,
+          "powers": null,
+          "classes": null,
+          "status": "unresolved"
+        },
+        {
+          "number": 2,
+          "polynomial_latex": "x^{2} + 84 x + 1752",
+          "multiplicity": 1,
+          "distinct_eigenvalues": 2,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ],
+          "status": "complete"
+        }
+      ],
+      "source": "catalog/records/fanography-8-1.md"
     }
   ]
 }

@@ -42,7 +42,7 @@ For the [incidence complete intersection in Fl(1,2,5)](additional.md#fl125o01o02
 
 **Projective complete intersection of index one.** For a projective complete intersection of degrees \(d_1,\ldots,d_s\) and index one, the primitive eigenvalue is \(-\bigl(\prod_i d_i!\bigr)q\); the source and shift are cited above.
 
-**Odd middle cohomology.** When all even cohomology is ambient and odd cohomology is middle-dimensional, products of odd classes lie in the ambient algebra. Choose paired odd classes \(\alpha,\beta\) with nondegenerate Poincaré pairing. The nonzero product \(\Theta=\alpha\star\beta\) is a common eigenvector; associativity and \(\beta\star\beta=0\) imply \(\Theta\star\Theta=0\). Its supporting rational spectral factor must therefore be repeated. A unique repeated rational factor fixes the assignment.
+**Odd middle cohomology.** When unit-cyclic first-Chern multiplication generates all even cohomology and odd cohomology is middle-dimensional, each generalized eigenspace \(H^3_\lambda\) over \(\overline{\mathbb Q}\) carries a nondegenerate Poincaré pairing by Frobenius self-adjointness. If \(H^3_\lambda\neq 0\), choosing \(\alpha,\beta\in H^3_\lambda\) with \((\alpha,\beta)=1\) gives a nonzero element \(\Theta=\alpha\star\beta\in H^{\mathrm{even}}_\lambda\) satisfying \(\Theta\star\Theta=-(\alpha\star\alpha)\star(\beta\star\beta)=0\) by graded-commutativity and associativity. Hence \(\lambda\) must be a repeated root of \(\chi_A(z)\). When \(\chi_A(z)\) has a unique repeated factor and that factor is linear, all odd cohomology lies on that rational eigenvalue.
 
 **Projective bundle over a cubic threefold.** In CKP-169 and CKP-567, the projective-bundle theorem gives two Tate-shifted copies of the cubic threefold middle Hodge structure. A simple one-dimensional even spectral factor cannot carry odd cohomology: nondegeneracy and associativity would contradict the square-zero relation of an odd class. Hence all odd classes lie on the unique repeated quadratic factor. Absolute irreducibility of cubic-threefold monodromy reduces the action to a rational \(2\times 2\) multiplicity operator; each of its two roots carries one copy, with Hodge polynomial \(5t+5t^{-1}\).
 
@@ -218,7 +218,7 @@ These rules give the full polynomial by adding the assigned vanishing-cohomology
 | [Section of P_{P²}(O^3 ⊕ O(1)) by 2ξ (CKP-186)](records/ckp-186.md) | 4 | 9 | 10 | [Hodge and ambient spectral data](invariants-fourfolds.md#ckp-186) |
 | [Section of P_{P³}(O^2 ⊕ O(1)) by ξ+H (CKP-061)](records/ckp-061.md) | 4 | 9 | 10 | [Hodge and ambient spectral data](invariants-fourfolds.md#ckp-061) |
 | [Section of P_{P⁴}(O ⊕ O(1)) by 2H (CKP-060)](records/ckp-060.md) | 4 | 8 | 8 | [Atomic decomposition](invariants-fourfolds.md#ckp-060) |
-| [Verra fourfold (HLM-29)](records/hlm-29.md) | 4 | 9 | — | [Hodge and spectral data](invariants-fourfolds.md#hlm-29) |
+| [Verra fourfold (HLM-29)](records/hlm-29.md) | 4 | 9 | 9 | [Hodge and spectral data](invariants-fourfolds.md#hlm-29) |
 | [Complete intersection (2,2,2,2) in P⁸ (CKP-731)](records/ckp-731.md) | 4 | 5 | 5 | [Atomic decomposition](invariants-fourfolds.md#ckp-731) |
 | [Complete intersection (2,2,3) in P⁷ (CKP-735)](records/ckp-735.md) | 4 | 5 | 5 | [Atomic decomposition](invariants-fourfolds.md#ckp-735) |
 | [Complete intersection (2,4) in P⁶ (CKP-737)](records/ckp-737.md) | 4 | 5 | 5 | [Atomic decomposition](invariants-fourfolds.md#ckp-737) |
@@ -273,17 +273,17 @@ These rules give the full polynomial by adding the assigned vanishing-cohomology
 | [Section of P_{P² × P²}(O ⊕ O(1,1)) by ξ+H1+H2 (CKP-450)](records/ckp-450.md) | 4 | 13 | 13 | [Hodge and spectral data](invariants-fourfolds.md#ckp-450) |
 | [Section of P_{P² × P²}(O(0,1) ⊕ O(1,0)) by ξ+H1+H2 (CKP-492)](records/ckp-492.md) | 4 | 13 | 13 | [Hodge and spectral data](invariants-fourfolds.md#ckp-492) |
 | [Section of P_{P²}(O^2 ⊕ O(1)^2) by 2ξ (CKP-233)](records/ckp-233.md) | 4 | 9 | 16 | [Hodge and ambient spectral data](invariants-fourfolds.md#ckp-233) |
-| [Section of P_{P²}(O^2 ⊕ O(1)^2) by 3ξ (CKP-702)](records/ckp-702.md) | 4 | 9 | — | [Hodge and spectral data](invariants-fourfolds.md#ckp-702) |
+| [Section of P_{P²}(O^2 ⊕ O(1)^2) by 3ξ (CKP-702)](records/ckp-702.md) | 4 | 9 | 11 | [Hodge and spectral data](invariants-fourfolds.md#ckp-702) |
 | [Section of P_{P²}(O^3 ⊕ O(1)) by 2ξ+H (CKP-314)](records/ckp-314.md) | 4 | 9 | 9 | [Hodge and spectral data](invariants-fourfolds.md#ckp-314) |
-| [Section of P_{P²}(O^3 ⊕ O(1)) by 3ξ (CKP-688)](records/ckp-688.md) | 4 | 9 | — | [Hodge and spectral data](invariants-fourfolds.md#ckp-688) |
+| [Section of P_{P²}(O^3 ⊕ O(1)) by 3ξ (CKP-688)](records/ckp-688.md) | 4 | 9 | 9 | [Hodge and spectral data](invariants-fourfolds.md#ckp-688) |
 | [Section of P_{P²}(O^3 ⊕ O(1)) by 3ξ+H (CKP-718)](records/ckp-718.md) | 4 | 9 | 9 | [Hodge and spectral data](invariants-fourfolds.md#ckp-718) |
 | [Section of P_{P²}(O^3 ⊕ O(1)) by ξ+H (CKP-014)](records/ckp-014.md) | 4 | 9 | 9 | [Atomic decomposition](invariants-fourfolds.md#ckp-014) |
 | [Section of P_{P²}(O^3 ⊕ O(2)) by 2ξ (CKP-182)](records/ckp-182.md) | 4 | 9 | 16 | [Hodge and ambient spectral data](invariants-fourfolds.md#ckp-182) |
-| [Section of P_{P²}(O^3 ⊕ O(2)) by 3ξ (CKP-691)](records/ckp-691.md) | 4 | 9 | — | [Hodge and spectral data](invariants-fourfolds.md#ckp-691) |
+| [Section of P_{P²}(O^3 ⊕ O(2)) by 3ξ (CKP-691)](records/ckp-691.md) | 4 | 9 | 9 | [Hodge and spectral data](invariants-fourfolds.md#ckp-691) |
 | [Section of P_{P³}(O ⊕ O(1)^2) by 2ξ (CKP-145)](records/ckp-145.md) | 4 | 8 | 16 | [Hodge and ambient spectral data](invariants-fourfolds.md#ckp-145) |
 | [Section of P_{P³}(O ⊕ O(1)^2) by 2ξ+H (CKP-595)](records/ckp-595.md) | 4 | 9 | 9 | [Hodge and spectral data](invariants-fourfolds.md#ckp-595) |
 | [Section of P_{P³}(O ⊕ O(1)^2) by ξ+H (CKP-114)](records/ckp-114.md) | 4 | 9 | 12 | [Hodge and ambient spectral data](invariants-fourfolds.md#ckp-114) |
-| [Section of P_{P³}(O ⊕ O(2)^2) by 2ξ (HLM-27)](records/hlm-27.md) | 4 | 8 | — | [Hodge and spectral data](invariants-fourfolds.md#hlm-27) |
+| [Section of P_{P³}(O ⊕ O(2)^2) by 2ξ (HLM-27)](records/hlm-27.md) | 4 | 8 | 8 | [Hodge and spectral data](invariants-fourfolds.md#hlm-27) |
 | [Section of P_{P³}(O^2 ⊕ O(1)) by 2ξ+2H (CKP-685)](records/ckp-685.md) | 4 | 9 | 9 | [Hodge and spectral data](invariants-fourfolds.md#ckp-685) |
 | [Section of P_{P³}(O^2 ⊕ O(1)) by 2ξ+H (CKP-174)](records/ckp-174.md) | 4 | 9 | 9 | [Atomic decomposition](invariants-fourfolds.md#ckp-174) |
 | [Section of P_{P³}(O^2 ⊕ O(1)) by ξ+2H (CKP-170)](records/ckp-170.md) | 4 | 9 | 20 | [Hodge and ambient spectral data](invariants-fourfolds.md#ckp-170) |
@@ -299,7 +299,7 @@ These rules give the full polynomial by adding the assigned vanishing-cohomology
 | [Section of P_{P¹ × P¹ × P²}(O ⊕ O(0,0,1)) by ξ+H1+H2+H3 (CKP-535)](records/ckp-535.md) | 4 | 17 | 17 | [Hodge and spectral data](invariants-fourfolds.md#ckp-535) |
 | [Section of P_{P¹}(O^4 ⊕ O(1)) by 2ξ (CKP-026)](records/ckp-026.md) | 4 | 8 | 10 | [Hodge and ambient spectral data](invariants-fourfolds.md#ckp-026) |
 | [Section of P_{P¹}(O^4 ⊕ O(1)) by 3ξ (CKP-551)](records/ckp-551.md) | 4 | 8 | 14 | [Hodge and ambient spectral data](invariants-fourfolds.md#ckp-551) |
-| [Section of P_{P¹}(O^4 ⊕ O(1)) by 4ξ (CKP-733)](records/ckp-733.md) | 4 | 8 | — | [Hodge and spectral data](invariants-fourfolds.md#ckp-733) |
+| [Section of P_{P¹}(O^4 ⊕ O(1)) by 4ξ (CKP-733)](records/ckp-733.md) | 4 | 8 | 8 | [Hodge and spectral data](invariants-fourfolds.md#ckp-733) |
 | [Section of P_{P⁴}(O ⊕ O(1)) by 3H (CKP-169)](records/ckp-169.md) | 4 | 8 | 8 | [Atomic decomposition](invariants-fourfolds.md#ckp-169) |
 | [Section of P_{P⁴}(O ⊕ O(1)) by ξ+2H (CKP-039)](records/ckp-039.md) | 4 | 8 | 8 | [Hodge and spectral data](invariants-fourfolds.md#ckp-039) |
 | [Section of P_{P⁴}(O ⊕ O(1)) by ξ+3H (CKP-683)](records/ckp-683.md) | 4 | 8 | 8 | [Atomic decomposition](invariants-fourfolds.md#ckp-683) |
@@ -320,6 +320,8 @@ These rules give the full polynomial by adding the assigned vanishing-cohomology
 | [Gr(4,5) / O(2)](grassmannians.md#gr45o2) | 3 | 4 | 4 | [Atomic decomposition](invariants-threefolds.md#6ce465296672) |
 | [P4 / O(2)](projective.md#p4o2) | 3 | 4 | 4 | [Atomic decomposition](invariants-threefolds.md#6ceccace2e40) |
 | [Fanography 2-32](fanography.md#fano-variety-2-32) | 3 | 6 | 6 | [Atomic decomposition](invariants-threefolds.md#a6cb2e5a95bb) |
+| [Fanography 2-32 (toric divisor in P² × P²)](records/fanography-2-32.md) | 3 | 6 | 6 | [Atomic decomposition](invariants-threefolds.md#fanography-2-32) |
+| [Fanography 2-35](records/fanography-2-35.md) | 3 | 6 | 6 | [Atomic decomposition](invariants-threefolds.md#fanography-2-35) |
 | [Fanography 3-27](fanography.md#fano-variety-3-27) | 3 | 8 | 8 | [Atomic decomposition](invariants-threefolds.md#292efbd7ade0) |
 | [Gr(2,4) / O(2)](grassmannians.md#gr24o2) | 3 | 4 | 4 | [Atomic decomposition](invariants-threefolds.md#0156965bbcb0) |
 | [Gr(2,5) / O(1)+O(1)+O(1)](grassmannians.md#gr25o1o1o1) | 3 | 4 | 4 | [Atomic decomposition](invariants-threefolds.md#f443674348ad) |
@@ -333,10 +335,70 @@ These rules give the full polynomial by adding the assigned vanishing-cohomology
 | [Fanography 1-7](fanography.md#fano-variety-1-7) | 3 | 4 | 4 | [Atomic decomposition](invariants-threefolds.md#541768cd0738) |
 | [Fanography 1-8](fanography.md#fano-variety-1-8) | 3 | 4 | 4 | [Atomic decomposition](invariants-threefolds.md#8f9e7a526fba) |
 | [Fanography 1-9](fanography.md#fano-variety-1-9) | 3 | 4 | 4 | [Atomic decomposition](invariants-threefolds.md#6f17aaf4290d) |
+| [Fanography 2-10](records/fanography-2-10.md) | 3 | 6 | 6 | [Hodge and spectral data](invariants-threefolds.md#fanography-2-10) |
+| [Fanography 2-11](records/fanography-2-11.md) | 3 | 6 | 6 | [Atomic decomposition](invariants-threefolds.md#fanography-2-11) |
+| [Fanography 2-12](records/fanography-2-12.md) | 3 | 6 | 6 | [Atomic decomposition](invariants-threefolds.md#fanography-2-12) |
+| [Fanography 2-13](records/fanography-2-13.md) | 3 | 6 | 6 | [Atomic decomposition](invariants-threefolds.md#fanography-2-13) |
+| [Fanography 2-15](records/fanography-2-15.md) | 3 | 6 | 6 | [Atomic decomposition](invariants-threefolds.md#fanography-2-15) |
+| [Fanography 2-16](records/fanography-2-16.md) | 3 | 6 | 6 | [Atomic decomposition](invariants-threefolds.md#fanography-2-16) |
+| [Fanography 2-18](records/fanography-2-18.md) | 3 | 6 | 6 | [Atomic decomposition](invariants-threefolds.md#fanography-2-18) |
+| [Fanography 2-19](records/fanography-2-19.md) | 3 | 6 | 6 | [Atomic decomposition](invariants-threefolds.md#fanography-2-19) |
+| [Fanography 2-23](records/fanography-2-23.md) | 3 | 6 | 6 | [Hodge and spectral data](invariants-threefolds.md#fanography-2-23) |
 | [Fanography 2-24](fanography.md#fano-variety-2-24) | 3 | 6 | 6 | [Atomic decomposition](invariants-threefolds.md#3538d68c1866) |
+| [Fanography 2-25](records/fanography-2-25.md) | 3 | 6 | 6 | [Hodge and spectral data](invariants-threefolds.md#fanography-2-25) |
+| [Fanography 2-27](records/fanography-2-27.md) | 3 | 6 | 6 | [Atomic decomposition](invariants-threefolds.md#fanography-2-27) |
+| [Fanography 2-28](records/fanography-2-28.md) | 3 | 6 | 6 | [Hodge and spectral data](invariants-threefolds.md#fanography-2-28) |
+| [Fanography 2-29](records/fanography-2-29.md) | 3 | 6 | 6 | [Atomic decomposition](invariants-threefolds.md#fanography-2-29) |
+| [Fanography 2-30](records/fanography-2-30.md) | 3 | 6 | 6 | [Atomic decomposition](invariants-threefolds.md#fanography-2-30) |
+| [Fanography 2-31](records/fanography-2-31.md) | 3 | 6 | 6 | [Atomic decomposition](invariants-threefolds.md#fanography-2-31) |
+| [Fanography 2-33](records/fanography-2-33.md) | 3 | 6 | 6 | [Atomic decomposition](invariants-threefolds.md#fanography-2-33) |
 | [Fanography 2-34](fanography.md#fano-variety-2-34) | 3 | 6 | 6 | [Atomic decomposition](invariants-threefolds.md#ea3e323d9fcb) |
+| [Fanography 2-36](records/fanography-2-36.md) | 3 | 6 | 6 | [Atomic decomposition](invariants-threefolds.md#fanography-2-36) |
+| [Fanography 2-4](records/fanography-2-4.md) | 3 | 6 | 6 | [Atomic decomposition](invariants-threefolds.md#fanography-2-4) |
+| [Fanography 2-5](records/fanography-2-5.md) | 3 | 6 | 6 | [Hodge and spectral data](invariants-threefolds.md#fanography-2-5) |
+| [Fanography 2-6](records/fanography-2-6.md) | 3 | 6 | 6 | [Hodge and spectral data](invariants-threefolds.md#fanography-2-6) |
+| [Fanography 2-7](records/fanography-2-7.md) | 3 | 6 | 6 | [Atomic decomposition](invariants-threefolds.md#fanography-2-7) |
+| [Fanography 2-9](records/fanography-2-9.md) | 3 | 6 | 6 | [Atomic decomposition](invariants-threefolds.md#fanography-2-9) |
+| [Fanography 3-10](records/fanography-3-10.md) | 3 | 8 | 8 | [Atomic decomposition](invariants-threefolds.md#fanography-3-10) |
+| [Fanography 3-11](records/fanography-3-11.md) | 3 | 8 | 8 | [Hodge and spectral data](invariants-threefolds.md#fanography-3-11) |
+| [Fanography 3-12](records/fanography-3-12.md) | 3 | 8 | 8 | [Atomic decomposition](invariants-threefolds.md#fanography-3-12) |
+| [Fanography 3-13](records/fanography-3-13.md) | 3 | 8 | 8 | [Atomic decomposition](invariants-threefolds.md#fanography-3-13) |
+| [Fanography 3-15](records/fanography-3-15.md) | 3 | 8 | 8 | [Atomic decomposition](invariants-threefolds.md#fanography-3-15) |
 | [Fanography 3-17](fanography.md#fano-variety-3-17) | 3 | 8 | 8 | [Atomic decomposition](invariants-threefolds.md#a8e28f47c77f) |
+| [Fanography 3-18](records/fanography-3-18.md) | 3 | 8 | 8 | [Atomic decomposition](invariants-threefolds.md#fanography-3-18) |
+| [Fanography 3-19](records/fanography-3-19.md) | 3 | 6 | 8 | [Hodge and ambient spectral data](invariants-threefolds.md#fanography-3-19) |
+| [Fanography 3-20](records/fanography-3-20.md) | 3 | 8 | 8 | [Atomic decomposition](invariants-threefolds.md#fanography-3-20) |
+| [Fanography 3-21](records/fanography-3-21.md) | 3 | 8 | 8 | [Atomic decomposition](invariants-threefolds.md#fanography-3-21) |
+| [Fanography 3-22](records/fanography-3-22.md) | 3 | 8 | 8 | [Atomic decomposition](invariants-threefolds.md#fanography-3-22) |
+| [Fanography 3-23](records/fanography-3-23.md) | 3 | 8 | 8 | [Atomic decomposition](invariants-threefolds.md#fanography-3-23) |
+| [Fanography 3-24](records/fanography-3-24.md) | 3 | 8 | 8 | [Atomic decomposition](invariants-threefolds.md#fanography-3-24) |
+| [Fanography 3-25](records/fanography-3-25.md) | 3 | 8 | 8 | [Atomic decomposition](invariants-threefolds.md#fanography-3-25) |
+| [Fanography 3-26](records/fanography-3-26.md) | 3 | 8 | 8 | [Atomic decomposition](invariants-threefolds.md#fanography-3-26) |
+| [Fanography 3-28](records/fanography-3-28.md) | 3 | 8 | 8 | [Atomic decomposition](invariants-threefolds.md#fanography-3-28) |
+| [Fanography 3-29](records/fanography-3-29.md) | 3 | 8 | 8 | [Atomic decomposition](invariants-threefolds.md#fanography-3-29) |
+| [Fanography 3-3](records/fanography-3-3.md) | 3 | 8 | 8 | [Atomic decomposition](invariants-threefolds.md#fanography-3-3) |
+| [Fanography 3-30](records/fanography-3-30.md) | 3 | 8 | 8 | [Atomic decomposition](invariants-threefolds.md#fanography-3-30) |
+| [Fanography 3-31](records/fanography-3-31.md) | 3 | 8 | 8 | [Atomic decomposition](invariants-threefolds.md#fanography-3-31) |
+| [Fanography 3-6](records/fanography-3-6.md) | 3 | 8 | 8 | [Hodge and spectral data](invariants-threefolds.md#fanography-3-6) |
+| [Fanography 3-7](records/fanography-3-7.md) | 3 | 8 | 8 | [Hodge and spectral data](invariants-threefolds.md#fanography-3-7) |
+| [Fanography 3-8](records/fanography-3-8.md) | 3 | 8 | 8 | [Atomic decomposition](invariants-threefolds.md#fanography-3-8) |
+| [Fanography 3-9](records/fanography-3-9.md) | 3 | 6 | 8 | [Hodge and ambient spectral data](invariants-threefolds.md#fanography-3-9) |
 | [Fanography 4-1](fanography.md#fano-variety-4-1) | 3 | 10 | 10 | [Hodge and spectral data](invariants-threefolds.md#96d957608200) |
+| [Fanography 4-10](records/fanography-4-10.md) | 3 | 10 | 10 | [Atomic decomposition](invariants-threefolds.md#fanography-4-10) |
+| [Fanography 4-11](records/fanography-4-11.md) | 3 | 10 | 10 | [Atomic decomposition](invariants-threefolds.md#fanography-4-11) |
+| [Fanography 4-12](records/fanography-4-12.md) | 3 | 10 | 10 | [Atomic decomposition](invariants-threefolds.md#fanography-4-12) |
+| [Fanography 4-2](records/fanography-4-2.md) | 3 | 8 | 10 | [Hodge and spectral data](invariants-threefolds.md#fanography-4-2) |
+| [Fanography 4-3](records/fanography-4-3.md) | 3 | 10 | 10 | [Atomic decomposition](invariants-threefolds.md#fanography-4-3) |
+| [Fanography 4-4](records/fanography-4-4.md) | 3 | 8 | 10 | [Hodge and ambient spectral data](invariants-threefolds.md#fanography-4-4) |
+| [Fanography 4-6](records/fanography-4-6.md) | 3 | 10 | 10 | [Atomic decomposition](invariants-threefolds.md#fanography-4-6) |
+| [Fanography 4-7](records/fanography-4-7.md) | 3 | 10 | 10 | [Atomic decomposition](invariants-threefolds.md#fanography-4-7) |
+| [Fanography 4-8](records/fanography-4-8.md) | 3 | 10 | 10 | [Atomic decomposition](invariants-threefolds.md#fanography-4-8) |
+| [Fanography 4-9](records/fanography-4-9.md) | 3 | 10 | 10 | [Atomic decomposition](invariants-threefolds.md#fanography-4-9) |
+| [Fanography 5-2](records/fanography-5-2.md) | 3 | 12 | 12 | [Atomic decomposition](invariants-threefolds.md#fanography-5-2) |
+| [Fanography 5-3](records/fanography-5-3.md) | 3 | 12 | 12 | [Atomic decomposition](invariants-threefolds.md#fanography-5-3) |
+| [Fanography 6-1](records/fanography-6-1.md) | 3 | 8 | 14 | [Hodge and ambient spectral data](invariants-threefolds.md#fanography-6-1) |
+| [Fanography 7-1](records/fanography-7-1.md) | 3 | 6 | 16 | [Hodge and ambient spectral data](invariants-threefolds.md#fanography-7-1) |
+| [Fanography 8-1](records/fanography-8-1.md) | 3 | 6 | 18 | [Hodge and ambient spectral data](invariants-threefolds.md#fanography-8-1) |
 | [Fl(1,3,4) / O(1,1)+O(1,1)](additional.md#fl134o11o11) | 3 | 6 | 6 | [Atomic decomposition](invariants-threefolds.md#d3154e614ad6) |
 | [Gr(2,4) / O(3)](grassmannians.md#gr24o3) | 3 | 4 | 4 | [Atomic decomposition](invariants-threefolds.md#83c013d9bdf4) |
 | [Gr(2,5) / O(1)+O(1)+O(2)](grassmannians.md#gr25o1o1o2) | 3 | 4 | 4 | [Atomic decomposition](invariants-threefolds.md#4a1a8491be38) |

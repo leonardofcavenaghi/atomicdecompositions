@@ -8,7 +8,7 @@ keywords: ["dimension 5", "fivefold", "Complete intersection in a product of pro
 
 **Geometric presentation.** Ambient variety: \(\mathbb P^{3}\times \mathbb P^{3}\). Defining multidegrees in this factor order: `[[2, 2]]`.
 
-[Geometric identification](../sources.md#geometric-identification).
+[Geometric identification](../sources.md#geometric-identification). Equivalent geometry: see the [trivial projective-bundle presentation](pb5-028.md).
 
 **Construction:** Complete intersection in a product of projective spaces. **Dimension:** 5. **Index:** 2. **h(1,1):** 2.
 

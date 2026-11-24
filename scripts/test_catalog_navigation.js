@@ -282,7 +282,7 @@ async function main() {
     console.log('Computed catalog passed: 15 new cards, 131 downloadable results, full GM-20 matrix, correct master-table ambient index.');
 
     const catalogue = await page.evaluate(async base => fetch(base + '/data/catalog-records.json').then(r => r.json()), base);
-    for (const [collection, dimension] of [['fourfolds',4],['fivefolds',5]]) {
+    for (const [collection, dimension] of [['threefolds',3],['fourfolds',4],['fivefolds',5]]) {
       const expected = catalogue.records.filter(r => r.dimension === dimension).length;
       await page.goto(`${base}/catalog/${collection}/`, {waitUntil:'domcontentloaded'});
       await page.waitForFunction(() => window.jQuery && jQuery.fn.dataTable && jQuery.fn.dataTable.isDataTable('table'));

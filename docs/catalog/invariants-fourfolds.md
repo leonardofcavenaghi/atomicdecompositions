@@ -1824,13 +1824,15 @@ No full atomic Hodge polynomial is assigned by this test.
 
 [Construction, inputs and matrix](records/ckp-702.md)
 
-**Dimension:** 4. **Ambient rank:** 9. **Full cohomology rank:** 135. **Full Hodge-invariant rank:** not identified here.
+**Dimension:** 4. **Ambient rank:** 9. **Full cohomology rank:** 135. **Full Hodge-invariant rank:** 11.
 
 Full Hodge polynomial: \(P_X(t)=13t^{2} + 109 + 13t^{-2}\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** zero at every tested point.
 
 No atomic decomposition is certified at these points; cyclicity may hold at other quantum parameters.
+
+**Hodge identification (very general smooth member):** Small resolution of three nodes via toric flip of a very general cubic divisor in P_{P¹}(O² ⊕ O(1)³): three exceptional planes add two non-ambient algebraic classes, giving dim H^{2,2}_Q = 5 and full Hodge-invariant rank 11.
 
 
 <span id="ckp-186"></span>
@@ -1871,13 +1873,15 @@ No atomic decomposition is certified at these points; cyclicity may hold at othe
 
 [Construction, inputs and matrix](records/ckp-688.md)
 
-**Dimension:** 4. **Ambient rank:** 9. **Full cohomology rank:** 35. **Full Hodge-invariant rank:** not identified here.
+**Dimension:** 4. **Ambient rank:** 9. **Full cohomology rank:** 35. **Full Hodge-invariant rank:** 9.
 
 Full Hodge polynomial: \(P_X(t)=t^{2} + 2t + 29 + 2t^{-1} + t^{-2}\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** zero at every tested point.
 
 No atomic decomposition is certified at these points; cyclicity may hold at other quantum parameters.
+
+**Hodge identification (very general smooth member):** Blow-up Bl_C(V₃) of a very general cubic fourfold along a smooth plane cubic C = V₃ ∩ P²: Griffiths IVHS and blow-up formula give dim H^{2,2}_Q = 3.
 
 
 <span id="ckp-718"></span>
@@ -1947,13 +1951,15 @@ No full atomic Hodge polynomial is assigned by this test.
 
 [Construction, inputs and matrix](records/ckp-691.md)
 
-**Dimension:** 4. **Ambient rank:** 9. **Full cohomology rank:** 179. **Full Hodge-invariant rank:** not identified here.
+**Dimension:** 4. **Ambient rank:** 9. **Full cohomology rank:** 179. **Full Hodge-invariant rank:** 9.
 
 Full Hodge polynomial: \(P_X(t)=19t^{2} + 2t + 137 + 2t^{-1} + 19t^{-2}\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** zero at every tested point.
 
 No atomic decomposition is certified at these points; cyclicity may hold at other quantum parameters.
+
+**Hodge identification (very general smooth member):** Weighted blow-up Bl_C(Y₆) of a very general quasi-smooth sextic in P(1,1,1,2,2,2) along its singular-locus elliptic curve: Steenbrink–Griffiths IVHS and excision give dim H^{2,2}_Q = 3.
 
 
 <span id="ckp-145"></span>
@@ -2011,13 +2017,15 @@ No full atomic Hodge polynomial is assigned by this test.
 
 [Construction, inputs and matrix](records/hlm-27.md)
 
-**Dimension:** 4. **Ambient rank:** 8. **Full cohomology rank:** 184. **Full Hodge-invariant rank:** not identified here.
+**Dimension:** 4. **Ambient rank:** 8. **Full cohomology rank:** 184. **Full Hodge-invariant rank:** 8.
 
 Full Hodge polynomial: \(P_X(t)=20t^{2} + 144 + 20t^{-2}\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** zero at every tested point.
 
 No atomic decomposition is certified at these points; cyclicity may hold at other quantum parameters.
+
+**Hodge identification (very general smooth double cover):** Very-general double cover of P³ × P¹ branched in (4,2): universal monodromy fixes H⁴(+) = H⁴_amb and Picard–Lefschetz makes H⁴(-) irreducible non-Tate.
 
 
 <span id="ckp-685"></span>
@@ -2298,13 +2306,15 @@ No full atomic Hodge polynomial is assigned by this test.
 
 [Construction, inputs and matrix](records/ckp-733.md)
 
-**Dimension:** 4. **Ambient rank:** 8. **Full cohomology rank:** 212. **Full Hodge-invariant rank:** not identified here.
+**Dimension:** 4. **Ambient rank:** 8. **Full cohomology rank:** 212. **Full Hodge-invariant rank:** 8.
 
 Full Hodge polynomial: \(P_X(t)=22t^{2} + 168 + 22t^{-2}\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** zero at every tested point.
 
 No atomic decomposition is certified at these points; cyclicity may hold at other quantum parameters.
+
+**Hodge identification (very general smooth member):** Blow-up Bl_S(V₄) of a very general quartic fourfold along a very general quartic K3 surface S = V₄ ∩ P³: Griffiths IVHS and blow-up formula give dim H^{2,2}_Q = 2.
 
 
 <span id="ckp-060"></span>
@@ -2613,13 +2623,16 @@ No atomic decomposition is certified at these points; cyclicity may hold at othe
 
 [Construction, inputs and matrix](records/hlm-29.md)
 
-**Dimension:** 4. **Ambient rank:** 9. **Full cohomology rank:** 30. **Full Hodge-invariant rank:** not identified here.
+**Dimension:** 4. **Ambient rank:** 9. **Full cohomology rank:** 30. **Full Hodge-invariant rank:** 9.
 
 Full Hodge polynomial: \(P_X(t)=t^{2} + 28 + t^{-2}\).
 
 **Analysis point:** `y1=2, y2=3`. **Unit determinant:** zero at every tested point.
 
 No atomic decomposition is certified at these points; cyclicity may hold at other quantum parameters.
+
+**Hodge identification (very general smooth double cover):** Very-general double cover of P² × P² branched in (2,2): universal monodromy fixes H⁴(+) = H⁴_amb and Picard–Lefschetz makes H⁴(-) irreducible non-Tate.
+
 
 <span id="spinor-1x5-2"></span>
 

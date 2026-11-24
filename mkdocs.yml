@@ -109,7 +109,6 @@ nav:
       - Flag 1.1.0.dev1: software/flags-1.1.0.md
       - Toric 1.1.0.dev1: software/toric-1.1.0.md
       - Combined 1.1.0.dev1: software/combined.md
-      - GKMtools.jl (Julia/OSCAR): software/gkmtools.md
       - Version comparison: software/launch-2026-11.md
       - Inputs and outputs: software/input-output.md
       - Notation and compatibility: software/notation.md

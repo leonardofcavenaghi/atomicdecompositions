@@ -27,7 +27,7 @@ Full Hodge polynomial: \(P_X(t)=4t^{3} + 159t + 6 + 159t^{-1} + 4t^{-3}\).
 | 1 | 1 | 4 | 330 | \(4t^{3} + 159t + 4 + 159t^{-1} + 4t^{-3}\) |
 | 2 | 2 | 1 | 1 | \(1\) |
 
-**Hodge identification:** Very-general ample complete intersection: weak Lefschetz and irreducible non-Tate vanishing cohomology.
+**Hodge identification:** Smooth ample complete intersection: weak Lefschetz and odd middle vanishing cohomology.
 
 **Primitive assignment:** Chern index at least two; see the [common proof rules](atomic-invariants.md#primitive-assignment-rules).
 
@@ -58,7 +58,7 @@ Full Hodge polynomial: \(P_X(t)=44t^{3} + 759t + 6 + 759t^{-1} + 44t^{-3}\).
 | 1 | 1 | 1 | 1 | \(1\) |
 | 2 | 1 | 5 | 1611 | \(44t^{3} + 759t + 5 + 759t^{-1} + 44t^{-3}\) |
 
-**Hodge identification:** Very-general ample complete intersection: weak Lefschetz and irreducible non-Tate vanishing cohomology.
+**Hodge identification:** Smooth ample complete intersection: weak Lefschetz and odd middle vanishing cohomology.
 
 **Primitive assignment:** Projective complete intersection of index one; see the [common proof rules](atomic-invariants.md#primitive-assignment-rules).
 
@@ -89,7 +89,7 @@ Full Hodge polynomial: \(P_X(t)=72t^{3} + 1155t + 6 + 1155t^{-1} + 72t^{-3}\).
 | 1 | 1 | 1 | 1 | \(1\) |
 | 2 | 1 | 5 | 2459 | \(72t^{3} + 1155t + 5 + 1155t^{-1} + 72t^{-3}\) |
 
-**Hodge identification:** Very-general ample complete intersection: weak Lefschetz and irreducible non-Tate vanishing cohomology.
+**Hodge identification:** Smooth ample complete intersection: weak Lefschetz and odd middle vanishing cohomology.
 
 **Primitive assignment:** Projective complete intersection of index one; see the [common proof rules](atomic-invariants.md#primitive-assignment-rules).
 
@@ -120,7 +120,7 @@ Full Hodge polynomial: \(P_X(t)=11t^{3} + 316t + 6 + 316t^{-1} + 11t^{-3}\).
 | 1 | 1 | 4 | 658 | \(11t^{3} + 316t + 4 + 316t^{-1} + 11t^{-3}\) |
 | 2 | 2 | 1 | 1 | \(1\) |
 
-**Hodge identification:** Very-general ample complete intersection: weak Lefschetz and irreducible non-Tate vanishing cohomology.
+**Hodge identification:** Smooth ample complete intersection: weak Lefschetz and odd middle vanishing cohomology.
 
 **Primitive assignment:** Chern index at least two; see the [common proof rules](atomic-invariants.md#primitive-assignment-rules).
 
@@ -151,7 +151,7 @@ Full Hodge polynomial: \(P_X(t)=156t^{3} + 2295t + 6 + 2295t^{-1} + 156t^{-3}\).
 | 1 | 1 | 1 | 1 | \(1\) |
 | 2 | 1 | 5 | 4907 | \(156t^{3} + 2295t + 5 + 2295t^{-1} + 156t^{-3}\) |
 
-**Hodge identification:** Very-general ample complete intersection: weak Lefschetz and irreducible non-Tate vanishing cohomology.
+**Hodge identification:** Smooth ample complete intersection: weak Lefschetz and odd middle vanishing cohomology.
 
 **Primitive assignment:** Projective complete intersection of index one; see the [common proof rules](atomic-invariants.md#primitive-assignment-rules).
 
@@ -183,7 +183,7 @@ Full Hodge polynomial: \(P_X(t)=t^{3} + 83t + 6 + 83t^{-1} + t^{-3}\).
 | 2 | 1 | 3 | 171 | \(t^{3} + 83t + 3 + 83t^{-1} + t^{-3}\) |
 | 3 | 2 | 1 | 1 | \(1\) |
 
-**Hodge identification:** Very-general ample complete intersection: weak Lefschetz and irreducible non-Tate vanishing cohomology.
+**Hodge identification:** Smooth ample complete intersection: weak Lefschetz and odd middle vanishing cohomology.
 
 **Primitive assignment:** Chern index at least two; see the [common proof rules](atomic-invariants.md#primitive-assignment-rules).
 
@@ -215,7 +215,7 @@ Full Hodge polynomial: \(P_X(t)=88t^{3} + 1364t + 6 + 1364t^{-1} + 88t^{-3}\).
 | 1 | 1 | 1 | 1 | \(1\) |
 | 2 | 1 | 5 | 2909 | \(88t^{3} + 1364t + 5 + 1364t^{-1} + 88t^{-3}\) |
 
-**Hodge identification:** Very-general ample complete intersection: weak Lefschetz and irreducible non-Tate vanishing cohomology.
+**Hodge identification:** Smooth ample complete intersection: weak Lefschetz and odd middle vanishing cohomology.
 
 **Primitive assignment:** Projective complete intersection of index one; see the [common proof rules](atomic-invariants.md#primitive-assignment-rules).
 
@@ -246,7 +246,7 @@ Full Hodge polynomial: \(P_X(t)=36t^{3} + 783t + 6 + 783t^{-1} + 36t^{-3}\).
 | 1 | 1 | 4 | 1642 | \(36t^{3} + 783t + 4 + 783t^{-1} + 36t^{-3}\) |
 | 2 | 2 | 1 | 1 | \(1\) |
 
-**Hodge identification:** Very-general ample complete intersection: weak Lefschetz and irreducible non-Tate vanishing cohomology.
+**Hodge identification:** Smooth ample complete intersection: weak Lefschetz and odd middle vanishing cohomology.
 
 **Primitive assignment:** Chern index at least two; see the [common proof rules](atomic-invariants.md#primitive-assignment-rules).
 
@@ -277,7 +277,7 @@ Full Hodge polynomial: \(P_X(t)=294t^{3} + 4074t + 6 + 4074t^{-1} + 294t^{-3}\).
 | 1 | 1 | 1 | 1 | \(1\) |
 | 2 | 1 | 5 | 8741 | \(294t^{3} + 4074t + 5 + 4074t^{-1} + 294t^{-3}\) |
 
-**Hodge identification:** Very-general ample complete intersection: weak Lefschetz and irreducible non-Tate vanishing cohomology.
+**Hodge identification:** Smooth ample complete intersection: weak Lefschetz and odd middle vanishing cohomology.
 
 **Primitive assignment:** Projective complete intersection of index one; see the [common proof rules](atomic-invariants.md#primitive-assignment-rules).
 
@@ -308,7 +308,7 @@ Full Hodge polynomial: \(P_X(t)=16t^{3} + 410t + 6 + 410t^{-1} + 16t^{-3}\).
 | 1 | 1 | 4 | 856 | \(16t^{3} + 410t + 4 + 410t^{-1} + 16t^{-3}\) |
 | 2 | 2 | 1 | 1 | \(1\) |
 
-**Hodge identification:** Very-general ample complete intersection: weak Lefschetz and irreducible non-Tate vanishing cohomology.
+**Hodge identification:** Smooth ample complete intersection: weak Lefschetz and odd middle vanishing cohomology.
 
 **Primitive assignment:** Chern index at least two; see the [common proof rules](atomic-invariants.md#primitive-assignment-rules).
 
@@ -339,7 +339,7 @@ Full Hodge polynomial: \(P_X(t)=147t^{3} + 2142t + 6 + 2142t^{-1} + 147t^{-3}\).
 | 1 | 1 | 1 | 1 | \(1\) |
 | 2 | 1 | 5 | 4583 | \(147t^{3} + 2142t + 5 + 2142t^{-1} + 147t^{-3}\) |
 
-**Hodge identification:** Very-general ample complete intersection: weak Lefschetz and irreducible non-Tate vanishing cohomology.
+**Hodge identification:** Smooth ample complete intersection: weak Lefschetz and odd middle vanishing cohomology.
 
 **Primitive assignment:** Projective complete intersection of index one; see the [common proof rules](atomic-invariants.md#primitive-assignment-rules).
 
@@ -460,7 +460,7 @@ Full Hodge polynomial: \(P_X(t)=35t + 12 + 35t^{-1}\).
 | 1 | 1 | 3 | 73 | \(35t + 3 + 35t^{-1}\) |
 | 2 | 9 | 1 | 1 | \(1\) |
 
-**Hodge identification:** Very-general ample complete intersection: weak Lefschetz and irreducible non-Tate vanishing cohomology.
+**Hodge identification:** Smooth ample complete intersection: weak Lefschetz and odd middle vanishing cohomology.
 
 **Primitive assignment:** Unique rational eigenvalue; see the [common proof rules](atomic-invariants.md#primitive-assignment-rules).
 
@@ -521,7 +521,7 @@ Full Hodge polynomial: \(P_X(t)=4t^{3} + 164t + 12 + 164t^{-1} + 4t^{-3}\).
 | 1 | 1 | 4 | 340 | \(4t^{3} + 164t + 4 + 164t^{-1} + 4t^{-3}\) |
 | 2 | 8 | 1 | 1 | \(1\) |
 
-**Hodge identification:** Very-general ample complete intersection: weak Lefschetz and irreducible non-Tate vanishing cohomology.
+**Hodge identification:** Smooth ample complete intersection: weak Lefschetz and odd middle vanishing cohomology.
 
 **Primitive assignment:** Unique rational eigenvalue; see the [common proof rules](atomic-invariants.md#primitive-assignment-rules).
 
@@ -612,7 +612,7 @@ Full Hodge polynomial: \(P_X(t)=10t^{3} + 330t + 12 + 330t^{-1} + 10t^{-3}\).
 | 1 | 1 | 4 | 684 | \(10t^{3} + 330t + 4 + 330t^{-1} + 10t^{-3}\) |
 | 2 | 8 | 1 | 1 | \(1\) |
 
-**Hodge identification:** Very-general ample complete intersection: weak Lefschetz and irreducible non-Tate vanishing cohomology.
+**Hodge identification:** Smooth ample complete intersection: weak Lefschetz and odd middle vanishing cohomology.
 
 **Primitive assignment:** Unique rational eigenvalue; see the [common proof rules](atomic-invariants.md#primitive-assignment-rules).
 
@@ -688,7 +688,7 @@ Full Hodge polynomial: \(P_X(t)=455t^{3} + 6055t + 6 + 6055t^{-1} + 455t^{-3}\).
 | 1 | 1 | 1 | 1 | \(1\) |
 | 2 | 1 | 5 | 13025 | \(455t^{3} + 6055t + 5 + 6055t^{-1} + 455t^{-3}\) |
 
-**Hodge identification:** Very-general ample complete intersection: weak Lefschetz and irreducible non-Tate vanishing cohomology.
+**Hodge identification:** Smooth ample complete intersection: weak Lefschetz and odd middle vanishing cohomology.
 
 **Primitive assignment:** Projective complete intersection of index one; see the [common proof rules](atomic-invariants.md#primitive-assignment-rules).
 
@@ -719,7 +719,7 @@ Full Hodge polynomial: \(P_X(t)=6t + 12 + 6t^{-1}\).
 | 1 | 1 | 2 | 14 | \(6t + 2 + 6t^{-1}\) |
 | 2 | 10 | 1 | 1 | \(1\) |
 
-**Hodge identification:** Very-general ample complete intersection: weak Lefschetz and irreducible non-Tate vanishing cohomology.
+**Hodge identification:** Smooth ample complete intersection: weak Lefschetz and odd middle vanishing cohomology.
 
 **Primitive assignment:** Chern index at least two; see the [common proof rules](atomic-invariants.md#primitive-assignment-rules).
 
@@ -1001,7 +1001,7 @@ Full Hodge polynomial: \(P_X(t)=3t + 6 + 3t^{-1}\).
 | 3 | 1 | 2 | 8 | \(3t + 2 + 3t^{-1}\) |
 | 4 | 2 | 1 | 1 | \(1\) |
 
-**Hodge identification:** Very-general ample complete intersection: weak Lefschetz and irreducible non-Tate vanishing cohomology.
+**Hodge identification:** Smooth ample complete intersection: weak Lefschetz and odd middle vanishing cohomology.
 
 **Primitive assignment:** Chern index at least two; see the [common proof rules](atomic-invariants.md#primitive-assignment-rules).
 
@@ -1035,7 +1035,7 @@ Full Hodge polynomial: \(P_X(t)=t^{3} + 83t + 6 + 83t^{-1} + t^{-3}\).
 | 1 | 1 | 3 | 171 | \(t^{3} + 83t + 3 + 83t^{-1} + t^{-3}\) |
 | 2 | 3 | 1 | 1 | \(1\) |
 
-**Hodge identification:** Very-general ample complete intersection: weak Lefschetz and irreducible non-Tate vanishing cohomology.
+**Hodge identification:** Smooth ample complete intersection: weak Lefschetz and odd middle vanishing cohomology.
 
 **Primitive assignment:** Chern index at least two; see the [common proof rules](atomic-invariants.md#primitive-assignment-rules).
 
@@ -1068,7 +1068,7 @@ Full Hodge polynomial: \(P_X(t)=36t^{3} + 783t + 6 + 783t^{-1} + 36t^{-3}\).
 | 2 | 1 | 1 | 1 | \(1\) |
 | 3 | 1 | 4 | 1642 | \(36t^{3} + 783t + 4 + 783t^{-1} + 36t^{-3}\) |
 
-**Hodge identification:** Very-general ample complete intersection: weak Lefschetz and irreducible non-Tate vanishing cohomology.
+**Hodge identification:** Smooth ample complete intersection: weak Lefschetz and odd middle vanishing cohomology.
 
 **Primitive assignment:** Chern index at least two; see the [common proof rules](atomic-invariants.md#primitive-assignment-rules).
 
@@ -1168,7 +1168,7 @@ Full Hodge polynomial: \(P_X(t)=21t + 6 + 21t^{-1}\).
 | 1 | 1 | 2 | 44 | \(21t + 2 + 21t^{-1}\) |
 | 2 | 4 | 1 | 1 | \(1\) |
 
-**Hodge identification:** Very-general ample complete intersection: weak Lefschetz and irreducible non-Tate vanishing cohomology.
+**Hodge identification:** Smooth ample complete intersection: weak Lefschetz and odd middle vanishing cohomology.
 
 **Primitive assignment:** Chern index at least two; see the [common proof rules](atomic-invariants.md#primitive-assignment-rules).
 
@@ -1199,7 +1199,7 @@ Full Hodge polynomial: \(P_X(t)=7t^{3} + 266t + 6 + 266t^{-1} + 7t^{-3}\).
 | 1 | 1 | 3 | 549 | \(7t^{3} + 266t + 3 + 266t^{-1} + 7t^{-3}\) |
 | 2 | 3 | 1 | 1 | \(1\) |
 
-**Hodge identification:** Very-general ample complete intersection: weak Lefschetz and irreducible non-Tate vanishing cohomology.
+**Hodge identification:** Smooth ample complete intersection: weak Lefschetz and odd middle vanishing cohomology.
 
 **Primitive assignment:** Chern index at least two; see the [common proof rules](atomic-invariants.md#primitive-assignment-rules).
 
@@ -1230,7 +1230,7 @@ Full Hodge polynomial: \(P_X(t)=84t^{3} + 1554t + 6 + 1554t^{-1} + 84t^{-3}\).
 | 1 | 1 | 4 | 3280 | \(84t^{3} + 1554t + 4 + 1554t^{-1} + 84t^{-3}\) |
 | 2 | 2 | 1 | 1 | \(1\) |
 
-**Hodge identification:** Very-general ample complete intersection: weak Lefschetz and irreducible non-Tate vanishing cohomology.
+**Hodge identification:** Smooth ample complete intersection: weak Lefschetz and odd middle vanishing cohomology.
 
 **Primitive assignment:** Chern index at least two; see the [common proof rules](atomic-invariants.md#primitive-assignment-rules).
 
@@ -1263,7 +1263,7 @@ Full Hodge polynomial: \(P_X(t)=3t + 6 + 3t^{-1}\).
 | 3 | 1 | 2 | 8 | \(3t + 2 + 3t^{-1}\) |
 | 4 | 2 | 1 | 1 | \(1\) |
 
-**Hodge identification:** Very-general ample complete intersection: weak Lefschetz and irreducible non-Tate vanishing cohomology.
+**Hodge identification:** Smooth ample complete intersection: weak Lefschetz and odd middle vanishing cohomology.
 
 **Primitive assignment:** Chern index at least two; see the [common proof rules](atomic-invariants.md#primitive-assignment-rules).
 
@@ -1296,7 +1296,7 @@ Full Hodge polynomial: \(P_X(t)=t^{3} + 83t + 6 + 83t^{-1} + t^{-3}\).
 | 1 | 1 | 3 | 171 | \(t^{3} + 83t + 3 + 83t^{-1} + t^{-3}\) |
 | 2 | 3 | 1 | 1 | \(1\) |
 
-**Hodge identification:** Very-general ample complete intersection: weak Lefschetz and irreducible non-Tate vanishing cohomology.
+**Hodge identification:** Smooth ample complete intersection: weak Lefschetz and odd middle vanishing cohomology.
 
 **Primitive assignment:** Chern index at least two; see the [common proof rules](atomic-invariants.md#primitive-assignment-rules).
 
@@ -1328,7 +1328,7 @@ Full Hodge polynomial: \(P_X(t)=36t^{3} + 783t + 6 + 783t^{-1} + 36t^{-3}\).
 | 2 | 1 | 1 | 1 | \(1\) |
 | 3 | 1 | 4 | 1642 | \(36t^{3} + 783t + 4 + 783t^{-1} + 36t^{-3}\) |
 
-**Hodge identification:** Very-general ample complete intersection: weak Lefschetz and irreducible non-Tate vanishing cohomology.
+**Hodge identification:** Smooth ample complete intersection: weak Lefschetz and odd middle vanishing cohomology.
 
 **Primitive assignment:** Chern index at least two; see the [common proof rules](atomic-invariants.md#primitive-assignment-rules).
 
@@ -1361,7 +1361,7 @@ Full Hodge polynomial: \(P_X(t)=16t^{3} + 410t + 6 + 410t^{-1} + 16t^{-3}\).
 | 2 | 1 | 1 | 1 | \(1\) |
 | 3 | 1 | 4 | 856 | \(16t^{3} + 410t + 4 + 410t^{-1} + 16t^{-3}\) |
 
-**Hodge identification:** Very-general ample complete intersection: weak Lefschetz and irreducible non-Tate vanishing cohomology.
+**Hodge identification:** Smooth ample complete intersection: weak Lefschetz and odd middle vanishing cohomology.
 
 **Primitive assignment:** Chern index at least two; see the [common proof rules](atomic-invariants.md#primitive-assignment-rules).
 
@@ -1394,7 +1394,7 @@ Full Hodge polynomial: \(P_X(t)=27t + 6 + 27t^{-1}\).
 | 2 | 1 | 3 | 57 | \(27t + 3 + 27t^{-1}\) |
 | 3 | 2 | 1 | 1 | \(1\) |
 
-**Hodge identification:** Very-general ample complete intersection: weak Lefschetz and irreducible non-Tate vanishing cohomology.
+**Hodge identification:** Smooth ample complete intersection: weak Lefschetz and odd middle vanishing cohomology.
 
 **Primitive assignment:** Chern index at least two; see the [common proof rules](atomic-invariants.md#primitive-assignment-rules).
 
@@ -1426,7 +1426,7 @@ Full Hodge polynomial: \(P_X(t)=11t^{3} + 316t + 6 + 316t^{-1} + 11t^{-3}\).
 | 1 | 1 | 4 | 658 | \(11t^{3} + 316t + 4 + 316t^{-1} + 11t^{-3}\) |
 | 2 | 2 | 1 | 1 | \(1\) |
 
-**Hodge identification:** Very-general ample complete intersection: weak Lefschetz and irreducible non-Tate vanishing cohomology.
+**Hodge identification:** Smooth ample complete intersection: weak Lefschetz and odd middle vanishing cohomology.
 
 **Primitive assignment:** Chern index at least two; see the [common proof rules](atomic-invariants.md#primitive-assignment-rules).
 
@@ -1489,7 +1489,7 @@ Full Hodge polynomial: \(P_X(t)=7t^{3} + 266t + 6 + 266t^{-1} + 7t^{-3}\).
 | 2 | 1 | 3 | 549 | \(7t^{3} + 266t + 3 + 266t^{-1} + 7t^{-3}\) |
 | 3 | 2 | 1 | 1 | \(1\) |
 
-**Hodge identification:** Very-general ample complete intersection: weak Lefschetz and irreducible non-Tate vanishing cohomology.
+**Hodge identification:** Smooth ample complete intersection: weak Lefschetz and odd middle vanishing cohomology.
 
 **Primitive assignment:** Chern index at least two; see the [common proof rules](atomic-invariants.md#primitive-assignment-rules).
 
@@ -1521,7 +1521,7 @@ Full Hodge polynomial: \(P_X(t)=84t^{3} + 1554t + 6 + 1554t^{-1} + 84t^{-3}\).
 | 1 | 1 | 4 | 3280 | \(84t^{3} + 1554t + 4 + 1554t^{-1} + 84t^{-3}\) |
 | 2 | 2 | 1 | 1 | \(1\) |
 
-**Hodge identification:** Very-general ample complete intersection: weak Lefschetz and irreducible non-Tate vanishing cohomology.
+**Hodge identification:** Smooth ample complete intersection: weak Lefschetz and odd middle vanishing cohomology.
 
 **Primitive assignment:** Chern index at least two; see the [common proof rules](atomic-invariants.md#primitive-assignment-rules).
 
@@ -1612,7 +1612,7 @@ Full Hodge polynomial: \(P_X(t)=4t^{3} + 172t + 12 + 172t^{-1} + 4t^{-3}\).
 | 1 | 1 | 4 | 356 | \(4t^{3} + 172t + 4 + 172t^{-1} + 4t^{-3}\) |
 | 2 | 8 | 1 | 1 | \(1\) |
 
-**Hodge identification:** Very-general ample complete intersection: weak Lefschetz and irreducible non-Tate vanishing cohomology.
+**Hodge identification:** Smooth ample complete intersection: weak Lefschetz and odd middle vanishing cohomology.
 
 **Primitive assignment:** Unique rational eigenvalue; see the [common proof rules](atomic-invariants.md#primitive-assignment-rules).
 
@@ -1658,7 +1658,7 @@ Full Hodge polynomial: \(P_X(t)=7t^{3} + 266t + 12 + 266t^{-1} + 7t^{-3}\).
 | 1 | 1 | 3 | 549 | \(7t^{3} + 266t + 3 + 266t^{-1} + 7t^{-3}\) |
 | 2 | 9 | 1 | 1 | \(1\) |
 
-**Hodge identification:** Very-general ample complete intersection: weak Lefschetz and irreducible non-Tate vanishing cohomology.
+**Hodge identification:** Smooth ample complete intersection: weak Lefschetz and odd middle vanishing cohomology.
 
 **Primitive assignment:** Unique rational eigenvalue; see the [common proof rules](atomic-invariants.md#primitive-assignment-rules).
 
@@ -1929,7 +1929,7 @@ Full Hodge polynomial: \(P_X(t)=t^{3} + 83t + 12 + 83t^{-1} + t^{-3}\).
 | 1 | 1 | 3 | 171 | \(t^{3} + 83t + 3 + 83t^{-1} + t^{-3}\) |
 | 2 | 9 | 1 | 1 | \(1\) |
 
-**Hodge identification:** Very-general ample complete intersection: weak Lefschetz and irreducible non-Tate vanishing cohomology.
+**Hodge identification:** Smooth ample complete intersection: weak Lefschetz and odd middle vanishing cohomology.
 
 **Primitive assignment:** Unique rational eigenvalue; see the [common proof rules](atomic-invariants.md#primitive-assignment-rules).
 
@@ -2005,7 +2005,7 @@ Full Hodge polynomial: \(P_X(t)=6t^{3} + 224t + 10 + 224t^{-1} + 6t^{-3}\).
 | 1 | 1 | 4 | 464 | \(6t^{3} + 224t + 4 + 224t^{-1} + 6t^{-3}\) |
 | 2 | 6 | 1 | 1 | \(1\) |
 
-**Hodge identification:** Very-general ample complete intersection: weak Lefschetz and irreducible non-Tate vanishing cohomology.
+**Hodge identification:** Smooth ample complete intersection: weak Lefschetz and odd middle vanishing cohomology.
 
 **Primitive assignment:** Unique rational eigenvalue; see the [common proof rules](atomic-invariants.md#primitive-assignment-rules).
 
@@ -2051,7 +2051,7 @@ Full Hodge polynomial: \(P_X(t)=21t^{3} + 566t + 10 + 566t^{-1} + 21t^{-3}\).
 | 1 | 1 | 4 | 1178 | \(21t^{3} + 566t + 4 + 566t^{-1} + 21t^{-3}\) |
 | 2 | 6 | 1 | 1 | \(1\) |
 
-**Hodge identification:** Very-general ample complete intersection: weak Lefschetz and irreducible non-Tate vanishing cohomology.
+**Hodge identification:** Smooth ample complete intersection: weak Lefschetz and odd middle vanishing cohomology.
 
 **Primitive assignment:** Unique rational eigenvalue; see the [common proof rules](atomic-invariants.md#primitive-assignment-rules).
 
@@ -2082,7 +2082,7 @@ Full Hodge polynomial: \(P_X(t)=6t^{3} + 266t + 10 + 266t^{-1} + 6t^{-3}\).
 | 1 | 1 | 4 | 548 | \(6t^{3} + 266t + 4 + 266t^{-1} + 6t^{-3}\) |
 | 2 | 6 | 1 | 1 | \(1\) |
 
-**Hodge identification:** Very-general ample complete intersection: weak Lefschetz and irreducible non-Tate vanishing cohomology.
+**Hodge identification:** Smooth ample complete intersection: weak Lefschetz and odd middle vanishing cohomology.
 
 **Primitive assignment:** Unique rational eigenvalue; see the [common proof rules](atomic-invariants.md#primitive-assignment-rules).
 

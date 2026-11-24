@@ -36,7 +36,7 @@ for page in pages:
 catalog=json.loads((DOCS/'data/catalog-records.json').read_text())['records']
 original=json.loads((DOCS/'data/localization-results.json').read_text())['examples']
 fresh=json.loads((DOCS/'data/flag-fourfolds.json').read_text())['records']
-new=[r for name in ['fourfolds','fivefolds'] for r in json.loads((DOCS/'data'/('toric-'+name+'.json')).read_text())['records']]
+new=[r for name in ['threefolds','fourfolds','fivefolds'] for r in json.loads((DOCS/'data'/('toric-'+name+'.json')).read_text())['records']]
 assert len(catalog)==len(original)+len(new)+len(fresh) and len({r['id'] for r in catalog})==len(catalog)
 sources={r['id']:r for r in original+new+fresh}
 atomic={r['id']:r for r in json.loads((DOCS/'data/atomic-invariants.json').read_text())['records']}

@@ -1,22 +1,21 @@
 ---
-description: Computed small quantum multiplication matrices for Fano threefolds, with Fanography family identifiers and executable virtual-localization inputs.
+description: Computed small quantum multiplication matrices for Fano threefolds, with Fanography family identifiers and executable flag and toric localization inputs.
 ---
 
 # Fanography 3-Folds
 
-This section records the 105 smooth Fano threefold families from Fanography.
-Entries with supported flag-variety inputs include computed ambient matrices;
-entries marked **Catalog only** have reference descriptions without a computed matrix.
+This section records all 105 smooth Fano threefold families from [Fanography](https://fanography.info/).
+**81 of the 105 families** carry exact computed ambient quantum multiplication operators and connection-exponent data in GEOATOMS: 20 flag-variety and homogeneous-bundle realizations computed in `gwflags`, and 62 smooth toric and toric complete-intersection presentations computed in `gwtoric` (with family `2-32` realized in both models, and 12 additional flag entries independently cross-verified symbolically in `gwtoric`). The remaining 24 families are listed as **Catalog only** reference entries.
 
-**Realization types.** Entries labelled direct flag variety or complete intersection can be entered in gwflags. Homogeneous-bundle entries require the corresponding bundle constructor. Catalog-only entries link to reference information; no executable input or computed matrix is provided here.
+**Realization types.** Entries realized directly via root systems and homogeneous bundles display their `gwflags` inputs and \(A(\mathbf 1)\) matrices inline below. Entries realized via smooth projective toric fans and nef complete intersections link directly to their dedicated record pages ([`toric-threefolds.json`](../data/toric-threefolds.json)) with exact ray/cone inputs, symbolic operators \(A(\mathbf y)\), and connection exponents. Catalog-only entries provide geometric descriptions without a computed matrix.
 
-The displayed matrices are \(A(\mathbf 1)\), first-Chern quantum multiplication on the returned ambient space, with columns as images of the ordered basis. The returned grading is \(G=\operatorname{diag}(\operatorname{codim} e_i-\dim X/2)\). Spectral tables state their own parameter point. See [notation and scope](notation.md).
+The inline matrices display \(A(\mathbf 1)\), first-Chern quantum multiplication on the returned ambient space, with columns as images of the ordered basis. The returned grading is \(G=\operatorname{diag}(\operatorname{codim} e_i-\dim X/2)\). Spectral tables state their own parameter point. See [notation and scope](notation.md) and [Algebraic-geometry databases](databases.md).
 
 ### Fano Variety 1-1
 ??? example "1-1"
 
-    **Description:** Double cover / weighted degree-6 hypersurface (Fanography).
-    **Realization type:** Catalog only — not represented by the current gwflags flag-variety/ordinary complete-intersection input model.
+    **Description:** Double cover of $\mathbb{P}^3$ with branch locus a divisor of degree 6. ($\rho(X)=1$, $(-K_X)^3=2$, $h^{1,2}(X)=52$).
+    **Realization type:** Catalog only — outside the current flag and positive-toric complete-intersection models.
 
 
 ### Fano Variety 1-2
@@ -30,6 +29,7 @@ The displayed matrices are \(A(\mathbf 1)\), first-Chern quantum multiplication 
     - **Basis Rank:** `4`
     - **Description:** Hypersurface of degree 4 in $\mathbb{P}^4$; double cover of 1-16 with branch locus a divisor of degree 8.
     - **Realization type:** Line-bundle complete intersection.
+    - **Toric cross-verification:** Independently verified in `gwtoric` on the positive smooth toric model, matching symbolic operator $A_{\mathrm{flag}}(\mathbf q(\mathbf y))\,C = C\,A_{\mathrm{toric}}(\mathbf y)$ ($\det C = 1$).
 
     ??? note "Spectrum and connection exponents"
 
@@ -74,6 +74,7 @@ The displayed matrices are \(A(\mathbf 1)\), first-Chern quantum multiplication 
     - **Basis Rank:** `4`
     - **Description:** Complete intersection of a quadric and a cubic in $\mathbb{P}^5$.
     - **Realization type:** Line-bundle complete intersection.
+    - **Toric cross-verification:** Independently verified in `gwtoric` on the positive smooth toric model, matching symbolic operator $A_{\mathrm{flag}}(\mathbf q(\mathbf y))\,C = C\,A_{\mathrm{toric}}(\mathbf y)$ ($\det C = 1$).
 
     ??? note "Spectrum and connection exponents"
 
@@ -118,6 +119,7 @@ The displayed matrices are \(A(\mathbf 1)\), first-Chern quantum multiplication 
     - **Basis Rank:** `4`
     - **Description:** Complete intersection of three quadrics in $\mathbb{P}^6$.
     - **Realization type:** Line-bundle complete intersection.
+    - **Toric cross-verification:** Independently verified in `gwtoric` on the positive smooth toric model, matching symbolic operator $A_{\mathrm{flag}}(\mathbf q(\mathbf y))\,C = C\,A_{\mathrm{toric}}(\mathbf y)$ ($\det C = 1$).
 
     ??? note "Spectrum and connection exponents"
 
@@ -423,15 +425,15 @@ The displayed matrices are \(A(\mathbf 1)\), first-Chern quantum multiplication 
 ### Fano Variety 1-11
 ??? example "1-11"
 
-    **Description:** Double Veronese cone / weighted degree-6 hypersurface (Fanography).
-    **Realization type:** Catalog only — not represented by the current gwflags flag-variety/ordinary complete-intersection input model.
+    **Description:** Hypersurface of degree 6 in $\mathbb{P}(1,1,1,2,3)$. ($\rho(X)=1$, $(-K_X)^3=8$, $h^{1,2}(X)=21$).
+    **Realization type:** Catalog only — outside the current flag and positive-toric complete-intersection models.
 
 
 ### Fano Variety 1-12
 ??? example "1-12"
 
-    **Description:** Quartic double solid / weighted degree-4 hypersurface (Fanography).
-    **Realization type:** Catalog only — not represented by the current gwflags flag-variety/ordinary complete-intersection input model.
+    **Description:** Double cover of $\mathbb{P}^3$ with branch locus a smooth quartic surface. ($\rho(X)=1$, $(-K_X)^3=16$, $h^{1,2}(X)=10$).
+    **Realization type:** Catalog only — outside the current flag and positive-toric complete-intersection models.
 
 
 ### Fano Variety 1-13
@@ -445,6 +447,7 @@ The displayed matrices are \(A(\mathbf 1)\), first-Chern quantum multiplication 
     - **Basis Rank:** `4`
     - **Description:** Hypersurface of degree 3 in $\mathbb{P}^4$ (smooth cubic threefold).
     - **Realization type:** Line-bundle complete intersection.
+    - **Toric cross-verification:** Independently verified in `gwtoric` on the positive smooth toric model, matching symbolic operator $A_{\mathrm{flag}}(\mathbf q(\mathbf y))\,C = C\,A_{\mathrm{toric}}(\mathbf y)$ ($\det C = 1$).
 
     ??? note "Spectrum and connection exponents"
 
@@ -489,6 +492,7 @@ The displayed matrices are \(A(\mathbf 1)\), first-Chern quantum multiplication 
     - **Basis Rank:** `4`
     - **Description:** Complete intersection of two quadrics in P⁵.
     - **Realization type:** Line-bundle complete intersection.
+    - **Toric cross-verification:** Independently verified in `gwtoric` on the positive smooth toric model, matching symbolic operator $A_{\mathrm{flag}}(\mathbf q(\mathbf y))\,C = C\,A_{\mathrm{toric}}(\mathbf y)$ ($\det C = 1$).
 
 
     ??? note "Spectrum and connection exponents"
@@ -578,6 +582,7 @@ The displayed matrices are \(A(\mathbf 1)\), first-Chern quantum multiplication 
     - **Basis Rank:** `4`
     - **Description:** Hypersurface of degree 2 in $\mathbb{P}^4$ (smooth quadric threefold).
     - **Realization type:** Line-bundle complete intersection.
+    - **Toric cross-verification:** Independently verified in `gwtoric` on the positive smooth toric model, matching symbolic operator $A_{\mathrm{flag}}(\mathbf q(\mathbf y))\,C = C\,A_{\mathrm{toric}}(\mathbf y)$ ($\det C = 1$).
 
     ??? note "Spectrum and connection exponents"
 
@@ -622,6 +627,7 @@ The displayed matrices are \(A(\mathbf 1)\), first-Chern quantum multiplication 
     - **Basis Rank:** `4`
     - **Description:** Projective space $\mathbb{P}^3$.
     - **Realization type:** Direct flag variety.
+    - **Toric cross-verification:** Independently verified in `gwtoric` on the positive smooth toric model, matching symbolic operator $A_{\mathrm{flag}}(\mathbf q(\mathbf y))\,C = C\,A_{\mathrm{toric}}(\mathbf y)$ ($\det C = 1$).
 
     ??? note "Spectrum and connection exponents"
 
@@ -660,185 +666,190 @@ The displayed matrices are \(A(\mathbf 1)\), first-Chern quantum multiplication 
 ### Fano Variety 2-1
 ??? example "2-1"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 2-1](https://fanography.info/2-1).
+    **Description:** Blowup of [1-11](#fano-variety-1-11) in an elliptic curve which is the intersection of two divisors from half the anticanonical linear system. ($\rho(X)=2$, $(-K_X)^3=4$, $h^{1,2}(X)=22$).
+    **Realization type:** Catalog only — outside the current flag and positive-toric complete-intersection models.
 
 
 ### Fano Variety 2-2
 ??? example "2-2"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 2-2](https://fanography.info/2-2).
+    **Description:** Double cover of [2-34](#fano-variety-2-34) with branch locus a $(2,4)$-divisor. ($\rho(X)=2$, $(-K_X)^3=6$, $h^{1,2}(X)=20$).
+    **Realization type:** Catalog only — outside the current flag and positive-toric complete-intersection models.
 
 
 ### Fano Variety 2-3
 ??? example "2-3"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 2-3](https://fanography.info/2-3).
+    **Description:** Blowup of [1-12](#fano-variety-1-12) in an elliptic curve which is the intersection of two divisors from half the anticanonical linear system. ($\rho(X)=2$, $(-K_X)^3=8$, $h^{1,2}(X)=11$).
+    **Realization type:** Catalog only — outside the current flag and positive-toric complete-intersection models.
 
 
 ### Fano Variety 2-4
 ??? example "2-4"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 2-4](https://fanography.info/2-4).
+    - **Description:** Blowup of [1-17](#fano-variety-1-17) in the intersection of two cubics.
+    - **Realization type:** Toric complete intersection of codimension 1 (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=2$, $(-K_X)^3=10$, $h^{1,2}(X)=10$, recorded Chern index $1$, ambient rank $6$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-2-4.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-2-4)
 
 
 ### Fano Variety 2-5
 ??? example "2-5"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 2-5](https://fanography.info/2-5).
+    - **Description:** Blowup of [1-13](#fano-variety-1-13) in a plane cubic.
+    - **Realization type:** Toric complete intersection of codimension 1 (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=2$, $(-K_X)^3=12$, $h^{1,2}(X)=6$, recorded Chern index $1$, ambient rank $6$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-2-5.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-2-5)
 
 
 ### Fano Variety 2-6
 ??? example "2-6"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 2-6](https://fanography.info/2-6).
+    - **Description:** $(2,2)$-divisor on $\mathbb{P}^2\times\mathbb{P}^2$; double cover of [2-32](#fano-variety-2-32) with branch locus an anticanonical divisor.
+    - **Realization type:** Toric complete intersection of codimension 1 (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=2$, $(-K_X)^3=12$, $h^{1,2}(X)=9$, recorded Chern index $1$, ambient rank $6$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-2-6.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-2-6)
 
 
 ### Fano Variety 2-7
 ??? example "2-7"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 2-7](https://fanography.info/2-7).
+    - **Description:** Blowup of [1-16](#fano-variety-1-16) in the intersection of two divisors from $|\mathcal{O}_Q(2)|$.
+    - **Realization type:** Toric complete intersection of codimension 2 (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=2$, $(-K_X)^3=14$, $h^{1,2}(X)=5$, recorded Chern index $1$, ambient rank $6$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-2-7.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-2-7)
 
 
 ### Fano Variety 2-8
 ??? example "2-8"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 2-8](https://fanography.info/2-8).
+    **Description:** Double cover of [2-35](#fano-variety-2-35) with branch locus an anticanonical divisor such that the intersection with the exceptional divisor is smooth; double cover of [2-35](#fano-variety-2-35) with branch locus an anticanonical divisor such that the intersection with the exceptional divisor is singular but reduced. ($\rho(X)=2$, $(-K_X)^3=14$, $h^{1,2}(X)=9$).
+    **Realization type:** Catalog only — outside the current flag and positive-toric complete-intersection models.
 
 
 ### Fano Variety 2-9
 ??? example "2-9"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 2-9](https://fanography.info/2-9).
+    - **Description:** Complete intersection of degree $(1,1)$ and $(2,1)$ in $\mathbb{P}^3\times\mathbb{P}^2$.
+    - **Realization type:** Toric complete intersection of codimension 2 (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=2$, $(-K_X)^3=16$, $h^{1,2}(X)=5$, recorded Chern index $1$, ambient rank $6$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-2-9.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-2-9)
 
 
 ### Fano Variety 2-10
 ??? example "2-10"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 2-10](https://fanography.info/2-10).
+    - **Description:** Blowup of [1-14](#fano-variety-1-14) in an elliptic curve which is an intersection of 2 hyperplanes.
+    - **Realization type:** Toric complete intersection of codimension 2 (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=2$, $(-K_X)^3=16$, $h^{1,2}(X)=3$, recorded Chern index $1$, ambient rank $6$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-2-10.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-2-10)
 
 
 ### Fano Variety 2-11
 ??? example "2-11"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 2-11](https://fanography.info/2-11).
+    - **Description:** Blowup of [1-13](#fano-variety-1-13) in a line.
+    - **Realization type:** Toric complete intersection of codimension 1 (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=2$, $(-K_X)^3=18$, $h^{1,2}(X)=5$, recorded Chern index $1$, ambient rank $6$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-2-11.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-2-11)
 
 
 ### Fano Variety 2-12
 ??? example "2-12"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 2-12](https://fanography.info/2-12).
+    - **Description:** Intersection of 3 $(1,1)$-divisors in $\mathbb{P}^3\times\mathbb{P}^3$.
+    - **Realization type:** Toric complete intersection of codimension 3 (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=2$, $(-K_X)^3=20$, $h^{1,2}(X)=3$, recorded Chern index $1$, ambient rank $6$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-2-12.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-2-12)
 
 
 ### Fano Variety 2-13
 ??? example "2-13"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 2-13](https://fanography.info/2-13).
+    - **Description:** Blowup of [1-16](#fano-variety-1-16) in a curve of degree 6 and genus 2.
+    - **Realization type:** Toric complete intersection of codimension 3 (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=2$, $(-K_X)^3=20$, $h^{1,2}(X)=2$, recorded Chern index $1$, ambient rank $6$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-2-13.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-2-13)
 
 
 ### Fano Variety 2-14
 ??? example "2-14"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 2-14](https://fanography.info/2-14).
+    **Description:** Blowup of [1-15](#fano-variety-1-15) in an elliptic curve which is an intersection of 2 hyperplanes. ($\rho(X)=2$, $(-K_X)^3=20$, $h^{1,2}(X)=1$).
+    **Realization type:** Catalog only — outside the current flag and positive-toric complete-intersection models.
 
 
 ### Fano Variety 2-15
 ??? example "2-15"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 2-15](https://fanography.info/2-15).
+    - **Description:** Blowup of [1-17](#fano-variety-1-17) in the intersection of a quadric and a cubic where the quadric is smooth; blowup of [1-17](#fano-variety-1-17) in the intersection of a quadric and a cubic where the quadric is singular but reduced.
+    - **Realization type:** Toric complete intersection of codimension 1 (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=2$, $(-K_X)^3=22$, $h^{1,2}(X)=4$, recorded Chern index $1$, ambient rank $6$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-2-15.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-2-15)
 
 
 ### Fano Variety 2-16
 ??? example "2-16"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 2-16](https://fanography.info/2-16).
+    - **Description:** Blowup of [1-14](#fano-variety-1-14) in a conic.
+    - **Realization type:** Toric complete intersection of codimension 2 (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=2$, $(-K_X)^3=22$, $h^{1,2}(X)=2$, recorded Chern index $1$, ambient rank $6$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-2-16.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-2-16)
 
 
 ### Fano Variety 2-17
 ??? example "2-17"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 2-17](https://fanography.info/2-17).
+    **Description:** Blowup of [1-16](#fano-variety-1-16) in an elliptic curve of degree 5. ($\rho(X)=2$, $(-K_X)^3=24$, $h^{1,2}(X)=1$).
+    **Realization type:** Catalog only — outside the current flag and positive-toric complete-intersection models.
 
 
 ### Fano Variety 2-18
 ??? example "2-18"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 2-18](https://fanography.info/2-18).
+    - **Description:** Double cover of [2-34](#fano-variety-2-34) with branch locus a divisor of degree $(2,2)$.
+    - **Realization type:** Toric complete intersection of codimension 1 (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=2$, $(-K_X)^3=24$, $h^{1,2}(X)=2$, recorded Chern index $1$, ambient rank $6$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-2-18.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-2-18)
 
 
 ### Fano Variety 2-19
 ??? example "2-19"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 2-19](https://fanography.info/2-19).
+    - **Description:** Blowup of [1-14](#fano-variety-1-14) in a line.
+    - **Realization type:** Toric complete intersection of codimension 2 (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=2$, $(-K_X)^3=26$, $h^{1,2}(X)=2$, recorded Chern index $1$, ambient rank $6$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-2-19.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-2-19)
 
 
 ### Fano Variety 2-20
 ??? example "2-20"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 2-20](https://fanography.info/2-20).
+    **Description:** Blowup of [1-15](#fano-variety-1-15) in a twisted cubic. ($\rho(X)=2$, $(-K_X)^3=26$, $h^{1,2}(X)=0$).
+    **Realization type:** Catalog only — outside the current flag and positive-toric complete-intersection models.
 
 
 ### Fano Variety 2-21
 ??? example "2-21"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 2-21](https://fanography.info/2-21).
+    **Description:** Blowup of [1-16](#fano-variety-1-16) in a twisted quartic. ($\rho(X)=2$, $(-K_X)^3=28$, $h^{1,2}(X)=0$).
+    **Realization type:** Catalog only — outside the current flag and positive-toric complete-intersection models.
 
 
 ### Fano Variety 2-22
 ??? example "2-22"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 2-22](https://fanography.info/2-22).
+    **Description:** Blowup of [1-15](#fano-variety-1-15) in a conic. ($\rho(X)=2$, $(-K_X)^3=30$, $h^{1,2}(X)=0$).
+    **Realization type:** Catalog only — outside the current flag and positive-toric complete-intersection models.
 
 
 ### Fano Variety 2-23
 ??? example "2-23"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 2-23](https://fanography.info/2-23).
+    - **Description:** Blowup of [1-16](#fano-variety-1-16) in an intersection of $A\in|\mathcal{O}_Q(1)|$ and $B\in|\mathcal{O}_Q(2)|$ such that $A$ is smooth; blowup of [1-16](#fano-variety-1-16) in an intersection of $A\in|\mathcal{O}_Q(1)|$ and $B\in|\mathcal{O}_Q(2)|$ such that $A$ is singular.
+    - **Realization type:** Toric complete intersection of codimension 2 (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=2$, $(-K_X)^3=30$, $h^{1,2}(X)=1$, recorded Chern index $1$, ambient rank $6$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-2-23.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-2-23)
 
 
 ### Fano Variety 2-24
@@ -851,6 +862,7 @@ The displayed matrices are \(A(\mathbf 1)\), first-Chern quantum multiplication 
     - **Basis Rank:** `6`
     - **Description:** Divisor of type (1,2) in P² × P².
     - **Realization type:** Line-bundle complete intersection.
+    - **Toric cross-verification:** Independently verified in `gwtoric` on the positive smooth toric model, matching symbolic operator $A_{\mathrm{flag}}(\mathbf q(\mathbf y))\,C = C\,A_{\mathrm{toric}}(\mathbf y)$ ($\det C = -1$).
 
 
 
@@ -887,57 +899,62 @@ The displayed matrices are \(A(\mathbf 1)\), first-Chern quantum multiplication 
 ### Fano Variety 2-25
 ??? example "2-25"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 2-25](https://fanography.info/2-25).
+    - **Description:** Blowup of [1-17](#fano-variety-1-17) in an elliptic curve which is an intersection of 2 quadrics.
+    - **Realization type:** Toric complete intersection of codimension 1 (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=2$, $(-K_X)^3=32$, $h^{1,2}(X)=1$, recorded Chern index $1$, ambient rank $6$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-2-25.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-2-25)
 
 
 ### Fano Variety 2-26
 ??? example "2-26"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 2-26](https://fanography.info/2-26).
+    **Description:** Blowup of [1-15](#fano-variety-1-15) in a line. ($\rho(X)=2$, $(-K_X)^3=34$, $h^{1,2}(X)=0$).
+    **Realization type:** Catalog only — outside the current flag and positive-toric complete-intersection models.
 
 
 ### Fano Variety 2-27
 ??? example "2-27"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 2-27](https://fanography.info/2-27).
+    - **Description:** Blowup of [1-17](#fano-variety-1-17) in a twisted cubic.
+    - **Realization type:** Toric complete intersection of codimension 2 (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=2$, $(-K_X)^3=38$, $h^{1,2}(X)=0$, recorded Chern index $1$, ambient rank $6$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-2-27.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-2-27)
 
 
 ### Fano Variety 2-28
 ??? example "2-28"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 2-28](https://fanography.info/2-28).
+    - **Description:** Blowup of [1-17](#fano-variety-1-17) in a plane cubic.
+    - **Realization type:** Toric complete intersection of codimension 1 (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=2$, $(-K_X)^3=40$, $h^{1,2}(X)=1$, recorded Chern index $1$, ambient rank $6$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-2-28.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-2-28)
 
 
 ### Fano Variety 2-29
 ??? example "2-29"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 2-29](https://fanography.info/2-29).
+    - **Description:** Blowup of [1-16](#fano-variety-1-16) in a conic.
+    - **Realization type:** Toric complete intersection of codimension 1 (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=2$, $(-K_X)^3=40$, $h^{1,2}(X)=0$, recorded Chern index $1$, ambient rank $6$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-2-29.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-2-29)
 
 
 ### Fano Variety 2-30
 ??? example "2-30"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 2-30](https://fanography.info/2-30).
+    - **Description:** Blowup of [1-17](#fano-variety-1-17) in a conic.
+    - **Realization type:** Toric complete intersection of codimension 1 (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=2$, $(-K_X)^3=46$, $h^{1,2}(X)=0$, recorded Chern index $1$, ambient rank $6$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-2-30.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-2-30)
 
 
 ### Fano Variety 2-31
 ??? example "2-31"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 2-31](https://fanography.info/2-31).
+    - **Description:** Blowup of [1-16](#fano-variety-1-16) in a line.
+    - **Realization type:** Toric complete intersection of codimension 1 (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=2$, $(-K_X)^3=46$, $h^{1,2}(X)=0$, recorded Chern index $1$, ambient rank $6$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-2-31.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-2-31)
 
 
 ### Fano Variety 2-32
@@ -950,6 +967,7 @@ The displayed matrices are \(A(\mathbf 1)\), first-Chern quantum multiplication 
     - **Basis Rank:** `6`
     - **Description:** Full flag variety $Fl(1,2;\mathbb{C}^3)$; divisor of bidegree $(1,1)$ in $\mathbb{P}^2 \times \mathbb{P}^2$.
     - **Realization type:** Direct flag variety (also a divisor in the product embedding).
+    - **Toric complete-intersection presentation:** [Divisor of bidegree $(1,1)$ in $\mathbb{P}^2 \times \mathbb{P}^2$](records/fanography-2-32.md) · [Toric atomic invariants](invariants-threefolds.md#fanography-2-32)
 
     ??? note "Spectrum and connection exponents"
 
@@ -983,8 +1001,10 @@ The displayed matrices are \(A(\mathbf 1)\), first-Chern quantum multiplication 
 ### Fano Variety 2-33
 ??? example "2-33"
 
-    **Description:** Blow-up of P³ along a line (Fanography; outside the current flag/ordinary-CI input model).
-    **Realization type:** Catalog only — not represented by the current gwflags flag-variety/ordinary complete-intersection input model.
+    - **Description:** Blowup of [1-17](#fano-variety-1-17) in a line.
+    - **Realization type:** Smooth projective toric threefold (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=2$, $(-K_X)^3=54$, $h^{1,2}(X)=0$, recorded Chern index $1$, ambient rank $6$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-2-33.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-2-33)
 
 
 ### Fano Variety 2-34
@@ -997,6 +1017,7 @@ The displayed matrices are \(A(\mathbf 1)\), first-Chern quantum multiplication 
     - **Basis Rank:** `6`
     - **Description:** P¹ × P².
     - **Realization type:** Direct product of flag varieties.
+    - **Toric cross-verification:** Independently verified in `gwtoric` on the positive smooth toric model, matching symbolic operator $A_{\mathrm{flag}}(\mathbf q(\mathbf y))\,C = C\,A_{\mathrm{toric}}(\mathbf y)$ ($\det C = 1$).
 
 
 
@@ -1037,146 +1058,151 @@ The displayed matrices are \(A(\mathbf 1)\), first-Chern quantum multiplication 
 ### Fano Variety 2-35
 ??? example "2-35"
 
-    **Description:** Blow-up of P³ at a point (Fanography; outside the current flag/ordinary-CI input model).
-    **Realization type:** Catalog only — not represented by the current gwflags flag-variety/ordinary complete-intersection input model.
+    - **Description:** $\mathrm{Bl}_p\mathbb{P}^3$.
+    - **Realization type:** Smooth projective toric threefold (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=2$, $(-K_X)^3=56$, $h^{1,2}(X)=0$, recorded Chern index $2$, ambient rank $6$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-2-35.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-2-35)
 
 
 ### Fano Variety 2-36
 ??? example "2-36"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 2-36](https://fanography.info/2-36).
+    - **Description:** $\mathbb{P}(\mathcal{O}_{\mathbb{P}^2}\oplus\mathcal{O}_{\mathbb{P}^2}(2))$.
+    - **Realization type:** Smooth projective toric threefold (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=2$, $(-K_X)^3=62$, $h^{1,2}(X)=0$, recorded Chern index $1$, ambient rank $6$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-2-36.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-2-36)
 
 
 ### Fano Variety 3-1
 ??? example "3-1"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 3-1](https://fanography.info/3-1).
+    **Description:** Double cover of [3-27](#fano-variety-3-27) with branch locus a divisor of degree $(2,2,2)$. ($\rho(X)=3$, $(-K_X)^3=12$, $h^{1,2}(X)=8$).
+    **Realization type:** Catalog only — outside the current flag and positive-toric complete-intersection models.
 
 
 ### Fano Variety 3-2
 ??? example "3-2"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 3-2](https://fanography.info/3-2).
+    **Description:** Divisor from $|\mathcal{L}^{\otimes 2}\otimes\mathcal{O}(2,3)|$ on the $\mathbb{P}^2$-bundle $\mathbb{P}(\mathcal{O}\oplus\mathcal{O}(-1,-1)^{\oplus 2})$ over $\mathbb{P}^1\times\mathbb{P}^1$ such that $X\cap Y$ is irreducible, and $\mathcal{L}$ is the tautological bundle, and $Y\in|\mathcal{L}|$. ($\rho(X)=3$, $(-K_X)^3=14$, $h^{1,2}(X)=3$).
+    **Realization type:** Catalog only — outside the current flag and positive-toric complete-intersection models.
 
 
 ### Fano Variety 3-3
 ??? example "3-3"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 3-3](https://fanography.info/3-3).
+    - **Description:** Divisor on $\mathbb{P}^1\times\mathbb{P}^1\times\mathbb{P}^2$ of degree $(1,1,2)$.
+    - **Realization type:** Toric complete intersection of codimension 1 (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=3$, $(-K_X)^3=18$, $h^{1,2}(X)=3$, recorded Chern index $1$, ambient rank $8$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-3-3.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-3-3)
 
 
 ### Fano Variety 3-4
 ??? example "3-4"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 3-4](https://fanography.info/3-4).
+    **Description:** Blowup of [2-18](#fano-variety-2-18) in a smooth fiber of the composition of the projection to $\mathbb{P}^1\times\mathbb{P}^2$ with the projection to $\mathbb{P}^2$ of the double cover with the projection. ($\rho(X)=3$, $(-K_X)^3=18$, $h^{1,2}(X)=2$).
+    **Realization type:** Catalog only — outside the current flag and positive-toric complete-intersection models.
 
 
 ### Fano Variety 3-5
 ??? example "3-5"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 3-5](https://fanography.info/3-5).
+    **Description:** Blowup of [2-34](#fano-variety-2-34) in a curve $C$ of degree $(5,2)$ such that $C\hookrightarrow\mathbb{P}^1\times\mathbb{P}^2\to\mathbb{P}^2$ is an embedding. ($\rho(X)=3$, $(-K_X)^3=20$, $h^{1,2}(X)=0$).
+    **Realization type:** Catalog only — outside the current flag and positive-toric complete-intersection models.
 
 
 ### Fano Variety 3-6
 ??? example "3-6"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 3-6](https://fanography.info/3-6).
+    - **Description:** Blowup of [1-17](#fano-variety-1-17) in the disjoint union of a line and an elliptic curve of degree 4.
+    - **Realization type:** Toric complete intersection of codimension 1 (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=3$, $(-K_X)^3=22$, $h^{1,2}(X)=1$, recorded Chern index $1$, ambient rank $8$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-3-6.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-3-6)
 
 
 ### Fano Variety 3-7
 ??? example "3-7"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 3-7](https://fanography.info/3-7).
+    - **Description:** Blowup of [2-32](#fano-variety-2-32) in an elliptic curve which is the intersection of two divisors from $|-\frac{1}{2}\mathrm{K}_W|$.
+    - **Realization type:** Toric complete intersection of codimension 2 (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=3$, $(-K_X)^3=24$, $h^{1,2}(X)=1$, recorded Chern index $1$, ambient rank $8$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-3-7.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-3-7)
 
 
 ### Fano Variety 3-8
 ??? example "3-8"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 3-8](https://fanography.info/3-8).
+    - **Description:** Divisor from the linear system $|(\alpha\circ\pi_1)^*(\mathcal{O}_{\mathbb{P}^2}(1)\otimes\pi_2^*(\mathcal{O}_{\mathbb{P}^2}(2))|$ where $\pi_i\colon\mathrm{Bl}_1\mathbb{P}^2\times\mathbb{P}^2\to\mathrm{Bl}_1\mathbb{P}^2,\mathbb{P}^2$ are the projections, and $\alpha\colon\mathrm{Bl}_1\mathbb{P}^2\to\mathbb{P}^2$ is the blowup.
+    - **Realization type:** Toric complete intersection of codimension 1 (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=3$, $(-K_X)^3=24$, $h^{1,2}(X)=0$, recorded Chern index $1$, ambient rank $8$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-3-8.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-3-8)
 
 
 ### Fano Variety 3-9
 ??? example "3-9"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 3-9](https://fanography.info/3-9).
+    - **Description:** Blowup of the cone over the Veronese of $\mathbb{P}^2$ in $\mathbb{P}^5$ with center the disjoint union of the vertex and a quartic curve on $\mathbb{P}^2$.
+    - **Realization type:** Toric complete intersection of codimension 1 (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=3$, $(-K_X)^3=26$, $h^{1,2}(X)=3$, recorded Chern index $1$, ambient rank $6$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-3-9.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-3-9)
 
 
 ### Fano Variety 3-10
 ??? example "3-10"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 3-10](https://fanography.info/3-10).
+    - **Description:** Blowup of [1-16](#fano-variety-1-16) in the disjoint union of 2 conics.
+    - **Realization type:** Toric complete intersection of codimension 1 (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=3$, $(-K_X)^3=26$, $h^{1,2}(X)=0$, recorded Chern index $1$, ambient rank $8$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-3-10.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-3-10)
 
 
 ### Fano Variety 3-11
 ??? example "3-11"
 
-    **Description:** Blowup of the degree-seven del Pezzo threefold, itself the blowup of projective three-space at a point, along a smooth elliptic curve cut out by two divisors in half the anticanonical class. Its anticanonical volume is $28$ and $h^{1,2}=1$.
-
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 3-11](https://fanography.info/3-11/).
+    - **Description:** Blowup of [2-35](#fano-variety-2-35) in an elliptic curve which is the intersection of two divisors from $|-\frac{1}{2}\mathrm{K}_{V_7}|$.
+    - **Realization type:** Toric complete intersection of codimension 1 (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=3$, $(-K_X)^3=28$, $h^{1,2}(X)=1$, recorded Chern index $1$, ambient rank $8$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-3-11.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-3-11)
 
 
 ### Fano Variety 3-12
 ??? example "3-12"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 3-12](https://fanography.info/3-12).
+    - **Description:** Blowup of [1-17](#fano-variety-1-17) in the disjoint union of a line and a twisted cubic.
+    - **Realization type:** Toric complete intersection of codimension 2 (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=3$, $(-K_X)^3=28$, $h^{1,2}(X)=0$, recorded Chern index $1$, ambient rank $8$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-3-12.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-3-12)
 
 
 ### Fano Variety 3-13
 ??? example "3-13"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 3-13](https://fanography.info/3-13).
+    - **Description:** Blowup of [2-32](#fano-variety-2-32) in a curve $C$ of bidegree $(2,2)$ such that the composition $C\hookrightarrow W\hookrightarrow\mathbb{P}^2\times\mathbb{P}^2\overset{p_i}{\to}\mathbb{P}^2$ is an embedding for $i=1,2$.
+    - **Realization type:** Toric complete intersection of codimension 3 (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=3$, $(-K_X)^3=30$, $h^{1,2}(X)=0$, recorded Chern index $1$, ambient rank $8$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-3-13.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-3-13)
 
 
 ### Fano Variety 3-14
 ??? example "3-14"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 3-14](https://fanography.info/3-14).
+    **Description:** Blowup of [1-17](#fano-variety-1-17) in the disjoint union of a plane cubic curve and a point outside the plane. ($\rho(X)=3$, $(-K_X)^3=32$, $h^{1,2}(X)=1$).
+    **Realization type:** Catalog only — outside the current flag and positive-toric complete-intersection models.
 
 
 ### Fano Variety 3-15
 ??? example "3-15"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 3-15](https://fanography.info/3-15).
+    - **Description:** Blowup of [1-16](#fano-variety-1-16) in the disjoint union of a line and a conic.
+    - **Realization type:** Toric complete intersection of codimension 1 (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=3$, $(-K_X)^3=32$, $h^{1,2}(X)=0$, recorded Chern index $1$, ambient rank $8$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-3-15.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-3-15)
 
 
 ### Fano Variety 3-16
 ??? example "3-16"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 3-16](https://fanography.info/3-16).
+    **Description:** Blowup of [2-35](#fano-variety-2-35) in the proper transform of a twisted cubic containing the center of the blowup. ($\rho(X)=3$, $(-K_X)^3=34$, $h^{1,2}(X)=0$).
+    **Realization type:** Catalog only — outside the current flag and positive-toric complete-intersection models.
 
 
 ### Fano Variety 3-17
@@ -1189,6 +1215,7 @@ The displayed matrices are \(A(\mathbf 1)\), first-Chern quantum multiplication 
     - **Basis Rank:** `8`
     - **Description:** Divisor of tridegree $(1,1,1)$ in $\mathbb P^1\times\mathbb P^1\times\mathbb P^2$, with anticanonical volume $36$ and $h^{1,2}=0$.
     - **Realization type:** Line-bundle complete intersection.
+    - **Toric cross-verification:** Independently verified in `gwtoric` on the positive smooth toric model, matching symbolic operator $A_{\mathrm{flag}}(\mathbf q(\mathbf y))\,C = C\,A_{\mathrm{toric}}(\mathbf y)$ ($\det C = -2$).
 
     ??? note "Spectrum and connection exponents"
 
@@ -1224,72 +1251,82 @@ The displayed matrices are \(A(\mathbf 1)\), first-Chern quantum multiplication 
 ### Fano Variety 3-18
 ??? example "3-18"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 3-18](https://fanography.info/3-18).
+    - **Description:** Blowup of [1-17](#fano-variety-1-17) in the disjoint union of a line and a conic.
+    - **Realization type:** Toric complete intersection of codimension 1 (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=3$, $(-K_X)^3=36$, $h^{1,2}(X)=0$, recorded Chern index $1$, ambient rank $8$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-3-18.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-3-18)
 
 
 ### Fano Variety 3-19
 ??? example "3-19"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 3-19](https://fanography.info/3-19).
+    - **Description:** Blowup of [1-16](#fano-variety-1-16) in two non-collinear points.
+    - **Realization type:** Toric complete intersection of codimension 1 (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=3$, $(-K_X)^3=38$, $h^{1,2}(X)=0$, recorded Chern index $1$, ambient rank $6$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-3-19.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-3-19)
 
 
 ### Fano Variety 3-20
 ??? example "3-20"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 3-20](https://fanography.info/3-20).
+    - **Description:** Blowup of [1-16](#fano-variety-1-16) in the disjoint union of two lines.
+    - **Realization type:** Toric complete intersection of codimension 1 (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=3$, $(-K_X)^3=38$, $h^{1,2}(X)=0$, recorded Chern index $1$, ambient rank $8$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-3-20.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-3-20)
 
 
 ### Fano Variety 3-21
 ??? example "3-21"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 3-21](https://fanography.info/3-21).
+    - **Description:** Blowup of [2-34](#fano-variety-2-34) in a curve of degree $(2,1)$.
+    - **Realization type:** Toric complete intersection of codimension 1 (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=3$, $(-K_X)^3=38$, $h^{1,2}(X)=0$, recorded Chern index $1$, ambient rank $8$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-3-21.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-3-21)
 
 
 ### Fano Variety 3-22
 ??? example "3-22"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 3-22](https://fanography.info/3-22).
+    - **Description:** Blowup of [2-34](#fano-variety-2-34) in a conic on $\{x\}\times\mathbb{P}^2$, $x\in\mathbb{P}^1$.
+    - **Realization type:** Toric complete intersection of codimension 1 (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=3$, $(-K_X)^3=40$, $h^{1,2}(X)=0$, recorded Chern index $1$, ambient rank $8$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-3-22.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-3-22)
 
 
 ### Fano Variety 3-23
 ??? example "3-23"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 3-23](https://fanography.info/3-23).
+    - **Description:** Blowup of [2-35](#fano-variety-2-35) in the proper transform of a conic containing the center of the blowup.
+    - **Realization type:** Toric complete intersection of codimension 1 (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=3$, $(-K_X)^3=42$, $h^{1,2}(X)=0$, recorded Chern index $1$, ambient rank $8$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-3-23.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-3-23)
 
 
 ### Fano Variety 3-24
 ??? example "3-24"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 3-24](https://fanography.info/3-24).
+    - **Description:** The fiber product of [2-32](#fano-variety-2-32) with $\mathrm{Bl}_p\mathbb{P}^2$ over $\mathbb{P}^2$.
+    - **Realization type:** Toric complete intersection of codimension 1 (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=3$, $(-K_X)^3=42$, $h^{1,2}(X)=0$, recorded Chern index $1$, ambient rank $8$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-3-24.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-3-24)
 
 
 ### Fano Variety 3-25
 ??? example "3-25"
 
-    **Description:** Blow-up of P³ along two lines (Fanography; outside the current flag/ordinary-CI input model).
-    **Realization type:** Catalog only — not represented by the current gwflags flag-variety/ordinary complete-intersection input model.
+    - **Description:** Blowup of [1-17](#fano-variety-1-17) in the disjoint union of two lines.
+    - **Realization type:** Smooth projective toric threefold (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=3$, $(-K_X)^3=44$, $h^{1,2}(X)=0$, recorded Chern index $1$, ambient rank $8$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-3-25.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-3-25)
 
 
 ### Fano Variety 3-26
 ??? example "3-26"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 3-26](https://fanography.info/3-26).
+    - **Description:** Blowup of [1-17](#fano-variety-1-17) in the disjoint union of a point and a line.
+    - **Realization type:** Smooth projective toric threefold (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=3$, $(-K_X)^3=46$, $h^{1,2}(X)=0$, recorded Chern index $1$, ambient rank $8$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-3-26.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-3-26)
 
 
 ### Fano Variety 3-27
@@ -1303,6 +1340,7 @@ The displayed matrices are \(A(\mathbf 1)\), first-Chern quantum multiplication 
     - **Basis Rank:** `8`
     - **Description:** Product $(\mathbb{P}^1)^3$.
     - **Realization type:** Direct product of flag varieties.
+    - **Toric cross-verification:** Independently verified in `gwtoric` on the positive smooth toric model, matching symbolic operator $A_{\mathrm{flag}}(\mathbf q(\mathbf y))\,C = C\,A_{\mathrm{toric}}(\mathbf y)$ ($\det C = 1$).
 
     ??? note "Spectrum and connection exponents"
 
@@ -1336,33 +1374,37 @@ The displayed matrices are \(A(\mathbf 1)\), first-Chern quantum multiplication 
 ### Fano Variety 3-28
 ??? example "3-28"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 3-28](https://fanography.info/3-28).
+    - **Description:** $\mathbb{P}^1\times\mathrm{Bl}_p\mathbb{P}^2$.
+    - **Realization type:** Smooth projective toric threefold (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=3$, $(-K_X)^3=48$, $h^{1,2}(X)=0$, recorded Chern index $1$, ambient rank $8$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-3-28.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-3-28)
 
 
 ### Fano Variety 3-29
 ??? example "3-29"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 3-29](https://fanography.info/3-29).
+    - **Description:** Blowup of [2-35](#fano-variety-2-35) in a line on the exceptional divisor.
+    - **Realization type:** Smooth projective toric threefold (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=3$, $(-K_X)^3=50$, $h^{1,2}(X)=0$, recorded Chern index $1$, ambient rank $8$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-3-29.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-3-29)
 
 
 ### Fano Variety 3-30
 ??? example "3-30"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 3-30](https://fanography.info/3-30).
+    - **Description:** Blowup of [2-35](#fano-variety-2-35) in the proper transform of a line containing the center of the blowup.
+    - **Realization type:** Smooth projective toric threefold (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=3$, $(-K_X)^3=50$, $h^{1,2}(X)=0$, recorded Chern index $1$, ambient rank $8$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-3-30.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-3-30)
 
 
 ### Fano Variety 3-31
 ??? example "3-31"
 
-    **Realization type:** Catalog only — no computed matrix is provided here.
-
-    **Reference:** [Fanography 3-31](https://fanography.info/3-31).
+    - **Description:** Blowup of the cone over a smooth quadric in $\mathbb{P}^3$ in the vertex.
+    - **Realization type:** Smooth projective toric threefold (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=3$, $(-K_X)^3=52$, $h^{1,2}(X)=0$, recorded Chern index $1$, ambient rank $8$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-3-31.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-3-31)
 
 
 ### Fano Variety 4-1
@@ -1375,6 +1417,7 @@ The displayed matrices are \(A(\mathbf 1)\), first-Chern quantum multiplication 
     - **Basis Rank:** `10`
     - **Description:** Smooth (1,1,1,1) hypersurface in (P¹)⁴.
     - **Realization type:** Line-bundle complete intersection on a product of flag varieties.
+    - **Toric cross-verification:** Independently verified in `gwtoric` on the positive smooth toric model, matching symbolic operator $A_{\mathrm{flag}}(\mathbf q(\mathbf y))\,C = C\,A_{\mathrm{toric}}(\mathbf y)$ ($\det C = -1$).
 
 
 
@@ -1412,103 +1455,171 @@ The displayed matrices are \(A(\mathbf 1)\), first-Chern quantum multiplication 
         $$
 ### Fano Variety 4-2
 ??? example "4-2"
-    **Description:** 3-31
+
+    - **Description:** Blowup of the cone over a smooth quadric in $\mathbb{P}^3$ in the disjoint union of the vertex and an elliptic curve on the quadric.
+    - **Realization type:** Toric complete intersection of codimension 1 (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=4$, $(-K_X)^3=28$, $h^{1,2}(X)=1$, recorded Chern index $1$, ambient rank $8$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-4-2.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-4-2)
 
 
 ### Fano Variety 4-3
 ??? example "4-3"
-    **Description:** 3-17 , 3-27 , 3-28
+
+    - **Description:** Blowup of [3-27](#fano-variety-3-27) in a curve of degree $(1,1,2)$.
+    - **Realization type:** Toric complete intersection of codimension 1 (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=4$, $(-K_X)^3=30$, $h^{1,2}(X)=0$, recorded Chern index $1$, ambient rank $10$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-4-3.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-4-3)
 
 
 ### Fano Variety 4-4
 ??? example "4-4"
-    **Description:** 3-18 , 3-19 , 3-30
+
+    - **Description:** Blowup of [3-19](#fano-variety-3-19) in the proper transform of a conic through the points.
+    - **Realization type:** Toric complete intersection of codimension 1 (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=4$, $(-K_X)^3=32$, $h^{1,2}(X)=0$, recorded Chern index $1$, ambient rank $8$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-4-4.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-4-4)
 
 
 ### Fano Variety 4-5
 ??? example "4-5"
-    **Description:** 3-21 , 3-28 , 3-31
+
+    **Description:** Blowup of [2-34](#fano-variety-2-34) in the disjoint union of a curve of degree $(2,1)$ and a curve of degree $(1,0)$. ($\rho(X)=4$, $(-K_X)^3=32$, $h^{1,2}(X)=0$).
+    **Realization type:** Catalog only — outside the current flag and positive-toric complete-intersection models.
 
 
 ### Fano Variety 4-6
 ??? example "4-6"
-    **Description:** 3-25 , 3-27
+
+    - **Description:** Blowup of [1-17](#fano-variety-1-17) in the disjoint union of 3 lines.
+    - **Realization type:** Toric complete intersection of codimension 2 (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=4$, $(-K_X)^3=34$, $h^{1,2}(X)=0$, recorded Chern index $1$, ambient rank $10$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-4-6.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-4-6)
 
 
 ### Fano Variety 4-7
 ??? example "4-7"
-    **Description:** 3-24 , 3-28
+
+    - **Description:** Blowup of [2-32](#fano-variety-2-32) in the disjoint union of a curve of degree $(0,1)$ and a curve of degree $(1,0)$.
+    - **Realization type:** Toric complete intersection of codimension 1 (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=4$, $(-K_X)^3=36$, $h^{1,2}(X)=0$, recorded Chern index $1$, ambient rank $10$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-4-7.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-4-7)
 
 
 ### Fano Variety 4-8
 ??? example "4-8"
-    **Description:** 3-27 , 3-31
+
+    - **Description:** Blowup of [3-27](#fano-variety-3-27) in a curve of degree $(0,1,1)$.
+    - **Realization type:** Toric complete intersection of codimension 1 (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=4$, $(-K_X)^3=38$, $h^{1,2}(X)=0$, recorded Chern index $1$, ambient rank $10$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-4-8.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-4-8)
 
 
 ### Fano Variety 4-9
 ??? example "4-9"
-    **Description:** 3-25 , 3-26 , 3-28 , 3-30
+
+    - **Description:** Blowup of [3-25](#fano-variety-3-25) in an exceptional curve of the blowup.
+    - **Realization type:** Smooth projective toric threefold (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=4$, $(-K_X)^3=40$, $h^{1,2}(X)=0$, recorded Chern index $1$, ambient rank $10$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-4-9.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-4-9)
 
 
 ### Fano Variety 4-10
 ??? example "4-10"
-    **Description:** 3-27 , 3-28
+
+    - **Description:** $\mathbb{P}^1\times\mathrm{Bl}_2\mathbb{P}^2$.
+    - **Realization type:** Smooth projective toric threefold (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=4$, $(-K_X)^3=42$, $h^{1,2}(X)=0$, recorded Chern index $1$, ambient rank $10$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-4-10.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-4-10)
 
 
 ### Fano Variety 4-11
 ??? example "4-11"
-    **Description:** 3-28 , 3-31
+
+    - **Description:** Blowup of [3-28](#fano-variety-3-28) in $\{x\}\times E$, $x\in\mathbb{P}^1$ and $E$ the $(-1)$-curve.
+    - **Realization type:** Smooth projective toric threefold (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=4$, $(-K_X)^3=44$, $h^{1,2}(X)=0$, recorded Chern index $1$, ambient rank $10$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-4-11.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-4-11)
 
 
 ### Fano Variety 4-12
 ??? example "4-12"
-    **Description:** 3-30
+
+    - **Description:** Blowup of [2-33](#fano-variety-2-33) in the disjoint union of two exceptional lines of the blowup.
+    - **Realization type:** Smooth projective toric threefold (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=4$, $(-K_X)^3=46$, $h^{1,2}(X)=0$, recorded Chern index $1$, ambient rank $10$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-4-12.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-4-12)
 
 
 ### Fano Variety 4-13
 ??? example "4-13"
-    **Description:** 3-27 , 3-31
+
+    **Description:** Blowup of [3-27](#fano-variety-3-27) in a curve of degree $(1,1,3)$. ($\rho(X)=4$, $(-K_X)^3=26$, $h^{1,2}(X)=0$).
+    **Realization type:** Catalog only — outside the current flag and positive-toric complete-intersection models.
 
 
 ### Fano Variety 5-1
 ??? example "5-1"
-    **Description:** 4-4 , 4-12
+
+    **Description:** Blowup of [2-29](#fano-variety-2-29) in the disjoint union of three exceptional lines of the blowup. ($\rho(X)=5$, $(-K_X)^3=28$, $h^{1,2}(X)=0$).
+    **Realization type:** Catalog only — outside the current flag and positive-toric complete-intersection models.
 
 
 ### Fano Variety 5-2
 ??? example "5-2"
-    **Description:** 4-9 , 4-11 , 4-12
+
+    - **Description:** Blowup of [3-25](#fano-variety-3-25) in the disjoint union of two exceptional lines on the same irreducible component.
+    - **Realization type:** Smooth projective toric threefold (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=5$, $(-K_X)^3=36$, $h^{1,2}(X)=0$, recorded Chern index $1$, ambient rank $12$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-5-2.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-5-2)
 
 
 ### Fano Variety 5-3
 ??? example "5-3"
-    **Description:** 4-10
+
+    - **Description:** $\mathbb{P}^1\times\mathrm{Bl}_3\mathbb{P}^2$.
+    - **Realization type:** Smooth projective toric threefold (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=5$, $(-K_X)^3=36$, $h^{1,2}(X)=0$, recorded Chern index $1$, ambient rank $12$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-5-3.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-5-3)
 
 
 ### Fano Variety 6-1
 ??? example "6-1"
-    **Description:** 5-3
+
+    - **Description:** $\mathbb{P}^1\times\mathrm{Bl}_4\mathbb{P}^2$.
+    - **Realization type:** Toric complete intersection of codimension 1 (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=6$, $(-K_X)^3=30$, $h^{1,2}(X)=0$, recorded Chern index $1$, ambient rank $8$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-6-1.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-6-1)
 
 
 ### Fano Variety 7-1
 ??? example "7-1"
-    **Description:** 6-1
+
+    - **Description:** $\mathbb{P}^1\times\mathrm{Bl}_5\mathbb{P}^2$.
+    - **Realization type:** Toric complete intersection of codimension 2 (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=7$, $(-K_X)^3=24$, $h^{1,2}(X)=0$, recorded Chern index $1$, ambient rank $6$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-7-1.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-7-1)
 
 
 ### Fano Variety 8-1
 ??? example "8-1"
-    **Description:** 7-1
+
+    - **Description:** $\mathbb{P}^1\times\mathrm{Bl}_6\mathbb{P}^2$.
+    - **Realization type:** Toric complete intersection of codimension 1 (`gwtoric` positive curve enumeration).
+    - **Invariants:** $\rho(X)=8$, $(-K_X)^3=18$, $h^{1,2}(X)=0$, recorded Chern index $1$, ambient rank $6$.
+    - **Exact data and invariants:** [Exact toric inputs, symbolic operator $A(\mathbf y)$, and connection exponents](records/fanography-8-1.md) · [Hodge data and atomic invariants](invariants-threefolds.md#fanography-8-1)
 
 
 ### Fano Variety 9-1
 ??? example "9-1"
-    **Description:** 8-1
+
+    **Description:** $\mathbb{P}^1\times\mathrm{Bl}_7\mathbb{P}^2$. ($\rho(X)=9$, $(-K_X)^3=12$, $h^{1,2}(X)=0$).
+    **Realization type:** Catalog only — outside the current flag and positive-toric complete-intersection models.
 
 
 ### Fano Variety 10-1
 ??? example "10-1"
-    **Description:** yes
 
+    **Description:** $\mathbb{P}^1\times\mathrm{Bl}_8\mathbb{P}^2$. ($\rho(X)=10$, $(-K_X)^3=6$, $h^{1,2}(X)=0$).
+    **Realization type:** Catalog only — outside the current flag and positive-toric complete-intersection models.
 
-
-See [Algebraic-geometry databases](databases.md) for Fanography and related databases.
+See [Algebraic-geometry databases](databases.md) for Fanography and related algebraic-geometry databases.

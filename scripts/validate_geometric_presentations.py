@@ -71,7 +71,7 @@ def identify(r):
 
 if __name__=='__main__':
  results=[]
- for slug in ['fourfolds','fivefolds']:
+ for slug in ['threefolds','fourfolds','fivefolds']:
   for record in json.loads((D/('toric-'+slug+'.json')).read_text())['records']:
    result=identify(record);result['id']=record['id'];results.append(result)
  expected=json.loads((D/'geometric-presentations.json').read_text())['records']

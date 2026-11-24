@@ -85,7 +85,7 @@ def validate(shard=None):
     flags = {r['id']: r for name, key in [('localization-results.json', 'examples'),
                                          ('flag-fourfolds.json', 'records')]
              for r in read(name)[key]}
-    toric = {r['id']: r for name in ['toric-fourfolds.json', 'toric-fivefolds.json']
+    toric = {r['id']: r for name in ['toric-threefolds.json', 'toric-fourfolds.json', 'toric-fivefolds.json']
              for r in read(name)['records']}
     old_connection = {r['id']: r for r in read('connection-exponents.json')['records']}
     assert len(spectral) == len(catalog) == len({r['id'] for r in spectral})

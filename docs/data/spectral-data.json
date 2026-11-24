@@ -11961,6 +11961,2082 @@
         }
       ],
       "source": "flag-fourfolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-2-4",
+      "point": {
+        "y1": "2",
+        "y2": "3"
+      },
+      "unit_cyclic_determinant": "405795200",
+      "rank": 6,
+      "factors": [
+        {
+          "polynomial_A": "z + 20",
+          "multiplicity_per_root": 2,
+          "conjugate_eigenvalues": 1,
+          "powers": [
+            "-1/2",
+            "-1/2"
+          ],
+          "classes": [
+            "1/2",
+            "1/2"
+          ]
+        },
+        {
+          "polynomial_A": "z**4 - 90*z**3 - 2511*z**2 + 39744*z + 919200",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 4,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-2-5",
+      "point": {
+        "y1": "2",
+        "y2": "3"
+      },
+      "unit_cyclic_determinant": "0",
+      "rank": 6,
+      "factors": [
+        {
+          "polynomial_A": "z + 20",
+          "multiplicity_per_root": 2,
+          "conjugate_eigenvalues": 1,
+          "powers": [
+            "-1/2",
+            "1/2"
+          ],
+          "classes": [
+            "1/2",
+            "1/2"
+          ]
+        },
+        {
+          "polynomial_A": "z + 18",
+          "multiplicity_per_root": 2,
+          "conjugate_eigenvalues": 1,
+          "powers": [
+            "-5/6",
+            "-1/6"
+          ],
+          "classes": [
+            "1/6",
+            "5/6"
+          ]
+        },
+        {
+          "polynomial_A": "z**2 - 126*z + 3321",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 2,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-2-6",
+      "point": {
+        "y1": "2",
+        "y2": "3"
+      },
+      "unit_cyclic_determinant": "0",
+      "rank": 6,
+      "factors": [
+        {
+          "polynomial_A": "z + 10",
+          "multiplicity_per_root": 3,
+          "conjugate_eigenvalues": 1,
+          "powers": [
+            "-1",
+            "0",
+            "1"
+          ],
+          "classes": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "polynomial_A": "z**3 - 30*z**2 - 2292*z - 26920",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 3,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-2-7",
+      "point": {
+        "y1": "2",
+        "y2": "3"
+      },
+      "unit_cyclic_determinant": "18216000",
+      "rank": 6,
+      "factors": [
+        {
+          "polynomial_A": "z + 14",
+          "multiplicity_per_root": 2,
+          "conjugate_eigenvalues": 1,
+          "powers": [
+            "-1/2",
+            "-1/2"
+          ],
+          "classes": [
+            "1/2",
+            "1/2"
+          ]
+        },
+        {
+          "polynomial_A": "z + 12",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        },
+        {
+          "polynomial_A": "z**3 - 60*z**2 - 432*z + 8496",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 3,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-2-9",
+      "point": {
+        "y1": "2",
+        "y2": "3"
+      },
+      "unit_cyclic_determinant": "-39304000",
+      "rank": 6,
+      "factors": [
+        {
+          "polynomial_A": "z + 7",
+          "multiplicity_per_root": 2,
+          "conjugate_eigenvalues": 1,
+          "powers": [
+            "-1/2",
+            "-1/2"
+          ],
+          "classes": [
+            "1/2",
+            "1/2"
+          ]
+        },
+        {
+          "polynomial_A": "z**4 - 8*z**3 - 1212*z**2 - 18112*z - 72316",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 4,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-2-10",
+      "point": {
+        "y1": "2",
+        "y2": "3"
+      },
+      "unit_cyclic_determinant": "0",
+      "rank": 6,
+      "factors": [
+        {
+          "polynomial_A": "z + 14",
+          "multiplicity_per_root": 2,
+          "conjugate_eigenvalues": 1,
+          "powers": [
+            "-1/2",
+            "1/2"
+          ],
+          "classes": [
+            "1/2",
+            "1/2"
+          ]
+        },
+        {
+          "polynomial_A": "z + 12",
+          "multiplicity_per_root": 2,
+          "conjugate_eigenvalues": 1,
+          "powers": [
+            "-1/2",
+            "-1/2"
+          ],
+          "classes": [
+            "1/2",
+            "1/2"
+          ]
+        },
+        {
+          "polynomial_A": "z**2 - 72*z + 912",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 2,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-2-11",
+      "point": {
+        "y1": "2",
+        "y2": "3"
+      },
+      "unit_cyclic_determinant": "-434301912",
+      "rank": 6,
+      "factors": [
+        {
+          "polynomial_A": "z + 6",
+          "multiplicity_per_root": 2,
+          "conjugate_eigenvalues": 1,
+          "powers": [
+            "-5/6",
+            "-1/6"
+          ],
+          "classes": [
+            "1/6",
+            "5/6"
+          ]
+        },
+        {
+          "polynomial_A": "z**4 - 8*z**3 - 776*z**2 - 18024*z - 86796",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 4,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-2-12",
+      "point": {
+        "y1": "2",
+        "y2": "3"
+      },
+      "unit_cyclic_determinant": "78848",
+      "rank": 6,
+      "factors": [
+        {
+          "polynomial_A": "z + 5",
+          "multiplicity_per_root": 2,
+          "conjugate_eigenvalues": 1,
+          "powers": [
+            "-1/2",
+            "-1/2"
+          ],
+          "classes": [
+            "1/2",
+            "1/2"
+          ]
+        },
+        {
+          "polynomial_A": "z**4 - 816*z**2 - 11520*z - 37824",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 4,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-2-13",
+      "point": {
+        "y1": "2",
+        "y2": "3"
+      },
+      "unit_cyclic_determinant": "-93350880",
+      "rank": 6,
+      "factors": [
+        {
+          "polynomial_A": "z + 8",
+          "multiplicity_per_root": 2,
+          "conjugate_eigenvalues": 1,
+          "powers": [
+            "-1/2",
+            "-1/2"
+          ],
+          "classes": [
+            "1/2",
+            "1/2"
+          ]
+        },
+        {
+          "polynomial_A": "z + 6",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        },
+        {
+          "polynomial_A": "z**3 - 18*z**2 - 540*z - 5400",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 3,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-2-15",
+      "point": {
+        "y1": "2",
+        "y2": "3"
+      },
+      "unit_cyclic_determinant": "130470912",
+      "rank": 6,
+      "factors": [
+        {
+          "polynomial_A": "z + 3",
+          "multiplicity_per_root": 2,
+          "conjugate_eigenvalues": 1,
+          "powers": [
+            "-1/2",
+            "-1/2"
+          ],
+          "classes": [
+            "1/2",
+            "1/2"
+          ]
+        },
+        {
+          "polynomial_A": "z**4 + 8*z**3 - 720*z**2 - 12096*z - 29376",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 4,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-2-16",
+      "point": {
+        "y1": "2",
+        "y2": "3"
+      },
+      "unit_cyclic_determinant": "-255328000",
+      "rank": 6,
+      "factors": [
+        {
+          "polynomial_A": "z + 6",
+          "multiplicity_per_root": 2,
+          "conjugate_eigenvalues": 1,
+          "powers": [
+            "-1/2",
+            "-1/2"
+          ],
+          "classes": [
+            "1/2",
+            "1/2"
+          ]
+        },
+        {
+          "polynomial_A": "z + 8",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        },
+        {
+          "polynomial_A": "z**3 - 16*z**2 - 348*z - 6096",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 3,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-2-18",
+      "point": {
+        "y1": "2",
+        "y2": "3"
+      },
+      "unit_cyclic_determinant": "932253696",
+      "rank": 6,
+      "factors": [
+        {
+          "polynomial_A": "z + 6",
+          "multiplicity_per_root": 2,
+          "conjugate_eigenvalues": 1,
+          "powers": [
+            "-1/2",
+            "-1/2"
+          ],
+          "classes": [
+            "1/2",
+            "1/2"
+          ]
+        },
+        {
+          "polynomial_A": "z**4 - 12*z**3 - 192*z**2 - 7632*z - 30096",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 4,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-2-19",
+      "point": {
+        "y1": "2",
+        "y2": "3"
+      },
+      "unit_cyclic_determinant": "-15260500",
+      "rank": 6,
+      "factors": [
+        {
+          "polynomial_A": "z + 3",
+          "multiplicity_per_root": 2,
+          "conjugate_eigenvalues": 1,
+          "powers": [
+            "-1/2",
+            "-1/2"
+          ],
+          "classes": [
+            "1/2",
+            "1/2"
+          ]
+        },
+        {
+          "polynomial_A": "z**4 + 4*z**3 - 440*z**2 - 7368*z - 18492",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 4,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-2-23",
+      "point": {
+        "y1": "2",
+        "y2": "3"
+      },
+      "unit_cyclic_determinant": "0",
+      "rank": 6,
+      "factors": [
+        {
+          "polynomial_A": "z + 3",
+          "multiplicity_per_root": 2,
+          "conjugate_eigenvalues": 1,
+          "powers": [
+            "-1/2",
+            "1/2"
+          ],
+          "classes": [
+            "1/2",
+            "1/2"
+          ]
+        },
+        {
+          "polynomial_A": "z",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        },
+        {
+          "polynomial_A": "z - 22",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        },
+        {
+          "polynomial_A": "z**2 + 30*z + 228",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 2,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-2-25",
+      "point": {
+        "y1": "2",
+        "y2": "3"
+      },
+      "unit_cyclic_determinant": "0",
+      "rank": 6,
+      "factors": [
+        {
+          "polynomial_A": "z + 2",
+          "multiplicity_per_root": 2,
+          "conjugate_eigenvalues": 1,
+          "powers": [
+            "-1/2",
+            "1/2"
+          ],
+          "classes": [
+            "1/2",
+            "1/2"
+          ]
+        },
+        {
+          "polynomial_A": "z**4 - 96*z**2 - 1536*z - 768",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 4,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-2-27",
+      "point": {
+        "y1": "2",
+        "y2": "3"
+      },
+      "unit_cyclic_determinant": "-396712368",
+      "rank": 6,
+      "factors": [
+        {
+          "polynomial_A": "z**6 + 6*z**5 - 15*z**4 - 1284*z**3 - 11508*z**2 - 38496*z - 45116",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-2-28",
+      "point": {
+        "y1": "2",
+        "y2": "3"
+      },
+      "unit_cyclic_determinant": "0",
+      "rank": 6,
+      "factors": [
+        {
+          "polynomial_A": "z + 3",
+          "multiplicity_per_root": 2,
+          "conjugate_eigenvalues": 1,
+          "powers": [
+            "-1/2",
+            "1/2"
+          ],
+          "classes": [
+            "1/2",
+            "1/2"
+          ]
+        },
+        {
+          "polynomial_A": "z**4 - 8*z**3 + 36*z**2 - 3456*z + 12420",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 4,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-2-29",
+      "point": {
+        "y1": "2",
+        "y2": "3"
+      },
+      "unit_cyclic_determinant": "-52355520",
+      "rank": 6,
+      "factors": [
+        {
+          "polynomial_A": "z",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        },
+        {
+          "polynomial_A": "z + 2",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        },
+        {
+          "polynomial_A": "z**4 + 2*z**3 - 96*z**2 - 864*z + 1008",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 4,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-2-30",
+      "point": {
+        "y1": "2",
+        "y2": "3"
+      },
+      "unit_cyclic_determinant": "-967209984",
+      "rank": 6,
+      "factors": [
+        {
+          "polynomial_A": "z + 3",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        },
+        {
+          "polynomial_A": "z**5 + 3*z**4 + 8*z**3 - 720*z**2 - 6912*z - 19008",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 5,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-2-31",
+      "point": {
+        "y1": "2",
+        "y2": "3"
+      },
+      "unit_cyclic_determinant": "-696010608",
+      "rank": 6,
+      "factors": [
+        {
+          "polynomial_A": "z**6 + 4*z**5 - 32*z**4 - 852*z**3 - 2376*z**2 - 8496*z - 2700",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-2-32",
+      "point": {
+        "y1": "2",
+        "y2": "3"
+      },
+      "unit_cyclic_determinant": "-119439360",
+      "rank": 6,
+      "factors": [
+        {
+          "polynomial_A": "z**6 - 60*z**4 - 1392*z**2 - 8000",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-2-33",
+      "point": {
+        "y1": "2",
+        "y2": "3"
+      },
+      "unit_cyclic_determinant": "964221464",
+      "rank": 6,
+      "factors": [
+        {
+          "polynomial_A": "z**6 + 4*z**5 + 4*z**4 - 162*z**3 - 2268*z**2 - 6912*z + 417",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-2-35",
+      "point": {
+        "y1": "2",
+        "y2": "3"
+      },
+      "unit_cyclic_determinant": "-1920827392",
+      "rank": 6,
+      "factors": [
+        {
+          "polynomial_A": "z**6 - 28*z**4 - 1488*z**2 - 23232",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-2-36",
+      "point": {
+        "y1": "2",
+        "y2": "3"
+      },
+      "unit_cyclic_determinant": "-74727456",
+      "rank": 6,
+      "factors": [
+        {
+          "polynomial_A": "z**6 - 8*z**5 - 36*z**4 + 300*z**3 + 432*z**2 - 18000*z + 110772",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-3-3",
+      "point": {
+        "y1": "2",
+        "y2": "3",
+        "y3": "5"
+      },
+      "unit_cyclic_determinant": "-26066935185320448",
+      "rank": 8,
+      "factors": [
+        {
+          "polynomial_A": "z + 15",
+          "multiplicity_per_root": 2,
+          "conjugate_eigenvalues": 1,
+          "powers": [
+            "-1/2",
+            "-1/2"
+          ],
+          "classes": [
+            "1/2",
+            "1/2"
+          ]
+        },
+        {
+          "polynomial_A": "z**6 - 20*z**5 - 1972*z**4 - 21550*z**3 + 162028*z**2 + 2216640*z - 2683599",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-3-6",
+      "point": {
+        "y1": "2",
+        "y2": "3",
+        "y3": "5"
+      },
+      "unit_cyclic_determinant": "0",
+      "rank": 8,
+      "factors": [
+        {
+          "polynomial_A": "z + 11",
+          "multiplicity_per_root": 2,
+          "conjugate_eigenvalues": 1,
+          "powers": [
+            "-1/2",
+            "1/2"
+          ],
+          "classes": [
+            "1/2",
+            "1/2"
+          ]
+        },
+        {
+          "polynomial_A": "z**6 - 8*z**5 - 1376*z**4 - 14562*z**3 + 224496*z**2 + 4298640*z + 17704065",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-3-7",
+      "point": {
+        "y1": "2",
+        "y2": "3",
+        "y3": "5"
+      },
+      "unit_cyclic_determinant": "0",
+      "rank": 8,
+      "factors": [
+        {
+          "polynomial_A": "z + 10",
+          "multiplicity_per_root": 2,
+          "conjugate_eigenvalues": 1,
+          "powers": [
+            "-1/2",
+            "1/2"
+          ],
+          "classes": [
+            "1/2",
+            "1/2"
+          ]
+        },
+        {
+          "polynomial_A": "z**6 - 1002*z**4 - 19440*z**3 - 82887*z**2 + 965520*z + 8576576",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-3-8",
+      "point": {
+        "y1": "2",
+        "y2": "3",
+        "y3": "5"
+      },
+      "unit_cyclic_determinant": "-2831961718284652160064",
+      "rank": 8,
+      "factors": [
+        {
+          "polynomial_A": "z + 15",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        },
+        {
+          "polynomial_A": "z**7 - 5*z**6 - 1512*z**5 - 22230*z**4 + 292038*z**3 + 10589460*z**2 + 103089161*z + 352928735",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 7,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-3-9",
+      "point": {
+        "y1": "2",
+        "y2": "3"
+      },
+      "unit_cyclic_determinant": "-1185528960",
+      "rank": 6,
+      "factors": [
+        {
+          "polynomial_A": "z + 6",
+          "multiplicity_per_root": 2,
+          "conjugate_eigenvalues": 1,
+          "powers": [
+            "-3/4",
+            "-1/4"
+          ],
+          "classes": [
+            "1/4",
+            "3/4"
+          ]
+        },
+        {
+          "polynomial_A": "z - 2",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        },
+        {
+          "polynomial_A": "z**3 - 18*z**2 + 108*z - 7992",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 3,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-3-10",
+      "point": {
+        "y1": "2",
+        "y2": "3",
+        "y3": "5"
+      },
+      "unit_cyclic_determinant": "-3814120501987723200",
+      "rank": 8,
+      "factors": [
+        {
+          "polynomial_A": "z + 11",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        },
+        {
+          "polynomial_A": "z + 8",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        },
+        {
+          "polynomial_A": "z + 6",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        },
+        {
+          "polynomial_A": "z**5 - 11*z**4 - 758*z**3 - 2508*z**2 + 59400*z + 185040",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 5,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-3-11",
+      "point": {
+        "y1": "2",
+        "y2": "3",
+        "y3": "5"
+      },
+      "unit_cyclic_determinant": "0",
+      "rank": 8,
+      "factors": [
+        {
+          "polynomial_A": "z + 8",
+          "multiplicity_per_root": 2,
+          "conjugate_eigenvalues": 1,
+          "powers": [
+            "-1/2",
+            "1/2"
+          ],
+          "classes": [
+            "1/2",
+            "1/2"
+          ]
+        },
+        {
+          "polynomial_A": "z**6 + 4*z**5 - 352*z**4 - 10908*z**3 - 155088*z**2 - 1274592*z - 3774396",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-3-12",
+      "point": {
+        "y1": "2",
+        "y2": "3",
+        "y3": "5"
+      },
+      "unit_cyclic_determinant": "220577919968916209664",
+      "rank": 8,
+      "factors": [
+        {
+          "polynomial_A": "z**8 + 20*z**7 - 762*z**6 - 29860*z**5 - 286727*z**4 + 1610040*z**3 + 50560296*z**2 + 356020320*z + 858061200",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 8,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-3-13",
+      "point": {
+        "y1": "2",
+        "y2": "3",
+        "y3": "5"
+      },
+      "unit_cyclic_determinant": "-18895710683557527552",
+      "rank": 8,
+      "factors": [
+        {
+          "polynomial_A": "z + 10",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        },
+        {
+          "polynomial_A": "z**7 + 10*z**6 - 372*z**5 - 12240*z**4 - 169872*z**3 - 1400160*z**2 - 6802624*z - 17221120",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 7,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-3-15",
+      "point": {
+        "y1": "2",
+        "y2": "3",
+        "y3": "5"
+      },
+      "unit_cyclic_determinant": "-316944704202326234244",
+      "rank": 8,
+      "factors": [
+        {
+          "polynomial_A": "z + 7",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        },
+        {
+          "polynomial_A": "z**7 + 13*z**6 - 609*z**5 - 16047*z**4 - 137340*z**3 + 53250*z**2 + 9545405*z + 39712175",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 7,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-3-18",
+      "point": {
+        "y1": "2",
+        "y2": "3",
+        "y3": "5"
+      },
+      "unit_cyclic_determinant": "-6838857938394179825400",
+      "rank": 8,
+      "factors": [
+        {
+          "polynomial_A": "z + 5",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        },
+        {
+          "polynomial_A": "z**7 + 15*z**6 - 429*z**5 - 15349*z**4 - 126708*z**3 + 862950*z**2 + 16899705*z + 60325845",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 7,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-3-19",
+      "point": {
+        "y1": "2",
+        "y2": "3"
+      },
+      "unit_cyclic_determinant": "-1698402816",
+      "rank": 6,
+      "factors": [
+        {
+          "polynomial_A": "z + 6",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        },
+        {
+          "polynomial_A": "z**2 + 12*z + 44",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 2,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        },
+        {
+          "polynomial_A": "z**3 - 18*z**2 + 108*z - 864",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 3,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-3-20",
+      "point": {
+        "y1": "2",
+        "y2": "3",
+        "y3": "5"
+      },
+      "unit_cyclic_determinant": "1079081496086971632192",
+      "rank": 8,
+      "factors": [
+        {
+          "polynomial_A": "z**8 + 20*z**7 - 188*z**6 - 9780*z**5 - 146664*z**4 - 1437960*z**3 - 8901700*z**2 - 38593640*z - 85607500",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 8,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-3-21",
+      "point": {
+        "y1": "2",
+        "y2": "3",
+        "y3": "5"
+      },
+      "unit_cyclic_determinant": "23839294261803122824000",
+      "rank": 8,
+      "factors": [
+        {
+          "polynomial_A": "z**8 + 20*z**7 - 444*z**6 - 12980*z**5 - 99200*z**4 - 418200*z**3 + 1181900*z**2 + 34135000*z + 132980500",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 8,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-3-22",
+      "point": {
+        "y1": "2",
+        "y2": "3",
+        "y3": "5"
+      },
+      "unit_cyclic_determinant": "226323129969104958288000",
+      "rank": 8,
+      "factors": [
+        {
+          "polynomial_A": "z + 7",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        },
+        {
+          "polynomial_A": "z**7 - 5*z**6 - 144*z**5 - 3270*z**4 - 66450*z**3 - 227400*z**2 + 7864625*z - 14486125",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 7,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-3-23",
+      "point": {
+        "y1": "2",
+        "y2": "3",
+        "y3": "5"
+      },
+      "unit_cyclic_determinant": "-30468324309684836094080",
+      "rank": 8,
+      "factors": [
+        {
+          "polynomial_A": "z**8 + 20*z**7 + 16*z**6 - 6264*z**5 - 136588*z**4 - 1683600*z**3 - 14321280*z**2 - 86782080*z - 235260300",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 8,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-3-24",
+      "point": {
+        "y1": "2",
+        "y2": "3",
+        "y3": "5"
+      },
+      "unit_cyclic_determinant": "85526111797370594064",
+      "rank": 8,
+      "factors": [
+        {
+          "polynomial_A": "z**8 + 10*z**7 - 127*z**6 - 2280*z**5 - 17142*z**4 - 110430*z**3 - 214664*z**2 + 305320*z + 2718665",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 8,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-3-25",
+      "point": {
+        "y1": "2",
+        "y2": "3",
+        "y3": "5"
+      },
+      "unit_cyclic_determinant": "6643715775701782064",
+      "rank": 8,
+      "factors": [
+        {
+          "polynomial_A": "z**8 + 10*z**7 - 43*z**6 - 2140*z**5 - 22914*z**4 - 62150*z**3 + 268180*z**2 + 948600*z - 1030655",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 8,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-3-26",
+      "point": {
+        "y1": "2",
+        "y2": "3",
+        "y3": "5"
+      },
+      "unit_cyclic_determinant": "1067951073103814800512",
+      "rank": 8,
+      "factors": [
+        {
+          "polynomial_A": "z**8 + 16*z**7 - 108*z**6 - 3372*z**5 - 19548*z**4 - 117000*z**3 - 1886220*z**2 - 13336920*z - 26238060",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 8,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-3-28",
+      "point": {
+        "y1": "2",
+        "y2": "3",
+        "y3": "5"
+      },
+      "unit_cyclic_determinant": "54525723630325859376",
+      "rank": 8,
+      "factors": [
+        {
+          "polynomial_A": "z**8 + 6*z**7 - 103*z**6 - 1464*z**5 - 2462*z**4 + 26022*z**3 + 257760*z**2 + 606168*z - 983007",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 8,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-3-29",
+      "point": {
+        "y1": "2",
+        "y2": "3",
+        "y3": "5"
+      },
+      "unit_cyclic_determinant": "-27206474972621156352000",
+      "rank": 8,
+      "factors": [
+        {
+          "polynomial_A": "z**8 + 2*z**7 - 209*z**6 + 102*z**5 - 30735*z**4 - 354000*z**3 + 2196200*z**2 + 7828000*z + 264914000",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 8,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-3-30",
+      "point": {
+        "y1": "2",
+        "y2": "3",
+        "y3": "5"
+      },
+      "unit_cyclic_determinant": "210603898430923358160",
+      "rank": 8,
+      "factors": [
+        {
+          "polynomial_A": "z**8 + 10*z**7 - 19*z**6 - 1404*z**5 - 18618*z**4 - 90750*z**3 - 54860*z**2 + 1159000*z + 10901465",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 8,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-3-31",
+      "point": {
+        "y1": "2",
+        "y2": "3",
+        "y3": "5"
+      },
+      "unit_cyclic_determinant": "26729828013202986800",
+      "rank": 8,
+      "factors": [
+        {
+          "polynomial_A": "z**8 + 10*z**7 - 79*z**6 - 2200*z**5 - 11190*z**4 + 74650*z**3 + 529600*z**2 - 477000*z - 5113775",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 8,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-4-2",
+      "point": {
+        "y1": "2",
+        "y2": "3",
+        "y3": "5"
+      },
+      "unit_cyclic_determinant": "0",
+      "rank": 8,
+      "factors": [
+        {
+          "polynomial_A": "z + 10",
+          "multiplicity_per_root": 2,
+          "conjugate_eigenvalues": 1,
+          "powers": [
+            "-1/2",
+            "1/2"
+          ],
+          "classes": [
+            "1/2",
+            "1/2"
+          ]
+        },
+        {
+          "polynomial_A": "z**2 + 30*z + 201",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 2,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        },
+        {
+          "polynomial_A": "z**4 - 40*z**3 - 200*z**2 + 12000*z - 63600",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 4,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-4-3",
+      "point": {
+        "y1": "2",
+        "y2": "3",
+        "y3": "5",
+        "y4": "7"
+      },
+      "unit_cyclic_determinant": "3803717405525458392328646585877120000",
+      "rank": 10,
+      "factors": [
+        {
+          "polynomial_A": "z**10 + 34*z**9 - 877*z**8 - 56130*z**7 - 786139*z**6 + 1338770*z**5 + 106124802*z**4 + 435867878*z**3 - 3569454844*z**2 - 13644220960*z + 55181579065",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 10,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-4-4",
+      "point": {
+        "y1": "2",
+        "y2": "3",
+        "y3": "5"
+      },
+      "unit_cyclic_determinant": "-3933489233992860432000",
+      "rank": 8,
+      "factors": [
+        {
+          "polynomial_A": "z + 12",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        },
+        {
+          "polynomial_A": "z + 10",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 1,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        },
+        {
+          "polynomial_A": "z**2 + 26*z + 193",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 2,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        },
+        {
+          "polynomial_A": "z**4 - 38*z**3 + 60*z**2 + 1880*z + 54320",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 4,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-4-6",
+      "point": {
+        "y1": "2",
+        "y2": "3",
+        "y3": "5",
+        "y4": "7"
+      },
+      "unit_cyclic_determinant": "10640183582254315768850891156752415232",
+      "rank": 10,
+      "factors": [
+        {
+          "polynomial_A": "z**10 + 34*z**9 - 769*z**8 - 49986*z**7 - 619927*z**6 + 4070582*z**5 + 132248358*z**4 + 517247738*z**3 - 4885419784*z**2 - 30601667152*z + 3996723241",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 10,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-4-7",
+      "point": {
+        "y1": "2",
+        "y2": "3",
+        "y3": "5",
+        "y4": "7"
+      },
+      "unit_cyclic_determinant": "-49243506798844197336518773702920000000",
+      "rank": 10,
+      "factors": [
+        {
+          "polynomial_A": "z**10 + 34*z**9 - 661*z**8 - 43482*z**7 - 546655*z**6 + 3063482*z**5 + 125596986*z**4 + 804859346*z**3 - 3757434088*z**2 - 65732679940*z - 224178705023",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 10,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-4-8",
+      "point": {
+        "y1": "2",
+        "y2": "3",
+        "y3": "5",
+        "y4": "7"
+      },
+      "unit_cyclic_determinant": "1240574754948776408506681223872373587968",
+      "rank": 10,
+      "factors": [
+        {
+          "polynomial_A": "z**10 + 34*z**9 - 859*z**8 - 44496*z**7 - 240112*z**6 + 8073632*z**5 + 74510688*z**4 - 417636352*z**3 - 4884457984*z**2 + 3342875648*z + 70462771456",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 10,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-4-9",
+      "point": {
+        "y1": "2",
+        "y2": "3",
+        "y3": "5",
+        "y4": "7"
+      },
+      "unit_cyclic_determinant": "165817641047241935898510222530191288276480",
+      "rank": 10,
+      "factors": [
+        {
+          "polynomial_A": "z**10 + 34*z**9 - 477*z**8 - 38358*z**7 - 564547*z**6 + 1766202*z**5 + 137771146*z**4 + 1514246734*z**3 + 4988155340*z**2 - 26102362020*z - 175678959575",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 10,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-4-10",
+      "point": {
+        "y1": "2",
+        "y2": "3",
+        "y3": "5",
+        "y4": "7"
+      },
+      "unit_cyclic_determinant": "-73574033641854087239811314192351232",
+      "rank": 10,
+      "factors": [
+        {
+          "polynomial_A": "z**10 + 24*z**9 - 504*z**8 - 17736*z**7 - 53772*z**6 + 2392392*z**5 + 24735328*z**4 + 43909008*z**3 - 347018784*z**2 - 1116525312*z + 318569616",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 10,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-4-11",
+      "point": {
+        "y1": "2",
+        "y2": "3",
+        "y3": "5",
+        "y4": "7"
+      },
+      "unit_cyclic_determinant": "-108214267105171361405555758976895807033312",
+      "rank": 10,
+      "factors": [
+        {
+          "polynomial_A": "z**10 + 34*z**9 - 343*z**8 - 34740*z**7 - 511990*z**6 + 2259866*z**5 + 130807908*z**4 + 1030885352*z**3 - 3619082719*z**2 - 93993791752*z - 400521295412",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 10,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-4-12",
+      "point": {
+        "y1": "2",
+        "y2": "3",
+        "y3": "5",
+        "y4": "7"
+      },
+      "unit_cyclic_determinant": "12916102359272388972376456175057450085888",
+      "rank": 10,
+      "factors": [
+        {
+          "polynomial_A": "z**10 + 34*z**9 - 537*z**8 - 34466*z**7 - 374135*z**6 + 3668358*z**5 + 134240062*z**4 + 1516208890*z**3 + 9881149656*z**2 + 39769549792*z + 107639990857",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 10,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-5-2",
+      "point": {
+        "y1": "2",
+        "y2": "3",
+        "y3": "5",
+        "y4": "7",
+        "y5": "11"
+      },
+      "unit_cyclic_determinant": "-1786366422226903891094393566636555704129505168684884164481841287880706767630739611582464",
+      "rank": 12,
+      "factors": [
+        {
+          "polynomial_A": "z**12 + 364*z**11 + 41118*z**10 - 1384196*z**9 - 797972815*z**8 - 78352910992*z**7 - 1862448777768*z**6 + 290528571988160*z**5 + 33921468139947696*z**4 + 1796179021770290432*z**3 + 54769766287342513792*z**2 + 935588553375882250240*z + 7039149454721760400640",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 12,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-5-3",
+      "point": {
+        "y1": "2",
+        "y2": "3",
+        "y3": "5",
+        "y4": "7",
+        "y5": "11"
+      },
+      "unit_cyclic_determinant": "-25428463657204426522780874805050876713457815196189717728445540799098770120777844077363200",
+      "rank": 12,
+      "factors": [
+        {
+          "polynomial_A": "z**12 + 360*z**11 + 39006*z**10 - 1701000*z**9 - 786824655*z**8 - 69699382560*z**7 - 805798497888*z**6 + 341073610686720*z**5 + 33291344951089536*z**4 + 1592361633032202240*z**3 + 44019729610800924672*z**2 + 673042469795634954240*z + 4418873783420338376704",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 12,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-6-1",
+      "point": {
+        "y1": "2",
+        "y2": "3",
+        "y3": "5"
+      },
+      "unit_cyclic_determinant": "15443479973352248064",
+      "rank": 8,
+      "factors": [
+        {
+          "polynomial_A": "z**2 + 22*z + 113",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 2,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        },
+        {
+          "polynomial_A": "z**6 - 12*z**5 - 1140*z**4 - 1554*z**3 + 383340*z**2 + 4723152*z + 16577137",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 6,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-7-1",
+      "point": {
+        "y1": "2",
+        "y2": "3"
+      },
+      "unit_cyclic_determinant": "365789184",
+      "rank": 6,
+      "factors": [
+        {
+          "polynomial_A": "z**2 + 16*z + 52",
+          "multiplicity_per_root": 2,
+          "conjugate_eigenvalues": 2,
+          "powers": [
+            "-1/2",
+            "-1/2"
+          ],
+          "classes": [
+            "1/2",
+            "1/2"
+          ]
+        },
+        {
+          "polynomial_A": "z**2 - 48*z + 564",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 2,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
+    },
+    {
+      "id": "FANOGRAPHY-8-1",
+      "point": {
+        "y1": "2",
+        "y2": "3"
+      },
+      "unit_cyclic_determinant": "3158562816",
+      "rank": 6,
+      "factors": [
+        {
+          "polynomial_A": "z**2 + 24*z + 132",
+          "multiplicity_per_root": 2,
+          "conjugate_eigenvalues": 2,
+          "powers": [
+            "-2/3",
+            "-1/3"
+          ],
+          "classes": [
+            "1/3",
+            "2/3"
+          ]
+        },
+        {
+          "polynomial_A": "z**2 - 84*z + 1752",
+          "multiplicity_per_root": 1,
+          "conjugate_eigenvalues": 2,
+          "powers": [
+            "0"
+          ],
+          "classes": [
+            "0"
+          ]
+        }
+      ],
+      "source": "toric-threefolds.json"
     }
   ]
 }

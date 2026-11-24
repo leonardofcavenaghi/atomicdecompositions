@@ -57,6 +57,8 @@ $$
 
 Ambient rank: 8; full even rank: 184; full odd rank: 0. The complement of the ambient image in middle cohomology has dimension 176.
 
+For a very general member, universal monodromy fixes $H^4(+) = H^4_{\mathrm{amb}}$ and Picard–Lefschetz makes $H^4(-)$ irreducible non-Tate ($h^{3,1}=20$), giving full rational Hodge-invariant rank $8$.
+
 
 $$
 \begin{aligned}\int_Xc_1^4&=64,&\int_Xc_1^2c_2&=112\\\int_Xc_2^2&=192,&\int_Xc_1c_3&=-56\\\int_Xc_4&=184,&\chi(\mathcal O_X)&=1.\end{aligned}

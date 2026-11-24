@@ -31,4 +31,4 @@ For a split bundle \(E=\bigoplus_j L_j\) on a base \(B\), the catalogue uses the
 The [exact fan and divisor data](../data/geometric-presentations.json) give the lattice blocks, twisting data and converted degrees for the displayed constructions. This identification concerns the ambient variety and the defining divisor classes. Gromov–Witten computations require their own localization and curve-completeness arguments; primitive cohomology and full atomic decompositions require the separate Hodge-theoretic hypotheses stated with the results.
 
 
-See [Algebraic-geometry databases](databases.md) and [GKMtools.jl](../software/gkmtools.md) for related resources.
+See [Algebraic-geometry databases](databases.md) for Fanography and related algebraic-geometry databases.

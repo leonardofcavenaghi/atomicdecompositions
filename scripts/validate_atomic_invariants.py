@@ -10,7 +10,7 @@ assert {r['id'] for r in records}=={r['id'] for r in catalog}
 assert {r['id']:r['title'] for r in records}=={r['id']:r['title'] for r in catalog}, 'Atomic data display titles differ from catalogue'
 sources={r['id']:r for r in json.loads((D/'localization-results.json').read_text())['examples']}
 sources.update({r['id']:r for r in json.loads((D/'flag-fourfolds.json').read_text())['records']})
-for name in ['fourfolds','fivefolds']:sources.update({r['id']:r for r in json.loads((D/('toric-'+name+'.json')).read_text())['records']})
+for name in ['threefolds','fourfolds','fivefolds']:sources.update({r['id']:r for r in json.loads((D/('toric-'+name+'.json')).read_text())['records']})
 
 def expr(value):
  value=re.sub(r'y_\{(\d+)\}',r'y\1',value);value=re.sub(r'\^\{(-?\d+)\}',r'**(\1)',value)

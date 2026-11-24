@@ -36,6 +36,7 @@ CATEGORIES = {
 }
 RESULTS = {
     'localization-results.json': ('examples', 'Exact flag localization results'),
+    'toric-threefolds.json': ('records', 'Exact toric threefold results'),
     'toric-fourfolds.json': ('records', 'Exact toric fourfold results'),
     'toric-fivefolds.json': ('records', 'Exact toric fivefold results'),
     'flag-fourfolds.json': ('records', 'Additional homogeneous fourfold results'),

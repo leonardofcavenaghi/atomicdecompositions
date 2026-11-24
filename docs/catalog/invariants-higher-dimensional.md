@@ -191,7 +191,7 @@ Full Hodge polynomial: \(P_X(t)=t^{3} + 84t + 8 + 84t^{-1} + t^{-3}\).
 | 2 | 2 | 1 | 1 | \(1\) |
 | 3 | 4 | 1 | 1 | \(1\) |
 
-**Hodge identification:** Very-general ample complete intersection: weak Lefschetz and irreducible non-Tate vanishing cohomology.
+**Hodge identification:** Smooth ample complete intersection: weak Lefschetz and odd middle vanishing cohomology.
 
 **Primitive assignment:** Chern index at least two; see the [common proof rules](atomic-invariants.md#primitive-assignment-rules).
 
@@ -223,7 +223,7 @@ Full Hodge polynomial: \(P_X(t)=156t^{3} + 2304t + 8 + 2304t^{-1} + 156t^{-3}\).
 | 1 | 1 | 3 | 4923 | \(156t^{3} + 2304t + 3 + 2304t^{-1} + 156t^{-3}\) |
 | 2 | 5 | 1 | 1 | \(1\) |
 
-**Hodge identification:** Very-general ample complete intersection: weak Lefschetz and irreducible non-Tate vanishing cohomology.
+**Hodge identification:** Smooth ample complete intersection: weak Lefschetz and odd middle vanishing cohomology.
 
 **Primitive assignment:** Chern index at least two; see the [common proof rules](atomic-invariants.md#primitive-assignment-rules).
 
@@ -254,7 +254,7 @@ Full Hodge polynomial: \(P_X(t)=9t^{5} + 2598t^{3} + 23607t + 8 + 23607t^{-1} + 
 | 1 | 1 | 4 | 52432 | \(9t^{5} + 2598t^{3} + 23607t + 4 + 23607t^{-1} + 2598t^{-3} + 9t^{-5}\) |
 | 2 | 4 | 1 | 1 | \(1\) |
 
-**Hodge identification:** Very-general ample complete intersection: weak Lefschetz and irreducible non-Tate vanishing cohomology.
+**Hodge identification:** Smooth ample complete intersection: weak Lefschetz and odd middle vanishing cohomology.
 
 **Primitive assignment:** Chern index at least two; see the [common proof rules](atomic-invariants.md#primitive-assignment-rules).
 
@@ -286,7 +286,7 @@ Full Hodge polynomial: \(P_X(t)=165t^{5} + 19855t^{3} + 142740t + 8 + 142740t^{-
 | 2 | 1 | 5 | 325525 | \(165t^{5} + 19855t^{3} + 142740t + 5 + 142740t^{-1} + 19855t^{-3} + 165t^{-5}\) |
 | 3 | 2 | 1 | 1 | \(1\) |
 
-**Hodge identification:** Very-general ample complete intersection: weak Lefschetz and irreducible non-Tate vanishing cohomology.
+**Hodge identification:** Smooth ample complete intersection: weak Lefschetz and odd middle vanishing cohomology.
 
 **Primitive assignment:** Chern index at least two; see the [common proof rules](atomic-invariants.md#primitive-assignment-rules).
 
@@ -318,7 +318,7 @@ Full Hodge polynomial: \(P_X(t)=1287t^{5} + 98979t^{3} + 619569t + 8 + 619569t^{
 | 1 | 1 | 6 | 1439676 | \(1287t^{5} + 98979t^{3} + 619569t + 6 + 619569t^{-1} + 98979t^{-3} + 1287t^{-5}\) |
 | 2 | 2 | 1 | 1 | \(1\) |
 
-**Hodge identification:** Very-general ample complete intersection: weak Lefschetz and irreducible non-Tate vanishing cohomology.
+**Hodge identification:** Smooth ample complete intersection: weak Lefschetz and odd middle vanishing cohomology.
 
 **Primitive assignment:** Chern index at least two; see the [common proof rules](atomic-invariants.md#primitive-assignment-rules).
 
