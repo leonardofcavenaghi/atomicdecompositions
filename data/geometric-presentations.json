@@ -3,6 +3,1858 @@
   "records": [
     {
       "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        1,
+        3
+      ],
+      "defining_degrees": [
+        [
+          1,
+          3
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2,
+          3,
+          4
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "FANOGRAPHY-2-4"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 1,
+      "fibre_dimension": 3,
+      "twists": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 3,
+          "H": 0
+        }
+      ],
+      "base_rays": [
+        3,
+        4
+      ],
+      "fibre_rays": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "ray_twists": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "FANOGRAPHY-2-5"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        2,
+        2
+      ],
+      "defining_degrees": [
+        [
+          2,
+          2
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          4,
+          5
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "FANOGRAPHY-2-6"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        1,
+        4
+      ],
+      "defining_degrees": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "FANOGRAPHY-2-7"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        2,
+        3
+      ],
+      "defining_degrees": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          4,
+          5,
+          6
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "FANOGRAPHY-2-9"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 1,
+      "fibre_dimension": 4,
+      "twists": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 2,
+          "H": 0
+        },
+        {
+          "xi": 2,
+          "H": 0
+        }
+      ],
+      "base_rays": [
+        4,
+        5
+      ],
+      "fibre_rays": [
+        0,
+        1,
+        2,
+        3,
+        6
+      ],
+      "ray_twists": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "FANOGRAPHY-2-10"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 2,
+      "fibre_dimension": 2,
+      "twists": [
+        0,
+        0,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 2,
+          "H": 1
+        }
+      ],
+      "base_rays": [
+        2,
+        3,
+        4
+      ],
+      "fibre_rays": [
+        0,
+        1,
+        5
+      ],
+      "ray_twists": [
+        0,
+        0,
+        1
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "FANOGRAPHY-2-11"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        3,
+        3
+      ],
+      "defining_degrees": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          5,
+          6,
+          7
+        ],
+        [
+          1,
+          2,
+          3,
+          4
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "FANOGRAPHY-2-12"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        2,
+        4
+      ],
+      "defining_degrees": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          6,
+          7
+        ],
+        [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "FANOGRAPHY-2-13"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 3,
+      "fibre_dimension": 1,
+      "twists": [
+        0,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 1,
+          "H": 2
+        }
+      ],
+      "base_rays": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "fibre_rays": [
+        0,
+        5
+      ],
+      "ray_twists": [
+        0,
+        1
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "FANOGRAPHY-2-15"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 2,
+      "fibre_dimension": 3,
+      "twists": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 1,
+          "H": 1
+        },
+        {
+          "xi": 2,
+          "H": 0
+        }
+      ],
+      "base_rays": [
+        3,
+        4,
+        5
+      ],
+      "fibre_rays": [
+        0,
+        1,
+        2,
+        6
+      ],
+      "ray_twists": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "FANOGRAPHY-2-16"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 2,
+      "fibre_dimension": 2,
+      "twists": [
+        0,
+        1,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 2,
+          "H": 0
+        }
+      ],
+      "base_rays": [
+        2,
+        3,
+        4
+      ],
+      "fibre_rays": [
+        0,
+        1,
+        5
+      ],
+      "ray_twists": [
+        0,
+        1,
+        1
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "FANOGRAPHY-2-18"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 3,
+      "fibre_dimension": 2,
+      "twists": [
+        0,
+        0,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 1,
+          "H": 1
+        },
+        {
+          "xi": 1,
+          "H": 1
+        }
+      ],
+      "base_rays": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "fibre_rays": [
+        0,
+        1,
+        6
+      ],
+      "ray_twists": [
+        0,
+        0,
+        1
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "FANOGRAPHY-2-19"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 4,
+      "fibre_dimension": 1,
+      "twists": [
+        0,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 1,
+          "H": 1
+        },
+        {
+          "xi": 0,
+          "H": 2
+        }
+      ],
+      "base_rays": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "fibre_rays": [
+        0,
+        6
+      ],
+      "ray_twists": [
+        0,
+        1
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "FANOGRAPHY-2-23"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        1,
+        3
+      ],
+      "defining_degrees": [
+        [
+          1,
+          2
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2,
+          3,
+          4
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "FANOGRAPHY-2-25"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        2,
+        3
+      ],
+      "defining_degrees": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          4,
+          5,
+          6
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "FANOGRAPHY-2-27"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 3,
+      "fibre_dimension": 1,
+      "twists": [
+        0,
+        2
+      ],
+      "defining_divisors": [
+        {
+          "xi": 1,
+          "H": 1
+        }
+      ],
+      "base_rays": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "fibre_rays": [
+        1,
+        2
+      ],
+      "ray_twists": [
+        0,
+        2
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "FANOGRAPHY-2-28"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 1,
+      "fibre_dimension": 3,
+      "twists": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 2,
+          "H": 0
+        }
+      ],
+      "base_rays": [
+        3,
+        4
+      ],
+      "fibre_rays": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "ray_twists": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "FANOGRAPHY-2-29"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 3,
+      "fibre_dimension": 1,
+      "twists": [
+        0,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 1,
+          "H": 1
+        }
+      ],
+      "base_rays": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "fibre_rays": [
+        0,
+        5
+      ],
+      "ray_twists": [
+        0,
+        1
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "FANOGRAPHY-2-30"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 2,
+      "fibre_dimension": 2,
+      "twists": [
+        0,
+        0,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 1,
+          "H": 1
+        }
+      ],
+      "base_rays": [
+        2,
+        3,
+        4
+      ],
+      "fibre_rays": [
+        0,
+        1,
+        5
+      ],
+      "ray_twists": [
+        0,
+        0,
+        1
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "FANOGRAPHY-2-31"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        2,
+        2
+      ],
+      "defining_degrees": [
+        [
+          1,
+          1
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          4,
+          5
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "FANOGRAPHY-2-32"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 1,
+      "fibre_dimension": 2,
+      "twists": [
+        0,
+        0,
+        1
+      ],
+      "defining_divisors": [],
+      "base_rays": [
+        2,
+        3
+      ],
+      "fibre_rays": [
+        0,
+        1,
+        4
+      ],
+      "ray_twists": [
+        0,
+        0,
+        1
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "FANOGRAPHY-2-33"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 2,
+      "fibre_dimension": 1,
+      "twists": [
+        0,
+        1
+      ],
+      "defining_divisors": [],
+      "base_rays": [
+        1,
+        2,
+        3
+      ],
+      "fibre_rays": [
+        0,
+        4
+      ],
+      "ray_twists": [
+        0,
+        1
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "FANOGRAPHY-2-35"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 2,
+      "fibre_dimension": 1,
+      "twists": [
+        0,
+        2
+      ],
+      "defining_divisors": [],
+      "base_rays": [
+        0,
+        3,
+        4
+      ],
+      "fibre_rays": [
+        1,
+        2
+      ],
+      "ray_twists": [
+        0,
+        2
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "FANOGRAPHY-2-36"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        1,
+        1,
+        2
+      ],
+      "defining_degrees": [
+        [
+          1,
+          1,
+          2
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3,
+          4
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "FANOGRAPHY-3-3"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle over product",
+      "base_dimensions": [
+        1,
+        1
+      ],
+      "twists_vectors": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "defining_divisor_coordinates": [
+        [
+          1,
+          0,
+          2
+        ]
+      ],
+      "base_rays": [
+        [
+          1,
+          2
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "fibre_rays": [
+        0,
+        3,
+        6
+      ],
+      "certificate": "Primitive collections and all product maximal cones match; a cone gives a unimodular lattice basis; fibre ray sum vanishes and the exact divisor-class matrix satisfies every lattice linear relation.",
+      "id": "FANOGRAPHY-3-6"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        1,
+        2,
+        2
+      ],
+      "defining_degrees": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          5,
+          6
+        ],
+        [
+          2,
+          3,
+          4
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "FANOGRAPHY-3-7"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle over product",
+      "base_dimensions": [
+        1,
+        2
+      ],
+      "twists_vectors": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "defining_divisor_coordinates": [
+        [
+          0,
+          2,
+          1
+        ]
+      ],
+      "base_rays": [
+        [
+          4,
+          5
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "fibre_rays": [
+        0,
+        6
+      ],
+      "certificate": "Primitive collections and all product maximal cones match; a cone gives a unimodular lattice basis; fibre ray sum vanishes and the exact divisor-class matrix satisfies every lattice linear relation.",
+      "id": "FANOGRAPHY-3-8"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 2,
+      "fibre_dimension": 2,
+      "twists": [
+        0,
+        0,
+        2
+      ],
+      "defining_divisors": [
+        {
+          "xi": 2,
+          "H": 0
+        }
+      ],
+      "base_rays": [
+        0,
+        4,
+        5
+      ],
+      "fibre_rays": [
+        1,
+        2,
+        3
+      ],
+      "ray_twists": [
+        0,
+        0,
+        2
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "FANOGRAPHY-3-9"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle over product",
+      "base_dimensions": [
+        1,
+        1
+      ],
+      "twists_vectors": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "defining_divisor_coordinates": [
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "base_rays": [
+        [
+          1,
+          2
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "fibre_rays": [
+        0,
+        3,
+        6
+      ],
+      "certificate": "Primitive collections and all product maximal cones match; a cone gives a unimodular lattice basis; fibre ray sum vanishes and the exact divisor-class matrix satisfies every lattice linear relation.",
+      "id": "FANOGRAPHY-3-10"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle over product",
+      "base_dimensions": [
+        1,
+        2
+      ],
+      "twists_vectors": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "defining_divisor_coordinates": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "base_rays": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4,
+          5
+        ]
+      ],
+      "fibre_rays": [
+        0,
+        6
+      ],
+      "certificate": "Primitive collections and all product maximal cones match; a cone gives a unimodular lattice basis; fibre ray sum vanishes and the exact divisor-class matrix satisfies every lattice linear relation.",
+      "id": "FANOGRAPHY-3-11"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle over product",
+      "base_dimensions": [
+        1,
+        2
+      ],
+      "twists_vectors": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "defining_divisor_coordinates": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "base_rays": [
+        [
+          5,
+          6
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "fibre_rays": [
+        0,
+        4,
+        7
+      ],
+      "certificate": "Primitive collections and all product maximal cones match; a cone gives a unimodular lattice basis; fibre ray sum vanishes and the exact divisor-class matrix satisfies every lattice linear relation.",
+      "id": "FANOGRAPHY-3-12"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        2,
+        2,
+        2
+      ],
+      "defining_degrees": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          7,
+          8
+        ],
+        [
+          1,
+          5,
+          6
+        ],
+        [
+          2,
+          3,
+          4
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "FANOGRAPHY-3-13"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle over product",
+      "base_dimensions": [
+        1,
+        2
+      ],
+      "twists_vectors": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "defining_divisor_coordinates": [
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "base_rays": [
+        [
+          0,
+          2
+        ],
+        [
+          3,
+          4,
+          5
+        ]
+      ],
+      "fibre_rays": [
+        1,
+        6
+      ],
+      "certificate": "Primitive collections and all product maximal cones match; a cone gives a unimodular lattice basis; fibre ray sum vanishes and the exact divisor-class matrix satisfies every lattice linear relation.",
+      "id": "FANOGRAPHY-3-15"
+    },
+    {
+      "status": "fan presentation retained",
+      "picard_rank": 3,
+      "id": "FANOGRAPHY-3-18"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle",
+      "base_dimension": 2,
+      "fibre_dimension": 2,
+      "twists": [
+        0,
+        0,
+        1
+      ],
+      "defining_divisors": [
+        {
+          "xi": 2,
+          "H": 0
+        }
+      ],
+      "base_rays": [
+        2,
+        3,
+        4
+      ],
+      "fibre_rays": [
+        0,
+        1,
+        5
+      ],
+      "ray_twists": [
+        0,
+        0,
+        1
+      ],
+      "certificate": "Disjoint primitive collections and all maximal cones verified; a cone gives a unimodular lattice basis; fibre ray sum vanishes; normalized twisting relation and divisor linear equivalences checked exactly.",
+      "id": "FANOGRAPHY-3-19"
+    },
+    {
+      "status": "fan presentation retained",
+      "picard_rank": 3,
+      "id": "FANOGRAPHY-3-20"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle over product",
+      "base_dimensions": [
+        1,
+        2
+      ],
+      "twists_vectors": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "defining_divisor_coordinates": [
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "base_rays": [
+        [
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          5
+        ]
+      ],
+      "fibre_rays": [
+        0,
+        6
+      ],
+      "certificate": "Primitive collections and all product maximal cones match; a cone gives a unimodular lattice basis; fibre ray sum vanishes and the exact divisor-class matrix satisfies every lattice linear relation.",
+      "id": "FANOGRAPHY-3-21"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle over product",
+      "base_dimensions": [
+        1,
+        2
+      ],
+      "twists_vectors": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "defining_divisor_coordinates": [
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "base_rays": [
+        [
+          4,
+          5
+        ],
+        [
+          0,
+          2,
+          3
+        ]
+      ],
+      "fibre_rays": [
+        1,
+        6
+      ],
+      "certificate": "Primitive collections and all product maximal cones match; a cone gives a unimodular lattice basis; fibre ray sum vanishes and the exact divisor-class matrix satisfies every lattice linear relation.",
+      "id": "FANOGRAPHY-3-22"
+    },
+    {
+      "status": "fan presentation retained",
+      "picard_rank": 3,
+      "id": "FANOGRAPHY-3-23"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle over product",
+      "base_dimensions": [
+        1,
+        2
+      ],
+      "twists_vectors": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "defining_divisor_coordinates": [
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "base_rays": [
+        [
+          4,
+          5
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "fibre_rays": [
+        0,
+        6
+      ],
+      "certificate": "Primitive collections and all product maximal cones match; a cone gives a unimodular lattice basis; fibre ray sum vanishes and the exact divisor-class matrix satisfies every lattice linear relation.",
+      "id": "FANOGRAPHY-3-24"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle over product",
+      "base_dimensions": [
+        1,
+        1
+      ],
+      "twists_vectors": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "defining_divisor_coordinates": [],
+      "base_rays": [
+        [
+          0,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "fibre_rays": [
+        1,
+        5
+      ],
+      "certificate": "Primitive collections and all product maximal cones match; a cone gives a unimodular lattice basis; fibre ray sum vanishes and the exact divisor-class matrix satisfies every lattice linear relation.",
+      "id": "FANOGRAPHY-3-25"
+    },
+    {
+      "status": "fan presentation retained",
+      "picard_rank": 3,
+      "id": "FANOGRAPHY-3-26"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle over product",
+      "base_dimensions": [
+        1,
+        1
+      ],
+      "twists_vectors": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "defining_divisor_coordinates": [],
+      "base_rays": [
+        [
+          0,
+          5
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "fibre_rays": [
+        1,
+        4
+      ],
+      "certificate": "Primitive collections and all product maximal cones match; a cone gives a unimodular lattice basis; fibre ray sum vanishes and the exact divisor-class matrix satisfies every lattice linear relation.",
+      "id": "FANOGRAPHY-3-28"
+    },
+    {
+      "status": "fan presentation retained",
+      "picard_rank": 3,
+      "id": "FANOGRAPHY-3-29"
+    },
+    {
+      "status": "fan presentation retained",
+      "picard_rank": 3,
+      "id": "FANOGRAPHY-3-30"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle over product",
+      "base_dimensions": [
+        1,
+        1
+      ],
+      "twists_vectors": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "defining_divisor_coordinates": [],
+      "base_rays": [
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "fibre_rays": [
+        0,
+        5
+      ],
+      "certificate": "Primitive collections and all product maximal cones match; a cone gives a unimodular lattice basis; fibre ray sum vanishes and the exact divisor-class matrix satisfies every lattice linear relation.",
+      "id": "FANOGRAPHY-3-31"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle over product",
+      "base_dimensions": [
+        1,
+        1
+      ],
+      "twists_vectors": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "defining_divisor_coordinates": [
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "base_rays": [
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "fibre_rays": [
+        0,
+        1,
+        6
+      ],
+      "certificate": "Primitive collections and all product maximal cones match; a cone gives a unimodular lattice basis; fibre ray sum vanishes and the exact divisor-class matrix satisfies every lattice linear relation.",
+      "id": "FANOGRAPHY-4-2"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle over product",
+      "base_dimensions": [
+        1,
+        1,
+        1
+      ],
+      "twists_vectors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "defining_divisor_coordinates": [
+        [
+          1,
+          1,
+          0,
+          1
+        ]
+      ],
+      "base_rays": [
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "fibre_rays": [
+        2,
+        5
+      ],
+      "certificate": "Primitive collections and all product maximal cones match; a cone gives a unimodular lattice basis; fibre ray sum vanishes and the exact divisor-class matrix satisfies every lattice linear relation.",
+      "id": "FANOGRAPHY-4-3"
+    },
+    {
+      "status": "fan presentation retained",
+      "picard_rank": 3,
+      "id": "FANOGRAPHY-4-4"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle over product",
+      "base_dimensions": [
+        1,
+        1,
+        1
+      ],
+      "twists_vectors": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "defining_divisor_coordinates": [
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "base_rays": [
+        [
+          0,
+          2
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "fibre_rays": [
+        1,
+        5,
+        8
+      ],
+      "certificate": "Primitive collections and all product maximal cones match; a cone gives a unimodular lattice basis; fibre ray sum vanishes and the exact divisor-class matrix satisfies every lattice linear relation.",
+      "id": "FANOGRAPHY-4-6"
+    },
+    {
+      "status": "fan presentation retained",
+      "picard_rank": 4,
+      "id": "FANOGRAPHY-4-7"
+    },
+    {
+      "status": "verified",
+      "kind": "split projective bundle over product",
+      "base_dimensions": [
+        1,
+        1,
+        1
+      ],
+      "twists_vectors": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "defining_divisor_coordinates": [
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "base_rays": [
+        [
+          0,
+          2
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "fibre_rays": [
+        1,
+        7
+      ],
+      "certificate": "Primitive collections and all product maximal cones match; a cone gives a unimodular lattice basis; fibre ray sum vanishes and the exact divisor-class matrix satisfies every lattice linear relation.",
+      "id": "FANOGRAPHY-4-8"
+    },
+    {
+      "status": "fan presentation retained",
+      "picard_rank": 4,
+      "id": "FANOGRAPHY-4-9"
+    },
+    {
+      "status": "fan presentation retained",
+      "picard_rank": 4,
+      "id": "FANOGRAPHY-4-10"
+    },
+    {
+      "status": "fan presentation retained",
+      "picard_rank": 4,
+      "id": "FANOGRAPHY-4-11"
+    },
+    {
+      "status": "fan presentation retained",
+      "picard_rank": 4,
+      "id": "FANOGRAPHY-4-12"
+    },
+    {
+      "status": "fan presentation retained",
+      "picard_rank": 5,
+      "id": "FANOGRAPHY-5-2"
+    },
+    {
+      "status": "fan presentation retained",
+      "picard_rank": 5,
+      "id": "FANOGRAPHY-5-3"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        1,
+        1,
+        2
+      ],
+      "defining_degrees": [
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          0,
+          6
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          1,
+          4,
+          5
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "FANOGRAPHY-6-1"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        1,
+        4
+      ],
+      "defining_degrees": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          3,
+          4,
+          5,
+          6
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "FANOGRAPHY-7-1"
+    },
+    {
+      "status": "verified",
+      "kind": "product of projective spaces",
+      "dimensions": [
+        1,
+        3
+      ],
+      "defining_degrees": [
+        [
+          0,
+          3
+        ]
+      ],
+      "primitive_blocks": [
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          3,
+          4,
+          5
+        ]
+      ],
+      "certificate": "Disjoint primitive collections; each ray-block sum is zero; all product maximal cones match.",
+      "id": "FANOGRAPHY-8-1"
+    },
+    {
+      "status": "verified",
       "kind": "split projective bundle",
       "base_dimension": 2,
       "fibre_dimension": 3,

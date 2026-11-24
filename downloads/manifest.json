@@ -1,13 +1,13 @@
 [
   {
     "file": "gwflags-1.0.6.dev0.zip",
-    "sha256": "df8b9d055c366f07847525ca55cda18532c75901bf008fc35fa54a076675cd54",
+    "sha256": "d56de2e485585de41a688248100179dae8024540569c6f502e9ca6f6e57b4fae",
     "files": 42,
     "version": "1.0.6.dev0"
   },
   {
     "file": "gw-combined-1.1.0.dev1.zip",
-    "sha256": "5b4894cbd0b0f183be69c0c0eb418f9e3ecc7a0fe083691dc227b911be7a102f",
+    "sha256": "9eb83943e3c5684b9b1bdfaf2ce709a7fd712aad94a279090b336430cb084fb8",
     "files": 71,
     "version": "1.1.0.dev1"
   },
@@ -20,14 +20,14 @@
   },
   {
     "file": "gw-flag-1.1.0.dev1.zip",
-    "sha256": "9cfded1bf4de6722511fedde6e4cdfec14295c49e5cd12e423040bc29dee62ae",
+    "sha256": "164ff434e5ba5311f014b326fd4342f2ababd604b268110351d648fee175e683",
     "files": 66,
     "version": "1.1.0.dev1",
     "scope": "flag"
   },
   {
     "file": "gw-toric-1.1.0.dev1.zip",
-    "sha256": "08e709bbe6ced8ddee1f13cd05a690e2dd5a76c3b8f63cbd7ddd31e7d9093190",
+    "sha256": "aae727fca6e1b76925918d1e4e2ab0577d8d14b9310105341d35d8a35fba1e1c",
     "files": 66,
     "version": "1.1.0.dev1",
     "scope": "toric"
